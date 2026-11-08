@@ -1,0 +1,65 @@
+{
+  "title": "Winter ENSO did not reliably improve cherry bloom predictions at three sites in 1988–2025",
+  "abstract": "We tested whether winter Niño 3.4 temperature anomalies add useful information to cherry bloom predictions at Kyoto, Liestal, and Washington. Each site had 75 annual records from 1951 to 2025. We fitted separate models with local time trends. We then predicted each year from 1988 to 2025 using earlier records only. Changes in mean absolute error were 0.039, -0.127, and 0.048 days, respectively. All paired five-year block bootstrap intervals included zero. All three full-period association intervals also included zero. An early association in Washington was weak in the later period. Quadratic trends and annual changes did not give clear full-period associations. These results limit the use of this simple ENSO predictor at these sites. They do not show that climate has no effect on flowering. Site changes, local weather, and pollution were not measured. The package includes source code, input hashes, aggregate results, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "cherry bloom",
+    "ENSO",
+    "temporal validation",
+    "observation bias",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Change in mean absolute error when the winter index is added to a local time trend. Intervals use paired five-year blocks. Negative values favor ENSO. All intervals include zero."
+    },
+    {
+      "path": "files/associations.png",
+      "caption": "Index coefficients for each site and period. Intervals use a covariance estimate with three annual lags. All full-period intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed source of the three modern annual bloom records and their data notes."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Monthly ERSSTv5 anomaly series. Exact snapshot hash is in the package."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0027439",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on cherry bloom prediction from chilling and heat."
+    },
+    {
+      "target": "doi:10.1002/joc.1594",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on Kyoto flowering dates and spring temperature."
+    },
+    {
+      "target": "doi:10.2480/agrmet.52.163",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on ENSO and phenology in Asia."
+    }
+  ]
+}
