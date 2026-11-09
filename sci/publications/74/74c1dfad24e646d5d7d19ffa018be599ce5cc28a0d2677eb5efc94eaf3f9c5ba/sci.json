@@ -1,0 +1,22 @@
+{
+  "title": "Fermi GBM and GCN records show no SGR J1935+2154 burst from 2022-12-14 to 2026-11-08; four published activity periods (127-238 d) did not predict this silence or the 2021-2022 bursts",
+  "abstract": "SGR J1935+2154 is the Galactic magnetar linked to FRB 200428. Four papers report periodic burst activity with periods of 231 d, 238 d, 126.88 d and 134.63 d. We test their active windows with data that came after each model. We use the Fermi GBM trigger catalog (snapshot 2026-11-09) and the GCN Circular archive. The last burst that we can attribute to the source occurred on 2022-12-13. No well-localized GBM trigger and no GCN report attributes a burst to it up to 2026-11-08. This 1,426-day quiet interval is the longest since discovery in 2014; the previous longest was 1,134 days. The models predicted 5.8 to 11 active windows from 2023-01 to 2026-11, and all were empty. With the window-activity rate of each training span, the probability of this silence is 0.012 to 0.027 (238 d), 0.016 (231 d), 0.067 (126.88 d) and 4e-5 (134.63 d). Bursts from 2020 to 2022 were not in the windows more often than random phase shifts predict (p = 0.14 to 0.72). The published 238-d windows missed the December 2021 to February 2022 episode. No trial period from 60 to 400 d gives an unusually small window that contains all 2014-2022 burst days (global p = 0.56). Renewal fits to the 2014-2022 quiet gaps give 0.0007 to 0.004 for the current gap (3e-5 to 0.047 for other episode definitions). Thus the data do not show a stable periodic window, and the source is quieter than stationary models predict. A decrease in long-term activity agrees with the data. Limitations: the record contains only bursts that triggered GBM or were reported in GCN circulars; fainter bursts are not in it. Two short, poorly localized GRB-class triggers 14 deg away (2025-10-12, 2026-09-28) are not attributed; a worst-case check with the first one gives similar conclusions. Code, derived tables, data hashes and figures are included.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.HE"}
+  ],
+  "keywords": ["astronomy", "magnetar", "SGR J1935+2154", "soft gamma repeater", "burst activity", "periodicity", "forecast test", "Fermi GBM", "GCN circulars", "fast radio burst", "quiescence", "renewal model"],
+  "display": [
+    {"path": "files/figures/fig1_timeline_windows.png", "caption": "Burst days of SGR J1935+2154 per month (Fermi GBM triggers and GCN reports) and the active windows of four published period models. Orange windows come after each training cutoff. Red ticks are burst days outside a window. No attributed burst occurs after 2022-12-13."},
+    {"path": "files/figures/fig2_quiet_gaps.png", "caption": "Quiet gaps between 2014-2022 burst episodes and three fitted renewal models. The current open quiet interval of 1,426 days (red) has a fitted probability of 0.0007 to 0.004."},
+    {"path": "files/figures/fig4_gbm_health.png", "caption": "Fermi GBM triggers per month. GRB-class triggers continue at the usual rate. SGR-class triggers after 2022 come from other magnetars or have poor localizations."}
+  ],
+  "citations": [
+    {"target": "doi:10.48550/arXiv.2006.16480", "relations": ["challenges"], "reason": "We test its 231-day windowed periodicity with later bursts and the 2023-2026 silence."},
+    {"target": "doi:10.48550/arXiv.2107.03800", "relations": ["challenges"], "reason": "We test its 238-day period and its Table 3 predicted windows with later data."},
+    {"target": "doi:10.48550/arXiv.2205.08003", "relations": ["challenges", "supports"], "reason": "We test its 126.88-day window; our results support its view that no period fits the full burst history."},
+    {"target": "doi:10.48550/arXiv.2307.01010", "relations": ["challenges"], "reason": "We test its 134.63-day period and 80 percent window with the 2023-2026 data."},
+    {"target": "doi:10.48550/arXiv.2602.10895", "reason": "Reports the October 2022 FRB-associated X-ray burst in the last active episode."},
+    {"target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigtrig.html", "relations": ["uses"], "reason": "Fermi GBM trigger catalog, snapshot 2026-11-09."},
+    {"target": "https://gcn.nasa.gov/circulars", "relations": ["uses"], "reason": "GCN Circular archive, snapshot 2026-11-08."}
+  ]
+}
