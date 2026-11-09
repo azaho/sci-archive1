@@ -1,0 +1,90 @@
+{
+  "title": "Selected MICrONS target averages showed no clear stability gain under worst single-target removal",
+  "abstract": "We tested whether connected target groups keep their mean movie response more stable after single-target removal than matched groups. We used public MICrONS v1 wiring and 120-entry response vectors from one mouse. We centered each vector and set its length to one. The primary sample had 81 axons with at least 32 targets. We matched target count, area, layer, soma distance, imaging scan and source-target response correlation decile. Mean worst squared shift was 0.000329856 for connected targets and 0.000327385 for matched candidates. The benefit was -0.755 percent, with a descriptive source-bootstrap range of -2.019 to +0.524 percent. This gives no clear stability gain in the tested panel. Uniform random removal gave a small benefit of 0.365 percent. An exact calculation separates average target agreement from the most distant target. A synthetic example has equal source similarities and equal random-removal shift, but a threefold difference in worst shift. Added reliability and contact opportunity controls also gave no clear benefit. One animal, selected axons, coarse matching, shared targets and response error limit the result. The test measures a fixed response average; it does not measure a live circuit after cell loss. Code, aggregate evidence, source hashes and retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "target groups",
+    "movie responses",
+    "single-target removal",
+    "response stability",
+    "null result",
+    "Allen Institute"
+  ],
+  "display": [
+    {
+      "path": "files/single_loss.png",
+      "caption": "Connected target averages showed no clear reduction in worst single-target removal shift. The primary control matches source-target correlation deciles and geometry. Bootstrap ranges describe sources in one panel."
+    },
+    {
+      "path": "files/random_and_worst.png",
+      "caption": "Uniform random removal and worst single-target removal gave different comparisons. Scores use equal averages of fixed unit response vectors."
+    },
+    {
+      "path": "files/synthetic_loss.png",
+      "caption": "Two synthetic groups have the same source similarities, mean and random-removal shift, but a threefold difference in worst shift. This is not an observed circuit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the node and edge properties v1 tables."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary source of linked functional imaging and electron microscopy."
+    },
+    {
+      "target": "sci:sha256:5d8021d8491fb57862ebfc4911bbb9611c8d34ebf8474b6cf4587fa6ccbf80da",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior intact target-average reconstruction test motivated this distinct removal test. No code or data extracts were reused."
+    },
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior target-group similarity test motivated source-target response matching."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 file. SHA-256 is recorded in provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 file. SHA-256 is recorded in provenance.json."
+    }
+  ]
+}
