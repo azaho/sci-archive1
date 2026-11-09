@@ -1,0 +1,77 @@
+{
+  "title": "Physical eclipse models show that tides explain 8 of 27 TESS apsidal-motion circumbinary-planet candidates of Thornton et al., and a clear excess remains in 4",
+  "abstract": "Thornton et al. (arXiv:2512.07934) report 27 circumbinary-planet candidates from apsidal precession of TESS eclipsing binaries. We measured 2,547 eclipse times in 458 TESS QLP, TESS-SPOC and SPOC light curves (sectors 1 to 104) of 32 of their 36 binaries. The secondary-minus-primary offset changes linearly in 19 binaries (above 3 sigma). In 8 binaries with new visits after 2025-10-01, the drift continues (chi-square 6.0 for continuation, 346 for no change). We fitted a model of two limb-darkened spheres on an eccentric orbit to each binary. The model gives e sin(w) and the fractional radius of each star, so the apsidal rate and the classical tidal and rotational rate come from measured values. The classical rate from these radii is a median of 10 times larger than the published value. Of the 27 candidates, GR plus tides with an apsidal constant k2 of at most 0.01 supply the rate in 8 (required k2 0.003 to 0.006). An excess remains even with k2 = 0.01 in 4 (TIC 123951716, 82893635, 146204045, 399127035; required k2 0.09 to 0.7). The remaining candidates are marginal (3), have a drift below 3 sigma (6), have ambiguous eclipse labels (4), or have an undetermined rate (1). TIC 293225466 shows retrograde motion, which GR and tides cannot cause. The RUWE-flagged non-candidate TIC 444544588 has the strongest excess (116 times GR plus tides). Main limitations: spherical stars, no third light, assumed k2, rotation and mass ratio, and few visits per binary.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "eclipsing binaries",
+    "apsidal motion",
+    "circumbinary planets",
+    "TESS",
+    "eclipse timing",
+    "tidal apsidal constant",
+    "replication"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig2_rates.png",
+      "caption": "Left: apsidal rate from TESS timing and light-curve models against the published rate. Right: observed rate against GR plus the classical rate from the published values (blue) and from the fitted radii with k2 = 0.003 to 0.01 (red)."
+    },
+    {
+      "path": "files/figures/fig3_required_k2.png",
+      "caption": "Apsidal constant k2 that tides and rotation need to supply the observed rate after GR, for binaries with a significant drift and a measured e sin(w). The green band shows typical stellar values."
+    },
+    {
+      "path": "files/figures/fig1_offset_drift.png",
+      "caption": "Secondary-minus-primary eclipse offset per TESS visit for 32 binaries. Blue: visits before 2025-10-01. Red: later visits. Line: linear fit to all visits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d3cb3bf8909b74c57e86d8077b93a6dac96155c2111f231c4f223b8b21a0b384",
+      "relations": [
+        "uses",
+        "supports",
+        "challenges"
+      ],
+      "reason": "Sibling test of the same candidates with width-ratio e sin(w) and equal-star duration radii. We use its corrected TIC IDs, support 3 of its 4 class-A excesses and its forecast result, and challenge its classes for TIC 292357653 and three class-B binaries."
+    },
+    {
+      "target": "https://arxiv.org/abs/2512.07934",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Source of the 36 precessing binaries, the published rates and the planet-candidate list."
+    },
+    {
+      "target": "doi:10.17909/t9-r086-e880",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TESS QLP light curves."
+    },
+    {
+      "target": "doi:10.17909/t9-wpz1-8s54",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TESS-SPOC FFI light curves."
+    },
+    {
+      "target": "https://mast.stsci.edu/api/v0/invoke",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MAST API for product lists, SPOC 2-min light curves and TIC v8.2 parameters."
+    }
+  ]
+}
