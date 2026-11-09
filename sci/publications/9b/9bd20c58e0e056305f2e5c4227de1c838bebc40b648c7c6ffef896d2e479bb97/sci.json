@@ -1,0 +1,103 @@
+{
+  "title": "Gap-junction coefficients were larger for slow than fast calcium correlations in two worm samples, but normalized gains did not repeat",
+  "abstract": "We tested whether annotated gap-junction pairs had a larger adjusted correlation for slow than fast calcium activity. We linked a fixed Cook hermaphrodite map to identified neurons in 40 Atanas/Kim animals and eight separate Dag animals. Slow was 0.01-0.05 Hz; fast was 0.15-0.40 Hz. Per-animal regressions controlled chemical wiring, atlas distance, mirror identity and additive neuron effects. The mean slow-minus-fast Fisher coefficient was 0.1131 (nominal 95% animal-bootstrap interval 0.0952-0.1308) and 0.0634 (0.0344-0.0943). All 48 animal differences were positive. All fixed sensitivity tests had positive cohort intervals. However, the raw-outcome partial correlation difference was 0.0135 (0.0061-0.0212) and -0.0032 (-0.0261-0.0201). A post-score check of partial correlations using the same Fisher outcome also left the eight-animal interval across zero. Slow outcomes had a larger residual scale. Thus the absolute coefficient contrast repeated, but a normalized gain did not clearly repeat. We provide original code, aggregate evidence, provenance hashes and a retrieval recipe. External records and record-level derivatives are not bundled. Maps and activity came from different animals. Both activity samples came from one lab. Unequal noise, shared input, sensor kinetics and atlas error remain possible explanations. The result does not establish a causal electrical filter or equal normalized effects.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "gap junction",
+    "structure-function",
+    "calcium activity",
+    "temporal frequency",
+    "partial correlation",
+    "replication",
+    "outcome scale"
+  ],
+  "display": [
+    {
+      "path": "files/figures/primary.png",
+      "caption": "Adjusted electrical-edge coefficients for slow and fast calcium correlations in 40 and eight worms. The slow-minus-fast coefficient is positive in both samples. The difference of partial correlations does not clearly repeat in the eight-animal sample. Filled markers use raw correlation outcomes; open markers use Fisher outcomes in a post-score check. Lines are nominal 95% animal-bootstrap intervals, conditional on fixed wiring maps and neuron panels."
+    },
+    {
+      "path": "files/figures/sensitivity.png",
+      "caption": "All fixed sensitivity tests of the slow-minus-fast coefficient. Lines show nominal 95% animal-bootstrap intervals. These checks concern the coefficient scale. They do not establish a repeated normalized gain or a causal mechanism."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its verified wiring and atlas-position extracts and follow its behavior-control design. External extracts stay outside this publication."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior static spatial-mode test in these two activity samples. Our test compares temporal bands."
+    },
+    {
+      "target": "sci:sha256:6579f233836d04841b2f8a325f405defef52dd9ef4feed9d8016ca1abc622c56",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior individual-neuron persistence test. Our test concerns pair correlation in two frequency bands."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary activity and identity-label source, Atanas, Kim and colleagues."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Separate activity sample, Dag, Nwabudike, Kang and colleagues."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Cook hermaphrodite map, corrected July 2020."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Witvliet adult maps 7 and 8 for sensitivity tests."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1014152",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model study of electrical wiring and worm circuit synchronization."
+    },
+    {
+      "target": "https://zenodo.org/records/19388374",
+      "reason": "Exact activity release v4. The source paper is cited as the record requests."
+    },
+    {
+      "target": "https://zenodo.org/records/19414639",
+      "reason": "Exact activity release v1. The source paper is cited as the record requests."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned atlas positions, accessed through the verified upstream SCI extract."
+    }
+  ]
+}
