@@ -1,0 +1,64 @@
+{
+  "title": "Fixed contact counts left wide shared-noise correlation bounds in 40 selected adult worm output pairs",
+  "abstract": "We tested whether source-to-target contact counts and site target counts determine shared release noise in two adult worm brain maps. We selected 20 well-contacted bilateral output pairs per map. Binary integer programs kept all source target counts and all retained site target counts, and minimized and maximized the pair overlap. Under independent sites, equal release probability and unit shared effects, the correlation is overlap divided by the square root of the target-count product. All 40 model correlation bounds had width at least 0.410. Median widths were 0.827 and 0.821. Zero overlap was feasible for 39 pairs. Maximal overlap was feasible for 39 pairs. All 80 endpoints had a reported solver gap of zero and passed margin checks. Small exhaustive tests agreed. These are separate attainable pair bounds, not joint covariance endpoints. The bounds omit geometry and do not measure neural activity, information or behavior. Two selected adult maps cannot establish a population or cross-species rule.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "shared release",
+    "identification bounds",
+    "integer optimization",
+    "C. elegans",
+    "bilateral outputs"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Model correlation interval widths in selected adult output pairs. Lines show the minimum and maximum width. Dots show the median. All counts and retained site sizes are fixed. Geometry is not fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.3389/fncir.2018.00094",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:7f2ce4d0a699d3b9970f466f6936638b25a2c4c1b710e11d6527b2dcf875b1cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its fixed cell panel and selection convention; replaces reference means with attainable bounds."
+    },
+    {
+      "target": "sci:sha256:2924d8360128f74909d49079b5c58d979ba04798e474ddb8efaaa4be293fbe56",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior effective noise dimension result motivates testing what fixed counts can identify."
+    }
+  ]
+}
