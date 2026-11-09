@@ -1,0 +1,61 @@
+{
+  "title": "Shared site release raised summed-input noise variance by factors of 2.07 to 2.37 in eight selected worm map models",
+  "abstract": "We tested how multi-target chemical sites change model input noise in eight public C. elegans brain maps. A fixed panel had 162 neurons born before hatching. The model used unit contact amplitudes, equal release probabilities, and independent sites. Shared release across the targets of each site gave 2.07 to 2.37 times the variance of summed target inputs given by independent contact release. Both models had the same mean input and the same variance in each target. Normalization by target input counts gave sum variance ratios of 1.34 to 1.66. Across all linear readouts, the smallest variance ratios were 0.12 to 0.39 and the largest were 2.12 to 2.60. Thus site grouping can raise noise in a sum and reduce noise in a contrast. A mixture model needed a shared component of 7.3 to 9.4 percent for a 10 percent increase in sum variance. These are exact conditional model calculations, not measured release noise. Unknown release dependence, contact gains, receptor signs, annotation errors, partial brain coverage, and eight different animals limit the result. Code, site tables, matrices, hashes, a retrieval recipe, and simulation checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "release noise",
+    "linear readout",
+    "connectomics",
+    "covariance"
+  ],
+  "display": [
+    {
+      "path": "files/noise.png",
+      "caption": "Model variance ratios across eight maps. Left: sums before and after target input normalization. Right: smallest and largest ratios over all linear readouts on cells with input. Independent contact release has ratio 1. Map order follows development but each map is a different animal. No neural noise was measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary source of the eight chemical site maps."
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Physiological evidence for shared events at worm neuromuscular synapses motivates the model; it does not establish its parameters in the brain."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned raw site files and source schema."
+    },
+    {
+      "target": "sci:sha256:bec99dca908045dd09f516b13db2e4faf0543f793309470abef5590e2ecfbd88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses only its verified fixed 162-neuron panel. That work tested directed cycles; this work tests site-grouped input noise."
+    },
+    {
+      "target": "sci:sha256:2fd74d3137fe637449210c92532d1a0a470a28bc94fb7e1bf10742eec038bc1b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial failure model within mouse cell pairs. The present model concerns shared release across targets of a single worm site. No code or data reused."
+    }
+  ]
+}
