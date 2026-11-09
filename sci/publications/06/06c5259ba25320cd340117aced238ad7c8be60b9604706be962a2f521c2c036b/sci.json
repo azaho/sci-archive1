@@ -1,0 +1,83 @@
+{
+  "title": "A constant offset leaves 390 m/s of DRS difference scatter in four zero-flag GJ 357 rows in HARPS RVBank v02",
+  "abstract": "We audit 53 GJ 357 exposures in HARPS RVBank v02. Four rows have DRS velocities from -97.917 to -96.888 km/s, but the other 49 are near -34.38 km/s. All 53 rows have f_RV = 0. All four suspect rows have RVGUESS = -78. A fitted constant leaves 390.11 m/s of weighted RMS difference between DRS and SERVAL in this group, compared with 1.61 m/s in the other rows. CSV and DAT exports agree. One suspect ESO header has a target velocity of -78; a control header has -34.9. The large difference also occurs before the nightly correction. Thus a constant offset does not repair these four DRS values for small-planet work. This is a data quality result, not a new planet or physical velocity change. The exact processing fault is not known. The test covers one frozen target file and two headers. External source files and row extracts stay outside the baseline package. We include code, aggregate evidence, input hashes, and retrieval steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 357",
+    "HARPS RVBank",
+    "DRS",
+    "SERVAL",
+    "quality control",
+    "radial velocity",
+    "instrument artifact"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Velocity ranges and remaining difference scatter in two groups from 53 GJ 357 rows. A separate weighted constant was fitted to each group for the right panel."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8905f8a6ee444d63fecc2495032d7573ca7e9d8fd2fd0b00bad98d58155b2f74",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior GJ 1061 audit motivates the offset-invariant guard and the constant-repair test. No code or numerical results are reused."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1093/mnras/stz2937",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/1904.12818",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ357_RVs/GJ357_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ357_RVs/GJ357_HARPS_RVBank_ver02.dat",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2005-05-26T23:49:43.854",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2006-03-21T05:06:59.229",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

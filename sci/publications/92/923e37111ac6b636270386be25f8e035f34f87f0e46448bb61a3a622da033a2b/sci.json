@@ -1,0 +1,65 @@
+{
+  "title": "An independent Gaussian error model gives a 0.210 ms delay threshold in selected Allen mouse circuits",
+  "abstract": "We tested a source-cell plus target-cell delay model in selected Allen Synaptic Physiology r2.1 slice graphs. The mouse primary groups had 18 independent cycle constraints and a squared residual sum of 1.27035 ms squared. A reference model with fixed or ignorable sample selection and independent zero-mean Gaussian edge errors gives a nominal 5% rejection boundary of 0.20977 ms error standard deviation. Strict cell labels lower it to 0.15780 ms. Removing each constrained mouse group in turn gives primary boundaries from 0.17813 to 0.21439 ms. Human temporal-cortex data give only one constraint and a boundary of 0.07909 ms. Cell-shared additive timing shifts cancel exactly. Unequal independent Gaussian error variances bounded by the assumed variance give a conservative test. Actual error size, distribution, correlation, and selection are not known. These thresholds do not reject a biological model in the observed data. Small selected graphs and one human constraint limit generalization. Original code, aggregate evidence, simulation checks, source hashes, and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "graph cycles",
+    "Gaussian error",
+    "model testing",
+    "noise sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Critical error SD and reference p values for an additive cell-delay model. The calibration assumes fixed or ignorable selection and Gaussian errors. Actual measurement error is unknown."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dc740390de93bd1b08e40436cd5f0d979130a25c2386c6c10470f9a8a93bc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior graph support and omitted-edge timing tests; sample definitions reused."
+    },
+    {
+      "target": "sci:sha256:5027b4e3394fd61ba71a15ba5d9fbdcb6b865bcab501c53428b7f1ab410f94a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior deterministic absolute-error bounds; this study adds a Gaussian error reference."
+    },
+    {
+      "target": "sci:sha256:62068c28d9ac1fa4ca08045bcc1cf0ab99b8c529b18bacbbc5f7c11de6f18b6d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related nonnegative cell-term test; this study keeps unrestricted terms."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.3982/ECTA14605"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
