@@ -1,0 +1,78 @@
+{
+ "title": "Functionally similar presynaptic neurons put synapses slightly closer on shared dendrites in the MICrONS mouse, but presynaptic soma position explains this; no branch-scale clustering found",
+ "abstract": "Question: do excitatory neurons with similar visual responses put their synapses near each other (10 um or less) on the dendrite of a shared target cell, as functional synaptic clustering predicts? Data: one mouse, MICrONS visual cortex. We used the v1300 synapse export with positions, v661 dendrite skeletons of 63,348 target cells, and the response properties of 12,894 coregistered neurons (Ding et al. 2025). Method: for each target cell, we measured the path distance along the dendrite between the closest synapses of each pair of functional presynaptic neurons. We compared the response similarity of close pairs with other pairs on the same cell, against a within-cell permutation null that keeps presynaptic layer, area and synapse count, with a jackknife over presynaptic neurons. Results: with all functional neurons (31.5 million pairs, 305,200 close pairs), close pairs had a higher signal correlation by +0.0036 (95% CI 0.0030 to 0.0043), about 17% of the like-to-like wiring effect. The excess was the same from 0 to 40 um and decreased to zero near 100-160 um, so it is a broad gradient, not a branch-scale cluster. Close pairs compared only with pairs 10-40 um apart gave +0.0004 (-0.0004 to 0.0013). Presynaptic pairs with close synapses had nearer somata; after adjustment for soma distance, layer and area, the excess was +0.0001 (-0.0005 to 0.0008), at most about 4-6% of the like-to-like effect. Feature similarity and receptive-field proximity behaved the same; orientation gave only a 0.4-degree coarse effect. In vivo signal correlation kept a small residual (+0.0012) only for neurons imaged in the same scan, which suggests shared imaging signal. The 148 proofread axons gave wide intervals that agree. Limitations: one animal; most axons not proofread (a local-synapse subset agreed); calcium and digital-twin tuning only; about 1% of inputs are characterised.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "functional synaptic clustering",
+  "dendrites",
+  "connectomics",
+  "MICrONS",
+  "mouse visual cortex",
+  "signal correlation",
+  "like-to-like wiring",
+  "permutation test",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_distance_curves.png",
+   "caption": "Similarity excess of presynaptic pairs against the path distance on the dendrite between their closest synapses on a shared target cell (within-cell centred, minus the class-stratified permutation null). Left: digital-twin signal correlation. Middle: the same after adjustment for presynaptic soma distance, layer and area. Right: in vivo signal correlation. Blue: 148 proofread axons; red: 12,884 functional neurons; green: same neurons, synapses 250 um or less from the soma. Dashed line: like-to-like wiring effect (connected minus proximity-matched pairs). Error bars show the permutation range only and do not include presynaptic dependence."
+  },
+  {
+   "path": "files/figures/fig2_forest.png",
+   "caption": "Close-pair (10 um or less) similarity excess for the main tests, in SD units of the similarity, with conservative 95% CIs (larger of jackknife over presynaptic neurons and permutation SD). 'class null' compares close pairs with all other pairs on the cell; 'class x location null' also matches coarse dendritic location; '<=10 vs 10-40 um' compares only with pairs 10-40 um apart. Dashed line: like-to-like wiring effect for digital-twin signal correlation."
+  },
+  {
+   "path": "files/figures/fig3_controls.png",
+   "caption": "Left: positive control. Presynaptic pairs whose synapses are close on a shared dendrite have somata nearer to each other (within-cell null). Right: receptive-field proximity shows the same broad distance gradient as signal correlation."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Ding et al. 2025 functional connectomics node and edge tables give the response properties of the presynaptic neurons and the like-to-like benchmark."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS Consortium 2025: the cubic-millimetre data set, synapse table and skeletons."
+  },
+  {
+   "target": "doi:10.64898/2026.03.31.715753",
+   "reason": "Sarup and Boahen 2026 found anatomical repeated axon clusters on MICrONS dendrites without functional data; this study adds the functional test."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/synapses_pni_2_v1_filtered_view.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "v1300 synapse export with positions (SHA-256 184700637de5c22ca6a3f8cd8fadd564a1574a1f07e4c3df077b9237a3b76658)."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Earlier campaign study of like-to-like connection probability in the same tables; this study asks where on the dendrite similar inputs land."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "reason": "Earlier campaign study of like-to-like wiring beyond cell-level coupling in MICrONS."
+  },
+  {
+   "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+   "reason": "Earlier campaign study of higher-order co-target structure in the same tables."
+  },
+  {
+   "target": "sci:sha256:e9455e37a00547b613cd8ac12ee466cdd4b5cbc7b7684413cb08d05a9e0ab1dd",
+   "reason": "Earlier campaign study of noise correlation and synapses in the same tables."
+  }
+ ]
+}
