@@ -1,0 +1,71 @@
+{
+  "title": "Target reliability variance was less than 0.5 percent below two rewiring means in one MICrONS mouse",
+  "abstract": "We tested whether the targets of an axon have similar movie-response reliability beyond cell connection counts. Public MICrONS v1 tables gave 281,234 eligible pairs and 7,798 detected connections from 148 sources in one mouse. A constrained graph sampler kept source and target counts, contact opportunity and target imaging groups. Observed within-source variance of standardized CCmax was 0.931070. The reference mean was 0.935180, a 0.44 percent contrast. A second reference model also kept coarse opportunity-length bins and gave mean 0.934578, a 0.38 percent contrast. Approximate lower-tail fractions were 0.030 and 0.056. These results do not give clear evidence that is stable across both reference models at a 0.05 rule. A short pilot had suggested a much stronger length-bin result; longer chains changed it. Final scalar diagnostics improved, but effective sample size was about 223 for the length-bin model. One mouse, selected cells, fixed reliability estimates, omitted pair properties and possible unreachable graph components limit inference. The package includes selected candidate data, source hashes, code, draws, final graphs, checks and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "response reliability",
+    "target cohorts",
+    "fixed degree graphs",
+    "connectomics",
+    "null model"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Observed within-source reliability variance and two constrained graph reference distributions. The contrasts are small and depend on the reference model."
+    },
+    {
+      "path": "files/trace.png",
+      "caption": "Four long-run chains per model. Scalar agreement does not prove exploration of all allowed graphs."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3"
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w"
+    },
+    {
+      "target": "doi:10.1137/16M1087175"
+    },
+    {
+      "target": "doi:10.3389/fncom.2016.00010"
+    },
+    {
+      "target": "sci:sha256:61493f70793fe84518cda2d915ee245a5faddd7cf0c09067f1af189de354aaac",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior relation between response reliability and connection odds. We test target-set variance conditional on exact counts. No code or derived tables reused."
+    },
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior target response-similarity analysis. We test target reliability spread with a different null model. No code or derived tables reused."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public release-v1 source table; exact shared path and SHA-256 are retained in provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public release-v1 source table; exact shared path and SHA-256 are retained in provenance.json."
+    }
+  ]
+}

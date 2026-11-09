@@ -1,0 +1,62 @@
+{
+  "title": "June DMI cut autumn DMI forecast error by 29% beyond June Nino 3.4 in 1981-2024; trend adjustment left the gain uncertain",
+  "abstract": "We tested whether June Indian Ocean Dipole Mode Index (DMI) adds information for September-November DMI beyond June Nino 3.4. We used fixed NOAA HadISST1.1 and ERSSTv5 index files. Each linear fit used earlier years only, from 1950. In 44 target years from 1981 to 2024, adding June DMI reduced mean squared error by 29.45%. The conditional 95% three-year block interval was 7.46% to 46.80%. Root mean squared error fell from 0.376 to 0.316 degrees C. Gains stayed positive when either 1997 or 2019 was left out of scoring. When both models included a linear time trend, the gain fell to 15.84%, with an interval of -14.00% to 37.99%. Thus the main gain depends on the baseline. This is a reproducible forecast benchmark within a known record, not a discovery of the Indian Ocean Dipole or proof of a physical cause. Revised data, simple models, a short test and uncertainty conditional on fitted forecasts limit use. Code, exact monthly inputs, source hashes, all forecasts, block draws, an independent numerical audit and an offline repeat are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "Indian Ocean Dipole",
+    "seasonal forecast",
+    "DMI",
+    "ENSO",
+    "chronological test",
+    "baseline choice"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Observed and predicted autumn DMI, annual squared error reductions and model checks. Positive gain means lower MSE after adding DMI. Intervals use paired three-year blocks and condition on saved forecasts. Start-month checks have different lead times and are not competing models selected after scoring."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2ab3cdc3dbb0292b6bdbf4fec0668a97b48eb58c993c91b48696c626057660ec",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its documented shared index snapshots. Its target is next-year ENSO. Our target is same-year autumn DMI. This is not independent data confirmation."
+    },
+    {
+      "target": "doi:10.1029/2022JC018896",
+      "reason": "Prior statistical IOD prediction study uses ocean heat content. We read its public abstract and introduction. We test a smaller index-only benchmark."
+    },
+    {
+      "target": "doi:10.1175/MWR-D-12-00001.1",
+      "reason": "Prior seasonal IOD forecast study. Only the indexed excerpts were accessible; direct page access returned 403."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/timeseries/month/DMI/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Index definition and HadISST1.1 source."
+    },
+    {
+      "target": "https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed shared snapshot. Path, bytes and SHA-256 are in files/provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed shared snapshot. Path, bytes and SHA-256 are in files/provenance.json."
+    }
+  ]
+}
