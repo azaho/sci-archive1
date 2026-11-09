@@ -1,0 +1,72 @@
+{
+  "title": "A shared train-state gain needs more than a factor 1.10 amplitude change in 66 of 87 selected Allen input groups",
+  "abstract": "We tested whether one fixed strength per input and one shared gain per train state fit selected Allen cortical slice responses. We used first, second and late 50 Hz response medians for 191 detected connections in 87 target-and-sign groups. A linear program gave the smallest uniform multiplicative amplitude bound that permits a shared gain. An independent alternating-cycle test gave the same optimum. Sixty-six groups needed a factor greater than 1.10. Forty-six of these groups had no input-order reversal across the three states. First-to-late fits alone failed at factor 1.10 in 51 of the same groups. Thus, preserved input order can hide changes in relative input weight. Median minimum factors were 1.233 for mouse excitation, 1.176 for mouse inhibition and 1.127 for human excitation. No human inhibitory group had two retained inputs. The bound is an assumption, not measured error. Fit noise, different trial sets, missing data, slice selection and a small human sample prevent a physiological or cross-species rate claim. Original code, a proof, aggregate results, a figure, hashes and external retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "shared gain",
+    "input weights",
+    "50 Hz",
+    "rank-one approximation",
+    "error bounds"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Minimum shared-gain factors in selected Allen slice groups, shown as binned cumulative fractions, and factor 1.10 failures with and without an input-order reversal. These are fit summaries under assumed error bounds. Source: Allen Institute for Brain Science, Synaptic Physiology r2.1 small; Campagnola, Seeman et al., Science 2022, doi:10.1126/science.abj5861."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected field definitions; no source code bundled or executed."
+    },
+    {
+      "target": "sci:sha256:932583ca65714fa87cece0eb485c39e609b2249f6ff17ad0ddf30df5c5f273c4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the prior order test to a joint quantitative shared-gain model and three train states. No source records or code reused."
+    },
+    {
+      "target": "https://pureportal.spbu.ru/files/35464593/Using_tropical_optimization_in_rank_one_approximation_of_positive_matrices.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on logarithmic minimax positive rank-one approximation; we do not claim that optimization problem is new."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10072874/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
