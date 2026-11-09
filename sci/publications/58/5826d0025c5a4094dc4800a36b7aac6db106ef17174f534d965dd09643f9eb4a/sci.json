@@ -1,0 +1,73 @@
+{
+ "title": "Groningen gas-field earthquakes (M 1.5+) in 2020-2026 needed about 5 years of production memory, not the 9 months fitted to 2006-2020 data, and stayed near clusters shut in 2014",
+ "abstract": "Question: how fast did induced earthquakes in the Groningen gas field (Netherlands) decrease after production fell to zero in October 2023, and could earlier data forecast this? Approach: we counted KNMI M 1.5+ events inside the NLOG field outline plus 0.5 km for gas years 2003/04 to 2025/26. Our counts agree with operator counts to within one event. We compared the 2020/21 to 2025/26 counts with the NAM hazard assessment forecast of March 2020 (HRA-2020, read from its Fig. 5.1). We also fitted Poisson models that relate monthly counts to NLOG monthly field production through an exponential memory kernel, with data to February 2020, September 2023 and September 2026. We assigned events to production clusters from NLOG well data. Results: 48 events occurred in 2020/21 to 2025/26. The HRA-2020 mean was 31 (ratio 1.55). Each yearly count was inside the HRA band, but two counts were at its top. The chance of 48 or more was 0.10 with a common model error and 0.018 with independent yearly errors. After production stopped, 15 events occurred against 12 forecast. A memory model fitted to data before March 2020 had a best memory time of 9 months (95% profile interval 4-36). It forecast 12.4 events for 2020-2026 and 1.1 for the three years after production stopped. With data to 2023 or 2026, the best memory time was 60 months (36-180 and 48-96), and the 2023 fit forecast 17.5 post-production events. A two-kernel model showed that the pre-2020 data could not identify a slow part. A log-linear trend forecast 45.8 events and scored best. The share of events nearest the Loppersum clusters (shut in 2014) rose from 0.58 in 2014-2019 to 0.79 in 2020-2025 (Fisher p = 0.015; M 1.0+: p = 0.0001). Production-driven regional models did not reproduce this rise. Limitations: small counts, figure-read forecast values with an undefined band, no reservoir pressure data, approximate cluster positions. The results agree with the HRA explanation of pressure equilibration but do not prove it.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Groningen",
+  "gas production",
+  "forecast evaluation",
+  "pressure equilibration",
+  "memory kernel",
+  "KNMI",
+  "NLOG",
+  "post-production seismicity",
+  "out-of-sample test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_counts_forecasts.png",
+   "caption": "Top: Groningen gas production per gas year by cluster group (NLOG). Bottom: observed M 1.5+ events per gas year (KNMI, field outline + 0.5 km), the HRA-2020 operator forecast mean and band (read from its Fig. 5.1), production-memory models fitted to February 2020 and to September 2023, and a log-linear trend."
+  },
+  {
+   "path": "files/figures/fig2_tau_profile.png",
+   "caption": "Profile negative log-likelihood of the memory time tau of the production kernel for three fit windows. Data before March 2020 favour about 9 months; data that include 2020-2026 require about 60 months."
+  },
+  {
+   "path": "files/figures/fig3_maps.png",
+   "caption": "M 1.0+ epicentres in three periods with the Groningen outline and production clusters coloured by the time their production stopped. After 2020 most events are nearest the Loppersum clusters that stopped in 2014."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://rdsa.knmi.nl/fdsnws/event/1/query",
+   "relations": [
+    "uses"
+   ],
+   "reason": "KNMI earthquake catalogue (CC BY 4.0), retrieved 2026-11-09."
+  },
+  {
+   "target": "https://www.nlog.nl/datacenter/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NLOG monthly field and well gas production, well locations and field outlines (source NLOG.nl)."
+  },
+  {
+   "target": "https://nam-onderzoeksrapporten.data-app.nl/reports/download/groningen/en/0fad2ce0-9388-4ea1-9db2-041180834f9d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "NAM HRA-2020 report; we test its gas-year M 1.5+ forecast out of sample."
+  },
+  {
+   "target": "sci:sha256:c0a2572246ee8f3fa15450d11e3c30647b50a431bf8bae5b361c1bcb5ea198c8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Related campaign test of post-peak induced seismicity decline (Oklahoma injection); used for comparison of forecast designs."
+  },
+  {
+   "target": "sci:sha256:d6c0ec4f174b1330bc04ff13b32b6747e594058c722d3ada3a7a4f9069c8d5e6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Related campaign test of pressure-memory models for Oklahoma; Groningen shows the opposite deviation (slower decay than short-memory models)."
+  }
+ ]
+}
