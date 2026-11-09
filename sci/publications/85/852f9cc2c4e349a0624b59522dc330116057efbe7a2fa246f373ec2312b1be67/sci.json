@@ -1,0 +1,53 @@
+{
+  "title": "Source and target resampling left early mirror-link prediction gains uncertain in 862 worm connections",
+  "abstract": "We tested whether early left-right mirror links add prediction value for chemical link presence in two adult C. elegans maps. We used eight public maps from different animals and a panel of 150 bilateral neurons. For 862 links in early maps 1 and 2, a model with early strength, cell type and both sides of cell connection totals had source-family held-out log loss of 0.505667. Adding mirror-link presence reduced loss to 0.477923. The gain was 0.027745 nats per link. Source-only resampling gave a nominal 95 percent interval of 0.008497 to 0.047950. Resampling both source and target families widened it to -0.010507 to 0.065414. Target-family holdout also gave a positive gain with a crossed-family interval that included zero. A two-site adult threshold left the gain uncertain. Later early maps gave positive point gains but reused the same adults. The analysis is exploratory and uncertainty conditions on fitted predictions. It does not establish synapse survival, causal bilateral effects, activity reliability or transfer across species. Code, count tables, predictions, source hashes, uncertainty draws and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "development",
+    "bilateral symmetry",
+    "grouped validation",
+    "crossed dependence",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Adult presence shares and added mirror-link prediction gains. Plot intervals resample one family factor only. Wider crossed-family primary intervals include zero; see the main text."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:7f2ce4d0a699d3b9970f466f6936638b25a2c4c1b710e11d6527b2dcf875b1cd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests bilateral site sharing in the same source maps. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:809f8313ac633c42aedeae74c4aa57e73ef6a32c821c03a716f83f02a8ea30e0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests mirror evoked response prediction. Our outcome is adult anatomy, not activity."
+    }
+  ]
+}

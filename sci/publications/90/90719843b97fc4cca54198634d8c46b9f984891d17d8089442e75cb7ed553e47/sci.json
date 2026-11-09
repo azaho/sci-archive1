@@ -1,0 +1,56 @@
+{
+  "title": "Mirror edge presence improved edge prediction beyond synapse count in two adult worm maps",
+  "abstract": "We tested whether a left-right mirror edge in one worm helps to predict edge presence in another worm. We used raw chemical synapse records for 152 selected embryonic neurons from eight C. elegans brain maps. The primary test used the two adult maps. We held out source cell families and compared two logistic models. Both models used the edge count, neuron degrees, neuron synapse totals, cell roles and side. The second model also used mirror edge presence. The added feature improved mean test log score by 0.02812 and 0.03423 nats per edge in the two directions. Nominal 95 percent source-family bootstrap intervals were 0.01263 to 0.04341 and 0.01936 to 0.04987. Brier error fell by 8.3 and 9.3 percent. The gain remained with target-family holdout, a two-site test threshold, two other model penalties, and contact counts. All 12 larval-to-adult comparisons had positive point gains, but three intervals included zero. This tests an edge selection method, not neural function. Two adult animals, shared annotation methods, incomplete brain coverage and fixed-model intervals limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "bilateral symmetry",
+    "edge prediction",
+    "anatomical reliability"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Mirror presence improved held-out edge prediction in both adult map directions. Larval checks reuse the adult maps. Intervals resample cell families with fitted models fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.add9330",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.83739",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-dispersion result motivates the separate edge-presence prediction test. No code or derived tables reused."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
