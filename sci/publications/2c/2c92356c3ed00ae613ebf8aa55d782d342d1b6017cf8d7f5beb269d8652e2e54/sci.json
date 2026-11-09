@@ -1,0 +1,60 @@
+{
+  "title": "Neutral gaps change ONI event duration estimates in different ways in ERSSTv5 and ERSSTv6 for 1950-2024",
+  "abstract": "We tested how short neutral gaps change mean cold-minus-warm ONI event spans in 1950-2024. Events have a core of at least five consecutive active seasons. At a 0.5 C threshold, allowing gaps of at most three neutral seasons changed the difference from 2.63 to 3.20 months in ERSSTv5 and from 1.29 to 5.24 months in ERSSTv6. The paired rule effects were 0.57 months, with a conditional 95% ten-year block interval of -1.76 to 2.91, and 3.95 months, with an interval of 1.16 to 8.04. A five-year block interval for the v6 rule effect included zero. Threshold checks also changed the relative product response. This is an event measurement benchmark, not a new discovery of longer cold ENSO events or a physical cause. Rounded indices, few long events, shared source information, changing climate and conditional block intervals limit inference. The package gives 1,800 monthly input values, all 30 event catalogues, source hashes, code, intervals, paired draws, a figure and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "ONI",
+    "event duration",
+    "neutral gaps",
+    "ERSSTv5",
+    "ERSSTv6",
+    "measurement sensitivity",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/duration.png",
+      "caption": "ONI duration contrasts change with the allowed neutral gap. The left panel gives cold-minus-warm mean spans and conditional 95% ten-year block intervals. The right panel gives ERSSTv5 means and event counts. Monthly steps refer to overlapping three-month season centers."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b2d64a1f5c8413a4195f341f51d3c83e81b15dd6685e68ec785098ea0b125470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior annual winter recurrence study sets context. We test full seasonal event chains and neutral gaps. Source data overlap; this is not independent replication."
+    },
+    {
+      "target": "doi:10.1175/2010JCLI3592.1",
+      "reason": "Prior evidence for known longer cold ENSO events. We test measurement rules, not the proposed physical mechanism."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Explicit ERSSTv5 source table. Exact shared paths and SHA-256 hashes are preserved."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Explicit ERSSTv6 source table. Exact shared paths and SHA-256 hashes are preserved."
+    },
+    {
+      "target": "sci:sha256:3ffd55a5deabfa4afb69046c05751390f303a4a706fc738e372a8f0dec20e5bf",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects the UTC retrieval date from 8 November to 9 November 2026. Source hashes, data and results are unchanged."
+    }
+  ]
+}
