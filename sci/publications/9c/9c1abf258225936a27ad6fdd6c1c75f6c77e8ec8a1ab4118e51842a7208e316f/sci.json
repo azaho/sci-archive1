@@ -1,0 +1,78 @@
+{
+  "title": "Seasonal coefficient sharing gave no clear six-month ENSO forecast gain over monthly fits in 2000-2024",
+  "abstract": "We tested whether sharing regression coefficients across seasons reduced six-month Nino 3.4 forecast error. We used fixed NOAA GODAS warm water volume and ERSSTv5 surface temperature snapshots. Each fit used only origins whose target month had ended by the issue month. The test has 300 monthly issues in 2000-2024. Both models used current surface temperature, its three-month change, and basin warm water volume. A model with one annual harmonic used 12 coefficients. Separate calendar-month fits used 48 in total. Harmonic sharing reduced mean squared error by 2.63%. The conditional 95% three-year block interval was -0.31% to 6.00%. Thus, the primary test did not resolve an improvement. Adding warm water volume to the harmonic surface model also gave an uncertain gain. A model with constant coefficients across the year had more error than the harmonic model. Rolling training and a second harmonic gave positive secondary results, but these do not replace the primary result. Short records, revised source products, model form, and conditional uncertainty limit inference. The package gives exact source bytes and hashes, 3,900 forecasts, code, figures, and an independent numerical audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "seasonal regression",
+    "warm water volume",
+    "chronological forecasts",
+    "null result",
+    "GODAS",
+    "Nino 3.4"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Six-month forecast errors and paired gains. Lines in panel B show marginal conditional 95% three-year block intervals. Positive gain means lower error. Primary denotes annual-harmonic volume fits compared with separate calendar-month volume fits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5abebe31035a205f5713df3a4ea2af85561ae5fd26989d3929acc8e30fcb2238",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared NOAA snapshots and build on its forecast baseline question. The present test changes the question to seasonal coefficient sharing at a fixed six-month lead. Data overlap is not independent replication."
+    },
+    {
+      "target": "sci:sha256:a4c6e15b57a76902c09ce26a156a4c78954fe558b2cb0e3c8e206e01e22fab45",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related fixed-winter forecast test found uncertain western volume gain. We test all issue months with a fixed lead and seasonal pooling."
+    },
+    {
+      "target": "doi:10.1175/JCLI3567.1",
+      "reason": "Prior statistical ENSO models include annual periodic forcing. Seasonal model terms are established methods."
+    },
+    {
+      "target": "doi:10.1029/2012GL051826",
+      "reason": "Prior work reports a change in the relation between ENSO surface temperature and warm water volume after 2000."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/pubs/outstand/mein2119/mein2119.shtml",
+      "reason": "Prior observations link warm water storage to the ENSO recharge cycle."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/readme.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions, regions, anomaly base period, and GODAS source."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/wwv.dat",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/wwv_west.dat",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

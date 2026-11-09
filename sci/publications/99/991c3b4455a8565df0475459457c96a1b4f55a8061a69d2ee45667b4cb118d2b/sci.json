@@ -1,0 +1,52 @@
+{
+  "title": "Twofold source variance bounds preserved dimension order in eight worm noise models, but larger changes reversed it",
+  "abstract": "We tested whether unequal source variances can change a shared-site noise result in eight selected C. elegans brain maps. Each site had independent noise shared by its targets. Sites from the same source had the same variance. We kept source-to-target contact counts and site sizes fixed in random controls. A quadratic bound showed that every source variance vector with a largest-to-smallest ratio of two kept the observed noise dimension below a finite control reference in all eight maps. The map-specific sufficient ratio limits were 2.169 to 2.341. Deliberately chosen ratios of 10 in maps 1-5 and 100 in maps 6-8 reversed the order. These vectors also gave higher observed dimension than the mean dimension in 200 separate control draws in each map. This is a conditional model result. It does not measure neural noise, coding accuracy or biological source variances. The sufficient limits are conservative, and the reversal ratios are not minimum thresholds. Code, retained sites, source hashes, quadratic matrices and explicit variance vectors support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "noise covariance",
+    "source variance",
+    "robustness bounds",
+    "connectomics"
+  ],
+  "display": [
+    {
+      "path": "files/results/robustness.png",
+      "caption": "Left: sufficient variance ratio limits and explicit reversal ratios. The interval between them is unresolved. Right: observed minus reference dimension at equal variance and at the reversal vector. The reversal uses separate control draws. Each map is a different animal. These are model results, not neural noise measurements."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:fe098e3246f3ce401a37b082671722a7c4fe7f38a99d988b06db35b017aadb63",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the verified panel, retained site groups and swap sampler. Tests source variance robustness of its equal-variance noise dimension finding, with new control draws and a quadratic certificate."
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related model study of population readout noise at shared synaptic sites."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
