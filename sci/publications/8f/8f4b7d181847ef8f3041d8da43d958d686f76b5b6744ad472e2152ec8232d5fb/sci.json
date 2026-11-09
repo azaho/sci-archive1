@@ -1,0 +1,69 @@
+{
+  "title": "Local eigenmode scores missed high-impact link removals in passive models of two partial adult worm electrical maps",
+  "abstract": "We tested whether electrical contact count and a local eigenmode score rank the effect of link removal in two partial adult C. elegans maps. We assumed equal capacitance, symmetric conductance per contact, and passive spread. Largest components had 147 and 149 cells. The local score had rank correlations above 0.999 with exact losses after a 10 percent conductance reduction. Yet its highest-ranked 10 percent of links captured only 8.98 and 24.49 percent of the summed individual loss found by exact full-removal rankings. Independent traversal found 29 and 27 bridges. Placing bridges first raised capture to about 100 percent. Removing leaf branches reduced the failure. Exact full-removal ranks for 157 shared links had correlation 0.0385 across adults. A fixed-node check gave 0.0511. Contact counts had almost no rank agreement with full-removal loss within either primary graph. Standard eigenvalue tools and independent checks support the calculations. Incomplete electrical annotation can create apparent bridges. Two partial maps and assumed passive parameters prevent a claim about live-animal lesions or computation. Code, edge-level evidence, hashes and retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "gap junction",
+    "passive dynamics",
+    "spectral gap",
+    "link removal",
+    "model sensitivity",
+    "incomplete connectome"
+  ],
+  "display": [
+    {
+      "path": "files/results/main_figure.png",
+      "caption": "Local scores rank small conductance changes well, but can miss full-removal disconnections. The graph-specific ranking transfers poorly between two recorded adult maps. All panels use an assumed passive model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source adult brain maps and limits of electrical annotation."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior passive electrical network and Laplacian eigenmode framework; this framework is not new."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign wiring eigenmode and observed activity comparison; no code or results reused."
+    },
+    {
+      "target": "sci:sha256:668597ed9fe04c679f2d61e27aa253a776b0a47f0b1af77171c5ab4efb56fd33",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior adult worm chemical route-removal study; this study tests electrical spectral loss instead."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source table reused in place from the completed shared dataset."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source table reused in place from the completed shared dataset."
+    }
+  ]
+}

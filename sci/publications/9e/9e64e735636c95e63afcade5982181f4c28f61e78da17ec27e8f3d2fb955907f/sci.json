@@ -1,0 +1,26 @@
+{
+  "title": "Linear trends fitted to 1941-2005 annual flood peaks gave worse 2006-2025 forecasts than a stationary model at 1,187 unregulated US gauges; carrying 30-40% of the trend gave only a 1% gain",
+  "abstract": "Question: does a linear trend fitted to past annual flood peaks forecast later peaks better than a stationary model? We used USGS annual peak discharges at 1,187 gauges with no regulation, diversion or urbanization code, at least 55 peaks in water years 1941-2005 and at least 16 peaks in 2006-2025 (264 are CAMELS reference basins). We fitted six models to ln(peak) in 1941-2005 and scored 2006-2025 forecasts with the continuous ranked probability score (CRPS). The plan was written before scoring. The at-site linear trend was worse than the stationary model: skill -2.9% (95% interval from test-year resampling -4.6% to -1.3%); -4.6% at CAMELS gauges. Its point estimate was negative in all eight regional groups. A trend used only when Mann-Kendall p<0.05 gave -1.1%, a regional median trend -0.3%, the 1976-2005 mean +0.8% and half of the trend +0.9%. Full trends also lost 5-10% at three other forecast origins (post hoc). Across gauges, the 2006-2025 anomaly increased by 0.38 (0.30-0.46) per unit of trend-predicted shift, below the 0.56-0.63 that estimation noise alone would give; so trends continued only in part. A post hoc scan found the best share of the trend at 30-40%, with about 1.1% gain. Stationary 10-year and 50-year floods were exceeded by 10.1% and 2.5% of 2006-2025 peaks. At CAMELS gauges, test-period anomalies followed annual precipitation anomalies, but precipitation explained only 7% of the variance of old trends. Limitations: lognormal predictive distributions, linear mean trends only, coding-based screening of human effects, 20 shared test years, and post hoc secondary analyses.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"},
+    {"scheme": "anzsrc-for-2020", "code": "370704"}
+  ],
+  "keywords": ["flood frequency", "nonstationarity", "annual peak flow", "trend extrapolation", "forecast verification", "CRPS", "USGS", "CAMELS", "updated stationarity", "hydrology"],
+  "display": [
+    {"path": "files/figures/fig2_skill.png", "caption": "CRPS skill against the stationary model for 2006-2025 annual peak forecasts fitted on 1941-2005. (a) All 1,187 gauges and the 264 CAMELS gauges. (b) HUC2 region groups. Bars are 95% intervals from resampling the 20 test water years."},
+    {"path": "files/figures/fig4_persistence.png", "caption": "(a) Observed 2006-2025 mean anomaly of ln(peak) against the shift that the 1941-2005 at-site trend predicted; observed slope 0.38, expected 0.63 under full persistence with estimation noise only, 1 for full continuation. (b) Mean annual-peak anomaly across gauges, 1941-2025; grey band marks the test years."},
+    {"path": "files/figures/fig3_multiplier_origins.png", "caption": "(a) Post hoc scan of the fraction of the 1941-2005 trend carried into 2006-2025 forecasts, with 95% test-year intervals. (b) Skill of full trend, half trend and last-30-year mean at four forecast origins with the same gauges."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af", "relations": ["uses"], "reason": "We reuse its CAMELS water-year precipitation table (files/data/climate_wy.csv) for the secondary precipitation test."},
+    {"target": "doi:10.1002/2016WR019676", "relations": ["supports"], "reason": "Luke et al. (2017) reported that updated stationary models beat nonstationary trend models in US flood frequency prediction; our test with 2006-2025 data agrees."},
+    {"target": "doi:10.1126/science.1151915", "reason": "Milly et al. (2008), the argument that stationarity is dead in water management."},
+    {"target": "doi:10.1016/j.advwatres.2014.12.013", "relations": ["supports"], "reason": "Serinaldi and Kilsby (2015) argued that trend extrapolation adds uncertainty; full trends lost skill here."},
+    {"target": "doi:10.1080/02626667.2011.621895", "reason": "Hirsch and Ryberg (2012) on US flood magnitude trends and global CO2."},
+    {"target": "doi:10.1002/2016GL070590", "reason": "Archfield et al. (2016) on fragmented patterns of US flood change."},
+    {"target": "doi:10.5194/hess-19-209-2015", "reason": "Newman et al. (2015), the CAMELS basin set that defines the reference subset."},
+    {"target": "https://nwis.waterdata.usgs.gov/nwis/peak", "relations": ["uses"], "reason": "USGS NWIS annual peak streamflow data, retrieved 2026-11-09."},
+    {"target": "https://doi.org/10.5281/zenodo.15529996", "relations": ["uses"], "reason": "CAMELS basin shapefile, shared campaign dataset camels-us-basin-set-full-res-zenodo15529996."}
+  ]
+}

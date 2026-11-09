@@ -1,0 +1,47 @@
+{
+  "title": "Drier summers were followed by later, not earlier, autumn leaf colouring at German phenology stations in 1951-2024; the Swiss estimate had the same sign but was uncertain",
+  "abstract": "Question: do dry, hot, or hot-and-dry summers change the date when 50% of tree leaves have autumn colour? Data: 578,945 DWD records (6,402 German stations) and 17,988 MeteoSwiss records (173 Swiss stations), 1951-2024, for beech, birch, horse chestnut, larch, and oak in Germany only. Weather came from E-OBS v31.0e (0.25 degree): June-August Tmax, June-August precipitation z-score, and September temperature. For Germany in 1991-2024 we also used DWD 1 km soil moisture. Models had station and 5-year period fixed effects and two-way clustered errors. We wrote the plan before we fitted the models. Result: drier summers were followed by later colouring, not earlier colouring. In Germany the delay was +0.52 days per 1 SD drier summer (95% CI +0.14 to +0.90). It was +1.5 days after summers below -1.5 SD, and +1.49 days per 1 SD drier soil (CI +0.85 to +2.13). The sign was the same for all five species, in both periods and in four regions. Swiss estimates had the same sign for all four species, but the pooled CI included zero (+0.42, CI -0.13 to +0.97), and a placebo with next summer's rain had a similar size. No sample showed earlier colouring after dry summers with a CI that excluded zero. Summer heat and the heat x dryness interaction were not robust: they changed sign with the design and with the period, and the placebos were not zero. A 1 C warmer September delayed colouring by 1.2-1.4 days. Limitations: coarse weather grid; no observer identity; subjective 50% phase; within-year (station + year) models gave much smaller precipitation effects; colouring in the 2018 drought was earlier than predicted; the weather model did not predict 2018-2024 better than a trend.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": [
+    "autumn phenology",
+    "leaf senescence",
+    "leaf colouring",
+    "drought",
+    "summer heat",
+    "compound extremes",
+    "soil moisture",
+    "DWD phenology",
+    "MeteoSwiss phenology",
+    "E-OBS",
+    "Fagus sylvatica",
+    "Betula pendula",
+    "Larix decidua",
+    "Quercus robur",
+    "Aesculus hippocastanum",
+    "fixed effects",
+    "placebo test",
+    "observation bias",
+    "climate change",
+    "Germany Switzerland"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_dryness_effect_by_species.png", "caption": "Change in the 50% autumn colouring date per 1 SD drier June-August, by species. Filled dots: station and 5-year period effects. Open dots: station and year effects. Diamonds: German 1 km soil moisture, 1991-2024. Positive values show later colouring after drier summers. Bars show 95% CIs with two-way clustering by year and station."},
+    {"path": "files/figures/fig2_precipitation_classes.png", "caption": "Colouring date by June-August precipitation class, relative to summers with normal rain. Summer Tmax and September temperature are held fixed. Pooled species, station and 5-year period effects, 95% CIs."},
+    {"path": "files/figures/fig3_replication_checks.png", "caption": "Pooled dryness effect in replication, sensitivity and placebo checks for Germany and Switzerland. The Swiss placebo with next summer's rain is of similar size to the Swiss main estimate."}
+  ],
+  "citations": [
+    {"target": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/phenology/annual_reporters/wild/", "relations": ["uses"], "reason": "DWD annual-reporter phenology records (leaf-out, autumn colouring, leaf fall), retrieved 2026-11-09."},
+    {"target": "https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-phenology", "relations": ["uses"], "reason": "MeteoSwiss open phenology data, 175 station files, retrieved 2026-11-09."},
+    {"target": "https://knmi-ecad-assets-prd.s3.amazonaws.com/ensembles/data/Grid_0.25deg_reg_ensemble/", "relations": ["uses"], "reason": "E-OBS v31.0e daily Tmax, Tmin and precipitation, 0.25 degree."},
+    {"target": "doi:10.1029/2017JD028200", "relations": ["uses"], "reason": "E-OBS ensemble dataset description (Cornes et al. 2018)."},
+    {"target": "https://opendata.dwd.de/climate_environment/CDC/grids_germany/monthly/soil_moist/", "relations": ["uses"], "reason": "DWD 1 km monthly soil moisture under grass, 1991-2025."},
+    {"target": "doi:10.1126/science.abd8911", "relations": ["reviews"], "reason": "Sink-limitation hypothesis for autumn senescence (Zani et al. 2020). Our dryness direction agrees with it, but we did not test the mechanism."},
+    {"target": "doi:10.1198/jbes.2010.07136", "relations": ["uses"], "reason": "Two-way cluster-robust variance (Cameron, Gelbach and Miller 2011)."},
+    {"target": "sci:sha256:561f5c0e3a7a18efad0cc29e5dda5836ff1421e8fd8583a4372736a72590cdeb", "relations": ["reviews"], "reason": "Campaign result on August hot days and autumn leaf colour in Japan; related heat test."},
+    {"target": "sci:sha256:6b985255d0d251e826903b13c3f1fa00183954bc0b8ab13f84471fb2a4338953", "relations": ["reviews"], "reason": "Campaign result on spring budding and autumn colour in Japan; related spring carry-over test."},
+    {"target": "sci:sha256:6d514d9c61067aed395fa18a38122d4e5aa0fc0b3de16cec25b249f46293358d", "relations": ["reviews"], "reason": "Campaign result that used DWD phenology for spring frost; we used the same DWD source for autumn phases."}
+  ]
+}
