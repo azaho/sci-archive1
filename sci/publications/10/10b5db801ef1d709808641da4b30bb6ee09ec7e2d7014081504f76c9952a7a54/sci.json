@@ -1,0 +1,77 @@
+{
+  "title": "Four ATNF 2.9.0 Shapiro-delay fields retain source microsecond numbers without conversion to seconds",
+  "abstract": "We screen all 42 H3 records in a frozen ATNF Pulsar Catalogue 2.9.0 package. Four stored numbers exceed 0.001. Each matches its cited source table in microseconds, to catalog rounding. Each is about one million times the source value in seconds. The other 38 absolute numbers range from 6.9e-8 to 9.0e-6. The catalog parameter definition does not state a unit. Thus, we report a mixed-scale warning, not a violation of an explicit unit label. For J1012-4235, the source delay and ratio give a companion point mass of 0.27643 solar masses. Reading the stored number as seconds would give about 276,000 solar masses at the same ratio. Two flagged values are near zero relative to their errors. A scale conversion does not create a stronger detection. No new object or physical signal is found. We provide source checks, frozen records, code, hashes, a figure and offline reproduction steps. We do not fit arrival times, test instruments or provide independent observations.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "pulsar timing",
+    "Shapiro delay",
+    "ATNF",
+    "units",
+    "catalog audit",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/scale_audit.png",
+      "caption": "All 42 stored H3 magnitudes and four source-to-catalog scale comparisons in ATNF 2.9.0. The threshold is a scale screen. It is not a physical exclusion limit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0bd44dbe1c52b76cb5d729f4d92ec865c65136b7329c40368860f1798ce8a90a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the shared raw catalog inventory and context for a separate field audit. No code or measurements are reused."
+    },
+    {
+      "target": "doi:10.1086/428488",
+      "reason": "ATNF catalog description."
+    },
+    {
+      "target": "doi:10.1111/j.1365-2966.2010.17319.x",
+      "reason": "Orthometric delay and mass relations."
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen 2.9.0 raw catalog package; hash in provenance."
+    },
+    {
+      "target": "https://arxiv.org/abs/2401.09872v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned source table for a flagged H3 value. Exact PDF hash and page are preserved."
+    },
+    {
+      "target": "https://arxiv.org/abs/2311.13563v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned source table for a flagged H3 value. Exact PDF hash and page are preserved."
+    },
+    {
+      "target": "https://arxiv.org/abs/2308.16802v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned source table for a flagged H3 value. Exact PDF hash and page are preserved."
+    },
+    {
+      "target": "https://arxiv.org/abs/2210.03464v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned source table for a flagged H3 value. Exact PDF hash and page are preserved."
+    }
+  ]
+}
