@@ -1,0 +1,89 @@
+{
+ "title": "In mouse V1, distance-matched EM wiring predicted slice connection rates of excitatory inputs to interneurons and of Pvalb-like outputs within 20%, but not of inhibition onto interneurons",
+ "abstract": "Question: at matched soma distance, does electron microscopy (EM) wiring predict the connection rates that paired recordings detect in mouse V1 slices? Data: MICrONS minnie65 v1300 (one mouse; 75 extended excitatory and 98 proofread inhibitory axons; inhibitory axons put in perisomatic, distal and interneuron-targeting groups as Pvalb-, Sst- and Vip-like) and Allen Synaptic Physiology r2.1 (21,958 probed mouse V1 pairs, 2,171 slices). Method: ratio R of observed physiology connections to EM-expected connections in 25 um distance bins, per class pair (22 pairs); bootstrap over EM axons and slices; tests of distance, slice depth, virtual slicing of EM synapses, and synapse location and size. Results: excitatory inputs to Pvalb, Sst and Vip cells agreed (R 1.06, 0.80, 1.05) and Pvalb to excitatory gave R 0.80 (0.69 to 0.95). Excitatory to excitatory gave R 1.47 (1.24 to 1.79), 1.23 for the more complete half of EM axons, which is consistent with incomplete EM axons. Sst to excitatory gave 0.46. Inhibitory connections onto interneurons gave R 0.09 to 0.74 in all nine class pairs (Sst to Sst 0.09, Vip to Vip 0.09). R did not fall with distance (except excitatory to Pvalb) and had no clear slice-depth term; virtual slicing removed only about 10 percent of EM connections at the median recorded depth of 71 um. EM synapse distance from the target soma and synapse size did not explain the inhibitory differences; target class did. Limitations: one EM animal, 20 to 37 source axons per class, EM groups are not Cre classes, approximate EM layers, different ages and protocols, and an excitatory axon-status criterion chosen after inspection of output counts.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "Allen Synaptic Physiology",
+  "connection probability",
+  "paired recordings",
+  "interneurons",
+  "slice truncation",
+  "mouse visual cortex",
+  "structure-function",
+  "electron microscopy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rates_and_ratios.png",
+   "caption": "A: slice paired-recording connection rate against EM rate at matched soma distance for 22 class pairs in mouse V1 (log axes; dashed line shows equal rates). B: ratio R of observed to EM-expected connections with 95% bootstrap intervals over EM axons and slices. Blue: excitatory sources. Orange: inhibitory sources onto excitatory cells. Green: inhibitory sources onto interneurons. EM inhibitory groups PeriTC, DistTC and InhTC are matched to Pvalb, Sst and Vip."
+  },
+  {
+   "path": "files/figures/fig2_slicing_tests.png",
+   "caption": "Slicing tests. A: R by 3D soma distance for E to E (layer matched), Pvalb to E, and Pvalb to Pvalb. B: fraction of EM connections with at least one synapse inside a 350 um virtual slab, as a function of soma depth below the cut (mean of two cut directions and both sides; lower bound on loss). Grey band: middle 50% of recorded soma depths. C: observed E to E R by the shallower soma depth of each pair, with the virtual-slicing prediction scaled to the overall R."
+  },
+  {
+   "path": "files/figures/fig3_completeness_and_features.png",
+   "caption": "A: EM E to E connection rate (soma distance below 150 um) of each proofread excitatory axon against its output synapse count; 'extended' axons were used in the main analysis. B: R for the 12 class pairs with an inhibitory source against the EM median synapse distance from the target nucleus. Interneuron targets (green) had lower R than excitatory targets (orange) at similar synapse distances."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS EM volume, synapse and connection exports."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Ding et al. 2025 node table; layer labels for EM layer boundaries."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology mouse V1 paired recordings."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07780-8",
+   "reason": "Target-based inhibitory groups (PeriTC, DistTC, InhTC, SparTC) that our EM typing rules follow."
+  },
+  {
+   "target": "https://bossdb.org/project/microns-minnie",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BossDB distribution of the MICrONS static exports."
+  },
+  {
+   "target": "https://portal.brain-map.org/connectivity/synaptic-physiology",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology release 2.1."
+  },
+  {
+   "target": "sci:sha256:370bc73ac3c597a2824ff628d75e4228161dfa549a0e3cdc17fc707a9bc07b1f",
+   "reason": "Earlier campaign result on axon preservation and detected connections in Allen slices; our depth and distance tests address slicing with an EM reference."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Earlier campaign comparison of connectome reproducibility; different question (variability across copies)."
+  },
+  {
+   "target": "sci:sha256:a2b36a55aea9fb9d88a3d2aecfd55f5c7881c794a31bf342f073364a919652c4",
+   "reason": "Earlier campaign MICrONS analysis that also uses the v1300 synapse export and proofread axons."
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "title": "A blind ZTF DR24 search of 91,009 Gaia white dwarfs finds four deep 2022-2025 dimming events, one not reported before, and only 1 of 6 published debris candidates stays highly variable",
+ "abstract": "Question: Do published debris-transit white dwarf (WD) candidates stay active after ZTF DR10, and does a blind search of later ZTF data find new deep dimming events? Approach: We took 91,009 Gaia EDR3 WD candidates (Gentile Fusillo et al. 2021 catalogue, the Bhattacharjee et al. 2025 cuts, Dec > -30 deg) and ZTF DR24 g and r light curves from the SNAD mirror. We calculated variability metrics in two windows: 2018-03 to 2022-01-05 (the DR10 span) and 2022-01-05 to 2025-10-30. We flagged 20-day binned dimming episodes and dip-shaped top-1 % variability, triaged 168 flagged WDs, and tested the remaining events against same-CCD comparison stars. We injected 6,800 grey dips into real light curves to measure detection efficiency. Results: The variability rank of the population persists (Spearman 0.64; 61 % of the earlier top 1 % stay top 1 %). Only 1 of the 6 Bhattacharjee et al. candidates (WD J0923+7326) and 2 of 8 known debris systems stay in the top 1 %. Several known systems also became quiet, so a quiet period does not refute a candidate. The blind search finds four deep, long, grey events: WD J2327+0019, WD J1944-2451 and WD J0015+3038, which van Roestel et al. (2026) report independently, and WD J0558-1449 (Gaia DR3 2992629136205665152, G = 19.86), which they do not list. WD J0558-1449 fades from 2024-09 to median 0.68 (g) and 0.72 (r) and is still faint at the end of the data. In each window the WDs are fainter than all 17 to 444 same-CCD comparison stars. The search detects 59-65 % of 100-day dips 30-50 % deep; seasonal gaps cause most misses. The onset rate of events at least 45 % deep in previously quiet WDs is 1.6e-5 per WD per year (95 % range 3.4e-6 to 4.8e-5), in agreement with van Roestel et al. Limitations: The light curves contain detections only, so total disappearances become gaps and depths are lower limits. WD J0558-1449 has only ZTF data and needs spectroscopy and independent photometry. Triage includes visual inspection. The rates rest on 2 to 4 events.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "white dwarfs",
+  "transiting debris",
+  "planetary debris",
+  "ZTF",
+  "Gaia",
+  "dimming events",
+  "out-of-sample test",
+  "injection-recovery",
+  "occurrence rate",
+  "WD J0558-1449"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_events.png",
+   "caption": "ZTF DR24 g (blue) and r (orange) relative flux of the four deep, long dimming events found by the blind 2022-2025 search. Small points: single epochs; large points: 20-day medians. The dashed line marks the end of the ZTF DR10 span (2022-01-05). WD J2327+0019, WD J1944-2451 and WD J0015+3038 are also reported by van Roestel et al. (2026); WD J0558-1449 is not. The light curves contain detections only, so the 2022 disappearance of WD J2327+0019 appears as an almost empty season."
+  },
+  {
+   "path": "files/figures/fig2_persistence.png",
+   "caption": "Left: ZTF variability percentile before and after 2022-01-05 for 78,963 WDs (grey density), the 8 known debris-transit WDs (blue) and the 6 Bhattacharjee et al. (2025) candidates (orange); objects 3, 7 and 9 lie together near 99-100 in both windows. Right: fraction that stays in the top 1 % or top 5 % after 2022."
+  },
+  {
+   "path": "files/figures/fig4_injection.png",
+   "caption": "Injection-recovery of grey dips in real 2022-2025 light curves. Left: detected fraction (solid) and fraction with at least 6 epochs in the dip core (dashed) for 10-, 30- and 100-day dips. Right: detected fraction by Gaia G magnitude for three long-dip cases and for sparse short dips."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48550/arXiv.2502.05502",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the six debris-transit candidates and of the variability metric and Gaia cuts; we test the candidates with ZTF data after DR10."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2609.08923",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent alert-based discovery of the deep obscuration events; our light-curve search recovers three of their events and gives a consistent rate for deep events."
+  },
+  {
+   "target": "doi:10.1093/mnras/stab2672",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia EDR3 white-dwarf catalogue used to build the sample."
+  },
+  {
+   "target": "sci:sha256:97c6da24f8fa311870f3f7fe127c3ddc1fc511ceb88dc4eec61bcdf9dc04e6b6",
+   "reason": "Related campaign search of TESS 2-minute data of nearby white dwarfs for transits."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "reason": "Related campaign search for long dimming events in Gaia Science Alerts."
+  },
+  {
+   "target": "https://db.ztf.snad.space",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SNAD mirror of ZTF DR24 light curves."
+  }
+ ]
+}
