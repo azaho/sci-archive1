@@ -1,0 +1,68 @@
+{
+  "title": "Reverse responses gave no clear added prediction gain in 6389 worm pairs after wiring and cell controls",
+  "abstract": "We tested whether a detected response in the reverse direction helps predict a forward response after controls for wiring, cell identity and observation count. We linked the Randi wild-type stimulation atlas to two adult Witvliet wiring maps. The sample had 6,389 unordered pairs and 745 detections in 12,778 ordered pairs. Both directions of each pair stayed in the same validation fold. Adding the reverse response changed mean log loss from 0.188085 to 0.184228. The reduction was 0.003856, with a nominal conditional 95 percent node bootstrap interval from -0.000199 to 0.008529. Thus the main test left the added prediction gain uncertain. Stronger regularization and source exclusion gave intervals above zero. Raw reciprocal detection was common, but this does not prove direct feedback. Aggregate responses, different anatomical animals, a fixed additive model and intervals that omit model refits limit the result. Code, linked pair tables, predictions, uncertainty draws, source hashes and a figure support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "evoked responses",
+    "reciprocity",
+    "connectome",
+    "conditional prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Raw forward detection shares and conditional prediction gains. Counts label ordered pairs. Intervals hold model predictions fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Signal propagation atlas and its detection endpoint."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adult anatomical maps D7 and D8."
+    },
+    {
+      "target": "doi:10.1103/6wgv-b9m6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of anatomical and effective network architecture; our endpoint is conditional reciprocal prediction."
+    },
+    {
+      "target": "sci:sha256:de1b39841752948225c749f9a07d8f9f49a5ea0585c8d6f82731abfbfc71fcf6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign direction test on discordant dyads. It motivates a separate reciprocity test. No code or tables copied."
+    },
+    {
+      "target": "sci:sha256:e369d5d258a831f342d521460ecebdd061a12c2b1a84298d7a8f8da2be62c525",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior path and degree benchmark informs wiring controls. Raw shared files reused; no code copied."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source of the three shared raw files."
+    }
+  ]
+}
