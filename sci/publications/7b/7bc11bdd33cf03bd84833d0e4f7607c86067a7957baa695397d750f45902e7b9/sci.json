@@ -1,0 +1,110 @@
+{
+ "title": "In shallow Global CMT earthquakes of Mw 5.6 and larger (1977-2026), the faulting-style b-value difference came from differences between regions, not from faulting style within regions",
+ "abstract": "Many studies report that the Gutenberg-Richter b-value is highest for normal faults and lowest for thrust faults, and use b as a stress meter. We tested this in 10,194 shallow (depth 40 km or less) Global CMT earthquakes of Mw 5.6 or more from 1977 to mid-2026, with a plan written before the analysis. For all years, b was 1.14 for normal, 1.06 for strike-slip and 0.98 for thrust events (thrust/normal ratio 0.86, 95% cluster-bootstrap CI 0.80-0.92). The full order was present in 1977-2004, but not in 2005-2017, and in the new 2018-2026 data the ratio (0.88, 0.74-1.02) did not exclude 1. When we compared events only inside the same Flinn-Engdahl region (exact exponential likelihood with region fixed effects), the ratio was 0.98 (0.91-1.06): only 13% of the raw log contrast remained. Mc 5.8 or 6.0, depth to 70 km and plunge-based classes gave the same result; 10-degree cells and a declustered catalog kept a small part (ratios 0.93 and 0.91). The difference is not a corner-magnitude effect: it stayed in Mw 5.6-6.5 (ratio 0.87, 0.78-0.96) and in tapered fits with class-specific corners. An exploratory plate-boundary split (PB2002) showed the cause: normal events at oceanic spreading ridges had b = 2.06 and at oceanic transforms 1.50, while subduction normal and thrust events both had b near 1. Inside subduction-zone regions, thrust b was 15% higher than normal b, the opposite of the stress-meter order. Limitations: only Mw 5.6+ global data, so small-earthquake regional results are not tested; Flinn-Engdahl regions are large and mix stress environments; completeness and the 2004 GCMT method change can differ by region and period; the setting split is post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "b-value",
+  "Gutenberg-Richter",
+  "faulting style",
+  "rake",
+  "stress meter",
+  "Global CMT",
+  "tapered Gutenberg-Richter",
+  "corner magnitude",
+  "fixed effects",
+  "composition effect",
+  "out-of-sample test",
+  "plate boundary",
+  "mid-ocean ridge",
+  "subduction zone",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_b_by_class_period.png",
+   "caption": "b-value by faulting class for three periods (shallow GCMT, Mw >= 5.6). Left: Aki-Utsu b for all magnitudes. Right: truncated fit for Mw 5.6-6.5 only. Bars: 95% cluster-bootstrap intervals (region-year clusters)."
+  },
+  {
+   "path": "files/figures/fig3_within_region_ratio.png",
+   "caption": "Thrust/normal b ratio for every planned row. Grey: raw ratio between all events. Orange: ratio within Flinn-Engdahl regions (or 10-degree cells for grid10 rows) from an exponential likelihood with region fixed effects. The raw difference mostly disappears within regions."
+  },
+  {
+   "path": "files/figures/fig4_setting_split.png",
+   "caption": "Exploratory (post hoc). Left: b by PB2002 plate-boundary type and faulting class (n >= 20). Normal and strike-slip events at oceanic ridges and transforms have high b; subduction classes all have b near 1. Right: thrust/normal ratio under different controls, 1977-2026 and 2018-2026."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/nature04094",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Original faulting-style b-value relation (Schorlemmer, Wiemer and Wyss 2005). We find that in global GCMT data at Mw 5.6+ the relation comes from between-region composition."
+  },
+  {
+   "target": "doi:10.1029/2019GL083997",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Faulting style and depth dependence of b (Petruccelli et al. 2019)."
+  },
+  {
+   "target": "doi:10.1029/2001GC000252",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PB2002 plate-boundary step classes used for the exploratory setting split."
+  },
+  {
+   "target": "doi:10.1016/j.pepi.2012.04.002",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Global CMT catalog (Ekstrom et al. 2012)."
+  },
+  {
+   "target": "doi:10.1029/JB086iB04p02825",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Global CMT method (Dziewonski et al. 1981)."
+  },
+  {
+   "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GCMT NDK files (jan76_dec20.ndk and NEW_MONTHLY 2021-2026)."
+  },
+  {
+   "target": "https://github.com/fraxen/tectonicplates",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GeoJSON version of PB2002 steps, commit 339b0c56563c118307b1f4542703047f5f698fae, ODC-BY 1.0."
+  },
+  {
+   "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We read the GCMT monthly NDK files 2021-01 to 2026-06 from this publication."
+  },
+  {
+   "target": "sci:sha256:e52c68b2e1361162f3ebd5cc9a8f17d4109ed89f22dc6ecd14b5e92805a822d0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that one b-value explains the faulting-style Bath-law difference for aftershocks; our within-region null on b for all events agrees with this."
+  },
+  {
+   "target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13",
+   "reason": "Earlier campaign b-value test in GCMT (tidal stress)."
+  }
+ ]
+}

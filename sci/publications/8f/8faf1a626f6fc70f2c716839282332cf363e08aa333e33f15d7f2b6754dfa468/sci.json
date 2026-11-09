@@ -1,0 +1,33 @@
+{
+  "title": "In mouse postsubiculum (31 mice), head-direction cells connect slightly more often to fast-spiking cells with similar tuning; a synthetic-connection control shows the bias is not detection power",
+  "abstract": "Question: do putative excitatory connections from head-direction (HD) cells to fast-spiking (FS) interneurons in mouse postsubiculum prefer partners with similar HD tuning? Duszkiewicz et al. (2024) showed that FS tuning matches local HD input and modelled it with random input sums, but did not test tuning-dependent wiring. Approach: we used DANDI:000939 (31 mice, 1,533 HD cells, 414 FS cells). We detected connections with the cross-correlogram (CCG) rule of the original paper and modelled the connection rate with one fixed effect for each FS cell and a mouse bootstrap. Detection power depends on co-firing, and co-tuned cells fire together. Thus we added synthetic connections of known efficacy to all 23,813 HD-to-FS pairs in the real spike trains and detected them with the same rule. This gives the like-to-like pattern that tuning-blind wiring produces after detection. Results: 1,070 pairs (4.5%) had putative connections. The connection rate increased 10% per SD of tuning similarity (rate ratio 1.10, 95% CI 1.05-1.15). Tuning-blind synthetic connections gave 0.96-1.03, so the observed effect was 1.07-1.15 times the null in all six efficacy scenarios (CIs above 1). The bias held for cross-validated similarity, a second open field, wake-only detection and both probe cohorts. It was uncertain for NREM-only detection and absent for the FS cells with the strongest tuning. Connection strength did not change with similarity. The summed tuning of the detected inputs of an FS cell predicted its tuning weakly (r 0.14 against 0.01-0.05 for detection-weighted random sets). Limitations: CCG connections are putative. The bias was also present in CCG peaks with excess at negative lags, so shared fast input can explain a part of it. The injection model assumes one latency distribution and efficacies taken from detected connections. One session per mouse, postsubiculum only.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"}
+  ],
+  "keywords": [
+    "head-direction cells",
+    "postsubiculum",
+    "fast-spiking interneurons",
+    "like-to-like connectivity",
+    "spike cross-correlogram",
+    "monosynaptic connection detection",
+    "detection bias",
+    "synthetic connection injection",
+    "DANDI:000939",
+    "structure-function"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_main.png", "caption": "A: CCG of one putative HD-to-FS connection with the hollowed-Gaussian baseline and the Poisson bound of the detection rule. B: Connection rate in deciles of HD-FS tuning similarity, divided by the mean rate, for observed connections (95% binomial error bars) and for synthetic tuning-blind connections detected with the same rule (fixed and FS-gain efficacy, q = 0.008). C: Rate ratio per SD of similarity (FS-cell strata, probe distance covariate, 95% mouse bootstrap) for observed connections, six injection nulls and six detection-offset models. D: Correlation between FS tuning and the summed tuning of its detected HD inputs (145 FS cells with 3 or more inputs) and mean of detection-weighted null sets."},
+    {"path": "files/figures/fig2_robust.png", "caption": "A: Observed / null rate ratio per SD of tuning similarity (95% mouse bootstrap) against the fixed-efficacy and FS-gain injection nulls (q = 0.008) for alternative similarity measures, detection epochs, probe cohorts and FS tuning-strength thirds; labels give connections/pairs. B: Per-mouse observed / FS-gain null rate ratio against the number of detected connections (marker area scales with the number of pairs)."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41593-024-01588-5", "relations": ["uses", "supports", "challenges"], "reason": "Source study and cell classification of the data. Our weak input-tuning prediction supports local origin of FS tuning; the detection-robust like-to-like bias questions a fully random input model."},
+    {"target": "doi:10.48324/dandi.000939/0.261016.2310", "relations": ["uses"], "reason": "All spike times, cell labels, waveforms, epochs, sleep states and head direction (CC BY 4.0)."},
+    {"target": "doi:10.6084/m9.figshare.24921252", "relations": ["uses"], "reason": "MATLAB connection-detection code and parameters that we ported to Python (CC BY 4.0)."},
+    {"target": "doi:10.1016/j.jneumeth.2008.12.029", "relations": ["uses"], "reason": "Hollowed-Gaussian convolution baseline for CCG significance."},
+    {"target": "doi:10.1038/nn.3968", "reason": "Earlier evidence for internally organised HD correlation structure in postsubiculum and thalamus."},
+    {"target": "sci:sha256:2fbb19dfa2e2234dfa281f1b5e38f2f7db7a5b739e1b3eab123c787068d68706", "reason": "Campaign study of tuning-dependent CCG connections between rat grid cells; our injection control is relevant to such designs."},
+    {"target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07", "reason": "Campaign study of like-to-like wiring in MICrONS mouse visual cortex with fixed effects for both neurons."},
+    {"target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd", "reason": "Campaign study of class-specific CCG connections in Allen Neuropixels data."}
+  ]
+}
