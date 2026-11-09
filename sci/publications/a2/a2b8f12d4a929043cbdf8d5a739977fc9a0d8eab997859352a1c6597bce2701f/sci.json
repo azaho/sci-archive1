@@ -1,0 +1,69 @@
+{
+  "title": "Removing one HARPS night changes the HD 20794 contrast variance ratio from 0.009 to 5.00",
+  "abstract": "We test time ordering within nights in public velocities of HD 20794. We compare a last-half minus first-half contrast with an even-position minus odd-position contrast. These have equal expected variance for independent zero-mean errors, including unequal error variances. In 361 selected HARPS nights, one night supplies 99.9957 percent of alternating-contrast power. Removing it changes the ratio of mean squared contrasts from 0.00924 to 5.001, with a 95 percent night bootstrap interval of 2.264 to 11.453. A cut on within-night formal-error variation gives a ratio of 4.985. Two extreme velocities have large reported errors. In 57 much shorter ESPRESSO sequences, two reductions give ratios of 1.463 and 1.524, with intervals that include one. Shared spectra prevent independent confirmation between reductions. HARPS uses separate observations but a different time window. A circular-orbit slope bound excludes the three adopted smooth planet signals as the sole source of the ESPRESSO contrasts. No new planet, stellar process, or instrument fault is established. The bundle supplies frozen exposures, balanced-contrast code, sampling responses, permutations, influence checks, source hashes, figures, and offline steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 20794",
+    "HARPS",
+    "ESPRESSO",
+    "radial velocity",
+    "time ordering",
+    "data quality",
+    "correlated noise",
+    "null planet result"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "One HARPS night controls the unfiltered contrast ratio. Error cuts and an influence check change the result. Both main ESPRESSO intervals include equal contrast variance. Windows differ between instruments."
+    },
+    {
+      "path": "files/ordering.png",
+      "caption": "Paired ESPRESSO contrasts agree closely, but use the same spectra. Night bootstrap intervals show the limited evidence for a half-contrast variance excess."
+    },
+    {
+      "path": "files/response.png",
+      "caption": "The exact instantaneous-sample response to a random-phase sine wave depends on period and instrument window. These curves are a method check, not a physical noise fit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202451769",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public velocity tables, known planets, and instrument context."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36930297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source catalog; raw hash and frozen derived exposures are preserved."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2507.07514",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior short-time scatter, pulsation, and granulation study. Our result does not discover the known excess scatter."
+    },
+    {
+      "target": "sci:sha256:9de48b3dd388b73800972e193d666b4cfd778e006290eaa631485594c856e1dc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier campaign study of long-time differences between the same reductions. No code or derived data reused."
+    }
+  ]
+}
