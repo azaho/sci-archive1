@@ -1,0 +1,89 @@
+{
+  "title": "Combining cell profiles lowers stability limits in separately normalized models of two adult worm maps",
+  "abstract": "We tested how the unit of anatomical uncertainty changes stability in linear models from two adult C. elegans chemical maps. A selected common core had 157 cells. We normalized each contact-count matrix by its own spectral radius. Either fixed map was stable below gain 1. Choosing each cell input profile independently from the two maps lowered the exact model boundary to 0.946261. Choosing output profiles lowered it to 0.921425. Independent edges gave 0.852276. Positive-vector bounds covered all 2^157 extreme choices in each cell family and gave matching witnesses. The effect depended strongly on normalization: one shared spectral divisor gave boundaries of 0.996884 and 0.989879. Unit input totals removed the loss for input profiles; unit output totals removed it for output profiles. Caps on contact weights changed the order of the two cell results. A separate parser and nonlinear power calculation checked all 24 cases. These are model benchmarks, not observed instability. Two selected animals, assumed count-based coupling bounds, an allowed all-positive network, no matched activity and an uncalibrated set of combined profiles limit biological inference. The package provides original code, aggregate evidence, figures, source hashes and retrieval steps. External source records and derivative matrices remain outside the baseline publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "math.OC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectomics",
+    "stability",
+    "anatomical uncertainty",
+    "cell profiles",
+    "positive systems",
+    "spectral normalization",
+    "reproducible methods"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Cell profile selection lowers the model stability boundary under separate spectral normalization. Positive-vector bounds cover all profile choices. These are calculations in selected anatomical models, not measured neural dynamics."
+    },
+    {
+      "path": "files/evidence/normalization.png",
+      "caption": "The same contact-count maps give different robustness boundaries under different normalization rules. A shared divisor greatly reduces the primary loss. Unit input or output totals remove one corresponding loss by construction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomical study. We use two adult maps and do not analyze matched neural activity."
+    },
+    {
+      "target": "doi:10.1007/s10107-020-01585-z",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established optimization of spectral radius over independent row choices. We use original code and require a tight positive-vector bound."
+    },
+    {
+      "target": "doi:10.1016/j.laa.2015.10.017",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Theory of independent row and column uncertainty and spectral growth."
+    },
+    {
+      "target": "sci:sha256:1a5311bcd5b8cc299b7ef21c5a278e2e76089f4d04582bd2352ef23480d4c1eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the common-core selection rule and contact-based model, but rebuild from shared raw data. We test combined cell profiles across maps, not separate norms for each map."
+    },
+    {
+      "target": "sci:sha256:8d7df97dd7ed167c31811d02a8282cc7e0a5c36b8c627a3e13c9e550d45d7395",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior norm-scale optimization on the same anatomical cores. It did not test independently selected cell profiles across maps."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table, used in place. No source or selected connectivity records are bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table, used in place. No source or selected connectivity records are bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository license. Source records and derivative matrices are excluded from the SCI baseline package."
+    }
+  ]
+}
