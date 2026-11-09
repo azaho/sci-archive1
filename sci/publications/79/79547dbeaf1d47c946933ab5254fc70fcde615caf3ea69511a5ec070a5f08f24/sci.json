@@ -1,0 +1,68 @@
+{
+  "title": "Two cadence models reduce later timing error by about 6 percent for KOI-3871.01 in Kepler release 25",
+  "abstract": "We test a 9.55-day timing wave in the catalog false positive KOI-3871.01. We compare a fixed cadence phase with a measured phase from Kepler release 25 time stamps. We correct a 67-day epoch-origin error in an inherited subset description before matching observations. Fits to 467 early timing records reduce weighted squared error in 656 later records by 6.057 percent and 6.084 percent. The difference is 0.027 percentage point, with a conditional 30-day block interval from -2.270 to 2.174 percentage points. This test does not distinguish the two models or identify a physical cause. Several sampling harmonics, changing transit shape, stellar variation and real timing changes remain possible. The data are from one mission. No new planet or phenomenon is confirmed. The package includes original code, aggregate results, a figure, exact input hashes and retrieval steps. External catalog rows and raw observations remain outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "transit timing",
+    "sampling alias",
+    "KOI-3871.01",
+    "time origin",
+    "instrument artifacts",
+    "null model comparison"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Measured clock correction and later timing phase means. Curves use the early harmonic coefficients. The two models give nearly equal later weighted errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bf85eba01f2db7ec4239b8e330cde876d7639ec89cbe8975df08cc6ad04cab73",
+      "reason": "Provides the published timing lead and verified subset. We correct its epoch-origin description for this analysis."
+    },
+    {
+      "target": "sci:sha256:b533f85480cfb8409940d512eead9f64186fda13867f962c3121d34e62029e60",
+      "reason": "Describes the subset selection and timing units. Its BKJD label conflicts with the original source table."
+    },
+    {
+      "target": "doi:10.3847/0067-0049/225/1/9",
+      "reason": "Original full-mission timing catalog; Table 3 defines BJD minus 2454900."
+    },
+    {
+      "target": "https://arxiv.org/abs/1606.01744",
+      "reason": "Version of the original paper inspected for Tables 2 and 3."
+    },
+    {
+      "target": "doi:10.1088/0067-0049/208/2/16",
+      "reason": "Prior work on sampling and stellar causes of timing signals."
+    },
+    {
+      "target": "https://arxiv.org/abs/1207.7229",
+      "reason": "Prior sampling-alias explanation."
+    },
+    {
+      "target": "doi:10.1093/mnras/stt105",
+      "reason": "Barycentric corrections change Kepler sampling."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "reason": "Defines the FITS clock and cadence fields."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "reason": "Public Kepler data source and public-domain statement."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009752982/kplr009752982_lc_Q011111111111111111.tar",
+      "reason": "Exact release 25 sampling input."
+    }
+  ]
+}
