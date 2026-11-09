@@ -1,0 +1,71 @@
+{
+  "title": "Recent flow history reduced absolute error by a median 0.36% in 415 US catchments in dry, warm tests during 2000-2014",
+  "abstract": "We tested whether a published gain from recent river flow history also held under absolute error. We used 198,835 fixed test predictions from 415 CAMELS US catchments in 2000-2014. The models were fitted in 1980-1999. The target was a three-day log flow ratio during selected dry, warm periods. Recent flow history reduced mean absolute error at the median catchment by 0.364%. The conditional 95% three-year block interval was 0.221% to 0.527%. A total of 253 catchments improved. The median squared-error reduction was 0.525%, which matched the source result. Capped squared error and origins seven days apart also gave positive median gains. Falling flows supplied 1.761 percentage points of the 1.794% mean squared-error reduction. The smaller 90% of observed changes supplied 0.586 points, with an interval of 0.296 to 0.770 points. Thus the tested gain also held under absolute error and was not confined to the largest changes or to rising flows. Group labels use observed outcomes and have a descriptive role only. This is a reanalysis of the same predictions, not an independent replication. The gains are small. Fixed models, retrospective weather selection, 15 test years, flow measurement error and unverified snow absence limit inference. The result does not identify a physical water store or establish an operational forecast. The package gives frozen predictions, source hashes, code, all score and block results, figures and independent arithmetic checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "streamflow",
+    "CAMELS",
+    "flow history",
+    "absolute error",
+    "squared error",
+    "error decomposition",
+    "reproducibility",
+    "conditional prediction"
+  ],
+  "display": [
+    {
+      "path": "files/figures/score_robustness.png",
+      "caption": "Median catchment error reduction stayed positive under three error measures. Bars give conditional 95% three-year block intervals. Squares use origins seven days apart. The distribution panel shows the same 415 catchments; its horizontal range is limited to -10% to 20% for clarity. Full scores are in basins.csv."
+    },
+    {
+      "path": "files/figures/gain_decomposition.png",
+      "caption": "Falling flows supplied most of the mean gain. Smaller changes also supplied a positive mean contribution. Each group uses the full baseline loss at its catchment as the denominator. Contributions within either split add to mean skill. Group labels use test outcomes and cannot select a forecast in advance. Bars give conditional 95% three-year block intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:88eddf50d9c7f470c5100e90784ddb4ed2d9c0121a63d83268b4bf573f7be159",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of all frozen predictions and raw-data provenance. We change the error measure and split loss improvements by observed direction and size. This is the same sample, not an independent replication."
+    },
+    {
+      "target": "doi:10.5194/hess-21-65-2017",
+      "reason": "Prior evidence that recession definitions and fitting methods can change inferred relations."
+    },
+    {
+      "target": "doi:10.1029/2019WR025448",
+      "reason": "Prior continental analysis of differences between event recession and pooled flow-derivative relations."
+    },
+    {
+      "target": "doi:10.1029/2022WR032690",
+      "reason": "Prior use of flow history in models of recession dynamics."
+    },
+    {
+      "target": "doi:10.1029/2025WR039966",
+      "reason": "Prior climate comparison of flow-history models. Our work tests a simpler fixed model and different error scores."
+    },
+    {
+      "target": "doi:10.5194/hess-19-209-2015",
+      "reason": "Source data design and forcing definitions."
+    },
+    {
+      "target": "doi:10.5065/D6MW2F4D",
+      "reason": "CAMELS hydrometeorological data source."
+    },
+    {
+      "target": "https://zenodo.org/records/15529996",
+      "reason": "Fixed source record for CAMELS v1.2. The upstream publication records member hashes and retrieval instructions."
+    }
+  ]
+}
