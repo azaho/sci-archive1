@@ -1,0 +1,72 @@
+{
+  "title": "Radius sampling distance changes inferred branch matching in selected Allen mouse and human dendrites",
+  "abstract": "We tested how radius sampling distance affects a passive branch-matching score in Allen Cell Types reconstructions. We used the same basal branch points at distances from 1 to 20 micrometres. In 32 selected mouse spiny cells from 32 donors, the donor-weighted geometric mean daughter-to-parent ratio fell from 1.680 to 1.519. In 46 human spiny cells from 18 donors, it fell from 1.939 to 1.495. Ideal matching is 1 under uniform passive cable assumptions. The paired change in mean log ratio was -0.101 in mouse, with a 97.5% donor bootstrap interval of -0.184 to -0.019, and -0.260 in human, with interval -0.324 to -0.201. These intervals adjust for two primary groups. A geometric proof shows that continuous arms at a shared positive junction radius force this ratio toward 2 at zero sampling distance. Descriptive fitted exponents also changed with distance and reached the grid limit near the junction. A larger 5-micrometre support sample retained distance sensitivity. This is a measurement-method result, not evidence that real dendrites violate a physical matching law. Radius interpolation, selected long arms, tissue cutting, and absent electrical measurements limit interpretation. Code, derived radius samples, sample audits, input hashes, checks, and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendritic branching",
+    "Rall rule",
+    "radius interpolation",
+    "passive cable",
+    "measurement sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Radius sampling distance changes the branch score and descriptive fitted exponent in the same selected basal branches. Bars are pointwise 95% donor bootstrap intervals. Exponents at 8 reach the grid limit. This is a test of reconstructed geometry, not measured conductance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/srep00089",
+      "reason": "Prior anatomical test of dendritic conductance matching."
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://s3.amazonaws.com/webflow-prod-assets/689cfbd308fa7373b604d290/68ee796d43e1a8e8d93842f3_Documentation_Cell_Types_Database-Morphology_and_Histology_Overview.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines radius interpolation and node resampling in the reconstruction workflow."
+    },
+    {
+      "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related campaign study used the same reconstruction cache for cell-level response-time prediction. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:88b9dfebbfa1fc27c40464eb8c80b318456bc71309f386543451910d4c62bba8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related campaign study tested apical area and sag; this study audits local radius sampling."
+    }
+  ]
+}

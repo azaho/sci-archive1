@@ -1,0 +1,65 @@
+{
+  "title": "All-division dry and wet winter counts had an uncertain difference in California in 1896-2025",
+  "abstract": "We tested whether winters with low precipitation in all seven California climate divisions occur more often than winters with high precipitation in all seven divisions. We used a fixed NOAA nClimDiv source and 130 November-March totals for 1896-2025. Separate division ranks defined matched 20% tails. Five winters were dry in all divisions and nine were wet in all divisions. The dry-minus-wet rate difference was -3.08 percentage points. A Gaussian copula simulation with refitted marginal ranks gave a two-sided p value of 0.1857. A 95% five-year block interval was -6.15 to +0.77 percentage points. Planned threshold, season and time-span checks also had five-year intervals that included zero. The result leaves this finite-tail contrast uncertain. It does not validate a Gaussian copula or measure hydrological drought. Sparse joint events, changing observations, stationarity assumptions and the fitted Gaussian reference limit inference. The package contains exact source rows, source hashes, annual values, code, all simulation and resampling draws, a figure, an independent arithmetic audit and an exact repeated-run check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "California",
+    "precipitation",
+    "spatial dependence",
+    "Gaussian copula",
+    "dry and wet winters",
+    "finite-tail symmetry",
+    "block bootstrap",
+    "nClimDiv"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Joint dry and wet winter counts and dry-minus-wet rate differences. Lines show 95% five-year block intervals with marginal ranks refitted."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the shared precipitation snapshot and the saved NOAA format document. We test spatial tail symmetry with new code."
+    },
+    {
+      "target": "doi:10.1002/2014JD022748",
+      "reason": "Prior study of spatial precipitation dependence and tail dependence in Norway."
+    },
+    {
+      "target": "doi:10.1029/2023EF003856",
+      "reason": "Prior California study uses copulas for drought severity and duration, a different target."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact dated precipitation source. The shared full-file hash and selected source rows are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source format, units and gridded division construction."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official division codes and names."
+    }
+  ]
+}

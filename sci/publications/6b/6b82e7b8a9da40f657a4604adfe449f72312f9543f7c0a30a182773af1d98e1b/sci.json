@@ -1,0 +1,61 @@
+{
+  "title": "A 663-cell mouse cerebellar map leaves two axon signal directions unresolved in an equal-claw linear model",
+  "abstract": "We tested whether input coverage ensures source recovery in a linear model of a public mouse cerebellar map. The selected core had 663 granule cells and 381 connected parent axons. Equal-claw weights gave rank 379, although every axon had a target. Exact arithmetic certified the rank and two invisible input changes involving seven axons. After random removal of half the cells, 30 samples retained a mean of 342.17 covered sources but only 324.10 recoverable dimensions. Graph matching was a close rank bound, but it exceeded equal-claw rank in 13 partial-removal samples. A selected four-input panel had rank 249 for 306 sources; the full release had rank 729 for 729 sources. Code, compact source tables, all removal scores, exact witnesses and checks are supplied. This is a noiseless linear identifiability test in one animal. It does not measure neural decoding, lesion tolerance, noise amplification, or cross-animal generalization.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "cerebellum",
+    "connectomics",
+    "linear decoding",
+    "structural rank",
+    "cell loss",
+    "input identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/rank_loss.png",
+      "caption": "Coverage and recoverable dimensions after random cell removal. Lines show means; bands give empirical central 95% ranges across 30 removal sets. Equal-claw rank and graph bounds overlap at many points. These ranges are not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-022-05471-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomical observations and circuit motivation."
+    },
+    {
+      "target": "https://github.com/htem/cb2_project_analysis_files/releases/tag/230103",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned upstream graph release; used through converted tables."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=4482afcb-d229-4a08-b50a-3d864c525045",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original converted compact factual tables."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=a7f2a91f-6431-422a-b1c3-31358159abb2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared public-result package supplies unchanged tables, provenance, and prior readout comparison."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=6f48ba36-3eb6-4703-8ae2-3eec85eb59b7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior binary input-change test and core/four-input cohort bounds."
+    }
+  ]
+}

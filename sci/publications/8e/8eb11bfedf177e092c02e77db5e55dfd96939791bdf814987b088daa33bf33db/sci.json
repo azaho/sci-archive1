@@ -1,0 +1,75 @@
+{
+  "title": "Partner sea level gave no clear monthly forecast gain at San Francisco and Seattle in 1986-2025",
+  "abstract": "We tested whether recent sea level at the other Pacific gauge improves monthly mean sea-level forecasts after local history and tropical Pacific temperature are known. We used fixed NOAA sources and expanding fits with earlier data only. Inputs ended two calendar months before each target. Both gauges had the same 463 test months in 1986-2025. Adding three partner levels gave an equal-site mean squared error skill of -0.44%, with a conditional 95% five-year block interval of -1.84% to 0.84%. Site skills were -1.12% at San Francisco and 0.24% at Seattle. All planned checks left equal-site gain uncertain. These results do not establish absence of spatial information. Two selected gauges, revised sources, missing months, linear models, and intervals conditional on fitted forecasts limit inference. The package gives used-field data, source hashes, forecasts, all uncertainty draws, code, figures, and a separate numerical audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "spatial prediction",
+    "NOAA CO-OPS",
+    "ENSO",
+    "monthly forecast",
+    "null result",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Added partner skill. Positive values mean lower error. Bars give conditional five-year block intervals."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "All planned equal-site checks. Each bar gives a conditional 95% interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e21b84ef73e14748707047ddaf5138f5ce291c6c15b223b5b0e1467b782302f9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the same shared sources and monthly local-history benchmark. New code tests partner information."
+    },
+    {
+      "target": "sci:sha256:b53cdfaebef063481ce1f2438d050b819992876f761b67fc6b9da9af0b5a48be",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its seasonal partner comparison motivates this monthly extension."
+    },
+    {
+      "target": "doi:10.1002/2014JC010602"
+    },
+    {
+      "target": "doi:10.1029/2022GL100271"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9414290&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9447130&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

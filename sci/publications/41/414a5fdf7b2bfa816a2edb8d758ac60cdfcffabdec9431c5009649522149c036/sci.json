@@ -1,0 +1,68 @@
+{
+  "title": "Reverse connection calls improved donor-held-out wiring predictions in selected Allen mouse and human slice samples",
+  "abstract": "We tested whether a detected chemical connection helps predict the reverse connection after cell labels, distance, and probing counts are known. We used Allen Synaptic Physiology r2.1. The mouse visual cortex sample had 20,714 directed pairs from 965 inferred donors. The human temporal cortex sample had 1,626 directed pairs from 54 inferred donors. Five donor folds and three fixed allocations gave mean log-loss gains of 0.01110 and 0.00946 nats per direction. Conditional 97.5% donor bootstrap intervals were 0.00757 to 0.01481 and 0.00092 to 0.01817. Both gains stayed positive with two other penalties and with controls for other measured connections. The result supports reverse-call information for local connection prediction in these selected samples. It does not establish a causal rule, a species difference, or an effect on brain activity. The intervals omit model refit uncertainty. Slice damage, shared detection conditions, and inferred donor groups limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "donor validation",
+    "connection prediction",
+    "cortical slices"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Held-out log-loss gain from the reverse chemical connection call. Bars show conditional 97.5% inferred-donor bootstrap intervals. Primary uses C=1; other rows are checks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen slice data link tested chemical connections to cell labels, geometry, and physiology."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1162/NETN_a_00004"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Correct-sign probing rule."
+    },
+    {
+      "target": "sci:sha256:778388aed3cb59a8d8cfc0a1e28ff7e551668221063781735796432fbd47cd81",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reference for inferred donor grouping and donor-held-out connection prediction; a different feature is tested here."
+    },
+    {
+      "target": "sci:sha256:8586c8ce2c6315088ed2bcace5b37fd847f8a2edaf87c335387e5b35921eb217",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign comparison of reciprocal and one-way strength, distinct from connection-call prediction."
+    }
+  ]
+}

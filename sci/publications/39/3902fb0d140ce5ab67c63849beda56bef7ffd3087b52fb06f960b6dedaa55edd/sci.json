@@ -1,0 +1,59 @@
+{
+  "title": "The known KIC 8027456 dip has no distinct moment centroid response in a local Kepler quarter 15 test",
+  "abstract": "We tested whether the known comet-like dip near BKJD 1448.9 in KIC 8027456 has a distinct image position response. A fixed dip template, a quadratic time trend, and two pointing terms give column and row responses of 0.021 and 0.015 millipixel. All six conditional 95 percent residual-block intervals include zero. Absolute responses at 118 overlapping control times exceed the dip values in 67 and 92 percent of comparisons. The flux dip remains about 492 parts per million in the aperture flux. Thus, this test finds no distinct moment centroid response at the known dip. This is a null result under the tested models. The star is bright, and all PSF centroid values are missing. Saturation, aperture effects, time-dependent noise, and blending prevent a source exclusion radius or a physical identification. We report no new event and no independent observation. Code, selected data, exact input provenance, control results, and reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "KIC 8027456",
+    "Kepler",
+    "exocomet candidate",
+    "centroid",
+    "pointing",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/centroid.png",
+      "caption": "Local centroid residuals and same-quarter control amplitudes. The red lines show the known-dip response. Control windows overlap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:405430ec3f34f399d6dd8403af095144d601f286e6dc25b33c6c7f6a38c23367",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the known-event time and fixed SAP split Gaussian shape. Adds an image position test to its shape test."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior discovery of the known event at BKJD 1448.9."
+    },
+    {
+      "target": "https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/archive_manual.pdf",
+      "reason": "Defines moment centroid and local image motion columns."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/centroid.html",
+      "reason": "Describes the centroid response of blended sources."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "reason": "Warns that saturation limits flux-weighted centroid use for bright targets."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456-2013011073258_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public DR25 input. Hash and shared path are in provenance.json."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Matched Allen slice connections leave the link between larger excitatory responses and shorter onset delays uncertain",
+  "abstract": "We tested whether the stronger of two excitatory connections had the shorter onset delay when the connections shared a source or target neuron. We used Allen Synaptic Physiology r2.1 small data. We matched source and target cell classes and layer labels, and limited the soma-distance difference to 50 micrometres. Mouse visual cortex gave donor-weighted fractions of 0.538 for shared sources and 0.548 for shared targets. Nominal 98.75% donor bootstrap intervals were 0.308 to 0.769 and 0.327 to 0.762. Human temporal cortex gave fractions of 0.800 and 0.726, with intervals of 0.200 to 1.000 and 0.381 to 0.964. Every primary interval included 0.5. The human samples had only five and seven inferred donors. Sensitivity estimates changed with sample restrictions. These data do not establish a consistent strength-delay ordering. The package provides a circuit-matched analysis, selected edges, comparison records, donor scores, source hashes, and independent score checks. The analysis does not measure release probability, trial jitter, intact-brain activity, or behavior. Sparse samples, inferred donor labels, selection, and response-fit error limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic strength",
+    "synaptic latency",
+    "shared source",
+    "shared target",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/result.png",
+      "caption": "Donor-weighted fractions for which the larger resting excitatory PSP had the shorter onset delay. Bars are nominal 98.75% donor bootstrap intervals. Every primary interval includes 0.5. Pair counts are combinations, not independent samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for linked slice connectivity and physiology."
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653",
+      "reason": "Experiments show that source spike waveform can change synaptic latency. This study does not repeat their causal test."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of released PSP amplitude, onset latency, and response QC fields."
+    },
+    {
+      "target": "sci:sha256:49076594879e25276472296465ad6c0ae7909fc9366f48d529a9c72225dde88e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared-target matching, donor parsing, and local-distance scope are design precedents. New code and endpoints are used."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Context for limits on inference from small measured slice circuits. No code or tables were reused."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Matched Allen slice pairs do not resolve a cortical depth bias in connection direction",
+  "abstract": "We tested whether detected chemical connections favor the direction from a deeper cell to a shallower cell within a cortical layer. We compared both tested directions of each pair in Allen Synaptic Physiology r2.1 small data. Cells had the same nonsynaptic class and Cre label. The primary test required at least 20 micrometres of pial depth separation and at least 50 test spikes per direction. In 1,022 mouse excitatory pairs, the deep-to-shallow rate minus the reverse rate was -1.57 percentage points. The approximate 98.75% donor bootstrap interval was -3.95 to 0.66 points. In 1,109 mouse inhibitory pairs it was 0.27 points, with interval -2.44 to 3.05. In 355 human excitatory pairs it was -4.23 points, with interval -10.61 to 2.56. Only six human inhibitory pairs qualified. No primary interval excluded zero. Checks of spike count, depth gap and equal axon labels also left direction differences uncertain. The package supplies paired evidence, code and a figure. The result does not establish direction symmetry. Slice selection, incomplete detection, cell labels, inferred donor IDs and sparse discordant pairs limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "cortical depth",
+    "directed connectivity",
+    "paired comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Paired connection-rate differences and approximate donor bootstrap intervals. Human inhibitory data are too sparse for a stable estimate."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of Allen local cortical connectivity and physiology."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/cortical_location.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2014.00015/full"
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior unsigned alignment benchmark; motivates a test that retains depth direction."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior coordinate audit motivates direct pial-depth fields and restricted geometry."
+    },
+    {
+      "target": "sci:sha256:78db75af7974a5a0f0f922345249ce7174884d9195f0ec9ace5492f727e09b6f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior matched direction design for dendrite preservation; our exposure is cortical depth order."
+    }
+  ]
+}

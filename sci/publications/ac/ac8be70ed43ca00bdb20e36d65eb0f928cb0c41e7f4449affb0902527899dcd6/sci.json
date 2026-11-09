@@ -1,0 +1,73 @@
+{
+  "title": "Rheobase contrast gave no clear connection direction prediction gain in three selected Allen slice groups",
+  "abstract": "We tested whether the difference in firing threshold current adds a prediction of detected connection direction between two cortical neurons. We used Allen Synaptic Physiology r2.1 pairs with both directions tested and exactly one detected chemical connection. Five folds held out whole inferred donors. The base model used cell labels, input resistance, membrane time, spike width, and test effort. At ridge penalty 10, the added log rheobase contrast changed donor mean log loss by gains of 0.00172 in 59 human excitatory pairs, -0.00193 in 46 mouse excitatory pairs, and -0.01768 in 212 mouse inhibitory pairs. Conditional 98.33% donor bootstrap intervals were -0.02416 to 0.02965, -0.03923 to 0.03205, and -0.02951 to -0.00749. No group gave a clear gain. The mouse inhibitory loss was smaller and uncertain at penalty 100. The result concerns these fixed models and selected slice graphs. It does not show that excitability has no role in wiring. We supply source code, pair records, held-out predictions, uncertainty draws, a figure, and checks. Small samples, incomplete cell labels, detected-edge selection, inferred donor groups, and uncertainty conditional on fitted predictions limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "rheobase",
+    "connection direction",
+    "intrinsic excitability",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Gain in held-out donor mean log loss from the rheobase contrast at penalty 10. Bars are conditional 98.33% donor bootstrap intervals. No interval is wholly positive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of the Allen slice connectivity and physiology data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-quality-control"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned field definitions, read from the shared source cache."
+    },
+    {
+      "target": "sci:sha256:78db75af7974a5a0f0f922345249ce7174884d9195f0ec9ace5492f727e09b6f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior paired direction audit; this test uses rheobase and conditional direction prediction."
+    },
+    {
+      "target": "sci:sha256:778388aed3cb59a8d8cfc0a1e28ff7e551668221063781735796432fbd47cd81",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior width-similarity connection test; this test concerns signed rheobase contrast."
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior time-constant similarity test and donor grouping precedent."
+    }
+  ]
+}

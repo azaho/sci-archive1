@@ -1,0 +1,68 @@
+{
+  "title": "Contact opportunity correction improved direction predictions for 27 On-Off cells in one mouse retinal patch",
+  "abstract": "We tested a known correction for incomplete sampling of starburst amacrine cell contacts. We linked public electron microscopy contact profiles to calcium responses in the same e2198 mouse retinal patch. A fixed rule predicted motion direction from raw contact counts or from counts divided by local contact opportunities. The primary sample contained all 27 matched cells in the source On-Off direction-selective family. No calcium response filter or fitted direction rotation was used. With a first-five-frame reference, correction increased the mean direction score from 0.286 to 0.581. The gain was 0.295, with a descriptive 95% cell bootstrap interval of 0.157 to 0.450. Median angle error fell from 37.6 to 11.8 degrees. The gain was positive in all four retained repeats and after each imaging field was removed. In 15 On cells, the gain was 0.086 and its interval included zero. A last-five-frame reference removed the clear primary gain. Late frames retained directional calcium signals. This work supplies a quantitative benchmark for the established correction. One patch, source type selection, shared tissue, incidental contacts, and response-window dependence limit its scope. It does not test transfer across animals or prove a synaptic mechanism.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "retina",
+    "structure and function",
+    "contact opportunity",
+    "direction selectivity",
+    "calcium imaging",
+    "e2198",
+    "fixed prediction",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Opportunity correction improves the primary score in 27 On-Off cells from one patch. Cell bootstrap intervals are descriptive. The tail-reference sensitivity gives no clear gain."
+    },
+    {
+      "path": "files/timecourse.png",
+      "caption": "Late frames retain directional calcium signals. Using these frames as a reference changes the tested response measure."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/nature09818",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original same-tissue calcium and EM data, and known direction-selective wiring."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2018.04.040",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dense cell classification, verified matching, and established SAC contact opportunity correction."
+    },
+    {
+      "target": "https://github.com/seung-lab/e2198_Ca_imaging/tree/f061873a23bbdd536f1f1344a5f6519a20779a6e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source contact profiles, calcium data, matching, and coordinate conventions."
+    },
+    {
+      "target": "https://github.com/seung-lab/e2198_reconstruction/tree/7165c900a3a99e35e36c9aeb6966970f1635858b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source cell type definitions."
+    },
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "reason": "Related matched-tissue study with anatomical opportunity controls. Read before question selection; no numerical data or code reused."
+    },
+    {
+      "target": "sci:sha256:0eda2fff1f10190b6a1720016e81f95b57cc7068bb6e709f33c4700e082e1187",
+      "reason": "Related campaign study separates circuit model claims from measured activity. Read before question selection; no data or code reused."
+    }
+  ]
+}

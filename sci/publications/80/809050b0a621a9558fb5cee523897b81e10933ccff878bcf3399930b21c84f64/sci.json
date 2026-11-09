@@ -1,0 +1,71 @@
+{
+  "title": "Missing strength estimates leave a majority strength-matching rule unresolved in 35 Allen mouse reciprocal excitatory pairs",
+  "abstract": "We tested whether most detected reciprocal excitatory pairs have resting voltage responses within a factor of two. Allen Synaptic Physiology r2.1 small data supplied 35 eligible mouse visual-cortex pairs from 26 inferred mice. Only 21 pairs had two usable strength estimates; three met the rule. We kept incomplete pairs and allowed missing estimates to take any positive value. The sharp equal-mouse sample bounds were 8.97% to 52.88%. An approximate donor bootstrap outer range was 0% to 70.51%. Thirteen human temporal-cortex pairs gave sample bounds of 18.18% to 40.91%, with a wider sampling range. Thus the data do not resolve a majority matching rule in a larger population. The package includes code, all selected dyads, exact SQL, missing-data bounds, uncertainty draws, provenance, a figure, and an exhaustive bound check. Small slice samples, inferred donor groups, selection, and unmodeled response-fit error limit inference. This study tests a strength tolerance rule, not weight correlation, conductance symmetry, or intact-brain dynamics.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "synaptic strength",
+    "missing data",
+    "partial identification",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/symmetry.png",
+      "caption": "Blue bars show sharp equal-donor sample bounds on strength matching within a factor of two. Gray lines show approximate donor bootstrap outer ranges. The scatter plot includes complete pairs only."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "sci:sha256:3660af3e941c858b081907633ca3fa44640f6d2660d32d6710e1ee9cb288fca8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-strength prediction study; this report tests a tolerance rule with incomplete pairs."
+    },
+    {
+      "target": "sci:sha256:a2aeb673455fafa84f02dccfa67284e613265afd51dbc7ee409ff83515558b7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Missing-response bounds informed the design; no code or derived records were reused."
+    },
+    {
+      "target": "sci:sha256:e107b9c153ed1b670bed14819c8fd81a858f8dd47d6397afac334a3de011e05a",
+      "reason": "Related reciprocal path study read to assess prior scope."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/resting_state.py",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

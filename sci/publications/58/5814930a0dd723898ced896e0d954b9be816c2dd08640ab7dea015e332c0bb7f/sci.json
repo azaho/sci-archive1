@@ -1,0 +1,82 @@
+{
+  "title": "Visit intervals kept one of three winter temperature slopes negative in selected North American cherry records from 2010 to 2024",
+  "abstract": "We tested whether visit intervals preserved the sign of a winter-temperature slope in selected North American cherry records. We used 138 plant-years from a public USA-NPN extract and four region and period models with site and species effects and a linear year term. Three models gave a separate temperature slope. All three first-presence slopes were negative. Exact date bounds were -4.522 to -0.726, -5.592 to +2.828, and -7.850 to +1.694 days per degree C. The fourth slope was not identified because temperature was in the span of the controls. Removing one New York site made the early eastern bound include both signs. These are bounds for fixed records, not confidence intervals or population effects. Selected sites, sparse site-years, status errors, incomplete weather version information, and unknown earlier flowering episodes limit inference. We provide an audited panel, raw source hashes, code, extreme date assignments, numerical checks, and offline reproduction instructions. We do not test pollution, daily extremes, or causal climate effects.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "cherry",
+    "observation bias",
+    "interval bounds",
+    "winter temperature",
+    "partial identification",
+    "USA-NPN",
+    "reproducible dataset"
+  ],
+  "display": [
+    {
+      "path": "files/results/bounds.png",
+      "caption": "Exact date bounds for the winter-temperature coefficient in four selected region and period samples. Dots use midpoint dates. Orange marks use first-presence dates. Bounds are not confidence intervals. The later western coefficient cannot be separated from the controls."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d997794cd5da3aabb17a004339fe9e877502137746ec1c02d19fd110ce5bb960",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign study of winter warmth and cherry bloom in other national networks. We assess a different North American extract and finite-record date bounds; we do not retest its coefficients."
+    },
+    {
+      "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979/data",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source of the USA-NPN observation, phenometrics, and field-description files. Member hashes and the shared source path are preserved."
+    },
+    {
+      "target": "doi:10.5066/F78S4N1V",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original USA-NPN data source, reused through the pinned GMU compilation."
+    },
+    {
+      "target": "https://usa-npn.github.io/rnpn/articles/VIII_data_cleaning.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provider guidance on prior absences, status conflicts, and multiple first-presence series."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2510.09702",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior use of interval-censored phenology models; this study gives exact bounds for a fixed-record linear coefficient instead."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2503.04924",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on event-time bias from monitoring and status errors. We do not fit its model."
+    },
+    {
+      "target": "doi:10.3334/ORNLDAAC/1328",
+      "reason": "Daymet citation given in USA-NPN provider guidance. The exact weather processing release in the supplied extract is not documented."
+    },
+    {
+      "target": "https://www.usanpn.org/about/terms",
+      "reason": "USA-NPN data credit and license guidance."
+    }
+  ]
+}

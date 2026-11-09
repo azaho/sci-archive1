@@ -1,0 +1,60 @@
+{
+  "title": "Only 20 of 535 missing delay estimates can add cycle constraints in matched Allen mouse slice graphs",
+  "abstract": "We tested whether missing delay estimates limit tests of an additive source-cell plus target-cell timing model in Allen Synaptic Physiology r2.1. We used matched bipartite connection graphs from mouse visual cortex and human temporal cortex. Only 20 of 535 missing mouse estimates lie on cycles in the full confirmed graph. Recovering these 20 would raise the independent constraint count from 18 to 34. Exact subset selection shows that 12 successful recoveries can give 30 constraints. Uniform random selection of 12 has a mean of 18.271 constraints. Recovering all 85 missing human estimates adds no constraint. Strict cell labels reduce the mouse upper bound from 34 to 22. Even full recovery supports omitted-edge predictions on only 111 of 2783 mouse connections and four of 394 human connections. Matrix-rank checks and exhaustive small-graph checks passed. These are conditional graph bounds, not new delay measurements. Fixed connection calls, selected slices, uncertain recovery success, and absent measurement-error estimates limit their use. Code, exact recovery plans, graph records, source hashes, and reproduction instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "measurement recovery",
+    "graph cycles",
+    "experimental design",
+    "identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Exact recovery budgets and optimistic graph support under fixed connection calls and labels. Recovery assumes usable delay estimates can be obtained. Counts are algebraic constraints, not independent biological samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dc740390de93bd1b08e40436cd5f0d979130a25c2386c6c10470f9a8a93bc7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its published group design and graph-support result as the starting point. Adds exact missing-measurement recovery bounds and budget plans. No source code or derived tables were reused."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original local circuit and physiology data."
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653",
+      "reason": "Source spike waveform effects motivate cell-specific timing terms."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Pinned latency definition and chemical connection schema."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

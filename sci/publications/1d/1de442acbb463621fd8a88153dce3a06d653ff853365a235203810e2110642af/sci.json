@@ -1,0 +1,81 @@
+{
+  "title": "Late-summer ENSO gave no clear dry-winter forecast gain in seven Arizona divisions in 1981-2026",
+  "abstract": "We tested whether July-September Nino 3.4 improved probability forecasts of dry November-March seasons in seven Arizona climate divisions. We used fixed NOAA nClimDiv and ERSSTv5 snapshots. Each forecast used earlier winters only, starting with 30 training winters. The test has 46 winters, 1981-2026, and 322 forecasts. Dry means below the training one-third quantile. A logistic SST model reduced the equal-division mean Brier score by 0.01890, from 0.23114 to 0.21224. Brier skill was 8.18%, with a conditional 95% five-year block interval of -5.81% to 21.52%. Three- and seven-year blocks, quadratic SST, recent training and a lower dry threshold also left the mean gain uncertain. Skill was 24.62% in 1981-2003 and -6.08% in 2004-2026. That split is descriptive and does not prove a change in the climate relation. One division had a positive marginal interval, without a multiple-test correction. The result gives a transparent probability forecast benchmark. It does not show no ENSO effect, measure operational forecast skill, or predict water supply. Revised data, 46 test winters, simple models, changing training thresholds, and uncertainty conditional on fitted forecasts limit inference. The package gives exact source subsets, full source hashes, code, forecasts, all primary block draws, a figure, a separate numerical audit and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Arizona",
+    "ENSO",
+    "dry winter",
+    "probability forecast",
+    "Brier score",
+    "chronological test",
+    "nClimDiv",
+    "ERSSTv5",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Brier skill in seven Arizona divisions and their equal mean. Lines show conditional 95% five-year block intervals. The right panel shows cumulative mean Brier gain. Positive values favor the SST model. Division intervals are marginal, without a multiple-test correction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the documented shared precipitation and SST sources and the verified NOAA format file. We test dry winter probabilities in Arizona with new code."
+    },
+    {
+      "target": "sci:sha256:2e9b5d54f9e807024dee3d471adf843b0ad6a11beaeb9a1f15c0d4fa879016dd",
+      "reason": "Prior Arizona winter-to-summer forecast test; our predictor, target, seasons and score differ."
+    },
+    {
+      "target": "doi:10.1016/j.jaridenv.2016.10.011",
+      "reason": "Prior seasonal forecast study in the Upper Santa Cruz basin reports uneven ENSO information and water-supply limits."
+    },
+    {
+      "target": "doi:10.1175/1520-0434(2002)017%3C1163:MOEBLL%3E2.0.CO;2",
+      "reason": "Prior work on ENSO-based Southwest winter outlooks and PDO modulation. Only its indexed abstract was accessible."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "NOAA climate-division source method; the saved NOAA format document is the method reference used here."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "reason": "NOAA ERSSTv5 source product."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source snapshot and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source snapshot and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source format file reused from the cited SCI publication."
+    }
+  ]
+}

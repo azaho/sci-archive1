@@ -1,0 +1,119 @@
+{
+ "title": "Anatomical hierarchy did not reliably predict spontaneous spiking timescales across mouse cortical areas in Allen SHIELD and IBL Neuropixels data; laminar sampling explained the SHIELD association",
+ "abstract": "Question: in mouse isocortex, do areas higher in the tracer-based anatomical hierarchy (Harris et al. 2019) have longer intrinsic timescales of spontaneous spiking, and does Knox 2019 connectome input strength predict these timescales? Data: Allen SHIELD Neuropixels (DANDI:001051; 24 mice, 79 sessions, 29 areas, 289 s spontaneous) and IBL brain-wide map (600 s spontaneous, 0.1-s bins, 34-36 areas), plus published iSTTC unit timescales for IBL (Gulenc 2026). Pre-specified method: mean autocorrelation of regular-spiking units per area and session, exponential fit, model log10 tau = session fixed effect + beta x hierarchy, area-label permutation and mouse bootstrap. Replication rule: permutation p < 0.05 in both data sets. Results: the rule failed. SHIELD beta = +0.20 (10% longer tau per SD of hierarchy; one-sided p = 0.096; mouse CI 0.09-0.31). IBL beta = +0.47 (p = 0.002), but the mouse CI included zero and the IBL area profile was not reliable across random halves of mice (split-half r = -0.08). iSTTC: p = 0.17. The SHIELD profile was reliable (split-half r = 0.70), but higher areas had more sampled L5/L6 units (Spearman 0.65) and deep units had longer timescales; with session x layer fixed effects the hierarchy slope fell to +0.05 (p = 0.76), and with area position covariates to +0.05 (p = 0.67). Exploratory: medial areas had longer timescales after layer control (p = 0.0005). SHIELD and IBL area profiles agreed weakly (r = 0.25, 21 areas); our IBL and the iSTTC profiles did not agree (r = 0.02). A 10-ms estimator gave no slope. Cortical and thalamic input density gave no clear prediction. Thalamic hierarchy did not predict thalamic timescales. Conclusion: in these data, tracer hierarchy does not robustly predict cortical spiking timescales; laminar sampling and the estimator can create or remove the effect. Limitations: few areas per data set, so a 10% per SD effect is not excluded; estimates depend on bin size and fit range; IBL has few cortical units per area; layer labels and waveform classes are approximate; the hierarchy and connectome come from other mice.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "intrinsic timescale",
+  "cortical hierarchy",
+  "mouse connectome",
+  "Allen Institute",
+  "Neuropixels",
+  "SHIELD",
+  "International Brain Laboratory",
+  "structure-function",
+  "autocorrelation",
+  "replication",
+  "laminar sampling",
+  "Knox 2019",
+  "Harris 2019",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_hierarchy_vs_timescale.png",
+   "caption": "Area timescale against the Harris 2019 hierarchy score in Allen SHIELD, IBL (our estimator), IBL (iSTTC estimates of Gulenc 2026) and IBL thalamus. Titles give the area-level Spearman correlation and the primary session-fixed-effect slope with its area-permutation p."
+  },
+  {
+   "path": "files/figures/fig2_robustness.png",
+   "caption": "Hierarchy slope per SD of hierarchy score in all pre-specified variants: estimators, unit classes, firing-rate, layer and position controls. Filled points: two-sided permutation p < 0.05. Bars: mouse-bootstrap 95% CI."
+  },
+  {
+   "path": "files/figures/fig4_layer_confound.png",
+   "caption": "Allen SHIELD layer confound: higher areas had more sampled L5/L6 units, and deep-layer units had longer timescales within sessions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Harris et al. 2019 anatomical hierarchy scores (MouseBrainHierarchy commit 8e4e0dd2) are the structural predictor."
+  },
+  {
+   "target": "https://github.com/AllenInstitute/MouseBrainHierarchy",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of Results/hierarchy_summary_CreConf.xlsx (commit 8e4e0dd271fab84a745d8101aef2f995eb07a2bc)."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 regionalized connectome for input density."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Allen Mouse Brain Connectivity Atlas (Oh et al. 2014)."
+  },
+  {
+   "target": "doi:10.48324/dandi.001051/0.260922.1827",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen SHIELD Neuropixels spontaneous spikes."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2024.06.015",
+   "reason": "SHIELD implant and data set paper."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL brain-wide map data."
+  },
+  {
+   "target": "doi:10.5281/zenodo.21257745",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gulenc et al. 2026 iSTTC unit timescales for IBL used as an independent estimator."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign study that made the SHIELD spontaneous spike cache used here; it linked the Knox connectome to inter-areal spike correlations."
+  },
+  {
+   "target": "doi:10.1038/nn.3862",
+   "reason": "Murray et al. 2014 hierarchy of intrinsic timescales in primate cortex."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2015.09.008",
+   "reason": "Chaudhuri et al. 2015 large-scale model linking connectivity gradients to timescales."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "reason": "Siegle et al. 2021 timescales along the mouse visual hierarchy."
+  },
+  {
+   "target": "doi:10.1371/journal.pcbi.1012355",
+   "reason": "Rudelt et al. 2024 hierarchical timescales in mouse visual system."
+  },
+  {
+   "target": "doi:10.1101/2023.05.12.540610",
+   "reason": "Preprint on hierarchical gradients of multiple timescales in mammalian forebrain."
+  }
+ ]
+}

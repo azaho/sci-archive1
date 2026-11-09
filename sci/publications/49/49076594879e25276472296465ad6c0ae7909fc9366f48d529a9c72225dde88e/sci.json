@@ -1,0 +1,69 @@
+{
+  "title": "Direct inhibitory inputs had shorter onset delays than excitatory inputs at shared targets in selected mouse cortical slices",
+  "abstract": "We compared direct excitatory and inhibitory input delays at the same recorded target cell in Allen Synaptic Physiology r2.1. We used detected connections with a passed response fit and cell-body distance at most 500 micrometres. In mouse visual cortex, 74 targets from 64 inferred animals gave a mean inhibitory minus excitatory onset delay of -0.585 ms. Its nominal 97.5% donor bootstrap interval was -0.836 to -0.351 ms. A check that kept input pairs with distance differences at most 25 micrometres gave -0.321 ms in 29 animals, with an interval of -0.576 to -0.051 ms. Human temporal cortex had 11 targets from seven inferred donors. Its estimate was 1.034 ms, with an interval of -0.167 to 2.296 ms. The human result remains uncertain. This is a comparison of direct inputs from separately stimulated sources. It does not measure a feedforward inhibitory relay or response jitter. Sparse slice samples, source cell composition, fitted onset values, and inferred donor labels limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "shared target",
+    "excitation",
+    "inhibition",
+    "cortical slices"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/delay_contrast.png",
+      "caption": "Direct inhibitory minus excitatory input delay at shared targets. Blue marks show donor-weighted means and nominal 97.5% donor bootstrap intervals. Gray marks show donor contrasts. The first row is primary. Other rows are sensitivity checks. The human inhibitory-target row has one donor and no interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of local cortical connectivity and synaptic physiology."
+    },
+    {
+      "target": "doi:10.1126/science.1061692",
+      "reason": "A feedforward inhibitory relay can constrain integration time. The present direct-input contrast does not measure that relay."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py"
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses inferred donor naming and the local distance scope as design precedents. No code or data tables reused."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-target study tested decay-time matching. This work tests signed onset-delay differences without a disjoint-target comparator."
+    }
+  ]
+}

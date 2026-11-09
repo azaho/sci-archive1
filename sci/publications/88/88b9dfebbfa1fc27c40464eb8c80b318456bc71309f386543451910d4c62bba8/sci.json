@@ -1,0 +1,60 @@
+{
+  "title": "Apical area fraction gave no clear primary sag prediction gain in selected Allen mouse and human spiny cells",
+  "abstract": "We tested whether the fraction of dendrite surface area on apical branches improves voltage-sag prediction after cell size, input resistance, recording voltage, and cell labels are known. We linked Allen Cell Types reconstructions and electrical summaries by cell ID. Whole donors were held out. In 234 mouse spiny cells from 173 donors, squared prediction error fell by 7.17%, but the 97.5% conditional donor interval for error reduction included zero. In 111 human spiny cells from 31 donors, error rose by 4.07%. The human interval was below zero. Larger model shrinkage gave a positive mouse sensitivity interval. Thus, this descriptor did not give a clear common gain under the primary model. The package supplies code, source hashes, derived cell features, predictions, donor scores, uncertainty draws, and a check script. Cut branches, radius errors, selected donors, incomplete cell-type controls, and intervals conditional on fitted predictions limit the result. The test does not establish an ion-channel mechanism or a rule for intact circuits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendritic morphology",
+    "voltage sag",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Change in donor-balanced squared sag error. Positive values favor the added apical-fraction term. Bars show 97.5% intervals conditional on fitted predictions. Separate panels use different horizontal scales. Only primary rows are primary tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source mouse morphology and physiology study."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8",
+      "reason": "Allen human cortical cell-type study."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2018.08.045",
+      "reason": "Direct human and rodent dendrite measurements give context for electrical compartmentalization."
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/ephys/ephys_extractor.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source definition of voltage sag and the sweep-selection voltage."
+    },
+    {
+      "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test of dendrite area and response time in the same cache. It motivated a test of apical allocation rather than total area. No code or numerical evidence was reused."
+    }
+  ]
+}

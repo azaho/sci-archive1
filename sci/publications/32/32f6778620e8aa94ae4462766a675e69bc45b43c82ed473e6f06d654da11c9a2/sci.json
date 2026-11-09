@@ -1,0 +1,81 @@
+{
+  "title": "Reciprocal decay-time matching in eight Allen mouse recordings depends on the uncertainty method",
+  "abstract": "We tested whether reciprocal excitatory connections have closer voltage-response decay times than connections between four separate cells. We used Allen Synaptic Physiology r2.1 data and matched recording, cell class, Cre label, and layer. Eight inferred mice supplied 10 reciprocal and 36 disjoint edge pairs. The donor-weighted mean absolute log decay ratio was 0.609 for reciprocal pairs and 1.074 for disjoint pairs. The difference was -0.465, with a planned nominal 97.5% donor bootstrap interval of -1.005 to -0.048. A post-result exact donor sign-flip check gave a two-sided p-value of 0.0547, or 0.1094 after correction for two groups. Thus, the small sample does not give robust population evidence. Distance matching and removal of endpoint decay values kept the mouse estimate negative. A one-way control check had an interval that included zero. Four human donors gave a small, unstable difference. The package supplies code, all selected pair evidence, source hashes, checks, and a figure. Missing fits, inferred donors, slice selection, and unmeasured membrane state limit the test. This study does not establish a rule across regions, species, or behavior.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "synaptic decay",
+    "small sample",
+    "uncertainty",
+    "matched circuits"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/decay_matching.png",
+      "caption": "Reciprocal minus disjoint mean absolute log decay ratio. Negative values mean closer reciprocal decay times. Bars are nominal 97.5% donor bootstrap intervals. Groups with fewer than five donors have no interval. Sensitivity bars have no joint coverage claim."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of local connectivity and response properties in mouse and human cortex."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the scalar PSP decay estimate."
+    },
+    {
+      "target": "doi:10.1111/ejn.12294",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of one-way and reciprocal E/I connections; it does not test the E/E comparison here."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior decay comparison informed endpoint checks and donor grouping. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-cell timing test informed exact labels and disjoint controls. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:8586c8ce2c6315088ed2bcace5b37fd847f8a2edaf87c335387e5b35921eb217",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reciprocal strength comparison informed the distinction between magnitude and pairwise timing similarity. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:e107b9c153ed1b670bed14819c8fd81a858f8dd47d6397afac334a3de011e05a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior E/I loop study is distinct from the E/E comparison here. No code or data tables were reused."
+    }
+  ]
+}

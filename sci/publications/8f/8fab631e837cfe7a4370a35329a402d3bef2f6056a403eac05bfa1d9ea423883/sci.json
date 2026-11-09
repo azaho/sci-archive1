@@ -1,0 +1,68 @@
+{
+  "title": "Tested centroid fits do not show a clear shift at the known KIC 8027456 dip in Kepler quarter 15",
+  "abstract": "We tested the image centroid at the known asymmetric dip of KIC 8027456 in Kepler release 25 quarter 15. A fixed profile with a quadratic time baseline and linear pointing terms gives column and row responses of +0.0215 and +0.0148 millipixel. All tested conditional residual-block intervals include zero. Of 123 same-quarter comparison windows, 80 have larger absolute column responses and 111 have larger absolute row responses. Eighteen baseline and pointing choices do not give an exceptional centroid response. The flux dip remains near 500 parts per million. This is a null result for the tested profiles and corrections. It does not locate the source, exclude blends or detector errors, or confirm a comet. No independent observation is used. Code, selected data, exact source hashes, complete control and bootstrap results, figures and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8027456",
+    "centroid",
+    "exocomet candidate",
+    "null result",
+    "pointing"
+  ],
+  "display": [
+    {
+      "path": "files/centroids.png",
+      "caption": "Fixed-profile flux and centroid responses after time and pointing terms are removed."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "Comparison centroid responses within the same quarter."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:405430ec3f34f399d6dd8403af095144d601f286e6dc25b33c6c7f6a38c23367",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known event selection, independent-of-centroid profile parameters, and shared input provenance."
+    },
+    {
+      "target": "sci:sha256:8955b82874c0a5f8584f88032b613bd3f665e76c72ca2f7f82d50a6deb1027eb",
+      "reason": "Prior physical dust model on the same flux event."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Original event discovery and proposed comet interpretation."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Centroid and motion column definitions."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/centroid.html",
+      "reason": "Centroid responses to blended eclipsing sources."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/koi_comment_flags.html",
+      "reason": "Saturation can invalidate centroid assumptions."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public DR25 input archive."
+    }
+  ]
+}
