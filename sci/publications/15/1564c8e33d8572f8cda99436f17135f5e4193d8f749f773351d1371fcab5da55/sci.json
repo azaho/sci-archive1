@@ -1,0 +1,75 @@
+{
+  "title": "Kiptopeke levels gave no clear added two-month Baltimore sea-level forecast gain in 2000-2025",
+  "abstract": "We tested whether a past monthly sea level at Kiptopeke improves forecasts at Baltimore beyond local history. We used two fixed NOAA records for 1980-2025 and 308 test months in 2000-2025. Both models used calendar month, linear time and three local levels. The larger model added the latest Kiptopeke level. All inputs and training targets ended at least two months before each target month. Added Kiptopeke data raised root mean squared error from 61.05 to 61.33 mm. The mean squared error reduction was -0.92%, with a conditional 95% three-year block interval of -2.03% to +0.19%. Same-month residual correlation was 0.846, but this did not give clear added forecast value in the tested model. Other lag, trend and training-window checks also gave no positive interval result. This is a small forecast benchmark, not a physical cause test. Revised data, unknown release dates, two chosen gauges and conditional uncertainty limit use. The package includes public-domain numerical inputs, source hashes, new code, all forecasts, resampling indices, an arithmetic audit and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "Chesapeake Bay",
+    "monthly sea level",
+    "chronological forecast",
+    "local history",
+    "null result",
+    "paired block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/result.png",
+      "caption": "Added-gauge error changes for all fixed model checks. Positive values mean lower error. Intervals condition on the saved forecasts. The cumulative curve shows the primary paired error difference."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1007/s10236-024-01605-y",
+      "reason": "Prior work reports shared upper and lower Bay variation at short time scales and different slow variation. It does not test this forecast benchmark."
+    },
+    {
+      "target": "doi:10.5194/os-21-1663-2025",
+      "reason": "Prior ocean dynamic persistence study gives coastal seasonal forecast context; our added predictor is another tide gauge."
+    },
+    {
+      "target": "sci:sha256:044ac87f66bae876bd3aa040284a6ad50471cc67449591b0a4350ef500a8f0a0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published West Coast local-history comparison informed this Bay benchmark. New code and NOAA inputs are used."
+    },
+    {
+      "target": "sci:sha256:53121fc297861d922a0202d2b5f9d0bdbed6acc160505e55ae0ffcd8f88e3692",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse two frozen NOAA source files identified by this published seasonal contrast study. This is overlapping evidence, not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:ba144f0d29d3eae75de893b51c5631b24b7a188a7bcfbec37537abcfcfb142e5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier seasonal shape reconstruction used the same two named sites in a five-site set. Our test predicts absolute monthly levels from past observations."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/"
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/disclaimers.html"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI_research&begin_date=19800101&end_date=20251231&datum=MSL&station=8574680&time_zone=gmt&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for frozen NOAA monthly mean source; SHA-256 defines the saved version."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI_research&begin_date=19800101&end_date=20251231&datum=MSL&station=8632200&time_zone=gmt&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for frozen NOAA monthly mean source; SHA-256 defines the saved version."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Frequency averaging created nonzero loop phases in reversible models of two partial adult worm maps",
+  "abstract": "We tested whether averaging nearby cross spectra preserves the cancellation of cell-specific filters in a spectral loop statistic. Two partial adult worm electrical maps supplied 180-cell reciprocal passive models with equal independent noise. Each latent model was reversible. With low-pass filters and delays, uniform averaging over angular frequencies 0.4 to 1.6 gave median mean absolute loop sines of 0.02260 and 0.02306 across 50 assumed filter patterns. The median shares of fixed qualifying triangles with absolute sine above 0.05 were 10.69% and 11.18%. These are descriptive values, not rejection rates. Computing each loop statistic before averaging frequencies kept the result below 4e-16. A local expansion predicted a bias of order bandwidth squared; its maximum relative vector error at half-width 0.01 was 0.000126. Independent direct solves, quadrature checks and a three-cell counterexample support the calculation. Frequency averaging can therefore create a nonzero loop statistic under a reversible latent null with cell-specific filters. Exact-frequency cancellation alone does not justify a test on averaged spectra. This is a population-model benchmark, not measured neural activity or a validated finite-record estimator. Partial anatomy, assumed physiology, one frequency center and one band shape limit its scope. Code, aggregate evidence, hashes and external retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "spectral loop phase",
+    "frequency averaging",
+    "calcium filters",
+    "reversibility",
+    "C. elegans",
+    "bandwidth bias"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Frequency averaging gave nonzero loop scores in reversible models. Lines show medians over 50 assumed filter patterns. Shading shows their 5th to 95th percentiles, not animal-level confidence intervals. The common-filter control stays at numerical zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d6c6de5ef6c99ae805a9da6948e4006044861ed9fd2053b4214df8a5e05713db",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the passive model and external-map convention; new code tests frequency averaging."
+    },
+    {
+      "target": "sci:sha256:9652ee00da4700676023f465bacb1267c87870245ce3cafdba8f95aa403d26a1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior power test used independent spectral samples at one frequency; it excluded frequency leakage."
+    },
+    {
+      "target": "doi:10.1093/mnras/118.3.276"
+    },
+    {
+      "target": "doi:10.1093/mnras/stt1462"
+    },
+    {
+      "target": "doi:10.7554/eLife.81279"
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
