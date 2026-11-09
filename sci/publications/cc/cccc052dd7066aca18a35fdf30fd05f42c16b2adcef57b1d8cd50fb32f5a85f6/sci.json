@@ -1,0 +1,58 @@
+{
+  "title": "The larger earthquake came first in 68% of selected shallow M5.8+ ComCat pairs in 2020-2025",
+  "abstract": "We tested whether a published earthquake magnitude-order pattern also occurs in later years of a separate catalog. We used a fixed ComCat snapshot. Both events had magnitude at least 5.8 and depth below 70 km. Pairs had a magnitude gap of at least 0.5, a distance of at most 200 km, and a time gap from 1 to below 30 days. In 2020-2025, the larger event came first in 177 of 261 pairs, or 67.8%. The conditional 95% component-bootstrap interval was 54.8% to 77.9%. Equal weights for 43 connected groups gave 70.0%, with an interval of 57.8% to 81.7%. Removal of the largest group gave 65.4%. The 7-30 day check had an interval that included 50%. These results extend an earlier GCMT test beyond 2019. They do not identify causal links, prove a change between eras, or provide an earthquake forecast. Shared source methods, catalog errors, six test years and the component independence assumption limit inference. Code, aggregate evidence, source hashes, a figure and reproduction instructions are included. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquakes",
+    "ComCat",
+    "magnitude order",
+    "temporal asymmetry",
+    "replication",
+    "component bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/ordering.png",
+      "caption": "The larger-first fraction for selected shallow pairs. Left: pair weights and equal connected-group weights. Right: later-period checks. Bars show marginal 95% component-bootstrap intervals. The dashed line is equal order counts. Most checks overlap; they are not independent tests. The 7-30 day check does not exclude equal counts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ce1b9b5357b3f981475c73d4d2c5c64a9b3b952c33e6133d7165869877047bc5",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Source of the fixed pair-order question and cutoffs. Its GCMT sample ends in 2019. It already used component weights and omission checks. We write new code and test a later era in ComCat; this is not an independent replication in source methods."
+    },
+    {
+      "target": "doi:10.1029/2021JB022454",
+      "reason": "Prior work on earthquake time asymmetry. It uses interevent-time increments, not our pair-magnitude score."
+    },
+    {
+      "target": "doi:10.1029/2002JB001991",
+      "reason": "Triggering-cascade theory gives a possible account of foreshock and aftershock patterns. No causal model is fit here."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the shared immutable snapshot; see provenance.json for its hash."
+    }
+  ]
+}
