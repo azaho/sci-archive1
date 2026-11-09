@@ -1,0 +1,112 @@
+{
+ "title": "TESS 2024-2025 data of beta Pic show no exocomet dip deeper than 3e-4, against 6 in 2018-2021 at equal completeness; the rate decrease is not significant (p = 0.05)",
+ "abstract": "Question: Did the rate of exocomet transits of beta Pictoris change between the 2018-2021 TESS sectors (5-7, 32-34) and the new sectors 87, 95 and 98 (2024-2025)? We did not find a published analysis of the new sectors.\n\nMethod: We used one pipeline for all sectors. It removes delta Scuti pulsations (prewhitening at 15-100 cycles per day), removes slow trends with a masked 2-day biweight, and does an iterative matched-filter search with the 1-D exocomet model of Lecavelier des Etangs et al. (2022). The same search on the inverted light curve sets the threshold (S/N 6.38). A momentum-dump veto applies to all events. 800 injected dips give the completeness. SAP flux, 20-s data, QLP FFI photometry and centroids test for artifacts.\n\nResults: The completeness for absorption depth AD >= 3e-4 is 0.91 (2018-2021) and 0.93 (2024-2025). The pipeline detects 6 dips with AD >= 3e-4 in 113.4 searchable days of 2018-2021 and 0 in 70.6 days of 2024-2025. If the rate did not change, 2.33 were expected (one-sided p = 0.052). The 95% upper limit on the new/old rate ratio is 1.33. Over the analysis variants, p is 0.03 to 0.20. Thus the decrease is not significant. Three new exocomet-like dips occur in 2024-2025 (BTJD 3685.32, 3885.24, 4002.30; AD 2.0e-4 to 2.7e-4). The first two also occur in the SAP and 20-s data and have no centroid motion. The third is at a 14-sigma centroid excursion and is probably instrumental. The veto removes 7 of 9 brightening events but only 4 of 32 dips. The pipeline recovers all 9 searchable published events with AD >= 3e-4.\n\nLimitations: The numbers are small. One control event sets the threshold. The SAP and 20-s data use the same pixels. QLP gives only a weak check. Alpha Pic is too variable to be a control star. No follow-up observations were made.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "beta Pictoris",
+  "exocomets",
+  "TESS",
+  "transit photometry",
+  "falling evaporating bodies",
+  "injection-recovery",
+  "delta Scuti",
+  "debris disk",
+  "rate comparison"
+ ],
+ "display": [
+  {
+   "path": "files/fig2_rates.png",
+   "caption": "Left: fraction of 800 injected model exocomet dips recovered at S/N >= 6.38 against injected absorption depth, for 2018-2021 (blue, sectors 5-7 and 32-34) and 2024-2025 (orange, sectors 87, 95, 98). The two epochs have the same completeness. Right: cumulative rate of detected dips per 100 searchable days, without completeness correction. The dashed line is the power law of Lecavelier des Etangs et al. (2022). In 2024-2025 no detected dip is deeper than 2.7e-4."
+  },
+  {
+   "path": "files/fig1_lightcurves.png",
+   "caption": "Beta Pic TESS 2-min PDCSAP light curves after pulsation and trend removal, in 30-min bins, for all ten sectors. Black up-triangles: dips with S/N >= 6.38 that pass the momentum-dump veto (gray: vetoed). Down-triangles: the 30 events of Lecavelier des Etangs et al. (2022). Vertical lines: momentum dumps. Sector 4 (gray) is used only in a sensitivity test."
+  },
+  {
+   "path": "files/fig3_new_candidates.png",
+   "caption": "The three dips found in 2024-2025, in four data products (PDCSAP 2-min, PDCSAP 20-s, SAP 2-min, QLP 200-s FFI; offset for clarity) with the fitted exocomet model (gray). Lower panels: row and column centroids; the gray band is the event. The dips at BTJD 3685.32 and 3885.24 occur in the independent reductions with no centroid motion. The dip at 4002.30 occurs at a row-centroid excursion and is probably instrumental."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41598-022-09021-2",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the 1-D exocomet model, the cleaning recipe, the 30 published events, the event shapes used for injections, and the absorption-depth distribution that we compare with the new sectors."
+  },
+  {
+   "target": "https://github.com/lecaveli/BetaPic_TESS/tree/f1dc39c02eda8c1a687651b58eb9e92cc7edf4d1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Published cleaned light curves and event table, used for comparison."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201935552",
+   "reason": "First TESS detection of exocomet transits of beta Pic."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202142111",
+   "reason": "Exocomet dips of beta Pic in sectors 32 and 33 and a note on the momentum dump near BTJD 2221."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244087",
+   "reason": "Orbital distribution of beta Pic exocomets from TESS transit durations."
+  },
+  {
+   "target": "https://arxiv.org/abs/2601.15216",
+   "reason": "HST and HARPS spectra of April 2025 show low-velocity exocomets during the new TESS epoch."
+  },
+  {
+   "target": "doi:10.1038/nature13849",
+   "reason": "Spectroscopic exocomet families of beta Pic."
+  },
+  {
+   "target": "doi:10.1006/icar.1999.6238",
+   "reason": "Resonance model for the supply of falling evaporating bodies."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission data."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPOC light curves (PDCSAP, SAP, centroids, quality flags)."
+  },
+  {
+   "target": "doi:10.3847/2515-5172/abca2e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "QLP FFI light curves used as a cross-check."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3984",
+   "reason": "Time-windowed biweight trend method."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MAST archive; exact file URLs and SHA-256 hashes are in files/provenance."
+  }
+ ]
+}
