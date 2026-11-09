@@ -1,0 +1,71 @@
+{
+  "title": "Matched Allen mouse slice circuits do not resolve a target benefit for voltage decay similarity",
+  "abstract": "We tested whether shared targets give more voltage decay similarity than current decay similarity, compared with shared sources. We used paired voltage and current decay estimates from the same detected connections in Allen Synaptic Physiology r2.1. Exact recording and cell-label matching retained 85 mouse visual cortex edges from 23 recordings and 22 inferred donors. The target-minus-source contrast was 0.104 natural-log units, with a descriptive 95% donor bootstrap interval from -0.282 to 0.508 and a permutation p-value of 0.6131. Negative values agree with the proposed benefit. The primary test did not resolve it. A smaller human temporal cortex sample gave a negative contrast, with disagreement between bootstrap and permutation inference. Its distance-matched subset gave stronger evidence, but other selections reduced the evidence. These data do not establish a rule across regions or species. Selected circuits, inferred donors, clamp differences, missing fits, and fit uncertainty limit inference. The package supplies new code, extracted edges, pair scores, saved draws, checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic decay",
+    "shared target",
+    "voltage clamp",
+    "multipatch",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/decay_contrast.png",
+      "caption": "Target-minus-source voltage-current decay gap contrast and descriptive 95% donor bootstrap intervals. Negative values agree with a stronger target benefit for voltage similarity. The slow-window and distance checks change selection. Human checks are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and prior cell-type results."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of weighted voltage and current response kinetics."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published design precedent for matched cell-sharing comparisons; no code or evidence tables reused."
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published design precedent for matched cell-sharing comparisons; no code or evidence tables reused."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published design precedent for matched cell-sharing comparisons; no code or evidence tables reused."
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "reason": "Related current-voltage amplitude comparison, read after analysis. This study tests decay similarity."
+    }
+  ]
+}

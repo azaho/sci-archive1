@@ -1,0 +1,111 @@
+{
+  "title": "A storage and rainfall interaction gave no clear mean error reduction for four regional water storage reconstructions in 2019-2025",
+  "abstract": "We tested whether a product of prior storage anomaly and recent precipitation anomaly improves monthly water storage change reconstructions in four fixed land regions. We used CSR RL06.3 GRACE and GRACE-FO storage and GPCP version 2.3 precipitation. Models fitted on 2003-2016 were tested on 84 months per region in 2019-2025. Both models used prior storage, observed rainfall, season, time, and additive square terms. The equal-region mean reduction in mean squared error was -0.049%, with a conditional 95% two-year block interval of -1.539% to +1.876%. The added interaction gave no clear mean gain. Southern Africa had a 1.932% gain, but its adjusted interval included zero when square terms were omitted. An earlier short-training check gave large extrapolation errors. The result does not show that storage dependence is absent. This is conditional reconstruction with observed current rainfall, not an operational forecast or a groundwater recharge estimate. Four selected boxes, one product pair, seven test years, correlated measurement error, and fixed-model resampling limit inference. The package gives exact source subsets and hashes, code, all predictions and draws, figures, source and numerical audits, and an exact repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "GRACE",
+    "GPCP",
+    "total water storage",
+    "precipitation",
+    "conditional reconstruction",
+    "antecedent storage",
+    "model transfer",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/skill.png",
+      "caption": "Held-out error reductions in 2019-2025. Regional intervals adjust for four comparisons. The mean interval is 95%. Fitted models stay fixed."
+    },
+    {
+      "path": "files/storage.png",
+      "caption": "Source storage in four fixed land boxes. Gray shows 2003-2016 training. Yellow shows 2019-2025 testing. Missing months remain gaps."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:fd47a1b2b27bb4ce6df6e323179b5654419a5adc58201c473fdfb3e60417d2d2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the same fixed shared CSR source and land mask for a different regional model test. No analysis code or derived numerical evidence was reused."
+    },
+    {
+      "target": "doi:10.5194/hess-25-511-2021",
+      "reason": "Prior precipitation and storage approach to drought recovery."
+    },
+    {
+      "target": "doi:10.5194/hess-29-3359-2025",
+      "reason": "Prior comparison of precipitation and storage products through drought recovery time."
+    },
+    {
+      "target": "doi:10.5194/esd-11-755-2020",
+      "reason": "Prior evidence for varied and nonlinear precipitation and water storage relations."
+    },
+    {
+      "target": "doi:10.1002/2016JB013007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR mascon method and required source credit."
+    },
+    {
+      "target": "doi:10.15781/cgq9-nh24",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR data identifier in the source metadata."
+    },
+    {
+      "target": "doi:10.7289/V56971M6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GPCP version 2.3 data identifier."
+    },
+    {
+      "target": "doi:10.3390/atmos9040138",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GPCP version 2.3 source method."
+    },
+    {
+      "target": "https://www2.csr.utexas.edu/grace/RL0603_mascons.html",
+      "reason": "Source grid, processing, and resolution documentation."
+    },
+    {
+      "target": "https://tsutterley.github.io/data/GRACE-Months.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Nominal month labels for the two solutions whose midpoints fall in the previous month."
+    },
+    {
+      "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed source path, source attributes and SHA-256 are supplied in the package."
+    },
+    {
+      "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL06_Mascons_v02_LandMask.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed source path, source attributes and SHA-256 are supplied in the package."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed source path, source attributes and SHA-256 are supplied in the package."
+    }
+  ]
+}

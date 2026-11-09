@@ -1,0 +1,87 @@
+{
+ "title": "Warmer local winters were followed by about 0.8% more resident birds per degree C and no change in migratory birds on 4,068 North American survey routes in 1970-2024",
+ "abstract": "Question: does local winter cold change the next breeding-season counts of resident birds, with migratory birds as a negative control? Data: North American Breeding Bird Survey 2025 release (6,870,825 route-species-year records, 368 species, 4,068 routes, 1970-2024), NOAA GHCN_CAMS monthly temperature, and the AVONET migration class (95 resident, 74 partial, 199 migratory species). Method: log(count+1) with species x route x observer and species x year fixed effects; December-February temperature anomaly from a route trend, with class-specific slopes; controls for spring and summer anomalies, survey weather, date and first observer year; two-way clustered intervals (space and year); plan written before model fits. Results: a winter 1 C warmer than the trend was followed by +0.81% (95% CI +0.48 to +1.15) resident counts, +0.55% (+0.26 to +0.85) partial-migrant counts and -0.00% (-0.23 to +0.23) migrant counts. The resident slope was positive with an interval above zero in East and West, 1970-1996 and 1997-2024. A year-relabel permutation test gave p = 0.002 for residents and p = 0.92 for migrants. An extreme cold winter (lowest 10%) gave -2.0% (-3.1 to -1.0) for residents and 0.0% for migrants. The resident slope was larger in the cold part of the species winter range (-0.24 per SD, -0.43 to -0.05). 74 of 95 resident species had positive slopes; Carolina Wren had the largest. Limitations: counts are an index without a detection model; seasonal mean temperature does not measure snow or short cold spells; AVONET gives one class per species; the next-winter placebo for residents was -0.26 (-0.57 to +0.04); migrants had a small positive slope in 1970-1996; the design is correlational. One SD of winter anomaly (1.7 C) changes resident counts by only about 1.4%.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "winter severity",
+  "extreme cold",
+  "resident birds",
+  "migratory birds",
+  "negative control",
+  "AVONET",
+  "GHCN_CAMS",
+  "fixed effects",
+  "climate change",
+  "population dynamics",
+  "North America"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_winter_slopes_forest.png",
+   "caption": "Change in next breeding-season count per +1 C local winter anomaly by AVONET migration class: main model, four region x period subsets, sensitivity models, two-winters-back term and next-winter placebo. 95% two-way clustered intervals."
+  },
+  {
+   "path": "files/figures/fig2_species_and_permutation.png",
+   "caption": "A: species-level winter slopes by migration class with medians. B: pooled resident and migratory slopes under 499 year relabellings of the winter anomaly fields, with observed values."
+  },
+  {
+   "path": "files/figures/fig3_extremes_position.png",
+   "caption": "Extreme cold winter indicator, piecewise colder and warmer than trend slopes, and the winter anomaly x winter thermal position interaction, by migration class."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse and modify its BBS panel code and exact two-way fixed-effects estimator, and we test the winter weather and migration strategy that it lists as untested."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Prior campaign measurement of small northward bird range shifts on BBS routes."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Prior campaign community temperature index study on BBS routes."
+  },
+  {
+   "target": "doi:10.5066/P14SNUV4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey 2025 data release."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS gridded monthly land air temperature."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET migration class and body mass."
+  },
+  {
+   "target": "https://pubs.usgs.gov/publication/5224790",
+   "reason": "Link, Sauer and Niven 2008: seasonal components of avian population change with winter severity covariates."
+  },
+  {
+   "target": "doi:10.1198/jbes.2010.07136",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Two-way cluster-robust inference."
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Daily midpoint bias had nonzero trends at three US gauges in cycle-adjusted 1960-2025 fits",
+  "abstract": "We tested whether the mean of daily maximum and minimum water level can replace monthly mean sea level without a trend error. We used 48 fixed NOAA source files for six US gauges in 1960-2025. Strict daily quality rules, at least 90% month coverage, and all 12 months per year retained 300 station-years. A linear trend plus an 18.61-year cycle gave midpoint-minus-mean bias trends of -0.045 mm/year at Sewells Point, -0.151 at Charleston, and +0.099 at San Francisco. Their five-year wild block intervals excluded zero after a six-site adjustment. The other three intervals included zero. Without the cycle term, all six intervals included zero. Since 1980, the San Francisco interval included zero. Requiring every day of each month left the Sewells Point interval uncertain. Thus a constant midpoint correction can leave a small trend error under the tested model, but the evidence depends on the cycle and data rules. The mean Seattle offset was -300 mm, with no clear trend. Tide shape, day limits, missing data, and source changes can affect these comparisons. The study does not identify a physical cause or an error in NOAA mean sea level. The package gives source hashes, daily and monthly evidence, code, resampling draws, a figure, arithmetic checks, and an offline repeat.",
+  "keywords": [
+    "sea level",
+    "measurement bias",
+    "daily extrema",
+    "NOAA CO-OPS",
+    "tidal cycle",
+    "trend uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/bias.png",
+      "caption": "Annual daily midpoint minus monthly mean sea level, with fitted trend and fixed 18.61-year cycle. Each panel gives a slope and its six-site adjusted interval. The vertical scale differs by site."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source API. Exact saved query URLs and SHA-256 hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of daily hourly extrema, completeness, and inferred values."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/publications/techrpt085.pdf",
+      "reason": "Licate, Huang, and Dusek (2017), NOAA Technical Report NOS CO-OPS 085. Definitions of mean sea level and mean tide level; effect of the nodal cycle on tidal datums."
+    },
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "reason": "Prior test of tide variation in daily midpoint values. The present test concerns long-term bias against monthly mean sea level."
+    },
+    {
+      "target": "sci:sha256:88a8ecb586b2acb27ff62bbbd8efc45653101e22429526bdfdd12ece705f92b7",
+      "reason": "Prior midpoint definition and limits. No derived data or code was copied."
+    },
+    {
+      "target": "sci:sha256:a9e8d06cbaa080ffa921d8d1e3748bae1b1b16c196c6a4195424b0b6178e2da2",
+      "reason": "Prior daily range trend design at these six gauges. We use a related cycle and trend test for a different measure."
+    },
+    {
+      "target": "doi:10.1007/s00190-016-0938-1",
+      "reason": "Prior physical and measurement study of mean tide level minus mean sea level; our calendar-day extrema midpoint is a different measure."
+    },
+    {
+      "target": "doi:10.1002/2014EF000282",
+      "reason": "Prior global evidence for secular changes in tidal high water, low water, and range."
+    }
+  ]
+}

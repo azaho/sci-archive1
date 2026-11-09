@@ -1,0 +1,56 @@
+{
+  "title": "A finite ingress reduces squared fit error by 3.1 percent for the KIC 4078638 dip in Kepler quarter 4",
+  "abstract": "We tested the onset of the known dip on KIC 4078638 at BKJD 355.5 in public Kepler release 25 quarter 4 data. A linear ingress with exponential recovery reduces the main squared fit error by 3.1 percent relative to an abrupt loss with full recovery. The fitted ingress is 3.26 hours. An extra guard near a pointing-loss flag cuts the main fit gain by about 94 percent. Of 6 overlapping real-flux controls with an abrupt loss added, 0 give a larger fit gain. Conditional residual-block draws and 36 sensitivity fits are included. These tests do not identify the event cause or establish a comet. The onset profiles, local baseline, gaps, noise assumptions, and one telescope limit the result. We report no new planet, comet, or independent observation. The package contains the exact raw input, hashes, code, all fits and controls, numerical checks, and offline instructions. Job sci-1107-dell-astronomy-42574411e797; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 4078638",
+    "exocomet candidate",
+    "sensitivity dropout",
+    "ingress",
+    "instrument effects"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/ingress.png",
+      "caption": "Two onset fits to the same quality-zero SAP data, and squared-error gains in conditional abrupt-onset null draws. The selected finite ingress gives only a small fit gain. These are tests of restricted profiles, not an event classification."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:761fcb2599d76f9f45c00043388c58f4d65a479059ca74c962029b6456df01eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the known event selection and the same raw source, and add onset-model comparisons."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202556033",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This catalog identifies the known candidate and its event time."
+    },
+    {
+      "target": "https://ntrs.nasa.gov/citations/20200000631",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This report motivates the abrupt sensitivity-loss alternative."
+    },
+    {
+      "target": "https://stdatu.stsci.edu/kepler/manuals/KSCI-19081-003-KDPH.pdf"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004078638/kplr004078638-2010078095331_llc.fits",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

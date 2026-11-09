@@ -1,0 +1,74 @@
+{
+  "title": "Selected Allen mouse inhibitory routes gave no clear delay shortening beyond class and distance shuffles",
+  "abstract": "We tested measured delay assignment in Allen Synaptic Physiology r2.1. Thirteen mouse visual-cortex routes from ten inferred mice had an excitatory source, an inhibitory relay, and three measured connection delays. Eight targets were inhibitory, three excitatory, and two had no class label. The median two-edge delay minus direct delay was 0.943 ms. Shuffling edge delays within sign, source and target class, region, and 50 micrometre distance bins gave a median of 1.100 ms and a central 95% range of 0.597 to 1.633 ms. The lower-tail probability was 0.2694 in 10000 draws. This gives no clear evidence of shorter margins under the tested reference. It does not show equivalence or random timing. We extend prior relay-budget work to a conditional shuffle test. Small selected slices, coarse labels, cross-recording exchangeability, and absent relay-spike measurements limit the result. We provide code, source provenance, derived records, null draws, a figure, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "feedforward inhibition",
+    "synaptic delay",
+    "conditional shuffle",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing.png",
+      "caption": "Measured route margins and the class-distance shuffle distribution. Targets have different classes. The reference range is not a population confidence interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.1060342"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:a478589cf1e47d44b74d14284efe3cdbceb8118ce391112b985e0b1915249982",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior inhibitory relay-budget study. We reproduce its three E-I-E circuits and add a conditional delay shuffle for a broader target population."
+    },
+    {
+      "target": "sci:sha256:774fe2156e27ae6051c38dec840f31ec617996c807b2216786ddccdd6bfe5819",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior all-excitatory route shuffle study. Our route has an inhibitory second edge."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of limited motif-count variation in small Allen graphs."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior donor-held-out latency study motivates distance matching."
+    }
+  ]
+}

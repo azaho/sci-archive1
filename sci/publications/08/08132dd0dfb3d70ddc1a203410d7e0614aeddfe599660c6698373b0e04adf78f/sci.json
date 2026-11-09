@@ -1,0 +1,57 @@
+{
+  "title": "Reciprocity gave no clear prediction gain after amplitude control in selected Allen excitatory slice connections",
+  "abstract": "We tested whether reciprocal wiring improves predictions of resting response variability in Allen Synaptic Physiology r2.1 slice data. The primary complete-case sample had 184 mouse excitatory connections from 83 inferred animals and 91 human connections from 32 inferred donors. We kept whole donors in five validation folds. After distance, layer, Cre labels, and log response amplitude were included, adding reciprocity changed mean squared error by -0.004508 in mouse and -0.000496 in human, where a positive value means better prediction. Conditional 95% donor bootstrap intervals were [-0.016023, 0.006183] and [-0.034026, 0.031152]. The human regression retained a negative reciprocity coefficient, but this did not produce a clear held-out prediction gain. This extends a prior matched campaign comparison with a conditional prediction test. Selection, inferred donors, one fold partition, shared estimation error, and slice damage limit the result. It does not establish equal variability or a rule for intact circuits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "synaptic variability",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Reciprocity coefficients and donor-separated prediction gains in selected excitatory connections. Lines show exploratory 95% intervals. Prediction intervals hold trained models fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    },
+    {
+      "target": "sci:sha256:decef28e21bcd9cb9de6e4ded9aa55988e4ca24c56c263841e8b29af56b711a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier matched reciprocity and resting variability comparison. This report adds donor-separated conditional prediction tests."
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier donor-separated distance prediction study informed the distinction between association and added prediction value."
+    }
+  ]
+}

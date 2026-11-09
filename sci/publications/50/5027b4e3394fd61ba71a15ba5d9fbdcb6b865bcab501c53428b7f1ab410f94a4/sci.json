@@ -1,0 +1,64 @@
+{
+  "title": "Exact additive delay fits need up to 0.314 ms corrections in selected Allen mouse slice circuits",
+  "abstract": "We calculated the smallest uniform change to stored synaptic delays that permits an exact source-cell plus target-cell model in selected Allen Synaptic Physiology r2.1 slice circuits. Only 57 of 2,248 mouse visual-cortex connections and four of 309 human temporal-cortex connections lie on cycles that constrain this model. The largest required change was 0.314238 ms in ten mouse groups with cycles, or 0.216032 ms in eight groups with strict cell labels. The one human group required 0.077511 ms. Removing delays outside 0.2 to 5 ms did not change these thresholds. Linear programming and independent cycle sums give matching upper and lower certificates. Tests on 511 small graphs passed. These are exact sensitivity bounds for stored values, not measured error bars or a biological rejection test. Sparse selected graphs, missing delays, uncertain fit error and one human group limit the result. Code, derived edges, certificates, provenance and reproduction instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "graph cycles",
+    "bounded error",
+    "additive cell model",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Exact minimum error bounds in groups with cycles. Counts above an assumed error bound are conditional compatibility tests, not population tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dc740390de93bd1b08e40436cd5f0d979130a25c2386c6c10470f9a8a93bc7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its cohort rules and additive cell-delay question; extends its prediction test with exact error bounds. Data extraction and code are independent."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior graph audit of missing-delay recovery; it does not calculate the present error thresholds."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Warm winter day counts gave no repeated gain in US lilac bloom forecasts beyond monthly means in 1988-2008",
+  "abstract": "We tested whether warm winter day counts improve March 1 predictions of first lilac bloom beyond monthly temperature means. We used public plant records and daily CPC maximum temperature. Each model used earlier years only. The added predictor was the number of January-February days at or above 15 C. Four East and West, early and late samples gave 953 predictions in 1988-2008. Mean absolute error gains were +0.202, -0.075, +0.159, and +0.091 days in early East, late East, early West, and late West. A positive value is better. The gain did not repeat across all four samples. The early western interval depended on the bootstrap block length, and its point gain changed sign when the trend or history rule changed. The later West had only 89 predictions. One bloom preceded March 1. A complete-winter rule removed 949 of 3,724 plant records. Unknown visit delays, selected long records, coarse weather, and different plants and bloom rules by region limit transfer. The result does not show that daily temperature has no biological role. It does not measure pollution or a causal climate-change effect. The package includes daily weather extracts, source hashes, code, predictions, all scores, figures, raw-data checks, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "lilac",
+    "winter warmth",
+    "daily temperature",
+    "forecast evaluation",
+    "observation bias",
+    "temporal validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "Forecast error gains in four selected US lilac samples. Positive gain means lower mean absolute error after a warm-day count is added to monthly means. Lines show approximate 98.75 percent block bootstrap intervals. Each early sample has only six years. The early western interval changes with block length."
+    },
+    {
+      "path": "files/annual_gain.png",
+      "caption": "Annual forecast gains and the number of scored plant records. Weather completeness and the prior-history rule leave no main predictions before 1988. The later West has no predictions in 1995-1998."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:551302875a5c81f37d7854aa0bbefe4669a61810d9d3573f192717bbbf19b501",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its public plant-selection rule and check the overlapping records against its verified panel. We rebuild our biological records from the raw archive."
+    },
+    {
+      "target": "sci:sha256:49ce7db055c4ecc8ebe16f883a0d077ef67d764b62b23188c32632a0fa81a93f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior March 1 forecast test used monthly winter means. We test added daily warm-day information with a different monthly baseline and training period."
+    },
+    {
+      "target": "doi:10.1038/sdata.2015.38",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Plant archive methods, reporting rules, and observation limits."
+    },
+    {
+      "target": "doi:10.5061/dryad.0262m",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Plant archive citation. The exact ScienceBase snapshot and hash are recorded."
+    },
+    {
+      "target": "https://www.sciencebase.gov/catalog/item/5499b905e4b093dfafda3575",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.cpc.globaltemp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CPC Global Temperature V1.0 daily maximum temperature. Exact annual snapshot URLs and hashes are recorded."
+    },
+    {
+      "target": "doi:10.1002/joc.3625",
+      "reason": "Daily temperature indices motivate the question. We do not evaluate that model."
+    },
+    {
+      "target": "doi:10.1016/j.cageo.2015.06.015",
+      "reason": "Daily temperature toolbox for Spring Indices. Our count and prediction model differ."
+    }
+  ]
+}

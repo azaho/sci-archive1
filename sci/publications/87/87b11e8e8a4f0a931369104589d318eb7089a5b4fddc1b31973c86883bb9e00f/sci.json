@@ -1,0 +1,57 @@
+{
+  "title": "Matched Allen slice data do not resolve a decay-time difference between reciprocal and one-way excitatory connections",
+  "abstract": "We tested whether reciprocal excitatory connections have longer voltage-response decay times than one-way connections in Allen Synaptic Physiology r2.1. We matched recording, ordered Cre labels, and layers. Mouse visual cortex retained 67 directed connections from 14 inferred donors. Human temporal cortex retained 23 connections from four inferred donors. Equal-donor reciprocal-to-one-way decay ratios were 0.690 and 1.280. Nominal 97.5% Student-t intervals were 0.346 to 1.375 and 0.132 to 12.373. Neither group resolves a difference. Removing endpoint-like fits moved both estimates toward one. Missing fits, slice selection, inferred donor IDs, and small matched samples limit the result. The package includes code, source hashes, extracted evidence, a figure, and independent checks. It does not establish equal decay times or a rule for intact-brain computation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "synaptic decay",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/decay_ratios.png",
+      "caption": "Reciprocal-to-one-way decay ratios. Lines show nominal 97.5% donor Student-t intervals. All include one. Sensitivity checks change matched support."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://brain-map.org/our-research/connectivity/synaptic-physiology"
+    },
+    {
+      "target": "sci:sha256:32f6778620e8aa94ae4462766a675e69bc45b43c82ed473e6f06d654da11c9a2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests decay similarity within reciprocal pairs. The present study tests the level of decay relative to one-way edges."
+    },
+    {
+      "target": "sci:sha256:4f83c3d64b084793a4c371caa1bc8faa4915d86d489ef2b4d631b1e65e02f83c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Informs matched groups and reverse-detection sensitivity."
+    }
+  ]
+}

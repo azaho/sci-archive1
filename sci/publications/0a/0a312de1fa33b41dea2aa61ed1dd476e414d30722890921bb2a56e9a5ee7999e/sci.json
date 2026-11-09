@@ -1,0 +1,54 @@
+{
+  "title": "Current and voltage strength orders differ among selected inputs to the same Allen cortical neuron",
+  "abstract": "We compared resting current and voltage response orders for two inputs of the same sign to the same target neuron in Allen Synaptic Physiology r2.1 small. The primary sample had 165 input comparisons and 274 distinct detected connections. With equal target weights, order reversals occurred in 26.8% of mouse excitatory comparisons, 16.9% of mouse inhibitory comparisons, and 23.5% of human excitatory comparisons. Nominal 98.75% donor bootstrap intervals were 12.7 to 41.8%, 6.9 to 29.2%, and 7.1 to 37.6%. Only two human inhibitory targets were available. Amplitude floors and source-label matching did not remove the observed reversals. Conservative missing-fit bounds describe a broader target set. These results limit a common positive target-gain model for the released fitted peaks. Separate recording modes, fit uncertainty, small selected slice graphs, and inferred donor IDs prevent a causal or intact-brain claim. The package includes code, selected edge fields, every comparison, uncertainty draws, a figure, provenance, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic integration",
+    "current clamp",
+    "voltage clamp",
+    "edge weights",
+    "within-target comparison"
+  ],
+  "display": [
+    {
+      "path": "files/rank_reversals.png",
+      "caption": "Current and voltage strength order reversals among selected inputs to the same target. Each target has equal weight. Intervals are nominal 98.75% donor bootstrap intervals. The two-target human inhibitory sample has no informative interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original local connectivity and synaptic physiology measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source release is identified by the SHA-256 in the report and provenance."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions and limitations of resting current and voltage amplitudes."
+    },
+    {
+      "target": "sci:sha256:bcfd8c73c33c3e3640ca279bd3dbd511f6971f9e6218fb35ade1a52f84e00e61",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior amplitude-floor audit and donor parsing informed the new within-target order test. No source code was reused."
+    }
+  ]
+}

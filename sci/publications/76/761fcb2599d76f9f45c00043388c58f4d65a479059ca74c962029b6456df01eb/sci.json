@@ -1,0 +1,136 @@
+{
+  "title": "Fits with a fixed profile show unequal pixel light losses at the KIC 4078638 dip in Kepler quarter 4",
+  "abstract": "We tested the known comet candidate event at BKJD 355.5 on KIC 4078638. We fitted a fixed time profile to four Kepler aperture pixels. The left two pixels contain 54.2 percent of baseline light and 75.0 percent of fitted event light loss. Their excess loss is 37.79 electron/s, with a conditional 95 percent six-cadence residual-block interval of 29.65 to 46.42. All 108 tested baseline, motion, shape, and quality choices retain a positive excess. Larger spatial excesses occur at six of 51 quality-zero control centers, without the full event depth. A separate KBONUS-BKG extraction retains a 2664-ppm dip on the target. Two close neighbors have no usable fitted-source flux. The separate extraction uses the same observations. These results constrain the event interpretation but establish no comet, source position, or instrument cause. The intervals omit profile and physical-model errors. We have no independent telescope confirmation. The package contains raw pixel data, source excerpts, hashes, code, all fits, resampling draws, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 4078638",
+    "exocomet candidate",
+    "pixel photometry",
+    "instrument effects",
+    "KBONUS-BKG",
+    "source blending"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/pixel_test.png",
+      "caption": "The four pixels have unequal fitted fractional losses. The main event fit uses a fixed profile and a quadratic baseline."
+    },
+    {
+      "path": "files/kbonus_outputs/second_extraction.png",
+      "caption": "The separate source extraction retains the target dip. Missing source flux is not a null result. All series use the same Kepler observations."
+    },
+    {
+      "path": "files/outputs/controls.png",
+      "caption": "The spatial excess alone is not unique among translated control times. These overlapping controls do not give an independent-trial false-alarm probability."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202556033",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This paper gives the known event, candidate status, and one tested profile."
+    },
+    {
+      "target": "doi:10.17909/7jbr-w430",
+      "relations": [
+        "uses"
+      ],
+      "reason": "These public data give the separate source extraction."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2310.17733",
+      "reason": "This paper describes the source extraction method."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This manual defines the data columns and quality flags."
+    },
+    {
+      "target": "https://stdatu.stsci.edu/kepler/manuals/Data_Characteristics.pdf",
+      "reason": "This manual describes detector changes that can mimic a transit."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsp/kbonus-bkg",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This page defines the source-extraction columns."
+    },
+    {
+      "target": "sci:sha256:cecc5729b222124a410bc3f78fca2c15b71dc4e239d71b6d5dc2cd39f9929f7a",
+      "reason": "This published study on a different star motivates the image-motion checks. No numerical data are reused."
+    },
+    {
+      "target": "https://mast.stsci.edu/api/v0/invoke",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The saved requests and responses document the archive search."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004078638/kplr004078638-2010078095331_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This is an exact raw input. The package records its path and hash."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0040/004078638/kplr004078638-2010078095331_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This is an exact raw input. The package records its path and hash."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/kbonus-bkg/lcs/2073/2073228271954235648/hlsp_kbonus-bkg_kepler_kepler_gaia-dr3-2073228271954235648_kepler_v1.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source file gives one saved quarter 4 excerpt. Its full-file hash is recorded."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/kbonus-bkg/lcs/2073/2073228271954238080/hlsp_kbonus-bkg_kepler_kepler_gaia-dr3-2073228271954238080_kepler_v1.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source file gives one saved quarter 4 excerpt. Its full-file hash is recorded."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/kbonus-bkg/lcs/2073/2073228271968527232/hlsp_kbonus-bkg_kepler_kepler_gaia-dr3-2073228271968527232_kepler_v1.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source file gives one saved quarter 4 excerpt. Its full-file hash is recorded."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/kbonus-bkg/lcs/0040/004078614/hlsp_kbonus-bkg_kepler_kepler_kic-004078614_kepler_v1.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source file gives one saved quarter 4 excerpt. Its full-file hash is recorded."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/kbonus-bkg/lcs/0040/004078638/hlsp_kbonus-bkg_kepler_kepler_kic-004078638_kepler_v1.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source file gives one saved quarter 4 excerpt. Its full-file hash is recorded."
+    }
+  ]
+}

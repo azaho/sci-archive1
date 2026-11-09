@@ -1,0 +1,62 @@
+{
+  "title": "Removing monthly mean sea level changes left an uncertain mean rise in high water day pairs at six US gauges in 1996-2025",
+  "abstract": "We tested a mean sea level explanation for changes in consecutive high water days at six US tide gauges. We used 63,969 valid daily hourly maxima in 1996-2025. Each site and calendar month used its 1996-2010 95th percentile as a fixed threshold. The mean fraction of adjacent pairs above both thresholds rose from 2.334% in 1996-2010 to 6.377% in 2011-2025. Subtracting the later-minus-earlier monthly mean sea level change reduced the later rate to 2.614%. This removed 93.1% of the mean rise as a descriptive accounting result. The remaining rise was 0.279 percentage points, with a conditional 95% three-year block interval of -0.043 to 1.001. The mean change in pair rate above a reference that removes day order also remained uncertain. The six site intervals for the remaining change, adjusted as one family, all included zero. This does not establish equal distributions, unchanged storms, or a causal climate share. Selected harbor gauges, short periods, missing data, hourly sampling, tide cycles, and block assumptions limit the result. The package includes source paths and hashes, exact input fields, code, counts, uncertainty draws, figures, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "NOAA CO-OPS",
+    "consecutive high water days",
+    "mean sea level shift",
+    "block bootstrap",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/pairs.png",
+      "caption": "Adjacent high water pair rates in 1996-2010 and 2011-2025, before and after monthly mean sea level adjustment. Site intervals use the simultaneous six-site rule."
+    },
+    {
+      "path": "files/results/serial_excess.png",
+      "caption": "Observed pair rates minus the exact reference that preserves monthly high day counts and removes day order."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:78285c2f5e450f277e3b512035e713b12fc6379d05825aa601bfbbcc92683210",
+      "reason": "Related monthly peak study motivated the mean-level accounting question and had the same modern era split as a secondary check. The source snapshots and sites overlap; no analysis code or tables were copied."
+    },
+    {
+      "target": "sci:sha256:0c2179d5d902061b3eb402d65954f3726dbc27585c4e422809f96ebba12e7f94",
+      "reason": "Related daily persistence study. The present outcome is a fixed early-threshold adjacent-pair rate with an era mean-level adjustment."
+    },
+    {
+      "target": "doi:10.1002/2014JC010443"
+    },
+    {
+      "target": "doi:10.1007/s10236-025-01766-4"
+    },
+    {
+      "target": "doi:10.1017/cft.2025.10008"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source API. All exact request URLs and response hashes are preserved in source_provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official field and quality flag definitions."
+    }
+  ]
+}

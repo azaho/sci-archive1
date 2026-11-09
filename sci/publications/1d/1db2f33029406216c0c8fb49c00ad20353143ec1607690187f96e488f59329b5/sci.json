@@ -1,0 +1,62 @@
+{
+  "title": "Stepwise monthly mean removal raised mean squared boundary jumps by 19% to 61% at six US gauges in 1960-2024",
+  "abstract": "We tested how monthly mean removal changes daily water-level jumps at six US tide gauges. We used fixed NOAA hourly daily extrema and monthly means for retained days in 1960-2024. We compared subtraction of a constant monthly mean with subtraction of a line between adjacent monthly center values. On month boundaries, the equal-site mean increase in mean squared daily midpoint change was 38.85%, with a conditional 95% three-year block interval of 31.84% to 46.55%. Site estimates ranged from 19.48% to 60.83%. All six simultaneous site intervals were above zero. On other days, the equal-site mean increase was 0.051%. The boundary rate of jumps above a fixed interior 95th-percentile threshold rose by 2.90 percentage points on average. One- and five-year block checks retained the mean increase. This is a method comparison, not a measure of error against a known ocean signal. Smooth interpolation need not be the true mean level. Daily midpoints retain tides; monthly means include weather. Selected sites, missing days, fixed source products, and conditional block assumptions limit inference. The package preserves daily evidence, exact source paths and hashes, code, uncertainty draws, a figure, and numerical audits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "monthly mean removal",
+    "daily changes",
+    "month boundaries",
+    "NOAA CO-OPS",
+    "method audit"
+  ],
+  "display": [
+    {
+      "path": "files/boundary_effect.png",
+      "caption": "Stepwise mean removal increased squared daily changes at month boundaries. Points show site estimates. Bars show marginal 95% three-year block intervals. Squares show estimates for other daily transitions. Smooth removal is a comparison method, not known truth."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f4d67b9a7d6b2e5715e6a5d45ebe292c308857b2937a8914c105b9c139e2b5d4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior concurrence test used stepwise monthly mean removal. We use the same public products to test a different method effect."
+    },
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior tide-subtraction audit showed that daily midpoints retain tide variation."
+    },
+    {
+      "target": "sci:sha256:641009dc40f68c8c0a91cc8428977eacf93791683fab23b80cb9828c68f7137b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior tail-persistence test motivated care with daily changes after monthly mean removal."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source API. All 48 source URLs and response hashes are in files/provenance.json."
+    },
+    {
+      "target": "doi:10.5194/os-18-1781-2022",
+      "reason": "Prior sea-level reconstruction converted low-frequency components to daily values by linear interpolation."
+    },
+    {
+      "target": "doi:10.1038/s41597-019-0333-x",
+      "reason": "Prior extreme sea-level study used a running median to remove mean-level variation."
+    }
+  ]
+}

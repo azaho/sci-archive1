@@ -1,0 +1,67 @@
+{
+  "title": "Allen slice onset data give only lower speed bounds under a bounded path and timing-offset model",
+  "abstract": "We tested what cell-body distance and response onset can show about axon conduction speed in Allen cortical slice data. We used 2,534 detected chemical connections from mouse VisP and human TCx. We derived a sharp lower speed bound for a model with bounded unmeasured spatial reach, bounded spike-reference offset, and a nonnegative residual response delay. The model has no finite upper speed bound. Without external limits on reach or offset, no positive lower bound remains. For mouse inhibitory records, the lower bound fell from 1.280 m/s with both limits at zero to 0.594 m/s with 50 micrometres of reach and a 0.1 ms offset. Independent linear programs matched all 60 calculated frontiers. These are conditional constraints, not measured axon speeds. Unknown paths, timing-reference shifts, selected connections, and onset-fit error limit biological interpretation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "conduction speed",
+    "partial identification",
+    "circuit timing"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/bounds.png",
+      "caption": "Conditional lower speed bounds change with assumed unmeasured spatial reach and timing offset. Every model has no finite upper bound. These bounds are not measured velocities."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the public slice recordings."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    },
+    {
+      "target": "doi:10.7554/eLife.93781"
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3060591/"
+    },
+    {
+      "target": "sci:sha256:e711991fef480daf5d149dab04749ec1b1425e3d7c14f53663f7e25e3327401f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its local distance scope and pair-level fit selection; tests mechanistic identification rather than the within-source slope."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99"
+    },
+    {
+      "target": "sci:sha256:ce916367335335034f51625ed00517a37953659fcbf2fb3212172da2a141cb63",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Uses its published uncertainty benchmark as context; this report tests deterministic model feasibility rather than statistical prediction coverage."
+    }
+  ]
+}

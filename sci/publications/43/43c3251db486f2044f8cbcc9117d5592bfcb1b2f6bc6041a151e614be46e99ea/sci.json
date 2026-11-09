@@ -1,0 +1,71 @@
+{
+  "title": "Intervals that include shared cells do not resolve a response similarity effect in selected MICrONS pairs at 60 to 90 degrees",
+  "abstract": "We tested whether natural-response similarity predicts synapse density between strongly tuned neurons with preferred orientations that differ by 60 to 90 degrees. We used public MICrONS v1 anatomy and response tables from one mouse. We matched source neuron, target area and layer, orientation difference, and receptive field distance. Digital-twin responses gave a high-to-low similarity density ratio of 1.312 in 12,287 pairs from 69 sources. Measured responses gave 1.218 in 35,350 pairs from 111 sources. Source bootstrap intervals were 1.087 to 1.590 and 1.077 to 1.359. Resampling shared source and target cells widened the nominal 95% intervals to 0.928 to 1.898 and 0.984 to 1.508. Both then included 1. Point estimates stayed above 1 with finer orientation bins and added soma distance matching. The estimates suggest that orientation alone may not account for response-based wiring, but the test does not resolve that claim under the shared-cell uncertainty check. One mouse, selected neurons, fixed matching groups, and incomplete anatomy limit the result. Code, pair data, source hashes, bootstrap draws, and checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "orientation tuning",
+    "synapse density",
+    "shared cells",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Matched density ratios in one mouse. Blue intervals resample source neurons. Orange intervals resample shared source and target cells. Both intervals are nominal 95% intervals. The large orientation difference groups include 1 under shared-cell resampling."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public v1 node and edge data; original response-based wiring study."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "reason": "MICrONS data collection and linked structural and functional measurements."
+    },
+    {
+      "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Prior campaign test of cell-level controls read before this analysis. Its verified copy of the data release documentation is included. No analysis code or result tables were reused."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/blob/main/funconnect/stats/variable.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source definitions for quality filters or synapse density. Read on 2026-11-08."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/blob/main/funconnect/stats/quantity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source definitions for quality filters or synapse density. Read on 2026-11-08."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+ "title": "Since 2016, Antarctic sea-ice extent anomalies last longer because sector anomalies add instead of cancel; a 2016-2022 minimum-to-maximum fit overpredicted all 2023-2026 maxima (NSIDC v4)",
+ "abstract": "Question: Antarctic sea-ice extent fell to a lower level in late 2016. Did the persistence of its anomalies also change, and does a published post-2016 link (summer minimum predicts the next spring maximum, r = 0.91 for 2016-2022; Purich and Doddridge 2023) hold for new years?\nApproach: NSIDC Sea Ice Index v4 daily extent from 1979 to October 2026 for the Antarctic total, its five sectors, and the Arctic as a control. We removed each period's own seasonal cycle and linear trend, so that the 2016 drop in the mean does not count as persistence. We compared the period from September 2016 to October 2026 with AR and VAR nulls fitted to 1979-2015 and with all pre-2016 windows of the same length. The plan was written before the analysis. Post hoc parts are identified.\nFindings: (1) With annual daily extremes, the 2016-2022 correlation replicates (r = 0.905; no pre-2016 7-year window above 0.53), and the link holds in sign over 2016-2026 (r = 0.71, 95% CI 0.21-0.95). But the 2016-2022 fit overpredicted all four new maxima (2023-2026) by 0.26-1.10 million km2, and a last-year forecast was better. With monthly means, the 2016-2022 r is only 0.52. (2) Own-detrended monthly anomalies had a longer memory after 2016. The mean autocorrelation at lags of 1-12 months was 0.40 against 0.18 (AR-null p = 0.005), and the e-folding time was 5.4 against 2.8 months. The result held for a quadratic trend, standardized anomalies and data before AMSR2, but it depends on 2020-2021. (3) Post hoc: the increase occurs mainly in the total, not in the sectors. Sector anomalies changed from cancelling (variance ratio 0.62) to adding (1.16; VAR-null p = 0.001; 0.99-1.26 when one year is removed). This agrees with a circumpolar driver. The cancellation started to decrease before 2016. The Arctic had no robust change.\nLimitations: only about 10 post-2016 years with one slow excursion, stationary Gaussian nulls, only 4 out-of-sample years, extent only, and a change to AMSR2 input in 2025.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Antarctic sea ice",
+  "sea ice extent",
+  "regime shift",
+  "persistence",
+  "autocorrelation",
+  "anomaly memory",
+  "Southern Ocean",
+  "NSIDC Sea Ice Index",
+  "out-of-sample test",
+  "replication",
+  "spatial coherence",
+  "seasonal forecast"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_min_to_max.png",
+   "caption": "a: Annual daily minimum against the following spring maximum. Grey = 1979-2015, blue = 2016-2022 with OLS fit (r = 0.90), orange = new years 2023-2026, all below the fit. b: The same correlation in all pre-2016 7-year and 11-year windows, compared with 2016-2022 and 2016-2026 (bar = bootstrap 95% CI)."
+  },
+  {
+   "path": "files/figures/fig2_memory.png",
+   "caption": "a: Autocorrelation of monthly Antarctic extent anomalies with each period's own seasonal cycle and trend removed. Blue = Sep 2016-Oct 2026, grey = 1979-2015, band = AR null 5-95% for 122-month windows, dashed = anomalies from the 1979-2015 baseline. b: Memory index M12 by sector and for the Arctic control, with one-sided AR-null p values."
+  },
+  {
+   "path": "files/figures/fig3_coherence.png",
+   "caption": "a: Ratio of the variance of the summed sector anomalies to the sum of the sector variances in 122-month windows (1 = independent sectors). Below 1 = cancellation. The post-2016 value (blue, with drop-one-year range) is above every pre-2016 window and the VAR null, but the ratio was already increasing before 2016. b: Pairwise sector correlations, 1979-2015 against 2016-2026."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s43247-023-00961-9",
+   "relations": [
+    "reviews",
+    "supports",
+    "challenges"
+   ],
+   "reason": "We replicate their post-2016 minimum-to-maximum correlation (r = 0.91, N = 7) and test it with 2023-2026 data. The link holds in sign, but the 2016-2022 relation overpredicted all four new maxima. With monthly means instead of daily extremes, it is much weaker. We also support their changed-persistence claim with detrended anomalies and nulls."
+  },
+  {
+   "target": "https://nsidc.org/data/g02135/versions/4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of all sea-ice extent data (Sea Ice Index v4, G02135), daily total and regional extents to 2026-11-07."
+  }
+ ]
+}
