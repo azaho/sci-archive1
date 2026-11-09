@@ -1,0 +1,26 @@
+{
+  "title": "After large mapped fires, open-land bird counts increased by about 10% and total counts did not change on 103 US Breeding Bird Survey routes (mostly western), 1986-2025",
+  "abstract": "Question: do bird counts on Breeding Bird Survey (BBS) routes change after a large fire burns part of the route, and does the change depend on habitat guild? Approach: we joined 31,514 MTBS fire perimeters to 3,152 US BBS route paths. A route was burned when fire covered at least 20% of a 500 m route buffer in one bird-year after 5 years with no mapped fire. 103 burned routes (84 in the West, 96% wildfire area) were compared with 1,772 unburned routes in the same Bird Conservation Region. We used a stacked before-after-control model with observer-on-route and region-year fixed effects. The plan was written before we fit outcome models. Results: in post-fire years 1-5, open-land species (AVONET habitat density 3, not waterbirds) increased by 0.102 log units (95% CI 0.037 to 0.166; placebo p = 0.01). The increase repeated in fire cohorts of 1986-2004 (+0.131) and 2005-2022 (+0.093). It became larger with burned fraction (+0.070 at 10%, +0.186 at 50%). Total counts (-0.001, CI -0.052 to 0.049) and species richness did not change. The within-survey open-minus-closed contrast was +0.145 (CI 0.010 to 0.281; no pre-trend). Woodpeckers (+0.069) and closed-habitat species (-0.044) had CIs that included zero. Closed-habitat loss was clear only in early cohorts and at 50% burned. Lazuli Bunting (+0.34) and Mourning Dove (+0.27) increased most. Golden-crowned Kinglet and Warbling Vireo (-0.20) decreased most. Limitations: few eastern routes (19) and few prescribed-fire routes (2); a pre-trend for open-land species (p = 0.027); a waterbird negative control that also increased (+0.095, CI included zero); route lines from about 1998; no burn severity; and BBS counts mix abundance and detection.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"}
+  ],
+  "keywords": ["wildfire", "MTBS", "Breeding Bird Survey", "habitat guild", "open habitat", "closed habitat", "woodpeckers", "disturbance", "weather extremes", "event study", "difference in differences", "placebo test", "observation bias", "AVONET", "biodiversity", "North America"],
+  "display": [
+    {"path": "files/figures/fig2_event_study.png", "caption": "Event study of log(1 + count) on 103 burned routes relative to unburned routes in the same Bird Conservation Region. Year 0 is the first survey after the fire. The reference is year -1. Bands show 95% CIs clustered by route. The pre-trend Wald p-value tests years -5 to -2."},
+    {"path": "files/figures/fig3_replication.png", "caption": "Mean effect in post-fire years 1-5 in the main sample, in the West and the East, in early and late cohorts, for wildfire only, at thresholds of 10% and 50%, with a 2 km buffer, and with relocated routes added. n is the number of burned routes."},
+    {"path": "files/figures/fig1_map.png", "caption": "Burned BBS routes (orange; first burn of 20% or more of the 500 m route buffer; 135 routes, of which 103 had surveys in the analysis window) on the pool of BBS routes with a 1998 path (gray) and MTBS fire locations (light brown)."}
+  ],
+  "citations": [
+    {"target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd", "relations": ["uses"], "reason": "North American Breeding Bird Survey 2026 data release: counts, survey conditions, routes and species list."},
+    {"target": "doi:10.4996/fireecology.0301003", "relations": ["uses"], "reason": "MTBS project description; burned area boundaries are the fire exposure."},
+    {"target": "https://www.mtbs.gov/direct-download", "relations": ["uses"], "reason": "MTBS burned area boundaries download (composite perimeter data, retrieved 2026-11-09)."},
+    {"target": "https://purl.stanford.edu/vy474dv5024", "relations": ["uses"], "reason": "BBS route path lines for the lower 48 states (bbsrtsl020)."},
+    {"target": "doi:10.1111/ele.13898", "relations": ["uses"], "reason": "AVONET habitat, habitat density and family traits used to define guilds."},
+    {"target": "doi:10.6084/m9.figshare.16586228.v7", "relations": ["uses"], "reason": "AVONET Supplementary dataset 1 file."},
+    {"target": "doi:10.1002/fee.70003", "relations": ["reviews"], "reason": "eBird study of regional fire responses for six species, 2011-2021; we use standardized BBS before-after data for guilds."},
+    {"target": "doi:10.1046/j.1523-1739.1995.9051041.x", "reason": "Classic description of bird communities after fire in western conifer forests; source of the woodpecker and open-habitat expectations."},
+    {"target": "doi:10.1093/qje/qjz014", "relations": ["uses"], "reason": "Stacked difference-in-differences design."},
+    {"target": "sci:sha256:64f2d0489d2fffc5f9ec6a95c7447cb78d929c6103ac4fe844bf687e470aec0e", "relations": ["uses"], "reason": "Campaign result that survey-day wildfire smoke did not change BBS counts by more than 2%; supports use of BBS counts near fires. We study habitat change from the fire itself."},
+    {"target": "sci:sha256:07ca7c27870e5db5585553e28f4a17aeabff4e7a5fec234eb10b3f6962baa792", "reason": "Campaign result that also uses MTBS perimeters (runoff after fire)."}
+  ]
+}

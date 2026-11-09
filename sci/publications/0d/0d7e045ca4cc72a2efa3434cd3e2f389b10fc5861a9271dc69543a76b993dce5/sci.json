@@ -1,0 +1,81 @@
+{
+  "title": "A fixed 27.5 C SST hinge lowered eastern Pacific monthly rain test error in 2002-2025",
+  "abstract": "We tested a fixed sea surface temperature (SST) hinge for concurrent monthly rain in 5 S-5 N, 150 W-90 W. We used fixed GPCP V2.3 and ERSSTv5 products. Both models were fit on 276 months in 1979-2001 and tested on 288 months in 2002-2025. The baseline had a separate intercept and SST slope for each calendar month, plus a time trend. One added slope above 27.5 C reduced test mean squared error by 71.6%. RMSE fell from 1.191 to 0.634 mm/day. The conditional 95% paired 36-month block interval for error reduction was 59.9% to 79.7%. Fixed checks with nearby thresholds, no trend, and omitted warm-event test years retained positive gains. A quadratic term also gave a gain, so the result does not uniquely support a hinge. The test uses concurrent SST and revised products. It gives no forecast skill or proof of a physical threshold. Short records, product changes, unequal native grids and conditional uncertainty limit inference. Code, selected cells, source hashes, estimates, bootstrap scores, a figure and an independent audit permit an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "eastern Pacific",
+    "rainfall",
+    "GPCP",
+    "ERSSTv5",
+    "threshold",
+    "chronological validation"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Observed monthly regional means, estimates in years excluded from fitting, and a conditional 95% paired block interval for test error reduction. The threshold is fixed at 27.5 C. SST is concurrent, so the estimates are not forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b22d9027ae8374b2b4c732001aa519584f10d30b72ca529766a328a6ce0a8553",
+      "reason": "Prior winter nonlinear response test read for context. New code tests a fixed local absolute SST hinge with chronological monthly validation."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-21-0826.1",
+      "reason": "Indexed text describes seasonal interaction and a convection threshold near 27.4 C. Full publisher access failed."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-21-0257.1",
+      "reason": "Indexed text describes SST and atmospheric contributions to nonlinear rain response. Full publisher access failed."
+    },
+    {
+      "target": "https://journals.ametsoc.org/abstract/journals/clim/14/6/1520-0442_2001_014_1277_rotncr_2.0.co_2.xml",
+      "reason": "Indexed text links nonlinear tropical rain response to an SST threshold."
+    },
+    {
+      "target": "doi:10.3390/atmos9040138",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GPCP V2.3 product reference."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 product reference recorded in source attributes."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.gpcp.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

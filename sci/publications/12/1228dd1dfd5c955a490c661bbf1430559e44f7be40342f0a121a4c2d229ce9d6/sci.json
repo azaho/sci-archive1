@@ -1,0 +1,92 @@
+{
+  "title": "With common UTC effects across longitude groups, morning six-hour gains of at least 10 kt were more frequent in an eastern Pacific sample in 1982-2024",
+  "abstract": "We tested a morning-to-evening contrast in large six-hour cyclone wind gains after control for UTC reporting time. We used fixed IBTrACS v04r01 records for 1982-2024. Complete offshore days gave four non-overlapping wind changes and one start in each solar-time bin. The samples had 1,539 North Atlantic days and 2,833 eastern Pacific days. With day and UTC effects, the morning minus evening probability of a gain of at least 10 kt was -1.11 percentage points in the Atlantic and +2.81 in the Pacific. Nominal 97.5% season-bootstrap intervals were -4.09 to 1.97 and 0.78 to 5.17. Three-season blocks gave the same primary interval signs. The Pacific estimate stayed positive at 150 and 500 km land-distance cuts. Gains of at least 15 kt, any positive gain, and mean wind change gave uncertain adjusted Pacific contrasts. The short 2018-2024 subset also gave an uncertain contrast. Only two longitude-to-clock mappings occurred in each basin. Separate UTC effects for those groups made the solar effect unidentifiable. Thus the positive result requires a common additive UTC effect across longitude groups. It does not establish a physical solar effect, operational forecast skill, or a change in standard 24-hour rapid intensification. Discrete revised winds, selected complete days, sparse clock support, and missing physical fields limit inference. Source subsets, full source hashes, code, all bootstrap contrasts, a separate audit, and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "tropical cyclone",
+    "diurnal cycle",
+    "UTC reporting time",
+    "local solar time",
+    "IBTrACS",
+    "intensification",
+    "identification",
+    "threshold sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Morning minus evening probability of a six-hour wind gain of at least 10 kt. Bars show nominal 97.5% whole-season bootstrap intervals. Both fits include a separate effect for each complete storm day. Orange also includes UTC categories. Lower panels show the solar-time by UTC counts. Each basin has only two clock mappings. The adjusted interpretation assumes common additive UTC effects across longitude groups. The Pacific result does not persist at a 15-kt threshold."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.25921/82ty-9e16",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IBTrACS v04r01 NA and EP fixed shared CSV snapshots dated 20261108. Exact paths and file hashes are in files/provenance.json."
+    },
+    {
+      "target": "doi:10.1175/2009BAMS2755.1",
+      "reason": "IBTrACS source method."
+    },
+    {
+      "target": "doi:10.1029/2020GL090397",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior global study reports early-morning intensification. We add balanced complete days, UTC control, and an identification check. This is not the same sample or estimand."
+    },
+    {
+      "target": "doi:10.1029/2023GL103551",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study separates initiation timing from rate within intensifying events."
+    },
+    {
+      "target": "doi:10.1175/MWR-D-13-00191.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior satellite study gives context for physical daily pulses and local-time-dependent intensity-estimate bias."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of wind, distance to land, basin, and interpolation flags."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Product version, basin subset rules, and source access."
+    },
+    {
+      "target": "sci:sha256:f1dad4aa5e821010f194aad76c660e009678bc77801f941e317f5fb2948852c4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified campaign study supplied shared source and offshore-filter context. We use new code and a different clock-time question on overlapping data."
+    },
+    {
+      "target": "sci:sha256:95cdb080a1401f4b159deb6f3dfb7fee4cb87edda01e830839e1d8cb0269d69d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified campaign study supplied two-basin source context. No code or derived outcomes were reused."
+    }
+  ]
+}

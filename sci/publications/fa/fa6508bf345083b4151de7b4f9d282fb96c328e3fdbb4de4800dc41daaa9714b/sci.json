@@ -1,0 +1,68 @@
+{
+  "title": "Added heat gave opposite mean prediction gains in Atlantic and Pacific country holdouts in 2003-2019",
+  "abstract": "We tested whether a survey-date heat measure improved coral bleaching estimates in countries excluded from training. We used 7,819 site-month records from Reef Check in two oceans and two periods from 2003 to 2019. We removed repeated sample rows and gave countries equal weight. Added log heat dose lowered mean Brier loss in the Atlantic by 0.023873 and 0.007542. It raised loss in the Pacific by 0.000295 and 0.001293. All four approximate adjusted intervals included zero. The later Pacific score changed to a small gain when site-years were pooled. A curved heat model gave the same four mean signs. These results show no common score gain for the specified geographic transfer task. Shared training folds, selected surveys, missing reports, sparse events and coarse environmental fields limit inference. The intervals do not include full refitting uncertainty. The result does not test a causal heat or pollution effect. The package preserves selected source rows, all predictions, coefficients, country scores, code, source hashes and calculation checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "coral bleaching",
+    "marine heat stress",
+    "geographic transfer",
+    "observation bias",
+    "country weighting",
+    "prediction"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Positive gain means that adding heat lowered country-balanced Brier loss. Intervals use country scores and adjust four tests. Shared training folds limit their interpretation."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.26008/1912/bco-dmo.773466.2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source survey and matched environmental data, version 2."
+    },
+    {
+      "target": "doi:10.1038/s41597-022-01121-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source database methods."
+    },
+    {
+      "target": "doi:10.25921/ffw7-cs39",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CoRTAD version 6 fields supplied with the survey archive."
+    },
+    {
+      "target": "doi:10.1038/s41467-019-09238-2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior heat and bleaching analysis motivates the transfer test."
+    },
+    {
+      "target": "sci:sha256:d369d1479f1a33a5c9c443a02aca5c1a4323a29683600f9a49ca04604f44b7f5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior temporal prediction comparison on overlapping raw data. We test excluded countries."
+    },
+    {
+      "target": "sci:sha256:053ae1380c211d172074dbb24811ca5ca0a63e4112efbad9fc0ce66ce2786ac2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior severe-event support audit on the same archive. Not independent confirmation."
+    }
+  ]
+}
