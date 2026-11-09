@@ -1,0 +1,72 @@
+{
+  "title": "Mirror responses gave no clear gain under source-family holdout in 11276 selected worm pairs",
+  "abstract": "We tested whether a detected response in a left-right mirror cell pair improves evoked-response prediction after wiring, observation count and cell identity controls. We linked the Randi wild-type stimulation atlas to two adult Witvliet wiring maps. The sample had 11276 directed pairs, 5638 mirror-pair groups and 673 detections. Five folds held out stimulated bilateral cell families. Adding mirror detection changed log loss from 0.204602 to 0.201886. The reduction was 0.002715, with a conditional 95 percent family bootstrap interval from -0.000985 to 0.006926. Thus the primary test left the gain uncertain. Target-family holdout gave a positive interval, so the result depends on the split. The raw detection share was 22.29 percent when the mirror was detected and 4.93 percent otherwise. This is functional map completion with measured mirror evidence. It does not predict from anatomy alone. Aggregate responses, different anatomical animals, a fixed model and intervals without refitting limit the result. Code, linked data, predictions, hashes and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "bilateral symmetry",
+    "evoked response",
+    "connectome",
+    "map completion",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Raw detection shares and conditional prediction gains. Intervals hold predictions fixed and resample bilateral cell families."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1103/6wgv-b9m6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior network-level comparison found bilateral community agreement; the present study tests conditional pair prediction."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test compared fitted timing and amplitude in doubly detected mirror pairs. We test detection map completion with wiring controls."
+    },
+    {
+      "target": "sci:sha256:24d8cb6740a9859d5283a93da0026ff8e0946c04d2e594740329f91b9a749cbd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-response completion test motivates split and interpretation controls."
+    },
+    {
+      "target": "sci:sha256:538ad3c5ff4efbe1bf560cbff2c9d78540c07f2a8e01c6e4a74e6d1fa5c74063",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior conditional short-route test in the same public atlas."
+    }
+  ]
+}

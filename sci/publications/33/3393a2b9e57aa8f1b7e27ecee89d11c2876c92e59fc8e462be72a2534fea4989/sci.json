@@ -1,0 +1,74 @@
+{
+  "title": "An east-west SST contrast lowered eastern Pacific monthly rain test error beyond curved Nino 3.4 in 2002-2025",
+  "abstract": "We tested whether the Nino 1+2 minus Nino 4 temperature anomaly adds information about monthly rain at 5 S-5 N, 150 W-90 W. We used fixed GPCP V2.3 and CPC ERSSTv5 data. Both models were fit in 1979-2001 and held fixed for 288 test months in 2002-2025. The baseline had month-specific intercepts, linear and squared Nino 3.4 terms, and a time trend. Adding one contrast slope reduced mean squared error by 41.9%. RMSE fell from 1.023 to 0.780 mm/day. The conditional 95% three-year block interval for the reduction was 26.9% to 50.4%. With Nino 3 strength, the point gain was 12.7%. The expanded primary model gave 37 negative rain estimates versus 11 for the baseline. Fixed checks retained positive point gains, but large training events affected both models. This is a concurrent response test, not a forecast or proof of a cause. The spatial contrast and nonlinear ENSO rain response are known; the contribution is a small test of added spatial information across time. One region, one split, revised products, and conditional uncertainty limit inference. The package gives selected raw cells, used index rows, predictions, code, hashes, uncertainty draws and an audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "rainfall",
+    "SST contrast",
+    "GPCP",
+    "chronological validation",
+    "spatial information"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Monthly test estimates and error reductions. Only the primary comparison has a conditional 95% interval. Other checks are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1126d803408cf32d0235c0828770b0b8c3be2d90517b6ab9d06f24afd117f03c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior monthly nonlinear baseline and spatial-control evidence informed the question. Shared source snapshots overlap; no code was reused."
+    },
+    {
+      "target": "sci:sha256:0d7e045ca4cc72a2efa3434cd3e2f389b10fc5861a9271dc69543a76b993dce5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior local SST test informed region and split. Same rain snapshot; no fitted values or code were reused."
+    },
+    {
+      "target": "sci:sha256:b22d9027ae8374b2b4c732001aa519584f10d30b72ca529766a328a6ce0a8553",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior winter quadratic response benchmark; overlapping source data."
+    },
+    {
+      "target": "doi:10.3390/atmos12040476"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-21-0363.1"
+    },
+    {
+      "target": "doi:10.1038/s41598-024-58803-3"
+    },
+    {
+      "target": "doi:10.7289/V56971M6"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-monthly"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
