@@ -1,0 +1,107 @@
+{
+ "title": "In IBL brain-wide mouse recordings, the direction of Granger influence between brain regions does not follow axonal projection asymmetry; the published direction follows the number of recorded neurons",
+ "abstract": "We tested if the direction of inter-regional Granger influence in the International Brain Laboratory brain-wide map follows the direction of axonal projections (Knox et al. 2019) or the cortical-thalamic hierarchy (Harris et al. 2019). We used 1,800 s of task spikes from 385 sessions, 134 mice, 12 laboratories and 211 regions, and repeated the IBL spectral Granger method. Our scores agreed with the published IBL table (Spearman 0.90). In the published table and in our forward scores, the region with more recorded neurons usually appeared as the source (slope 0.22 and 0.18 per ln unit of the count ratio). With 11-neuron draws per region the slope was about one tenth of this value (0.017, 95% CI -0.008 to 0.046). In the pre-specified primary test (net time-reversed Granger on 11-neuron draws, mouse-cluster bootstrap), the slope on projection asymmetry was 0.023 per log10 unit (CI -0.019 to 0.068). The sign of the Granger asymmetry agreed with the sign of the axonal asymmetry in 49.9% of pair-sessions. The hierarchy slope was in the feedback direction but its CI included zero (-0.21, CI -0.44 to +0.008). Direction was only weakly reproducible across sessions (split-half r 0.15). Undirected Granger strength followed axonal density after distance and region controls (0.23, CI 0.17 to 0.30). Simulations showed that unequal neuron counts can give false directions, and that count matching and time reversal remove them. Limitations: the count effect in real data did not change sign under time reversal, so its mechanism is not resolved. Granger analysis of region-mean rates measures prediction, not causal influence. The connectome is a region-level model.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Granger causality",
+  "connectome",
+  "International Brain Laboratory",
+  "Allen mouse connectivity",
+  "directed functional connectivity",
+  "measurement artefact",
+  "anatomical hierarchy",
+  "Neuropixels",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_count_artefact.png",
+   "caption": "Granger direction against the neuron-count ratio: published IBL table, our forward and time-reversed scores, 11-neuron draws, and forward against reversed log ratios."
+  },
+  {
+   "path": "files/figures/fig2_anatomy_hierarchy.png",
+   "caption": "Granger direction against axonal projection asymmetry and hierarchy difference, and all pre-specified slopes with 95% mouse-bootstrap CIs."
+  },
+  {
+   "path": "files/figures/fig3_reliability_control.png",
+   "caption": "Split-half reproducibility of direction and strength across sessions, and the positive control: undirected Granger strength against axonal density."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL brain-wide map: the spike data, the Granger method and the published Granger table that we test."
+  },
+  {
+   "target": "https://github.com/int-brain-lab/paper-brain-wide-map/tree/118fc36cb3602934466ad2c6087c2b3b441f9f1f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of granger.csv, granger.py and the BWM session fixture (MIT License)."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 regionalized connectome used for projection asymmetry and density."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Harris et al. 2019 cortical-thalamic hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Oh et al. 2014 mesoscale connectome, used by IBL for its Granger comparison."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2012.09.036",
+   "reason": "Haufe et al. 2013: time-reversed Granger as a control for measurement-noise artefacts."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2014.12.017",
+   "reason": "Vinck et al. 2015: Granger bias from unequal signal-to-noise ratio."
+  },
+  {
+   "target": "doi:10.1103/PhysRevE.75.031123",
+   "reason": "Nalatore et al. 2007: measurement noise biases Granger direction."
+  },
+  {
+   "target": "sci:sha256:193d9a5614ab21692cff4f6d3fd02bc50eb1d367d965da92d4a921ace25463da",
+   "reason": "Earlier IBL study of undirected coupling against Allen wiring; this study tests direction."
+  },
+  {
+   "target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Projection density did not predict direction of fast spike coupling in six visual areas; our brain-wide null supports this."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Tracer strength predicts undirected inter-areal spike correlations (agrees with our positive control).",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+   "reason": "LFP Granger in visual cortex went from lower to higher areas; our spike-rate hierarchy estimate had the opposite sign but was uncertain."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "reason": "Hierarchy did not reliably predict timescales in IBL and SHIELD data."
+  }
+ ]
+}

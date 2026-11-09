@@ -1,0 +1,68 @@
+{
+  "title": "A factor 1.10 amplitude bound preserves 14 of 31 first-to-late response order reversals in selected Allen slice inputs",
+  "abstract": "We compared two inputs of the same sign to the same neuron in Allen Synaptic Physiology r2.1 small. The first response and late responses in a 50 Hz train had opposite strength orders in 31 of 142 selected comparisons. The sample had 206 connections and 93 target-sign groups. Fourteen reversals must remain if each of the four fitted response magnitudes can vary independently from its value divided by 1.10 to its value times 1.10. Nine must remain at factor 1.25 and one at factor 1.50. With equal target weights, the fitted reversal shares were 21.7% for mouse excitation, 18.2% for mouse inhibition, and 16.7% for human excitation. Human excitation had only seven inferred donors. No human inhibitory input pair met the rules. These results test a common positive gain model for selected response summaries. The error factors are assumptions, not measured uncertainty. Different trial sets, missing responses, fit error, slice selection and inferred donor labels prevent a physiological reversal-rate claim. Original code, aggregate results, a figure, source hashes and retrieval steps support reproduction. External source records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "input order",
+    "50 Hz",
+    "circuit weights",
+    "error bounds"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "First-to-late response order reversals in selected input pairs. Left: equal-target shares and nominal 98.75 percent donor bootstrap intervals for mouse groups. The small human sample has no plotted interval. Counts are reversals over comparisons. Right: shares certified under assumed independent amplitude bounds. These bounds are not measured errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the first and late pulse amplitude fields; no source code is bundled."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates the within-target order design. This study compares train states instead of recording modes; no code or data extracts reused."
+    },
+    {
+      "target": "sci:sha256:0060132152fb5fcc19d779d8dfa3666f5fdaa581070e5c5f4b530684d58e4b54",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published independent multiplicative-bound certificate. Applies it to first and late amplitudes with new code, not rise times."
+    }
+  ]
+}
