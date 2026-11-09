@@ -1,0 +1,59 @@
+{
+  "title": "Thirty-six flower-count means could not come from single integer counts on at most ten pots in a 2021 North Wales release",
+  "abstract": "We tested whether flower-count means in a 2021 North Wales ozone and warming data release can be simple equal-weight means of single integer counts on pots. Of 95 observed means, 63 failed an exactly-ten-pot check and 36 failed every denominator from one to ten, with absolute tolerance 0.00000001. Both totals stayed the same at tolerance 0.0001. At tolerance 0.005, the totals were 62 and 32. Each mean had some compatible cell-specific denominator no larger than 51 at the primary tolerance. These denominators do not estimate actual sample sizes. Repeated observations, unequal weights or prior processing could explain the result. The audit cannot identify the actual aggregation rule or establish a data error. One site, one year, missing count cells and one chamber per treatment prevent broad biological or causal claims. We provide original code, aggregate results, a figure, exact source hashes and an independent arithmetic check. External source records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "warming",
+    "wildflowers",
+    "observation bias",
+    "integer means",
+    "data audit",
+    "GRIM",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Conditional arithmetic checks for released flower-count means. Counts assume equal weights and one integer observation per unit. Larger cell-specific denominators can fit the means; they do not identify sample sizes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5285/a33d5ee3-d201-4feb-83b9-765ee5b2c25e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared source archive and supporting document; external raw records are excluded."
+    },
+    {
+      "target": "doi:10.1177/1948550616673876",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established integer-mean granularity method."
+    },
+    {
+      "target": "sci:sha256:1ceb6dc11fbe44a507f581f0653d16455b0d051fabcbb9cb417d554762e20584",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior width analysis supplied source context. Raw data overlap; no independent validation."
+    },
+    {
+      "target": "sci:sha256:1450109aa182d4ae33d13253ad49b9d1946045e1d7226e082f1c1e55dd9a11cf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-weighted timing analysis motivates the aggregation-rule audit. Raw data overlap."
+    },
+    {
+      "target": "https://eidc.ac.uk/licences/ogl/plain"
+    }
+  ]
+}
