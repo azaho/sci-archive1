@@ -1,0 +1,57 @@
+{
+  "title": "Chemical count direction gave no clear prediction gain in 559 selected worm response pairs",
+  "abstract": "We tested whether chemical synapse direction helps predict which direction has a detected evoked response between two named worm cells. We linked the Randi wild-type response atlas to adult Witvliet maps D7 and D8. The main sample had 559 pairs with one detected direction and 132 cell identities. Adding the difference in log chemical counts to observation and signed cell controls changed held-out log loss from 0.615461 to 0.617201. The reduction was -0.001740, with a conditional 95% node bootstrap interval from -0.004250 to 0.000689. All seven planned sensitivity intervals included zero. Only 109 pairs had unequal chemical counts; 55 had a detected direction that agreed with the larger count. The result gives no clear prediction gain under this model. It does not show equal function or a lack of structural effects. Different animals, sparse direct edges, threshold selection, aggregate responses and conditional uncertainty limit inference. Code, linked pair data, predictions, source hashes, uncertainty draws and a figure support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "signal propagation",
+    "chemical synapse direction",
+    "cell holdout",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Raw direction rates and held-out prediction gains for selected worm pairs. Bin sizes are 15, 26, 450, 45 and 23. Intervals are conditional 95% node bootstrap intervals. All sensitivity checks reuse the data."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior adult map agreement test informed data selection. This test asks about within-pair direction; no code or numerical tables were reused."
+    },
+    {
+      "target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign search found a direction test at the level of Allen mouse brain regions. It is a different test and data source."
+    }
+  ]
+}
