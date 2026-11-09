@@ -1,0 +1,79 @@
+{
+  "title": "Crowding corrections remove an apparent flux-budget excess for KOI-1924.01 in four Kepler quarters",
+  "abstract": "We tested whether light from the known eclipsing source KOI-3688.01 can explain the shallow signal on KOI-1924.01. We used public Kepler quarters 8, 9, 12, and 13. A calculation that treats the source SAP depth as intrinsic requires 2.46 +/- 0.64 times its total light in quarter 8. The archive crowding correction reduces this model-dependent requirement to 0.65 +/- 0.17. All four corrected point estimates lie between zero and one, but aperture and magnitude errors are not included. A scale set at phase zero underpredicts the quarter 13 secondary-phase depth by about 2 to 2.5 estimated standard errors across two baseline windows. Thus, the flux budget is feasible under the model, but exact shared-light scaling is not established. This work tests a previously published timing pair. It establishes no new planet or source association. No pixel localization or independent telescope observation was used. The package includes all eight light curves, hashes, two source catalog rows, code, event depths, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-1924.01",
+    "KOI-3688.01",
+    "crowding",
+    "flux budget",
+    "contamination",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/budget.png",
+      "caption": "Required fraction of source light in the bright aperture, before and after the model crowding correction. Errors include depth scatter only."
+    },
+    {
+      "path": "files/results/depths.png",
+      "caption": "Local mean phase-zero depths in four quarters. SAP and PDC use the same observations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8946c7d3b3a657457da108b9de52c797bfb82ccccc5a4d7b4609c6e745b52f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published timing pair, catalog selection, and current-status context. We add a four-quarter aperture flux-budget test for KOI-1924."
+    },
+    {
+      "target": "sci:sha256:bf0485d88dc27487d22313fcee97e2bf806442dcc87c3dbaaf437fed65c2069e",
+      "reason": "Prior campaign example of a separate-phase light-scaling test on a different pair."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "reason": "Established ephemeris contamination method."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/788/2/148",
+      "reason": "Prior density-based FP/PE classification of KOI-1924.01."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/eclipsing_binaries.html",
+      "reason": "Public record of KIC 5020034 as an eclipsing binary."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_keplertimeseries_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of aperture crowding and flux fraction."
+    },
+    {
+      "target": "https://nexsci.caltech.edu/workshop/2012/keplergo/PyKEprimerStitching.shtml",
+      "reason": "Pipeline correction description."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public DR25 source light curves. Exact S3 URLs and hashes are preserved."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive DR25 table; exact shared path and hash are preserved."
+    }
+  ]
+}

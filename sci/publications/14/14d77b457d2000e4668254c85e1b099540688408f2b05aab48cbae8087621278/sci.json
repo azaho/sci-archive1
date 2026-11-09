@@ -1,0 +1,62 @@
+{
+  "title": "Cell-body distance gave no clear gain in predictions of resting synaptic variability in four Allen slice groups",
+  "abstract": "We tested whether cell-body distance improves predictions of resting synaptic response variability after cell labels and layers are known. We used the Allen Synaptic Physiology r2.1 small database. The sample had 1,518 connections within 500 micrometres, from 528 inferred mice and 46 inferred human donors. We kept whole donors in validation folds. A linear distance term gave no clear gain in any of four species and synapse-type groups. Mouse excitatory connections had a mean squared error gain of 0.0129 squared log units, with a conditional 98.75% donor bootstrap interval of -0.0244 to 0.0528. Mouse inhibitory and human inhibitory intervals also included zero. Human excitatory predictions became slightly worse. Richer cell-label controls, measurement summaries, and a lower ridge penalty did not give a clear gain. These results apply to the tested linear models and selected slice connections. They do not show that distance and reliability are independent. Missing variability values, inferred donor labels, small human samples, and conditional uncertainty limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "cell-body distance",
+    "grouped validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "A positive mean squared error gain means that distance improved predictions. Bars show 98.75% conditional donor bootstrap intervals for four primary tests. All groups failed to show a clear gain."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen paired recordings and cell-class results."
+    },
+    {
+      "target": "doi:10.7554/eLife.37349",
+      "reason": "Prior work on sparse cortical connectivity and response variability."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source definition of the stored variability measure."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published distance audit informed the 500 micrometre limit and donor grouping. No code or data tables were reused."
+    }
+  ]
+}

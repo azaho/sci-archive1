@@ -1,0 +1,70 @@
+{
+  "title": "Target membrane time gave an uncertain decay prediction gain in four Allen slice groups at ridge penalty 10",
+  "abstract": "We tested whether the target neuron membrane time constant improves a prediction of synaptic voltage decay more than the source neuron time constant. We used 1,576 connections in the Allen Synaptic Physiology r2.1 small database. We held out whole inferred donors and fit ridge models with cell labels, region, and cell-body geometry. At the primary penalty of 10, no gain interval excluded zero after adjustment for eight comparisons. In 473 mouse excitatory connections, target time reduced donor-weighted squared log error by 5.12% against the base model and 5.58% against the source-time model. The adjusted intervals were -1.51% to 10.80% and -1.10% to 11.44%. A penalty of 100 gave positive adjusted intervals in that group. The result therefore depends on model regularization. Human and inhibitory samples did not give a clear primary gain. The package supplies code, selected connection records, held-out predictions, a figure, and an independent score check. The intervals condition on fitted models; slice sampling, missing measurements, and inferred donor labels limit inference. This test does not establish a membrane-filtering mechanism or a rule for intact brains.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "membrane time constant",
+    "synaptic decay",
+    "donor validation",
+    "source control",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/decay.png",
+      "caption": "Primary gain in donor-weighted squared log error. Positive values favor target membrane time. Lines show 99.375% percentile intervals for eight primary contrasts. These intervals condition on fitted predictions. ex is excitatory; in is inhibitory. Ridge penalty is 10."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen slice connectivity and physiology study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py"
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared-cell timing test motivates a direct target-versus-source measurement test."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the inferred donor grouping and local distance scope as design precedents."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=9b511730-dbfc-48d5-afd7-8517d715375c",
+      "reason": "Related current-to-voltage amplitude benchmark, identified from its shared dataset README."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=506a246c-c070-4fd2-b171-930b59efcace",
+      "reason": "Related membrane-time matching connection benchmark, identified from its shared dataset README."
+    }
+  ]
+}
