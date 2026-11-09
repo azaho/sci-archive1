@@ -1,0 +1,84 @@
+{
+  "title": "Aftershock decay exponent p did not increase with surface heat flow for 191 shallow Japanese M4.5+ sequences (JMA 1998-2023, GHFDB R2024, 50 km medians)",
+  "abstract": "Question: Do aftershock sequences decay faster (larger Omori-Utsu p) where surface heat flow is higher? Kisslinger and Jones (1991) reported this for southern California. An 18-sequence Japanese study found no link. Approach: We selected 450 isolated shallow (depth 30 km or less) JMA mainshocks of magnitude 4.5 or more from 1998-2023. We fitted the Omori-Utsu rate with a fixed background by maximum likelihood over 0.02-365 days. We related p to the median IHFC GHFDB R2024 heat flow within 50 km. Intervals come from a one-degree-cell block bootstrap. Result: 191 sequences passed quality control and had heat-flow data. p did not change clearly with heat flow. Spearman rho = 0.005 (95% interval -0.16 to 0.19). The random-effects slope was 0.10 p per decade of heat flow (-0.11 to 0.34), and 0.16 (-0.05 to 0.40) with magnitude, depth, onshore and Mc controls. Median p was 1.11, 1.09 and 1.11 in the low, middle and high heat-flow terciles. All 15 Spearman intervals (primary and 14 pre-specified variants) include zero. Only the 30 km radius variant gave slope intervals above zero. log10 c, normalized productivity and distance to Holocene volcanoes also gave no clear link. In synthetic catalogs, the test detected an injected slope of 0.25 p per decade in 19 of 20 runs. Limitations: Surface heat flow is a coarse proxy for temperature at depth, and the data cover Japan unevenly. The windows are simple, without ETAS declustering. We amended the selection rules once, before any heat-flow statistic. A weak slope (up to about 0.4 p per decade) is not excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "aftershocks",
+    "Omori-Utsu law",
+    "heat flow",
+    "Japan",
+    "JMA catalog",
+    "GHFDB",
+    "seismicity",
+    "null result",
+    "crustal temperature"
+  ],
+  "display": [
+    {
+      "path": "files/fig2_p_vs_heatflow.png",
+      "caption": "Omori-Utsu p (with 1 standard error) against the median GHFDB heat flow within 50 km. Left: all 191 sequences (blue: offshore epicenters, orange: onshore epicenters). Right: 112 onshore epicenters. The black line shows medians in heat-flow sextiles. There is no clear trend."
+    },
+    {
+      "path": "files/fig3_sensitivity.png",
+      "caption": "Spearman rho (left) and the slope of p per decade of heat flow with controls (right). Bars are 95% intervals from a one-degree-cell block bootstrap, for the primary test and 14 pre-specified variants. All rho intervals include zero."
+    },
+    {
+      "path": "files/fig1_map.png",
+      "caption": "Left: GHFDB R2024 heat-flow sites near Japan (values clipped at 200 mW/m^2). Right: the 191 fitted JMA sequences. Symbol size increases with magnitude and color shows p."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/91JB01200",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Reported that aftershock p increases with surface heat flow in southern California; we test this in Japan and do not find it."
+    },
+    {
+      "target": "doi:10.5880/fidgeo.2024.014",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Global Heat Flow Database R2024 v2026.03, source of heat-flow values."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo_e.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JMA unified hypocenter catalog 1998-2024, source of mainshocks and aftershocks."
+    },
+    {
+      "target": "https://volcano.si.edu",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Smithsonian GVP Holocene volcano list, used for the distance-to-volcano proxy."
+    },
+    {
+      "target": "https://www.naturalearthdata.com",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Natural Earth 10 m land polygons, used for the onshore flag and maps."
+    },
+    {
+      "target": "doi:10.4294/jpe1952.43.1",
+      "reason": "Review of Omori-Utsu p variation and proposed controls."
+    },
+    {
+      "target": "doi:10.4294/jpe1952.31.115",
+      "reason": "Maximum-likelihood estimation of Omori-Utsu parameters."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111",
+      "reason": "Controls on aftershock productivity."
+    }
+  ]
+}
