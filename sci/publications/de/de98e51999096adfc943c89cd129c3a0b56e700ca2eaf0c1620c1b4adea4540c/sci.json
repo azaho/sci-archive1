@@ -1,0 +1,85 @@
+{
+ "title": "Oxygen loss at 200-300 m off southern California did not continue in 2007-2020 and levels stayed low; change on density surfaces, not heave, gave 93% of the 1984-2006 loss (CalCOFI)",
+ "abstract": "We tested if the 1984-2006 dissolved oxygen (O2) decrease off southern California continued after 2006. We used CalCOFI bottle data from 56 stations on six core lines (1949-2020) and a station-by-quarter fixed-effects annual index. We used 1984-2006 for training and 2007-2020 as an out-of-sample test.\n\nAt 300 m, O2 decreased by 0.80 umol/kg per year in 1984-2006 (95% interval -1.28 to -0.33). In 2007-2020, the slope was +0.24 (-0.34 to 0.85), and the slope difference excludes zero. O2 continued to decrease to a minimum in 2012 and then stopped decreasing. It did not return to the earlier level: the 2007-2020 mean was 5 umol/kg below the 2002-2006 mean and 10 umol/kg below the 1950-1983 mean. The extrapolated 1984-2006 trend did not clearly forecast 2007-2020 better than a flat 2002-2006 mean (MSE ratio 0.86, 0.69 to 1.40). On sigma-theta 26.6, the slope changed from -0.90 to +0.01 per year. The hypoxic boundary (60 umol/kg) moved up by 1.82 m per year in 1984-2006, reached 67 m above its 1984-2006 mean in 2012, and then moved partly down. On sigma-theta 26.8, a slow decrease continued.\n\nA split of each cast into heave and along-isopycnal parts showed that O2 change on density surfaces gave 93% of the 1984-2006 decrease at 300 m and 87% of the annual variance. After 2012, downward motion of density surfaces gave most of the partial recovery at fixed depths. A titration-only sensitivity analysis gave the same conclusions.\n\nLimitations: one region, 14 test years, approximate block-bootstrap intervals, a break year chosen from the data, a change to CTD-sensor O2 values in 2018, and no direct test of the cause. The bundle contains code, per-cast derived data, all statistics, provenance, and figures.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "dissolved oxygen",
+  "hypoxia",
+  "CalCOFI",
+  "California Current",
+  "Southern California Bight",
+  "isopycnal heave",
+  "out-of-sample test",
+  "deoxygenation",
+  "trend change",
+  "oxygen minimum zone"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_o2_300m_decomposition.png",
+   "caption": "a: Annual O2 anomaly at 300 m on the core CalCOFI grid, 1950-2020, with 95% cruise-bootstrap bars. Orange: the 1984-2006 trend; dashed: its extrapolation to 2007-2020 (shaded); dotted: the 2002-2006 mean held flat. b: The 300 m anomaly split into an along-isopycnal part and a heave part. c: Depth anomaly of the 60 umol/kg hypoxic boundary with a two-segment fit (break year chosen from the data)."
+  },
+  {
+   "path": "files/figures/fig2_isopycnal_o2_station_trends.png",
+   "caption": "a: Annual O2 anomaly on sigma-theta 26.4, 26.6 and 26.8, 1984-2020 (1984-2006 mean = 0). b, c: Station OLS trends of O2 on sigma-theta 26.6 for 1984-2006 and 2007-2020 (red = loss). All 55 stations decreased in 1984-2006; the median trend in 2007-2020 was -0.04 umol/kg per year."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1029/2008GL034185",
+   "relations": [
+    "uses"
+   ],
+   "reason": "This study reported the 1984-2006 decrease and the hypoxic boundary threshold that we test out of sample."
+  },
+  {
+   "target": "doi:10.1016/j.dsr2.2014.04.009",
+   "reason": "It reported a continued decrease to 2012 and source-water changes, which agree with our along-isopycnal result."
+  },
+  {
+   "target": "doi:10.1038/s41598-018-25341-8",
+   "reason": "A related decrease on density surfaces in the central California Current, 1998-2013."
+  },
+  {
+   "target": "doi:10.1126/science.1202422",
+   "reason": "Climate-forced thermocline (heave) variation as an O2 control, which we compare with along-isopycnal change."
+  },
+  {
+   "target": "doi:10.1002/2017GL072931",
+   "reason": "Decadal O2 dynamics in the California Current, linked to NPGO and PDO."
+  },
+  {
+   "target": "doi:10.1029/2007GL032838",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the NPGO index that we use in the exploratory climate-index test."
+  },
+  {
+   "target": "https://calcofi.org/downloads/database/CalCOFI_Database_194903-202105_csv_16October2023.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "The CalCOFI bottle database, release of 16 October 2023 (SHA-256 1d074d0581beb662fe141842eb4a4f46ebc4f02340ea9051eb1d894bafe807b7)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 PDO index for the exploratory climate-index test."
+  },
+  {
+   "target": "https://www.o3d.org/npgo/data/NPGO.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NPGO index file, update of 21 September 2026; a copy is in files/data."
+  }
+ ]
+}

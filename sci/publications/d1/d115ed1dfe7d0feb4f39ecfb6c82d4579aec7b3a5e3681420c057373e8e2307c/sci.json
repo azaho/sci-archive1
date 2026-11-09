@@ -1,0 +1,27 @@
+{
+  "title": "Input synapse positions on each dendrite identify the motion direction subtype of 10,525 T4 and T5 cells in one FlyWire fly brain, in both hemispheres and both ON and OFF pathways",
+  "abstract": "Question: Does one fixed rule for input synapse positions identify the preferred motion direction of each fly T4 (ON) and T5 (OFF) cell at whole-brain scale? Approach: We used the FlyWire v783 synapse table (one female brain) and all 12,246 typed T4a-d and T5a-d cells. For each cell, the rule vector goes from the centroid of the preferred-side input synapses (Mi9 for T4, Tm9 for T5) to the centroid of the null-side input synapses (Mi4, CT1) on the dendrite. We measured its angle in a local sheet frame. We compared the angle with the subtype label, which comes from the axon layer and has a known preferred direction from physiology in other flies. Results: 10,525 cells had at least 3 synapses from each rule input. In all 16 groups (type x side x subtype), the resultant length was 0.87 to 0.96. With no training, the nearest expected direction gave the correct subtype for 82.6% of T4 cells and 89.0% of T5 cells (chance 25%). With training on one hemisphere and test on the other, the geometry angle gave 93 to 95% accuracy. Counts of 40 dendritic input types without T4/T5 peer inputs gave 47 to 58%. A within-cell permutation test gave p <= 0.05 for 87.7% of T4 cells and 96.9% of T5 cells. Twelve synapses from each rule input gave 87 to 90% accuracy. Both pathways had the same input order: delayed input, then fast central inputs, then inhibitory input. Deviations from the subtype mean had a smooth spatial pattern (neighbour circular correlation 0.25 to 0.88). Limitations: one animal; no activity was recorded in these cells; the preferred directions come from other flies through the subtype labels; brain-axis frames show a common rotation of 13 to 23 degrees; 26% of T4 cells had too few rule synapses. Code, derived centroid tables, results and figures are included.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["connectomics", "FlyWire", "Drosophila", "T4", "T5", "direction selectivity", "motion vision", "synapse geometry", "structure-function", "optic lobe", "single-cell reliability"],
+  "display": [
+    {"path": "files/figures/fig1_direction_roses.png", "caption": "Geometry angle (null-side minus preferred-side input centroid) of each T4 and T5 cell, by subtype and side. Dashed line: direction expected before analysis. Arrow: circular mean with length R."},
+    {"path": "files/figures/fig2_decoding_and_order.png", "caption": "A: Subtype accuracy on the held-out hemisphere for geometry and partner-count features (dotted line: chance). B: Accuracy against the number of synapses drawn from each rule input. C: Median and interquartile positions of input centroids along the rule axis."},
+    {"path": "files/figures/fig3_direction_maps.png", "caption": "Geometry directions of a random half of the right-side cells at their dendrite centroids on the flattened medulla (T4) and lobula (T5)."}
+  ],
+  "citations": [
+    {"target": "doi:10.5281/zenodo.10676866", "relations": ["uses"], "reason": "FlyWire v783 synapse table and proofread connections."},
+    {"target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2", "relations": ["uses"], "reason": "Cell type and side annotations."},
+    {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"], "reason": "FlyWire whole-brain connectome."},
+    {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"], "reason": "Whole-brain annotation and cell typing."},
+    {"target": "doi:10.1038/s41586-024-07981-1", "relations": ["uses"], "reason": "FlyWire optic lobe cell types including T4/T5 subtypes."},
+    {"target": "doi:10.1038/s41592-021-01183-7", "relations": ["uses"], "reason": "Automatic synapse detection that produced the synapse positions."},
+    {"target": "doi:10.1038/nature12320", "relations": ["uses"], "reason": "Physiological preferred directions of T4/T5 subtypes and lobula plate layers."},
+    {"target": "doi:10.7554/eLife.24394", "relations": ["supports"], "reason": "Small-volume input order on T4 dendrites; this study repeats it at whole-brain scale."},
+    {"target": "doi:10.7554/eLife.40025", "relations": ["supports"], "reason": "Small-volume input order on T4 and T5 dendrites; this study repeats it at whole-brain scale."},
+    {"target": "doi:10.7554/eLife.17421", "reason": "Mechanism of preferred-direction enhancement and null-direction suppression."},
+    {"target": "doi:10.1126/sciadv.abi7112", "reason": "Preferred-direction maps across the eye."},
+    {"target": "doi:10.1038/s41586-025-09276-5", "reason": "Eye structure and T4 dendrite orientation; prior related whole-eye analysis."},
+    {"target": "doi:10.1038/s41586-025-08746-0", "reason": "Male optic lobe connectome; a possible replication target that was not tested."},
+    {"target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b", "reason": "Campaign study of fly visual input profiles and flicker responses; different question, read before this work."}
+  ]
+}
