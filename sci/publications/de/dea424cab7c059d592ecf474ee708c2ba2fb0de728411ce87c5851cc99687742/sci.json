@@ -1,0 +1,52 @@
+{
+  "title": "Depth-aware 200 km windows removed 28% of post-event counts near 95 deep M6.5–<8 earthquakes in 2001–2024",
+  "abstract": "We tested how depth changes counts near large earthquakes in a fixed USGS ComCat snapshot. We selected 804 earthquakes of preferred magnitude 6.5 to less than 8 in 2001–2024. We counted magnitude 5 or larger events in equal pre-event and post-event windows from day 1 to day 30. A depth-aware 200 km rule removed 22 of 78 post-event counts near 95 mainshocks deeper than 300 km. The removed share was 28.2%, with a 95% calendar-year bootstrap interval of 18.2% to 40.9%. The removed events had a post-minus-pre mean of 0.095 counts per mainshock, with limits of -0.028 and 0.240. Thus, their time excess was uncertain. Retained counts had a positive mean excess of 0.400, with limits of 0.237 and 0.579. The removed share was 0.66% near shallow mainshocks and 26.5% near intermediate-depth mainshocks. At 100 km, the deep removed-event excess interval was positive. The result shows sensitivity to the distance rule. It does not identify caused aftershocks or prove that removed events are background. The small deep sample, mixed magnitude scales, location errors, regional dependence and catalog revision limit inference. Code, exact input rows, source hashes, pair records, all checks and an independent numerical audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquakes",
+    "depth",
+    "aftershock counts",
+    "distance rule",
+    "ComCat",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/geometry.png",
+      "caption": "Adding depth removes a larger share of post-event counts near intermediate and deep mainshocks. Removed counts have uncertain time excess at 200 km. Bars show 95% calendar-year bootstrap limits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified ComCat source archive. Our geometry comparison uses new code and a different mainshock rule."
+    },
+    {
+      "target": "sci:sha256:c8ed26f5ca7d7484640ca25e043981deb520e2765f0781dd79a3ae3aac4c72ce",
+      "reason": "Prior test of early catalog loss motivates exclusion of the first day."
+    },
+    {
+      "target": "doi:10.1029/2022JB026269",
+      "reason": "Prior work uses depth-aware clustering. Our simple-window audit does not test its conclusions."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111",
+      "reason": "Prior study of global aftershock productivity."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official ComCat query interface."
+    }
+  ]
+}

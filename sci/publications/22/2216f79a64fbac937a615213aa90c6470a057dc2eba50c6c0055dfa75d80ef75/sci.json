@@ -1,0 +1,86 @@
+{
+  "title": "Listed values for 4893 selected planet orbits keep their centers outside the host star",
+  "abstract": "We test whether listed orbits in a frozen NASA Exoplanet Archive response enter the host star. None of 4893 selected planet rows has a center periastron at or below one stellar radius. A period and stellar mass check gives the same null result. GJ 3222 b has the smallest clearance, 1.492 stellar radii. Its upper eccentricity error reaches 0.609 stellar radii if orbit size and stellar radius stay fixed. The surface boundary is e = 0.952402. The radius has no listed error and comes from a different source than the orbit. This is a conditional warning for a known planet, not a detected collision or new signal. Lower error bounds exist for only 1675 selected rows. We report no independent observation or instrument test. Frozen inputs, hashes, code, tables, figures and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "periastron",
+    "GJ 3222 b",
+    "catalog validation",
+    "eccentricity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/clearance.png",
+      "caption": "Listed center periastron stays above one stellar radius in 4893 selected rows."
+    },
+    {
+      "path": "files/gj3222.png",
+      "caption": "The eccentricity error range for GJ 3222 b crosses the surface boundary with orbit size and stellar radius fixed. This is a conditional test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Explains source mixing."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines fields, units and flags."
+    },
+    {
+      "target": "doi:10.3847/1538-4365/ac7e57",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior orbit results for GJ 3222 b."
+    },
+    {
+      "target": "https://arxiv.org/html/2208.12720v3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Table 3 gives a different eccentricity summary."
+    },
+    {
+      "target": "https://acta.astrouw.edu.pl/Vol73/n4/pdf/pap_73_4_3.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior BD+42 2315 results."
+    },
+    {
+      "target": "sci:sha256:03a18d289d619db4a7d9d92b9114a5359f6463feccd071288ce5873241c73915",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign context for orbit geometry; no data or code reused."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cdiscoverymethod%2Ccb_flag%2Csy_snum%2Cpl_orbper%2Cpl_orbsmax%2Cpl_orbeccen%2Cst_rad%2Cst_mass%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbperlim%2Cpl_orbsmaxerr1%2Cpl_orbsmaxerr2%2Cpl_orbsmaxlim%2Cpl_orbeccenerr1%2Cpl_orbeccenerr2%2Cpl_orbeccenlim%2Cst_raderr1%2Cst_raderr2%2Cst_radlim%2Cst_masserr1%2Cst_masserr2%2Cst_masslim%2Cpl_orbsmax_reflink%2Cpl_orbeccen_reflink%2Cst_rad_reflink+from+pscomppars+order+by+pl_name&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact TAP query for a frozen input."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Cdefault_flag%2Cpl_refname%2Cst_refname%2Cpl_orbper%2Cpl_orbsmax%2Cpl_orbeccen%2Cst_rad%2Cst_mass%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbperlim%2Cpl_orbsmaxerr1%2Cpl_orbsmaxerr2%2Cpl_orbsmaxlim%2Cpl_orbeccenerr1%2Cpl_orbeccenerr2%2Cpl_orbeccenlim%2Cst_raderr1%2Cst_raderr2%2Cst_radlim%2Cst_masserr1%2Cst_masserr2%2Cst_masslim+from+ps+where+pl_name+in+%28%27GJ+3222+b%27%2C%27BD%2B42+2315+b%27%2C%27TOI-2431+b%27%29+order+by+pl_name%2Cdefault_flag&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact TAP query for a frozen input."
+    }
+  ]
+}
