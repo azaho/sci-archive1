@@ -1,0 +1,104 @@
+{
+  "title": "A temporal filter removes inferred decay at short lags in three linear connectome models",
+  "abstract": "We tested directed drift recovery from exact lagged covariance in three linear stochastic graph models. The graphs represent 302 worm neurons, 75 fly regions and 304 Allen-based mouse parcels. We used two recurrent gains and three common first-order filter times. For a differentiable stationary signal, the zero-lag covariance derivative is skew symmetric. A drift estimate that ignores the filter therefore has zero trace in the short-lag limit. All 18 model settings passed this check. At gain 0.8 and lag 0.001, mean inferred decay was 0.00010 to 0.00250, compared with the true value of 1. Off-diagonal coupling error was 0.775 to 0.983 in relative Frobenius norm. An identity using the known filter and derivatives through third order recovered drift with error below 1e-15 over 72 positive-lag tests. This is an exact-covariance model audit, not a fit to measured activity or a test of statistical robustness. Unknown filters and noisy derivatives remain open problems. Code, proof, aggregate scores, a figure, source hashes and external retrieval instructions support reproduction. External graphs stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "temporal filter",
+    "connectome",
+    "Allen Institute",
+    "effective connectivity",
+    "lagged covariance",
+    "linear dynamics",
+    "measurement bias"
+  ],
+  "display": [
+    {
+      "path": "files/filter_bias.png",
+      "caption": "Mean inferred decay at four lags for gain 0.8 in three graph models. Each true neural decay is 1. A smaller lag does not remove an ignored filter. Filter times and lags are in neural decay units."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b95314a3790d0ce3c78e6040438b3dc3faf84b2ddfd52ed8e3162c9630733a70",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external graph inputs and graph provenance; no source code or matrices bundled."
+    },
+    {
+      "target": "sci:sha256:0dcdbdbdcd61bd3567ad85480c815cb1bb02e2f7a121a6def4d899e74824969a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior two-condition recovery and error audit; this study tests a measurement filter."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1004762",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established lagged covariance inference."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1006056",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established covariance inference and measurement-filter tests."
+    },
+    {
+      "target": "doi:10.1137/22M1520311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established graphical Lyapunov identifiability."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original worm anatomy."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original fly anatomy."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10676866",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire v783 data release."
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen-based Knox mouse model."
+    },
+    {
+      "target": "doi:10.1038/nature13186",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen Mouse Brain Connectivity Atlas."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "External source terms; matrices excluded."
+    }
+  ]
+}
