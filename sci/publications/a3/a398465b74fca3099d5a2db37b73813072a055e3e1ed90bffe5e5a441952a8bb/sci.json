@@ -1,0 +1,55 @@
+{
+  "title": "A conditional time test finds no clear within-visit rate change in 48 Nancay observations of FRB 20220912A",
+  "abstract": "We test burst positions within 48 nonempty Nancay observing windows for FRB 20220912A. A one-second join rule reduces 696 detections to 636 episodes. The sum of visit Cramer-von Mises scores is 7.75261. A constant-rate null, conditional on each raw detection count and passed through the same join rule, gives p = 0.55760 from 19,999 simulations. A separate calibration conditional on separated episode counts gives p = 0.56235. Four grouping and signal-to-noise checks also do not reject the null. Synthetic linear ramps with a threefold high-to-low rate ratio are detected in 99.45 percent of 2,000 trials when changes occur across all visits. Smaller changes have much lower detection rates. This is a null result for one statistic. It does not establish a Poisson emission process. Missed bursts, unknown sensitivity within visits, short-time grouping, and absent independent telescope data limit the result. Original code, exact input hashes, aggregate evidence, and an external-data retrieval script support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "FRB 20220912A",
+    "Nancay",
+    "conditional uniform times",
+    "rate variation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/constant_rate.png",
+      "caption": "The grouped time score is within the conditional constant-rate simulations. Synthetic rate ramps show limited sensitivity to small changes and high sensitivity to threefold visit-wide changes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stae2296",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "Prior wait-distribution analysis; this test uses complete windows and all nonempty visits."
+    },
+    {
+      "target": "doi:10.5281/zenodo.13889738",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external raw table and exposure log, version 1; data remain outside this bundle."
+    },
+    {
+      "target": "sci:sha256:37ce128a0a9e5e308d5a6bf5714ce8c097b8bb1861e190a132db234a3d26375b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior adjacent-wait test motivates a separate test of within-window positions."
+    },
+    {
+      "target": "sci:sha256:e1a803c566b56554f1b9ae9af901d5a171f79e462693b7e41529f7cf18aa9ae0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Timestamp warning motivates use of filename times instead of rounded summary times."
+    }
+  ]
+}
