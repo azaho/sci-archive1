@@ -1,0 +1,62 @@
+{
+  "title": "Earlier-year range scaling reduced high tide flood interval scores at 83 US gauges in 2022-2025 but covered only 59% of counts",
+  "abstract": "We tested whether errors from earlier years could improve annual high tide flood day ranges. We used a verified campaign table with stable-threshold gauges and NOAA outlooks. Each test year used only earlier years to set a common scale. The test has 307 station-years at 83 US gauges in 2022-2025. Mean 68%-target interval score fell from 15.43 to 13.86 days. The equal-year score change was -1.56 days. Scores fell in all four years. Coverage rose from 50.2% to 59.3%, below the 68% target. Mean range width rose from 4.46 to 6.81 days. A conditional year bootstrap gave limits of -2.56 to -0.56 days for the score change. Four test years are too few for a strong test of future skill. The fair-sign probability for four gains is 0.0625 under independent year signs. This is a retrospective test with revised data. Dependence, inherited threshold checks and a short record limit the result. Code, input data, source hashes, all forecasts, a separate scalar audit and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "high tide flooding",
+    "interval score",
+    "chronological test",
+    "range calibration",
+    "NOAA",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Earlier-year range scaling reduced interval scores in four test years. Coverage remained below the 68% target in three years. Each scale used only earlier years."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified primary sample and threshold checks. We add an earlier-years-only test of range scaling. Data overlap; this is not independent confirmation."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "API definitions for outlook ranges and observed met-year flood counts."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared NOAA snapshot; exact path and hash are in provenance.json."
+    },
+    {
+      "target": "https://repository.library.noaa.gov/view/noaa/70863/noaa_70863_DS1.pdf",
+      "relations": [
+        "supports"
+      ],
+      "reason": "NOAA 2023 method notice confirms Pacific threshold revisions and recalculated historical counts. It describes annual model timing."
+    },
+    {
+      "target": "doi:10.1198/016214506000001437",
+      "reason": "Proper interval score; the scoring method is not new."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "reason": "Prior seasonal high tide flood prediction method. We evaluate annual count ranges, not that seasonal model."
+    }
+  ]
+}

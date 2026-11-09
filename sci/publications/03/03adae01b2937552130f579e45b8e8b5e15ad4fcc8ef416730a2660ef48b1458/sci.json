@@ -1,0 +1,91 @@
+{
+  "title": "One sign exception is needed for 91 selected worm responses, but stricter samples permit cell signs",
+  "abstract": "We tested whether separate source and target cell signs explain mean response signs on anatomical links in C. elegans. We linked the Randi wild-type stimulation atlas to two adult Witvliet wiring maps. At q below 0.05 and at least three occurrences, 91 selected chemical-linked responses required exactly one pair-specific sign exception. An eight-edge negative-product cycle and a feasible fit proved this minimum without relying on an optimizer bound. A uniform additive mean-response change of 0.041506 delta F/F was necessary and sufficient to permit the model with zero responses allowed. Requiring chemical links in both adults, at least five occurrences, or q below 0.01 removed the conflict. The both-adult role graph had no cycles and could not test this model. No measured response-error bound was available. Different animals, pooled responses, sparse constraints and indirect propagation prevent a biological sign-rule claim. Code, exact certificates, source hashes, evidence tables and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "effective response signs",
+    "signed graph",
+    "cycle certificate",
+    "cell factors"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact minimum sign exceptions and uniform additive response-change bounds in seven overlapping selections. Zero exception counts show model feasibility, not a biological mechanism. The primary conflict does not survive stricter occurrence or q thresholds."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/net.21907",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established signed graph balance and frustration methods; no new graph theorem is claimed."
+    },
+    {
+      "target": "doi:10.1093/comnet/cny015",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established signed graph balance and frustration methods; no new graph theorem is claimed."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/NeuroAtlas.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned upstream loader defines response mean, q and occurrence fields."
+    },
+    {
+      "target": "sci:sha256:6797c850102fcb3abef570e679d7b532c7a4555aca05003d96590d3cb131dee4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test of repeated sign agreement; this report tests signs across pairs with source and target factors."
+    },
+    {
+      "target": "sci:sha256:bc72278eb64134b48cfee5e739e9427208beeb754e85be001ccde9884a04c53f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cycle audit of reciprocal magnitudes after positive gains; this report tests sign factorization across separate source and target roles."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
