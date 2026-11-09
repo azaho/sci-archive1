@@ -1,0 +1,58 @@
+{
+  "title": "Freeze date gave no clear added spring break-up forecast gain at 59 lakes in 1981-2020",
+  "abstract": "We tested whether an autumn freeze date improved the next spring break-up date forecast beyond a lake-specific time trend. We used NSIDC G01377 Version 1 and 59 lakes with at least 40 paired training seasons through spring 1980 and 20 paired test seasons in springs 1981-2020. Adding freeze date reduced equal-lake, variance-scaled test mean squared error by 8.62%. The conditional 95% five-year block interval was a change of -15.93% to +0.81%, so a gain was uncertain. Error in days fell from 11.45 to 11.01 days. With rolling 40-year training windows, the score fell by 1.99%, with an interval of -8.99% to +5.71%. In training data, 52 of 59 lakes had a negative freeze-date coefficient after trend removal. The median was -0.098 break-up days per later freeze day. This association did not establish a stable forecast gain or a physical cause. Selected frozen seasons, a sample dominated by Finland, no weather controls, missing records and uncertainty in the block length limit inference. The package gives original code, aggregate evidence, source hashes, a figure and an independent scalar-regression audit. Source records stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "lake ice",
+    "freeze-up",
+    "break-up",
+    "seasonal memory",
+    "chronological forecast",
+    "block bootstrap",
+    "NSIDC G01377",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Change in variance-scaled test error when freeze date is added. Bars give conditional 95% five-year block intervals. Negative values favor freeze date. The right panel gives training slopes after trend removal. The primary interval includes zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7265/N5W66HP8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NSIDC G01377 Version 1, 2023-10-11 CSV snapshot. We use paired dates from frozen lake seasons; full hash and path are in provenance.json."
+    },
+    {
+      "target": "sci:sha256:d945072eb8dcb4aa30bcb0046aec0ea7fbe5040278107f2ad25fab39ed643cec",
+      "reason": "Prior campaign result used the same ice snapshot and tested changes in temperature relations. We test next-spring break-up forecasts from freeze date with new code. Data overlap means this is not independent replication."
+    },
+    {
+      "target": "doi:10.5194/tc-15-2211-2021",
+      "reason": "Prior analysis of trends and temperature controls. Our target is forecast gain from a preceding freeze date."
+    },
+    {
+      "target": "doi:10.1080/00221686.2025.2516779",
+      "reason": "Prior review describes a possible weak within-season ice-on to ice-off connection. We test forecast value and do not claim a new mechanism."
+    },
+    {
+      "target": "https://nsidc.org/sites/default/files/g01377-v001-userguide_1_1.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of freeze and break-up dates; site conventions can differ."
+    },
+    {
+      "target": "https://nsidc.org/data/g01377/versions/1",
+      "reason": "Data citation and access terms."
+    }
+  ]
+}
