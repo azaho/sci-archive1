@@ -1,0 +1,57 @@
+{
+  "title": "No linear readout guaranteed a sum-signal gain at half sharing and a five percent tuning bound in eight worm map models",
+  "abstract": "We tested whether optimized linear readout weights can restore a noise-sharing gain when tuning outside a bilateral neuron pair is uncertain. Eight public C. elegans brain maps supplied synapse site membership. In a model with sharing fraction 0.5, 566 bilateral sum signals had no guaranteed gain at a five percent bound on off-pair tuning. A convex calculation gave a largest upper bound of 0.964 relative to an optimal independent-noise readout for the same true signal. Optimized weights improved median worst-case ratios from 0.815\u20130.847 to 0.835\u20130.868. Sixteen of 566 contrast signals retained a gain. At sharing fraction 0.9, 57 sum signals retained a gain. This extends a prior fixed-weight test by optimizing over all linear weights and giving numerical bounds on the optimum. The results are conditional on assumed noise and tuning, not measured coding limits. Code, selected sites, weights, file hashes and independent checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "robust decoding",
+    "tuning uncertainty",
+    "convex optimization"
+  ],
+  "display": [
+    {
+      "path": "files/robust.png",
+      "caption": "At sharing fraction 0.5 and a five percent tuning bound, optimized weights improved worst-case information ratios. All sum-signal ratios remained below one. Maps are different animals; lines only guide the eye."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5e219e1924b10d1918a55a4b88b07a270ced9b5fbb8ea46fb07bde84f8b15f3c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its selected site table and panel under the SCI baseline license. Extends its fixed-weight uncertainty test to optimal robust weights. This is an extension, not independent replication."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://web.stanford.edu/~boyd/papers/robust_FDA.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "General prior method: robust Fisher readouts from convex uncertainty models."
+    },
+    {
+      "target": "doi:10.1038/nn.3807",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
