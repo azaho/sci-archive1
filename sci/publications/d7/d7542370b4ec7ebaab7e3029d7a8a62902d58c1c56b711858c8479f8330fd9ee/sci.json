@@ -1,0 +1,64 @@
+{
+  "title": "Feature similarity gave no clear within-axon target ranking gain after V1-to-HVA transfer in one MICrONS mouse",
+  "abstract": "We tested whether a wiring model trained in primary visual cortex (V1) ranks connected targets above proximity controls within each axon after transfer to pooled higher visual areas (HVA). We reused verified MICrONS v1 data and fixed source-trained models. Adding model feature similarity changed mean within-axon AUC from 0.773283 to 0.773037 across 106 source cells and 121,404 selected pairs. The gain was -0.000246, with a conditional 95 percent shared-neuron weight interval from -0.007178 to 0.005737. Each source had equal weight. This ranking measure is unchanged by a common intercept adjustment, unlike the probability loss used in prior work. One mouse, pooled areas, selected proximity controls, fixed source fits, and uncertain dependence limit inference. The package contains input designs, fits, source scores, uncertainty draws, code, provenance, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "structure and function",
+    "area transfer",
+    "within-axon ranking",
+    "calibration"
+  ],
+  "display": [
+    {
+      "path": "files/output/figure.png",
+      "caption": "Changes in mean within-axon AUC after area transfer. Each axon has equal point-estimate weight. Bars show conditional 95 percent shared-neuron weight intervals. Positive values mean better target ranking. Only the V1-to-HVA feature comparison is primary."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:cfeda14682259f877f3155549d2faf51bb861497e86f1a93d0a7bbbcca63dd97",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified input arrays, fixed source fits, source fitting code, and provenance. We test within-axon ranking, not target-area calibration."
+    },
+    {
+      "target": "sci:sha256:2abc423347290bfd5cde3f4d8d1655f3d86ffc5523f4858de291832014882370",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original area-transfer study and source of the fixed fits, via the cited calibration bundle."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

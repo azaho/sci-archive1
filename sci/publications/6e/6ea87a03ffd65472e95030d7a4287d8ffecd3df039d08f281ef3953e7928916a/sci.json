@@ -1,0 +1,90 @@
+{
+ "title": "Local excitatory recurrence did not reliably predict stimulus-evoked Fano-factor quenching in 139 mice: visual cortex exceeded LGd/LP in Allen VCN but not VBN flashes, and CA3 equalled CA1",
+ "abstract": "Question: Do brain regions with strong local excitatory recurrence quench spike-count variability (Fano factor, FF) more after a stimulus onset than relay regions without it, as recurrent network models of quenching predict? Approach: We used two Allen Institute Neuropixels datasets, Visual Coding (VCN, 58 mice) and Visual Behavior (VBN, 81 mice). We computed the Churchland mean-matched FF of 200 ms counts before and after full-field flashes, grating onsets and image changes. Before group results, we fixed two paired contrasts per mouse: visual cortex vs visual thalamus (LGd + LP), and CA3 vs CA1. Results: In VCN, visual cortex quenched more than LGd + LP after flashes (relative quench 0.178 vs 0.107; difference 0.071, 95% CI 0.038 to 0.106) and grating onsets (difference 0.100). In VBN flashes, the two groups quenched equally (0.192 vs 0.196; difference -0.004, CI -0.037 to 0.029). At VBN image changes, cortex quenched more only in the passive block. CA3 did not quench more than CA1 in either dataset, and neither quenched much (q <= 0.03), because the stimuli did not drive the hippocampus. Quench increased with the stimulus-evoked rate change across regions (rho 0.28 to 0.45). At equal rate change, the flash difference between cortex and thalamus was zero (VCN) or reversed (VBN), but the grating and image-change differences stayed. Burst collapse and running state did not change the results. Layer 2/3 quenched more than layer 4, also after rate control. Conclusion: The feedforward relay LGd can quench nearly as much as cortex, so local E-E recurrence is not necessary for quenching, and a general rule that more recurrence gives more quenching was not supported. Limitations: region groups are anatomical categories, not measured recurrence strengths; the hippocampal contrast had little quench to compare; the cause of the VCN-VBN difference (state, probe placement) is not known.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "variability quenching",
+  "Fano factor",
+  "recurrent networks",
+  "thalamus",
+  "visual cortex",
+  "hippocampus",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "Visual Behavior Neuropixels",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_paired_contrasts.png",
+   "caption": "Primary paired contrasts per mouse: relative quench (1 - FF_post/FF_pre, mean-matched) of visual cortex minus LGd + LP (left) and CA3 minus CA1 (right), for VCN flashes and grating onsets, VBN flashes and image changes (active and passive), all, stationary and running trials, and a burst-collapsed control. Points are means; bars are mouse-bootstrap 95% CIs; n is the number of mice."
+  },
+  {
+   "path": "files/figures/fig1_ff_timecourse.png",
+   "caption": "Mean-matched Fano factor time courses (100 ms count windows, mean +- SEM over mice) for visual cortex, LGd + LP, CA3 and CA1. Grey band: stimulus on. Matching is over all time points, so levels differ from the pre/post statistic."
+  },
+  {
+   "path": "files/figures/fig3_area_quench.png",
+   "caption": "Relative quench per brain area in VCN after flash (left) and grating (right) onsets. Each dot is one mouse; black squares are means with bootstrap 95% CIs; numbers under area names are mice. LGd and LP quench less than VISp in VCN; hippocampal and non-visual thalamic areas quench little."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/nn.2501",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mean-matched Fano factor method and the variability quenching phenomenon."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels dataset (Siegle et al. 2021)."
+  },
+  {
+   "target": "https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Behavior Neuropixels dataset."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF v3 (2017) annotation for cortical layers."
+  },
+  {
+   "target": "doi:10.1038/nn.3220",
+   "reason": "Clustered excitatory network model of variability quenching (Litwin-Kumar and Doiron 2012)."
+  },
+  {
+   "target": "doi:10.1371/journal.pcbi.1002395",
+   "reason": "Attractor model of variability reduction (Deco and Hugues 2012)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2018.01.045",
+   "reason": "Stabilized supralinear network account of variability quenching (Hennequin et al. 2018)."
+  },
+  {
+   "target": "doi:10.1103/PhysRevE.82.011903",
+   "reason": "Stimulus-dependent suppression of chaos in recurrent networks (Rajan, Abbott and Sompolinsky 2010)."
+  },
+  {
+   "target": "sci:sha256:74d39c35f4cebf48a929e4f142800ad680f5975f430991c17a664fc68ea06c28",
+   "reason": "Prior campaign result on layer-specific reduction of shared V1 variability by gratings; our layer result partly agrees."
+  },
+  {
+   "target": "sci:sha256:5e701d95f15f204001b23b508cc1f1ad83b8ea499c086d81b49ec0760a73d547",
+   "reason": "Prior campaign result relating inter-regional trial-to-trial co-variation to axonal wiring."
+  }
+ ]
+}
