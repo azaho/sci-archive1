@@ -1,0 +1,84 @@
+{
+ "title": "ASASSN-14ko flares from 2022 to 2026 peak up to 21 days later than the published constant period-derivative ephemeris; random period changes of about 0.6 days per orbit fit the peak times better",
+ "abstract": "ASASSN-14ko is a repeating nuclear transient with optical flares at a period of approximately 110 days. Payne et al. (2021, 2022) fitted the 2014-2021 peak times with a constant period derivative (Pdot = -0.0026), which is the main evidence for steady orbital decay in this candidate repeating partial tidal disruption. We did an out-of-sample test. We measured 8 flare peaks in ASAS-SN Sky Patrol g-band aperture photometry (2022 February to 2024 October) and 1 peak in TESS Sector 98 full-frame images (2026 January 1). We used two peak methods (template fit and kernel maximum). Our pre-2022 peaks agree with the published peaks (RMS 0.76 d). The flares come progressively later than predicted. The offset is -10 to 0 d in 2022 and +7 to +13 d in 2023-2024. The TESS peak (MJD 61041.3 +/- 0.5) is 21.3 d after the published prediction. The difference image puts the flare on the nucleus. Constant-Pdot models trained on the pre-2022 peaks fail as forecasts: chi-square 26-67 for 9 flares (p = 2e-10 to 0.002). With uncertainties scaled to the published widths, p is 7e-6 for template peaks and 0.05 for kernel peaks. A Kalman model in which the period gets a random change of approximately 0.6 d at each orbit forecasts the 2022-2026 peaks better (log score better by 4.6-10.0) and is consistent with the kernel peaks (p = 0.085). The pre-2022 peaks alone already prefer these kicks (p = 0.04). For all 30 peaks, kicks are preferred (p = 0.009-0.045), and a steady period decrease is then not required (p = 0.10-0.16; Pdot 95% interval -0.0043 to +0.0009). The period became shorter from approximately 113 d to 108 d, but not at a constant rate. The g-band flare amplitude shows no monotonic decrease. We predict the next peaks for 2026 November 10-16 and 2027 February 23 to March 2 (published ephemeris: 2026 October 18 and 2027 January 30). Limitations: aperture photometry on unsubtracted images, no public data after 2025 January except one TESS sector, peak times of structured flares depend on the method by up to 8 d, and 30 peaks cannot fully separate random kicks from smooth higher-order changes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating nuclear transient",
+  "partial tidal disruption event",
+  "periodic flares",
+  "period derivative",
+  "timing noise",
+  "out-of-sample forecast",
+  "ASAS-SN",
+  "TESS",
+  "Kalman filter",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_timing_diagram.png",
+   "caption": "Flare peak times of ASASSN-14ko minus a constant 110-day period. Grey: published peaks (2014-2021). Blue: ASAS-SN g peaks of this work (filled: template; open squares: kernel). Orange diamond: TESS Sector 98 peak. Violet dashed: published Payne+2022 ephemeris. Green and orange bands: 68% forecasts of a constant-Pdot model and a random-period-kick model, both trained only on the 2014-2021 peaks."
+  },
+  {
+   "path": "files/figures/fig1_lightcurves.png",
+   "caption": "Top: ASAS-SN Sky Patrol V and g aperture flux, 2014-2025, with flare peaks. Middle: g flux for 2022 to 2025 January with published predicted peaks (violet dashed) and measured peaks (black). Bottom: TESS Sector 98 flux with the cycle-38 flare 21 days after the published prediction, and the flare-minus-quiet difference image centred on the galaxy nucleus."
+  },
+  {
+   "path": "files/figures/fig3_forecast_residuals.png",
+   "caption": "Observed minus predicted peak times for the 9 out-of-sample flares (2022-2026), for the published ephemeris and for constant-Pdot and random-period-kick Kalman forecasts trained on 2014-2021 peaks. Error bars are 1-sigma predictive uncertainties. Left: template peak times. Right: kernel peak times."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.3847/1538-4357/abe38d",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the 2014-2020 peak times and of the original constant period-derivative timing model that we test."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2104.06414",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the September 2020 peak time and the updated timing model."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2206.11278",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the 2020-2021 peak times, the TESS peak times and the published ephemeris (P0 = 115.2 d, Pdot = -0.0026) that we test out of sample."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/ade795",
+   "reason": "Recent multiwavelength study of ASASSN-14ko flares to 2024 (early bumps and rebrightenings); it does no timing test."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2304.03791",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol V2.0, the source of the ASAS-SN light curves."
+  },
+  {
+   "target": "https://mast.stsci.edu/tesscut/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS full-frame-image cutouts for sectors 4-6, 31-33, 87 and 98."
+  }
+ ]
+}
