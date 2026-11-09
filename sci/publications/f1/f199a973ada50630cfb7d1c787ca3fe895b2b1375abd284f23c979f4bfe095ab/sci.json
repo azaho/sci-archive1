@@ -1,0 +1,91 @@
+{
+  "title": "Earth rotation slowing gave no forecast gain for global M≥7 earthquake counts in 2017-2025, and the 1900-2016 link was weak and absent at 10°N-30°S",
+  "abstract": "Question: does a slowing of the Earth's rotation (length-of-day increase) come 5-6 years before more M≥7 earthquakes, as Bilham and Bendick said in 2017? They forecast 25-30 % more M≥7 earthquakes from 2017 for at least five years, with the strongest effect at 10°N-30°S. Approach: we used the IERS EOP C02 length-of-day series (1830-2026) and USGS ComCat M≥7 counts (1900-2025, 1,607 events), with ISC-GEM, M≥7.1 and Gardner-Knopoff declustered counts as checks. We used phase-randomised length-of-day surrogates as the null model, Poisson forecasts fitted on 1900-2016 for 2017-2025, and rolling one-year-ahead forecasts for 1950-2025. Results: 2017-2022 had 12.2 M≥7 earthquakes per year against a 1900-2016 mean of 12.7 (ratio 0.96, 95 % interval 0.70-1.25); 2017-2025 gave 1.03. All 24 models fitted on 1900-2016 forecast 2017-2025 worse than a constant rate. In 1900-2016 the best correlation at a 4-7 year lead was r = 0.22 (surrogate p = 0.07; p = 0.03-0.22 over 48 variants). At 10°N-30°S there was no relation (r ≤ 0.11, p ≥ 0.33). A post hoc relation north of 10°N (r up to 0.64) also failed out of sample. Rolling forecasts gained 0.20 nats over 76 years (surrogate p = 0.14). The fast rotation of 2016-2021 predicted fewer earthquakes in 2021-2025, but the mean was 15.0 per year. Limitations: only about four length-of-day cycles and nine new years, so an effect near 15 % cannot be excluded; we did not repeat the topological renewal-interval analysis.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "length of day",
+    "Earth rotation",
+    "global seismicity",
+    "M7 earthquakes",
+    "earthquake forecasting",
+    "out-of-sample test",
+    "surrogate data",
+    "ComCat",
+    "ISC-GEM",
+    "IERS EOP C02",
+    "replication"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_counts_and_lod.png",
+      "caption": "Top: annual ComCat M≥7 counts 1900-2025 with the 10-year running mean, the 1900-2016 mean, the +25-30 % forecast band for 2017-2022 and the observed 2017-2022 mean. Bottom: length-of-day change (positive = rotation slowing) shifted forward by the claimed 5-year lead. The grey area is out of sample."
+    },
+    {
+      "path": "files/figures/fig2_lag_correlation.png",
+      "caption": "Correlation between length-of-day change and M≥7 counts at leads of -12 to +12 years, 1900-2016, for annual counts (left) and 10-year running-mean counts (right). Grey: 95 % range from 4,000 phase-randomised length-of-day surrogates for the global series. The claimed band 10°N-30°S has no relation; earthquakes outside the band carry the in-sample relation."
+    },
+    {
+      "path": "files/figures/fig3_out_of_sample.png",
+      "caption": "Left: 2017-2025 counts and forecasts from Poisson models fitted on 1900-2016 (5-year lag) and the constant 1900-2016 rate. Right: cumulative log-score gain of rolling one-year-ahead length-of-day forecasts over a constant rate, 1950-2025; the dotted line is the 95th percentile of the total gain under 500 surrogate length-of-day series."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1130/abs/2017AM-300667",
+      "relations": [
+        "challenges",
+        "reviews"
+      ],
+      "reason": "Source of the tested forecast: 25-30 % more M≥7 earthquakes 5-6 years after rotation slowing, from 2017, strongest at 10°N-30°S."
+    },
+    {
+      "target": "doi:10.1002/2017GL074934",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Bendick and Bilham (2017) GRL; Figure 4a links length-of-day change to 10-year mean M≥7 counts. We test that link with surrogate nulls and out-of-sample data."
+    },
+    {
+      "target": "https://hpiers.obspm.fr/eoppc/series/longterm/eopc02.1830-now",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IERS EOP C02 combined UT1/LOD series, downloaded 2026-11-09."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS ComCat and ISC-GEM (catalog=iscgem) M≥6.5 event lists, downloaded 2026-11-09."
+    },
+    {
+      "target": "doi:10.1111/j.1365-246X.1994.tb02471.x",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Jordi et al. (1994): source of the pre-1955 part of the C02 length-of-day series."
+    },
+    {
+      "target": "doi:10.1785/0220140111",
+      "reason": "Bragato and Sugan (2014): decrease of the northern-hemisphere M≥7 rate since 1900, relevant to catalog changes."
+    },
+    {
+      "target": "sci:sha256:1509484abf83224f9dbf26796a30eb882d2aa10f04cfc2d9f5c095608647dc7a",
+      "reason": "Related campaign test of temporal-spatial clustering of global M7 earthquakes."
+    },
+    {
+      "target": "sci:sha256:f3b28b9383e4ab52fa7a83ec0728269a08b4a961a2d6eaf7e46208e459eed730",
+      "reason": "Related campaign test of M7 pair clustering at 30-180 days."
+    },
+    {
+      "target": "sci:sha256:2db4ca6a83f8841f3e8d639b47dbb18b6cb9ee38dce14b77402eb98da9991068",
+      "reason": "Related campaign out-of-sample test of an external-forcing earthquake link (solar wind), with the same type of null result."
+    }
+  ]
+}

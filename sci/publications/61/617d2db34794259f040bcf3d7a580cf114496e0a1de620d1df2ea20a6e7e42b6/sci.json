@@ -1,0 +1,78 @@
+{
+  "title": "Two additional qualifying response directions can complete a reciprocity cycle on replicated worm electrical links",
+  "abstract": "We asked how many additional response directions could create a test of reciprocal transfer after arbitrary cell gains are removed. We linked a pooled wild-type worm signal atlas to electrical links present in both adult anatomy maps. At q below 0.05 and at least three occurrences, nine same-sign bidirectional pairs had no cycles. A minimum-cost graph search found that two additional qualifying directions can complete the RMDDR, RMDR, RMDVR triangle. Both are responses to RMDDR stimulation. They have finite positive means but fail the detection threshold. No single additional pair can create an electrical cycle. The cost stays two when all finite nonzero observed signs must be preserved. It rises to four with q below 0.01. Independent integer optimization checks the minimum designs. The acquisition model assumes that each new direction can meet the signal rule with a matching sign. The result is an optimistic design bound, not a trial count, a power calculation or evidence for reciprocal physiology. Pooled activity, separate anatomy animals and response uncertainty limit its biological use. Code, source hashes, candidate masks, cycle witnesses, a proof and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "experimental design",
+    "reciprocity",
+    "cell gains",
+    "connectome",
+    "optogenetics",
+    "cycle constraints"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Minimum additional qualifying directions for a first cycle in each replicated anatomy scope. Costs assume successful response acquisition and matching signs. The panels show the primary rule and threshold changes; no_q removes the detection rule and is only a coverage check."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bc72278eb64134b48cfee5e739e9427208beeb754e85be001ccde9884a04c53f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its pinned data, loading and linkage approach, and forest observation. Adds an exact minimum-acquisition design with independent integer validation."
+    },
+    {
+      "target": "sci:sha256:7686ce7b8d7aaeb886862e8d66bd1ae53e83c7c67d661ff7f2e4a3292c26c3c1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior worm structure-response prediction test. The present work designs measurements rather than predicting response detection."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5802/alco.113",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established sign-symmetry and cycle criterion for diagonal symmetrization."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
