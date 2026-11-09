@@ -1,0 +1,65 @@
+{
+  "title": "Past wind acceleration reduced offshore Atlantic next-day wind-change mean squared error by 2.7% in a 2002-2025 test",
+  "abstract": "We tested whether past wind acceleration adds next-day wind-change skill beyond the current storm state and past 12-hour wind change. We used Atlantic HURDAT2 and Natural Earth land data. We trained on earlier seasons from 1982 onward and tested each season from 2002 to 2025. The main sample had 3,636 six-hour starts from 260 storms, with all sampled points more than one coordinate degree from land. Adding acceleration changed mean squared error by a reduction of 2.67%. The conditional 95% three-year block interval was 2.01% to 3.30%. This is a test of added historical information in fixed regression models. It does not identify a physical cause or establish real-time forecast skill. Revised and rounded winds, future track screening, one basin, and model form limit the result. The package gives a fixed analysis plan, source hashes, code, every main forecast, aggregate results, bootstrap draws, and an independent arithmetic and ridge-fit audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "tropical cyclone",
+    "Atlantic",
+    "wind acceleration",
+    "chronological validation",
+    "HURDAT2",
+    "forecast benchmark"
+  ],
+  "display": [
+    {
+      "path": "files/skill.png",
+      "caption": "Later-season mean squared error changes for nested wind-history models. Bars show conditional 95% intervals from circular three-year blocks. Positive values mean lower error. The right panel changes land distance, ridge penalty, storm weights, or UTC start time."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://rammb-data.cira.colostate.edu/ships/docs/1994_WAF_DeMaria_SHIPS.pdf",
+      "reason": "DeMaria and Kaplan (1994) use past 12-hour intensity change as a persistence predictor. We test added acceleration, not the novelty of persistence."
+    },
+    {
+      "target": "doi:10.1038/s41612-026-01329-4",
+      "reason": "Prior work studies dynamical regimes and trend-persistence intensity forecasts. Our test is a nested chronological benchmark."
+    },
+    {
+      "target": "sci:sha256:9bc0e5f0dbed1b1156d222cfc9bd80cc4672ccb2bf62b4da79ffe5496964010d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The published selection analysis motivates use of all eligible starts without selecting lifetime peaks. Raw observations overlap; this is not independent confirmation."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atl-1851-2021.pdf",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.naturalearthdata.com/about/terms-of-use/"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}

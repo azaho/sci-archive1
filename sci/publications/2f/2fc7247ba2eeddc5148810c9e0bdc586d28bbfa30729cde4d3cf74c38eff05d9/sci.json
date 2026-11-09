@@ -1,0 +1,128 @@
+{
+  "title": "Three noise models retain a positive depth and post-transit flux relation in 108 K2-22 Campaign 1 orbits with linear baselines",
+  "abstract": "We test whether time-correlated flux errors remove the reported relation between core transit depth and flux after transit in K2-22. We use 108 matched Campaign 1 orbits from K2SFF and EVEREST. Noise fits use only samples outside transit. White, white plus exponential, and signed AR(1) models all give positive joint five-record block intervals with linear baselines. The exponential slopes are 0.0766 for K2SFF (interval 0.0306 to 0.1695) and 0.0380 for EVEREST (interval 0.0153 to 0.0731). Resampling refits the noise laws. Later-data baseline scores give no clear improvement over white noise. Quadratic baselines with white noise give intervals that include zero in both products. Thus the result remains conditional on baseline and noise assumptions. It is consistent with dust extinction and scattering but does not confirm that mechanism. The reductions share exposures. No independent instrument confirms the relation. Code, exact source hashes, aggregate grids, figures and separate-scratch reproduction commands are included. No external observations or record-level extracts are bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "K2-22",
+    "dust transit",
+    "time-correlated noise",
+    "K2SFF",
+    "EVEREST",
+    "covariance",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/output/noise_evidence.png",
+      "caption": "Three noise models retain positive relations with a linear baseline. Intervals refit the noise in five-record block resamples. The correlation time is weakly constrained. These products share exposures."
+    },
+    {
+      "path": "files/output/baseline_controls.png",
+      "caption": "White-noise intervals include zero with quadratic baselines. Later-data noise score improvements also have intervals that include zero. The relation remains conditional on the tested measurement model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:61dc66130c572c6409ea7793e7d049e56c4896c4c3e24af329adec5fedb03c70",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the window definition and tests its stated white-noise limitation. We read its verified paper and code. No packaged flux series is reused."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/812/2/112",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Known dust transits, flux excess, and the fixed period, epoch and duration."
+    },
+    {
+      "target": "doi:10.1086/678764",
+      "relations": [
+        "uses"
+      ],
+      "reason": "K2SFF extraction method."
+    },
+    {
+      "target": "doi:10.17909/T9BC75",
+      "relations": [
+        "uses"
+      ],
+      "reason": "K2SFF data, v1, Campaign 1."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aad230",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EVEREST v2 method."
+    },
+    {
+      "target": "doi:10.17909/T9501J",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EVEREST data, v2.0, Campaign 1."
+    },
+    {
+      "target": "doi:10.1111/j.1365-2966.2006.11012.x",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on time-correlated errors in transit photometry."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/k2sff/c01/201600000/37175/hlsp_k2sff_k2_lightcurve_201637175-c01_kepler_v1_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input; source path, version and SHA-256 are in files/provenance.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/everest/v2/c01/201600000/37175/hlsp_everest_k2_llc_201637175-c01_kepler_v2.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input; source path, version and SHA-256 are in files/provenance.json."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/k2/public/lightcurves/c1/201600000/37000/ktwo201637175-c01_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input; source path, version and SHA-256 are in files/provenance.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsp/k2sff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Product field definitions, source attribution or external data terms."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsp/everest",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Product field definitions, source attribution or external data terms."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Product field definitions, source attribution or external data terms."
+    }
+  ]
+}
