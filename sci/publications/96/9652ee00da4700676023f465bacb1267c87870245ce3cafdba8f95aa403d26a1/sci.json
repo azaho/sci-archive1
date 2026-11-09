@@ -1,0 +1,67 @@
+{
+  "title": "A loop-phase test had low power at 1000 independent spectral samples in two passive adult worm models",
+  "abstract": "We tested finite-sample detection of spectral loop phases in passive models of two partial adult worm electrical maps. The models had symmetric coupling and unequal independent source noise with a variance ratio bounded by two. We used one frequency, 60 observed cells, and fixed sets of 24 and 56 triangles. Exact complex Wishart sampling gave finite-sample spectra. A mean absolute loop-sine score had rejection shares of 4.5% in each map at 1000 independent spectral samples against a known equal-noise null. The nominal test level was 5%. Rejection rose to 37.7% and 29.1% at 100000 samples, and 99.9% and 100% at one million samples. Independent null validation shares ranged from 4.4% to 6.7% across settings. A later sensitivity test matched the real spectrum of ten alternatives per map. It gave rejection shares of 5.9% and 6.1% at 1000 samples, and 38.0% and 38.4% at 100000 samples. Cell-specific diagonal filters preserved the sample score to numerical precision. Thus filter invariance did not ensure useful sensitivity for this score at 1000 samples. The test uses oracle null spectra and ideal independent complex samples. It gives no recording-duration estimate, no general sample lower bound, and no measured activity result. Partial anatomy and assumed physiology limit biological use. Code, aggregate results, source hashes and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "spectral loop phase",
+    "finite sample",
+    "statistical power",
+    "calcium filtering",
+    "C. elegans",
+    "complex Wishart"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Alternative and null rejection shares for two assumed passive adult worm circuits. Samples are independent complex spectral replicates, not frames or animals. The test uses known null spectra."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d6c6de5ef6c99ae805a9da6948e4006044861ed9fd2053b4214df8a5e05713db",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its model convention and population-phase finding as the basis for a new finite-sample test; no code or derived records reused."
+    },
+    {
+      "target": "sci:sha256:22289885c85ea0b6c529cb31aab98fe14df9d0b029cc0df8c4431f955bb6628b",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.81279",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
