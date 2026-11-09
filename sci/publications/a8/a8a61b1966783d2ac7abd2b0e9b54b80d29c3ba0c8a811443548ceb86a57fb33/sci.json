@@ -1,0 +1,74 @@
+{
+  "title": "Six-hour controls reduced a short-gap spatial excess in a 2020 Puerto Rico earthquake catalog sample",
+  "abstract": "We tested whether earthquakes less than ten minutes apart were unusually close in space after daily activity and magnitude type were held fixed. We used a fixed USGS catalog for days 1-30 after 7 January 2020, at magnitude 3 or more within 50 km of a fixed center. Of 73 selected consecutive pairs, 24 were within 5 km. Location shuffles within each UTC day and magnitude type gave a mean of 17.18 close pairs and a one-sided probability of 0.0357. Shuffles within six-hour periods and magnitude type kept the same 73 pairs but gave a mean of 22.88 and a probability of 0.4208. The excess above the shuffle mean fell from 6.82 to 1.12 pairs. Thus the apparent short-gap excess depended on the time control. The result does not establish a separate ten-minute triggering effect or its absence. It gives a reproducible control-timescale check for this revised catalog. One sequence, small pair counts, changing detection, location errors and the exchangeability assumption limit inference. Code, all shuffle counts, exact source bytes, an independent numerical check and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "aftershocks",
+    "space-time interaction",
+    "conditional permutation",
+    "catalog controls"
+  ],
+  "display": [
+    {
+      "path": "files/clustering.png",
+      "caption": "Left: daily-control shuffle counts and the observed count. Right: observed fractions and pointwise 95% shuffle ranges for all planned settings. Null ranges are not confidence intervals for a physical effect. Settings overlap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c4e5b97e90080abf8f56a862c786a199e2bd09a7463679fd6194385d31f47fce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior decay test supplied the shared catalog context and exposed its selection counts. We test a new spatial statistic on overlapping data."
+    },
+    {
+      "target": "sci:sha256:877dd6cab9c334046494dd4942612b8ee1df3580801da99c6bc4969dbf39c5c1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior magnitude-type result motivated the within-type shuffle control. Data overlap; this is not independent replication."
+    },
+    {
+      "target": "doi:10.1785/0220210222",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior prospective ETAS forecast evaluation for this sequence. Our diagnostic is not a test of that forecast."
+    },
+    {
+      "target": "doi:10.1111/j.1365-246X.2008.03770.x",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior earthquake space-time correlation study with shuffled catalogs. The general method and physical idea are not new."
+    },
+    {
+      "target": "https://jech.bmj.com/content/jech/18/1/17.full.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Knox (1964), prior close-pair approach to space-time interaction. Our statistic uses selected consecutive pairs and restricted shuffles."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official event service query documentation."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the reused fixed raw CSV. The hash, not a new live response, defines the analysis version."
+    }
+  ]
+}

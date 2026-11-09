@@ -1,0 +1,51 @@
+{
+  "title": "All 592 midnight starts had 300-second labels in the 2017-2025 PNSN tremor catalog",
+  "abstract": "We audited the duration field near midnight in a public PNSN tremor catalog. All 460,042 retained rows for 2017-2025 had durations of 150 or 300 seconds. All 592 starts exactly at midnight had 300-second labels: 288 in 2017-2021 and 304 in 2022-2025. Nearby clock slots contained both labels. This exact-slot result was found after figure inspection. A planned broader contrast gave a null result. In 2022-2025, the 300-second share was 45.07% in the hour around midnight and 45.42% in adjacent periods, after omission of the empty final start slot. The difference was -0.36 percentage points, with a conditional 95% interval of -1.95 to 1.18 from 30-day blocks. No retained start plus its reported duration crossed midnight. These results identify clock structure in a catalog field. They do not measure physical event lengths, establish the cause of the labels, or explain the prior start-count deficit. One snapshot, implicit clock zone, region weighting and conditional uncertainty limit inference. We provide daily evidence, exact-slot counts, source hashes, code, an independent source audit, an offline repeat and a figure.",
+  "keywords": [
+    "Cascadia",
+    "tectonic tremor",
+    "catalog audit",
+    "duration field",
+    "midnight",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/duration.png",
+      "caption": "The 300-second share near midnight and its difference from adjacent clock periods. Intervals use 30-day blocks. The absent 23:57:30 slot is excluded. All intervals are pointwise."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:129cc20379b78394520763a28446f822208efe85c4bf85963bea1f7c8011e6df",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior midnight start-count result sets the question and clock contrast. We use the same raw snapshot, but new duration evidence and code. This is not independent confirmation."
+    },
+    {
+      "target": "doi:10.1029/2021JB022523",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method context: 300-second windows with 150-second overlap and daily clustering; these are not independent physical event durations."
+    },
+    {
+      "target": "doi:10.1029/2024JB029159",
+      "reason": "Prior work discusses catalog changes and detection limits for episode analysis. Only indexed abstract and search text were available in this investigation."
+    },
+    {
+      "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared API v3.0 snapshot. Exact source path, bytes and SHA-256 are in files/provenance.json."
+    }
+  ]
+}
