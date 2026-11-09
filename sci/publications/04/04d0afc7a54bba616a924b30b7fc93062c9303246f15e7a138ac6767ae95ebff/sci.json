@@ -1,0 +1,54 @@
+{
+  "title": "A day-and-type shuffle leaves no clear 10-minute magnitude similarity in Ridgecrest on days 1 to 30",
+  "abstract": "We tested whether consecutive Ridgecrest events with short time gaps have similar magnitudes. A fixed USGS sample contains 931 events with preferred magnitude at least 2.5 on days 1 to 30 after the 2019 M7.1 event. The primary test uses 363 consecutive pairs with gaps of at most 10 minutes. Their mean absolute magnitude difference is 0.4397. Permuting magnitudes within each day and magnitude type gives an exact mean of 0.4409 and a lower-tail p value of 0.4704. A planned 1-minute check has 98 pairs, an observed mean of 0.3415, a null mean of 0.4577, and p = 0.0002. Post hoc local-area and day-omission checks retain this shorter-gap departure, but higher-floor and late-window checks are uncertain. These are conditional catalog tests. Missed events, magnitude errors, and local mixtures can cause departures. The results do not establish physical magnitude memory, completeness, or forecast skill. The package contains fixed source data, code, all permutation draws, an independent audit, and a repeated-run check.",
+  "keywords": [
+    "Ridgecrest",
+    "magnitude similarity",
+    "conditional permutation",
+    "catalog completeness",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/magnitude_similarity.png",
+      "caption": "The 10-minute primary statistic lies near its null mean. The planned 1-minute check has lower magnitude differences. Blue bars are central 95% null reference ranges. Red dots are observed values. Rows with post_ are post hoc checks. These ranges are not confidence intervals for a physical effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its public source snapshot and timing-test context; this work tests consecutive magnitude differences."
+    },
+    {
+      "target": "sci:sha256:ddec79efc92e46547677d5000479c5fbe5516c027e66a4f1225e7a935f67b1a9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its warning about preferred magnitude types in this same snapshot; the statistic here tests pair similarity rather than directional event counts."
+    },
+    {
+      "target": "doi:10.1785/0220240277"
+    },
+    {
+      "target": "doi:10.1038/s41467-023-37782-5"
+    },
+    {
+      "target": "doi:10.1029/2020JB021027"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

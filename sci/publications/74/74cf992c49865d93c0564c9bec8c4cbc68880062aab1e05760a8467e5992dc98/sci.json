@@ -1,0 +1,58 @@
+{
+  "title": "Cell connection counts fix reciprocal-pair counts in 192 of 194 selected Allen mouse slice graphs",
+  "abstract": "We tested reciprocal wiring in fully tested groups of four to six excitatory cells from Allen Synaptic Physiology r2.1 slice recordings. We selected one graph from each of 194 inferred mice. The sample had 95 directed connections and 14 reciprocal pairs. A uniform graph model with fixed edge count gave 4.298 expected reciprocal pairs. A model with each cell input and output count fixed gave 13.125. Under the latter model, reciprocal-pair counts could change in only two graphs; they were fixed in 192. The observed total was inside the central 95% null range of 12 to 14, with an upper-tail probability of 0.3125. A coarse distance control gave the same conclusion. An exploratory sample of 26 inferred human donors did not show clear excess. Exact enumeration and derived pair tables provide a reusable motif benchmark. This result limits a conditional test; it does not show that degrees cause reciprocity or that reciprocal wiring has no function. Small sampled circuits, slice damage, detection errors, inferred donor labels, and lack of in vivo outcomes limit the scope.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connections",
+    "degree sequence",
+    "exact enumeration",
+    "cortical circuits",
+    "null model"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/reciprocity.png",
+      "caption": "Observed reciprocal-pair counts and exact null means and central 95% null ranges in selected mouse and human slice graphs. These ranges are not population confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the Allen mouse and human synaptic physiology data."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior study of nonrandom cortical wiring and reciprocal pairs."
+    },
+    {
+      "target": "doi:10.1088/1367-2630/14/2/023012",
+      "reason": "Directed degree-sequence graph construction and sampling context."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-connection-characterization",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the manual chemical connection calls and their review."
+    },
+    {
+      "target": "sci:sha256:8586c8ce2c6315088ed2bcace5b37fd847f8a2edaf87c335387e5b35921eb217",
+      "reason": "Related campaign test of strength in reciprocal versus one-way pairs; read before choosing the present motif-count question."
+    }
+  ]
+}

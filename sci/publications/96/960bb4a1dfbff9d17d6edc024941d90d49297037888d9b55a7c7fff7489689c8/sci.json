@@ -1,0 +1,35 @@
+{
+  "title": "US stream gauges rose more often after earthquakes than in placebo windows at energy density of 1 J/m3 or more and at 10 cm/s or more, in dry periods, 1950 to 2024",
+  "abstract": "Question: Does earthquake shaking raise stream discharge more often than chance, and at which exposure does the excess start? Approach: We tested all available United States gauges near 385 mainshocks (M 5 or more, 1950 to 2024), not only streams with reported changes. We used USGS daily discharge, ComCat earthquakes, seismic energy density e, and ShakeMap peak ground velocity. A pair was eligible if the gauge was in a dry state. There were 25,004 eligible pairs. Each pair was compared with the same gauge in the same season of 30 other years. We wrote the plan before we computed outcomes. Findings: At e of 1 to 10 J/m3, 44.8 percent of eligible gauges rose by 20 percent or more, against 21.0 percent in placebo windows (excess +23.8 points, 95 percent interval +15.1 to +31.9, Holm p = 0.005). At e of 10 J/m3 or more the excess was +27.3 points. At 0.1 to 1 J/m3 and 0.01 to 0.1 J/m3 the excess was +6.9 and +5.1 points (Holm p = 0.087). These lower bins are not established. With peak ground velocity the excess was +8.7 points at 3 to 10 cm/s and +31.9 points at 10 to 30 cm/s. A smooth logistic curve predicted held-out events better than a step, so we do not claim a sharp threshold. Decreases did not increase. At e of 1 J/m3 or more, the mean excess in ln discharge grew to +0.31 by day 20 and did not decay by day 30, so we could not estimate a recovery time. Post-hoc checks did not remove the excess: same-year pre-event windows, ring contrast within events (+25.7 points), and June to October events (+20.8 points). Limitations: We had no rain data. Five events supply 59 percent of responding pairs at e of 1 J/m3 or more, and without the top ten events the excess is +8.6 points. The result applies only to dry pre-event states. Epicentral energy density ignores rupture geometry. The planned positive control failed the planned eligibility rule, because NWIS rounds low flows; a post-hoc rule restored it.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": [
+    "streamflow response to earthquakes",
+    "seismic energy density",
+    "peak ground velocity",
+    "natural experiment",
+    "placebo test",
+    "NWIS daily discharge",
+    "ShakeMap",
+    "hydrology",
+    "Earth system interaction",
+    "dose response"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_response_by_energy_density.png", "caption": "A: Share of eligible gauges with flow up by 20 percent or more, in earthquake windows and in placebo windows. B: Excess over placebo with 95 percent event-bootstrap intervals, for all gauges and for GAGES-II reference gauges."},
+    {"path": "files/figures/fig3_pgv_and_graded_response.png", "caption": "A: Excess over placebo by ShakeMap peak ground velocity, for the planned eligibility rule and for a rule that allows one reporting unit. B: Response share by energy density, with a logistic fit and placebo share."},
+    {"path": "files/figures/fig2_event_study.png", "caption": "Mean excess in ln discharge over the recession prediction, against placebo windows, for two energy density groups. Bands are 95 percent event-bootstrap intervals. The excess at e of 1 J/m3 or more did not decay by day 30."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:11bb393c8865d0a13337a06dd8e0227508ae0a6fbf781f5bb9b7dbfdc3443751", "relations": ["supports"], "reason": "Companion study in this campaign with a rain filter for 1980 to 1990. It found no detectable median change at e of 0.1 J/m3 or more and reported that evidence above 1 J/m3 was too sparse. Our small excess at 0.1 to 1 J/m3 agrees with it, and our larger sample tests the range it could not test."},
+    {"target": "doi:10.1029/2018GL078621", "relations": ["supports"], "reason": "Mohr, Manga and Wald (2018) reported a response above about 10 cm/s in eight Chilean streams. Our steepest increase is near this value, but a step model did not predict better than a graded model."},
+    {"target": "doi:10.1111/j.1468-8123.2009.00270.x", "relations": ["reviews"], "reason": "Wang and Manga (2010) gave a boundary near 0.1 J/m3 for streamflow response. Our excess in the bin above this boundary is small and not established."},
+    {"target": "doi:10.1029/2019GL081974", "relations": ["uses"], "reason": "Shi (2019) states the Wang (2007) energy density relation that we used and its southern California calibration."},
+    {"target": "doi:10.1029/2011RG000382", "reason": "Review of hydrological response to earthquakes."},
+    {"target": "https://pubmed.ncbi.nlm.nih.gov/12829774/", "reason": "Montgomery and Manga (2003), compilation of streamflow and well response."},
+    {"target": "https://earthquake.usgs.gov/fdsnws/event/1/", "relations": ["uses"], "reason": "ComCat earthquakes and ShakeMap grids."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily discharge."},
+    {"target": "https://water.usgs.gov/GIS/dsdl/basinchar_and_report_sept_2011.zip", "relations": ["uses"], "reason": "GAGES-II reference-gauge classification."}
+  ]
+}

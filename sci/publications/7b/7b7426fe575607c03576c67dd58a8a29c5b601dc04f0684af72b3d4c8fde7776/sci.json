@@ -1,0 +1,59 @@
+{
+  "title": "Connection fractions for other cells gave no clear gain in 50 Hz plasticity predictions in three Allen slice groups",
+  "abstract": "We tested whether connection fractions for other recorded partners help predict 50 Hz response change in Allen Synaptic Physiology r2.1 slices. We excluded the predicted edge from both endpoint counts. We held out whole inferred donors and controlled cell labels, distance, focal test effort, and partner coverage. At ridge penalty ten, mean absolute error reductions were -0.00353 in 284 mouse excitatory connections from 146 inferred donors, -0.00104 in 470 mouse inhibitory connections from 179 inferred donors, and -0.00899 in 77 human excitatory connections from 22 inferred donors. All conditional 98.75% donor bootstrap intervals included zero. Seven human inhibitory connections from four donors were too few to test. Penalty and coverage checks gave no clear positive interval. An independent graph and scoring check passed. A strong synthetic additive signal was detected. Small slice graphs, detection bias, limited human data, and uncertainty conditional on fitted models limit the result. This does not establish independence between wiring and plasticity.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "local connectivity",
+    "short-term plasticity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/prediction_gain.png",
+      "caption": "Error reduction from source output and target input connection fractions for other tested partners. Points are donor mean gains. Bars are conditional 98.75% donor bootstrap intervals. The predicted edge is excluded from both fractions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurements and description of the Allen dataset."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Scalar response definition check."
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test of reciprocity and plasticity in this release. No code or result tables reused."
+    },
+    {
+      "target": "sci:sha256:c33af30c3b106d2fb679b25f815a29ec48d8619cc6bcc39efe657d40fde33e51",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test of distance and plasticity. The present test adds fractions of other detected connections."
+    }
+  ]
+}

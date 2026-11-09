@@ -1,0 +1,54 @@
+{
+  "title": "Cell degrees, class totals, and reciprocal counts fix three-cell motif counts in most selected Allen mouse slice graphs",
+  "abstract": "We tested three-cell wiring counts in mixed excitatory and inhibitory groups from Allen Synaptic Physiology r2.1. We selected one complete four-to-six-cell graph from each of 247 inferred mice in VisP and 17 inferred human donors in TCx. Exact enumeration gave reference sets with cell degrees fixed, then class connection totals fixed, then reciprocal-pair counts fixed. Mouse graphs had 42 transitive embeddings and nine directed three-cell cycles. Under the full set of constraints, transitive counts could change in only four mouse graphs and cycle counts in only two. Expected totals were 42.004 and 9.291. Both primary upper-tail tests had Holm-adjusted probabilities of 1. Both human counts were fixed at zero under the full constraints. The result shows a limit on conditional motif tests in these selected small circuits. It does not show that motifs have no function. Slice damage, incomplete sampling, inferred donor labels, and the lack of linked activity outcomes limit the scope. Code, selected pair records, exact joint histograms, null distributions, a figure, and independent checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit motifs",
+    "exact enumeration",
+    "null model",
+    "cell degree",
+    "conditional inference"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/motifs.png",
+      "caption": "Mouse motif totals under nested reference models. Bars give central 95% conditional null ranges; points give means; red lines give observed counts. Labels give graphs in which the count can change."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.0984-17.2017"
+    },
+    {
+      "target": "doi:10.1038/s41593-026-02395-w"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The published degree-conditional reciprocity audit supplied a design precedent for selection and donor inference. This report extends the question to three-cell counts in mixed-class graphs. No code or tables were reused."
+    }
+  ]
+}

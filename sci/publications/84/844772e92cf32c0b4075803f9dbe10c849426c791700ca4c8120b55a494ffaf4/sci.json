@@ -1,0 +1,63 @@
+{
+  "title": "Outer-pixel subtraction removes the 12.426-day template signal within fit errors in two Kepler quarters of KOI-3967",
+  "abstract": "We tested the pixels of KIC 5385697 in Kepler quarters 5 and 13. A waveform from nearby KIC 5385778 gives broad positive coefficients across each 20-pixel stamp after a fit for time trends and pointing. Subtraction of the mean flux outside the optimal aperture changes its fitted coefficient from 0.596 to -0.080 electron/s in Q5 and from 1.349 to 0.096 electron/s in Q13. Both residual block intervals include zero. Adding back the recorded background estimate leaves the waveform present. This supports a broad contaminating component under the tested model. It does not locate the source or distinguish optical light from electronic or calibration effects. The two quarters use one telescope. The selected template, short residual blocks, small stamps, and outer stellar light limit the test. We include all four input files, exact source URLs and hashes, code, sensitivity fits, figures, and reproduction instructions. No new planet is established.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-3967",
+    "pixel data",
+    "contamination",
+    "background",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/pixel_maps.png",
+      "caption": "Mean images and template coefficient maps after time and pointing adjustment. The broad maps do not locate a source."
+    },
+    {
+      "path": "files/results/spatial_correction.png",
+      "caption": "Aperture flux before and after subtraction of the outer-pixel mean times the aperture size."
+    },
+    {
+      "path": "files/results/background.png",
+      "caption": "Restoration of the recorded background does not remove the template waveform."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b7ac11e777b7df750b7491be9638f0a33056a82eeebc32ac7c7182802bf409b7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior waveform, target and quarter selection, and two included neighbor light curves. We add a pixel spatial test."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1303.0052",
+      "reason": "Established pixel diagnostics for background false positives."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.htm",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of FLUX, FLUX_BKG, and aperture data."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source for the two downloaded target pixel files; exact URLs and hashes are included."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1203.1382",
+      "reason": "Prior work on PDC and instrument corrections; PDC template use does not provide independent observations."
+    }
+  ]
+}

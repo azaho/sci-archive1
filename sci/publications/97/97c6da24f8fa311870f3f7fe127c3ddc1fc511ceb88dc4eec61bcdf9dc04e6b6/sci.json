@@ -1,0 +1,28 @@
+{
+  "title": "TESS 2-minute data of 4,265 white dwarfs within 100 pc show no new on-target transit; the search recovers WD 1856+534 b and puts a new 17.12 d eclipse on a nearby M dwarf",
+  "abstract": "Question: Do the public TESS 2-minute light curves of nearby white dwarfs (WDs) contain new transiting planets, eclipsing companions or unexplained dips? Approach: We matched 16,676 Gaia EDR3 WDs within 100 pc to the TESS 2-minute target lists of sectors 1 to 56. We then took all 22,150 SPOC light curves (sectors 1 to 107) of 4,313 TIC targets (4,265 WDs). We ran a box least-squares search (P = 0.15 to 13 d) on the first and last sector of each target and a single-dip matched filter on all sectors. We applied automated vetting (shape, periodogram, physical depth, duration for a companion of 0.5 solar radii or less, repetition in other sectors), manual inspection, difference imaging of target pixel files, catalogue checks and 1,200 transit injections. Results: The search recovers WD 1856+534 b. No new periodic transit or eclipse is on a WD. Of 276 WDs with transit-like detections, 259 fail the automated tests and 16 of the remaining 17 are blends, systematics or weak, unconfirmed signals. Low crowding values are the main cause: in the median sector the WD supplies 34 % of the aperture flux. Difference imaging puts a 17.123503 +/- 0.000019 d, 2.5 h eclipse in the aperture of GALEX J081240.0-760437 on the M dwarf Gaia DR3 5210617837762868864 (20 arcsec away). We found no catalogue entry for this eclipsing binary. The same method puts a 9.135 d signal near HE 0330-0002 on the known eclipsing binary HD 22064. Known asteroids brighter than V = 16 are near the target at 26 of 200 isolated single-dip times and at 0 of 200 control times (p = 1.3e-8): background over-subtraction causes these dips. Injection-recovery gives 95 % upper limits on the planet rate per WD of 1.7 % (4 to 15 Earth radii, P = 0.15 to 1 d) and 9.2 % (1 to 4 Earth radii, P = 0.15 to 1 d). Limitations: BLS used two sectors per target. The completeness includes only the automated cuts. WDs with first 2-minute data after sector 56 are missing. Blends in crowded apertures can hide or imitate WD transits. A spectroscopic orbit is necessary to confirm the new M-dwarf binary.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.SR"},
+    {"scheme": "arxiv", "code": "astro-ph.IM"}
+  ],
+  "keywords": ["white dwarfs", "TESS", "transit search", "box least squares", "eclipsing binary", "blends", "difference imaging", "asteroids", "false positives", "occurrence rate", "WD 1856+534 b", "injection-recovery", "null result"],
+  "display": [
+    {"path": "files/figures/fig_examples.png", "caption": "Left: positive control. The search recovers WD 1856+534 b; 23 TESS sectors folded on the Vanderburg et al. (2020) ephemeris. Middle: blend. Eclipses of the bright star BD+76 614 appear as deep dips of the WD BD+76 614B because the WD supplies 0.6 % of the aperture flux. Right: asteroid. When (1342) Siegena (V = 11.5) passes 3 arcmin from TIC 37993251, the background increases, the SAP flux decreases below zero, and the flux increases when the asteroid crosses the aperture."},
+    {"path": "files/figures/fig_diffimage_804762481.png", "caption": "Difference imaging of the 17.12 d eclipse in the aperture of the WD GALEX J081240.0-760437 (TIC 804762481) in sectors 39, 65, 93 and 97. Top: out-of-eclipse images. Bottom: out-of-eclipse minus in-eclipse images. White star: WD. Red circles: Gaia DR3 sources with G < 18.5. Orange cross: fitted dip source. The dip source is on the M dwarf Gaia DR3 5210617837762868864, 20 arcsec from the WD, in all four sector orientations."},
+    {"path": "files/figures/fig_completeness.png", "caption": "Injection-recovery test with 1,200 transits of opaque planets across uniform WD disks in real TESS sectors. Left: recovered (blue) and missed (grey) injections and the recovered planet WD 1856+534 b. Right: recovery fraction against planet radius for two period ranges."}
+  ],
+  "citations": [
+    {"target": "doi:10.1093/mnras/stab2672", "relations": ["uses"], "reason": "Gaia EDR3 white-dwarf catalogue that defines the sample."},
+    {"target": "doi:10.1038/s41586-020-2713-y", "relations": ["uses", "supports"], "reason": "Discovery and ephemeris of WD 1856+534 b; we use it as the positive control and recover it."},
+    {"target": "doi:10.1117/1.JATIS.1.1.014003", "relations": ["uses"], "reason": "TESS mission; source of all light curves and pixel data."},
+    {"target": "doi:10.1051/0004-6361:20020802", "relations": ["uses"], "reason": "Box least-squares method."},
+    {"target": "doi:10.3847/1538-4357/ac7c74", "relations": ["uses"], "reason": "Astropy BoxLeastSquares and LombScargle implementations."},
+    {"target": "doi:10.1051/0004-6361/202243940", "relations": ["uses"], "reason": "Gaia DR3 positions and parameters of neighbour stars."},
+    {"target": "doi:10.1086/151568", "relations": ["uses"], "reason": "White-dwarf mass-radius relation for injections and duration limits."},
+    {"target": "doi:10.48550/arXiv.2407.21743", "reason": "Related TESS transit search of polluted white dwarfs."},
+    {"target": "https://ssp.imcce.fr/webservices/skybot/", "relations": ["uses"], "reason": "SkyBoT asteroid positions for the single-dip test."},
+    {"target": "https://www.aavso.org/vsx/", "relations": ["uses"], "reason": "Variable star catalogue; identifies HD 22064 as an eclipsing binary with P = 9.134881 d."},
+    {"target": "https://archive.stsci.edu/missions/tess/download_scripts/", "relations": ["uses"], "reason": "MAST bulk download scripts for SPOC light curves."}
+  ]
+}

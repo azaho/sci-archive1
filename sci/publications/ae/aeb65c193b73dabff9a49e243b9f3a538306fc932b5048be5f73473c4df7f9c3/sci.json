@@ -1,0 +1,24 @@
+{
+  "title": "Storm cold wakes at 55 Atlantic buoys kept one third of peak cooling at day 30 in 1982-2024; Gulf of Mexico wakes recovered, US East shelf wakes did not",
+  "abstract": "We tested how sea-surface temperature (SST) recovers after tropical storms and hurricanes pass NOAA moored buoys in the North Atlantic basin. We used NDBC daily water temperature at 55 buoys and NHC HURDAT2 tracks for 1982-2024. An event is a closest approach within 200 km at 34 kt or more. We compared each event with the same station and calendar dates in years without a storm (placebo control) and averaged the difference. In 816 events from 270 storms, the mean excess cooling peaked at -0.74 °C (95% storm-bootstrap interval -0.86 to -0.62). At day 30 it was -0.27 °C (-0.38 to -0.16), which is 36% of the peak. At day 60 it was -0.15 °C (-0.28 to -0.02). In events without a later storm, the wake recovered by day 30 in the Gulf of Mexico (+0.04 °C, -0.14 to +0.23) but not on the US East coast shelf (-0.44 °C, -0.68 to -0.17). The shelf minus Gulf difference was -0.47 °C (-0.78 to -0.17). It stayed when one station at a time was removed and when peak cooling was matched, but its interval included zero for August-September events only. Recovery did not change between 1982-2000 and 2001-2024 (day-30 difference +0.08 °C, -0.23 to +0.40). These buoys did not sample the main development region before 2001, so this is not a test of the faster recovery reported there from satellite data. Cooling increased with wind, nearness and the right side of the track, but not with slower translation speed. Per-event threshold recovery times were almost the same in placebo windows, so at one buoy they mostly measure local SST noise. Limitations: point measurements, current station positions, unmodelled storm-linked weather, missing data in strong storms, and sparse tropical buoys. The bundle has code, derived data, input hashes and a retrieval script.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["tropical cyclone", "cold wake", "sea surface temperature", "recovery", "NDBC buoys", "HURDAT2", "placebo control", "Gulf of Mexico", "continental shelf", "air-sea interaction"],
+  "display": [
+    {"path": "files/figures/fig1_composite.png", "caption": "a) Mean SST anomaly change after storm passage within 200 km (816 events) and in matched no-storm years. b) Storm minus no-storm excess with 95% storm-bootstrap interval; 36% of the peak remains at day 30."},
+    {"path": "files/figures/fig2_regions.png", "caption": "Placebo-corrected excess SST change by region for events with no other storm within 300 km before day 60. The Gulf of Mexico wake recovers by day 30; the US East shelf wake does not."},
+    {"path": "files/figures/fig3_contrasts_map.png", "caption": "a) Day-30 contrasts with 95% intervals. b) Station mean day-30 excess for buoys with 3 or more events."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:9bc0e5f0dbed1b1156d222cfc9bd80cc4672ccb2bf62b4da79ffe5496964010d", "relations": ["uses"], "reason": "We reuse the exact HURDAT2 source bytes stored in this publication (SHA-256 checked)."},
+    {"target": "doi:10.1038/s41612-025-01029-5", "reason": "Satellite-based report of faster cold-wake recovery after 2001 in the main development region; our buoy test is outside that region before 2001 and finds no period change."},
+    {"target": "doi:10.1175/MWR-D-10-05019.1", "reason": "Earlier climatology of SST response and recovery after tropical cyclones."},
+    {"target": "doi:10.1029/2007JC004393", "reason": "Cold-wake warming time scales from observations and a heat-budget model."},
+    {"target": "doi:10.1029/2012GL054282", "reason": "Float and mooring observations of a cold wake e-folding time."},
+    {"target": "doi:10.1175/MWR-D-12-00254.1", "relations": ["uses"], "reason": "HURDAT2 database format and uncertainty."},
+    {"target": "https://www.ndbc.noaa.gov/data/historical/stdmet/", "relations": ["uses"], "reason": "NDBC standard meteorological history files (water temperature)."},
+    {"target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt", "relations": ["uses"], "reason": "HURDAT2 source file."}
+  ]
+}

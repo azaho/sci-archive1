@@ -1,0 +1,65 @@
+{
+  "title": "Synaptic delay gave no clear variability prediction gain in four Allen slice groups",
+  "abstract": "We tested whether synaptic delay improves predictions of resting response variability after cell labels, cell-body distance, response size, noise, and event count are known. We used 1,515 connections from the Allen Synaptic Physiology r2.1 small database. Models held out whole inferred donors. A log delay term gave no clear gain in mouse excitatory, mouse inhibitory, human excitatory, or human inhibitory groups. Mouse gains were -0.18% and 0.05% of reference mean squared error. Human inhibitory gain was 21.63%, but its sample had only 20 connections from 11 inferred donors and its adjusted conditional interval included zero. Lower regularization, removal of the response-size control, and removal of extreme outcomes did not give a clear positive gain. The result limits the use of a simple delay term as a reliability predictor in these selected slices. It does not show independence or identify a release mechanism. Missing measurements, fit constraints, inferred donor labels, and conditional intervals limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "response variability",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Added prediction value of log delay. Positive values mean lower error. Each interval is a 98.75% conditional donor bootstrap interval. Models are not refit in the bootstrap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurements and study of local cortical synaptic physiology."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2007.10.037",
+      "reason": "Prior experiments link release probability and delay; this analysis tests added prediction value across connections."
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653",
+      "reason": "Prior experiments show that spike waveform can also affect delay."
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published outcome definition, donor grouping, and local-distance scope informed the design. This report adds delay after response-size controls. No code was reused."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

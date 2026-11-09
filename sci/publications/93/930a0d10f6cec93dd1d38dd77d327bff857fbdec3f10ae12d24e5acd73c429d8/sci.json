@@ -1,0 +1,72 @@
+{
+  "title": "Summer ENSO gave uncertain winter sea-level forecast gains beyond local summer level at two Pacific gauges in 1986-2025",
+  "abstract": "We tested whether July-September Nino 3.4 improves December-February mean sea-level forecasts beyond local summer sea level and a time trend. Separate fits used earlier complete winters only. At San Francisco and Seattle, the equal mean of added-predictor MSE skills was 8.98% for test winters 1986-2025. Its conditional 95% five-year block interval was -32.87% to 32.99%. All six individual site intervals included zero. Removing the 1998 and 2016 test winters reduced Pacific skill to 1.51%. A paired-support check gave 8.79%. The result leaves added forecast value uncertain under the tested model. It does not show that ENSO has no effect. Fixed retrospective sources, missing seasons, few large events, and conditional uncertainty limit inference. This test measures seasonal mean levels, not floods or physical causes. The package has source hashes, exact used-field inputs, all forecasts, uncertainty draws, code, figures, and a successful numerical audit and offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "sea level",
+    "seasonal forecast",
+    "Nino 3.4",
+    "local persistence",
+    "chronological validation",
+    "tide gauges",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Added ENSO forecast skill and pointwise conditional 95% block intervals at six gauges. The baseline has local summer level and a time trend."
+    },
+    {
+      "path": "files/results/errors.png",
+      "caption": "Observed winter mean level minus chronological forecast at two Pacific gauges."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the shared fixed NOAA ENSO source with new code and a coastal target."
+    },
+    {
+      "target": "sci:sha256:78285c2f5e450f277e3b512035e713b12fc6379d05825aa601bfbbcc92683210",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared NOAA monthly sea-level sources. We test chronological prediction of seasonal means."
+    },
+    {
+      "target": "doi:10.1002/2014JC010602",
+      "reason": "Prior evidence for ENSO contributions to US coastal sea level."
+    },
+    {
+      "target": "doi:10.1016/j.advwatres.2019.07.007",
+      "reason": "Prior seasonal prediction of high sea-level frequency with ENSO patterns. Search abstract and author metadata were available; full text was not retrieved."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

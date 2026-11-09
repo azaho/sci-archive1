@@ -1,0 +1,68 @@
+{
+  "title": "Depth alignment gave no clear delay prediction gain in four Allen cortical slice groups",
+  "abstract": "We tested whether cell-body alignment along cortical depth improves response onset delay predictions after flexible soma distance and ordered cell labels are known. We used 1,774 detected connections in Allen Synaptic Physiology r2.1 mouse visual-cortex and human temporal-cortex slices. A fixed split kept whole inferred donors separate between training and test data. The added alignment term gave no clear gain in any of four species and synapse-type groups after interval correction. Mouse inhibitory test MSE gain was 0.00116 ms squared, with an approximate conditional 98.75% test-donor bootstrap interval from -0.00270 to 0.00516. Human inhibitory results were unstable, with only eight test donors. Code, pair IDs, predictions, folds, uncertainty draws, a figure and checks are preserved. The result applies to one angle term and one data release. It does not show that timing is independent of angle. Missing geometry, slice selection, inferred donors and uncertainty conditional on the training fit limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "cortical depth",
+    "spatial geometry",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/main/prediction_gain.png",
+      "caption": "Gain from depth alignment in the fixed donor test set. Positive values mean lower mean squared prediction error. Lines show approximate 98.75% test-donor bootstrap intervals conditional on the fitted models. Panels have different horizontal scales. All intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The original Allen slice recording study and public data resource."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact r2.1 small source database; its SHA-256 is recorded in provenance."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of soma, vertical and lateral distances and cell labels."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition of response onset latency and manual fit QC."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance-delay result and donor parsing approach; the same raw release is used."
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior depth-alignment connection-call test; alignment and donor definitions inform this delay test."
+    }
+  ]
+}

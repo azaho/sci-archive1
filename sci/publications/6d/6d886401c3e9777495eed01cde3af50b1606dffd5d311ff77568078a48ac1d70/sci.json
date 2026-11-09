@@ -1,0 +1,71 @@
+{
+  "title": "A fixed-window test detects dips on both KOI-4114 and KOI-4479 in Q4 and Q16 but not on KOI-4479 in Q12",
+  "abstract": "We tested a published 359-day timing match with eight public Kepler DR25 light curves. Fixed catalog-time boxes give positive SAP and PDCSAP depth intervals for both targets in Q4 and Q16. In Q12, KOI-4114 has a PDCSAP depth of 304 ppm with a conditional 95 percent interval of 134 to 457 ppm. KOI-4479 gives -89 ppm with an interval of -317 to 103 ppm. All event files place both targets on channel 82. Window and duration changes retain the Q12 non-detection on KOI-4479. Rolling-band flags do not identify the cause. Both objects already have false-positive and ephemeris-match flags. We establish no new planet, shared source, or instrument mechanism. A fixed box can miss a shifted or changed event. There are no pixel data or independent telescope observations. The package contains raw files, exact source URLs and hashes, catalog rows, code, block resamples summarized by intervals, control depths, figures, and repeat-run checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-4114",
+    "KOI-4479",
+    "ephemeris matching",
+    "false positives",
+    "fixed-window depth",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/depths.png",
+      "caption": "Fixed-window PDCSAP depths with individual conditional 95 percent residual-block intervals. All events use channel 82."
+    },
+    {
+      "path": "files/results/profiles.png",
+      "caption": "Local SAP and PDCSAP event profiles. Orange shows each catalog-duration box. Red marks show the aperture rolling-band flag."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:338286b366dd6db8671f1c759138d6d8574c0a54243a15f891de1bf83f654c36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published catalog timing pair supplies the lead; we add the first event-level measurements of this pair in this campaign."
+    },
+    {
+      "target": "sci:sha256:5aea71a586aa481271428787176a04a79e55370aa67f5fb5c7999eedd2624006",
+      "reason": "Prior campaign phase study."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119"
+    },
+    {
+      "target": "doi:10.3847/1538-4365/aab4f9"
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler raw light curves; exact object URLs and hashes are preserved."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html"
+    },
+    {
+      "target": "https://keplergo.github.io/KeplerScienceWebsite/k2-uniform-global-reprocessing-underway.html",
+      "reason": "Mission caution about the limited reliability of binary rolling-band flags."
+    }
+  ]
+}

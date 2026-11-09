@@ -1,0 +1,61 @@
+{
+  "title": "Daily hourly water-level range rose at The Battery and fell at Sewells Point in 1960-2025 after an 18.61-year cycle fit",
+  "abstract": "We tested changes in daily hourly water-level range at six US tide gauges in 1960-2025. We used 42 fixed NOAA source files and kept complete, non-inferred daily pairs. The analysis retained 339 annual values. Each annual value is an equal mean of 12 monthly mean ranges. A linear fit with an 18.61-year sine and cosine term gave a rise of 0.524 mm/year at The Battery and a fall of 0.352 mm/year at Sewells Point. Bonferroni intervals for six stations were 0.261 to 0.784 and -0.416 to -0.289 mm/year. We used 20,000 five-year wild block draws. Both signs held with three-year and ten-year blocks and in 1980-2025 fits. Four other station intervals included zero after the six-station correction. Without cycle terms, the interval at The Battery included zero. The measure is the difference between daily hourly extrema. It includes weather and day-boundary effects. It is not a tide-only range or a flood level. The study does not identify causes. Site selection, missing years, model form, and untested instrument changes limit inference. The package gives source paths and hashes, daily pairs, annual values, code, draws, figures, and a separate numerical audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "water-level range",
+    "tide gauges",
+    "lunar nodal cycle",
+    "NOAA",
+    "The Battery",
+    "Sewells Point",
+    "wild block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/slopes.png",
+      "caption": "Annual range trends after the cycle fit. Dark lines give marginal 95% intervals. Light lines give Bonferroni intervals for six stations."
+    },
+    {
+      "path": "files/annual_ranges.png",
+      "caption": "Annual mean daily hourly range and the fitted trend plus 18.61-year cycle. Lines join retained years across gaps. Each plot has its own vertical scale."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1002/2014EF000282",
+      "reason": "Prior work tests changes in tidal high water, low water, and range at 220 gauges. Our fixed hourly-extrema measure and period have a different scope."
+    },
+    {
+      "target": "doi:10.1029/2018JC014695",
+      "reason": "Prior work shows that the lunar nodal cycle can change high-water levels. It motivates the cycle term."
+    },
+    {
+      "target": "doi:10.1002/2016JC011770",
+      "reason": "Prior work tests changes in tidal constituents at the San Francisco gauge. We do not estimate constituents."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA definitions for hourly daily extrema, completeness, and inferred flags."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source API. All 42 exact query URLs and raw-file hashes are in files/provenance.json."
+    },
+    {
+      "target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13",
+      "reason": "Campaign prior work read during scope selection. It tests body-tide stress and earthquake magnitudes. No data, code, or claim from that work is reused here."
+    }
+  ]
+}

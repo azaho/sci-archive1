@@ -1,0 +1,55 @@
+{
+  "title": "Matched Allen slice pairs do not resolve a connection direction bias toward cells with intact apical dendrites",
+  "abstract": "We tested whether apical dendrite preservation was linked to the direction of detected excitatory connections in Allen Synaptic Physiology r2.1 data. Each neuron pair had one intact and one truncated apical dendrite, both connection directions tested, and the same Cre label and target layer. Mouse visual cortex had 139 pairs from 57 inferred animals. The connection rate toward the intact cell minus the rate toward the truncated cell was -0.72 percentage points, with a nominal 97.5% donor bootstrap interval of -4.61 to 3.94. Human temporal cortex had 35 pairs from 10 inferred donors. Its difference was 5.71 points, with an interval of -10.00 to 14.81. Only 11 mouse pairs and four human pairs had a connection detected in one direction alone. Checks with equal axon labels also gave uncertain results. This paired audit does not resolve a direction bias or show equal rates. It cannot isolate target dendrite loss from source cell effects. We supply code, pair-level evidence, uncertainty draws and a reproducible data recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "slice connectivity",
+    "apical dendrite",
+    "sampling bias",
+    "paired comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Connection rate toward the cell with an intact apical dendrite minus the rate toward the cell with a truncated apical dendrite. Bars show nominal 97.5% donor bootstrap intervals. Only the main row in each species belongs to the primary family."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/morphology.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    },
+    {
+      "target": "sci:sha256:370bc73ac3c597a2824ff628d75e4228161dfa549a0e3cdc17fc707a9bc07b1f",
+      "reason": "The published axon-preservation audit motivated a paired test of apical dendrite labels. No code or evidence tables were reused."
+    },
+    {
+      "target": "sci:sha256:be1bc665c37d982b55c16fb1aaeab66479ab234e98dbcecab1c9c1cbbc75b7b2",
+      "reason": "This prior axon direction audit informed the distinction between a direction contrast and a causal effect. No code or evidence tables were reused."
+    }
+  ]
+}

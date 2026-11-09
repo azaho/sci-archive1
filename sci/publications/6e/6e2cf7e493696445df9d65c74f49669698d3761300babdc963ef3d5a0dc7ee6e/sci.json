@@ -1,0 +1,92 @@
+{
+  "title": "Autumn ENSO gave no clear added forecast gain beyond autumn precipitation in seven California divisions in 1981-2025",
+  "abstract": "We tested whether October-December Nino 3.4 improves January-March precipitation forecasts beyond October-December precipitation in seven California climate divisions. We used fixed NOAA ERSSTv5 and nClimDiv records. Each fit used earlier winters only. There were 45 test winters, 1981-2025. Adding the ocean index gave 4.40% mean squared-error skill. The conditional 95% five-year block interval was -23.09% to 24.81%. All seven division intervals included zero. Mean skill was 20.23% in 1981-2002 and -17.38% in 2003-2025. Removing 1998 from scoring changed mean skill to -1.85%. A model with unequal warm and cold slopes gave 0.73% mean skill. Against a common training-mean baseline, the ocean-only model had higher mean skill than the combined model. The tested predictors did not give clear complementary forecast information in this small record. This does not rule out useful ocean information. Short records, retrospective data, simple models, and conditional uncertainty limit the result. The package gives source subsets, hashes, 7560 forecasts, code, figures, and a separate numerical check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "California",
+    "precipitation",
+    "seasonal forecasts",
+    "chronological validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Added forecast skill and comparison with the training mean in 1981-2025. Panel A lines are conditional 95% five-year block intervals."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "Score contributions and fixed design checks. All aggregate check intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared sources. It tests summer ENSO; we test added autumn ENSO information at a later issue."
+    },
+    {
+      "target": "sci:sha256:e203cda9af6d2ec930dd3d617b45eee0ac442fb90d3b7b1e6467d7aec5fcb485",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its saved NOAA format document. Its precipitation-only question motivates our baseline."
+    },
+    {
+      "target": "sci:sha256:7affe8f35e7876a6031cd37960bbc84e84d0446a1b1b15e6e3fc1f95a0bd8174",
+      "reason": "It tests autumn ENSO for a winter regional contrast. We test individual division targets and added information beyond autumn precipitation."
+    },
+    {
+      "target": "doi:10.1088/1748-9326/11/5/054021",
+      "reason": "Prior seasonal and regional ENSO links motivate our target."
+    },
+    {
+      "target": "doi:10.1002/2015GL067102",
+      "reason": "Prior intensity dependence motivates the unequal-slope check."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Climate division source method."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 source product."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source format document saved from the cited campaign publication."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official division names and codes."
+    }
+  ]
+}

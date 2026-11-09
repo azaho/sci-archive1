@@ -1,0 +1,69 @@
+{
+  "title": "Daily water-level midpoint extremes exceed a month-shift model at two Atlantic gauges in retained 1960-2024 records",
+  "abstract": "We tested whether high daily water-level midpoints occur together at The Battery and Sewells Point after monthly mean sea level is removed. We used 16 fixed NOAA CO-OPS source objects queried for 1960-2025. Strict quality rules retained 18,624 paired days in 612 complete months from 1960 to 2024. A midpoint extreme exceeds its site and calendar-month 95th percentile. There were 369 same-date joint extremes. Independent circular shifts within each year-month give a mean of 63.52 and a central 95% count range of 47 to 81. The observed count is 5.81 times that mean. The joint-day excess is 1.64 percentage points, with a 95% three-year block interval of 1.50 to 1.79 points after threshold refitting. Half-month shifts, other thresholds, and separate periods retain an excess. A post hoc days-1-27 check includes 2025 and gives a ratio of 5.51. This check was added after incomplete month-end minimum flags removed every 2025 month from the primary sample. Maximum anomalies and daily ranges also align. The result rejects the specified timing model. It does not identify a physical cause, measure storm surge, or estimate flood damage. Shared tides, weather, source processing, missing months, selected sites, and the rotation assumptions limit interpretation. The package gives an exact finite null method, source hashes, daily evidence, all rotations, bootstrap draws, code, figures, and independent audits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal extremes",
+    "water-level midpoint",
+    "NOAA CO-OPS",
+    "spatial dependence",
+    "circular shifts",
+    "exact conditional test",
+    "missing data",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/coincidence.png",
+      "caption": "Observed same-date joint extremes and month-shift model means. Lines give central 95% null ranges. The midpoint is primary; maximum anomaly and daily range are diagnostic. All three panels use the same scale."
+    },
+    {
+      "path": "files/lag.png",
+      "caption": "Descriptive lag curve for midpoint extremes. Pairs cross no month boundary. No selected lag has a significance test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c426824e17f12854b152d9b169398d63968be71417344932e664e4f73b833891",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the shared fixed NOAA source snapshots and two saved NOAA help documents. This prior study tests changes in single-site high-water rates. Our two-site timing test and code are new."
+    },
+    {
+      "target": "sci:sha256:a9e8d06cbaa080ffa921d8d1e3748bae1b1b16c196c6a4195424b0b6178e2da2",
+      "reason": "The prior range analysis helped define the site pair before outcome counts. The present study tests joint timing and does not repeat the range-trend test."
+    },
+    {
+      "target": "doi:10.1029/2025JC023414",
+      "reason": "Prior work studies spatial storm-surge footprints and their changes. Our midpoint measure does not isolate storm surge."
+    },
+    {
+      "target": "doi:10.5194/nhess-26-391-2026",
+      "reason": "Prior work studies spatial dependence in coastal and river-flow extremes. This establishes relevant prior context."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source API and product definitions. All 16 exact query URLs and source hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official definitions for hourly daily extrema, completeness, inferred flags, and monthly mean levels. Saved document bytes are included."
+    }
+  ]
+}

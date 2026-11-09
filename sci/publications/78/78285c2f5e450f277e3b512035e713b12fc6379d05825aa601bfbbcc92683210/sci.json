@@ -1,0 +1,68 @@
+{
+  "title": "Subtracting mean sea level left uncertain changes in monthly peaks at six US gauges in complete years of 1960-1989 and 1996-2025",
+  "abstract": "We tested whether mean monthly hourly peak water levels rose more than concurrent mean sea level at six United States tide gauges. We used fixed NOAA CO-OPS records and compared complete years within 1960-1989 and 1996-2025. Each site retained 18 to 23 years per period. Mean monthly hourly peaks rose by 6.85 to 19.47 cm. Mean sea level rose by 6.79 to 19.01 cm on the same data support. The change in peak height above the monthly mean ranged from -0.16 cm at Seattle to 1.75 cm at The Battery. All six pointwise and simultaneous 95% five-year block intervals included zero. At The Battery, the pointwise interval was -1.64 to 4.84 cm and the simultaneous interval was -2.61 to 6.11 cm. A split at monthly mean high water separated typical high water from the remaining peak excess. The two parts sometimes had opposite signs. Stricter coverage and shorter-period checks gave larger estimates at some sites; the primary null result does not establish equal distributions. Missing years, possible loss of storm observations, source processing changes, period choice, and conditional block assumptions limit inference. This study does not estimate flood frequency, rare storm-surge levels, or a physical cause. The package includes fixed field extracts, raw source hashes and paths, a coverage amendment, all primary draws, separate audit code, figures, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal water levels",
+    "tide gauges",
+    "hourly maxima",
+    "mean sea level",
+    "monthly extremes",
+    "NOAA CO-OPS",
+    "data completeness",
+    "block bootstrap",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/components.png",
+      "caption": "Changes between available complete years in 1960-1989 and 1996-2025. Left: parts of the mean monthly hourly peak change. Right: the peak change after monthly mean sea level is subtracted. Thick intervals are pointwise 95% intervals. Thin intervals cover the six-site family under the five-year block bootstrap assumptions. All six include zero. The parts are accounting terms and do not identify physical causes."
+    },
+    {
+      "path": "files/results/series.png",
+      "caption": "Annual means of monthly hourly peak minus mean sea level and monthly mean high water minus mean sea level. Thin lines show complete years. Thick lines show centered nine-year means of available years, with shorter windows at the ends. Smoothing can bridge missing years. Shaded periods are the primary comparison windows."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified daily_max_min (default hourly) and monthly_mean products. Exact station queries and source hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/dev/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of monthly water-level fields, daily hourly maxima, completeness, and inferred flags."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/est/050415-53.pdf",
+      "reason": "Prior NOAA method uses monthly extremes and adjusts them for mean-level or tidal-level trends. The present mean monthly hourly-peak target and fixed snapshot audit have a different scope."
+    },
+    {
+      "target": "doi:10.1002/2014JC010443",
+      "reason": "Prior work finds multidecadal variation and some trends in extreme water levels above mean sea level. It motivates period and dependence checks. Our null result does not test its rare-level estimates."
+    },
+    {
+      "target": "doi:10.1038/s41558-025-02315-z",
+      "reason": "Recent prior work concerns storm-extreme trends and regional uncertainty. The present statistic is not a storm-surge return level."
+    },
+    {
+      "target": "https://www.tidesandcurrents.noaa.gov/education/tech-assist/training/user-guides/assets/pdfs/Coastal_Inundation_Dashboard_User_Guide.pdf",
+      "reason": "The top-ten product notes historical hourly versus recent six-minute peak sampling. This motivated a constant hourly target; it does not establish a sampling break in every monthly field."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Matched Allen slice circuits do not resolve a source-versus-target difference in 50 Hz synaptic plasticity",
+  "abstract": "We tested whether connections with a shared source neuron have more similar short-term plasticity than connections with a shared target neuron. We used Allen Synaptic Physiology r2.1 slice data and matched recording, synapse type, cell class, Cre label, and layer. The primary measure was the normalized response change from pulse 1 to pulses 6 to 8 at 50 Hz. The test retained 174 mouse connections from 36 inferred animals and 31 human connections from six inferred donors. The source-to-target squared-difference ratio was 0.779 in mouse, with a 95% donor bootstrap interval of 0.432 to 1.338. The human ratio was 0.829, with an interval of 0.159 to 8.125. Neither primary permutation test passed correction for two tests. Secondary checks also gave no corrected permutation evidence. Human estimates changed direction under stricter selection. These results do not establish equal roles or a common source-level plasticity rule. Small selected graphs, uncertain response estimates, inferred donor labels, and different cell-type mixtures limit the result. The package supplies adapted published code, selected edges, resampling draws, an independent evidence check, and source hashes.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "short-term plasticity",
+    "shared neurons",
+    "circuit structure",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/contrast.png",
+      "caption": "Source-to-target difference-score ratios in matched slice circuits. Lines are descriptive 95% whole-donor bootstrap intervals. A ratio below one means a smaller difference score for connections with a shared source. The panels have different log scales. Labels give recording counts. The initial-plasticity row uses pulse 2 rather than pulses 6 to 8."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen recordings and cell-type dependence of synaptic dynamics."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source definitions for scalar initial and induction plasticity."
+    },
+    {
+      "target": "sci:sha256:2d5154c104221cb8c0445b435ec790f7de7ad193fe910837bceeaf5959f9d9f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adapted files/analyze.py and matched source-versus-target method for a different physiological endpoint."
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "reason": "Related reciprocal plasticity test. The present test concerns shared-neuron roles."
+    }
+  ]
+}

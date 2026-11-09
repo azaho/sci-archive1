@@ -1,0 +1,75 @@
+{
+  "title": "Autumn precipitation share fell relative to spring between water years 1961-1990 and 1996-2025 in seven California divisions",
+  "abstract": "We tested whether the October-November share of water-year precipitation fell relative to the April-May share in seven California climate divisions. We used a fixed NOAA nClimDiv snapshot and compared water years 1961-1990 with 1996-2025. The equal division mean change was -6.03 percentage points. Its 95% five-year block interval was -10.07 to -1.68 points. Adjustment for linear and quadratic log annual precipitation gave -6.30 points, with an interval of -10.52 to -2.24. Annual-amount weighting gave -5.91 points; the exact change in its covariance weighting term was only 0.12 points. The tested amount and weighting explanations thus do not account for the primary estimate. The reference period matters. With 1951-1980 as the early period, the change was -2.48 points, with an interval of -7.07 to 2.54. This limits any claim of steady long-term change. All seven primary division point estimates were negative, but the Southeast Desert interval included zero. These findings agree with prior evidence of autumn precipitation loss within the tested scope. They do not establish daily onset dates, water availability, a physical cause, or climate attribution. One gridded product, period choice, regional dependence, and conditional block intervals limit inference. The package preserves exact source rows, hashes, all planned checks, code, resample evidence, figures, and a successful independent audit and offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "California",
+    "precipitation seasonality",
+    "autumn precipitation",
+    "water year",
+    "nClimDiv",
+    "annual precipitation shares",
+    "block bootstrap",
+    "reference period sensitivity",
+    "amount adjustment",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/seasonal_balance.png",
+      "caption": "Autumn-minus-spring share changes and annual shares. The primary periods are water years 1961-1990 and 1996-2025. Intervals retain shared year variation across divisions."
+    },
+    {
+      "path": "files/results/period_checks.png",
+      "caption": "The result changes with the early reference period. The 1951-1980 comparison has a smaller estimate and an interval that includes zero."
+    },
+    {
+      "path": "files/results/weighting_checks.png",
+      "caption": "Monthly precipitation shares and checks with annual-total weighting and amount adjustment. Division weights are equal."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the fixed public shared precipitation snapshot and the saved NOAA format document. The current seasonal period comparison uses new code."
+    },
+    {
+      "target": "doi:10.1029/2020GL090350",
+      "reason": "Prior California work reports autumn precipitation decline and later rainy-season onset. It motivates our fixed seasonal bins. Our division-level update and amount checks do not reproduce daily onset or circulation tests."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "NOAA source methodology for the gridded climate division time series."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed precipitation source. Shared path, full hash, and exact California source rows are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source format, units, missing codes, and gridded division construction. We preserve the document bytes from the cited SCI publication."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official California division codes and names."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Matched mouse slice recordings do not resolve a pooled strength increase for reciprocal connections",
+  "abstract": "We compared resting postsynaptic potential magnitude in reciprocal and one-way connections in Allen Synaptic Physiology r2.1 slice data. We matched recording, synapse sign, and ordered cell class, Cre label, and layer. We adjusted mean log amplitude differences for mean log distance differences. The primary mouse sample had 342 directed connections in 116 matched groups from 93 inferred animals. The reciprocal-to-one-way amplitude ratio was 1.13, with a 95% animal bootstrap interval of 0.92 to 1.40. A broader match that omitted Cre and layer gave 1.25, with an interval of 1.03 to 1.51. Thus, the pooled result depends on the cell-label controls. The primary human sample had only seven groups from six inferred donors. Its estimate changed strongly after distance adjustment and does not establish transfer across species. This report supplies a matched comparison and derived evidence. It does not show equal strengths or measure the effect of reciprocal wiring on brain activity.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "reciprocal connections",
+    "synaptic strength",
+    "Allen Institute",
+    "matched circuits",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/comparison.png",
+      "caption": "Adjusted log amplitude ratios and 95% donor bootstrap intervals. Zero means a ratio of one. Tests share many records. Human samples are small. See the report for the matching rules."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the public paired recordings."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior tests of local motifs and connection strength in rat cortex."
+    },
+    {
+      "target": "doi:10.1038/nature14182",
+      "reason": "Prior link between connection strength, reciprocal wiring, and visual response similarity."
+    },
+    {
+      "target": "doi:10.1038/s41593-026-02395-w",
+      "reason": "Prior work links local motifs to recurrent dynamics; it motivates the circuit-model question."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Defines resting PSP amplitude and fit quality fields."
+    },
+    {
+      "target": "sci:sha256:3660af3e941c858b081907633ca3fa44640f6d2660d32d6710e1ee9cb288fca8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published source and donor parsing notes informed this study. This study tests strength by motif status, rather than prediction between reciprocal weights. No analysis code was reused."
+    }
+  ]
+}

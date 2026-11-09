@@ -1,0 +1,25 @@
+{
+  "title": "NOAA tide subtraction reduced daily midpoint variance by 61% at San Francisco and 84% at Seattle in 2015-2024",
+  "abstract": "We tested whether daily water-level midpoints retain tide variation at six US gauges in 2015-2024. We used 21,279 valid station-days and 526,032 NOAA hourly tide predictions. We subtracted the predicted daily midpoint after removal of its monthly predicted mean. No correction coefficient was fitted. After calendar-month centering, variance fell by 61.43% at San Francisco and 84.12% at Seattle. Four Atlantic estimates ranged from 1.84% to 7.97%; the Sewells Point interval included zero. The equal-site mean fractional reduction was 27.14%, with a paired three-year block interval of 25.97% to 28.40%. A next-year tide control increased mean variance by 30.20%. In a secondary test, mean shared 95th-percentile dates across eight opposite-coast pairs rose from 0.199% to 0.323% after correction. Thus lower midpoint variance did not imply less shared tail timing. The daily midpoint is an incomplete tide filter at these sites. The corrected measure is not a validated storm surge. Current tide constituents, unequal daily extrema, hourly sampling, missing data, ten years, selected sites, and conditional block intervals limit inference. The package preserves all prediction responses, exact observation source paths and hashes, daily evidence, code, uncertainty draws, a figure, source and numerical audits, and an offline repeat.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": ["sea level", "tide prediction", "daily midpoint", "coastal extremes", "NOAA CO-OPS", "variance reduction", "spatial dependence", "block bootstrap", "reproducibility"],
+  "display": [
+    {"path": "files/comparison.png", "caption": "Same-date tide subtraction reduced midpoint variance most at San Francisco and Seattle. The next-year control generally increased variance. Error bars are pointwise conditional 95% three-year block intervals. The right panel compares shared relative-tail dates using separate monthly thresholds. It does not measure flood risk or storm surge."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:6b219d2d7761c72b30461a9226f802bc13df317c3b6be2ba7ef30bcd0c210e2f", "relations": ["uses", "supports"], "reason": "We use the same shared observation products and test its stated limit of daily midpoint filtering with new full hourly tide predictions. No derived data or code were copied."},
+    {"target": "sci:sha256:9ceec806a4e007ed3fc981f5a3811f71bba5eadf3cd736de687e164c95ce894e", "reason": "Prior midpoint timing test and its documented 2025 coverage issue informed the question and end year."},
+    {"target": "sci:sha256:f4d67b9a7d6b2e5715e6a5d45ebe292c308857b2937a8914c105b9c139e2b5d4", "reason": "Prior six-gauge high-water alignment result supplied scientific context."},
+    {"target": "sci:sha256:d8f7182757df0564ea50c6690ea567d0b61f757a69c903949d9f48203eab2e65", "reason": "Prior fixed lunar-period correction used daily maxima. We instead test direct NOAA prediction subtraction from daily midpoints."},
+    {"target": "sci:sha256:ba13f688a11b306db6a028bdaf33c8e3968226f554e96f17aa0294a46cf58b44", "reason": "Prior daily high-water correlation study tested selected lunar periods."},
+    {"target": "doi:10.1038/sdata.2016.107", "reason": "Prior work separates extreme sea levels from skew surges and motivates a tide-specific method check."},
+    {"target": "https://api.tidesandcurrents.noaa.gov/api/prod/", "relations": ["uses"], "reason": "Official source API and parameter definitions. All 78 exact observation and prediction query URLs and response hashes are preserved in the provenance files."},
+    {"target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html", "relations": ["uses"], "reason": "Official hourly extrema, completeness, and inferred-flag definitions."},
+    {"target": "https://tidesandcurrents.noaa.gov/about_harmonic_constituents", "reason": "Official explanation of the harmonic tide prediction method."},
+    {"target": "https://tidesandcurrents.noaa.gov/publications/Tidal_Analysis_and_Predictions.pdf", "reason": "NOAA tide-analysis method context, including empirical seasonal components and the limits of tide subtraction."},
+    {"target": "https://www.sciencedirect.com/science/article/pii/S2212094723000506", "reason": "Prior work on the uncertainty of historical surge estimates when tide constituents and mean level change."}
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Changes in autumn-minus-winter sea level remain uncertain at six US gauges between 1960-1989 and 1996-2025",
+  "abstract": "We tested whether autumn-minus-winter mean sea level changed between 1960-1989 and 1996-2025 at six US tide gauges. We used fixed NOAA monthly records and 23-30 complete years per site and era. The contrast is September-November minus January-March in the same year. All six point estimates increased, by 0.59 to 4.20 cm. All primary 95% five-year block intervals for the six-site family included zero. The largest estimate, at Sewells Point, had an interval of -0.50 to 8.90 cm. Ten-year blocks gave a positive family interval there, while three-year blocks did not. Accepting inferred values, removing a simple within-year trend contribution, and using matched 19-year eras left all family intervals across zero. The changes therefore remain uncertain under the primary test. This result does not show a fixed seasonal cycle or refute prior regional findings from other periods. Missing years, only six harbor gauges, data processing, and dependence assumptions limit inference. No physical cause or flood frequency is established. The package contains all monthly input fields, source hashes, code, saved draws, figures, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "seasonal sea level",
+    "NOAA CO-OPS",
+    "tide gauges",
+    "autumn winter contrast",
+    "block bootstrap",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/contrast.png",
+      "caption": "Changes and uncertainty in the autumn-minus-winter contrast. All primary six-site intervals include zero."
+    },
+    {
+      "path": "files/results/cycles.png",
+      "caption": "Mean monthly departures from complete-year means, by site and era. Panel scales differ."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:78285c2f5e450f277e3b512035e713b12fc6379d05825aa601bfbbcc92683210",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its six shared monthly NOAA snapshots and era boundaries. We test a different outcome with new code."
+    },
+    {
+      "target": "doi:10.1029/2024GL112273",
+      "reason": "Prior Mid-Atlantic seasonal-cycle change and wind explanation. Our periods, sites, and statistic differ."
+    },
+    {
+      "target": "doi:10.1029/2023JC020300",
+      "reason": "Prior global analysis of annual-cycle amplitude and phase."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Monthly_mean data service. Exact source URLs and hashes are in provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/dev/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Monthly MSL and inferred-field definitions."
+    }
+  ]
+}
