@@ -1,0 +1,26 @@
+{
+  "title": "ASAS-SN and TESS peak times of ASASSN-14ko flares in 2022-2026 drift 2.2 days per cycle later than the published decaying-period ephemeris; the period stays near 108 days",
+  "abstract": "Question: do the 2022-2026 flares of the periodic nuclear transient ASASSN-14ko occur at the times that the published ephemeris of Payne et al. (2022) predicts (P0 = 115.2 d, Pdot = -0.0026, fitted to flares up to November 2021)? Many models of this source use this Pdot. Approach: we measured new flare peak times in ASAS-SN Sky Patrol g-band data (nine well-sampled flares from March 2022 to October 2024) and in TESS Sector 98 FFI data (flare n = 38, January 2026). We checked the methods on training flares and on published TESS and Swift peaks. Then we scored three forecasts made only from the 2014-2021 peaks. Results: a constant period fails (all new flares 20-50 d early). The published decaying-period ephemeris is better, but its O-C values increase from -10 d (2022) to +20.5 d (TESS, z = 3.4). The trend is +2.2 +/- 0.2 d per cycle, and it holds for six peak-time variants. A fit to the flares from December 2020 to January 2026 gives Pdot = -0.0002 +/- 0.0008, which is consistent with zero, and a period of 108.18 +/- 0.15 d. The period decreased from about 112.5 d (2018) to about 107.6 d (2021). It did not continue to decrease after that. We give forecasts for the flares in 2026-2027 that separate the models by up to 25 d. Limitations: the ASAS-SN data are aperture photometry and end in February 2025; only one flare (TESS) is after that date; the TESS peak has a 3-d systematic error; the flare peaks have structure, and the residual timing scatter is a few days. A side check showed that public 2026 ZTF alerts did not cover AT2023uqm during its predicted August 2026 flare.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.HE"},
+    {"scheme": "arxiv", "code": "astro-ph.GA"}
+  ],
+  "keywords": ["ASASSN-14ko", "periodic nuclear transient", "repeating partial tidal disruption", "flare timing", "period derivative", "O-C diagram", "forecast test", "ASAS-SN", "TESS", "ESO 253-G003", "AT2023uqm"],
+  "display": [
+    {"path": "files/figures/fig1_oc_diagram.png", "caption": "O-C diagram of ASASSN-14ko flare peaks relative to a constant 110.8-d period fitted to 2014-2021. Blue: published training peaks. Orange: new ASAS-SN g peaks (2022-2024) and the TESS Sector 98 peak (diamond, January 2026). Dashed: the published Payne et al. (2022) ephemeris; grey band: 95% range of a refit of the same model. Green: refit with a changing period derivative using all data. The new flares drift later than the published forecast by 2.2 d per cycle."},
+    {"path": "files/figures/fig2_light_curves.png", "caption": "Top: ASAS-SN g aperture flux 2022-2025 with the published forecast peak times (grey dashed) and the measured peaks (orange bars). Bottom left: TESS Sector 98 3x3-pixel flux; the flare rises from MJD 61033 and peaks at MJD 61040.4, 20 d after the forecast. Bottom right: TESS difference image (flare minus quiet) with the excess at the nucleus (cross)."},
+    {"path": "files/figures/fig3_local_period.png", "caption": "Local flare period from linear fits to seven consecutive flare numbers (overlapping windows, not independent) with the period of the published model (dashed). The period decreased until about 2021 and then stayed at 107-110 d."}
+  ],
+  "citations": [
+    {"target": "doi:10.48550/arXiv.2206.11278", "relations": ["uses", "challenges"], "reason": "Source of the tested ephemeris (P0 = 115.2 d, Pdot = -0.0026) and of the 2020-2021 training peaks and TESS peak times. Flares after 2021 do not follow its Pdot."},
+    {"target": "doi:10.48550/arXiv.2009.03321", "relations": ["uses"], "reason": "Published 2014-2020 ASAS-SN peak times (Table 3) used as training data."},
+    {"target": "doi:10.48550/arXiv.2310.03236", "relations": ["uses"], "reason": "Swift UV peak dates of the 2023 flares used as an independent check of our ASAS-SN peak times."},
+    {"target": "doi:10.48550/arXiv.2309.15849", "relations": ["reviews"], "reason": "Interprets the Pdot = -0.0026 of ASASSN-14ko as star-disc drag; our data show the decay did not continue after 2021."},
+    {"target": "doi:10.48550/arXiv.2603.04559", "reason": "Recent model paper that uses Pdot = -0.0026 as an observational constraint."},
+    {"target": "doi:10.48550/arXiv.2506.15039", "reason": "2022-2024 multiwavelength monitoring of ASASSN-14ko without a timing update."},
+    {"target": "doi:10.48550/arXiv.2510.26561", "reason": "Predicted the sixth flare of AT2023uqm near MJD 61280; used for the side check of public ZTF alert coverage."},
+    {"target": "doi:10.48550/arXiv.2304.03791", "relations": ["uses"], "reason": "ASAS-SN Sky Patrol v2 light curves."},
+    {"target": "https://mast.stsci.edu/tesscut/", "relations": ["uses"], "reason": "TESS FFI cutouts (TESScut/Astrocut)."},
+    {"target": "https://alerce.online/", "relations": ["uses"], "reason": "ZTF alert light curves and cone queries for the AT2023uqm side check."}
+  ]
+}
