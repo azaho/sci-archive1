@@ -1,0 +1,90 @@
+{
+ "title": "In passive cable models of 668 Allen neurons, apparent membrane capacitance was 1.6 to 3.6 µF/cm² and fell with cell size; size explained most of the 0.58 to 0.63 human-to-mouse ratio",
+ "abstract": "We made a passive cable model of each Allen Cell Types Database neuron that has a dendrite reconstruction (668 cells: 158 human, 510 mouse). In each model, the specific membrane resistance gives the measured input resistance. The ratio of the measured membrane time constant to the model time then gives an apparent specific membrane capacitance (Cm). The apparent Cm was much larger than 1 µF/cm²: group geometric means were 1.6 to 3.6 µF/cm², and only 6 to 26 of 668 cells were at or below 1 in seven model settings (axial resistivity 70-300 Ohm cm, axon in or out, fit window, soma shunt, radius floor). Allen all-active model fits of 107 mouse cells also gave a high area-weighted Cm (3.4 µF/cm²), with weak cell-to-cell agreement. In an exploratory test, a somatic leak did not bring Cm to 1 in 608 of 668 cells. Apparent Cm fell with reconstructed area inside each species and cell group (log-log slopes -0.17 to -0.95), which a uniform passive membrane does not predict. Without size control, the human-to-mouse Cm ratio was 0.58 (95% donor-bootstrap interval 0.51-0.67) for aspiny cells and 0.63 (0.53-0.75) for spiny cells, near the ratio of about 0.5 reported by Eyal et al. (2016). Human cells are larger. With area matching, the aspiny ratio became 0.69 to 0.81 (intervals 0.60 to 0.96) and the spiny ratio 0.89 to 1.01 (intervals include 1). Thus, in these data, most of the low apparent human Cm follows from a size relation that also occurs inside each species. Model-based Cm estimates from somatic recordings and light-microscope trees need a size-bias check before they can show a species difference. Limitations: unknown axial resistivity, unreconstructed spines and thin processes, radius errors, passive model with two summary values per cell, few human aspiny cells (38), and area-matching and shunt analyses added after the first results. Allen source data are not included; scripts and hashes allow retrieval.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "specific membrane capacitance",
+  "cable theory",
+  "passive neuron model",
+  "dendrite morphology",
+  "human neurons",
+  "mouse neurons",
+  "Allen Cell Types Database",
+  "input resistance",
+  "membrane time constant",
+  "species comparison",
+  "size bias"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_capacitance.png",
+   "caption": "(A) Cable-model apparent Cm per cell (primary setting); bars are geometric means; dashed lines at 1 and 0.5 µF/cm². (B) Apparent Cm against soma plus dendrite area (axon excluded) with log-log fits per species and dendrite type. (C) Human-to-mouse ratio in seven settings without size control (black) and after area-bin matching (green), 95% donor-bootstrap intervals."
+  },
+  {
+   "path": "files/fig2_allen_allactive.png",
+   "caption": "(A, B) This study (axon excluded) against the area-weighted Cm of Allen all-active model fits for the same 107 mouse cells; both are well above 1. (C) Exploratory: apparent Cm with an assumed somatic shunt, as a fraction of input conductance (binned medians and interquartile ranges)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.16553",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Reported human L2/3 Cm of about 0.5 µF/cm2; we show that a similar low human-to-mouse ratio in Allen data follows mostly from a within-species size relation of cable-model Cm estimates."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2018.08.045",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Measured similar Cm (about 0.9 µF/cm2) in human and rat nucleated patches; our area-matched spiny ratios agree with no large species difference."
+  },
+  {
+   "target": "doi:10.1016/S0006-3495(00)76293-X",
+   "reason": "Direct measurement of specific membrane capacitance in neurons, used as the reference value near 0.9 µF/cm2."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0417-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Cell Types electrophysiology and morphology data and methods."
+  },
+  {
+   "target": "doi:10.1016/j.celrep.2022.111176",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen all-active biophysical model fits used for comparison of Cm."
+  },
+  {
+   "target": "https://celltypes.brain-map.org/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Cell Types Database (Allen Institute for Brain Science 2015), API table and SWC files retrieved 2026-11-09; not redistributed."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms of use for the external Allen data."
+  },
+  {
+   "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+   "reason": "Prior campaign study of dendrite area and response time in the same database; it did not estimate specific capacitance."
+  },
+  {
+   "target": "sci:sha256:847a92dfd3ca1a8e7fdc5b7e184375128592184209289b27a5d7bf30dea47239",
+   "reason": "Prior campaign study of mouse-to-human transfer of response-time models with dendrite area."
+  },
+  {
+   "target": "sci:sha256:3224249b1b1f6d45716a7a9dc2db03545fcafb96108afdad8a83642b9e400ea6",
+   "reason": "Prior campaign study of membrane path depth and sag in the same database."
+  }
+ ]
+}
