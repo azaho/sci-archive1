@@ -1,0 +1,60 @@
+{
+  "title": "PNSN tremor start counts were lower near midnight than in adjacent periods in 2022-2025",
+  "abstract": "We tested a day-boundary feature in the public PNSN tremor catalog. We inspected 2017-2021, then fixed a clock-slot contrast for 2022-2025. After removal of the empty 23:57:30 start slot, the count rate near midnight was 0.939 times the rate in adjacent half-hour periods. A conditional 95% interval from 30-day blocks was 0.900 to 0.973. The test used 221,213 later-period starts and 1,461 dates. Results were similar with 7-day and 90-day blocks and after duplicate removal. Three planned clock controls were close to one. Simple smooth daily curves did not explain the contrast in an exploratory check. Daily processing is a possible explanation, but the catalog alone cannot establish the cause or the number of missed physical tremors. Waveform availability, noise, catalog changes, and the block assumptions limit inference. We preserve source hashes, daily clock-slot evidence, code, uncertainty draws, a figure, and an independent source audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "tectonic tremor",
+    "Cascadia",
+    "PNSN",
+    "catalog audit",
+    "day boundary",
+    "slow earthquakes",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/boundary.png",
+      "caption": "Start counts near midnight and boundary-to-shoulder ratios. The final clock slot is empty. The primary contrast excludes that slot. Intervals use 30-day blocks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2021JB022523",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog method, daily clustering, and overlapping windows."
+    },
+    {
+      "target": "doi:10.1785/gssrl.81.4.664",
+      "reason": "GMT-day processing and window start labels."
+    },
+    {
+      "target": "doi:10.1029/2024JB029159",
+      "reason": "Prior catalog change and episode duration limits."
+    },
+    {
+      "target": "https://pnsn.org/blog/an-updated-tremor-monitoring-system",
+      "reason": "Provider explanation of method changes and automatic catalog limits."
+    },
+    {
+      "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared raw CSV snapshot. Exact paths, version and hash are in files/provenance.json."
+    },
+    {
+      "target": "sci:sha256:1bb48e7cfd1b90e98d20b1325fa9cc0e45f6dcc42647562b7c9436c9e25ac993",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign study leaves slow slip and tremor outside its earthquake test. No code or derived result was reused."
+    }
+  ]
+}
