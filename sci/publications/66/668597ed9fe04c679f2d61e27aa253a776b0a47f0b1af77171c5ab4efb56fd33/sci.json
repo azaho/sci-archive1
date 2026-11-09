@@ -1,0 +1,68 @@
+{
+  "title": "Mean short-route backup of bilateral neuron pairs remained after weak-edge removal in two adult worm connectomes",
+  "abstract": "We tested short-route backup in two adult C. elegans brain reconstructions. We kept 180 common neurons and 83 left-right pairs. The score was joint route loss minus summed single-cell route loss, with the same surviving endpoints in all comparisons. For routes of at most three chemical edges, mean net scores were 0.0283% and 0.0294% of intact reachable endpoint pairs. Means stayed above 2,000 degree-binned partner shuffles after removal of edges with fewer than two or three synapses. Pair scores had rank correlation 0.627 across adults with all edges and 0.834 at the three-synapse threshold. Only 28 pairs had positive scores in both adults in the primary test. Bilateral backup is a prior result; this study adds a bounded-route decomposition and a weak-edge test. The result is structural. Two partial brains, coarse degree bins, missing physiology, and a few large pair scores limit its scope. Code, source hashes, all pair counts, shuffle draws, and independent search checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "bilateral neurons",
+    "route backup",
+    "weak edges",
+    "structural robustness"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Route loss in two adult worm brains. Solid lines show mean net backup at three edge thresholds; dotted lines and shading show the degree-binned partner-shuffle mean and central 95% range. The middle panel separates backup from serial dependence. The right panel compares pair scores across adults. The ranges are conditional shuffle ranges, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source of the adult brain reconstructions."
+    },
+    {
+      "target": "doi:10.1111/ejn.70629",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Prior bilateral backup result. We add endpoint-fixed bounded route losses and weak-edge checks; bilateral backup is not a new discovery here."
+    },
+    {
+      "target": "doi:10.1016/j.isci.2024.110713",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of bilateral routes and reachability."
+    },
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign context on left-right count precision. No code or tables reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact versioned raw edge file; hash and shared path in provenance.json."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact versioned raw edge file; hash and shared path in provenance.json."
+    }
+  ]
+}
