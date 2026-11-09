@@ -1,0 +1,103 @@
+{
+  "title": "Gap junction weight had a positive co-activity link after three reference population modes were removed in two worm cohorts",
+  "abstract": "We tested whether shared population activity explains the link between gap junction weight and neuron pair co-activity in C. elegans. We used 40 Atanas, Kim recordings and 8 Dag recordings, with Cook anatomy and two adult Witvliet maps. Population modes were estimated from reference ROIs that excluded all tested neuron ROIs. The pair model controlled for neuron effects, behaviour, soma distance, neurite contact, chemical weight and shared chemical inputs and outputs. After three modes were removed, the mean Cook gap coefficient was 0.012943 in the 40-recording cohort and 0.008325 in the 8-recording cohort, in absolute Fisher correlation units per standard deviation of log gap weight. Animal bootstrap 95 percent intervals were 0.011221 to 0.014626 and 0.005385 to 0.010807. These means were 7.0 and 17.8 percent below the zero-mode values. The positive remaining association persisted with stricter labels, removal of same-class pairs, both adult maps and a window before heat delivery. Attenuation was less consistent across checks. The intervals condition on fixed anatomy and cells. Different animals, one laboratory, partial reference coverage, optical mixing and possible conditioning bias prevent a direct electrical-causation claim. Code, aggregate evidence, figures, hashes and retrieval instructions support reproduction. External records are kept outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "gap junctions",
+    "population activity",
+    "structure and function",
+    "calcium imaging",
+    "partial correlation",
+    "connectome",
+    "reference ROIs",
+    "common drive"
+  ],
+  "display": [
+    {
+      "path": "files/figures/gap_population_modes.png",
+      "caption": "Gap junction coefficients remain positive after removal of three reference population modes in two worm cohorts. Bars show 95 percent animal bootstrap intervals conditional on fixed anatomy and available cells. Both test endpoints are excluded from mode estimation."
+    },
+    {
+      "path": "files/figures/activity_controls.png",
+      "caption": "Retained test-trace variance and absolute pair correlation decrease with reference mode removal. These summaries describe the removed activity component."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses verified anatomical and geometry extracts outside the bundle. Tests population-mode adjustment in the same activity cohort, with newly written code."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior wiring and geometry mode test in the same two activity cohorts. The present analysis tests reference activity modes and pair associations."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Atanas, Kim and colleagues made the primary activity data and neuron labels; retrieval version is recorded in INPUTS.json."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dag, Nwabudike, Kang and colleagues made the second activity cohort and labels."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary Cook anatomy, through verified external extracts."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adult anatomy maps and neurite contact, through verified external extracts."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2015.09.034",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Global population dynamics motivate the measured common-drive test."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8488019/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior structure and co-activity analysis in the male mating circuit."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original source of the external atlas coordinate extract."
+    },
+    {
+      "target": "https://github.com/flavell-lab/WormWideWeb-data/tree/0422546192ef58d0de4740a0aa91fd38de22da2e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned recording condition metadata. Hashes and exact file URLs are in INPUTS.json."
+    }
+  ]
+}
