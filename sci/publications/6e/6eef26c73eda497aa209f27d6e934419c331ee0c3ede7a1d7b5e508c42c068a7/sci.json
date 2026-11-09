@@ -1,0 +1,101 @@
+{
+ "title": "Daily cold nights added no information to the winter mean temperature for next-summer counts of winter-present birds on 4,571 North American routes in 1981-2025, but snow days and Winter Storm Uri did",
+ "abstract": "Question: do daily winter extremes explain the next-summer decrease of bird species that stay at a route in winter better than the December-February (DJF) mean temperature, which four earlier campaign studies used? Data: North American Breeding Bird Survey 2026 release (88,406 route-years, 4,571 routes, 1981-2025), Daymet v4 daily minimum and maximum temperature and snow water equivalent at each route, and a GBIF winter-presence class per species and state. Outcome: mean change of log(1 + count) of winter-present species minus winter-absent species on the same survey; the absent species are the negative control. Plan written before the models. Results: alone, each extreme cold night (below the route 5th percentile) gave -0.30% (permutation z = -5.1); with the DJF mean in the model it gave -0.07% (SE 0.06; permutation p = 0.23), and the mean kept +0.98% per C (p = 0.001). Thus the pre-registered cold-night hypothesis was not supported. Snow-cover days (SWE >= 10 mm) gave -0.027% per day with mean and cold nights in the model (permutation p = 0.005; > 60 days -2.1%), negative in 6 of 6 region-period subsets, in a species-level model (-0.030% per day) and not in absent species; they reduced the mean term by 20%. Daily terms gave no out-of-sample prediction gain (skill 0.2-0.4% for all models). Winter Storm Uri (February 2021): on 233 southern routes with >= 5 extreme cold nights, the 2019-2021 contrast fell 10.9% (95% CI -15.5 to -6.2) more than on 258 mild southern routes, below all 40 placebo two-year periods (z = -2.5); the models predicted only -0.8% to -1.4%. Eastern Bluebird, Eastern Phoebe and Bewick's Wren decreased most; there was no recovery by 2023. Limitations: counts are an index without a detection model; Daymet is at the route start point; no ice data; Uri is one event with a two-year change across 2020.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "winter severity",
+  "extreme cold",
+  "snow cover",
+  "Winter Storm Uri",
+  "Daymet",
+  "resident birds",
+  "weather extremes",
+  "negative control",
+  "permutation test",
+  "out-of-sample test",
+  "population dynamics",
+  "climate change",
+  "North America",
+  "observation bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig5_uri.png",
+   "caption": "Winter Storm Uri: route map of extreme cold nights in winter 2021, the observed severe-minus-mild change against 40 placebo two-year periods and model predictions, and the change in later years."
+  },
+  {
+   "path": "files/figures/fig2_coefficients.png",
+   "caption": "Route-level coefficients per within-route SD with permutation intervals (A) and model M3 in replication subsets (B)."
+  },
+  {
+   "path": "files/figures/fig1_dose_response.png",
+   "caption": "Dose response of the winter-present minus winter-absent change for extreme cold nights, DJF mean anomaly and snow-cover days."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:15270e894fa3ccc7440d212eec8eefbd61f3c871cb06b211e78f8dc74ca0b78f",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its winter-presence index, AVONET trait table and panel method, and test the limitation it states (no daily extremes)."
+  },
+  {
+   "target": "sci:sha256:46ebf207bbe4de80002291579e40aae3276656ead0d38a9cd6807d4e95cc12fe",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its Winter Storm Uri test with monthly data was inconclusive; we repeat it with daily exposures and a placebo of 40 two-year periods."
+  },
+  {
+   "target": "sci:sha256:979b781f810d43937eb31b584aa694c871a7e0d156d4980fcb81251be863c25f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same DJF mean effect (about +1% per C) for resident birds."
+  },
+  {
+   "target": "sci:sha256:e2f6bd3df8252a066a5e0e70ab2347988f8c31530d4541dc5a930b631e38be23",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same DJF mean effect with route-year controls."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey 2026 release."
+  },
+  {
+   "target": "doi:10.3334/ORNLDAAC/2129",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daymet v4 R1 daily weather."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET traits."
+  },
+  {
+   "target": "doi:10.1007/s00442-023-05504-9",
+   "reason": "UK BBS study of climate extremes and resident birds."
+  },
+  {
+   "target": "doi:10.1038/s41559-026-03005-5",
+   "reason": "Purple Martin mortality in Winter Storm Uri."
+  }
+ ]
+}

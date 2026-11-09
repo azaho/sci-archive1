@@ -1,0 +1,71 @@
+{
+  "title": "Four-pair comparisons leave the response similarity effect uncertain in one selected MICrONS mouse",
+  "abstract": "We tested whether measured movie response similarity predicts synaptic connection arrangement after separate source and target cell effects cancel. The public MICrONS v1 table supplied 295,371 candidate pairs and 8,128 connections. A fixed random pairing of 148 source cells gave 30,610 informative four-pair comparisons in 66 source groups. A conditional logistic model gave an odds ratio of 1.082 per pair-level standard deviation of similarity. An exploratory cell-role multiplier interval was 0.894 to 1.313. Ten fixed source pairings gave point estimates from 1.082 to 1.272. One source pair supplied 27.3 percent of primary comparisons. The method cancels additive cell effects without fitting them, under a logistic independent-edge model. It does not remove pair-level confounding. Overlapping comparisons, uncalibrated interval coverage, one selected animal, finite movie repeats and proximity selection limit the result. Code, candidate data, comparison data, validation and provenance support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "conditional logistic regression",
+    "tetrad",
+    "response similarity",
+    "cell effects",
+    "connectomics"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Exploratory multiplier draws for the primary source pairing and point estimates for ten source pairings. All use the same mouse. The vertical or horizontal dashed line marks an odds ratio of one."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1080/07350015.2017.1286242",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior conditional inference for directed network models with separate cell effects; the method is established."
+    },
+    {
+      "target": "doi:10.3982/ECTA12679",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fitted cell-effect analysis of the same candidate panel. We use conditional four-pair comparisons instead; no prior code or tables reused."
+    },
+    {
+      "target": "sci:sha256:7539401fef3158cb9189b48c12b3021eaf95be5442dc5c132dd51342c788bb26",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cycle-support audit in connected same-scan pairs motivated an explicit report of comparison support. This study uses all candidate pairs and measured signal correlation."
+    }
+  ]
+}

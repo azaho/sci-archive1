@@ -1,0 +1,89 @@
+{
+  "title": "Six known multiple-trigger bursts account for the one-day, two-degree GBM pair excess in 4418 selected triggers",
+  "abstract": "We search a frozen Fermi GBM trigger table for repeated gamma-ray emission. We select 4418 GRB-class triggers from July 2008 to November 2026. We count pairs within four time limits from one hour to 30 days and three angle limits from 2 to 10 degrees. We compare the counts with 1999 position shuffles within each year and each month. Eight pairs within one day and two degrees belong to six known multiple-trigger bursts. Their catalog entries share precise positions. With one trigger per known event, the 12-cut excess test gives p=0.9280 for year shuffles and p=0.9685 for month shuffles. No new source is established. Shared positions are not independent confirmation. Coarse localizations, time-dependent exposure, and incomplete trigger selection limit the test. This is a catalog audit and a conditional null result, not a limit on the rate of repeating sources. Code, frozen data, source hashes, controls and figures are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Fermi GBM",
+    "gamma-ray bursts",
+    "multiple triggers",
+    "catalog audit",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/pair_counts.png",
+      "caption": "Pair counts before and after known event removal. Gray bands contain the central 95 percent of year-shuffled counts. The bands are pointwise, not simultaneous."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigtrig.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog fields, classes, position errors and localization sources."
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+trigger_name,name,ra,dec,error_radius,trigger_time,trigger_type,reliability,trigger_timescale,localization_source,detector_mask+FROM+fermigtrig",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the shared frozen input."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab7a18",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Four known bursts each triggered GBM twice."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347017",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known double-trigger GRB 220627A."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2507.14286",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known triple-trigger GRB 250702B and independent multi-band detections."
+    },
+    {
+      "target": "doi:10.1088/0067-0049/216/2/32",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GBM systematic position errors."
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/32295",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Konus-Wind reports two emission episodes for the known GRB 220627A."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2208.14333",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "LAT spectral evidence against simple lensing of GRB 220627A."
+    },
+    {
+      "target": "sci:sha256:46f199129a8ecc160ee3c1ff3549317e6c21a406673880f7ed9f828e7259b7fd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign context for independent instrument checks. No code or derived results are reused."
+    }
+  ]
+}
