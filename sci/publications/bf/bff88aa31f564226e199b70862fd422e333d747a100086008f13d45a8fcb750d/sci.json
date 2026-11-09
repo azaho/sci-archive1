@@ -1,0 +1,99 @@
+{
+  "title": "A count model with cell gains needs a factor 1.988 tolerance for 91 selected worm response means",
+  "abstract": "We tested whether chemical synapse counts with separate source and target cell gains can fit 91 selected wild-type C. elegans response magnitudes. The smallest uniform multiplicative tolerance was 1.988151 for a linear count rule, 1.399602 for cell gains alone, and 1.339980 for a free count power. Four responses supplied a lower bound that matched a feasible fit for all 91 means. Two stricter samples had no source-target role cycles and could fit any positive magnitudes. Thus, their exact fits cannot support the model. Saved fit and bound checks passed for all 15 model fits. The bounds hold for fixed counts and exported means. They are not confidence limits or tests against measured error. Different animals, uncertain counts, pooled effective responses and sparse cycles prevent a biological rejection claim. Code, source hashes, fit certificates, evidence tables and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "signal propagation",
+    "cell gains",
+    "synapse count",
+    "fit certificate",
+    "multiplicative error"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Smallest uniform multiplicative tolerance for each selected sample and model. A factor of 1 in a sample with no role cycles means that the graph cannot test the model. All bounds are deterministic and hold counts fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3788333/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model that scales synaptic coupling by contact count; it does not impose our effective response model."
+    },
+    {
+      "target": "https://proceedings.mlr.press/v97/hendrickx19a.html",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior graph-based log-ratio estimation; our bound uses a standard linear program, not its statistical estimator."
+    },
+    {
+      "target": "sci:sha256:1e7321bf7b7c261807a4d47c588d54f0f6d9fb1b9e82288248d9e61de99383ed",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior direction-order test. Here we test count scaling after separate cell gains."
+    },
+    {
+      "target": "sci:sha256:03adae01b2937552130f579e45b8e8b5e15ad4fcc8ef416730a2660ef48b1458",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior sign test on the same primary selection. Here we test magnitude calibration; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:bc72278eb64134b48cfee5e739e9427208beeb754e85be001ccde9884a04c53f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related reciprocal transfer model after cell gains; this study tests count scaling on directed edges."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/NeuroAtlas.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Checked the export definitions and orientation; no source code copied."
+    }
+  ]
+}
