@@ -1,0 +1,67 @@
+{
+  "title": "Movie similarity reduced mean wiring prediction loss across 13 excluded target scans in one MICrONS mouse",
+  "abstract": "We tested a wiring model on target cells from imaging scans excluded from model training. We used the public MICrONS functional connectomics v1 node and edge tables. All cells from each test scan were absent from connection model training in both endpoint roles. Test source cells came from other scans and could occur in training. A reference logistic model used proximity, receptive-field distance, layer and area labels. One extension added measured movie response correlation. Across 13 target scans, the equal-scan mean log-loss reduction was 0.0001348 nats per pair. The pair-weighted reduction was 0.0001388, or 0.123 percent of reference loss. 11 scans had a positive gain. The equal-scan mean after one scan was removed ranged from 0.0001096 to 0.0001871. Penalty 10 gave a mean of 0.0001347. These are descriptive finite-sample gains, not an independent scan significance test. Shared sources, overlapping training sets, selected excitatory cells, one mouse, and fixed activity measures limit claims about general rules. Code, fitted models, aggregate evidence, hashes and retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "scan exclusion",
+    "wiring prediction",
+    "movie response",
+    "generalization"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Gain from measured movie response similarity on held-out target scans. Positive values mean lower binary log loss. The dashed line gives the equal-scan mean. Scans share source cells and training data."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ding and colleagues supplied the released node and edge measures."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The MICrONS Consortium supplied the linked structure and activity resource."
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-sample cell-adjusted response and wiring association; motivates a transfer test."
+    },
+    {
+      "target": "sci:sha256:2abc423347290bfd5cde3f4d8d1655f3d86ffc5523f4858de291832014882370",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cross-area transfer test; the current work tests excluded target imaging scans with new code."
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "sci:sha256:e894a56a9ce22229a9e71b749c98b0ba184b3f09780620ae44a5f7819392059c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior random neuron exclusion benchmark; the present design uses recorded scan groups."
+    }
+  ]
+}

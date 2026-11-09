@@ -1,0 +1,80 @@
+{
+ "title": "Fermi/GBM detected prompt gamma rays from 22% of 124 Einstein Probe X-ray transients that it could see in 2024-2026; Earth blocking and SAA do not cause the low rate",
+ "abstract": "Question: Einstein Probe (EP) fast X-ray transients (FXTs) seldom have reported gamma-ray counterparts. Is this because the gamma-ray monitors could not see them, or because the FXTs made no detectable gamma rays? Approach: We built a catalog of the 250 EP transient names in the NASA GCN Circulars archive (snapshot 2026-11-08). For each event we used the Fermi/GBM daily position history to calculate whether GBM could see the EP position at the EP start time (Earth blocking and South Atlantic Anomaly). We matched the events to GBM on-board triggers and to gamma-ray reports in the circulars. We removed 1 false trigger, 10 likely stellar flares and 6 late detections of earlier GRBs. Results: In the main sample of 222 FXTs (2024-03 to 2026-11), GBM could see 124 positions. GBM detected 27 of these (22%, 95% interval 15-30%; 15 on-board triggers, 12 targeted-search detections), and all gamma-ray instruments detected 30 (24%). For the 98 events that GBM could not see, other instruments detected 28 (29%, 21-38%), which is not different (Fisher p = 0.54). The visibility model agrees with 39 of 40 GBM GRB triggers and 24 of 25 GBM-team coverage statements. The GBM detection rate increases with WXT X-ray flux (logistic slope 1.10 +/- 0.41 per decade), but GBM detected only 10 of 35 events in the brightest X-ray tercile. A censored model with one broad log-normal gamma-to-X-ray flux ratio (scatter 1.1-1.9 decades) fits the trigger data as well as a model with a separate gamma-dark class. Conclusion: About three of four EP FXTs have no detected prompt gamma rays even when GBM can see them; instrument coverage does not explain the low counterpart rate. Limitations: the catalog comes from free-text circulars; only reported EP events are included; gamma-ray searches by instruments other than GBM are not uniform; WXT fluxes use different time intervals.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  }
+ ],
+ "keywords": [
+  "Einstein Probe",
+  "fast X-ray transients",
+  "gamma-ray bursts",
+  "Fermi GBM",
+  "Earth occultation",
+  "GCN Circulars",
+  "X-ray flashes",
+  "counterpart fraction",
+  "censored regression"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_fractions.png",
+   "caption": "Left: fraction of 222 EP fast X-ray transients with a prompt gamma-ray detection, by Fermi/GBM state at the EP start time (visible, Earth-blocked, SAA). Bars show GBM on-board triggers, GBM triggers plus targeted-search detections, and detections by any gamma-ray instrument, with Wilson 95% intervals. Right: GBM detection (trigger or targeted search) against WXT average 0.5-4 keV flux for GBM-visible events, with a logistic fit and tercile fractions."
+  },
+  {
+   "path": "files/fig2_geometry.png",
+   "caption": "Angle of each EP position from the Earth limb as seen by Fermi at the EP start time (negative = blocked), split by GBM on or in the SAA. GBM detections occur for visible positions. Most detections by other instruments only (26 of 29) occur when GBM could not see the position."
+  },
+  {
+   "path": "files/fig3_censored_model.png",
+   "caption": "Censored model of GBM 50-300 keV peak photon flux against WXT average flux for GBM-visible events (threshold 0.5 ph/cm2/s, free slope). Left: triggered events (measured flux) and non-triggered events (upper limits), with the single-population mean and 1-sigma band. Right: on-board trigger probability from the single-population and mixture models, with tercile fractions. The two models fit equally well."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://arxiv.org/abs/2506.05920",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Zhang et al. 2025 found gamma-ray counterparts for 14 of 63 first-year EP/WXT transients; our first-year rate with any instrument (28%, 19-39%) agrees, and we add the GBM visibility separation."
+  },
+  {
+   "target": "https://arxiv.org/abs/2509.07141",
+   "reason": "Redshift distribution of EP transients and their relation to long GRBs; context for the interpretation."
+  },
+  {
+   "target": "https://arxiv.org/abs/2607.14317",
+   "reason": "Jet-model interpretation of EP FXTs with low peak energies; context for the gamma-dark explanations."
+  },
+  {
+   "target": "https://gcn.nasa.gov/circulars",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of EP event times, positions, X-ray fluxes and gamma-ray reports (archive snapshot 2026-11-08)."
+  },
+  {
+   "target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigtrig.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fermi GBM trigger catalog used for on-board trigger matching."
+  },
+  {
+   "target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fermi GBM burst catalog used for peak photon fluxes."
+  },
+  {
+   "target": "https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/daily/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GBM daily position history files used for Earth blocking and SAA state."
+  }
+ ]
+}
