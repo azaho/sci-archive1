@@ -1,0 +1,17 @@
+{
+  "title": "Integer missed-presence bounds permit both richness slope signs at cell caps of 1.45-12.5% in four US trawl samples in 1982-2019",
+  "abstract": "We tested whether added presences could reverse four fixed-effort richness slopes for sea surface temperature in US trawl records from 1982 to 2019. The model holds hauls, strata, weather and taxon lists fixed. It permits an integer correction of at most floor(epsilon times haul count) in each taxon-stratum-year cell with a prior detection in that stratum. Sharp conditional slope bounds first permit both signs at caps of 1.45% and 1.72% in early and late Bering samples, and 12.5% and 10.0% in Northeast samples. At the late Bering threshold, an attainable completion adds 9,366 presences and changes the slope from -3.54 to +0.39 taxa per C. Early Northeast adds 4,702 and changes +6.69 to -4.56. These are coordinated worst-case completions, not minimum total errors or measured detection rates. Uniform cap-saturated corrections in all years keep the two original signs. Fractional count relaxations give much smaller thresholds and address a different target. The results show why integer counts and error assumptions matter for sensitivity tests. They do not show that detection bias occurred or that climate caused a biodiversity change. Short series, coarse surface temperature, selected support and unmeasured survey changes limit interpretation. The package includes source hashes, raw rebuild code, count witnesses, separate numerical checks and a figure.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.PE"}],
+  "keywords": ["biodiversity", "observation bias", "imperfect detection", "sensitivity bounds", "trawl survey", "rarefaction", "sea surface temperature"],
+  "display": [{"path": "files/bounds.png", "caption": "Sharp lower and upper SST slope bounds under integer missed-presence caps. Solid steps restrict corrections to taxon-stratum pairs detected at least once in 1982-2019. Dashed steps allow all regional pairs. Each cap is a fraction of hauls per taxon-stratum-year cell, not an overall error rate. Bounds are conditional on fixed records and assumptions; they are not confidence intervals."}],
+  "citations": [
+    {"target": "sci:sha256:3551fe2177f2406d73e5b6fcb8046eed5e9d392af34b4b87cbdde5a73f3c2d7d", "relations": ["uses"], "reason": "Reuse verified sufficient evidence and raw build code; raw rebuild matched five tables. This audit adds bounded missed-presence completions. Observations overlap."},
+    {"target": "sci:sha256:035f99036d461651f4c077e1f3568d9ab09f2b10cc881cd28bb1f18642be8322", "relations": ["reviews"], "reason": "Prior whole-label deletion audit motivates a distinct added-presence sensitivity test."},
+    {"target": "doi:10.1046/j.1461-0248.2001.00230.x", "relations": ["uses"]},
+    {"target": "doi:10.1890/02-3090", "relations": ["reviews"]},
+    {"target": "doi:10.1126/science.1239352", "relations": ["reviews"]},
+    {"target": "doi:10.1111/gcb.15404", "relations": ["reviews"]},
+    {"target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a", "relations": ["uses"]},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc", "relations": ["uses"]}
+  ]
+}

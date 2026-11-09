@@ -1,0 +1,108 @@
+{
+ "title": "Public O4 gravitational-wave alerts with p_astro 0.1-0.9 were astrophysical about half as often as stated, and updated sky maps were too narrow, against GWTC-4.1 and GWTC-5.0",
+ "abstract": "We compared all 3,558 public LIGO-Virgo-KAGRA low-latency alerts in the O4a and O4b catalog windows with the final GWTC-4.1 and GWTC-5.0 catalogs. We used only public GraceDB notices and catalog data releases. For 2,500 compact-binary alerts, the sum of first-notice p_astro was 421, the sum of catalog p_astro for the same superevents was 309, and 266 went into the catalogs. For alerts with p_astro from 0.1 to 0.9 (n = 650), the alert p_astro sum was 184, the catalog sum was 98, and 74 were catalogued. Most of the difference came from SPIIR-first alerts in O4a (alert sum 75.5, catalog sum 13.3). MBTA-first alerts also had high values, and GstLAL and PyCBC had small differences. A logistic recalibration with pipeline terms, fitted on O4a only, decreased the O4b Brier score from 0.0344 to 0.0289 (95% CI of the difference -0.0091 to -0.0019). None of the 20 retracted alerts is in a catalog, and 9 of them had p_astro above 0.9. Relative to the catalog parameter-estimation sky maps, first-notice BAYESTAR 90% regions contained 0.858 (0.840-0.875) of the catalog probability and the last-notice online-PE regions contained 0.828 (0.818-0.838), although the online-PE regions were 26% smaller. Fourteen of 189 first-notice distances were too small by more than 3 standard deviations (all GstLAL-first heavy binary black holes; post-hoc). Thirty of 301 catalog candidates had no public alert. Limitations: the catalog p_astro and posteriors are not ground truth, alerts and catalog use the same data, and sky tests use only the 190 catalogued events with released PE sky maps.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "gr-qc"
+  }
+ ],
+ "keywords": [
+  "gravitational waves",
+  "low-latency alerts",
+  "p_astro calibration",
+  "sky localization",
+  "GraceDB",
+  "GWTC-4.1",
+  "GWTC-5.0",
+  "O4",
+  "forecast verification",
+  "multi-messenger follow-up"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Reliability of first-notice p_astro for CBC alerts in O4a (left) and O4b (right). Blue: mean catalog p_astro in each alert bin; orange: fraction with catalog p_astro >= 0.5. Bars are 95% intervals. Points below the dashed line show that the alert p_astro was too high."
+  },
+  {
+   "path": "files/figures/fig2_pipelines.png",
+   "caption": "Sum of first-notice p_astro, sum of catalog p_astro and number catalogued, by pipeline of the first notice (O4a and O4b together). SPIIR-first alerts had about four times more expected astrophysical events than the catalog found."
+  },
+  {
+   "path": "files/figures/fig3_sky_coverage.png",
+   "caption": "Left: mean catalog-PE probability inside the alert X credible region for first-notice BAYESTAR maps and last-notice online-PE maps, with 95% bootstrap bands. Right: 90% coverage by subset. A calibrated map gives 0.90."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5281/zenodo.20276095",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GWTC-4.1 candidate data release; search summary table with superevent IDs and offline p_astro for O4a."
+  },
+  {
+   "target": "doi:10.5281/zenodo.20348004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GWTC-5.0 candidate data release; search summary table for O4b."
+  },
+  {
+   "target": "doi:10.5281/zenodo.20275769",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GWTC-4.1 parameter estimation release; PE sky maps and summary table."
+  },
+  {
+   "target": "doi:10.5281/zenodo.20348005",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GWTC-5.0 parameter estimation release (Part 1); PE sky maps and summary table."
+  },
+  {
+   "target": "https://gracedb.ligo.org/superevents/public/O4/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Public O4 superevents and VOEvent notices as issued."
+  },
+  {
+   "target": "https://gwosc.org/eventapi/jsonfull/GWTC-5.0/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Catalog source-property medians."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2605.27225",
+   "reason": "GWTC-5.0 results paper (O4b)."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2605.27224",
+   "reason": "GWTC-5.0 methods paper."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2508.18082",
+   "reason": "GWTC-4.0 catalog of O4a candidates."
+  },
+  {
+   "target": "doi:10.1073/pnas.2316474121",
+   "reason": "Description of the O4 low-latency alert products and their expected performance."
+  },
+  {
+   "target": "doi:10.1103/PhysRevD.93.024013",
+   "reason": "BAYESTAR rapid sky localization method."
+  }
+ ]
+}
