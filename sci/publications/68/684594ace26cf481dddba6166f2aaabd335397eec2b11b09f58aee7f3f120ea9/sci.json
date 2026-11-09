@@ -1,0 +1,64 @@
+{
+  "title": "Reverse delay gave uncertain prediction gains at ridge penalty 10 in 230 Allen mouse reciprocal pairs",
+  "abstract": "We tested whether the delay in one direction of a known reciprocal connection improves prediction of the reverse delay in excluded mouse donors. We used 230 excitatory-inhibitory pairs from 156 inferred donors in two Allen slice projects. Ridge models controlled cell labels, distance and recording conditions. At penalty 10, adding reverse delay reduced donor mean squared log error by 0.00683 for excitatory delay and changed it by -0.00061 for inhibitory delay. The 97.5% fixed-prediction donor intervals were -0.00333 to 0.01833 and -0.01969 to 0.01728. Both include zero. Penalty 100 gave a positive excitatory gain interval, so the result depends on the model. The package supplies code, cohort IDs, predictions, source hashes, uncertainty draws and independent checks. Selected slice circuits, uncertain donor labels, shared fit error and conditional intervals limit inference. The result does not show delay independence or a rule across species or regions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connections",
+    "synaptic delay",
+    "donor validation",
+    "model sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/timing.png",
+      "caption": "Added value of reverse delay for the two primary outcomes. Intervals use donor resampling with fitted predictions fixed. Both primary intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "doi:10.1111/ejn.12294"
+    },
+    {
+      "target": "sci:sha256:d7a654bb28eadf49cdc150cf39cd9f7fc586ef72ed661a7eaff1b7a08e6d6a37",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related test of shared source and target timing; reciprocal pairs are excluded from that contrast."
+    },
+    {
+      "target": "sci:sha256:3660af3e941c858b081907633ca3fa44640f6d2660d32d6710e1ee9cb288fca8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related reverse-strength completion benchmark, with a different outcome."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=e98d4e72-f83a-4216-91cd-3b2b02a6b105",
+      "reason": "Published direction-delay comparison read in the shared dataset publication package."
+    }
+  ]
+}

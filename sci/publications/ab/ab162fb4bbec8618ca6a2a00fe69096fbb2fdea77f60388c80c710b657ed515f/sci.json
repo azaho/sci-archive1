@@ -1,0 +1,69 @@
+{
+  "title": "Tide endpoint subtraction raised high-high relative to high-low tail pairing at six US gauges in 2015-2024",
+  "abstract": "We tested how tide endpoint subtraction changes the pairing of high daily maxima with high or low daily minima at six US gauges in 2015-2024. We used 21,279 valid station-days from published NOAA evidence. For each site, measure and calendar month, upper and lower tails used the 95th and 5th percentiles. The equal-site high/high minus high/low date balance rose from -0.08% to 2.48% after same-date correction. The increase was 2.56 percentage points, with a 95% two-year block interval of 2.22 to 2.93 points. Fitting thresholds again gave 2.11 to 2.62 points. All six site changes were positive. A next-year tide control gave a balance of -0.28%. The same-date minus control contrast was 2.76 points, with a refitted interval of 2.35 to 2.81. The correction changes tail dates and thresholds. Endpoint subtraction is not an hourly surge measure and does not establish weather cause or flood risk. Ten years, six selected gauges, retrospective predictions, inherited coverage selection, and conditional block intervals limit inference. The package gives source hashes, daily evidence, code, all draws, a figure, and independent rational-count and source audits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "daily water levels",
+    "NOAA CO-OPS",
+    "tail dependence",
+    "tide correction",
+    "paired extremes",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "The rate of high-maximum/high-minimum dates minus the rate of high-maximum/low-minimum dates. Each measure uses separate site and calendar-month thresholds. Positive values mean more high/high dates. Bars are descriptive site estimates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse verified daily observations and full daily tide summaries, source provenance, and coverage selection. Its bundle preserves all 60 raw tide prediction responses. Our new endpoint is the within-site signed tail-pair balance."
+    },
+    {
+      "target": "sci:sha256:6b219d2d7761c72b30461a9226f802bc13df317c3b6be2ba7ef30bcd0c210e2f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior maximum-to-midpoint comparison studied spatial tail-date alignment. We test within-site high-low tail dependence."
+    },
+    {
+      "target": "sci:sha256:88e63aaa4dbd7a379e615598e75cc0341553c7fdba5b284d1fbe8a1995982db9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior monthly high-low offset trends provide related daily-endpoint context, without reuse of its code or result tables."
+    },
+    {
+      "target": "doi:10.1029/2018JC014282",
+      "reason": "Prior mixed-semidiurnal tide and skew-surge dependence study. We read its abstract and introduction for context, not as evidence for our daily endpoint result."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA definitions of daily hourly extrema, completeness, inferred flags and monthly means."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact 78 observation and prediction queries and file hashes are in the bundled provenance files."
+    }
+  ]
+}

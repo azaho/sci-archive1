@@ -1,0 +1,86 @@
+{
+ "title": "Eclipsing binaries occur only in the red-excess class of 9,786 Gaia DR3 astrometric white-dwarf-candidate binaries; TESS shows no signal at predicted outer conjunctions",
+ "abstract": "We tested 9,786 Gaia DR3 astrometric binaries from Shahaf et al. (2024). Their faint companions are not single main-sequence stars. 3,166 systems have no red colour excess (NCE, probable white dwarfs). 6,620 have a red excess (RCE, probable triples). First, we propagated the full Gaia orbit covariance to the conjunction times in the TESS era. We searched 970 TESS full-frame-image light curves of the 261 most edge-on systems, with pooled false-alarm controls and injection-recovery. We expected 23.4 aligned conjunctions on usable data. No vetted signal occurs at a predicted conjunction. Six windows pass the 0.003 threshold, against 4.2 expected false alarms. Vetting shows systematics or eclipses of an inner binary. This test has almost no power for white-dwarf self-lensing (0.22 expected detections), because the pulses are short and small for stars of G about 14. But 9.7 detections of 5 % eclipses were expected if each companion were one opaque star-sized body. Second, eclipsing binaries occur only in the RCE class. The Gaia DR3 eclipsing-binary table contains 21 of 6,620 RCE and 0 of 3,166 NCE systems (Fisher p = 2.7e-4; p = 6e-4 stratified in magnitude and parallax). Our TESS periodic search finds eclipses on target in 12 of 189 RCE and 0 of 72 NCE systems (p = 0.019); 11 of these 12 are not in the Gaia DR3 table. Third, the outer orbits of the Gaia eclipsing systems are closer to edge-on than other RCE orbits (mean |cos i| 0.295 against 0.519; p = 1.6e-4). This agrees with partial alignment of the inner and outer orbits (mutual-inclination scale about 15 to 30 degrees in a simple model). These results support the triage: close eclipsing binaries occur among RCE systems, not among probable white-dwarf systems. Limitations: no spectra; in 8 of 21 Gaia systems the eclipsing pair probably dominates the light; catalogue cross-matches with VSX failed; the conjunction test does not limit the white-dwarf fraction. We report no new planet or self-lensing binary.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "Gaia DR3",
+  "astrometric binaries",
+  "white dwarfs",
+  "self-lensing",
+  "TESS",
+  "eclipsing binaries",
+  "hierarchical triples",
+  "mutual inclination",
+  "non-single stars",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/results/figures/fig2_eclipsing_triples.png",
+   "caption": "a. Fraction of systems with eclipses in the RCE and NCE classes, from the Gaia DR3 eclipsing-binary table (all 9,786) and from our TESS search (261 near-edge-on systems); bars show Clopper-Pearson 95 % intervals. b. Cumulative distribution of |cos i| of the outer astrometric orbit for RCE systems with a Gaia DR3 eclipsing binary (black) and for other RCE systems (orange)."
+  },
+  {
+   "path": "files/results/figures/fig3_tess_eclipses.png",
+   "caption": "Phase-folded TESS light curves of the 12 RCE systems with eclipses on target (best sector each, our photometry from TESScut cutouts)."
+  },
+  {
+   "path": "files/results/figures/fig1_conjunction_test.png",
+   "caption": "a. Gaia DR3 |cos i| against R*/a for all systems; points below the line can produce an event at conjunction. b. Expected numbers of aligned conjunctions on usable TESS data, detectable self-lensing pulses and detectable 5 % eclipses, against zero observed signals at predicted conjunctions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48550/arXiv.2309.15143",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the 9,786-system sample, primary masses and red-excess probabilities; our eclipse tests support its RCE/NCE division."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2209.00828",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Defines the astrometric mass-ratio triage classes."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2410.13939",
+   "reason": "Prior TESS self-lensing search, including a check of Gaia non-single-star solutions."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2206.05595",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 non-single-star orbit solutions."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2211.00929",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 eclipsing-binary candidate catalogue."
+  },
+  {
+   "target": "https://ascl.net/1905.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Astrocut/TESScut cutouts of TESS full-frame images."
+  },
+  {
+   "target": "sci:sha256:d57ede30e514369ac650d3ec09f73996d2292c6037da34fe5cc0254e2ea71fda",
+   "reason": "Related campaign study that tested Gaia DR3 SB1 orbits with TESS transits at conjunction times."
+  }
+ ]
+}

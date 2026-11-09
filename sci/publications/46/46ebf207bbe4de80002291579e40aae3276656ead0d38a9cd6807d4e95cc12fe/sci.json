@@ -1,0 +1,37 @@
+{
+  "title": "Cold winters decreased next-summer counts of resident birds but not of long-distance migrants on the same North American survey routes in 1968-2019",
+  "abstract": "Question: does a cold winter decrease bird counts in the next breeding season, and only in the species that were present in that winter? Approach: we used 86,809 same-observer pairs of consecutive-year North American Breeding Bird Survey counts on 4,508 routes (winters 1968-2019) and the December-February temperature anomaly of the GHCN_CAMS 0.5 degree cell of each route. We compared the change in a resident-species index (130 species) with the change in a long-distance-migrant index (114 species) on the same survey. The migrants were absent in winter, so they control for observer, date, weather and route effects. Models had route and year fixed effects, a spring-anomaly covariate and standard errors clustered by year. Result: each +1 C of winter anomaly increased the resident-minus-migrant change by 0.0133 log units (95% CI 0.0097 to 0.0169). Residents responded (0.0128) and migrants did not (-0.0004, CI -0.0027 to 0.0019). The response was asymmetric: winters more than 3 C colder than normal were followed by a resident index approximately 7% lower (CI -9.0% to -4.5%), with no migrant change. A placebo exposure (the winter after the survey) had no effect. The slope replicated in eastern and western, northern and southern routes, in 1968-1993 and 1994-2019, and with four alternative guild definitions. Canadian routes alone gave an uncertain slope. Of 83 resident species, 77% had positive slopes (12 clearly positive, 0 clearly negative); migrant species were centred on zero. Body mass did not predict sensitivity. An out-of-sample test on Winter Storm Uri (February 2021) was inconclusive: on 110 severe southern routes the 2019-2021 contrast fell by 0.110 relative to milder routes, but mainly because migrants increased, and similar contrasts occurred in 2 of 20 placebo year pairs. Limitations: monthly gridded temperature does not resolve short extremes; resident-specific detection changes after cold winters cannot be fully excluded; guild lists use expert knowledge of winter ranges because raw AVONET migration codes misclassify many North American breeders.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"}
+  ],
+  "keywords": [
+    "winter severity",
+    "weather extremes",
+    "Breeding Bird Survey",
+    "resident birds",
+    "long-distance migrants",
+    "negative control",
+    "observation bias",
+    "Winter Storm Uri",
+    "GHCN_CAMS",
+    "AVONET",
+    "population dynamics",
+    "climate change"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_dose_response_species.png", "caption": "a: Change in resident (blue), long-distance migrant (orange) and resident-minus-migrant (green) guild index after winters in six bins of December-February temperature anomaly, relative to winters within 1 C of normal (route and year fixed effects, 95% CI clustered by year, 1968-2019). b: Slope for each species of the next-summer change in log(1+count) per +1 C of winter anomaly (year fixed effects); black bars are medians."},
+    {"path": "files/figures/fig2_replication_forest.png", "caption": "Slope of the resident-minus-migrant change on the December-February anomaly in the main model, alternative models, regional and period subsets, and alternative guild definitions, plus the residents alone, the migrants alone (negative control) and the winter after the survey (placebo). 95% CI clustered by survey year."},
+    {"path": "files/figures/fig3_uri_holdout.png", "caption": "Winter Storm Uri test. a: February 2021 temperature anomaly at 1,986 routes with same-observer surveys in 2019 and 2021. b: Severe (anomaly <= -4 C) minus mild (> -2 C) routes south of 37 N for the 2019-2021 change (diamonds, 95% bootstrap CI), the same contrast for the same route sets in 20 placebo year pairs 2000-2019 (grey), and the contrast predicted by the 1968-2019 model (open square)."}
+  ],
+  "citations": [
+    {"target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482", "relations": ["uses"], "reason": "North American Breeding Bird Survey 2025 release: counts, routes, survey conditions and species list."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc", "relations": ["uses"], "reason": "NOAA CPC GHCN_CAMS monthly 0.5 degree land surface air temperature, used for winter and spring anomalies."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "Fan and van den Dool (2008), description of the GHCN_CAMS temperature analysis."},
+    {"target": "doi:10.1111/ele.13898", "relations": ["uses", "reviews"], "reason": "AVONET (Tobias et al. 2022): migration codes and body mass. We report that its migration codes misclassify many North American breeders."},
+    {"target": "doi:10.6084/m9.figshare.16586228.v7", "relations": ["uses"], "reason": "AVONET Supplementary dataset 1 file used for species traits."},
+    {"target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8", "reason": "Campaign study of breeding-season warmth and next-year BBS counts; we test the winter season and the migratory guild instead."},
+    {"target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e", "reason": "Campaign study of range-centroid shifts on fixed BBS routes."},
+    {"target": "https://pubmed.ncbi.nlm.nih.gov/41792447/", "reason": "Storm-induced mass mortality of Purple Martins in Winter Storm Uri (2021); context for the hold-out test."},
+    {"target": "doi:10.1126/science.aaw1313", "reason": "Rosenberg et al. (2019), different losses of migrant and resident North American birds."}
+  ]
+}

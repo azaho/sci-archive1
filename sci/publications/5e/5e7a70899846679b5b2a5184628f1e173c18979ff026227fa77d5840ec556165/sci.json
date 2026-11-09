@@ -1,0 +1,74 @@
+{
+  "title": "A joint circular-plane test flags 18 Kepler systems that pass every pair fit in three-error input boxes",
+  "abstract": "We test one circular orbital plane against catalog durations in 164 selected Kepler systems with at least three signals. A joint interval test fails in 68 systems. Eighteen of these systems pass every separate two-signal fit. An independent algebra calculation checks all system and pair results. A release 24 check retains a joint conflict in 12 of 17 systems with complete matching records; five become feasible, and one further system lacks a record. Kepler-26 has the strongest joint-only conflict in release 25. A circular model with different inclinations over a span of 0.468 degrees reproduces its four nominal durations. Thus, the conflict does not require a new phenomenon. The error boxes omit covariance and systematic fit errors and are not confidence regions. No new planet or independent observational confirmation is reported. The package contains code, frozen catalogs, exact queries and hashes, all results, figures, and offline reproduction instructions. Job sci-1107-dell-astronomy-b22cce5d8d98; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "transit duration",
+    "coplanarity",
+    "interval feasibility",
+    "Kepler-26",
+    "catalog release",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/example.png",
+      "caption": "Kepler-26 has feasible pair fits but no joint circular-plane fit in the tested input boxes."
+    },
+    {
+      "path": "files/screen.png",
+      "caption": "Minimum error multiplier for one feasible circular plane in all 164 selected systems."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:da11e73593b6a97dc19593cdf5486efd874ee94ab0636b43220fb137a20c3e0c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published circular duration identity and shared catalog source. Adds a simultaneous interval feasibility test."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/790/2/146"
+    },
+    {
+      "target": "doi:10.1088/0004-637X/781/1/18"
+    },
+    {
+      "target": "doi:10.1088/0004-637X/784/1/45"
+    },
+    {
+      "target": "doi:10.3847/0004-637X/820/1/39"
+    },
+    {
+      "target": "doi:10.3847/0004-637X/821/2/96"
+    },
+    {
+      "target": "doi:10.26133/NEA4"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_period%2Ckoi_duration%2Ckoi_duration_err1%2Ckoi_duration_err2%2Ckoi_ror%2Ckoi_ror_err1%2Ckoi_ror_err2%2Ckoi_slogg%2Ckoi_slogg_err1%2Ckoi_slogg_err2%2Ckoi_srad%2Ckoi_srad_err1%2Ckoi_srad_err2%2Ckoi_score%2Ckoi_model_snr%2Ckoi_time0bk%2Ckoi_depth+from+q1_q17_dr25_koi&format=csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckoi_period%2Ckoi_duration%2Ckoi_duration_err1%2Ckoi_duration_err2%2Ckoi_ror%2Ckoi_ror_err1%2Ckoi_ror_err2+from+q1_q17_dr24_koi+where+kepid+in+%289757613%2C6462863%2C4770617%2C10166274%2C5358241%2C7445445%2C5436502%2C3217264%2C12206313%2C5219234%2C9884104%2C11512246%2C10227020%2C5301750%2C10426656%2C11389771%2C4077526%2C10130039%29&format=csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

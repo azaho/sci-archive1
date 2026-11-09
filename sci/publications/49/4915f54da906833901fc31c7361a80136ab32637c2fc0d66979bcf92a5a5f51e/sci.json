@@ -1,0 +1,95 @@
+{
+  "title": "The largest three-year dry footprint across 344 US divisions was within a shuffled-year range in 1896-2025",
+  "abstract": "We tested whether year order produced an unusually large common footprint of three consecutive dry water years in 344 US climate divisions. We used fixed NOAA nClimDiv precipitation for 1896-2025. A dry year was at or below each division's full-record 20th percentile. The largest count of divisions dry in all three years was 36, in 1964-1966. This was 10.47% of divisions, not US land area. We compared this count with 9,999 records that kept each national annual field together and reordered years within 20-year strata. Each draw included the search over all window dates. The null median was 32 divisions and the central 95% range was 19-80. The upper-tail p value was 0.3915. Thus, the test found no clear excess under this year-order reference. Planned checks changed strata, threshold, duration, year boundary, and division weights. All gave upper-tail p values above 0.05, although four-year and equal-state checks were closer to the upper tail. This is a null result conditional on within-stratum exchangeability. It does not prove independence or measure recovery of water stores. One product, annual aggregation, division weights, and slow climate variation limit inference. The package gives source data and hashes, exact annual evidence and permutations, all null scores, three figures, code, a separate arithmetic audit, and a repeat without network access.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "precipitation drought",
+    "persistent drought",
+    "spatial dependence",
+    "year permutation",
+    "null result",
+    "nClimDiv",
+    "water year",
+    "national drought footprint"
+  ],
+  "display": [
+    {
+      "path": "files/results/footprint.png",
+      "caption": "The largest three-year count was 36 divisions in 1964-1966. The primary reference keeps national annual fields together and reorders years within 20-year strata. Its central 95% range of record maxima was 19-80; upper-tail p was 0.3915."
+    },
+    {
+      "path": "files/results/peak_map.png",
+      "caption": "Orange marks the 36 climate divisions dry in each of water years 1964-1966. The divisions span 14 states. The reduced map is a display in longitude and latitude. It does not measure land area."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "Observed maxima and central 95% null ranges for all planned count checks. The equal-state check has another unit and is reported in the text."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:70823f9e49a05939288e0d0dabbe07732fa6fadb8fe09aecf0f8a7c50ff6f4e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the public shared precipitation snapshot and the verified NOAA format document. This study tests the largest persistent dry footprint, not a change in mean pair correlation. All analysis code is new."
+    },
+    {
+      "target": "sci:sha256:1ffb84a5a2479e4f58987d90d6ccb269aab3323e3ce0c1fe049febe2548d413f",
+      "reason": "Prior campaign work distinguishes overlap correlation from annual forecast information. It motivated a direct count of separate dry water years rather than overlapping precipitation totals."
+    },
+    {
+      "target": "doi:10.1175/JHM450.1",
+      "reason": "Prior study of drought severity, extent, and duration with modeled soil moisture and runoff."
+    },
+    {
+      "target": "doi:10.1175/EI-D-21-0021.1",
+      "reason": "Prior study of extensive droughts lasting at least three years with tree-ring PDSI reconstructions."
+    },
+    {
+      "target": "doi:10.1029/2025WR041240",
+      "reason": "Prior study of regional drought synchronicity, time scales, atmospheric demand, and climate modes."
+    },
+    {
+      "target": "doi:10.5194/hess-29-1319-2025",
+      "reason": "Prior work distinguishes annual precipitation memory from memory in water stores."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method for the NOAA climate-division source product."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed precipitation snapshot. Exact bytes, shared path, and hash are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/CONUS_CLIMATE_DIVISIONS.shp.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA division names and map geometry. Only display uses the geometry; no test depends on it."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA format, state codes, units, and source-method documentation. Verified saved bytes are included."
+    }
+  ]
+}

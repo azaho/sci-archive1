@@ -1,0 +1,75 @@
+{
+  "title": "Pointing terms reduce the lost-light offset of the KIC 10484683 Kepler dip to the tested control scale",
+  "abstract": "We test the source position of a known comet-like dip of KIC 10484683 in Kepler quarter 3, release 25. We fit a fixed dip profile to each collected pixel with local time and pointing terms. Six fits without pointing give lost-light offsets of 0.34 to 1.38 pixels from the baseline image center. Six fits with pointing give offsets of 0.051 to 0.100 pixels. The main fit gives 0.054 pixel and an aperture depth of 1419 parts per million. At ten other times, target-image injections give offsets of 0.023 to 0.099 pixel with pointing terms. All 40 tests with images shifted by half a pixel give larger offsets, from 0.308 to 0.635 pixel. Thus the small event offset is at the tested control scale. The large offset without pointing is not stable evidence for a separate source. These are restricted image tests, not source validation or independent confirmation. An unresolved blend, image model error, and a non-comet cause remain possible. We report no new object. Code, source hashes, all fits, residual samples, control tests, and figures are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 10484683",
+    "exocomet candidate",
+    "difference image",
+    "pointing",
+    "source location"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/localization.png",
+      "caption": "Baseline image and fitted lost-light image for the main model. White plus: baseline center. Red cross: lost-light center. White circle: catalog position from the file WCS. Right: conditional residual samples, with the baseline center at zero."
+    },
+    {
+      "path": "files/outputs/controls.png",
+      "caption": "Offsets from injected target images at ten other times. The small event offset is within the range of tests that use pointing terms."
+    },
+    {
+      "path": "files/outputs/lightcurve.png",
+      "caption": "The known dip in aperture and corrected flux, and the main pixel-aperture fit. These products use the same telescope exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202556033",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior identification of this candidate; Table 2 gives its time and fixed profile parameters."
+    },
+    {
+      "target": "https://arxiv.org/html/2510.14687v1",
+      "reason": "Accessible version of the prior candidate catalog."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Difference-image source tests and their distinction from flux-weighted centroid motion."
+    },
+    {
+      "target": "sci:sha256:26a0ab6a554b3e388e72776fffe63ec5d0a64cb9ec2428c16316227b6b0f0694",
+      "reason": "Prior campaign test of pointing models on another star. It motivates caution with image-motion fits."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0104/010484683/kplr010484683-2009350155506_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 source file. The shared path and SHA-256 are in files/outputs/provenance.json."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010484683/kplr010484683-2009350155506_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 source file. The shared path and SHA-256 are in files/outputs/provenance.json."
+    }
+  ]
+}

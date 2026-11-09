@@ -1,0 +1,65 @@
+{
+  "title": "Geometric-mean decay replacement lowered gain limits in models of 91 selected Allen mouse E-I pairs",
+  "abstract": "We tested mean decay replacement in a two-filter negative feedback model. We used linked circuit and response records from Allen Synaptic Physiology r2.1. The sample had 91 complete reciprocal excitatory-inhibitory pairs from 69 inferred mice in visual cortex. The critical gain with both stored decay times was a median 1.258 times the gain with geometric-mean replacement. Arithmetic-mean replacement gave a median ratio of 1.018 and a maximum gain error of 6.587 percent relative to the original model. However, it changed the crossing frequency by a median factor of 1.219 and at most 4.799. A short-delay expansion explains why keeping the decay sum can preserve a gain limit while changing frequency. An interior-decay check reduced the geometric-replacement ratio to a median 1.203. Three complete human pairs were too few for a transfer test. Independent selection, root, and summary checks passed. The package gives code, derived records, source hashes, and figures. The filters and static gains are assumptions. No circuit gain, in vivo stability, oscillation, or representation reliability was measured.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "feedback stability",
+    "excitatory-inhibitory loops",
+    "model reduction",
+    "synaptic decay",
+    "delay"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/mean_comparison.png",
+      "caption": "Gain and frequency ratios for geometric and arithmetic decay replacement in 91 selected mouse pair models. These are conditional model outputs, not measured circuit gains."
+    },
+    {
+      "path": "files/evidence/stability.png",
+      "caption": "Individual model gain limits with original and geometric-mean decay times. The three human pairs are descriptive only."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen circuit and response measurements."
+    },
+    {
+      "target": "doi:10.3389/fncom.2011.00025",
+      "reason": "Prior work on E-I transfer functions and delayed oscillatory instabilities."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Definitions of scalar onset latency and PSP decay."
+    },
+    {
+      "target": "sci:sha256:e107b9c153ed1b670bed14819c8fd81a858f8dd47d6397afac334a3de011e05a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior decay-matching report read before choosing this model-reduction question. Informed donor grouping and the interior check. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:32f6778620e8aa94ae4462766a675e69bc45b43c82ed473e6f06d654da11c9a2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior decay-matching report read before choosing this model-reduction question. Informed donor grouping and the interior check. No code or tables reused."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Missing delays leave the sign of a distance slope unresolved in 151 selected Allen mouse inhibitory output groups under 0.2\u20135 ms bounds",
+  "abstract": "We tested whether missing delay values can change a positive distance slope within outputs from the same inhibitory source in Allen mouse visual-cortex slices. We reproduced a complete-case slope of 0.337 ms per 100 micrometres in 328 outputs. Adding eight missing values in the same 151 groups gave sharp slope bounds of -0.090 to 0.389 if missing delays lie between 0.2 and 5 ms. The smallest maximum change from observed group means that permits zero was 3.038 ms. The donor bootstrap threshold interval extended from 1.068 ms to infinity. Including groups with only one measured output gave 64 missing values and a threshold of 0.568 ms. Exact endpoint enumeration, linear programming, and explicit regression checks passed. These are conditional sensitivity results, not estimates of missing delays. Selected slices, inferred donors, assumed delay limits, and unmeasured fit error limit inference. The package provides code, data provenance, witness assignments, measurement priorities, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "missing data",
+    "inhibitory outputs",
+    "partial identification",
+    "distance"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Sharp slope bounds as each missing delay can differ from its observed group mean, subject to 0.2\u20135 ms limits. Shading is not a confidence interval. Panels use different distance-independent sensitivity scales."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1080/01621459.1993.10594302",
+      "reason": "Established missing-data sensitivity framework; the present calculation is a sharp linear bound."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:e711991fef480daf5d149dab04749ec1b1425e3d7c14f53663f7e25e3327401f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published campaign evidence read before this missing-delay slope test. No code or derived tables reused."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published campaign evidence read before this missing-delay slope test. No code or derived tables reused."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published campaign evidence read before this missing-delay slope test. No code or derived tables reused."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

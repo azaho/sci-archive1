@@ -1,0 +1,94 @@
+{
+  "title": "A 10 um local-failure model with 90 percent contact survival gave mean variance ratios of 1.26 to 1.31 in two selected mouse maps",
+  "abstract": "We tested how contact positions change a prediction of connection reliability under spatially shared failures. We used 1,519 excitatory connections in Allen V1 Deep Dive and 1,472 in MICrONS. Each had at least three observed contacts. A Poisson model silenced contacts within balls of radius 10 micrometres. Each contact had survival probability 0.9. With cleft size as weight, mean within-connection variance ratios against independent failures were 1.312 and 1.256. Median ratios were 1.163 and 1.109. Mean effective-count ratios were 0.814 and 0.842. Broad contact shuffles that held one endpoint, partner type, and contact count gave lower mean variance ratios in both maps. Position control reduced the differences and left limited movable data. Independent formulas checked all 2,991 connections. Direct Poisson simulations agreed within 0.58 percent for six examples. The package supplies a spatial sensitivity method, selected contacts, provenance, code, shuffle draws, and a figure. The failure law and linear size weights are assumptions. One animal per map, different sampling, incomplete arbors, and no release or activity measurements prevent a physiological or general population claim.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "Allen Institute",
+    "MICrONS",
+    "synaptic contacts",
+    "spatial failures",
+    "reliability model",
+    "Poisson Boolean model"
+  ],
+  "display": [
+    {
+      "path": "files/results/spatial_failure.png",
+      "caption": "Variance ratios under an assumed spatial failure law in two selected mouse maps. Left: radius sensitivity with size and equal weights. Middle: connection distributions at radius 10 um and survival probability 0.9. Right: broad conditional shuffle ranges, which are not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:002ee9e80347aa25617ae61940dca8f996330f58445ab6c2d2cb51b24097dbd9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified V1DD contact table and inherited raw provenance. Extends independent dropout to a spatial failure law."
+    },
+    {
+      "target": "sci:sha256:27b63e3cdb4c8212ea43a2858f9fe8a62dd36bf2d65b74782d16a5d2ebcd77f5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original selection code and source retrieval recipe for the reused V1DD contact table."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS anatomy source."
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/data_description.json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "V1DD release and source attribution."
+    },
+    {
+      "target": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/synapses_with_axon_proofreading.csv.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/annotation-tables.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Coordinate units and table definitions."
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/proofreading.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Scope and limitations of proofread axon strategies."
+    },
+    {
+      "target": "doi:10.1088/1741-2560/9/3/036014",
+      "reason": "Preliminary culture evidence for independent nearby synapses limits interpretation of the spatial failure model."
+    },
+    {
+      "target": "doi:10.1093/cercor/bhx339",
+      "reason": "Prior model of stability from multiple contacts."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03134-2",
+      "reason": "Size-strength relation in a separate sample motivates the weight sensitivity test."
+    },
+    {
+      "target": "https://stoch.math.kit.edu/img/Last/lastpenrose2017.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established Poisson Boolean model and its no-coverage probability; the present application does not claim a new identity."
+    }
+  ]
+}

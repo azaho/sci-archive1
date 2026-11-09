@@ -1,0 +1,55 @@
+{
+  "title": "A five-day median filter retains 30 percent of long test-dip depth at 48 Kepler times for KIC 11084727",
+  "abstract": "We test how median baseline removal changes artificial dips added to Kepler release 25 corrected flux of KIC 11084727. We use 48 common times in six quarters, five durations, two baseline lengths, and two depth rules. At fixed integrated light loss, an eightfold duration increase gives a median amplitude gain of 0.305 with a five-day median and 0.746 with an eleven-day median. The added peak depth in this case is 125 parts per million. None of 48 tests passes a score threshold of seven with five days; 11 pass with eleven days. These scores are conditional diagnostics, not calibrated probabilities. Long kernels leave few independent controls in some quarters. The primary result is measured amplitude loss. Ten full-quarter checks validate the local calculation, and a fresh ingest reproduces the result files exactly. This test does not find a new planet or comet, test pipeline attenuation, or provide independent telescope confirmation. It shows why fixed-shape null results do not give the same limit for longer events with the same total light loss.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "exocomets",
+    "signal injection",
+    "median filter",
+    "duration sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Amplitude gain and conditional recovery at 48 common times. Peak and area are the two stated depth rules."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b3cc9d091e21396619912f987945312b79dd32245e63f4488e55b3ac8df9367e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the empirical reference widths and the fixed-shape repeat test that motivates a duration check."
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the public input archive and earlier search context."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735"
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "https://arxiv.org/abs/2510.14687"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Kepler public data object; exact bytes and FITS member hashes are recorded."
+    }
+  ]
+}

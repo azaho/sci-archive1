@@ -1,0 +1,71 @@
+{
+  "title": "An enlarged pixel mask preserves the known KIC 8027456 dip in 12 Kepler quarter 15 fits",
+  "abstract": "We tested whether light transfer from the pipeline aperture into other saved pixels can explain the known comet-like dip of KIC 8027456. Kepler release 25 quarter 15 data give a fitted loss of 914.5 electrons/s in 37 aperture pixels and 916.7 electrons/s in 178 valid saved pixels. The 141 added pixels give 2.2 electrons/s, with a conditional 95 percent residual-block interval of -8.4 to 12.0. All 12 tested baseline and pointing choices preserve the loss in the larger mask. Thus, transfer into these added pixels does not explain the dip under the tested model. Saturation prevents a routine source position inference. Light lost outside the saved image, nonlinear detector effects, background errors, and a blended source remain possible. We establish no new event, planet, comet, or independent confirmation. Code, selected pixel data, control fits, residual draws, figures, exact data provenance, and reproduction instructions are included. Job sci-1107-dell-astronomy-a7782f325a0f; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "KIC 8027456",
+    "Kepler",
+    "exocomet candidate",
+    "saturation",
+    "pixel mask",
+    "instrument test"
+  ],
+  "display": [
+    {
+      "path": "files/pixels.png",
+      "caption": "The mean image and fixed-template loss show a saturated column pattern. The column sums do not establish a source position."
+    },
+    {
+      "path": "files/apertures.png",
+      "caption": "The loss remains when 141 saved pixels are added. The intervals condition on the template and local residual-block model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior report of this known possible comet transit."
+    },
+    {
+      "target": "sci:sha256:405430ec3f34f399d6dd8403af095144d601f286e6dc25b33c6c7f6a38c23367",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed event time and rounded split Gaussian shape from its five-day SAP fit."
+    },
+    {
+      "target": "sci:sha256:3902fb0d140ce5ab67c63849beda56bef7ffd3087b52fb06f960b6dedaa55edd",
+      "reason": "Earlier moment position test; this work adds a pixel mask test."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/729/1/27",
+      "reason": "Saturated charge transfer and limits of point response source position methods."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "reason": "Difference image methods and saturation limits."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.htm",
+      "reason": "Pixel data columns and aperture mask definitions."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0080/008027456/kplr008027456-2013011073258_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 source. Shared path, version, and hash are preserved."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456-2013011073258_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 source. Shared path, version, and hash are preserved."
+    }
+  ]
+}

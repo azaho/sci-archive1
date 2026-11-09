@@ -1,0 +1,81 @@
+{
+  "title": "Nearby sites gave different three-day ozone labels in at least 88 of 1,599 US bird survey windows in 2005-2019",
+  "abstract": "We tested whether nearby sites support the same three-day ozone episode label before a bird survey. We used 1,599 selected windows in California, Oregon, New York, and Pennsylvania in 2005-2019. Both sites were within 50 km of each route start. A high day was above 70 ppb. We gave exact per-site event bounds by setting missing daily readings low or high. At least 88 windows had different labels for every missing-data assignment. A further 132 had an unresolved label. Complete records retained 797 windows and 43 differences. A 25-km limit and equal site-pair or route weights retained differences in all four region-period groups. Positive event agreement had conservative outer bounds of 38.0-60.0%, 3.0-50.0%, 41.4-54.2%, and 57.3-73.5%. These are missing-data bounds, not confidence intervals. Selected routes, shared site-days, few positive events, and unknown true exposure limit inference. We do not estimate bird damage or a climate-pollution effect. The package includes the calendar-aware tool, daily evidence, source hashes, a raw rebuild, exhaustive checks, and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "ozone episodes",
+    "missing data",
+    "exposure agreement",
+    "bird surveys",
+    "observation bias",
+    "calendar timing",
+    "reproducible tool"
+  ],
+  "display": [
+    {
+      "path": "files/episode_bounds.png",
+      "caption": "Three-day ozone episode labels differ at nearby sites. Lines give conservative missing-data outer bounds for selected region-period samples."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Event prevalence bounds and planned sample checks. Missing daily readings and sites farther than 25 km cannot explain all label differences."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:87a455ff1a82f79a12d74a6328ba8e808be5a22ab7110156d2ff58e0c3a16874",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse verified two-site daily evidence, the survey panel, raw source hashes, and build code. We rebuild the raw data and obtain identical bytes. The new audit bounds consecutive-day event labels under missing daily readings."
+    },
+    {
+      "target": "sci:sha256:eee5c6480fa55ee48ff901c2b6e9c4bf5507d74a880cbe97812ce9967b5e8522",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream public bird filters and source lineage retained by the two-site parent."
+    },
+    {
+      "target": "doi:10.1525/elementa.302",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on vegetation-relevant ozone metrics and exposure limits. It does not validate our descriptive cutoff as a biological threshold."
+    },
+    {
+      "target": "doi:10.1007/s11869-019-00679-8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial ozone exposure analysis. Its urban composite-monitor question differs from our episode bounds."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "reason": "Biological motivation; this exposure audit does not test its policy or bird-abundance estimates."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

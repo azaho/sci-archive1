@@ -1,0 +1,71 @@
+{
+  "title": "Dendrite geometry gave no clear threshold-current prediction gain in selected Allen mouse and human cells",
+  "abstract": "We tested whether dendrite area and area-weighted path distance add information about positive spike threshold current after electrical properties and cell labels are known. We linked Allen Cell Types reconstructions and electrical summaries by cell ID and held whole donors out. mouse: 509 cells from 372 donors; error changed from 0.11652 to 0.11716. The reduction was -0.55%, with an absolute error reduction of -0.00064 and a 97.5% interval of -0.00166 to 0.00036. human: 158 cells from 35 donors; error changed from 0.14585 to 0.14946. The reduction was -2.48%, with an absolute error reduction of -0.00362 and a 97.5% interval of -0.02421 to 0.01767. The intervals hold fitted predictions fixed. Threshold voltage comes from the same sweep as threshold current, so this is a conditional analysis. Cut dendrites, radius error, selected donors, incomplete cell labels, and model dependence limit the result. We provide code, derived evidence, source hashes, figures, and checks. This test does not establish a causal mechanism or a rule for intact circuits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendritic morphology",
+    "threshold current",
+    "donor validation",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Changes in held-out error after addition of area and path distance. Positive values favor geometry. Intervals condition on fitted predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source mouse study of linked morphology and electrical cell properties."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8",
+      "reason": "Human cortical cell diversity context; the present data are the Cell Types API cache."
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/ephys/ephys_extractor.py",
+      "reason": "Electrical feature definitions."
+    },
+    {
+      "target": "https://allensdk.readthedocs.io/en/latest/_modules/allensdk/internal/ephys/core_feature_extract.html",
+      "reason": "Maps threshold current and voltage from the first spike in the rheobase sweep."
+    },
+    {
+      "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior area-to-response-time analysis in the same cache motivated a different electrical endpoint. No code or numerical tables reused."
+    },
+    {
+      "target": "sci:sha256:88b9dfebbfa1fc27c40464eb8c80b318456bc71309f386543451910d4c62bba8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior apical-area sag test in the same cache. The present test uses area and path distance for threshold current."
+    },
+    {
+      "target": "sci:sha256:ac8be70ed43ca00bdb20e36d65eb0f928cb0c41e7f4449affb0902527899dcd6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test used rheobase contrast to predict connection direction in a different Allen dataset."
+    }
+  ]
+}

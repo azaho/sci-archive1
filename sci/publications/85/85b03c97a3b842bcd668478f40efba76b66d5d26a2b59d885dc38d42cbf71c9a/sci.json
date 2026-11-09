@@ -1,0 +1,64 @@
+{
+  "title": "Targeted call corrections can remove pooled reciprocity excess in three Allen cortical slice samples",
+  "abstract": "We calculated exact correction budgets for pooled reciprocal connection excess in Allen Synaptic Physiology r2.1. Missing calls were free to take either state. In mouse visual cortex excitatory pairs, mouse inhibitory pairs, and human temporal cortex excitatory pairs, the minimum positive-call deletions were 29, 109, and 10. These are 10.07%, 10.77%, and 8.33% of recorded positives, placed in 80.6%, 61.2%, and 76.9% of observed reciprocal dyads. Negative-call additions instead required 451, 851, and 93 corrections. Mixed corrections did not reduce the primary minimum totals. A sharp bound uses reciprocal and nonempty dyad counts; explicit corrected tables attain every threshold. Independent state enumeration passed 461 small examples. Distance and test-count checks gave similar sensitivity patterns. These are adversarial finite-table thresholds, not estimated assay error rates or confidence intervals. Pooling, selected slice graphs, free missing assignments, and unknown detection errors limit biological interpretation. The package includes a proof, source hashes, code, pair records, correction witnesses, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "observation error",
+    "exact bounds",
+    "cortical circuits"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/budgets.png",
+      "caption": "Exact lower reciprocity ratios with targeted corrections and free missing-call assignments. Percentages use known positive calls for deletions and known negative calls for additions. These are finite-table bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:eeecd73fe7bc03229d7032ac8a05c575de66133a08f55bbd97d02b6b19a27844",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the published missing-call bound with corrections to observed calls. New code and raw extraction were used."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1162/NETN_a_00004"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:ac8be70ed43ca00bdb20e36d65eb0f928cb0c41e7f4449affb0902527899dcd6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Read during question selection; the present analysis does not repeat its rheobase test."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned definition of the more-than-ten relevant test-spike rule. Shared source was read, not executed."
+    }
+  ]
+}

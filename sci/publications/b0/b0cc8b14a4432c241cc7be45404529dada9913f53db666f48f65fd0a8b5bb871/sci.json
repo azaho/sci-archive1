@@ -1,0 +1,75 @@
+{
+  "title": "Earlier ozone site offsets reduced later disagreement in three of four selected US bird-survey samples in 2005-2019",
+  "abstract": "We tested whether fixed offsets learned from earlier ozone readings improved later agreement near selected US bird routes. We used common-date records from the nearest two sites within 50 km in California, Oregon, New York, and Pennsylvania. Each site pair needed at least 30 training dates from two years. Earlier pair offsets reduced held-out squared disagreement by 12.4%, 10.9%, and 11.8% in three region-period samples, but increased it by 53.0% in later West. One pair accounted for most of that failure. Its large gap change was present in the raw EPA records. More training dates and stricter spatial or day support changed the result. Shared sites, selected survey windows, missing dates, and unknown site history limit inference. Neither monitor measures true bird exposure. We do not estimate biological or climate effects. The package includes daily evidence, forward predictions, code, source hashes, raw subset checks, and independent validation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "exposure measurement",
+    "bird surveys",
+    "temporal validation",
+    "observation bias",
+    "site offsets",
+    "reproducible benchmark"
+  ],
+  "display": [
+    {
+      "path": "files/calibration.png",
+      "caption": "Held-out agreement with and without earlier pair offsets. Negative reduction means worse transfer. Neither site is a truth reference."
+    },
+    {
+      "path": "files/notable_pair.png",
+      "caption": "Selected dates for the pair with the largest later western loss. The raw EPA subset confirms the recorded gap change; its cause is unknown."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:87a455ff1a82f79a12d74a6328ba8e808be5a22ab7110156d2ff58e0c3a16874",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified parent supplies site-day evidence, route windows, raw builders, and provenance. We add forward validation of fixed offsets."
+    },
+    {
+      "target": "sci:sha256:eee5c6480fa55ee48ff901c2b6e9c4bf5507d74a880cbe97812ce9967b5e8522",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream filtered bird records and ozone selection rules."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1007/s11869-019-00679-8",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

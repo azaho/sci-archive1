@@ -1,0 +1,57 @@
+{
+  "title": "Local daily shuffles gave no clear depth similarity in Monte Cristo pairs on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We extended a Ridgecrest depth-label test to a fixed USGS Monte Cristo Range catalog. On days [1,30) after the 2020 mainshock, 636 events with preferred magnitude at least 2.5 gave 78 pairs within ten minutes and 5 km. Their mean absolute depth difference was 2.885 km. A shuffle within elapsed days and 10 km cells gave an exact mean of 3.016 km and a central 95% null range of 2.506 to 3.535 km. The lower-tail Monte Carlo p value was 0.3149 from 9999 draws. The primary result gives no clear extra depth similarity under this model. A planned check starting on day 3 gave p=0.0096, but did not pass a conservative correction across the checks. Only one event passed both 1 km error filters, so that check had no pairs. These results do not show independent depths or a difference from Ridgecrest. Missing horizontal errors, uncertain depths, fault geometry, detection loss, selected events and the exchange assumption limit inference. The package preserves the source snapshot, exact provenance, code, all shuffle scores, a figure, a separate arithmetic audit and offline repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Monte Cristo Range",
+    "depth similarity",
+    "earthquake clustering",
+    "conditional permutation",
+    "catalog limits",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/depth_test.png",
+      "caption": "Observed depth differences and central 95% shuffle reference ranges, divided by exact null means. The ranges are not confidence intervals for a physical effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f94e7b2bc2e8e96ef613f390861b6206ddf1449901e8a832ac4623dc007c8663",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its primary depth statistic and grouping rules to another sequence with new code."
+    },
+    {
+      "target": "sci:sha256:f1c231c8ac4d278093652a38d1b2f0a1c4c3a197037bc6f0981cc9d13f30d41c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the frozen source catalog, not its test statistic or code."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2102.08509",
+      "reason": "Abstract and metadata read for fault geometry context; no relocated source reused."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed response and its hash are preserved in files/catalog.csv and files/provenance.json."
+    }
+  ]
+}
