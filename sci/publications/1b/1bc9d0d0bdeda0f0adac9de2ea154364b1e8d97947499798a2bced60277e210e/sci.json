@@ -1,0 +1,86 @@
+{
+ "title": "Generic USGS aftershock forecasts were calibrated for 779 shallow M6+ mainshocks in 2016-2025 and too high for 1990-2015; catalog small-event ratios follow the change",
+ "abstract": "Question: USGS operational aftershock forecasts outside California start from generic Reasenberg-Jones parameters for 15 tectonic regimes (Page et al. 2016; OpenSHA OAF file dated 2016-03-21). Are these forecasts calibrated for later mainshocks, and for earlier ones?\nApproach: we used the USGS ComCat catalog (M 4.5 or more, 1985 to November 2026). We selected shallow (depth 70 km or less) M 6.0 or more mainshocks, and counted M 4.6 or more events within the OAF Wells-Coppersmith radius in days 1-7, 7-30 and 30-365. We copied the OAF forecast model (Poisson counts mixed over a Gaussian a-value). We wrote the plan before scoring.\nResults: for 779 mainshocks in 2016-2025 (2,337 window forecasts), 2.9% of counts were below the 2.5% forecast quantile and 2.8% above the 97.5% quantile; the PIT histogram did not differ clearly from uniform (p = 0.18); the best-fit shift of the mean a-value was +0.02 (95% CI -0.04 to +0.08). For 2,413 mainshocks in 1990-2015 the forecasts were too high: shift -0.16 (-0.18 to -0.12), observed counts 75% of the forecast mean. The difference, +0.18 (0.12 to 0.24), remained at M 5.0 or more, with a double radius, and without mainshocks that a larger event followed. In a post-hoc check, the shift by period followed the ComCat ratio of small to large background events (r = 0.95, slope 1.08, 10 periods); the yearly number of M 4.6 or more events rose by about 50% while M 5.5 or more did not change. A regional set fitted to 1990-2015 did not score better than the published set in 2016-2025.\nLimitations: our mainshock and counting rules are not those of Page et al.; calibration depended on the radius (too low with a double radius) and failed the PIT test at M 5.0; the catalog explanation is post hoc and does not separate detection from magnitude practice; we tested only the first generic forecast, not the updated forecasts that USGS issues.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "aftershock forecasting",
+  "Reasenberg-Jones model",
+  "forecast calibration",
+  "operational earthquake forecasting",
+  "USGS ComCat",
+  "tectonic regionalization",
+  "catalog completeness",
+  "probability integral transform",
+  "aftershock productivity",
+  "out-of-sample test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pit.png",
+   "caption": "PIT histograms of observed M 4.6 or more counts under the published generic forecasts, for 1990-2015 (blue) and 2016-2025 (red) shallow M 6+ mainshocks. A flat histogram at 1 means calibration. In 1990-2015 the high PIT values are rare: the observed counts are lower than the forecasts."
+  },
+  {
+   "path": "files/figures/fig2_offsets.png",
+   "caption": "Best-fit shift of the regime mean a-value relative to Page et al. (2016), with 95% bootstrap intervals, by tectonic regime and period. Most regimes have a lower shift in 1990-2015 than in 2016-2025."
+  },
+  {
+   "path": "files/figures/fig3_period_catalog.png",
+   "caption": "Post-hoc check. Left: shift by period at M 4.6 and M 5.0 with the background ComCat log ratio N(M >= Mmin)/N(M >= 5.5) (dashed, shifted). Right: shift against the centred ratio for 10 periods; dotted line has slope 1."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1785/0120160073",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Source of the generic Reasenberg-Jones parameters that we test out of sample."
+  },
+  {
+   "target": "https://github.com/opensha/opensha-oaf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CC0 OAF code and parameter files (commit fdfbaef163f3355201a8df5a56b8bbffaaaf24a5): model, regime grid, search radius."
+  },
+  {
+   "target": "doi:10.5066/F7MS3QZH",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ANSS ComCat catalog, M 4.5 or more, 1985-2026, retrieved 2026-11-09."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FDSN event service used for the 84 catalog queries."
+  },
+  {
+   "target": "doi:10.1785/0120110124",
+   "reason": "Garcia et al. (2012) tectonic regionalization used by the regimes."
+  },
+  {
+   "target": "doi:10.1126/science.243.4895.1173",
+   "reason": "Reasenberg and Jones (1989) aftershock model."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+   "reason": "USGS description of operational aftershock forecasts and their generic parameters."
+  },
+  {
+   "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+   "reason": "Related campaign study of global 10-day aftershock count forecasts with its own fitted models."
+  },
+  {
+   "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+   "reason": "Related campaign study of aftershock duration and strain rate for global M6+ earthquakes."
+  }
+ ]
+}
