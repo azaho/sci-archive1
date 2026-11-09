@@ -1,0 +1,57 @@
+{
+  "title": "Reverse synaptic strength gives no clear prediction gain across mouse donors in Allen reciprocal-pair data",
+  "abstract": "We tested whether the strength of one direction of a reciprocal connection predicts the other direction in new animals or donors. We used resting-state postsynaptic potential amplitudes in the Allen Synaptic Physiology r2.1 small database. The reference model used cell labels, layer, connection types, and cell-body distance. Validation kept all records from each inferred donor together. In 283 mouse reciprocal pairs from 211 inferred animals, reverse strength did not lower prediction error. Three near-zero fitted amplitudes caused large log errors. A check with both amplitudes at least 10 microvolts kept 277 pairs from 208 animals. Log-amplitude RMSE was 1.0111 for the reference model and 1.0121 with reverse strength. The mean squared error gain was -0.0021, with a conditional donor bootstrap interval of -0.0202 to 0.0144. A simpler reference model gave a small gain with an interval that included zero. Type-specific slopes did not improve the pooled result. Only 19 human reciprocal pairs met the main filters. These tests do not show that reciprocal strengths are independent. They show that a reverse-strength predictor gave no clear added value across donors under the tested selection and models.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "reciprocal connections",
+    "synaptic strength",
+    "Allen Institute",
+    "grouped validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/floor10/prediction.png",
+      "caption": "Added prediction value of reverse strength after a 10 microvolt amplitude floor. Positive gain means lower test error. Intervals resample inferred donors and condition on fitted validation models."
+    },
+    {
+      "path": "files/floor10/strengths.png",
+      "caption": "One point per reciprocal pair. Pair orientation follows the lower database pair ID. Log PSP magnitude uses millivolts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the public paired recordings."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior work on reciprocal strength and local circuit motifs in rat visual cortex."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Defines resting-state PSP amplitude and current-clamp fit quality fields."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Campaign prior analysis of the same data; donor name rules and source notes informed this analysis. The prediction question and new code differ."
+    }
+  ]
+}

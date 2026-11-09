@@ -1,0 +1,59 @@
+{
+  "title": "Intact source axons were linked to more detected connections in a matched mouse slice sample",
+  "abstract": "We tested whether qualitative axon preservation labels were linked to detected chemical connection rates in Allen slice data. We matched recording, ordered nonsynaptic cell classes and 100 micrometre distance bins. The mouse visual-cortex sample had 742 directed pairs from 71 inferred mice. Intact source axons had a 3.76 percentage point higher connection rate than truncated source axons. The nominal 97.5% donor bootstrap interval was 0.31 to 7.10 points. Smaller bins and added cell labels gave positive estimates, but their intervals included zero. The human temporal-cortex sample had 144 pairs from eight inferred donors and did not resolve an effect. Target axon status gave uncertain contrasts in both species. This audit gives limited evidence that preservation can affect slice circuit estimates. It does not establish a causal loss rate or a rule across species. Sparse matching, qualitative labels, inferred donors and residual cell-type and detection effects limit the result. We supply code, source hashes, pair and stratum tables, bootstrap draws and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "axon preservation",
+    "connection probability",
+    "slice circuits",
+    "matched comparison",
+    "sampling bias"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Intact minus truncated connection rates within matched recordings. Bars show nominal 97.5% donor bootstrap intervals. The species panels have different horizontal scales. Sensitivity checks do not establish independent discoveries."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for paired recordings and local circuit measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the probed-pair threshold and the existing axon-length correction metric."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/morphology.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Informed the local distance bound and inferred donor grouping. No code or tables were reused."
+    }
+  ]
+}

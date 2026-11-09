@@ -1,0 +1,57 @@
+{
+  "title": "Cell-body distance improves donor-held-out latency predictions for mouse inhibitory connections in Allen brain-slice data",
+  "abstract": "We tested whether cell-body distance adds information about response onset latency after cell class and layer are known. We used the Allen Synaptic Physiology r2.1 small database. We kept all records from each inferred animal or human donor in the same validation fold. The full sample had 2,544 connections from mouse visual cortex and human temporal cortex. Distance reduced prediction error for mouse inhibitory connections from 0.490 to 0.468 ms. An exploratory check within 500 micrometres gave 0.484 and 0.468 ms for 1,327 connections from 516 inferred mice. The paired mean squared error gain was 0.0149 ms squared, with an approximate donor bootstrap interval of 0.0072 to 0.0236. A model with cell-class and layer interactions gave the same direction in ten splits. The other three groups did not show a clear gain within 500 micrometres. Cell-body distance can help set inhibitory timing in this mouse sample. The result does not identify conduction speed or establish a rule across species. Donor labels were inferred from public specimen names, and the intervals condition on fitted prediction models.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "synaptic latency",
+    "cell-body distance",
+    "Allen Institute",
+    "mouse cortex",
+    "human cortex",
+    "grouped validation"
+  ],
+  "display": [
+    {
+      "path": "files/local500/prediction.png",
+      "caption": "Prediction error within 500 micrometres. All records from an inferred donor stay in one fold. Lower error is better."
+    },
+    {
+      "path": "files/local500/distance_latency.png",
+      "caption": "Cell-body distance and response onset latency within 500 micrometres. Lines show unadjusted fits. They do not show conduction speed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen Synaptic Physiology data."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Defines response onset latency."
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653",
+      "reason": "Prior tests show that spike waveform can change synaptic latency."
+    }
+  ]
+}

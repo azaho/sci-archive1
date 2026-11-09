@@ -1,0 +1,68 @@
+{
+  "title": "The signal at a nearby binary's eclipse time is stronger on KOI-3006.01 in Kepler quarter 5 than in quarter 2",
+  "abstract": "A search of 6,999 Kepler DR25 signals found 3,323 pairs on different stars with predicted event times that agree within one quarter of the shorter event duration over BKJD 120 to 1600. Nine pairs have no ephemeris-contamination flag on either signal. We checked one pair in separate quarter 2 and quarter 5 observations. At the eclipse time of the nearby binary KOI-7087.01, KOI-3006.01 has a PDCSAP depth of 15 +/- 42 ppm in quarter 2 and 231 +/- 37 ppm in quarter 5. The binary eclipse stays near 84,000 ppm. SAP flux gives the same pattern. This result supports light contamination that changes with detector position, under a simple dilution model. The cumulative archive already lists KOI-3006.01 as a false positive with a centroid-offset flag. This is a reproducible check of a known false positive. It is not a new planet claim. Pixel data and an independent telescope were not tested. Orbit-scatter errors do not include all instrument or baseline errors.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "ephemeris matching",
+    "light contamination",
+    "false positive",
+    "quarter dependence"
+  ],
+  "display": [
+    {
+      "path": "files/photometry.png",
+      "caption": "The target has a dip at the nearby binary eclipse time in Q5. The Q2 depth is consistent with zero. Each quarter has a different detector channel. SAP and PDCSAP use the same measurements."
+    },
+    {
+      "path": "files/audit.png",
+      "caption": "A fixed timing test finds more pairs than random phases produce. Pair counts are dependent and include known contamination."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior ephemeris matching method."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public NASA Exoplanet Archive tables."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DR25 scope and vetting flag definitions."
+    },
+    {
+      "target": "https://astro.bas.bg/AIJ/issues/n26/AKurtenkov.pdf",
+      "reason": "Table 3 identifies KIC 8758161 as an eclipsing binary."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog column definitions."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of Kepler DR25 light curves through the MAST download API."
+    }
+  ]
+}
