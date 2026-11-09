@@ -1,0 +1,68 @@
+{
+  "title": "A three-harmonic test does not reject a fixed variable source in Kepler quarter 9 data for KIC 8462852",
+  "abstract": "We test a necessary condition for one variable source at a fixed position in the blended image of KIC 8462852. At the known 0.88-day period, every flux harmonic must have the same real ratio to each centroid coordinate. We fit three harmonics in Kepler release 25 quarter 9 data. A paired residual-block test includes flux errors and correlations between channels. With a 5-day baseline and 24-sample blocks, the conditional bootstrap tail fraction is 0.801 for raw centroids and 0.648 after archived pointing subtraction. The primary test does not reject the model. This null result does not confirm one source or locate it. The method assumes a stable aperture and stationary residual noise. The frequency was chosen from the same quarter in prior campaign work. No independent instrument data are tested. We find no new planet or periodic signal. The bundle includes original code, aggregate results, figures, source hashes and a separate-scratch retrieval script.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 8462852",
+    "variability-induced motion",
+    "harmonics",
+    "source confusion",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/harmonics.png",
+      "caption": "Measured and fixed-source fitted centroid coefficients in the primary three-harmonic test. Bars are 1.96 times paired block standard errors. They are marginal and do not show the full covariance used by the test."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Conditional bootstrap tail fractions for all related tests. L is block length in samples. w is polynomial baseline width in days. The dashed line is 0.05. No multiplicity correction is used."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:cbc09e76893ba6fa0a6710c982a80efdd6b22cae85bcfb5396d0c60b160ec520",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the fixed frequency and earlier pointing-sensitivity result. We write new joint harmonic tests."
+    },
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Reports the unusual dips and short periodic signal."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/833/1/78",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Studies photometric and astrometric variations and proposes a blended source. Our simpler test does not reproduce its detector-wide cleaning."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler data mirror and public-domain rights statement."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008462852/kplr008462852-2011177032512_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The only observation file used, with SHA-256 in provenance.json."
+    }
+  ]
+}
