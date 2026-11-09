@@ -1,0 +1,58 @@
+{
+  "title": "Baseline voltage-change slopes exceed passive transfer limits in Allen electrically connected pairs",
+  "abstract": "We tested whether baseline voltage-change slopes can serve as passive single-source transfer gains in Allen Synaptic Physiology r2.1. In 311 directed records marked electrically connected, 133 baseline slopes were negative or at least one, compared with 19 pulse slopes. The paired difference was 36.66 percentage points, with a 95% slice bootstrap interval of 30.96 to 42.45. A fixed passive two-cell circuit gave slopes of -1, 0.5, 0.8 and 2 under different input covariances while its pulse gain stayed at 0.5. With unrestricted signed input covariance, any real baseline slope is possible in that circuit. This is a measurement audit, not evidence against passive coupling. Selection was exploratory, raw trials were not replayed, and only two human directed records were present. We supply code, transformed evidence, a circuit check, source hashes and repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapse",
+    "Allen Institute",
+    "passive circuit",
+    "input covariance",
+    "measurement audit"
+  ],
+  "display": [
+    {
+      "path": "files/results/audit.png",
+      "caption": "Pulse and baseline slopes, slice bootstrap intervals, and four input conditions in a fixed passive circuit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source dataset."
+    },
+    {
+      "target": "doi:10.3389/fncel.2015.00378"
+    },
+    {
+      "target": "doi:10.3389/fncel.2019.00043"
+    },
+    {
+      "target": "sci:sha256:106b1100aee1ce53a1097c62e2189285f8ef3a185aecf5e8e938fd8097c3c703",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior two-port direct-edge identifiability analysis; this study concerns baseline input covariance."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/gap_junction.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Window and slope definitions."
+    }
+  ]
+}

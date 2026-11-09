@@ -1,0 +1,132 @@
+{
+  "title": "A fourth test of the Gaia DR3 transit table repeats the period aliases, shows that durations outside 0.5-1.25 of the expected value mark wrong periods, and finds five planet-like TESS signals",
+  "abstract": "Question: Can users trust the periods in the corrected Gaia DR3 table vari_planetary_transit (214 stars), is there a simple flag for a wrong period, and what are the candidates that are not TOIs or known planets, with all TESS data to 2026-11-08?\n\nApproach: We compared the table with TOI and NASA Exoplanet Archive ephemerides for 183 known sources and folded the Gaia DR3 G epoch photometry on both ephemerides. We compared the published duration with the central-transit duration that the Gaia period and Gaia stellar radius and mass predict. For the 31 other candidates we searched all TESS sectors (SPOC, TESS-SPOC, QLP, own TESScut photometry), refined the ephemerides, tested them on the Gaia epochs, measured odd/even, secondary and ellipsoidal signals, and used injection-recovery (also with worst-case dilution) for non-detections. Three other campaign studies of this table appeared during this work; we compare results.\n\nResults: The Gaia period is correct for only 18 of 183 known sources. The Gaia epochs show the transit at the true ephemeris for 99 of 139 wrong-period sources, but the sparse epochs do not fix the period. When the published duration is below 0.5 or above 1.25 of the expected central duration, the period is wrong for 92 of 92 known sources; all 18 correct periods are inside this window. Our blind TESS search finds the known period for 114 of 116 tested known planets and the Gaia period for 0 of 103 wrong-period cases. Of the 31 candidates, 5 show planet-like TESS transits linked to the Gaia epochs (TIC 445886244, 87433458, 93622019, 4638108, 44997521; P = 1.474, 1.615, 2.124, 2.208, 3.549 d; none are TOIs or CTOIs), 7 show eclipsing-binary signs, 5 are stellar companions, 10 show no transit at the Gaia period, 2 are inconclusive and 2 have no TESS data. The TESS ellipsoidal amplitude of Gaia DR3 4535127268607000320 gives 361 +- 66 Jupiter masses, which agrees with its Gaia SB1 orbit (296, range 279-314); for TIC 279773873 it gives 111 +- 7 Jupiter masses, a low-mass star. Classes agree with the other studies for 10 of 11, 20 of 21 and 22 of 25 comparable stars. Our first search missed three Gaia-linked eclipsing binaries at periods that are not simple Gaia aliases; we corrected this with the periods of the other studies.\n\nLimitations: No spectroscopy, imaging or centroid analysis; box depths; the duration flag has no held-out test; the TESS control stopped at 116 of 183 known planets because of host load; CDS was not reachable.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Gaia DR3",
+    "vari_planetary_transit",
+    "TESS",
+    "transiting exoplanets",
+    "period aliasing",
+    "transit duration",
+    "eclipsing binaries",
+    "ellipsoidal variation",
+    "planet candidates",
+    "catalogue validation",
+    "replication",
+    "hot Jupiters"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_period_agreement.png",
+      "caption": "(a) Gaia DR3 period divided by the known period for 183 known sources; orange: 1:1 within 0.2 percent (18). (b) Gaia G box SNR of the same epochs at the published and at the known ephemeris."
+    },
+    {
+      "path": "files/figures/fig2_tess_detected_new.png",
+      "caption": "TESS light curves of the 19 candidates with a TESS detection, folded on the TESS ephemeris (blue: binned median), with the Gaia DR3 G epochs of 2014-2017 folded on the same ephemeris (orange). Labels give the verdict and the Gaia/TESS period ratio."
+    },
+    {
+      "path": "files/figures/fig3_new_candidate_verdicts.png",
+      "caption": "Verdicts for the 31 Gaia DR3 transit candidates that are not TOIs or known planets."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202243497",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Source of the Gaia DR3 transit candidates and of the method that made them."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202244242",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 variability summary that lists the candidates."
+    },
+    {
+      "target": "https://www.cosmos.esa.int/web/gaia/dr3-known-issues",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Record of the withdrawn and the corrected transit table."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ab3984",
+      "relations": [
+        "uses"
+      ],
+      "reason": "wotan detrending."
+    },
+    {
+      "target": "doi:10.17876/gaia/dr.3/55",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 epoch photometry through the AIP mirror."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known planets and ephemerides."
+    },
+    {
+      "target": "https://exofop.ipac.caltech.edu/tess/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TOI table and target pages."
+    },
+    {
+      "target": "https://archive.stsci.edu/tess/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TESS light curves and TESScut cutouts."
+    },
+    {
+      "target": "sci:sha256:b8007150ad6a23d5ebaa889558f39f977c95919025b54f546e3664640bd56cbc",
+      "relations": [
+        "supports",
+        "reviews",
+        "uses"
+      ],
+      "reason": "Earlier study of the same table; we reproduce its main results and use its reported periods in a cross-check."
+    },
+    {
+      "target": "sci:sha256:92aac63d485c4083dc8d3b71415254e5331d005cf27f4f8863af40158c68f0e4",
+      "relations": [
+        "supports",
+        "reviews",
+        "uses"
+      ],
+      "reason": "Earlier study of the same table; we reproduce its main results and use its reported periods in a cross-check."
+    },
+    {
+      "target": "sci:sha256:218f44a0576460b0810a5a7fe3d12aa417beced6628b2da3cea81223f6679ef0",
+      "relations": [
+        "supports",
+        "reviews",
+        "uses"
+      ],
+      "reason": "Earlier study of the same table; we reproduce its main results, its TESScut candidate TIC 445886244, and use its reported periods; we disagree on two classes."
+    }
+  ]
+}

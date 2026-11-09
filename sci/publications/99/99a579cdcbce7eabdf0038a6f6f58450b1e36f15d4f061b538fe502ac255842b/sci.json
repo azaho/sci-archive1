@@ -1,0 +1,74 @@
+{
+  "title": "A shared complex map reduced left-bend coherence error by 7.5% in 35 inputs to one leech motor neuron",
+  "abstract": "A shared gain, phase change, and offset reduced prediction error by 7.5% relative to the target-trial mean in 35 identified inputs to leech motor neuron DE-3R. We used three left local-bend trials and anatomy from the same ganglion. Each prediction excluded its target input from the fit. A whole-input identity reference gave p = 0.0003 from 9,999 draws. Error reductions for the three trial pairs were 24.1%, 0.9%, and -0.6%. The result was therefore modest and uneven. In two swim trials, the same method gave an 86.1% reduction. Strict confidence scores gave similar left-bend reduction, while cross-behavior transfer was weak. Population calibration recovered some information missed by a raw earlier-value prediction, but left most target-mean error. One animal, few trials, shared circuit inputs, uncertain matches, and absent raw trace errors limit inference. The map does not identify a causal wiring mechanism. We provide code, source hashes, retrieval instructions, predictions, label draws, figures, and independent calculation checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "leech",
+    "coherence",
+    "population alignment",
+    "repeated trials",
+    "structure and function",
+    "prediction"
+  ],
+  "display": [
+    {
+      "path": "files/alignment.png",
+      "caption": "Error reduction from the target-trial mean after shared calibration. Each prediction excludes the target input from the fit. The right panel shows the identity-label reference for left bending."
+    },
+    {
+      "path": "files/transfers.png",
+      "caption": "Each directed left-bend trial transfer has a separate error estimate. Trial pairs share data and are not independent experiments."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomy and voltage-imaging study in the same ganglion."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed source snapshot for anatomical input identities and activity summaries."
+    },
+    {
+      "target": "sci:sha256:fb56dc06d16a4ddca8ac10f1a9ce4bb1a83014d8ed9f4a1797842629b3423590",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial prediction and raw-repeat benchmarks in the same animal. The new test adds population calibration."
+    },
+    {
+      "target": "sci:sha256:07a5d7f904386b7fc24f471a7e45d48c1687a46ecff38ebafe59f67b2c7ac8a8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count and repeated-coherence endpoint in the same animal."
+    },
+    {
+      "target": "sci:sha256:751b5a755fb130cc5a496852ac9c45470e996bff31180167d2c802d71f19065f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior repeated-source-label diagnostic; no code reused."
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0555-4",
+      "reason": "Prior use of population alignment for stable cortical dynamics. No data reused."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.22-24-10790.2002",
+      "reason": "Prior leech motor-response variability work. No data reused."
+    }
+  ]
+}

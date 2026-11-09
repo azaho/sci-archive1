@@ -1,0 +1,77 @@
+{
+  "title": "A fixed sky-offset fit leaves residual image shifts for the KIC 8164262 carrier in four Kepler quarters",
+  "abstract": "We test the image position of the known strong oscillation of KIC 8164262 in Kepler release 25 quarters 4, 5, 8, and 9. We fit a common phase image at the published carrier frequency and compare its moment with the median light image. The detector row offset stays negative in quarters 4 and 8 and positive in quarters 5 and 9 across three apertures and six baseline and position fits. After rotation to sky axes, an all-pixel constant-offset fit gives a residual statistic of 22.62 for six nominal degrees of freedom. Its conditional probability is 0.00094 with two-day residual blocks. The statistic ranges from 14.20 to 65.47 across tested fits and block lengths. These small image shifts do not follow the stated fixed-offset model within the conditional errors. They do not identify a contaminant or prove an instrument cause. Stamp loss and changing pixel response can change moments for a fixed sky scene. Median-image and calibration errors are not in the noise model. There is no independent telescope confirmation, new planet, or new mode. The bundle preserves code, accepted pixels, source hashes, image maps, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "image moments",
+    "tidal oscillation",
+    "instrument artifacts"
+  ],
+  "display": [
+    {
+      "path": "files/sky.png",
+      "caption": "Carrier minus median-light moments in sky axes. Errors are conditional two-day residual-block errors."
+    },
+    {
+      "path": "files/moments.png",
+      "caption": "Detector image moments in three apertures."
+    },
+    {
+      "path": "files/images.png",
+      "caption": "Mean-light and coherent carrier images on the four stamps."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:9eaae8163f49d0f8a71f333b6b95181646d01a03b703403ff6654baf855b3afe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its published frequency list and orbital mask; extends its pixel diagnostic with moment errors and sky rotation."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/KSCI-19093-001-Signed.pdf"
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0081/008164262/kplr008164262-2010078095331_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0081/008164262/kplr008164262-2010174085026_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0081/008164262/kplr008164262-2011073133259_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0081/008164262/kplr008164262-2011177032512_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

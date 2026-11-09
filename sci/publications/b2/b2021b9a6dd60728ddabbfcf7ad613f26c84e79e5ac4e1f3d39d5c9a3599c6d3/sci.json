@@ -1,0 +1,69 @@
+{
+  "title": "A squared autumn ENSO term did not show a clear gain in U.S. winter precipitation predictions for 1981–2025",
+  "abstract": "We tested whether a squared autumn Niño 3.4 term improves winter precipitation prediction beyond a linear term. The test used NOAA data for 344 climate divisions in the contiguous United States. Each winter prediction used only earlier winters to fit the model. Across 45 test winters in 1981–2025, the squared term increased average normalized mean squared error by 0.92%. A paired 5-year block interval for error reduction was -3.53% to +1.85%. The West Coast estimate showed a 5.14% reduction, but its interval also crossed zero. Removing the time trend, using log precipitation, and changing the block length did not give a clear national gain. These revised-data hindcasts do not establish real-time skill, a physical mechanism, or the absence of nonlinear rainfall responses. The package includes source code, checked data hashes, seasonal inputs, all predictions, and uncertainty estimates.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "seasonal prediction",
+    "precipitation",
+    "forward validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "The squared term gave no clear average prediction gain. Positive error reduction favors the squared term. Intervals resample paired years in five-year blocks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1175/JCLI3372.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This study motivates the linear and quadratic comparison and the West Coast subgroup. Our autumn predictor, seasons, validation, and score differ."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Construction of the NOAA climate division data."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen campaign precipitation input."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen campaign ERSSTv5 Niño 3.4 input."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed-width data format and units."
+    },
+    {
+      "target": "sci:sha256:143d25cae9480dd87d61236446779e7be3ff5d4c2be728f961bffd1da1ac4397",
+      "reason": "Related continental spring forecast test with different predictors."
+    },
+    {
+      "target": "sci:sha256:b22d9027ae8374b2b4c732001aa519584f10d30b72ca529766a328a6ce0a8553",
+      "reason": "Related concurrent quadratic ocean rainfall test."
+    },
+    {
+      "target": "sci:sha256:3671fb53a0c4746dbf841e8837c938b07637560eba591926aaa0def1ca65865d",
+      "reason": "Related forward autumn ENSO test of a western regional precipitation contrast."
+    }
+  ]
+}

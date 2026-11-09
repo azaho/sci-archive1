@@ -1,0 +1,52 @@
+{
+  "title": "Constant-clock controls give negative curvature in 700-node Kepler timing fits of KIC 3230227",
+  "abstract": "We test a quadratic change in eclipse times of KIC 3230227 with public Kepler release 25 data. We use two flux products, three template resolutions, two local windows, and two baseline orders. In the narrow linear-baseline test, 700-node templates give curvature coefficients of -9.19 seconds in aperture flux and -11.02 seconds in corrected flux. With 1400 nodes, these become -2.52 and -3.70 seconds. Both 1400-node quarter-resampling intervals include zero. Constant-clock controls give -4.18 and -9.09 seconds with 700 nodes, and zero at the exact generating resolution. The added 120-second curves have biased recovery. These tests do not establish an orbital period change or a third body. One telescope, fixed mode frequencies, the template model, and data gaps limit the result. Code, data columns, exact source hashes, timing tables, controls, and figures are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "eclipse timing",
+    "binary stars",
+    "template error",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/constant_clock.png",
+      "caption": "Constant clocks give negative fitted curvature in coarse templates at the observed times. The controls share the empirical template source with the measured flux."
+    },
+    {
+      "path": "files/evidence.png",
+      "caption": "Eclipse timing residuals and curvature coefficients in 24 model variants. Lines in the lower panel are conditional quarter-resampling intervals. The flux products share exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-4357/834/1/59"
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab911f"
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/2/45"
+    },
+    {
+      "target": "sci:sha256:c05da70208282a5c5227054a9ddb0bf5f89ccb3e72aba95ecdb88d41ad0df259",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the fixed frequencies, eclipse phase, and prior evidence for sensitivity to the orbital phase model. We test eclipse timing curvature."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003230227/kplr003230227_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source of the shared Kepler release 25 light curves."
+    }
+  ]
+}

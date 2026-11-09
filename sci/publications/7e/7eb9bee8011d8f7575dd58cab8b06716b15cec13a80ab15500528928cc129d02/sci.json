@@ -1,0 +1,110 @@
+{
+  "title": "Matched catalogs do not show a clear late decline in Ridgecrest's 95th depth percentile for M 2.5 or more on days 1-30",
+  "abstract": "We tested whether the upper depth tail became shallower after the 2019 Ridgecrest M7.1 earthquake. We matched USGS ComCat event IDs to the SCEDC 1981-2019 v0 waveform-relocated catalog. The main sample has 448 events on days 1-7 and 331 on days 7-30 at preferred magnitude 2.5 or more. Twelve common 10 km cells were given fixed area weights. The ComCat 95th depth percentile changed by -0.180 km, with a conditional daily block 95% interval of -0.690 to +0.500 km. The same events with GrowClust depths gave -0.099 km, with an interval of -0.645 to +0.505 km. The paired difference was also uncertain. All twenty daily intervals for the 95th percentile across ten settings included zero. Some three-day ComCat intervals changed sign, and only two early three-day blocks were available. Matching and common support removed all three early ComCat events deeper than 14 km from the main sample. Thus, this result cannot test the deepest-event evidence in earlier work. The study does not establish stable depth or a physical recovery mechanism. It provides fixed source extracts, code, all resampling draws, figures, a source audit, and an exact numerical repeat. Related catalogs, selected events, depth error, and block assumptions limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershock depth",
+    "upper depth tail",
+    "catalog comparison",
+    "GrowClust",
+    "SCEDC",
+    "spatial standardization",
+    "conditional block uncertainty",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/depth_tail.png",
+      "caption": "Fixed-area depth tails for the same events in two catalogs. Daily block intervals leave changes in the 90th and 95th depth percentiles uncertain. This test conditions on matched events and common cells."
+    },
+    {
+      "path": "files/evidence/sensitivity.png",
+      "caption": "The 95th depth percentile changes and conditional daily block intervals for ten settings. These correlated checks do not test a physical cause or the excluded deepest events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ce920d7d612412f1d3b0ca17e07d5a64656c0ea105541f3e39430b0884a334bb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its spatial mixture question from mean depth to the upper depth tail. New code adds paired waveform-relocated depths. No source code was reused."
+    },
+    {
+      "target": "sci:sha256:f94e7b2bc2e8e96ef613f390861b6206ddf1449901e8a832ac4623dc007c8663",
+      "reason": "Prior conditional depth-pair work motivates care with event dependence. Its published text was read."
+    },
+    {
+      "target": "doi:10.1029/2020GL089650",
+      "reason": "Prior evidence for deep early aftershocks and a declining upper depth tail. Our selected later-window test does not reproduce or reject its broader scope."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "Prior study of transient aftershock detection loss."
+    },
+    {
+      "target": "doi:10.1785/0220190309",
+      "reason": "Prior high-resolution early Ridgecrest catalog, not used as data here."
+    },
+    {
+      "target": "doi:10.1785/0120120010",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method and required credit for the public SCEDC relocated catalog."
+    },
+    {
+      "target": "doi:10.1785/0220160188",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GrowClust method used by the source catalog. This study uses its released event depths, not the relocation software."
+    },
+    {
+      "target": "doi:10.7914/SN/CI",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Caltech/USGS Southern California Seismic Network source data attribution."
+    },
+    {
+      "target": "doi:10.7909/C3WD3xH1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Southern California Earthquake Data Center source attribution."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the fixed ComCat snapshot; original file and source hash are preserved."
+    },
+    {
+      "target": "https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/sc_1981_2019_1d_3d_gc_soda_noqb_v0.gc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact SCEDC 1981-2019 v0 source; shared full file hash and exact matching lines are preserved."
+    },
+    {
+      "target": "https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/NOTES_sc_1981_2019.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source format and catalog method labels. Document hash is recorded; the PDF is not bundled."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/",
+      "reason": "ComCat combines source parameters and products from seismic networks."
+    }
+  ]
+}

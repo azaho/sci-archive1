@@ -1,0 +1,104 @@
+{
+ "title": "Input synapse count and typed inhibitory input fraction gave at most very small links to movie-response reliability in 12,891 MICrONS mouse visual cortex neurons; a V1DD check was inconclusive",
+ "abstract": "Question: does the anatomical input of a mouse visual cortex neuron predict the reliability of its responses to repeated natural movies? Pooling of more inputs and stronger inhibition both predict a positive link. Approach: in MICrONS (12,891 coregistered neurons, V1 and higher visual areas) we related CC_max (response correlation ceiling across movie repeats) to the total input synapse count of each neuron (materialization v1507) and to the fraction of typed inputs from inhibitory cells. Controls were scan, cell type, area, 25 um depth bins, lateral position and nucleus volume. CIs are cluster-robust over 100 um cubes. We wrote the plan before we computed outcomes. In V1DD (second mouse, 180 neurons with complete input lists) we tested total input count only. Results: in MICrONS, input count gave 0.047 SD per SD (95% CI 0.011 to 0.083) and inhibitory fraction 0.040 (0.005 to 0.075). Both are below the pre-set 0.05 SD threshold and together explain about 0.2% of residual variance. The input-count effect disappears with scan-only controls, and both effects change sign between cell types. The 890 proofread-dendrite MICrONS neurons gave -0.049 (-0.169 to 0.071). In V1DD, input count gave 0.24 (-0.31 to 0.77); this sample cannot test effects of the MICrONS size. Conclusion: in MICrONS, total input synapse count is a weak determinant of response reliability; effects above about 0.08 SD per SD are excluded. Limitations: one well-powered animal; automatic segmentation adds count noise that attenuates slopes; the typed inhibitory fraction is biased by missing excitatory somata and did not correlate with a compartment-based measure; no per-cell signal-to-noise control; observational data.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "V1 Deep Dive",
+  "response reliability",
+  "in-degree",
+  "inhibition",
+  "structure-function",
+  "mouse visual cortex",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_microns_forest.png",
+   "caption": "MICrONS: effect of log10 input synapse count (left) and inhibitory input fraction (right) on CC_max, in SD per SD, with 95% cluster-robust CIs, for all samples and model variants. Dotted lines show the pre-set 0.05 SD size threshold. Blue: CI excludes 0."
+  },
+  {
+   "path": "files/figures/fig2_partial_residuals.png",
+   "caption": "Partial-residual relations after all controls. Left and centre: MICrONS CC_max against input count and inhibitory fraction (20 quantile bins, mean and 95% CI over hexbin density). Right: V1DD movie CC_max (z) against input count for 180 neurons with complete input lists, coloured by cell type, with the least-squares line."
+  },
+  {
+   "path": "files/figures/fig3_outcomes_types.png",
+   "caption": "Left: MICrONS effects of input count, inhibitory fraction and nucleus volume on CC_max, CC_abs and gOSI. Right: CC_max effects within each excitatory type with at least 200 neurons."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Functional connectomics node table with CC_max, CC_abs and gOSI for coregistered MICrONS neurons."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS minnie65 EM volume, synapse and connection tables (materialization v1507)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07765-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Predicted cell types used to type presynaptic nuclei and as controls."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08660-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NEURD spine and shaft labels behind the P30 excitatory and inhibitory input labels."
+  },
+  {
+   "target": "doi:10.3389/fncom.2016.00010",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Definition of the CC_max response correlation ceiling."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2016.10.027",
+   "reason": "Structural E-I in-degree imbalance concept used in the exploratory test."
+  },
+  {
+   "target": "https://sci.azaho.org/publication/?id=c9642774-fe83-4105-a31e-d27cb48567dc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier SCI extraction of the MICrONS node and morphology tables that we reuse unchanged."
+  },
+  {
+   "target": "https://sci.azaho.org/publication/?id=77ead2b7-522d-4392-91a4-7652727a474a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier SCI study that computed the per-neuron MICrONS input counts and E/I in-degree tables that we reuse."
+  },
+  {
+   "target": "https://sci.azaho.org/publication/?id=1869f6de-bafb-4bda-b91b-fe2bd773fb23",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier SCI study whose V1DD cell, input-count and CC_max tables we reuse."
+  },
+  {
+   "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Institute V1 Deep Dive EM release 1196 (mouse 409828)."
+  }
+ ]
+}

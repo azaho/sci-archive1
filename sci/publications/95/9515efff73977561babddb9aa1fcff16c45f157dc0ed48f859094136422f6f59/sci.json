@@ -1,0 +1,82 @@
+{
+  "title": "Correlation estimates change sign after a one-pulse shift in 106 of 255 Allen mouse V1 connections",
+  "abstract": "We tested how pulse position affects correlation estimates in selected Allen mouse V1 slice connections. Trial fits reproduced 267 of 268 finite stored first-pair correlations within 1e-10. One inspected public source revision instead reproduced the later pair in all 267 cases with sufficient fits. The exact release build is unknown. On identical three-pulse trials from 255 connections and 82 inferred mice, the first and later pair estimates had opposite signs in 106 connections. The donor-weighted mean difference was -0.04337, with a nominal 95 percent interval of -0.07913 to -0.00637. The excitatory subgroup interval included zero. Most connections had about 25 trials. Only two opposite-sign pairs had both nominal Fisher intervals exclude zero. Thus, sign changes in sample estimates are not secure biological classifications. The result supports a trial-based pulse-position check before summary comparisons. It does not identify a defect in the stored correlation field, a release mechanism, or a rule across regions and species. We provide code, sufficient statistics, source hashes, replay checks, and retrieval instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic response correlation",
+    "pulse position",
+    "reproducibility",
+    "circuit reliability",
+    "source replay"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/pulse_audit.png",
+      "caption": "Trial fits reproduce stored first-pair correlations. One public code revision selects a later pair on these trial labels. The right panel uses the same trials in each correlation; opposite-sign point estimates include sampling and fit error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen local connectivity and synaptic dynamics data."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public dataset registry and source attribution."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Stored correlation summaries and pair metadata."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_medium.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the existing trial-fit cache."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The pinned selector is executed on the cached trial labels. The release build commit is unknown."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse_model.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source inspection shows that the model simulation labels synthetic pulses from 1."
+    },
+    {
+      "target": "sci:sha256:6d67170692a7e7d3cdd5437fadf78322d9cf25fa6033dfcaf7fa1ad7b08a9755",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distance test uses the stored correlation field. The present trial replay supports its first-pair interpretation while limiting source-only reconstruction."
+    },
+    {
+      "target": "sci:sha256:52163a1d2dd65f90cbdefa637458a0c9c1d1b490f762f653c689e32f3808ec57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published report documents and uses the trial cache reused in place here. The present endpoint is successive pulses within a connection."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Membrane path depth gave no clear sag prediction gain in selected Allen mouse and human spiny cells",
+  "abstract": "We tested whether membrane location along a dendrite tree improves voltage-sag prediction after size, apical fraction, electrical measurements, and cell labels are known. We linked Allen Cell Types trees and electrical summaries by exact cell ID. Ridge models held out whole donors and used inner donor folds to choose model penalties. In 234 mouse cells from 173 donors, path-depth terms raised mean squared error by 0.94%. In 111 human cells from 31 donors, error rose by 3.72%. Both primary conditional donor intervals included zero. A fixed-penalty human check increased error by 9.59%, with an interval below zero for prediction gain. Thus, the tested depth scores gave no clear common gain. The package includes source hashes, code, derived features, donor-held-out predictions, and uncertainty draws. Selected slice samples, cut trees, radius errors, incomplete cell-type controls, and uncertainty conditional on fitted predictions limit the result. It does not test intact circuits or a causal channel mechanism.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendrite geometry",
+    "voltage sag",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Donor-held-out prediction gain. Positive values mean lower error after depth terms are added. Bars give 97.5% intervals conditional on fitted predictions. Sensitivity intervals are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8"
+    },
+    {
+      "target": "doi:10.1016/j.cell.2018.08.045"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/ephys/ephys_extractor.py"
+    },
+    {
+      "target": "sci:sha256:88b9dfebbfa1fc27c40464eb8c80b318456bc71309f386543451910d4c62bba8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This study tested apical fraction and sag in the same source sample. We test added membrane depth after apical fraction is known."
+    },
+    {
+      "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}

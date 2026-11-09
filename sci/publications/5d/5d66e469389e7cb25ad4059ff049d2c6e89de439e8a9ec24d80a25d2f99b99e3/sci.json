@@ -1,0 +1,81 @@
+{
+  "title": "Layer alignment gave no clear delay prediction gain beyond distance in selected Allen cortical slices",
+  "abstract": "This robustness check extends prior orientation-delay tests. We tested whether unsigned layer alignment improves predictions of synaptic response onset delay after distance, cell labels and recording conditions are known. Allen Synaptic Physiology r2.1 supplied 1,571 detected mouse visual-cortex connections from 501 inferred animals. Five-fold validation kept whole inferred animals out of fitting. Added alignment terms reduced squared log error by 0.61%, with a conditional 95% donor bootstrap interval of -0.47% to 1.68%. Penalty and distance-reference checks also gave intervals that included zero. An exploratory mixed-region human test used 258 connections from 47 inferred donors and gave 0.46% gain, with interval -2.03% to 2.48%. These results give no clear added prediction value for the tested alignment terms. They do not show independence or equivalence. Missing geometry, selected slices, coordinate error, inferred donor labels, model form and uncertainty conditional on fitted predictions limit the result. Code, provenance, held-out errors, bootstrap draws and an independent score check support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "cortical geometry",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/prediction_gain.png",
+      "caption": "Layer alignment prediction gain with conditional 95% donor intervals. Positive values favor alignment. All intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior total-distance delay prediction test on the same release."
+    },
+    {
+      "target": "sci:sha256:23cab2d47f98f242b2c9cc42f4cadad665cc7929d6f030598252a30bee350397",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial geometry test of connection probability; the present outcome is onset delay."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/database/schema/experiment.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/pipeline/multipatch/cortical_location.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "sci:sha256:722b0a9699879de97cf0da76b66b4ca1fa9634bd3e74966d11072336f812e5b6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior orientation-delay test on the same release. The current test adds a nonlinear dual-distance reference, recording controls and an alignment-by-distance term with donor folds."
+    },
+    {
+      "target": "sci:sha256:c383919b2840eb98ecf12e03a79cd8e292eb573470b3c45e35709bc7324be6d3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior orientation-delay test on the same release. The current test adds a nonlinear dual-distance reference, recording controls and an alignment-by-distance term with donor folds."
+    },
+    {
+      "target": "sci:sha256:17aa2ae39f3be58e1a7f7484ecac444ce2e6e5b15c5052e777a09277d628c317",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects the prior-work account after closer studies were found during the archive scan. Numerical results are unchanged."
+    }
+  ]
+}

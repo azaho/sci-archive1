@@ -1,0 +1,59 @@
+{
+  "title": "Past intervals gave no clear added prediction gain for dendritic spike amplitudes in five mouse cortical cells",
+  "abstract": "We tested whether two past spike intervals improve prediction of dendritic spike amplitude after the amplitude of the same spike at the soma is known. We used 784 spikes in 11 recordings from five layer 2/3 cortical neurons in five mice in DANDI 001791 version 0.260424.0313. Models were tested on held-out time blocks within each recording and site. With equal mouse weights, past intervals increased Q2 by 0.0277. A nominal mouse bootstrap interval was -0.0481 to 0.1034. Three mice had a gain and two had a loss. Four sensitivity checks also gave intervals that included zero. Thus, this test gave no clear added gain across the five mice. We also found identical compartment columns in all 22 supplied accelerating and decelerating summary arrays. We used the distinct per-spike values instead. The package provides code, event values, held-out predictions, source hashes, audit values, and a figure. Five selected cells, processed optical amplitudes, a restricted model, and tests within recordings limit inference. We do not test a causal mechanism, a distance law, or transfer to new animals.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "dendritic computation",
+    "spike history",
+    "conditional prediction",
+    "voltage imaging",
+    "DANDI 001791",
+    "null result",
+    "data audit"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Held-out prediction scores in five mice and three model checks. Lines join each mouse score before and after addition of past intervals. Right-panel dots are mouse gains and black lines are their means. Intervals in the report include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-026-02339-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of cortical dendritic voltage and spike-history effects."
+    },
+    {
+      "target": "doi:10.1038/s41467-025-55819-9",
+      "reason": "Prior evidence for history-dependent spike back-propagation in hippocampal neurons. No data reused."
+    },
+    {
+      "target": "doi:10.48324/dandi.001791/0.260424.0313",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact version of the public optical voltage data."
+    },
+    {
+      "target": "https://api.dandiarchive.org/api/assets/456fb442-08e8-4ab8-8da1-09e383fc769f/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published metadata and source hash for the numerical input."
+    },
+    {
+      "target": "sci:sha256:0466123116d622a0e42ac9662435e9865605640d860c66fc950352d1c3e2cc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign study of added structural prediction information in Allen cells. It uses different data and a different endpoint. No code or result values were reused."
+    }
+  ]
+}

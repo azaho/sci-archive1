@@ -1,0 +1,57 @@
+{
+  "title": "Dendritic cable path reduced sag prediction error in 234 selected Allen mouse spiny cells at ridge penalty 10",
+  "abstract": "In 111 Homo Sapiens cells from 31 donors, mean squared error changed from 0.0051270 to 0.0052285. The error reduction was -1.98%, with a conditional 95% interval for the absolute reduction of -0.0001810 to -0.0000496. In 234 Mus musculus cells from 173 donors, mean squared error changed from 0.0022525 to 0.0020251. The error reduction was 10.09%, with a conditional 95% interval for the absolute reduction of 0.0000452 to 0.0004007. Adding cable path gave a gain in the selected mouse sample under this model, but no common gain across species. Penalty and input-resistance checks retained the primary directions. Restricted-voltage intervals included zero in both species. Slice cuts, incomplete cell-type controls, different region mixtures, and intervals that hold fitted predictions fixed limit the result. This is a same-cohort extension of prior campaign work, not independent replication. Code, source hashes, derived evidence, bootstrap draws, a figure, and checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendritic cable geometry",
+    "voltage sag",
+    "donor validation",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Change in donor-held-out squared sag error after adding dendritic cable path. Positive values favor cable path. Bars show conditional 95% donor bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2018.10.012"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allensdk.readthedocs.io/en/v1.0.0/_modules/allensdk/ephys/ephys_extractor.html"
+    },
+    {
+      "target": "sci:sha256:88b9dfebbfa1fc27c40464eb8c80b318456bc71309f386543451910d4c62bba8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Same raw cell cohort; earlier apical allocation test. This study tests a caliber-weighted cable path."
+    },
+    {
+      "target": "sci:sha256:0466123116d622a0e42ac9662435e9865605640d860c66fc950352d1c3e2cc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Same raw cell cohort; earlier threshold-current test. No code or tables reused."
+    }
+  ]
+}

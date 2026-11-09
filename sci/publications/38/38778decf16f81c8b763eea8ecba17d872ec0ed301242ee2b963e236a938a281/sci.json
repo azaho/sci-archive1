@@ -1,0 +1,53 @@
+{
+  "title": "Joint error bounds permit zero orientation projection in 155 pooled ferret V1 spine records",
+  "abstract": "We tested how bounded errors in preference angles and anatomical weights affect a positive orientation projection in 155 matched spine records from ferret visual cortex. We derived exact lower and upper bounds under independent angle intervals and positive weight intervals. With PSD weights fixed, zero projection first becomes possible at an angle bound of 10.151 degrees. When each weight can range from its recorded value divided by 1.25 to its value multiplied by 1.25, the angle threshold falls to 3.182 degrees. We provide the full error frontier, perturbation certificates, and code. Exhaustive endpoint checks passed on 40 small synthetic cases. These are worst-case sensitivity results, not measured errors. The public export lacks cell and animal IDs, trial data, and angle uncertainty estimates. The results do not establish a lesion effect or transfer across animals.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure-function",
+    "orientation",
+    "synaptic weights",
+    "bounded error",
+    "ferret V1"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Exact projection bounds and joint angle-weight error frontiers for 155 pooled spine records. Error bounds are assumptions, not measured uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-020-03044-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and matched spine structure and tuning data."
+    },
+    {
+      "target": "https://github.com/schollben/StructFuncEM2020/tree/fe01cad8cee781192153e0296ef4c5facf45f6f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source export."
+    },
+    {
+      "target": "sci:sha256:fbc5f0b945ad95106c38ffa1467601937f4d2b7ce58380fbbe4f0d6bcceb808e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates extension of its fixed orientation projection to angle and weight uncertainty. No code reused."
+    },
+    {
+      "target": "sci:sha256:4fa787b842de1637aa384b29e0341170061f1ba0a1a4db93f71720b0b96c68e2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related exact weight-error bound with fixed binary direction groups; we allow continuous angle error."
+    }
+  ]
+}

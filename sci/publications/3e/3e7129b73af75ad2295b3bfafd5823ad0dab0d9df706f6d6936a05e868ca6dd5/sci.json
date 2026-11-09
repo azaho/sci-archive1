@@ -1,0 +1,53 @@
+{
+  "title": "Separate quarter orbital fits remove at least 99.1 percent of test signal energy near a KIC 3230227 harmonic",
+  "abstract": "We measure signal loss from two orbital subtraction models at Kepler release 25 sample times for KIC 3230227. Each model uses 40 orbital harmonics and a quadratic trend in each quarter. One model fits separate harmonic coefficients in each quarter. The other shares those coefficients across the mission. At the published weak-mode frequency 1.8441372 cycles per day, the separate-quarter model retains 0.093 to 0.094 of the input signal norm over all phases. The shared model retains 0.989 to 0.989. This is a deterministic sampling test. It does not find or reject a stellar mode. The result gives a frequency-dependent sensitivity check for searches near orbital harmonics. It does not model changes in binary light, detector response, or noise.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 3230227",
+    "signal attenuation",
+    "tidal oscillations",
+    "orbital subtraction"
+  ],
+  "display": [
+    {
+      "path": "files/filter_response.png",
+      "caption": "Signal norm after orbital subtraction at the actual Kepler times. Shading covers all input phases. The dotted line marks a published weak-mode frequency. The residual spectra are descriptive and do not identify a mode."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-4357/ab911f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The published weak-mode frequency and physical context define the test."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/834/1/59"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003230227/kplr003230227_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:8d9bc3426a9708419c5cec8b1a0e9ff9576d127573ed479f6e740299885b5512",
+      "reason": "A residual search with separate-quarter orbital fits motivates a response test near the excluded harmonics."
+    },
+    {
+      "target": "sci:sha256:8e30ad913173802bd9cb83763f232be15991e28b8031a6084634f66fb2498cb7",
+      "reason": "A prior season-model test shows sensitivity to orbital harmonic order."
+    },
+    {
+      "target": "sci:sha256:d3ff1233c666873892e43fd57415f31500c04adbe75761b71f83c412acd3d0b4",
+      "reason": "A joint fit separates close fixed frequencies rather than removing one before fitting the other."
+    }
+  ]
+}

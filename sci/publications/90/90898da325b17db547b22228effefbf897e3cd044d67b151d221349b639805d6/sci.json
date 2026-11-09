@@ -1,0 +1,60 @@
+{
+  "title": "Calibration from disjoint cells reduced distance mismatch in selected Allen cortical recordings",
+  "abstract": "We tested whether local scale calibration aligns two distance records in Allen Synaptic Physiology r2.1. We retained 27,694 mouse and 4,070 human unordered pairs with small distances and cortical layer calls. Both records match their endpoint coordinate distances to numerical precision. Local calibration used pairs from the same recording that shared neither test cell. Compared with calibration from other inferred donors, donor-weighted absolute log error fell by 31.7% in mouse and 36.6% in human. Improvements were 0.02502 and 0.02534 log units, with conditional 97.5% donor intervals of 0.02179 to 0.02822 and 0.01710 to 0.03332. Some within-recording distance orders reversed by gaps above stated tolerances, which a scalar cannot remove. Neither record is ground truth. Projection, tissue processing and coordinate error are not separated. The result is a geometry calibration benchmark, not a neural computation rule or a test of brain activity.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "cortical geometry",
+    "distance calibration",
+    "structure-function",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/calibration.png",
+      "caption": "Two distance records have different scales. Calibration from disjoint cells in the same recording lowers held-out pair error. The records have different coordinate sources; neither is a physical ground truth."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.5158-11.2012"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The prior extreme-coordinate audit motivates testing retained small distances. No code or result tables were reused."
+    },
+    {
+      "target": "sci:sha256:23cab2d47f98f242b2c9cc42f4cadad665cc7929d6f030598252a30bee350397",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The spatial connection model motivates a check of the geometric reference. We do not change its reported conclusion."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/cortical_location.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py"
+    }
+  ]
+}

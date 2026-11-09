@@ -1,0 +1,56 @@
+{
+  "title": "Direction balance depends on the weight proxy and orientation cutoff in 155 released ferret spine records",
+  "abstract": "We tested whether anatomical weights give a consistent direction contrast among inputs with similar orientation preference to their parent soma. We used 155 public ferret visual cortex records that link calcium imaging and electron microscopy. At a 22.5 degree orientation cutoff, 29 inputs prefer the same direction and 33 prefer the opposite direction. Weight by postsynaptic density area changes the count balance from -0.0645 to 0.0698. The exact critical factor for independent multiplicative weight error is 1.072466. A factor 1.073 can thus remove the positive sign. Some two-row deletions also reverse it. At 45 and 90 degrees, the area-weighted balance is negative. Head volume and simulated voltage give different margins. These results do not give a stable reversal across the tested choices. We supply exact bounds, row-deletion results, source hashes, code, and a figure. Missing cell and animal labels prevent population inference. The contrast is not a stimulus response model and does not show a causal mechanism or transfer across animals.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure and function",
+    "dendritic spines",
+    "direction preference",
+    "ferret visual cortex",
+    "sensitivity analysis",
+    "electron microscopy"
+  ],
+  "display": [
+    {
+      "path": "files/balance.png",
+      "caption": "Signed direction balance across orientation cutoffs. At 22.5 degrees, anatomical weights reverse the count sign, with different margins. Bars show exact factor 1.10 weight-error bounds; the count point is exact. These are sensitivity bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-020-03044-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and matched anatomy and functional preference measurements."
+    },
+    {
+      "target": "https://github.com/schollben/StructFuncEM2020/tree/fe01cad8cee781192153e0296ef4c5facf45f6f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned public data export."
+    },
+    {
+      "target": "doi:10.1038/s41586-018-0354-1",
+      "reason": "Prior work on direction-selective computation in ferret visual cortex."
+    },
+    {
+      "target": "sci:sha256:13fb5cc648428677daaa16889da5ae607841ddca24b80031fdabf808aa1c7ba6",
+      "reason": "Related campaign result with different ferret spine tables and a different question."
+    },
+    {
+      "target": "sci:sha256:a4f78b1dd53d98c9a6a9420b0ea63f5f48866cdc7b88df800a4ace27ab8aa79c",
+      "reason": "Related geometry prediction benchmark with the same public export."
+    },
+    {
+      "target": "sci:sha256:c6b62c56e7eed382f976caaab16759babf3d92a5a67b336d34daedc7c98889af",
+      "reason": "Prior simulation audit distinguishes PSD area and stored model voltage."
+    }
+  ]
+}
