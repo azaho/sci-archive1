@@ -1,0 +1,74 @@
+{
+  "title": "A fixed two-indicator correction raises 2014 GJ 674 velocity error by 7.5 percent",
+  "abstract": "We test a fixed activity correction in public GJ 674 HARPS-RVBank version 02 data. A joint linear fit to H-alpha and differential line width in 58 exposures from 2013 raises weighted residual squared error by 7.54 percent in 67 exposures from 2014. All 36 extraction, weight and baseline controls also raise error. Block resampling ranges include zero. The indicators have fitted phases near a quarter-cycle from velocity at the prior 36.501321-day period. This permits an activity explanation despite failure of the simultaneous linear correction. A fixed sine benchmark reduces error by 46.84 percent, but its uncertainty depends strongly on bin origin. This is a comparative reanalysis of previously studied seasons. Shared spectra, uncertain time correlation and a simple orbit basis limit the test. No new planet or physical cause is established. Code, frozen source data, hashes, controls, figures and offline steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 674",
+    "HARPS",
+    "activity correction",
+    "H-alpha",
+    "line width",
+    "time validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Later residuals and error reduction. Ranges use 30-day bins anchored to each season first exposure. These are conditional ranges. See the next figure for bin-origin sensitivity."
+    },
+    {
+      "path": "files/bin_sensitivity.png",
+      "caption": "Changing the origin of common 30-day bins changes the sine benchmark ranges. Dots are fixed point gains. Ranges are conditional resampling percentiles, not calibrated confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5a517d72afa058835b63311a0f60fd934fbbc021ec7f5a6e718c97c1cb091fac",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the season boundaries, planet period, baseline, weight rule and rounded sine benchmark period. We test a fixed joint indicator relation."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20077068",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known planet and rotation signal."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347902",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "More complete orbit and activity work; independent photometry supplies rotation context only."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HARPS-RVBank methods."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HARPS-RVBank update."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ674_RVs/GJ674_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact version 02 public source; frozen bytes and hash are included."
+    }
+  ]
+}
