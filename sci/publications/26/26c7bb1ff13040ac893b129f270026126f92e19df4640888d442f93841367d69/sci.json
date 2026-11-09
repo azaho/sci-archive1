@@ -1,0 +1,88 @@
+{
+ "title": "Winter feeder bird communities changed toward warm species about 3.5 times faster than breeding communities in the US and Canada in 2001-2024, but winter temperature did not explain it",
+ "abstract": "Question: did winter bird communities in the US and Canada change toward warm-adapted species faster than breeding communities, and does winter temperature explain the change? Approach: we calculated a cross-fitted Community Temperature Index (CTI) for 2,070,413 Project FeederWatch December-February counts (64,717 sites, 236,635 site-seasons, 2001-2024) and compared it with the Breeding Bird Survey CTI of campaign publication c0a3a9aa7b4c (4,665 routes, 2001-2024). Fixed-effects models with site or route and observer effects, two-way clustered errors and NOAA GHCN_CAMS temperature gave trends, tracking ratios, year-to-year responses and state-level tests. Results: the winter CTI increased by 0.197 C per decade (95% CI 0.139 to 0.255) and the breeding CTI by 0.054 (0.046 to 0.062). The CTI-latitude slopes were almost equal, so the community shifts were equal to 78 and 22 km north per decade. The winter rate stayed 2.5 to 4.0 times the breeding rate in 14 sensitivity variants. But the tracking ratios (0.23 +/- 0.11 winter, 0.14 +/- 0.03 breeding) were not clearly different. The winter CTI did not follow year-to-year winter temperature (-0.001 +/- 0.013 C per C; breeding +0.011 +/- 0.002). The largest winter increase was in the West, where winters did not become warmer, and within East or West the state CTI trends did not follow state warming. Eurasian Collared-Dove spread, irruptive finch declines and feeder-using species gave much of the winter change. Observation bias: effort, site panel, cohort and tenure tests did not change the result. Limitations: interpolated temperature, no detection model, different survey methods. Conclusion: winter communities changed faster, but the faster change is not evidence of faster climate tracking.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "climate debt",
+  "winter bird communities",
+  "Project FeederWatch",
+  "Breeding Bird Survey",
+  "range shift",
+  "species temperature index",
+  "observation bias",
+  "introduced species",
+  "irruptive finches",
+  "GHCN_CAMS",
+  "North America",
+  "climate tracking",
+  "seasonality"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_trends_tracking.png",
+   "caption": "A: CTI trends of winter (FeederWatch, December-February) and breeding (BBS, May-July) communities by region and period, 95% CI. B: community shift and isotherm shift in latitude-equivalent km per decade, 2001-2024. C: tracking ratio (CTI trend divided by temperature trend); intervals are clipped at -1 and 2."
+  },
+  {
+   "path": "files/figures/fig3_interannual_states.png",
+   "caption": "A: CTI change per 1 C warmer season, within units, 95% CI. B and C: CTI trend against temperature trend for states and provinces with 40 or more units in 2001-2024 (filled: East, open: West of 100 W). The black line is the random-effects slope across all units; the dotted line is full tracking."
+  },
+  {
+   "path": "files/figures/fig1_annual_indices.png",
+   "caption": "Within-unit year effects of season temperature (top) and CTI (bottom) relative to 2012, winter (left) and breeding (right), 95% CI. The CTI axes have the same scale."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its BBS per-run CTI table and route temperatures as the breeding comparison, and we reproduce its 1970-2024 tracking ratio with our estimator."
+  },
+  {
+   "target": "doi:10.1111/1365-2656.13433",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Lehikoinen et al. 2021 found faster winter than breeding CTI change; our independent FeederWatch data agree in direction, but our temperature tests do not support climate tracking as the cause."
+  },
+  {
+   "target": "doi:10.1111/gcb.12740",
+   "reason": "Princé and Zuckerberg 2015: earlier FeederWatch winter community change toward warm species in eastern North America, 1990-2012."
+  },
+  {
+   "target": "doi:10.1098/rspb.2008.0878",
+   "reason": "Devictor et al. 2008: CTI method and climate debt."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS temperature analysis."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://feederwatch.org/explore/raw-dataset-requests/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Project FeederWatch public data, May 2024 release (files from cdn.feederwatch.org/data/202406/)."
+  }
+ ]
+}
