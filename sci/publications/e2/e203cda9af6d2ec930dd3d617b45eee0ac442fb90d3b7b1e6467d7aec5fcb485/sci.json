@@ -1,0 +1,79 @@
+{
+  "title": "A linear October-December predictor raised mean January-September forecast error in seven California divisions in 1926-2025",
+  "abstract": "We tested whether October-December precipitation improves linear forecasts of January-September precipitation in seven California climate divisions. We used a fixed NOAA nClimDiv snapshot and chronological fits with earlier complete water years only. The test covers 100 water years, 1926-2025, after 30 initial training years. The equal mean of division MSE skills was -1.20%, with a conditional 95% five-year block interval of -2.21% to -0.22%. Measured early precipitation plus the mean remainder reduced full water-year error by 32.11% against the pre-season annual mean. Adding a fitted remainder reduced it by only 31.23%. Thus, known accumulation supplied all of the fitted model full-year gain in this record. Mean early-to-full-year correlation was 0.542, within the range from shuffled remainder years. Mean early-to-remainder correlation was 0.047. Accounting can explain the large full-year correlation under the tested null. This does not prove independence. An after-January forecast gave a positive but uncertain gain, and recent-period primary intervals included zero. One retrospective data product, simple model form, shared regional variation, and conditional intervals limit inference. The study does not measure hydrological recovery or identify a physical cause. The package includes exact source rows, all 4,200 forecasts, uncertainty draws, code, figures, a separate numerical audit, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "California",
+    "precipitation",
+    "seasonal forecast",
+    "water year",
+    "known accumulation",
+    "forecast baseline",
+    "chronological validation",
+    "nClimDiv",
+    "block bootstrap",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/forecast_skill.png",
+      "caption": "A shows future precipitation skill. B shows full water-year skill against a pre-season mean. Measured early precipitation supplies all of the fitted model mean full-year gain in this test. Lines are conditional 95% five-year block intervals."
+    },
+    {
+      "path": "files/results/correlation_null.png",
+      "caption": "Early precipitation correlates with the full-year total that contains it. Its mean correlation with the later remainder is small. Shuffled remainder years provide the tested accounting null."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "Fixed issue-date and model checks limit the scope of the result. The after-January estimate is positive but uncertain."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its public shared precipitation snapshot and its saved NOAA format document. Our within-year target and code differ."
+    },
+    {
+      "target": "sci:sha256:1ffb84a5a2479e4f58987d90d6ccb269aab3323e3ce0c1fe049febe2548d413f",
+      "reason": "This prior campaign study tests interannual persistence and overlap in running totals. The present study tests information within one water year."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-11-0132.1",
+      "reason": "Prior work establishes forecast baselines from observed accumulation and the seasonal cycle. It motivates our accounting baseline."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Source method for the gridded station estimates used in the climate division product."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact dated source URL. We preserve exact selected rows and the full source hash."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source construction, numeric format, units, and code definitions. The exact document bytes are preserved from the cited campaign publication."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official division names and numeric codes."
+    }
+  ]
+}

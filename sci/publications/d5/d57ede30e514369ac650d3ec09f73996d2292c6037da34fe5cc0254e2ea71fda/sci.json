@@ -1,0 +1,26 @@
+{
+  "title": "TESS transits at Gaia DR3 conjunction times show that most short-period low-mass SB1 orbits are not genuine low-mass companions, and give 51 uncatalogued candidates (6,863 stars, P < 10 d)",
+  "abstract": "We tested Gaia DR3 single-lined spectroscopic orbits with periods below 10 days, dwarf primaries brighter than G = 13.5, and minimum companion masses below 0.15 Msun. We used TESS-SPOC light curves of 6,863 stars. We searched each light curve for a box dip at the Gaia period and at eight control periods. Then we compared the excess with the number of transits that is expected if every orbit is genuine and the companion has the implied mass. We calibrated the expected number with 2,000 injected transits (93% recovery). The Gaia period gave 393 eclipse-like detections. The control periods gave a mean of 54. The excess (339 +/- 20) is 0.25 +/- 0.01 of the expected number, and 0.11 +/- 0.01 for transit-shaped dips with the expected depth. The ratio increases with Gaia orbit significance, from 0.04 below K/sigma = 10 to 0.7-1.2 above 40. It is 0.009 +/- 0.008 for minimum masses below 0.03 Msun: TESS shows about 3 excess transits where 304 are expected. The dips occur at the Gaia-predicted conjunction phase: 60-73% are within 0.1 cycle, against 19% for control detections (p < 1e-15). Thus most of the TESS signals belong to the Gaia orbits. 121 transit-consistent systems are not in the TOI, Gaia DR3 eclipsing-binary, VSX or TESS EB (sectors 1-26) catalogues. Of these, 51 pass stricter checks (tier 1). Most are probably M-dwarf companions with Gaia masses of 0.08-0.15 Msun. Limitations: we did not do follow-up; blends and other catalogues are not excluded; about 28 false alarms are expected among the transit-consistent detections; the completeness model omits grazing transits and limb darkening; spurious solutions and inclined heavier companions cannot be separated.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.SR"},
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.IM"}
+  ],
+  "keywords": ["Gaia DR3", "spectroscopic binaries", "SB1", "TESS", "eclipsing binaries", "brown dwarfs", "M dwarfs", "transit search", "catalogue validation", "control periods", "injection recovery", "EBLM"],
+  "display": [
+    {"path": "files/figures/fig3_conjunction_phase.png", "caption": "Phase of the TESS dip relative to the Gaia-predicted primary conjunction. Transit-consistent detections at the Gaia period (blue: catalogued; orange: not catalogued) cluster at phase 0. Detections at control periods (grey) are uniform."},
+    {"path": "files/figures/fig2_ratio_by_subset.png", "caption": "Excess of dips at the Gaia period over the control-period mean, divided by the number expected if all orbits are genuine with companion mass equal to m2 sin i. Blue: all eclipse-like dips. Orange: transit-consistent dips only. 1-sigma Poisson errors."},
+    {"path": "files/figures/fig4_new_detections_folded.png", "caption": "Folded TESS-SPOC PDCSAP light curves of the 12 tier-1 candidates with the highest SNR. These candidates are not in the TOI, Gaia DR3 EB, VSX or TESS EB catalogues. Dashed line: Gaia-predicted conjunction."}
+  ],
+  "citations": [
+    {"target": "doi:10.1051/0004-6361/202243940", "relations": ["uses"], "reason": "Gaia DR3 summary paper; source of orbits, astrophysical parameters and variability tables."},
+    {"target": "doi:10.1051/0004-6361/202243782", "reason": "Gaia DR3 non-single-star processing and validation of SB1 orbits."},
+    {"target": "doi:10.17909/t9-wpz1-8s54", "relations": ["uses"], "reason": "TESS-SPOC FFI light curves, sectors 1-86. Exact URLs and SHA-256 hashes are in files/data/tess_spoc_fetch_log.csv.gz."},
+    {"target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv", "relations": ["uses"], "reason": "TOI table, shared campaign copy of 2026-11-08 (sha256 ef22793ad87770c1795ff8da2243289b45e9282ff0bfb1ec3384fba1fbfd366a)."},
+    {"target": "doi:10.3847/1538-4365/ac324a", "relations": ["uses"], "reason": "TESS eclipsing binary catalogue, sectors 1-26 (VizieR J/ApJS/258/16), for the catalogue match."},
+    {"target": "https://www.aavso.org/vsx/", "relations": ["uses"], "reason": "AAVSO VSX via VizieR B/vsx/vsx, for the catalogue match."},
+    {"target": "https://arxiv.org/abs/2310.07936", "reason": "Prior work: Gaia SB1 brown-dwarf-mass solutions matched to the TOI list only (three transiting companions). We search all TESS-SPOC light curves directly."},
+    {"target": "https://arxiv.org/abs/2310.12380", "reason": "Prior work that uses Gaia DR3 NSS solutions to reject transiting planet candidates."},
+    {"target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81", "reason": "Earlier campaign result that matches Gaia DR3 eclipsing binaries to TOIs. It is a different Gaia table and a different question."}
+  ]
+}

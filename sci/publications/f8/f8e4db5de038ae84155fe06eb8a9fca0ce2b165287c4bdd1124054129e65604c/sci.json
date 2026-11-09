@@ -1,0 +1,93 @@
+{
+  "title": "Prior and later ozone slopes were not clearly different in four-state bird counts in 2005-2019",
+  "abstract": "We tested whether bird-count links to prior and later ozone differed in California, Oregon, New York, and Pennsylvania in 2005-2019. We used 1,175 consecutive-year survey pairs with the same route, observer, and ozone site. We fit joint models for mean daily maximum 8-hour ozone in the 30 days before and after each survey. We controlled for survey weather, timing, and state-year changes. We tested the prior slope minus the later slope in two regions and two periods. Estimates were 0.789, -0.764, -5.727, and -1.142 recorded taxa per 10 ppb. All four 95 percent and multiple-test intervals included zero. Planned distance, date, and coverage checks did not resolve a common timing contrast. One strict coverage check was not identified. These results do not establish equal slopes, absence of harm, or complete bias control. Later ozone can proxy earlier exposure, and coverage selects the sample. Seasonal weather, exposure error, imperfect detection, and small samples limit inference. The package supplies a temporal diagnostic, paired-window data, figures, provenance, code, and offline reproduction checks. A full raw ozone join matched the retained daily data, and independent numerical fits agreed.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "biodiversity",
+    "bird counts",
+    "negative exposure control",
+    "temporal specificity",
+    "observation bias",
+    "Breeding Bird Survey",
+    "survey weather",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/temporal_contrast.png",
+      "caption": "The prior ozone slope minus the later ozone slope in four joint models. Thick lines show 95 percent intervals. Thin lines show intervals with correction for four tests. All intervals include zero."
+    },
+    {
+      "path": "files/window_and_coverage.png",
+      "caption": "Separate single-window slopes on the same matched records, and exposure coverage before annual matching. Intervals are 95 percent descriptive intervals. Coverage selects the survey sample."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:eee5c6480fa55ee48ff901c2b6e9c4bf5507d74a880cbe97812ce9967b5e8522",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the verified published bird panel, daily ozone records, source provenance, and raw join code. We add later ozone and test a new temporal contrast."
+    },
+    {
+      "target": "sci:sha256:126791b41f1eba913c070e7ae9679b8913c785630cc8c3227560d208bf8c652b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This is the source of the upstream bird filters and base records, obtained through the ozone publication."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Archived BBS release for 1966-2024. The analysis uses published filtered records and the shared route file."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior ozone and bird abundance study. Our outcome and timing diagnostic differ from its policy design."
+    },
+    {
+      "target": "doi:10.1097/EDE.0b013e3181d61eeb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Negative exposure control framework. The shared-bias assumptions remain unverified in this application."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EPA daily ozone fields and multiple pollutant standards."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public daily ozone source. Exact 2005-2019 snapshot URLs and hashes are retained."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/documents/codetables/pollutant_standards.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition of the selected ozone standard."
+    }
+  ]
+}

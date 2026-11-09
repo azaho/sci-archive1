@@ -1,0 +1,100 @@
+{
+  "title": "Local shuffles gave no clear larger-first excess in 10-minute earthquake pairs at magnitude 2.5 or more on days 1 to 30",
+  "abstract": "We tested event size and time order in fixed USGS catalogs for Ridgecrest and Monte Cristo Range. Events had preferred magnitude at least 2.5 and elapsed times in [1,30) days. We counted all pairs within ten minutes and 5 km. A pair with a magnitude gap of at least 0.30 added +1 if the larger event came first and -1 if it came second. The score divided this sum by all nearby pairs. Magnitudes were shuffled within day, 10 km cell, and magnitude type. Ridgecrest had 157 nearby pairs, with an observed score of 0.293 and an exact null mean of 0.240. Monte Cristo had 78 pairs, with scores of -0.026 and -0.021. Holm-adjusted upper-tail p values were 0.2895 and 0.54295. Neither primary test gave clear larger-first excess under this model. Removing the type constraint changed the Ridgecrest null mean to -0.003. A planned one-minute check had an unexpected opposite direction at Monte Cristo: all 12 pairs with a magnitude gap of at least 0.30 had the smaller event first. An exploratory refinement with 199,999 shuffles gave lower-tail p=0.000115 and a conservative 50-tail bound of 0.00575. The 2 km follow-up check was weaker after the same correction. Detection loss, source choices, small samples, and local changes limit physical interpretation. The result does not identify triggering parents or forecast hazard. The package gives fixed input fields, hashes, all shuffle scores, code, figures, an independent audit, and a full repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake",
+    "aftershock",
+    "magnitude order",
+    "conditional permutation",
+    "catalog completeness",
+    "Ridgecrest",
+    "Monte Cristo Range",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/primary.png",
+      "caption": "Primary ten-minute tests and the type-removal check. Bars are conditional 95% null ranges, not physical-effect intervals."
+    },
+    {
+      "path": "files/results/short_pairs.png",
+      "caption": "All 17 Monte Cristo pairs within one minute and 5 km. The smaller event came first in all 12 pairs with a magnitude gap of at least 0.30. This is an exploratory result."
+    },
+    {
+      "path": "files/results/order.png",
+      "caption": "All planned checks, centered on exact null means. Panels have different horizontal limits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ddec79efc92e46547677d5000479c5fbe5516c027e66a4f1225e7a935f67b1a9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its published Ridgecrest type-conditioning warning informed the primary strata. We wrote new pair-order code."
+    },
+    {
+      "target": "sci:sha256:04d0afc7a54bba616a924b30b7fc93062c9303246f15e7a138ac6767ae95ebff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its magnitude-similarity test provides context. Our statistic measures direction and uses all geometric pairs."
+    },
+    {
+      "target": "sci:sha256:f1c231c8ac4d278093652a38d1b2f0a1c4c3a197037bc6f0981cc9d13f30d41c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public Monte Cristo source snapshot in place, with a new magnitude-order test."
+    },
+    {
+      "target": "sci:sha256:ce1b9b5357b3f981475c73d4d2c5c64a9b3b952c33e6133d7165869877047bc5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its global size-order study motivates the distinction between a raw fraction and a conditional model test."
+    },
+    {
+      "target": "doi:10.1785/0220240277",
+      "reason": "We consulted the author-repository abstract for the catalog-incompleteness explanation."
+    },
+    {
+      "target": "https://www.iris.unina.it/handle/11588/993798"
+    },
+    {
+      "target": "doi:10.1029/2002JB001991"
+    },
+    {
+      "target": "https://arxiv.org/abs/cond-mat/0205499v2"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed raw bytes are identified in files/provenance.json. Signed used-field extracts permit an offline repeat."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed raw bytes are identified in files/provenance.json. Signed used-field extracts permit an offline repeat."
+    }
+  ]
+}

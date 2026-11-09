@@ -1,0 +1,115 @@
+{
+  "title": "Summer warmth had uncertain links to the gap between leaf colour and leaf fall in eight Japanese tree samples in 1953-2020",
+  "abstract": "We tested whether July-August warmth was linked to a longer gap between leaf colour and leaf fall. We used 5,743 paired records from JMA in 1953-2020. The common station set included ginkgo at 56 stations and maple at 50 stations. Eight models separated North and South Japan, two equal periods, and the two tree types. Models included station-by-observation-category and year effects, plus April-May and September temperature. Summer slopes ranged from -0.98 to +1.96 days per C. All marginal 95% intervals included zero. All intervals with an eight-test correction also included zero. Station trends, first differences and restricted observation samples did not give a common positive link. A next-year temperature diagnostic gave one positive link, which limits a causal interpretation. One diagnostic two-way variance was negative. We therefore report a consistent interval envelope using the largest of three cluster variances. Few northern stations, missing records, tree changes, coarse weather and late visible event definitions limit inference. The test does not measure the full senescence period, pollution or weather extremes. The package includes source tables, the derived panel, all models, figures, provenance, code and numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "autumn phenology",
+    "ginkgo",
+    "maple",
+    "leaf colour",
+    "leaf fall",
+    "summer temperature",
+    "observation bias",
+    "regional replication",
+    "uncertainty",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/primary.png",
+      "caption": "July-August temperature slopes for the gap between leaf colour and leaf fall. Thick lines show marginal 95% intervals. Thin lines show intervals with a correction for eight tests. All intervals include zero. All use the largest of three cluster variance estimates."
+    },
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "Summer-temperature slope estimates under nine model choices. Full intervals and sample sizes are preserved in estimates.csv. These checks did not show a common positive link. Colours are clipped at -2 and +2 days per C."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.adf5098",
+      "reason": "This work motivates the test of late-season warmth and the gap between two late autumn stages. Our event definitions differ."
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method for the GHCN-CAMS monthly temperature analysis."
+    },
+    {
+      "target": "sci:sha256:d997794cd5da3aabb17a004339fe9e877502137746ec1c02d19fd110ce5bb960",
+      "reason": "Prior campaign study of spring timing in Japan and other countries. We use different events and rebuild from the public autumn files."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/sakura/data/download_ruinenchi.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JMA annual phenology source; files 013 to 016 in the recorded ZIP snapshot."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/sakura/data/ruinenchi/ruinenchi_all.zip",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.data.jma.go.jp/sakura/data/ruinenchi/format_ruinenchi.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Date format and observation remark definitions."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/sakura/data/shishin.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Leaf-colour and leaf-fall observation definitions."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/stats/data/mdrr/chiten/meta/smaster.index.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Station position history, recorded as a fixed shared snapshot."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/stats/data/mdrr/man/smasterindex_format.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Byte fields and coordinate units for station history."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHCN-CAMS monthly temperature snapshot. Exact source hash is in the package."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.data.jma.go.jp/tcc/data/news/PhenologicalEventsJapan.pdf",
+      "reason": "JMA prior evidence on autumn event dates and temperature."
+    },
+    {
+      "target": "https://www.jma.go.jp/jma/en/copyright.html",
+      "reason": "Source attribution and reuse terms for JMA tables."
+    }
+  ]
+}

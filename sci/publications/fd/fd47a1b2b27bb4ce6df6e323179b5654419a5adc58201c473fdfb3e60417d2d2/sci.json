@@ -1,0 +1,112 @@
+{
+  "title": "CSR estimates show 96% recovery of California's July-September 2019-2022 water-storage loss in 2023 and 38% in 2025",
+  "abstract": "We tested how much of California's 2019-2022 loss in total water storage was recovered in 2023 and present in 2024 and 2025. We used a fixed CSR RL06.3 GRACE and GRACE-FO source, the union of seven NOAA climate divisions, and the CSR land mask. Equal July-September means fell by 17.90 cm of CSR equivalent water thickness from 2019 to 2022. Gains above 2022 were 17.13 cm in 2023, 9.68 cm in 2024, and 6.79 cm in 2025. They equal 95.7%, 54.1%, and 38.0% of the specified loss. Every calendar month of 2025 was below the same month of 2023 in this product. A fixed seasonal cycle cannot explain that comparison. The five planned area rules gave 2025 recovery fractions from 37.940% to 37.967%. Month and reference-year choices had larger effects. The 2011 reference gave 26.4% recovery in July-September 2025. This is a storage-level comparison, not a tracked fraction of the 2023 water input. One product, correlated errors, boundary leakage, and no regional error covariance limit inference. Assumed error bounds are given as sensitivity checks, not confidence limits. The data do not separate groundwater, snow, soil water, or surface water and do not identify a physical cause. The bundle preserves exact source subsets, paths and hashes, code, monthly evidence, figures, independent audits, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "GRACE-FO",
+    "California",
+    "total water storage",
+    "drought recovery",
+    "same-month comparison",
+    "CSR RL06.3",
+    "reference year",
+    "seasonal cycle",
+    "data provenance",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/recovery.png",
+      "caption": "The fixed CSR source gives July-September recovery fractions of 95.7%, 54.1%, and 38.0% in 2023, 2024, and 2025. The loss reference is 2019-2022. These are descriptive product estimates, with no confidence limits."
+    },
+    {
+      "path": "files/month_sensitivity.png",
+      "caption": "Recovery fractions vary by calendar month. Each point compares the same month in the target year, 2019, and 2022. A fixed seasonal cycle cancels. January is before the full wet season of its year."
+    },
+    {
+      "path": "files/mask.png",
+      "caption": "California boundary and primary overlap weights after the CSR binary land mask. The represented area is 407,369 square km. Fine output cells are not independent satellite measurements."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared CSR source snapshots. Our statewide recovery question and all analysis code differ from its earthquake-timing test."
+    },
+    {
+      "target": "doi:10.1002/2016JB013007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR mascon method and required source citation."
+    },
+    {
+      "target": "doi:10.15781/cgq9-nh24",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR mascon data citation. Exact RL06.3 file bytes are identified in data_provenance.json."
+    },
+    {
+      "target": "https://www2.csr.utexas.edu/grace/RL06_mascons.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source documentation, corrections, ellipsoid, anomaly baseline, land mask and citation guidance."
+    },
+    {
+      "target": "https://www2.csr.utexas.edu/grace/RL0603_mascons.html",
+      "reason": "Official source guidance on physical resolution, regional analysis, and limits for small areas."
+    },
+    {
+      "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL06_Mascons_v02_LandMask.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/CONUS_CLIMATE_DIVISIONS.shp.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source for the seven-division California boundary union."
+    },
+    {
+      "target": "https://tsutterley.github.io/data/GRACE-Months.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Nominal month convention for two CSR solutions with preceding-month midpoints. No primary endpoint uses those solutions."
+    },
+    {
+      "target": "https://gravity-toolkit.readthedocs.io/en/stable/_modules/gravity_toolkit/time.html",
+      "reason": "Author documentation for special GRACE months. We implement two explicit label assignments and do not copy its adjustment code."
+    },
+    {
+      "target": "https://gracefo.jpl.nasa.gov/news/221/us-german-satellites-show-california-water-gains-after-record-winter/",
+      "reason": "Prior report of the large 2023 total-water gain and the need to track later storage."
+    },
+    {
+      "target": "doi:10.1029/2023GL107721",
+      "reason": "Prior GNSS study of water-storage gains and drought improvements during the 2022-2023 wet season."
+    },
+    {
+      "target": "doi:10.1029/2026GL122396",
+      "reason": "Prior groundwater recharge study through 2023 in the combined Central Valley basins. The present study uses total storage for the whole state through 2025."
+    }
+  ]
+}

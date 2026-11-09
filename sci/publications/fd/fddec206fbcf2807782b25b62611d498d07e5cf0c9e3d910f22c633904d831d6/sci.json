@@ -1,0 +1,66 @@
+{
+  "title": "Three of 21 mouse cortex groups had excess clustering of target categories under contact shuffles",
+  "abstract": "We tested whether contacts on one axon share target categories more often than expected from pooled category totals. We used two public electron microscopy workbooks from developing mouse barrel cortex. We removed one seed contact, combined AIS seed subtypes, and retained 564 axon rows with consistent counts and at least two other contacts. We shuffled target labels while preserving each axon contact count and each group category total. Three of 21 layer, dataset, and seed groups passed a Holm test at 0.05 with 99,999 shuffles. The excess same-category probabilities were 0.0835 and 0.0910 for layer 2/3 AIS groups at P14 and P28, and 0.1677 for one layer 4 AD group at P14. The P28 excess fell to 0.0015 after a ten-contact filter removed all four retained axon rows with source subtype label 2.1. This filter changes subtype composition. We found 46 rows whose category sum differs from the reported total. We supply sensitivity results, exact null moments, checked code, derived scores, and source hashes. The result rejects a uniform contact allocation in selected finite tables. It does not establish an age effect across animals, physiological inhibition, or a rule for neural activity.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "mouse barrel cortex",
+    "inhibitory axons",
+    "target categories",
+    "sampling",
+    "conditional randomization"
+  ],
+  "display": [
+    {
+      "path": "files/clustering.png",
+      "caption": "Observed excess concentration in all 21 primary groups. Grey ranges show the central 95% of contact shuffles. They are null reference ranges, not animal confidence intervals. Orange points pass the Holm test. Age codes with decimals identify separate source datasets at the same integer postnatal day."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Effects in the three primary positive groups after changes to count handling, contact threshold, category definitions, and seed removal. The ten-contact filter removes all four retained source subtype 2.1 rows from the P28 layer 2/3 AIS group."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abb4534",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original EM study, target categories, seed-based sampling, and known developmental target preferences."
+    },
+    {
+      "target": "https://gitlab.mpcdf.mpg.de/ganja/developmentalpaper/-/tree/610545951505e425cf24fb0d4398255f56b1ef88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source of the two count workbooks. Both shared files were checked against the public file API."
+    },
+    {
+      "target": "doi:10.1038/163688a0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Classical finite-sample concentration statistic."
+    },
+    {
+      "target": "doi:10.1126/science.1060342",
+      "reason": "Motivation: somatic and dendritic inhibition can affect integration time differently in a separate circuit. No activity measure from that study is used."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2012.05.015",
+      "reason": "Motivation: dendritic inhibition can have nonlocal effects in a model. Anatomy alone does not specify these effects."
+    },
+    {
+      "target": "sci:sha256:7b7426fe575607c03576c67dd58a8a29c5b601dc04f0684af72b3d4c8fde7776",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This published Allen result ruled out the initial partner-count and plasticity question as a duplicate. No code, data, or numerical finding from it enters this analysis."
+    }
+  ]
+}

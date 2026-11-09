@@ -1,0 +1,71 @@
+{
+  "title": "Partner history reduced high-water probability error by 2.32% on six Atlantic links in 2018-2024",
+  "abstract": "We tested whether nearby gauge history improves probabilities of high next-day water levels beyond a local model with NOAA tide calculations. We used four Atlantic gauges, six directed links, fixed calendar-month 95th-percentile thresholds from 2015-2017, and chronological fits for 2018-2024. Empirical training-error distributions gave a mean Brier score reduction of 2.32%. The conditional 95% two-year block interval was 1.09% to 3.25%. Five link estimates were positive; Boston history made the score worse at The Battery. Older partner history at lags 8 and 9 gave an uncertain mean gain of 0.08%. The test event rate was 9.22%, so the initial percentile does not describe test rarity. Seven test years, selected complete records, fitted-error assumptions, uncertain thresholds, and tide calculations fetched in 2026 limit inference. The result does not establish an operational flood warning gain or a physical cause. The package gives source hashes, exact daily evidence, all forecasts, scores, resamples, figures, an independent arithmetic audit, a source audit, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal water levels",
+    "probability forecast",
+    "Brier score",
+    "chronological evaluation",
+    "NOAA CO-OPS",
+    "regional information",
+    "empirical prediction distribution"
+  ],
+  "display": [
+    {
+      "path": "files/results/probability_skill.png",
+      "caption": "High-water probability score gains on six Atlantic links and planned checks. The event threshold uses the fixed initial period. Right-panel intervals use two-year blocks and fixed fitted forecasts. These are statistical events, not official flood levels."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:86679ecab3fa9393145cd88f5f84fad691e8fbc6e735d77c2c2b2c460c0c04a9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse exact daily evidence, provenance, retrieval and source-audit code, and the primary point-model design. We extend height-error scoring to fixed-threshold event probability scores."
+    },
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original daily evidence and preserved raw tide calculations. Its verified ZIP is a dependency for the full source audit."
+    },
+    {
+      "target": "sci:sha256:1bec768cd1ebff7b74eb80f0dbae4eb1dfa27a858443c665d84fe1cd4a0777e5",
+      "reason": "Prior directional timing result reviewed before the new probability question."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-10-05055.1",
+      "reason": "Prior storm-surge study used deterministic and probabilistic verification near New York and Long Island."
+    },
+    {
+      "target": "doi:10.1198/016214506000001437",
+      "reason": "Proper scoring rules and binary probability evaluation."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of observed extrema, coverage, inferred flags, monthly means and predictions."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source API. Exact queries, paths, snapshot hashes and preserved tide entries are in the provenance files."
+    }
+  ]
+}

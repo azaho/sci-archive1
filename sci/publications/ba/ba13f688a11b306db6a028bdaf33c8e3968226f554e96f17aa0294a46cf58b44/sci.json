@@ -1,0 +1,59 @@
+{
+  "title": "Fixed lunar cycle terms lowered cross-coast daily high-water correlation at six US gauges in 2011-2025",
+  "abstract": "We tested whether simple lunar cycle terms reduce daily high-water correlation between opposite US coasts in years not used to fit the terms. We used fixed NOAA CO-OPS data at six gauges. Each outcome was the hourly-based daily maximum minus monthly mean sea level. We fit separate site models in 1996-2010 and tested eight Atlantic-Pacific pairs in 2011-2025. The mean pair correlation fell from 0.458 with calendar-month terms alone to 0.012 with three fixed lunar cycles. The reduction was 0.446, with a conditional 95% three-year block interval of 0.422 to 0.469. Terms at off-frequency periods left the mean at 0.457. Spring-neap terms alone left a mean of 0.356. All six sites had lower test error with the three-cycle model. The result supports a shared lunar signal as an explanation for much of the broad daily correlation in these records. It does not establish a causal share of storm activity, full site independence, or a rare flood result. The package includes the fixed daily table, exact source paths and hashes, fitted terms, test residuals, saved block draws, code, a figure, and source and numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "lunar cycles",
+    "spatial dependence",
+    "tide gauges",
+    "held-out years",
+    "NOAA CO-OPS"
+  ],
+  "display": [
+    {
+      "path": "files/correlations.png",
+      "caption": "Mean correlation and eight pair correlations in 2011-2025 after fits in 1996-2010. Bars show conditional 95% three-year block intervals. The off-frequency control has the same number of added terms as the lunar model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f4d67b9a7d6b2e5715e6a5d45ebe292c308857b2937a8914c105b9c139e2b5d4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified daily table and NOAA source provenance. We test its proposed lunar explanation with fixed periods and a separate time period for model testing."
+    },
+    {
+      "target": "doi:10.1038/sdata.2016.107",
+      "reason": "Prior tide-gauge work separates extreme sea level and skew surge patterns and shows the role of spring tides. Our daily correlation test has a different scope."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/glossary.html",
+      "reason": "NOAA definitions of lunar cycles, phase inequality, and perigee effects motivate the fixed periods."
+    },
+    {
+      "target": "https://www.kgs.ku.edu/Publications/Bulletins/233/Archer/index.html",
+      "reason": "Prior geological method uses known lunar periods to model tidal patterns."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source API. Exact 30 query URLs and source hashes are preserved in source_provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of hourly daily maxima, coverage, flags, and monthly mean fields."
+    }
+  ]
+}

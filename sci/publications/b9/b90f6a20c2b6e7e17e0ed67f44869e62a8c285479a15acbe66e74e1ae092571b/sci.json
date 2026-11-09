@@ -1,0 +1,72 @@
+{
+  "title": "Winter temperature gave no clear gain in March 1 cherry bloom forecasts at three sites in 2004-2023",
+  "abstract": "Does mean winter temperature improve cherry bloom forecasts after adjustment for late-winter temperature and a time trend? We used annual records from Kyoto, Washington DC, and Appenzell in 1982-2023. We joined 126 site-years to NASA POWER daily temperature. We fit separate linear models at each site in 1982-2003 and tested them in 2004-2023. At March 1, the base model used a year trend and mean February temperature. The added variable was mean temperature from November through January. Adding winter temperature increased mean absolute error at all three sites. The equal-site error rose from 6.32 to 6.72 days. The estimated benefit was -0.39 days, with a 95% five-year block-bootstrap interval from -0.85 to 0.08 days. With annual model updates, the benefit was -0.09 days, with an interval from -0.55 to 0.28 days. Full-period winter slopes had intervals that included zero at all sites. These results give no clear forecast gain for this winter proxy. They do not rule out a biological chilling effect. Fixed sites, complete annual records, separate site models, and a time trend reduce some observation bias. Observer effort and tree changes remain unknown. Reanalysis weather, different bloom thresholds, and three selected sites limit transfer to other settings. This study does not test air pollution, frost damage, or species distributions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "cherry bloom",
+    "winter temperature",
+    "climate",
+    "temporal validation",
+    "observation bias",
+    "null result",
+    "MERRA-2"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_comparison.png",
+      "caption": "Forecast errors in 2004-2023. Fixed models use 1982-2003. Expanding models use all earlier study years. Positive benefit means that the winter variable reduced mean absolute error. Intervals use paired five-year blocks across test years. They describe these sites and trained models."
+    },
+    {
+      "path": "files/winter_slopes.png",
+      "caption": "Observed bloom date changes and adjusted winter slopes in 1982-2023. Slopes come from site models with year, late-winter temperature, and winter temperature. The intervals use HAC standard errors with lag three. They are descriptive and have no correction for multiple tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact revision of the three bloom source files and data guide."
+    },
+    {
+      "target": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Daily temperature data interface."
+    },
+    {
+      "target": "https://power.larc.nasa.gov/docs/methodology/data/sources_meteorology/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Weather source, resolution, and limits."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0027439",
+      "reason": "Prior chill-and-heat modeling and independent validation in flowering cherry."
+    },
+    {
+      "target": "doi:10.1016/j.agrformet.2023.109571",
+      "reason": "Prior evidence for regional differences in winter and spring warming effects."
+    },
+    {
+      "target": "doi:10.1002/ppp3.70037",
+      "reason": "Prior Seattle evidence for delayed bloom after warm winters."
+    },
+    {
+      "target": "doi:10.1002/joc.1594",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original study of the Kyoto bloom series supplied in the data repository."
+    }
+  ]
+}

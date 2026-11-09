@@ -1,0 +1,83 @@
+{
+  "title": "Daily gamma rate variation with variance 0.05 raises a Ridgecrest day 1-30 count ratio tail fraction to 0.144",
+  "abstract": "We tested whether a fixed mixture of zero-offset power-law rates can explain faster late decay in a fixed USGS Ridgecrest catalog. In three equal log-time bins, any such positive mixture requires the ratio of mean counts mu1 squared divided by mu0 times mu2 to be at most one. At preferred magnitude at least 2.5 within the source radius of 100 km, days 1-30 have counts 283, 342, and 306. The observed ratio is 1.3507. An exact conditional test gives p=0.01704 under independent Poisson counts. The 95% conditional interval for the mean ratio is 1.0222 to 1.7740. Smaller radius, one magnitude type, and a later start weaken the Poisson evidence. A labeled sensitivity experiment, added after initial results, keeps a fitted single-power mean curve and adds daily gamma rate multipliers with mean one. With variance 0.05, the simulated tail fraction is 0.1444, compared with 0.0147 at variance zero. Their Monte Carlo standard errors are 0.00157 and 0.00054. These are plug-in model diagnostics. The daily variance is assumed, not estimated. The deterministic mixture bound is useful, but the catalog does not securely reject this mean-rate explanation once the tested daily intensity variation is allowed. One sequence, retrospective selection, mixed magnitudes, uncertain detection, and restricted dependence models limit inference. The test does not identify a physical cause or reject secondary triggering. The package includes proofs, exact source fields and hashes, code, all planned checks and simulation counts, figures, an independent arithmetic audit, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershock decay",
+    "power-law mixture",
+    "log convexity",
+    "exact conditional test",
+    "Poisson assumptions",
+    "gamma-Poisson sensitivity",
+    "catalog completeness",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/clustering.png",
+      "caption": "At a fixed single-power mean, assumed daily gamma rate variation raises the simulated count ratio tail fraction. The gamma variance is not estimated from earthquakes. Error bars show only Monte Carlo error."
+    },
+    {
+      "path": "files/primary.png",
+      "caption": "Primary counts in three equal log-time bins and the single-power boundary fit. Planned day weights give count-concentration ranges, not calibrated confidence intervals."
+    },
+    {
+      "path": "files/checks.png",
+      "caption": "All planned count ratio checks. Black dots show observed log ratios. Blue and orange ranges use one-day and three-day event weights. The reference at zero applies to unweighted mean counts under the tested mixture, not to each weighted exposure."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared USGS source snapshot and build on its fit-end comparison. The current mixture constraint and count test use new code."
+    },
+    {
+      "target": "sci:sha256:676a196eb53efb08dfc0c7c7cd83b6cc1a396a2ba320512b5f840eb4e8382a90",
+      "reason": "Prior retrospective count forecast audit of this sequence. It informs the question and limits any untouched validation claim."
+    },
+    {
+      "target": "sci:sha256:254dfe25900ac059dc661f786d658736f5c24dbd39babf9e24474135b81aaac2",
+      "reason": "Prior spatial comparison suggests changing fault mixtures as one possible explanation. We test a restricted fixed positive mixture of zero-offset power laws, not arbitrary spatial heterogeneity."
+    },
+    {
+      "target": "doi:10.1029/2001JB001580",
+      "reason": "Prior ETAS analysis shows that secondary triggering can produce faster late decay. Its delayed component starts lie outside our fixed-component null."
+    },
+    {
+      "target": "https://central.scec.org/meetings/2020/am/poster/097",
+      "reason": "Primary Ridgecrest forecasting study addresses clustering and uncertainty. It motivates explicit limits on Poisson inference."
+    },
+    {
+      "target": "doi:10.1785/0220240179",
+      "reason": "Prior Ridgecrest rate study addresses missing early events and distance effects. We do not reproduce its method."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official catalog query and preferred-record definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query URL for the fixed CSV. Shared paths, file hashes, source record, and a reproducible recovery script are in the package."
+    }
+  ]
+}

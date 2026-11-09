@@ -1,0 +1,81 @@
+{
+  "title": "Standardization to 50 counted birds reduced negative survey-end temperature slopes in US taxon richness in 1985-2024",
+  "abstract": "We tested whether a published bird weather pattern remained after count standardization. We used the fixed USGS Breeding Bird Survey 2025 release. We compared the first and last ten stops in 57,171 surveys from Canada and the US in two periods, 1985-2004 and 2005-2024. We held route-observer and state-year effects and survey conditions fixed. In the US, raw last-minus-first richness slopes were -0.288 and -0.297 taxa per 5 C warmer survey end. Expected richness at 50 counted birds gave slopes of -0.066 and -0.039. The raw-minus-standardized slope differences had four-test intervals below zero in both US periods. All four primary standardized intervals included zero. All 16 standardized sensitivity intervals also included zero at the individual 95 percent level. The US last-to-first bird count ratio fell by about 2.3 and 2.6 percent per 5 C. This is consistent with a count-size explanation, but does not identify detection or a causal pathway. Count thresholds select surveys, and taxon detection can still differ. The periods share routes. The study does not estimate extreme heat, climate change, air pollution, or true species loss. The package includes code, count histograms, input hashes, all results, figures, and a full raw rebuild check and offline refit instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "bird richness",
+    "rarefaction",
+    "weather",
+    "observation bias",
+    "Breeding Bird Survey",
+    "count standardization",
+    "temporal tests",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "Raw richness, expected richness at 50 counted birds, and log bird count ratios on the same surveys. Each panel uses a different horizontal scale. Bars adjust four country-period tests per outcome. The main standardized intervals all include zero."
+    },
+    {
+      "path": "files/sensitivity_figure.png",
+      "caption": "All standardized sensitivity results. Bars are individual 95 percent intervals, with no correction across sensitivity tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:652071e7bf4b1964e6b29e8c4494ce23450a5342524ee3fe65cc2e0880558ecb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We test a count-size explanation for its endpoint temperature pattern. These data overlap; this is an extension, not an independent data replication."
+    },
+    {
+      "target": "sci:sha256:20abaa52ed247a6abb59de7a87dd63a917e694b4141debd2d2e8d59e9f3feb9f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt its raw preparer and fixed-effect code and retrieve verified source metadata and attribution."
+    },
+    {
+      "target": "sci:sha256:126791b41f1eba913c070e7ae9679b8913c785630cc8c3227560d208bf8c652b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related full-survey temperature test. Our endpoint outcome and count standardization ask a different question."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact archived USGS BBS 2025 release, with records through 2024."
+    },
+    {
+      "target": "https://pubs.usgs.gov/publication/5210258",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on weather, bird activity, and bird counts."
+    },
+    {
+      "target": "doi:10.1093/jpe/rtr044",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Individual-based rarefaction and its sampling assumptions."
+    },
+    {
+      "target": "doi:10.1002/ece3.9196",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates comparison of count size and relative abundance. We do not use its effective-number transformation or infer causal shares."
+    }
+  ]
+}

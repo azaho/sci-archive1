@@ -1,0 +1,63 @@
+{
+  "title": "Removing the first day raises the pooled decay exponent for magnitude-4.5 events after 23 large earthquakes in 2000-2024",
+  "abstract": "We tested how early catalog records change estimates of aftershock decay. We used a fixed USGS ComCat snapshot for 23 shallow earthquakes of magnitude at least 8.0 in 2000-2024. Within 500 km, 119 of 307 events in minutes 5-60 had magnitude at least 5.5, compared with 210 of 3,388 events on days 1-7. The sequence-adjusted odds ratio was 9.18, with a 95% sequence-bootstrap interval of 5.19 to 17.00. For magnitude at least 4.5, a pooled power-law fit gave an exponent of 0.715 from five minutes and 0.984 from one day. The change was 0.270 [0.182, 0.346]. The main patterns remained across distance and anchor checks. The difference between start-time changes at low and high magnitude thresholds was uncertain. Preferred magnitude types also changed sharply between time bins. Simulated loss of early small events was sufficient to produce both pattern directions, but it did not identify the cause in the real record. The known loss of early aftershocks is not a new discovery. This study supplies exact raw snapshots, code, count tables, independent checks, and reproduction instructions. These descriptive fits do not estimate a physical recovery time or provide an operational forecast.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquakes",
+    "aftershocks",
+    "catalog completeness",
+    "Omori law",
+    "ComCat",
+    "magnitude scale",
+    "sequence bootstrap",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/main_result.png",
+      "caption": "Recorded magnitude shares change with elapsed time. The pooled decay exponent changes with the fit start. Bars show 95% sequence-bootstrap intervals."
+    },
+    {
+      "path": "files/results/time_profile.png",
+      "caption": "Observed event rates and magnitude odds ratios change with time after the anchor. The 1-5 minute bin has only five events and no finite odds-ratio estimate."
+    },
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "Magnitude odds ratios remain above one across catalog checks. The preferred-mb sample is selected by magnitude scale; its interval excludes 46 nonfinite draws."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1785/012003098",
+      "reason": "Prior work on short-term loss of aftershocks in local and global catalogs."
+    },
+    {
+      "target": "doi:10.1016/j.tecto.2006.03.025",
+      "reason": "Prior tests of start time and magnitude threshold in aftershock decay models."
+    },
+    {
+      "target": "doi:10.1785/0120160073",
+      "reason": "Prior global forecast method with time-varying catalog completeness and variation between sequences."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS ComCat query service and parameter definitions. Exact snapshot query URLs and raw-file hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "reason": "USGS description of aftershock rate models."
+    },
+    {
+      "target": "sci:sha256:b2d64a1f5c8413a4195f341f51d3c83e81b15dd6685e68ec785098ea0b125470",
+      "reason": "Read to check earlier campaign scope before this study. No source data or methods were reused."
+    }
+  ]
+}

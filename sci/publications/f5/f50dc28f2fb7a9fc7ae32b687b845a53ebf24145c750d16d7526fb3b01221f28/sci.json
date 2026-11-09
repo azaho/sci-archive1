@@ -1,0 +1,132 @@
+{
+ "title": "Most of the 1982-2025 rise in daily SST memory in DOISST v2.1 is a loss of fast variance that steps at satellite input changes and is absent in 34 NDBC buoys",
+ "abstract": "Question: Lee et al. (2025) reported that the memory of daily sea surface temperature (SST) anomalies in NOAA DOISST increased across the global ocean after 1982. Is this a change in the ocean or a change in the analysis? Approach: We repeated their one-lag memory metric tau10 = -10/ln(phi10) on DOISST v2.1, 1982-2025, for 29,423 ice-free 1-degree cells (60S-60N). We fitted each yearly autocorrelation function at lags 5-20 days as A exp(-k/tau_s). A is the share of slowly decaying variance and tau_s is its decay time. A synthetic test showed that this fit separates a loss of fast variance from a real slowing. We compared breaks with documented DOISST input changes, compared DOISST with hourly in situ temperature from 34 NDBC moored buoys on matched days, and compared it with OI.v2 weekly, HadISST and ERSST v5. Results: The tau10 increase repeats (11.5 to 22.6 days, 1982-1986 to 2021-2025; significant increase in 63% of the area). 66% of the ln(phi10) trend comes from A and 24% from tau_s. tau_s increased significantly in only 10% of the area. The variance of the 1-day anomaly change fell by a factor of about 6, in steps that a break search placed at 2007 and 2021. These are the dates when DOISST changed from Pathfinder to Navy AVHRR and from Navy AVHRR to ACSPO L3S. Steps at input-change dates fit the global tau10 series better than a linear trend (BIC 58.0 versus 80.5). Inside single-input segments the tau10 trends were small and not significant. At the 34 buoys, buoy day-to-day variance had no trend (median -0.014 per decade in log units) but DOISST at the same cells fell (-0.160; paired p = 1e-7). The buoy tau10 trend was -0.24 days per decade and the DOISST trend was +0.32 (paired p = 5e-4). OI.v2 weekly and HadISST monthly showed no increase in persistence in 1982-2021. Conclusion: Most of the reported increase in daily SST memory is a product artifact from a loss of fast variance. A moderate rise in slow decay time remains possible in some regions. Limitations: the buoys cover only US sites at 17N-57N and also feed DOISST; significance tests do not correct for serial correlation; the 2022-2025 period mixes an input change with the 2023-2024 warm event.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "persistence",
+  "memory timescale",
+  "autocorrelation",
+  "marine heatwaves",
+  "OISST",
+  "DOISST",
+  "data homogeneity",
+  "observing system change",
+  "NDBC buoys",
+  "AVHRR",
+  "ACSPO",
+  "critical review",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_global_series.png",
+   "caption": "DOISST v2.1, 60S-60N area-weighted annual means of tau10, the slow-part share A, the slow decay time tau_s, and the variance of the 1-day anomaly change. Dashed lines: input changes on 2007-01-01 (Pathfinder to Navy AVHRR), 2016-01-01 (v2.1 inputs) and 2021-10-01 (Navy AVHRR to ACSPO L3S)."
+  },
+  {
+   "path": "files/figures/fig5_buoy_check.png",
+   "caption": "Median over 34 NDBC buoys of the 1-day change variance and tau10, for buoy water temperature and for DOISST at the buoy cell on the same days. DOISST fast variance falls and DOISST tau10 rises; the buoy series do not."
+  },
+  {
+   "path": "files/figures/fig2_pooled_acf.png",
+   "caption": "Decade-mean autocorrelation of daily SST anomalies in DOISST for 1982-1991 and 2016-2025. The late curves are higher mostly because the fast drop at lags 1-5 days is smaller (A increases). Grey band: lags used for the fit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We repeat its tau10 memory metric on DOISST and test whether its reported increase is a change in the ocean or a change in the analysis."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1 description (Huang et al. 2021)."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daily OISST method (Reynolds et al. 2007)."
+  },
+  {
+   "target": "doi:10.5194/essd-8-165-2016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST input record and Pathfinder to Navy AVHRR change (Banzon et al. 2016)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dates of DOISST input changes (v2.1 from 2016, ACSPO from 2021-10-01)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Sea_Surface_Temperature_Optimum_Interpolation/AlgorithmDescription_01B-09.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OISST algorithm document: Pathfinder single AVHRR to 2006, operational Navy AVHRR from 2007."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of DOISST v2.1 daily files."
+  },
+  {
+   "target": "doi:10.1175/1520-0442(2002)015%3C1609:AIISAS%3E2.0.CO;2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OI.v2 weekly SST used as a comparison product (Reynolds et al. 2002)."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 used as a comparison product (Rayner et al. 2003)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSST v5 used as an in situ only comparison product (Huang et al. 2017)."
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NDBC moored buoy hourly water temperature used as in situ reference."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03303-x",
+   "reason": "Observed mixed-layer deepening (Sallee et al. 2021), one proposed physical cause of longer SST memory."
+  },
+  {
+   "target": "doi:10.1038/s41598-020-64785-9",
+   "reason": "Earlier global estimates of SST anomaly persistence (Bulgin et al. 2020)."
+  }
+ ]
+}

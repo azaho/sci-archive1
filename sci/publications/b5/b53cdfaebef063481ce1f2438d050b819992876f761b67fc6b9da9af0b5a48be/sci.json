@@ -1,0 +1,81 @@
+{
+  "title": "Autumn partner sea level gave no clear winter forecast gain at San Francisco and Seattle in 1991-2025",
+  "abstract": "We tested whether autumn mean sea level at the other Pacific gauge improves winter forecasts after local autumn level, a linear time trend, and autumn Nino 3.4 are known. We used fixed NOAA sources for San Francisco and Seattle. Each winter fit used earlier complete winters only. Common support gave 33 test winters in 1991-2025. The equal mean reduction in mean squared error was 3.97%, with a conditional 95% five-year block interval of -2.77% to 9.54%. Site estimates were 7.53% at San Francisco and 0.41% at Seattle; both intervals included zero. All planned sensitivity intervals also included zero. The result leaves added partner value uncertain for this model and season. It does not prove that spatial ocean data lack value. Retrospective sources, selected sites, missing months, short records, and uncertainty conditional on fitted histories limit inference. The package includes exact source hashes, used monthly fields, all forecasts, code, uncertainty draws, two figures, a numerical audit, and a successful offline repeat. It does not predict flood events or identify a physical cause.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "Pacific coast",
+    "spatial prediction",
+    "seasonal forecast",
+    "ENSO",
+    "local persistence",
+    "NOAA CO-OPS",
+    "chronological validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Added partner forecast skill. Bars give conditional 95% five-year block intervals. Both sites and their mean have intervals that include zero."
+    },
+    {
+      "path": "files/results/annual_gain.png",
+      "caption": "Annual decreases in squared forecast error after addition of the partner gauge. Positive bars indicate lower error. Missing winters are not filled."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:930a0d10f6cec93dd1d38dd77d327bff857fbdec3f10ae12d24e5acd73c429d8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared NOAA source snapshots and build on its local-level forecast comparison. Our question adds spatial partner information in autumn. New code reads the raw sources."
+    },
+    {
+      "target": "sci:sha256:e21b84ef73e14748707047ddaf5138f5ce291c6c15b223b5b0e1467b782302f9",
+      "reason": "Prior monthly ENSO tests motivate a local-history and ENSO baseline. The present target is a winter mean with a spatial predictor."
+    },
+    {
+      "target": "sci:sha256:c1307c25bf3019dd32804c881c7c620b0558d13c901afbd77f391420975e4b15",
+      "reason": "Prior partner-gauge tests concern daily Atlantic high water. Our seasonal Pacific test uses different data fields, target, and baseline."
+    },
+    {
+      "target": "doi:10.1029/2024JC021120",
+      "reason": "Prior work describes coherent coastal sea-level patterns. Coherence motivates, but does not establish, lead information."
+    },
+    {
+      "target": "doi:10.1002/2014JC010602",
+      "reason": "Prior work estimates ENSO contributions to US coastal sea level."
+    },
+    {
+      "target": "doi:10.5194/os-21-1663-2025",
+      "reason": "Prior forecast work motivates a local persistence baseline and direct error scores."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA monthly_mean API. Exact source URLs, versions, hashes, and paths are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of monthly MSL and inferred flags."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed ERSSTv5 monthly Nino 3.4 anomaly source with 1991-2020 reference. Exact source bytes are included."
+    }
+  ]
+}

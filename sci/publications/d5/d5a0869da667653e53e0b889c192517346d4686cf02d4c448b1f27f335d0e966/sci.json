@@ -1,0 +1,68 @@
+{
+  "title": "Seven-day delay bounds kept negative spring slopes in two western US lilac samples in 1965-2008",
+  "abstract": "We tested calendar alignment and reporting-delay sensitivity in 9,015 US lilac first-bloom records from 1965-2008. Four models used separate East and West samples in two periods, with plant and year effects and winter temperature controls. Exact linear-regression bounds allowed each reported date to be zero to seven days after the event, with delay allowed to depend on temperature. Western spring-slope ranges stayed negative: -6.428 to -0.290 and -6.804 to -0.679 days per degree C. Eastern ranges included zero. All four ranges included zero at a fourteen-day cap. These are finite-sample sensitivity ranges, not confidence intervals or evidence that actual delays are at most seven days. The calendar audit found 25.94% weekend dates in the early East, against a two-in-seven reference. Its adjusted rotation p-value was 0.011, but rose to 0.093 with equal site weights. The other three samples had no clear weekend departure. Thus, the audit did not establish a repeated weekend pattern. Unknown visits, selected long records, different regional plant types and bloom rules, coarse weather, and few clusters limit inference. We do not measure pollution, biodiversity loss, or a causal climate effect. The package includes exact input hashes, a byte-identical raw rebuild, independent regression checks, bound proofs and endpoint checks, a repeated analysis, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "observation bias",
+    "lilac",
+    "reporting delay",
+    "sensitivity bounds",
+    "weekend reporting",
+    "spring temperature",
+    "temporal replication"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Calendar alignment and exact reporting-delay bounds in four samples. Left: weekend excess with approximate 98.75% two-way cluster intervals. Right: fitted spring slopes and sharp ranges for delays from zero to seven days, conditional on fixed records and controls. The right-hand ranges are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:132840ebfe63249d57d74b600b7334d0c4d104206635ed88c4eb141fa7daa5b7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its exact files/prior_panel.csv and files/prior_build.py for a new calendar audit and reporting-delay sensitivity analysis. The full prior bundle was verified."
+    },
+    {
+      "target": "doi:10.1007/s00484-012-0598-7",
+      "reason": "Prior primary study of weekend bias in bird arrival reports; motivates, but does not validate, the plant calendar test."
+    },
+    {
+      "target": "doi:10.1038/sdata.2015.38",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source data description, historical program rules, and limits on observation-frequency information."
+    },
+    {
+      "target": "doi:10.5061/dryad.0262m",
+      "reason": "Related archive for the published plant dataset; the exact bytes used here came from ScienceBase."
+    },
+    {
+      "target": "https://www.sciencebase.gov/catalog/item/5499b905e4b093dfafda3575",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the v13 measurement workbook and v14 field definitions. Exact URLs and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA PSL GHCN CAMS monthly air temperature, version 3.01. The exact 20261105 snapshot hash is in files/provenance.json."
+    }
+  ]
+}

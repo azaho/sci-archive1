@@ -1,0 +1,85 @@
+{
+  "title": "A steeper richness contrast slope above 25 C was clear in one of four Canada and US bird samples from 1985 to 2024",
+  "abstract": "We tested whether survey-end temperature had a more negative slope above 25 C for recorded bird taxa in the last ten stops minus the first ten stops. We used 64,682 accepted surveys and fit separate models in Canada and the US in 1985-2004 and 2005-2024. Models held route-observer effects, state-year effects, start temperature, timing, wind, sky, and assistant status fixed. Extra slopes above 25 C were -1.07, -0.58, -0.38, and -0.47 taxa per 5 C. Only the later US four-test adjusted interval excluded zero: -0.90 to -0.05. All planned checks kept a negative later US estimate, but the adjusted-width interval crossed zero with route trends or linear start-temperature control. Canada had only 12-23 surveys above 30 C per period. Thus, we did not establish a clear common slope change across all four samples. This result does not establish a difference between countries or periods. The fixed 25 C knot is not a heat-damage threshold. Selection, endpoint weather error, unmeasured habitat change, shared routes across periods, and few year clusters limit inference. We do not measure true species loss, detection probability, climate causation, or air pollution. The package includes raw-source hashes, the rebuilt panel, 32 model fits, support and leverage audits, figures, code, retrieval instructions, and numerical and repeat checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "bird richness",
+    "survey weather",
+    "observation bias",
+    "temperature",
+    "nonlinear response",
+    "Breeding Bird Survey",
+    "high temperature",
+    "regional replication"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "Temperature slopes for last-minus-first recorded taxon richness. The left bars are intervals adjusted for four primary tests. The other bars are individual 95% intervals. All estimates hold the listed survey controls fixed."
+    },
+    {
+      "path": "files/support_figure.png",
+      "caption": "Percent of retained surveys with end temperature above 25, 30, and 35 C. The Canada samples have few high-temperature surveys."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:652071e7bf4b1964e6b29e8c4494ce23450a5342524ee3fe65cc2e0880558ecb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its raw-data preparation, fixed sample, retrieval code, metadata, and fixed-effect method. We rebuild its panel exactly and test a new temperature slope change."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed USGS BBS 2025 source release. The package records URLs, file hashes, and state-member hashes."
+    },
+    {
+      "target": "https://pubs.usgs.gov/publication/5210258",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior BBS work on weather and bird count activity motivates a temperature shape test."
+    },
+    {
+      "target": "doi:10.3389/fevo.2021.671492",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior field study of weather, time, habitat, and bird detection."
+    },
+    {
+      "target": "doi:10.1080/00063657.2023.2298661",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior field evidence that time of day can change recorded taxonomic diversity."
+    },
+    {
+      "target": "https://www.canada.ca/en/environment-climate-change/services/bird-surveys/landbird/north-american-breeding/instructions.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "BBS rules require the same route order and locations and suitable weather. These rules inform the limits of a block contrast."
+    },
+    {
+      "target": "doi:10.1198/jbes.2010.07136",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Two-way cluster covariance estimator."
+    }
+  ]
+}

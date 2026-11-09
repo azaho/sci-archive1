@@ -1,0 +1,76 @@
+{
+  "title": "Added ENSO skill is uncertain for monthly sea-level forecasts at two Pacific gauges in 1986-2025",
+  "abstract": "We tested whether monthly Nino 3.4 improves forecasts of monthly mean sea level after recent local levels are known. We used fixed NOAA snapshots for six US gauges. The primary test used San Francisco and Seattle. Each target month in 1986-2025 used inputs and training targets no later than two calendar months before it. The local model had three recent sea-level values, calendar-month terms, and a time term. Added ENSO skill was the equal mean of two site reductions in mean squared error. The estimate was 5.87%, with a conditional 95% five-year block interval of -1.56% to 12.46%. Against season and trend alone, ENSO skill was 15.96%, with an interval of 3.15% to 26.88%. These scores have different baseline errors and are not additive. With the original histories, removal of four large ENSO years reduced the primary estimate to 2.69%. A one-month input lag and ten-year uncertainty blocks gave positive intervals, so inference depends on scope and the dependence model. All six primary site intervals included zero after site adjustment. These results leave the primary added skill uncertain. They do not show that ENSO has no effect or that more complex models cannot help. Retrospective sources, missing months, few climate episodes, selected sites, and uncertainty conditional on fitted histories limit inference. The package gives source hashes, used-field data, all forecasts, uncertainty draws, code, figures, and numerical and source audits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "ENSO",
+    "Nino 3.4",
+    "monthly forecast",
+    "local persistence",
+    "chronological validation",
+    "NOAA CO-OPS",
+    "block bootstrap",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Added ENSO skill after three local levels. Thick bars show pointwise 95% intervals. Thin bars show six-site adjusted intervals. Inputs end at t-2. Targets are monthly means in 1986-2025."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "Equal mean added skill at San Francisco and Seattle under planned checks. Five-year error blocks are primary. Intervals condition on fitted forecast histories."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:930a0d10f6cec93dd1d38dd77d327bff857fbdec3f10ae12d24e5acd73c429d8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the shared source snapshots described in this seasonal forecast study. We extend it with monthly targets, an input buffer, and three local levels. No analysis code or derived inputs were copied."
+    },
+    {
+      "target": "sci:sha256:c426824e17f12854b152d9b169398d63968be71417344932e664e4f73b833891",
+      "reason": "Prior campaign source and quality context for the shared six-gauge snapshots."
+    },
+    {
+      "target": "doi:10.1029/2020JC017060"
+    },
+    {
+      "target": "doi:10.1038/s41612-025-01182-x"
+    },
+    {
+      "target": "doi:10.5194/os-21-1663-2025"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

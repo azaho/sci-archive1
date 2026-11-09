@@ -1,0 +1,71 @@
+{
+  "title": "Hidden relays with positive capacitance match direct transfer within 5% on 0-100 Hz in 31 passive models from Allen data",
+  "abstract": "We tested whether finite-band electrical transfer separates a direct junction from a passive hidden relay. We extended a published DC construction with positive node capacitances and derived a sufficient error bound. With no positive lower bound on hidden capacitance and with unknown membrane leaks, a circuit with no direct edge can approach a direct-edge response over any fixed finite frequency band. The ideal high-frequency limits still differ. We applied the method to 31 reciprocal reference models from Allen mouse visual cortex slice data. A hidden capacitance below a pair-specific bound of 0.061-0.525 pF kept complex cross-transfer error within 5% over 0-100 Hz, for any fixed positive recorded-node capacitances. In the tested relay construction with 100 pF at each recorded node, 1 pF hidden capacitance exceeded 5% error in all 31 references on the sampled band. Separate full circuit calculations, a denser grid, and 1,000 random circuits passed numerical checks. The responses are model examples, not measured transients or evidence for hidden neurons. Reciprocal adjustment, separate resistance measurements, unknown leaks, small required capacitances, and passive lumped nodes limit biological inference. The package supplies a proof, code, derived evidence, source hashes, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "electrical synapses",
+    "hidden nodes",
+    "capacitance",
+    "frequency response",
+    "structure inference",
+    "passive circuits"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "A sufficient continuous-band capacitance bound, numerical thresholds, and synthetic cross-transfer errors for passive reference models from 31 Allen mouse cell pairs. These are model responses, not measured transients."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen Synaptic Physiology measurements."
+    },
+    {
+      "target": "doi:10.1073/pnas.1310983110",
+      "reason": "Primary study uses capacitive currents to constrain direct electrical connectivity under a specified model."
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established graph and circuit reduction by Schur complements."
+    },
+    {
+      "target": "sci:sha256:106b1100aee1ce53a1097c62e2189285f8ef3a185aecf5e8e938fd8097c3c703",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its cohort rule, reciprocal DC reference, and positive-leak static relay construction. Adds positive capacitance, a continuous-band error bound, an exact dynamic formula, and frequency-scale tests. No code or evidence tables were reused."
+    },
+    {
+      "target": "sci:sha256:597f4cea5c2b6dc05718bee3c2bf9a54b1f90b750d4482f07c514ddae9c1fd8b",
+      "reason": "Published electrical-loop diagnostic reviewed to establish prior campaign scope."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact r2.1 small raw database, reused in place and verified by SHA-256."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/pipeline/multipatch/gap_junction.py",
+      "reason": "Inspected pulse window and coupling regression definitions. The generating revision of all database values is not established."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py",
+      "reason": "Inspected intrinsic field definitions for resistance, membrane time, and capacitance proxy."
+    }
+  ]
+}

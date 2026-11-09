@@ -1,0 +1,89 @@
+{
+ "title": "Daily-mean water levels in 3,411 US wells did not step more often on earthquake dates than on placebo dates at any seismic energy density from 1990 to 2025",
+ "abstract": "We tested if public USGS daily-mean groundwater levels step more often after earthquakes than on placebo dates. We used 4,031 wells (3,411 with a valid score; 14.2 million well-days, 1990-2025) and 47,064 ComCat earthquakes. We gave each well-day the seismic energy density e of the strongest event on that UTC day (Wang 2007 relation). A step is a robust z of 4 or more for the change between 5-day medians before and after the event. The placebo moves each event date by 30-400 days, with the same offset for all wells. The plan was fixed before analysis. Result: no e bin from 1e-8 to above 1e-2 J/m3 had a step excess after Holm correction. For e >= 1e-4 J/m3 (47,337 well-dates), 3.90% of well-dates stepped against 3.44% on placebo dates (95% range 2.47-4.65%, p = 0.20). The excess is -0.75 to +1.42 percentage points. Confined and unconfined wells, the |z| >= 3 threshold and a 30-day persistence test gave the same null. Post hoc, no single M >= 7 event date of 361 passed a false-discovery test. The largest responses after great teleseisms (Sumatra 2005, Iquique 2014, Haida Gwaii 2012, Tohoku 2011) were regional clusters of rises in northeastern states; the Haida Gwaii window contains Hurricane Sandy. Only near events (e >= 1e-3) showed a timing sign: 41% (95% CI 32-49%) of 201 steps had their largest daily change on the event days, against 28% for placebo steps. Main limitation: daily means detect only large steps (median threshold 0.28 m), so the test cannot see the small coseismic steps and oscillations that high-rate wells record. Network-scale earthquake-groundwater studies with daily data need precipitation controls or sub-daily records.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "groundwater",
+  "earthquake hydrology",
+  "seismic energy density",
+  "dynamic triggering",
+  "USGS wells",
+  "placebo test",
+  "teleseismic",
+  "null result",
+  "Hurricane Sandy",
+  "daily values"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dose_response.png",
+   "caption": "Share of well-dates with a level step (|z| >= 4 left, |z| >= 3 right) on earthquake dates (blue) and on placebo dates (grey 95% range, dashed mean), by seismic energy density bin. n is the number of well-dates. No bin shows a step excess after Holm correction."
+  },
+  {
+   "path": "files/figures/fig3_event_dates.png",
+   "caption": "Post hoc test for each M >= 7 event date with at least 100 wells: step rate on the event date against the mean rate of the same wells on 2,000 shifted dates. Point size grows with magnitude. Labelled dates have the most responses; they are regional clusters (the Haida Gwaii window contains Hurricane Sandy). No date passes Benjamini-Hochberg q < 0.1 among 361 dates."
+  },
+  {
+   "path": "files/figures/fig4_jump_timing.png",
+   "caption": "Post hoc timing test: the day of the largest one-day level change for step responses on earthquake dates (blue) and placebo dates (grey). An earthquake step must fall in the shaded days -1 to +1. Only the near-field set (e >= 1e-3) shows an excess."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:960bb4a1dfbff9d17d6edc024941d90d49297037888d9b55a7c7fff7489689c8",
+   "reason": "Campaign study of US stream gauge rises after earthquakes; this work tests the groundwater counterpart with a placebo-date design."
+  },
+  {
+   "target": "sci:sha256:11bb393c8865d0a13337a06dd8e0227508ae0a6fbf781f5bb9b7dbfdc3443751",
+   "reason": "Campaign stream-gauge null for 1980-1990 earthquakes; related design."
+  },
+  {
+   "target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its USGS OGC API access recipe (DEMO_KEY bucket) for groundwater data."
+  },
+  {
+   "target": "doi:10.1785/gssrl.78.5.512",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Wang (2007) energy density relation used to give e at each well."
+  },
+  {
+   "target": "doi:10.1007/978-3-642-00810-8",
+   "reason": "Wang and Manga (2010), Earthquakes and Water: compilation of hydrological responses against energy density."
+  },
+  {
+   "target": "doi:10.1029/2002JB002321",
+   "reason": "Brodsky et al. (2003): mechanism for sustained groundwater pressure changes after distant earthquakes."
+  },
+  {
+   "target": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS daily-mean groundwater levels, parameters 72019, 62610, 62611, 72150, retrieved 2026-11-08."
+  },
+  {
+   "target": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Well locations and aquifer types."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ComCat earthquake catalog, retrieved 2026-11-08; exact bytes in files/data."
+  }
+ ]
+}

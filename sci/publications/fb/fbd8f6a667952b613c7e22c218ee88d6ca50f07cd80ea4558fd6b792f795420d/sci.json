@@ -1,0 +1,84 @@
+{
+  "title": "With a 24-month cap, recovery from low 12-month precipitation ranks took longer than in reordered records across 344 US divisions, 1901-2025",
+  "abstract": "We tested recovery from low precipitation ranks in 344 contiguous US climate divisions. We used NOAA nClimDiv monthly data for 1901-2025. An episode starts at the 10th percentile of a rolling 12-month total. It ends at the calendar-month median. We capped recovery time at 24 months and gave each division equal weight. The observed mean was 14.21 months. The mean from 1,999 reference records was 13.30 months, with a central 95% range of 12.91 to 13.73. The excess was 0.91 months. The upper-tail reference fraction was 0.0005. The reference reordered years separately for each calendar month within 25-year periods. Each monthly spatial field stayed together. Thresholds were fit again in each draw. All planned checks are reported. Long recovery thus occurred under the reference, but observed order added a small departure. The test measures precipitation ranks. It does not measure water-store recovery, find a physical cause, or test forecast skill. One source, fitted thresholds, the cap, and within-period exchangeability limit inference. The package contains all selected monthly values, event records, exact permutations, code, provenance, and an independent arithmetic audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "precipitation",
+    "drought recovery",
+    "nClimDiv",
+    "moving sums",
+    "seasonality",
+    "reference model",
+    "spatial dependence"
+  ],
+  "display": [
+    {
+      "path": "files/recovery.png",
+      "caption": "Recovery times for four accumulation windows, the primary 12-month reference distribution, and descriptive division values. Times are capped at 24 months. Shaded limits are reference quantiles, not confidence limits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1175/JAMC-D-11-0132.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal and accumulation baseline design. Our endpoint is empirical recovery time."
+    },
+    {
+      "target": "doi:10.1002/joc.70240",
+      "reason": "Prior work on correlation from rolling precipitation sums and departures from that reference."
+    },
+    {
+      "target": "doi:10.5194/hess-29-719-2025",
+      "reason": "Prior ideal moving-average drought reference; its endpoint is annual minima."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA climate-division source method."
+    },
+    {
+      "target": "sci:sha256:1ffb84a5a2479e4f58987d90d6ccb269aab3323e3ce0c1fe049febe2548d413f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared source snapshot. It tests annual forecast skill and rolling correlation; we test monthly recovery."
+    },
+    {
+      "target": "sci:sha256:01c6d23f2bb6666a155bc73cbbaaaca3c4f4f61ca34963d8cbe718569a4975a7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its verified NOAA format document and public source version. Its endpoint is fixed-season recovery."
+    },
+    {
+      "target": "sci:sha256:4915f54da906833901fc31c7361a80136ab32637c2fc0d66979bcf92a5a5f51e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior annual national-field reordering design. Our new code applies spatial-field reordering separately to calendar months."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source URL. Version, shared path, byte count, source hash and all selected input values are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA format and units. Verified bytes were copied from the cited SCI publication."
+    }
+  ]
+}

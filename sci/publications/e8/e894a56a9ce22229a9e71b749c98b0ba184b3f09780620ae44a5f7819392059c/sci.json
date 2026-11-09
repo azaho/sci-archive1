@@ -1,0 +1,62 @@
+{
+  "title": "Model feature similarity gave a small connection prediction gain in one MICrONS split and an uncertain gain in a second",
+  "abstract": "We tested whether response similarity improves connection prediction for neurons excluded from the connection model training set. We used the public MICrONS functional connectomics v1 edge table from one mouse: 295,371 candidate pairs, 8,128 connected pairs, and 148 selected source neurons. A logistic reference model used axon and dendrite proximity lengths, receptive-field distance, and region and layer labels. Every pair was tested once in each of two neuron partitions. Neither endpoint of a test pair occurred in its training set. In the primary partition, model feature similarity reduced mean log loss by 0.000208 nats per pair, or 0.182%. The conditional 97.5% neuron-score interval was 0.000012 to 0.000405. In a second, exploratory partition, the gain was 0.000176, with interval -0.000039 to 0.000392. Measured movie response similarity had intervals that included zero in both partitions under the two-comparison rule. The gains were small and differed by projection group. The result supports a limited prediction benchmark. It does not establish a general rule across animals. One animal, selected sources, fixed activity features, a single model family, and uncertainty that excludes model training variation limit the result. Code, exact splits, fitted models, pair records, predictions, and checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "functional connectomics",
+    "connection prediction",
+    "neuron exclusion",
+    "generalization",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Connection prediction gains in two partitions of the neurons. Bars show conditional 97.5% neuron-score intervals. Positive values favor response similarity. The second partition is exploratory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and public v1 edge table. We test prediction with both neurons excluded from connection model training."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source resource for linked calcium imaging and electron microscopy."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior same-data association test with effects for both neurons. The current test excludes test neurons from connection model training. No code or fitted values were reused."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "title": "The dry-winter excess between two California coastal divisions is uncertain under an ENSO pairing model for 1951-2025",
+  "abstract": "We tested simultaneous dry winters in the North Coast Drainage and South Coast Drainage divisions of California. We used fixed NOAA nClimDiv and ERSSTv5 sources for 75 October-May seasons ending in 1951-2025. A dry winter is in the lowest quarter of its division record. Seven winters were dry in both divisions. Independent pairing within three concurrent winter Nino 3.4 groups gives an expected count of 4.80. The joint-frequency excess was 2.93 percentage points, with a 95% five-year block interval of -0.66 to 6.42 points. The exact pairing upper-tail probability was 0.149. Three- and seven-year blocks and refitted quantile thresholds also left the excess uncertain. More ENSO groups and a shorter winter season did not give a clear primary-tail excess. Other fixed tail definitions gave different evidence and are reported as descriptive checks. Log seasonal precipitation correlation was 0.471. After separate adjustment for Nino 3.4, its square, and year, the residual correlation was 0.453, with a block interval of 0.290 to 0.595. Continuous association thus remains under this limited adjustment, but it does not establish the primary dry-tail excess or a physical cause. Seven joint events, one source product, coarse ocean adjustment, and conditional uncertainty limit inference. The package preserves exact source subsets, hashes, annual evidence, exact null probabilities, all 30,000 block samples, code, figures, a separate arithmetic audit, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "California",
+    "joint precipitation deficits",
+    "ENSO",
+    "Nino 3.4",
+    "conditional pairing",
+    "hypergeometric distribution",
+    "block bootstrap",
+    "null result",
+    "spatial dependence",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/joint-dry.png",
+      "caption": "Seven of 75 winters were in the driest quarter in both coastal divisions, versus 4.80 under independent pairing within three ENSO groups. The dry-tail excess is uncertain."
+    },
+    {
+      "path": "files/results/checks.png",
+      "caption": "All full-period fixed checks and the raw and adjusted log precipitation correlations. These continuous correlations do not establish the primary dry-tail excess."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the public shared precipitation and SST snapshots and its saved NOAA format document. Our simultaneous-tail target and code differ."
+    },
+    {
+      "target": "sci:sha256:b28b2a70b316873bbf872cc40a47a0bb46e38064aaccaf60937a28a005ce1298",
+      "reason": "Prior campaign seasonal-share analysis. We test a different target: joint dry winters in two coastal divisions."
+    },
+    {
+      "target": "sci:sha256:7affe8f35e7876a6031cd37960bbc84e84d0446a1b1b15e6e3fc1f95a0bd8174",
+      "reason": "Prior campaign winter spatial-contrast forecasts. The present analysis uses concurrent ENSO groups and tests joint tail frequency."
+    },
+    {
+      "target": "doi:10.1175/1520-0442(1997)010%3C2261:TVOWPI%3E2.0.CO;2",
+      "reason": "Prior evidence for distinct northern and southern California winter precipitation patterns and different SST associations."
+    },
+    {
+      "target": "doi:10.1029/2024GL110326",
+      "reason": "Prior weather-regime study shows how ENSO can modulate precipitation while much weather-pattern variation is independent of ENSO. We do not test that mechanism."
+    },
+    {
+      "target": "doi:10.1029/2025WR041240",
+      "reason": "Prior study of United States drought coincidence, including differences between precipitation deficits and atmospheric water demand."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Source methodology for NOAA climate division precipitation estimates."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 source product; we use the CPC regional monthly anomaly table."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source URL for the fixed SST snapshot. Source hashes and original paths are in provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact dated precipitation source. The bundle preserves exact selected source lines and the full-object hash."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA format and construction document. Exact bytes are reused from the cited SCI forecast publication."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official division numbers and names."
+    }
+  ]
+}

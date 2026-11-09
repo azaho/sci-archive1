@@ -1,0 +1,117 @@
+{
+ "title": "FlyWire wiring predicts neuropil calcium correlations beyond distance in 50 flies; walking and rest coupling agree after global-signal removal; transmitter-matched wiring adds no gain",
+ "abstract": "Question: does whole-brain wiring predict region-to-region functional connectivity (FC) in behaving Drosophila, does this coupling change between rest and walking, and does wiring from the matched transmitter class predict the FC of class-specific imaging lines better? Data: light-field calcium imaging of 75 brain regions (Aimon et al. 2023; 82 experiments; pan-neuronal, Cha, Gad, Vglut, TH, Trh and TDC lines) and the FlyWire v783 connectome (139,255 proofread neurons). Structural connectivity (SC) was the symmetric log synaptic flow between regions. We controlled for distance between region centroids and used flies as units. Results: group FC (50 flies) correlated with SC at Spearman rho = 0.48; distance-partial rho = 0.37, above a distance-stratified null (0.24 +/- 0.01; p < 0.0002). Distance alone explained R2 = 0.55 of group FC and SC added 0.06. In single flies the distance-partial coupling was 0.18 (95% CI 0.14-0.21) and positive in 48 of 50 flies; the between-fly FC agreement was rho = 0.58. Walking raised mean FC. Raw coupling was lower in walking by 0.013 to 0.036 in rho (clear only in the 20 flies with at least 60 s per state, p = 0.004). After global-signal regression the walk-rest difference was within +/-0.025 in all three state definitions (Wilcoxon p = 0.19 to 0.92). The walk-related FC change did not repeat between flies and did not follow SC. Coupling was highest in optic lobe, AMMC, SAD, IPS and GNG and lowest in the central complex and antennal lobe (split-half reliability rho = 0.86). Transmitter-matched SC gave no specific gain (permutation p = 0.37-0.66). Limitations: light-field blur can mix adjacent regions and distance control cannot remove all of it; connectome and activity come from different flies; states come from a convolved walk regressor; class SC matrices are highly correlated, so the class test has low power.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "FlyWire",
+  "functional connectivity",
+  "structure-function coupling",
+  "light-field imaging",
+  "walking",
+  "brain state",
+  "neurotransmitter",
+  "global signal regression",
+  "neuropil"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_sc_fc_matrices.png",
+   "caption": "FlyWire v783 structural connectivity (left) and fly-averaged light-field functional connectivity (middle, 50 flies) for 75 brain regions, ordered right hemisphere, midline, left hemisphere. Right: each of 2,775 region pairs, colored by centroid distance."
+  },
+  {
+   "path": "files/figures/fig2_state_coupling.png",
+   "caption": "Distance-partial SC-FC coupling per fly in rest and walk epochs (34 flies, matched frame counts), without and with global-signal regression, and walk minus rest differences with 95% bootstrap CIs for three state definitions."
+  },
+  {
+   "path": "files/figures/fig3_regions_and_classes.png",
+   "caption": "Left: distance-partial coupling of each region with the other 74 (group FC). Right: double-centred line by transmitter-class coupling table; the outlined diagonal cells are the matched pairs (no specific gain, permutation p = 0.37)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the light-field regional calcium time series and walk regressors."
+  },
+  {
+   "target": "doi:10.5061/dryad.3bk3j9kpb",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dryad record with the regional time series (Walk_anatomical_regions.zip)."
+  },
+  {
+   "target": "https://github.com/sophie63/Aimon2022/tree/944c8367d5eed1a4ef477c702e31f31997762d34",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Regionsdf.pkl gives the fly identity of each experiment."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 per-neuron neuropil synapse counts and proofread neuron list."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire neuron annotations with transmitter labels."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2024.03.016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Synapse-level neurotransmitter predictions behind top_nt."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10567",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JFRC2 neuropil meshes, used in FlyWire space for region centroids."
+  },
+  {
+   "target": "https://github.com/navis-org/fafbseg-py/tree/b62bed6572afb98ac6e64e738b8805341e7ee027",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the neuropil meshes transformed to FlyWire space."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2021.03.004",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We extend their resting hemibrain SC-FC result to FlyWire, both hemispheres, light-field imaging and walking state."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2013.12.017",
+   "reason": "Neuropil nomenclature shared by both data sets."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Related campaign result: tracer connectivity predicts spike correlations beyond distance in mouse cortex."
+  }
+ ]
+}

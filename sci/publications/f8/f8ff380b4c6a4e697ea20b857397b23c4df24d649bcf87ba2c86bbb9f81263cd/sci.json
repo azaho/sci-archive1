@@ -1,0 +1,59 @@
+{
+  "title": "Matched Allen cortical pairs did not show a clear connection preference toward cells with higher input resistance",
+  "abstract": "We tested whether one-way detected connections point toward cells with higher input resistance in Allen Synaptic Physiology r2.1. We matched cell class, Cre label, and target layer and required tests in both directions. The sample had 1,189 mouse excitatory, 1,911 mouse inhibitory, and 518 human excitatory cell pairs. Only 79, 245, and 75 pairs had a connection detected in one direction alone. Their higher-resistance target fractions were 39.2%, 53.1%, and 44.0%. Donor bootstrap 98.33% intervals were 24.4-52.6%, 44.7-61.4%, and 27.6-65.4%. All included 50%. The result does not establish equal detection power. Selected intrinsic measurements, inferred donor labels, mixed recording modes, and possible biological wiring differences limit this paired audit. Code, selected pairs, source hashes, and bootstrap draws are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "input resistance",
+    "directed connectivity",
+    "paired recording",
+    "detection",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/direction.png",
+      "caption": "Direction estimates in three matched cortical cell-pair groups. Bars show donor bootstrap 98.33% intervals. ex means excitatory and in means inhibitory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source paired cortical recordings and connectivity methods."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen Synaptic Physiology r2.1 small data release."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "reason": "Definition of class-specific tested pairs."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/intrinsic.py",
+      "reason": "Intrinsic resistance measurement and units."
+    },
+    {
+      "target": "sci:sha256:bcfd8c73c33c3e3640ca279bd3dbd511f6971f9e6218fb35ade1a52f84e00e61",
+      "reason": "Prior campaign test of target resistance for response amplitude prediction."
+    },
+    {
+      "target": "sci:sha256:be1bc665c37d982b55c16fb1aaeab66479ab234e98dbcecab1c9c1cbbc75b7b2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign paired-direction control design for an axon-label audit."
+    }
+  ]
+}

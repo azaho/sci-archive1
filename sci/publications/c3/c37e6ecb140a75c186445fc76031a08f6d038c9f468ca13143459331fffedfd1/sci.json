@@ -1,0 +1,68 @@
+{
+  "title": "Ridgecrest pair counts exceed an hourly location-shuffle model on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested whether short time gaps also have short epicentral distances in a fixed USGS Ridgecrest catalog. The sample has 931 events with magnitude at least 2.5 on days 1 to 30 after the 2019 M7.1 event. We kept every event time fixed and shuffled locations within hourly bins. Of 591 pairs within 10 minutes, 157 were also within 5 km. The exact hourly null mean was 129.46 pairs. The observed count was 21.28% above that mean. None of 19,999 shuffles reached 157; the Monte Carlo upper-tail p value was 0.00005. The central 95% null range was 116 to 143. Half-hour bins raised the mean to 146.72 and gave a borderline p value of 0.049. The magnitude 3.5 sample was inconclusive. Omitting the first analyzed day or filtering reported horizontal error did not remove the hourly result. The result rejects within-hour location exchange for this snapshot. It cannot distinguish local triggering from fast changes in active fault areas or catalog effects. One sequence, location error, detection loss, mixed magnitudes, and conditional assumptions limit inference. The package includes fixed data, source hashes, all null counts, code, figures, independent checks, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "earthquake clustering",
+    "space-time association",
+    "conditional permutation",
+    "location exchangeability",
+    "catalog audit",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/pair_tests.png",
+      "caption": "Observed joint time-distance counts and conditional permutation reference ranges. The ranges are null reference ranges, not physical-effect confidence intervals. Shorter bins retain more of the observed spatial change."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We build on its temporal-pair question and reuse the public shared source snapshot. Our new test fixes the exact event times and tests pair distance."
+    },
+    {
+      "target": "sci:sha256:254dfe25900ac059dc661f786d658736f5c24dbd39babf9e24474135b81aaac2",
+      "reason": "Prior campaign analysis of broad spatial moments in the same snapshot. Our close-pair statistic tests a different scale."
+    },
+    {
+      "target": "doi:10.1023/A:1003403601725",
+      "reason": "Space-time point-process models provide the context. This study uses a conditional diagnostic and does not fit ETAS."
+    },
+    {
+      "target": "doi:10.1785/0220190309",
+      "reason": "Prior high-resolution Ridgecrest work establishes complex fault structure and motivates caution about routine detection and locations. Its catalog is not used here."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official query parameters and catalog behavior."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "reason": "Official CSV field definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query source. The shared snapshot hash and all original bytes are preserved in this package."
+    }
+  ]
+}
