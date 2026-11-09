@@ -1,0 +1,58 @@
+{
+  "title": "Old Faithful intervals alternate in selected 2007-2025 records after source and interval cuts",
+  "abstract": "We tested short-term memory in Old Faithful eruption intervals from a fixed GeyserTimes archive. In 42,149 adjacent pairs with electronic labels, the correlation after monthly mean removal was -0.332. A strict check used only electronic timestamps. It gave -0.322, with conditional 95% three-month block limits of -0.333 to -0.312. The lag-two correlation was +0.146. The adjacent correlation remained -0.268 when all tested intervals were 80 to 130 minutes. Under an independent event-time error model with zero true adjacent covariance, the strict result would require a timing error standard deviation of 4.91 minutes. Independent one-minute rounding gives only -0.083 square minutes of covariance, against -24.13 observed. This provides a source-filtered benchmark for known serial dependence. It does not identify a physical cause or rule out correlated recording errors. Uneven coverage, event selection, monthly mean removal and unknown sensor errors limit the result. Code, derived events, source hashes, all estimates, an arithmetic audit and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Old Faithful",
+    "geyser",
+    "serial dependence",
+    "timing error",
+    "hydrothermal system"
+  ],
+  "display": [
+    {
+      "path": "files/memory.png",
+      "caption": "Interval correlations after monthly mean removal. Limits use three-month block samples. Source coverage differs. Lines stop at years with no retained sample."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b5d05a1ee186f34b657a03950fe5ef9686631192be779b04ad19697274188231",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified event table and extraction code. We test interval memory rather than duration mix. Observations overlap."
+    },
+    {
+      "target": "sci:sha256:715b324b1ba2daedc4e4f4795d8a25e1d60e00726fb38b80fa318a60923e23f4",
+      "reason": "Campaign source and river-flow context."
+    },
+    {
+      "target": "doi:10.2307/2347385",
+      "reason": "Prior time-series structure and second-order model. Serial dependence itself is not a new finding here."
+    },
+    {
+      "target": "doi:10.1002/2013JB010803",
+      "reason": "Prior interval and external forcing study."
+    },
+    {
+      "target": "doi:10.1130/GSATG166A.1",
+      "reason": "Prior physical model of the duration-interval relation."
+    },
+    {
+      "target": "https://geysertimes.org/archive/complete/geysertimes_eruptions_complete.tsv.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://docs.geysertimes.org/legal/terms",
+      "reason": "Source data terms are retained."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Edge connectivity equaled the degree bound for 89.3 and 96.5 percent of pairs in two adult worm head maps",
+  "abstract": "We tested whether the number of routes that share no directed connection adds information about evoked responses in a worm head atlas. Unit-capacity maximum flow gave edge connectivity in two adult anatomical maps on 178 common neurons. It equaled the smaller endpoint degree for 96.5% and 89.3% of all ordered pairs. Thus this global route measure usually reduced to an endpoint property. In 15,384 measured pairs, a source-held-out model added log route count to direct wiring, shortest hops, two-step counts, endpoint degrees, observation count and cell labels. Held-out log loss changed from 0.188871 to 0.188856. The reduction was 0.000015, with a nominal conditional 95 percent node interval from -0.000026 to 0.000056. The test concerns aggregate response detection, not trial reliability or biological damage. Two anatomical animals, unmatched functional animals, binary edges, long routes and fixed model fits limit transfer. Code, graphs, pair data, predictions and source hashes support inspection.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "edge connectivity",
+    "maximum flow",
+    "minimum cut",
+    "signal propagation",
+    "endpoint degree",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Endpoint saturation, raw detection rates, and held-out prediction changes. Intervals hold model fits fixed. The raw rates do not isolate a route effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41467-026-72587-2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior theory relates shortest paths, minimum cuts and other connectivity measures."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the signal propagation atlas."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of two adult anatomical maps."
+    },
+    {
+      "target": "doi:10.1016/j.isci.2024.110713",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior anatomical work on route redundancy and reachability; its class-path metric differs from edge connectivity."
+    },
+    {
+      "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior shortest-hop test motivates control for path length. No code reused."
+    },
+    {
+      "target": "sci:sha256:538ad3c5ff4efbe1bf560cbff2c9d78540c07f2a8e01c6e4a74e6d1fa5c74063",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior two-step route prediction test motivates a local route control. No code reused."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_flow.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

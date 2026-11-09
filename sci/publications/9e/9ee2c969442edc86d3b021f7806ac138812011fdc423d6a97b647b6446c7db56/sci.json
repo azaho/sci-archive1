@@ -1,0 +1,79 @@
+{
+  "title": "Seasonal surface warmth gave no clear common link to deeper catches in four US trawl samples in 1982-2019",
+  "abstract": "We tested whether warm survey seasons were linked to deeper catches relative to sampled depth within strata. We used eastern Bering Sea and Northeast US fall surveys in 1982-2000 and 2001-2019. Fixed samples contained 71 strata, 22,753 hauls and regional lists of 59 and 62 persistent taxa. We rebuilt a published exact depth decomposition and matched NOAA ERSST v5 surface temperature to the same strata. Four annual models controlled linear year and the later Northeast survey transition. Within-stratum slopes were 0.35, 0.18, -0.43 and -1.20 m per C. All eight adjusted total and within-stratum intervals included zero. Covariance-lag, survey-step and consecutive-year checks did not establish a common deeper-catch link. This does not show no temperature effect. Surface temperature is a coarse proxy for bottom exposure. Selected taxa, catchability, changing stations and short series limit inference. The package preserves source hashes, sufficient evidence, reused code, all estimates and independent numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "species distributions",
+    "temperature",
+    "depth",
+    "trawl survey",
+    "observation bias",
+    "OceanAdapt",
+    "regional replication",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/temperature_depth.png",
+      "caption": "Temperature slopes for total and within-stratum catch depth, with eight-test adjusted working intervals. All eight intervals include zero. The right panel shows the three exact additive slope parts as point estimates. Positive slopes mean deeper water. The later Northeast model controls the 2009 survey transition."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7d56f1682eda1118cd6922fb408ff06187eaaeee5a05ce3992931fdb48496d0a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuse its unchanged depth construction code and fixed sample. Rebuild raw data and add annual temperature tests. Observations overlap."
+    },
+    {
+      "target": "sci:sha256:3551fe2177f2406d73e5b6fcb8046eed5e9d392af34b4b87cbdde5a73f3c2d7d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adapt its fixed-centroid, fixed-ocean-cell and area-weighted seasonal temperature method to the larger depth-valid footprint. This study tests depth, not richness."
+    },
+    {
+      "target": "doi:10.1126/science.1239352",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.fisheries.noaa.gov/new-england-mid-atlantic/science-data/northeast-multispecies-bottom-trawl-survey",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Documents the 2009 vessel and protocol transition used to specify a primary step control."
+    }
+  ]
+}
