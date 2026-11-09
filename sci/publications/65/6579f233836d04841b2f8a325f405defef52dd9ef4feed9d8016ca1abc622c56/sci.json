@@ -1,0 +1,92 @@
+{
+  "title": "A passive electrical time score gave no clear calcium persistence prediction gain in two worm activity samples",
+  "abstract": "We tested whether a passive electrical time score improves predictions of neuron calcium persistence. Controls were local wiring strength, cell type and soma position. We linked two partial adult worm electrical maps to public activity data by neuron identity. The primary test omitted whole neuron classes from all 40 Atanas animals. It used 2,847 neuron records from 138 neurons. Added score information changed squared prediction error by a gain of -0.46 percent. The nominal 95 percent animal and class bootstrap interval was -2.39 to 1.36 percent. Frozen fits in eight separate Dag animals gave -1.44 percent gain, with interval -3.72 to 0.68. Negative gain means larger error. No planned sensitivity gave a clear gain in both samples. Persistence ranks were partly repeatable across recording halves and across samples. The score mostly tracked local electrical strength. Partial wiring, unmatched structural animals, calcium kinetics, finite recordings and conditional uncertainty limit the test. It does not show that electrical coupling has no effect. Code, autocorrelation curves, source hashes, predictions and numerical checks form a reproducible benchmark.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "electrical connectivity",
+    "calcium persistence",
+    "passive network",
+    "neuron class validation",
+    "independent animal sample",
+    "null result",
+    "temporal benchmark"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "A fixed passive electrical score did not clearly improve calcium persistence predictions. The figure shows observed persistence, recording-half rank agreement, and every planned prediction-gain test. Lines in panel C give nominal 95 percent animal and neuron-class bootstrap intervals. Partial wiring and conditional uncertainty limit the result."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41467-023-37613-7",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified atlas-position and neuron-type tables and behavior-control design. The present outcome is temporal persistence, not pair co-activity."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test of spatial eigenmode variance in the same activity studies. It did not test the temporal score evaluated here."
+    },
+    {
+      "target": "https://zenodo.org/records/19388374",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://zenodo.org/records/19414639",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/NeuroAtlas.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned definition of maximum-based electrical symmetrization; data URLs and hashes are recorded in provenance.json."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original atlas source for the table reused from the verified campaign publication."
+    }
+  ]
+}

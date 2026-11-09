@@ -1,0 +1,133 @@
+{
+ "title": "Chemical synapse direction gave no forward Granger lead in 40 freely moving C. elegans after per-neuron timing control; time-reversed Granger gave a small presynaptic lead",
+ "abstract": "Question: does the direction of a chemical synapse predict which neuron leads in spontaneous whole-brain calcium activity of C. elegans, after we remove one timing value per neuron? Data: 40 freely moving NeuroPAL animals (Atanas, Kim et al. 2023; primary) and 8 animals (Dag et al. 2023; replication); Cook 2019 and Witvliet 2021 D7 and D8 chemical connectomes; the Randi 2023 optogenetic signal propagation atlas. Method: net pairwise Granger index (lag 3, 1.8 s) for each pair in each animal; mean over animals; model with a timing potential per neuron plus the chemical log-weight difference; 2,000 neuron-label permutations; plan written before the outcomes. Results: without potentials, postsynaptic neurons appeared to lead (r = -0.074). With potentials, the primary effect was zero (partial r -0.010, p = 0.40, 7,872 pairs; Witvliet -0.002 and +0.006; 18 of 40 animals positive). Behaviour removal, lag 1 or 6, unstimulated animals and the Dag animals gave the same null. The pre-specified time-reversed Granger (TRGC) check gave a small presynaptic lead: +0.046, +0.047 and +0.059 (p <= 0.001), 37 of 40 animals positive, but only +0.024 to +0.037 (p = 0.025 to 0.065) in the 8 Dag animals. Pair-level smoothness controls kept +0.039 to +0.041. Forward-Granger potentials followed trace smoothness (Spearman 0.50) and trophic level (0.33); TRGC potentials did not follow smoothness. A simulation showed that unequal noise reverses forward Granger but not TRGC, and that a slower target biases both. Atlas response direction did not agree with spontaneous lead (partial r -0.014, p = 0.30; TRGC 12 of 40 animals positive). Limitations: connectomes and atlas come from other animals; 0.6 s calcium frames; pairwise analysis without conditioning; smoothness is only a proxy for indicator kinetics, so a kinetic cause of the TRGC effect remains possible; small replication set from the same laboratory; exploratory checks were added after the planned tests.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "connectome",
+  "chemical synapse",
+  "Granger causality",
+  "time-reversed Granger",
+  "lead-lag",
+  "whole-brain imaging",
+  "NeuroPAL",
+  "signal propagation atlas",
+  "structure-function",
+  "trophic level",
+  "calcium imaging",
+  "null result",
+  "directed functional connectivity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_direction_main.png",
+   "caption": "A: Partial r of net lead and chemical direction after per-neuron timing potentials, 40 Atanas animals. Forward Granger (grey, primary) is null; time-reversed Granger (blue) gives a small positive effect; Randi atlas direction gives no agreement. Bars: 1.96 SD of the permutation null. B: The direction signal is in the reversed-time part, largest for reciprocal pairs. C: Pair-level kinetic covariates decrease the TRGC effect only a little."
+  },
+  {
+   "path": "files/figures/fig3_per_animal.png",
+   "caption": "Partial r in each animal. A: Cook chemical direction. TRGC is positive in 37 of 40 Atanas animals; forward Granger is not. B: Randi 2023 response direction gives mostly negative values."
+  },
+  {
+   "path": "files/figures/fig5_simulation.png",
+   "caption": "Simulated calcium-like traces (200 runs each). With a shared input, unequal noise reverses forward Granger but not TRGC. A slower target gives a false lead in both measures."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its connectome edge tables, neuron types, label rules and behaviour design, and we extend its zero-lag co-activity question to directed lead."
+  },
+  {
+   "target": "sci:sha256:fea404fc826486791a933e7997984e6864538661c3296f9983f3c22227c76e3e",
+   "reason": "It found that Randi 2023 recordings differ from freely moving recordings; we use this to interpret the atlas disagreement."
+  },
+  {
+   "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found that atlas response timing does not follow anatomy; our spontaneous-lead result agrees that timing at this frame rate gives little wiring information."
+  },
+  {
+   "target": "sci:sha256:de1b39841752948225c749f9a07d8f9f49a5ea0585c8d6f82731abfbfc71fcf6",
+   "reason": "It found that chemical direction does not predict evoked response direction in the Randi atlas; we found that the atlas direction also does not predict spontaneous lead.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/19388374",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.04.023",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/19414639",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2012.09.036",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Time-reversed Granger causality."
+  },
+  {
+   "target": "doi:10.1109/TSP.2016.2531628",
+   "reason": "Validity of time reversal for Granger causality tests."
+  },
+  {
+   "target": "doi:10.1098/rsos.201138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Trophic levels of directed networks."
+  }
+ ]
+}
