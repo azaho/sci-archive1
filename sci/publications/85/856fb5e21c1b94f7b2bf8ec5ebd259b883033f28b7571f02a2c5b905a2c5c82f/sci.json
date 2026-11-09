@@ -1,0 +1,61 @@
+{
+  "title": "The 2004 source-shape switch reduced calculated GCMT time widths in a Mw 5.8 to below 7.5 audit",
+  "abstract": "We audited assumed source durations in the Global CMT catalog for 1976-2020. We selected 8,367 records with moment magnitude from 5.8 to below 7.5. We removed cube-root moment scaling and calculated the time standard deviation for each recorded source shape. Between 1998-2003 and 2004-2009, median scaled half-duration changed by -2.43%. Median scaled time width changed by -31.01%, with a conditional 95% three-year block interval of -32.03% to -29.89%. For the same half-duration, the boxcar-to-triangle switch alone reduces width by 29.29%. An earlier fall in scaled half-duration also occurs near 1992-1993. These are catalog measurements of assumed functions. They do not show a change in actual earthquake rupture duration. Current catalog documentation already states that half-duration is assigned from moment. We add an aggregate audit across eras and a shape-aware calculation tool. One revised catalog, selected magnitude limits, exploratory era choices and unmeasured source errors limit interpretation. Code, aggregate tables, source hashes, a numerical audit and a figure support reproduction. External event records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Global CMT",
+    "source duration",
+    "catalog audit",
+    "source time function",
+    "earthquake dynamics"
+  ],
+  "display": [
+    {
+      "path": "files/duration_audit.png",
+      "caption": "Annual scaled half-duration and calculated time width in the selected catalog. The lower panel uses the recorded source shape and a common-boxcar reference. These widths describe assumed source functions, not measured rupture durations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5ade26e06e269e86e6c34238e5127cc0047bb3f1d6c0f18220a956484a9cd1cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the documented shared source snapshot and extend its warning about assumed half-duration. We wrote new code and did not copy event-level outputs."
+    },
+    {
+      "target": "doi:10.1029/JB086iB04p02825"
+    },
+    {
+      "target": "doi:10.1016/j.pepi.2012.04.002"
+    },
+    {
+      "target": "doi:10.1016/j.epsl.2013.05.024",
+      "reason": "Prior source-timing study states that GCMT half-duration uses an empirical rule and distinguishes it from centroid delay."
+    },
+    {
+      "target": "doi:10.1093/gji/ggac314",
+      "reason": "Prior waveform study describes boxcar source functions before 2004 and triangular functions after that date."
+    },
+    {
+      "target": "https://www.globalcmt.org/CMTcite.html"
+    },
+    {
+      "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/allorder.ndk_explained",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/jan76_dec20.ndk",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
