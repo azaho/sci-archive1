@@ -1,0 +1,26 @@
+{
+  "title": "Mean interannual summer-temperature tracking by ring widths at 759 conifer sites north of 55 N did not decrease after 1960, and 152 sites to 2010+ showed no recovery after 1990",
+  "abstract": "Question: did high-latitude tree-ring growth lose its interannual tracking of summer temperature after 1960 (the divergence problem), and did tracking recover after about 1985 where aerosol dimming changed to brightening, as the dimming explanation forecasts? Approach: we parsed raw ITRDB ring-width files for 759 conifer sites at or north of 55 N (41,536 series). We made a chronology without curve fitting (mean year-to-year change of log ring width) and correlated it with the year-to-year change of June-August Berkeley Earth temperature in 1931-1960, 1961-1990 and 1991-2020. We used a 5x10 degree block bootstrap, a time-reversed selection placebo, a 1960-truncation end-effect placebo, and a regression-to-the-mean expectation for 152 sites with records to 2010 or later. Results: mean Fisher z was 0.319 and 0.302 in the first two periods (change -0.017, 95% CI -0.070 to +0.040), with the same result for a ModNegExp index, CRU TS tmx, other seasons, depth limits, latitude 60 N or more, Picea and Larix. Sites selected for high correlation in 1931-1960 lost 0.127 z, but sites selected in 1961-1990 lost 0.106 z going back in time, so the apparent loss is regression to the mean. End effects were negligible (-0.003 z). After 1990 there was no recovery (net of regression to the mean -0.05, -0.12 to +0.05). Europe, where brightening was strongest, continued to decrease (-0.09, -0.15 to +0.01; mostly Scots pine), and North America increased (+0.14, +0.04 to +0.23). This order is opposite to the dimming forecast. Limitations: interannual correlations only; a growth-level (trend) test failed its own pre-1960 placebo, so we make no claim about low-frequency divergence; the post-1990 sample is small and mostly Fennoscandian; dimming timing comes from the literature, not site data.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["dendroclimatology", "divergence problem", "tree rings", "ITRDB", "global dimming", "boreal forest", "summer temperature", "regression to the mean", "selection bias", "placebo test", "Berkeley Earth", "climate sensitivity"],
+  "display": [
+    {"path": "files/figures/fig2_periods_rtm.png", "caption": "Mean Fisher z of the correlation between year-to-year ring-width change and June-August temperature change, by period, with 95% block-bootstrap intervals. Left: 759 conifer sites at or north of 55 N. Other panels: 152 sites with records to 2010 or later, all and by continent. Orange diamonds: 1991-2020 values expected from 1961-1990 values by regression to the mean."},
+    {"path": "files/figures/fig3_placebos.png", "caption": "Left: selection placebo. Sites selected for high correlation in one period lose correlation in the other period by about the same amount, forward or backward in time. Right: the growth-level test gives offsets of about 0.4 SD also in a pre-1960 placebo, so it cannot detect trend divergence with these chronologies."},
+    {"path": "files/figures/fig1_site_map.png", "caption": "Sites (759 ITRDB conifer ring-width sites at or north of 55 N), coloured by change in Fisher z from 1931-1960 to 1961-1990. Black rings mark the 152 sites with records to 2010 or later."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/35596", "relations": ["reviews"], "reason": "Original report of reduced temperature sensitivity of tree growth at high northern latitudes; we test the interannual part in a larger panel."},
+    {"target": "doi:10.1016/j.gloplacha.2007.03.004", "reason": "Review of the divergence problem and possible causes, including dimming and detrending."},
+    {"target": "doi:10.1038/ncomms4836", "relations": ["challenges"], "reason": "Light-availability (dimming) explanation; its forecast of recovery with brightening does not hold for interannual temperature tracking in our data."},
+    {"target": "doi:10.1029/2008JD011470", "relations": ["uses"], "reason": "Regional timing of dimming and brightening."},
+    {"target": "doi:10.1007/s10584-009-9594-2", "relations": ["supports"], "reason": "Selection and method choices can create divergence; our time-reversed placebo quantifies the selection part."},
+    {"target": "doi:10.1126/sciadv.aat4313", "reason": "ITRDB-based change in climate drivers of tree growth."},
+    {"target": "doi:10.1111/jbi.13488", "reason": "ITRDB data availability and representativeness."},
+    {"target": "doi:10.5194/essd-12-3469-2020", "relations": ["uses"], "reason": "Berkeley Earth gridded temperature (primary climate data)."},
+    {"target": "doi:10.1038/s41597-020-0453-3", "relations": ["uses"], "reason": "CRU TS 4.09 tmx (robustness climate data)."},
+    {"target": "https://www.ncei.noaa.gov/products/paleoclimatology/tree-ring", "relations": ["uses"], "reason": "ITRDB raw ring-width measurements; contributors are listed in files/provenance/itrdb_sites_used.csv."}
+  ]
+}
