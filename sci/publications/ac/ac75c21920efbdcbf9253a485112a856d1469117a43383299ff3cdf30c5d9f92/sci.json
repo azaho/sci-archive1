@@ -1,0 +1,22 @@
+{
+  "title": "Periods of 727 ASAS-3 Mira variables changed by 1.1 percent rms from 2000-2009 to 2013-2025 as random wander; early trends did not continue, and only NSV 08001 exceeded the wander",
+  "abstract": "Question: do Mira variables show period changes over two decades that are larger than random period wander, as expected after a thermal pulse? We measured the periods of the 2,896 ACVS Mira stars in independent time windows of ASAS-3 (V, 2000-2009) and ASAS-SN Sky Patrol v2 (V and g, 2012-2025), with a cycle-jackknife error, and used Gaia DR3 long-period-variable periods as a third check. For 727 stars that pass strict quality and saturation cuts, the period change over 15.7 years has a robust scatter of 1.23 percent with a median error of 0.47 percent; a Gaussian excess of 1.19 percent rms fits the data (likelihood ratio 680), and the mean change is -0.10 percent. Inside ASAS-SN, adjacent windows 3.1-3.6 years apart agree with the errors, but windows 6.7 years apart show a 0.76 percent excess, so the periods wander with time. The 2001-2007 trend does not predict the 2015-2021 trend (322 stars, Spearman 0.05, p = 0.35), and the AAVSO rates of Templeton et al. (2005) do not predict the new changes for the 8 weak-case stars that pass our cuts (1 of 8 with the same sign). Against the wander model, 8 stars have |z| > 3 (2.0 expected); after Bonferroni correction only NSV 08001 (265.2 to 248.3 d, -6.6 percent, Gaia 252 +/- 10 d) remains as a fast-change candidate, and one other outlier (V1596 Sgr) is an ASAS-3 artifact. Four stars with consistent 3-5 percent changes (RY Hyi, V1055 Oph, NSV 09906, ASAS J054812-3200.1) are consistent with the wander. Limitations: southern sky only, 15.7-year baseline, saturated bright Miras (R Aql, R Hya) excluded, and residual wrong ASAS-3 periods for faint bulge stars.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.SR"}
+  ],
+  "keywords": ["Mira variables", "period change", "thermal pulse", "AGB stars", "ASAS-3", "ASAS-SN", "Gaia DR3", "long-period variables", "forecast test", "random walk"],
+  "display": [
+    {"path": "files/figures/fig1_excess_scatter_vs_lag.png", "caption": "Period scatter beyond the jackknife measurement error versus the time between window centres. Green: ASAS-SN thirds (same survey); blue: ASAS-3 thirds; red: ASAS-3 third versus ASAS-SN third; black diamond: likelihood fit for the full ASAS-3 and ASAS-SN windows (727 stars). The dashed line is a random walk in ln P through the black point. Error bars are 68 percent bootstrap ranges over stars; a value at zero means no excess."},
+    {"path": "files/figures/fig5_trend_persistence.png", "caption": "The ASAS-3 period trend from 2001 to 2007 (A1 to A2) against the ASAS-SN trend from 2015 to 2021 (B1 to B2) for 322 Miras. The four windows do not overlap. The dashed line shows full continuation of the early trend; the data show no relation."},
+    {"path": "files/figures/fig2_z_vs_wandering.png", "caption": "Distribution of z = (period change) / (measurement error, jitter and 1.19 percent wander) for 727 Miras, with the expected Gaussian. Eight stars have |z| > 3 (2.0 expected); two have |z| > 4: V1596 Sgr (ASAS-3 artifact, at the right edge) and NSV 08001."}
+  ],
+  "citations": [
+    {"target": "https://arxiv.org/abs/astro-ph/0210283", "relations": ["uses"], "reason": "ASAS-3 photometry and the ASAS Catalog of Variable Stars (Pojmanski 2002) define the sample and the first epoch."},
+    {"target": "doi:10.1088/1538-3873/aa80d9", "relations": ["uses"], "reason": "ASAS-SN photometry (Kochanek et al. 2017) gives the second epoch."},
+    {"target": "https://arxiv.org/abs/2304.03791", "relations": ["uses"], "reason": "ASAS-SN Sky Patrol v2 (Hart et al. 2023) light-curve service."},
+    {"target": "doi:10.1051/0004-6361/202243940", "relations": ["uses"], "reason": "Gaia DR3 source catalogue."},
+    {"target": "doi:10.1051/0004-6361/202244241", "relations": ["uses"], "reason": "Gaia DR3 long-period-variable periods give an independent check."},
+    {"target": "doi:10.1086/431740", "relations": ["reviews", "challenges"], "reason": "We test whether the AAVSO period-change rates of Templeton, Mattei and Willson (2005) predict 2005-2019 changes; for the 8 weak cases that pass our cuts they do not."},
+    {"target": "doi:10.1134/S1063772917010085", "relations": ["uses"], "reason": "GCVS names and historical periods (context only)."}
+  ]
+}
