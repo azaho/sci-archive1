@@ -1,0 +1,100 @@
+{
+ "title": "In larval zebrafish, a single-neuron projectome predicts region-level trial-residual coupling beyond distance and region effects, but not stimulus-locked coupling (25 regions, 11 fish)",
+ "abstract": "Question: does the anatomical projectome of the larval zebrafish brain predict which region pairs have correlated activity, and is the prediction specific to the pair? Approach: we registered 4,426 mapzebrain single-neuron tracings to the Z-Brain space of whole-brain light-sheet calcium data from 11 larvae (Chen et al. 2018). We made a structural score S for 1,225 pairs of 50 region-hemisphere nodes and regressed functional coupling (FC) on a distance spline, hemisphere flags and node fixed effects. We used edge-permutation and region-label nulls, per-fish fits, split-half reliability and five structural specifications. Findings: S and FC correlate (r = 0.45), but distance and region effects explain most of this link. For whole recordings with the primary score, the pair-specific partial r was 0.02 (p = 0.67), although residual FC (reliability 0.90) and residual S (0.79) are reliable; with other structural definitions it was 0.11 (p < 0.04). In five fish with stimulus trials, trial-residual (noise) FC had a positive pair-specific link to S in every fish and every specification (partial r 0.10 to 0.19; OMR p = 0.003, PT p = 0.014), while stimulus-locked (signal) FC had none (-0.04 to 0.07). High-pass filtering alone did not change the link. Limitations: only five fish for condition contrasts, so the noise-minus-signal difference is not significant at the fish level (minimum possible p = 0.0625); coarse regions; tracings have no axon or dendrite labels; atlas registration is approximate.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "larval zebrafish",
+  "projectome",
+  "functional connectivity",
+  "structure-function",
+  "noise correlations",
+  "mapzebrain",
+  "light-sheet imaging",
+  "Z-Brain",
+  "node fixed effects",
+  "permutation null"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_conditions.png",
+   "caption": "Pair-specific partial correlation between projectome score and FC (distance and node covariates) in five fish. Orange: trial-residual (noise) FC; aqua: stimulus-locked (signal) FC; blue: total FC. Bars: group FC; dots: single fish; grey: 95% edge-permutation null; p: region-label null."
+  },
+  {
+   "path": "files/figures/fig2_structure_fc.png",
+   "caption": "Whole recordings, 11 fish. Left: zero-order relation of projectome score and FC, coloured by distance. Middle: residuals after distance and node effects. Right: partial r for two covariate designs and two FC variants."
+  },
+  {
+   "path": "files/figures/fig4_specifications.png",
+   "caption": "Group partial r over five structural specifications. Filled markers: p < 0.05. Noise FC links are positive in all specifications; signal FC links are near zero."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1016/j.neuron.2018.09.042",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the whole-brain light-sheet activity data and Z-Brain masks."
+  },
+  {
+   "target": "doi:10.25378/janelia.7272617.v4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data record of the light-sheet data."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.04.034",
+   "relations": [
+    "uses"
+   ],
+   "reason": "mapzebrain single-neuron tracings and standard brain."
+  },
+  {
+   "target": "https://mapzebrain.org",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the tracing snapshot of 2026-10-28."
+  },
+  {
+   "target": "doi:10.1038/nmeth.3581",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Z-Brain atlas regions."
+  },
+  {
+   "target": "doi:10.1016/j.media.2007.06.004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SyN registration method (ANTs)."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Related campaign result that used cell-level fixed effects to separate pair-specific structure-function links in MICrONS; we apply the same control at region scale."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "reason": "Related campaign result: mouse tracer connectome predicts resting fMRI beyond distance, with state dependence."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Related campaign result: mouse tracer strength predicts spontaneous inter-areal spike correlations beyond distance."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Related campaign result in Drosophila: FlyWire wiring predicts neuropil calcium correlations beyond distance."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "reason": "Related campaign result in C. elegans: gap junctions predict co-activity after controls."
+  }
+ ]
+}

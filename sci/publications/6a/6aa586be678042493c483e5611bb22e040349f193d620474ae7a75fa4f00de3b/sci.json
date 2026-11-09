@@ -1,0 +1,92 @@
+{
+  "title": "Similar input profiles reduced flicker response prediction error in 32 selected fly visual cell types",
+  "abstract": "We tested whether anatomical input-profile similarity predicts the flicker response shape of a held-out fly visual cell type. We linked public activity and two connectome distance tables by exact type names. Label checks excluded conflicting cells and table axes. The final sample had 271 neurons from 57 flies in 32 types. Nested validation chose neighbor counts and mixture weights without the held-out response. Combined input distances reduced mean shape error from 0.8333 for a global mean to 0.6974, a 16.3% reduction. Unrestricted and broad-class label tests each had Holm-adjusted p = 0.001. Combining specimens gave an uncertain added benefit. The female-only model had error 0.7048. The gain against a training-selected single source changed sign with a stricter cell count, and its fly resampling range included zero. A post hoc check with separate training and target flies retained a smaller 7.3% gain against the global mean. Input similarity provides a useful prediction baseline in this selected sample. Mean calcium responses, few cells per type, ambiguous labels, two anatomical specimens, and shared type definitions limit inference. The result does not establish a circuit mechanism or a rule across species, regions, or behavior. Code, source hashes, small source arrays, prediction tables, null scores, resampling draws, figures, and independent checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "predictive connectomics",
+    "Drosophila",
+    "optic lobe",
+    "flicker response",
+    "cell types",
+    "input profiles",
+    "nested validation",
+    "negative pooling result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/prediction_and_nulls.png",
+      "caption": "Combined input-profile distances reduced held-out mean response-shape error in 32 selected types. Both refitted label tests had Holm-adjusted p = 0.001."
+    },
+    {
+      "path": "files/figures/type_gains_and_sensitivity.png",
+      "caption": "Combined inputs helped 24 of 32 types against the global mean. The gain from pooling two sources changed sign in the stricter cell-count sample. The separate-fly row is a post hoc diagnostic."
+    },
+    {
+      "path": "files/figures/all_type_responses.png",
+      "caption": "All observed and held-out predicted type response vectors. Each frequency block has 66 samples. Observed vectors have unit norm. Predicted vectors are not normalized again."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1016/j.cell.2025.05.007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of the activity data and deposited connectivity summaries."
+    },
+    {
+      "target": "doi:10.5061/dryad.pg4f4qs1j",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 7, version ID 369181. Source arrays, ROI labels, and two input-distance summaries."
+    },
+    {
+      "target": "https://github.com/tacbox3/CurrierClandinin/tree/afa594507be380c09669c36282f3b224e9e58ae4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Inspected temporal analysis and flicker import definitions. No code was copied or reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07939-3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior connectome-constrained response prediction motivates a simple held-out baseline."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08746-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male connectome underlying one of the deposited input-distance summaries."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07981-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Female connectome underlying the other deposited input-distance summary."
+    },
+    {
+      "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related regional fly structure-function result. Different activity data and spatial units; no data or code reused."
+    },
+    {
+      "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related multi-species communication benchmark. No data or code reused."
+    }
+  ]
+}

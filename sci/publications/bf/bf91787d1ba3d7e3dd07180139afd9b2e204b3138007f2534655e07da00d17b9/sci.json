@@ -1,0 +1,57 @@
+{
+  "title": "A factor 1.25 error allowance leaves 46 of 1,077 selected Allen connections above a passive amplitude bound",
+  "abstract": "We tested a passive current-to-voltage amplitude bound in Allen cortical slice data. A one-compartment passive cell requires voltage peak no greater than resistance times current peak. Among 1,077 selected connections above fixed amplitude floors, 165 exceed the bound using target peak input resistance. For 46, failure remains when voltage, current, and resistance can each vary independently by a factor from 1/1.25 to 1.25. Four remain at factor 2. We derive an exact error certificate and supply code, source hashes, extracted evidence, and checks. Using the larger of peak and steady resistance leaves 43 failures at factor 1.25 on 1,076 complete edges. Different clamp conditions, dendritic input sites, separate fitted responses, and uncertain errors can explain failures. This checks the use of summaries in a reduced model. It does not show active amplification or a general species difference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "passive integration",
+    "model feasibility",
+    "synaptic amplitude",
+    "error bounds"
+  ],
+  "display": [
+    {
+      "path": "files/passive_bound.png",
+      "caption": "Main amplitude-floor sample. Left: fraction that still fails as each measured value can vary by the stated factor. Right: paired fitted amplitudes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:bcfd8c73c33c3e3640ca279bd3dbd511f6971f9e6218fb35ade1a52f84e00e61",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its higher amplitude floors and fit-warning context; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:e93db9370e84acf32d22ef9eeaf165fb3bb0bc8edba0da72372135fa808c81f8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior common-target decay audit; this work tests an amplitude bound."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/intrinsic.py"
+    }
+  ]
+}

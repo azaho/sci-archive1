@@ -1,0 +1,97 @@
+{
+  "title": "Three known CHIME dispersion trends pass a daily test, but only one passes two 30-day block checks in a 13-source screen",
+  "abstract": "We test linear dispersion-measure changes in 13 CHIME/FRB Catalog 2 repeaters with at least ten accepted observing days across 180 days. Equal-day fits and controls for peak frequency and pulse width retain three known trends after a 13-source correction. Their adjusted slopes are +1.026, -1.291, and +1.415 pc cm^-3 yr^-1 for FRB 20190117A, FRB 20220529A, and FRB 20220912A. Only FRB 20190117A passes both exploratory 30-day block tests; none of the three passes both 90-day block tests. A comparison with 1076 independent FAST records yields ten shared dates. Their CHIME-minus-FAST slope interval includes zero. Thus, the data do not establish a telescope discrepancy or a new plasma signal. Small samples, uncertain temporal dependence, and burst morphology limit physical inference. The package includes frozen inputs, exact source hashes, code, all source tests, controls, simulations, figures, and offline instructions. Job sci-1107-hp-astronomy-1b4768e436bf; topic astronomy; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "CHIME",
+    "fast radio bursts",
+    "dispersion measure",
+    "FAST",
+    "temporal dependence",
+    "wild bootstrap",
+    "null confirmation result"
+  ],
+  "display": [
+    {
+      "path": "files/results/robustness.png",
+      "caption": "Only FRB 20190117A passes both 30-day block checks. The independent comparison on ten shared dates does not resolve a DM slope difference. Block choices are exploratory."
+    },
+    {
+      "path": "files/results/screen.png",
+      "caption": "All 13 selected sources. Conditional daily slope intervals before and after morphology controls."
+    },
+    {
+      "path": "files/results/focus.png",
+      "caption": "Daily median measurements, fitted morphology terms, and time terms for three known trends."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.11570/25.0066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CHIME/FRB Catalog 2, version 20251231. Exact source hash and relevant rows are preserved."
+    },
+    {
+      "target": "https://arxiv.org/abs/2601.09399",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog fields, component structure, fit methods, and instrument flags."
+    },
+    {
+      "target": "https://arxiv.org/abs/2606.23903",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior positive trends for FRB 20190117A and FRB 20220912A in a different and later sample. We do not claim their discovery or reproduce that complete sample."
+    },
+    {
+      "target": "doi:10.3847/2041-8213/ae52f8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior decline and longer monitoring of FRB 20220529A, with an independent Westerbork result."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/aced0b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent FAST observations of FRB 20220912A, Table 1."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier/ba-xv-4e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "VizieR table J/ApJ/955/142/table1 supplies all 1076 FAST records."
+    },
+    {
+      "target": "https://arxiv.org/abs/1811.10748",
+      "reason": "Burst morphology can bias dispersion-measure inference."
+    },
+    {
+      "target": "doi:10.1111/ectj.12107",
+      "reason": "General limits of bootstrap inference with few clusters; our block tests remain approximate."
+    },
+    {
+      "target": "https://chime-frb.ca/tutorials",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public catalog version and retrieval interface."
+    }
+  ]
+}

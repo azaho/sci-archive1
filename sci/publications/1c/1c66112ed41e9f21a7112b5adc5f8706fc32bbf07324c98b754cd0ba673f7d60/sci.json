@@ -1,0 +1,58 @@
+{
+  "title": "Source axon labels gave no clear added 50 Hz prediction value in selected Allen mouse excitatory connections",
+  "abstract": "We tested whether a source axon label improves prediction of initial 50 Hz response change in Allen cortical slice data. Only mouse excitatory connections met the planned support rule: 142 connections from 95 inferred donors, with eight truncated-source connections from six donors. In five donor-held-out folds, adding intact versus truncated status changed donor mean absolute error from 0.187899 to 0.188150. The gain was -0.000251, with a nominal 98.75% conditional donor interval of -0.000793 to 0.000218. Penalty and fold checks gave no positive biological gain. A large synthetic label effect gave a positive gain. Mouse inhibition and both human groups had too few truncated-source donors. The result does not show equal physiology. Rare truncated sources, selected measurements, inferred donors, conditional amplitude control, and one additive model limit the test. Code, evidence tables, hashes, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "axon preservation",
+    "short-term plasticity",
+    "donor validation",
+    "sampling limits"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Selected connections show rare truncated sources. The source axon label gave no clear added prediction value in the supported mouse excitatory group. Intervals condition on fitted predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/tree/b264d8b61abf11d015222865ca081f80655d33d4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned morphology and scalar dynamics definitions."
+    },
+    {
+      "target": "sci:sha256:0e9a7de296c55d3eba22664264bca201d6defdc52e666ad7a32d8246d2f551c2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior source axon preservation and voltage coupling test. We test plasticity prediction in detected connections."
+    },
+    {
+      "target": "sci:sha256:7b7426fe575607c03576c67dd58a8a29c5b601dc04f0684af72b3d4c8fde7776",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior donor-held-out plasticity prediction from graph counts. We test a morphology label; no code or tables reused."
+    }
+  ]
+}

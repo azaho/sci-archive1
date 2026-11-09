@@ -1,0 +1,51 @@
+{
+  "title": "Power-two rise filters lower gain limits in models of 91 selected Allen mouse E-I pairs",
+  "abstract": "We tested how response rise shape changes a negative feedback model based on linked Allen Synaptic Physiology r2.1 records. Power-two rise kernels have an exact three-pole transform per edge. In 91 complete reciprocal excitatory-inhibitory pairs from mouse visual cortex, the full-to-decay-only critical gain ratio had median 0.459 and range 0.127 to 0.703. All 91 gain and crossing-frequency ratios were below one. An equal-mouse geometric mean gain ratio was 0.447, with a descriptive 95% donor bootstrap interval of 0.420 to 0.472. An interior-decay check retained 64 pairs and the same direction. Replacing the four added poles with their mean transit delay gave a median gain ratio of 0.962 relative to the rise model, but a worst ratio of 0.547. Three complete human pairs do not support a transfer test. Independent selection, integration and characteristic-root checks passed. Power two, unit-DC normalization, isolated linear loops, stored fit error and selected slice records limit inference. No neuronal gain, living-brain stability or representation outcome was measured. The package supplies code, derived evidence, source hashes and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "synaptic physiology",
+    "feedback stability",
+    "response rise time",
+    "Allen Institute",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/comparison.png",
+      "caption": "Adding power-two rise shape lowers critical gain in all 91 selected mouse reference models. The mean-delay reduction has a smaller typical error but can underestimate gain by 45.3 percent."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:367fb31164c30154685691c4289453c3ca5519e20951d1bf83162d5402c6cce7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its decay-only model benchmark using the same source, cohort rules and donor parser."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source electrophysiology and cortical connectivity data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/master/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/neuroanalysis/blob/master/neuroanalysis/fitting/psp.py"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Fifteen pooled Kepler tests of KIC 3749404 reject a scaled and shifted profile only in corrected flux",
+  "abstract": "We test whether amplitude scaling and a fixed timing shift explain the known profile change of KIC 3749404. We compare Kepler release 25 quarters 1 to 4 with quarters 13 to 16 on matched detector channels. In 15 pooled twelve-harmonic fits, conditional chi-square tails are below 0.05 in corrected flux and above 0.05 in aperture flux. The main corrected fit leaves 50.23 ppm profile RMS with a tail of 0.00000713. Aperture flux leaves 94.00 ppm with a tail of 0.967. Larger aperture residuals and errors limit that test. Some other harmonic counts and season subsets give aperture rejections. Exact sampling controls recover imposed scale and timing changes. These results show a limit of the stated empirical fits. They do not overturn the published precession result or establish an instrument fault, new signal, planet, or third body. The products share exposures; no second telescope is used. Code, samples, source hashes, sensitivity tables, conditional simulations, figures, and offline instructions are included. Job sci-1107-hp-astronomy-3c457b0135e2; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3749404",
+    "heartbeat binary",
+    "apsidal motion",
+    "profile change",
+    "flux correction",
+    "conditional error model",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/tests.png",
+      "caption": "Fifteen pooled twelve-harmonic tests. Each row has three residual group lengths. The aperture tails exceed 0.05 and the corrected tails are below 0.05. The probabilities are conditional on the fitted baseline and error model."
+    },
+    {
+      "path": "files/profiles.png",
+      "caption": "Early and late low-harmonic profiles for aperture and corrected flux. The lower panels show the residual after an amplitude scale and a fixed timing shift. Season subsets use separate channels. No independent telescope confirms the change."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw1970",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Known target, ephemeris, pulsation harmonics, physical precession interpretation, and baseline cautions. This work adds an empirical profile test and does not refit the detailed binary model."
+    },
+    {
+      "target": "sci:sha256:02fcad12ac41b078d18eb49e67aa5b62146189ce1618647d94b28888750255b1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates matched detector season checks in another heartbeat system. No source data, code, or measurements are copied."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Kepler flux products, time coordinate, and quality flags."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003749404/kplr003749404_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 archive. Source and FITS hashes are preserved."
+    }
+  ]
+}

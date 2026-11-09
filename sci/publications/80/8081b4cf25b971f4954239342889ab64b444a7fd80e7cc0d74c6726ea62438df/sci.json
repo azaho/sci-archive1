@@ -1,0 +1,52 @@
+{
+  "title": "Linear shape trends did not improve held-year predictions for KIC 3749404 in Kepler quarters 1 to 16",
+  "abstract": "We test a quarter-based method for slow changes in the known heartbeat signal of KIC 3749404. We use Kepler release 25 aperture and corrected flux. We fit orbital harmonics in each quarter, then fit detector-season offsets and a common time slope. We remove linear gain and timing directions from the first eight harmonics. The remaining slopes have phase RMS values of 19.02 and 6.45 parts per million per year. Within-season year shuffles often give larger slopes. A time slope raises held-year prediction error by factors of 1.266 and 1.279. A simple tidal model has a poor mean-shape fit and gives no useful test of the published apsidal rate. Thus this method does not support a reliable secular shape-change claim. It does not refute the earlier detailed binary model. No new mode, planet, or third body is found. Both flux products use the same exposures. Code, accepted samples, raw hashes, controls, and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3749404",
+    "heartbeat star",
+    "apsidal motion",
+    "cross-validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "A linear shape trend increases prediction error in every held observing cycle. The dashed line marks equal error."
+    },
+    {
+      "path": "files/shape.png",
+      "caption": "Mean low-harmonic shapes and fitted time slopes. The slopes are descriptive fits. The prediction test does not support a stable trend."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw1970",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the known system, ephemeris, faster pulsation bands, and earlier apsidal interpretation."
+    },
+    {
+      "target": "doi:10.1093/mnras/stae2057",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the corrected plus-sign form of the simple tidal light model."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003749404/kplr003749404_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 source archive. Exact archive and member hashes are in files/provenance.json."
+    }
+  ]
+}

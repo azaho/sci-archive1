@@ -1,0 +1,57 @@
+{
+  "title": "Calibration by connection count changed delay coverage in 516 selected Allen mouse groups",
+  "abstract": "We tested timing interval coverage in 1,327 inhibitory connections from 516 inferred mouse groups in Allen Synaptic Physiology r2.1 small data. Across 100 fixed splits of the same cohort, pooled animal-maximum calibration gave median coverage of 94.8%, 88.1%, and 84.9% for animals with 1, 2-3, and at least 4 selected connections. Calibration within these count groups gave medians of 91.1%, 91.6%, and 92.3%. For the largest count group, median mean width rose from 2.007 to 2.352 ms. Neither method reached 90% coverage in every count group in the primary split. The rank guarantee requires exchangeable animal records within count groups, including selection. The repeated splits are not independent tests. Inferred animal IDs, slice selection, small calibration groups, and no external validation limit the result. This is a same-cohort extension of a prior campaign report, not a new statistical method or a biological reliability law. Code, source hashes, derived evidence, and two figures support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "conformal prediction",
+    "connection count",
+    "circuit timing"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/split_sensitivity.png",
+      "caption": "Coverage and interval width by selected connection count across 100 splits. Points show medians; bars show 5th to 95th percentiles over partitions of the same cohort. These are not confidence intervals."
+    },
+    {
+      "path": "files/evidence/count_coverage.png",
+      "caption": "Coverage and mean interval width in the primary split. Labels give animals covered over test animals. The dashed line marks 90%."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ce916367335335034f51625ed00517a37953659fcbf2fb3212172da2a141cb63",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same cohort extension. Adapts published extraction, group parser, design matrix, and quantile code. Adds count-group calibration and audits."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2306.06342"
+    },
+    {
+      "target": "https://op.cs.rhul.ac.uk/pmwiki.php?n=Main.MondrianConformalPredictor"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

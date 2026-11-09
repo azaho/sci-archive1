@@ -1,0 +1,52 @@
+{
+  "title": "A linear shape trend raises held-year error in eight main Kepler Q1 to Q16 tests of KIC 3749404",
+  "abstract": "We test a simple measure of light-curve shape change in the known heartbeat binary KIC 3749404. We fit 30 orbital harmonics and a linear baseline in each of 16 Kepler release 25 quarters. We remove a brightness scale and a phase shift from harmonics 2 to 10. A time trend with four detector-season terms raises held-year squared error in all four years for aperture flux and all four years for corrected flux. Error ratios are 1.038 to 1.393 and 1.028 to 1.209. A sampled synthetic tide with a 2-degree-per-year change gives ratios below 0.114. The test can recover this simple injected shape change but does not give useful prediction in the real data under the main fit. Quadratic baselines change one of four aperture-flux error ratios to 0.975. This result limits this method. It does not reject the published apsidal-motion model, find a new object, or identify an instrument cause. Both flux products use the same exposures. Independent observations are absent. Code, accepted samples, input hashes, controls, and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3749404",
+    "heartbeat binary",
+    "apsidal motion",
+    "prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/shape.png",
+      "caption": "Quarter shape scores after gain and phase removal, fitted three-year change, and held-year prediction error. The score direction uses all quarters and is descriptive. The held-year fits use training data only. Ratios above one show worse prediction with a time trend."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw1970",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known system, reported orbital evolution, period, reference time, pulsation harmonics, and illustrative geometry."
+    },
+    {
+      "target": "https://arxiv.org/abs/1608.02493",
+      "reason": "Accessible original report used to check methods and tables."
+    },
+    {
+      "target": "https://academic.oup.com/mnras/article/489/4/4705/5561509",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gives the analytical projected-tide formula used in the illustrative control."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003749404/kplr003749404_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Kepler release 25 source archive. Exact archive and FITS hashes are in files/provenance.json."
+    }
+  ]
+}

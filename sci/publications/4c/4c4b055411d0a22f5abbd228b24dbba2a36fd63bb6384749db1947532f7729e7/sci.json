@@ -1,0 +1,74 @@
+{
+ "title": "Spine input count predicted population coupling in 12,685 MICrONS neurons, soma input count did not, and 179 V1DD neurons gave no relation that passed a fixed two-mouse replication rule",
+ "abstract": "Question: does the input anatomy of one excitatory cortical neuron predict how reliably it responds to a repeated movie and how strongly it follows the population? Does the relation found in one mouse hold in a second mouse?\nApproach: we used calcium imaging and electron microscopy of the same neurons in the MICrONS mouse (12,685 neurons) and the V1 Deep Dive mouse (179 neurons with complete input tables). For each neuron we counted soma, spine and shaft input synapses. We fit one model in each mouse with fixed effects for session, imaging plane and cell type, and controls for position, nucleus volume and imaging noise. We used a cluster bootstrap. We wrote and hashed the plan before we computed these relations. A relation counted as replicated only if it had Holm-adjusted significance with the same sign in both mice.\nResults: no relation met the replication rule. All six V1DD Holm p values were 0.86 or more, and V1DD intervals were wide. In MICrONS, spine input count predicted higher population coupling (partial slope 0.150, 95% interval 0.120 to 0.185, Holm p 0.006). The V1DD estimate was 0.116 (interval -0.045 to 0.279). In MICrONS, soma input count did not predict reliability (slope -0.007, interval -0.030 to 0.013) or coupling (-0.008, interval -0.031 to 0.014). Thus perisomatic input count had no clear relation to these two properties. Shaft input count predicted higher reliability in MICrONS (0.103, interval 0.074 to 0.132). A model fit in V1DD predicted held-out MICrONS coupling with r = 0.060 (interval 0.039 to 0.080, Holm p 0.002), which is about 0.3% of the residual variance. The reverse direction had r = 0.122 (interval -0.043 to 0.264, Holm p 0.33). Reliability did not transfer. The spine-coupling slope was negative in 488 MICrONS L5-ET cells. It was positive in the IT types.\nLimitations: two animals, a small V1DD sample after the removal of partial input tables, observational data, labels that are proxies for input type, input counts that correlate with one another, and different movies and traces between the mice. A plan amendment, made before any test, removed V1DD neurons with partial input tables. We supply code, tables, figures, and data hashes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "calcium imaging",
+  "MICrONS",
+  "V1 Deep Dive",
+  "population coupling",
+  "response reliability",
+  "perisomatic inhibition",
+  "spine synapses",
+  "cross-animal transfer",
+  "null results"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_slopes.png",
+   "caption": "Partial slopes of soma, spine and shaft input counts on movie response reliability and population coupling in two mice, with 95% cluster bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_coupling_transfer.png",
+   "caption": "Population coupling against spine input count in each mouse after controls (added-variable bins), and held-out prediction correlation across mice."
+  },
+  {
+   "path": "files/figures/fig3_audit_sensitivity.png",
+   "caption": "Audit of V1DD input tables that gave plan Amendment 1, and the MICrONS spine-coupling slope across sensitivity sets."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its V1DD coregistration and SNR tables and compare its reliability and coupling values with ours. It reported coupling and input from coregistered neurons in V1DD."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "reason": "Earlier MICrONS test of signal coupling and connection number. We use all-input counts instead."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w"
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3"
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07765-7"
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08660-5"
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07780-8"
+  },
+  {
+   "target": "doi:10.1038/nature14273",
+   "reason": "Proposed that neurons with stronger population coupling receive more local input."
+  },
+  {
+   "target": "doi:10.48324/dandi.000402/0.230307.2132"
+  },
+  {
+   "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/"
+  }
+ ]
+}

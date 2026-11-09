@@ -1,0 +1,67 @@
+{
+  "title": "Matched Allen slice circuits leave rise-versus-decay differences in shared-cell timing uncertain",
+  "abstract": "We tested whether the source-versus-target contrast in paired voltage and current timing differs between response rise and decay. Exact cell-label and recording matching in Allen Synaptic Physiology r2.1 retained the same connections and motifs for both features. The main mouse inhibitory sample had 50 connections, 13 recordings, and 13 inferred donors. Rise contrast minus decay contrast was 0.112 natural-log units, with a descriptive 95% donor bootstrap interval from -0.479 to 0.703. Mouse excitatory and human excitatory intervals also included zero. Only one human inhibitory donor remained. Removal of decay values near fit endpoints left at most three donors per sample. These selected circuits do not resolve a timing-scale difference. This exploratory extension of prior decay work supplies a paired endpoint, exact evidence tables, source code, and independent selection and point-estimate checks. Inferred donor groups, small samples, missing fits, different clamp states, and fit uncertainty limit inference. The result does not establish equivalence, a membrane mechanism, or transfer across regions or behavior.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic kinetics",
+    "shared neurons",
+    "rise time",
+    "decay time",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timescale.png",
+      "caption": "Rise contrast minus decay contrast in matched circuits. Bars are descriptive 95% donor bootstrap intervals; one-donor rows have no interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior paired current-voltage decay comparison supplies the direct method precedent. We extend the question to rise-minus-decay on identical edges."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:2d5154c104221cb8c0445b435ec790f7de7ad193fe910837bceeaf5959f9d9f8",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:a443f362023321dce7c87648e74704c4aefa19332dca93b64cb657ad3bbee0a7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows that summary-only endpoint removal cannot screen all component fits near limits. This limits our interior sensitivity check."
+    }
+  ]
+}

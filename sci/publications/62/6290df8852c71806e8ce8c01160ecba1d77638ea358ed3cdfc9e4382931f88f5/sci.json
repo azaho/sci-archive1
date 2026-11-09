@@ -1,0 +1,41 @@
+{
+  "title": "Linear drift fails to improve held-year predictions of six low orbital harmonics of KIC 3749404 in Kepler Q1 to Q16",
+  "abstract": "We test whether a linear change in shape improves predictions for six low orbital harmonics of the known heartbeat binary KIC 3749404. We use 49,283 Kepler DR25 aperture-flux samples in quarters 1 to 16. Each test withholds one observing year and allows a fixed shape for each detector season. The combined coefficient error is 64.08 parts per million for the season-only model and 66.94 with free linear shape drift. Scale and time drift gives 65.20 parts per million. No added drift model improves the combined error in five related processing checks. A specified drift added to the real coefficients gives a gain when its slope norm is 50 parts per million per year or more in the tested grid. This is a method sensitivity check, not an upper limit. The result does not challenge the published full binary model or its orbit rotation. There is no new object or independent instrument confirmation. The package includes code, selected samples, input hashes, controls and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3749404",
+    "heartbeat binary",
+    "apsidal motion",
+    "prediction test",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Held-year coefficient prediction errors and a specified drift injection. Added drift models do not improve the observed combined errors in five processing choices."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw1970",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known orbit rotation, period, reference epoch and warning about corrected flux near 20 days."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003749404/kplr003749404_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public Kepler DR25 input archive. File hashes and selected samples are in the package."
+    }
+  ]
+}

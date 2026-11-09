@@ -1,0 +1,102 @@
+{
+ "title": "No transiting planet candidate in TESS 2-min light curves of 1,553 known hot subdwarfs (Tmag 15 or brighter, P 0.2-15 d); 95% limit below 3.1% for 4-12 Earth-radius planets at 0.2-5 d",
+ "abstract": "Question: do close-in planets transit known hot subdwarf stars in TESS 2-min data from sectors 1 to 107? The published TESS survey of hot subdwarfs used Cycle 1 only.\n\nMethod: we took the 6,616 known hot subdwarfs of Culpan et al. (2022). 3,286 have SPOC 2-min light curves. We searched the 1,554 stars with TESS magnitude 15 or brighter, with the first four sectors of each star (4,676 light curves; 1 star had no usable data). Each sector was prewhitened, detrended and searched with a box search from 0.2 to 15 d. Transit durations agree with a 0.47 Msun host. The same search of the inverted light curve gives a symmetric false-alarm test. The rule is: dip S/N 8.75 or more, 1.5 times the bump S/N or more, and three or more transits in one sector. In quiet stars this rule gives 3 false alarms in 3,017 sector searches. We injected 2,995 transits with a fast pipeline and 192 with the full pipeline.\n\nResult: 74 sector events on 43 stars pass the rule. After vetting, no planet candidate remains. 16 stars are HW Vir type eclipsing binaries. 4 are eclipsing hot subdwarf plus white dwarf binaries, among them FBS 0603+830 (1.1 % dip, P = 0.26083 d, ellipsoidal signal at 2/P) and PG 0941+280 (0.75 % eclipse, P = 0.3148 d). 8 stars have eclipses that do not come from the hot subdwarf. The other stars show reflection or ellipsoidal modulation, companion variability, or a dip in one sector only. Recovery is 0.96 to 1.00 for 4 to 12 Earth radii at P below 5 d, 0.65 to 0.92 for 2 to 4 Earth radii, and 0.20 to 0.45 for 1 to 2 Earth radii. The 95 % upper limits are 0.031 planets per star for 4 to 12 Earth radii at 0.2 to 5 d, 0.022 for 2 to 12 Earth radii at 0.2 to 1 d, and 0.041 for 1 to 2 Earth radii at 0.2 to 0.5 d. These limits include the transit probability.\n\nLimitations: no stacking of sectors; low sensitivity above about 9 d; stars fainter than magnitude 15 and later sectors not searched; fixed host mass; no spectroscopic follow-up. The package has code, file hashes, all search and injection tables, and figures.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "hot subdwarfs",
+  "TESS",
+  "transit search",
+  "planet occurrence",
+  "injection-recovery",
+  "eclipsing binaries",
+  "HW Vir",
+  "sdB white dwarf binaries",
+  "null result",
+  "post-red-giant planets"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_occurrence_limits.png",
+   "caption": "95 % upper limits on the number of planets per hot subdwarf, by period and radius, for 1,553 stars with TESS magnitude 15 or brighter and no surviving candidate. The limits include transit probability and the full-pipeline completeness correction (0.951)."
+  },
+  {
+   "path": "files/figures/fig5_tce_fold_grid.png",
+   "caption": "Phase-folded light curves (best sector) of the 43 stars with threshold-crossing events. Most are HW Vir type eclipsing binaries, white dwarf eclipses, reflection or ellipsoidal minima, or eclipses that do not come from the hot subdwarf. Label [dt] means the light curve without prewhitening."
+  },
+  {
+   "path": "files/figures/fig3_completeness.png",
+   "caption": "Left: fraction of injected transits recovered (fast mode, 2,995 injections on 599 stars). Right: recovered fraction against radius for the fast mode and the full pipeline (192 injections)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.26093/cds/vizier.36620040",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input list of 6,616 known hot subdwarfs (Culpan et al. 2022, J/A+A/662/A40/knownhsd)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243554",
+   "reason": "Thuillier et al. 2022: transit search of 792 hot subdwarfs in TESS Cycle 1. We extend the time range and give new completeness and limits."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2104.10462",
+   "reason": "Van Grootel et al. 2021: method paper of the hot subdwarf transit survey."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244214",
+   "reason": "Schaffenroth et al. 2022: hot subdwarf close binaries in TESS, used to classify TCE stars."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2019RNAAS...3...81B",
+   "reason": "Barlow et al. 2019: PHL 1539 eclipsed by a low-mass white dwarf, a control that our search recovers."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.1509K",
+   "reason": "Krzesinski et al. 2022: TESS search for hot subdwarf binaries, a reference for FBS 0603+830 and HZ 5."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.3514K",
+   "reason": "Kupfer et al. 2015: spectroscopic binaries among hot subdwarfs, used for classification."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2006MNRAS.373..231P",
+   "reason": "Pont et al. 2006: red-noise factor used in the noise model."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions/tess/download_scripts/sector/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lists of SPOC 2-min light curves, sectors 1-107."
+  },
+  {
+   "target": "https://mast.stsci.edu/api/v0.1/Download/file/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the 4,676 SPOC 2-min light-curve files and of the TIC cross-match service."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TOI table (shared campaign dataset exofop-tess-toi-table-20261108) for comparison."
+  },
+  {
+   "target": "sci:sha256:97c6da24f8fa311870f3f7fe127c3ddc1fc511ceb88dc4eec61bcdf9dc04e6b6",
+   "reason": "Related campaign search of white dwarfs in TESS 2-min data with a similar null result."
+  }
+ ]
+}

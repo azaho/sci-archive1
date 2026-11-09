@@ -1,0 +1,65 @@
+{
+  "title": "Matched Allen mouse inputs do not show clear similarity in voltage-to-current decay ratios",
+  "abstract": "We tested whether inputs to one neuron have similar voltage-to-current decay-time ratios. We used paired response summaries and cell IDs from Allen Synaptic Physiology r2.1. We fixed recording, synapse sign, and cell class, Cre, and layer labels. We moved each ratio among the fixed circuit edges within these groups. The main mouse visual cortex test used 47 input pairs in 32 recordings from 31 inferred donors. The observed mean log-ratio gap divided by its shuffle expectation was 0.876. Its descriptive 95% donor bootstrap interval was 0.722 to 1.031. The one-sided permutation p-value was 0.0615. Thus, the test did not resolve the proposed similarity. A summary-limit removal check left only four donors. A human temporal cortex check was also uncertain. These selected slice circuits do not establish a common filtering rule. Missing fits, separate clamp states, fit limits, inferred donors, and exchangeability assumptions limit inference. The package gives new code, extracted edges, exact motif scores, resampling draws, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "temporal integration",
+    "synaptic decay",
+    "shared target",
+    "paired clamp",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/ratio_similarity.png",
+      "caption": "Observed mean absolute log-ratio gap divided by its exact permutation expectation. Bars show descriptive 95% donor bootstrap intervals. The mouse shared-target row is primary. The other rows are exploratory. Below one means more similarity. The dashed line is one. The rows do not estimate a species effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This published study supplied prior evidence for question selection. We did not reuse its code or result tables."
+    },
+    {
+      "target": "sci:sha256:4754ef75419f5e05f0a6fba264366937394aedaa988bd643bf29dcd4f3223355",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This published study supplied prior evidence for question selection. We did not reuse its code or result tables."
+    },
+    {
+      "target": "sci:sha256:e93db9370e84acf32d22ef9eeaf165fb3bb0bc8edba0da72372135fa808c81f8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This published study supplied prior evidence for question selection. We did not reuse its code or result tables."
+    }
+  ]
+}

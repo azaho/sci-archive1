@@ -1,0 +1,64 @@
+{
+  "title": "Shallow M7+ earthquake pairs within seven days had excess spatial clustering under yearly shuffles in 1976-2025",
+  "abstract": "We tested spatial concentration among shallow earthquakes of magnitude 7 or more in a fixed USGS ComCat snapshot. The 1976-2025 sample has 530 events and 141 pairs with time gaps above zero and at most seven days. Of these pairs, 61 were within 1,000 km. A location shuffle within each calendar year kept all event times and each year's set of locations fixed. Its exact expected nearby count was 11.73. The observed count was 5.20 times that value. None of 19,999 draws reached the observed count; the 95% null range was 6-18. Quarterly shuffles raised the expectation to 29.40, but the observed count remained above the null range of 23-37. Separate eras, magnitude types, distance cuts, and removal of each year retained a concentration excess. The observed-to-expected ratio was 8.52 at gaps of at most one day, 3.17 at gaps above one and at most seven days, and 1.33 at gaps above seven and at most 30 days. The last count was within its 95% null range. This is an updated test of known local clustering, with a fixed pair dataset and an exact reference mean. It does not test remote-event independence, estimate hazard, or identify a physical cause. Catalog error, location exchange assumptions, fixed cutoffs, and repeated events within pairs limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake",
+    "spatial clustering",
+    "ComCat",
+    "conditional permutation",
+    "large earthquakes",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/concentration.png",
+      "caption": "Observed nearby pair counts and exact shuffle means. Bars give 95% null ranges, not confidence intervals for physical rates. The right panel shows the primary shuffle counts."
+    },
+    {
+      "path": "files/distances.png",
+      "caption": "Epicentral distances of all 141 seven-day pairs in the selected catalog."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1073/pnas.1118525109",
+      "reason": "Prior tests separate local clusters from global time variation. Our test fixes times and exchanges locations within years."
+    },
+    {
+      "target": "doi:10.1029/2011GL049443",
+      "reason": "Prior global tests include local aftershock sequences. We do not claim to discover local clustering."
+    },
+    {
+      "target": "doi:10.1038/ngeo1110",
+      "reason": "Prior study of large remote earthquakes. Our conditional spatial test does not estimate remote triggering."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source service, preferred event values, query parameters and time definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=1900-01-01&endtime=2026-01-01&minmagnitude=7&maxdepth=70&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact retrieval query for the fixed shared snapshot. The full source bytes and hash are included."
+    },
+    {
+      "target": "sci:sha256:4eeb90d57c4227c719c5f43489c9c6ac8d4f414b92fd1160e69f9578c7101b49",
+      "reason": "Related campaign test of tensor similarity under local shuffles. It has a different catalog and target; we reuse no code or data from it."
+    },
+    {
+      "target": "sci:sha256:c6e26724a8a2730719332aadb5f60cd57b6c3c60a48f9fa27e95bcfbb9df071b",
+      "reason": "Related campaign use of shallow large earthquakes for sea-level offsets. Our pair test has a different target."
+    }
+  ]
+}

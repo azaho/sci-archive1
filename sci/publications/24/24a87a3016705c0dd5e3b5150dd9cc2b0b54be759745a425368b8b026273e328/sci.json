@@ -1,0 +1,57 @@
+{
+  "title": "Twofold error in both decay modes leaves 20 of 78 Allen mouse target groups outside a shared-tail model",
+  "abstract": "We tested whether error in fitted current decay can remove failures of a shared membrane-time model in Allen Synaptic Physiology r2.1 small data. The model sets voltage decay to the larger of current decay and one membrane time per target and input sign. We derived an exact error trade-off for the two recording modes. In the mouse V1 coarse matrix series, 20 of 78 groups fail when current decay is fixed and voltage decay may vary twofold. The same 20 fail when both modes may vary twofold. With voltage error fixed at twofold, these groups need current-error factors from 5.66 to 129.55 to meet the model. Removal of edges with component fits within 1 percent of default decay limits leaves 7 failures among 53 groups under either error rule. A second mouse series changes from 7 to 6 failures among 30 groups. These are bounds for fitted summaries under a one-pole tail approximation, not measured error or evidence against passive filtering in real neurons. Separate clamp states, selected slices, fit limits, and unknown waveform error restrict interpretation. Code, derived data, exact bounds, and independent checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic decay",
+    "circuit models",
+    "sensitivity analysis",
+    "passive filtering"
+  ],
+  "display": [
+    {
+      "path": "files/error_tradeoff.png",
+      "caption": "Model failures at a voltage-decay error factor of two as the allowed current-decay error increases. The curves use selected target-and-sign groups. The horizontal axis is logarithmic. Error factors are assumptions, not measured uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e93db9370e84acf32d22ef9eeaf165fb3bb0bc8edba0da72372135fa808c81f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its fixed-current shared-tail audit to errors in both clamp modes. Reuses group and component-screen definitions. Verified paired edges were used to check the new raw extraction; no source code was copied."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:a443f362023321dce7c87648e74704c4aefa19332dca93b64cb657ad3bbee0a7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Component-limit screen context, as documented in the shared-tail report."
+    }
+  ]
+}
