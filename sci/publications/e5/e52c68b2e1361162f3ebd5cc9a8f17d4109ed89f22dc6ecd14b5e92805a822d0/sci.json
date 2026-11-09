@@ -1,0 +1,87 @@
+{
+ "title": "Aftershock counts and one b-value explained the faulting-style difference in Bath's law for 1,271 global shallow M 6.2+ mainshocks in 1990-2024",
+ "abstract": "Question: thrust, normal and strike-slip earthquakes have different gaps between the mainshock and the largest aftershock (Bath's law). Does this come only from different aftershock counts, or does the aftershock magnitude distribution change with faulting style? Data: ComCat global M4.5+ events and Global CMT mechanisms. We used 1,271 isolated mainshocks of ComCat magnitude 6.2 or more, centroid depth 40 km or less, 1990-2024. We counted M5.0+ events within 365 days and max(40 km, 2 rupture lengths). Results: a largest aftershock within 1.2 units of the mainshock occurred after 68% of thrust, 49% of normal and 37% of strike-slip mainshocks (class p = 4e-25). Strike-slip mainshocks had 0.32 times (0.28-0.37) and normal mainshocks 0.74 times (0.60-0.90) the aftershock count of thrust mainshocks of equal magnitude. Gutenberg-Richter order statistics with the observed count and one b-value (1.14) predicted each class: observed/expected 1.04 (0.99-1.08) thrust, 0.94 (0.84-1.03) normal, 1.05 (0.99-1.12) strike-slip. Class terms added no clear effect after this prediction (p = 0.14). This repeated in 1990-2007 and 2008-2024, with a 30-day window, depth to 70 km, a smaller radius, Mc 5.3 and GCMT Mw only (p = 0.08-0.81). Out of sample, a count model with class and one b-value forecast large aftershocks within 0.01 nats of a direct class model; both beat a constant Bath probability. Limitations: the test cannot exclude class departures smaller than about 5-10%. ComCat gave normal-fault aftershocks a higher b-value (1.34) that GCMT magnitudes did not confirm. We did not explain why productivity changes with faulting style. Code, sequence tables and figures are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Bath's law",
+  "largest aftershock",
+  "aftershock productivity",
+  "faulting style",
+  "Gutenberg-Richter",
+  "focal mechanism",
+  "ComCat",
+  "Global CMT",
+  "aftershock forecasting"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_bath_by_mechanism.png",
+   "caption": "A: fraction of isolated shallow M6.2+ mainshocks with a largest aftershock (M5.0+, 365 d) within 1.2 magnitude units, by GCMT class, for the primary sample and eight other versions. Lines are 95% bootstrap intervals. B: observed divided by expected number of such sequences, where the expected value uses the observed aftershock count and one Gutenberg-Richter b-value. The dashed line is equal observed and expected."
+  },
+  {
+   "path": "files/figures/fig2_calibration_productivity.png",
+   "caption": "A: observed fraction of large aftershocks against the GR order-statistics probability, in bins, for sequences with at least one M5.0+ aftershock (primary sample; Wilson 95% intervals; bins with fewer than 8 sequences removed). B: mean count of M5.0+ events in the 365-day window against mainshock magnitude, by class (log scale)."
+  },
+  {
+   "path": "files/figures/fig3_forecast_logloss.png",
+   "caption": "Out-of-sample mean log loss for the large-aftershock outcome. Left: fit on 1990-2007, test on 2008-2024. Right: the reverse. Count models forecast the aftershock count with a negative binomial model and convert it with GR statistics. The x axis starts at 0.60."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We read its archived ComCat global M4.5+ CSV files (sha256 19e97634...bfb0) and use them as our earthquake catalog. Its productivity results are related; data overlap."
+  },
+  {
+   "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We read its archived GCMT monthly NDK files for 2021-2026."
+  },
+  {
+   "target": "doi:10.1016/0040-1951(65)90003-X",
+   "reason": "Origin of Bath's law."
+  },
+  {
+   "target": "doi:10.1029/2011GL050604",
+   "reason": "Earlier global finding that the largest-aftershock gap differs between reverse and strike-slip faulting."
+  },
+  {
+   "target": "doi:10.1029/2019JB018111",
+   "reason": "Earlier study of controls on aftershock productivity."
+  },
+  {
+   "target": "doi:10.1029/2004JB003110",
+   "reason": "Low aftershock productivity on oceanic transform faults."
+  },
+  {
+   "target": "doi:10.1785/BSSA0840040974",
+   "reason": "Rupture length scaling used for window radii."
+  },
+  {
+   "target": "doi:10.1016/0031-9201(92)90130-N",
+   "reason": "Plunge-based mechanism classes."
+  },
+  {
+   "target": "https://www.globalcmt.org/",
+   "reason": "Global CMT catalog."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "reason": "USGS ComCat event service."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/",
+   "reason": "Land polygons for the exploratory oceanic strike-slip split."
+  }
+ ]
+}
