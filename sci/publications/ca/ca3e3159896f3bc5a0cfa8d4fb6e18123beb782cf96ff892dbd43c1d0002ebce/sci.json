@@ -1,0 +1,99 @@
+{
+  "title": "Internal neuron cuts were smaller than edge cuts in 9.9 and 10.9 percent of reachable pairs without a direct edge in two adult worm chemical maps",
+  "abstract": "We compared the smallest directed edge cut with the smallest internal neuron cut for ordered cell pairs without a direct edge in two adult worm head maps. Both graphs had 178 selected neurons. Chemical graphs had 25,896 and 25,923 reachable eligible pairs. The neuron cut was smaller for 2,551 (9.85 percent) and 2,835 (10.94 percent) pairs. Neither primary graph had a one-neuron cut for a pair with at least two edge-disjoint routes. We also tested removal of weak chemical edges and addition of partially annotated electrical connections. Exact integer flow and deletion checks support the counts. These are fixed-graph results from two animals. They do not measure neural transmission, behavior, random damage, or biological compensation. The package preserves code, all pair counts, cut witnesses, graph edges, and source hashes. Mean per-pair neuron-cut/edge-cut ratios were 0.9859 and 0.9851. Thus the mean relative difference was small.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "internal neuron cut",
+    "edge connectivity",
+    "directed routes",
+    "lesion tolerance",
+    "Menger theorem"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact edge and neuron cuts for chemical graphs and the share of reachable pairs with different cuts under three graph definitions. Bubble size increases with pair count. These are graph counts, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the adult anatomical reconstructions."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Functional atlas used only for its neuron name list. No response values are analyzed."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1005084",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior neuron and connection removal analysis using global graph measures."
+    },
+    {
+      "target": "doi:10.1016/j.isci.2024.110713",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior route redundancy and reachability study."
+    },
+    {
+      "target": "sci:sha256:e369d5d258a831f342d521460ecebdd061a12c2b1a84298d7a8f8da2be62c525",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its 178-cell selection and edge-cut question as prior context. We compute node cuts with new code."
+    },
+    {
+      "target": "sci:sha256:668597ed9fe04c679f2d61e27aa253a776b0a47f0b1af77171c5ab4efb56fd33",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bounded-route bilateral lesion test differs from exact pair-specific minimum internal neuron cuts."
+    },
+    {
+      "target": "https://www.cs.rhul.ac.uk/books/dbook/mainNP.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Directed Menger theorem and vertex splitting; section 7.3."
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_flow.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Coarse matching left a connection-related response disagreement uncertain in one MICrONS mouse",
+  "abstract": "We tested whether connected cell pairs have greater absolute disagreement between measured and model movie-response correlations than nearby unconnected pairs. The public MICrONS v1 release linked anatomy and activity in one mouse. Coarse matching kept 7,524 connections and 65,266 controls from 148 source cells. We matched source cell, target area and layer, model correlation, two proximity lengths, and response quality. The equal-source difference was 0.00164 correlation units. The nominal 95% source bootstrap interval was -0.00299 to 0.00635. A shared-cell multiplier check gave -0.00414 to 0.00717. Finer matching gave 0.00895, with a source interval of 0.00175 to 0.01666, on a smaller panel. Thus the primary test did not resolve a difference, and the estimate depended on matching and retained pairs. The two measures use different movies, so disagreement is not direct model error. One mouse, selected cells, residual imbalance and conditional uncertainty limit the result. Code, compact data, source hashes, checks and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "functional connectomics",
+    "digital twin",
+    "response agreement",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/agreement.png",
+      "caption": "Connected minus matched control differences in absolute and signed disagreement. Bars show nominal 95% source bootstrap intervals. Fine matching changes both resolution and the retained panel. These are conditional intervals within one mouse."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study, response measures and public functional-connectomics v1 data."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source matched anatomy and calcium imaging resource."
+    },
+    {
+      "target": "sci:sha256:3124aab2585264e51e2a49530e6a3cb19a1a6baac4c0724eb075d09dc59f1668",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of model and measured target rankings. Our outcome is measure disagreement, not anatomical ranking accuracy."
+    },
+    {
+      "target": "sci:sha256:748aa272d79394531e3e34931a140943b795b6f92d05e7aa412e7134fd27d14a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior source-field reconstruction check; no code or derived data reused."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
