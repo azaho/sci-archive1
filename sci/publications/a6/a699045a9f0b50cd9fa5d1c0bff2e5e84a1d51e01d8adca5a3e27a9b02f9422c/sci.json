@@ -1,0 +1,105 @@
+{
+ "title": "Single-neuron axon co-innervation predicted spike correlations between 30 mouse cortical areas, but real collateral patterns did not predict better than source-matched shuffles at 100 ms",
+ "abstract": "Question: Do neurons whose axons branch into two cortical areas (collaterals) explain part of the spike correlation between the two areas, beyond tracer connection strength and beyond the projection probabilities of their source regions?\n\nApproach: We mapped the axons of 2,823 complete single-neuron reconstructions (1,112 MouseLight; 1,711 Peng et al. 2021) to CCFv3 areas. Co-innervation of two areas is the number of neurons with 3 or more axon terminal points in both areas. We tested it against spontaneous Neuropixels functional coupling (FC) between 30 isocortical areas (Allen SHIELD data from SCI publication cae100c0: 24 mice, 76 sessions, 317 area pairs). The models had session and area terms, log distance and tracer strength (SC). To isolate the collateral pattern, 1,000 curveball shuffles inside each source region kept the targets per neuron and the neurons per target.\n\nResults: Co-innervation predicted FC beyond SC and distance (beta 0.121 SD per SD, 95% mouse-bootstrap CI 0.008 to 0.249; area-label permutation p = 0.001). But shuffled co-innervation predicted FC equally well (mean beta 0.102; shuffle p = 0.32; difference 0.018, CI -0.059 to 0.104). Co-innervation did not improve leave-one-mouse-out R2 (0.154 with SC, 0.153 with SC and co-innervation). The collateral pattern itself was not random: 123 of 435 pairs differed from the shuffles (FDR 5%), and the excess agreed between the two datasets (Spearman 0.49). Exploratory tests gave a collateral-specific gain for 20-ms bins (difference 0.086, CI 0.011 to 0.174) and for a rule of 10 or more terminals, but only with the Peng neurons. MouseLight neurons alone gave no gain in any of 12 tests.\n\nLimitations: The reconstructed neurons are not random samples of their regions. Morphology and recordings came from different mice. Terminal counts are not synapse counts. The 20-ms signal was not tested with cross-probe pairs. The study is correlational. The morphology data are not bundled because of their licences; scripts regenerate all derived tables.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "axon collaterals",
+  "single-neuron morphology",
+  "structure-function coupling",
+  "shared input",
+  "Neuropixels",
+  "spike-count correlation",
+  "MouseLight",
+  "mouse cortex",
+  "CCFv3",
+  "curveball null model",
+  "Allen SHIELD",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_main_test.png",
+   "caption": "Main test with 100-ms FC. (A) Pair-level FC residual against residual co-innervation after SC, distance, area and session terms. (B) The beta of real co-innervation (blue) is inside the distribution of 1,000 source-matched shuffles (orange); one-sided p = 0.32. (C) Injection test of the shuffle test with FC held fixed."
+  },
+  {
+   "path": "files/figures/fig1_coinnervation_structure.png",
+   "caption": "Co-innervation structure for 30 recorded areas (rule: 3 or more terminals, 2,823 neurons). (A) Observed co-innervation. (B) Excess over source-matched shuffles as a z score; dots show FDR q < 0.05. (C) Excess z of each area pair in MouseLight against Peng 2021 (Spearman 0.49)."
+  },
+  {
+   "path": "files/figures/fig4_exploratory_grid.png",
+   "caption": "Exploratory grid of the collateral-specific slope difference (real minus mean shuffle beta) for 4 innervation rules, 5 neuron sets and 3 FC time scales. Asterisk: BH q < 0.05 over 60 cells. Gains occur mainly with 20-ms bins and Peng or thalamic neurons, never with MouseLight neurons alone."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the SHIELD inter-areal FC table, tracer SC and distance predictors, and of the FC model that we extend."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Related campaign study: single-neuron projectome and region coupling in larval zebrafish."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2019.07.042",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MouseLight single-neuron reconstructions (CC BY-NC 4.0; not bundled)."
+  },
+  {
+   "target": "doi:10.25378/janelia.5520037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MouseLight data record."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03941-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Peng et al. 2021 single-neuron reconstructions (not bundled)."
+  },
+  {
+   "target": "doi:10.35077/g.25",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Brain Image Library collection of the Peng et al. 2021 reconstructions."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.2055-07.2007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NeuroMorpho.org, the distribution source of the SWC files."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCFv3 annotation and ontology."
+  },
+  {
+   "target": "doi:10.48324/dandi.001051/0.260922.1827",
+   "reason": "Allen SHIELD Neuropixels data behind the FC table."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "reason": "Knox 2019 connectome model behind the SC predictor."
+  },
+  {
+   "target": "doi:10.1038/ncomms5114",
+   "reason": "Curveball algorithm for the shuffle null."
+  }
+ ]
+}

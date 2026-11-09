@@ -1,0 +1,124 @@
+{
+  "title": "Small covariance errors caused large errors in a two-condition spectral solver for three linear connectome models",
+  "abstract": "We tested whether a second known model condition permits directed drift recovery from stationary covariance. We used published worm, fly, and Allen-based mouse graphs with linear dynamics and known noise. A spectral test shows that two consistent covariance equations identify an unrestricted drift exactly when their generalized covariance spectrum is simple. Uniform noise scaling adds no exact identifying equation. An exact positive three-cell circuit remains ambiguous under every uniform decay change. In the three graph models, both a decay increase and a node-specific noise pattern gave accurate recovery from exact covariances at two recurrent gains; normalized errors were below 1.5e-8. At gain 0.8, we added independent symmetric errors of 0.01, 0.1, or 1 percent to both covariances, with 20 draws per setting. At 0.1 percent error, the decay design gave median drift errors of 101.05, 11.00, and 66.79 times the true recurrent-weight norm in worm, fly, and mouse. The noise pattern reduced these medians to 1.448, 0.614, and 1.463. All 360 estimates were stable. Thus exact recovery and stability did not ensure accurate weights for this solver. The error norm includes diagonal drift error. The solver uses no graph support, fixed decay, sign constraint, or regularizer. These are fixed model tests, not activity fits or limits on all estimators. Code, proof, aggregate scores, figures, source hashes, and external retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "math.DS"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "stationary covariance",
+    "directed inference",
+    "identifiability",
+    "Lyapunov equation",
+    "Allen Institute",
+    "experimental design",
+    "noise perturbation",
+    "inverse problem"
+  ],
+  "display": [
+    {
+      "path": "files/results/recovery.png",
+      "caption": "Small errors in both covariances caused large drift errors. Lines give medians; bands give the 10th to 90th percentiles of 20 error draws. Error is the Frobenius drift error divided by the true recurrent-weight norm. The gain is 0.8. These are model error draws, not intervals for animal populations."
+    },
+    {
+      "path": "files/results/spectral.png",
+      "caption": "Both designs recovered the generating drift from exact covariances. The decay design had smaller generalized covariance eigenvalue gaps at gain 0.8. Small gaps can amplify error. The numerical gaps do not constitute exact algebraic rank proofs."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b95314a3790d0ce3c78e6040438b3dc3faf84b2ddfd52ed8e3162c9630733a70",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its three verified graph inputs outside the bundle. Tests two tied conditions and error sensitivity with new code."
+    },
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier source of the compact directed graph products; no activity summaries are used."
+    },
+    {
+      "target": "doi:10.1137/22M1520311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established covariance-kernel and graph-identification theory."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1006056",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1004762",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://wormwiring.org/pages/adjacency.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5281/zenodo.10676866",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/nature13186",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://connectivity.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/mouse_connectivity_models",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
