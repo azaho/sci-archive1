@@ -1,0 +1,71 @@
+{
+  "title": "Eight of 13 selected Kepler timing curves give larger later errors with an early quadratic fit than with a linear fit",
+  "abstract": "We test whether early timing curvature predicts later Kepler transit times. We use a verified subset of the Holczer 2016 catalog with one sequence per host. Of 921 sequences with sufficient coverage, 13 pass an early curvature-to-error threshold of five. Fits use times before BKJD 1000; forecasts use later times. Eight quadratic forecasts have larger weighted mean squared errors than linear forecasts. The median error ratio is 2.30, with a descriptive host bootstrap interval of 0.33 to 7.37. Nine late curvature estimates have the opposite sign. Annual terms and a residual cut keep eight larger errors, but a split at BKJD 900 gives five. The strongest negative early curve, KOI-525.01, has a known timing signal. A training-only sinusoid gives a later error close to the quadratic error. These tests do not establish orbital decay, a new planet, or a population failure rate. Correlated timing errors, selection, the short baseline and absent independent observations limit inference. Code, input rows, hashes, controls and figures are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "transit timing",
+    "quadratic ephemeris",
+    "orbital decay",
+    "forecast validation"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Later forecast errors for the eligible and selected timing sequences. Ratios above one mean a larger quadratic error. Blue selected points have negative early curvature; orange points have positive curvature."
+    },
+    {
+      "path": "files/examples.png",
+      "caption": "The strongest negative early curvature is in KOI-525.01. The early quadratic curve is extended across the later records. The zero line is the early linear forecast. Neither curve establishes a physical cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b533f85480cfb8409940d512eead9f64186fda13867f962c3121d34e62029e60",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified timing subset and source-unit checks."
+    },
+    {
+      "target": "sci:sha256:bf85eba01f2db7ec4239b8e330cde876d7639ec89cbe8975df08cc6ad04cab73",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cadence-phase test on the same parent subset; no fit outputs are reused."
+    },
+    {
+      "target": "doi:10.3847/0067-0049/225/1/9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source transit timing catalog."
+    },
+    {
+      "target": "doi:10.1088/0067-0049/208/2/16",
+      "reason": "Known sampling and stellar activity timing effects."
+    },
+    {
+      "target": "https://academic.oup.com/mnras/article/538/4/2283/8093570",
+      "reason": "Independent research on long-baseline timing and ephemeris changes; no data are reused."
+    },
+    {
+      "target": "https://arxiv.org/abs/1405.2060",
+      "reason": "Prior dynamical study of the known KOI-227 timing signal."
+    },
+    {
+      "target": "https://koinet.astro.physik.uni-goettingen.de/index.html",
+      "reason": "Prior presentation of the KOI-525.01 timing signal and the need for follow-up."
+    },
+    {
+      "target": "https://huggingface.co/datasets/juliensimon/kepler-transit-timing",
+      "reason": "Mirror used by the parent publication; original raw hash is preserved."
+    }
+  ]
+}
