@@ -1,0 +1,64 @@
+{
+  "title": "Different cell exposure times preserve decay modes but change inferred weights in two adult worm circuit models",
+  "abstract": "We tested a positive-lag covariance method in linear models of two partial adult worm chemical maps, each with 180 cells. A proof shows that different finite cell exposure windows give a drift estimate related to the true drift by a change of coordinates. The estimate has the same eigenvalues, but its entries can differ. At gain 0.8 and maximum exposure of one assumed leak time, ten random exposure assignments gave median relative off-diagonal errors of 20.46 and 19.61 percent. Median link precision at the known edge count was 94.88 and 96.43 percent. Matched eigenvalue errors were below 2.5e-8 in all tested cases. Common exposure windows recovered weights to numerical precision. An independent quadrature check confirmed the covariance identity. These are exact population model tests, not recorded activity fits. Positive weights, full observation, white drive, finite exposure windows and two partial maps limit biological use. Code, aggregate scores, source hashes and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "temporal averaging",
+    "lag covariance",
+    "mode recovery",
+    "weight inference",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Medians and full ranges over ten exposure assignments at gain 0.8. Exact modes coexist with weight error. Durations range from 0.1 to 1 times the maximum exposure. Time is in assumed leak units."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:15cae57985656da0523095acfd8108a6f6debeae59ef84cc07e01e06f63497ed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the common exposure lag-ratio identity to different cell exposure windows; no code or tables copied."
+    },
+    {
+      "target": "sci:sha256:22289885c85ea0b6c529cb31aab98fe14df9d0b029cc0df8c4431f955bb6628b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior common exponential filter benchmark. The present filters have finite support and use positive lags."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1006/mssp.1999.1249",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

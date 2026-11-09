@@ -1,0 +1,145 @@
+{
+ "title": "Synapses per connection did not decrease as 1/K or 1/sqrt(K) with input partner number within cell types in fly and mouse connectomes; worm neuron classes showed a partial decrease",
+ "abstract": "Question: in intact brains, does the anatomical strength of one input connection (synapses per connection) fall with the number K of input partners, as the rules J ~ 1/sqrt(K) (balanced networks) or J ~ 1/K (normalized input) predict? We compared neurons of the same cell type in six public EM connectomes: three C. elegans maps (Witvliet adults 7 and 8, Cook 2019), two Drosophila maps (FlyWire v783, hemibrain v1.2) and mouse visual cortex (MICrONS minnie65 v1300). We fit J ~ K^(-alpha) by a neuron-level slope (E1) and by a connection-level slope with presynaptic-neuron and type fixed effects (E2).\n\nResult: in fly and mouse, neurons with more partners did not get fewer synapses per connection. At a 1-synapse threshold, E2 alpha was -0.135 [95% interval -0.144, -0.125] (FlyWire, 116,896 neurons, 2,184 types), -0.146 [-0.168, -0.123] (hemibrain) and -0.077 [-0.084, -0.069] (MICrONS). Alpha stayed negative at thresholds 1 to 10, in central brain and optic lobe, in right-side hemibrain neurons, in MICrONS interior somata, and with MICrONS synapse size as the weight. In the three worm maps, the same presynaptic neuron gave fewer synapses to class members with more partners: E2 alpha 0.29 [0.10, 0.50], 0.36 [0.05, 0.56] and 0.23 [0.09, 0.37]; alpha 0 and 1 are outside all three intervals.\n\nCalibration: in synthetic connectomes with Poisson synapse counts and alpha = 0, both estimators returned about 0. A neuron size gain makes them more negative. A joint fit of alpha and the gain spread accepted alpha -0.14 to -0.02 (FlyWire), -0.13 to 0.13 (hemibrain) and -0.38 to -0.12 (MICrONS), and rejected 0.5 and 1. The simple model did not fit the worm maps, so the worm alpha size is uncertain.\n\nLimitations: synapse count and size are proxies, not efficacy; MICrONS types are coarse E/I-by-depth groups and its axons are mostly not proofread; worm classes are small; the joint calibration was added after the estimates were seen. Code, aggregate results, calibration runs and figures are included; raw data stay external with hashes and a retrieval script.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "synaptic weight scaling",
+  "balanced network",
+  "in-degree",
+  "FlyWire",
+  "hemibrain",
+  "MICrONS",
+  "C. elegans",
+  "cell type",
+  "synapse count",
+  "calibration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_alpha_forest.png",
+   "caption": "Alpha in J ~ K^(-alpha) for six connectomes. Left: E2 (one axon onto same-type targets). Right: E1 (neuron level, within type). Points are estimates and bars are 95% intervals. Dashed lines mark alpha 0 (independent), 0.5 (1/sqrt(K)) and 1 (1/K)."
+  },
+  {
+   "path": "files/figures/fig2_within_type_curves.png",
+   "caption": "Within-type relation of log total input synapses to log partner count at a 1-synapse threshold, binned (bins with at least 5 neurons). Grey lines show the slopes of the three rules. Fly and mouse are at or above the alpha 0 line; worm is between alpha 0 and 0.5."
+  },
+  {
+   "path": "files/figures/fig3_threshold_and_calibration.png",
+   "caption": "Left: E2 alpha by synapse threshold for each map with 95% intervals. Right: recovered E2 alpha against the true alpha in synthetic Poisson connectomes; only the 1-synapse threshold recovers a large alpha."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/nn.4415",
+   "reason": "Source of the 1/sqrt(K) synaptic scaling result in cultures that we test in connectomes."
+  },
+  {
+   "target": "doi:10.1126/science.274.5293.1724",
+   "reason": "Balanced network theory with J ~ 1/sqrt(K)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome paper."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell type annotations (supplementary file 1)."
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Annotation file at commit a83b2776."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain v1.2 connectome."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain traced adjacency export."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS functional connectomics dataset."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS v1300 connections between nucleus-assigned cells."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/cell_types/allen_soma_ei_class_model_v1.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS soma E/I classes and soma positions."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Witvliet et al. 2021 worm connectomes (adults 7 and 8)."
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Copy of Witvliet adult 7 and 8 chemical counts at commit b2e13d88."
+  },
+  {
+   "target": "https://github.com/dwitvliet/nature2021",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Neuron class list (neuron_info.py) at commit 0646af9d."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cook et al. 2019 worm adjacency (SI 5)."
+  },
+  {
+   "target": "https://github.com/openworm/ConnectomeToolbox",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Copy of Cook 2019 SI 5 at commit ffe57026."
+  }
+ ]
+}

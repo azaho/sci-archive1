@@ -1,0 +1,80 @@
+{
+ "title": "Slice wiring between interneuron subclasses did not reliably predict their local in vivo co-fluctuation in awake mouse V1 layers 1-3 (4 mice, 13 subclass pairs)",
+ "abstract": "We tested whether a slice wiring diagram between cortical cell subclasses predicts how the same subclasses co-fluctuate in the awake brain. Structure came from Allen Synaptic Physiology r2.1: chemical and electrical connection probabilities in mouse visual cortex layers 1-3, with patch-seq or Cre labels. Function came from Bugeon et al. 2022: calcium imaging with transcriptomic labels in V1 layers 1-3 of 4 awake mice in 17 sessions. Direct synapses act locally, so the in vivo measure was the local excess: residual correlation at 20-100 um minus that at 150-400 um, after removal of running, pupil and the population mean. A plan written before the in vivo correlations were calculated predicted less local excess with more mutual inhibition (H1) and more with electrical coupling (H2). In spontaneous activity of 13 inhibitory subclass pairs, both coefficients had the predicted sign, but neither passed the label permutation test (chemical -0.0098, p = 0.17; electrical 0.063, p = 0.20). When slice uncertainty was added to a mouse bootstrap, both 95% intervals included zero. Running and stationary frames, cross-plane pairs and a same-subclass control gave the same conclusion. Under stimulus drive the chemical term passed the permutation test (gratings p = 0.008, natural scenes p = 0.033), but not after correction for 8 tests or after removal of Sncg, whose slice estimates come from 1-2 probed pairs. Vip and Sst cells, the canonical disinhibition pair, were slightly anti-correlated at all distances, with no local excess. Limitations: different animals for structure and function, 4 mice, few subclasses, slow calcium signals and few slice pairs for Lamp5 and Sncg.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "cortical interneurons",
+  "connectivity",
+  "structure-function",
+  "noise correlation",
+  "Allen Synaptic Physiology",
+  "transcriptomic cell types",
+  "mouse visual cortex",
+  "electrical synapses",
+  "disinhibition",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_matrices.png",
+   "caption": "Left and middle: subclass-level chemical and electrical connection probabilities in mouse visual cortex layers 1-3 from Allen Synaptic Physiology r2.1 (pairs within 100 um lateral distance; n probed in brackets). Right: in vivo local excess of residual correlation (near 20-100 um minus far 150-400 um) in spontaneous activity of Bugeon et al. 2022 (n near pairs in brackets). Grey: too few samples."
+  },
+  {
+   "path": "files/figures/fig2_distance_profiles.png",
+   "caption": "Spontaneous residual correlation versus 3D distance for nine subclass pairs, pooled over 17 sessions in 4 mice. Bands: 95% mouse bootstrap intervals. Same-subclass pairs show the largest local excess. Sst-Vip is slightly negative at all distances, with no local dip."
+  },
+  {
+   "path": "files/figures/fig3_wiring_tests.png",
+   "caption": "Left and middle: local excess per inhibitory subclass pair against slice chemical wiring W and electrical coupling probability (point size: number of near pairs). Right: coefficients with 95% bootstrap intervals for pre-specified analyses, post hoc sensitivity analyses and the joint bootstrap that includes slice uncertainty. H1 predicts W < 0 (blue); H2 predicts electrical > 0 (orange)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.6084/m9.figshare.19448531.v2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "In vivo calcium imaging data with transcriptomic labels (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-022-04915-7",
+   "reason": "Paper that describes the in vivo data set."
+  },
+  {
+   "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Slice connectivity data (Allen Institute Terms of Use); SHA-256 7372499fdd874f057565080d5769baaf2659ef39d9f3bc3c7147dd1e1c280a53."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "reason": "Paper that describes the Allen Synaptic Physiology data."
+  },
+  {
+   "target": "doi:10.1038/nn.3446",
+   "reason": "Earlier subclass wiring diagram between Pvalb, Sst and Vip cells."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2018.03.037",
+   "reason": "In vivo interactions between Vip and Sst cells."
+  },
+  {
+   "target": "doi:10.1038/47029",
+   "reason": "Electrical coupling between fast-spiking cells."
+  },
+  {
+   "target": "sci:sha256:7340d496cb96ba9fec12fb5e4cd89f5dd88ac8209407a890cf614a18248488b3",
+   "reason": "Earlier campaign result that used the same in vivo data for a different question."
+  },
+  {
+   "target": "sci:sha256:0a44e74b44217ddfeff7d364fab19a35ce200849a46e1591c971faecf6b32c4c",
+   "reason": "Earlier campaign result that recorded the same Allen Synaptic Physiology file and hash."
+  }
+ ]
+}
