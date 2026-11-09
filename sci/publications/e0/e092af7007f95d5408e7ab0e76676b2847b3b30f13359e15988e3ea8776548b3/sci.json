@@ -1,0 +1,24 @@
+{
+  "title": "The two-summer temperature difference predicted Swiss airborne beech pollen out of sample (1970-2022), and the pollen response to it increased as summers became warmer",
+  "abstract": "Question: does the seed-based 'dT' cue for beech masting (June-July temperature of the previous summer minus that of the summer before) predict an independent measure of flowering, and did the response change as summers warmed? Approach: we used the MeteoSwiss national pollen network (14 stations, manual traps, 470 station-years, 1969-2022) and homogenized MeteoSwiss temperatures. We compared station-fixed-effect models out of sample with complete years held out, and we used six other pollen taxa as comparisons. Results: a dT model fitted on 1970-2002 decreased the 2003-2022 mean squared error of log10 annual beech pollen by 64% relative to the station mean; previous-summer temperature alone gave 4%, and previous-year pollen alone gave 22%. The reverse test gave 38% and leave-one-year-out gave 57%. dT gave no skill for oak, ash, birch, alder or grass; hazel had some skill. The beech slope on dT increased from 0.16 (1969-1989) to 0.34 (1990-2005) and 0.48 log10 per degree C (2006-2022); the decade interaction was +0.089 (SE 0.020). The year-to-year standard deviation was 2.2 times larger in 2006-2022 than in 1969-1989 (95% CI 1.7-2.7). From 1990 to 2022 there was no mean trend (-0.07 +/- 0.14 log10 per decade), as dT predicts, although summers warmed by 0.65 C per decade; low-dT years became lower. This is the opposite of the masting breakdown reported from seed data elsewhere. Automatic monitors (from 2023) gave a positive bias of +0.22 log10 and a compressed response. Because June-July 2026 was about 2 C warmer than 2025, the dT model predicts a strong beech pollen year in 2027 (+0.80 log10; +0.38 with a previous-year term). Limitations: pollen is not seed; early decades have few stations; undocumented changes in counting methods before 2023 cannot be excluded as a cause of the stronger later response.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "anzsrc-for-2020", "code": "410102"}
+  ],
+  "keywords": ["mast seeding", "Fagus sylvatica", "airborne pollen", "delta-T cue", "climate change", "Switzerland", "MeteoSwiss", "out-of-sample forecast", "masting breakdown", "observation bias", "automatic pollen monitoring", "phenology"],
+  "display": [
+    {"path": "files/figures/fig1_beech_timeseries.png", "caption": "Network mean of log10 beech pollen anomalies (blue) and the dT model fitted only on 1990-2002 (orange dashes). Shaded: test years. Open circles: automatic monitors (2023-2026, not homogeneous). Diamond and square: 2027 forecasts made on 2026-11-09."},
+    {"path": "files/figures/fig2_oos_skill.png", "caption": "Out-of-sample skill (1 - MSE/MSE of station mean) of six beech pollen models in three held-out-year tests. dT = June-July temperature of year t-1 minus year t-2; L1 = previous-year pollen."},
+    {"path": "files/figures/fig3_period_change.png", "caption": "Left: beech pollen slope on dT by period (95% CI, year-clustered). Right: change in year-to-year standard deviation of log10 annual pollen for seven taxa (95% year-bootstrap CI)."}
+  ],
+  "citations": [
+    {"target": "doi:10.1111/ele.12020", "relations": ["supports", "uses"], "reason": "Source of the differential-temperature (dT) cue that we test with pollen data."},
+    {"target": "doi:10.1111/nph.14600", "relations": ["supports"], "reason": "European beech seed study with T1/T2 and dT cues; our pollen data give the same equal-and-opposite form."},
+    {"target": "doi:10.1111/gcb.17307", "relations": ["challenges"], "reason": "Reports masting breakdown with rising summer temperatures in seed data; Swiss beech pollen became more, not less, variable."},
+    {"target": "https://keele-repository.worktribe.com/output/419364/climate-warming-causes-mast-seeding-to-break-down-by-reducing-sensitivity-to-weather-cues", "relations": ["challenges"], "reason": "Reports reduced sensitivity to weather cues with warming; the Swiss pollen response to dT increased."},
+    {"target": "https://pubmed.ncbi.nlm.nih.gov/33812098/", "reason": "Earlier trend analysis of the Swiss pollen network 1990-2020."},
+    {"target": "https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-pollen", "relations": ["uses"], "reason": "MeteoSwiss pollen station data (Source: MeteoSwiss)."},
+    {"target": "https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-nbcn", "relations": ["uses"], "reason": "MeteoSwiss homogenized NBCN monthly temperature (Source: MeteoSwiss)."},
+    {"target": "https://opendatadocs.meteoswiss.ch/a-data-groundbased/a7-pollen-stations", "reason": "MeteoSwiss documentation of the manual-to-automatic change on 1 January 2023."}
+  ]
+}

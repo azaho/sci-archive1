@@ -1,0 +1,69 @@
+{
+  "title": "Full-bin averaging leaves a nonzero small-interval drift error in models of two adult worm maps",
+  "abstract": "We tested drift inference from time-averaged observations in linear models of two partial adult C. elegans chemical maps. Each model had 180 cells and positive count weights. For stationary drift A, noise covariance Q and state covariance S, a zero-lag matrix-log estimate tends to A + alpha Q S^(-1)/6 as the interval tends to zero at fixed exposure fraction alpha. Full-bin averaging left limiting relative off-diagonal errors of 24.2% and 25.4% at gain 0.8 with equal drive. A ratio of two positive-lag covariances removed the bias with exact population covariances. It had higher median error in all six tested map-interval cases with 10,000 independent Gaussian triples, but lower median error in all six with one million triples. These are model tests, not measured activity. Positive weights, full observation, white drive, common leak and independent triples limit biological and recording-duration claims.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "temporal averaging",
+    "drift inference",
+    "Ornstein-Uhlenbeck",
+    "sampling error",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Relative off-diagonal drift error in two linear worm-map models. Full-bin averaging leaves population bias. Positive-lag correction is exact at population level but remains sensitive to finite covariance sampling. Right panel: medians of ten draws with one million independent Gaussian triples, not frames of a continuous recording."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior instantaneous electrical covariance benchmark; this work tests averaged directed models without reuse of code or tables."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3167373/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/1605.08590",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1007/s11222-017-9779-x",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
