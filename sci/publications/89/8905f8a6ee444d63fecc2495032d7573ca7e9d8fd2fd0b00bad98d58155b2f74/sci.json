@@ -1,0 +1,115 @@
+{
+  "title": "Fifty-four GJ 1061 rows with a zero quality flag have DRS velocities near minus 20000 km/s in HARPS RVBank v02",
+  "abstract": "We audit 184 public GJ 1061 exposures in HARPS RVBank v02. Fifty-six DRS velocities are near minus 20000 km/s. All share RVGUESS = -20000 and one observing program; 54 have f_RV = 0. CSV and DAT exports agree. Two original ESO headers contain the extreme target-velocity input, which the DRS manual defines in km/s. The same exposures give small relative SERVAL velocities. A free constant leaves 3684.79 m/s of weighted DRS scatter, so a simple offset does not repair the group. We supply a rejection list and a reproducible guard. Secondary fits select a 53.761-day early SERVAL wave. Its 18.11 percent later error reduction has two conditional block ranges that include zero and depends on the reduction. Fits to 26 independent ESPRESSO observations depend strongly on the slow baseline. No extra planet is established. The audit covers one frozen file and does not identify the exact software fault or bound archive-wide reliability. Code, source snapshots, exact hashes, figures, row results, and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 1061",
+    "HARPS RVBank",
+    "DRS",
+    "SERVAL",
+    "radial velocity",
+    "metadata",
+    "quality control",
+    "ESPRESSO",
+    "null planet result"
+  ],
+  "display": [
+    {
+      "path": "files/derived/artifact.png",
+      "caption": "The extreme DRS group matches RVGUESS = -20000. The same exposures give small relative SERVAL velocities. A zero row flag retains 54 of the 56 extreme DRS values. DRS and SERVAL share spectra and use different zero points."
+    },
+    {
+      "path": "files/derived/signals.png",
+      "caption": "Secondary signal tests depend on the period and baseline. The early selected wave gives an uncertain later error reduction. Fits to separate ESPRESSO observations lose much of their 53 to 55 day improvement when a slow trend is added. The later score curve is a sensitivity check and is not used to select a period."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/staa248",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known GJ 1061 periods and long-period signal context."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202452490",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent ESPRESSO values, updated known periods, and prior activity interpretation."
+    },
+    {
+      "target": "https://arxiv.org/html/2504.10926v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed article version, Table 5. Source snapshot and hash are included."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "RVBank reduction methods and systematic corrections."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 02 context and public products."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ1061_RVs/GJ1061_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary frozen public velocity file."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ1061_RVs/GJ1061_HARPS_RVBank_ver02.dat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "A second export checks the numeric values. It is not an independent observation."
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2018-07-08T09:58:50.571",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original exposure header contains the extreme target-velocity input."
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2018-09-07T07:34:49.764",
+      "relations": [
+        "uses"
+      ],
+      "reason": "A second original exposure header has the same extreme input."
+    },
+    {
+      "target": "https://www.eso.org/sci/facilities/lasilla/instruments/harps/doc/DRS.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Issue 1.0 defines the target-velocity input in km/s."
+    },
+    {
+      "target": "sci:sha256:5ffa54a92081e82eae66e564c92c5b7b0bdfad3c048b666637f1a06a800575f3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related campaign work on prediction and reduction checks for another star. No code or measurements are reused."
+    }
+  ]
+}

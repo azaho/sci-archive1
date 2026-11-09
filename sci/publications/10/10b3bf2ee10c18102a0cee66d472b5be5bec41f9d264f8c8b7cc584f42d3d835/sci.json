@@ -1,0 +1,132 @@
+{
+ "title": "In models from three fly mushroom body connectomes, glomerulus input share gave a community input advantage, Kenyon cell co-convergence gave none, and real wiring gave no gain for 110 odors",
+ "abstract": "We tested the proposal that the fly mushroom body is an associative fovea for food odors (Zheng et al. 2022). We used FlyWire v783 (left and right) and hemibrain v1.2 (right) projection neuron to Kenyon cell wiring. Against a null that keeps each neuron's connection count, a co-convergent community of 16 to 18 glomeruli occurred in each hemisphere. Thirteen glomeruli (DL2v, DM1-DM6, DP1l, DP1m, VA2, VA4, VM2, VM3) were in all three. A community defined in one hemisphere replicated in another in 4 of 6 tests at p = 0.0002 and more weakly from FlyWire to hemibrain (p = 0.038, 0.070). Glomerulus input shares agreed across hemispheres (Spearman 0.89-0.93). We then built sparse thresholded Kenyon cell models from real wiring and two nulls: a fixed-degree null that keeps input shares and removes co-convergence, and an equal-share null. With synthetic inputs, real wiring reduced the identification gap between community-only and other-only patterns relative to the equal-share null (z 2.75 and 4.41 in FlyWire, 0.48 in hemibrain; 7.09, 6.18, 3.51 with per-PN rate division). Relative to the fixed-degree null, it gave no change (z -1.67 to 0.24). With 110 measured odors (Hallem and Carlson 2006), real wiring and the fixed-degree null gave equal accuracy. Real wiring was less accurate than the equal-share null in 10 of 24 setting-hemisphere cases and more accurate in none. It had lower Kenyon cell dimensionality than each null in about half of the cases. Odors that drive the community more did not get a larger gain (48 tests, no positive test at p < 0.05). Thus, in these models, the community advantage comes from unequal input shares, not from co-convergence. Limitations: a simple rate model with assumed parameters, receptor data for only 23 glomeruli (none for DM1, VA2, VA4, DP1m), two of the three hemispheres from one fly, and no spatial bouton null.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "mushroom body",
+  "Kenyon cells",
+  "projection neurons",
+  "connectome",
+  "FlyWire",
+  "hemibrain",
+  "olfaction",
+  "odor discrimination",
+  "null models",
+  "co-convergence",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_coconvergence.png",
+   "caption": "Co-convergence z (observed KC sharing versus a fixed-degree null) for each glomerulus pair in FlyWire left, FlyWire right and hemibrain right. The glomerulus order is the same in all panels. Bold labels show the 13 glomeruli that are in the community in all three hemispheres."
+  },
+  {
+   "path": "files/figures/fig2_model_vs_null.png",
+   "caption": "Identification accuracy for 110 Hallem and Carlson odors and KC participation ratio. Black diamonds show real wiring. Blue dots show the fixed-degree null, which keeps input shares. Orange dots show the equal-share null. Real wiring has the same accuracy as the fixed-degree null, lower accuracy than the equal-share null, and lower dimensionality than both."
+  },
+  {
+   "path": "files/figures/fig3_synthetic.png",
+   "caption": "Identification accuracy for synthetic patterns that activate 5 glomeruli from the community only, or from the other glomeruli only. Relative to the equal-share null, real wiring helps community inputs and hurts other inputs. Relative to the fixed-degree null, it gives no specific change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1016/j.cub.2022.06.031",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test the associative fovea proposal of this work in three hemispheres with thresholded models and measured odors."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell type annotations and hemibrain type matching."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain v1.2 connectome."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain traced adjacency export."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2006.01.050",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Receptor responses to 110 odors."
+  },
+  {
+   "target": "doi:10.1038/srep21841",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DoOR database copies of receptor data, consensus matrix and receptor-glomerulus mapping."
+  },
+  {
+   "target": "https://github.com/ropensci/DoOR.data/tree/db323a496577c4b4a72b5c2fcd1859e07521ffb5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DoOR.data commit used."
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Annotation commit used."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2010.04.009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PN transform with divisive normalization."
+  },
+  {
+   "target": "doi:10.1038/ncomms5114",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Curveball fixed-degree null algorithm."
+  },
+  {
+   "target": "doi:10.1038/nature12063",
+   "reason": "Random convergence model of PN to KC wiring."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2017.01.030",
+   "reason": "Dimensionality of random expansion layers."
+  }
+ ]
+}
