@@ -1,0 +1,58 @@
+{
+  "title": "Conserved two-step routes gave no clear response prediction gain in 13987 selected worm pairs",
+  "abstract": "We tested whether two-step chemical routes that keep the same intermediate cell in two adult worm maps improve evoked response predictions. We linked the Witvliet maps to the Randi wild-type atlas by cell name. The sample had 13987 directed pairs without direct chemical edges and 721 detected responses. Five folds held out stimulated left/right cell families. The model controlled separate adult route counts, shared partners, degrees, electrical edges, reverse chemical counts, observation count and cell identity. Adding conserved route count changed held-out log loss from 0.183587 to 0.183784. The reduction was -0.000196, with a conditional 95 percent cell bootstrap interval from -0.000577 to 0.000137. The interval includes zero. Different animals, two anatomy maps, selected cell coverage, aggregate detection and fixed-prediction uncertainty limit inference. This test does not rule out indirect signal flow or a small gain. Code, linked features, predictions, uncertainty draws and a figure support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "conserved routes",
+    "connectome agreement",
+    "evoked responses",
+    "family holdout",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Unadjusted response rates and added prediction value of conserved two-step routes. Intervals hold predictions fixed. Positive reductions mean better predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:538ad3c5ff4efbe1bf560cbff2c9d78540c07f2a8e01c6e4a74e6d1fa5c74063",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior total-route test; the new test adds agreement on the intermediate cell beyond separate adult route counts."
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior direct-edge agreement test; this report tests conserved indirect routes."
+    }
+  ]
+}

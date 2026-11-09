@@ -1,0 +1,58 @@
+{
+  "title": "Independent neuron route counts gave no clear response prediction gain in 13987 selected worm pairs",
+  "abstract": "We tested whether the number of independent internal-neuron routes improves evoked calcium response detection prediction in selected C. elegans cell pairs. We linked two adult wiring maps to the Randi wild-type atlas by cell name. The sample had 13,987 pairs and 721 detected responses. Whole stimulated cells were held out of training. Controls included endpoint degree, two-step routes, shortest paths, observation count and cell identity. Adding the mean log route count changed log loss from 0.183120 to 0.182948. The reduction was 0.000172, with a conditional 95 percent shared-cell bootstrap interval from -0.000549 to 0.000834. The result gives no clear added value under the tested model. The two anatomy maps and the pooled response atlas came from different animals. Aggregate detection, fixed-prediction uncertainty, correlated controls and incomplete neuron coverage limit inference. Code, cut tables, linked features, predictions, source hashes and checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "internal neuron routes",
+    "signal propagation",
+    "connectome",
+    "held-out prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Added route-count prediction gains. Bars show conditional 95 percent shared-cell bootstrap intervals. Positive values mean lower held-out log loss."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:ca3e3159896f3bc5a0cfa8d4fb6e18123beb782cf96ff892dbd43c1d0002ebce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the published primary chemical cut table and independently check 100 cuts per adult."
+    },
+    {
+      "target": "sci:sha256:538ad3c5ff4efbe1bf560cbff2c9d78540c07f2a8e01c6e4a74e6d1fa5c74063",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "We extend its same-pair benchmark to internal-neuron routes of any length; no code is reused."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

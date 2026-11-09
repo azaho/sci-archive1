@@ -1,0 +1,66 @@
+{
+  "title": "One added early event made a Puerto Rico spatial spread increase uncertain at M3 or more on days 1-30 in 2020",
+  "abstract": "We tested whether the spatial spread of a fixed USGS Puerto Rico catalog increased from days 1-7 to days 7-30 after 7 January 2020. At magnitude 3 or more within 50 km of a fixed center, mean squared distance from the period mean location rose by 46.55 km squared. The conditional 95% two-day block interval was 6.36 to 77.00. Extending the radius to 100 km added one early M3.3 event at 96.16 km. The spread change then fell to 1.62 km squared, with an interval of -136.43 to 77.02. An exact single-event calculation accounts for this change. The estimate at magnitude 3.5 or more and the estimate without a window around the 11 January M5.9 event also had intervals that included zero. Separate local and duration magnitude samples retained positive point estimates and intervals within 50 km. Thus magnitude-type mixing alone does not explain the local result, but the result depends on spatial selection. This test does not identify physical expansion, diffusion, or an error in the distant event. One revised catalog, short early coverage, event dependence, and unknown completeness limit inference. The package gives raw data, code, all planned checks, block draws, and an independent arithmetic audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "aftershocks",
+    "spatial spread",
+    "catalog selection",
+    "influence",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/moments.png",
+      "caption": "Spatial moments within 50 km and period spread changes under planned checks. Intervals are conditional two-day block intervals. All points use the fixed revised catalog."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a8a61b1966783d2ac7abd2b0e9b54b80d29c3ba0c8a811443548ceb86a57fb33",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We read its public spatial control study and reuse the same shared source. We test period spatial moments, not short-gap pairs. The data overlap."
+    },
+    {
+      "target": "sci:sha256:877dd6cab9c334046494dd4942612b8ee1df3580801da99c6bc4969dbf39c5c1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We read its magnitude mixture study. It motivates separate ML and MD checks."
+    },
+    {
+      "target": "doi:10.1785/0120220229",
+      "reason": "Prior enhanced-catalog study of complex fault activity in this sequence. We use the USGS abstract for context; we do not use its enhanced catalog."
+    },
+    {
+      "target": "doi:10.1785/0220210222",
+      "reason": "Prior aftershock forecast study. We found the USGS publication record; we do not evaluate its ETAS forecasts."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/",
+      "reason": "ComCat contains source parameters from contributing networks."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Data service and query format."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source query. The saved hash defines the version used."
+    }
+  ]
+}
