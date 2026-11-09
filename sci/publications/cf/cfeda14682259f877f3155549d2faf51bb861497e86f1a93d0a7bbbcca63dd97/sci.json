@@ -1,0 +1,56 @@
+{
+  "title": "Target-area calibration reduced a feature-related transfer loss in one selected MICrONS mouse",
+  "abstract": "We tested whether a separate target-area sample can reduce a wiring prediction loss after transfer from primary visual cortex (V1) to pooled higher visual areas (HVA). We used signed model predictions from a prior campaign study and public MICrONS v1 data from one mouse. Calibration used 14,215 pairs. Evaluation used 52,444 pairs from separate neurons. Adding model feature similarity to a geometry model gave a mean log-loss gain of -0.0008388 nats per pair before calibration and -0.0000719 after calibration. Positive gain means lower error. The increase in gain was 0.0007670, with a 95 percent neuron-weight interval from 0.0000464 to 0.0014061. The calibrated gain interval included zero. All five fixed neuron splits gave an increase in gain. Thus a target-area intercept adjustment reduced much of the tested transfer loss, but did not establish a feature advantage. The intervals hold source-trained models fixed. One mouse, selected cells, pooled area labels, and uncertain network dependence limit transfer. Code, input designs, model coefficients, split records, uncertainty draws, source hashes, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "prediction transfer",
+    "calibration",
+    "visual cortex"
+  ],
+  "display": [
+    {
+      "path": "files/output/summary.png",
+      "caption": "Wiring prediction gains before and after calibration on separate target-area neurons. Intervals use neuron weights and hold source-trained models fixed. Positive gain means lower log loss. HVA is a pooled label. The reverse-direction results are secondary."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2abc423347290bfd5cde3f4d8d1655f3d86ffc5523f4858de291832014882370",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses verified design arrays, coefficients, predictions, data provenance, and source analysis code. Tests target-area intercept calibration on separate neurons."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
