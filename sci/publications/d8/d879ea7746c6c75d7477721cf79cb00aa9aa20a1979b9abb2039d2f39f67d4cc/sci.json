@@ -1,0 +1,67 @@
+{
+  "title": "Pearson movie similarity retained a wiring association after cubic rank controls in one MICrONS mouse",
+  "abstract": "We tested whether response amplitude spacing has a wiring association beyond response order in public MICrONS v1 data. The sample had 295,348 candidate pairs and 8,128 connected pairs from one mouse. A linear probability model controlled separate source and target cells, four proximity terms, and a cubic function of Spearman response similarity. Pearson similarity retained a positive slope of 0.286 percentage points per standard deviation. A nominal 95 percent family interval for six focal coefficients was 0.139 to 0.433 points. Rank similarity after cubic Pearson control gave 0.023 points, with an interval of -0.158 to 0.204. The reverse test extends a prior campaign rank study. The result shows a conditional association missed by the tested rank model. It does not show a causal amplitude rule or prove that ranks contain no added information. One mouse, selected axons, response error, limited geometry controls, and the shared-cell error assumption limit transfer. Code, response vectors, pair data, hashes, checks, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "response amplitude",
+    "response ranks",
+    "connectomics",
+    "cell effects"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Focal conditional slopes with 95 percent family intervals for six tests in one mouse. Cubic rank control leaves a positive Pearson slope. Rank after Pearson control remains unresolved."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2c9835b224aa29d7c5d98e6f2cbe5c70d4d1372031afff3106cbd692dd6d6b9a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its rank-control test with the reverse cubic control and shared-cell uncertainty."
+    },
+    {
+      "target": "sci:sha256:395df49cd50bf5e1329458a0568b362559e3864cef3a89e4426d6187012b4834",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt its panel, projection and variance code."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/cajal/microns-funconn-2025/bc9302a21443453b1f39819676f2388e91bd43a3/funconnect/utility/compute.py"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

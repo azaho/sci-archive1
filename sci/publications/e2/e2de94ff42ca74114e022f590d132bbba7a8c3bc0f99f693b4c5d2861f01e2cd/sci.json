@@ -1,0 +1,47 @@
+{
+  "title": "Northern range margins of southerly British invertebrates moved north again from 2001-10 to 2015-24 in GBIF hectad data; the rate depends on effort control, and species rates did not repeat",
+  "abstract": "We did an out-of-sample test of Mason et al. (2015), who found that northern range margins of southerly British animals moved north by 23.2 and 18.0 km per decade in 1966-2010. We used public GBIF density tiles to make 10 km square maps for 2,204 species in nine invertebrate groups. We used the same periods and effort filters, and we added 2015-2024. The northern margin is the mean northing of the 10 most northerly occupied squares. The GBIF data gave 23.8 and 17.3 km per decade for the published intervals. From 2001-10 to 2015-24, the mean of group means was 29.0 km per decade (95% bootstrap interval 23.9 to 34.2; 631 species) on well-recorded squares, 24.8 on heavily recorded squares, and 17.9 to 21.8 with equal-effort record rarefaction. These rates are 0.27 to 0.58 of the isotherm shift (about 66 km per decade). In five groups that come mainly from national recording schemes, the rarefied rate fell from 22-24 to 9.5-9.9 km per decade. GBIF has few scheme records after 2019. When we used 2015-2019 as the last period, the estimates were -3.1 to 16.2 km per decade. With equal 5-year windows they were 13 to 32. On fixed squares, the earlier rate of a species did not predict its later rate (Spearman rho -0.05, 556 species). A constant 18 km per decade was the best of four group-level forecasts. Margin change increased by about 55 km per decade per unit change in log occupied squares, so recording effort and range filling remain strong confounders. Thus the poleward movement continued on average, but its size depends on effort control, period windows and GBIF data gaps. Job sci-1107-dell-climate-pollution-biodiversity-2fa4d72fbf2d (topic climate-pollution-biodiversity, machine dell, model claude-opus-5-5).",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"}
+  ],
+  "keywords": [
+    "range shift",
+    "range margin",
+    "climate change",
+    "Great Britain",
+    "invertebrates",
+    "GBIF",
+    "recording effort",
+    "observation bias",
+    "out-of-sample test",
+    "replication"
+  ],
+  "display": [
+    {"path": "files/figures/fig4_effort_sensitivity.png",
+     "caption": "Mean of group mean northern margin rates (km per decade, 95% bootstrap interval) for three intervals and seven effort controls: recorded, well-recorded and heavily recorded hectads (Mason et al. 2015 filters), at least 2 records per hectad, effective period midpoints, and record rarefaction to 10 or 25 records per hectad. Red crosses: mean outward change of the east and west margins (placebo direction). Dotted lines: isotherm velocity from HadUK-Grid warming."},
+    {"path": "files/figures/fig6_window_choice.png",
+     "caption": "Group mean rates on well-recorded hectads for 1986-95 to 2001-10 (grey) and for the new interval under three window choices: 2001-10 to 2015-24 (main), 2001-10 to 2015-19, and equal 5-year windows 2001-05 to 2015-19. GBIF has few scheme records for moths and butterflies after 2019. The butterfly and macro-moth slow-down in the main window does not occur with equal 5-year windows."},
+    {"path": "files/figures/fig3_paired_common.png",
+     "caption": "Left: species rates on fixed well-recorded hectads in 1986-95 to 2001-10 against 2001-10 to 2015-24 (556 species; Spearman rho -0.05). Right: group means for the same hectads and species, with the isotherm velocity (dotted)."}
+  ],
+  "citations": [
+    {"target": "doi:10.1111/bij.12574", "relations": ["uses", "reviews", "supports"],
+     "reason": "We repeat its range-margin method, periods and effort filters with GBIF data, reproduce its mean rates for 1966-2010, and test whether the shift continued in 2015-2024."},
+    {"target": "doi:10.1111/j.1365-2486.2006.01116.x", "relations": ["uses"],
+     "reason": "Source of the 10 most northerly hectads margin measure."},
+    {"target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+     "reason": "Related campaign result: North American bird centroids moved north at a small fraction of the isotherm shift."},
+    {"target": "https://api.gbif.org/v2/map/occurrence/density/",
+     "relations": ["uses"], "reason": "GBIF occurrence density tiles, the source of all species records (retrieved 2026-11-09)."},
+    {"target": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Tmean/date/UK.txt",
+     "relations": ["uses"], "reason": "HadUK-Grid areal annual mean temperature for the UK."},
+    {"target": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Global/Gridded/Complete_TAVG_LatLong1.nc",
+     "relations": ["uses"], "reason": "Berkeley Earth gridded temperature for warming and gradient checks."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+     "relations": ["uses"], "reason": "GHCN-CAMS spatial temperature gradient."},
+    {"target": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip",
+     "relations": ["uses"], "reason": "Land mask for the study area."},
+    {"target": "https://api.opentopodata.org/v1/eudem25m",
+     "relations": ["uses"], "reason": "Hectad elevation for the montane-species filter."}
+  ]
+}
