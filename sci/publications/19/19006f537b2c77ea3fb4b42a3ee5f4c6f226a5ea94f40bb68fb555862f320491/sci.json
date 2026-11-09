@@ -1,0 +1,127 @@
+{
+ "title": "Warm May-June advanced autumn leaf colouring in Germany and Switzerland in 1951-2025 but not in Japan; a delay from warmth after the solstice was clear only in 2016-2025",
+ "abstract": "Zohner et al. (2023) reported that warming before the summer solstice makes autumn leaf senescence earlier and that warming after the solstice makes it later. We tested this with 582,585 German (DWD), 18,430 Swiss (MeteoSwiss) and 8,015 Japanese (JMA ginkgo and maple) records of autumn colouring in 1951-2025. The years 2016-2025 were not in the data of the original study. Temperatures came from E-OBS v31.0e and GHCN-Monthly v4. The pre-registered model used station and 5-year period fixed effects and two-way clustered errors. Checks used year fixed effects, a leaf-out control, placebo and negative-control tests, distributed-lag curves and a forecast test. Warmer 1 May-20 June gave earlier 50% colouring in Germany (-1.42 days per C, 95% CI -1.72 to -1.12) and Switzerland (-1.24) in 1951-2015, and in 2016-2025 (-0.83 and -1.05; year-permutation p 0.07 and 0.18). Japan showed no pre-solstice effect. Warmth from 21 June to 31 August had no clear effect in Europe in 1951-2015, where the delay started in late July. In 2016-2025 it gave later colouring (+1.49 and +2.26 days per C; permutation p 0.03 and 0.09), with the sign change near the solstice. This 2016-2025 delay came only from differences between years. With year fixed effects, the German estimate was +0.32 (-0.32 to +0.97). A model fitted to 1951-2015 with the pre-solstice term predicted German 2016-2025 colouring 3.2 days too early, and it had a larger error than the same model without that term. Limitations: the test period has 10 years, the E-OBS grid is coarse, the data give only the 50% stage (not the onset), and the observers are not identified.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "autumn phenology",
+  "leaf senescence",
+  "summer solstice",
+  "leaf colouring",
+  "out-of-sample test",
+  "forecast test",
+  "DWD phenology",
+  "MeteoSwiss phenology",
+  "JMA phenology",
+  "E-OBS",
+  "GHCN-Monthly",
+  "fixed effects",
+  "distributed lag",
+  "permutation test",
+  "observation bias",
+  "climate change",
+  "replication",
+  "Germany Switzerland Japan"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_monthly_slopes.png",
+   "caption": "Change in the 50% autumn colouring date per 1 C warmer month (station and 5-year period fixed effects, two-way clustered 95% CIs) for 1951-2015 (blue) and 2016-2025 (orange). In Europe, April-June warmth gives earlier colouring in both periods. August and September warmth gives later colouring. Japan shows only the autumn effect."
+  },
+  {
+   "path": "files/figures/fig2_crossing_curves.png",
+   "caption": "Cubic distributed-lag curves of 10-day temperature effects on colouring date. Diamonds mark the zero crossing with a 95% interval. The sign changed in late July in 1951-2015 and near the solstice in 2016-2025. The 2016-2025 intervals use 10 year clusters and can be too narrow."
+  },
+  {
+   "path": "files/figures/fig4_forecast_errors.png",
+   "caption": "Errors of 2016-2025 forecasts from models fitted to 1951-2015 (predicted minus observed, mean of species network means). In Germany, the temperature model with the pre-solstice term and no trend predicted colouring too early in every year."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.adf5098",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Claim under test: the effect of warming on autumn senescence reverses after the summer solstice."
+  },
+  {
+   "target": "sci:sha256:70b69f10765f3c0c6114e4131551020643445032d887563a907e07979caab796",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its DWD/MeteoSwiss parsing code (02_phenology.py), the fixed-effects helper (fe.py) and its retrieval recipe."
+  },
+  {
+   "target": "sci:sha256:d59fde6e0c843a2c2e75a136205153ac98ac013995d48c5c9857ef5121ad53ed",
+   "reason": "Earlier campaign test of summer warmth and Japanese autumn leaf intervals."
+  },
+  {
+   "target": "sci:sha256:6b985255d0d251e826903b13c3f1fa00183954bc0b8ab13f84471fb2a4338953",
+   "reason": "Earlier campaign test of spring-to-autumn carry-over in Japan (Zani et al. hypothesis)."
+  },
+  {
+   "target": "doi:10.1126/science.abd8911",
+   "reason": "Zani et al. 2020: productivity and earlier autumn senescence."
+  },
+  {
+   "target": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/phenology/annual_reporters/wild/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DWD annual-reporter phenology records, retrieved 2026-11-09."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.ogd-phenology/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss open phenology data, 175 station files, retrieved 2026-11-09."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/sakura/data/ruinenchi/ruinenchi_all.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA phenological observation archive (SHA-256 0ca3e395...)."
+  },
+  {
+   "target": "https://knmi-ecad-assets-prd.s3.amazonaws.com/ensembles/data/Grid_0.25deg_reg_ensemble/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS v31.0e daily mean temperature and precipitation (shared campaign copies), plus 2025-2026 update files."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "reason": "E-OBS reference (Cornes et al. 2018)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/ghcn/v4/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Monthly v4.0.1 TAVG QCF, version 20261108."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-18-0094.1",
+   "reason": "GHCN-Monthly v4 reference."
+  },
+  {
+   "target": "doi:10.1198/jbes.2010.07136",
+   "reason": "Two-way cluster-robust inference."
+  }
+ ]
+}

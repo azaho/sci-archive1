@@ -1,0 +1,100 @@
+{
+  "title": "An electrical covariance mixture had no clear prediction advantage over a geometry mixture in eight worms",
+  "abstract": "We tested whether electrical wiring adds information for hidden calcium activity prediction beyond covariance learned from other animals. We fitted and tuned models on 40 freely moving C. elegans recordings and froze them before testing eight recordings from a second cohort. Each test hid half the reliably identified cells. The electrical mixture gave mean prediction correlation 0.445434. A model with an expanded activity-only penalty grid gave 0.434262. Their paired difference was 0.011172, with a 95 percent animal-bootstrap interval of 0.006245 to 0.015856. A geometry mixture gave 0.444883. Its difference from the electrical mixture was 0.000551, with an interval of -0.002540 to 0.003866. A chemical mixture also had no clear difference. Thus a small prediction gain did not resolve a benefit specific to electrical wiring. Planned stricter-label, short-window and first-difference checks retained positive gains against the initial empirical grid. Matched penalty and alternative-mixture controls were added after main parameters were frozen, before transfer scores were inspected. The cohorts share one laboratory; anatomy comes from other animals. Static positive kernels, partial labels, fixed masks and conditional intervals limit inference. Original code, aggregate evidence, figures, exact hashes and external retrieval instructions support reproduction. External source records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "activity interpolation",
+    "gap junctions",
+    "connectome",
+    "covariance transfer",
+    "geometry control",
+    "calcium imaging",
+    "missing neurons",
+    "animal validation"
+  ],
+  "display": [
+    {
+      "path": "files/figures/controls.png",
+      "caption": "Frozen predictions in eight Dag animals and paired score differences. Electrical mixing improves on the matched activity-only penalty grid, but its contrasts with geometry and chemical mixtures include zero. Bars show 95 percent animal-bootstrap intervals conditional on fixed models, anatomy and masks."
+    },
+    {
+      "path": "files/figures/prediction.png",
+      "caption": "Hidden-trace prediction correlations from nested validation in 40 Atanas, Kim animals and frozen transfer in eight Dag animals. The empirical model here uses the initial three-point penalty grid. Each model uses the same half-cell masks."
+    },
+    {
+      "path": "files/figures/added_score.png",
+      "caption": "Planned electrical-mixture gains over the initial empirical model for full traces, strict labels, the first 800 frames and first differences. Models were retuned only on the first cohort. These checks do not include the post-plan matched-control comparison."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ],
+      "reason": "First activity cohort and NeuroPAL identities; data release v4 at Zenodo record 19388374."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Second activity cohort and NeuroPAL identities; data release v1 at Zenodo record 19414639."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Corrected July 2020 hermaphrodite chemical and electrical adjacency measurements."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned atlas position source; exact verified extract is kept external."
+    },
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies verified Cook and atlas extracts. Its pairwise association motivates the new held-out reconstruction test."
+    },
+    {
+      "target": "sci:sha256:00ff0bddf5dfd7c13799d1ce980a1f7b8eb159a9da31fba0db5dd20396bec7f4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Preparation code, source hash audit and recording-condition description; no pair covariance records are reused."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior smooth-mode comparison on the same cohorts; present work tests held-out cell prediction."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1907.11075",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior anatomy-based latent-state imputation on synthetic data."
+    },
+    {
+      "target": "doi:10.1101/2024.09.22.614271",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fitted dynamical reconstruction of hidden neurons in perturbation recordings; not a directly comparable benchmark."
+    }
+  ]
+}
