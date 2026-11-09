@@ -1,0 +1,79 @@
+{
+ "title": "Cascadia tremor in 2013-2026 followed the M2 tide about twice as strongly 48 h or more after local onset as in the first 24 h; northern California tremor showed almost no M2 response",
+ "abstract": "Houston (2015) found that Cascadia tremor becomes more sensitive to tides during several days after it starts at a location, in six slow-slip events of 2007-2012. We tested this result in the PNSN tremor catalog (791,720 detections, 2009-2026). We counted detections per hour in 0.2 x 0.3 deg cells and split them into 4,484 local episodes. A conditional Poisson model removed each cell-episode-day level and the UTC hour of day. We fit one M2 peak phase per region with onsets in 2009-2012. Then we kept the phase fixed and measured the M2 log-rate amplitude a in 2013-2026 (3,772 episodes, 503,463 detections) as a function of time since local onset. In the test period, a was 0.077 (SE 0.013) in the first 24 h and 0.164 (SE 0.014) at 48 h or more. The difference D = 0.086 has a cluster-bootstrap 95% interval of 0.054 to 0.116. The same pipeline at 34 non-tidal periods gave D with SD 0.015 and a maximum of 0.030. The increase stayed inside daily-rate tertiles, without near-saturated hours, in long episodes only, before and after the 2017 catalog change, and for other cell sizes, gaps and onset rules (D = 0.073 to 0.120). It was clear in northern Washington and Oregon and uncertain in southern Washington. Northern California tremor, 47% of the test detections, showed almost no M2 response (a <= 0.045). Modulation also increased with the share of the local episode that had passed, and the data cannot separate elapsed time from accumulated tremor. Limitations: we used a fitted phase, not modelled tidal stress, so we give no sensitivity per kPa; the catalog is a 150-s detection grid.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "tectonic tremor",
+  "episodic tremor and slip",
+  "tidal modulation",
+  "Cascadia",
+  "slow slip",
+  "M2 tide",
+  "out-of-sample test",
+  "placebo frequencies",
+  "conditional Poisson",
+  "PNSN"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_modulation_vs_time.png",
+   "caption": "M2 log-rate amplitude a by hours since local tremor onset. Left: all regions, test period 2013-2026 (blue, 95% cluster bootstrap band) with the phase fixed from 2009-2012; orange shows the 2009-2012 period in-sample. Right: test period by region with 95% cluster-robust intervals."
+  },
+  {
+   "path": "files/figures/fig3_placebo.png",
+   "caption": "Left: out-of-sample amplitude at the 2009-2012 phase for M2, N2, O1 and 34 non-tidal placebo periods. Right: late-minus-early change D for the placebo periods (grey) and for M2, N2 and O1."
+  },
+  {
+   "path": "files/figures/fig4_explanations.png",
+   "caption": "Tests of alternatives in 2013-2026. Left: the rise with time since onset stays inside tertiles of the cell daily tremor count. Middle: modulation by the share of the local episode detections that has passed. Right: modulation by time before the last local detection."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/ngeo2419",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "We test its rising tidal sensitivity of tremor with time since onset in 2013-2026 tremor outside its 2007-2012 sample."
+  },
+  {
+   "target": "doi:10.1126/science.1150558",
+   "reason": "First report of tidal modulation of Cascadia tremor."
+  },
+  {
+   "target": "doi:10.1029/2008GL035458",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Detection and location method of the PNSN tremor catalog that we use."
+  },
+  {
+   "target": "doi:10.1029/2010JB007502",
+   "reason": "M2 modulation of slow slip strain and tremor in northern Cascadia."
+  },
+  {
+   "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PNSN tremor catalog, SHA-256 08ee9054c43249d8441f0700fe7241c2b103ba51854d13bf4d9f212c97aad826."
+  },
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9443090/harcon.json",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA harmonic constants used to check the tidal phase convention and to give tremor peak time after high water."
+  },
+  {
+   "target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13",
+   "reason": "Related campaign test of body-tide effects on global earthquake b-values."
+  }
+ ]
+}
