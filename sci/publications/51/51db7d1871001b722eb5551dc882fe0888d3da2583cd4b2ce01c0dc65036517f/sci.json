@@ -1,0 +1,78 @@
+{
+  "title": "Site-based covariance fits cut median readout variance with 20 Gaussian trials in two adult worm models",
+  "abstract": "We tested whether synaptic site groups can help estimate a useful noise covariance from few trials. Two adult C. elegans maps supplied 160 common targets and 141 or 142 source-count signals. Gaussian trials had a covariance set by shared sites, with known signals and marginal variances. A one-parameter site fit at sharing fraction 0.5 gave median variance gains of 1.0321 and 1.0385 with 20 trials. Standard covariance shrinkage gave 0.9917 and 0.9919. The exact covariance gave 1.0324 and 1.0388. A fit using the other adult map gave smaller gains of 1.0228 and 1.0269. More trials did little to remove this template bias. At zero sharing the site fit gave no gain and could add variance. This is a conditional simulation result, not measured neural coding. Correct model structure, known tuning, known marginal noise and independent Gaussian trials are strong assumptions. Only two adult maps were used. Code, aggregate trial results, source hashes, retrieval steps, checks and a figure support reproduction. External source records and record-level transformations are excluded from the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "covariance estimation",
+    "shared synaptic sites",
+    "linear readout",
+    "sample size"
+  ],
+  "display": [
+    {
+      "path": "files/results/learning.png",
+      "caption": "A one-parameter site fit used few Gaussian trials under matched noise assumptions. Bands show training-set variation, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/nn.3807",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1016/S0047-259X(03)00096-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior shared-site covariance model."
+    },
+    {
+      "target": "sci:sha256:d4091867ad7d872300a0ce48d61982dd67b3f969d09ce02a2577a9bf0c3029bc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior source-count signal model."
+    },
+    {
+      "target": "sci:sha256:6b0ff0072fbdfc05f7b950098f30e1d4d2e585ea27ea1397e8c124b363fd772b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior exact cross-animal readout transfer; this test adds finite-trial fitting."
+    },
+    {
+      "target": "sci:sha256:fe098e3246f3ce401a37b082671722a7c4fe7f38a99d988b06db35b017aadb63",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses verified baseline-licensed panel.txt with attribution."
+    }
+  ]
+}
