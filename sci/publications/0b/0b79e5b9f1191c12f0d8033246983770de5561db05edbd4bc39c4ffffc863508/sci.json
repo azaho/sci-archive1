@@ -1,0 +1,49 @@
+{
+  "title": "Demersal community thermal indices followed year-to-year sea surface temperature changes in five US East Coast trawl surveys but not in ten other North American surveys, 1970-2020",
+  "abstract": "Question: when the sea is warmer than usual, does the demersal shelf community change to warmer-water species in the same year, and is this response the same in all regions? Data: 15 North American bottom trawl surveys in the OceanAdapt compilation (121,118 hauls, 1970-2020), species thermal indices from the WOA23 climatology, and HadISST1 and ERSSTv5 sea surface temperature (SST). Method: we used fixed strata and calculated a community temperature index (CTI) for each survey year. The main statistic is the slope of the CTI change between consecutive surveys on the change in the 12-month SST anomaly (C per C). We used block-bootstrap intervals, phase-randomized SST surrogates and random-effects means. Results: the five US East Coast surveys had slopes of 0.15-0.35 (mean 0.25, 95% CI 0.17-0.33). The ten other surveys had a mean of 0.013 (-0.008 to 0.034). The East Coast result repeated in two periods, with two SST products, with consistent taxa, with gear-change pairs removed, and with thermal indices from other regions only. Biomass weights made two Southeast US slopes small. The response came in the same year. We found no clear warm-cold asymmetry. Slopes became smaller with depth (Northeast US fall 0.65 at 0-50 m, 0.06 at 200 m or more). Outside the East Coast, strata at 0-100 m had slopes of only 0.04-0.05. In the Northeast US, warm-affinity species carried the response. In the Southeast US fall and summer, cold-affinity species carried it. Thus range-edge species of each community responded. Interpretation: fast thermal re-sorting was a property of the East Coast shelf, not of North American shelves in general. A poor SST link to sea-floor temperature explains part of the regional contrast, but not all of it. Limitations: we used SST, not sea-floor temperature, and nominal survey months because the data have no haul dates. Thus we cannot separate range change from a change in migration timing. We formed the East Coast group after the first per-survey results, and it contains only two independent regions. STI is a climatological mean.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": [
+    "community temperature index",
+    "species thermal index",
+    "demersal fish",
+    "bottom trawl survey",
+    "OceanAdapt",
+    "sea surface temperature anomaly",
+    "thermal tracking",
+    "species distributions",
+    "range edge",
+    "tropicalization",
+    "deborealization",
+    "depth",
+    "observation bias",
+    "regional replication",
+    "Northeast US shelf",
+    "Southeast US shelf"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_tracking_by_survey.png", "caption": "Slope of the year-to-year CTI change on the change in 12-month SST anomaly for 15 North American trawl surveys, with 95% block-bootstrap intervals and phase-randomization p-values. The five US East Coast surveys (orange) have clear positive slopes (random-effects mean 0.25). The ten other surveys (blue) have a mean near zero (0.013)."},
+    {"path": "files/figures/fig2_depth_bands.png", "caption": "Tracking slopes for strata in four depth bands in each survey. Slopes become smaller with depth. Outside the East Coast, strata at 0-100 m have small positive mean slopes (0.04-0.05), and strata at 200 m or more have a small negative mean slope."},
+    {"path": "files/figures/fig3_decomposition_species.png", "caption": "(a) Contributions of warm-affinity and cold-affinity species to the CTI response per C of SST change. Warm-affinity species carry the Northeast US response, and cold-affinity species carry the Southeast US fall and summer responses. (b, c) Proportional occurrence change per C of SST for each species against its thermal offset in the Northeast US fall and Southeast US fall surveys."}
+  ],
+  "citations": [
+    {"target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a", "relations": ["uses"], "reason": "Source of the trawl survey catch compilation (all-regions-full-fltr.csv.gz), used from the shared campaign dataset."},
+    {"target": "https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DATA/temperature/netcdf/decav/1.00/woa23_decav_t00_01.nc", "relations": ["uses"], "reason": "Temperature climatology for species thermal indices."},
+    {"target": "https://www.metoffice.gov.uk/hadobs/hadisst/data/HadISST_sst.nc.gz", "relations": ["uses"], "reason": "Main SST product."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc", "relations": ["uses"], "reason": "Second SST product for robustness."},
+    {"target": "sci:sha256:80df002698b6546a701987b85654b633fa3f791c020273119ac8a48dfcb50886", "relations": ["supports"], "reason": "That study found little interannual redistribution of Alaska demersal fish with haul bottom temperatures. Our near-zero community slopes in the three Alaska surveys agree, with a different method and data."},
+    {"target": "sci:sha256:574c7309f1f213014bcb4d616918aee2098602eb89e7a4b233d5f5dea755e269", "reason": "Earlier campaign work on survey-effort effects in the same OceanAdapt file."},
+    {"target": "sci:sha256:f07015b2c467a3942a4bbf2f81bd3db886e2db9b97768c7e878aa51c5e9bf3a8", "reason": "Earlier campaign work on survey-area weights in the same OceanAdapt file."},
+    {"target": "sci:sha256:d0499dfdbc6feb934b41e7e091df6716f7b06fb6a3a7a4ecc153573cd11bfa9b", "reason": "Earlier campaign work on catch and detection latitude trends in the same OceanAdapt file."},
+    {"target": "sci:sha256:b83b9063138622a70c8fa5421cd2b2d578c62dcf01789f8d0f7a30c430b68a33", "reason": "Earlier campaign work on Bering Sea groundfish distribution and the cold pool."},
+    {"target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91", "reason": "Campaign study of bird community temperature index lag, for comparison across taxa."},
+    {"target": "doi:10.1038/s41586-023-06449-y", "reason": "Marine heatwaves and demersal fish change in trawl surveys."},
+    {"target": "doi:10.1038/s41558-019-0631-5", "reason": "Ocean community warming responses and thermal affinities."},
+    {"target": "doi:10.1126/science.1239352", "reason": "Marine taxa track local climate velocities."},
+    {"target": "doi:10.1016/j.cub.2021.08.034", "reason": "Tropicalization and deborealization decomposition of CTI change."},
+    {"target": "doi:10.1029/2002JD002670", "relations": ["uses"], "reason": "HadISST1 reference."},
+    {"target": "doi:10.1175/JCLI-D-16-0836.1", "relations": ["uses"], "reason": "ERSSTv5 reference."}
+  ]
+}

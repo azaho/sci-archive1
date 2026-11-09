@@ -1,0 +1,55 @@
+{
+  "title": "Direct wiring gave no clear mutant response detection prediction gain in 391 selected worm pairs",
+  "abstract": "We tested whether direct adult wiring helps predict response detection in unc-31 mutant worms among pairs with detected wild-type responses. We linked the public Randi response atlas to two Witvliet adult wiring maps by cell label. The main sample had 391 directed pairs, 102 cell identities and 43 mutant detections. After wild-type response, observation count and cell controls, adding chemical and gap-junction counts changed held-out log loss from 0.326877 to 0.328467. The reduction was -0.001590, with a conditional 95% node bootstrap interval from -0.007989 to 0.004894. All seven sensitivity intervals included zero. Raw mutant detection shares were 14 of 96 pairs with listed direct wiring and 29 of 295 without it. This raw contrast did not give clear added prediction value under the tested model. Non-detection is not response absence. Separate animals, pooled trials, few detections, uncertain edge coverage and conditional intervals limit inference. We provide code, linked data, predictions, uncertainty draws, source hashes and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "unc-31",
+    "structure and function",
+    "signal propagation",
+    "gap junctions",
+    "cell holdout",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Left: raw mutant detection shares among wild-type detected pairs. No listed edge is not proof of no direct connection. Right: added prediction gain from direct chemical and gap counts. Positive values mean lower log loss. Conditional 95% intervals hold fitted predictions fixed. Sensitivity tests reuse the same atlas."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of wild-type and unc-31 mutant optogenetic response measurements."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of adult wiring maps D7 and D8."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned data release and consulted loader definitions."
+    },
+    {
+      "target": "sci:sha256:de1b39841752948225c749f9a07d8f9f49a5ea0585c8d6f82731abfbfc71fcf6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior wild-type direction test. This report tests mutant response detection conditional on a wild-type detection. No code or numerical results were reused."
+    }
+  ]
+}
