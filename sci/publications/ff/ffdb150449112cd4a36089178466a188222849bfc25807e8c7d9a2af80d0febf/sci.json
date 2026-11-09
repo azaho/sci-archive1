@@ -1,0 +1,62 @@
+{
+  "title": "Square-root count scaling gave no clear gain over calibrated NOAA widths at 83 US gauges in 2022-2025",
+  "abstract": "We tested whether a square-root forecast-count scale improves annual high tide flood ranges relative to calibrated NOAA widths. The test used only earlier years to fit each scale and kept the forecast midpoint fixed. It has 307 station-years at 83 US gauges in 2022-2025. Square-root scaling raised the equal-year mean 68%-target interval score by 0.283 days. Lower scores are better. Conditional station-and-year bootstrap limits were -0.403 to +1.223 days. Pooled scores were 14.153 and 13.862 days. Coverage was 57.3% and 59.3%. The score difference fell to 0.009 days at gauges present in all seven source years. This gives no clear gain from replacing source widths with this count rule. Four test years, shared coastal conditions, data revisions, inherited threshold checks and reused observations limit inference. The package includes code, inputs, source hashes, all limits, conditional resamples, a separate scalar audit and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "high tide flooding",
+    "forecast uncertainty",
+    "interval score",
+    "count scaling",
+    "NOAA",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Chronological comparison of annual flood interval scores and coverage. Each fit uses only earlier years. Lower interval scores are better."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified input table, source provenance and threshold controls."
+    },
+    {
+      "target": "sci:sha256:fa7d38d960ffb6350d1762d9a0b2182523985b62ce1ded3ddbf366da9a4f56ba",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier-year width calibration reference. Same observations; not independent evidence."
+    },
+    {
+      "target": "sci:sha256:4b04057e83d8c33dc7db53e8b2c1cbaa5a2a04ed414830ec47a5b0aa4e6a7478",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior regional correction test sets the scope of the new comparison."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json"
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/high-tide-flooding/annual-outlook"
+    },
+    {
+      "target": "https://repository.library.noaa.gov/view/noaa/70863/noaa_70863_DS1.pdf"
+    },
+    {
+      "target": "doi:10.1198/016214506000001437"
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792"
+    }
+  ]
+}
