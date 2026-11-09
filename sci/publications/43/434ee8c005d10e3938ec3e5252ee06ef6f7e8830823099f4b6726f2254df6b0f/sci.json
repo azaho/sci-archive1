@@ -1,0 +1,84 @@
+{
+  "title": "TRICERATOPS false-positive probabilities from 2021 predicted too many false positives for 385 TESS TOIs in follow-up to 2026, but the validated and likely-planet classes held",
+  "abstract": "Many TESS papers use the TRICERATOPS false-positive probability (FPP) to vet and validate planet candidates. In 2021, Giacalone et al. published FPP and nearby false-positive probability (NFPP) for 385 unclassified TESS Objects of Interest (TOIs). We compare these forecasts with the TFOP Working Group dispositions on ExoFOP on 2026-11-09. We also use the NASA Exoplanet Archive to find planets with a measured mass. All 12 validated TOIs are confirmed planets. Of 114 likely planets, 79 are confirmed and 2 are false positives (FPs). But FPP predicts too many FPs. For 137 TOIs that are FPs or planets with a measured mass, the FPP values add to 36.1 expected FPs, and 19 occurred. For all 225 resolved TOIs, 51.8 were expected and 19 occurred (p < 5e-6). For FPP >= 0.5, 57.3 FPs were expected, and 13 occurred. Twenty-nine of these TOIs are confirmed planets. If all 37 unresolved TOIs in this group were FPs, the total would be 50 (p = 0.035). A logistic recalibration has slope 0.50 (95% range 0.29-0.86). With it, a published FPP of 0.9 corresponds to an observed FP probability of 0.41 (0.23-0.65), and an FPP of 0.01 corresponds to 0.023 (0.004-0.058). FPP ranks TOIs well (AUC 0.79). NFPP agrees with the nearby-star FP outcomes: 10.1 expected and 11 observed. The largest excess is at P < 1 d: 26.9 FPs were expected, 6 occurred, and 19 TOIs became planets. The data agree with log-odds that are too large, and in part with steep short-period priors. The data do not isolate one cause. Limitations: 149 TOIs are still unresolved, so planets on bright stars can be over-represented in the resolved sample. Worst-case bounds exclude calibration only for FPP >= 0.5 and P < 1 d. There are only 19 FPs. We test the published 2021 values, not the current TRICERATOPS version. Job sci-1107-dell-astronomy-524e11a15115, model claude-opus-5-5.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "TESS",
+    "TRICERATOPS",
+    "false positive probability",
+    "statistical validation",
+    "calibration",
+    "TOI",
+    "TFOP",
+    "exoplanet vetting",
+    "forecast verification",
+    "ultra-short-period planets",
+    "nearby eclipsing binary"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_fpp_reliability.png",
+      "caption": "Observed false-positive fraction against the TRICERATOPS FPP published in 2021, in five FPP bins. Blue circles: FPs divided by FPs plus confirmed planets with a measured mass. Orange squares: FPs divided by FPs plus all confirmed planets. Bars show Wilson 95% intervals. Gray bars show the range over all astrophysical TOIs in the bin, if all unresolved TOIs are planets (bottom) or all are FPs (top). The line is the logistic recalibration (slope 0.50). The dashed line shows perfect calibration."
+    },
+    {
+      "path": "files/figures/fig2_class_outcomes.png",
+      "caption": "TFOPWG outcome on 2026-11-09 for each 2021 TRICERATOPS class. The validated and likely-planet classes contain almost no FPs. Twenty of 52 likely nearby false positives became confirmed planets."
+    },
+    {
+      "path": "files/figures/fig3_nfpp_and_period.png",
+      "caption": "(a) Nearby-star FP fraction against NFPP bins: the black dashes show the mean NFPP, and the pink points show resolved outcomes with 95% intervals. The gray bars show the range over unresolved TOIs. (b) Expected FPs (sum of FPP) and observed FPs by orbital period. The hatched part adds all unresolved TOIs as an upper limit. For P < 1 d, the upper limit is below the expectation."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-3881/abc6af",
+      "relations": [
+        "uses",
+        "reviews",
+        "challenges"
+      ],
+      "reason": "Source of the 2021 TRICERATOPS FPP, NFPP and classes that we test. The FPP over-predicts false positives in later follow-up. The validated and likely-planet classes hold."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.51610024",
+      "relations": [
+        "uses"
+      ],
+      "reason": "VizieR table J/AJ/161/24 with the FPP and NFPP values."
+    },
+    {
+      "target": "https://exofop.ipac.caltech.edu/tess/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TFOPWG dispositions and comments (TOI table downloaded 2026-11-09)."
+    },
+    {
+      "target": "doi:10.26133/NEA13",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive composite parameters, used for mass provenance of confirmed planets."
+    },
+    {
+      "target": "https://github.com/stevengiacalone/triceratops",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "We read the period priors and the omitted occurrence prior in TRICERATOPS 1.1.0."
+    },
+    {
+      "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+      "reason": "Related campaign study of TOI false positives from nearby eclipsing binaries, with a different method (Gaia DR3 eclipsing-binary matches)."
+    }
+  ]
+}
