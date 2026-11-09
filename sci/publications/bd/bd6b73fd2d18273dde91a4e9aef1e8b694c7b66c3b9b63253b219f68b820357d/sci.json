@@ -1,0 +1,87 @@
+{
+ "title": "In 322 Allen Neuropixels probes of mouse visual cortex, the unipolar LFP alpha-beta/gamma crossover was in layer 5, 220 µm below CCF layer 4; bipolar and CSD signals did not show the gradient",
+ "abstract": "Question: Mendoza-Halliday et al. (2024) proposed that the depth where relative alpha-beta and gamma LFP power cross marks cortical layer 4. In mouse, they assigned layers from this pattern itself. We tested the crossover against anatomical layers. Approach: We used 322 Neuropixels probes in visual cortex of 57 mice (Allen Brain Observatory Visual Coding). We read grey-screen and flash-block LFP by HTTP byte ranges. We labelled each channel with its CCFv3 layer and found the flash CSD early sink. A FLIP-like search found the pattern and its crossover in unipolar, common-average, bipolar and CSD-domain signals. Intervals are session-bootstrap 95% intervals. Results: The pattern occurred in 81% of probes (unipolar) and 77% (common average), but in 11% (bipolar) and 4% (CSD), against 2% for shuffled depth order. The unipolar crossover was a median 218 µm (205-237) below the CCF layer-4 centre. It was in layer 5 in 149 of 170 probes and inside layer 4 in 2.4%. Common-average crossovers were 310 µm deeper than layer 4. An atlas rule without LFP predicted layer-4 depth with a 20 µm median error; a calibrated crossover gave 54 µm. The crossover tracked layer-4 depth only through cortical thickness. The flash CSD early sink was 90 µm above the layer-4 centre and about 300 µm above the crossover. Flash stimulation and running moved the crossover by only 5 and 20 µm. Limitation: CCF layers come from track registration, not local histology, and the CSD sink and CCF layer 4 disagree by about 90 µm. Our algorithm is not the published FLIP code. The result applies to head-fixed mouse visual cortex only.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "local field potential",
+  "spectrolaminar motif",
+  "cortical layers",
+  "layer 4",
+  "current source density",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "mouse visual cortex",
+  "CCFv3",
+  "volume conduction",
+  "FLIP",
+  "laminar identification"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_crossover_vs_l4.png",
+   "caption": "Left: unipolar crossover depth against CCF layer-4 centre depth (bars show the layer-4 span) for 169 probes, spontaneous block. The dashed line shows equality. Middle: absolute error against the CCF layer-4 centre for the crossover, the leave-one-session-out calibrated crossover, two atlas rules that use no LFP, and the flash CSD early sink. Right: CCF layer at the crossover and at the CSD sink."
+  },
+  {
+   "path": "files/figures/fig1_profiles_aligned_l4.png",
+   "caption": "Mean relative alpha-beta (10-19 Hz, blue) and gamma (75-150 Hz, orange) power by depth, aligned to the CCF layer-4 centre (0; grey band shows a typical layer-4 span), for four signal derivations and two conditions (272 probes). Shading: 95% session-bootstrap interval."
+  },
+  {
+   "path": "files/figures/fig2_detection_rates.png",
+   "caption": "Fraction of probes with the primate-type pattern (alpha-beta increases and gamma decreases with depth), by derivation and condition. Whiskers: 95% session-bootstrap interval. Dotted lines: rate after shuffling the depth order of sites."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41593-023-01554-7",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Source of the spectrolaminar motif and the FLIP method; we test its layer-4 crossover claim against anatomy in the same mouse data set."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Brain Observatory Visual Coding Neuropixels data set (LFP, channel CCF coordinates, stimulus tables)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCFv3 annotation used for channel layer labels."
+  },
+  {
+   "target": "doi:10.1101/2024.09.18.613490",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Preprint that questions whether the crossover identifies layer 4; our mouse result agrees with this concern."
+  },
+  {
+   "target": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12247776/",
+   "reason": "Rebuttal preprint that defends the motif with histology in primates."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/channels.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Channel CCF coordinates (SHA-256 d2932f1e...)."
+  },
+  {
+   "target": "https://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/ccf_2017/annotation_10.nrrd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CCFv3 2017 10 um annotation volume (SHA-256 a9e9654e...)."
+  }
+ ]
+}

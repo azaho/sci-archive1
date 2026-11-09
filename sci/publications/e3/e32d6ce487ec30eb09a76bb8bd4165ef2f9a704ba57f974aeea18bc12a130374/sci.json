@@ -1,0 +1,62 @@
+{
+  "title": "Thirty targeted one-contact changes remove a fitted response similarity slope in 8,128 connected MICrONS pairs",
+  "abstract": "We tested the stability of a reported link between movie response similarity and multiple synaptic contacts in one MICrONS mouse. We kept 8,128 connected cell pairs, their predictors, and the linear model fixed. The model controlled for both cells and proximity lengths. Its slope was 2.67 percentage points per standard deviation of response similarity. An exact sort of regression weights showed that 30 selected one-contact changes made the slope nonpositive. Every allowed set of 29 changes left it positive. The changes could add one contact to a single-contact pair or remove one from a two-contact pair. With at most one change per source cell, 31 changes were needed. Additions alone needed 34 changes; deletions alone needed 42. Uniform random changes left the slope positive in all 10,000 trials at each of 30, 60 and 150 changes. This is a fixed-design sensitivity result. It does not estimate an error rate or show that any recorded contact is wrong. One mouse, selected connected pairs, fixed geometry and response estimates, and the linear model limit the result. Code, selected data, correction sets and separate regression checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "synaptic contacts",
+    "response similarity",
+    "measurement error",
+    "sensitivity analysis"
+  ],
+  "display": [
+    {
+      "path": "files/results/robustness.png",
+      "caption": "The fitted slope falls to zero after 30 selected one-contact corrections. Uniform random corrections have much smaller effects. All tests keep connected-pair membership and predictors fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its selected connected-pair table and primary linear model. We add a fixed-design outcome-error test."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08660-5",
+      "reason": "Prior source study reports response correlations by contact count."
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/proofreading.html",
+      "reason": "Explains how split and merge errors affect recorded connections and why proofreading varies by cell."
+    },
+    {
+      "target": "https://proceedings.mlr.press/v119/rosenfeld20b.html",
+      "reason": "Prior work on robustness to label changes. Our target is a regression coefficient, not classifier prediction."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
