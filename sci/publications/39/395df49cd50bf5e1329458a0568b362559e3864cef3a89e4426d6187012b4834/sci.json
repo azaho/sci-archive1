@@ -1,0 +1,81 @@
+{
+  "title": "Removing each ten-coordinate block retained a positive response wiring slope in one MICrONS mouse",
+  "abstract": "We tested whether a response similarity and wiring relation depends on one block of a released response vector. The sample had 295,348 candidate pairs and 8,128 connected pairs from one MICrONS mouse. A linear probability model controlled separate source and target cell effects and four proximity terms. The full-vector slope was 0.288 percentage points per SD of correlation. All 12 fits that removed one ten-coordinate block retained positive slopes, from 0.268 to 0.288 points. All 12 conditional family intervals excluded zero. Only three block-only family intervals excluded zero. An exact fixed-scale score allocation required removal of at least 51 of 120 coordinates to remove its positive sign. This certificate keeps the original centering and scale. It does not apply to Pearson correlation after removal. Adaptive removal of the 12 largest-score coordinates with Pearson correlation recomputed also kept a positive point estimate. These tests describe numerical sensitivity in one selected mouse panel. They do not establish transfer to new animals, stimuli or behavioral states.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "structure and function",
+    "response similarity",
+    "coordinate sensitivity",
+    "cell effects"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Left: removal of each block. Middle: each block alone. Bars show nominal 95 percent shared-neuron intervals. Dashed orange lines show the full-vector slope. Right: exact fixed-scale score under targeted coordinate removal. Blocks use released vector order, with no time or scene labels."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source data and prior wiring result."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Matched calcium activity and electron microscopy resource with Allen Institute contributions."
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published both-cell wiring controls motivate the distinct response-coordinate sensitivity test. No derived data or code reused."
+    },
+    {
+      "target": "sci:sha256:748aa272d79394531e3e34931a140943b795b6f92d05e7aa412e7134fd27d14a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published node-to-edge consistency audit establishes the reusable response vector link. We check it again on this panel."
+    },
+    {
+      "target": "doi:10.1093/pan/mpv018",
+      "reason": "Dyadic score variance method."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/blob/bc9302a21443453b1f39819676f2388e91bd43a3/funconnect/utility/compute.py",
+      "reason": "Official code gives the Pearson response correlation definition."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public resource inventory links the v1 source tables."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
