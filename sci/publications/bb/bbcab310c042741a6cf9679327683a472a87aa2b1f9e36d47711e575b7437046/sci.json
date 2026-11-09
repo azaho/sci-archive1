@@ -1,0 +1,69 @@
+{
+  "title": "A 1-to-30-day Kepler-90 box search misses known planet i and gives no later pass for 20 residual peaks",
+  "abstract": "We search Kepler release 25 light curves of Kepler-90 for extra transits with periods from 1 to 30 days. We mask all eight known planets. We select 20 box-search peaks in quarters 1 to 9 and test their fixed periods, epochs, and durations in available quarters 10 to 17. 0 of 20 residual signals pass a later shifted-phase rank threshold of 0.0025 with at least three sampled events. The test uses 999 shifted phases for each signal. Known planet i gives depths of 83 and 98 parts per million at its published ephemeris in the two time intervals. A blind search with i left unmasked does not select its period among the 20 peaks. This is a sensitivity failure. Conditional injections test later fixed-ephemeris sensitivity. They do not measure blind-search completeness. Missing quarters, masking, period error, correlated noise, and detrending limit the result. The study does not set a planet occurrence limit. No independent observatory confirmation is available. Code, fitted test results, figures, source hashes, and retrieval steps are provided.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler-90",
+    "transit search",
+    "time validation",
+    "null result",
+    "box least squares"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Later phase ranks for early-selected periods and conditional injection pass fractions. The dashed line is an operational screen, not a calibrated false-alarm bound."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-3881/aa9e09",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known eighth planet motivates the positive control."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Box least-squares search method."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2507.13588",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Recent Kepler-90 study reports timing variation in the outer planets."
+    },
+    {
+      "target": "sci:sha256:281a533855aeb82b5dd26b5d5ebb2828bd60270621a22449c5f2658d1bb8ff4c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign transit search uses phase controls and injection tests on other targets. We use no files from that study."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "Source data terms and mission credit."
+    },
+    {
+      "target": "https://archive.stsci.edu/missions-and-data/kepler/documents",
+      "reason": "Release 25 and light-curve format documents."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandur+from+pscomppars+where+hostname%3D%27KOI-351%27&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External planet mask ephemerides, retrieved 2026-11-09. Exact hash and shared path are recorded."
+    }
+  ]
+}

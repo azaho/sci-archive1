@@ -1,0 +1,111 @@
+{
+ "title": "Atlantic hurricane power in 2008-2025 was below a frozen 1946-2007 absolute-SST regression and near a relative-SST regression; neither had year-to-year skill (HURDAT2, ERSSTv5)",
+ "abstract": "Vecchi, Swanson and Soden (2008) fitted annual Atlantic power dissipation index (PDI) on August-October main development region (MDR) sea surface temperature (SST) for 1946-2007. Absolute and relative SST (MDR minus 30S-30N mean) fitted equally well but gave very different futures. After 2007 the MDR warmed about twice as much as relative SST (+0.66 C against +0.31 C), so 2008-2025 is an out-of-sample test. We fitted both regressions on 1946-2007 with HURDAT2 and ERSSTv5, froze them, and predicted 18 seasons. The observed mean PDI was 3.05 x 10^11 m^3 s^-2. The absolute model predicted 4.15 (95% interval 3.12-5.19, p = 0.018) and was too high in 16 of 18 seasons. The relative model predicted 3.34 (2.67-4.07, p = 0.20). A predictor MDR minus k times tropical mean matched the observed mean at k = 1.11 (ERSSTv5) and 1.03 (HadISST); k below 0.85 (0.65) failed. In 32 variants (SST set, MDR box, PDI/ACE/log PDI, training from 1946 or 1970), the absolute model over-predicted by 18-33% and the relative model by 0.3-19%; with 1970 training the relative model also failed in 12 of 16. Year by year, neither model beat the 1946-2007 mean: the MSE difference had a 95% interval of -0.98 to 2.13. Limits: 18 seasons, one mean level, no pre-1970 intensity correction, possible observing changes and multidecadal variability. Code, annual aggregates, hashes and a retrieval script are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "tropical cyclones",
+  "power dissipation index",
+  "relative SST",
+  "Atlantic hurricanes",
+  "out-of-sample test",
+  "HURDAT2",
+  "ERSSTv5",
+  "HadISST",
+  "main development region",
+  "forecast verification"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pdi_frozen_models.png",
+   "caption": "A: Atlantic PDI 1946-2025 (bars), 5-year running means of observations and of the absolute-SST and relative-SST regressions fitted on 1946-2007 only. Dashed lines give 2008-2025 means: observed 3.05, absolute 4.15, relative 3.34 (10^11 m^3 s^-2). B: August-October ERSSTv5 anomalies (1981-2000 base) of MDR absolute SST, MDR relative SST and the 30S-30N mean."
+  },
+  {
+   "path": "files/figures/fig2_k_scan.png",
+   "caption": "Predicted 2008-2025 mean PDI (line) and 95% prediction interval (band) from 1946-2007 fits that use MDR SST minus k times tropical-mean SST, for ERSSTv5 and HadISST1. Dashed line: observed mean. k = 0 is the absolute model, k = 1 is the relative model."
+  },
+  {
+   "path": "files/figures/fig3_sensitivity.png",
+   "caption": "Observed 2008-2025 mean relative to the frozen prediction (%) for the absolute (blue) and relative (orange) models in 32 variants: SST set, MDR box (vss08 = 70W-20W 7.5N-22.5N; em05 = 60W-20W 6N-18N), response and training start. Negative values mean the model predicted too much activity."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.1164396",
+   "relations": [
+    "uses",
+    "reviews",
+    "supports"
+   ],
+   "reason": "Source of the absolute and relative MDR SST regressions of Atlantic PDI and their fit period that we test out of sample."
+  },
+  {
+   "target": "doi:10.1038/nature03906",
+   "reason": "Absolute MDR SST and PDI relation; our 2008-2025 test questions its use for extrapolation. MDR box used in a sensitivity variant.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "doi:10.1038/nature06423",
+   "reason": "Theory for control of potential intensity by relative SST.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "doi:10.1002/jame.20032",
+   "reason": "Relative SST as proxy for potential intensity under local forcing."
+  },
+  {
+   "target": "doi:10.1175/MWR-D-12-00254.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 database format and uncertainty."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 Atlantic revision used; SHA-256 in files/provenance.json."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5, the primary SST data set."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 file used; SHA-256 in files/provenance.json."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1, sensitivity SST data set (Open Government Licence v2)."
+  },
+  {
+   "target": "https://www.metoffice.gov.uk/hadobs/hadisst/data/HadISST_sst.nc.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 file used; SHA-256 in files/provenance.json."
+  }
+ ]
+}
