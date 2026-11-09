@@ -1,0 +1,70 @@
+{
+  "title": "Three direct orbital period derivatives in ATNF 2.9.0 exceed their source-table values by a factor of 10^12",
+  "abstract": "We audit all 95 direct orbital period derivative fields in a pinned ATNF 2.9.0 package. Four values exceed an absolute threshold of 1e-6 seconds per second. Three exceed their cited source-table values by a factor of 10^12. Their coefficients and errors agree after restoration of the table scale. The native catalog program exports the large values unchanged and passes their scale to derived orbital frequency changes. Two controls from the same paper have the correct central-value scale. The fourth case, J1618-3921, has conflicting exponents in its source paper, so we give no unique correction. A gravitational-wave check for the known binary J0509+3801 agrees with the restored scale. This is a data quality result and a null result for new physical signals. No raw timing fit or independent observation is added. Code, frozen inputs, file hashes, numeric source checks, and reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "ATNF",
+    "pulsar timing",
+    "orbital period derivative",
+    "catalog audit",
+    "unit scale",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "The four extreme direct catalog entries are separated from the main range. Three source-table comparisons show the same factor of 10^12. The fourth case has no unique source exponent."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3d1ef7b932b95dba60c87ce3769fff1d39cef4c13fcd08a4c2745ce0b5a1bdb0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier ATNF screen and shared data context. Different selection and test. No code or measurements are reused."
+    },
+    {
+      "target": "doi:10.1086/428488",
+      "reason": "Describes ATNF."
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned package hash and source paths are recorded."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2312.07471",
+      "relations": [
+        "uses"
+      ],
+      "reason": "McEwen Table 7: known J0509+3801 orbital decay and masses."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202449303",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Padmanabh Tables 3 and 4: Terzan 5 values and scales."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347482",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Grunthal Table 2 and abstract disagree on the exponent. No unique correction is selected."
+    },
+    {
+      "target": "doi:10.1103/PhysRev.131.435",
+      "reason": "Quadrupole gravitational-wave damping relation for eccentric binaries."
+    }
+  ]
+}

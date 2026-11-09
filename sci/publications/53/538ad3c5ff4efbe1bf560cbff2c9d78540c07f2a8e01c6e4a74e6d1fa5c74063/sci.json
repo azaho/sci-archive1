@@ -1,0 +1,58 @@
+{
+  "title": "Two-step chemical route counts gave no clear response prediction gain in 13987 worm pairs without direct chemical edges",
+  "abstract": "We tested whether two-step chemical route count improves evoked-response prediction for worm cell pairs without a direct chemical edge in two adult Witvliet maps. We linked the maps to the Randi wild-type stimulation atlas by cell name. The sample had 13987 directed pairs and 721 detected responses. The model controlled reverse routes, shared partners, degrees, electrical edges, reverse chemical counts, occurrence count and cell identity. Five folds held out stimulated cells. Adding route count changed log loss from 0.180604 to 0.180529. The reduction was 0.000075, with a conditional 95% crossed cell interval from -0.000663 to 0.000771. All seven planned sensitivity intervals included zero. A synthetic route effect was recovered. These data give no clear added prediction value for this route rule under this model. Different animals, two anatomy maps, incomplete coverage, an aggregate detection threshold and fixed-prediction uncertainty limit inference. The result does not rule out indirect signal flow. Code, linked evidence, predictions, hashes and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "indirect routes",
+    "signal propagation",
+    "connectome",
+    "held-out cells",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Left: unadjusted response detection rates by mean route count. Right: held-out log-loss reductions with conditional 95% crossed cell intervals. All intervals include zero. Positive reductions mean better prediction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior adult-map agreement test on direct edges. We test two-step routes without direct edges and reuse no tables or code."
+    },
+    {
+      "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior region-scale indirect-path tests motivate controls for shared partners and node properties. We use directed cell-level evoked responses."
+    }
+  ]
+}

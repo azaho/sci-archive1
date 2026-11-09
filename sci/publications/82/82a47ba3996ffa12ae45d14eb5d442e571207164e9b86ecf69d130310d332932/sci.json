@@ -1,0 +1,77 @@
+{
+  "title": "Three orbital-period derivatives in ATNF 2.9.0 exceed their cited values by a factor of one trillion",
+  "abstract": "We test the largest stored binary orbital-period derivatives in one ATNF 2.9.0 snapshot. Four of 95 stored derivatives exceed an absolute value of 10^-6 seconds per second. The catalog executable returns the same values as our parser. Three entries, J0509+3801, J1748-2446av and J1748-2446aw, exceed their cited paper values by a factor of 10^12. Their stated errors have the same scale difference. The source tables use units of 10^-12. A fourth entry, J1618-3921, has conflicting scale factors within its source and has no assigned correction. The converted J0509+3801 value agrees with the central-mass radiation-loss prediction to 0.45 times its measurement error. We provide three source conversions, all selected rows, exact input hashes, code and offline steps. This is a catalog audit. We report no new object or physical signal. The source papers and catalog share measurements; independent telescope confirmation is absent. The other entries and later catalog versions are not certified.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "ATNF",
+    "pulsar timing",
+    "orbital period derivative",
+    "catalog scale error",
+    "Terzan 5",
+    "J0509+3801",
+    "data validation"
+  ],
+  "display": [
+    {
+      "path": "files/scale_audit.png",
+      "caption": "Three stored orbital-period derivatives and their source values differ by a factor of 10^12. The chart shows absolute values in seconds per second. J1618-3921 is excluded because its source has conflicting units."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1086/428488",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Describes the ATNF Pulsar Catalogue."
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mutable download URL. This study pins catalog 2.9.0 by archive hash."
+    },
+    {
+      "target": "https://arxiv.org/abs/2312.07471",
+      "relations": [
+        "uses"
+      ],
+      "reason": "McEwen et al., Table 7 and text, source for J0509+3801 and central masses."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202449303",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Padmanabh et al., Table 4, source units for Terzan 5av and 5aw."
+    },
+    {
+      "target": "https://arxiv.org/abs/2403.17799",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned v2 source PDF for Table 4."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347482",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published work on the known J1618-3921 timing anomaly."
+    },
+    {
+      "target": "https://arxiv.org/abs/2409.03615",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned v1 PDF: abstract and Table 3 have conflicting scale factors. No unique correction is assigned."
+    }
+  ]
+}
