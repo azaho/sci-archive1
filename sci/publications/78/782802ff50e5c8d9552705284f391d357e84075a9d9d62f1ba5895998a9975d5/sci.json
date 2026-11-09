@@ -1,0 +1,87 @@
+{
+ "title": "Bumble bee cell losses did not follow thermal-exposure change after sampling-effort control in 1901-2014; a hot-side warming interaction repeated weakly in 2000-2024 GBIF data",
+ "abstract": "Soroye et al. (2020) reported that the local extirpation of 66 bumble bee species in 100-km cells of North America and Europe increased with the change in a thermal exceedance index (TEI) from 1901-1974 to 2000-2014. We repeated their model with their records and exposure rasters (TEI change +0.26 log-odds per SD, SE 0.08). Of their 6,936 loss events, 43% are in cells with no Bombus record in 2000-2014 (50% in North America). In cells with at least 10 location-years in both periods, the TEI-change effect was +0.03 ± 0.10. With equal-record subsampling, it was -0.03 ± 0.09. With GBIF records for the same periods, it was near zero in all six sample variants. When we exchanged the species thermal limits at random within continents, the original coefficient did not change (+0.27 vs +0.29). Thus this coefficient is a cell-warming association, not a species-limit effect. It also changed with the CRU TS version (+0.29 with 3.24.01, +0.15 with 4.09). The interaction of baseline TEI and TEI change was larger than the placebo in all data sets. This interaction means that warming increases losses more where a species is near the hot side of its range. In a new interval (GBIF 2000-2014 to 2015-2024, CRU TS 4.09), losses were higher in cells that warmed more (+0.51 ± 0.10 with equal-record subsampling). However, most of this effect stayed with random species limits (+0.42), and it was also present on the cold side of ranges. The interaction was +0.38 to +0.40 (SE 0.16-0.18; placebo p = 0.015-0.045) in effort-controlled samples and +0.08 ± 0.12 in all cells. With cell and species fixed effects, which remove all cell-level effort and data-source differences, only the new-interval interaction was above the placebo (+0.056 ± 0.022 probability per SD^2, p = 0.02). The TEI-change main effect was not above the placebo. The shift to community-science records did not follow cell warming. Limitations: losses are non-detections in presence-only records; the new interval is short; precipitation terms were not tested in the new interval; species identification in photographs is uncertain. The bundle has code, aggregate results, placebo draws and figures. Third-party records and grids stay outside the bundle and have a retrieval script.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "bumble bees",
+  "Bombus",
+  "climate change",
+  "thermal exceedance",
+  "local extirpation",
+  "sampling effort",
+  "observation bias",
+  "placebo test",
+  "GBIF",
+  "CRU TS",
+  "replication",
+  "out-of-sample test",
+  "North America",
+  "Europe",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_effort_artifact.png",
+   "caption": "(a) Share of loss events in 100-km cells with no Bombus record in the later period, for each data set and continent. (b) The original-form TEI-change coefficient (log-odds per SD, 95% CI, cell-clustered) for six sample variants: all cells, cells with a later record, cells with at least 5, 10 or 20 location-years in both periods (with effort-ratio control), and equal-record subsampling (10 draws, pooled)."
+  },
+  {
+   "path": "files/figures/fig2_interaction_placebo.png",
+   "caption": "The baseline TEI x TEI change interaction (95% CI) compared with the species-limit placebo (gray: 2.5-97.5% of fits with thermal limits exchanged at random among species of the same continent). (a) Original-form logistic model between cells, 200 placebo draws. (b) Linear probability model with cell and species fixed effects, 100 placebo draws."
+  },
+  {
+   "path": "files/figures/fig3_cold_hot_slopes.png",
+   "caption": "Change in log-odds of loss per +0.01 TEI change (about +0.6 C mean Tmax for a typical species) on the cold side (25th percentile of baseline TEI) and the hot side (75th percentile) of species ranges. A thermal-limit mechanism predicts a cold-side slope of zero or less and a positive hot-side slope."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.aax8591",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We repeat the TEI-change extirpation model of this study, test it for sampling effort and a species-limit placebo, and test it in a new interval."
+  },
+  {
+   "target": "doi:10.6084/m9.figshare.9956471",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Bumble bee records, R code and exposure-index rasters of Soroye et al. 2020 (CC BY 4.0); not redistributed."
+  },
+  {
+   "target": "doi:10.1126/science.aaa7031",
+   "reason": "Source of the bumble bee database and species list."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRU TS monthly Tmax (versions 3.24.01 and 4.09)."
+  },
+  {
+   "target": "https://www.gbif.org/developer/maps",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GBIF v2 occurrence density map API, Bombus records retrieved 2026-11-09."
+  },
+  {
+   "target": "https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.09/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRU TS 4.09 data distribution."
+  }
+ ]
+}

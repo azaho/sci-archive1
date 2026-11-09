@@ -1,0 +1,113 @@
+{
+ "title": "In one MICrONS mouse, similar visual responses raised shared excitatory but not shared inhibitory targets of excitatory axons; the small difference passed all pre-set tests only in non-proofread axons",
+ "abstract": "Question: do excitatory axons with similar visual responses converge onto inhibitory neurons, as they do onto excitatory neurons? Data: one mouse, MICrONS visual cortex (V1, RL, AL): v1300 synaptic connections, the Allen soma E/I class model and the responses of 12,894 coregistered neurons (Ding et al. 2025). Method: for 10,878 pairs of the 148 proofread functional axons, we counted shared excitatory and shared inhibitory targets and divided by the count expected from random target choice inside 50 um cubes. Poisson models related this ratio to response similarity, with soma distance, receptive-field distance, area and layer controls. A within-group permutation of functional identities (1,000) and an axon jackknife gave uncertainty. The plan was written first. Results: similar axon pairs shared more excitatory targets (+1.7% per SD of model signal correlation; permutation p = 0.018; three measures p = 0.012-0.020). Inhibitory targets showed no effect (0.4% per SD; p = 0.61; three measures p = 0.15-0.98). The inhibitory-minus-excitatory difference was negative for all three measures (permutation p = 0.003-0.036), but every jackknife interval included zero, so the primary result is uncertain. In 4,000 functional neurons with unproofread axons and local targets, the difference passed both tests for two signal-correlation measures (-0.0098, 95% CI -0.016 to -0.003, p = 0.010; -0.0074, CI -0.014 to -0.001, p = 0.005) but not for feature similarity. Without controls, inhibitory targets also had a positive association; soma proximity and area/layer explained most of it. Limitations: one animal; E/I class only, without PV, SST or VIP subclasses; 148 proofread axons; unproofread axons can have merge errors; effects are a few percent per SD.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "MICrONS",
+  "functional connectomics",
+  "inhibitory interneurons",
+  "excitatory-inhibitory wiring",
+  "like-to-like connectivity",
+  "co-innervation",
+  "non-specific pooling",
+  "mouse visual cortex",
+  "electron microscopy",
+  "Allen Institute",
+  "structure-function",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_primary.png",
+   "caption": "A: shared targets divided by the local 50 um cube expectation, by quintile of axon-pair model signal correlation, for excitatory and inhibitory targets of 148 proofread axons (no other controls). B: primary Poisson coefficients for three similarity measures with axon-jackknife 95% intervals (lines) and the central 95% of the within-group permutation null (grey)."
+  },
+  {
+   "path": "files/figures/fig2_specifications.png",
+   "caption": "Model signal correlation coefficients for excitatory (blue) and inhibitory (orange) targets in each pre-specified specification and in the 4,000-axon non-proofread panel (squares). Lines: jackknife 95% intervals; one wide interval is cut at the axis edge."
+  },
+  {
+   "path": "files/figures/fig3_target_level.png",
+   "caption": "Target-level description: mean input-pair similarity of each target minus random input sets from the same cube and class, for 6,882 excitatory and 2,345 inhibitory targets with two or more proofread inputs; B shows means by input count (intervals over targets only)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS v1300 synaptic connections and soma E/I class model."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Functional node and edge tables v1 (responses, proofread axon list, similarity definitions)."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei.csv.gz",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/cell_types/allen_soma_ei_class_model_v1.csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/nature09802",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our null inhibitory co-innervation result agrees with non-specific pooling of excitatory input by inhibitory neurons."
+  },
+  {
+   "target": "doi:10.1038/nn.2876",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Broad, non-specific excitatory input to inhibitory neurons."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2023.12.013",
+   "reason": "Reports functionally specific E-to-PV wiring; our test measures co-innervation of all inhibitory cells, not PV connection strength."
+  },
+  {
+   "target": "sci:sha256:a2b36a55aea9fb9d88a3d2aecfd55f5c7881c794a31bf342f073364a919652c4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Column names of the headerless v1300 connections_with_nuclei export."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Like-to-like rule between excitatory neurons in the same data."
+  },
+  {
+   "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+   "reason": "Co-target structure of axons for excitatory targets; V1DD replication result."
+  },
+  {
+   "target": "sci:sha256:100b9f6bfd76176b28c79e9f524e1861b687d199ffcea463ce5119694551c1e2",
+   "reason": "Excess response similarity in input groups of excitatory targets."
+  },
+  {
+   "target": "sci:sha256:39d8642414d03fdf8dc98c23a06ce196b522117141a4986741a9f309fcfa3510",
+   "reason": "Opposite direction: shared inhibitory inputs and response similarity of excitatory cells."
+  }
+ ]
+}
