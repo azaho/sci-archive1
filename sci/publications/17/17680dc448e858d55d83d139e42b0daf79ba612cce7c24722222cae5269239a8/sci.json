@@ -1,0 +1,23 @@
+{
+  "title": "The November-April excess of volcanic eruption onsets in the GVP catalog for 1700-1999 did not continue in 2000-2025 (global, month-dated confirmed eruptions)",
+  "abstract": "Mason et al. (2004) reported that more volcanic eruptions start from November to April than from May to October in the Smithsonian GVP catalog for 1700-1999, and connected this to seasonal loading by water and sea level. We did an out-of-sample test with the current GVP catalog. We used confirmed eruptions with a known start month and a day uncertainty of 31 days or less. Volcano-cluster bootstrap intervals and a per-volcano random-rotation null control for repeated eruptions. In 1700-1999 (3,826 onsets, 431 volcanoes) the November-April share is 0.531 (95% CI 0.514-0.547; 0.496 expected), R = 0.054, the peak is in mid-February, and p < 0.001. This agrees with the published size. In 2000-2025 (938 onsets, 219 volcanoes) the share is 0.486 (0.455-0.519, p = 0.74) and R = 0.027. The change is -0.045 (-0.082 to -0.010). The regional mix predicts 0.534, and the 183 volcanoes with onsets in both periods changed from 0.547 to 0.490. Global and regional seasonal models fitted to 1700-1999 give no forecast skill for 2000-2025. The local seasonal cycles of rain (GPCP) and coastal sea level (PSMSL) give small effects that do not agree between periods. A constant physical loading effect of the published size is not supported. The cause of the pre-2000 excess (detection and reporting changes or a time-varying process) is not identified, and effects smaller than a share of about 0.51 cannot be excluded.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "3705"}
+  ],
+  "keywords": ["volcanic eruptions", "seasonality", "Global Volcanism Program", "out-of-sample test", "hydrological loading", "sea level", "precipitation", "catalog bias", "circular statistics", "replication"],
+  "display": [
+    {"path": "files/figures/fig1_monthly_rates.png", "caption": "Relative onset rate per day by month for GVP confirmed eruptions with a known month: 1700-1999 (blue, n = 3826) and 2000-2025 (red, n = 938). Bars are 95% volcano-cluster bootstrap intervals. The dashed line is the published size (plus or minus 10%, peak at the end of January). Grey shows November-April."},
+    {"path": "files/figures/fig2_blocks.png", "caption": "Share of onsets in November-April for each 25-year block with 95% volcano-cluster bootstrap intervals. The numbers give the onsets in each block. The dotted line is the expected share without seasonality (0.496); the dashed line is the published size (0.53). The 2000-2024 block is red."},
+    {"path": "files/figures/fig3_subsets.png", "caption": "November-April share with 95% intervals for robustness subsets in 1700-1999 (blue) and 2000-2025 (red): hemisphere, latitude, VEI, date precision, one random onset per volcano-year, and volcanoes with onsets in both periods."}
+  ],
+  "citations": [
+    {"target": "doi:10.1029/2002JB002293", "relations": ["reviews", "challenges"], "reason": "Source of the tested claim: a November-April excess of eruption onsets in the GVP catalog for 1700-1999. We reproduce it in-sample and find that it does not continue in 2000-2025."},
+    {"target": "https://timjupp.github.io/docs/jupp.etal.2004.pdf", "relations": ["uses"], "reason": "Gives the published size of the annual eruption seasonality as a mean resultant length of about 0.05, which we use as the reference size."},
+    {"target": "https://webservices.volcano.si.edu/geoserver/GVP-VOTW/ows?service=WFS&version=2.0.0&request=GetFeature&outputFormat=csv&typeName=GVP-VOTW:Smithsonian_VOTW_Holocene_Eruptions", "relations": ["uses"], "reason": "GVP Volcanoes of the World Holocene eruptions table (retrieved 2026-11-09)."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc", "relations": ["uses"], "reason": "GPCP v2.3 monthly precipitation for local rain climatology."},
+    {"target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip", "relations": ["uses"], "reason": "PSMSL monthly mean sea level for local seasonal sea-level cycles."},
+    {"target": "sci:sha256:cbe6f23c075adc86c7840040f4917ceb4c05582e1c8a8ddf0050dca5f981b4c6", "reason": "Earlier campaign study of GVP eruption onsets (earthquake triggering); a different question on the same catalog."},
+    {"target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13", "reason": "Earlier campaign test of periodic (tidal) modulation of earthquakes; related external-forcing question."}
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Node response vectors reproduce two pair correlation measures within 1e-6 in MICrONS v1",
+  "abstract": "We tested whether neuron response vectors reproduce pair signal correlations in the public MICrONS functional connectomics v1 tables. Pearson correlations from the vectors passed a fixed absolute error limit of 1e-6 for all 1,693,276 pairs and both measures. Maximum errors were 2.634e-7 for measured movie responses and 1.700e-7 for model responses. All 12,894 neuron vectors were valid. There were no missing joins, duplicate pairs, or self pairs. Independent calculations and shuffled identity checks support the result. The package includes a correlation query tool, measured response vectors, pair audit arrays, code, source hashes, and a figure. This is a numerical data audit from one mouse. It does not validate raw processing, biological reliability, or a wiring rule.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "data audit",
+    "signal correlation",
+    "functional connectomics",
+    "reproducibility",
+    "Allen Institute"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Released pair signal correlations agree with Pearson correlations from released neuron vectors. The plot uses about 20,000 rows per measure. Numerical tests use all 1,693,276 rows."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the v1 neuron and pair tables."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/tree/bc9302a21443453b1f39819676f2388e91bd43a3"
+    },
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior circuit test using released node response vectors; the present work audits the node-to-pair numerical link."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
