@@ -1,0 +1,63 @@
+{
+  "title": "Mouse data gave no clear gain in human synaptic variability predictions in selected Allen slice samples",
+  "abstract": "We tested whether mouse visual-cortex data improve predictions of resting response variability for human temporal-cortex donors. We used linked connection calls, cell labels, layers, geometry, and response summaries from Allen Synaptic Physiology r2.1 small. The sample had 603 mouse excitatory connections from 324 inferred animals and 176 human excitatory connections from 44 inferred donors. We fit common slopes and separate species means. Whole human donors were held out. With equal total species weight and ridge penalty 10, mouse data reduced mean squared error by 0.04989 squared log units. The conditional 95% donor bootstrap interval was -0.04047 to 0.15644. Three fixed checks also gave no clear gain. A post-result human-mean predictor had slightly lower error than either primary feature model. The result does not establish a shared reliability rule. Species and region are confounded. Missing outcomes, coarse labels, slice selection, inferred donor groups, and incomplete training uncertainty limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "transfer prediction",
+    "mouse",
+    "human",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/transfer.png",
+      "caption": "Prediction gain from mouse data for held-out human donors. All four conditional 95% donor bootstrap intervals include zero. Only equal species weight with penalty 10 is primary."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and local cortical physiology."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Selection, scalar definition, distance scope, and inferred donor grouping. This study tests transfer rather than within-species distance gain."
+    },
+    {
+      "target": "sci:sha256:ce916367335335034f51625ed00517a37953659fcbf2fb3212172da2a141cb63",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work on donor-level validation for a different synaptic outcome."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned variability definition."
+    }
+  ]
+}

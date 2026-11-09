@@ -1,0 +1,70 @@
+{
+  "title": "Weighted decay summaries hide component fits near default limits in Allen cortical slice data",
+  "abstract": "We tested whether interior decay summaries hide accepted component fits near default fitting limits in Allen Synaptic Physiology r2.1 small. We reproduced all 4,742 positive voltage or current decay summaries as response-count-weighted means. At relative tolerance 0.000001, 126 connection-mode records had a component near a default limit and an interior summary: 77 mouse voltage, 15 human voltage, 24 mouse current, and 10 human current records. Summary-only screening missed 24.8%, 30.0%, 63.2%, and 83.3% of component flags in these groups. Three mouse voltage summaries combined components near opposing limits. Component screening also removed additional matched shared-cell edge pairs. We supply record-level flags, source hashes, extracted evidence, checks, and code. This release-specific audit does not show that flagged fits are wrong or that true decay values lie outside the fitting range. The exact source build, fit uncertainty, slice selection, and clamp differences limit interpretation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic kinetics",
+    "quality control",
+    "fitting limits",
+    "circuit motifs",
+    "data audit"
+  ],
+  "display": [
+    {
+      "path": "files/hidden_limits.png",
+      "caption": "Summary and hidden component limit flags at relative tolerance 0.000001. Counts refer to available connection-mode decay records."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of local connectivity and synaptic physiology."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected weighting and accepted-fit logic; not established as the database build commit."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected default decay limits; not established as the database build commit."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior timing test motivated the component audit. No code or evidence tables reused."
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior paired decay test identified fitting-limit concerns. The present study reconstructs scalar means and measures hidden component flags."
+    }
+  ]
+}

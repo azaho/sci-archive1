@@ -1,0 +1,83 @@
+{
+ "title": "TESS transit times from 2018 to 2026 agree with reported period changes of WASP-12 b and HAT-P-7 b, do not agree with 9 of 23 other reported changes, and show a curved KELT-20 b ephemeris",
+ "abstract": "Question: Do TESS observations from 2018 to 2026, analyzed alone with one method, agree with the 26 hot-Jupiter orbital period changes (dP/dt) that Wang et al. (2024) reported from data up to January 2023?\n\nMethod: We measured 3,620 transit mid-times from TESS 2-minute light curves (sectors 1 to 107) for 25 of the candidates and for 59 random control hot Jupiters. The controls show that the timing errors are calibrated (standard deviation of dP/dt divided by its error = 0.96). We compared a constant period with the reported dP/dt in three tests: a TESS-only fit, a forecast of the 2023 to 2026 TESS times from earlier data, and a fit with one pre-TESS archive epoch.\n\nResults: The reported dP/dt predicts the 2023 to 2026 times better than a constant period for WASP-12 b and HAT-P-7 b. The TESS times alone prefer a constant period for WASP-45 b, WASP-46 b and WASP-17 b. The forecast test with a pre-TESS epoch prefers a constant period for TrES-3 b, WASP-10 b, WASP-11 b, WASP-16 b, WASP-22 b and XO-4 b. For 14 candidates, the result is inconclusive. In the control sample, KELT-20 b has a TESS-only period increase of +57 +/- 12 ms/yr (4.7 sigma). Sector 14 gives most of this signal. Independent pre-TESS times from the literature agree better with this curved ephemeris than with a constant period (chi2 25.6 against 57.4 for 9 times). Another planet in sector 14 shows no offset. Thus a sector-wide clock error does not explain the signal. The increase agrees in direction with the light-travel-time effect of the brown-dwarf companion that Yang et al. (2026) reported.\n\nLimitations: Six disfavoured results depend on one archive epoch. A constant dP/dt cannot model companion orbits. The KELT-20 b result depends mostly on one sector and needs independent 2019 to 2020 times for confirmation.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "hot Jupiters",
+  "orbital decay",
+  "transit timing",
+  "TESS",
+  "period derivative",
+  "KELT-20 b",
+  "WASP-12 b",
+  "WASP-45 b",
+  "WASP-46 b",
+  "light-travel-time effect",
+  "reproducibility test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc_candidates.png",
+   "caption": "TESS sector-mean timing residuals (black) relative to a constant-period fit (blue) for 25 reported period-change candidates. The orange curve is the reported dP/dt of Wang et al. (2024), with T0 and P fitted to the same TESS times."
+  },
+  {
+   "path": "files/figures/fig2_pdot_comparison.png",
+   "caption": "a: TESS-only dP/dt against the reported value for 17 candidates with TESS-only error below 150 ms/yr. b: TESS-only delta chi-square between a constant period and the reported dP/dt (as a Gaussian prior). Negative values prefer a constant period. Dotted lines show plus and minus 9."
+  },
+  {
+   "path": "files/figures/fig4_kelt20.png",
+   "caption": "KELT-20 b timing residuals relative to the TESS constant-period fit. Black: TESS sector means (this work). Green: CHEOPS and PEPSI times. Open triangles: pre-TESS ground-based times. Orange: TESS-only constant-dP/dt fit, extrapolated before 2019. The literature times were not used in the fit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://arxiv.org/abs/2310.17225",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Source of the 26 reported period-change candidates and their dP/dt values that we test."
+  },
+  {
+   "target": "https://arxiv.org/abs/2606.02705",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Reports a brown-dwarf companion of KELT-20 from astrometry and transit timing; we use its table of literature mid-times and our TESS-only curvature agrees in direction."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2022ApJS..259...62I/abstract",
+   "reason": "Earlier homogeneous TESS transit-timing study of hot Jupiters (Ivshina and Winn 2022)."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit model used for all fits."
+  },
+  {
+   "target": "https://exoplanetarchive.ipac.caltech.edu",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Planet parameters and archive mid-times (pscomppars and ps tables, queried 2026-11-08)."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC and TESS-SPOC light curves (415 files, MAST URIs and SHA-256 in files/data)."
+  }
+ ]
+}

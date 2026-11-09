@@ -1,0 +1,51 @@
+{
+  "title": "Target rheobase gave no clear gain in tests of local inhibition in Allen mouse V1 slices",
+  "abstract": "We tested whether excitatory cells with lower rheobase receive more detected local inhibitory connections. Allen Synaptic Physiology r2.1 linked intrinsic records to 1,104 tested pairs, including 144 detected connections from 196 inferred animals. After adjustment for source Cre class, target layer, distance and test effort, the odds ratio per doubling of target rheobase was 1.040 (95% animal-clustered interval 0.815 to 1.328). Results were similar with more test spikes or added input resistance. Adding rheobase to a fixed logistic ridge model increased five-fold animal-held-out log loss from 0.30879 to 0.31119. The conditional bootstrap interval for loss gain was -0.004280 to -0.000915 nats per pair. This gives no support for adding rheobase to this model. It does not prove no role for excitability in wiring. Slice cuts, detection limits, incomplete cell labels, inferred animal IDs, exploratory model choices and one project limit the result. The package includes selected pair records, predictions, code, source hashes and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "inhibitory connectivity",
+    "rheobase",
+    "intrinsic excitability",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Raw connection fractions, adjusted odds ratios, and loss gain on held-out inferred animals in the selected mouse V1 pairs."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source physiology data and study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:ac8be70ed43ca00bdb20e36d65eb0f928cb0c41e7f4449affb0902527899dcd6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related same-class direction test; our test includes negative inhibitory-to-excitatory tests."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-quality-control"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+ "title": "In two human cohorts, a person's own diffusion connectome predicted that person's resting functional connectivity better than other connectomes, but the gain was only 2-5% of the coupling",
+ "abstract": "Question: is the link between structural connectivity (SC, diffusion MRI) and resting functional connectivity (FC) specific to the individual? Approach: we used two adult cohorts from the shared campaign store: MICA-MICs (50 people, SIFT2 probabilistic tractography, Schaefer 400) and the Lausanne connectomes (54-69 people with FC, deterministic DSI, 219/448/1000 cortical nodes). For each pair of people we correlated the FC of person s with the SC of person t over edges, and compared own pairs with other pairs. We did this for raw rank values, for person deviations after a per-person distance and hemisphere model, for edge-specific deviations after removal of node effects, and for node effects. Findings: the own SC predicted the own FC better than other SCs in both cohorts. The edge-specific own correlation was 0.018 in MICA-MICs (95% CI of the own-minus-other difference 0.007-0.029) and 0.005-0.007 in Lausanne (all intervals above zero). It gave identification of 20-43% of people at the finest resolutions (chance 2%). In the raw coupling the own SC added only 0.003-0.006 to a group-level rank correlation of 0.07-0.21 (2-5%). FC from two halves of the same scan agreed at r = 0.49 at the same level, so individual FC is reliable but almost none of it is predicted by individual SC. Node effects carried no clear own signal. In MICA-MICs the gain was present at all distances; in Lausanne it was limited to short intra-hemispheric edges. It survived removal of edges under 30 mm, an own geodesic-distance covariate, log/Fisher transforms, FC halves and communicability, and neighbouring IDs did not couple more. Limitations: no SC retest, no motion or demographic data, SC and FC share a session and a parcellation, and cohort and pipeline are confounded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "structural connectivity",
+  "functional connectivity",
+  "individual differences",
+  "connectome fingerprinting",
+  "diffusion MRI",
+  "resting-state fMRI",
+  "MICA-MICs",
+  "Lausanne connectome",
+  "human cortex"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_own_advantage.png",
+   "caption": "(A) Own-minus-other SC-FC coupling with 95% bootstrap intervals at four levels in four data sets. (B) Edge-specific own advantage by Euclidean distance quintile: present at all distances in MICA-MICs, limited to short edges in Lausanne. (C) Own SC-to-FC coupling compared with the agreement of FC from two halves of the same scan (MICA-MICs)."
+  },
+  {
+   "path": "files/figures/fig2_matrices_rank.png",
+   "caption": "(A, B) Edge-specific person-by-person coupling matrices (rows: FC person, columns: SC person) for MICA-MICs and Lausanne 448; the diagonal is slightly raised. (C) Percentile of the own SC among all SCs for each person's FC."
+  },
+  {
+   "path": "files/figures/fig3_controls.png",
+   "caption": "(A) Edge-specific own advantage for intra- and inter-hemispheric edges, log/Fisher transforms, SC communicability and after removal of edges shorter than 30 mm. (B) Coupling by ID difference (scan-order proxy): only the same person is raised. (C) Observed own advantage vs the 95th percentile of the label-shuffle null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41597-022-01682-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICA-MICs data set (SC, FC and FC split halves of 50 adults)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.2872624",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lausanne 70-person structural and functional connectomes."
+  },
+  {
+   "target": "https://osf.io/j532r/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OSF project of the MICA-MICs micapipe v1.1 derivatives."
+  },
+  {
+   "target": "https://osf.io/mb37e/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "netneurotools Lausanne node labels and centroids."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00055",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Zimmermann et al. 2019 reported weak subject specificity of SC-FC correlation; our two cohorts agree that the specific part is small and add that it is edge-level."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117609",
+   "reason": "Sarwar et al. 2021: learned SC-to-FC models with a small individual-specific part."
+  },
+  {
+   "target": "doi:10.1073/pnas.0811168106",
+   "reason": "Honey et al. 2009: group-level SC predicts resting FC."
+  },
+  {
+   "target": "doi:10.1038/nn.4135",
+   "reason": "Finn et al. 2015: FC fingerprinting, the basis of our identification measure."
+  },
+  {
+   "target": "doi:10.1073/pnas.1903403116",
+   "reason": "Vazquez-Rodriguez et al. 2019: regional SC-FC coupling in the Lausanne data."
+  },
+  {
+   "target": "doi:10.1093/cercor/bhx179",
+   "reason": "Schaefer 2018 parcellation."
+  },
+  {
+   "target": "doi:10.1016/j.jneumeth.2011.09.031",
+   "reason": "Cammoun 2012 Lausanne multiscale parcellation."
+  },
+  {
+   "target": "doi:10.1103/PhysRevE.77.036111",
+   "reason": "Communicability measure used as an indirect-path SC predictor."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "reason": "Campaign study of group-level tracer-connectome vs resting fMRI coupling in mouse; this study asks the individual-level question in humans."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Campaign study of wiring vs calcium co-activity in flies; related structure-function coupling test."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "reason": "Campaign study of wiring vs co-activity in C. elegans; related structure-function coupling test."
+  }
+ ]
+}

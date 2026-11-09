@@ -1,0 +1,112 @@
+{
+ "title": "GRACE water-storage deficits and surpluses relaxed at similar monthly rates on land in 2002-2026 after precipitation and noise controls; a GRACE-era asymmetry did not repeat in GRACE-FO",
+ "abstract": "We tested if terrestrial water storage (TWS) deficits relax more slowly than surpluses after precipitation is removed. We used CSR GRACE/GRACE-FO RL06.3 mascons (April 2002 to June 2026), GPCP v2.3 precipitation and GHCN-CAMS temperature on a 2.5-degree grid: 1,867 land cells, 1,193 of them snow-free. For each cell we fit the monthly TWS anomaly change against precipitation anomaly and separate relaxation rates for surplus (kp) and deficit (kn) states, with OLS and two-stage least squares. A symmetric linear-reservoir null, driven by observed precipitation, block-bootstrapped innovations and white measurement noise, corrected estimator bias. A 15-degree spatial block bootstrap gave the intervals. In snow-free cells the planned surrogate-corrected OLS asymmetry dk = kp - kn was +0.029 per month (95% interval 0.005 to 0.053), about 7% of the OLS rate. This result was not robust: it was +0.013 (-0.009 to 0.034) with a zero-noise null, the corrected 2SLS median was +0.016 (-0.021 to 0.050), and it was +0.058 in GRACE 2002-2017 but +0.000 (-0.033 to 0.035) in GRACE-FO 2018-2026. Deficit and surplus events took similar times to recover half way (2.23 and 2.14 months; corrected difference 0.1 month, not significant). The S-shaped pooled relaxation curve also appeared in symmetric surrogates, so it comes from noise. A linear reservoir is sufficient at this scale. Limitations: the noise null is approximate (surrogate OLS rates 16% high), GRACE errors are not white, cells are not independent, and slow multi-year or trend asymmetry is not tested.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "GRACE",
+  "GRACE-FO",
+  "terrestrial water storage",
+  "drought recovery",
+  "storage-outflow nonlinearity",
+  "linear reservoir",
+  "GPCP",
+  "surrogate null",
+  "instrumental variables",
+  "null result",
+  "hydrological memory"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_global_estimates.png",
+   "caption": "Global estimates of the asymmetry dk = kp - kn (1/month; > 0 means deficits relax more slowly) for snow-free (blue) and all (orange) land cells, with 95% 15-degree block-bootstrap intervals. The corrected value depends on the noise null and is zero in the GRACE-FO period."
+  },
+  {
+   "path": "files/figures/fig2_binned_relaxation.png",
+   "caption": "Pooled partial relaxation rate against storage anomaly (SD units). GRACE (blue) and symmetric linear-reservoir surrogates (orange) have the same S shape, so the apparent curvature comes from noise."
+  },
+  {
+   "path": "files/figures/fig1_asymmetry_map.png",
+   "caption": "Per-cell surrogate-corrected dk (OLS, base noise) and its distribution. Dots mark cells with a climatological month below 0 C."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1002/2016JB013007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR mascon method; we use the CSR RL06.3 mascon product."
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TWS data file, SHA-256 d4bd8b73...1292 (shared campaign copy)."
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL06_Mascons_v02_LandMask.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Land mask."
+  },
+  {
+   "target": "doi:10.3390/atmos9040138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 precipitation."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 file used, SHA-256 d31c53ab...7d68."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS temperature, used to select snow-free cells."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS file used, SHA-256 8dbe8e8c...802b."
+  },
+  {
+   "target": "doi:10.1029/2008WR006912",
+   "reason": "Nonlinear storage-discharge theory that predicts state-dependent relaxation."
+  },
+  {
+   "target": "doi:10.1002/2013WR013847",
+   "reason": "Prior GRACE runoff-storage relations, nonlinear and hysteretic."
+  },
+  {
+   "target": "doi:10.1007/s10712-015-9353-4",
+   "reason": "Prior global GRACE variability and extremes study."
+  },
+  {
+   "target": "sci:sha256:fd47a1b2b27bb4ce6df6e323179b5654419a5adc58201c473fdfb3e60417d2d2",
+   "reason": "Campaign study of California GRACE storage recovery; regional context."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "reason": "Campaign study of runoff recovery after multi-year droughts; related recovery question in streamflow."
+  }
+ ]
+}

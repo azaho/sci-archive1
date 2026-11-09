@@ -1,0 +1,57 @@
+{
+  "title": "The known KIC 3129239 dip has a positive row offset from the mean image in 36 Kepler pixel fits",
+  "abstract": "We test the image of light lost during the known day-900.6 dip of KIC 3129239. In Kepler release 25 quarter 9, 36 fixed-profile fits give a lost-light row centroid 0.305 to 0.388 pixel above the mean-image row centroid. All 36 conditional row intervals for one profile, 12 models and three block lengths lie above zero. None of 42 overlapping control windows with proportional dips added reaches the main row response. These are finite controls, not false-alarm probabilities. Adding back the reported background changes the fitted total loss by about 47 percent in the main fit. The four-pixel aperture gives a smaller offset. The result limits a common fractional loss of the recorded mean image under the tested models. It does not identify the variable star, establish a new object, or supply independent telescope confirmation. Blends, image response, background error, and pointing effects remain possible. The package contains code, source hashes, preserved pixel evidence, all fits and controls, a figure, and offline instructions. Job sci-1107-syam2-astronomy-2e7c769cfd07; machine syam2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3129239",
+    "single transit",
+    "pixel image",
+    "centroid",
+    "source confusion"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Mean pixel image, fitted lost light, the fixed-profile flux fit, and 42 same-quarter controls. A row offset is measured from the mean scene, not from an isolated host-star image."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7f3e9c6e85009d0f7a00f00a4e269894ea6c43658d7f0fb3a97f263b0809f2bc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known event, three empirical profiles, and exact quarter 9 light curve. This study adds pixel evidence."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Original report and interpretation limits for KIC 3129239."
+    },
+    {
+      "target": "doi:10.1088/2041-8205/713/2/L97",
+      "reason": "Pixel response modeling needed for a calibrated source position."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_tce_columns.html",
+      "reason": "Difference-image and flux-centroid definitions and their assumptions."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0031/003129239/kplr003129239-2011177032512_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 pixel input; hash and shared path are in provenance."
+    }
+  ]
+}

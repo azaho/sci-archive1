@@ -1,0 +1,62 @@
+{
+  "title": "Seven selected Allen mouse circuit forests need delay corrections for nonnegative cell terms",
+  "abstract": "We tested whether positive synaptic delays can be written as a sum of nonnegative source-cell and target-cell terms in Allen Synaptic Physiology r2.1. Odd paths constrain this model even when a graph has no cycles. Of 1,543 selected mouse visual-cortex groups, seven forests needed corrections that an unrestricted cell model did not need. The largest uniform edge correction was 0.608817 ms. Strict cell labels left one added forest group with a 0.225156 ms threshold. Keeping only 0.2 to 5 ms delays left six added forest groups and reduced the overall maximum to 0.314238 ms. No added constraint appeared in selected human temporal-cortex groups. Linear programs, saved primal and dual witnesses, and independent path bounds check the result. These are exact bounds for stored values, not measured error bars or a rejection of a biological mechanism. Missing estimates, sparse slice graphs, uncertain labels, a strong sign assumption, and the range-sensitive maximum limit the result. Code, data provenance, derived edges, certificates, and reproduction instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "nonnegative cell terms",
+    "graph paths",
+    "bounded error",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Primary-group correction bounds. Nonnegative terms add odd-path tests to the unrestricted cycle tests. Most groups have zero bounds; each point is a matched group, not an independent animal."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5027b4e3394fd61ba71a15ba5d9fbdcb6b865bcab501c53428b7f1ab410f94a4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the sample and group definitions for a new nonnegative-term test. Source extraction and analysis code are independent."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior missing-delay recovery bounds motivated a test that can constrain forests under a stronger sign assumption."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and data credit."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

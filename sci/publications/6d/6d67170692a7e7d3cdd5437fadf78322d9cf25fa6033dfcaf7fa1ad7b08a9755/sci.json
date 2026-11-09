@@ -1,0 +1,75 @@
+{
+  "title": "Cell-body distance gave no clear gain in predictions of successive-response correlation in four Allen slice groups",
+  "abstract": "We tested whether cell-body distance improves predictions of correlation between the first two responses to 50 Hz stimulation. We used 1,846 detected chemical connections from Allen Synaptic Physiology r2.1 mouse visual cortex and human temporal cortex slices. Reference models used cell labels, layers, sex, response amplitude, resting variability, and source-event count. Five validation folds kept inferred donors separate. Adding a piecewise linear distance term gave no clear gain in any species and synapse-type group. All four 99 percent conditional donor bootstrap intervals included zero. Changes in ridge penalty and distance range also gave uncertain gains. These results limit one simple spatial prediction rule. They do not establish independence, equal responses across distances, or a mechanism of synaptic release. Missing correlations, inferred donors, uncertain response fits, and small human inhibitory samples limit the result. Code, selected rows, predictions, source hashes, and an independent score check are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic response correlation",
+    "cell-body distance",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Added distance did not give a clear prediction gain. Points show percent reduction in equal-donor squared error. Bars show 99 percent conditional donor bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurements and experimental context."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition of the stored response correlation; database build commit is unknown."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.22-03-00728.2002"
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.20-04-01575.2000"
+    },
+    {
+      "target": "sci:sha256:bbdc3fd9f21758e56d58eedc12bb5c983d4f29ff769661ebef295998ad5b368f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related distance test informed the donor rules, spatial basis and validation approach. The present endpoint is correlation between successive responses."
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related distance and resting variability test."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "reason": "Related warning about derived axis distances; this study uses pair.distance only."
+    }
+  ]
+}

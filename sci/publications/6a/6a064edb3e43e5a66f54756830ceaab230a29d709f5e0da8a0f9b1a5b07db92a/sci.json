@@ -1,0 +1,66 @@
+{
+  "title": "Independent 10 percent edge loss removes about 29 percent of timing constraints in selected Allen mouse slice graphs",
+  "abstract": "We tested the loss of graph support for additive source-cell plus target-cell delay models in Allen Synaptic Physiology r2.1. We reproduced 18 independent constraints and 57 supported mouse edges, and one constraint with four human edges. Exact enumeration of all edge subsets in each cycle core shows that independent 10 percent edge loss leaves 12.8385 mouse constraints and 41.7211 supported mouse edges on average. This removes 28.67 percent of constraints while 90 percent of edges remain on average. Removing one cycle edge removes all constraints in its group for 28 of 57 supported mouse edges. Strict cell labels give 11 initial mouse constraints and 7.5161 after the same assumed loss. The human rectangle survives with probability 0.6561. These are exact conditional sensitivity results, not estimates of error rates or biological synapse loss. Small selected slice graphs, fixed connection calls, unmeasured correlated failures, and one human supported group limit inference. The package preserves code, source hashes, extracted edges, integer reliability coefficients, deletion audits, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "graph reliability",
+    "missing edges",
+    "additive model",
+    "circuit structure"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Exact expected retained constraints and cycle-supported edges under independent edge loss. The loss rate is assumed, not measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dc740390de93bd1b08e40436cd5f0d979130a25c2386c6c10470f9a8a93bc7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published grouping rules and baseline graph counts. This study adds edge-loss reliability and independently extracts the raw data."
+    },
+    {
+      "target": "sci:sha256:5027b4e3394fd61ba71a15ba5d9fbdcb6b865bcab501c53428b7f1ab410f94a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior sensitivity to errors in latency values. This study instead tests loss of edge observations."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "reason": "Search metadata described missing-latency recovery. The present calculation concerns edge removal."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.3982/ECTA14605",
+      "reason": "Established fixed-effect graph framework; no new rank theorem is claimed."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

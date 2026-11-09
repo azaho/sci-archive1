@@ -1,0 +1,82 @@
+{
+  "title": "Reciprocal wiring gave no clear added late-train prediction value after early response control in two Allen slice samples",
+  "abstract": "We tested whether reciprocal wiring improves late-train response predictions after early response measurements are known. Allen Synaptic Physiology r2.1 supplied 185 mouse visual-cortex and 79 human temporal-cortex excitatory connections from 79 and 29 inferred donors. Models held whole donors out of training. At ridge penalty 10, adding reciprocity increased donor mean squared error by 1.23% in mouse and 1.43% in human. Reference-minus-comparison gains were -0.000387 and -0.000227, with conditional 97.5% donor bootstrap intervals of [-0.000988, 0.000119] and [-0.000966, 0.000438]. No tested sensitivity variant gave a clear positive gain. Early response measurements gave large gains, but shared trials, baselines, and normalization limit their biological meaning. This test does not establish equal dynamics or a causal effect. Selected slice graphs, inferred donor labels, measurement error, and conditional uncertainty limit transfer. Code, source hashes, derived evidence, figures, and reproduction checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "short-term plasticity",
+    "donor validation",
+    "prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/primary_gain.png",
+      "caption": "Reciprocity gave no clear added prediction value after early response control. Bars show conditional 97.5% donor bootstrap intervals."
+    },
+    {
+      "path": "files/prediction_gain.png",
+      "caption": "Early response measurements gave larger gains, but share measurements with the late response target."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0084626"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/our-research/connectivity/synaptic-physiology"
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published context for a distinct donor-held-out late-response prediction test. No code or numerical evidence was reused."
+    },
+    {
+      "target": "sci:sha256:b53f5d407eb5a2c7e314e1a5b521520540deb1b3354e46b282494f4642293ad6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published context for a distinct donor-held-out late-response prediction test. No code or numerical evidence was reused."
+    },
+    {
+      "target": "sci:sha256:08132dd0dfb3d70ddc1a203410d7e0614aeddfe599660c6698373b0e04adf78f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published context for a distinct donor-held-out late-response prediction test. No code or numerical evidence was reused."
+    },
+    {
+      "target": "sci:sha256:f22dd88c2c5a0a97f16f531003196eaebf3f82e7b584feb21bb9575bd0177561",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published context for a distinct donor-held-out late-response prediction test. No code or numerical evidence was reused."
+    }
+  ]
+}

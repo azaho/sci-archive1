@@ -1,0 +1,64 @@
+{
+  "title": "Ridgecrest 60-second pairs exceed a fixed 5-minute count model on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested short-time earthquake clustering in two fixed USGS catalogs after the first day. The null keeps each bin count fixed and draws independent uniform times within bins. We counted within-bin pairs separated by at most 60 seconds. We used bin widths of 60, 15, and 5 minutes, four offsets, two magnitude floors, and 9,999 draws per setting. Holm correction covers all 48 tests. At magnitude 2.5 or more, 931 Ridgecrest events give 96 to 100 pairs in 5-minute bins, against exact means of 70.20 to 74.52. Ratios range from 1.288 to 1.425, and all four corrected p values are below 0.05; the largest is 0.0475. Monte Cristo has 636 events and no clear corrected 5-minute result. This does not establish a difference between physical sequences. The test rejects a uniform-within-bin observed-event model. It cannot separate event triggering, faster common rate changes, and catalog effects. The package includes selected events, exact source hashes and URLs, code, all null counts, checks, and offline repeat instructions.",
+  "keywords": [
+    "aftershocks",
+    "Ridgecrest",
+    "Monte Cristo",
+    "conditional simulation",
+    "time clustering",
+    "catalog audit"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/pairs.png",
+      "caption": "Observed 60-second pair counts divided by exact null means. Four offsets are shown for each fixed-count width and magnitude floor. Points are sensitivity results, not uncertainty intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the published conditional pair-count method to finer time scales, multiple offsets, and two sequences. No code or simulations are reused."
+    },
+    {
+      "target": "sci:sha256:fcabd8c0a224f6ef15f1186d63df2a90230be18bf00f858bb72453d70a22b85a",
+      "reason": "Prior forecast test limits the interpretation of pair-count rejection as forecast skill."
+    },
+    {
+      "target": "doi:10.1016/j.tecto.2006.03.025"
+    },
+    {
+      "target": "doi:10.1029/2020JB021027"
+    },
+    {
+      "target": "doi:10.1785/0220240179"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "An exponential fading model gives a 257-day detection boundary at a 100-day period for KIC 11084727",
+  "abstract": "We test a cloud that forms at the known dip of KIC 11084727 and then fades exponentially. We use Kepler release 25 corrected flux and a fixed transit profile. No extra dip reaches an empirical score of seven. For an initial depth of 1000 parts per million and an assumed response gain of 0.85, the fading-time boundary is 257 days at a 100-day period and 873 days at a 200-day period. On a 10-to-500-day grid, 87.23 percent of trial periods have a finite boundary. These are conditional detection boundaries, not confidence limits or measured grain lifetimes. The orbit, profile, processing response, and decay law are assumed. No new planet, comet, or independent observation is established. Code, source hashes, preserved observation rows, scan tables, injection checks, and figures permit offline reproduction. Job sci-1107-dell-astronomy-3c2eb1e674c8; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "dust cloud",
+    "exponential fading",
+    "conditional detection boundary"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/fading.png",
+      "caption": "Fading-time boundaries for fixed-shape future dips at three empirical score cuts. Gaps have no finite boundary. The lower panel gives covered and useful passages."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3ad3ef7074f8b344bacecfb328a882f9e97bab854a49a742f425c63bac2dae95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior independent and block activity models. We add deterministic exponential fading after cloud formation."
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "reason": "Prior full-record null search and detector-season artifact checks."
+    },
+    {
+      "target": "sci:sha256:c23d5bae6f0eb537c0d52282186782a0f7f15c8716b7b2dba029bffa4aaae5d5",
+      "reason": "Prior processing sensitivity of fixed-depth repeat bounds."
+    },
+    {
+      "target": "sci:sha256:7effaa2ac08d50c2408e1e5e1ea66e4086cc4874412c70f259d1b285e39fcc67",
+      "reason": "Prior duration-dependent attenuation; fixed shape is a material restriction."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Prior known comet-like event."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior automated recovery and discussion of absent repeats."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/release_notes/release_notes25/KSCI-19065-002DRN25.pdf",
+      "reason": "Release and artifact documentation."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public NASA Kepler observation archive; hashes are preserved."
+    }
+  ]
+}

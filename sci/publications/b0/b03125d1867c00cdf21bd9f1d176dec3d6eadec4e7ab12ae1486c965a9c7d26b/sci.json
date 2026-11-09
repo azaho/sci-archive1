@@ -1,0 +1,89 @@
+{
+  "title": "The connection model gave no clear linear interaction between co-travel length and response similarity in one MICrONS mouse",
+  "abstract": "We tested whether axon-dendrite co-travel length changes the link between measured movie response similarity and synaptic connection in one MICrONS mouse. We used the public functional connectomics v1 tables. The sample had 295,371 candidate pairs and 8,128 connections. A Poisson model with separate source and target neuron effects used 163,870 informative pairs and all 8,128 connections. The model controlled co-travel length, a released axon-length field, soma distance, and region/layer pair types. The linear interaction estimate was -0.0103, with a nominal 95% dyadic interval of -0.0342 to 0.0136 and p = 0.399. The estimate is per standard deviation of similarity and of log length. At 6.20 and 67.91 micrometres, the ratio of the two similarity mean ratios was 0.976, with interval 0.921 to 1.033. A logistic check also gave an interval across zero. The primary result does not resolve a linear interaction. It does not establish independence or a rule across animals. We supply code, source hashes, pair records, fitted models, separation checks, uncertainty estimates, and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "functional connectomics",
+    "axon-dendrite co-travel",
+    "response similarity",
+    "neuron fixed effects",
+    "dyadic uncertainty",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/structure_function.png",
+      "caption": "Raw rates, conditional similarity ratios, and secondary interaction checks in one MICrONS mouse. Bars and bands show nominal 95% dyadic intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and linked functional connectomics release v1."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS structural and functional data collection."
+    },
+    {
+      "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+      "relations": [
+        "reviews",
+        "uses"
+      ],
+      "reason": "Prior average similarity test and verified source column documentation informed this distinct interaction test."
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior source and target fixed-effect study motivated control of additive neuron properties. No fitted output or code reused."
+    },
+    {
+      "target": "doi:10.1093/pan/mpv018",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dyadic sandwich covariance principle."
+    },
+    {
+      "target": "doi:10.1162/rest.88.4.641",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Poisson pseudo-likelihood conditional mean estimation."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025",
+      "reason": "Official source code and data documentation."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Unchanged source file, identified by SHA-256 in provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Unchanged source file, identified by SHA-256 in provenance.json."
+    }
+  ]
+}

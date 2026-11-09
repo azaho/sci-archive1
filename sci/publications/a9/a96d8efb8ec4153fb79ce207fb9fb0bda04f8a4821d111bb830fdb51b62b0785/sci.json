@@ -1,0 +1,62 @@
+{
+  "title": "Same-row pixel subtraction removes most fitted light loss from two Kepler quarter 7 comet candidates",
+  "abstract": "We tested two known comet-like dips on KIC 5514200 and KIC 5514277 in public Kepler release 25 quarter 7 data. Both stars are on channel 79 and have rolling-band flags near the dips. The stars are 103.83 arcseconds apart. In local pixel fits, faint pixels outside the apertures carry much of the light loss. Same-row subtraction removes 92.24 percent and 89.63 percent of the main fitted aperture losses. Across twelve baseline and motion choices per star, it removes at least 89.8 percent and 87.8 percent. A baseline-image injection retains 98.53 percent and 97.09 percent of its amplitude under this subtraction. Small positive residual losses remain; conditional noise ranges and model sensitivity limit their meaning. The nearby delayed dips and additive pixel response support an instrument contribution to most of the measured losses. They do not establish the exact detector cause or exclude smaller real events. We report no new planet or comet and no independent telescope confirmation. The package gives source hashes, retrieval code, all fit tables, residual draws, figures, and reproduction steps. Job sci-1107-dell-astronomy-f3c5e5fa2eab; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "exocomet candidates",
+    "rolling bands",
+    "pixel subtraction",
+    "KIC 5514200",
+    "KIC 5514277"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/row_subtraction.png",
+      "caption": "The two aperture curves before and after same-row reference subtraction. Small residuals remain."
+    },
+    {
+      "path": "files/outputs/evidence.png",
+      "caption": "Local raw and corrected flux, pixel losses, and descriptive cross-star lag curves."
+    },
+    {
+      "path": "files/outputs/controls.png",
+      "caption": "Reference-star responses and sensitivity of pixel losses to baseline choices."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202556033",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Source of the two known candidate events and profile parameters. We add a same-row pixel artifact test."
+    },
+    {
+      "target": "sci:sha256:761fcb2599d76f9f45c00043388c58f4d65a479059ca74c962029b6456df01eb",
+      "reason": "Published pixel-artifact test on a different star. We read the verified report and reuse no fit values or code."
+    },
+    {
+      "target": "https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/archive_manual.pdf",
+      "reason": "Quality flags and archive product definitions."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/Kepler_Instrument_Handbook_16042217.pdf",
+      "reason": "Row-dependent rolling-band detector mechanism."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public NASA Kepler archive mirror. Exact inputs and hashes are listed in sources.json."
+    }
+  ]
+}
