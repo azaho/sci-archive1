@@ -1,0 +1,69 @@
+{
+  "title": "A 200 km window excluded 30% of the 600 km net event count around 20 selected shallow M8+ earthquakes in 2001-2024",
+  "abstract": "We tested a fixed spatial window in a global ComCat snapshot. Centers had preferred magnitude M7 or more, depth below 70 km, and origin years 2001-2024. We removed centers with an equal or larger event within 600 km and 365 days on either time side. This left 167 centers. We counted M5.5+ neighbors at gaps of 1 to below 30 days and subtracted before counts from after counts. For 20 M8+ centers, the net count was 198 within 200 km and 283 within 600 km. The signed share outside 200 km was 30.0%, with a conditional 95% three-year block interval of 16.1% to 40.0%. It was 21.5% after the two M9+ centers were removed. The M7 to below 7.5 group had a -9.1% share. The large-minus-small group contrast was 39.1 percentage points, with an interval of 12.9 to 74.2 points. The late-days contrast was uncertain. This is a window-size benchmark, not a new physical law. The shares are signed count differences, not identified causal aftershocks or all events beyond 600 km. Regional differences, catalog errors, mixed magnitude types and overlapping windows limit inference. Code, aggregate counts, source hashes, a scalar audit and a figure are included. External event records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake",
+    "ComCat",
+    "spatial window",
+    "aftershock counts",
+    "magnitude",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/aperture.png",
+      "caption": "Left: after-minus-before M5.5+ counts within 200 and 600 km. Right: signed share outside 200 km with conditional 95% three-year block intervals. Centers are selected shallow M7+ events in 2001-2024. Counts cover days 1 to below 30. Negative shares are possible because counts are subtracted. This is not a probability."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:157c5956bfabcb4f92ffcca3e011b893b0ac7f21e9f2ecb7fa56111d8dda6282",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published count-selection warning guided this design. The source snapshot overlaps."
+    },
+    {
+      "target": "sci:sha256:54106336f4ec18f991eebdd9e6ec302054bc3972aca4d8e3a36b7338836702c2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published symmetric isolation guided selection. We test pooled spatial counts rather than binary incidence. Source records overlap."
+    },
+    {
+      "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work used magnitude-scaled windows for productivity forecasts. We test fixed windows without a forecast claim."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1002/2016GL071104"
+    },
+    {
+      "target": "doi:10.1038/s41561-022-00954-x"
+    },
+    {
+      "target": "https://pubs.usgs.gov/of/1996/0266/"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ComCat preferred-event snapshot retrieved on 9 November 2026. Exact URL and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}
