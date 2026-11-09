@@ -1,0 +1,103 @@
+{
+  "title": "Weight shuffles gave less mean code change after one input loss in three fly calyx models",
+  "abstract": "We tested whether balanced input to Kenyon cells protects a sparse odor code after one glomerular channel is lost. We linked a verified PN-to-KC edge table from three adult fly calyces to 23 measured receptor channels for 110 odors. FlyWire left and right came from one fly; hemibrain right came from a second fly. Each model selected its strongest 10 percent of cells before and after loss. Observed weights gave mean active-set replacement of 6.74, 6.63 and 6.75 percent. The means of 99 weight shuffles were 6.55, 6.56 and 6.62 percent. Restoring each cell total after a shuffle gave no common protective effect. Observed weights had lower baseline odor-code overlap than shuffle means, but no repeated gain in code preservation. Loss of the worst channel for each odor replaced 44.7, 43.3 and 42.1 percent of active cells on average, despite a fixed active-cell count. These are model stress scores, not measured cell responses or failure probabilities. Different anatomy and receptor animals, missing receptor profiles, count-based weights, a rank threshold and strong selected perturbations limit the result. Code, source hashes, model inputs, all draw scores, paired controls, audit results and figures support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Drosophila",
+    "mushroom body",
+    "Kenyon cells",
+    "structure-function",
+    "input loss",
+    "sparse coding",
+    "connectomics",
+    "representation reliability",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure_primary.png",
+      "caption": "Code change after loss of one measured glomerular channel in three calyx models. Each code keeps ten percent of Kenyon cells active. Weight shuffles keep topology and glomerular weight lists within each cell class; paired matrices restore each cell total. The worst-channel score selects a channel separately for each odor. Two FlyWire hemispheres share one fly. All outputs are model predictions."
+    },
+    {
+      "path": "files/figure_controls.png",
+      "caption": "Observed scores minus weight-control means for every planned model setting. Ranges use the central 95 percent of conditional shuffle scores, not animal uncertainty. Lower damage means better active-set preservation. Lower baseline overlap means less shared activity between odors. These are separate endpoints."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d47d61cecf35201e4dfa315a4550acd1f6f7038e2cc7d15a7828e387c956b142",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the verified selected PN-to-KC edge table and follows its receptor conversion and weight-control definitions. Tests a new channel-loss endpoint."
+    },
+    {
+      "target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior odor-identification test of observed and randomized fly mushroom-body topology. No code or results reused."
+    },
+    {
+      "target": "doi:10.1073/pnas.2102158118",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model and anatomical evidence for compensatory variability in the mushroom body."
+    },
+    {
+      "target": "doi:10.7554/eLife.74172",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Physiology and anatomy show APL normalization and local circuit organization; a global top-k rule remains an assumption."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2006.01.050",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of measured receptor responses."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/tom-f-oconnell/drosolf/2ff359109ed9d4c05e2f4c296111ca186cb0e892/drosolf/data/hc_data.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned machine-readable receptor response export, checked by SHA-256."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2010.04.009",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Basis of the assumed divisive PN rate transform."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire structural lineage through the reused edge table."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire annotation lineage through the reused edge table."
+    },
+    {
+      "target": "doi:10.7554/eLife.57443",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Hemibrain structural lineage through the reused edge table."
+    }
+  ]
+}

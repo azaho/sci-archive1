@@ -1,0 +1,115 @@
+{
+ "title": "Astrometry of 3I/ATLAS before perihelion predicts its 2026 path with an r^-2 force, not a water-ice law; after perihelion small-telescope positions are 900 km tailward; A1 varies 2x",
+ "abstract": "We fit the orbit of the interstellar comet 3I/ATLAS to 8,442 MPC positions (2025-05-08 to 2026-04-14) with ASSIST/DE440 and Marsden A1-A3 terms. Positions before 2025-10-01 already need a radial acceleration with g = (1 au/r)^2: A1 = 5.7 +- 1.8 x 10^-8 au/d^2 (delta chi2 = 9, formal weights). This pre-perihelion model predicts the positions of Feb-Apr 2026 to 0.7-1.6 arcsec, where gravity only misses by 11-12 arcsec. It misses by 4-6 arcsec in Nov 2025-Jan 2026, which is more than its forecast width. The water-ice g(r) law misses by 47-62 arcsec. Small-telescope positions differ from large-telescope (1.5 m or larger, HST) positions in the same 3-day bins. After perihelion, a 3-D tailward photocentre offset of 907 +- 122 km, scaled by the phase angle, fits these differences better than a timing offset. Before perihelion, the apparent motion was within about 5 degrees of the Sun line, so a 3.1 s lead along the motion and a sunward offset cannot be separated. For one r^-2 law, A1 is 2.9 to 6.2 x 10^-8 au/d^2, depending on the data selection and the offset model. The formal errors are 0.07-0.6. Large telescopes alone give A1 = 5.5 +- 0.6, A2 = 2.1 +- 0.5 and A3 = -0.67 +- 0.04, which agree with Spada et al. (2026). A common sunward offset of K (1000 km) in the large-telescope positions changes A1 by -0.87 K, and the astrometry constrains K only weakly. Limitations: we do not know the absolute offset of the large telescopes, we define the classes by station name, our weights are simple, we do not model a time-delayed g(r), and we have no positions after 2026-04-14.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "3I/ATLAS",
+  "C/2025 N1",
+  "interstellar object",
+  "non-gravitational acceleration",
+  "orbit determination",
+  "astrometry",
+  "photocentre offset",
+  "forecast test",
+  "ASSIST",
+  "Minor Planet Center",
+  "instrumental artifacts"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forecast_test.png",
+   "caption": "Orbits fit to positions before 2025-10-01 compared with later positions (weekly median O-C; dots = large telescopes). An r^-2 radial term (blue) predicts the 2026 path; gravity only (grey) and the water-ice law (red) do not."
+  },
+  {
+   "path": "files/figures/fig2_class_offsets.png",
+   "caption": "Small-telescope minus large-telescope positions in 3-day bins, in the Sun-line frame (top) and in the apparent-motion frame (middle), with phase angle and apparent rate (bottom). After perihelion, the offset is tailward and follows the phase angle."
+  },
+  {
+   "path": "files/figures/fig4_parameters.png",
+   "caption": "Fitted A1, A2, A3 (g = (1 au/r)^2) for different data selections, weights and offset models, compared with Spada et al. (2026) and JPL #55. A1 changes by a factor of 2; the formal errors are much smaller."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e8572651108727241afdb642d02b8a01ce007caf2e1e477528b0c499a10c4da3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We adapted its ASSIST orbit fitter (orbfit.py), its MPC data recipe and its weighting and debiasing scheme."
+  },
+  {
+   "target": "https://arxiv.org/abs/2603.00782",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Spada, Krolikowska and Dones 2026: systematic and statistical uncertainties of the 3I/ATLAS non-gravitational acceleration. Our large-telescope A1-A3 agree with their full-arc ng1 values, and we also find a pre/post-perihelion mismatch. We add an explicit class-offset model and a forecast test."
+  },
+  {
+   "target": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3I",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JPL SBDB orbit #55 (2026-10-21) and Horizons vectors; starting state and residual comparison."
+  },
+  {
+   "target": "https://data.minorplanetcenter.net/api/get-obs",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MPC ADES astrometry of 3I (8,442 optical positions) and observatory codes."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abd414",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JPL planetary and lunar ephemerides DE440 and DE441 (Park et al. 2021)."
+  },
+  {
+   "target": "doi:10.1016/j.icarus.2019.113596",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Eggl et al. 2020 star-catalogue debiasing of optical astrometry."
+  },
+  {
+   "target": "doi:10.3847/PSJ/ac8cff",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASSIST ephemeris-quality integrator (Holman et al. 2023)."
+  },
+  {
+   "target": "doi:10.1086/111402",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Marsden, Sekanina and Yeomans 1973 non-gravitational force model and water-ice g(r)."
+  },
+  {
+   "target": "https://arxiv.org/abs/2508.18209",
+   "reason": "Cordiner et al. 2025: JWST detection of a CO2-dominated coma of 3I/ATLAS at 3.32 au; context for the r^-2 activity law before perihelion."
+  },
+  {
+   "target": "https://arxiv.org/abs/2603.15735",
+   "reason": "Thoss et al. 2026: mass and size of 3I/ATLAS from its non-gravitational acceleration; our A1 range propagates into such estimates."
+  },
+  {
+   "target": "https://arxiv.org/abs/2512.18341",
+   "reason": "Forbes and Butler 2025: size of 3I/ATLAS from non-gravitational acceleration."
+  },
+  {
+   "target": "https://arxiv.org/abs/2601.21569",
+   "reason": "HST nucleus and post-perihelion activity of 3I/ATLAS (nucleus radius 1.3 +- 0.2 km)."
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "title": "A May air-temperature model of Gulf of Mexico hypoxic area per nitrate load failed its 2024 test and the 1985-1999 back-cast; warmth had a weak link not specific to May",
+ "abstract": "Question: does the 2024 LSU model, which makes Gulf of Mexico hypoxic area per May nitrate load a curved function of May air temperature at New Orleans, predict areas outside its 2000-2023 fit years? Approach: we used USGS daily WRTDS-K loads for the Mississippi and Atchafalaya rivers (ver. 3.0, 2026), LUMCON areas for 1985-2026, GHCN-Daily temperature, HURDAT2 storms and NDBC winds. We reproduced the model, froze it, applied it to 1985-1999 and 2024-2025, did month-placebo tests and made rolling one-year-ahead forecasts. Results: the first operational forecast (2024) was 5,107 km2 (95% interval 4,687-5,569). The measured area was 17,360 km2, and a load-only model gave 14,113 km2. A storm cannot explain an area that is larger than the forecast. In the 1985-1999 back-cast (12 years), the temperature model increased the mean absolute error from 4,493 to 6,606 km2 (difference CI +826 to +3,432). In the fit years, February and November temperatures fit the area-per-load ratio as well as May. Over 30 storm-free years, a 1 C warmer May gave 11% less area per load (p = 0.046), and a warmer June gave 23% less. River discharge did not remove this link. In rolling forecasts for 18 storm-free years (2000-2025), the curved May model decreased the error by 451 km2 (CI 50-851). May was the only one of 13 predictors with this result, and the authors selected it with the same data. A monotonic May term gave no clear gain. 15 of 18 published LSU forecasts from 2007 to 2026 were larger than the measured area. Limitations: one area value per year, three years after the fit with storms in two, and the exact model equation is not published.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370802"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "Gulf of Mexico",
+  "hypoxia",
+  "dead zone",
+  "nitrate load",
+  "Mississippi River",
+  "forecast verification",
+  "ocean warming",
+  "WRTDS",
+  "out-of-sample test",
+  "LUMCON"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ratio_vs_may_temperature.png",
+   "caption": "Hypoxic area per May nitrate+nitrite load against May mean air temperature at New Orleans airport. Blue dots are the 2000-2023 fit years, with the quadratic temperature fit. Orange circles are the 1985-1999 years that were not used in the fit. Grey crosses are years that LSU excludes. Green diamonds are 2024 and 2025. The dashed line is the constant load-only ratio."
+  },
+  {
+   "path": "files/figures/fig2_area_timeseries_predictions.png",
+   "caption": "Measured mid-summer hypoxic area (bars) and predictions of the frozen 2000-2023 load-only model and the May-temperature model, with the published LSU June forecasts (orange). The shaded areas are the back-cast years (1985-1999) and the years after the fit (2024-2026)."
+  },
+  {
+   "path": "files/figures/fig3_month_placebo.png",
+   "caption": "Month placebo. A: log-linear change in area per load per 1 C for the temperature of each month, 1985-2025, 30 storm-free years. B: change in rolling one-year-ahead forecast error of the quadratic ratio model, relative to a constant ratio, for the temperature of each month (18 storm-free years, 2000-2025). The bars are 95% intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1002/lno.12722",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Turner, Rabalais and Glaspie (2024), A temperature tipping point in hypoxic zone size. We test their May-temperature model of area per nitrate load out of sample."
+  },
+  {
+   "target": "doi:10.5066/P1MFARP2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS data release (Klager 2026, ver. 3.0): Mississippi and Atchafalaya streamflow and WRTDS-K daily nutrient fluxes, WY1980-2025."
+  },
+  {
+   "target": "https://gulfhypoxia.net/research/shelfwide-cruises/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "LUMCON/LSU mid-summer hypoxic area series, cruise dates and annual forecast reports."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_station/USW00012916.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Daily New Orleans airport temperatures."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 storm tracks for the storm flags (shared campaign dataset)."
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NDBC hourly winds at BURL1, GISL1 and 42035."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 May SST placebo predictor (shared campaign dataset)."
+  }
+ ]
+}
