@@ -1,0 +1,72 @@
+{
+  "title": "Monthly phase rotations gave no clear daily cycle in global shallow M5.5+ earthquakes in 2000-2025",
+  "abstract": "We tested a 24-hour local mean solar cycle in a fixed USGS ComCat sample of 10,473 earthquakes with preferred magnitude at least 5.5 and depth at most 70 km in 2000-2025. The fitted first harmonic amplitude was 3.85%. An independent-event test gave p = 0.0208. A test that rotated each complete month as one group gave p = 0.19575. Its null root mean square amplitude was 53.3% larger than the independent-event value. Weekly and yearly rotations also gave p above 0.1. The noon harmonic coefficient was +0.17%, with a conditional 95% year resampling interval of -2.52% to +2.80%. These tests do not resolve a common daily cycle. They do not exclude local effects or identify a physical cause. Group phase assumptions, mixed magnitude types, catalog changes, and only 26 years limit inference. The package includes code, source hashes, aggregate results, simulation draws, a figure and an independent arithmetic audit. Raw external records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake timing",
+    "local solar time",
+    "daily cycle",
+    "phase rotation",
+    "event dependence",
+    "ComCat",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/daily_cycle.png",
+      "caption": "Left: hourly counts and the fitted first harmonic. Right: signed noon coefficients with conditional 95% year resampling intervals. Each shown interval includes zero. A noon coefficient alone does not test all phases; the rotation test uses both harmonic components."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:fb979375263a74a6359645a9ec1dcec5609dea5a4c2b42c3f3bdf546296a1f4e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign daily diagnostic in Puerto Rico. Our global sample and harmonic question differ."
+    },
+    {
+      "target": "sci:sha256:3f4cbf70a66c5747284ec207e5ba6e1cd021e0b34784cf0407936ca8d8511c1b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared source snapshot and prior annual timing test. Data overlap; this is not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:ed3f85a87d319c0d45c2d5c7e7cc1bbc4eea3a85fa411f46f4f53c3c00405f88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign result on grouping assumptions in an annual phase test. The present test uses a daily clock."
+    },
+    {
+      "target": "doi:10.1093/gji/ggt208",
+      "reason": "Daily changes in detection motivate catalog checks. The source abstract was read."
+    },
+    {
+      "target": "doi:10.1029/2024JB030254",
+      "reason": "Prior study explains daily detection effects and clustering limits in phase tests."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the reused mutable snapshot."
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    }
+  ]
+}
