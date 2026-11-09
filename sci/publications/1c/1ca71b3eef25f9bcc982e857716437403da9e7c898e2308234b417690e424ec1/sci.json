@@ -1,0 +1,96 @@
+{
+  "title": "The aftershock decay exponent p did not increase with surface heat flow after 601 onshore shallow Japanese mainshocks (JMA Mj 3.5-7.3, 1999-2024); the primary 95% upper bound is 0.08 per doubling",
+  "abstract": "Mogi (1967) and Kisslinger and Jones (1991) proposed that aftershocks decay faster (higher Omori-Utsu p) in hot crust. We tested this with the JMA catalog. We selected 934 independent onshore mainshocks (Mj 3.5-7.3, depth 25 km or less, 1999-2024). We used aftershocks of M >= max(1.5, Mm - 3.5) from about 0.01 to 30 days, with a start time that avoids early incompleteness. A joint point-process model fitted p = p0 + slopes for heat flow, magnitude and depth, with a free productivity for each sequence, a fixed background rate and a common c. Intervals come from a bootstrap of 0.5-degree cells. For the 601 mainshocks with three or more GHFDB heat-flow sites within 30 km, p changed by +0.007 per doubling of heat flow (95% interval -0.090 to +0.077). The highest heat-flow tercile had the same p as the lowest (0.84 and 0.83). Inside 2-degree regions, the slope was +0.034 (-0.075 to +0.131). All 20 design changes and subsets gave intervals that include zero. Injection into the real catalog recovered slopes of 0.1 and 0.2, and the design detects about 0.13 per doubling with 80% power. Distance to Holocene volcanoes and the local seismogenic depth D90 also gave no clear slope in the primary design. Some subset results for volcano distance did not repeat between periods. p increased with mainshock magnitude by +0.055 per unit (+0.024 to +0.084), in agreement with an earlier JMA estimate. Limitations: heat-flow sites are sparse and mostly offshore, completeness is assumed and not mapped, the windows are simple, Mj is not Mw, there are no focal mechanisms, and the joint fit gives more weight to large sequences.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "aftershock decay",
+    "Omori-Utsu law",
+    "p-value",
+    "heat flow",
+    "Japan",
+    "JMA catalog",
+    "crustal temperature",
+    "null result",
+    "power analysis",
+    "earthquake statistics"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig2_decay_terciles.png",
+      "caption": "Stacked aftershock decay and joint-fit p in three heat-flow terciles (601 onshore shallow JMA mainshocks, 1999-2024), and single-sequence p against heat flow. The three terciles have p of 0.83, 0.91 and 0.84; the intervals overlap."
+    },
+    {
+      "path": "files/figures/fig3_sensitivity_power.png",
+      "caption": "(a) Change of p per doubling of heat flow for the primary design, 12 selection changes and 7 subsets; all intervals include zero. (b) Recovery of injected slopes in synthetic catalogs that use the real design."
+    },
+    {
+      "path": "files/figures/fig1_map.png",
+      "caption": "GHFDB heat-flow sites and the 934 onshore mainshocks, coloured by median heat flow within 30 km."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:031fd1c650720bda314e71bd14042d18b4daeea3feeb9649abcf17c235708c20",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We reuse its JMA parser, onshore filter and mainshock rules. Our full Omori-Utsu fit supports its finding of no clear thermal link to aftershock decay."
+    },
+    {
+      "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+      "reason": "Related campaign result on spatial controls of aftershock duration (strain rate)."
+    },
+    {
+      "target": "doi:10.1029/91JB01200",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Reported higher p at higher heat flow in southern California; a link of that size is absent in onshore Japanese sequences."
+    },
+    {
+      "target": "doi:10.1029/2004JB003311",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Reported p = 0.06 Mm + 0.58 for JMA; we find +0.055 per magnitude unit."
+    },
+    {
+      "target": "doi:10.4294/jpe1952.43.1",
+      "reason": "Review of the Omori-Utsu law."
+    },
+    {
+      "target": "doi:10.1785/0120050067",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Short-term incompleteness relation used for the start of each fit window."
+    },
+    {
+      "target": "doi:10.5880/fidgeo.2024.014",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHFDB heat-flow data."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JMA unified hypocenter catalog, 1998-2024."
+    },
+    {
+      "target": "https://volcano.si.edu/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GVP Holocene volcano list."
+    }
+  ]
+}

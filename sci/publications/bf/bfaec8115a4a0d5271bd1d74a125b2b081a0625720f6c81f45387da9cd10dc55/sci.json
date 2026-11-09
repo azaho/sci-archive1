@@ -1,0 +1,102 @@
+{
+  "title": "The 35.68-day GJ 832 wave from 2016-2018 increases 2019 squared error in upgraded HARPS data",
+  "abstract": "We test whether a fixed 35.68-day wave predicts later GJ 832 velocities. A wave fitted to 54 upgraded-HARPS measurements from 2016-2018 raises weighted squared error in 56 measurements from 2019 by 36.6% with linear slow trends and 26.6% with quadratic trends. The fitted phase changes by 0.41 to 0.43 cycle. All tested periods from 35.55 to 35.82 days give negative prediction gains. Daily means, weight changes, and a fixed published giant-planet curve retain the error increase. Exact conditional sign tests depend on the noise blocks: 30-day tail fractions range from 0.0127 to 0.0586, while 100-day fractions range from 0.0625 to 0.125. We make no noise-model-independent rejection claim. A broader comparison of 62 older and 110 later HARPS rows gives a small positive gain under the main slow model. Independent ASH2 photometry shows brightness variation on the relevant time scale but does not confirm a velocity phase. Prior studies already favor stellar activity for this system. We report a limited prediction test, no new planet, and no planet exclusion. Raw snapshots, exact hashes, source code, simulations, figures and offline instructions are included. Job sci-1107-hp-astronomy-5eeedf8745c2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 832",
+    "HARPS",
+    "radial velocity",
+    "stellar activity",
+    "signal stability",
+    "prediction",
+    "noise blocks",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/hardware_evidence.png",
+      "caption": "The within-upgrade test at 35.68 days. The first two panels show partial residuals after removal of jointly fitted slow curves and fitted wave coefficients. Error bars use the quoted error plus a fixed 2 m/s term in quadrature. The lower left panel shows every stated test period. The lower right panel shows exact conditional tail fractions under shared-wave residual signs, HC2 scaling, and different calendar blocks. The dashed 0.05 line is a reference, not a claim of robust significance."
+    },
+    {
+      "path": "files/outputs/coherence.png",
+      "caption": "The broad 62-row HARPS to 110-row HARPS+ comparison gives a small positive main-model gain. The phase panels use joint-fit partial residuals. The initial null panel uses separate-wave residuals; the preferred conservative shared-residual results are in the tables. Stable-wave replacements test sensitivity in the observed residuals and are not survey completeness."
+    },
+    {
+      "path": "files/outputs/photometry.png",
+      "caption": "Independent ASH2 B and V nightly means show broad brightness variation. There are 17 shared nights per filter over 51.8 days. The fixed 35.68- and 37.5-day scales are shown. The curves have no false-alarm calibration and do not confirm the velocity phase."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-637X/791/2/114",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reported short period, its range, and the reference 1.79 m/s semiamplitude."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243063",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Source observations and prior activity interpretation. Table 4 supplies the slow-period scale and fixed Kepler-curve control."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36640064",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen public radial velocity, activity-index and ASH2 photometric tables, release date 2022-09-30."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347902",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Later RedDots system analysis and HARPS hardware-history context. No measurements from that release are reused."
+    },
+    {
+      "target": "https://arxiv.org/html/2206.07552v1",
+      "reason": "Accessible primary-paper version used to inspect methods and published model parameters."
+    },
+    {
+      "target": "sci:sha256:071303675e3ace36de1941a622b6240b6eec4a2788cc451cc632b205be6cec5a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign method context for fixed-wave prediction. No code or data are reused."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F664%2FA64%2Frv&-out.all&-out.max=unlimited",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact successful source request for the 227-row velocity table."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/A+A/664/A64/activity&-out.all&-out.max=unlimited",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact activity-table source request."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/A+A/664/A64/ash2&-out.all&-out.max=unlimited",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact photometry-table source request."
+    }
+  ]
+}
