@@ -1,0 +1,79 @@
+{
+  "title": "Readout noise set an exact information-growth threshold in two adult worm circuit models",
+  "abstract": "We tested when transient signal growth improves input detection in positive linear models from two partial adult C. elegans wiring maps. For stationary Gaussian process noise and a full-state readout, Fisher information about a brief input cannot increase without readout noise. With unit isotropic process noise and independent isotropic readout variance r, information can grow in some direction exactly when r exceeds 1/lambda_max(A+A transpose), if that eigenvalue is positive. We checked this boundary in eight binary and synapse-count models on 180 common cells. At binary coupling 0.95, signal norm peaks were 1.5401 and 1.4350. The readout variance thresholds were 1.9769 and 2.3128. At twice these thresholds, sampled peak information ratios were only 1.0297 and 1.0302. Code, a proof, aggregate results and checks are supplied. The threshold is an application of established linear Gaussian methods. Positive couplings, equal leaks, stationary noise, full observation, two partial maps and no matched activity limit biological inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "C. elegans",
+    "transient amplification",
+    "Fisher information",
+    "readout noise",
+    "stationary covariance"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Signal norm growth and information growth differ in two partial adult worm circuit models. Independent readout noise must exceed an exact threshold for information growth in the stated stationary linear Gaussian model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original study of the two adult wiring maps."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1010365",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior analysis of transient growth in neural models."
+    },
+    {
+      "target": "doi:10.1162/NECO_a_00234",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior analysis of signal, noise and memory in linear neural circuits."
+    },
+    {
+      "target": "sci:sha256:41c728d7ea2eb60c02bf25d58fecc7d39cdebb3a6f69189d7b000ee7b0b7d5a5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the common 180-cell selection and positive linear model. Rebuilds graphs from external source tables and adds stationary process noise and readout noise. No earlier code or record-level outputs are bundled."
+    },
+    {
+      "target": "sci:sha256:8d7df97dd7ed167c31811d02a8282cc7e0a5c36b8c627a3e13c9e550d45d7395",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test of cell scales that remove norm growth; the present test concerns information with a specified noise model."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external adult source table. Not included in the publication."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external adult source table. Not included in the publication."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository license inspected for source handling."
+    }
+  ]
+}

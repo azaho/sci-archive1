@@ -1,0 +1,69 @@
+{
+  "title": "An early shape fit leaves a 60 ppm RMS mismatch in selected later Kepler data for KIC 8462852",
+  "abstract": "We test the known 0.88-day signal near KIC 8462852 in Kepler release 25. A three-harmonic shape from quarters 9 to 11 leaves a 59.9 ppm RMS mismatch in quarters 12 and 13, after setting amplitude and phase from the fundamental in each later quarter. The primary frequency is 1.1361 cycles per day. A fixed-frequency residual-block test gives a conditional tail fraction of 0.007. All 72 tested choices of frequency, flux product, baseline and block length give fractions below 0.05, but some are close to that value. These choices share observations and are not independent tests. The second-harmonic to fundamental amplitude ratio drops from 0.70 to 0.74 in the early raw flux to 0.046 in quarter 13. The test challenges a restricted fixed-shape model. It does not prove a change in the source. Frequency drift, beating, aperture response and processing errors remain possible. No new planet or periodic signal is found. Independent instrument confirmation is absent. Code, aggregate results, figures, hashes and separate-scratch retrieval steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8462852",
+    "harmonic shape",
+    "time validation",
+    "source confusion"
+  ],
+  "display": [
+    {
+      "path": "files/shape.png",
+      "caption": "Aligned harmonic fits and conditional tail fractions at the primary frequency. Dashed curves are later quarters. These are fitted waveforms, not phase-binned raw data."
+    },
+    {
+      "path": "files/frequency.png",
+      "caption": "Tail fractions for four frequencies. Lines span nine baseline and block choices. Dots show the primary baseline and block length. The lines are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reports the unusual star, the known short period, harmonics and the small dip near day 1205."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/833/1/78",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests phase stability and source confusion. We test shape transfer under a simpler baseline model, not the same detector-wide correction."
+    },
+    {
+      "target": "sci:sha256:cbc09e76893ba6fa0a6710c982a80efdd6b22cae85bcfb5396d0c60b160ec520",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies campaign context and the quarter-9 frequency used as one sensitivity choice. No code is reused."
+    },
+    {
+      "target": "sci:sha256:d576e844583d7590eecc95e97c9a6c83a180ca88f0eb4b51f255bec3a25d0e9e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests harmonic relations between flux and centroids within quarter 9. The present test compares flux shape across quarters."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008462852/kplr008462852_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 archive. Only five listed members are used."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "Source data use and attribution policy."
+    }
+  ]
+}
