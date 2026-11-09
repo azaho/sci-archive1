@@ -1,0 +1,65 @@
+{
+  "title": "Count capacities reduced endpoint saturation in two selected adult worm chemical maps",
+  "abstract": "We tested whether internal capacity limits depend on the use of binary edges or synapse counts. We computed directed maximum flow for 180 common neurons in two adult worm chemical maps. With positive endpoint bounds, saturation fell from 66.93% to 49.54% in adult 7 and from 66.49% to 52.41% in adult 8 when count capacities replaced binary edges. Intermediate edge caps gave intermediate saturation shares. All positive-bound pairs remained reachable. A second solver and residual cuts agreed for 192 seeded pair checks. The result shows capacity-model sensitivity on fixed anatomical graphs. Counts are assumed additive flow capacities; signs, dynamics, shared release and cell capacity limits are absent. Two partial maps from one species cannot establish biological signal capacity or general transfer. Code, graph-level results, a figure, source hashes and external-data retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "maximum flow",
+    "minimum cut",
+    "synapse counts",
+    "endpoint strength",
+    "C. elegans",
+    "capacity model"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact graph-level saturation and severe capacity deficits under four capacity models in two adult chemical maps. Percentages exclude pairs with a zero endpoint bound."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e369d5d258a831f342d521460ecebdd061a12c2b1a84298d7a8f8da2be62c525",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates a capacity-model audit after its binary mixed-graph endpoint-bound result. No code or data extracts were reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original adult anatomical maps."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1005055",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41467-026-72587-2",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.maximum_flow.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
