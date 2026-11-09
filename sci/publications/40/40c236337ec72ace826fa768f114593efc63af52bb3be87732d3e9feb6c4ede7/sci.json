@@ -1,0 +1,119 @@
+{
+ "title": "Atlantic hurricane landfalls in 2019-2025 did not continue the reported slower-decay trend: mean 18-hour decay timescale was 20 h, not the 34 h predicted (15 HURDAT2 events)",
+ "abstract": "We tested out of sample the claim of Li and Chakraborty (2020) that North Atlantic hurricanes decay more slowly after landfall as the ocean warms. We used their event rule on HURDAT2: wind of 65 kt or more at the first inland synoptic point, four inland points, and an exponential decay timescale tau from the first 18 h. For 1967-2018 we got near their numbers (mean tau 21.4 h in 1967-1992 and 26.0 h in 1993-2018; they had 21.2 and 28.4 h). The event trend was +1.2 h per decade (95% CI -0.7 to +3.1). We fitted models on 1967-2018 and predicted the 15 events of 2019-2025, which were in the warmest SST years of the record. Their mean tau was 20.0 h (SE 1.7). The published trend line predicted 34.1 h (mean error -14.1 h, 95% bootstrap CI -16.8 to -10.6). Our training trend and SST models predicted 27.9 and 30.6 h, and both over-predicted. The stationary training mean had the smallest error of the simple models. A model with landfall intensity, subregion and translation speed only predicted 21.9 h. Adding year or SST to it did not reduce the test error. For 1967-2025 the trend was +0.04 h per year (95% CI -0.09 to +0.16). Pressure-deficit decay had no trend. These results held for ten variants of land mask, fit, outlier rule and SST product. Limits: only 15 test events from 4 seasons, no US East Coast test event, best-track winds over land are uncertain, and our 1967-2018 sample is not an exact copy. The data do not support a continuing slowdown at the published rate. They do not exclude a small SST effect. Code, event tables, provenance and results are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone",
+  "hurricane landfall",
+  "decay timescale",
+  "HURDAT2",
+  "out-of-sample test",
+  "sea surface temperature",
+  "replication",
+  "North Atlantic",
+  "climate change",
+  "best track"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_tau_by_year.png",
+   "caption": "Decay timescale tau of each landfall event. Blue: 1967-2018 training events. Orange: 2019-2025 test events. The dashed LC20 trend line and our fitted training trend, extended, are above most test events. Diamond: test mean 20.0 h with 95% interval."
+  },
+  {
+   "path": "files/figures/fig2_oos_errors.png",
+   "caption": "Mean error (observed minus predicted tau) on the 15 test events for each model fitted on 1967-2018, with 95% bootstrap intervals. Models with a year or SST term over-predict. The covariate-only model has the smallest bias."
+  },
+  {
+   "path": "files/figures/fig3_tau_vs_sst.png",
+   "caption": "Tau against the June-November HadISST mean in the LC20 box (10-35 N, 100-75 W). The 1967-2018 fit (14.3 h per K), extended, predicts long tau in 2024, but most 2024 events decayed fast."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-020-2867-7",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We test its 1967-2018 decay-timescale trend and SST link out of sample on 2019-2025 landfalls and use its event rule and tau fit."
+  },
+  {
+   "target": "doi:10.1038/s41586-022-04791-1",
+   "reason": "Matters Arising on track modes and landfall decay; relevant to our subregion covariates."
+  },
+  {
+   "target": "doi:10.1038/s41586-022-04792-0",
+   "reason": "Reply by the original authors."
+  },
+  {
+   "target": "doi:10.1038/s41612-022-00320-z",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reports uncertainties in landfall decay estimates; our out-of-sample result agrees that the reported slowdown may be overstated."
+  },
+  {
+   "target": "doi:10.1175/MWR-D-12-00254.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 format and uncertainty."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 2026 release, primary data."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2018-051019.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 2019 release, replication data."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 SST."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSST v5 SST, sensitivity test."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Natural Earth 10 m land and country polygons for the land mask and subregions."
+  },
+  {
+   "target": "doi:10.1175/1520-0450(1995)034%3C2499:ASEMFP%3E2.0.CO;2",
+   "reason": "Kaplan-DeMaria inland decay model."
+  },
+  {
+   "target": "sci:sha256:aeb65c193b73dabff9a49e243b9f3a538306fc932b5048be5f73473c4df7f9c3",
+   "reason": "Related campaign study of Atlantic tropical cyclone ocean effects with best-track data."
+  },
+  {
+   "target": "sci:sha256:5ed3b707e36b40fe6b432e9f10f20b55cec0538df4685ead4865e1d9f3ec8e6a",
+   "reason": "Related campaign study of translation speed and tropical cyclone wind changes."
+  }
+ ]
+}
