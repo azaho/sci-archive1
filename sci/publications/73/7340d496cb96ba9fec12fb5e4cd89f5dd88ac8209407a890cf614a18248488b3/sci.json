@@ -1,0 +1,93 @@
+{
+ "title": "In 9 mice with one calcium indicator, Pvalb, Sst, Vip and Lamp5 neurons in V1 did not keep grating tuning more stable across days than IT excitatory neurons",
+ "abstract": "Question: are mouse V1 interneurons more stable across days than excitatory neurons? A prior campaign study (sci 5d0863e3) found a large Pvalb advantage in Allen Visual Coding 2P (+0.139 in the stability metric S), but there only Pvalb mice had the slower GCaMP6s indicator. Data: DANDI:002015 (Allen Institute, draft): 9 Snap25-Cre x Oi4 (jGCaMP8s) mice, 8 planes, 3 identical drifting-grating sessions per mouse (0.8-28 days apart), Xenium ABC-atlas labels of the same neurons. Method: S = between-session tuning correlation (82 grating conditions) divided by the early-late correlation inside each session; fixed effects for mouse x plane; controls for reliability, amplitude, days and running-state change; two-stage (mouse, neuron) bootstrap. Results (13,518 neurons): differences against L2/3 IT were Pvalb +0.024 (95% CI -0.016 to +0.066), Sst -0.001, Vip -0.009, Lamp5 +0.030 (all CIs include 0); L4/5 IT -0.001. Pvalb had 13% less instability (CI -9% to +36%) against 69% in the prior study; at reliability >= 0.5 its difference was +0.002, as also in the prior study (+0.025, n.s.). IT supertypes added under 0.1% of variance. Population coupling gave +0.003 S per SD (CI includes 0). S fell 0.026 per doubling of days. Sst and Vip changed response amplitude less than IT. One session (sub-786297, 2025-05-14) has stimulus times offset by about 1 s; we excluded it (correction gave the same results). Limitations: few interneurons (85-310 per subclass), gratings are near ceiling stability, registration errors decrease group differences, running state changed between sessions in many mice.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "representational drift",
+  "mouse V1",
+  "two-photon imaging",
+  "spatial transcriptomics",
+  "Xenium",
+  "Pvalb",
+  "Sst",
+  "Vip",
+  "interneurons",
+  "tuning stability",
+  "population coupling",
+  "DANDI 002015",
+  "replication",
+  "data quality"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_type_stability.png",
+   "caption": "(A) Difference in cross-day stability S against L2/3 IT neurons for each molecular subclass (blue: primary estimate with two-stage bootstrap 95% interval; grey: five sensitivity analyses; orange: prior Allen Visual Coding estimates from sci 5d0863e3 against excitatory Cre lines). (B) Per-neuron S (mean over session pairs) by subclass; boxes show quartiles, whiskers 1.5 IQR."
+  },
+  {
+   "path": "files/figures/fig2_days_running_coupling.png",
+   "caption": "(A) Median S of each session pair against days between sessions (log scale), coloured by the change in the fraction of running trials. (B) S (minus the mouse x plane mean) against running-state change. (C) S against population-coupling quintile in IT neurons, without other controls. Intervals in B and C are neuron-level."
+  },
+  {
+   "path": "files/figures/fig3_timing_qc.png",
+   "caption": "Timing QC: median cross-day tuning correlation when the stimulus times of the second session are shifted. Pairs that include session sub-786297 2025-05-14 (orange) peak near 1 s, not 0 s; we excluded this session."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5d0863e3731c5c638d5ae70674c837eb0bcf7912ccd55d0bb41d2fca9143e3ff",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "We use its noise-corrected stability metric S. Its large Pvalb stability advantage did not repeat under one indicator and molecular labels (challenge); its Sst/Vip null and its loss of the Pvalb effect at R >= 0.5 repeated (support)."
+  },
+  {
+   "target": "sci:sha256:f016f7f90ac0f2064ba47f0fe752a53763a83a5e42b95bd8441e5aa40ae03c76",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same dataset (DANDI:002015); it found that molecular type explains little in vivo activity variance. We find that type also does not explain cross-day tuning stability."
+  },
+  {
+   "target": "sci:sha256:acc22badb162b7a188f3c194e038b3d88c10eb2492fa47769ad1eb853c3ed92d",
+   "reason": "Same dataset; subclass-specific co-activity of V1 interneurons."
+  },
+  {
+   "target": "sci:sha256:dcd2757945442f79094967567dfa9d8ad201a541371344d8d340942705133b2e",
+   "reason": "Related drift study in MICrONS: EM synapses did not predict which neurons changed."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/002015",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source data (draft version; exact Zarr checksums in files/data/provenance/provenance_sessions.csv)."
+  },
+  {
+   "target": "doi:10.7554/eLife.56053",
+   "reason": "Sweeney and Clopath 2020: population coupling predicts the plasticity of stimulus responses (hypothesis H3)."
+  },
+  {
+   "target": "doi:10.1038/nature14273",
+   "reason": "Okun et al. 2015: population coupling measure."
+  },
+  {
+   "target": "doi:10.1038/s41467-021-25436-3",
+   "reason": "Marks and Goard 2021: drift depends on stimulus type; gratings are more stable than natural movies."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2021.07.062",
+   "reason": "Deitch, Rubin and Ziv 2021: representational drift in the mouse visual cortex."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "reason": "Yao et al. 2023: ABC atlas taxonomy used for the Xenium labels."
+  }
+ ]
+}

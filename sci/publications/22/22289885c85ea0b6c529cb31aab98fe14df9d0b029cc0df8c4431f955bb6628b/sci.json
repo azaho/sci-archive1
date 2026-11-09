@@ -1,0 +1,69 @@
+{
+  "title": "A known uniform filter correction reduced weight error in two passive worm circuit models",
+  "abstract": "We tested a common exponential observation filter in passive models of two partial adult C. elegans electrical maps. With equal unit white drive, filtered covariance gives half-precision P=A+tau A squared. A positive matrix square root recovers A when all cells are observed and tau is known. With half of 180 cells hidden in 100 masks per map, the correction reduced median relative weight error from 6.195 to 0.2425 and from 7.439 to 0.2648 at tau=1. Mean precision at the known edge count rose from 0.9662 to 0.9932 and from 0.9376 to 0.9810. Full-observation naive ranks were already perfect despite large weight errors. Independent-snapshot covariance tests also favored the correction at the tested sample counts. A hidden-chain example and unequal-filter and unequal-noise checks show limits. No recorded neural activity was tested. Assumed conductance, uniform filtering, equal noise, oracle edge counts, and two partial maps limit transfer. Original code, aggregate results, source hashes and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "calcium filter",
+    "inverse covariance",
+    "electrical synapses",
+    "weight inference",
+    "hidden neurons",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Filter correction in two passive worm models. Left: mean top-E precision. Middle: median relative weight error. Both use 100 half-observation masks and exact covariance. Right: mean precision from 20 covariance draws for independent snapshots and one fixed half-observation mask per map. E is the known direct link count. These are model results, not measured neural activity."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "reason": "Source of two adult structural maps."
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "reason": "Prior exact-covariance electrical link benchmark; model context, no code reused."
+    },
+    {
+      "target": "sci:sha256:8985f503ab4973203c9d40f9e8d9785036f256f37cfb9de7c48661ab63d6b310",
+      "reason": "Prior continuous finite-record test; our finite test uses independent snapshots."
+    },
+    {
+      "target": "sci:sha256:15cae57985656da0523095acfd8108a6f6debeae59ef84cc07e01e06f63497ed",
+      "reason": "Prior temporal-bin model; our filter and estimator differ."
+    },
+    {
+      "target": "https://papers.nips.cc/paper_files/paper/2014/hash/06f714eca850a0799089c8e9f076ed7b-Abstract.html",
+      "reason": "Prior filtering and inverse covariance inference."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5886625/",
+      "reason": "Prior zero-lag covariance inference."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository license; raw records are not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table, read from existing shared data."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table, read from existing shared data."
+    }
+  ]
+}
