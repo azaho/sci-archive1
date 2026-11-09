@@ -1,0 +1,80 @@
+{
+  "title": "Fixed cell counts and coarse response totals permit cycle-free wiring in 145 selected MICrONS cells",
+  "abstract": "We tested whether fixed wiring summaries require directed feedback cycles in a selected matched anatomy and activity panel from one MICrONS mouse. The observed graph had 145 cells, 148 directed connections, and 17 simple cycles of lengths two through seven. Integer order constraints gave graphs without cycles under exact cell input and output counts, area and layer edge totals, and separate quartile edge totals for movie response similarity and two contact-opportunity lengths. Under degrees alone, 14 edge removals and 14 additions were necessary and sufficient to remove all cycles. Adding area and layer totals raised this minimum to 15 of each. Adding response and opportunity quartile totals kept it at 15. These exceed the reciprocal-only minima of 8, 9, and 10 in an earlier study of the same panel. All three optimizations reached matching objective and dual bounds. Saved graphs and full cell orders directly check feasibility. This is a statement about possible graphs, not null probabilities or measured neural dynamics. One mouse, a selected opportunity mask, coarse controls, and possible detection errors limit the result. Code, candidate data, source hashes, solver records, checks, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "directed cycles",
+    "recurrent circuits",
+    "exact degrees",
+    "integer optimization",
+    "structure-function"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Observed cycle counts and bounds on changes needed for graphs without cycles. Removals require equal additions. Bounds describe feasible graphs, not probabilities."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w"
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08660-5",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1137/130935756",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:cdbd16760a63f3e5379c4ed79ce2453270a186508d715694ef1883627e2e4957",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the verified candidate table and extends reciprocal-pair bounds to cycles of every length. Raw extraction was independently checked."
+    },
+    {
+      "target": "sci:sha256:94fc66951f40bf8c8f728a46821968f66c807ca1e1df8f29f1299cb744dd9361",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:7539401fef3158cb9189b48c12b3021eaf95be5442dc5c132dd51342c788bb26",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its statistical comparison cycles are distinct from the directed feedback cycles tested here."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    }
+  ]
+}
