@@ -1,0 +1,109 @@
+{
+  "title": "A time and Earth-velocity fit gives a -1.36 m/s per year difference between two ESPRESSO reductions of HD 20794",
+  "abstract": "We compare two public ESPRESSO velocity reductions of HD 20794 for 651 matched spectra on 64 nights. A joint time and Earth-velocity fit gives a DRS-minus-sBART drift of -1.3570 m/s per year. Its conditional 30-day block interval is -1.3799 to -1.3336. Independent Hipparcos astrometry predicts a perspective acceleration of +1.3555 m/s per year. This supports a correction-convention explanation but does not prove the processing history. The Earth-velocity coefficient is -0.01264 m/s per km/s. An alternative one-year sine fit gives a 0.2105 m/s semi-amplitude. The joint fit removes 99.47 percent of difference variance and leaves 0.1018 m/s RMS. With drift fixed from Hipparcos, the Earth-velocity term reduces pooled omitted-season squared error by 58.7 percent. These are retrospective checks. Extra baseline terms move the fitted drift, and residual power remains near the known outer planet period. The reductions share spectra and are not independent confirmation. No new planet or specific hardware fault is found. The bundle contains frozen paired data, source hashes, code, figures, sensitivity fits, and offline reproduction steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 20794",
+    "ESPRESSO",
+    "radial velocity",
+    "sBART",
+    "DRS",
+    "perspective acceleration",
+    "annual signal",
+    "paired observations",
+    "data provenance",
+    "null planet result"
+  ],
+  "display": [
+    {
+      "path": "files/paired_difference.png",
+      "caption": "Differences between 651 matched spectra on 64 nights. A time and Earth-velocity fit leaves 0.102 m/s RMS. Hipparcos predicts a drift of similar magnitude. The match supports a convention difference, but does not prove its cause."
+    },
+    {
+      "path": "files/prediction_and_scan.png",
+      "caption": "Omitted-season prediction errors and exploratory period fits of the reduction difference. The fixed astrometric drift plus Earth velocity has smaller pooled error. Residual long-period power remains; no new object is claimed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202451769",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the ESPRESSO velocity tables, published periods, instrument history, and previous physical interpretation."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36930297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen public radial velocity data release; exact shared file and hash are recorded."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=I/311/hip2&HIP=15510&-out=HIP,Plx,e_Plx,pmRA,e_pmRA,pmDE,e_pmDE&-out.max=10",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent Hipparcos astrometry for HIP 15510. The frozen raw hash and numeric row are included."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20078357",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reference for the Hipparcos new reduction."
+    },
+    {
+      "target": "doi:10.3847/2515-5172/ae728b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "First-order secular-acceleration relation and motivation for auditing correction conventions."
+    },
+    {
+      "target": "https://sbart.readthedocs.io/en/dev/user_guides/SBART_outputs.html",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Documentation stores the secular-acceleration correction separately from RVc. It does not establish the state of the tested CDS rows."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202142262",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Description of the sBART extraction method."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202554955",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on template-dependent velocity bias. Our test does not identify its short-baseline mechanism."
+    },
+    {
+      "target": "sci:sha256:ba888141f44ddb3a602c14e89eb382c0f29f18533105c03fca427863104496ed",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier campaign test of fixed HARPS curves on ESPRESSO. No code or measurements are reused."
+    },
+    {
+      "target": "sci:sha256:bb38199b8ce744d6bcb4ac6008813893bbfe52173e0f0600aa6285bc25861dc1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier campaign annual-alias audit. Our test uses paired reductions of the same spectra."
+    }
+  ]
+}
