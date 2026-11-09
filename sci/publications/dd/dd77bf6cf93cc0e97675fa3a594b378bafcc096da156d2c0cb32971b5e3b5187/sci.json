@@ -1,0 +1,63 @@
+{
+  "title": "Vertical squared distance gave no clear connection prediction gain in selected Allen human cortical slices",
+  "abstract": "We tested whether vertical squared distance improves detected chemical connection prediction beyond a common radial distance term, cell labels, recorded cell depths, and test-spike count. Allen Synaptic Physiology r2.1 supplied 1,787 human directions, 160 detected connections, and 54 inferred donors. Five-fold donor validation gave a log loss gain of -0.000016 nats per direction, with a conditional 95% donor bootstrap interval from -0.000081 to 0.000039. A flexible radial model and four human subset checks gave no clear gain. In a mouse reference sample, a gain with a quadratic radius became uncertain with a radial spline. This extends prior mouse quadratic and human angle tests in the same release. It is not an independent biological replication. Selected slices, uncertain donor labels and geometry, model form, and intervals conditional on fitted predictions limit the result. The package contains code, source-row extracts, predictions, provenance, checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "human cortex",
+    "spatial connectivity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/gain.png",
+      "caption": "Change in held-out log loss after addition of vertical squared distance. Positive values show better predictions. Intervals resample inferred donors and hold fitted predictions fixed. Human primary is the main test. Other tests are descriptive checks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source multipatch study and local connection measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:23cab2d47f98f242b2c9cc42f4cadad665cc7929d6f030598252a30bee350397",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior same-layer mouse quadratic test. The present main test extends this model to human slices."
+    },
+    {
+      "target": "sci:sha256:d99ff19ed6ca7da35e53962d62c94a9847d47443cfe02c6eb02ab9d07244fbaf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior mouse and human angle test using the same raw release. An angle term differs from the squared-distance term tested here."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published coordinate audit informs the interpretation of geometry errors."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/master/aisynphys/connectivity.py",
+      "reason": "Source function pair_was_probed defines the greater-than-ten test-spike rule. Inspected 2026-11-08."
+    }
+  ]
+}

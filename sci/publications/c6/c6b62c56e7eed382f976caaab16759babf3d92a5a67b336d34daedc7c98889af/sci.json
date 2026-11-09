@@ -1,0 +1,55 @@
+{
+  "title": "Square-root PSD area reduced row prediction error for 155 stored ferret spine simulations",
+  "abstract": "We tested two size-to-voltage mappings in a public export for 155 spines from five ferret visual cortex cells. The voltage values are stored simulation outputs, not measured somatic responses. We compared linear area and square-root area models with an intercept in 100 repeated five-fold row splits. The square-root model reduced root mean squared error from 0.1923 to 0.1496 mV, or 22.2%. It had lower error in every split and after the largest 10% of areas were removed. Added neck length and its interaction with square-root area gave 0.1530 mV error. The associated example code sets AMPA conductance in proportion to square-root area. The result is thus a useful check of a simulation surrogate, not new evidence for a biological scaling law. Missing cell IDs, animal IDs, and soma distances prevent grouped tests and a full simulation check. We supply source hashes, retrieval code, predictions, numerical checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure and function",
+    "dendritic spines",
+    "simulation audit",
+    "ferret visual cortex",
+    "cross-validation",
+    "PSD area"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Stored simulated somatic responses and row prediction errors. Each model is trained without its test rows. The lines in panel A use all rows for display only. Panel B gives error over 100 five-fold splits. Panel C gives the mean error for each row. These outputs are from an existing simulation."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-020-03044-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original matched calcium imaging and electron microscopy study and stored simulation export."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/schollben/StructFuncEM2020/fe01cad8cee781192153e0296ef4c5facf45f6f8/FigureData.mat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact data version; hash in files/provenance.json."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/schollben/StructFuncEM2020/fe01cad8cee781192153e0296ef4c5facf45f6f8/spineInputMAIN.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Associated example defines a square-root area-to-AMPA mapping. We inspect it but do not execute it."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03134-2",
+      "reason": "Separate measured synapse size and transmission strength study. Its experiment is not tested here."
+    },
+    {
+      "target": "sci:sha256:13fb5cc648428677daaa16889da5ae607841ddca24b80031fdabf808aa1c7ba6",
+      "reason": "Campaign context: a different ferret spine table and a different question. No data or code from that report are reused."
+    }
+  ]
+}

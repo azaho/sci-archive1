@@ -1,0 +1,59 @@
+{
+  "title": "Cell-body distance improved delay predictions after source spike width in 556 Allen mouse inhibitory connections",
+  "abstract": "We tested whether cell-body distance adds information about synaptic delay when source spike width is known. We used linked cell and connection records from the Allen Synaptic Physiology r2.1 small database. We selected connections within 500 micrometres with a passed response fit and a measured source spike width. Models used cell labels, layers, and spike width. Ten five-fold splits kept inferred donors separate between training and test sets. In 556 mouse inhibitory connections from 220 inferred animals, distance reduced test RMSE from 0.4654 to 0.4405 ms. The MSE gain was 0.02257 ms squared, with a conditional 95% donor bootstrap interval of 0.00867 to 0.03891 and a 98.75% interval of 0.00550 to 0.04400. The gain remained in planned penalty and joint-label checks. Distance gains were uncertain in mouse excitatory and both human groups. Spike width added to a distance model had no clear gain after four-group interval correction. Missing spike widths caused substantial selection. The result supports a small distance term in mouse inhibitory delay models within this sample. It does not identify axon conduction speed or establish a causal mechanism or a rule across species.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "synaptic delay",
+    "cell-body distance",
+    "spike width",
+    "Allen Institute",
+    "grouped validation"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction_gain.png",
+      "caption": "Added prediction value in four complete-case groups. Points show reduction in test mean squared error. Bars show 98.75% conditional donor bootstrap intervals. Positive values indicate improved prediction. Each panel is a separate family of four comparisons; the horizontal scales differ. All models include cell labels and layers. ex means excitatory; in means inhibitory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This study extends its distance-delay prediction test by adding source intrinsic spike width in a complete-case sample. It does not replace the earlier result."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/intrinsic.py"
+    }
+  ]
+}

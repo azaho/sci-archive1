@@ -1,0 +1,67 @@
+{
+  "title": "Reverse plasticity gave no clear prediction gain in selected Allen mouse reciprocal circuits",
+  "abstract": "We tested whether the measured 50 Hz plasticity of a reverse connection improves prediction of forward plasticity after cell labels, distance, both response strengths, and event counts are known. We used Allen Synaptic Physiology r2.1 data and held whole inferred donors out of training. At ridge penalty 10, donor-weighted mean squared error increased by 0.81% in 165 mouse excitatory connections and by 1.22% in 257 inhibitory connections. Reference-minus-comparison gains were -0.001640 and -0.000694. Conditional 98.75% donor bootstrap intervals were [-0.004365, -0.000125] and [-0.003375, 0.001184]. A penalty of 100 changed both point estimates to small positive gains with intervals that included zero. Human samples were too small for the planned test. The tested linear reverse-plasticity term gave no clear prediction benefit. This does not establish independent plasticity or a general adverse effect. Slice selection, inferred donor labels, measurement error, and intervals that hold fitted models fixed limit the result. Code, source hashes, selected edges, predictions, and score checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "short-term plasticity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Donor-weighted prediction gain. Positive values mean smaller error with reverse plasticity. Thin lines show 95% conditional intervals; wide lines show 98.75% intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related shared-cell plasticity comparison informed the question."
+    },
+    {
+      "target": "sci:sha256:f07942c4ad046000a922b321db0c63f58f391f245e82d8adfaf4cd41210f265c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related reverse-status strength predictor informed donor grouping and distance scope."
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related reciprocal-status plasticity comparison; this study tests measured reverse plasticity within reciprocal pairs."
+    }
+  ]
+}

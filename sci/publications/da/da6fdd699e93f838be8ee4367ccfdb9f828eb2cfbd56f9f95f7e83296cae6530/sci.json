@@ -1,0 +1,62 @@
+{
+  "title": "First-response changes at 250 ms were higher after 50 Hz than 10 Hz trains in selected Allen excitatory connections",
+  "abstract": "We compared response change after a 250 ms pause following 10 Hz and 50 Hz trains in the same detected Allen cortical connections. Protocol-specific summaries avoid the stored recovery scalar, which pools induction frequencies. We required at least five trials at each frequency and used equal weights for inferred donors. The sample had 363 connections in four species and synapse-type groups. In 134 mouse excitatory connections from 82 inferred mice, the mean difference was 0.14476, with a 98.75% interval of 0.02230 to 0.27401. In 42 human excitatory connections from 20 inferred donors, it was 0.22070, with interval 0.01639 to 0.44063. Four-pulse recovery intervals included zero. The pooled single-pulse recovery scalar differed from the 50 Hz summary in 891 of 1347 audited connections; 198 had opposite signs. The package provides a protocol-specific extraction tool and derived evidence. Small selected slice samples, summary-level errors, unmodeled protocol order, and inferred donor labels limit inference. The test does not identify a recovery time constant or a mechanism.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic recovery",
+    "induction frequency",
+    "within-connection comparison",
+    "protocol audit",
+    "short-term plasticity"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/evidence.png",
+      "caption": "Paired recovery differences after 10 Hz and 50 Hz trains, and a comparison of pooled and frequency-specific scalar recovery. Human inhibitory data are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original local connectivity and response dynamics study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned pulse-number formulas and frequency pooling logic."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c33af30c3b106d2fb679b25f815a29ec48d8619cc6bcc39efe657d40fde33e51",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior scalar definition, pulse-array caveat, and inferred donor grouping precedent; no tables or code reused."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

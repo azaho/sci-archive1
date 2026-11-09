@@ -1,0 +1,52 @@
+{
+  "title": "Matched Allen slice circuits do not give corrected evidence that shared neurons have similar synaptic timing",
+  "abstract": "We tested whether connected synapses that share a source or target neuron have similar timing in Allen Synaptic Physiology r2.1 slice circuits. We matched experiment, synapse type, cell class, Cre label, and layer exactly. We compared squared log timing differences against connections between four different cells. No test passed Holm correction across 12 comparisons. Mouse target-sharing PSP rise time gave a variation ratio of 0.558, an uncorrected donor bootstrap interval of 0.332 to 0.991, and a corrected p-value of 0.366. Distance-bin and complete-label checks also gave no corrected positive result. The selected tests used 40 to 45 mouse experiments and 14 to 16 human experiments. Small matched samples and broad intervals prevent an equivalence claim. The package supplies a matched circuit test, derived evidence, and reproducible code. It does not establish an intact-brain timing rule.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic timing",
+    "shared neurons",
+    "circuit motifs",
+    "null result",
+    "matched comparison"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Shared/disjoint timing variation ratios. Bars are uncorrected 95% inferred-donor bootstrap intervals. No primary randomization test passed Holm correction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and synaptic physiology framework."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance-latency result motivated a distance-bin sensitivity check. No files or code were reused."
+    }
+  ]
+}

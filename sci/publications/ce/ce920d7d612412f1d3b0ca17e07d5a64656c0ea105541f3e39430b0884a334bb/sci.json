@@ -1,0 +1,59 @@
+{
+  "title": "Mean depth change within local areas is uncertain for Ridgecrest events on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested whether catalog mean depth changed within local areas after the 2019 Ridgecrest M7.1 earthquake. We reused a fixed public USGS snapshot. We compared days 1 to 7 with days 7 to 30 at magnitude 2.5 or more. The full samples had 544 and 387 events. Their mean depths were 5.033 and 5.025 km. Twelve 10 km grid cells had at least five events in each period. In those cells, the late-minus-early mean change was 0.088 km. A symmetric decomposition gave a within-cell change of 0.182 km and a spatial composition term of -0.094 km. The within-cell 95% block multiplier interval was -0.109 to 0.515 km for daily blocks and -0.163 to 0.412 km for three-day blocks. All planned checks left the within-cell change uncertain. The study does not establish stable depth or test earlier evidence about the deepest aftershocks. It provides fixed derived data and code for a spatial mixture audit. The intervals assume independent time blocks and do not include catalog error.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "earthquake depth",
+    "spatial composition",
+    "null result",
+    "block uncertainty",
+    "aftershocks"
+  ],
+  "display": [
+    {
+      "path": "files/depth.png",
+      "caption": "Mean depth differences and their decomposition. Bars show three-day block multiplier intervals. Positive values mean deeper late events."
+    },
+    {
+      "path": "files/map.png",
+      "caption": "Epicenters and catalog depths. Map axes show 50 km in each direction; analysis uses the full 100 km query."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared USGS snapshot and inspect its rate-decay results. Our depth question differs."
+    },
+    {
+      "target": "doi:10.1029/2020GL089650",
+      "reason": "Prior relocated-catalog study reports deep early aftershocks and a decrease in upper depth percentiles. Our mean-depth test has another scope."
+    },
+    {
+      "target": "doi:10.1785/0220190309",
+      "reason": "A high-resolution Ridgecrest catalog shows the value of detection and relocation methods. We do not use that catalog."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS event query format and selection rules."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source query for the fixed shared CSV."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Cell-body distance improved delay predictions after PSP rise time in 1,136 Allen mouse inhibitory connections",
+  "abstract": "We tested whether cell-body distance adds prediction value for synaptic onset delay after the rise time of the postsynaptic potential (PSP) is known. We used linked geometry and physiology records in the Allen Synaptic Physiology r2.1 small database. Ten repeated five-fold partitions held out whole inferred donors. Models used source and target cell labels and measured PSP rise time. In 1,136 mouse inhibitory connections from 469 inferred animals, distance reduced donor-weighted RMSE from 0.4879 to 0.4653 ms. The mean squared error gain was 0.02160 ms squared, with a conditional 98.75% donor bootstrap interval of 0.00370 to 0.04387. The gain remained positive with other penalties, raw rise time, and joint cell labels. Mouse excitatory and both human groups had uncertain gains. Measured rise time did not remove the distance signal in the selected mouse inhibitory sample. This does not identify conduction speed or a causal mechanism. Slice sampling, coupled response fits, missing measurements, inferred donor labels, and uncertainty that holds fitted models fixed limit the result. Code, selected records, all held-out predictions, a figure, and an independent evidence check are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "rise time",
+    "cell-body distance",
+    "donor validation",
+    "inhibitory connections"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction_gain.png",
+      "caption": "Distance improves mouse inhibitory delay predictions after measured PSP rise time. Error bars are conditional 98.75% donor bootstrap intervals. Other groups have uncertain gains."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen recording study and source data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance-delay result and donor grouping rule. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:dae3a6b51e9389ed91a40b06fb06bbee09c0251a324a627d7c875f43944eb6d1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior source spike-width control; this study instead controls the postsynaptic response rise time. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:df736fd9f18eeb32e7953c11d079e187a02507e19ff7ccb3b46d9d86ee902d57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior rise-time outcome test motivates the new conditional delay test. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:e711991fef480daf5d149dab04749ec1b1425e3d7c14f53663f7e25e3327401f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published within-source slope analysis motivates the remaining waveform question. No code or data tables were reused."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.23-19-07358.2003",
+      "reason": "Williams and Stuart (2003) tested dendritic inhibition and somatic response kinetics."
+    }
+  ]
+}

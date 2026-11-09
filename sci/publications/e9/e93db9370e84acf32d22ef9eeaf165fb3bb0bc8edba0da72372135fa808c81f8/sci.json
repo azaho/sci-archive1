@@ -1,0 +1,58 @@
+{
+  "title": "A shared tail model needs over twofold voltage-decay error in 20 of 78 selected Allen mouse target groups with current decay fixed",
+  "abstract": "We tested a shared passive-tail model with paired voltage and current decay summaries from Allen Synaptic Physiology r2.1 small. The model sets voltage decay to the larger of current decay and one common membrane time per target and input sign. We derived an exact minimum worst-case log error and checked it with an independent interval solver. In the mouse V1 coarse matrix series, 20 of 78 target-and-sign groups need more than twofold voltage error when current decay is fixed. Each group has at least two measured inputs. No group fails this tolerance when each edge has its own membrane time. Exclusion of inputs with accepted component fits within 1 percent of default decay limits leaves 7 failures among 53 groups. A second mouse series has 7 failures among 30 groups before screening. This is a finite audit of fitted summaries under a tail approximation. It does not reject passive membrane filtering in real neurons. Separate clamp states, finite-waveform fits, missing inputs, and uncertain fit errors limit interpretation. Code, a closed-form bound, extracted evidence, and checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit models",
+    "synaptic decay",
+    "passive filtering",
+    "model feasibility"
+  ],
+  "display": [
+    {
+      "path": "files/model_feasibility.png",
+      "caption": "Fraction of target-and-sign groups that need more than each allowed voltage-decay factor under a shared tail model. Current decay is fixed. Groups contain at least two paired inputs. The right panel excludes components within a relative tolerance of 1e-6 of default decay limits. These are sample counts, not population estimates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-cell timing test."
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior paired voltage-current similarity test; this study tests a specified common-tail model."
+    },
+    {
+      "target": "sci:sha256:a443f362023321dce7c87648e74704c4aefa19332dca93b64cb657ad3bbee0a7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Component screening definitions and default limits; new code extracts and checks the source records."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Monthly mean removal leaves uncertain changes above early 95th percentiles at six US gauges in 1960-1978 versus 2007-2025",
+  "abstract": "We tested changes in days above early-period high-water thresholds at six US tide gauges. We compared 1960-1978 with 2007-2025 in fixed NOAA CO-OPS records. We used hourly-based daily maxima and subtracted monthly mean sea level for a separate residual test. We used early-period 95th percentiles, calendar-month weighting, and three-year block samples with refitted thresholds. Raw exceedance rates rose at all six gauges. Residual changes in percentage points were Boston -0.28, The Battery +1.08, Sewells Point +0.07, Charleston -0.03, San Francisco +0.63, Seattle -0.24. All six adjusted residual intervals included zero. A 90th-percentile check gave a positive residual change at The Battery, so the result depends on threshold scope. The package gives six-test adjusted intervals, sensitivity checks, exact source hashes, retained daily data, code, and separate arithmetic and source audits. Monthly mean removal is a descriptive filter. It does not separate tides from surges or give a causal share of change. Two selected periods, missing records, and 19 years per period limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "daily extremes",
+    "NOAA CO-OPS",
+    "monthly mean removal",
+    "block bootstrap",
+    "coastal water levels",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/change.png",
+      "caption": "Change in days above early-period 95th percentiles. Left: raw daily maxima with 95% intervals. Right: maxima minus monthly mean sea level with six-test adjusted intervals. Values are percentage points."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2023JC020737",
+      "reason": "Prior work separates mean level, tide, and surge contributions with hourly records. This study uses a simpler monthly filter and does not repeat that attribution method."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source API. Exact query URLs, saved versions, and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official field and flag definitions. A saved copy and its hash are included."
+    },
+    {
+      "target": "sci:sha256:bcc9c8c83dec11d095dc9bfa1a72036d8dcd356c2b8ad051541194d150618c8d",
+      "reason": "Read during campaign scope search. This earlier California rain study has a different outcome. No data or code from it were used."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Adaptation similarity gave no clear connection prediction gain in selected Allen mouse visual-cortex slices",
+  "abstract": "We tested whether similar spike-frequency adaptation improves prediction of local chemical connections. We used Allen Synaptic Physiology r2.1 and five folds that separated whole inferred donors. The mouse visual-cortex sample had 6159 tested directions from 455 inferred animals. Adding absolute adaptation-index difference to cell labels, distance, test counts, membrane times, and separate adaptation terms changed log loss by -0.047% (positive means less error). The conditional 95% donor bootstrap range was -0.103% to 0.008%. A separate human temporal-cortex fit gave 0.255%, with range -1.385% to 1.637%. The main test did not resolve added prediction value. This is not evidence of equal connection rates or a causal wiring rule. Missing physiology, slice selection, inferred donor labels, model choice, and uncertainty conditional on fixed predictions limit the result. Code, pair records, predictions, uncertainty draws, source hashes, and an independent score check are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "adaptation",
+    "local connectivity",
+    "donor validation",
+    "structure-function"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/matching.png",
+      "caption": "Prediction gain from absolute adaptation difference, after separate adaptation terms. Bars show descriptive 95% donor bootstrap ranges for fixed held-out predictions. Positive values mean less log loss. The mouse pooled sample is the main test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source paired-recording data and biological context."
+    },
+    {
+      "target": "doi:10.1038/nature09880"
+    },
+    {
+      "target": "doi:10.1038/nature14182"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/tree/b264d8b61abf11d015222865ca081f80655d33d4"
+    },
+    {
+      "target": "sci:sha256:778388aed3cb59a8d8cfc0a1e28ff7e551668221063781735796432fbd47cd81",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reference design for donor-separated prediction of detected wiring; this study uses adaptation rather than spike width. No code or output was reused."
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "reason": "Prior membrane-time similarity test in this campaign."
+    }
+  ]
+}

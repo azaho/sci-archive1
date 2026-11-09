@@ -1,0 +1,68 @@
+{
+  "title": "Circular same-star models require tilt above one degree for 61 selected Kepler pairs in three-error boxes",
+  "abstract": "We bound the mutual inclination needed to explain reversed transit duration order in 1,050 Kepler pairs on 524 stars. The model assumes circular orbits around one spherical star and negligible companion masses. A finite analytic search minimizes over all allowed common stellar densities and independent duration and radius-ratio boxes. In three-error boxes, 126 pairs have a positive bound and 61 have a bound above one degree. The largest bound is 5.934 degrees for KOI-2748.02/01. Release 24 gives 5.824 degrees for this pair. The release check shares Kepler observations and is not independent confirmation. Synthetic transits, density grids, parameter draws, and physical corner solutions check the method. Eccentricity, separate hosts, and biased transit fits remain possible. No new planet or measured inclination is reported. The package preserves code, frozen catalogs, source queries and hashes, all pair results, a figure, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "transit duration",
+    "mutual inclination",
+    "circular orbit",
+    "conditional bound"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Bounds after minimization over common stellar density. Blue bars use catalog values. Red points allow three-error input boxes. The right panel counts pairs above each bound."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:da11e73593b6a97dc19593cdf5486efd874ee94ab0636b43220fb137a20c3e0c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The prior order screen defines the sample and gives a feasible example. We compute global tilt bounds."
+    },
+    {
+      "target": "sci:sha256:5e7a70899846679b5b2a5184628f1e173c18979ff026227fa77d5840ec556165",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related whole-system common-plane test. We instead bound pair tilt."
+    },
+    {
+      "target": "doi:10.1086/346105"
+    },
+    {
+      "target": "doi:10.1088/0004-637X/790/2/146"
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "reason": "Contact-time definitions and linear-ephemeris fit limitation."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_period%2Ckoi_duration%2Ckoi_duration_err1%2Ckoi_duration_err2%2Ckoi_ror%2Ckoi_ror_err1%2Ckoi_ror_err2%2Ckoi_slogg%2Ckoi_slogg_err1%2Ckoi_slogg_err2%2Ckoi_srad%2Ckoi_srad_err1%2Ckoi_srad_err2%2Ckoi_score%2Ckoi_model_snr%2Ckoi_time0bk%2Ckoi_depth+from+q1_q17_dr25_koi&format=csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckoi_period%2Ckoi_duration%2Ckoi_duration_err1%2Ckoi_duration_err2%2Ckoi_ror%2Ckoi_ror_err1%2Ckoi_ror_err2+from+q1_q17_dr24_koi+where+kepoi_name+in+%28%27K02748.02%27%2C%27K02748.01%27%2C%27K00159.02%27%2C%27K00159.01%27%2C%27K00316.03%27%2C%27K00316.01%27%29&format=csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
