@@ -1,0 +1,21 @@
+{
+  "title": "Cre-line neuromodulatory axon density did not explain regional running modulation of visual spiking in two Allen Neuropixels mouse cohorts; a VTA dopamine-line association depended on two regions",
+  "abstract": "Question: does the density of cell-type-specific neuromodulatory axons in a mouse brain region predict how much running changes visual responses there? Approach: we used the AllenSDK running-modulation index of units in two independent Allen Visual Coding Neuropixels cohorts (26 and 26 mice with locations; 35-42 regions in visual cortex area x layer, thalamus, hippocampal formation, midbrain) and region effects with mouse fixed effects. We compared them with projection-density maps from 58 Allen Mouse Connectivity experiments: noradrenaline (LC), acetylcholine (basal forebrain; PPN/LDT), serotonin (DR), dopamine (VTA), histamine (TMN) and motor cortex (MOs, ACA). Tests used within-division partial correlation, injection-distance control, within-division permutation, and fit-on-one-cohort, test-on-the-other prediction. Results: the regional profile reproduced between cohorts (r = 0.61 for gratings; 0.55 within divisions) but not inside visual cortex (r = -0.10). The pre-stated positive noradrenaline and basal-forebrain acetylcholine relations were not found (gratings partial r -0.18 and +0.18 pooled, p > 0.2); noradrenaline was negative in all nine tests and significant only for flashes. The VTA dopamine-line map was negative in both cohorts (r = -0.47, -0.57; Holm p 0.13, 0.09) and predicted the other cohort, but without DG and MGd r = -0.15. Limitations: few regions, coarse tracer density with passing fibres, injections in other mice, and a coarse running index.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["neuromodulation", "locomotion", "running modulation", "Allen Visual Coding Neuropixels", "Allen Mouse Connectivity Atlas", "Cre-line tracing", "noradrenaline", "acetylcholine", "dopamine", "structure-function", "replication across cohorts", "null result"],
+  "display": [
+    {"path": "files/figures/fig1_cohort_reliability.png", "caption": "Region effects of running modulation (mouse fixed effects) in cohort 1 (BO1.1) vs cohort 2 (FC). The profile reproduces across regions but not inside visual cortex area x layer."},
+    {"path": "files/figures/fig2_partial_r.png", "caption": "Within-division partial correlation (injection distance controlled) between each projection-density map and running modulation, for each cohort and stimulus. Filled: permutation p < 0.05 before Holm correction."},
+    {"path": "files/figures/fig3_leverage.png", "caption": "Residual scatter plots (pooled gratings) for noradrenaline, basal-forebrain acetylcholine and VTA dopamine-line maps. DG and MGd control the dopamine relation."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41586-020-03171-x", "relations": ["uses"], "reason": "Allen Visual Coding Neuropixels data set and running-modulation metrics (Siegle et al. 2021)."},
+    {"target": "doi:10.1038/nature13186", "relations": ["uses"], "reason": "Allen Mouse Connectivity Atlas anterograde tracing (Oh et al. 2014)."},
+    {"target": "doi:10.1016/j.cell.2020.04.007", "relations": ["uses"], "reason": "Allen CCFv3 2017 annotation used to assign cortical layers (Wang et al. 2020)."},
+    {"target": "https://allen-brain-observatory.s3.amazonaws.com/visual-coding-neuropixels/ecephys-cache/manifest.json", "relations": ["uses"], "reason": "VCN cache tables retrieved 2026-11-09; SHA-256 values in files/provenance."},
+    {"target": "https://github.com/AllenInstitute/AllenSDK/blob/v2.16.2/allensdk/brain_observatory/ecephys/stimulus_analysis/stimulus_analysis.py", "reason": "Definition of the running_modulation index."},
+    {"target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3", "reason": "Earlier campaign study of Allen VCN visual-cortex LFP and running state."},
+    {"target": "sci:sha256:6ea87a03ffd65472e95030d7a4287d8ffecd3df039d08f281ef3953e7928916a", "reason": "Earlier campaign structure-function study in Allen VCN (variability quenching vs recurrence)."},
+    {"target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73", "reason": "Earlier campaign study linking the Allen connectome to response reliability across mouse regions."}
+  ]
+}
