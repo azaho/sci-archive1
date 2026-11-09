@@ -1,0 +1,95 @@
+{
+ "title": "Off northeast Japan, M4+ rates in 2019-2024 stayed above the 1998-2010 rate without a higher ETAS background, and the 2011 high-slip zone background decreased (JMA catalog)",
+ "abstract": "We tested if earthquake rates in northeast Japan returned to their 1998-2010 level after the 2011 Mw 9.0 Tohoku-oki earthquake. We used the JMA unified hypocenter catalog for 1998-2024 in five source volumes and one inland normal-fault area. We compared annual counts and fitted temporal Omori-ETAS models at M 4.0 or larger. In the forearc outside the high-slip core, the 2019-2024 M4+ rate was 1.79 times the 1998-2010 rate (95% year-bootstrap interval 1.32-2.37). But the ETAS background did not increase: the post-2011 to pre-2011 background ratio was 0.78 (95% profile interval 0.44-1.05). In the model, the excess came from slow Omori decay of the mainshock term (p0 = 1.02) and from later cascades, which include the 2021 M7.3 and 2022 M7.4 earthquakes. A model fitted to 2011-2016 with the pre-2011 background forecast 2017-2024 correctly: 1,190 events occurred against a median of 1,320 (95% range 1,077-2,667). In the high-slip core, the M4+ rate fell to 0.17 times the pre-2011 rate, and an unchanged background was rejected (deviance 15.8). There, 22 events occurred in 2017-2024 against a 95% forecast range of 38-130. In the outer rise and the 70-200 km slab, an unchanged background agreed with the data. The lower inland-arc rate was not resolved as a background change. In the forearc, the JMA b-value rose by 0.11 (95% CI 0.07-0.15) and did not return to pre-2011 values through 2024. But JMA magnitude-type selection changed after 2011, and GCMT Mw at 5.3 or larger shows no clear change. Limitations: background and slow decay trade off in 14 years of data, the models are temporal only in box regions, several small-region fits reached parameter bounds, and the host load limited the ETAS analysis to M4+ with 500 simulations. The package contains code, a derived event table, result tables, figures, logs and input hashes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Tohoku-oki 2011",
+  "aftershock duration",
+  "ETAS",
+  "background seismicity",
+  "Omori-Utsu",
+  "b-value",
+  "JMA catalog",
+  "seismic quiescence",
+  "forecast test",
+  "magnitude type",
+  "Japan Trench",
+  "GCMT"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rate_recovery.png",
+   "caption": "Annual JMA counts at M3.5+ (blue) and M4.5+ (orange) for six northeast Japan regions, 1998-2024. Dashed lines: 1998-2010 mean. Panel titles give the 2019-2024 to 1998-2010 rate ratio at M3.5+ with 95% year-bootstrap intervals. Map: rate ratio in 0.5-degree cells (depth 70 km or less), with the high-slip core box, the trench axis and the 2011 epicenter (star)."
+  },
+  {
+   "path": "files/figures/fig2_etas_background_forecast.png",
+   "caption": "Top: profile deviance of the post-2011 ETAS background as a ratio to the pre-2011 background (M4.0+). The dashed line is the 95% limit (3.84), the black line is ratio 1, and the dotted line is the free fit. Bottom: 2017-2024 annual counts forecast from 2011-2016 fits with the background fixed at the pre-2011 value (orange) or free (green), as medians and 95% ranges, against observed counts (black squares)."
+  },
+  {
+   "path": "files/figures/fig3_b_values.png",
+   "caption": "Left: JMA b-values in the forearc outside the core by period and cutoff (95% bootstrap). Middle: GCMT Mw b-values in the forearc for 1998-2010 and 2012-2020, all mechanisms and thrust only. Right: share of displacement-type JMA magnitudes by magnitude bin and period, which shows a change in magnitude-type selection after 2011."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/ngeo2343",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Reported a return of b-values near the high-slip zone to pre-2011 levels within about two years; our JMA b-values did not return through 2024, but magnitude-type changes limit the comparison."
+  },
+  {
+   "target": "doi:10.1038/ngeo2649",
+   "reason": "Comment that faulting-type and source-volume changes affect post-2011 b-values."
+  },
+  {
+   "target": "doi:10.1186/s40645-023-00564-0",
+   "reason": "HIST-ETAS analysis of the first decade after Tohoku-oki; background near the large-slip zone decreased approximately as 1/t."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/data/format/hypfmt_e.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA hypocenter record format used by the parser."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2011.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "One of the 27 JMA annual hypocenter files (h1998-h2024); all URLs and hashes are in files/provenance/input_datasets.json."
+  },
+  {
+   "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/jan76_dec20.ndk",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GCMT moment magnitudes and mechanisms for the b-value check."
+  },
+  {
+   "target": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Land polygons for onshore and offshore labels and the map."
+  },
+  {
+   "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+   "reason": "Related campaign result on aftershock time to background against strain rate."
+  },
+  {
+   "target": "sci:sha256:ceaa6e7cf43002b120854eaff1d107bb7558cc86420218725db1980d330b01a3",
+   "reason": "Related campaign result: magnitude-type mix can cause apparent size-distribution changes, as we found for JMA b-values."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "reason": "Related campaign use of JMA b-values in Japan."
+  }
+ ]
+}
