@@ -1,0 +1,67 @@
+{
+  "title": "Total cleft volume favored redundant target responses under two weight shuffles in one MICrONS mouse",
+  "abstract": "We tested whether synaptic weight allocation favors similar target response profiles within an axon. We used 7,979 connections from 117 axons with at least ten measured targets in the public MICrONS Ding v1 tables. We measured inverse weighted response dimension from 120-entry trial-mean movie responses. We compared this value with its exact mean under weight shuffles that keep each target set and weight multiset. Total cleft volume gave 2.48 percent excess inverse dimension under unrestricted shuffles and 0.99 percent under shuffles within coarse area, layer, source-response similarity, and coordinate-distance groups. Their upper-tail fractions from 999 draws were 0.001 and 0.005. After removal of five common response modes, the excess values were 1.25 and 0.61 percent. Contact count gave smaller effects. The tests describe weight allocation in one selected mouse sample. Shared targets, coarse controls, finite trial means, and an assumed relation between cleft volume and synaptic weight prevent claims about animal-level uncertainty, causal computation, or information. Code, compact inputs, exact expectation checks, source hashes, and a figure support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "weighted response dimension",
+    "synapse cleft volume",
+    "weight allocation",
+    "null model"
+  ],
+  "display": [
+    {
+      "path": "files/weight_redundancy.png",
+      "caption": "Observed and shuffled synaptic weight allocation in 117 axons. Bars show central 95 percent simulation ranges under the shuffle rules. They are not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ding et al. source node and edge tables, version 1, and known size and response similarity relations."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS source study links functional responses and EM in one mouse."
+    },
+    {
+      "target": "https://ganguli-gang.stanford.edu/pdf/17.theory.measurement.pdf",
+      "reason": "Prior theory uses participation ratio to measure trial-mean response dimension."
+    },
+    {
+      "target": "sci:sha256:237ceddd0b8275e28d52b80882000b6ecf42f71aed54134a02409ce29d7ae2c6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior equal-weight target dimension study motivates this weight-allocation test. No code or numerical inputs were reused; raw v1 tables were processed again."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3",
+      "reason": "Official data documentation identifies the functional connectomics v1 release."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
