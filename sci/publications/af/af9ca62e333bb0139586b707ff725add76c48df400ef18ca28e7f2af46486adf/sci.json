@@ -1,0 +1,81 @@
+{
+  "title": "A capacitance correction reduced low-frequency transfer error but raised high-frequency error in two partial worm circuit models",
+  "abstract": "We tested static circuit reduction and a first-order capacitance correction in passive models of two partial adult worm electrical maps. The graphs had 145 and 147 neurons. Thirty random half-observed masks were tested per map. With unit capacitance, leak 0.1 and angular frequency 0.1 in model units, the correction reduced median full transfer error from 9.57% to 1.75% and from 8.61% to 1.82%. It improved all 60 masks. At frequency 1 it raised error in all 60 masks. We give a sufficient continuous frequency band for a chosen full-matrix error limit and prove a high-frequency failure limit. Full-network calculations and 100 random-network tests checked the code. Counts are not measured conductances. Partial annotation, passive dynamics, assumed cell parameters and arbitrary time units prevent a claim about measured neuronal responses. The package includes a proof, graph arrays, masks, source hashes, code and all 6600 model cases.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Kron reduction",
+    "hidden neurons",
+    "electrical connectome",
+    "capacitance",
+    "frequency response",
+    "error bound",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Passive model transfer errors across frequencies. Lines show medians over 30 random observation masks; shading shows the 10th to 90th percentiles. The bound applies to full transfer error. Model units do not specify a biological frequency."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780"
+    },
+    {
+      "target": "doi:10.48550/arXiv.1207.0563"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2203.12084"
+    },
+    {
+      "target": "sci:sha256:1bb75dac892cdb1d1ff3efdc7dcbf81bd4604726bfeacf39ca08e56f204c2d94",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior static spatial-mode test motivates a separate dynamic transfer benchmark; no numerical evidence reused."
+    },
+    {
+      "target": "sci:sha256:e156573e0e451055403d28de7d9429cf8100fb4753a73668247e91e9fbf0da6e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-band hidden-relay study; this work tests reduction error on larger worm maps."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses only the atlas neuron label list, not the activity responses."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

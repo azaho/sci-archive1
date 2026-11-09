@@ -1,0 +1,67 @@
+{
+  "title": "Matched noise preserved covariance and zero-frequency power in passive models of two partial adult worm maps",
+  "abstract": "We tested spontaneous fluctuations in reduced passive electrical models of two partial adult C. elegans connectomes. Each model had 180 neurons and retained ten named locomotion neurons. Equal independent white current noise was the primary assumption. A capacitance correction alone caused 10.44% and 9.31% stationary covariance error at the primary coupling scale. A matching noise correction preserved covariance and zero-frequency power exactly. At dimensionless angular frequency 0.1, it reduced spectrum error from 8.94% to 0.087% and from 8.01% to 0.083%, relative to static reduction. Static reduction also preserved covariance exactly and had less spectrum error at frequency 1. The joint correction preserved zero-frequency power when hidden noise strength changed, but exact covariance then failed. We derive the identities and provide code, curves, matrices and independent checks of 72 model cases. These are model results, not measured neural activity. Partial electrical annotations, assumed membrane and noise parameters, and one retained circuit limit biological interpretation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "electrical synapses",
+    "model reduction",
+    "Kron reduction",
+    "noise covariance",
+    "power spectrum",
+    "passive circuit"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Relative spectrum and lag covariance errors for equal independent noise at the primary coupling scale. The joint capacitance and noise correction preserves covariance and zero-frequency power. It does not minimize error at every frequency or lag."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source connectome study. Electrical synapses were only partly annotated."
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established Schur-complement circuit reduction."
+    },
+    {
+      "target": "doi:10.1073/pnas.1609587113",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior joint treatment of memory and stochastic noise in reduced models."
+    },
+    {
+      "target": "sci:sha256:cc0dd813e789563ab4563dbb1d52cc3020be18f3a5bc93abc9595bfd533928be",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the specified passive model and ports for a stochastic follow-up. No code or numerical tables reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
