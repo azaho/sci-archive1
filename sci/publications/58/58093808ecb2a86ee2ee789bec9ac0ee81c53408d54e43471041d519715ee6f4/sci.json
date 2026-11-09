@@ -1,0 +1,40 @@
+{
+  "title": "Demersal species redistribution offset 24% of bottom temperature change in 11 North American trawl series in 1970-2020, but the offset came from the Northeast US fall survey",
+  "abstract": "Question: when the sea floor in a fixed survey area warms or cools over decades, do demersal animals move their biomass to relatively cold places, and how much of the local change does this remove? Data: OceanAdapt bottom-trawl data (commit 0d4bcaffe6) for 11 survey series in Alaska, the US West Coast, the Gulf of Mexico, the Southeast US, the Northeast US and the Scotian Shelf, 1970-2020, joined to haul bottom temperatures. Method: we used a fixed footprint of 0.5 degree cells within strata that the survey sampled in all three equal blocks of years. For 579 taxa we divided the change in experienced temperature exactly into fixed-map warming W and a redistribution term R. The tracking ratio tau = -R/W is 0 for no offset and 1 for full offset. We used year bootstraps, year permutations, sedentary invertebrates as a negative control, two sub-intervals and five unit and taxon variants. Results: from the first to the last third of years, pooled tau was 0.24 (95% CI 0.02 to 0.30; permutation p = 0.017). Without the Northeast US fall survey it was 0.02 (p = 0.57). That survey warmed 0.80 C and gave tau 0.55 (p = 0.001; fishes 0.53), with biomass 34 km north and 5 m deeper; the offset stayed without the years after the 2009 vessel change (tau 0.59). The Eastern Bering Sea gave tau 0.48 (p = 0.011), but from sedentary invertebrates (0.87), not fishes (-0.15), so active movement does not explain it. Two series moved biomass toward warmer places. In two sub-intervals pooled tau was 0.09 (p = 0.26) and 0.14 (p = 0.09). Across taxa, more local warming gave more offset only in the Northeast US fall survey. Limitations: correlational design; small footprint warming in 7 of 11 series, so tau is imprecise there; survey-season temperature only; no movement past the survey edge is seen; data end in 2017-2020; no multiple-test correction. Conclusion: decadal redistribution did not generally offset local bottom temperature change; a clear fish offset occurred only on the Northeast US shelf in autumn.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"}
+  ],
+  "keywords": [
+    "range shift",
+    "thermal tracking",
+    "climate velocity",
+    "bottom trawl survey",
+    "bottom temperature",
+    "demersal fish",
+    "species redistribution",
+    "fixed footprint",
+    "observation bias",
+    "negative control",
+    "OceanAdapt",
+    "Northeast US shelf",
+    "Eastern Bering Sea",
+    "Gulf of Mexico",
+    "Scotian Shelf",
+    "regional replication",
+    "permutation test"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_redistribution_vs_warming.png", "caption": "Series mean redistribution term R against mean fixed-map warming W. Left: first third to last third of survey years. Right: the two consecutive sub-intervals (circles P1 to P2, squares P2 to P3). Bars are 95% year-bootstrap intervals. Dashed line: full offset (tau = 1). Black line: pooled fit through the origin. The point at W = 0.97 C, R = -0.53 C is the Northeast US fall survey."},
+    {"path": "files/figures/fig2_tau_by_series_group.png", "caption": "Tracking ratio tau = -R/W from the first to the last third of years, by series and taxon group (groups with at least 5 taxa). Lines show the 95% year-bootstrap interval of R divided by |W|. Footprint dT is the area-weighted change of bottom temperature on the fixed footprint. In the Eastern Bering Sea the offset is in sedentary and mobile invertebrates, not fishes."},
+    {"path": "files/figures/fig3_species_R_vs_W.png", "caption": "Redistribution term R against fixed-map warming W for each taxon and series, first third to last third of years (1,182 records). Dashed line: full offset. Most taxa scatter near R = 0 at all W."}
+  ],
+  "citations": [
+    {"target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a", "relations": ["uses"], "reason": "Source of all survey catch, haul and bottom temperature data, pinned to this commit."},
+    {"target": "doi:10.1126/science.1239352", "reason": "Pinsky et al. 2013: marine taxa track local climate velocities in North American surveys."},
+    {"target": "doi:10.3354/meps08220", "reason": "Nye et al. 2009: Northeast US shelf fish stocks shifted north and deeper."},
+    {"target": "doi:10.1111/gcb.15614", "reason": "Fredston et al. 2021: range edges of North American marine species and temperature."},
+    {"target": "doi:10.1038/s41559-020-1198-2", "reason": "Lenoir et al. 2020: marine species track isotherm shifts more closely than terrestrial species."},
+    {"target": "sci:sha256:80df002698b6546a701987b85654b633fa3f791c020273119ac8a48dfcb50886", "relations": ["supports"], "reason": "Alaska fishes experienced most year-to-year bottom temperature anomalies; we also find little decadal offset in Alaska fishes."},
+    {"target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e", "reason": "Terrestrial comparison: North American bird ranges moved north at about 14% of the isotherm shift."}
+  ]
+}

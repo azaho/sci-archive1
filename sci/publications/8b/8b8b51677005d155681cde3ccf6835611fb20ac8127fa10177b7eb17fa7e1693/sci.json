@@ -1,0 +1,64 @@
+{
+  "title": "The east-west centroid change was uncertain at magnitude 3 or more in Puerto Rico on days 1-30",
+  "abstract": "We tested the change in mean earthquake longitude between days 1-7 and 7-30 after the 7 January 2020 Puerto Rico mainshock. The fixed USGS sample has 211 early and 317 late events of magnitude 3 or more within 50 km of a fixed center. The late mean was 0.76 km west of the early mean. A conditional 95% two-day block interval was 2.88 km west to 1.05 km east. The share of duration magnitudes rose from 24.6% to 66.2%. Within the duration and local magnitude subset, the symmetric type-mix term was only 0.03 km west. Fixed early type weights gave a change of 0.46 km west, with an interval that included zero. Equal-day weights also left the direction uncertain. At magnitude 2.5 or more the raw change was 1.66 km west; at 3.5 or more it was 0.67 km east. These checks do not show a common direction across cutoffs. This single revised catalog does not establish completeness, physical migration, or fault cause. The package gives source bytes, hashes, code, all resample estimates, a figure, and an independent arithmetic audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "earthquake locations",
+    "magnitude type",
+    "catalog sensitivity",
+    "centroid",
+    "null result",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/centroid.png",
+      "caption": "Daily mean east position and late-minus-early contrasts. Negative values are west. Bars show conditional 95% two-day block intervals. The type decomposition uses only md and ml events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c4e5b97e90080abf8f56a862c786a199e2bd09a7463679fd6194385d31f47fce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public source snapshot and period definitions. Its report identified the change in magnitude types. We test spatial means with new code."
+    },
+    {
+      "target": "doi:10.1785/0220210238",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The public USGS abstract describes intersecting fault systems and later western activity."
+    },
+    {
+      "target": "doi:10.1785/0120220229",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The public USGS abstract describes a larger enhanced catalog and longer-term spatial changes."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "The published abstract explains why a fixed magnitude cutoff need not remove transient detection bias."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Changing magnitude-type weights account for most of a larger-event share drop in a 2020 Puerto Rico catalog sample",
+  "abstract": "We tested how a change in catalog magnitude types affects an observed change in earthquake size. We used a fixed USGS snapshot for Puerto Rico, within 50 km of a fixed center, on days 1-7 and 7-30 after 7 January 2020. Among local and duration magnitude records at magnitude 3 or more, the share at 3.5 or more fell from 47.50% to 28.12%. A symmetric two-part calculation assigned 15.71 percentage points of this 19.38-point drop to changes in type weights. It assigned 3.67 points to changes within types. Conditional 95% two-day block intervals were -20.91 to -10.15 points for the type-weight term and -11.59 to 2.97 points for the within-type term. The type-weight term had the same sign at two other cutoffs and at a 100 km radius. This is an arithmetic result for selected catalog records. Type choice can depend on event size and detection. Thus the result does not prove a measurement error or rule out a physical change. The study adds a type-weight check to a prior campaign forecast test. Code, raw data, event rows, resample values, and an independent arithmetic check are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "aftershocks",
+    "magnitude types",
+    "catalog composition",
+    "standardization",
+    "ComCat"
+  ],
+  "display": [
+    {
+      "path": "files/decomposition.png",
+      "caption": "Left: the share of events at magnitude 3.5 or more within each magnitude type. Counts give tail events over all events at magnitude 3 or more. Right: the change in the combined ML and MD sample and its two arithmetic terms. Bars give conditional 95% two-day block intervals. The terms do not identify a cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c4e5b97e90080abf8f56a862c786a199e2bd09a7463679fd6194385d31f47fce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared raw snapshot and time and radius settings. It reported the magnitude-type shift. We add a new arithmetic decomposition and block resamples."
+    },
+    {
+      "target": "doi:10.1785/0220210222",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior public aftershock forecast study reports changes in the magnitude distribution and fitted parameters. We used its public USGS abstract."
+    },
+    {
+      "target": "doi:10.1785/0120220229",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The public abstract describes the complex fault network and a much denser catalog. We do not use that enhanced catalog."
+    },
+    {
+      "target": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types",
+      "reason": "USGS definitions distinguish local and duration magnitudes."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact USGS query for the saved catalog snapshot."
+    }
+  ]
+}

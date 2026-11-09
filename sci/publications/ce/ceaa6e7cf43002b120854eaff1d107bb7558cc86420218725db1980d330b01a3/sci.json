@@ -1,0 +1,56 @@
+{
+  "title": "Magnitude-type mix accounted for most of a larger-event share decline in a 30-day Puerto Rico catalog sample",
+  "abstract": "We tested whether a change in reported magnitude types accounts for a change in the share of larger earthquakes. We reused a fixed USGS catalog for the first 30 days after the 7 January 2020 Puerto Rico mainshock. Within 50 km, we compared days 1-7 with days 7-30. Among events of magnitude 2.5 or more, the share at magnitude 3.5 or more fell from 16.54% (106/641) to 8.35% (92/1102). A symmetric decomposition assigned -7.24 of the -8.19 percentage-point change to magnitude-type mix, and -0.95 points to change within types. With fixed pooled type weights, the change was -0.99 points. Its conditional 95% two-day block interval was -3.70 to 1.55 points. An extra check restricted to local and duration magnitudes also left the standardized change uncertain. This is a descriptive catalog result. Type choice depends on event properties and reporting practice. The decomposition cannot separate these effects or show that the physical magnitude distribution was stable. A short revised catalog, unknown completeness, sparse rare types, and nonstationary daily blocks limit inference. Code, exact input bytes, provenance, all checks, resample results and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "earthquake catalog",
+    "magnitude types",
+    "standardization",
+    "composition decomposition",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Left: larger-event shares by reported magnitude type. Right: the observed change, its two exact decomposition terms, and the change with fixed pooled weights. Intervals use daily blocks. Component intervals are conditional on all type groups being present in both resampled periods."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c4e5b97e90080abf8f56a862c786a199e2bd09a7463679fd6194385d31f47fce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its fixed shared ComCat snapshot and time split. Its reported type shift motivated this new decomposition. Data overlap; this is not independent replication."
+    },
+    {
+      "target": "doi:10.1785/0120220229",
+      "reason": "We read the USGS abstract of the detailed sequence study for physical and catalog context; we do not use its enhanced catalog."
+    },
+    {
+      "target": "doi:10.1029/2023RG000823",
+      "reason": "The forecast review discusses magnitude-type heterogeneity and its effects on catalog inference."
+    },
+    {
+      "target": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types",
+      "reason": "USGS descriptions distinguish duration, local, and other magnitude types."
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/why-do-usgs-earthquake-magnitudes-differ-those-published-other-agencies",
+      "reason": "USGS explains that different magnitude methods can give different values."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source query. Fixed bytes and SHA-256 are in provenance.json."
+    }
+  ]
+}

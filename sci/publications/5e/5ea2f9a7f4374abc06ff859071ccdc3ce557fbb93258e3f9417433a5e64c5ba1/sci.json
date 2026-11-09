@@ -1,0 +1,83 @@
+{
+  "title": "30-day block intervals include zero for ESPRESSO error gains from two HARPS models of HD 20794",
+  "abstract": "We test two weak HD 20794 signals reported near 111.51 and 85.40 days. We fit their amplitudes and phases to 743 HARPS nights. We keep the models fixed for 64 ESPRESSO nights, with a free velocity offset. An astrometric correction removes a predicted 1.352 m/s/year geometric trend from the released ESPRESSO velocities. The two models reduce test weighted squared error by 16.00% and 21.78%. Resampling 30-day test blocks gives 95% intervals of -4.30% to 23.95% and -12.68% to 33.18%. Both intervals include zero. Changes in the known-orbit fits account for part of the gain. Fixing the published inner periods reduces the 85.40-day gain to 7.45%. The known outer signal also fails this simple transfer control. The result does not confirm or exclude another planet. The periods were selected from joint-data work, so this is a retrospective test. The bundle includes code, nightly data, physical and sampling checks, input hashes, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 20794",
+    "HARPS",
+    "ESPRESSO",
+    "radial velocity",
+    "annual alias",
+    "retrospective validation",
+    "perspective acceleration",
+    "null confirmation"
+  ],
+  "display": [
+    {
+      "path": "files/main.png",
+      "caption": "An astrometric correction removes the large geometric trend. Both main error gains have 30-day block intervals that include zero. The 10-day intervals are narrower."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "The gains change when the model and nuisance terms change. These scores do not include uncertainty bars."
+    },
+    {
+      "path": "files/local_search.png",
+      "caption": "HARPS selects one period in each local range. ESPRESSO scores are shown separately. The local searches do not resolve the annual alias."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202451769",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the known signals, weak residual periods, processing context, and astrometry."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36930297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the numerical source tables. The exact response hash is preserved."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/A+A/693/A297&-out.all&-out.max=unlimited",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public query used by the campaign dataset helper."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/200912479",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gives the physical perspective acceleration relation."
+    },
+    {
+      "target": "https://arxiv.org/abs/2507.07514",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides context for ESPRESSO precision and stellar noise."
+    },
+    {
+      "target": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HD+20794",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the Gaia parallax to the extra digits used in the physical correction."
+    }
+  ]
+}
