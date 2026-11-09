@@ -1,0 +1,68 @@
+{
+  "title": "Mirror responses gave no clear added detection prediction gain in 6344 selected worm circuits",
+  "abstract": "We tested whether a response in a left-right mirror circuit improves response detection predictions after direct wiring, cell identity and measurement counts are known. We linked the Randi wild-type signal atlas to two adult Witvliet maps by cell name. The primary sample had 6,344 directed circuits, 3,172 mirror pairs and 65 bilateral cell classes. Five-fold validation kept all directions and sides of each unordered class pair together. Added mirror detection reduced mean log loss from 0.236691 to 0.231304. The reduction was 0.005387 nats per circuit, with a nominal conditional 95 percent class-resampling interval of -0.001568 to 0.013161. Thus the primary result leaves the added value uncertain. Sensitivity results depend on model settings. This test assumes that a mirror measurement is already available. Selected pooled measurements, different anatomy animals, uncertain absent edges and fixed-prediction uncertainty prevent a claim of general bilateral equivalence or reliable transfer across animals. Code, linked circuit tables, source hashes, predictions, uncertainty draws and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "bilateral circuits",
+    "connectome",
+    "signal propagation",
+    "grouped validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Raw detection rates and held-out prediction gains. Bars describe selected circuits. Points show log loss reductions; lines show nominal 95 percent class-resampling intervals with fitted predictions fixed. Sensitivity tests overlap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the identified-cell perturbation atlas."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the two adult anatomy maps."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned data export and source definitions. No upstream software copied."
+    },
+    {
+      "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign mirror comparison studied fitted timing and amplitude among detected responses. The current test studies added detection prediction in all covered circuits."
+    },
+    {
+      "target": "sci:sha256:24d8cb6740a9859d5283a93da0026ff8e0946c04d2e594740329f91b9a749cbd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test used reverse-direction responses. The current predictor is the left-right mirror circuit. No prior code or tables reused."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13385459/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related study of bilateral network roles from anatomy, found during literature search. It does not establish the present functional prediction result."
+    }
+  ]
+}

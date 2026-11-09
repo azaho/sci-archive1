@@ -1,0 +1,144 @@
+{
+  "title": "A Pacific SST contrast reduced reconstruction error against a six-month Nino 3.4 model at three island gauges in 2000-2024",
+  "abstract": "We tested whether the east-west pattern of tropical Pacific sea surface temperature (SST) adds information about monthly relative sea level beyond Nino 3.4. We used PSMSL records at Kwajalein, Apra Harbor, and Malakal-B. Each test year in 2000-2024 used only earlier sea-level targets from 1975 onward for model fitting. The baseline had month means, a linear trend, two three-month Nino 3.4 means, and their absolute values. The added model had two matching means of Nino 4 minus Nino 3. Across 878 accepted gauge months, the equal-site mean reduction in squared error was 7.76%. Its conditional 95% three-year block interval was 1.78% to 12.65%. All three site point estimates were positive, but all site intervals included zero. With previous-month local sea level in both models, the gain was 1.91% (-0.42% to 3.96%). A later exploratory check with a longer Nino 3.4 history also had an interval that included zero. Thus, the SST contrast added information against the specified baseline, but broader added value remains uncertain. These are reconstructions that use observed target-month SST, not lead forecasts. Three selected gauges, 25 test years, revised data, datum history, and uncertainty conditional on saved errors limit inference. We provide exact source extracts, hashes, predictions, all checks, code, figures, and a successful offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "Nino 3.4",
+    "SST contrast",
+    "sea level",
+    "Pacific islands",
+    "PSMSL",
+    "reconstruction",
+    "block bootstrap",
+    "baseline sensitivity",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/gain.png",
+      "caption": "Later-year MSE reduction from the SST contrast at three fixed island gauges. Intervals use common three-year test-year blocks and are conditional on saved reconstructions. Every site interval includes zero; the equal-site mean interval is positive."
+    },
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "All fixed sensitivity checks and one later exploratory longer-memory check. The local-level and longer-memory intervals include zero. Intervals do not include all source, training, or model uncertainty."
+    },
+    {
+      "path": "files/results/series.png",
+      "caption": "Observed and reconstructed monthly relative sea levels after subtraction of the fitted baseline month and time terms. The background changes with each earlier-year fit. Gaps are preserved."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2020JC016616",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work links western tropical Pacific sea-level asymmetry and ENSO types to wind structure. We test a simple later-year reconstruction contrast, not its mechanism."
+    },
+    {
+      "target": "doi:10.1126/sciadv.1500560",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on tropical Pacific sea-level extremes and ecosystem relevance. We do not test its climate projections."
+    },
+    {
+      "target": "doi:10.2112/JCOASTRES-D-12-00175.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "PSMSL source service reference, as requested by the data provider."
+    },
+    {
+      "target": "sci:sha256:250d1f460d4e8f6af17286981539ceecfd73486e1ebb439395257719f0333ff1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign warm and cold ENSO slope analysis at two US coastal gauges. We use different gauge records and new code."
+    },
+    {
+      "target": "sci:sha256:0460352ad34be446523ddb917bef72e032195bbcc7e7088a5dff10cb75c3d5a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior monthly seasonal ENSO reconstruction test. It provides context for earlier-year fits and conditional loss uncertainty. The current SST contrast and island targets differ."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw PSMSL RLR monthly archive. Exact source hash, shared path, extracted member hashes, and station notes are preserved."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CPC ERSSTv5 regional monthly anomalies, 1991-2020 reference. Exact bytes and hash are included."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/notes.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official monthly data format, units, missing values, and flags."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official local reference datum definition."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/complete.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official archive and station list description."
+    },
+    {
+      "target": "https://www.psl.noaa.gov/data/climateindices/list/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official SST index region definitions."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/stations/513.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Kwajalein station metadata and data notes."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/stations/540.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Apra Harbor metadata and datum concerns."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/stations/1252.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Malakal-B station metadata and data notes."
+    }
+  ]
+}

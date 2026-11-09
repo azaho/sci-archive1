@@ -1,0 +1,92 @@
+{
+ "title": "ZTF data from 2022 to 2025 do not continue the sinusoids of 86 ZTF periodic-quasar candidates, and their forecasts are no better than red-noise control quasars",
+ "abstract": "Chen et al. (2022, arXiv:2206.11497) reported 86 periodic-quasar candidates (periods 500-1000 d) from ZTF DR11 data (March 2018 to March 2022). Such candidates are possible signs of supermassive black hole binaries. We did an out-of-sample test with ZTF DR24 data from the SNAD mirror. For each candidate, we fitted the period and a sinusoid on the DR11 time span only. Then we scored the forecast on the later data, 2022-03-08 to 2025-10 (median 1.45 cycles). We applied the same procedure to 2,575 SDSS DR16Q control quasars matched in magnitude and redshift, and to the same controls with injected sinusoids. The median forecast correlation was 0.05 for the candidates and 0.07 for the 57 controls that pass the same in-sample periodicity cuts (KS p = 0.96). Phase hits within 45 deg were 29% for the candidates and 26% for the selected controls (chance 25%). With injected sinusoids of the candidates' fitted amplitude, the median correlation was 0.62 and phase hits were 61%. A mixture fit gives a best-fit coherent fraction of zero, with a 95% upper limit of about 6% (bootstrap 84th percentile 9%). If the true amplitudes are half the fitted values, the limit is 13-28%. None of the three candidates that Chen et al. kept after adding older surveys continued its sinusoid (correlations 0.13, -0.58 and 0.08; amplitude ratios 0.30, 0.39 and 0.11). A 180-day gap, the g band and a per-candidate damped-random-walk null give the same result. Limitations: the test window covers only about 1.5 cycles, quasi-periodic or intermittent signals are not excluded, the selected-control null is small (57), and only the 86 SPL candidates were available.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  }
+ ],
+ "keywords": [
+  "periodic quasars",
+  "supermassive black hole binaries",
+  "ZTF",
+  "out-of-sample forecast",
+  "red noise",
+  "damped random walk",
+  "Lomb-Scargle",
+  "quasar variability",
+  "SDSS DR16Q",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_example_lightcurves.png",
+   "caption": "ZTF r-band light curves of the three final candidates of Chen et al. and one more candidate. Black: 20-day bins in the fit window (ZTF DR11 span) with the fitted sinusoid. Blue: bins after 2022-03-08. Orange dashed line: sinusoid forecast. The forecast fails for all three final candidates."
+  },
+  {
+   "path": "files/figures/fig2_forecast_scores.png",
+   "caption": "Out-of-sample scores. Left: cumulative distribution of the correlation between forecast and test data. Middle: phase error of a fixed-period fit to the test data (dotted line: uniform). Right: ratio of test to fit amplitude. The candidates (blue) match the control quasars selected with the same in-sample cuts (grey). Controls with injected sinusoids (orange) show the expected signal."
+  },
+  {
+   "path": "files/figures/fig3_coherent_fraction.png",
+   "caption": "Profile log-likelihood of the fraction of candidates with a persisting sinusoid, from a mixture of the selected-control and injected-signal score densities. The dotted line marks the one-sided 95% limit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://arxiv.org/abs/2206.11497",
+   "relations": [
+    "reviews",
+    "challenges",
+    "uses"
+   ],
+   "reason": "Source of the 86 SPL periodic-quasar candidates. We test their periodicity with later ZTF data."
+  },
+  {
+   "target": "https://arxiv.org/abs/2505.06656",
+   "relations": [],
+   "reason": "Foustoul et al. 2025 (A&A 699, A55): a CRTS+ZTF catalogue of periodic candidates. Their ZTF data show that earlier CRTS modulations are red noise."
+  },
+  {
+   "target": "https://arxiv.org/abs/2509.10601",
+   "relations": [
+    "supports"
+   ],
+   "reason": "An independent ZTF test of Gaia-selected periodic AGN that also finds no continued sinusoid."
+  },
+  {
+   "target": "https://arxiv.org/abs/1507.07603",
+   "relations": [],
+   "reason": "Graham et al. 2015 CRTS periodic quasar search."
+  },
+  {
+   "target": "https://arxiv.org/abs/2211.07605",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SNAD ZTF viewer and API, the source of the ZTF DR24 light curves."
+  },
+  {
+   "target": "https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/289",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SDSS DR16Q quasar catalogue (Lyke et al. 2020), used to select the control quasars."
+  },
+  {
+   "target": "https://arxiv.org/abs/2304.08519",
+   "relations": [],
+   "reason": "States the ZTF DR11 time span (March 2018 to March 2022)."
+  },
+  {
+   "target": "sci:sha256:076e2c73615007a4f3a949d52ab7cba118ce28aa9d52cf0855ebc04c9f53c929",
+   "relations": [],
+   "reason": "Earlier campaign forecast test of published Fermi blazar periods, with the same out-of-sample design."
+  }
+ ]
+}
