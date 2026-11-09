@@ -1,0 +1,49 @@
+{
+  "title": "Neighbor activity gave no clear gain in daily tremor start estimates at 40-50 N in 2022-2025",
+  "abstract": "We tested whether recent tremor in the next latitude strip improves daily estimates of a local start beyond local history. We used a fixed PNSN catalog at 40-50 N, fit models on 2017-2021, and tested 17,364 eligible strip-days with 905 starts in 2022-2025. A start is an active day after seven quiet days. Adding the prior-week neighbor active-day share reduced log loss by 0.36%. The conditional 95% 90-day block interval was -0.11% to +0.84%. The Brier score was 0.05% worse. Nearby activity had a visible raw rate link but gave no clear added score gain under this model. Four test years, revised detections, latitude strips, shared model slopes, and uncertainty conditional on fitted models limit the result. This test does not identify physical triggering or assess earthquake hazard. The package includes daily counts, code, all predictions, block draws, checks, and provenance.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Cascadia",
+    "tectonic tremor",
+    "PNSN",
+    "local onset",
+    "neighbor activity",
+    "chronological test",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Test score changes for the main model and checks, annual score changes, and observed and fitted rates by prior-week neighbor activity. Positive skill means lower loss. Check values are point estimates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:38bdf3cb911b69267bbdbc6408d3ce149f193ae56a61eda4ca2e96ffd282a08a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the public raw data source, with a new target and new code."
+    },
+    {
+      "target": "doi:10.1029/2021JB022523",
+      "reason": "Revised detector and catalog from 2017; data quality context."
+    },
+    {
+      "target": "doi:10.1029/2008JB006046",
+      "reason": "Prior observations of tremor motion in both along-strike directions."
+    },
+    {
+      "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the shared fixed catalog snapshot."
+    }
+  ]
+}
