@@ -1,0 +1,106 @@
+{
+ "title": "Later astrometry confirms published near-Earth asteroid Yarkovsky drifts only as much as a size-based physical prior predicts (228 asteroids, MPC data 2012-2026)",
+ "abstract": "Question: do published Yarkovsky drift rates of near-Earth asteroids (NEAs) predict their positions in astrometry made after the catalogue data cut-off? Approach: for the catalogues of Greenberg et al. (2020; MPC data to 2019-11-11) and Nugent et al. (2012; data to 2012-01-31), we fitted each orbit with an independent N-body code (ASSIST/REBOUND, DE440) to the MPC optical data before the cut-off, once with gravity only and once with the published drift as a fixed transverse acceleration. We measured the fraction k of the predicted extra sky shift that the later MPC data show (k = 1: drift correct; k = 0: no drift). Results: our fits of the training data reproduce the published values (r = 0.94-0.96). For 184 testable Greenberg asteroids, the random-effects mean is k = 0.76 +/- 0.03; for 44 testable Nugent asteroids, k = 0.41 +/- 0.09. The published signal-to-noise ratio does not rank reliability below SNR 5 (Spearman p = 0.24); drifts with SNR >= 5 give k = 0.95 +/- 0.03. A zero-mean prior on the Yarkovsky efficiency (scale 0.079 from SNR >= 5 values, catalogue diameters, density 2000 kg/m3) predicts k without a fit to the test data: k = 0.01 + 1.07 k_prior (Greenberg) and -0.02 + 1.00 k_prior (Nugent). Asteroids for which the prior expects k < 0.5 have median k = 0.19 (75 asteroids); the others have median k = 0.91 (153). Greenberg drifts that need efficiency > 0.5 (flag S) give k = 0.12 +/- 0.07, except comet-asteroid 4015 Wilson-Harrington. Results do not change when observations with unknown star catalogues are removed (per-object r = 0.994). Limitations: simpler weights than the original authors, formal k errors too small (between-object scatter about 0.3-0.6), generic density and H-based diameters in the prior, and a Nugent prior scale that uses Greenberg values with 2012-2019 data.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "Yarkovsky effect",
+  "near-Earth asteroids",
+  "orbit determination",
+  "astrometry",
+  "forecast test",
+  "winner's curse",
+  "non-gravitational acceleration",
+  "ASSIST",
+  "Minor Planet Center"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_k_vs_snr.png",
+   "caption": "Fraction k of the predicted extra sky shift that the later MPC data show, against the published drift SNR, for Greenberg et al. 2020 (left) and Nugent et al. 2012 (right). Black squares: random-effects bin means (95% CI). Green diamonds: mean k expected from the size-based physical prior."
+  },
+  {
+   "path": "files/figures/fig2_k_cdf.png",
+   "caption": "Cumulative distribution of k for both catalogues, split by the physical-prior expectation: drifts for which the prior expects k < 0.5 (75 asteroids, median 0.19) and k >= 0.5 (153 asteroids, median 0.91)."
+  },
+  {
+   "path": "files/figures/fig3_examples.png",
+   "caption": "Four Greenberg asteroids: nightly means of the later data minus the gravity-only forecast (grey) and the shift predicted by the published drift (blue)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e8572651108727241afdb642d02b8a01ce007caf2e1e477528b0c499a10c4da3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse and slightly extend its ASSIST orbit fitter (orbfit.py) and its forecast statistic k."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab62a3",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Greenberg et al. 2020: we test its 247+8 Yarkovsky drift rates against MPC astrometry after 2019-11-11; low-SNR values are too large on average and flag-S values do not hold."
+  },
+  {
+   "target": "doi:10.1088/0004-6256/144/2/60",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Nugent et al. 2012: we test its 54 drift rates against MPC astrometry from 2012-2026; the mean confirmed fraction is 0.41."
+  },
+  {
+   "target": "https://arxiv.org/abs/1708.05513v5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the machine-readable Greenberg et al. tables (datafile1.txt, datafile2.txt)."
+  },
+  {
+   "target": "https://arxiv.org/abs/1204.5990v2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the Nugent et al. table."
+  },
+  {
+   "target": "doi:10.1016/j.icarus.2013.02.004",
+   "reason": "Farnocchia et al. 2013, Yarkovsky detections and filters for physical plausibility."
+  },
+  {
+   "target": "doi:10.1016/j.icarus.2019.113596",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Star-catalogue debiasing."
+  },
+  {
+   "target": "doi:10.3847/PSJ/acc9a9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASSIST ephemeris-quality integrator."
+  },
+  {
+   "target": "https://data.minorplanetcenter.net/api/get-obs",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MPC ADES astrometry, retrieved 2026-11-09."
+  },
+  {
+   "target": "https://ssd-api.jpl.nasa.gov/sbdb.api",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Current JPL A2 values for comparison, retrieved 2026-11-09."
+  }
+ ]
+}

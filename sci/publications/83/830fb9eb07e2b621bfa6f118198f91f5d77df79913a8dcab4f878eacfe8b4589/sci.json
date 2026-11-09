@@ -1,0 +1,90 @@
+{
+  "title": "A one-peak duration bound flags 55 of 4415 Fermi GBM entries under reported statistical errors",
+  "abstract": "A nonnegative flux profile with one peak must have T90/T50 at least 1.4. We prove this sharp bound and test 4415 selected Fermi GBM entries in a public query frozen on 2026-11-09. There are 55 flags above a score of five under a covariance-safe bound on the reported statistical error. Doubling the errors leaves 20 flags. Multiplying them by ten leaves none. Two source FITS files match the catalog fields. Independent reports support known multiple peaks, but the strongest case has a much shorter AstroSat duration and its long GBM structure remains unresolved here. The second case has two long episodes in a Konus-Wind report. The result is a method and a list for follow-up, not a new source or proof of engine activity. We include code, a proof, numerical checks, aggregate evidence and exact input hashes. External raw data and record-level results remain outside the baseline bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Fermi GBM",
+    "unimodality",
+    "fluence quantiles",
+    "gamma-ray bursts",
+    "duration bound",
+    "instrument artifacts"
+  ],
+  "display": [
+    {
+      "path": "files/unimodal_screen.png",
+      "caption": "Selected duration ratios, error sensitivity and an exact two-pulse control. Only aggregate catalog data and original model calculations are shown."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:db1912915df0b861224bf424465affdbd8c7c6099b302cf5c9bbf020c3a44def",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the frozen public catalog input and motivates a different pulse-shape test. No code or numerical result is reused."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2602.12874",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Quantile characterization of unimodality; we prove the particular duration bound."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab7a18"
+    },
+    {
+      "target": "doi:10.3847/0067-0049/223/2/28"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/docs/heasarc/data_policy.html"
+    },
+    {
+      "target": "https://fermi.gsfc.nasa.gov/ssc/data/analysis/GBM_caveats.html"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/24297"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/31604"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/31565"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT%20name,trigger_name,trigger_time,t90,t90_error,t90_start,t50,t50_error,t50_start,duration_energy_low,duration_energy_high,fluence,fluence_error%20FROM%20fermigbrst",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact input URL; frozen version, shared path and SHA-256 are recorded in files/provenance.json."
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/bursts/2019/bn190419414/current/glg_bcat_all_bn190419414_v00.fit",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact input URL; frozen version, shared path and SHA-256 are recorded in files/provenance.json."
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/bursts/2022/bn220209959/current/glg_bcat_all_bn220209959_v00.fit",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact input URL; frozen version, shared path and SHA-256 are recorded in files/provenance.json."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "A negative-binomial model raised fixed-mean count log scores after 323 shallow M6.5+ earthquakes in 2013-2024",
+  "abstract": "We tested whether a training-only count variance correction improves probability scores without a change to the mean. We used a fixed ComCat snapshot, 363 training centers in 2001-2012 and 323 test centers in 2013-2024. Centers have M6.5 or more and depth at most 70 km. Targets are M5.5+ neighbor counts on days 7-30 within 200 km. Both distributions use the same mean from early counts, magnitude and depth. A negative-binomial model raised the mean test log score by 0.2006 nats. The conditional 95% three-year block interval was 0.0683 to 0.4153. Gain stayed positive after each test year was removed. Equal-tail 95% interval coverage rose from 95.67% to 97.21%, with wider intervals. This does not establish better overall calibration. A higher M5.8 floor gave an uncertain gain. This extends a published mean-score design; it does not introduce overdispersion. Revised records, shared windows, simple model form and twelve test years limit inference. Code, aggregate evidence, source hashes, a scalar audit and repeat checks are included. External event records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake",
+    "count distribution",
+    "negative binomial",
+    "probability forecast",
+    "overdispersion",
+    "ComCat"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Test log-score gains with conditional 95% year-block intervals. Primary coverage rises above nominal coverage as intervals widen."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c70d9aba332188e0713394670ffc1e3ed58fab13cc59c18ce74c6bfd49bbaa05",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published center and window design. We test a count distribution at a fixed mean. Data overlap."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1903.07079",
+      "reason": "Prior count distribution and probability score research."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "reason": "Operational forecasts mix Poisson probabilities over productivity uncertainty."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared snapshot hash in provenance.json."
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    },
+    {
+      "target": "https://www.usgs.gov/data-management/access-controls-and-copyrights"
+    }
+  ]
+}
