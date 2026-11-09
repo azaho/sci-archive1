@@ -1,0 +1,77 @@
+{
+  "title": "Target response averages had lower reconstruction error than matched cells in 81 selected MICrONS axons",
+  "abstract": "We tested whether the mean movie response of connected targets reconstructs the measured response of their source cell. We used public MICrONS v1 wiring and 120-entry movie response vectors from one mouse. We centered each vector and set its length to one. An exact sampling formula gave the mean squared error for subsets of 1 to 32 targets. The primary sample had 81 source cells with at least 32 targets. At 32 targets, real error was 0.94418, and matched candidate error was 0.98214. The gain was 0.03796, with a descriptive 95 percent source bootstrap interval of 0.02952 to 0.04669. The zero-vector error was 1. We matched area, layer, soma distance and imaging scan, then tested added response reliability and contact opportunity controls. The method separates source alignment from target redundancy. Shared targets, one animal, coarse matching, selected axons and measurement error limit inference. This test does not measure trial noise or causal recovery after cell loss. Code, reduced inputs, source hashes, exact error terms and null draws support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "movie response",
+    "target averaging",
+    "response reconstruction",
+    "finite population sampling"
+  ],
+  "display": [
+    {
+      "path": "files/error_curve.png",
+      "caption": "Exact mean squared error for random subsets of real targets and matched candidates. Each panel gives equal weight to source cells. The dotted line is the zero-vector error."
+    },
+    {
+      "path": "files/source_scores.png",
+      "caption": "Error at 32 cells for each primary source. Positive matched-minus-real error means that real targets give lower error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public wiring and response tables; prior pairwise and higher-order wiring rules."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS structure and activity resource."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior target cohort study. We test source-response reconstruction rather than connection regression."
+    },
+    {
+      "target": "sci:sha256:748aa272d79394531e3e34931a140943b795b6f92d05e7aa412e7134fd27d14a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior vector and pair-score validation. We independently check the released measured response correlation."
+    },
+    {
+      "target": "sci:sha256:3f421179a43c393dc713cd33133e8e34e31dbc6459112398b0c663ec77c2e8fb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior weighted target redundancy test. We use unweighted target means and source-response error."
+    }
+  ]
+}
