@@ -1,0 +1,69 @@
+{
+  "title": "Selected Nancay waits from FRB 20220912A show no clear serial dependence after session control",
+  "abstract": "We test adjacent detected waits from FRB 20220912A with public Nancay data. Filename times and an exposure log avoid rounded summary times and off-source gaps. After we join detections less than one second apart, 21 selected sessions give 535 waits and 514 adjacent pairs. The correlation of session-centered log waits is -0.0923. A conditional within-session permutation test gives a two-sided p-value of 0.2316. Two other join rules and a local-block control also do not cross 0.05. Synthetic rank-order tests detect an illustrative latent serial correlation of plus or minus 0.2 in more than 96 percent of trials. This is a null result for one statistic, not proof of random emission. Missed bursts, session selection, short-time grouping and untested nonlinear memory limit the result. No new physical signal is established. Code, exact external input hashes, aggregate results, permutation statistics and a retrieval recipe support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "FRB 20220912A",
+    "Nancay",
+    "waiting times",
+    "serial dependence",
+    "conditional permutation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/wait_memory.png",
+      "caption": "Observed adjacent wait correlation and conditional permutation controls. Negative correlation also occurs under the null because each finite group is centered."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stae2296",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and physical context."
+    },
+    {
+      "target": "doi:10.5281/zenodo.13889738",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 1 full measurement table and exposure log; raw inputs remain external."
+    },
+    {
+      "target": "https://arxiv.org/abs/2607.14421",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Separate CHIME memory test gives a compatible null; we test a different statistic on Nancay data."
+    },
+    {
+      "target": "sci:sha256:1f32138a82f9f5cea94058b69d426b88636a6e9b35580ec5ab5dd21b4f2324b6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior Nancay frequency-order null."
+    },
+    {
+      "target": "sci:sha256:5f3c237de5938e0585a283daee5851c6ada7a54c83ddf9c4a69ba88b0f2cffdd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fluence and next-wait test."
+    },
+    {
+      "target": "sci:sha256:e1a803c566b56554f1b9ae9af901d5a171f79e462693b7e41529f7cf18aa9ae0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Timestamp audit motivates use of full-table filename times."
+    }
+  ]
+}
