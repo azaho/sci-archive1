@@ -1,0 +1,65 @@
+{
+  "title": "Noise contrast correction gave complete link ranks at lag 0.01 in 800 selected samples of two passive worm models",
+  "abstract": "We tested direct electrical link inference in symmetric passive models of two partial adult worm maps. With independent diagonal source noise, antisymmetric positive-lag covariance curvature equals each drift entry times the difference in endpoint noise strength. This identity uses only observed entries and survives hidden neurons. At lag 0.01, noise support ratio 10, and true relative noise contrast at least 0.2, corrected scores gave complete link ranks in all 800 half-observed samples. The rule retained about 83 percent of pairs. Median weight errors were 4.72 and 6.01 percent. Ordinary curvature had mean precision 0.99258 and 0.98739. Without the contrast rule, some corrected ranks failed. At support ratio 2, ordinary curvature also gave complete ranks. Equal noise supplies no signal for this identity; correlated noise can break it. Exact population covariances, oracle pair selection and edge counts, assumed conductance, and incomplete maps limit use. No neural recordings were tested. Code, aggregate evidence, source hashes and external-data retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical connectivity",
+    "hidden neurons",
+    "unequal noise",
+    "lag covariance",
+    "C. elegans",
+    "passive circuit",
+    "network inference"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact-covariance inference at noise support ratio 10 and true relative noise contrast at least 0.2. Each point summarizes 400 half-observed model samples per map. Small lag improves weights; pair selection and source independence remain assumptions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its equal-noise benchmark to unequal independent drive. Uses model conventions, not source code or tables."
+    },
+    {
+      "target": "sci:sha256:8f4b7d181847ef8f3041d8da43d958d686f76b5b6744ad472e2152ec8232d5fb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior context on the same incomplete electrical maps."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.95.022311",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4452541/",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
