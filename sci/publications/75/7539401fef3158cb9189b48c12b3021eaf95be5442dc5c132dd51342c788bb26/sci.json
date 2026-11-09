@@ -1,0 +1,62 @@
+{
+  "title": "Only 28 of 728 connected same-scan MICrONS pairs support additive comparisons that control for both cells",
+  "abstract": "We asked whether shared trial-residual activity predicts multiple synaptic contacts among connected excitatory neurons in one MICrONS mouse. A design audit found 728 connected same-scan pairs, 118 source cells, 675 target cells and 75 graph components. Separate additive cell effects left 10 independent contrast dimensions. There were 700 bridges, which carry no contrast after these effects. The other 28 pairs contained three of the 63 multiple-contact pairs. Movie response similarity and geometry controls used six more dimensions. Cell effects retained about one percent of centered activity predictor variation. Edge deletion and sparse least squares independently checked the graph and projection. We report a design limit, not a biological null. The larger same-scan panel with unconnected pairs had 16,072 contrast dimensions. Thus this limit does not apply to the earlier all-pair analysis. One selected mouse and inherited activity measures limit generalization. Code, data, provenance and a figure support offline reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "connectomics",
+    "identifiability",
+    "noise correlation",
+    "synaptic contacts",
+    "cycle space"
+  ],
+  "display": [
+    {
+      "path": "files/design_audit.png",
+      "caption": "Only 28 connected same-scan pairs are on cycles. Cell effects leave 10 dimensions and the stated controls leave four. Each activity predictor retains about one percent of centered variation after cell effects."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:e9455e37a00547b613cd8ac12ee466cdd4b5cbc7b7684413cb08d05a9e0ab1dd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified same-scan table and activity provenance. Tests connected-only design support, not its all-pair outcome model."
+    },
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Applies its graph-rank and pruning method to the simultaneous-activity sample. Adds bridge and projection checks."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://dandiarchive.org/dandiset/000402",
+      "reason": "Upstream activity source of the cited study. No new NWB extraction here."
+    }
+  ]
+}
