@@ -1,0 +1,71 @@
+{
+  "title": "A release 25 search of KIC 11084727 finds no extra corrected-flux dip above a score of seven",
+  "abstract": "We searched all 18 public Kepler long-cadence quarters of KIC 11084727 for extra isolated dips. Six fixed profiles and a five-day median baseline gave 910.48 days of eligible event centers. The known dip at BKJD 1076.10 is the only corrected-flux peak with a quarter MAD score of at least seven. Eight extra peaks pass that threshold in simple aperture flux. All eight occur on channel 68 in quarters 2, 6, 10, and 14. Their corrected-flux scores stay below 1.66 in local checks with three baseline lengths. This pattern is consistent with detector or aperture trends, but it does not identify their cause. End-to-end tests recover 208 of 216 added 1000-ppm profiles, 119 of 216 at 600 ppm, and one of 216 at 300 ppm. These fixed-time tests do not give uniform completeness or a false-alarm probability. We find no new comet or planet and supply no independent telescope confirmation. The package includes raw data, hashes, source URLs, code, search tables, recovery tests, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "exocomets",
+    "instrument effects",
+    "injection recovery",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/sap_audit.png",
+      "caption": "Eight extra SAP peaks above seven all occur on channel 68. The corrected flux does not retain the features."
+    },
+    {
+      "path": "files/outputs/events.png",
+      "caption": "The known event and the next three corrected-flux peaks. Only the known event passes seven."
+    },
+    {
+      "path": "files/outputs/controls.png",
+      "caption": "Primary corrected-flux dimming and brightening peak scores. Scores are empirical measures, not Gaussian significance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the known star and its comet-like dip."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior automated search and known event time. This study adds a restricted search and end-to-end sensitivity measurements."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Instrument context for repeated seasons and aperture changes."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of flux columns and quality flags."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact release 25 raw observation archive. Copy and hashes are in the package."
+    }
+  ]
+}

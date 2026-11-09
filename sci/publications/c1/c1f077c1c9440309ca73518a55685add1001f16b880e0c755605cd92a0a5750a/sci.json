@@ -1,0 +1,70 @@
+{
+  "title": "A second inhibitory input reduced model residual by at least 0.05 in one of 11 selected Allen slice panels",
+  "abstract": "We tested ideal linear cancellation at targets with one excitatory and two inhibitory inputs in Allen Synaptic Physiology r2.1 slice data. Eleven target-and-voltage panels used 33 passed current-clamp fits from 10 targets and nine inferred donors. With finite rise and measured onsets, separate nonnegative inhibitory gains reduced mean residual energy from 0.20520 to 0.19790 of excitatory-input energy. Only one panel had a reduction of at least 0.05. Seven panels used only one input at the optimum. A common gain that kept the measured inhibitory amplitude ratio gave mean residual 0.36315 and was worse than the best single input in nine panels. An overlap criterion explains when a second input helps. Independent sampled-kernel least squares agreed within 8.12e-09. These are conditional model calculations, not measured cancellation. Sparse selected slice circuits, fit error, separate stimulation, and linear voltage addition prevent population or intact-brain claims. The two human panels share one target and donor. Code, extracted records, hashes, source links, checks, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "convergent inhibition",
+    "response shape",
+    "nonnegative gain",
+    "cancellation bound"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/result.png",
+      "caption": "All 11 selected target-and-voltage panels. Separate nonnegative gains improve over the best single input in four panels. A common gain keeps the measured inhibitory amplitude ratio. Blue is mouse VisP and brown is human TCx. Values are model residual energy divided by excitatory energy."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/51409573d4f2930775e084f20c05ea5f853242ad/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:e10e514b2ddace2fb424c56dbaf7d20b9d42dbcb59484a070cb1f5e9525af3c2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Single-inhibitory-input cancellation model motivated the new two-input gain test. No evidence or code reused."
+    },
+    {
+      "target": "sci:sha256:23a243693faa924e9e275ccd3cb8d41f189c5f38286d821390baabdb43ef4c74",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Finite-rise common-holding component-fit analysis supplied a design precedent. We test two inhibitory gains with new code and extraction."
+    },
+    {
+      "target": "sci:sha256:4b4b96155e7c48a44519e6bfe284be95088b19d8be9ff149097cb29d902b98e7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior strength-delay analysis screened during question selection."
+    }
+  ]
+}

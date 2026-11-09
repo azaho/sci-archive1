@@ -1,0 +1,70 @@
+{
+  "title": "Image-plane alignment gave no clear connection prediction gain in selected Allen mouse and human slice pairs",
+  "abstract": "We tested whether cell-body alignment in cortical images adds information about detected chemical connections after distance, cell labels, layer and test-spike count are known. This extends a prior campaign test with a coherent image-plane distance and alignment pair and class-specific slopes. Allen Synaptic Physiology r2.1 small data supplied 15,479 mouse directions from 739 inferred animals and 1,168 human excitatory directions from 50 inferred donors. Five-fold validation kept donors separate. Mouse log-loss gain was -0.000012 nats per direction, with a conditional 97.5% donor bootstrap interval from -0.000572 to 0.000529. Human gain was -0.001209, with interval -0.002372 to -0.000188. No primary class slope passed correction for five tests. The coordinate-consistent model thus gave no clear prediction gain. This does not establish isotropic wiring. Slice selection, imperfect detection, incomplete cell labels, inferred donor IDs, model form and uncertainty conditional on fitted predictions limit the result. Species and brain region are confounded. We preserve source code, selected rows, predictions, bootstrap draws, provenance and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "cortical connectivity",
+    "image geometry",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Left: vertical-versus-lateral odds ratios with 99% donor-cluster intervals for five primary coefficients. Right: held-out log-loss gains with 97.5% conditional donor bootstrap intervals for two preparation comparisons. Positive gain means lower prediction error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for Allen multipatch data."
+    },
+    {
+      "target": "doi:10.1126/science.adg8828",
+      "reason": "Human directed circuit context; signed depth order differs from unsigned alignment."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/cortical_location.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the image-based axis distances."
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior alignment prediction test. We extend it with image-plane geometry and class-specific slopes; this is not independent data."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior coordinate audit informed range checks; no tables or code reused."
+    },
+    {
+      "target": "sci:sha256:2a0427bbf298e2f9824dc0ad925a2edd94f532d518ce4b1bf868a0e160b16edb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior signed depth-order test provides a distinct spatial comparison."
+    }
+  ]
+}

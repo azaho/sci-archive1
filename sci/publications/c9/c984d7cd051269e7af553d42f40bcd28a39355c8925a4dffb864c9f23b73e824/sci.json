@@ -1,0 +1,62 @@
+{
+  "title": "Cell degrees fix electrical triangle counts in selected Allen mouse visual cortex recordings",
+  "abstract": "We tested electrical triangle counts in same-label inhibitory cell groups from Allen Synaptic Physiology r2.1. The primary Pvalb sample had 109 electrical links in 1635 called pairs from 641 recordings. Its 832 fully called three-cell sets had two closed triangles. Exact enumeration showed that each recording had a fixed triangle count after cell degrees were held fixed. A pooled independent-edge calculation gave an expectation of 0.247 triangles, but a reference that kept each recording link count gave 2.083. The latter reference allowed totals of only two or three. Requiring two agreeing directional calls left the same distributions. Sst and Vip samples had triangle counts fixed at zero. These results show a limit on this conditional triangle test, not an absence of triangle function. Unknown calls permitted 2 to 36 Pvalb triangles when all available calls were held fixed. Small slice graphs, detection errors, selected labels, and missing linked activity limit interpretation. We supply exact null distributions, aggregate evidence, source hashes, code, a figure, and an exhaustive five-cell check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical coupling",
+    "triangles",
+    "conditional graph tests",
+    "Allen Institute",
+    "Pvalb",
+    "testability"
+  ],
+  "display": [
+    {
+      "path": "files/triangles.png",
+      "caption": "Two observed Pvalb electrical triangles are fixed by cell degrees. The recording edge-count reference permits only two or three triangles."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988957/"
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the conditional chemical motif question to undirected electrical triangle counts. No table or code is reused."
+    },
+    {
+      "target": "sci:sha256:8ae2d1d75c4c4e5f13a6753501a8f62cd6c7455dafac99aa22f99e6bbe2db7a5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the interpretation of constant conditional counts as a test power limit."
+    },
+    {
+      "target": "sci:sha256:597f4cea5c2b6dc05718bee3c2bf9a54b1f90b750d4482f07c514ddae9c1fd8b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Builds on the electrical loop availability audit with a different call-based graph and question."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Winter ENSO slopes for hourly peaks above monthly mean sea level were uncertain at two Pacific gauges in 55 winters of 1961-2025",
+  "abstract": "We tested whether winter ENSO was linked to monthly hourly peak water levels above concurrent monthly mean sea level at San Francisco and Seattle. We used fixed NOAA snapshots and 55 common complete winters within 1961-2025. Each fit had a linear time trend. The equal-site mean slope was 0.36 cm per degree C of Nino 3.4, with a 95% five-year block interval of -1.66 to 2.04 cm per degree C. The hourly peak slope was 4.39 cm per degree C and the mean sea-level slope was 4.03 cm per degree C on the same support. All planned checks left the peak-above-mean slope uncertain. The result does not show that ENSO has no effect on extremes. Coverage rules excluded 10 winters, including 1998 and 2016. Two harbor sites, missing storm observations, unmeasured weather, tidal cycles, and the block assumptions limit inference. The package gives source hashes, exact field extracts, code, all fitted uncertainty draws, a figure, and an independent numerical audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "sea level",
+    "hourly peaks",
+    "winter",
+    "NOAA CO-OPS",
+    "block bootstrap",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/slopes.png",
+      "caption": "Concurrent winter ENSO slopes and 95% block intervals. Left: hourly peak H, monthly mean M, and their difference E on the same 55-winter support. Right: all planned checks for the equal-site E slope. Site and component intervals are descriptive. Every E interval includes zero. Missing winters include 1998 and 2016."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:78285c2f5e450f277e3b512035e713b12fc6379d05825aa601bfbbcc92683210",
+      "reason": "Prior campaign work separates hourly peaks and mean levels for long-period change. It informed the fixed-hourly target. We use the same shared source objects with new extraction and analysis code."
+    },
+    {
+      "target": "sci:sha256:250d1f460d4e8f6af17286981539ceecfd73486e1ebb439395257719f0333ff1",
+      "reason": "Prior campaign work tests ENSO phase slopes for winter mean sea level at these two sites. Our response is the hourly peak above mean level, with stricter common coverage."
+    },
+    {
+      "target": "doi:10.1029/2020JC016295",
+      "reason": "Prior work studies low-frequency extreme sea-level variation after mean-level and long tidal-cycle removal. Our winter association test has a different target and time scale."
+    },
+    {
+      "target": "doi:10.1029/2024GL108864",
+      "reason": "Prior work models extreme water-level shifts from climate forcing and long tidal cycles."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official definitions for daily hourly maxima, completeness, inferred flags, and monthly mean sea level."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source API. All 16 exact station-query URLs, source paths, and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed ERSSTv5 Nino 3.4 anomaly source. We use the last anomaly column, not current ERSSTv6 or relative ENSO indices."
+    }
+  ]
+}

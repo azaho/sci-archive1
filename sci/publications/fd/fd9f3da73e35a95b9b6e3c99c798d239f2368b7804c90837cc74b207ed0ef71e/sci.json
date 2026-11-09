@@ -1,0 +1,62 @@
+{
+  "title": "Lagged pixel fits do not give a stable source pattern for KIC 4078638 in Kepler quarter 4",
+  "abstract": "We test whether time-correlated variation can give a reference pixel pattern for the known candidate exocomet dip on KIC 4078638. We use four aperture pixels in public Kepler release 25 quarter 4 data. In 17 of 18 full-interval settings, the six cross-pixel covariance terms have mixed signs. A single positive spatial pattern cannot reproduce those point estimates exactly. Fitted left-pixel fractions span 0.522 to 1.000, with frequent boundary components. Eighteen local dip fits give left loss fractions from 0.722 to 0.757. The unstable reference prevents a reliable source comparison. A synthetic single-source test recovers its input pattern. This does not validate a source model for the star. Noise, pointing corrections, blends, and calibration errors limit the result. We report no new object, physical cause, or independent telescope confirmation. The package includes the exact raw file, source hashes, code, all 54 covariance matrices, conditional draws, controls, figures, and offline instructions. Job sci-1107-syam2-astronomy-742c7e99770c; machine syam2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "exocomets",
+    "pixel covariance",
+    "instrument artifacts",
+    "KIC 4078638"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/diagnostic.png",
+      "caption": "Mixed-sign covariance terms and unstable positive-pattern fits limit a reference image for the known dip. Shading shows the range from 18 local dip fits. Reference boundary outputs are not measured source fractions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:761fcb2599d76f9f45c00043388c58f4d65a479059ca74c962029b6456df01eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published event selection, fixed profile and raw source. Adds a lagged cross-pixel reference test."
+    },
+    {
+      "target": "sci:sha256:a4b182e241889504e996f6f812421d9f8876754783ad682b868b19a8bc14783c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior onset test limits the physical inference for this known dip."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202556033",
+      "reason": "Published candidate survey; this is a test of a known candidate, not a new discovery."
+    },
+    {
+      "target": "https://arxiv.org/abs/2510.14687",
+      "reason": "Public preprint of the candidate survey."
+    },
+    {
+      "target": "https://stdatu.stsci.edu/kepler/manuals/Data_Characteristics.pdf",
+      "reason": "Describes sensitivity changes, image motion and other Kepler data effects."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0040/004078638/kplr004078638-2010078095331_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 input; source hash is preserved."
+    }
+  ]
+}

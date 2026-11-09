@@ -1,0 +1,74 @@
+{
+  "title": "An orientation interaction gave no clear connection prediction gain in selected Allen cortical slices",
+  "abstract": "We tested whether cell-pair orientation changes the prediction value of a known reverse chemical connection in Allen Synaptic Physiology r2.1 slice data. We used 16,856 mouse visual-cortex directions from 746 inferred donors and 1,546 human temporal-cortex directions from 51 donors. Three donor-fold allocations compared logistic models with distance, orientation, cell labels, layers and probing counts. A reverse call gave a clear prediction gain in mouse. The human reverse-call interval included zero. An added reverse-call times orientation term gave mouse log-loss gain -0.000031 nats per direction, with a conditional 97.5% donor interval from -0.000343 to 0.000292. Human gain was -0.000315, with interval from -0.003146 to 0.001916. Neither interval excluded zero. The package supplies code, paired evidence, predictions, plans, source hashes and a figure. This result applies to one pooled linear interaction and one penalty. It does not prove equal orientation effects or a causal wiring rule. Slice selection, inferred donor labels, coordinate error, the small human sample and uncertainty conditional on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "cortical geometry",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/prediction_gain.png",
+      "caption": "Known reverse calls improve mouse predictions after geometry control; human uncertainty includes zero. The added orientation interaction gives no clear gain. Bars are conditional 97.5% donor intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1162/NETN_a_00004"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/current-release/aisynphys/pipeline/multipatch/cortical_location.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/current-release/aisynphys/connectivity.py"
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior orientation main-effect null result motivated an interaction test."
+    },
+    {
+      "target": "sci:sha256:414a5fdf7b2bfa816a2edb8d758ac60cdfcffabdec9431c5009649522149c036",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior reverse-call prediction gain motivated a test of orientation dependence."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior geometry audit identifies a source-data limitation."
+    },
+    {
+      "target": "sci:sha256:722b0a9699879de97cf0da76b66b4ca1fa9634bd3e74966d11072336f812e5b6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related orientation-delay test; a distinct outcome."
+    }
+  ]
+}

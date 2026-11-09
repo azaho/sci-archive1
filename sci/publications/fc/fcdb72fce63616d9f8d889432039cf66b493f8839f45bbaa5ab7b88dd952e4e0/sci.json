@@ -1,0 +1,78 @@
+{
+  "title": "A day-and-type shuffle shows no clear one-minute magnitude similarity at Monte Cristo on days 1 to 30",
+  "abstract": "We tested whether one-minute magnitude similarity reported at Ridgecrest also occurs in a fixed USGS Monte Cristo Range sample. We selected preferred magnitude at least 2.5 on days 1 to 30 after the 2020 mainshock. The 636 events give 31 adjacent pairs with positive gaps of at most 60 seconds. Their mean absolute magnitude difference is 0.47097. Shuffling magnitudes within day and preferred type gives an exact mean of 0.46480 and a lower-tail p value of 0.5559 from 19,999 draws. This test gives no clear evidence of magnitude similarity. It does not prove independence or a difference between sequences. Seven fixed checks and a Ridgecrest calculation control are reported. Limited pair counts, unknown detection loss, mixed magnitude types, and within-group exchange assumptions limit inference. The package includes frozen public inputs, hashes, code, all draws, pair evidence, and independent numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Monte Cristo Range",
+    "Ridgecrest",
+    "magnitude similarity",
+    "conditional permutation",
+    "null result",
+    "catalog completeness"
+  ],
+  "display": [
+    {
+      "path": "files/magnitude_tests.png",
+      "caption": "Observed magnitude differences and central 95% conditional shuffle ranges, centered on each exact null mean. The ranges do not measure a physical effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:04d0afc7a54bba616a924b30b7fc93062c9303246f15e7a138ac6767ae95ebff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the prior Ridgecrest magnitude test as the question and calculation control."
+    },
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses source context from the timing test; our score is a magnitude difference."
+    },
+    {
+      "target": "sci:sha256:3eaf80bdd03eb28763c15ee48122f37e07fb2e6c3389648fa9b68a9f17abd6a4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the same fixed public Monte Cristo source; tests magnitude rather than location labels."
+    },
+    {
+      "target": "sci:sha256:15b802229634c625004f1dd8f8beddb0f6c5c8ac4653a0082dc155efe48c83a1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior spatial audit helped select a different question and defines shared source context."
+    },
+    {
+      "target": "doi:10.1785/0220240277"
+    },
+    {
+      "target": "doi:10.1038/s41467-023-37782-5"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

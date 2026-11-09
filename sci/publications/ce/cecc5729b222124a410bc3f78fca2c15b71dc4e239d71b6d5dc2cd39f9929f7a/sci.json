@@ -1,0 +1,72 @@
+{
+  "title": "A pointing model trained on Kepler quarters 2 and 6 predicts part of four later KIC 11084727 dips",
+  "abstract": "We tested whether a pointing model fitted to earlier Kepler data predicts four later raw-flux dips of KIC 11084727. A quadratic model trained outside selected events in quarters 2 and 6 predicts 38 to 45 percent of their measured responses in quarters 10 and 14. Outside the dips, squared prediction error falls by 14.3 and 10.8 percent. Positive partial predictions persist across six baseline and polynomial choices. Training-quarter choice changes the predicted amplitudes, and reverse transfer to quarter 2 fails. Event predictors still require extrapolation. Thus, the data support a relation between motion and flux across separate quarters, but do not establish a stable response law or the cause of the dips. Uncertainty ranges are conditional on the stated noise and model assumptions. No new object or independent telescope confirmation is reported. Code, source hashes, derived data, all fit results, figures, and offline reproduction instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "image motion",
+    "aperture loss",
+    "instrument effects",
+    "prediction across quarters"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/transfer.png",
+      "caption": "Prediction skill across separate quarters and four later dip responses. The main model uses a five-day baseline and quadratic motion terms."
+    },
+    {
+      "path": "files/outputs/events.png",
+      "caption": "Later observed dips and motion predictions from quarters 2 and 6."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:26a0ab6a554b3e388e72776fffe63ec5d0a64cb9ec2428c16316227b6b0f0694",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published event table and adapted preprocessing method. We add prediction across quarters."
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior search selected the raw-flux dips and found their detector-channel pattern."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735"
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202556033"
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of flux and image-motion columns."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Official discussion of seasonal instrument effects."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source archive; hashes are recorded."
+    }
+  ]
+}

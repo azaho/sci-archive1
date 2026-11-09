@@ -1,0 +1,62 @@
+{
+  "title": "A connection rate from other cells gave no clear prediction gain in selected Allen mouse and human slices",
+  "abstract": "We tested whether chemical connection calls among other cells in a recording help predict a target call when neither target cell enters that context. The base model includes cell labels, distance, probing counts, cell depth, the reverse call, and context size. Five folds hold out inferred donors in Allen Synaptic Physiology r2.1. The mouse sample had 15,698 directions from 529 inferred donors. Its log-loss gain was 0.000056 nats per direction, with a conditional 97.5% donor interval of -0.000390 to 0.000514. The human sample had 1,262 directions from 35 inferred donors. Its log-loss gain was -0.002713 nats per direction, with a conditional 97.5% donor interval of -0.005556 to -0.000175. Neither sample gave clear support for adding this rate. The human main model had higher loss after the addition. Sparse context, slice selection, inferred donors, detection errors, and fixed models limit the result. The intervals omit training refit uncertainty. This is not evidence for independent biological wiring. We supply code, source records, predictions, checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit completion",
+    "connection prediction",
+    "disjoint cell pairs",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/gain.png",
+      "caption": "Gain from the connection rate among other cells. Positive values favor the added rate. Bars are conditional 97.5% donor intervals and omit training refit uncertainty. C=1 is the main test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1162/NETN_a_00004"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "reason": "Official test-spike rule inspected at a fixed commit."
+    },
+    {
+      "target": "sci:sha256:23cab2d47f98f242b2c9cc42f4cadad665cc7929d6f030598252a30bee350397",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distance prediction test in the same source release."
+    },
+    {
+      "target": "sci:sha256:414a5fdf7b2bfa816a2edb8d758ac60cdfcffabdec9431c5009649522149c036",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-call prediction test and combined context control. We isolate the rate among pairs that share neither endpoint."
+    }
+  ]
+}

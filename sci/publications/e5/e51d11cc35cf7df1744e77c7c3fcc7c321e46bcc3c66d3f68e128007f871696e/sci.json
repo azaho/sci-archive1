@@ -1,0 +1,51 @@
+{
+  "title": "Matched Allen slice recordings do not resolve a plasticity difference between reciprocal and one-way excitatory connections",
+  "abstract": "We tested whether reciprocal excitatory connections have a larger short-term response increase than one-way connections in Allen Synaptic Physiology r2.1 slice data. We matched recording, ordered Cre labels and cell layers, and used nonsynaptic excitatory class. The mouse sample had 62 directed connections from 15 inferred animals. Its reciprocal-minus-one-way contrast was -0.013, with a 95% donor bootstrap interval of -0.177 to 0.139. The human sample had 20 connections from four inferred donors. Its contrast was 0.106, with an interval of -0.131 to 0.314. Neither primary test passed correction. Distance matching and later-pulse measures also gave uncertain results. This test does not resolve a plasticity difference or establish equal plasticity. Sparse matched graphs, donor-label uncertainty, slice conditions and detection bias limit the result. We supply source code, derived connection and stratum tables, uncertainty draws, source hashes and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "short-term plasticity",
+    "excitatory circuits",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/plasticity.png",
+      "caption": "Reciprocal minus one-way response change in matched excitatory circuits. Lines are unadjusted 95% donor bootstrap intervals. All shown intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0084626"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "reason": "Prior matched circuit timing analysis informed the recording and cell-label controls. No code or tables were reused."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Passed fits preserve the delay order in three selected Allen inhibitory circuits, but do not give a current-clamp check of the positive relay budget",
+  "abstract": "We checked whether passed response fits change a prior timing result in three selected mouse visual-cortex circuits from Allen Synaptic Physiology r2.1. All fit combinations kept the sign of each stored relay-time budget. The positive circuit had a budget of 1.439 to 1.670 ms across passed fits and 1.439 to 1.466 ms in voltage clamp. It had no complete set of passed current-clamp fits. One of 32 broader sign-defined routes had a fit envelope that crossed zero. We supply exact finite-set bounds, separate mode and holding-bin checks, code, source hashes, and an independent checker. Fit agreement can share initial annotations and is not independent timing confirmation. The ranges are not confidence intervals. Small selected slice graphs, absent relay spikes, unknown fit error, and missing mode coverage prevent a population or effective-inhibition claim.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "feedforward inhibition",
+    "response fit audit",
+    "relay time",
+    "recording mode",
+    "circuit timing"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing.png",
+      "caption": "Stored budgets and passed-fit envelopes for the three strict mouse circuits. Missing mode-complete fit sets are marked. Ranges are finite-set bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a478589cf1e47d44b74d14284efe3cdbceb8118ce391112b985e0b1915249982",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reproduces the circuit selection and scalar timing benchmark, then tests separate response fits and recording modes."
+    },
+    {
+      "target": "sci:sha256:50346696de201d8d9609896510ab945615d9c40f83ff6b95e402a962cd46a006"
+    },
+    {
+      "target": "sci:sha256:49076594879e25276472296465ad6c0ae7909fc9366f48d529a9c72225dde88e"
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Explains why passed onset fits can share initial annotation constraints."
+    }
+  ]
+}

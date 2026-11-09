@@ -1,0 +1,59 @@
+{
+  "title": "Holding magnitude type fixed weakens a Ridgecrest size and timing test on days 1 to 30",
+  "abstract": "We tested whether larger events have more nearby events after them than before them in a fixed USGS Ridgecrest catalog. The sample has 931 events with magnitude at least 2.5 on days 1 to 30 after the 2019 M7.1 event. We used 928 central events with full time windows. The score counts events within 10 minutes and 5 km after each event, minus the count before it. The mean score for magnitude at least 3 exceeds that for magnitude 2.5 to less than 3 by 0.197 events. Shuffling size labels within days and 10 km areas gives a null mean of -0.0067 and a one-sided Monte Carlo p value of 0.0001. Also holding magnitude type fixed raises the null mean to 0.1348 and gives p = 0.0566. The observed score is inside that null model's central 95% range. All 629 small events use local magnitude, while 98 of 299 larger events use other magnitude types. This lack of shared size ranges limits a scale-controlled comparison. The type check does not prove that the scales cause the timing pattern. The result is a catalog diagnostic, not a physical productivity estimate. One sequence, missed events, mixed scales, conditional exchange assumptions, and retrospective data limit inference. The package gives fixed data, code, all null draws, a figure, and an independent audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershocks",
+    "magnitude type",
+    "conditional permutation",
+    "time direction",
+    "catalog audit"
+  ],
+  "display": [
+    {
+      "path": "files/direction.png",
+      "caption": "The left panel gives the primary shuffle distribution. The right panel gives observed departures from each exact null mean and central 95% null reference ranges. These are not confidence intervals for physical effects. Holding magnitude type fixed weakens the evidence."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We build on its temporal pair question and reuse the shared public USGS snapshot. We test size labels and time direction with new code."
+    },
+    {
+      "target": "sci:sha256:c37e6ecb140a75c186445fc76031a08f6d038c9f468ca13143459331fffedfd1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We read its space-time pair test and use the same public data and 10 minute, 5 km scale. Our conditional label test has another target."
+    },
+    {
+      "target": "doi:10.1029/2018JB016445",
+      "reason": "Prior work studies productivity and warns about short-term catalog incompleteness."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "reason": "USGS describes magnitude-dependent aftershock rates and missing small events."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "reason": "USGS CSV field definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the fixed source snapshot. The package preserves all source bytes, size, and hash."
+    }
+  ]
+}

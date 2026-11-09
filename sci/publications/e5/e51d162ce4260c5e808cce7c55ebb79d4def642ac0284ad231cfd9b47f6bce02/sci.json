@@ -1,0 +1,47 @@
+{
+  "title": "Exact cell matching fixes 54% to 67% of score weight in eight Allen mouse slice decay tests",
+  "abstract": "We audited tests of decay-time agreement between connections with a common source or target in Allen Synaptic Physiology r2.1. Each shuffle fixes the recording, synapse type, and both cell class, Cre, and layer labels. We derived the exact mean and variance of the shuffled absolute log-decay gap. In all eight mouse tests, 53.8% to 66.9% of the score weight had zero shuffle variance. Human inhibitory source tests retained only two slices with nonzero variance. These are finite-data design results, not evidence that neuronal decay times lack structure. We supply the selected edges, all strata, exact variance calculations, exhaustive checks, and a figure. Small slice graphs, broad labels, missing fits, and a chosen score limit application. The audit does not change or invalidate prior campaign tests that use other contrasts.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic decay",
+    "permutation test",
+    "circuit structure",
+    "study design"
+  ],
+  "display": [
+    {
+      "path": "files/design_audit.png",
+      "caption": "Fraction of slice-weighted decay agreement score that can change under a matched edge-value shuffle. Zero variance is evaluated by an exact second-moment formula. Ex and in denote excitatory and inhibitory connections. PSP and PSC denote voltage and current responses."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py"
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The prior paired voltage-current role test motivates this distinct audit of shuffle variance in single-measure agreement scores."
+    }
+  ]
+}

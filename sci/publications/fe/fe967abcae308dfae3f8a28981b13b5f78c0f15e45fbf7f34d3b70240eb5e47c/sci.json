@@ -1,0 +1,66 @@
+{
+  "title": "Matched Allen slice data do not resolve a distance trend in voltage-to-current rise-time ratio",
+  "abstract": "We tested whether cell-body distance predicts the ratio of voltage and current response rise times in Allen Synaptic Physiology r2.1 slice data. We matched recording and ordered cell labels. The four samples contained 605 detected connections in total. No ratio-slope interval excluded zero after a nominal four-group correction. In 280 mouse visual-cortex inhibitory connections from 92 inferred donors, the slope of log voltage rise time minus log current rise time was -0.190 per 100 micrometres. Its 98.75% donor bootstrap interval was -0.485 to 0.169. A complete-label check gave a negative interval, but other checks did not. Human samples had 15 and five inferred donors. Each of 1810 eligible paired summaries exactly matched its weighted accepted fits. This exploratory result does not establish a zero effect, a membrane-filter mechanism, or a common rule across species and regions. Missing data, selected slice circuits, inferred donors, and uncertain fits limit inference. The package supplies code, source rows, matched evidence, uncertainty draws, and checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic rise time",
+    "paired voltage and current",
+    "cell-body distance",
+    "null result",
+    "matched circuits"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/slopes.png",
+      "caption": "Distance slopes for paired voltage and current rise times, and their direct log-ratio contrast. Component intervals are descriptive 95%; ratio intervals are nominal 98.75% donor bootstrap intervals. All four ratio intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public paired-recording data and context."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py"
+    },
+    {
+      "target": "sci:sha256:df736fd9f18eeb32e7953c11d079e187a02507e19ff7ccb3b46d9d86ee902d57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior design and findings from the same source release; no prior code or data tables reused."
+    },
+    {
+      "target": "sci:sha256:e711991fef480daf5d149dab04749ec1b1425e3d7c14f53663f7e25e3327401f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior design and findings from the same source release; no prior code or data tables reused."
+    },
+    {
+      "target": "sci:sha256:b1ea1058f29f52871d7cf96f0fd0d8a80b3d21a42aac7f888c4c3741b97f72f2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior design and findings from the same source release; no prior code or data tables reused."
+    }
+  ]
+}

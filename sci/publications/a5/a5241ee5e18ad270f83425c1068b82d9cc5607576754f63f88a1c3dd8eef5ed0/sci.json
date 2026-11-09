@@ -1,0 +1,68 @@
+{
+  "title": "Summer dry-pair excess shows no clear change across 344 US divisions between 1931-1960 and 1996-2025",
+  "abstract": "We tested a change in shared dry summers across 344 climate divisions in the contiguous United States. We used fixed NOAA nClimDiv data and June-August totals. Dry means at or below each division's 1901-1930 20th percentile. Mean pair co-dry frequency was 6.224% in 1931-1960 and 4.389% in 1996-2025. The expected frequency from independent local dry rates fell from 5.196% to 3.782%. The excess above that reference fell by 0.421 percentage points. Its basic 95% three-year block interval was -1.010 to +0.116 points. Thus, the excess change is uncertain. The marginal component accounts for 77.1% of the observed pair-frequency decrease as an arithmetic result. All planned excess-change intervals include zero, and longer comparison periods change the point estimate sign. These results do not show a change in land area or hydrological drought. Short periods, fixed estimated thresholds, one retrospective product, and limited dependence assumptions restrict inference. The package contains exact source rows, code, all uncertainty draws, figures, and independent arithmetic checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "summer precipitation",
+    "dry summers",
+    "spatial co-occurrence",
+    "nClimDiv",
+    "marginal frequency",
+    "block bootstrap",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/derived/summary.png",
+      "caption": "The observed summer dry fraction and exact decomposition of mean co-dry pair frequency. Shaded periods define the primary comparison. Division fractions are not land-area fractions."
+    },
+    {
+      "path": "files/derived/sensitivity.png",
+      "caption": "Late-minus-early excess pair frequency with basic 95% three-year block intervals. All intervals include zero. Checks are correlated and conditional on their thresholds."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:70823f9e49a05939288e0d0dabbe07732fa6fadb8fe09aecf0f8a7c50ff6f4e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the same public shared NOAA snapshot. This prior annual correlation study motivates a separate summer fixed-threshold pair decomposition. We wrote new code."
+    },
+    {
+      "target": "doi:10.1029/2025WR041240",
+      "reason": "Prior study of regional drought synchronicity, climate variation, and dependence on time scale and drought measure."
+    },
+    {
+      "target": "doi:10.1016/j.ejrh.2016.09.004",
+      "reason": "Prior study separates drought attributes and spatial extent across the United States. Its metrics and scope differ from this study."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Source methods for the climate division product."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact dated precipitation snapshot. The full source hash, shared path, and selected source rows are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Record format, units, state codes, and source construction. Exact bytes are saved."
+    },
+    {
+      "target": "https://www.drought.gov/data-maps-tools/climate-division-datasets-nclimdiv",
+      "reason": "Official description of nClimDiv."
+    }
+  ]
+}

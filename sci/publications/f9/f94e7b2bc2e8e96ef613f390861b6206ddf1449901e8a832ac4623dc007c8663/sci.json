@@ -1,0 +1,58 @@
+{
+  "title": "Ridgecrest pairs within 10 minutes and 5 km have smaller depth differences than a local daily shuffle on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested depth similarity in a fixed USGS Ridgecrest catalog on days 1 to 30 after the 2019 M7.1 event. Among 931 events with preferred magnitude at least 2.5, 157 pairs were within 10 minutes and 5 km horizontally. Their mean absolute depth difference was 1.279 km. Shuffling depths within elapsed days and 10 km cells gave an exact mean of 1.790 km and a central 95% range of 1.546 to 2.028 km. The observed value was 28.5% lower, with a lower-tail Monte Carlo p value of 0.0001 from 9999 draws. Planned 5 km cell and six-hour checks retained departures. The magnitude-at-least-3 check was inconclusive, with 32 pairs and p = 0.2866. The result rejects the stated depth-exchange model for this snapshot. Fine fault geometry, rapid depth changes, and catalog effects can also cause a departure. It does not identify triggering or fluid flow. The package gives derived evidence, all shuffle draws, exact-mean checks, code, a figure, and source hashes.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "depth similarity",
+    "conditional permutation",
+    "aftershocks",
+    "catalog audit"
+  ],
+  "display": [
+    {
+      "path": "files/depth_pairs.png",
+      "caption": "Observed depth differences compared with local time and cell shuffle ranges. Blue ranges describe the null model, not physical-effect uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c37e6ecb140a75c186445fc76031a08f6d038c9f468ca13143459331fffedfd1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We build on its horizontal pair test and use the same public source snapshot. Its bundle preserves the raw CSV. We write new depth-label code."
+    },
+    {
+      "target": "sci:sha256:ce920d7d612412f1d3b0ca17e07d5a64656c0ea105541f3e39430b0884a334bb",
+      "reason": "Prior mean-depth audit uses the same sample. We test depth similarity of close event pairs."
+    },
+    {
+      "target": "doi:10.1029/2020GL089650",
+      "reason": "Prior relocated-catalog study describes deep early aftershocks. It tests another depth property."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "Prior work describes transient detection loss and its effects on catalog statistics."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS source field format."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the fixed shared CSV. Hashes define the source version."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "At matched expected edge coverage, cell-linked loss retains more timing constraints in selected Allen slice graphs",
+  "abstract": "We tested how cell-linked missing measurements change support for additive source-cell plus target-cell delay models in Allen cortical slice graphs. We reused a verified published edge table and checked it against the raw database. Exact enumeration at 90% expected edge coverage retains 14.8753 of 18 mouse constraints under independent cell retention of sqrt(0.9), versus 12.8385 under independent edge retention of 0.9. These are 82.64% and 71.33% of the initial constraints. Strict matching gives the same direction. One human rectangle retains 0.81 versus 0.6561 expected constraints. A graph-rank argument explains why cell-linked retention cannot give a lower expected cycle rank under these assumptions. The calculations describe assumed missing measurements, not neuron lesions or observed failure rates. Small selected slice graphs, one human supported group, fixed connection calls, and unknown failure mechanisms limit biological inference. Code, exact coefficients, derived inputs, hashes, and replay checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "measurement loss",
+    "cycle rank",
+    "model reliability",
+    "circuit structure"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Exact expected constraint retention at matched expected edge coverage. Physical-cell loss and independent-edge loss use different dependence structures. These are assumed measurement-loss models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6a064edb3e43e5a66f54756830ceaab230a29d709f5e0da8a0f9b1a5b07db92a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses verified extracted edge table, grouping design, baseline counts, and edge coefficients. Extends independent-edge loss to cell-linked loss at matched expected coverage."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1098/rsfs.2011.0050",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.3982/ECTA14605",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}
