@@ -1,0 +1,27 @@
+{
+  "title": "In three fly antennal-lobe connectomes, the local-neuron inhibition pattern of a glomerulus did not explain its projection-neuron odour responses better than the pattern of other glomeruli",
+  "abstract": "We tested if glomerulus-specific inhibitory local-neuron (LN) wiring in the Drosophila antennal lobe explains projection-neuron (PN) odour responses. We used PN calcium responses of Badel et al. (2016) for 30 single odours, DoOR 2.0 receptor responses as the input to each glomerulus, and LN disynaptic wiring from FlyWire left and right antennal lobes (one fly) and the hemibrain right antennal lobe (a second fly). For 21 glomeruli, we fitted the PN response from its own receptor input and measured the partial correlation with an inhibition pool: the input of the other glomeruli with equal weights or with connectome weights. The equal-weight pool had a positive partial correlation (mean +0.16, 95% CI +0.07 to +0.24), so the data did not show net global suppression. The connectome pool was less positive (difference -0.043, -0.055, -0.030; p = 0.047, 0.014, 0.085 against independent per-row permutation), which passed our pre-specified rule in the two FlyWire hemispheres. But post-hoc controls showed that this is not target-specific: the LN row of a random other glomerulus fit equally well (p = 0.59, 0.50, 0.80), and one source weighting shared by all targets gave the same values and was not better than permuted source weights (p = 0.10, 0.08, 0.11). The connectome pool did not improve leave-one-odour-out prediction, and the inhibitory load of a glomerulus did not predict its pool sensitivity (rho +0.08, +0.09). LN pool rows agreed between connectomes (rho 0.91 within FlyWire, 0.42 to 0.43 with hemibrain). Limitations: one PN dataset, unmatched odour concentrations, DoOR as input proxy, single odours only, hemibrain without traced ORNs, several post-hoc tests.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["antennal lobe", "lateral inhibition", "local neurons", "connectome", "FlyWire", "hemibrain", "projection neurons", "divisive normalization", "Drosophila olfaction", "structure-function", "null result", "DoOR"],
+  "display": [
+    {"path": "files/figures/fig1_main.png", "caption": "A: per-glomerulus partial r of the uniform pool vs the LN-wiring pool. B: mean partial r of the wiring pool vs three nulls; the row-swap null shows that real rows are not special. C: LN pool rows agree across connectomes. D: inhibitory load does not predict pool sensitivity."},
+    {"path": "files/figures/fig2_sensitivity.png", "caption": "A: wiring-minus-uniform difference (S2) in all 16 runs with the pre-specified independent-row null. B: one shared source weighting gives the same partial r as the real target rows and is inside its source-permutation null."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:ae6a24bc6736194fbda2ea5b6463c5d40a4382a208e5126599c6819039573a0a", "relations": ["uses"], "reason": "We reuse its lhns, DoOR and FlyWire data recipes and extend wiring-based olfactory tests from the lateral horn to the antennal lobe."},
+    {"target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835", "reason": "Earlier campaign wiring model test in the fly mushroom body."},
+    {"target": "sci:sha256:d47d61cecf35201e4dfa315a4550acd1f6f7038e2cc7d15a7828e387c956b142", "reason": "Earlier campaign test of projection-neuron convergence in fly calyces."},
+    {"target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811", "reason": "Earlier campaign FlyWire structure-function test at neuropil scale."},
+    {"target": "doi:10.1016/j.neuron.2016.05.022", "relations": ["uses"], "reason": "Badel et al. 2016 PN calcium odour responses (37 glomeruli)."},
+    {"target": "doi:10.1016/j.neuron.2010.04.009", "relations": ["reviews"], "reason": "Olsen et al. 2010 global divisive normalisation model, which our uniform pool represents."},
+    {"target": "doi:10.1016/j.neuron.2014.12.040", "relations": ["reviews"], "reason": "Hong and Wilson 2015 report glomerulus differences in inhibition sensitivity; we test a wiring correlate."},
+    {"target": "doi:10.1038/srep21841", "relations": ["uses"], "reason": "DoOR 2.0 receptor responses."},
+    {"target": "doi:10.1016/j.cell.2006.01.050", "relations": ["uses"], "reason": "Hallem and Carlson 2006 receptor responses (sensitivity input)."},
+    {"target": "doi:10.7554/eLife.57443", "relations": ["uses"], "reason": "hemibrain v1.2 connectome."},
+    {"target": "doi:10.7554/eLife.66018", "reason": "hemibrain antennal-lobe and lateral-horn cell types."},
+    {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"], "reason": "FlyWire v783 connectome."},
+    {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"], "reason": "FlyWire neuron annotations and transmitter predictions."},
+    {"target": "https://github.com/jefferislab/lhns/tree/7638e3db36342b9ebb4c10a84914d734d7d23f63", "relations": ["uses"], "reason": "Source of the Badel PN response table."},
+    {"target": "https://github.com/ropensci/DoOR.data/tree/db323a496577c4b4a72b5c2fcd1859e07521ffb5", "relations": ["uses"], "reason": "Source of the DoOR tables."}
+  ]
+}

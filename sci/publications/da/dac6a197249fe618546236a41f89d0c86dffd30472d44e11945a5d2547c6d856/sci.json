@@ -1,0 +1,120 @@
+{
+  "title": "Two speed-order checks retain over 95 percent of formal unbound flags in selected 2024 and 2025 GMN samples",
+  "abstract": "We test two checks of average and initial meteor speed in public Global Meteor Network annual summaries. The main quality samples contain 153,078 unassigned events in 2024 and 208,444 in 2025, with initial speed below 50 km/s. A local solar-escape test selects 351 and 495 formal five-error flags. After a gravity allowance, average speed exceeds initial speed by more than 0.1 km/s for 17 and 15 flags. A second rule uses five times the sum of the quoted speed errors and marks 8 and 7. Each rule thus retains over 95 percent of flags in each main sample. Both rules retain all 54 flags in the strict 2025 sample. A controlled constant-speed example shows that a two percent shared speed-scale error can make a bound object pass the formal escape test while both reversal checks pass it. This example does not diagnose a real event. We confirm no interstellar meteor or new source. Two annual samples from one network do not give independent instrument confirmation. The package includes original code, attributed compact inputs, source hashes, aggregate tables, day resampling, figures, independent numerical checks and offline reproduction steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Global Meteor Network",
+    "interstellar meteors",
+    "speed estimates",
+    "instrument artifacts",
+    "catalog diagnostics",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/diagnostic.png",
+      "caption": "Two speed-order rules mark few formal unbound flags. Dots show the marked fraction among flags. Crosses show the fraction among other accepted events. Error bars show 95 percent intervals from resampling UTC days. Right bars show the number and fraction of flags that pass each rule. The main samples have no shower assignment and initial speed below 50 km/s."
+    },
+    {
+      "path": "files/scale_bias.png",
+      "caption": "An exact constant-speed example has a fixed direction and a shared speed-scale error. The heliocentric speed can cross solar escape while the average-minus-initial speed stays zero. The chosen quoted error is illustrative. The example measures no real calibration error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f70562be1af59d8cab461ba9c36173416b955a468a4326725b936312554aca22",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The fixed-boundary audit motivates a separate speed-order test. We use no derived files from it."
+    },
+    {
+      "target": "sci:sha256:bbad9f7c5d0b227a34571e4afc64e77ff7b56a25fe7a67c5e7cfb2e3a2e003ab",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adopt its quality cuts and inspect the same shared annual snapshots. New code tests different diagnostics."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2503.19042",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior interstellar search, manual review and instrument error discussion. We do not challenge its final null result."
+    },
+    {
+      "target": "doi:10.1093/mnras/stz3160",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Meteor trajectory estimation and velocity definitions."
+    },
+    {
+      "target": "doi:10.1093/mnras/stab2008",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GMN methods and first results."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public high-level source data, attribution and CC BY 4.0 terms."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/media/GMN_orbit_data_columns.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Column definitions and data license."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/traj_summary_data/traj_summary_yearly_2024.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Annual summary; exact frozen version and hash are in provenance.json."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/traj_summary_data/traj_summary_yearly_2025.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Annual summary; exact frozen version and hash are in provenance.json."
+    },
+    {
+      "target": "https://github.com/wmpg/WesternMeteorPyLib/blob/master/wmpl/Trajectory/Trajectory.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Public implementation inspected on 2026-11-09. No external code is run or bundled. Per-event source revision is unknown."
+    },
+    {
+      "target": "https://www.emeteornews.net/2020/11/23/comparison-of-two-meteor-trajectory-solvers-on-the-2020-perseid-shower/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Separate trajectory reductions of shared observations. This is not independent event confirmation."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/coordinates/solarsystem.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Built-in Earth-Sun ephemeris cross-check."
+    }
+  ]
+}
