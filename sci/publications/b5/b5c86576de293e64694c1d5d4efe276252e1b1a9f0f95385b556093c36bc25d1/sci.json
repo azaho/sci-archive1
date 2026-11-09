@@ -1,0 +1,73 @@
+{
+  "title": "Adding a 12-month PDO lag did not remove the 2020-2025 mean mismatch in conditional models",
+  "abstract": "We tested whether a 12-month PDO lag repairs a monthly memory and ENSO model for six-year mean PDO. Fits used matched NOAA ERSSTv5 rows from 1951-2019. The observed 2020-2025 mean was -1.995. The added-lag mean path was -0.318, with a central 95% range of -1.028 to 0.434 for simulated means. None of 3,999 draws was as low as the observation. Residual block, training-start and coefficient-variation checks also missed it. Across 35 overlapping earlier windows, added-lag point mean squared error fell by 9.01% and range misses fell from 10 to 8. These descriptive changes do not establish a reliable gain. This result shows a limit of the tested annual-memory extension. It does not rule out physical ocean memory or establish a new climate regime. Known interval selection, revised indices, overlapping windows, conditional ENSO and incomplete slow dynamics limit inference. Code, exact external input paths and hashes, retrieval instructions, all simulated means, a figure and an independent arithmetic audit are preserved. Raw source tables stay outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "PDO",
+    "ENSO",
+    "annual memory",
+    "six-year mean",
+    "conditional simulation",
+    "model limits"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/result.png",
+      "caption": "Annual memory widens six-year PDO ranges but does not account for the 2020-2025 mean. Earlier windows overlap; ranges are conditional model ranges."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:27f15150d2de9b140a792051f912a3499b4e267541ac77f0dd7567a9e509044c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior six-year mismatch test sets this extension; data and selected recent period overlap."
+    },
+    {
+      "target": "sci:sha256:ba062e27488cefb2d07500106a73b9c61ccdaa1cfb319feaaedda15f211bb2c8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal memory test differs from this recursive six-year test."
+    },
+    {
+      "target": "sci:sha256:f65f40d27bd6eb36a963f199bd816443aae9d5ebe73e6c0c8703acd77564eabd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior observed-PNA test supplies context for a remaining recent mismatch."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-15-0508.1"
+    },
+    {
+      "target": "https://journals.ametsoc.org/view/journals/clim/12/8/1520-0442_1999_012_2419_trosai_2.0.co_2.xml"
+    },
+    {
+      "target": "https://www.noaa.gov/office-education/outreach-communication/faq"
+    },
+    {
+      "target": "https://www.weather.gov/index.php/disclaimer"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External frozen ERSSTv5 input; exact hash and path in provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External frozen ERSSTv5 input; exact hash and path in provenance.json."
+    }
+  ]
+}
