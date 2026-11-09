@@ -1,0 +1,76 @@
+{
+  "title": "A rotation fit reduces the 5.49-day box score in KOI-2700 Kepler Q1 to Q17 from 17.5 to 5.2",
+  "abstract": "We search Kepler release 25 light curves of KOI-2700 for an additional 0.12-day transit at periods of 2 to 20 days. The largest corrected-flux box score is 17.53 at 5.489946 days, half the published stellar rotation period. At this period, a 0.798-day box has a higher score of 37.80. A smooth fit at the published 10.98-day rotation period and its first harmonic reduces the narrow-box score to 5.23. Aperture flux gives the same direction of change. The linear fit retains 94 percent of an ideal narrow box contrast on the observed times. These tests support a broad rotation-related signal rather than a clear additional transit. They do not prove a starspot cause or exclude another planet. A wider mask selects a broad 2.182-day peak. A smooth rotation model on the observed times produces most of its mask-dependent contrast without another transit. We compare 20 shifted controls and 12 ideal transit injections. The products share exposures; there is no independent instrument confirmation. We do not repeat the full period search after the rotation fit. Code, source hashes, aggregate results, figures and retrieval steps are included. External light-curve records remain outside the signed package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "KOI-2700",
+    "KIC 8639908",
+    "Kepler",
+    "transit search",
+    "stellar rotation",
+    "box least squares",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/rotation.png",
+      "caption": "A broad feature at 5.49 days is reduced by a quarter fit at the published rotation period and its first harmonic. Both products share exposures."
+    },
+    {
+      "path": "files/search.png",
+      "caption": "Restricted box-search scores and the selected corrected-flux peak. The dashed line shows the largest within-quarter shifted control score."
+    },
+    {
+      "path": "files/mask_check.png",
+      "caption": "The wider mask increases a broad, double-trough feature at 2.18244 days. A smooth rotation forward model produces most of its narrow-box contrast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6311f5d23eccd02346313b8e2bdcefe3167cc962fb9b9f8f73383ddfcc301883",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the public input location and known-orbit phase constants. We use new code and test additional transit signals."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/784/1/40",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reports the known dust signal, stellar rotation period and earlier search for additional planets."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802",
+      "reason": "Box-fitting transit search method."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/api/astropy.timeseries.BoxLeastSquares.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Implementation documentation."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008639908/kplr008639908_lc_Q011111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact NASA Kepler input archive. Hashes and member releases are recorded in results.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "Source data-use terms and attribution context."
+    }
+  ]
+}
