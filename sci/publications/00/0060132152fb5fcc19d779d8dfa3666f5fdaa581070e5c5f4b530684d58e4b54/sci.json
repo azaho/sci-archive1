@@ -1,0 +1,65 @@
+{
+  "title": "A factor 1.10 error bound certifies 18 of 69 fitted rise-time reversals in selected Allen cortical inputs",
+  "abstract": "We compared current and voltage response rise-time orders for two inputs of the same sign to one target in Allen cortical slice data. The primary sample had 250 comparisons from 389 measured connections. There were 69 fitted order reversals. An exact error-bound test showed that only 18 must remain if each fitted time can vary independently by a factor from 1/1.10 through 1.10. Three must remain at factor 1.25 and none at factor 1.50. With equal target weights, fitted reversal shares were 21.1% for mouse excitation, 32.5% for mouse inhibition, and 12.5% for human excitation. Their nominal 98.75% donor bootstrap intervals were 10.8 to 32.4%, 20.6 to 45.7%, and 1.7 to 25.4%. Human inhibition had only two inferred donors. The error factors are assumptions, not measured uncertainty. Missing fits, separate recording modes, selected slice circuits and inferred donor IDs prevent a biological reversal-rate claim. Code, scalar data, fit checks, uncertainty draws and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic rise time",
+    "convergent inputs",
+    "order uncertainty",
+    "current clamp",
+    "voltage clamp"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/rise_order.png",
+      "caption": "Fitted rise-time reversals and the shares that must remain under independent multiplicative error bounds. Targets have equal weight. Lines are nominal 98.75% donor bootstrap intervals. Human inhibition has two inferred donors and no interval. The assumed error factors are not measured error bars."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its within-target order comparison from strength to rise time and adds an error-bound certificate; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:fe967abcae308dfae3f8a28981b13b5f78c0f15e45fbf7f34d3b70240eb5e47c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its paired-mode timing and fit-endpoint definitions as context; tests orders instead of distance slopes."
+    },
+    {
+      "target": "sci:sha256:7efe4d44ca6d939623de1c9469be23d7f53040fda941ae0b9c00610b383427cf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its current-rise matching study as prior context; tests within-target cross-mode order rather than matching."
+    }
+  ]
+}

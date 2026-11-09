@@ -1,0 +1,109 @@
+{
+ "title": "Daily OISST v2.1 shows a near tripling of 1-day SST memory in 1982-2025, but it comes from less day-to-day variance and a 2022 input step; other products show no common weekly or monthly rise",
+ "abstract": "Question: Lee et al. (2025) used daily OISST and reported that the memory of sea surface temperature (SST) anomalies increased by about 100% from 1982 to 2021. Is this increase a property of the ocean, or of one data product?\n\nApproach: We calculated autocorrelation statistics on one ice-free ocean area (60S-60N) in daily OISST v2.1 (1-degree subsample of 0.25-degree pixels, 1982-2025), weekly OISST v2, ERSST v5 and HadISST 1.1. We used block-bootstrap intervals, a noise-robust ratio of lag correlations, a two-part (fast and slow) split, and like-for-like tests on the same 2-degree boxes and weeks.\n\nFindings: In daily OISST v2.1 the median pixel memory time (tau1 = -1/ln r1) increased from 10.6 days (1982-1991) to 31.9 days (2016-2025). This agrees with Lee et al. But the day-to-day share of variance decreased by half (0.199 to 0.092), and the decay of the slow part did not change (r60/r30 0.652 and 0.655). One AR(1) process with the observed tau1 predicts a +0.29 increase of the 30-day-mean correlation; the observed increase is +0.05. Median tau1 has a step of +31 days (SE 1.9) in 2022, after the documented change to ACSPO satellite input on 1 October 2021 (we selected this test after we saw the data). On the same 7,004 boxes, the lag-1-week correlation increased from 0.726 to 0.810 in daily OISST v2.1 but stayed at 0.757-0.760 in weekly OISST v2. From 1983-2002 to 2003-2022 the monthly lag-1 autocorrelation changed by +0.021 (95% -0.013 to +0.056) in ERSST v5, -0.075 (-0.117 to -0.036) in HadISST and -0.007 (-0.047 to +0.034) in OISST v2.\n\nConclusion and limitations: The reported memory increase is mostly a loss of fast, day-to-day variance in one product, with a large step at an input change. It does not agree with a uniform increase of thermal inertia. The products do not agree on a common weekly or monthly change, so the observations do not yet support a global increase or the predicted decrease. A real decrease of day-to-day variance cannot be fully excluded, the daily data are subsampled, and we did not examine satellite observation counts.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.data-an"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "ocean memory",
+  "persistence",
+  "autocorrelation",
+  "OISST",
+  "ERSST",
+  "HadISST",
+  "marine heatwaves",
+  "data homogeneity",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_daily_oisst.png",
+   "caption": "Daily OISST v2.1 annual memory indices, 1982-2025. Median tau1 increases most between 2021 and 2022, after the October 2021 input change. Correlation at about one month increases much less. The day-to-day variance share decreases in steps."
+  },
+  {
+   "path": "files/figures/fig6_daily_vs_weekly_test.png",
+   "caption": "Left: on the same 2-degree boxes and weeks, the lag-1-week correlation increases in daily OISST v2.1 but not in weekly OISST v2. Middle: observed changes compared with one AR(1) process with the observed daily tau1. Right: fast variance decreases and slow variance increases a little."
+  },
+  {
+   "path": "files/figures/fig3_window_change.png",
+   "caption": "Change of lag-1 autocorrelation r1 and of phi = r2/r1 from 1983-2002 to 2003-2022 in four products and four regions, with 95% two-year block-bootstrap intervals. The products do not agree on a common change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "We reproduce their daily memory increase in OISST v2.1, but show that it is mostly a loss of day-to-day variance with a step at an input change, and that it is absent at weekly and monthly scales in other products."
+  },
+  {
+   "target": "doi:10.1126/sciadv.abm3468",
+   "reason": "Model projection of decreasing ocean memory; our observations do not show a common decrease or increase."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daily OISST v2.1 product description."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daily OISST method."
+  },
+  {
+   "target": "doi:10.1175/1520-0442(2002)015%3C1609:AIISAS%3E2.0.CO;2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Weekly OISST v2 product."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSST v5 product."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST 1.1 product."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Documented OISST v2.1 input change dates (2016, 1 October 2021, 1 April 2023)."
+  },
+  {
+   "target": "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the daily OISST v2.1 subsample."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Per-day files used for days missing from ERDDAP."
+  }
+ ]
+}

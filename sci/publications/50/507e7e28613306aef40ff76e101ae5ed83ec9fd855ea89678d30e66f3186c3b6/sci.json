@@ -1,0 +1,87 @@
+{
+  "title": "No matched US bird survey had both a start at 25 C or more and PM2.5 above 35 ug/m3 in 2006-2024",
+  "abstract": "We tested whether warm survey starts change the link between same-day PM2.5 and recorded bird taxa. We used the fixed 2025 Breeding Bird Survey release and EPA daily data for 2006-2024. Each route used one site within 50 km, with records in both study periods. This rule gave 2,715 matched runs on 241 routes. None had both a start at 25 C or more and PM2.5 above 35 ug/m3. These are coverage benchmarks, not biological thresholds. Four region-period models used 2,109 runs, route-observer effects, state-year effects, weather, date, and survey time. All four warmth-pollution interaction intervals included zero. The early West model had only 12 residual degrees of freedom. Separate future-exposure and control checks did not give a clear interaction. One western distance check was not identified. The results do not show that joint extremes are harmless. Accepted-run selection, sparse monitor coverage, daily exposure timing, and uncertain detection limit inference. The package contains a fixed-site panel, daily site data, source hashes, code, figures, and an offline reproduction check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "PM2.5",
+    "birds",
+    "Breeding Bird Survey",
+    "observation bias",
+    "temperature",
+    "joint exposure",
+    "biodiversity",
+    "data coverage"
+  ],
+  "display": [
+    {
+      "path": "files/joint_coverage.png",
+      "caption": "The 2,109 primary runs have no joint record above the two coverage benchmarks. The wider 2,715-run matched sample also has none. The benchmarks are a start at 25 C or more and same-day PM2.5 above 35 ug/m3. They are not biological thresholds."
+    },
+    {
+      "path": "files/results.png",
+      "caption": "Fixed-effect estimates. Left: PM2.5 slope at a 15 C start, with individual 95% intervals. Right: change in that slope per 10 C warmer start, with four-test intervals. Units are 100 times log-taxon change per 10 ug/m3. Wide western intervals show poor precision."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Interaction checks use individual 95% intervals. Future exposure is measured seven days after the survey. Same-day and future models use common rows before the repeated-group rule. One early West 25 km check is not identified."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The fixed 2025 BBS release supplies survey metadata, recorded taxa, and route coordinates."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Annual parameter 88101 daily files for 2006-2024 supply PM2.5. Exact URLs and hashes are in provenance.json."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This source defines daily summaries, sample durations, standards, and event records."
+    },
+    {
+      "target": "doi:10.1093/ornithapp/duab028",
+      "reason": "This study of wildfire smoke and bird detection motivates an observation-process test. Our BBS design is different."
+    },
+    {
+      "target": "https://pubs.usgs.gov/publication/5210258",
+      "reason": "Prior work describes weather links to bird census results."
+    },
+    {
+      "target": "doi:10.1198/jbes.2010.07136",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The variance calculation uses site/year inclusion-exclusion scores. Our maximum-variance reporting rule is an additional conservative choice."
+    },
+    {
+      "target": "sci:sha256:1342177d222f40a68ea1f943ab8cc1abcb1926202e8e0f065b8569d9c51bda7f",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We reuse its verified source dictionary and review its survey-duration result. We do not reuse its panel or code."
+    },
+    {
+      "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its seasonal ozone analysis uses related BBS observations. We test daily particulate pollution and joint exposure coverage."
+    }
+  ]
+}

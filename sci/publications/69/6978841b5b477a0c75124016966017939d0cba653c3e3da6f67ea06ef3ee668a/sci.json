@@ -1,0 +1,83 @@
+{
+  "title": "Current and prior summer rain slopes gave no repeated nonzero sum for nine British butterflies in 1981-2024",
+  "abstract": "We tested whether summer rain had a link to annual butterfly index change beyond a stable current-weather count offset. A stable additive rain offset gives equal and opposite current and prior rain slopes. Their sum is zero. We fit this contrast to a fixed mean log10 index for nine species in England, Scotland and Wales in 1981-2024. Models controlled current and prior summer temperature, time and change in site count. All three full-period adjusted intervals included zero. In six separate country and period models, late Scotland and Wales sums were +0.138 and +0.102 log10 units per 100 mm in both summers. Their HAC intervals were above zero after six-test correction. Earlier results did not repeat. A post-fit block wild bootstrap gave corrected p-values of 0.342-0.601 and 0.079-0.119. Wider seasonal windows also gave intervals that included zero. Thus a repeated nonzero sum was not established. The contrast cannot identify biology or detection. Shared country weather, short samples, high leverage, selected species, coarse weather and missing source-index uncertainty limit inference. We do not test pollution, daily extremes or a causal climate-change effect. The package includes the method, frozen inputs, source hashes, code, all estimates, figures and offline checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "butterflies",
+    "rainfall",
+    "observation bias",
+    "abundance index",
+    "lagged weather",
+    "regional comparison",
+    "uncertainty",
+    "UKBMS"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/rain_contrast.png",
+      "caption": "Current plus prior summer rain slopes. Lines are nominal family 95% HAC intervals across three full-period or six split-period tests. The two late positive intervals did not persist under a block bootstrap after correction. Countries share weather. Contains UKBMS and Met Office data; see files/ATTRIBUTION.txt."
+    },
+    {
+      "path": "files/outputs/series.png",
+      "caption": "Fixed nine-species mean log10 index, summer rain and temperature in England, Scotland and Wales, 1980-2024. The boundary separates outcome periods. Source indices are relative, not absolute counts. Contains UKBMS and Met Office data; see files/ATTRIBUTION.txt."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e2f2fce4a97d3f2fb9cb7b3a4d09597042952c93f8b42cd67bd145eeb704d3de",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its level-versus-change audit motivates the zero-sum offset restriction. We rebuild from the same public snapshots and use the same nine species; these are not independent data."
+    },
+    {
+      "target": "sci:sha256:4a72551f55388d87b90d2f9e5fa1e35f7f47bd534d3ebbf8140a232ae4afd95a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model-shape and uncertainty audit in the same species and source snapshots. We test a different contrast."
+    },
+    {
+      "target": "sci:sha256:ff4e66e4fd057450a4ab2f63761a779c802509d13e9c3e3791ebb13ac390cfdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its shared source-rounding audit motivates our analogous bound for a different contrast. Its Ringlet-versus-Meadow Brown outcome differs."
+    },
+    {
+      "target": "doi:10.5285/a70d8b0b-0ef5-484e-8195-42bcfd818229",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1111/biom.12506",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1111/j.1365-2656.2001.00480.x",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/research/climate/maps-and-data/data/haduk-grid/methods",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

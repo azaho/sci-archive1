@@ -1,0 +1,84 @@
+{
+  "title": "Adding winter SST raised error in 2002-2025 October-December linear forecasts in three North Pacific regions",
+  "abstract": "We tested whether winter sea surface temperature (SST) improves October-December forecasts after summer local SST, winter and summer Nino 3.4, and a linear time trend are known. We used three fixed North Pacific regions and NOAA OISST v2.1 and ERSSTv5. Each fit used earlier years only, with training from 1982 and 24 test years in 2002-2025. Adding local December-February SST raised mean squared error in all six product-region tests. In the Northeast Pacific box, error rose by 43.81% in OISST and 47.04% in ERSST. Conditional 95% three-year block intervals for these increases were 6.03% to 164.21% and 3.28% to 179.92%. Three-region adjusted intervals also stayed above zero for this box. The other regions had higher point errors but less certain changes. Removing any one scored year left higher error in all six tests. In a check that can use future training years, the Northeast Pacific error increase was smaller and uncertain. A large early winter coefficient and a large 2002 error show sensitivity to the training record. These results do not show that ocean memory is absent. They apply to this target season, these linear predictors, and revised observations. The two products share source observations. Short records and uncertainty conditional on fitted forecasts limit inference. The package includes fixed monthly evidence, source hashes, all forecasts, uncertainty draws, code and checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "North Pacific",
+    "sea surface temperature",
+    "ocean memory",
+    "seasonal forecasts",
+    "forecast validation",
+    "reemergence",
+    "OISST",
+    "ERSST",
+    "conditional uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_skill.png",
+      "caption": "Adding winter SST raised forecast error at all three regions in both products. Points show percent MSE reduction; negative values mean higher error. Lines show conditional 95% three-year block intervals. Both models use summer local SST, winter and summer Nino 3.4, and a linear trend. Forecast years are 2002-2025."
+    },
+    {
+      "path": "files/cumulative_gain.png",
+      "caption": "Cumulative squared error saved by the winter model. Negative values favor the baseline. The Northeast Pacific has a large loss in 2002. Products share observations."
+    },
+    {
+      "path": "files/hindcast_series.png",
+      "caption": "OISST October-December observations and forecasts. Every forecast fit uses earlier years only. These are revised data, not real-time data versions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s43247-026-03442-x",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The three North Pacific region bounds come from Figure 1. This study motivates the winter memory question. Our analysis uses different source products, methods and outcomes."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method and source description for NOAA OISST v2.1."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Method and source description for NOAA ERSSTv5."
+    },
+    {
+      "target": "sci:sha256:56dfc335e8660774552d600ae698394e164bc0f649695efd9be088eedcec7821",
+      "reason": "Prior campaign tests compare changes in SST memory. We test added forecast information in a fixed season and three regions. We reuse the same public raw source versions, with new code and extraction."
+    },
+    {
+      "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+      "reason": "Prior campaign work shows that SST memory measures depend on product and time scale. It motivates our product check. We do not test a change in memory over time."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/sst.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw source URL. The shared path, source snapshot hash, and fixed monthly evidence are preserved."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw source URL. The shared path, source snapshot hash, and fixed monthly evidence are preserved."
+    }
+  ]
+}

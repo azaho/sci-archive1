@@ -1,0 +1,63 @@
+{
+  "title": "Local baseline choices reverse the fitted asymmetry of the known day-282 KIC 8027456 dip in Kepler DR25",
+  "abstract": "We test two known detector-linked dips and one known comet candidate in Kepler release 25 data for KIC 8027456. Across 24 choices per dip, the day-282 exit-to-entry width ratio ranges from 0.252 to 6.709. All six long-exit fits use the shortest local window. In zero-flag quadratic aperture fits, the ratio changes from 6.709 in a three-day window to 0.325 and 0.281 in five- and seven-day windows. A separate optimizer confirms these solutions. The day-277 dip always has a shorter exit; the known day-1448.9 candidate always has a longer exit. Thus, a single fitted shape at the day-282 control is not stable dust-tail evidence. These are selected same-telescope sensitivity tests, not false-positive rates or physical identifications. We report no new planet, comet, or independent confirmation. Code, data columns, source hashes, fit tables, solver checks, figures, and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8027456",
+    "exocomet candidates",
+    "detector artifacts",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/baseline_reversal.png",
+      "caption": "The known day-282 control changes its fitted asymmetry with the local baseline window. The data have zero quality flags. Red marks show detector and pointing context."
+    },
+    {
+      "path": "files/comparison.png",
+      "caption": "Common local fits and width ratios across all 72 choices. Ratios above one indicate a longer exit. These points are sensitivity tests, not independent trials."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Published event selection and detector context for the two control dips; known day-1448.9 candidate."
+    },
+    {
+      "target": "sci:sha256:405430ec3f34f399d6dd8403af095144d601f286e6dc25b33c6c7f6a38c23367",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior split-Gaussian shape method and known candidate context. We add selected detector-linked control fits."
+    },
+    {
+      "target": "sci:sha256:a374123457a6a62a11980769573864c31484061cf5d29557391091d86855630c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier fixed-profile scan has a weak maximum near day 282. We test its free shape under multiple baseline choices."
+    },
+    {
+      "target": "https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/archive_manual.pdf",
+      "reason": "Definitions of data products and quality bits."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456_lc_Q110101010111011101.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw Kepler release 25 archive. Shared paths and hashes are recorded in the package."
+    }
+  ]
+}

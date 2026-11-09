@@ -1,0 +1,57 @@
+{
+  "title": "Traced contact locations increased modeled focal input loss relative to shuffled labels in one leech neuron",
+  "abstract": "We tested whether repeated contacts from the same input protect a leech motor neuron from local contact loss. We used a fixed public tracing of DE-3R. The model deletes all contact sites within a stated path radius of one point sampled uniformly along the target cable. Other cable remains intact. We derived exact cable measures and an exact mean for a reference that shuffles source labels while it keeps contact counts and positions fixed. At a radius of 10 micrometres, the mean chance of complete input loss was 0.09000% across 77 input trees with at least two sites. The exact shuffled mean was 0.000760%, a ratio of 118.4. None of 1,999 label draws reached the observed value (upper-tail p = 0.0005). Two subset checks also gave larger loss than their shuffled means. These results show that repeated contact count alone does not describe protection against spatially linked loss. They do not show that loss occurs in the animal. One target, possible input fragments, uncertain tracing, an unrestricted label reference, and a model that preserves target conduction limit the result. We supply a derivation, source hashes, code, tables, label draws, a figure, and independent numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "synapse loss",
+    "spatial redundancy",
+    "leech",
+    "tree geometry"
+  ],
+  "display": [
+    {
+      "path": "files/focal_loss.png",
+      "caption": "Exact complete-input loss under a focal contact-deletion model. Each input and each unit of target cable have equal weight. Dashed curves give exact means for count-preserving shuffled labels. The ratio is large while absolute loss remains small."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source tracing and same-animal anatomy-activity context."
+    },
+    {
+      "target": "doi:10.1073/pnas.1803274115",
+      "reason": "Prior model of computational uses of repeated synaptic contacts."
+    },
+    {
+      "target": "doi:10.1038/s41593-018-0084-6",
+      "reason": "Prior evidence of contacts from one axon that form spatial clusters."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:5f5f540638782692f722ade0df7a1151deb3cb44055c1d586abd9863602c4c31",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior snapshot audit and geometric scope; we retain its rule for duplicate target-node annotations."
+    },
+    {
+      "target": "sci:sha256:751b5a755fb130cc5a496852ac9c45470e996bff31180167d2c802d71f19065f",
+      "reason": "Prior test of repeated source labels and local activity phase; our endpoint is modeled complete input loss."
+    }
+  ]
+}

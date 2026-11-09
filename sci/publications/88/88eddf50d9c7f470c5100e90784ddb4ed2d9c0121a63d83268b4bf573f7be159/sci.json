@@ -1,0 +1,75 @@
+{
+  "title": "A past flow change cut median log-change error by 0.52% in 415 US catchments during dry, warm tests in 2000-2014",
+  "abstract": "We tested whether one past flow change improves a three-day flow-change estimate beyond current flow, season, and recent weather. We used CAMELS US version 1.2 daily data. Fits used 1980-1999. Tests used 2000-2014. The target was ln(Q(t+3)/Q(t)). The added term was ln(Q(t-1)/Q(t-4)), which has no flow observation in common with the target. Each of the eight days from t-4 to t+3 had precipitation at most 1 mm and minimum air temperature above 5 C. Only positive flow with the A quality flag was used. A total of 415 catchments passed the sample rules and gave 198,835 test origins. The median catchment reduction in mean squared error was 0.525%. Its conditional 95% three-year block interval was 0.244% to 0.701%. The mean reduction was 1.794%, and 250 catchments improved. A history term three days further back had a median reduction of 0.004%, with an interval of -0.050% to 0.050%. The gain is small and applies to this model and sample. Future observed weather defines the test sample, so this is not an operational forecast. All stored snow-water values were zero and could not verify snow absence. A low-snow-fraction check gave a similar small gain. The result does not identify a physical storage process. The package gives fixed feature data, source member hashes, all primary predictions, code, uncertainty draws, figures, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "streamflow",
+    "CAMELS",
+    "recession",
+    "conditional prediction",
+    "catchment memory",
+    "chronological test",
+    "flow measurement"
+  ],
+  "display": [
+    {
+      "path": "files/figures/network_and_skill.png",
+      "caption": "The history term gave a small median gain across 415 retained catchments. The interval resamples common three-year blocks of test years with fitted models fixed. Map colours show point estimates, with saturation beyond plus or minus 15%."
+    },
+    {
+      "path": "files/figures/sensitivity.png",
+      "caption": "Median error reduction in the primary test and checks. The bars give conditional 95% year-block intervals. Each check can change the catchment and origin sample. Short-period intervals reject many draws with empty catchments and need extra care."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5065/D6MW2F4D",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS v1.2 basin weather and observed daily flow, from the fixed Zenodo record."
+    },
+    {
+      "target": "https://zenodo.org/records/15529996",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source record for raw archive members and climate attributes."
+    },
+    {
+      "target": "doi:10.5194/hess-19-209-2015",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Data design and forcing definitions."
+    },
+    {
+      "target": "doi:10.5194/hess-21-5293-2017",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catchment attributes and the low-snow-fraction check."
+    },
+    {
+      "target": "doi:10.1029/2008WR006912",
+      "reason": "Prior work on flow, storage and catchment recession."
+    },
+    {
+      "target": "doi:10.1029/2022WR032690",
+      "reason": "Prior work that used flow history to model recession dynamics."
+    },
+    {
+      "target": "doi:10.1029/2025WR039966",
+      "reason": "Prior work on flow-history models across US climates; this simple test is not a first discovery of flow memory."
+    },
+    {
+      "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+      "reason": "Campaign context at the annual drought-recovery scale. The present daily test uses a different target and design."
+    }
+  ]
+}

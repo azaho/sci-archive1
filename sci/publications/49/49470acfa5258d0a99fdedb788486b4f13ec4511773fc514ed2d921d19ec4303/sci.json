@@ -1,0 +1,63 @@
+{
+  "title": "Cell controls leave membrane-time similarity uncertain in selected Allen excitatory connections",
+  "abstract": "We tested whether excitatory neurons with similar membrane time constants connect more often in Allen multipatch data. We used 2,768 tested mouse directions with 131 detected connections and 1,213 human directions with 113 detected connections. We fit a linear probability model with separate effects for every source and target cell, cell distance, and test-spike count. Per unit increase in absolute log2 time ratio, the connection rate slope was 3.71 percentage points in mouse and 7.03 in human. Slice-cluster 95% intervals were -3.41 to 10.84 and -4.66 to 18.73 percentage points. Both include zero and effects in either direction. Only 173 mouse slices and 47 human slices retained mismatch information after controls. Grouping slices by inferred donor also left uncertain slopes. These results do not resolve preferential wiring between cells with similar membrane time constants. Sparse sampled circuits, missing cell measurements, detection errors, and model assumptions limit inference. Code, public-source records, source hashes, numerical checks, and a figure are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "membrane time constant",
+    "excitatory connectivity",
+    "cell fixed effects",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Unadjusted rates by time-constant mismatch quartile and controlled connection-rate slopes. Error bars are approximate slice-cluster 95% intervals. Both cell-controlled intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/nature09880"
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0d57543555401e548f9f554ef5297044c4d5807ede984e81ee672f922f7f9894",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "A related published test motivates our stricter endpoint-control analysis and inferred-donor sensitivity."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/current-release/aisynphys/connectivity.py"
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior matching prediction test; this report adds endpoint fixed effects in excitatory-only samples and audits remaining information."
+    }
+  ]
+}

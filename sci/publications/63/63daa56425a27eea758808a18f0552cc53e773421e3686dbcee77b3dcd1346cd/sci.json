@@ -1,0 +1,83 @@
+{
+ "title": "In 61 Allen Visual Behavior Neuropixels sessions, task engagement decreased the axonal-wiring slope of fast inter-regional co-variation by 24%, as part of a proportional decrease of coupling",
+ "abstract": "Question: does task engagement change how well the mesoscale axonal connectome predicts shared trial-to-trial variation between mouse brain regions? Data: Allen Visual Behavior Neuropixels, 61 sessions (46 mice, 30 regions, 6,951 region pairs). Each session has an active change-detection block and a later passive replay of the same image sequence, recorded from the same neurons. Method: for each region we summed good-unit spikes 0-250 ms after each matched image flash (no changes, no licks), removed image means and slow drifts (about 90 s), and correlated regions (Fisher z) in each block. Wiring was the log10 Knox et al. (2019) normalized connection density. Models controlled for a distance spline, region terms and session terms; intervals came from 2,000 mouse bootstraps. The plan was written before passive coupling was computed. Results: wiring predicted coupling in both blocks (0.038 z per log10 density in the active block, 95% CI 0.031-0.046; 0.050 in the passive block, 0.041-0.060; positive in all 59 testable sessions). The active slope was smaller by 0.0118 (0.0072-0.0174), 24% of the passive value; 40 of 59 sessions agreed (Wilcoxon p = 0.004). The difference stayed after removal of running speed and pupil, with a firing-rate covariate, without drift removal and without region terms. The slope did not drift within either block; it changed at the block change. Strongly wired pairs (visual areas, LGd and LP with visual cortex, CA3 with CA1 and DG) lost the most coupling. Exploratory: active coupling was 0.64 times passive coupling of the same pair with no negative wiring term (+0.006, 0.001-0.010), so the data agree with a proportional decrease of fast coupling, not a selective loss of anatomical structure. The change did not follow reward rate or running change across sessions. Limitations: VBN block order is fixed, so engagement is confounded with elapsed time, satiety and the stimulus blocks between; 61 of 105 eligible sessions were used because of bandwidth (random order); the wiring is an unsigned tracer model from other mice.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "task engagement",
+  "mesoscale connectome",
+  "Knox 2019",
+  "Allen Visual Behavior Neuropixels",
+  "noise correlation",
+  "shared variability",
+  "mouse",
+  "thalamocortical",
+  "brain state"
+ ],
+ "display": [
+  {
+   "path": "files/results/fig1_wiring_engagement.png",
+   "caption": "A: coupling vs wiring after distance, region and session terms (wiring-residual deciles) in the active and passive blocks. B: active minus passive coupling vs wiring. C: wiring coefficients with 95% mouse-bootstrap intervals for the primary model and the checks."
+  },
+  {
+   "path": "files/results/fig3_scaling_sessions.png",
+   "caption": "A: active vs passive coupling of each region-pair observation, coloured by wiring; slope and wiring term from the model with nuisance terms partialled out. B: per-session wiring slopes; 40 of 59 sessions are below the equality line."
+  },
+  {
+   "path": "files/results/fig2_time_and_class.png",
+   "caption": "A: mean coupling in each half of each block (mouse means, 95% CI). B: wiring coefficient by pair class; the decrease is in cortex-thalamus and other pairs."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5e701d95f15f204001b23b508cc1f1ad83b8ea499c086d81b49ec0760a73d547",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its cached active-block VBN flash windows; our active-block positive control repeats its wiring-coupling link."
+  },
+  {
+   "target": "sci:sha256:2010e06ac60e4be41e17fdc0072444e04d1d0bc165a76331ad8bba787c35a2e5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its cached VBN behaviour tables (image tables, running, pupil, licks, rewards)."
+  },
+  {
+   "target": "sci:sha256:fe558137bca323e87140b48f5642d0d074d6f07715ceab4ced5f5f2d7c25abfd",
+   "reason": "Related result: tracer wiring predicts spontaneous inter-regional spike coupling."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "reason": "Related state dependence of connectome-activity coupling in mouse fMRI (anaesthesia)."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Related state comparison in flies: wiring-activity coupling agreed between walking and rest."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 regionalized mouse connectome."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Oh et al. 2014 Allen Mouse Brain Connectivity Atlas."
+  },
+  {
+   "target": "https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Brain Observatory Visual Behavior Neuropixels data set (Allen Institute)."
+  }
+ ]
+}

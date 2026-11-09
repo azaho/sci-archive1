@@ -1,0 +1,58 @@
+{
+  "title": "Season models do not reduce held-year error for three KIC 3230227 modes with 80 orbital harmonics",
+  "abstract": "We test a detector-season explanation for amplitude changes in three known non-orbital oscillations of KIC 3230227. We use Kepler release 25 long-cadence flux from quarters 1 to 16. With 80 orbital harmonics in the binary-light fit, a four-season model gives more held-year mean squared prediction error than a constant for all three modes in both aperture and corrected flux. The error ratios are 1.07 to 1.26. A small gain for the first mode with 40 harmonics disappears with 80. Increasing harmonic order greatly reduces the amplitude scatter and residual flux. Thus, the lower-order fits do not give robust evidence for seasonal amplitude changes. The archive crowding correction does not remove the remaining scatter. A four-quarter check shows that 80 harmonics do not fully converge the amplitudes. The test uses one star and one telescope. It does not establish exact amplitude stability, a new mode, a new object, or a physical cause. Code, selected flux samples, all fits, source hashes, figures and retrieval instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 3230227",
+    "tidal oscillations",
+    "instrument effects",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/season_comparison.png",
+      "caption": "Held-year prediction error of four season means divided by that of one constant. Values above one favor the constant. The same exposures supply both flux products."
+    },
+    {
+      "path": "files/evidence/harmonics.png",
+      "caption": "Quarter amplitudes change when the number of orbital harmonics changes. This shows a signal-model limit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-4357/834/1/59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the three tested frequencies and orbital period."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab911f",
+      "reason": "Prior nonlinear-coupling interpretation and amplitude-stability study."
+    },
+    {
+      "target": "sci:sha256:75f2c651692f0147620aba4d8deb65f9fa53b596e01701683eb17358a03c7011",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its held-year season-model comparison to another star and three known modes. We wrote new code."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/Data_Characteristics.pdf",
+      "reason": "Quarterly changes in detector and aperture can change the measured flux."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003230227/kplr003230227_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler light-curve source."
+    }
+  ]
+}

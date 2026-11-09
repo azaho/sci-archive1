@@ -1,0 +1,69 @@
+{
+  "title": "Three of 29 selected Allen mouse feedforward motifs have two-edge onset sums shorter than direct onset",
+  "abstract": "We tested timing sums in measured feedforward motifs in Allen Synaptic Physiology r2.1. Each motif has direct excitation and a two-edge route with excitation followed by inhibition. Mouse visual cortex supplied 29 motifs in 22 slices. Three had a two-edge onset sum shorter than direct onset. The largest negative margin was -1.471 ms. In an additive timing model, this motif needs more than 1.471 ms of relay spike time for inhibition to follow direct excitation. With an assumed uniform edge error bound of 0.1 ms, 23 of 29 mouse motifs retain a positive margin for all allowed errors. Three human temporal-cortex motifs had positive margins. Independent nonsynaptic class labels retained only three mouse motifs and no human motifs. These are finite-sample bounds on stored onset estimates, not measured relay delays, in vivo timing, or a species comparison. The sample was chosen after data inspection. Code, extracted records, exact bounds, checks, and source provenance are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "feedforward inhibition",
+    "Allen Institute",
+    "synaptic latency",
+    "circuit timing",
+    "bounded error"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Stored timing margins and conditional timing guarantees in selected motifs. The assumed error bound is a sensitivity parameter, not a measured fit error. Motifs can share edges. Mouse and human regions differ."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurements and local cortical connection graphs."
+    },
+    {
+      "target": "doi:10.1126/science.1060342",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on the timing window set by feedforward inhibition."
+    },
+    {
+      "target": "sci:sha256:62068c28d9ac1fa4ca08045bcc1cf0ab99b8c529b18bacbbc5f7c11de6f18b6d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bounded-error analysis of additive cell-delay models; this report instead compares direct and relayed routes."
+    },
+    {
+      "target": "sci:sha256:e107b9c153ed1b670bed14819c8fd81a858f8dd47d6397afac334a3de011e05a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior matched E-I path study uses decay matching, not feedforward onset sums."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines onset latency from the maximum source-spike slope."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

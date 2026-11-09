@@ -1,0 +1,39 @@
+{
+  "title": "Step changes in OISST v2.1 product noise cause most of the 1982-2025 rise in daily SST-anomaly persistence; 126 moored buoys show no clear rise",
+  "abstract": "Question: Lee et al. (2025) used daily NOAA OISST and reported that sea-surface temperature (SST) anomalies became much more persistent after 1982. Is this an ocean change or a change in product noise? Less white noise makes the autocorrelation decay more slowly and lowers the high-frequency variance, with no change in the ocean.\n\nApproach: We computed yearly autocorrelation e-folding times of detrended daily OISST v2.1 anomalies for 1982-2025 (29,129 cells, 60S-60N, ice-free). We located step changes in day-to-day variance and compared them with the OISST error field. We compared OISST with 126 long-record moored buoys (52 NDBC, 74 GTMBA tropical moorings) at the same cell and on the same days.\n\nResults: The naive 1/e crossing of the global mean autocorrelation increased from 9.5 to 16.7 days (1982-1991 to 2016-2025, +75%; +2.05 days per decade, 95% interval 1.54 to 2.60). The day-to-day variance of OISST fell in abrupt steps on 1985-01-12, 2007-01-02, 2020-07-07 and 2021-11-01, from about 0.045 to 0.010 K^2. The OISST error variance fell in the same steps. At the buoys, the OISST e-folding time increased by +2.54 days per decade (1.80 to 3.30), but the buoys' own value increased by only +0.61 (-0.12 to 1.34). OISST changed from noisier than the buoys (day-to-day variance ratio 1.57 in 1985-2006) to smoother than the buoys (0.38 in 2022-2025). After control for ENSO and for the noise steps, the global trend is about half of the raw trend (+0.93 to +1.03 days per decade). A noise-insensitive 5-20 day tail fit gives a smaller rise (+15%, +0.75 days per decade, 0.29 to 1.23); the buoys neither confirm nor exclude it. The duration trend of detrended heatwave-like events (+1.17 days per decade) becomes +0.32 +/- 0.45 after the noise control.\n\nConclusion: Step changes in OISST input and noise cause most of the reported doubling of daily SST persistence. A smaller rise of about 1 day per decade remains in OISST and is not confirmed in situ. Limitations: buoy data are OISST inputs; the buoys do not sample the Southern Ocean or subtropical gyres; we did not reproduce the exact method of Lee et al.; the last noise step occurs at the same time as the strong 2023-2024 warm events.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.data-an"}
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "OISST",
+    "persistence",
+    "autocorrelation",
+    "thermal inertia",
+    "marine heatwaves",
+    "measurement noise",
+    "data inhomogeneity",
+    "TAO/TRITON",
+    "NDBC buoys",
+    "change points",
+    "replication"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_global_persistence_noise.png", "caption": "Global OISST v2.1 SST-anomaly persistence (a), noise proxies with detected change points (b), and the lag-0 intercept of the 5-20 day exponential fit (c), 1982-2025, 60S-60N."},
+    {"path": "files/figures/fig2_buoy_test.png", "caption": "In situ test at 126 moored buoys: naive e-folding time of buoys and of OISST on the same days (a), paired OISST/buoy day-to-day variance ratio (b), and per-buoy trends (c)."},
+    {"path": "files/figures/fig3_trend_maps.png", "caption": "Per-cell trends 1985-2025 of the naive (a) and 5-20 day tail-fit (b) e-folding times, days per decade."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41558-025-02245-w", "relations": ["challenges", "reviews"], "reason": "We test the reported rise in daily SST-anomaly persistence and find that step changes in OISST noise cause most of it."},
+    {"target": "doi:10.1175/JCLI-D-20-0166.1", "relations": ["uses"], "reason": "OISST v2.1 product description and input changes."},
+    {"target": "doi:10.1175/2007JCLI1824.1", "relations": ["uses"], "reason": "Daily OISST method."},
+    {"target": "doi:10.1016/j.pocean.2015.12.014", "relations": ["uses"], "reason": "Marine heatwave event rules (5-day minimum, 2-day gap joining)."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/", "relations": ["uses"], "reason": "OISST v2.1 daily mean and error files."},
+    {"target": "https://www.ndbc.noaa.gov/data/historical/stdmet/", "relations": ["uses"], "reason": "NDBC hourly water temperature."},
+    {"target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html", "relations": ["uses"], "reason": "GTMBA daily SST."},
+    {"target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii", "relations": ["uses"], "reason": "Nino 3.4 anomaly for the ENSO covariate."},
+    {"target": "sci:sha256:aeb65c193b73dabff9a49e243b9f3a538306fc932b5048be5f73473c4df7f9c3", "reason": "Related campaign study that uses NDBC buoy water temperature."},
+    {"target": "sci:sha256:97245754dd61a71b7255e45939c8393b89f774f7bc3c9a4097106e1b2b71fdac", "reason": "Related campaign study of persistence (memory) in an ocean product."}
+  ]
+}

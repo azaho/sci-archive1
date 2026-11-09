@@ -1,0 +1,25 @@
+{
+  "title": "Wildfire smoke on the survey day did not decrease bird counts or species richness by more than 2% on 4,362 North American Breeding Bird Survey routes in 2011-2024",
+  "abstract": "Question: Does wildfire smoke on the survey day change the number of birds and species that Breeding Bird Survey (BBS) observers record? eBird studies found smoke-related detection changes, which can bias population trends. Approach: We joined 36,362 accepted BBS surveys on 4,362 routes (2011-2024) to NOAA Hazard Mapping System (HMS) satellite smoke polygons and to EPA monitor PM2.5 on the survey date. Linear models used route-by-observer and state-by-year fixed effects, weather, time and date controls, and two-way clustered errors. Smoke 7 days before and after the survey gave placebo estimates. We repeated the test in four region-period subsets (West or East of 100 W; 2011-2017 or 2018-2024) and fitted Poisson models for 247 species. Results: The exposure was valid: median PM2.5 increased from 6.5 to 16.0 ug/m3 and observer 'fog or smoke' sky codes from 3.4% to 13.9% between no-smoke and heavy-smoke surveys. Medium or heavy smoke changed route totals by +0.94% (95% CI -0.10 to +1.98) and richness by -0.33% (-0.80 to +0.13); heavy smoke alone gave -0.08% (-2.04 to +1.88) and -0.70% (-1.64 to +0.24). No subset gave a medium-or-heavy decrease with a CI that excluded zero. Placebo days gave estimates of the same size (-0.37% and +0.79%). Surface PM2.5 gave no link. Species-level estimates were near chance: 28 of 247 species had |z| > 1.96 on the survey day (9 lower, 19 higher), against 15 and 24 on the placebo days. Limitations: HMS shows smoke in the full column, not at ground level; only 55 surveys had PM2.5 of 35 ug/m3 or more; observers can move surveys away from very smoky days; counts mix abundance and detection. Conclusion: Survey-day smoke detection bias does not explain BBS route-level counts in 2011-2024.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "anzsrc-for-2020", "code": "410206"}
+  ],
+  "keywords": ["wildfire smoke", "Breeding Bird Survey", "PM2.5", "Hazard Mapping System", "detection bias", "air pollution", "bird counts", "placebo test", "fixed effects", "observation bias"],
+  "display": [
+    {"path": "files/figures/fig2_route_effects.png", "caption": "Change in BBS route total birds (a) and species richness (b) with medium or heavy HMS smoke on the survey day (orange), 7 days before (gray) and 7 days after (blue), with 95% CIs, for all routes 2011-2024 and four region-period subsets."},
+    {"path": "files/figures/fig1_exposure.png", "caption": "Exposure validation: share of BBS surveys under HMS smoke by year (a), monitor PM2.5 by HMS class (b), and observer 'fog or smoke' sky codes by HMS class (c)."},
+    {"path": "files/figures/fig3_species.png", "caption": "Species-level z-scores for smoke on the survey day and on two placebo days for 247 species (a), and number of species with nominally lower or higher counts (b)."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2", "relations": ["uses"], "reason": "Prior campaign BBS air-pollution (ozone) study; same fixed-effects approach with observer control. This study extends the pollution test to wildfire smoke and PM2.5."},
+    {"target": "sci:sha256:f29c7a4d1ffab38ebe4c09670de3638d890b1ed01588dc0f3f51904bc1ee2bc3", "reason": "Survey sky conditions change recorded BBS richness; motivates sky-code controls."},
+    {"target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91", "reason": "Related campaign BBS climate study with route and observer controls."},
+    {"target": "doi:10.1093/ornithapp/duab028", "relations": ["reviews"], "reason": "Sanderfoot and Gardner 2021: PM2.5 from wildfire smoke changed eBird detection of 37% of species in Washington. Our standardized-survey test does not find a route-level effect in the BBS."},
+    {"target": "https://www.buffalo.edu/news/releases/2026/07/canadian-wildfire-smoke-linked-to-fewer-bird-sightings-in-new-york-state.html", "relations": ["reviews"], "reason": "Adegbola et al. 2026 (Biodiversity and Conservation): PM2.5 linked to lower eBird detection of 40 species in New York 2021-2023."},
+    {"target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482", "relations": ["uses"], "reason": "USGS North American Breeding Bird Survey 2025 release."},
+    {"target": "https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/Shapefile/", "relations": ["uses"], "reason": "NOAA Hazard Mapping System smoke polygons."},
+    {"target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html", "relations": ["uses"], "reason": "EPA AQS daily PM2.5 (88101) files."},
+    {"target": "doi:10.1111/ele.13898", "relations": ["uses"], "reason": "AVONET species traits (Tobias et al. 2022)."}
+  ]
+}

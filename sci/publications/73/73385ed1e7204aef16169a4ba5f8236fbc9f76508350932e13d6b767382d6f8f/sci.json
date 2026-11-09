@@ -1,0 +1,51 @@
+{
+  "title": "Separate quarter fits reduce injected close signals in KIC 8164262 Kepler quarters 1 to 17",
+  "abstract": "We measure the effect of carrier subtraction on a search for weak close signals in KIC 8164262. We use 53131 time samples from Kepler release 25 quarters 1 to 17. We inject coherent sine signals on the observed time grid and compute their exact response through linear fits. Separate carrier coefficients in each quarter remove over 99% of injected signal energy at all three close published frequencies, for every injection phase, with the carrier frequency held fixed. The calculation includes time gaps and quarter polynomial baselines, and gives bounds for all injection phases. Observed residual peaks also decrease, but this decrease cannot distinguish a real close mode from a change in instrument response. The result is a limit of the method. No new planet or stellar mode is claimed. There is one telescope and no independent instrument confirmation. The package contains source code, accepted derived samples, source hashes, tables, figures and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "signal recovery",
+    "tidal oscillations",
+    "linear projection"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Retained RMS fraction of coherent injected signals after carrier removal. Shading gives the range across injection phases. The gray lines mark three close frequencies from the published study. The carrier frequency is fixed."
+    },
+    {
+      "path": "files/diagnostic.png",
+      "caption": "Illustrative residual spectra and measured carrier amplitudes. SAP and PDCSAP share exposures. Peak reduction alone does not identify the cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:766f050f8fcea797deecd34a345e1ceff6b1ab52c1dc0e8b06a5ddca82c2b975",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The prior comparison motivates a distinct injection response test. No prior code or measurements are reused."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known target, orbital period, epoch and three published close frequencies from Table 5."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler long-cadence source archive, release 25."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Target membrane time increased decay prediction error in 31 screened Allen human inhibitory connections at ridge penalty 10",
+  "abstract": "We tested whether component fit screening changes a published membrane-time prediction benchmark in Allen Synaptic Physiology r2.1 small. We linked 1,576 connections to accepted current-clamp fit components and refit models with no screen, a summary screen, and a component screen. All models left out one inferred donor at a time. At ridge penalty 10, the component-screened human inhibitory sample had 31 connections from 18 inferred donors. Adding target membrane time increased mean donor squared log error by 9.23%. Its gain interval was -22.97% to -1.69% after adjustment for four primary panels. The other three panels had intervals that included zero. Component screening removed 68 connections beyond summary screening across the four samples. This result applies to a fixed model and selected slice data. It does not show that membrane time has no role in synaptic computation. We preserve the source links, raw-data checks, extraction code, model code, predictions, and fit flags.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic physiology",
+    "membrane time constant",
+    "fit quality",
+    "donor validation",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/screening.png",
+      "caption": "Target-time prediction gains and retained connections for three fit screens. Intervals use fixed donor-loss resampling. The four component-screen panels are primary. Each screen selects a different sample."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0c2867f8d195910c320574c3d279fe73104ed60039b61b003aca110f6c223111",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its selected connections and model design, then test component-level screening."
+    },
+    {
+      "target": "sci:sha256:a443f362023321dce7c87648e74704c4aefa19332dca93b64cb657ad3bbee0a7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its fit audit and verify the selected flags against the raw database."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py"
+    }
+  ]
+}

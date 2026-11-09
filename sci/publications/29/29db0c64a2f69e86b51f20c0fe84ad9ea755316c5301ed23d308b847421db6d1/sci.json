@@ -1,0 +1,161 @@
+{
+ "title": "Multi-step connectome communication measures add 0.4 to 1.9 percent of explained FC variance beyond direct wiring, distance and node effects in worm, fly, mouse, marmoset and human",
+ "abstract": "Question: after we remove distance, direct wiring and node-level effects, do multi-step network communication measures of the connectome still predict functional connectivity (FC)? Is the answer the same across species? Approach: one pipeline for five reused data sets: worm (Cook 2019 connectome, Atanas 2023 calcium, 40 animals), fly (FlyWire v783 neuropil flow, Aimon 2023 light-field calcium, 50 flies), mouse (Knox 2019 tracer model, Grandjean 2020 fMRI, 79 mice), marmoset (Majka 2020 tracer, Schaeffer 2022 fMRI, 31 animals) and human (Lausanne DSI and fMRI, 69 persons). Pair models had node fixed effects, a distance spline, direct weight terms and a hub term. We added six measures: communicability, search information, shortest-path, diffusion and navigation efficiency, and navigation success. We used 10-fold cross-validation, split halves of individuals, and 100-500 surrogate graphs of up to three types (distance-bin shuffle, shuffle with node strengths kept, degree-preserving distance-matched rewiring). Result: the communication measures added a small gain in explained group FC variance in all five species: worm 0.0044, fly 0.0042, mouse 0.0081, marmoset 0.0191, human 0.0145 (cross-validated values within 0.001). Surrogate graphs gave mean gains 2.4-35 times smaller (largest p 0.027 in worm, 0.002-0.003 in the others; all pass a Holm correction). The gain was positive in every individual. It also occurred in pairs with no direct connection (worm, marmoset, human). The best single measure changed between species. In four sets, direct wiring added 6-27 times more variance than the communication measures; the gain is at most 5.6% of the remaining explainable FC variance. Limitations: FC is slow and correlational; connectome and activity come from different animals except in human; the marmoset graph has only 55 injected areas; rewiring nulls were possible only for the sparse worm and human graphs; the first rewiring null was too weak and was replaced (both results reported).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "network communication",
+  "communicability",
+  "search information",
+  "navigation",
+  "functional connectivity",
+  "connectome",
+  "cross-species",
+  "C. elegans",
+  "Drosophila",
+  "mouse",
+  "marmoset",
+  "human",
+  "null models"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_comm_gain_vs_nulls.png",
+   "caption": "Gain in explained FC variance from six communication measures beyond direct wiring, distance and node effects, compared with surrogate graphs, in five species."
+  },
+  {
+   "path": "files/figures/fig2_individuals_splithalf.png",
+   "caption": "The gain in each individual and in held-out halves of individuals."
+  },
+  {
+   "path": "files/figures/fig3_measures_unconnected.png",
+   "caption": "Gain of each single measure, and gain in pairs with no direct connection."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its FlyWire neuropil flow matrix, distances and per-experiment fly FC; we add a multi-step communication test on the same data."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its Cook connectome edge table, soma positions and per-animal pair correlations."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same mouse data; the communication gain is also smaller under isoflurane only."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Related mouse tracer vs spike-correlation coupling study."
+  },
+  {
+   "target": "doi:10.1073/pnas.1315529111",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Search information and path measures (Goni et al. 2014)."
+  },
+  {
+   "target": "doi:10.1073/pnas.1801351115",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Navigation routing (Seguin et al. 2018)."
+  },
+  {
+   "target": "doi:10.1098/rsif.2008.0484",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Communicability (Crofts and Higham 2009)."
+  },
+  {
+   "target": "doi:10.1038/s41583-023-00718-5",
+   "reason": "Review of brain network communication models."
+  },
+  {
+   "target": "doi:10.1038/s41583-022-00601-9",
+   "reason": "Null models in network neuroscience."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "C. elegans connectome."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ],
+   "reason": "C. elegans whole-brain activity."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome."
+  },
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fly light-field calcium imaging."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mouse voxel tracer model."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2019.116278",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mouse resting fMRI resource."
+  },
+  {
+   "target": "doi:10.1038/s41467-020-14858-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Marmoset tracer connectivity."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2022.119030",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Marmoset resting fMRI resource."
+  },
+  {
+   "target": "doi:10.5281/zenodo.2872624",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Human Lausanne SC and FC of 70 persons."
+  }
+ ]
+}

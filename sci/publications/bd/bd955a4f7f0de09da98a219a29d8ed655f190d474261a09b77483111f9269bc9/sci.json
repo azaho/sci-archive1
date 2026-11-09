@@ -1,0 +1,106 @@
+{
+ "title": "GRACE land water storage rose faster than it fell at 1-24 month lags in 2002-2026; rain-driven linear models did not reproduce the 12-month asymmetry",
+ "abstract": "Question: is the change of total land water storage (TWS) symmetric in time, and does rain skewness explain any asymmetry? Data: CSR GRACE/GRACE-FO RL06.3 mascons, 2002-04 to 2026-06, 2,168 land cells of 2.5 degrees (56 S to 75 N, no Greenland or Antarctica); GPCP v2.3 rain; GHCN-CAMS temperature. Method: after removal of a linear trend and seasonal harmonics, we calculated the skewness g(L) of storage changes x(t+L) - x(t) for L = 1-24 months. A reversible process gives g = 0. We used 1,000 common-phase Fourier surrogates (reversible, with the observed spectra and cross-spectra) and a sign-flip test on 111 blocks of 15 degrees. We also compared development and recovery times of deficit and surplus events, and drove single-store, two-pole ARX and state-dependent ARX models with observed rain. Results: the area-weighted mean g was positive at all lags (0.076 at L = 1, 0.099 at L = 12; surrogate 95% ranges -0.018 to 0.019 and -0.038 to 0.039; p = 0.001; block p < 0.001). Each mission showed it separately (GRACE g(12) = 0.088, GRACE-FO 0.074). Storage rose faster than it fell. The effect was large in arid (g(12) = 0.19) and semi-arid (0.22) cells and absent in humid cells (0.013, p = 0.66). With a linear trend, deficits ended about 6% faster than they formed (mean ln(R/D) = -0.059, p = 0.010), but with a quadratic trend this fell to -0.026, inside the null range. Thus the deficit result is not robust. Surpluses formed faster than they decayed (+0.098, p = 0.003). Monthly rain anomalies were positively skewed on 97% of the land area. Rain-driven models gave more skewness than observed at L = 1 (0.26-0.37), but only 0.018-0.041 at L = 12 and below zero at L = 24 (observed 0.074). The rain gain did not depend on the storage state (difference -0.013, 95% CI -0.063 to 0.037). Conclusion: rain pulses through a store explain the short-lag asymmetry, but less than half of the year-scale asymmetry. Untested candidate causes include human water use, lakes and reservoirs, and nonlinear recharge. Limitations: approx. 300 km resolution with correlated cells; 24-year record; Gaussian surrogates; simple rain models; complete surrogate tests only for the linear trend because the host was overloaded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "GRACE",
+  "terrestrial water storage",
+  "time irreversibility",
+  "drought recovery",
+  "skewness",
+  "surrogate data",
+  "GPCP",
+  "hydrological drought",
+  "water storage extremes",
+  "GRACE-FO"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_lag_skewness.png",
+   "caption": "Area-weighted mean skewness of TWS changes x(t+L) - x(t) for lags 1-24 months. (a) All 2,168 land cells against the 95% range of 1,000 time-reversible common-phase surrogates; squares and diamonds show each mission alone. (b) Climate classes. Positive values mean fast rises and slow falls."
+  },
+  {
+   "path": "files/figures/fig3_mechanism_models.png",
+   "caption": "Observed global mean skewness and the skewness of models driven by observed GPCP rain anomalies. The models give more asymmetry than observed at 1-3 months but much less at 12-24 months. With rain made Gaussian, the asymmetry almost disappears."
+  },
+  {
+   "path": "files/figures/fig1_map_lag12_skewness.png",
+   "caption": "Skewness of 12-month TWS changes for each 2.5-degree land cell, 2002-2026, linear trend removed. Dots: cells with FDR q < 0.05 in the surrogate test."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.15781/cgq9-nh24",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR GRACE/GRACE-FO RL06.3 mascon data and land mask."
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact file used, sha256 d4bd8b7364fb34d871198001563c70d344792cb7b0a577c04f8b91c713741292."
+  },
+  {
+   "target": "doi:10.1002/2016JB013007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR mascon method."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 monthly precipitation, sha256 d31c53ab8180a883bd01442212948c3db4372d481b94a90e69d3d86bb65d7f68."
+  },
+  {
+   "target": "doi:10.3390/atmos9040138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 description."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS temperature for the cold class, sha256 8dbe8e8ce86729f56a2234dec7420b94aecba804aa7df599c8fea68ade70802b."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS description."
+  },
+  {
+   "target": "doi:10.1016/0167-2789(92)90102-S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Surrogate-data method."
+  },
+  {
+   "target": "doi:10.1002/2014GL059323",
+   "reason": "GRACE storage deficit approach for drought."
+  },
+  {
+   "target": "doi:10.5194/hess-25-511-2021",
+   "reason": "GRACE-based drought recovery time; prior work on recovery."
+  }
+ ]
+}

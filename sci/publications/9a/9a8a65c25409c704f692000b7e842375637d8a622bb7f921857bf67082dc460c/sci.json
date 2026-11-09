@@ -1,0 +1,21 @@
+{
+  "title": "TESS light curves from 2018 to 2026 show no new transit at the predicted conjunction times of 816 radial-velocity planets, and exclude transits with b < 0.7 for 203 of them",
+  "abstract": "Question: do TESS light curves show transits at the predicted conjunction times of radial-velocity (RV) planets that are not known to transit, and how much transit probability do the data remove? Approach: we took the NASA Exoplanet Archive default solutions of 1,205 RV-discovered planets (2026-11-08). For 840 planets the solution gives a usable epoch. We drew 4,000 Monte Carlo conjunction times per planet from the published errors and measured box-shaped dips at all predicted transits in 2,698 TESS light curves (SPOC 2-min, TESS-SPOC and QLP; 532 hosts; sectors 1 to about 103). We masked known transiting planets and TOIs. We classified each ephemeris sample as detected, excluded (dip shallower than half of a minimum-radius model, b < 0.7), or untested. Calibration: injections into the real data (median depth retention 0.86; false exclusion at the true time 0.1 to 0.7 percent), an inverted-flux null test, 23 RV-discovered planets with known transits (12 detected with f_det > 0.9), and 15 old RV-only solutions (14 predict the known transit). Result: no new transit. For the 816 non-transiting planets, the detected fraction (sum 0.18) agrees with the null test (sum 0.24), and the 8 strongest single dips are artifacts. More than 90 percent of the conjunction prior is excluded for 203 planets. TESS excludes 9.0 of the 25.6 transiting planets that the geometric prior predicts, mostly at P < 30 d. At P > 100 d it excludes only 0.3 of 10.7, because the epoch errors are large. Limitations: grazing transits (b > 0.7) are not tested and can be wrongly excluded (HD 219134 b and c); exclusions depend on a minimum-radius model and on undiluted flux; about 3 to 10 percent of periastron-based epochs can use a different omega convention; published errors are treated as independent.",
+  "categories": [{"scheme": "arxiv", "code": "astro-ph.EP"}, {"scheme": "arxiv", "code": "astro-ph.IM"}],
+  "keywords": ["TESS", "radial velocity", "exoplanet transits", "transit ephemeris", "inferior conjunction", "null result", "injection recovery", "NASA Exoplanet Archive", "transit probability"],
+  "display": [
+    {"path": "files/figures/fig2_expected_numbers.png", "caption": "Expected number of transiting planets among 816 non-transiting RV planets by period: geometric prior and the part that TESS excludes (left); prior against posterior transit probability per planet (right)."},
+    {"path": "files/figures/fig1_positive_controls.png", "caption": "Positive controls: TESS data of eight RV-discovered planets with known transits at the predicted transit times."},
+    {"path": "files/figures/fig3_method_checks.png", "caption": "Method checks: injection depth retention, RV-only ephemeris validation, and search against inverted-flux null."}
+  ],
+  "citations": [
+    {"target": "doi:10.26133/NEA12", "relations": ["uses"], "reason": "NASA Exoplanet Archive Planetary Systems table: RV planet orbits, epochs and errors."},
+    {"target": "doi:10.26133/NEA13", "relations": ["uses"], "reason": "Planetary Systems Composite Parameters: missing stellar parameters and known transiting planets."},
+    {"target": "doi:10.17909/t9-nmc8-f686", "relations": ["uses"], "reason": "TESS SPOC 2-min light curves."},
+    {"target": "doi:10.17909/t9-wpz1-8s54", "relations": ["uses"], "reason": "TESS-SPOC FFI light curves."},
+    {"target": "doi:10.17909/t9-r086-e880", "relations": ["uses"], "reason": "QLP FFI light curves."},
+    {"target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv", "relations": ["uses"], "reason": "ExoFOP TOI table (shared campaign dataset exofop-tess-toi-table-20261108) for transit masks."},
+    {"target": "doi:10.3847/1538-4357/834/1/17", "relations": ["uses"], "reason": "Chen & Kipping (2017) mass-radius relation for the mean planet radius."},
+    {"target": "sci:sha256:d57ede30e514369ac650d3ec09f73996d2292c6037da34fe5cc0254e2ea71fda", "reason": "Sibling campaign study that tests Gaia DR3 SB1 orbits with TESS dips at conjunction times; similar idea for a different catalog."}
+  ]
+}
