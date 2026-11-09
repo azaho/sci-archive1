@@ -1,0 +1,77 @@
+{
+  "title": "Voltage gains did not ensure long-window signal-to-noise gains in two partial adult worm circuit models",
+  "abstract": "We tested whether remote voltage gains after electrical link loss imply better signal-to-noise ratio in two partial adult C. elegans maps. A passive model used uniform leak and equal independent white current noise. At leak equal to 0.1 times median weighted degree, 476 of 15,702 voltage gains above 10% in adult 7 and 156 of 5,460 in adult 8 gave no long-window signal-to-noise gain. With intact attenuation at least 0.1, these counts were 159 of 1,897 and 57 of 1,141. Most voltage gains still gave signal-to-noise gains. Two selected examples had voltage ratios 1.154 and 1.110 but long-window signal-to-noise ratios 0.731 and 0.734. Unit link weights preserved the mismatch; large leak removed it from the tested substantial-baseline cases. All 496 primary link updates passed direct solves. Noise observation time changes the result. Partial maps, assumed passive parameters, and no matched activity data prevent claims about live-animal reliability. Code, hashes, selected graphs, per-link counts, finite-window checks, and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "electrical synapses",
+    "signal-to-noise ratio",
+    "link removal",
+    "passive circuit",
+    "observation window"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Voltage gains and signal-to-noise gains after link loss. The noise observation window and leak change the result in two partial adult worm models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1214/aoms/1177729893",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:21a5bdb55f830f3a318433a7beef6a3907eadd5f34cd022db6c8ca846ad3f5ce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior voltage-gain test supplies graph and perturbation context. We test signal-to-noise ratios with new code."
+    },
+    {
+      "target": "sci:sha256:4b74b71a0d491d7240b4356f084e138a608b7f26478ef590b7dcdd82a6b615cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior total-noise removal test supplies passive noise context. We test target readouts with a tonic signal."
+    },
+    {
+      "target": "sci:sha256:05abc482e549c15ad2c2df4fd5269443581dbb136195e6e4239d89ed3d5597ae",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior circuit reduction study supplies covariance and zero-frequency noise context. No code or results reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
