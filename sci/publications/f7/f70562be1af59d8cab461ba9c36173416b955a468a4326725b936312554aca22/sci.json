@@ -1,0 +1,93 @@
+{
+  "title": "A fixed 42 km/s screen selects 277 GMN events below solar escape speed in a 2025 quality sample",
+  "abstract": "We test a fixed heliocentric speed screen for interstellar meteors in public Global Meteor Network (GMN) records. We compare (v - 42 km/s)/sigma > 5 with a screen that uses solar escape speed at the event date. The 2025 sample has 208,444 events after quality cuts, with initial speed below 50 km/s and no assigned shower. The fixed screen selects 1,019 events. Of these, 277 (27.2 percent) are below local escape speed and all have catalog eccentricity below one. A 2 m/s boundary margin retains 274 cases. The local screen selects 495 events, including 48 missed by the fixed screen. Tests on 2024 and partial 2026 data give 225 and 117 below-boundary events with the same margin. Orbital and date-based boundary calculations agree within 1 m/s. A fixed escape speed at one astronomical unit still selects 84 below-boundary events in 2025. The result measures a seasonal selection error in an initial screen. It does not challenge the earlier GMN study's final manual null result. No new interstellar meteor is confirmed. Catalog errors are not assumed to be calibrated probabilities. We provide code, hashes, all 2,679 events selected by either screen, sensitivity tables, figures, and full and compact reproduction steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Global Meteor Network",
+    "interstellar meteors",
+    "solar escape speed",
+    "candidate selection",
+    "seasonal bias",
+    "catalog audit",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/seasonal_screen.png",
+      "caption": "In 2025, 277 quality-selected events pass the fixed 42 km/s screen but have nominal speeds below the date-based solar escape boundary. The lower panel compares monthly counts. Counts are not rates; exposure is not modeled."
+    },
+    {
+      "path": "files/year_comparison.png",
+      "caption": "The same screens give different selected sets in three GMN snapshots. The vertical scale is the same in all panels. Red counts are below the Earth-center escape boundary. One red event in partial 2026 is within 0.3 m/s of the boundary and has a slightly hyperbolic catalog orbit. All red events more than 2 m/s below the boundary have eccentricity below one."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.48550/arXiv.2503.19042",
+      "relations": [
+        "reviews",
+        "uses"
+      ],
+      "reason": "Defines the fixed 42 km/s initial screen and later 44 km/s cut. Its final manual analysis uses local escape speed. We audit a near-boundary initial screen on later data."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2107.12335",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Describes GMN observations and trajectory limitations."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public GMN data and CC BY 4.0 terms. We thank the camera operators and GMN team."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/media/GMN_orbit_data_columns.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Column definitions for the public trajectory summaries."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/traj_summary_data/traj_summary_yearly_2024.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen 2024 input snapshot; exact shared path and verified SHA-256 are in files/provenance.json. The live URL can change."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/traj_summary_data/traj_summary_yearly_2025.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen 2025 input snapshot; exact shared path and verified SHA-256 are in files/provenance.json. The live URL can change."
+    },
+    {
+      "target": "https://globalmeteornetwork.org/data/traj_summary_data/traj_summary_yearly_2026.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen 2026 input snapshot; exact shared path and verified SHA-256 are in files/provenance.json. The live URL can change."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/coordinates/solarsystem.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents the built-in solar system ephemeris interface used with Astropy 8.0.2."
+    }
+  ]
+}
