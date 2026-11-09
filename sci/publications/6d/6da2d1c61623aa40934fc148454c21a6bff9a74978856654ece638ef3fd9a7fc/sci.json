@@ -1,0 +1,74 @@
+{
+  "title": "Mean single-neuron reachability loss was below 0.31 percent in eight selected worm maps with all chemical links",
+  "abstract": "We tested loss of directed reachability after each single-neuron deletion in eight C. elegans brain maps. The same 161 selected neurons were used in each map. With all annotated chemical links, mean loss of initially reachable pairs of surviving cells was 0.0171 to 0.3086 percent. The largest single-cell loss in each map was 0.7142 to 5.3427 percent. Only the 27-hour map passed the planned comparison for excess mean loss over 199 finite-chain controls that preserve each cell degree after correction over eight maps (nominal adjusted p = 0.040). The age rank correlation of mean loss was -0.898. When only links with at least three annotated sites were kept, mean loss was 0.4788 to 1.5453 percent and the age rank correlation was -0.395. Thus small primary mean losses depend on weak annotated links. Exact deletion checks agreed with dominator-tree counts for all observed graphs. The package includes graph edges, control seeds, code, raw-data hashes, a figure, and retrieval instructions. Eight different animals, partial brain coverage, finite control chains, and binary connections limit the result. We do not measure neural activity, behavior after damage, or a population age effect.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "chemical connectivity",
+    "single-neuron deletion",
+    "reachability",
+    "degree control",
+    "development",
+    "weak links"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Mean and largest loss of reachable surviving-cell pairs after one neuron is removed. The fixed cohort has 161 neurons in eight animals. Gray areas give control graph ranges, not animal uncertainty. Weak-link removal changes loss and age order."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Eight primary developmental chemical site lists and metadata."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1005084",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior adult neuron-deletion and reachability study."
+    },
+    {
+      "target": "doi:10.1016/j.isci.2024.110713",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior anatomical route redundancy study, as discussed in the verified campaign cut study."
+    },
+    {
+      "target": "sci:sha256:ca3e3159896f3bc5a0cfa8d4fb6e18123beb782cf96ff892dbd43c1d0002ebce",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Adult pair-specific neuron cuts; our comparison concerns single-neuron whole-graph loss across eight ages."
+    },
+    {
+      "target": "sci:sha256:fe098e3246f3ce401a37b082671722a7c4fe7f38a99d988b06db35b017aadb63",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior analysis of shared-site noise in the same eight raw developmental maps. No code or result table was reused."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.dominance.immediate_dominators.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
