@@ -1,0 +1,79 @@
+{
+  "title": "A count model gave no clear flood range score gain over past-error scaling at 83 US gauges in 2022-2025",
+  "abstract": "We tested whether a negative-binomial count model improves annual high tide flood day ranges beyond a published past-error scaling rule. We used a verified NOAA table and 307 station-years at 83 US gauges in 2022-2025. Each test year used only earlier rows to fit one common extra-variance parameter. The mean was the NOAA range midpoint with a 0.5-day floor. The count model reduced the equal-year mean 68%-target interval score by 0.30 day against scaling. Conditional 95% limits were -1.21 to +0.47 days. Scores fell in three of four years. Counts inside the range rose from 59.3% to 72.0%, while mean width rose from 6.81 to 8.48 days. Removing 2023 changed the mean score difference to +0.13 day. The test therefore gave no clear score gain over scaling. The result is a count-model benchmark, not a new distribution or a physical explanation. Four test years, shared coastal errors, fixed possibly biased means, revised observations and inherited threshold checks limit inference. The resample limits hold fits fixed and omit serial dependence. The package includes frozen inputs, source hashes, every forecast, code, an independent scalar audit, sensitivity tests and a static figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "high tide flooding",
+    "count model",
+    "negative binomial",
+    "interval score",
+    "chronological test",
+    "null result",
+    "coastal planning"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Annual interval scores, coverage and negative-binomial minus scaling score changes in 2022-2025. Lower scores are better. The 68% target is an analysis choice. Four test years give no clear extra score gain over scaling."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the verified 535-row stable-threshold table and its data provenance. The original records overlap; this is not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:fa7d38d960ffb6350d1762d9a0b2182523985b62ce1ded3ddbf366da9a4f56ba",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its earlier-year range scaling is our primary benchmark. We add count-model intervals on the same test rows."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared frozen outlook snapshot of 9 November 2026; exact bytes and SHA-256 are included."
+    },
+    {
+      "target": "https://repository.library.noaa.gov/view/noaa/70863/noaa_70863_DS1.pdf",
+      "reason": "Documents the May-April target year and Pacific Island threshold changes."
+    },
+    {
+      "target": "doi:10.1029/2018JC014741",
+      "reason": "Prior coastal flood day count distributions with extra variance."
+    },
+    {
+      "target": "doi:10.1029/2009WR007757",
+      "reason": "Prior work on extra variance in annual river flood event counts."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "reason": "Prior prediction of coastal flood likelihood with tides and sea level inputs."
+    },
+    {
+      "target": "doi:10.1198/016214506000001437",
+      "reason": "Interval score used to charge for both wide ranges and misses."
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mean-variance parameter form and distribution functions."
+    }
+  ]
+}
