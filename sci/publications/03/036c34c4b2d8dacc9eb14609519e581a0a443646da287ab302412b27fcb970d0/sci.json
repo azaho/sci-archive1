@@ -1,0 +1,79 @@
+{
+  "title": "Two inferred mice gave most of the mean score in a depletion test of 231 selected Allen V1 slice connections",
+  "abstract": "We tested one necessary moment identity of a simple vesicle-depletion model in selected Allen mouse V1 slice response fits. The sample had 231 detected connections, 110 source cells, 78 inferred mice, and 7,026 first-two-response trial pairs. An unbiased product estimate with a separate amplitude scale gave a mean dimensionless score of -2.07651. Its nominal 95 percent mouse bootstrap interval was -6.14765 to 0.05484. Two mouse groups contributed -2.10400 to the mean. After their post hoc omission, the other 76 groups had mean 0.02821. Raw fits, trial trimming, detrending, and a 40-trial rule all gave intervals that included zero. Baseline subtraction gave nonpositive first-response variance estimates in 40 connections. Exact probability checks, independent CSV calculations, and simulations passed. The test remains uncertain. It does not establish model adequacy or identify a release mechanism. Selected slice circuits, few trials, large fits, assumed initial occupancy, and unverified error matching limit transfer. Code, proof, source hashes, sufficient statistics, uncertainty draws, and retrieval steps support inspection and reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic depression",
+    "response covariance",
+    "moment test",
+    "vesicle depletion",
+    "circuit reliability",
+    "mouse V1",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/depletion_test.png",
+      "caption": "The primary depletion score interval includes zero. Two inferred mouse groups have large negative scores. Their post hoc omission changes the mean. Neither the omitted-group result nor a null interval establishes the release model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original connected-cell recordings and fitted synaptic responses."
+    },
+    {
+      "target": "doi:10.1016/S0006-3495(01)75848-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior framework for release inference from response means, variances, and covariances."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.22-03-00728.2002",
+      "reason": "Prior covariance analysis of synaptic depression in a different preparation."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_medium.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pulse_response_strength.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned definition of deconvolution and template fitting; exact release build is unknown."
+    },
+    {
+      "target": "sci:sha256:9515efff73977561babddb9aa1fcff16c45f157dc0ed48f859094136422f6f59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior pulse-position audit supports the physical first-pair choice. No code reused."
+    },
+    {
+      "target": "sci:sha256:52163a1d2dd65f90cbdefa637458a0c9c1d1b490f762f653c689e32f3808ec57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents the shared trial cache and its source selection. We test a within-connection release identity, not covariance across distinct outputs."
+    }
+  ]
+}

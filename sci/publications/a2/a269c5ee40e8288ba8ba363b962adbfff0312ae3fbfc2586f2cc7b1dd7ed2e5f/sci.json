@@ -1,0 +1,98 @@
+{
+  "title": "Excitatory input had a larger mean 50 Hz response change in one Allen mouse sample, with an uncertain result after distance matching",
+  "abstract": "We compared excitatory and inhibitory input response changes at shared target neurons in Allen Synaptic Physiology r2.1 mouse visual-cortex slices. The main sample had 29 targets, 65 connections, and 28 inferred mice. The equal-donor mean excitatory minus inhibitory late-train change at 50 Hz was 0.345 reference-amplitude units, with a 95% donor bootstrap interval of 0.214 to 0.478. A strict soma-distance match kept ten mice and gave 0.050, with an interval of -0.122 to 0.246. Source-class agreement and separate target-class checks preserved the positive ordering, but the distance subset limits a general rule. Human data had only three targets from two donors. Recovery checks were uncertain. This is a comparison of normalized responses from separately stimulated inputs, not an excitation to inhibition conductance ratio or a causal wiring effect. Small selected slice graphs, inferred donor labels, source mixtures, normalization, and fit error limit inference. The package provides code, data provenance, derived evidence, figures, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "convergent inputs",
+    "excitation and inhibition",
+    "short-term plasticity",
+    "shared target",
+    "distance matching"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/evidence.png",
+      "caption": "Paired input values at 29 mouse targets and equal-donor contrasts. The main result was positive. The strict distance subset was uncertain. Lines show 95% donor bootstrap intervals; sensitivity rows are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and cell-class context."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.19-11-04293.1999",
+      "reason": "Prior differential depression in rat visual cortex; protocols and endpoints differ."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned definitions of scalar train and protocol-specific recovery measures."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reciprocal plasticity test was read before the question was selected. No code or numerical tables were reused."
+    },
+    {
+      "target": "sci:sha256:b53f5d407eb5a2c7e314e1a5b521520540deb1b3354e46b282494f4642293ad6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-plasticity prediction test was read to check prior scope. No code or numerical tables were reused."
+    },
+    {
+      "target": "sci:sha256:1bd3e1079906fefc1101105d407d30b55bdfbf8719fceea3c307110ec0ab89b5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Protocol-specific recovery and scalar frequency pooling informed the secondary checks. No code or numerical tables were reused."
+    },
+    {
+      "target": "sci:sha256:49076594879e25276472296465ad6c0ae7909fc9366f48d529a9c72225dde88e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shared-target onset comparison informed target matching and distance checks. No code or numerical tables were reused."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior convergent excitation and inhibition decay test supplied design context. No code or numerical tables were reused."
+    }
+  ]
+}

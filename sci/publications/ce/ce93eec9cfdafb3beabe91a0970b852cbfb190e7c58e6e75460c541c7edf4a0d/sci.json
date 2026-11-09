@@ -1,0 +1,109 @@
+{
+ "title": "TESS 2-minute data of 3,278 known hot subdwarfs show no transiting planet candidate at 0.15-10 d, and the eclipses of FBS 0603+830 agree with a low-mass white-dwarf companion",
+ "abstract": "Question: Do the public TESS 2-minute light curves of known hot subdwarfs contain transiting planets or unexplained eclipses, and which limits follow? Approach: We matched the 6,616 known hot subdwarfs of Culpan et al. (2022) to the TIC and found SPOC 2-minute data for 3,278 stars (sectors 1 to 107). We searched the first, middle and last sector of each star (8,061 light curves) with a box least-squares search for periods of 0.15 to 10 d and durations scaled to a hot subdwarf. We set thresholds with 400 inverted-flux control sectors, applied automated tests for variability, shape, single events, duration and repetition, inspected all survivors by eye, made difference images, and measured completeness with 800 injected transits. Results: No planet candidate remains. The 37 signals that passed the automated tests are pulsations, aliases of known eclipsing binaries, blends, noise, and two catalogued eclipsing binaries (TOI-464.01, a TFOPWG false positive, and FBS 0603+830). The search recovers known HW Vir-type systems such as HW Vir, AA Dor and PG 1336-018. For a star radius of 0.2 solar radii, the 95 % upper limits on the fraction of hot subdwarfs with a transiting body are 0.6 %, 1.9 % and 5.1 % for 8 to 15 Earth radii at 0.15-1, 1-3 and 3-10 d, and 1.7 % for 2 to 4 Earth radii at 0.15-1 d. In seven sectors, FBS 0603+830 (P = 0.2608475 d) shows a flat 16.6-min primary eclipse of 1.03 %, a secondary eclipse (companion light 2.2 +/- 0.4 ppt), ellipsoidal (1.37 +/- 0.13 ppt) and beaming (0.48 +/- 0.11 ppt) signals, and no reflection effect. With an sdB mass of 0.47 solar masses, these give a companion of about 0.24 solar masses and 0.019 solar radii (R2/R1 = 0.099) with a black-body temperature near 10,000 K. This agrees with a cool low-mass white dwarf and not with an M dwarf or brown dwarf. Limitations: At most three sectors per star were searched. The limits use a uniform 0.2 solar-radius star and the automated tests only. The FBS 0603+830 masses depend on the assumed sdB mass and beaming factor; a radial-velocity orbit is necessary to confirm them.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "hot subdwarfs",
+  "sdB stars",
+  "TESS",
+  "transit search",
+  "box least squares",
+  "occurrence rate",
+  "injection-recovery",
+  "eclipsing binaries",
+  "white dwarf companion",
+  "Doppler beaming",
+  "ellipsoidal variation",
+  "FBS 0603+830",
+  "TOI-464",
+  "HW Vir",
+  "null result",
+  "post-red-giant planets"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_funnel_limits.png",
+   "caption": "Left: number of stars at each step of the search (log scale; the binary-period and planet-test groups are parallel subsets of the 223 stars with a detection). Right: 95 % upper limits on the fraction of hot subdwarfs with a transiting body in period and radius bins, from 800 injections, 3,278 stars, zero detections and a star radius of 0.2 solar radii."
+  },
+  {
+   "path": "files/figures/fig3_fbs0603.png",
+   "caption": "FBS 0603+830 (TIC 138440897), seven TESS sectors. Left: primary eclipse with the eclipse model. Middle: secondary eclipse at phase 0.5, which shows light from the companion. Right: out-of-eclipse phase curve with the fitted ellipsoidal and Doppler-beaming terms; there is no reflection effect."
+  },
+  {
+   "path": "files/figures/fig2_injection.png",
+   "caption": "Injection-recovery test. Left: 800 injected transits in period and radius (blue = recovered by the automated pipeline). Right: recovered fraction against the expected single-sector transit signal-to-noise ratio, with binomial errors."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.26093/cds/vizier.36620040",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Catalogue of known hot subdwarfs (Culpan et al. 2022) that defines the sample."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202140381",
+   "reason": "Earlier transit search of hot subdwarfs (paper I, methods)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243554",
+   "reason": "Earlier transit search of 792 hot subdwarfs in TESS cycle 1 (paper II); our search extends the sample and time span."
+  },
+  {
+   "target": "doi:10.1093/mnras/stac2088",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Lists FBS 0603+830 as an eclipsing binary with P = 0.2608 d; we confirm the period and add the secondary eclipse and phase-curve analysis."
+  },
+  {
+   "target": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/928/20",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Barlow et al. (2022) TESS variability classes used for catalogue context."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3467",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Input Catalog used for cross-matching and neighbours."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions/tess/download_scripts/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MAST bulk download scripts that list the SPOC 2-minute light curves."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP TOI table (campaign shared dataset exofop-tess-toi-table-20261108) used to identify TOI-464.01 as a TFOPWG false positive."
+  },
+  {
+   "target": "sci:sha256:97c6da24f8fa311870f3f7fe127c3ddc1fc511ceb88dc4eec61bcdf9dc04e6b6",
+   "reason": "Campaign search of TESS 2-minute white-dwarf light curves; similar design (BLS, automated vetting, difference imaging, injection limits) applied here to hot subdwarfs."
+  }
+ ]
+}

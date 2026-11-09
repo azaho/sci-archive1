@@ -1,0 +1,63 @@
+{
+  "title": "Distance gave no clear added 250 ms response prediction value in three selected Allen slice groups",
+  "abstract": "We tested whether cell-body distance adds prediction value for the first response after a 250 ms pause following eight pulses at 50 Hz. We linked distance and protocol-specific activity in Allen Synaptic Physiology r2.1 slice data. Models held whole inferred donors out and controlled for early and late train responses, response scale, and cell labels. Primary samples had 262 mouse excitatory, 465 mouse inhibitory, and 85 human excitatory connections. Adding log distance gave equal-donor mean squared error reductions of 0.000090, -0.000297, and -0.007575. All nominal 98.33% conditional donor bootstrap intervals included zero. Model and fold checks changed the signs of gains. This does not show equality or exclude other spatial models. Slice selection, inferred donors, shared response estimation error, and conditional uncertainty limit the result. Code, scalar evidence, predictions, hashes, and checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic recovery",
+    "cell-body distance",
+    "donor validation",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/result.png",
+      "caption": "Added distance prediction gains and nominal 98.33% conditional donor intervals. Positive values favor distance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:1bd3e1079906fefc1101105d407d30b55bdfbf8719fceea3c307110ec0ab89b5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The prior paired-pause study identified the need for frequency-specific recovery summaries. We test conditional spatial prediction."
+    },
+    {
+      "target": "sci:sha256:1c66112ed41e9f21a7112b5adc5f8706fc32bbf07324c98b754cd0ba673f7d60",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The prior axon-label test concerns train responses. We test distance for the post-train response."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Seven of 15 testable Allen mouse inhibitory circuits need changes above factor 1.25 to fit a source and target amplitude model",
+  "abstract": "We tested whether resting synaptic response amplitudes equal a source-cell factor times a target-cell factor in Allen Synaptic Physiology r2.1 slice data. The primary mouse inhibitory sample had 1,060 detected connections in 619 recordings. Only 15 recordings had a loop in the source and target measurement graph and could test this model. These gave 25 independent algebraic constraints. Seven of the 15 needed changes above a factor of 1.25 on the measured amplitudes to permit an exact model fit. The largest required factor was 2.095. A linear program gives the smallest factor, and stored primal and dual certificates verify the result. At a 50 microvolt amplitude floor, five of 13 testable recordings still needed a factor above 1.25. These are bounds on changes to fitted values, not measured error limits. Sparse graphs, selected slices, unknown fit errors, and few human constraints prevent a population or mechanism claim. Code, extracted data, provenance, a figure, and independent checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic strength",
+    "source and target factors",
+    "graph constraints",
+    "error bounds",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Only 15 of 619 selected mouse inhibitory recordings have constraints on the source and target amplitude model. The points show their smallest allowed amplitude correction factors. These are sensitivity bounds, not measured errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the resting potential and current amplitude scalar fields."
+    },
+    {
+      "target": "sci:sha256:597f4cea5c2b6dc05718bee3c2bf9a54b1f90b750d4482f07c514ddae9c1fd8b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior electrical reciprocity loop test. This report tests separable chemical amplitudes on a different measurement graph."
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cross-mode strength-order test. This report tests a source and target product model within each mode."
+    }
+  ]
+}

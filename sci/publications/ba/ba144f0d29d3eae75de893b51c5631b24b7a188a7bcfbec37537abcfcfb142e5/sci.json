@@ -1,0 +1,59 @@
+{
+  "title": "A 20-year seasonal update gave no clear error reduction in 12 retained years at five Mid-Atlantic sea-level gauges",
+  "abstract": "We tested whether a seasonal pattern from the previous 20 calendar years reduced error compared with a fixed 1960-1989 pattern at five Mid-Atlantic gauges. We used a fixed PSMSL monthly snapshot. Each test target had its observed annual mean removed. This is a seasonal shape reconstruction, not an absolute sea-level forecast. Data and training rules retained only 1992, 1993, and 2015-2024. The update reduced mean squared error by 7.79%. The conditional 95% three-year block interval was -9.78% to +18.61%, where a positive value means lower error. The result does not establish a reliable gain. Relative to an expanding earlier-data pattern, the reduction was 1.68%, with an interval of -9.39% to +10.98%. Gaps, support changes made before scoring, unequal training support, few test years, and conditional uncertainty limit inference. No physical cause or flood effect is shown. The package contains raw station records, hashes, code, predictions, figures, an independent arithmetic check, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "seasonal cycle",
+    "Mid-Atlantic",
+    "PSMSL",
+    "chronological evaluation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/skill.png",
+      "caption": "Seasonal reconstruction error reduction from a fixed pattern. Positive values mean lower error. Intervals are conditional three-year block limits. Methods use different matched test support."
+    },
+    {
+      "path": "files/results/cycles.png",
+      "caption": "Mean annual-centered monthly patterns in two periods at five gauges. This is a descriptive figure, not a test forecast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2024GL112273",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal-cycle study defines the five-gauge sample and motivates a separate test of later-year seasonal reconstruction."
+    },
+    {
+      "target": "sci:sha256:9f53d201e4bc9e5591cc007e53be0f993b22f4a6b6c9484a2eee28087095e343",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published campaign study tested a different seasonal contrast. Its code and source files are not reused."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared fixed source snapshot. Archive and member hashes are recorded."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/psmsl.hel",
+      "reason": "Provider data and flag definitions."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.php",
+      "reason": "Provider datum guidance."
+    }
+  ]
+}

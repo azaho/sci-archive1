@@ -1,0 +1,64 @@
+{
+  "title": "At least eight delay exclusions are needed for a 0.1 ms additive fit in selected Allen mouse slice groups",
+  "abstract": "We tested how many stored delay estimates must be set aside to permit a source-cell plus target-cell timing model in Allen Synaptic Physiology r2.1 slice data. At an assumed error bound of 0.1 ms, the exact minimum is eight of 2,248 selected mouse visual-cortex measurements. There are 6,144 smallest solutions and only one record is in all of them. One solution leaves ten of 18 algebraic cycle constraints. Strict cell labels reduce the minimum to four. At zero error, 18 exclusions remove all primary mouse cycle constraints. The one human temporal-cortex cycle needs no exclusion at 0.1 ms. We reduce the problem to hitting all violating cycles and check it with linear programs and 189 exhaustive small-graph comparisons. These are conditional sensitivity results, not measured error bounds or evidence that excluded records are wrong. Sparse graphs, selection, shared errors and one human cycle prevent a biological timing-rule or species claim. Code, all smallest review sets, derived edges, provenance and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "additive cell model",
+    "sensitivity analysis",
+    "graph cycles",
+    "measurement review"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Minimum exclusions and remaining algebraic tests under assumed delay error bounds in selected mouse slice groups. Compatibility after exclusion does not establish the model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5027b4e3394fd61ba71a15ba5d9fbdcb6b865bcab501c53428b7f1ab410f94a4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its grouping and bounded cycle criterion; adds exact minimum exclusions and all smallest review sets. No code or edge tables reused."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior missing-delay and graph support study informs scope and limitations."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

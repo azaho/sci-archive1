@@ -1,0 +1,97 @@
+{
+ "title": "Larger shallow earthquakes had fewer, not more, earlier M 4.5-4.9 events within 50 km in global ComCat data for 1990-2026; ETAS null catalogs gave no such decrease",
+ "abstract": "Question: does the number of small earthquakes before an earthquake increase with its magnitude? Standard ETAS models predict no dependence. A preparation model predicts a positive dependence. Approach: we used the USGS ComCat global catalog (M 4.5 or more, 1973-2026). Targets were shallow (70 km or less) events of M 5.0 or more in 1990-2026 with no M 5 or more event within 100 km in the 30 days before (26,258 targets). For each target, we counted M 4.5-4.9 events within 50 km in the 30 days before. A conditional Poisson model with 5 degree cell x era strata and a 5-year background term gave the change in log count per magnitude unit (beta). We wrote the plan before we computed outcomes. We applied the same code to 48 synthetic global ETAS catalogs (four variants, including short-term incompleteness). Result: beta = -0.175 (stratum bootstrap 95% interval -0.267 to -0.080; permutation p = 0.001). Larger targets had fewer earlier small events: the rate ratio for M 7 against M 5 was 0.70 (0.59-0.85). The ETAS catalogs gave beta from -0.080 to +0.063 (mean -0.01). The decrease was largest within 25 km (-0.34) and in the last day (-0.33). It was absent at 25-50 km and 100-200 km. Thus we find no growth of the foreshock area with magnitude. Targets after local activity had a higher b-value (1.11 against 1.01). Post-hoc checks (1 degree strata, local history covariates, volcano exclusion, an incompleteness guard) changed beta little. The value was smaller for free-depth targets (-0.086, SE 0.054) and Mw-type targets (-0.12, SE 0.05). Limitations: mixed magnitude types (mb and Mw), M 4.5 completeness that changes in space and time, epicentre-based distances, and a simple ETAS null. We cannot separate a physical cause (for example higher b-values in bursts) from catalog effects. The study does not cover foreshocks of M 5 or more.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "foreshocks",
+  "ETAS",
+  "magnitude independence",
+  "earthquake forecasting",
+  "b-value",
+  "ComCat",
+  "global seismicity",
+  "earthquake preparation",
+  "conditional Poisson",
+  "null model"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ratio_by_class.png",
+   "caption": "Count of M 4.5-4.9 events within 50 km in the 1, 7 and 30 days before quiet-history shallow targets, divided by the 5-year background expectation, by target magnitude class (ComCat 1990-2026, 95% target bootstrap). Grey: 24 ETAS null catalogs. The data ratio decreases with target magnitude; the ETAS ratio is flat."
+  },
+  {
+   "path": "files/figures/fig2_beta_forest.png",
+   "caption": "beta (change in log count of earlier M 4.5-4.9 events per magnitude unit) for the primary and all secondary specifications, with 95% stratum-robust intervals, against the 95% range of 48 ETAS null catalogs (grey). Shaded band: values that an aftershock-like productivity law predicts."
+  },
+  {
+   "path": "files/figures/fig3_primary_null.png",
+   "caption": "Primary beta (red line) with the stratum bootstrap of the data, the within-stratum magnitude permutation null, and the 48 ETAS null replicates by variant."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its archived exact bytes of the ComCat global M 4.5+ catalog (1973-2026)."
+  },
+  {
+   "target": "sci:sha256:cbe6f23c075adc86c7840040f4917ceb4c05582e1c8a8ddf0050dca5f981b4c6",
+   "reason": "Its job registered the Smithsonian GVP Holocene volcano shared dataset that our post-hoc volcano check uses."
+  },
+  {
+   "target": "sci:sha256:d9bfad8f488e102d56f98e486da99bb993c5da2952b2ab70cd97e54026db1847",
+   "reason": "Related campaign test of magnitude order in local aftershock pairs (Ridgecrest, Monte Cristo); our study tests magnitude dependence of earlier activity globally."
+  },
+  {
+   "target": "sci:sha256:62f609301ce6c942c7c4c8659506b9c33dbdc5b5b1d496f08d002e3cd1de7152",
+   "reason": "Related campaign test of magnitude and next-hour versus previous-hour counts in two aftershock catalogs."
+  },
+  {
+   "target": "doi:10.1785/0120030069",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Felzer et al. (2004) found no dependence of foreshock number on mainshock magnitude in global data; we also find no positive dependence, but we find a negative one."
+  },
+  {
+   "target": "doi:10.1038/srep00846",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Lippiello et al. (2012) reported foreshock numbers and spatial organization that depend on mainshock magnitude; our global test finds a decrease with magnitude and no growth of foreshock extent."
+  },
+  {
+   "target": "doi:10.1080/01621459.1988.10478560",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ETAS model (Ogata 1988) for the null simulations."
+  },
+  {
+   "target": "doi:10.1785/0120050067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Form of the short-term aftershock incompleteness rule in our STAI null variant."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "reason": "USGS ComCat FDSN event service, source of the catalog."
+  },
+  {
+   "target": "https://volcano.si.edu/",
+   "reason": "Smithsonian Global Volcanism Program, Volcanoes of the World."
+  }
+ ]
+}

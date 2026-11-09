@@ -1,0 +1,105 @@
+{
+  "title": "Ozone showed no clear link to the temperature slope of recorded bird richness in selected US surveys in 2005-2024",
+  "abstract": "We tested whether a warmer survey start was linked to a larger decrease in recorded bird richness when ozone was higher. We joined the fixed USGS BBS 2025 release to EPA daily ozone for 2005-2024. Each route used one fixed nearby monitor. Four models used 13,180 surveys in eastern and western regions in two periods. Models controlled route-observer and state-year effects, survey timing, weather, and assistant status. Interaction slopes were -0.016, -0.167, +0.011, and -0.067 recorded taxa per 5 C and 10 ppb. All intervals corrected for four tests included zero. All 20 planned sensitivity intervals also included zero. This gives no clear evidence for the proposed interaction in the selected sample. Coverage retained 23-25 percent of western candidate runs and about 56 percent in the East. Only 18 exposure-matched candidates had both a start of at least 25 C and ozone of at least 70 ppb. The tests cannot resolve rare extremes, true species loss, or detection separately from birds present. Monitor distance, selected records, unmeasured prior weather, and changing habitat limit inference. A full fit repeat was byte-identical. The package includes code, fixed source hashes, derived records, exposure and numerical checks, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "air pollution",
+    "ozone",
+    "survey temperature",
+    "bird richness",
+    "Breeding Bird Survey",
+    "observation bias",
+    "fixed monitor",
+    "null result",
+    "monitor coverage",
+    "reproducible dataset"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "The ozone-temperature interaction in selected US bird surveys. Both regions use the same horizontal scale. Intervals correct for four tests. Units are recorded taxa per 5 C and 10 ppb."
+    },
+    {
+      "path": "files/coverage_figure.png",
+      "caption": "Exposure coverage among candidate runs after the survey filters. Fixed monitor availability selects fewer western runs."
+    },
+    {
+      "path": "files/sensitivity_figure.png",
+      "caption": "All planned interaction checks. Each interval corrects for four tests within its mode. These are not independent replications."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed USGS BBS 2025 release. Weather.csv and Routes.csv are used; metadata and exact hashes are retained."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EPA daily ozone source objects for 2005-2024 except 2020. Each exact URL and hash is in provenance.json."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines monitor keys, repeated standards, events, dates and ozone time windows."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior ozone and relative bird abundance study with eBird and a different exposure scale and design."
+    },
+    {
+      "target": "doi:10.3389/fevo.2021.671492",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence on weather and bird detection."
+    },
+    {
+      "target": "https://www.epa.gov/air-trends/trends-ozone-adjusted-weather-conditions",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Weather and ozone are linked; motivates joint controls."
+    },
+    {
+      "target": "sci:sha256:652071e7bf4b1964e6b29e8c4494ce23450a5342524ee3fe65cc2e0880558ecb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS source metadata copied from this verified publication. Weather parser approach adapted under MIT code terms."
+    },
+    {
+      "target": "sci:sha256:3b23dfebf6687aa874bcca88ac194710ab6854c0e1f1f762ebf4c080c93797f7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior same-source weather and recorded taxon change study. Samples overlap, so these are not independent replications."
+    },
+    {
+      "target": "sci:sha256:126791b41f1eba913c070e7ae9679b8913c785630cc8c3227560d208bf8c652b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior same-source richness and survey temperature study."
+    }
+  ]
+}

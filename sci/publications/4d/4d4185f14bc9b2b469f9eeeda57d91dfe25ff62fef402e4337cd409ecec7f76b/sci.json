@@ -1,0 +1,65 @@
+{
+  "title": "An early burst-shape fit reduces later within-day DM error by 47 percent for FRB 20220912A in CHIME Catalog 2",
+  "abstract": "We test whether burst properties predict dispersion measure (DM) differences within an observing day for FRB 20220912A. We use CHIME/FRB Catalog 2 release 20251231 and count each event once. A linear fit to peak frequency, bandwidth and log width uses 42 early days. It reduces mean squared error by 47.5 percent on 42 later days. A day bootstrap gives a nominal 95 percent skill interval of 0.093 to 0.627. This test removes a separate mean from each day. Thus, a slow change in electron column cannot by itself explain the measured relation. Common fit errors, burst physics and instrument effects remain possible. Applying the same coefficients across days is a separate, unproved assumption. We test that correction and two event cuts, but do not claim a physical DM trend or a new source. Published independent microshot data support concern about burst-shape bias but do not confirm this numerical relation. Code, frozen catalog rows, provenance, controls and figures are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "CHIME",
+    "FRB 20220912A",
+    "dispersion measure",
+    "burst morphology",
+    "time validation"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Later within-day DM differences and daily DM values. Both DM axes use pc cm^-3. The correction is mean aligned for display only."
+    },
+    {
+      "path": "files/validation.png",
+      "caption": "Held-out prediction skill for all nine model and event-cut choices. Bars show nominal 95 percent day-bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1fb8f14cfce76060a922a2bee70ca52a6c3e7b77b1d795eda59d26b1f6dfcf08",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Selects the target and supplies the earlier campaign DM-trend context. We extract the raw catalog again and use a different estimator."
+    },
+    {
+      "target": "https://assets.chime-frb.ca/catalogs/catalog2/releases/20251231/data/chimefrbcat2.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2601.09399",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog methods and flag definitions."
+    },
+    {
+      "target": "doi:10.11570/25.0066",
+      "reason": "Catalog data archive."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ae731b",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Independent microshot results give prior evidence for burst-shape bias; they do not test our coefficients."
+    },
+    {
+      "target": "https://arxiv.org/abs/2308.12118",
+      "reason": "Independent high-time-resolution evidence for short structure and residual drift."
+    }
+  ]
+}

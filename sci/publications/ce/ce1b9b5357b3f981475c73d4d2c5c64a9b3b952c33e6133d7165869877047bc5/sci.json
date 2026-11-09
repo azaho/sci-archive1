@@ -1,0 +1,95 @@
+{
+  "title": "The larger event came first in 65% of shallow GCMT pairs with Mw at least 5.8 and a gap at least 0.5 within 200 km and 1-30 days in 1982-2019",
+  "abstract": "We tested the time order of nearby earthquake pairs without a mainshock label. We used 7,400 Global CMT events in 1982-2019. The main rule required both magnitudes to be at least 5.8, both reference depths to be below 70 km, a magnitude gap of at least 0.5, a three-dimensional distance of at most 200 km, and a time gap of 1 to below 30 days. The larger event came first in 730 of 1,115 pairs, or 65.5%. The conditional 95% three-year block interval was 57.7% to 74.2%. Five-year blocks and graph-component resamples gave similar intervals. The ordering score stayed positive in all 10 fixed checks. The shallow-minus-intermediate ordering score was 0.189, with a 95% interval of -0.132 to 0.678. Thus, the depth difference was uncertain. Only 25 intermediate-depth pairs qualified. Equal-threshold before-after count sums cancel within a finite pair graph; direct magnitude ordering retains information that this sum removes. This cancellation was noted in the prior campaign study. The result is consistent with size-dependent earthquake productivity, but it does not identify triggering links or magnitude dependence between parent and child events. One catalog, fixed windows, location error, repeated events, and conditional uncertainty models limit inference. The package gives exact selected source records, pair data, all checks, code, figures, a separate audit of 660,000 bootstrap values, and a successful offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Global CMT",
+    "earthquakes",
+    "magnitude order",
+    "temporal asymmetry",
+    "depth",
+    "pair graph",
+    "before-after cancellation",
+    "block bootstrap",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/ordering.png",
+      "caption": "Left: the fraction of pairs in which the larger event came first, by reference depth. Right: shallow-pair ordering scores for all fixed checks. The main rule uses Mw at least 5.8, a magnitude gap at least 0.5, 3D distance at most 200 km, and elapsed time from 1 day inclusive to 30 days exclusive. Lines show marginal 95% three-year block intervals. Events and pairs can repeat across checks. The sparse deep sample does not establish a depth trend."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c88f0e9a9c64455f5d0be8422cdfe3d3014e497fefe9f48dee2d53d7b59e73b3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the fixed public shared catalog and follow its warning about cancellation in all-center before-after counts. Our sample and target are magnitude-ordered pairs. No analysis code or derived tables are copied."
+    },
+    {
+      "target": "sci:sha256:4eeb90d57c4227c719c5f43489c9c6ac8d4f414b92fd1160e69f9578c7101b49",
+      "reason": "Prior campaign work uses nearby GCMT pairs for tensor similarity. The current target is the direction of magnitude order."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111",
+      "reason": "Prior work relates global aftershock productivity to earthquake size, depth, and tectonic setting. This study does not repeat its mainshock selection."
+    },
+    {
+      "target": "doi:10.1029/2002JB001991",
+      "reason": "Triggering-cascade theory shows how foreshock and aftershock patterns can arise without distinct event classes."
+    },
+    {
+      "target": "doi:10.1029/2024JB030733",
+      "reason": "Prior work shows that event selection and foreshock definitions can alter reported rates."
+    },
+    {
+      "target": "doi:10.1111/j.1365-246X.2008.03864.x",
+      "reason": "Global CMT detection loss after large events motivates the exclusion of the first day."
+    },
+    {
+      "target": "doi:10.1093/gji/ggw161",
+      "reason": "Prior global CMT work uses a magnitude threshold of 5.6 after 1982. Our threshold is 5.8, with a 6.0 check."
+    },
+    {
+      "target": "doi:10.1029/JB086iB04p02825",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source method for the Global CMT catalog."
+    },
+    {
+      "target": "doi:10.1016/j.pepi.2012.04.002",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Modern Global CMT catalog methods and coverage."
+    },
+    {
+      "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/jan76_dec20.ndk",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed historical NDK source. The exact source hash and selected source bytes are preserved."
+    },
+    {
+      "target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/allorder.ndk_explained",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official five-line NDK record and scalar-moment format."
+    },
+    {
+      "target": "https://www.globalcmt.org/CMTsearch.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official scalar-moment magnitude formula."
+    }
+  ]
+}

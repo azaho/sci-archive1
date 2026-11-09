@@ -1,0 +1,58 @@
+{
+  "title": "Dendrite area reduced mouse-to-human response-time prediction error in selected Allen spiny cells",
+  "abstract": "We tested whether dendrite area improves membrane response-time prediction when a model is trained on one species and applied to the other. We used linked Allen Cell Types data from 234 mouse spiny cells in 173 donors and 111 human spiny cells in 31 donors. The baseline used input resistance and layer. Adding area reduced mouse-to-human squared log error from 0.28564 to 0.15393, a 46.1% reduction. The absolute gain was 0.13171, with a 97.5% interval of 0.05810 to 0.22955 from 2,000 donor bootstrap draws that refit source models. After fitting a target offset with each scored donor held out, the gain was 17.2%, with an absolute interval of 0.00479 to 0.06103. The reverse primary estimate was positive, but its interval included zero. Results do not establish a difference between transfer directions. Human regions and donor conditions differ from mouse. In the mouse-to-human test, 59.5% of target cells had area outside the source range. Cut branches, radius error, selected donors, and model form limit inference. This is a prediction benchmark, not a measure of specific capacitance or a causal species test. The package has code, derived features, source hashes, predictions, bootstrap draws, and numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendrite area",
+    "membrane time constant",
+    "cross-species prediction",
+    "donor bootstrap",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/transport.png",
+      "caption": "Added prediction value of dendrite area in spiny cells. Left: direct transfer and transfer with a target offset, with 97.5% donor bootstrap intervals. Positive values mean lower error. Right: source slopes in the area model. The calibration holds each scored donor out."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7a8d2fb1764d832b1d66d6e70fc250edd572b51a69785d6d69109c987cdc675d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Builds on its within-species question with direct cross-species transfer. Uses the same raw cache; no prior code or result tables were copied."
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.16553"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/cell-types-database-physiology-and-morphology",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/cell-types-database-transcriptomics",
+      "reason": "Official field definitions for input resistance and membrane time constant."
+    }
+  ]
+}

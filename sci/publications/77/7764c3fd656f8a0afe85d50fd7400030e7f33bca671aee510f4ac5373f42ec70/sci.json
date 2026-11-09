@@ -1,0 +1,53 @@
+{
+  "title": "Presence in two adult worm maps gave no clear evoked-response prediction gain in 1397 selected pairs",
+  "abstract": "We tested whether chemical connections found in both adult Witvliet maps D7 and D8 predict response detection in the Randi wild-type atlas. The sample had 1397 directed pairs with a chemical connection in at least one map. Models controlled mean chemical count, electrical count, reverse chemical count, observation count and cell identity. Five folds held out stimulated cells. Adding presence in both maps changed log loss from 0.277920 to 0.278525. The reduction was -0.000604, with a conditional 95% crossed cell bootstrap interval from -0.003460 to 0.002444. Five planned sensitivity checks also had intervals that included zero. Detection rates were 8.16% for one-map edges and 8.42% for two-map edges. Only 545 pairs had exact mean counts represented in both support groups. Two anatomy samples, unequal coverage, different animals, a detection threshold and limited weight overlap prevent a general claim about stable wiring or functional reliability.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome agreement",
+    "signal propagation",
+    "held-out cells",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Left: response detection by mean count and adult map support. Labels give pair counts. Rates are not adjusted. Right: log-loss reduction from adding support. Positive values mean better predictions. Bars are conditional 95% crossed cell bootstrap intervals. All include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the wild-type evoked-response atlas."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the two adult wiring maps."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned numerical exports and upstream array definitions."
+    },
+    {
+      "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work used this evoked atlas with wiring and cell controls. This report tests adult map agreement with new code and extraction."
+    }
+  ]
+}

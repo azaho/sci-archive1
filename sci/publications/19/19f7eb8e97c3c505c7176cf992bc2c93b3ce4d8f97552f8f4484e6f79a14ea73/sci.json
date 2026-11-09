@@ -1,0 +1,94 @@
+{
+ "title": "Mouse brain regions farther from the retina in the Allen connectome had less reliable visual spike responses in 39 mice, but distance-preserving rewired connectomes predicted this equally well",
+ "abstract": "Question: a prior SCI study found that the response reliability of mouse brain regions decreases with weighted connectome distance from the retina (D_ret). Does this rule generalize to new mice, stimuli and time scales, and does it need the specific wiring? Data: Allen OpenScope Barcoding (14 new mice; full-field flicker and flickering gratings) and Vision2Hippocampus (25 mice; moving bar), Neuropixels; Knox 2019 mesoscale connectome with Allen retinal tracer entry. Unit reliability is the odd-even repeat correlation after random thinning of spikes to an equal count. The plan was frozen before region values were computed. Results: region reliability decreased with D_ret in all four planned tests (Spearman rho -0.52 flicker, -0.43 gratings, -0.46 fine band below 25 ms, -0.43 bar; 41-44 regions; all mouse-bootstrap samples negative). It stayed after control of distance from LGd, firing rate and mouse, and inside the isocortex (rho -0.82 to -0.87). Region values agreed across data sets (rho 0.88). But the planned wiring-specificity test failed: 1,000 rewired connectomes that keep each target's input shares by source distance gave nearly the same correlations (mean rho -0.40 to -0.42; p 0.19-0.42). Exploratory: inside the isocortex the real wiring did better than the rewired graphs (p 0.002-0.013), and a simple hop count was the best predictor (rho -0.58 to -0.68). Limitations: an average-mouse connectome model; one null design; the result depends on the choice of retinal entry regions; visual stimuli only; exploratory results need independent confirmation.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function",
+  "connectome",
+  "response reliability",
+  "retina",
+  "Neuropixels",
+  "Allen Institute",
+  "OpenScope",
+  "mesoscale connectivity",
+  "null model",
+  "mouse visual system",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability_vs_Dret.png",
+   "caption": "Region reliability (equal-count thinned split-half r) against weighted connectome distance from the retina, for four conditions. Point size grows with unit count; color shows the major brain division. Title gives Spearman rho with mouse-bootstrap 95% CI."
+  },
+  {
+   "path": "files/figures/fig2_nulls.png",
+   "caption": "Observed rho (black line), mouse-bootstrap distribution with the real connectome (blue) and rho from 1,000 distance-preserving rewired connectomes (orange). The rewired graphs give nearly the same correlation."
+  },
+  {
+   "path": "files/figures/fig3_predictors_crossdataset.png",
+   "caption": "Left: Spearman rho of six structural predictors with region reliability in four conditions (exploratory). Right: region reliability agrees between Barcoding flicker and Vision2Hippocampus bar data (30 shared regions)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f7e0f8902679341d600b16944f0b722343067300ded08575737ff07badc97447",
+   "relations": [
+    "supports",
+    "challenges",
+    "uses"
+   ],
+   "reason": "We replicate its reliability-D_ret relation in new mice and stimuli and re-analyze its data set, but a distance-preserving rewired-connectome null predicts the relation equally well across the whole brain. We follow its D_ret definition and use its shared Vision2Hippocampus cache."
+  },
+  {
+   "target": "sci:sha256:52fdb2bc68b8cb3ac6551fba0dea1d7f3ea6469f5e84f13d1dbfffcfd7549d42",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use the shared Barcoding spike and unit cache that this study made."
+  },
+  {
+   "target": "doi:10.48324/dandi.000563/0.250311.2145",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen OpenScope Barcoding Neuropixels data."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 mesoscale connectome."
+  },
+  {
+   "target": "doi:10.1016/j.celrep.2017.01.075",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Retinal ganglion cell tracer data (Martersteck et al. 2017)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF v3 annotation."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/000690/0.260330.2144",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen OpenScope Vision2Hippocampus Neuropixels data."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "reason": "Siegle et al. 2021 hierarchy of the mouse visual system."
+  }
+ ]
+}

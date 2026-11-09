@@ -1,0 +1,60 @@
+{
+  "title": "Assumed 1 ms relative timing variation raised the minimum model residual in 57 selected Allen mouse input pairs",
+  "abstract": "We tested a model of convergent excitation and inhibition with fixed gain and trial-to-trial timing variation. We used passed current-clamp fits from the same -55 mV holding bin in Allen Synaptic Physiology r2.1. The selected mouse visual-cortex sample had 57 input pairs at 47 targets from 43 inferred donors. We optimized mean relative delay and one inhibitory gain for each pair. Gaussian relative-delay variation with a standard deviation of 1 ms increased mean residual energy from 0.2641 to 0.2919 of excitatory-input energy. The increase was 0.0279, with a conditional 95% donor bootstrap interval of 0.0194 to 0.0373. Distance and interior-fit checks kept the increase above a chosen 0.01 reporting threshold. Gaussian timing variation cannot improve this optimized expected-energy score under the stated model; the data set its size. Timing variation was assumed, not measured. Linear voltage addition, fixed kernels, inferred donors, missing fits and selected slice circuits limit the result. This extends a published finite-rise benchmark in the same cohort. It is not independent biological validation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "excitation and inhibition",
+    "relative timing variation",
+    "fixed gain",
+    "conditional model",
+    "convergent inputs"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/jitter.png",
+      "caption": "Assumed relative-delay variation raises the minimum expected energy residual in the selected mouse model. Left: equal-donor means. Right: donor penalties at 1 ms standard deviation. The 0.01 line is a chosen reporting threshold, not a measured physiological standard."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:23a243693faa924e9e275ccd3cb8d41f189c5f38286d821390baabdb43ef4c74",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the published fit extract and code for response rates, overlap, donor labels and hierarchy. Adds random relative delay, fixed-gain expected energy, and optimal mean delay."
+    },
+    {
+      "target": "sci:sha256:e10e514b2ddace2fb424c56dbaf7d20b9d42dbcb59484a070cb1f5e9525af3c2",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "doi:10.3389/fncom.2014.00059"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

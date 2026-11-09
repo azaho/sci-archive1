@@ -1,0 +1,109 @@
+{
+ "title": "In 40 freely moving C. elegans, gap junctions predict pairwise co-activity after controls for neurite contact, soma distance and per-neuron effects; chemical synapse weight does not",
+ "abstract": "Question: in C. elegans, does connectome structure predict which neurons are co-active, after we remove per-neuron effects? Does the number of inputs to a neuron predict its coupling to the population? A mouse V1 study in this campaign found that a per-neuron effect explained the full pair-level link. Approach: we used whole-brain calcium activity of NeuroPAL-identified neurons in 40 freely moving animals (Atanas, Kim et al. 2023; about 16 min each). We compared it with the Cook 2019 hermaphrodite connectome and the Witvliet 2021 adult Datasets 7 and 8. Outcome: absolute across-animal mean Fisher z of 7,872 neuron pairs, for raw traces, behaviour-removed traces and first differences. Controls: homologous pair, same ganglion, atlas soma distance, a fixed effect for each neuron, and Witvliet neurite contact area. Inference: QAP permutation (2,000) and per-animal models. Results: gap junction weight predicts co-activity after all controls (partial r 0.19, QAP z 14.5, Holm p 0.002; 40 of 40 animals positive). The result repeats with both Witvliet connectomes (0.22, 0.19) and for behaviour-removed traces (0.22). Chemical synapse weight predicts co-activity before controls (0.16), but after neurite contact it is near zero (0.04 Cook; -0.02 to -0.05 Witvliet). Shared chemical input gives a small robust effect (0.06-0.11). Thus, unlike mouse V1, per-neuron effects do not explain the pair-level link. Cell level: the pre-specified in-degree test is not significant after neuron-type control (partial Spearman 0.03, p 0.71). Chemical input weight predicts behaviour-removed population communality after type control (0.27-0.35 in three connectomes, Holm p 0.0004-0.009). Limitations: connectomes and activity come from different animals; contact data come from one animal and nerve-ring neurons only; atlas soma distance cannot exclude all imaging crosstalk; correlations are not causal; one lab and one behavioural condition.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "connectome",
+  "whole-brain imaging",
+  "gap junctions",
+  "electrical synapses",
+  "chemical synapses",
+  "structure-function",
+  "functional connectivity",
+  "NeuroPAL",
+  "Peters' rule",
+  "neurite contact",
+  "population coupling",
+  "QAP permutation",
+  "cross-species generalization"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pair_ladder.png",
+   "caption": "Partial correlation of four structure measures with pair co-activity as controls are added (Cook connectome, 7,872 pairs). Gap junctions keep their link after neurite contact is controlled. Chemical weight does not."
+  },
+  {
+   "path": "files/figures/fig2_animals_connectomes.png",
+   "caption": "A: per-animal partial correlations with all controls (40 animals). B: the same test with the Cook and two Witvliet connectomes."
+  },
+  {
+   "path": "files/figures/fig3_cell_level.png",
+   "caption": "Cell level: in-degree and input weight against population communality. Neuron type explains most of the in-degree effect; input weight keeps a link for behaviour-removed activity."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "We test its two V1 Deep Dive results in C. elegans. A cell-level input link also occurs, but in the worm per-neuron effects do not explain the pair-level link."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Related mouse result: tracer connection strength predicts spontaneous inter-areal correlations."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Whole-brain activity and NeuroPAL labels (Atanas, Kim et al. 2023)."
+  },
+  {
+   "target": "https://zenodo.org/records/19388374",
+   "relations": [
+    "uses"
+   ],
+   "reason": "processed_h5.tar.bz2 and neuropal_label.json.bz2."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cook et al. 2019 connectome, corrected July 2020 adjacency workbook."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Witvliet et al. 2021 adult connectomes, neuron types and neurite contact areas."
+  },
+  {
+   "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Atlas soma positions."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Randi et al. 2023 found that the anatomical connectome only partly predicts signal propagation; our chemical-synapse result agrees."
+  },
+  {
+   "target": "doi:10.1038/nature14273",
+   "reason": "Okun et al. 2015, population coupling (chorister) rule."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.12.012",
+   "reason": "Yemini et al. 2021, NeuroPAL."
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "A prior warmth by thermal niche position term stayed negative with route-year effects in pooled North American bird counts, 1970-2024",
+  "abstract": "We tested a prior season warmth by thermal niche position term in North American recorded bird counts. We added route-year effects to control changes shared by species in the same survey. The model also had species-route-observer and species-year effects. We used the BBS 2025 release and GHCN-CAMS 3.01. Thermal niche position used route climates, with mean counts as weights. The pooled sample had 6,870,825 records from 368 mapped species in 1970-2024. The term was -0.322, with a 95% interval from -0.543 to -0.102. Units are 100 x log(count+1) per C per niche standard deviation. Four region and period estimates were negative. All four individual 95% intervals included zero. Full first represented observer year removal and equal route niche weights retained negative prior warmth terms. The future warmth placebo interval included zero. Selected records, count scaling, detection changes, niche weights from all years, coarse weather, and approximate cluster intervals limit inference. This is an annual weather association. It does not establish a causal climate effect. The package includes code, source hashes, a compact offline panel, numerical checks, results, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "thermal niche position",
+    "bird counts",
+    "Breeding Bird Survey",
+    "weather variation",
+    "observation bias",
+    "fixed effects",
+    "regional checks",
+    "reproducible panel"
+  ],
+  "display": [
+    {
+      "path": "files/figures/within_survey_test.png",
+      "caption": "The prior warmth by thermal niche position term remains negative in the pooled model after route-year control. All four region and period intervals include zero. Thick lines are individual 95% intervals. Thin lines in the four region and period rows are simultaneous 95% intervals for four tests. Units are 100 x log(count+1) per C per niche standard deviation. These are relative count associations in selected surveys. They do not establish a causal climate effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We rebuild its public panel and base model. We add route-year effects, four sample checks, a full first-year exclusion, and a compact offline panel."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "BBS 2025 public release. Exact five-file source provenance and raw checksums are in the package."
+    },
+    {
+      "target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHCN-CAMS monthly temperature method. The used snapshot is version 3.01 and is fixed by SHA-256."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1098/rspb.2010.0796"
+    },
+    {
+      "target": "doi:10.1038/s42003-025-08032-9"
+    },
+    {
+      "target": "doi:10.1198/jbes.2010.07136",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Two-way spatial-block and year cluster covariance."
+    },
+    {
+      "target": "https://pyhdfe.readthedocs.io/en/stable/_api/pyhdfe.create.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent simultaneous projection reference; main fits use the supplied exact nested-effect and compatible CG implementations."
+    }
+  ]
+}
