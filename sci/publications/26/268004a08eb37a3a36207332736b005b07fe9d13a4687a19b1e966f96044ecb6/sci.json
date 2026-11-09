@@ -1,0 +1,90 @@
+{
+  "title": "Soil moisture increased the ozone injury response of bioindicator plants at the same eastern US forest biosites in 1994-2010, but ozone alone did not predict year-to-year injury",
+  "abstract": "Question: does growing-season soil moisture change how much visible foliar injury a given ozone exposure causes in forest bioindicator plants? Approach: we used US Forest Service FIA ozone biomonitoring scores at 1,276 biosites (7,036 biosite-years, 1994-2010) in the Northeast, North Central and Pacific US. We calculated W126 exposure at each biosite from EPA AQS hourly ozone and used June-August NOAA CPC soil-moisture anomalies, with climate-division PDSI and Palmer Z as alternatives. Linear probability models with biosite fixed effects compared years at the same site, with visit day and summer Tmax controls. Result: ozone alone did not predict year-to-year injury (-0.004 per 10 ppm-h W126, SE 0.027). The ozone x moisture interaction was +0.029 per 10 ppm-h per +1 SD soil moisture (SE 0.011, p = 0.007; year-block bootstrap 95% interval 0.005 to 0.047; conditional logit p = 0.0002). 10 ppm-h more W126 gave +0.081 injury probability in wet summers and +0.023 in dry summers. High-ozone years were drier and hotter at the same site (r = -0.41 and +0.55), so the two effects partly cancel. The interaction held for all moisture and exposure metrics and for blackberry, black cherry, milkweed, big-leaf aster and ash. It was clear in the Northeast, weaker in the North Central states and absent in the Pacific states. Limitations: a next-year ozone placebo also had a positive main effect, so the ozone main effect is confounded by trends or crew changes; interaction placebos were near zero. Only 1 of 6 region-period tests had p < 0.05. Exposure is interpolated from monitors, moisture is not site-measured, and missed injury cannot be measured. Job sci-1107-hp-climate-pollution-biodiversity-3468622fb580, machine hp, model Claude Opus 5.5.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "foliar injury",
+    "bioindicator plants",
+    "soil moisture",
+    "drought",
+    "W126",
+    "Forest Inventory and Analysis",
+    "stomatal uptake",
+    "air pollution",
+    "fixed effects",
+    "observation bias",
+    "placebo test"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig2_binned_within_site.png",
+      "caption": "Change in the share of injured biosite-years against change in W126 at the same biosite, for dry (soil moisture anomaly below -0.5 SD), normal and wet (above +0.5 SD) June-August conditions, by region. Bins with at least 15 biosite-years; bars are 95% confidence intervals."
+    },
+    {
+      "path": "files/figures/fig3_coefficients.png",
+      "caption": "Coefficients (change in injury probability, 95% CI, SE clustered by state x year) for the ozone main effect, the soil-moisture main effect and the ozone x moisture interaction in all model variants, alternative metrics, design checks, lead and lag ozone placebos (grey) and region-period replications (colour)."
+    },
+    {
+      "path": "files/figures/fig4_species.png",
+      "caption": "Species-level models of the injured-plant share with site x species fixed effects and plant-count weights (95% CI). Colour shows the region where each species was mostly sampled."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://www.uvm.edu/femc/CI4/attachments/project/1142/Ozone_Injury_to_Forests_Across_the_Northeast_and_North_Central_United_States,_1994-2010.pdf",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Smith, Morin and McCaskill 2012 (USFS GTR NRS-103) reported descriptively that yearly injury did not follow SUM06 and that high-ozone wet conditions had most injury; we test this with within-site panel models."
+    },
+    {
+      "target": "https://apps.fs.usda.gov/fia/datamart/CSV/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FIA DataMart ENTIRE_OZONE_* tables (retrieved 2026-11-09): injury scores, plant counts, visit dates, locations and voucher validation."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EPA AQS pre-generated hourly ozone files (parameter 44201), 1994-2010, for W126, SUM06 and N100."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.cpcsoil.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA CPC monthly soil moisture (soilw.mon.mean.nc) for June-August soil moisture anomalies."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA nClimDiv v1.0.0-20261006 divisional PDSI, Palmer Z, Tmax and precipitation, and division polygons."
+    },
+    {
+      "target": "https://www.uvm.edu/femc/attachments/project/1142/field_guide_p3_5-1_sec20_10_2011.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FIA Phase 3 ozone field guide: bioindicator species codes and protocol."
+    },
+    {
+      "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+      "reason": "Earlier campaign result on ozone and bird counts; our study tests a direct plant response to ozone."
+    }
+  ]
+}
