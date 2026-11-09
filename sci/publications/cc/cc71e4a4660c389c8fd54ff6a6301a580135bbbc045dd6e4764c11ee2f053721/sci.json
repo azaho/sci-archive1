@@ -1,0 +1,104 @@
+{
+ "title": "Axonal input predicts which task variables a mouse brain region encodes, beyond distance and shared probes, in IBL Brain-Wide Map (182 regions) and Steinmetz 2019 (57 regions) data",
+ "abstract": "Question: does the mesoscale connectome set which task variables each mouse brain region encodes? Approach: for 182 IBL Brain-Wide Map regions and 5 variables (stimulus, choice, feedback, wheel speed, block prior), I regressed the published decoding score of each region and variable on the input-weighted mean score of the same variable in its source regions (Knox 2019 connection density). The model has region and variable fixed effects and controls for distance-weighted neighbours, probe co-recording and brain division. Inference used 1,000 permutations of wiring labels within divisions and a stricter null that shuffles inputs among sources at equal distance. Result: the pre-specified coefficient was +0.34 SD per SD (null means -0.07 and 0.00; p = 0.001 for both nulls). It stayed positive for other BWM analysis types, distance scales, weight forms, within- and between-division inputs and leave-one-variable-out fits. In an independent replication with my own decoders on Steinmetz et al. 2019 (57 regions, 4 variables), the coefficient was +0.37 (one-sided p = 0.004; distance-preserving null p = 0.001), and +0.59 for 39 regions with at least 2 sessions. The match held for stimulus, choice and feedback but not for wheel speed. Limitations: the evidence is correlational and region-level; shared third-party input or cell-type composition can also cause it; both tests use the same Knox anatomy; the distance-preserving null was added after the first result; one pre-specified log-weight variant was uninformative because it made the predictor collinear with the fixed effects.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "structure-function",
+  "brain-wide map",
+  "decoding",
+  "Knox 2019",
+  "IBL",
+  "Steinmetz 2019",
+  "mouse",
+  "network autocorrelation",
+  "permutation test",
+  "task variables"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_specificity.png",
+   "caption": "Variable specificity. After region-mean removal, correlation of each target variable (rows) with the input-weighted source encoding of each variable (columns). Diagonal values are in bold. Left: IBL BWM decoding scores, 182 regions. Right: Steinmetz 2019, my decoders, 57 regions. No controls are applied in this plot."
+  },
+  {
+   "path": "files/figures/fig2_nulls.png",
+   "caption": "Observed wiring coefficient beta_in (orange line, full model with distance, co-recording and division controls) against 1,000 null coefficients: wiring labels shuffled within Cosmos divisions (blue), and inputs shuffled among sources in the same distance decile (green)."
+  },
+  {
+   "path": "files/figures/fig3_sensitivity.png",
+   "caption": "beta_in minus its permutation-null mean, with bars at +-1.96 null SD, for all IBL (blue) and Steinmetz (orange) models. The uninformative log10(W/min+1) variant is omitted (see README)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map: source of the per-region decoding scores and the clusters table."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09226-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Block-prior decoding scores in region_info.csv."
+  },
+  {
+   "target": "https://github.com/int-brain-lab/paper-brain-wide-map/blob/de37454426bc4107047b5a18b854fc1ef7a5959c/brainwidemap/meta/region_info.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact version of the region results table."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 voxel-model connection density used as wiring weights."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Allen Mouse Brain Connectivity Atlas tracer data behind the Knox model."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF v3 annotation for region centroids."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1787-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Steinmetz 2019 Neuropixels recordings used for the replication."
+  },
+  {
+   "target": "https://osf.io/agvxh",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Neuromatch npz release of Steinmetz 2019 (also uv3mw, ehmw2)."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Prior campaign result: tracer wiring predicts spontaneous inter-areal spike correlations; this study tests coding content instead."
+  },
+  {
+   "target": "sci:sha256:193d9a5614ab21692cff4f6d3fd02bc50eb1d367d965da92d4a921ace25463da",
+   "reason": "Prior campaign result on IBL task effects on wiring-coupling slope."
+  },
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "reason": "Prior campaign result on connectome communication models and FC across species."
+  }
+ ]
+}
