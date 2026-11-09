@@ -1,0 +1,66 @@
+{
+  "title": "The forecast gain from a second decay term depended on exponent settings in Puerto Rico on days 7-30 at magnitude 3 or more",
+  "abstract": "We tested whether a second decay term for the 11 January 2020 magnitude 5.9 event improved a simple forecast of Puerto Rico earthquakes. We fit one-term and two-term rate models on days 1-7 after the 7 January mainshock reference time. We tested days 7-30. The primary sample used magnitude 3 or more within 50 km of a fixed center. It had 211 training events and 317 test events. With a fitted common decay exponent, the second term raised the test log score by 54.43 nats. The conditional 95% three-day block interval was -2.70 to 108.18 nats. The one-term model predicted 590.75 events; the two-term model predicted 182.42. Both count estimates had large errors. With the exponent fixed at one, the second term reduced the score by 17.30 nats. Thus the gain was not stable across the tested exponent settings. This single-sequence test uses a revised catalog and simple Poisson rate models. It does not test a full ETAS forecast, identify a physical cause, or support an operational hazard forecast. The package gives exact source bytes, code, daily scores, block samples, a figure, and independent numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Puerto Rico",
+    "aftershocks",
+    "forecast evaluation",
+    "Omori decay",
+    "model sensitivity",
+    "null result",
+    "ComCat"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Observed and predicted daily counts on held-out days, and log score changes across all planned settings. Positive scores favor two decay terms. The intervals hold fitted models fixed. They do not include parameter or catalog error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1785/0220210222",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior prospective and retrospective tests of full USGS ETAS forecasts for this sequence. We read the USGS abstract. Our simple two-term test does not replace that evaluation."
+    },
+    {
+      "target": "doi:10.1785/0120220229",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work gives a detailed catalog and a multiple-fault interpretation. We use the USGS abstract for context, not its catalog."
+    },
+    {
+      "target": "doi:10.3133/ofr20201009",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior public report addresses aftershock duration and large-event scenarios. We read the available abstract."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS API documentation and source of exact catalog query in provenance.json."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-01-07T08%3A24%3A26&endtime=2020-02-06T08%3A24%3A26&latitude=17.916&longitude=-66.813&maxradiuskm=100&minmagnitude=2.5&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact catalog retrieval URL. Snapshot hash and shared path are in provenance.json."
+    },
+    {
+      "target": "sci:sha256:7387bf923a4343869c1347a10af7a86370d8eac44912dd4ac185f71da7dbb08a",
+      "reason": "Prior campaign work tests magnitude-change warnings across catalogs, including Puerto Rico. It does not test the two decay terms used here. We read its verified main text; no data or code were reused."
+    }
+  ]
+}

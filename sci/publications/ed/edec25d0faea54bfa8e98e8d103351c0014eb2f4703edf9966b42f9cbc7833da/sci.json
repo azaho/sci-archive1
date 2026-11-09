@@ -1,0 +1,78 @@
+{
+ "title": "Trawl community thermal indices followed year-to-year SST at 0.14-0.44 C per C in 6 of 9 Atlantic and Gulf surveys and at most 0.09 in 5 Pacific surveys, 1970-2020; early slopes gave no forecast gain",
+ "abstract": "We calculated a community temperature index (CTI, mean thermal affinity of the catch) for 14 North American bottom-trawl surveys (OceanAdapt, 1970-2020, 121,115 hauls, 1,338 taxa). Species thermal affinities come from WOA23 climatology at haul position and depth, so they do not use survey-year temperature. We compared the CTI with survey-area HadISST SST. After detrending, the CTI increased with SST in 12 of 14 surveys (8 with a 95% interval above zero, none below). The pooled slope was 0.23 C per C (SE 0.08) in Atlantic and Gulf surveys and 0.024 (SE 0.010) in Pacific surveys; Alaska bottom temperature gave similar small slopes. Long-term CTI trends were 0.71 and 0.57 of SST trends in the Northeast US, 0.25 on the Scotian Shelf, near zero in the northern and negative in the southern Gulf of St. Lawrence. Slopes were larger where thermal diversity was larger (rho 0.54-0.79), as Burrows et al. (2019) predicted, but this was mostly a scale effect, and their depth-gradient prediction was not supported. Early-period slopes did not predict later CTI change better than no change (mean absolute error 0.152 C for both). CTI in 11 marine heatwave survey-years stayed inside 95% prediction intervals. Limitations: SST is not bottom temperature, catchability can change with temperature, most vessel changes are not modelled, and long-term trend signs changed with the weighting method in 4 surveys.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "bottom trawl survey",
+  "marine fish",
+  "climate tracking",
+  "thermal affinity",
+  "marine heatwave",
+  "OceanAdapt",
+  "HadISST",
+  "observation bias",
+  "out-of-sample test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_interannual_scatter.png",
+   "caption": "Detrended CTI anomaly against detrended 12-month SST anomaly for 14 trawl surveys. Solid line: fitted slope; dotted line: full tracking (1:1). Blue: Pacific; orange: Atlantic and Gulf."
+  },
+  {
+   "path": "files/figures/fig2_slopes_forest.png",
+   "caption": "Detrended and first-difference CTI-SST slopes with 95% HAC intervals, and long-term CTI/SST trend ratios with 95% block-bootstrap intervals. Open markers: SST trend interval includes zero."
+  },
+  {
+   "path": "files/figures/fig3_burrows_transfer_heatwave.png",
+   "caption": "a) Detrended slope against thermal diversity (Burrows 2019 prediction). b) Predicted (early slope x SST change) against observed CTI change between periods. c) Heatwave-year CTI residuals with 95% prediction intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:80df002698b6546a701987b85654b633fa3f791c020273119ac8a48dfcb50886",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its archived AFSC FOSS haul table (bottom temperature) and compare with its thermal-exposure result."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Bird CTI followed less than 10% of warming; we compare the fish result with it."
+  },
+  {
+   "target": "doi:10.1038/s41558-019-0631-5",
+   "reason": "Burrows et al. 2019, thermal diversity and depth gradient predictions that we test."
+  },
+  {
+   "target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cleaned trawl survey catch data."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+   "relations": [
+    "uses"
+   ],
+   "reason": "WOA23 climatological temperature for species thermal affinity."
+  },
+  {
+   "target": "https://www.metoffice.gov.uk/hadobs/hadisst/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 monthly SST."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "Rayner et al. 2003, HadISST1 reference."
+  }
+ ]
+}
