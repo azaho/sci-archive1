@@ -1,0 +1,93 @@
+{
+ "title": "Tide-sea level sensitivity from 1980-2009 predicted only part of 2010-2024 tidal amplitude anomalies at 158 global tide gauges and failed in the US Gulf and Southeast",
+ "abstract": "At many tide gauges, tidal amplitude changes from year to year together with annual mean sea level (MSL). Devlin et al. (2017) used this tidal anomaly correlation to estimate tidal change under sea level rise. We did an out-of-sample test. We used UHSLC research-quality hourly data at 160 gauge records (159 sites, 38 countries; 7,079 station-years) and fit annual tides with UTide. In 1980-2009 we fit the amplitude of M2, K1 and the sum M2+S2+K1+O1 (Sum4) with a trend, an 18.61-year cycle and an MSL term. Then we predicted 2010 to the end of record (2017-2024) without updates. The sensitivity contains real information: when we regressed test-year anomalies (against the trend+nodal forecast) on the anomalies that the sensitivity predicts, the slopes were 0.69 for M2 (95% station-bootstrap interval 0.05 to 1.20), 0.40 for K1 (0.05 to 0.75) and 0.40 for Sum4 (-0.13 to 1.01). A slope of 1 is full transfer. Shuffled sensitivities gave slopes near 0 (p < 0.001 for M2 and K1). But the transfer was partial, it explained only 2-6% of test-year variance, the median RMSE gain was 0.7-1.6%, and the M2 slope became 0.48 (-0.41 to 1.32) without the five most influential gauges. In the US Gulf and Southeast, where MSL was 43 mm above its 1980-2009 trend after 2010 (19 mm elsewhere), the slope was -0.12 for K1 and -0.06 for Sum4; at Apalachicola the MSL term doubled the K1 error. Across gauges, 1980-2009 tidal trends were not explained by the sensitivity times the MSL trend (r = -0.19 to 0.19), and most significant sensitivities were negative. Thus the year-to-year relation is mostly not a depth effect and is a weak, unstable predictor of the tidal response to later sea level change. Limitations: short test periods, annual-fit noise, residual nodal error for diurnal tides, unmodelled dredging and land motion, and few Gulf and Southeast gauges.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "tides",
+  "tide gauges",
+  "mean sea level",
+  "tidal anomaly correlation",
+  "M2",
+  "K1",
+  "sea level rise",
+  "out-of-sample test",
+  "UHSLC",
+  "Gulf of Mexico",
+  "harmonic analysis",
+  "UTide"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_transfer.png",
+   "caption": "Test years (2010 to end of record): observed tidal amplitude anomaly against the trend+nodal forecast versus the anomaly predicted by the 1980-2009 tide-MSL sensitivity, in percent of station amplitude. Points are station-years; black dots are decile means. Dashed line: full transfer (slope 1). Colored line: fitted slope with 95% station-bootstrap interval. Panels: M2, K1 and M2+S2+K1+O1 (A4)."
+  },
+  {
+   "path": "files/figures/fig3_rmse_and_station_means.png",
+   "caption": "(a) Test-year RMSE of the trend+MSL, MSL-only and constant models divided by the RMSE of the trend+nodal model (log2; below 0 is better). (b) Station-mean test anomalies against the mean anomaly predicted by the sensitivity; US Gulf and Southeast gauges are open black markers and do not follow the prediction."
+  },
+  {
+   "path": "files/figures/fig1_sensitivity_map.png",
+   "caption": "Training (1980-2009) sensitivity of the M2+S2+K1+O1 amplitude to annual mean sea level, in percent of amplitude per metre, at 158 UHSLC gauges. Diamonds have abs t >= 2. Most significant values are negative; the US Gulf has many strong negative values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7289/V5V40S7W",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UHSLC research-quality hourly sea level (Joint Archive for Sea Level), the source of all tide-gauge data."
+  },
+  {
+   "target": "doi:10.1002/2017JC013165",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Defines the tidal anomaly correlation between interannual MSL and tidal amplitude at Pacific gauges; we test whether such sensitivities predict later years."
+  },
+  {
+   "target": "doi:10.1038/s41598-017-17056-z",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Uses tide-MSL sensitivities to estimate tidal change per metre of sea level rise; our out-of-sample test finds only partial transfer and failure in the US Gulf and Southeast."
+  },
+  {
+   "target": "doi:10.1146/annurev-marine-010419-010727",
+   "reason": "Review of natural and anthropogenic causes of tidal change."
+  },
+  {
+   "target": "https://github.com/wesleybowman/UTide",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UTide 0.4.0 for the annual harmonic analyses."
+  },
+  {
+   "target": "sci:sha256:e8b7962ba7972770058b20a13437ad9ec3ba465d00428ce2d84bb7b480b95c7b",
+   "reason": "Earlier campaign test of an 18.61-year cycle in monthly tidal range at six US gauges."
+  },
+  {
+   "target": "sci:sha256:8a976c232c844f57309a78cb34064dcc72ef5e9ac5d02d1f0d22bf354c6623e2",
+   "reason": "Earlier campaign test of tide-range trend differences at six US gauges."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Land outline for the map figure (public domain)."
+  }
+ ]
+}
