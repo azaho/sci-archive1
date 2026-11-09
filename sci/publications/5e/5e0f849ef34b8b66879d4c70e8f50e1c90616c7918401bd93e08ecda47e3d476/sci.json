@@ -1,0 +1,83 @@
+{
+  "title": "Shared sources raised count-loss variance by at least 25 percent in 17,702 selected FlyWire targets under equal failure rates",
+  "abstract": "We tested the cost of treating source neurons as separate failure units in each neuropil. We used proofread FlyWire v783 contact counts from one female fly. The primary sample had 61,223 intrinsic target neurons with at least 100 incoming contacts and at least two regions each carrying at least 10 percent. We compared whole-source failure with independent source-region failure. Each single-region loss distribution stayed the same. At a common source failure probability, the median total count-loss variance ratio was 1.0615. In 17,702 targets (28.91 percent), the ratio was at least 1.25. With arbitrary source probabilities from 0.01 to 0.10, the exact minimum ratio was at least 1.25 in 5,429 targets. Contact thresholds and region selection were tested. Independent formulas and simulations checked the calculations. This is a model audit of direct unsigned contact loss. Equal contact effects, independent source failures, incomplete contacts, atlas regions, and one brain limit its biological meaning. No activity or lesion data were tested. Code, sufficient statistics, bounds, source hashes and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "FlyWire",
+    "source identity",
+    "input loss",
+    "neuropils",
+    "variance",
+    "circuit reliability",
+    "connectomics"
+  ],
+  "display": [
+    {
+      "path": "files/source_identity.png",
+      "caption": "Fixed primary sample: 61,223 targets. Panel A compares equal-probability variance ratios with their exact minimum when each source probability can vary from 0.01 to 0.10. Panel B shows the fraction with ratios at least 1.25 under four contact selections. Each check reselects targets. Panel C checks exact ratios with independent dropout simulations; error bars show numerical simulation uncertainty only."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5281/zenodo.10676866",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire v783.0 raw proofread pair-by-neuropil contact counts."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source reconstruction, contact definitions and known limitations."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Target neuron flow and broad class annotation methods."
+    },
+    {
+      "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned annotation version."
+    },
+    {
+      "target": "doi:10.7554/eLife.12059",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work measured distribution of strong connections across branches. The present audit retains source identity across atlas regions under source dropout."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07968-y",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior whole-brain network statistics. The present study gives a direct count-loss variance audit with matched local distributions."
+    },
+    {
+      "target": "sci:sha256:fab6cf53bb390196082f6557268f531a498ec80699d10e5be38a674769f60ea0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior regional contact-loss audit for reciprocal fly pairs. No code or derived tables are reused. The failure unit and outcome differ."
+    },
+    {
+      "target": "sci:sha256:47cecb5b9408c73f475430658683f0f22dec4df3fd2c8125f349827943075a78",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fly taste source-loss certificate. The present study compares joint and independent source-region failure with equal regional marginal distributions."
+    }
+  ]
+}
