@@ -1,0 +1,83 @@
+{
+  "title": "Rules fitted on Sunspot Cycles 1-24 contain the Cycle 25 maximum (160.9) in 90 percent intervals; geomagnetic and polar-field precursors under-predict it at 121-130",
+  "abstract": "We tested classical solar-cycle forecast rules on Sunspot Cycle 25 (SILSO V2.0 13-month smoothed maximum 160.9, October 2024). Each rule was fitted only on cycles before the target cycle, so all forecasts use only information from the forecast time. Rules at minimum: mean of past maxima, persistence, regression on the previous maximum, Gnevyshev-Ohl same-parity pairs, minimum value, previous cycle length, the minimum of smoothed GFZ Ap (cycles 17-24), and the Wilcox Solar Observatory polar field (cycles 21-24). We also tested rise-phase rules and timing rules. All 19 amplitude rules contain 160.9 in their 90 percent intervals, and the Cycle 25 errors are in the historical range (|z| at most 1.16). But the intervals at minimum are wide (historical RMSE 49-64). The two physical precursors give the lowest forecasts (Ap 129.7, polar field 121.3; 111 when the window ends at minimum). The simple statistical rules give 164-181. Cycle 25 has the largest ratio of maximum to precursor in both records (Ap 31.6 against 18.8-27.6; polar field 2.56 against 1.66-2.35) for all tested windows. A fit with an intercept removes most of this effect, so we do not claim a change in the physical relation. The published intervals were too narrow: the NOAA/NASA panel (115 +- 10) misses by z = 4.6, Upton and Hathaway (134 +- 8) by z = 3.4, McIntosh et al. (184 +- 17) by z = -1.4. The rise-phase value predicts the maximum within 6-11 units from 36-48 months after minimum. We record forecasts for the end of Cycle 25 (minimum near 2031.0, 90 percent interval 2028.9-2033.1) and for Cycle 26. Limitations: 3-8 training cycles for the physical precursors, no aa index, and a small set of published benchmarks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    }
+  ],
+  "keywords": [
+    "solar cycle 25",
+    "sunspot number",
+    "solar cycle prediction",
+    "precursor methods",
+    "polar magnetic field",
+    "geomagnetic Ap index",
+    "Gnevyshev-Ohl rule",
+    "Waldmeier effect",
+    "forecast verification",
+    "out-of-sample test"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_cycle25_forecasts.png",
+      "caption": "Cycle 25 maximum forecasts with 90 percent intervals from rules fitted only on earlier cycles (blue: statistical rules; orange: physical precursors), and three published forecasts with their stated intervals (green). The dashed line is the observed maximum, 160.9. All rule intervals contain it. The physical precursors and the published forecasts are low, except the terminator forecast."
+    },
+    {
+      "path": "files/figures/fig2_rise_phase_lead_time.png",
+      "caption": "Left: Cycle 25 forecast from the smoothed sunspot number k months after minimum, with 90 percent interval. Right: historical expanding-window RMSE for cycles 10-24 (blue) and the Cycle 25 absolute error (orange). The forecast is within 11 units from 36 months after minimum."
+    },
+    {
+      "path": "files/figures/fig3_amplitude_per_precursor.png",
+      "caption": "Ratio of the cycle maximum to the precursor at minimum. Left: minimum 13-month smoothed Ap (GFZ). Right: WSO polar field. Cycle 25 (orange) has the largest ratio in both short records."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.24414/qnza-ac80",
+      "relations": [
+        "uses"
+      ],
+      "reason": "WDC-SILSO sunspot number V2.0 (CC BY-NC 4.0), not bundled."
+    },
+    {
+      "target": "doi:10.5880/Kp.0001",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GFZ Kp/ap/Ap geomagnetic index (CC BY 4.0), not bundled."
+    },
+    {
+      "target": "doi:10.1029/2020SW002641",
+      "reason": "Description of the Kp, ap and Ap indices."
+    },
+    {
+      "target": "http://wso.stanford.edu/Polar.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Wilcox Solar Observatory polar field observations, not bundled."
+    },
+    {
+      "target": "doi:10.1007/s11207-016-1014-y",
+      "reason": "Definition of sunspot number V2.0."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2305.06516",
+      "reason": "Upton and Hathaway 2023 precursor forecast for Cycle 25, used as a benchmark."
+    },
+    {
+      "target": "doi:10.3389/fspas.2023.1050523",
+      "reason": "McIntosh, Leamon and Egeland 2023 terminator forecast, used as a benchmark."
+    },
+    {
+      "target": "sci:sha256:d8fe105441f4a8deb0890611a7a4970adb89bee39e6907d41713aa800780c4cf",
+      "reason": "Related campaign test that also uses Cycle 25 as out-of-sample data."
+    }
+  ]
+}
