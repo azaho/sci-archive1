@@ -1,0 +1,107 @@
+{
+  "title": "A ten-mode wiring advantage for velocity decoding did not repeat in a second C. elegans sample",
+  "abstract": "We tested whether ten smooth wiring modes retain more movement information than ten modes of a local distance graph. We used identified head-neuron activity from 40 freely moving C. elegans and repeated the test in eight animals from a second study. We used five separate time blocks, a 30-second training buffer, and nested ridge tuning. The mean wiring-minus-distance skill difference for velocity was 0.069 in the first sample (97.5% animal bootstrap interval 0.011 to 0.120). It was -0.022 in the second sample (-0.063 to 0.012). The head-bending differences were uncertain after adjustment for two outcomes. Wiring did not clearly beat ten-dimensional random projections for velocity in either sample. Training-only principal components gave higher head-bending skill in both samples. All ten-mode primary graph spaces had positive eigenvalue gaps. A five-mode check was withdrawn because the distance space was non-unique in 26 animals. The result does not support a repeated decoding advantage for these smooth wiring modes. The samples differ in recording length and experimental context, and come from one laboratory. The wiring and atlas positions come from other animals. Code, compact inputs, held-out predictions, source hashes, graph audits, and static figures support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "neural activity",
+    "behavior decoding",
+    "graph eigenmodes",
+    "brain geometry",
+    "blocked validation",
+    "replication",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/decoder_scores.png",
+      "caption": "Mean held-out skill for velocity and head bending. All methods use the same neurons within each animal. Whiskers are 95% animal bootstrap intervals. These intervals are descriptive; the two primary contrasts use 97.5% intervals."
+    },
+    {
+      "path": "files/figures/paired_scores.png",
+      "caption": "Primary ten-mode wiring and distance scores for each animal. The diagonal marks equal skill. Blue circles show 40 Atanas animals; red triangles show eight Dag animals."
+    },
+    {
+      "path": "files/figures/sensitivity.png",
+      "caption": "Wiring-minus-distance skill differences for the primary test and secondary graph checks. Whiskers are 97.5% animal bootstrap intervals. The head comparison includes only 23 first-sample and two second-sample animals; no interval is given for the two-animal result."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified structure and atlas tables and its matched distance-graph definition. Extends activity variance capture to buffered held-out behavior decoding. Decoder code and results are new."
+    },
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream source of the structure and soma-position tables reused through the prior eigenmode publication."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary neural activity, behavior and neuron identity data; prior behavior-encoding and decoding methods."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Second released neural activity and neuron identity sample."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Cook hermaphrodite structural contact weights."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adult dataset 8 structural synapse weights for the secondary map check."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06098-1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates comparison of structural and geometric modes. This worm behavior test is not a direct test of human fMRI reconstruction."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source of atlas soma positions."
+    },
+    {
+      "target": "https://zenodo.org/records/19388374",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v4 deposit used for primary activity and labels; original Cell paper also cited."
+    },
+    {
+      "target": "https://zenodo.org/records/19414639",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 deposit used for the second sample; original Cell paper also cited."
+    }
+  ]
+}
