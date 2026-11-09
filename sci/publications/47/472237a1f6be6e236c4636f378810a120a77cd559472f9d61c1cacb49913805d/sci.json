@@ -1,0 +1,75 @@
+{
+  "title": "Independent contact loss gave higher mean pair reachability than shared site loss in eight partial worm map models",
+  "abstract": "We tested directed route survival in eight public C. elegans brain maps on a fixed panel of 162 neurons. Each chemical synaptic site had one source and one or more targets. We compared loss of whole sites with independent loss of each site-target contact. Both models had the same survival probability for every directed edge. At an assumed failure probability of 0.5, independent contact loss raised mean pair reachability by 0.22 to 4.70 percentage points. All eight nominal 95 percent Monte Carlo intervals excluded zero. There were 4,000 draws per model, map and failure probability. Five probabilities gave 320,000 graph draws. A conditional replacement proof shows that independent contact loss cannot lower single-target reachability under the stated assumptions. A fork example shows that shared loss can instead raise joint reachability of two targets. Prior percolation work already shows that equal edge probabilities need not imply equal propagation. Our contribution is a checked site-resolved application and finite-map effect sizes. Failure rates and complete sharing are assumptions. No release, activity or behavior was measured. Partial maps and eight different animals prevent a developmental or cross-species claim.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "polyadic synapses",
+    "reachability",
+    "correlated failures",
+    "reliability"
+  ],
+  "display": [
+    {
+      "path": "files/reachability.png",
+      "caption": "Mean directed pair reachability under assumed contact and site loss. Error bars show nominal 95 percent Monte Carlo intervals, not animal uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary eight developmental brain maps."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned primary synapse records."
+    },
+    {
+      "target": "sci:sha256:7f2ce4d0a699d3b9970f466f6936638b25a2c4c1b710e11d6527b2dcf875b1cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified 162-cell panel. No shuffle code or estimates reused."
+    },
+    {
+      "target": "sci:sha256:7b49a961b9fa6e5dc7b8a8b6d905e9b79ded511bf2212b01804aef0c7ba7aaa5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related matching bound and conditional replacement proof. We adapt the proof strategy to a different statistic: pair reachability."
+    },
+    {
+      "target": "sci:sha256:3b371cc9adf8e1022851b0ca78ee2ee1007057fa27597d3b919bfdae217014e6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related minimum site cuts. Here we test random loss rather than adversarial cuts."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.76.036113",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related epidemic percolation work on dependent transmission and failure of independent bond descriptions."
+    },
+    {
+      "target": "doi:10.48550/arXiv.0803.0999",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Miller bounds epidemic probability and size with heterogeneous transmission. We make no claim that the general role of outgoing dependence is new."
+    }
+  ]
+}
