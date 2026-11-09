@@ -1,0 +1,83 @@
+{
+ "title": "Madison River discharge did not predict 2007-2025 Yellowstone geyser intervals; the seasonal cycle recurred but did not follow each year's hydrograph",
+ "abstract": "Hurwitz et al. (2008) reported that annual mean eruption intervals of Old Faithful and four other Upper Geyser Basin geysers decrease when Madison River discharge increases (Old Faithful r = -0.98, 1967-2006), and that intervals increase seasonally after the snowmelt peak with a lag for each geyser. We did an out-of-sample test for 2007-2025 with the public GeyserTimes archive (1.54 million records) and USGS daily discharge. With GeyserTimes data for 1997-2006 we reproduced the annual correlation for Old Faithful (r = -0.99, 8 years). For 2007-2025 it was -0.26 (19 years; one-sided p = 0.27 against AR(1) surrogate discharge), and the correlation of year-to-year changes was +0.03. The 1997-2006 regression forecast the 2007-2025 July-September mean interval worse than the mean of the last three in-sample years (RMSE 4.5 vs 3.4 min). Daisy and Aurum changed sign; Castle was negative (-0.54) but had the opposite sign in 1997-2006. The in-sample correlation came mostly from the 1997-2001 loss of short Old Faithful eruptions (46% to 2%). In 2007-2025 the short fraction did not decrease in dry years; it reached 17-19% in the driest years, 2024-2025. The seasonal cycle recurred at the published lags (mean within-year r: Old Faithful +0.27, 16 of 20 years positive; Daisy +0.36, 17 of 19; Aurum +0.39, 10 of 13). But discharge of other years correlated equally well (Old Faithful 0.32 vs 0.28 for the same year; Daisy 0.44 vs 0.40), and the size of the Old Faithful seasonal increase did not scale with the snowmelt pulse after 2006 (r = +0.13, p = 0.30). Thus the data show a stable calendar cycle, but not control by the snowmelt of each year. Limitations: at most 19 out-of-sample years per geyser, changes in observation methods (loggers, visual, webcam), fewer recorded Old Faithful eruptions after 2019, river discharge as the only recharge index, no earthquake model, and many tested variants. A weak annual relation (about r = -0.3) is not excluded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370703"
+  }
+ ],
+ "keywords": [
+  "geyser",
+  "Old Faithful",
+  "Yellowstone",
+  "eruption interval",
+  "streamflow",
+  "drought",
+  "snowmelt recharge",
+  "hydrothermal system",
+  "out-of-sample test",
+  "replication",
+  "GeyserTimes",
+  "Madison River"
+ ],
+ "display": [
+  {
+   "path": "files/fig/fig1_old_faithful_timeseries.png",
+   "caption": "Old Faithful July-September mean interval (blue), Madison River mean discharge (orange, axis inverted) and the forecast from the 1997-2006 regression (black). Bottom: fraction of short intervals (< 75 min)."
+  },
+  {
+   "path": "files/fig/fig2_annual_scatter.png",
+   "caption": "July-September mean interval vs Madison River mean discharge for six geysers. Grey: 1997-2006 (period of Hurwitz et al. 2008). Blue: 2007-2025 out-of-sample years."
+  },
+  {
+   "path": "files/fig/fig3_seasonal_lag_curves.png",
+   "caption": "Mean within-year correlation between monthly interval and monthly discharge vs discharge lead, 2007-2025. Same-year discharge (blue) and other-year discharge (orange) give almost the same curves; dotted lines show the published lags."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1130/G24723A.1",
+   "relations": [
+    "challenges",
+    "supports",
+    "reviews"
+   ],
+   "reason": "We test both claims out of sample. The annual discharge-interval correlation did not continue after 2006 (challenges). The seasonal cycle at the published lags recurred (supports), but it did not follow the hydrograph of each year."
+  },
+  {
+   "target": "doi:10.1002/2013JB010803",
+   "reason": "Earlier analysis of 2001-2011 Old Faithful and Daisy intervals vs earthquakes, tides and weather."
+  },
+  {
+   "target": "doi:10.1029/2020GL089871",
+   "reason": "Paleo evidence that a severe drought stopped Old Faithful; motivates the drought-interval question."
+  },
+  {
+   "target": "doi:10.1130/G20381.1",
+   "reason": "Earthquake-induced changes of geyser intervals, a possible confounder."
+  },
+  {
+   "target": "https://geysertimes.org/archive/complete/geysertimes_eruptions_complete.tsv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Eruption data (ODbL), archive version of 2026-11-08, SHA-256 7756725b1b55317665c0aacdf21e254c476c135ab89fb5f281451a371cd7bb82."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/?format=rdb&sites=06037500,06036905&parameterCd=00060",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS daily mean discharge, Madison River and Firehole River near West Yellowstone; exact files in files/raw/nwis."
+  },
+  {
+   "target": "https://npshistory.com/publications/yell/brochures/old-faithful-geyser-2010.pdf",
+   "reason": "NPS statement that a local earthquake in 1998 changed the Old Faithful eruption mode."
+  }
+ ]
+}

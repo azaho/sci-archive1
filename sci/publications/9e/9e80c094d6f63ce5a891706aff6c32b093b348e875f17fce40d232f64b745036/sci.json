@@ -1,0 +1,106 @@
+{
+ "title": "Wood Thrush counts did not increase where acid wet deposition decreased most on 1,850 eastern US Breeding Bird Survey routes in 1987-2025",
+ "abstract": "Hames et al. (2002) linked high acid wet deposition to a lower probability of Wood Thrush breeding in eastern North America. US sulfate deposition then decreased: at the eastern US Breeding Bird Survey (BBS) routes in this study, the median wet SO4 decreased from 19 to 5 kg/ha/yr between 1985-1994 and 2016-2025. We did a test of the prediction that Wood Thrush counts increase most where deposition decreased most. We used the BBS 2026 release (1966-2025, 2,496 routes east of 100 W) and NADP annual deposition grids (1985-2025). Poisson models had route-observer and Bird Conservation Region x year fixed effects and an observer first-year term. Wood Thrush counts changed by +10.7% per +10 kg/ha/yr of wet SO4 (95% CI +2.2% to +20.0%; within-region permutation p = 0.028). This sign is opposite to the prediction. The estimate was at the 77th percentile of 64 other forest species, so it does not show a species-specific effect. Results stayed positive or near zero in two periods, two region groups, with NO3 in place of SO4, and with segment detections as the response. With route-specific linear trends removed, the estimate was +2.2% (-4.7% to +9.7%), which permits a recovery of at most about 5% per 10 kg/ha/yr decrease. Route trends in 1966-1998 were more positive, not more negative, where deposition was high. The SO4 effect did not change with elevation. Veery, Hermit Thrush and Ovenbird showed no consistent recovery. Limitations: BBS counts measure relative abundance, not breeding attempts; exposure is interpolated wet deposition near the route start; soil calcium recovery can be slow; and regional changes that correlate with the deposition decrease can bias the estimates.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  }
+ ],
+ "keywords": [
+  "acid deposition",
+  "acid rain",
+  "sulfate",
+  "Clean Air Act",
+  "Wood Thrush",
+  "Hylocichla mustelina",
+  "Breeding Bird Survey",
+  "NADP",
+  "air pollution",
+  "forest birds",
+  "calcium",
+  "recovery",
+  "observer effects",
+  "fixed effects Poisson",
+  "permutation test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_species_estimates.png",
+   "caption": "SO4 coefficients (log count change per +10 kg/ha/yr wet SO4, 95% CI) for Wood Thrush, Veery, Hermit Thrush and Ovenbird in 8 model variants. Gray points are 64 other forest species (clipped at +-1.5). The acid-deposition recovery hypothesis predicts values below zero."
+  },
+  {
+   "path": "files/figures/fig3_high_vs_low_decline_bins.png",
+   "caption": "Log count ratio between routes in the top and bottom tertile of the within-BCR SO4 decrease (1985-1994 to 2016-2025), by 5-year bin, reference 1986-1990, with route-observer and BCR x year fixed effects (95% CI). Wood Thrush decreased on high-decrease routes after 2005."
+  },
+  {
+   "path": "files/figures/fig1_deposition.png",
+   "caption": "NADP wet SO4 deposition at 2,493 eastern US BBS routes: 1985-1994 mean, 2016-2025 mean, decrease relative to the BCR mean, and route median with 10-90% band by year."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1073/pnas.172700199",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Hames et al. 2002 proposed acid deposition as a cause of Wood Thrush decline; we test the recovery prediction that follows from it with later data."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BBS 2026 release (1966-2025) route counts, weather and route tables."
+  },
+  {
+   "target": "https://nadp.slh.wisc.edu/maps-data/ntn-gradient-maps/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NADP NTN annual wet deposition gradient grids 1985-2025."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET habitat class used to define the forest species set."
+  },
+  {
+   "target": "doi:10.1525/auk.2011.10283",
+   "reason": "Soil calcium and Ovenbird density; basis for the secondary focal species."
+  },
+  {
+   "target": "doi:10.1073/pnas.2013568117",
+   "reason": "Air pollution regulation (ozone, NOx Budget Program) and BBS bird abundance."
+  },
+  {
+   "target": "sci:sha256:15270e894fa3ccc7440d212eec8eefbd61f3c871cb06b211e78f8dc74ca0b78f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its AVONET species trait table matched to BBS AOU codes."
+  },
+  {
+   "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+   "reason": "Campaign test of ground-level ozone and BBS counts with a similar fixed-effects design."
+  },
+  {
+   "target": "sci:sha256:64f2d0489d2fffc5f9ec6a95c7447cb78d929c6103ac4fe844bf687e470aec0e",
+   "reason": "Campaign test of wildfire smoke and PM2.5 and BBS counts."
+  },
+  {
+   "target": "https://api.opentopodata.org/v1/srtm90m",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Route-start elevation from SRTM 90 m."
+  }
+ ]
+}
