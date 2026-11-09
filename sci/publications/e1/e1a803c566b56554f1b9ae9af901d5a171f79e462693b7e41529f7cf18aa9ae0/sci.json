@@ -1,0 +1,68 @@
+{
+  "title": "Fifteen times in the NRT summary table for FRB 20220912A differ from filename times by more than one second",
+  "abstract": "We test arrival times in the 696-row Nancay summary table for FRB 20220912A in Zenodo version 1. Burst properties link every summary row to a unique filename time. Five rows have multiple equivalent-time matches. Of 696 times, 681 agree within rounding plus 1 ms. Fifteen differ by hundreds to thousands of seconds. Under a topocentric UTC and 1740 MHz reference assumption, barycentric TDB conversion with a dispersion correction matches nine of these times to the same burst and six to another burst, within 0.379 seconds. The two time products have only 565 common positive adjacent pairs below 3600 seconds. Rounding also erases 50 of 54 positive filename gaps below 0.5 seconds. This supports a mixture of time conventions and some row assignments, not new source physics. Instrument timing metadata, raw spectra and independent observations are absent. The package supplies code, input hashes, aggregate evidence and an external regeneration recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "FRB 20220912A",
+    "Nancay",
+    "timestamp audit",
+    "barycentric correction",
+    "waiting time",
+    "data validation"
+  ],
+  "display": [
+    {
+      "path": "files/timing_audit.png",
+      "caption": "Time offsets and detected adjacent waits in two public NRT time products. Fifteen time offsets exceed rounding. Short waits are lost in the summary."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1f32138a82f9f5cea94058b69d426b88636a6e9b35580ec5ab5dd21b4f2324b6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This report identifies a six-example timing mismatch. We extend its warning to the full table and test time conventions."
+    },
+    {
+      "target": "sci:sha256:5f3c237de5938e0585a283daee5851c6ada7a54c83ddf9c4a69ba88b0f2cffdd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This timing study uses the summary table. We identify limits in that time product but do not refit its statistics."
+    },
+    {
+      "target": "doi:10.1093/mnras/stae2296",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5281/zenodo.13889738",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/html/2407.10155v1",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/time/",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
