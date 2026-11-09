@@ -1,0 +1,22 @@
+{
+  "title": "Earlier and smaller snowpacks melted more slowly at 722 western US SNOTEL stations in 1982-2025, and constant-parameter air-temperature melt models gave only half of the peak-SWE effect",
+  "abstract": "We tested the claim of slower snowmelt in a warmer world with daily snow water equivalent from 722 NRCS SNOTEL stations in 12 western US states and Alaska. We used 26,807 melt seasons in water years 1982-2025. The mean melt rate is peak SWE divided by the days from peak to melt-out. Within stations, a one-week later peak gave an 11.5% higher melt rate with peak SWE fixed (log slope 0.109 per week, SE 0.004). With timing fixed, the peak SWE elasticity was 0.38 (SE 0.03). We ran three melt models with constant station parameters from the observed peak and peak date. A calibrated temperature-radiation index model gave 70% of the timing slope and 49% of the peak SWE elasticity. The observed slopes were larger in all 12 states with 10 or more stations. Per +1 C in winter and spring (GHCN_CAMS), the melt rate fell by 9.6% (95% CI -13.2% to -5.8%). With peak SWE and timing fixed, spring warmth increased it by 9.6% per C. The 1982-2025 melt-rate trend was -2.8% per decade (CI -6.5% to +0.9%), which is not clear. Peak SWE and timing explain the point estimate, and a 1982-2003 model predicted 2004-2025 rates with a mean residual of +0.7%. These are interannual point-scale associations, not proof of long-term causal effects. Net SWE loss includes snowfall during melt, and the models use no measured radiation. Code, station-season data, hashes and figures are included.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["snowmelt rate", "SNOTEL", "snow water equivalent", "climate warming", "temperature-index model", "western United States", "water resources", "panel regression"],
+  "display": [
+    {"path": "files/figures/fig1_melt_rate_relations.png", "caption": "Within-station partial relations of log mean melt rate to peak date (a) and log peak SWE (b), with observed and energy-index model slopes; (c) slopes with 95% intervals in the same 22,580 seasons."},
+    {"path": "files/figures/fig2_years_temperature.png", "caption": "(a) Yearly network-mean melt-rate anomalies, observed and from peak date and peak SWE only, WY 1982-2025. (b) Melt-rate change per +1 C of GHCN_CAMS winter and spring temperature: total, and with peak SWE and peak date fixed."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/nclimate3225", "reason": "Source of the slower-snowmelt hypothesis that we test."},
+    {"target": "doi:10.1038/s41558-021-01014-9", "reason": "Related SNOTEL winter-melt trend work."},
+    {"target": "doi:10.3189/S0022143000003087", "reason": "Form of the temperature-radiation index benchmark."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS temperature product description."},
+    {"target": "doi:10.1002/2014GL062803", "reason": "SNOTEL temperature sensor bias; reason to use gridded temperature for the temperature tests."},
+    {"target": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data", "relations": ["uses"], "reason": "NRCS AWDB REST API v1, SNOTEL daily WTEQ, TAVG and PREC, retrieved 2026-11-08 PST; per-file SHA-256 in files/data/raw_daily_sha256.txt."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc", "relations": ["uses"], "reason": "GHCN_CAMS monthly temperature, SHA-256 8dbe8e8ce86729f56a2234dec7420b94aecba804aa7df599c8fea68ade70802b."}
+  ]
+}

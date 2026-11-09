@@ -1,0 +1,116 @@
+{
+ "title": "NOAA annual high tide flood day ranges contained 57% of observed counts at 85 US gauges in 2019-2025, less than the 68% expected, and their midpoints did not beat a 5-year mean",
+ "abstract": "NOAA gives a likely range of minor high tide flood days for each tide gauge for the next May-April year. NOAA defines the range as the expected value plus or minus one standard deviation. We compared the as-issued outlooks for 2019-2025 with the observed counts from the NOAA CO-OPS API. The primary sample has 535 station-years at 85 gauges with no material threshold change. The observed count was inside the range in 56.8% of station-years (95% year-and-station bootstrap interval 45.5-67.8%), above it in 24.1% and below it in 19.1%. Coverage was 37% in the 2023 El Nino year and 43% in 2025. The ranges must be about 1.25 times wider to contain 68% (in-sample). The midpoint error (MAE 3.18 days) was smaller than that of last year's count (3.86 days; difference -0.68, interval -1.36 to -0.09). It was not smaller than the error of the 5-year mean (3.12), a 19-year linear trend (3.12) or a quadratic trend from 1950 (3.09). Region-by-year means explain 60% of the signed-error variance (permutation null 15%). Shared regional sea-level anomalies thus cause most misses. If you verify the pre-June-2023 Pacific Island outlooks with today's lowered thresholds, 76% of the counts are above the range. A recount with the old threshold gives 69% inside. This recount reproduces the counts that NOAA printed. Our 2019 coverage (60/23/17%) agrees with the value that NOAA reported. Limitations: only 7 verification years with correlated errors; the threshold history comes from indirect checks; the baselines are not the NOAA model.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "high tide flooding",
+  "nuisance flooding",
+  "forecast verification",
+  "NOAA outlook",
+  "tide gauge",
+  "sea level",
+  "prediction interval",
+  "calibration",
+  "ENSO",
+  "flood threshold"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_coverage_and_error.png",
+   "caption": "A: Share of 85 stable-threshold US gauges with observed minor flood days below, inside or above the NOAA likely range, by met year (May-April). The dashed line is the 68% expected for plus or minus 1 SD. B: Mean absolute error of the outlook midpoint and of three baselines that use only data before the met year. Grey bars show met-year mean ONI."
+  },
+  {
+   "path": "files/figures/fig2_scatter_and_baselines.png",
+   "caption": "A: Observed flood days against the outlook midpoint (log scale, plus 1). B: Outlook MAE minus baseline MAE with 95% intervals from a bootstrap that resamples years and stations. Negative values mean that the outlook is better."
+  },
+  {
+   "path": "files/figures/fig3_year_error_vs_oni.png",
+   "caption": "A: Mean signed error (observed minus outlook midpoint) by NOAA region and met year, with the number of gauges. B: All-station mean signed error against met-year mean ONI for the outlook and for the 3-year-mean baseline (7 years, descriptive only)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "As-issued NOAA annual high tide flooding outlooks that we verify."
+  },
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual.json",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Observed met-year flood-day counts (query with station=ID)."
+  },
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_daily.json",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daily maximum water level and flood flags, used to recount with old thresholds."
+  },
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/8443970/floodlevels.json",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Example of the flood-level and datum metadata endpoints used for all stations."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ONI v5 table (shared campaign dataset noaa-cpc-oni-v5-table-20261108-syam2)."
+  },
+  {
+   "target": "https://tidesandcurrents.noaa.gov/publications/Techrpt_092_2019_State_of_US_High_Tide_Flooding_with_a_2020_Outlook_30June2020.pdf",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Outlook method (expected value plus or minus 1 SD), printed 2019 counts, and NOAA's 2019 verification that we reproduce."
+  },
+  {
+   "target": "https://tidesandcurrents.noaa.gov/publications/2021_State_of_High_Tide_Flooding_and_Annual_Outlook_Final.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Printed 2020 counts used to check the threshold history."
+  },
+  {
+   "target": "https://tidesandcurrents.noaa.gov/publications/Techrpt_090_2018_State_of_US_HighTideFlooding_with_a_2019_Outlook_Final.pdf",
+   "reason": "NOAA one-year verification of the 2018 outlook."
+  },
+  {
+   "target": "https://tidesandcurrents.noaa.gov/cms/wp-content/uploads/2025/08/2024-2025-Annual-High-Tide-Flooding-Outlook.pdf",
+   "reason": "Pacific Island threshold change on 1 June 2023 and NOAA's 2023-24 verification statement."
+  },
+  {
+   "target": "doi:10.3389/fmars.2022.1073792",
+   "reason": "NOAA statistical high tide flood outlook approach."
+  },
+  {
+   "target": "doi:10.1198/016214506000001437",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Interval score for central prediction intervals."
+  },
+  {
+   "target": "sci:sha256:16be13a3e02b39b1697fec26ff7c7ccf34369db4cca22ea9401954c40e9bc03f",
+   "reason": "Related campaign work on annual high-water forecast error at six US gauges."
+  }
+ ]
+}

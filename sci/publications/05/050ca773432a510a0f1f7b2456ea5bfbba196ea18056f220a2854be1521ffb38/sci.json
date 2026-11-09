@@ -1,0 +1,19 @@
+{
+  "title": "A negative mass-balance year did not make the next summer balance more negative beyond climate on 143-227 WGMS glaciers in 1950-2024; the forecast gain from the previous year was regional",
+  "abstract": "Question: after a very negative glacier mass-balance year, does less firn and a darker surface make the next summer balance more negative than the weather of that summer predicts (melt memory)? Approach: we used glaciological balances from the WGMS Fluctuations of Glaciers database (version 2026-02-10) and 0.5 deg GHCN_CAMS air temperature. We used fixed-effects models with glacier and calendar-year effects and three tests: (1) a direct test of the previous-year annual balance with a winter-balance control outcome; (2) an exogenous test that compares the effect of the previous summer temperature with that of the next summer temperature, which is a placebo; (3) an out-of-sample forecast test (fit 1950-2005, test 2006-2024). Results: the previous-year balance coefficient on summer balance was 0.009 m w.e. per m w.e. (95% CI -0.039 to 0.058; 4,277 glacier-years, 154 glaciers). The previous-minus-next summer temperature contrast was +0.005 m w.e. per K (-0.048 to 0.057; 143 glaciers), which gives an implied memory coefficient of -0.012 (-0.072 to 0.051). For annual balances of 227 glaciers, it was 0.041 (-0.036 to 0.117). Results were similar across time systems, flags, periods and AAR groups. Out of sample, the own previous-year balance lowered test error by about 3%, but the mean previous-year balance of other glaciers in the region lowered it by 4-5%, and the own value then added at most 0.6%. Thus the useful persistence is regional, not glacier-specific. Limitations: year effects remove global shocks; temperature is a coarse grid proxy; many series are reanalysed; smaller regional subsets do not exclude a memory coefficient of about 0.3; elevation bands were not analysed.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["glacier mass balance", "WGMS", "melt-albedo feedback", "firn", "persistence", "placebo test", "out-of-sample forecast", "GHCN_CAMS", "glacier runoff", "fixed effects"],
+  "display": [
+    {"path": "files/figures/fig1_temperature_lag_lead.png", "caption": "Effects of previous-year (t-1), same-year (t) and next-year (t+1, placebo) summer and winter air temperature on summer, winter and annual balance (glacier and year effects; two-way clustered 95% CI). Equal lag and lead effects show no carry-over of melt."},
+    {"path": "files/figures/fig2_memory_specifications.png", "caption": "A: coefficient of the previous-year annual balance on summer balance across specifications. B: previous-minus-next summer temperature contrast across robustness variants (memory predicts a negative value). 95% CI."},
+    {"path": "files/figures/fig3_out_of_sample.png", "caption": "Change in 2006-2024 test mean squared error when a previous-year balance term is added to a climate-only model fitted on 1950-2005. Regional previous-year balance of other glaciers gives the gain; the glacier's own value adds almost nothing. 95% glacier bootstrap CI."}
+  ],
+  "citations": [
+    {"target": "doi:10.5904/wgms-fog-2026-02-10", "relations": ["uses"], "reason": "Source of glacier-wide winter, summer and annual mass balances and glacier locations."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS monthly land air temperature analysis used as the climate covariate."},
+    {"target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc", "relations": ["uses"], "reason": "Exact GHCN_CAMS file used (shared campaign copy, sha256 8dbe8e8c...)."}
+  ]
+}
