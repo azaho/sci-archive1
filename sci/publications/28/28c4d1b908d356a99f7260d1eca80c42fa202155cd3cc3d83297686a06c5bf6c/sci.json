@@ -1,0 +1,69 @@
+{
+  "title": "Larger dendrite opportunity identified 103 of 134 one-way connection directions in one selected MICrONS sample",
+  "abstract": "We tested a fixed anatomy rule for connection direction in the MICrONS release-v1 edge table. Both cells needed positive measured opportunity toward the other cell, and exactly one direction needed a detected synapse. The sample had 134 pairs and 101 cells from one mouse. Selecting the direction with the larger dendrite opportunity value identified 103 directions, or 76.9 percent. A nominal 95 percent cell bootstrap interval was 64.8 to 88.2 percent. Accuracy stayed between 75.8 and 78.5 percent when each cell was omitted. A same-area-group and layer check identified 54 of 68 directions. Three released response similarity measures were equal in the two directions for all selected pairs. Shared symmetric terms cancel in a conditional direction model under stated Bernoulli assumptions. The result gives a simple anatomy baseline, not a causal effect or a rule across mice. Selected cells, final-circuit geometry, reconstruction errors, unmeasured cell traits and nominal bootstrap coverage limit inference. The package contains new code, aggregate evidence, a figure, source hashes and retrieval steps. External records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "connection direction",
+    "axon-dendrite proximity",
+    "connectomics",
+    "prediction baseline",
+    "symmetric similarity"
+  ],
+  "display": [
+    {
+      "path": "files/direction.png",
+      "caption": "Fixed opportunity rules identify connection direction in 134 selected pairs from one mouse. Left: nominal 95 percent cell bootstrap intervals. Right: descriptive ratio groups."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source edge table and opportunity measurement methods."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Underlying matched anatomy and activity resource."
+    },
+    {
+      "target": "sci:sha256:0db8313db8f0332f0bbb9334ffa71d993b84ec46316c5d1511c985fc4641aa06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior conditional direction study informed the eligible sample and cancellation explanation. This work tests fixed anatomy accuracy. No code or record tables were reused."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/blob/bc9302a21443453b1f39819676f2388e91bd43a3/funconnect/stats/quantity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines released dend_len as the synapse density denominator."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
