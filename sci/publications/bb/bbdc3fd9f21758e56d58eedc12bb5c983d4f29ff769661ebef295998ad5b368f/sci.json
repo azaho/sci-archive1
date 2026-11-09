@@ -1,0 +1,80 @@
+{
+  "title": "Cell-body distance gave no clear gain in predictions of 50 Hz variability change in four Allen slice groups",
+  "abstract": "We tested whether cell-body distance improves predictions of the change in pooled relative response variability from rest to 50 Hz stimulation. We used 1,258 detected connections from Allen Synaptic Physiology r2.1 slices. Five validation folds kept whole inferred donors separate. Ridge models used cell labels with or without a piecewise linear distance term. Equal-donor squared error changed by -0.64% in mouse excitatory connections, -0.33% in mouse inhibitory connections, -0.69% in human excitatory connections, and +0.48% in human inhibitory connections. Positive values mean lower error with distance. All four conditional 98.75% donor bootstrap intervals included zero. Ridge and range checks also gave uncertain gains. The result does not establish equal variability changes across distances. Late responses pool pulses 5 to 8, so the endpoint can mix trial noise with pulse trends. Selection, inferred donors, small human samples, and uncertainty conditional on fitted models limit inference. Code, selected rows, predictions, bootstrap draws, source hashes, and an independent score check are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "soma distance",
+    "synaptic variability",
+    "50 Hz stimulation",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Error reduction from adding distance. Positive values favor distance. Lines show conditional 98.75% whole-donor bootstrap intervals; they are exploratory and do not include training-fit uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source slice connectivity and physiology survey."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Field interpretation at a fixed source commit; not imported."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Field interpretation at a fixed source commit; not imported."
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance test for resting variability; the present endpoint is a change between response states."
+    },
+    {
+      "target": "sci:sha256:4f83c3d64b084793a4c371caa1bc8faa4915d86d489ef2b4d631b1e65e02f83c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior variability-change endpoint and interpretation of pooled late responses."
+    },
+    {
+      "target": "sci:sha256:c33af30c3b106d2fb679b25f815a29ec48d8619cc6bcc39efe657d40fde33e51",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance and plasticity prediction design and donor definitions."
+    }
+  ]
+}

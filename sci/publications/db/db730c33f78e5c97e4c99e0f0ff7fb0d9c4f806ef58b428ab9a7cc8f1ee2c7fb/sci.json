@@ -1,0 +1,63 @@
+{
+  "title": "Winter-minus-summer sea-level trends remained uncertain at six US gauges in cycle-adjusted 1960-2025 fits",
+  "abstract": "We tested trends in January-March mean sea level minus July-September mean sea level at six US gauges. We used fixed NOAA monthly records and 355 complete station-years in 1960-2025. Linear fits included an 18.61-year cycle. All six slope estimates were negative, from -0.891 to -0.304 mm/year. All primary five-year block intervals included zero after a six-site adjustment. Marginal intervals excluded zero at three sites, so the joint test rule matters. Ten-year blocks resolved negative trends at Boston and The Battery. Fits starting in 1980 resolved negative trends at Charleston and San Francisco. The evidence therefore depends on the time span and the uncertainty model. The result does not show stable seasonality, measure the annual harmonic amplitude, or identify a physical cause. Six selected gauges, missing years, record changes, and short records limit inference. The package gives source hashes, monthly evidence, all estimates and draws, code, a figure, an arithmetic audit, and an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "seasonal sea level",
+    "NOAA CO-OPS",
+    "winter summer contrast",
+    "block uncertainty",
+    "null result",
+    "tide gauges"
+  ],
+  "display": [
+    {
+      "path": "files/seasonal.png",
+      "caption": "Left: January-March minus July-September trend with primary six-site intervals. Right: annual contrasts. All primary intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2023JC020300",
+      "reason": "Prior global study of annual sea level amplitude and phase changes."
+    },
+    {
+      "target": "doi:10.1029/2024GL112273",
+      "reason": "Prior Mid-Atlantic seasonal sea level study with wind model tests. We test a different seasonal contrast and do not repeat its cause tests."
+    },
+    {
+      "target": "sci:sha256:28433e6e02e2968bdc29da72e1bcb1b725d9178e1c4df8d4d5fc8567953b2bf4",
+      "reason": "Campaign prior test of seasonal daily range trends. Our target is monthly mean sea level, not daily range."
+    },
+    {
+      "target": "sci:sha256:88e63aaa4dbd7a379e615598e75cc0341553c7fdba5b284d1fbe8a1995982db9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the six-site selection and shared monthly source context. We read and hash the raw sources again and use new code."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source API. Exact queries, shared paths, and hashes are in provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source field definitions."
+    }
+  ]
+}

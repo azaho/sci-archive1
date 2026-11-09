@@ -1,0 +1,75 @@
+{
+  "title": "Sampling-matched Kepler pairs do not confirm the transit-depth direction signal of KIC 12557548",
+  "abstract": "We tested the direction of changes in transit flux deficits for the known dusty planet system KIC 12557548. We reused 1902 raw-flux event measurements from Kepler quarters 1 to 17. A bounded score from cubed rank changes is -0.046. An exact quarter-sign reference gives a two-sided probability of 0.033 under independent symmetric quarter scores. Corrected flux gives the same sign. The first eight quarters do not show a clear effect. Local ranks give a probability of 0.073. Pairs with equal event exposure counts give 0.134. Pairs with equal event and baseline counts give 0.969. Thus, the main result does not establish a stable physical direction. Simulations show that noise can hide rapid changes followed by slow recovery. The tests do not measure dust lifetime or establish a new planet. The sign reference assumes symmetry and independence across quarters. Selection, stellar variation, finite exposures, and one telescope limit the result. We include raw data, hashes, code, all checks, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 12557548",
+    "dust",
+    "time reversal",
+    "sampling controls",
+    "transit variability",
+    "unconfirmed signal"
+  ],
+  "display": [
+    {
+      "path": "files/output/sampling.png",
+      "caption": "The main score does not have clear support in pairs with matching exposure counts. Probabilities use a conditional quarter-sign model. The checks use fewer pairs and do not prove an instrumental cause."
+    },
+    {
+      "path": "files/output/direction.png",
+      "caption": "Separate-quarter scores, the exact sign reference, off-transit checks, and toy-process sensitivity. Gray intervals are null reference ranges, not physical confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:dcbf57a88bdfa341483eae5bdad2fa615602bdcc83ae59103835ec7c0b2d834f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reused the signed event table, all 17 raw FITS files, raw provenance, and measurement code. We add a rank direction test and sampling checks."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201322398",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior on-off transits and depth correlations in this known system."
+    },
+    {
+      "target": "doi:10.1093/mnras/stv297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ephemeris and prior stellar rotation alternatives."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629250",
+      "reason": "Dust-model interpretation and the limits of lifetime inference."
+    },
+    {
+      "target": "doi:10.1016/S0167-2789(00)00043-9",
+      "reason": "Established third-order time direction statistics and warnings about null models."
+    },
+    {
+      "target": "https://www.pks.mpg.de/tisean/TISEAN_2.1/docs/surropaper/node3.html",
+      "reason": "Primary documentation for higher-order direction tests."
+    },
+    {
+      "target": "doi:10.1088/2041-8205/800/2/L21",
+      "reason": "Independent ground-based color observations support dust, but do not confirm this orbit-order statistic."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original public time-series source. Exact object URLs and hashes are preserved."
+    }
+  ]
+}

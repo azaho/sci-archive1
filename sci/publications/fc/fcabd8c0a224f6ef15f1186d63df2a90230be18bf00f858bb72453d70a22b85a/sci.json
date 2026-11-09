@@ -1,0 +1,67 @@
+{
+  "title": "Recent-hour counts gave no clear added Ridgecrest rate forecast skill on days 7 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested whether recent activity improved next-10-minute earthquake count forecasts in a fixed USGS Ridgecrest catalog. A rate based on the previous 24 hours formed the reference. We fit one recent-hour term on days 2 to 7 and froze its coefficient for tests on days 7 to 30 after the 2019 M7.1 event. The test had 3,312 bins and 387 events with preferred magnitude at least 2.5. The added term gave a total Poisson log score gain of 1.50 nats, or 0.00387 nats per event. A conditional 95% three-day block interval was -1.78 to 4.46 nats. This gives no clear added skill under the tested model. Other recent windows and penalties also had intervals that included zero. A later split gave a positive interval, while the magnitude 3.5 sample gave a negative interval. These checks share data and are not independent tests. The study links earlier clustering diagnostics to a new chronological forecast check. One known sequence, a short test, revised catalog data, simple rate models, and uncertainty conditional on fitted forecasts limit inference. The package contains exact source data, hashes, all forecasts and resamples, code, a figure, an independent count and score audit, and repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershocks",
+    "chronological validation",
+    "Poisson log score",
+    "recent event rate",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Daily score gains and total gains for all settings. Lines show conditional 95% three-day block intervals. Positive scores favor the added recent-count term. These intervals do not include training uncertainty or catalog error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior conditional timing result and shared catalog source motivate this new forecast test. No analysis code is reused."
+    },
+    {
+      "target": "sci:sha256:c37e6ecb140a75c186445fc76031a08f6d038c9f468ca13143459331fffedfd1",
+      "reason": "Prior space-time clustering result for the same source."
+    },
+    {
+      "target": "sci:sha256:ddec79efc92e46547677d5000479c5fbe5516c027e66a4f1225e7a935f67b1a9",
+      "reason": "Prior diagnostic shows why preferred magnitude types limit interpretation."
+    },
+    {
+      "target": "doi:10.1080/01621459.1988.10478560",
+      "reason": "Point-process likelihood and earthquake occurrence model context."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "Prior work on transient catalog incompleteness and magnitude estimation."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "reason": "Official rate model and missing-event context; this study does not implement the official forecast."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source field format."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query for the frozen public catalog."
+    }
+  ]
+}

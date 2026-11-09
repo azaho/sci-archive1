@@ -1,0 +1,104 @@
+{
+  "title": "A fixed 18.61-year cycle reduced monthly tidal-range prediction error at five of six US gauges in 2000-2025",
+  "abstract": "We tested a fixed 18.61-year cycle in monthly great diurnal tidal range at six US gauges. We fit models to retained months before 2000 and predicted retained months in 2000-2025 without updates. Both models included season, linear time, and a 4.425-year cycle. Adding the long cycle reduced root mean squared error at five gauges by 8.1% to 45.6%. It raised error at The Battery by 25.7%. Three-year block intervals for mean squared loss differences were above zero at four gauges and crossed zero at two. At The Battery, centered error fell but mean prediction error rose to 42.2 mm. In separate full-record fits, removing the long-cycle component changed some 20-year range trends by up to 7.75 mm/year at Seattle. Those corrections use later data and are descriptive. This extends earlier campaign tests of annual high-water offsets to monthly great diurnal range and short-window trend sensitivity. It is not an independent data replication or a new lunar mechanism. Six selected gauges, missing months, revised sources, linear trends, and only about 1.4 test cycles limit inference. The package contains used-field evidence, source paths and hashes, code, figures, and an offline refit check.",
+  "keywords": [
+    "tidal range",
+    "lunar nodal cycle",
+    "chronological validation",
+    "NOAA CO-OPS",
+    "trend sensitivity",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Monthly prediction errors on retained 2000-2025 months. Models were fit before 2000 and held fixed."
+    },
+    {
+      "path": "files/rolling.png",
+      "caption": "Descriptive 20-year trends before and after removal of a long cycle fit to the full record."
+    },
+    {
+      "path": "files/range.png",
+      "caption": "Annual means with at least ten accepted months. The fitted line uses all retained monthly data."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2018JC014695",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Physical fixed-period model and shorter lunar cycle control."
+    },
+    {
+      "target": "sci:sha256:16be13a3e02b39b1697fec26ff7c7ccf34369db4cca22ea9401954c40e9bc03f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior annual high-water-offset benchmark on these source records; current test changes the target, time aggregation, and evaluation scheme."
+    },
+    {
+      "target": "sci:sha256:0e72dc56af6794c14034178692b3ca908ac06016541fd3c20599ed38afd3fab7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior monthly tide-offset diagnostics and missing-field context on the same six gauges."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA monthly field and inferred-flag definitions."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=8443970&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=8518750&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=8638610&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=8665530&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9414290&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9447130&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned NOAA CO-OPS monthly source; exact bytes are identified in files/provenance.json."
+    }
+  ]
+}

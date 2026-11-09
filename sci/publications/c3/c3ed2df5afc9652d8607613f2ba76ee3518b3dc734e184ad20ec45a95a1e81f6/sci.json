@@ -1,0 +1,100 @@
+{
+ "title": "In 12 mice from two hippocampal datasets, NREM co-firing after a maze session predicted CA1 place-map similarity better than co-firing before it; the pre-session link was near zero on a new track",
+ "abstract": "Question: how much of the hippocampal place map on a maze is present in network co-firing before the session, and how much is added by the session? Approach: in two public silicon-probe datasets (DANDI 001695, linear track, CA1/CA3/retrosplenial cortex, 4 mice, 15 sessions; DANDI 001880, cheeseboard place-reward task, CA1/CA3, 8 mice, 40 sessions), we correlated the place-map similarity of pyramidal-cell pairs with their NREM spike-count correlation in sleep before (PRE) and after (POST) the maze session. We removed firing, spike-count and probe-distance covariates on ranks, used 1,000 cell-label permutations per session, two-way cell fixed effects, and a hierarchical bootstrap over mice. Results: for CA1-CA1 pairs the POST link was 0.102 [0.035, 0.173] and 0.102 [0.070, 0.128] in the two datasets; the PRE link was 0.046 [0.016, 0.081] and 0.087 [0.057, 0.108]. POST explained map similarity beyond PRE (EV 0.093 and 0.060); PRE did not explain it beyond POST (REV -0.019 and 0.005). The links stayed after two-way cell fixed effects, so they are pair-specific. CA3-CA3 links were larger (PRE 0.13-0.20, POST 0.18-0.24). Hippocampus-retrosplenial pairs gave no clear link. On the first day on a new linear track the CA1 PRE link was 0.009 [-0.007, 0.025] (4 mice), but the POST link also rose on later days, so the novelty effect is not specific to PRE sleep. In the cheeseboard data, PRE sleep predicted the learning map beyond the map of a short PRE probe (0.057), and POST sleep predicted the later probe map beyond the learning map (0.033). Pairs of low-rate cells had larger PRE links than pairs of high-rate cells, which does not support a rigid high-rate subnetwork. Limitations: co-firing is functional, not anatomical, connectivity; effects explain about 1% of pair variance in CA1; the novel-track test has only 4 sessions; both datasets come from one laboratory; control maps from short probes are noisy.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "hippocampus",
+  "place cells",
+  "sleep reactivation",
+  "preplay",
+  "preconfiguration",
+  "CA1",
+  "CA3",
+  "retrosplenial cortex",
+  "NREM sleep",
+  "explained variance",
+  "functional connectivity",
+  "Neuropixels",
+  "DANDI",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ca1_pre_post.png",
+   "caption": "CA1 pairs: PRE versus POST sleep co-firing links with place-map similarity in two datasets, with EV, REV and two-way cell fixed effects."
+  },
+  {
+   "path": "files/figures/fig2_region_classes.png",
+   "caption": "PRE and POST links by region pair (CA1, CA3, retrosplenial cortex) in both datasets."
+  },
+  {
+   "path": "files/figures/fig3_novelty_and_probes.png",
+   "caption": "Left: first day on a new track vs later days. Right: sleep links with maps of the PRE probe, learning session and POST probe."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48324/dandi.001880/0.261007.1849",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Huszar CA1/CA3 cheeseboard recordings (CC0)."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/001695/0.260319.2023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gonzalez/Voroslakos hippocampus and retrosplenial Neuropixels recordings (CC BY 4.0)."
+  },
+  {
+   "target": "sci:sha256:e9a01e9e07567e5b493bdeaae953760a24ef5a4d9f759c9c9c59358ef7edc2c2",
+   "reason": "Earlier campaign study of the same Huszar data; its researcher made the shared mirror we used."
+  },
+  {
+   "target": "doi:10.1126/science.8036517",
+   "reason": "Sleep reactivation of hippocampal ensembles."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.19-10-04090.1999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Explained-variance (EV/REV) measure."
+  },
+  {
+   "target": "doi:10.1038/nature09633",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Preplay claim tested with pairwise co-firing."
+  },
+  {
+   "target": "doi:10.1038/nn.4151",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our first-day result agrees with the need for previous experience."
+  },
+  {
+   "target": "doi:10.1126/science.aad1935",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "We did not find a larger pre-existing link in high-rate cells."
+  },
+  {
+   "target": "doi:10.1126/science.aav0502",
+   "reason": "Preconfigured and plastic sequences."
+  },
+  {
+   "target": "doi:10.1038/s41593-022-01138-x",
+   "reason": "Preconfigured hippocampal dynamics; source study of DANDI 001880."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "With a five-day baseline, a fixed background model predicts less than 2.4 percent of eight KIC 11084727 flux responses",
+  "abstract": "We tested whether a fixed error proportional to the reported Kepler background can explain eight published aperture-flux responses of KIC 11084727. We fitted one coefficient per quarter outside all selected event windows. With a five-day median baseline, the predicted fractions range from -2.354 to +0.0424 percent. The largest magnitude is less than 2.4 percent. The largest upper endpoint from conditional daily-group resampling is 6.072 percent. This range does not include event-amplitude or background-estimator uncertainty. A seven-day test gives small predictions, but a three-day test removes much of two selected responses. Injected broad profiles also show substantial baseline attenuation. The result limits this specific background model. It does not identify the cause, rule out detector errors, or establish a new planet or comet. No independent telescope data were used. The package includes five original FITS files, member hashes, source provenance, code, fixed event selections, tables, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "background subtraction",
+    "instrument effects",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/fractions.png",
+      "caption": "Predicted/measured response ratios for the five-day model. Bars show conditional coefficient resampling only; event and background-estimator errors are not included."
+    },
+    {
+      "path": "files/outputs/event_windows.png",
+      "caption": "Five-day residual SAP flux and the trained background model. The known event is included as a reference."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the fixed event times and profiles. We add a background-model test."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735"
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition and units of SAP_BKG."
+    },
+    {
+      "target": "https://nexsci.caltech.edu/workshop/2012/keplergo/Blog.shtml",
+      "reason": "Description of the SAP_BKG field as the subtracted background."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Prior context for seasonal and detector effects."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 source archive. Exact shared path and hashes are preserved."
+    }
+  ]
+}

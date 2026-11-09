@@ -1,0 +1,70 @@
+{
+  "title": "A linear seasonal correction retains 57 to 62 percent of annual-offset signals near the KIC 8164262 carrier",
+  "abstract": "We test signal loss from a linear four-season correction in Kepler release 25 data for KIC 8164262. At offsets of plus and minus 1/372.53 per day from the known carrier, the correction retains only 57 to 62 percent of a coherent added signal amplitude across all phases. A constant carrier retains more than 99.9 percent. The test uses fixed frequency, a phase template from the data, and the same nuisance projection for flux and signals. Singular values give exact phase bounds. Direct injections and a separate dense-phase check agree. Observed annual side peaks also fall after seasonal subtraction. Their reduction does not identify an instrument cause. This extends earlier campaign checks of seasonal prediction and quarterly signal loss. It is a conditional method result, not a new planet, stellar mode, detection probability, or amplitude upper bound. SAP and PDC share exposures. No independent telescope confirmation is supplied. Code, accepted projected samples, all transfer values, figures, source hashes, and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "seasonal correction",
+    "signal transfer",
+    "tidal oscillations"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Exact phase ranges of retained injected amplitude at five positive frequency offsets. Bars show phase dependence, not statistical error. No intermediate offset is tested."
+    },
+    {
+      "path": "files/season_test.png",
+      "caption": "Quarter carrier amplitudes and diagnostic PDC residual spectra. Both products share exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:75f2c651692f0147620aba4d8deb65f9fa53b596e01701683eb17358a03c7011",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Seasonal prediction result motivates the new seasonal transfer test."
+    },
+    {
+      "target": "sci:sha256:ff3836809c03abda0f6fc12180b513c3ef422b63aa069a31818b9c590b41dd2b",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Extends the quarterly attenuation check to a rank-five seasonal correction and annual frequency offsets."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known frequencies and binary ephemeris."
+    },
+    {
+      "target": "doi:10.1093/mnrasl/slx130",
+      "reason": "Physical resonance-lock explanation for the known carrier."
+    },
+    {
+      "target": "https://exoplanet.ipac.caltech.edu/docs/Kepler_Data_Products_Overview.html",
+      "reason": "SAP and PDC data product definitions."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public raw archive reused in place."
+    }
+  ]
+}

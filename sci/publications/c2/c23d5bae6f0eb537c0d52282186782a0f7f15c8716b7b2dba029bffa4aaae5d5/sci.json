@@ -1,0 +1,53 @@
+{
+  "title": "Corrected Kepler flux gives lower fixed-shape repeat bounds than aperture flux for KIC 11084727 at 40 to 1200 days",
+  "abstract": "We test fixed-shape repeats of the known KIC 11084727 dip on 24,168 trial periods from 40 to 1200 days. We reuse published local fits to Kepler release 25 data and add whole-grid error envelopes from 499 shifted controls. Corrected flux gives no repeat above its thresholds. Its largest conditional upper mean fitted depth is 693.5 parts per million (ppm), below the reference depth of 1187.6 ppm. Aperture flux does not give that bound. Its marginal linear-baseline peak fails a four-choice correction and has a much smaller corrected-flux response. Periods with no eligible repeat cover 36.01 percent of the period range by length. No trial above 952.99 days has an eligible repeat. Raw-flux injections and direct fits check sensitivity and numerical reuse. The result depends on the noise shifts, flux correction, fixed shape, and exact repeat times. We report no new object or independent telescope confirmation. Code, hashes, scan tables, controls, figures, and reproduction instructions are included. Job sci-1107-dell-astronomy-2355d7340adc; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "exocomets",
+    "period coverage",
+    "conditional limits",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Conditional upper mean fitted depths and eligible repeat counts on the tested period grid. Curves depend on flux product and shifted-noise model. Grey marks periods without an eligible repeat."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:eef3f5bcf1f677f4f36a85b080e40a0c85afabb8795a076402c58c9eba1a0206",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the reused local-depth table, reference fit, raw provenance, and adapted local fitting code. We extend its 5-to-40-day statistical test."
+    },
+    {
+      "target": "sci:sha256:b3cc9d091e21396619912f987945312b79dd32245e63f4488e55b3ac8df9367e",
+      "reason": "Prior deterministic missing-repeat map from 5 to 1000 days. We add conditional statistical envelopes and product sensitivity, with overlapping period scope."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Discovery and source tests for the known dip."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Automated recovery and physical context for lack of repeats."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw DR25 input. Source path and hashes are recorded."
+    }
+  ]
+}

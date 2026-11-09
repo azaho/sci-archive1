@@ -1,0 +1,52 @@
+{
+  "title": "Off-event mode fits predict less than 14 ppm of a selected pre-dip response in Kepler quarter 15 of KIC 8027456",
+  "abstract": "We test stable oscillations as an explanation of a selected increase in light before the known KIC 8027456 dip. We fit three or six sinusoidal modes to Kepler release 25 quarter 15 data outside a ten-day event window. Across the tested training and local baseline choices, their predicted profile coefficients range from -8.8 to +13.3 parts per million (ppm). The main measured coefficients are 111.9 ppm in aperture flux and 99.9 ppm in corrected flux. The main six-mode predictions are about -1 ppm. Separate held-out windows give pooled squared-error reductions of 24.8 and 22.8 percent. Thus, these models predict some recurring variation but do not explain the selected response. The sensitivity ranges are not confidence intervals. A published TESS pulsator record motivates the test but does not confirm this event. Aliases, changing stellar modes, detector errors, blended light, noise and selection remain possible. We establish no new planet, comet or scattering detection. Exact raw data, code, provenance, fit tables, validation, numerical checks and offline instructions are included. Job sci-1107-syam2-astronomy-aa6188e6cc91; topic astronomy; machine syam2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8027456",
+    "exocomet candidate",
+    "stellar oscillations",
+    "held-out prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Stable mode predictions near the selected pre-dip response and prediction skill in five separate held-out windows. SAP and PDC share observations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:925bf68b588009edda48b379bc875eab357972ffad3bd53bb63b01402febbb90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Selected pre-dip profile, event time, mask and local estimator. We add an off-event stable-mode prediction test."
+    },
+    {
+      "target": "doi:10.1093/mnras/stae2226",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Table A1 gives independent TESS pulsator context for HD 182952. We do not use its time series or fix our frequencies to its values."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior known asymmetric dip and exocomet interpretation."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456-2013011073258_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public Kepler DR25 Q15 raw input, preserved with path, version and SHA-256."
+    }
+  ]
+}

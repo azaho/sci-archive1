@@ -1,0 +1,117 @@
+{
+ "title": "Oklahoma M3+ earthquakes fell faster after 2016 than pressure models fit to 2010-2016 disposal data predicted; pressure loss in 1-4 years was necessary and a memory term gave inconsistent gains",
+ "abstract": "Question: after the 2015-2016 cuts in wastewater disposal, does the Oklahoma earthquake rate follow the pressure level, the pressure increase, a pressure history with memory (Kaiser type), or a pressure that dissipates? Approach: we used monthly volumes of 4,545 Class II disposal wells (OCC Form 1012A, 2006-2025) and declustered USGS ComCat M>=3 events inside Oklahoma (Zaliapin and Ben-Zion nearest-neighbour method). A 2-D diffusion model on 0.05 degree cells gave a pressure proxy with diffusivity D and optional loss time L. Each model had a shrunk productivity for each cell. We fit the models on 2010-2016 (1,317 events) and forecast 2017-01 to 2026-10 (423 events). We repeated this with fits to 2018 and to 2026, and with sensitivity variants. Results: all models fit to 2010-2016 predicted too many events. The closed pressure-level model predicted 16 times the observed count, rate-state with closed pressure 5.6 times, pressure-increase (seismogenic index) and Kaiser models 2.7 times, and the leaky pressure-level model 2.4 times. Pressure loss with an e-folding time of 1-4 years was necessary in all fit windows. The leaky level model was better than the pressure-increase and Kaiser models by 0.58 nats per event in 2017-2026 (95% cell bootstrap 0.40-0.77) and by 2.57 (2.07-3.05) when fit to 2018. A hysteresis factor (p/p_max)^n gave inconsistent gains across four designs (+0.33, -0.23, +0.28, +0.14 nats per event). With Arbuckle-labelled volumes it gave near-correct counts (493 for 423 events; 178 for 141), but with all disposal volumes the full-period fit selected n = 0.16. A seismic-depletion factor had no support. Even the full-period leaky fit expected 1.7 times the 96 events of 2020-2026. Declustered M>=3 events fell from 501 in 2015 to 5 in 2025. Limitations: single-layer linear diffusion, no poroelastic stress, no injection depth or plug-back information, no Kansas or Texas wells, uncertain formation labels, and many compared models without correction for selection.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Oklahoma",
+  "wastewater disposal",
+  "pore pressure diffusion",
+  "Kaiser effect",
+  "seismogenic index",
+  "rate-and-state",
+  "earthquake forecasting",
+  "seismicity recovery",
+  "Arbuckle"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_annual_forecasts.png",
+   "caption": "Top: annual disposal volume in Oklahoma (Arbuckle-labelled and other disposal wells). Bottom: observed declustered M>=3 earthquakes per year (bars) and expected counts from models fit to 2010-2016 (solid) or 2010-2018 (dashed). All forecasts from 2016 are too high after 2017, except the hysteresis model with Arbuckle volumes."
+  },
+  {
+   "path": "files/figures/fig2_overprediction.png",
+   "caption": "Predicted/observed counts with 95% Poisson intervals for each model and design (A: fit 2010-2016; B: fit 2010-2018; C: full-period fit, in-sample 2020-2026). Values above 1 are over-predictions."
+  },
+  {
+   "path": "files/figures/fig3_leakage_profiles.png",
+   "caption": "Training negative log-likelihood against the pressure-loss e-folding time L (minimum over diffusivity) for the leaky level model (left) and the hysteresis model (right). No pressure loss ('none') is worse by 70-1,000 nats in every fit window."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1190/1.3353727",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Seismogenic index model (rate proportional to pressure increase) tested here."
+  },
+  {
+   "target": "doi:10.1126/sciadv.1601542",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier forecast of the Oklahoma response to reduced injection; we test similar model classes with data to 2026."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-06167-4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Physics-based Oklahoma and Kansas forecasts with pressure diffusion and seismogenic index."
+  },
+  {
+   "target": "doi:10.1029/2018WR023587",
+   "reason": "Models of delay, decay, quiescence and recovery after injection reduction."
+  },
+  {
+   "target": "doi:10.1029/2017GL076562",
+   "reason": "Rate-state nucleation model of onset, peak and fall of Oklahoma and Kansas seismicity."
+  },
+  {
+   "target": "doi:10.1073/pnas.1819225116",
+   "reason": "Poroelastic and diffusion controls on Oklahoma seismicity."
+  },
+  {
+   "target": "doi:10.1029/93JB02581",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rate-and-state seismicity law used for the rate-state model."
+  },
+  {
+   "target": "doi:10.1002/2015JB012060",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Normalised rate-state form for injection-induced seismicity."
+  },
+  {
+   "target": "doi:10.1002/jgrb.50179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Nearest-neighbour declustering method."
+  },
+  {
+   "target": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OCC UIC Form 1012A injection volume files 2006-2025 (hashes in files/data/raw_inputs_sha256.txt)."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ComCat earthquake catalog, retrieved 2026-11-08."
+  },
+  {
+   "target": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_20m.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Oklahoma boundary."
+  }
+ ]
+}

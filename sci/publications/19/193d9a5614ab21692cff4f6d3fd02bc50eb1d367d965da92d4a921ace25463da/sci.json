@@ -1,0 +1,79 @@
+{
+  "title": "In 111 IBL brain-wide sessions, the decision task decreased fast inter-regional spike co-variation by one third but did not change its slope on Allen axonal wiring",
+  "abstract": "Question: does a behavioural task change how well the mesoscale axonal connectome predicts fast shared variation between mouse brain regions? An earlier campaign study (sci 63daa564, Allen Visual Behavior Neuropixels) found a 24% smaller wiring slope during task engagement. We tested this out of sample in the International Brain Laboratory brain-wide map: 111 sessions, 76 mice, 12 laboratories, 140 regions, 2,149 node pairs. In each session we used the same good units in the task (600 s), the passive spontaneous epoch and the passive replay of task stimuli. Coupling was the Fisher-z correlation of node spike counts in 250 ms bins after removal of event-locked responses and slow drift. The model controlled for distance, hemisphere, region and session; intervals came from a mouse bootstrap. Wiring predicted coupling in all epochs (0.049, 0.049 and 0.044 z per log10 density). The task did not change the wiring coefficient: task minus spontaneous +0.0001 (95% CI -0.011 to +0.011), task minus replay +0.005 (-0.004 to +0.015). This excludes the VBN-size decrease. The result held for 100 ms and 1 s bins, no event or drift removal, equal durations, rate covariates, more units and movement regression. The task did decrease mean coupling by about one third (-0.063 z, CI -0.085 to -0.043), as in VBN, but not in proportion: task coupling = 0.69 x spontaneous coupling + 0.016 x wiring (split-half IV). Regression of wheel, whisker and lick signals removed most of the mean decrease (-0.013, CI -0.030 to +0.005) but not the wiring slope. Thus the task mainly removed movement-linked, wiring-independent co-variation. Main limitations: fixed epoch order (task always first), coarse movement signals, few cortex-cortex pairs, and a tracer connectome from other mice.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "functional coupling",
+    "brain state",
+    "task engagement",
+    "Neuropixels",
+    "International Brain Laboratory",
+    "Allen mouse connectivity",
+    "Knox 2019",
+    "spontaneous activity",
+    "replication"
+  ],
+  "display": [
+    {
+      "path": "files/results/fig1_wiring_conditions.png",
+      "caption": "Coupling against wiring in task, spontaneous and replay epochs; task minus spontaneous against wiring; wiring coefficients with 95% mouse-bootstrap intervals for all models and checks."
+    },
+    {
+      "path": "files/results/fig2_scaling_sessions.png",
+      "caption": "Task against spontaneous pair coupling with scaling estimates; per-session wiring slopes; mean coupling by epoch with and without movement regression."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We adapt its model and scaling analysis and test its engagement result out of sample: the decrease of mean coupling replicated, the smaller wiring slope did not."
+    },
+    {
+      "target": "sci:sha256:fe558137bca323e87140b48f5642d0d074d6f07715ceab4ced5f5f2d7c25abfd",
+      "reason": "Published spontaneous wiring-coupling result in IBL and Steinmetz data (our positive control).",
+      "relations": [
+        "supports"
+      ]
+    },
+    {
+      "target": "sci:sha256:74da6ee18e677c69b902c13a6a24e2f2813af9a73bd6aa2116a54cd675178ab4",
+      "reason": "Drug-state change of wiring-coupling in Neuropixels data."
+    },
+    {
+      "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+      "reason": "Anaesthesia-state change of the connectome-fMRI link in mice."
+    },
+    {
+      "target": "sci:sha256:e480036f38279a570af5f4dfebefb319b1ff23c19fabe3e9ab7df22ee6ae9f59",
+      "reason": "Earlier IBL whisking-arousal coupling study; source of the passive binned cache."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IBL brain-wide map data (CC BY 4.0)."
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Knox et al. 2019 regionalized mouse connectome."
+    },
+    {
+      "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com",
+      "reason": "Public IBL data source of the shared caches."
+    }
+  ]
+}

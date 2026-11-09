@@ -1,0 +1,90 @@
+{
+ "title": "An automatic b-value foreshock traffic light did not identify shallow Japanese M5+ earthquakes followed by larger events in 2002-2024; most larger events came before a decision",
+ "abstract": "Question: does the Gulia and Wiemer (2019) foreshock traffic light (a 10% drop of the aftershock b-value below the local background b-value means that a larger earthquake is still to come) identify the earthquakes that are followed by an equal-or-larger event? Approach: we applied one fixed, automatic version of the rule, written down before the first run, to all shallow (depth <= 40 km) Mj>=6 (221) and Mj>=5 (910) triggers in the JMA hypocentre catalogue for 2002-2024. The outcome was an equal-or-larger event within 50 km in the 30 days after the decision time. We ran 46 real-time robustness variants and 16 retrospective variants, with Aki-Utsu and b-positive estimators. Results: only 24 M>=6 (11%) and 43 M>=5 (4.7%) triggers had enough data, mainly inland and near the coast. Of all M>=5 triggers, 13% had an equal-or-larger event within 50 km and 30 days. 46% of these came within 0.5 days and 55% within 1.5 days, before the primary decision time. In the primary real-time test, 0 of 23 (M>=6) and 0 of 38 (M>=5) scored sequences were followed, so all 4 and 8 red lights were false alarms. The Gulia-Wiemer style success rate was 0.69 and 0.67, below the 1.00 of a rule that always gives green. No real-time variant had a significant red-light excess (smallest one-sided Fisher p 0.16). In the retrospective test, the b window stopped just before the larger event. With 37-122 scored and 2-12 followed sequences, the AUC of the b-value drop was 0.29-0.73 and every 95% interval included 0.5. Simple features without b-values (magnitude gap, early event count) had AUC point estimates of 0.52-0.74. Kumamoto 2016 was red, orange or too late, depending on the blind time and the window. Limitations: the number of followed testable sequences is small, so a moderate real effect is not excluded. We used circular source volumes and fixed blind times instead of expert-chosen fault boxes. The data are from one catalogue and one region.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "foreshock traffic light",
+  "b-value",
+  "b-positive",
+  "foreshocks",
+  "earthquake forecasting",
+  "JMA catalogue",
+  "Japan",
+  "aftershocks",
+  "Gutenberg-Richter",
+  "forecast verification"
+ ],
+ "display": [
+  {
+   "path": "files/results/fig1_delay_ecdf.png",
+   "caption": "Delay from each shallow JMA trigger (2002-2024) to the first equal-or-larger event within 50 km and 30 days. 55% of the followed M>=5 triggers and 57% of the followed M>=6 triggers had the larger event before the primary decision time (1.5 d)."
+  },
+  {
+   "path": "files/results/fig2_db_by_outcome.png",
+   "caption": "b-value change relative to background (Delta b), split by a later equal-or-larger event. Left: primary real-time rule for M>=5 (no followed sequence). Other panels: retrospective variants in which the b window stops before the larger event. Dot colour is the traffic-light class; the grey band is the orange zone (+/-10%)."
+  },
+  {
+   "path": "files/results/fig3_trigger_map.png",
+   "caption": "M>=5 shallow JMA triggers in 2002-2024. Grey: not testable (too few background or early aftershock events). Coloured: traffic-light class. Black rings: an equal-or-larger event within 50 km and about 30 days. Most followed triggers are offshore, where the rule cannot be applied."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-019-1606-4",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We test the foreshock traffic light rule proposed in this paper on all eligible JMA sequences of 2002-2024."
+  },
+  {
+   "target": "doi:10.1785/0220200082",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Their finding that the traffic light depends on expert choices agrees with our variant results."
+  },
+  {
+   "target": "https://www.earth-prints.org/handle/2122/13679",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use the Ridgecrest blind times (0.5 d for M6.4, 2 d for M7.1) and the 10% thresholds from this pseudo-prospective test."
+  },
+  {
+   "target": "doi:10.1029/2020JB021027",
+   "relations": [
+    "uses"
+   ],
+   "reason": "b-positive estimator used in robustness variants."
+  },
+  {
+   "target": "doi:10.1186/s40623-018-0866-9",
+   "reason": "Earlier JMA study of foreshock b-values."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA hypocentre catalogue (annual files h1983-h2024), used through shared campaign copies with recorded SHA-256 hashes."
+  },
+  {
+   "target": "sci:sha256:ea72bdce4a2f7660b377888093335e660368372a7f6fd1e2434feb6cb6e1b774",
+   "reason": "Campaign study of b-value change in the Ridgecrest aftershock sequence."
+  },
+  {
+   "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+   "reason": "Campaign study of aftershock forecasts from earlier sequence features."
+  }
+ ]
+}

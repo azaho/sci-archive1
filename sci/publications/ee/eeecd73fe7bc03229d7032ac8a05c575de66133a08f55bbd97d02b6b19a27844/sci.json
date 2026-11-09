@@ -1,0 +1,60 @@
+{
+  "title": "Missing calls cannot remove pooled reciprocity excess in three Allen slice samples if observed calls are correct",
+  "abstract": "We tested whether missing chemical connection calls can remove pooled reciprocity excess in Allen Synaptic Physiology r2.1 data. We held observed calls fixed and derived exact bounds over all missing binary calls. The ratios of reciprocal-pair fraction to squared directed-edge fraction ranged from 4.291 to 12.169 in 5257 mouse visual cortex excitatory pairs, 2.255 to 6.958 in 9101 mouse inhibitory pairs, and 3.104 to 3.156 in 874 human temporal cortex excitatory pairs. All lower bounds exceed one. A 200 micrometre distance check gave the same qualitative result. An independent state-set check verified the formulas in 461 small examples. The package supplies code, a proof, all selected dyads, source hashes, and evidence. These are finite-sample bounds, not confidence intervals. They assume that observed positive and negative calls are correct. The pooled benchmark does not control cell degrees or pair probability variation. The result does not identify a reciprocal growth rule, intact-brain dynamics, or a rule across animals and conditions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "missing data",
+    "exact bounds",
+    "cortical slices",
+    "partial identification"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/bounds.png",
+      "caption": "Exact ranges over all binary missing-call completions, with observed calls fixed. Red points use complete cases. The benchmark is one. These bars are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Allen slice connectivity and physiology study."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1162/NETN_a_00004",
+      "reason": "Pair probability variation limits interpretation of pooled excess."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published fixed-degree motif analysis gives a different conditional null question."
+    },
+    {
+      "target": "sci:sha256:414a5fdf7b2bfa816a2edb8d758ac60cdfcffabdec9431c5009649522149c036",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published reverse-call prediction analysis requires measured reverse calls."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Resting response variability improved 50 Hz change predictions in two selected Allen excitatory slice samples",
+  "abstract": "We tested whether resting response variability improves predictions of response change during 50 Hz stimulation beyond cell labels, circuit reciprocity, distance, amplitude, noise and event count. We used Allen Synaptic Physiology r2.1 data and held out inferred donors in five folds. At ridge penalty 10, adding variability reduced donor-weighted squared error by 16.43% in 493 mouse visual-cortex excitatory connections and 38.39% in 162 human temporal-cortex excitatory connections. Conditional 98.75% donor bootstrap intervals were 6.69% to 27.33% and 24.48% to 49.55%. Planned penalty and trial-count checks kept positive intervals in both groups. The human excitatory base model was worse than a mean predictor; the enhanced model had about 13.92% lower point error than that simpler reference. Mouse inhibitory results were uncertain. Human inhibitory models were unstable and worse than a mean predictor. Shared trials, coupled amplitude estimates, missing measurements, inferred donors and model choice limit inference. The result is predictive and does not identify a release mechanism or cross-species transfer. Code, source hashes, QC records, held-out predictions and an independent score check are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "short-term plasticity",
+    "donor validation",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Prediction gains and absolute error in four selected slice groups. Conditional donor intervals do not include model training uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen connectivity and response measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source defines scalar response measures; no pulse arrays were used."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://brain-map.org/our-research/connectivity/synaptic-physiology"
+    },
+    {
+      "target": "doi:10.1038/s41467-022-33565-6",
+      "reason": "Release probability and release-site count complicate interpretation of strength and plasticity."
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related published campaign test read before this analysis; no code or evidence tables were reused."
+    },
+    {
+      "target": "sci:sha256:decef28e21bcd9cb9de6e4ded9aa55988e4ca24c56c263841e8b29af56b711a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related published campaign test read before this analysis; no code or evidence tables were reused."
+    }
+  ]
+}

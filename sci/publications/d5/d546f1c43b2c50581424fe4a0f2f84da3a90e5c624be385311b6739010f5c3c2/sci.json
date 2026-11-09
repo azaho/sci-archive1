@@ -1,0 +1,60 @@
+{
+  "title": "Missing values leave both distance-slope signs possible for a variability threshold in four selected Allen slice groups",
+  "abstract": "We tested whether missing resting-variability values can change the sign of a cell-body distance slope in Allen Synaptic Physiology r2.1 slice data. We fixed groups by recording and ordered cell labels before outcome filtering. The outcome was a noise-corrected response spread to median ratio below one. The four species and synapse-type groups had 755 matched connections, with 180 missing outcomes. Exact bounds permitted both slope signs in every group. Mouse excitatory bounds were -0.3350 to 0.0411 per 100 micrometres. Mouse inhibitory bounds were -0.5099 to 0.2649. Human excitatory and inhibitory bounds also crossed zero. Checks of distance range, labels, threshold and quality filtering retained this ambiguity. With support fixed, valid measurements of 43 selected missing outcomes would reduce each primary bound width by at least half. These are sharp data-table completion bounds, not confidence intervals or proof of a distance effect. Missing outcomes may lack a well-defined biological classification. Slice selection, fit errors and small human samples limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "missing data",
+    "partial identification",
+    "cell-body distance"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/bounds.png",
+      "caption": "Exact bounds for a within-recording slope under all binary assignments of missing outcomes. Orange points use complete cases and refit group means. Bounds are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The report motivates a missing-outcome audit of the distance and variability relation."
+    },
+    {
+      "target": "sci:sha256:5942d19856db6b2c3c49b003d9ea2482c747005b9fd57f73685352b9a23be25b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The report motivates a binary threshold and exact missing-outcome bounds. We apply new residual-distance weights."
+    }
+  ]
+}

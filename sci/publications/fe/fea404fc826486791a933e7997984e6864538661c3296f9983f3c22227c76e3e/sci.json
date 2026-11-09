@@ -1,0 +1,74 @@
+{
+ "title": "Gap junctions predict pair co-activity in three of four C. elegans whole-brain data sets, in moving and immobilised worms; the link is weak in the Randi 2023 stimulation recordings",
+ "abstract": "Question: a campaign study (sci:a250df14) found that gap junctions predict pairwise co-activity of identified neurons in 40 freely moving C. elegans, after controls for soma distance, homologous pairs, per-neuron effects and neurite contact, while chemical synapse weight added little. Does this rule generalise to other laboratories, worms and behavioural conditions? Approach: one pipeline on four whole-brain calcium data sets (191 worms): Atanas 2023 and Baskoylu 2026 (freely moving), Kato 2015 and Randi 2023 (immobilised; Randi segments between optogenetic pulses). Outcome: |mean Fisher z| of pair correlations over worms. Predictors from the Cook 2019 connectome (Witvliet 2021 Dataset 8 as a check). Inference: QAP permutation of neuron identity, single-worm models and a worm bootstrap. Results: in the full model, gap-junction partial r was 0.196 (Atanas), 0.178 (Baskoylu) and 0.205 (Kato), QAP p = 0.001 each, positive in 40/40, 27/27 and 12/12 worms. Immobilisation alone did not weaken it (Kato minus moving mean +0.018, 95% interval -0.036 to 0.072). In Randi the effect was 0.025 (0.008 to 0.042), positive in 79/112 worms; all volumes, detrended traces and pairs seen in at least 20 worms (reliability 0.79) gave 0.027 to 0.042. Chemical weight gave no consistent gain after contact (0.037, 0.037, 0.072, -0.029; negative in all four with Witvliet D8). Pair co-activity correlated 0.81 to 0.83 among Atanas, Baskoylu and Kato (0.89 to 0.95 after reliability correction) but only 0.25 to 0.32 with Randi. Conclusion: the gap-junction rule replicates in three data sets from two laboratories, in moving and immobilised worms, with similar size. Randi recordings differ in both co-activity pattern and connectome link. Limitations: the cause of the Randi difference is unknown (stimulation history, trace processing, indicator); Kato is small (12 worms, 56 neurons); the connectome is a group average; correlation is not transmission.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "connectome",
+  "gap junctions",
+  "whole-brain imaging",
+  "structure-function",
+  "functional connectivity",
+  "replication",
+  "NeuroPAL",
+  "QAP permutation",
+  "neurite contact"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forest.png",
+   "caption": "Partial r of four connectome terms with pair |co-activity| in the full model (homologous pair, soma distance, per-neuron fixed effects, neurite contact) in four data sets. Bars: estimate +/- 1.96 worm-bootstrap SD. Grey: QAP null."
+  },
+  {
+   "path": "files/figures/fig4_similarity.png",
+   "caption": "Correlation of signed pair co-activity between data sets, raw (diagonal: split-half reliability) and corrected for reliability."
+  },
+  {
+   "path": "files/figures/fig3_per_animal.png",
+   "caption": "Single-worm partial r for gap-junction and chemical weight (neuron fixed effects and contact)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its Atanas pair table, connectome tables and analysis design, and replicate its gap-junction result in two of three new data sets."
+  },
+  {
+   "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+   "reason": "Related C. elegans wiring versus co-activity study in this campaign."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035"
+  },
+  {
+   "target": "doi:10.5061/dryad.w9ghx3g4v"
+  },
+  {
+   "target": "doi:10.1016/j.cell.2015.09.034"
+  },
+  {
+   "target": "https://osf.io/2395t/"
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4"
+  },
+  {
+   "target": "doi:10.17605/OSF.IO/E2SYT"
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7"
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Fixed wiring summaries and spectra leave small noise variance differences in three selected Allen mouse circuit models",
+  "abstract": "We tested whether wiring summaries and the signed eigenvalue spectrum determine mean stationary noise variance in equal-weight linear circuit models. We reused 247 mouse visual cortex graphs and 17 human temporal cortex graphs from Allen Synaptic Physiology r2.1. Exact enumeration fixed labeled cell degrees, class edge totals, reciprocal counts by class, transitive embedding counts, and directed three-cell cycle counts. Adding a fixed signed characteristic polynomial left variance changes in three mouse graphs and none in human graphs. At gain 0.15, the largest range was 0.00004469448, or 0.00441% of the lower value. An exact witness has a variance difference that starts with g^4/12 at small gain. The witness has an isolated inhibitory cell and different full induced triad counts. Thus it does not test active inhibitory feedback or a fixed full triad census. A second solver checked every range, and exact arithmetic checked the witness. These are small model differences, not measured neural activity effects or evidence for a species difference. Slice sampling, equal weights, common decay, independent noise, and the lack of linked activity data limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "stationary covariance",
+    "linear circuit model",
+    "wiring constraints",
+    "signed spectrum",
+    "exact enumeration"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/variance.png",
+      "caption": "Mean stationary variance ranges in the three variable mouse graphs after the wiring and signed spectrum constraints. Gain is 0.15. Dots show the observed wiring model. An isolated cell has variance one."
+    },
+    {
+      "path": "files/evidence/witness.png",
+      "caption": "Two covariance matrices and gain checks for the exact witness. The differences are small. The complete rational difference is in the main text."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Allen slice connectivity study."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.86.011909",
+      "reason": "Prior theory of noise amplification in nonnormal neural models."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the selected mixed-class graph set and extraction code."
+    },
+    {
+      "target": "sci:sha256:0eda2fff1f10190b6a1720016e81f95b57cc7068bb6e709f33c4700e082e1187",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses degree enumeration and graph helpers. Extends transient-growth analysis to stationary covariance with a full spectrum constraint."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

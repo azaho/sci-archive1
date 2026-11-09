@@ -1,0 +1,58 @@
+{
+  "title": "Age gave no delay prediction gain in selected Allen mouse visual cortex connections",
+  "abstract": "We tested whether recorded age improves predictions of local synaptic onset delay after distance and cell labels are known. We used linked cell-pair geometry and physiology in the Allen Synaptic Physiology r2.1 small database. We held out whole inferred animals in five repeated five-fold tests. The primary models also used sex and calendar date. Adding linear age gave an MSE gain of -0.003676 ms squared in 902 excitatory connections and -0.000465 ms squared in 1327 inhibitory connections. Neither group gave a clear gain. Excitatory error rose slightly under conditional donor intervals. These intervals hold fitted models fixed. The data cover a narrow age range, mainly near postnatal day 45. This result does not show that maturation has no effect on delay. We supply selected records, code, predictions, an evidence check, and data provenance.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "age",
+    "cell-body distance",
+    "held-out animals",
+    "mouse visual cortex"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/age_prediction.png",
+      "caption": "Age coverage and the prediction gain from linear age. Positive gain means lower error. Bars show conditional 97.5% animal bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.2979-10.2010"
+    },
+    {
+      "target": "doi:10.1038/s41467-020-18984-7"
+    },
+    {
+      "target": "sci:sha256:dfa43b491da53ece8d1276e8b40aee38fc9b1f154e8fdeccae0ea2e75e403d8d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This published result motivates a test of added age information after distance and cell-label controls."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This published audit informs the choice to avoid cortical axis distances."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Mixed coordinate scales mark 1,482 extreme axis-distance records in Allen Synaptic Physiology r2.1",
+  "abstract": "We audited cortical geometry in the Allen Synaptic Physiology r2.1 small database after a check stopped a planned plasticity model. We found 1,482 directed pairs in 115 recordings with axis-distance norms above one metre. All joined one large image coordinate to one metre-scale coordinate. The axis norm matched the distance between stored coordinates to numerical precision. All 155 cells with large coordinates lacked cortical layer values. Inspected source code has an unscaled fallback path consistent with this pattern. Two affected pairs had detected chemical connections. None of 1,268 records in our planned 50 Hz plasticity cohort had the extreme flag. We supply record IDs, read-only code, source hashes, a figure, and independent checks. This audit identifies a data-quality risk for structure-function models. It does not establish a biological effect, prove the historical cause, validate a repair, or show that prior results change.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "data quality",
+    "cortical geometry",
+    "coordinate scale",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/geometry_audit.png",
+      "caption": "Stored distance scales and overlap with the planned plasticity cohort. No eligible plasticity record has an axis norm above one metre."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/cortical_location.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c33af30c3b106d2fb679b25f815a29ec48d8619cc6bcc39efe657d40fde33e51",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related geometry or plasticity test in the same release. No code or result tables reused; no claim that its conclusions change."
+    },
+    {
+      "target": "sci:sha256:7b7426fe575607c03576c67dd58a8a29c5b601dc04f0684af72b3d4c8fde7776",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related geometry or plasticity test in the same release. No code or result tables reused; no claim that its conclusions change."
+    },
+    {
+      "target": "sci:sha256:722b0a9699879de97cf0da76b66b4ca1fa9634bd3e74966d11072336f812e5b6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related geometry or plasticity test in the same release. No code or result tables reused; no claim that its conclusions change."
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related geometry or plasticity test in the same release. No code or result tables reused; no claim that its conclusions change."
+    }
+  ]
+}

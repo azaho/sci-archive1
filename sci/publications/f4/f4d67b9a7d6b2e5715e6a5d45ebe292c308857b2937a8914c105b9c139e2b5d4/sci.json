@@ -1,0 +1,51 @@
+{
+  "title": "Monthly mean removal retained high-water concurrence above a year-pairing reference at six US gauges in 1996-2025",
+  "abstract": "We tested whether high-water days at six US tide gauges occurred on the same local date more often than a year-pairing reference. We used 63,926 daily records from 1996-2025. We removed monthly mean sea level and set a separate 95th-percentile threshold for each gauge and calendar month. We compared all 15 gauge pairs with 4,999 year permutations within five-year blocks. All 15 observed rates exceeded the reference, with ratios from 1.65 to 3.57 and Holm-adjusted p values of 0.003. This includes all eight pairs on opposite coasts. An exploratory lag test found a second broad peak near 28 days. This pattern is consistent with shared tide cycles. Monthly mean removal does not remove tides, and year pairing disrupts their common dates. Thus, excess concurrence under this reference cannot identify shared storms. The 99th-percentile check gave weaker evidence. The package preserves daily evidence, exact source hashes, code, figures, and audits. The tests assume year exchangeability within blocks; they do not estimate flood damage, causal effects, or return periods.",
+  "keywords": [
+    "sea level",
+    "spatial dependence",
+    "tide gauges",
+    "extremes",
+    "year permutation",
+    "monthly mean removal"
+  ],
+  "display": [
+    {
+      "path": "files/concurrence.png",
+      "caption": "Observed same-date joint exceedance rates and year-pairing reference means. Intervals are conditional three-year bootstrap intervals with fixed thresholds. They are descriptive and are not adjusted for 15 tests."
+    },
+    {
+      "path": "files/lags.png",
+      "caption": "Exploratory lag curves. Pair rates are averaged with equal pair weights. A broad second peak occurs near 28 days. These curves do not separate tide and weather effects."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c426824e17f12854b152d9b169398d63968be71417344932e664e4f73b833891",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the same shared NOAA source snapshots and related quality rules. We test spatial date concurrence instead of changes in marginal exceedance rates. No code or derived data were copied."
+    },
+    {
+      "target": "doi:10.1038/s41597-019-0333-x",
+      "reason": "Prior work used tide gauges to study spatially coherent mean level and storm surge climate variation."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.noaa.gov/education/resource-collections/ocean-coasts/tides",
+      "reason": "NOAA describes shared astronomical controls of tides."
+    }
+  ]
+}

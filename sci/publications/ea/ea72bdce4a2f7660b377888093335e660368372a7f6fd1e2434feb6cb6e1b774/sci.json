@@ -1,0 +1,62 @@
+{
+  "title": "A late b-value rise is uncertain in a USGS Ridgecrest sample on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested whether the magnitude-distribution slope b rose from days 1-7 to days 7-30 after the 2019 Ridgecrest M7.1 earthquake. We reused a fixed USGS catalog within 100 km. At magnitude 2.5 or more, 544 early and 387 late events gave b values of 1.004 and 1.094. The increase was 0.090. Its 95% daily block interval was -0.038 to 0.237, and its two-day block interval was -0.025 to 0.240. Positive successive-magnitude differences gave increases of 0.092 and 0.083 at difference cutoffs of 0.2 and 0.4. Their block intervals also included zero. The sign of the preferred-magnitude estimate changed at a magnitude floor of 3.5, where only 28 late events remained. Local-magnitude-only estimates had a short upper tail and do not give an unbiased control. These results leave a late rise uncertain in this sample. They do not show equal distributions or reject earlier results from other catalogs and time windows. Block intervals do not include catalog error or prove a physical cause. The package gives code, event data, daily statistics, and independent likelihood checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "b-value",
+    "magnitude distribution",
+    "catalog selection",
+    "null result",
+    "block uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/b_changes.png",
+      "caption": "Left: slope estimates for two time periods and four magnitude floors. Right: late minus early slope with two-day block 95% sensitivity intervals. All displayed intervals include zero. Positive methods use successive-magnitude differences."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its exact shared USGS source. Its decay audit has a different question."
+    },
+    {
+      "target": "sci:sha256:ce920d7d612412f1d3b0ca17e07d5a64656c0ea105541f3e39430b0884a334bb",
+      "reason": "Prior campaign depth audit uses the same sample and time split. We test magnitude distributions."
+    },
+    {
+      "target": "doi:10.1007/s00024-023-03286-y",
+      "reason": "Earlier work reports b-value recovery over three months with other catalogs and spatial selections. This short-window audit does not directly replicate it."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Positive successive-magnitude differences provide a check on transient detection bias."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Query service and selection definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed query; shared bytes are identified by SHA-256 in provenance.json."
+    }
+  ]
+}

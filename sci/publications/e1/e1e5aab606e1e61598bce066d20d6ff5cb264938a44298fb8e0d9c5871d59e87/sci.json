@@ -1,0 +1,60 @@
+{
+  "title": "A five-neighbor sky test does not detect an annual-period cluster in 139 Kepler DR25 false-positive targets",
+  "abstract": "We tested whether Kepler DR25 false-positive targets near the spacecraft year show excess local sky clustering. We compared 87 targets at 350 to 390 days with 52 targets in adjacent period intervals. We kept one signal per target and shuffled annual labels within signal-to-noise and magnitude groups. The mean annual fraction among five nearest neighbors was 0.6207. The null mean was 0.6371, with upper-tail p = 0.7527 from 19,999 shuffles. Changes in period width and neighbor count also gave null results. A separate candidate sample gave p = 0.3551. A sensitivity simulation added after the null result detected an example of a sixteen-fold sky odds contrast in only 45 percent of samples. Thus, this small catalog graph is a weak diagnostic for that broad pattern. The null does not exclude annual detector noise and does not validate planets. No new planet or mechanism is established. We provide the frozen input, source query, code, sample tables, simulations, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "DR25",
+    "annual artifacts",
+    "spatial clustering",
+    "null result",
+    "permutation test",
+    "sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/results/fp_spatial.png",
+      "caption": "The primary sky test finds no excess local clustering of annual labels in 139 selected false-positive targets."
+    },
+    {
+      "path": "files/results/power.png",
+      "caption": "The test has low sensitivity to an example of a broad sky pattern. The simulation was added after the primary result."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-4365/aab4f9",
+      "reason": "Prior annual instrument signature and DR25 catalog methods."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive frozen DR25 input."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html",
+      "reason": "Catalog scope, annual excess, and instrument explanation."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of pipeline disposition, model SNR, period, magnitude, and position."
+    },
+    {
+      "target": "sci:sha256:8946c7d3b3a657457da108b9de52c797bfb82ccccc5a4d7b4609c6e745b52f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier campaign work preserved the shared DR25 table. Our sky test has a different question and method."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Cell-level signal coupling does not explain like-to-like wiring in the MICrONS mouse: connection odds increase 8-14% per SD of response similarity in 295,371 cotravel pairs",
+  "abstract": "Question: in the MICrONS mouse visual cortex, do connected neurons have more similar responses because of a property of the pair, or because of a property of one cell? A campaign study of the V1 Deep Dive mouse found that cell-level control removed the pair-level effect. Approach: we used the public tables of Ding et al. (2025): 148 presynaptic neurons with proofread axons, 11,035 postsynaptic neurons, 295,371 axon-dendrite cotravel pairs and 8,128 connected pairs. We wrote the analysis plan before we computed results. Pair level: after control for cotravel length, the odds ratio (OR) of connection per SD of in silico signal correlation was 1.16 (95% CI 1.13-1.19). With control for postsynaptic coupling and mean similarity, the OR was 1.14 (1.11-1.17). Conditional on the postsynaptic cell, the OR was 1.08 (1.05-1.11), or 1.12 with presynaptic controls. A linear model with presynaptic and postsynaptic fixed effects gave +0.39 percentage points per SD (base rate 2.75%). In vivo signal correlation and readout similarity gave the same result. Orientation similarity gave no clear effect. Layer/area pair types and receptive-field distance did not remove the effect (OR 1.16-1.19). Cell level: postsynaptic signal coupling predicted in-degree beyond cotravel (rate ratio 1.05 per SD, permutation p = 0.003), in V1 and L5 but not in L2/3 or higher visual areas. Presynaptic coupling did not increase out-degree. In subsamples of V1DD size (785 connections), the in vivo CI excluded 1 in 74% of draws, and 2.9% of draws gave OR <= 1.01 (the V1DD estimate). Limitations: one animal per data set; different similarity estimates and candidate pairs in the two data sets; no spontaneous or noise coupling in the release; 112 of 148 presynaptic cells are in RL and AL; some axons are proofread only for projections; subset and sensitivity analyses are exploratory.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "functional connectomics",
+    "MICrONS",
+    "like-to-like connectivity",
+    "population coupling",
+    "signal correlation",
+    "electron microscopy",
+    "two-photon imaging",
+    "mouse visual cortex",
+    "digital twin",
+    "structure-function",
+    "cross-animal replication",
+    "conditional logistic regression"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_pair_level.png",
+      "caption": "Pair level. A: connection rate among cotravel pairs by similarity decile, raw and with pre and post cell means removed. B: odds ratio per SD of similarity in models with increasing cell-level control. Grey band: V1DD 95% CI for natural-movie signal correlation."
+    },
+    {
+      "path": "files/figures/fig2_cell_level.png",
+      "caption": "Cell level. Observed/expected connections by quintile of signal coupling for postsynaptic in-degree (A) and presynaptic out-degree (B). C: rate ratio per SD of coupling by subset, with published V1DD values in grey."
+    },
+    {
+      "path": "files/figures/fig3_v1dd_size_subsamples.png",
+      "caption": "Odds ratios in 1,000 MICrONS subsamples with the V1DD number of connections (785). Grey band: V1DD 95% CI."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+      "relations": [
+        "supports",
+        "challenges"
+      ],
+      "reason": "Tests its V1DD findings in a second mouse. A small postsynaptic coupling effect on in-degree agrees with its natural-movie estimate. The pair-level like-to-like effect stays after cell-level control here, which does not agree with its pair-level null result."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Source of the node and edge tables. We replicate its like-to-like result and show that cell-level coupling does not explain it."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS data set (mouse 17797)."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/nature14273",
+      "reason": "Okun et al. 2015: population coupling and local synaptic input (chorister hypothesis)."
+    }
+  ]
+}

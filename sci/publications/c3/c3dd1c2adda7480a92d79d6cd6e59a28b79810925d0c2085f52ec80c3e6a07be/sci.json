@@ -1,0 +1,62 @@
+{
+  "title": "A fixed-phase rejection for the KIC 8164262 rotation signal does not persist across three noise-block choices",
+  "abstract": "We test one phase for the known rotation signal of KIC 8164262 in Kepler release 25 quarters 1 to 16. Each quarter has a free amplitude. In corrected flux, the conditional chi-square tail probability is 0.699 with two-day noise blocks, 0.069 with five-day blocks and 0.017 with ten-day blocks. Raw flux does not reject one phase in the main test. A small linear phase drift does not remove the ten-day corrected-flux mismatch. The strong tidal mode gives no common-phase rejection in the tested corrected-flux variants. Thus, a nominal rejection for rotation does not persist across the three block choices. Estimated covariance, fixed frequencies, correlated errors, one telescope and a permissive signed-amplitude model limit the result. This is a check of known signals, not a new detection or independent telescope confirmation. The package includes code, normalized samples, source hashes, all fits, figures and reproduction instructions. Job sci-1107-syam2-astronomy-f67270769cac; machine syam2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 8164262",
+    "stellar rotation",
+    "phase consistency",
+    "correlated noise"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/block_sensitivity.png",
+      "caption": "The nominal common-phase test depends on the residual score block length. The covariance is estimated; these are conditional reference probabilities."
+    },
+    {
+      "path": "files/evidence/phases.png",
+      "caption": "Quarter phase differences modulo pi for the known rotation and tidal signals. Bars use a local phase approximation with ten-day blocks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Published frequencies, binary period and epoch, and the spot interpretation tested here."
+    },
+    {
+      "target": "sci:sha256:b5855bd2c7da8fa524808d0e3268181753c9a799388f1bc5c9d31f113defa574",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign persistence test of the low-frequency group and rotation signal."
+    },
+    {
+      "target": "sci:sha256:766f050f8fcea797deecd34a345e1ceff6b1ab52c1dc0e8b06a5ddca82c2b975",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published nuisance frequency list, quarter projection approach and seasonal comparison context."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/Data_Characteristics.pdf",
+      "reason": "Quarterly detector and aperture changes limit the physical interpretation."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 raw light-curve archive."
+    }
+  ]
+}

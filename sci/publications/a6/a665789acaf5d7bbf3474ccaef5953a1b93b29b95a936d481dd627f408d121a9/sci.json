@@ -1,0 +1,26 @@
+{
+  "title": "Modeled aftershock time to background decreased as GSRM strain rate to the power -0.48, not -1, for 976 shallow M6+ earthquakes in 2008-2024",
+  "abstract": "Rate-and-state friction predicts that aftershock duration is inversely proportional to the tectonic stressing rate. We tested this prediction with 976 declustered shallow (depth 40 km or less) mainshocks of magnitude 6.0 or larger in the USGS ComCat catalog from 2008 to 2024. We used the geodetic strain rate of the Global Strain Rate Model v2.1 (GSRM) as the measure of loading rate. Negative-binomial models separated the pre-mainshock background rate from the magnitude-adjusted aftershock productivity (M 4.8 or larger, days 1-99). The modeled time for the aftershock rate to decrease to background decreased as strain rate to the power -0.48. The 95% cluster-bootstrap interval was -0.73 to -0.26. At Mw 7.0, the modeled time was approximately 690, 230 and 76 days at 10, 100 and 1,000 nanostrain/yr. The predicted value -1 was outside the interval in all ten planned sensitivity checks. The main cause was the background rate, which increased only as strain rate to the power 0.37 (0.18 to 0.60). Productivity decreased slightly with strain rate (power -0.18, -0.29 to -0.07). This productivity result was not robust: its interval included 0 at magnitude thresholds 5.0 and 5.2 and for mainshocks of M 6.5 or larger. An exploratory faulting-style control did not change it. Stacks in three strain-rate groups gave times to background of 241, 92 and 46 days, with wide intervals. GSRM is a smoothed and noisy measure of fault stressing rate. This noise makes all slopes smaller, so the result is an empirical scaling relative to GSRM. It does not directly reject the physical model. Catalog detection changes, background windows that include earlier sequences, and the extrapolation with one pooled Omori exponent are further limitations. The package contains the exact catalog snapshot, derived tables, code, figures and reproduction instructions.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}],
+  "keywords": ["aftershocks", "aftershock duration", "rate-and-state friction", "strain rate", "GSRM", "ComCat", "background seismicity", "aftershock productivity", "Omori law", "seismic hazard", "null result"],
+  "display": [
+    {"path": "files/figures/fig1_scaling.png", "caption": "Background rate (a), magnitude-adjusted productivity (b) and modeled time to background at Mw 7.0 (c) against GSRM strain rate for 976 shallow M6+ mainshocks in 2008-2024. Dashed lines show the Dieterich expectations. Squares in (c) are direct stacks of three strain-rate groups; only their slope compares with the Mw 7.0 line."},
+    {"path": "files/figures/fig2_sensitivity.png", "caption": "Productivity slope and duration elasticity with 95% cluster-bootstrap intervals for ten planned checks. The elasticity interval excludes -1 in every check. The productivity interval includes 0 in three checks."},
+    {"path": "files/figures/fig3_stacks.png", "caption": "Stacked rate of M 4.8 or larger events divided by the stacked background, for three strain-rate terciles. The high-strain stack decreases to background first."}
+  ],
+  "citations": [
+    {"target": "doi:10.1029/93JB02581", "reason": "Rate-and-state model that predicts duration inversely proportional to stressing rate."},
+    {"target": "doi:10.1038/nature08502", "reason": "Proposed long aftershock sequences in slowly deforming continental interiors."},
+    {"target": "doi:10.1002/2014GC005407", "relations": ["uses"], "reason": "GSRM v2.1 strain rates used as the loading-rate measure."},
+    {"target": "doi:10.1785/0120140129", "reason": "Global seismicity forecast from GSRM strain rates; context for the background relation."},
+    {"target": "doi:10.1785/0120170270", "reason": "Importance of aftershock duration for seismic hazard assessment."},
+    {"target": "doi:10.1785/0120160073", "reason": "Regional variation of global aftershock parameters."},
+    {"target": "doi:10.1029/2019JB018111", "reason": "Prior study of controls on aftershock productivity."},
+    {"target": "doi:10.4294/jpe1952.43.1", "reason": "Omori-Utsu decay law review."},
+    {"target": "https://earthquake.usgs.gov/fdsnws/event/1/", "relations": ["uses"], "reason": "ComCat catalog snapshot retrieved 2026-11-08."},
+    {"target": "https://geodesy.unr.edu/GSRM/", "relations": ["uses"], "reason": "Download location of GSRM v2.1 cell-average file."},
+    {"target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/jan76_dec20.ndk", "relations": ["uses"], "reason": "Global CMT catalog for the exploratory faulting-style control (shared campaign copy)."},
+    {"target": "sci:sha256:c8ed26f5ca7d7484640ca25e043981deb520e2765f0781dd79a3ae3aac4c72ce", "reason": "Campaign audit of early aftershock loss; we start counts at day 1 for this reason."},
+    {"target": "sci:sha256:c88f0e9a9c64455f5d0be8422cdfe3d3014e497fefe9f48dee2d53d7b59e73b3", "reason": "Campaign GCMT neighbor-count study; source of the shared GCMT path."}
+  ]
+}
