@@ -1,0 +1,61 @@
+{
+  "title": "Three class-matched Allen mouse circuits gave relay budgets of 0.423 to 3.471 ms for a 2 ms inhibition window",
+  "abstract": "We tested a necessary timing condition for feedforward inhibition in Allen Synaptic Physiology r2.1 small data. Three mouse visual-cortex circuits had excitatory source and target labels, an inhibitory relay label, and three measured connection delays. No human temporal-cortex circuit met the same rule. For inhibition to start no later than 2 ms after direct excitation, an additive model with fixed delays gave relay-time budgets of 0.423, 1.925, and 3.471 ms. An assumed 0.1 ms error bound per edge reduced the guaranteed budgets by 0.3 ms. A broader connection-sign rule retained 29 mouse and three human routes, but changed the cell population. We provide exact conditional error bounds, selected records, code, and independent arithmetic checks. The sample is too small for a general timing rule. Unknown relay firing, response strength, slice selection, and fit error prevent inference about actual inhibition or spike integration windows.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "feedforward inhibition",
+    "synaptic delay",
+    "relay time",
+    "circuit timing",
+    "conditional bounds"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Measured onset differences and conditional relay-time bounds. Primary sample: three mouse circuits. Error bounds are assumed, not estimated."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.1060342"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:50346696de201d8d9609896510ab945615d9c40f83ff6b95e402a962cd46a006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the additive relay model to an excitatory-inhibitory route and a specified inhibition window. No code was reused."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shared-cell timing test motivates use of measured edge delays."
+    }
+  ]
+}

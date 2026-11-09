@@ -1,0 +1,21 @@
+{
+  "title": "In the same mice, the Allen tracer connectome predicts cortical resting fMRI beyond distance under medetomidine with isoflurane, but much less under isoflurane alone or awake",
+  "abstract": "Question: does brain state change how much the axonal connectome controls resting functional connectivity (FC) in the mouse cortex, after the effect of distance is removed? Data: Grandjean 2020 mouse fMRI resource (305 scans, 6 data sets) and the Knox 2019 model of the Allen tracer connectome on 152 cortical parcels per hemisphere. Metric: per-scan partial correlation of FC with log Knox weight after a distance spline (Knox partial r), with and without global signal regression (GSR). Main test: data set aes2, 10 mice scanned under medetomidine with isoflurane and under isoflurane 1%; 6 of them also awake. Result: Knox partial r was 0.18 (95% CI 0.15 to 0.22, GSR) under medetomidine with isoflurane, 0.04 (0.03 to 0.06) under isoflurane alone (lower in 10 of 10 mice, same head motion), and 0.07 (0.03 to 0.11) awake (lower in 6 of 6 mice). Without GSR the values were 0.17, 0.01 and 0.02. The distance-only fit and FC reliability were not lower in the awake state, so the awake loss is specific to the connectome part. Results held for other spline sizes, distance cutoffs, rank statistics and reliability correction. Three other medetomidine with isoflurane data sets gave 0.21 to 0.31, and an unventilated isoflurane data set gave 0.02. Limitations: awake scans are few (11) and have more motion; a motion covariate reduced the awake difference to -0.07 (CI -0.13 to -0.02, GSR). In a ventilated multi-protocol data set, the isoflurane difference was clear only without GSR. The connectome is a model from other mice. Conclusion: connectome alignment of mouse cortical FC depends on state and anesthetic, and the common medetomidine with isoflurane protocol gives the strongest alignment.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["structure-function coupling", "mouse fMRI", "anesthesia", "awake", "Allen Mouse Brain Connectivity Atlas", "Knox voxel model", "isoflurane", "medetomidine", "functional connectivity", "brain state"],
+  "display": [
+    {"path": "files/figures/fig1_paired_states.png", "caption": "Per-mouse Knox partial r, distance fit and reliability in the three states of data set aes2."},
+    {"path": "files/figures/fig2_binned_coupling.png", "caption": "Group FC residual against Knox weight residual after distance, by state."},
+    {"path": "files/figures/fig3_all_groups.png", "caption": "Knox partial r in all 14 data set and anesthesia groups."}
+  ],
+  "citations": [
+    {"target": "doi:10.34973/1he1-5c70", "relations": ["uses"], "reason": "Source of the mouse resting fMRI time series and motion files (CC BY 4.0)."},
+    {"target": "doi:10.1016/j.neuroimage.2019.116278", "relations": ["uses"], "reason": "Grandjean et al. 2020, description and preprocessing of the mouse fMRI resource."},
+    {"target": "doi:10.1162/netn_a_00066", "relations": ["uses"], "reason": "Knox et al. 2019 voxel model of the mouse connectome, the structural predictor."},
+    {"target": "doi:10.1038/nature13186", "relations": ["uses"], "reason": "Oh et al. 2014 Allen Mouse Brain Connectivity Atlas, the tracer data under the Knox model."},
+    {"target": "doi:10.1016/j.cub.2021.12.015", "relations": ["supports"], "reason": "Gutierrez-Barragan et al. 2022 reported that awake mouse fMRI networks depart from anatomical structure; we find the same with independent data and a within-mouse design, and add that isoflurane alone also gives weak alignment."},
+    {"target": "doi:10.1073/pnas.1418031112", "reason": "Barttfeld et al. 2015, anesthesia increases structure-function similarity in monkeys; background hypothesis."},
+    {"target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b", "reason": "Campaign study that links tracer connection strength to inter-areal spike correlations in mouse cortex; our result shows that the size of such links in fMRI depends on brain state."},
+    {"target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a", "reason": "Campaign structure-function study in C. elegans with the same logic of controls for distance and per-unit effects."}
+  ]
+}

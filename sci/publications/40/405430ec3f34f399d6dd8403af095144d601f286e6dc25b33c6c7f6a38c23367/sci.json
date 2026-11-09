@@ -1,0 +1,61 @@
+{
+  "title": "The known KIC 8027456 dip has a longer egress in 24 local Kepler DR25 fits",
+  "abstract": "We tested the shape of the known dip of KIC 8027456 near BKJD 1448.9. We used public Kepler release 25 quarter 15 aperture and corrected flux. Split Gaussian fits give an exit-to-entry width ratio of 2.06 to 2.43 across 24 local baseline and quality choices. For two main five-day fits, all six conditional residual-block intervals stay above one. The lowest lower endpoint is 1.19. Symmetric null tail fractions are 0.005 to 0.010 with 199 samples per test. These are shape tests for a known event, not survey false-alarm probabilities. The result agrees with the prior dust-tail interpretation, but does not identify a physical cause. Both products use the same observations. Time-dependent noise, detector errors, and blended sources remain possible. We report no new event, planet, comet, or independent confirmation. The package contains the exact input, source URL and hash, code, all sample results, figures, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 8027456",
+    "exocomet candidate",
+    "asymmetry",
+    "residual bootstrap",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/shape.png",
+      "caption": "The known dip in aperture and corrected flux with split and symmetric Gaussian fits. The same split baseline is removed from both curves for display. Residuals are shown at right."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "The exit-to-entry width ratio stays above two in 24 tested local fits. These fits share data and are not independent confirmations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Prior event date and qualitative asymmetric shape. We add local baseline and residual-block tests; we do not reproduce the original search."
+    },
+    {
+      "target": "https://wrap.warwick.ac.uk/196224/",
+      "reason": "Prior use of this known Kepler event for classifier tests in a 2025 thesis, printed page 177."
+    },
+    {
+      "target": "doi:10.1093/mnras/staf1298",
+      "reason": "Later TESS exocomet search and prior-work context."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler data mirror. The exact source file URL and hash are in provenance.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "reason": "Kepler archive product and quality-flag context."
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "reason": "Published campaign search of a different known exocomet candidate. We select a different target and test local shape uncertainty."
+    }
+  ]
+}

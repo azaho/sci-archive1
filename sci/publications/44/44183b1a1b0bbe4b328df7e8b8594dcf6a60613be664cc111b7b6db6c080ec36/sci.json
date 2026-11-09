@@ -1,0 +1,75 @@
+{
+  "title": "Warmer survey ends gave no clear bird thermal index contrast after control for start temperature in Canada and the US in 1985-2024",
+  "abstract": "We tested whether warmer survey ends were linked to a higher recorded bird community temperature index in the last ten stops relative to the first ten. We used 61,453 surveys on 3,810 routes from the fixed BBS 2025 release. Four models separated Canada and the US in 1985-2004 and 2005-2024. Models controlled start temperature, survey timing, weather, route-observer pairs, and state-years. End-temperature slopes per 5 C were -0.0011, -0.0061, -0.0046 and -0.0004 index C. All four corrected intervals included zero. The intervals ranged from -0.0425 to +0.0348 across samples. No planned check had an individual 95% interval that excluded zero. We did not establish the proposed within-survey shift toward species from warmer climates. Small effects remain possible. Shared weather effects can cancel between blocks, and changing route habitat, selected surveys, endpoint temperature error, and fixed species values limit inference. This is not a causal climate, range-shift, or pollution test. A full raw-data rebuild reproduced the endpoint panel and all 48 result rows. The package preserves code, source hashes, the paired-index panel, scalar checks, model results, and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "community temperature index",
+    "survey weather",
+    "observation bias",
+    "Breeding Bird Survey",
+    "within-survey contrast",
+    "regional replication",
+    "null result",
+    "reproducible dataset"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "Four end-temperature slopes for the last-first thermal index difference. Start temperature and survey conditions are controlled. Intervals cover the four primary tests at 95% under the stated model."
+    },
+    {
+      "path": "files/checks_figure.png",
+      "caption": "Planned subset, trend, and weight checks. Bars show individual 95% intervals. All include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse frozen cross-fit species temperature values, the species map, and route half labels. We test a new endpoint-block difference. Bird observations overlap."
+    },
+    {
+      "target": "sci:sha256:652071e7bf4b1964e6b29e8c4494ce23450a5342524ee3fe65cc2e0880558ecb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the accepted weather panel, raw sample builder, survey control design, and fixed-effect projection code. We add a species thermal index outcome and use the sum of route and year covariance matrices."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed public BBS 2025 release. Exact raw files, source URLs, paths, and measured hashes are retained."
+    },
+    {
+      "target": "doi:10.1098/rspb.2008.0878",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bird community temperature index study motivates the observation-process test."
+    },
+    {
+      "target": "doi:10.3389/fevo.2021.671492",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior repeated-count study reports day-period and weather variation in bird detection."
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "reason": "Method for the climate data in the inherited species temperature values. We do not re-estimate these values."
+    }
+  ]
+}

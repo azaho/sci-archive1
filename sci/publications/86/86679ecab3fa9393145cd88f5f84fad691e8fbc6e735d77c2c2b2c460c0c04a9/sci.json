@@ -1,0 +1,78 @@
+{
+  "title": "Partner history reduced next-day high-water error by 4.59% with a NOAA tide baseline on six Atlantic links in 2018-2024",
+  "abstract": "We tested whether partner gauge history improves next-day daily maximum estimates when the local model has a full NOAA tide calculation. We used four Atlantic gauges in 2015-2024. Each annual regression fit used earlier target years only. Tests cover six directed links in 2018-2024 and 14,555 matched link-day rows. Recent partner history reduced mean squared error by an equal-link mean of 4.59%. The conditional 95% two-year block interval was 3.88% to 5.54%. A simpler lunar baseline gave 4.68%. Their difference was -0.09 percentage points, with interval -0.23 to +0.06 points. Thus the full tide baseline did not remove the mean gain under this test. Boston history gave no gain at The Battery. Seven local lags retained a 4.91% mean gain; fixed coefficients after 2017 gave 1.42%. A wrong-year tide control had a larger percentage gain but worse absolute error. This shows why relative skill alone cannot rank these forecasts. The result does not identify shared weather, coastal propagation, or an operational warning gain. Tide calculations fetched in 2026 are retrospective and have no immutable constituent version. Seven test years, selected historical support, daily extrema, and intervals that hold fitted models fixed limit inference. The package gives exact source hashes, daily evidence, all predictions and coefficients, uncertainty draws, a figure, source and numerical audits, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal water levels",
+    "NOAA CO-OPS",
+    "tide prediction",
+    "partner gauge history",
+    "chronological validation",
+    "forecast baseline",
+    "Atlantic coast",
+    "mean squared error",
+    "timing control",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/skills.png",
+      "caption": "Partner mean squared error reduction on six Atlantic links in 2018-2024. All baselines score the same observed daily maxima on matched dates. Intervals hold fitted models and support fixed. Wrong-year tide gives larger relative gains but worse absolute forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse verified daily evidence, raw hourly tide calculations, and provenance. New analysis code tests chronological partner prediction with full tide and timing controls."
+    },
+    {
+      "target": "sci:sha256:c1307c25bf3019dd32804c881c7c620b0558d13c901afbd77f391420975e4b15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This prior campaign prediction benchmark motivates the six directed links and lunar baseline. We test a full tide baseline on overlapping but shorter data, with new chronological fits and code."
+    },
+    {
+      "target": "sci:sha256:523b5b72b39a7ea15ab82523c75a28ffb5456de24f9cece5966fcb7f9d9ce72c",
+      "reason": "Related direct tide and next-year timing-control study tests cross-coast recurrence rather than partner forecast gain."
+    },
+    {
+      "target": "doi:10.1007/s10236-015-0898-7",
+      "reason": "Prior North Sea process-model study of gauge data assimilation for improved short-lead forecasts."
+    },
+    {
+      "target": "doi:10.5194/os-14-1057-2018",
+      "reason": "Gauge-based harmonic predictions can contain periodic weather contributions. This limits a pure astronomical interpretation."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA observation and prediction source service. Exact saved query URLs and hashes are in the two provenance arrays."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA definitions of daily hourly extrema, completeness, and inferred flags."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/about_harmonic_constituents",
+      "reason": "NOAA describes harmonic tide calculation and the use of observed records for constituent estimates."
+    }
+  ]
+}

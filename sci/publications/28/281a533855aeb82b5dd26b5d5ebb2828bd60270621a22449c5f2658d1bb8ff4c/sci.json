@@ -1,0 +1,141 @@
+{
+ "title": "TESS 2-min data of 146 CVZ TOI hosts show no new vetted transit candidates from 1 to 150 d, and an eccentric secondary eclipse shows that TOI-1229.01 is an eclipsing binary",
+ "abstract": "We searched TESS SPOC 2-min light curves of 146 TOI hosts in the continuous viewing zones (Tmag < 11, median 39 sectors over 1,979 days) for additional periodic transits from 1 to 150 days. We masked all known transits before detrending, ran a box least-squares search, and vetted all 177 peaks with SNR of 10 or more. The vetting errors come from random off-transit epochs of the same star, so they include correlated noise. No peak passed all tests, except signals at the period of a known TOI. The same pipeline on inverted flux gave 0 passes from 152 peaks. Injected transits passed vetting in 36 of 54 cases. Injection tests show limited sensitivity: 83% recovery at white-noise SNR 18 to 20, and 14% recovery for periods of 30 to 150 days. Thus the null result does not exclude typical small planets. A scan of all orbital phases at the periods of 145 TOIs found two secondary eclipses above the largest control value. TOI-1307.01 has a 609 ppm eclipse at phase 0.50; an ExoFOP note already reports this. TOI-1229.01 (P = 31.8 d, TFOP APC and SB1) has a 505 +/- 37 ppm eclipse at phase 0.7248. SPOC 2-min, TESS-SPOC FFI, and QLP FFI photometry show it at the same phase. A planet at this period can give at most about 16 ppm, so the companion is self-luminous. The timing and duration give e cos(omega) = 0.353 and e sin(omega) = -0.08 +/- 0.02. The depth ratio gives a companion brightness temperature near 3,040 K, which agrees with an M dwarf. The scan also recovered the known occultation of WASP-100 b (67 ppm) and found a tentative 108 ppm dip at phase 0.5 for TOI-1181 b. Limits: bright CVZ hosts only, first-order eclipse approximations, blackbody temperatures, and no new spectroscopy. The bundle includes code, per-file hashes, and all evidence tables.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "transit search",
+  "continuous viewing zone",
+  "TOI",
+  "false positives",
+  "eclipsing binary",
+  "secondary eclipse",
+  "eccentric orbit",
+  "injection recovery",
+  "null result",
+  "TOI-1229",
+  "box least squares"
+ ],
+ "display": [
+  {
+   "path": "files/figures/toi1229.01_eclipses.png",
+   "caption": "TOI-1229.01: primary eclipse (SPOC 2-min), secondary eclipse at phase 0.7248 in three photometric pipelines, secondary depth per TESS year, and derived values."
+  },
+  {
+   "path": "files/figures/secondary_scan.png",
+   "caption": "Secondary-eclipse scan of 145 TOIs: best dip SNR at any phase versus best brightening SNR (control). Dashed line: largest control value, 10.6."
+  },
+  {
+   "path": "files/figures/injection_recovery.png",
+   "caption": "Injection-recovery test of the blind search (200 injections): recovered fraction versus white-noise SNR, and recovered (blue) and missed (orange) injections by period and radius."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "reason": "TESS mission."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPOC pipeline that produced the 2-min PDCSAP light curves."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/abefe1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TOI catalog that defines the targets and the known transits."
+  },
+  {
+   "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+toi%2Ctid%2Ctfopwg_disp%2Cra%2Cdec%2Cst_tmag%2Cpl_orbper%2Cpl_orbpererr1%2Cpl_tranmid%2Cpl_tranmiderr1%2Cpl_trandurh%2Cpl_trandep%2Cpl_trandeperr1%2Cpl_rade%2Cst_rad%2Cst_teff%2Csectors%2Crowupdate+from+toi+order+by+toi&format=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact TOI table query (campaign shared dataset nasa-exoarchive-toi-ephemeris-20261107)."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions/tess/tid/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MAST archive of the 5,392 SPOC 2-min light-curve files."
+  },
+  {
+   "target": "doi:10.1051/0004-6361:20020802",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Box least-squares method."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3984",
+   "relations": [
+    "uses"
+   ],
+   "reason": "wotan detrending."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/ac7c74",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Astropy BLS implementation."
+  },
+  {
+   "target": "doi:10.3847/2515-5172/abca2e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "QLP FFI light curves used for independent confirmation."
+  },
+  {
+   "target": "doi:10.3847/2515-5172/abc9b3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS-SPOC FFI light curves used for independent confirmation."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2001.10580",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Published WASP-100 b occultation depth that our scan recovers."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/ac324a",
+   "reason": "TESS EB catalog; its live entry for TIC 140760434 has no secondary depth."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2205.01860",
+   "reason": "Discovery of TOI-1181 b."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/target.php?id=140760434",
+   "reason": "ExoFOP notes for TOI-1229.01 (APC, SB1)."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/target.php?id=236815160",
+   "relations": [
+    "supports"
+   ],
+   "reason": "ExoFOP note on the TOI-1307.01 secondary eclipse, which our scan confirms."
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Matched Allen slice circuits do not resolve a source-versus-target difference in resting voltage magnitude",
+  "abstract": "We compared resting synaptic voltage magnitudes among connections that share a source neuron or a target neuron. We matched recording, synapse type, cell class, Cre label, and layer in Allen Synaptic Physiology r2.1 data. The primary test retained 188 mouse visual-cortex connections from 40 inferred animals and 40 human temporal-cortex connections from seven inferred donors. Source-to-target squared log-difference ratios were 0.876 and 2.422. The 95% donor intervals were 0.728 to 1.753 and 0.987 to 6.098. Neither edge-value permutation test passed correction for two comparisons. Excluding one mouse response below 10 microvolts changed the mouse ratio to 1.225. The human excitatory subset gave a nominal signal, but it was a secondary comparison in six donors. These data do not establish equal source and target roles or a common rule across samples. Small selected graphs, uncertain response fits, inferred donor labels, and different circuit mixtures limit inference. The package includes code, selected edge records, resampling results, a figure, and independent score checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic strength",
+    "shared neurons",
+    "matched circuits",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/role_comparison.png",
+      "caption": "Source-to-target difference-score ratios and descriptive 95% donor intervals. Values below one mean greater source similarity. n gives inferred donors. Absolute and squared checks use different scores."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen slice connectivity and physiology study."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior incoming and outgoing connection-strength comparisons in rat cortex."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.2006223",
+      "reason": "Prior study of source and target contributions to synaptic strength."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned endpoint definition."
+    },
+    {
+      "target": "sci:sha256:2d5154c104221cb8c0445b435ec790f7de7ad193fe910837bceeaf5959f9d9f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published matched source-versus-target design, here applied to resting voltage magnitude. Code was written anew."
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "reason": "Related shared-neuron plasticity comparison."
+    },
+    {
+      "target": "sci:sha256:3660af3e941c858b081907633ca3fa44640f6d2660d32d6710e1ee9cb288fca8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published small-amplitude warning motivated the 10 microvolt sensitivity check."
+    }
+  ]
+}

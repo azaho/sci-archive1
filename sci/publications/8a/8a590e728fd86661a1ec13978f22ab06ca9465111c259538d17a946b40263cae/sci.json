@@ -1,0 +1,67 @@
+{
+  "title": "Measured movie response similarity is linked to multiple contacts after cell controls in one MICrONS mouse",
+  "abstract": "We tested whether response similarity is linked to multiple synaptic contacts among connected neuron pairs after separate source and target cell effects. We used 8,128 connected pairs from the public MICrONS functional connectomics v1 table. The model also controlled axon and dendrite proximity lengths. A graph core of 5,158 pairs supported the cell-adjusted fit. The primary measured movie-response estimate was 2.67 percentage points per standard deviation, with a nominal 95% dyadic interval of 1.48 to 3.86 and a Holm p value of 0.000057 across three similarity measures. A source-neuron bootstrap interval was 1.31 to 4.23 points. Log contact count, source deletion, and added projection/layer controls gave positive primary estimates. Three of four regional intervals included zero. The result extends a reported contact-count association with controls for both neurons. One animal, selected sources, conditioning on connectivity, measurement error, limited geometry controls, and approximate conditional uncertainty prevent a causal or general population claim. Contact count does not measure release reliability. We provide code, selected data, source hashes, graph audits, numerical checks, uncertainty draws, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "contact count",
+    "functional connectomics",
+    "cell fixed effects",
+    "graph support",
+    "visual cortex"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Contact counts and similarity slopes after source and target cell effects in one mouse. Intervals are nominal 95% and conditional on the selected sample."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and v1 analysis table; this report adds both-cell controls for contact multiplicity."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source dataset for linked calcium imaging and electron microscopy."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published two-cell-effect connection-presence analysis motivated the conditional contact-count extension. No code or fitted values were reused."
+    },
+    {
+      "target": "doi:10.1093/pan/mpv018",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dyadic sandwich variance principle."
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    }
+  ]
+}

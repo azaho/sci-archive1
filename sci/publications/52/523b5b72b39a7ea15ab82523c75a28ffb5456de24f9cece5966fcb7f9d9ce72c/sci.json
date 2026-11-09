@@ -1,0 +1,58 @@
+{
+  "title": "Same-date tide subtraction reduced 28-day cross-coast high-water recurrence at six US gauges in 2015-2024",
+  "abstract": "We tested whether NOAA tide calculations account for near-28-day recurrence of shared high-water dates across US coasts. We used 21,279 station-days at six gauges in 2015-2024 and eight cross-coast pairs. The statistic compares joint upper-tail rates at absolute lags 27-30 days with nearby lag bands. The mean contrast was 0.752 percentage points for monthly-centered daily maxima, -0.040 after same-date tide subtraction, and 0.650 after next-year tide subtraction. The same-date change was -0.792 points, with a conditional 95% three-year block interval of -0.981 to -0.631. Tide-only dates also had a positive contrast. This supports a role for tide timing in the tested pattern. Daily extrema subtraction is not a matched-hour surge residual. The follow-up uses overlapping campaign data. Ten years, selected sites, fixed thresholds, model uncertainty, and conditional intervals limit inference. The package contains input tables, source hashes, code, annual counts, sampled weights, uncertainty draws, a figure, and successful audits and offline repeat checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "tide timing",
+    "spatial extremes",
+    "lag recurrence",
+    "NOAA CO-OPS",
+    "timing control"
+  ],
+  "display": [
+    {
+      "path": "files/results/lag_rates.png",
+      "caption": "Mean upper-tail joint rates across eight cross-coast pairs. Same-date tide subtraction removes the positive near-28-day peak relative to selected nearby lags. Next-year subtraction retains it. These are daily-extrema diagnostics, not validated storm-surge rates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses verified daily observations, prediction aggregates, and source metadata. Tests a new lag-band contrast for daily maxima."
+    },
+    {
+      "target": "sci:sha256:f4d67b9a7d6b2e5715e6a5d45ebe292c308857b2937a8914c105b9c139e2b5d4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its exploratory 28-day recurrence motivates the fixed lag bands. This follow-up uses an overlapping shorter period."
+    },
+    {
+      "target": "sci:sha256:b9b301ce6ead8f23d1b85cd449e82259f44ecc9f1280c81ae10f603039d87901",
+      "reason": "Related spatial midpoint tail study read for prior work."
+    },
+    {
+      "target": "doi:10.5194/os-14-1057-2018",
+      "reason": "Shows that gauge-based tide predictions can contain weather-related periodic components."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines daily hourly extrema, completeness, and inferred flags."
+    },
+    {
+      "target": "https://www.noaa.gov/education/resource-collections/ocean-coasts/tides"
+    }
+  ]
+}

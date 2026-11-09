@@ -1,0 +1,77 @@
+{
+  "title": "A day 1-7 decay fit overpredicted 2019 Ridgecrest day 7-30 counts by 46% at magnitude at least 2.5",
+  "abstract": "We tested whether a decay rate fitted during days 1-7 predicts event counts during days 7-30 in a fixed USGS Ridgecrest catalog. The primary sample has preferred magnitude at least 2.5 within 100 km of the 2019 mainshock. The rate model sets the time offset and background rate to zero. The fitted exponent was 0.804. It predicted 565.9 events from 544 training events, but 387 events occurred in the test period. A benchmark with exponent fixed at one predicted 406.8. Fitting the exponent thus raised absolute count error from 19.8 to 178.9. The fixed exponent also had lower error in all 18 planned radius, magnitude, and fit-end combinations. These forecasts share events and are not independent trials. A Poisson simulation with parameter refitting gave a 95% predictive error band of 391.1-707.0 for the primary fitted model. The observed count was just below this band. A daily block weight sensitivity range for its expected count was 379.2-848.4 and included the observed count. Evidence against the rate model therefore depends on uncertainty assumptions. The split and benchmark were informed by a published endpoint analysis of this sequence. This is a retrospective audit, not a prospective skill estimate. One sequence, mixed magnitude types, catalog loss, omitted triggering, and model form limit inference. The package includes exact source fields, hashes, all forecasts and simulation draws, code, figures, independent checks, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershock count forecast",
+    "Omori decay",
+    "fixed exponent benchmark",
+    "retrospective forecast",
+    "catalog completeness",
+    "parameter uncertainty",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Day 1-7 fits and day 7-30 counts for preferred magnitude at least 2.5 within 100 km. The fitted exponent predicts 565.9 events; the fixed exponent of one predicts 406.8; 387 occur. Bands use Poisson simulations with early parameter refitting. They do not cover secondary triggering or catalog error."
+    },
+    {
+      "path": "files/checks.png",
+      "caption": "Forecast divided by observed count for all nine 100 km magnitude and fit-end combinations. All use day 1 as the start and day 30 as the final test bound. Ratios share events. A ratio of one means count agreement."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its fixed shared USGS catalog. Its reported fit-end sensitivity informed the current time split and benchmark. This study adds retrospective count forecasts; it does not supply untouched validation."
+    },
+    {
+      "target": "sci:sha256:254dfe25900ac059dc661f786d658736f5c24dbd39babf9e24474135b81aaac2",
+      "reason": "This published spatial study uses the same source and day 1-7 and 7-30 windows. The present study tests event counts, not spatial spread."
+    },
+    {
+      "target": "doi:10.1029/2020JB020887",
+      "reason": "Shcherbakov (2021) already studies Ridgecrest rate models and retrospective forecasts, with Omori-Utsu and ETAS models. Our reduced model and count target differ."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "van der Elst (2021) shows how transient catalog loss biases magnitude statistics. A fixed magnitude floor in our analysis is not proof of completeness."
+    },
+    {
+      "target": "doi:10.1785/0220240179",
+      "reason": "Page, van der Elst, and Hainzl (2024) test early Ridgecrest rates with a method that reduces effects of missing events. We do not test the same physical mechanism."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "reason": "USGS describes regional and sequence-specific models, uncertainty, detection loss, and unstable fits with multiple parameters. Our exponent-one benchmark is not the full operational forecast."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official query definitions and preferred catalog output."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source query for the fixed shared snapshot. The full-source hash and exact shared path are preserved in provenance.json. The live query can return revised bytes."
+    }
+  ]
+}

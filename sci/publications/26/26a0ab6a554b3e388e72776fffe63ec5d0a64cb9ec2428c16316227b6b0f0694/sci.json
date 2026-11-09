@@ -1,0 +1,68 @@
+{
+  "title": "Pointing fits predict large responses at five selected KIC 11084727 dips in six tests but require extrapolation",
+  "abstract": "We test a pointing explanation for eight selected aperture-flux dips of KIC 11084727 in Kepler release 25. We fit linear and quadratic functions of the reported image motion outside all event windows. We use three running-mean baseline lengths. For five dips, the predicted response is more than half the measured response in all six tests. For the known comet-like dip, the predicted fraction is 1.7 to 7.3 percent. The main five-day quadratic fits have positive validation skill outside events. However, the five large event predictions have maximum design leverage 16 to 56 times the training maximum. Thus, the pointing explanation requires extrapolation in the filtered predictors. Coefficient resampling does not measure that error. These results identify a testable instrument model, but do not establish a cause or a new astronomical source. No independent telescope data are used. We preserve code, source paths and hashes, fixed event selections, all model responses, validation results, figures, and a retrieval recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "pointing",
+    "extrapolation",
+    "exocomets",
+    "instrument effects"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/responses.png",
+      "caption": "Measured and predicted fixed-filter responses. Error bars show conditional coefficient ranges. They exclude event noise and model error."
+    },
+    {
+      "path": "files/outputs/events.png",
+      "caption": "Five-day filtered aperture flux, corrected flux, and quadratic pointing predictions at nine fixed events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of nine fixed events and profile choices, including eight extra aperture-flux dips."
+    },
+    {
+      "target": "sci:sha256:cb8eb648ce869f4135bd3c3b665c91920ad748080dcfc07799ec85b5f4b755ab",
+      "reason": "Prior test of a different instrument model on the same eight dips."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Discovery and physical interpretation of the known comet-like dip."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior automated exocomet search."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of image-motion columns and flux products."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Prior description of seasonal and motion effects."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public observation object; shared copy and hashes are recorded."
+    }
+  ]
+}

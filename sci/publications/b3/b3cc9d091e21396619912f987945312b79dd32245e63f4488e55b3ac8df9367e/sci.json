@@ -1,0 +1,59 @@
+{
+  "title": "Four Kepler filters flag missing fixed-shape 1000-ppm repeats at all tested periods from 5 to 99.99 days for KIC 11084727",
+  "abstract": "We test fixed-shape repeats of the known dip of KIC 11084727 in 18 public Kepler release 25 quarters. The epoch and shape come from one local fit. We test 99,501 periods from 5 to 1000 days and depths of 800, 1000, and 1200 parts per million (ppm). A missing-repeat flag requires a passage where all four filters detect an added template but the measured flux stays below the score threshold. The filters use aperture and corrected flux with two quadratic baseline windows. Every tested period from 5.00 to 99.99 days has at least two missing detectable repeats at 1000 ppm. Only 38.30 percent of tested periods from 600 to 1000 days have even one at that depth. This is a deterministic detection diagnostic, not a confidence limit on an orbit. Times are rounded to the cadence grid. The epoch, shape, and depths are fixed. Variable dust, timing changes, pipeline effects, and data gaps remain possible. We report no new body and no independent telescope confirmation. Code, input hashes, retrieval instructions, derived filter maps, and the full period grid are preserved.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "exocomets",
+    "repeat transit",
+    "period coverage",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/result.png",
+      "caption": "Top: the known event and one fitted empirical shape. Bottom: the fraction of tested periods with at least one missing detectable repeat, in 10-day bins. This is a conditional diagnostic, not an orbit probability."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior search of this target and source of the shared raw-data selection. We add a fixed-epoch period grid with a four-filter test."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original report of the known comet-like event."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior automated recovery and discussion of rare events and variable depths."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public release 25 raw observation archive."
+    }
+  ]
+}

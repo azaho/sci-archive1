@@ -1,0 +1,77 @@
+{
+  "title": "Winter sea-level and California rain contrasts had a positive adjusted link in 62 winters of 1961-2025",
+  "abstract": "We tested whether the winter sea-level difference between Seattle and San Francisco tracks the rain difference between the North Coast and South Coast divisions of California. We used fixed NOAA snapshots and 62 complete winters in 1961-2025. We separately standardized division rain totals. After removal of a linear time trend, concurrent Nino 3.4 and the mean level of the two gauges, the partial correlation was 0.387. Its 95% five-year block interval was 0.154 to 0.561. Three- and ten-year blocks retained positive intervals. Added squared ENSO, a common rain control, and removal of three large El Nino winters retained positive point estimates. The early-period estimate was only 0.136, compared with 0.542 in the late period. We did not test a period change. This is a conditional spatial association in overlapping campaign data. It does not identify a physical cause, stable coupling, flood risk, water supply or forecast skill. Selected sites, missing months, source products and block assumptions limit inference. The package supplies source hashes, fixed input records, code, draws, a figure, an independent audit and a full repeat check.",
+  "keywords": [
+    "sea level",
+    "California precipitation",
+    "spatial contrast",
+    "ENSO",
+    "partial correlation",
+    "block bootstrap"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/contrasts.png",
+      "caption": "Winter residual contrasts and planned checks. The bar shows the primary 95% five-year block interval. Other points have no intervals. Colors mark winter year from early purple to late yellow."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:267d9c9e4878db1339eb29ac8f414174e50b6490c32c3ad27fd123a821847f3a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the same source snapshots and winter definition, with new code and a spatial contrast test."
+    },
+    {
+      "target": "sci:sha256:524eec27d97dbb76134f374116c2c2bc3b19315ca274cbbd4d62f80845d42f87",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior period comparison with overlapping data informed limits on a stable relation."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-13-00225.1"
+    },
+    {
+      "target": "https://journals.ametsoc.org/doi/full/10.1175/1520-0442%282003%29016%3C0982%3ASVATCC%3E2.0.CO%3B2"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9414290&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source identity and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=monthly_mean&application=SCI-research&begin_date=19600101&end_date=20251231&datum=MSL&station=9447130&time_zone=lst&units=metric&format=json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source identity and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source identity and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source identity and hash are in files/provenance.json."
+    }
+  ]
+}

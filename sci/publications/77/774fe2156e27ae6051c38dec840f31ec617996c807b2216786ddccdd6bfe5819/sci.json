@@ -1,0 +1,60 @@
+{
+  "title": "Selected Allen excitatory circuits gave no clear delay alignment beyond within-recording shuffles",
+  "abstract": "We tested delay alignment in closed three-cell excitatory circuits from Allen Synaptic Physiology r2.1. The statistic was the donor-weighted mean absolute difference between the two-edge delay sum and the direct delay. We held each graph fixed and shuffled excitatory delays within recordings. In 17 mouse visual-cortex routes from 10 inferred mice, the observed gap was 1.620 ms and the shuffle mean was 1.728 ms. In 12 human temporal-cortex routes from eight inferred donors, the values were 1.663 and 1.737 ms. With 9,999 draws, corrected lower-tail p-values were 0.7846 and 0.7242. Cell-class and distance matching gave no clear positive result. A strict cell-label check left only four mouse and three human donors. These tests give no clear evidence for closer delay sums than the tested references. They do not establish independence or equivalence. Small selected slice graphs, uncertain exchangeability, inferred donors, and absent relay-spike measurements limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit timing",
+    "conditional permutation",
+    "synaptic delay",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing.png",
+      "caption": "Observed donor-weighted absolute delay gaps and conditional within-recording shuffle distributions. Shuffle ranges are not population confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.1060342"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:50346696de201d8d9609896510ab945615d9c40f83ff6b95e402a962cd46a006",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior report described these excitatory route sums. This study adds a conditional shuffle test; no code was reused."
+    },
+    {
+      "target": "sci:sha256:a478589cf1e47d44b74d14284efe3cdbceb8118ce391112b985e0b1915249982",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior report tested inhibition relay budgets. Our question tests excitatory delay alignment against shuffles."
+    }
+  ]
+}

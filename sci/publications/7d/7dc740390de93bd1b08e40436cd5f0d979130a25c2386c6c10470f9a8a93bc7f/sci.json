@@ -1,0 +1,71 @@
+{
+  "title": "Only 57 of 2,248 mouse connections support held-out additive cell-delay tests in matched Allen slice graphs",
+  "abstract": "We tested whether source-cell and target-cell terms predict omitted synaptic delays in Allen Synaptic Physiology r2.1 slice data. A bipartite graph cycle is required for a unique omitted-edge prediction. Only 57 of 2,248 selected mouse VisP connections and four of 309 human TCx connections meet this condition within recording, synapse sign and ordered cell-class groups. These edges give 18 mouse and one human independent cycle constraints. On the mouse edges, the unregularized cell model had MSE 0.25617 ms squared, compared with 0.07273 for a group mean. Mean-minus-model MSE was -0.18344, with a nominal 95% inferred-donor bootstrap interval of -0.43501 to -0.05052. Strict label matching gave the same direction. Human support came from one inferred donor and does not support a population interval. Sparse graphs, measurement error, selected slices and inferred donors limit the result. The test does not rule out cell-specific timing or benefits from regularized models. We provide graph audits, code, predictions and reproducible evidence.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "graph cycles",
+    "identifiability",
+    "local circuits",
+    "prediction"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Only connections on cycles support omitted-edge predictions under an additive source-plus-target model. Negative error gain favors the group mean. Human data have one donor and no interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for local connectivity and physiology."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Pinned definition of delay units and timing landmarks."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3060591/",
+      "reason": "Presynaptic spike shape can change cortical delay."
+    },
+    {
+      "target": "sci:sha256:d7a654bb28eadf49cdc150cf39cd9f7fc586ef72ed661a7eaff1b7a08e6d6a37",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-source versus shared-target delay comparison."
+    },
+    {
+      "target": "sci:sha256:8e75b82a74240a247aab381c8b615f9ac0a92244d2c80fa83f25e670f2d7e6df",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior graph-design study of random-effect variability moments; the present model concerns fixed delay terms."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=cb13de79-0f2c-4473-a5e1-cb99c3af6dae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published metadata in the shared Allen latency dataset noted sparse distance information after cell offsets."
+    }
+  ]
+}

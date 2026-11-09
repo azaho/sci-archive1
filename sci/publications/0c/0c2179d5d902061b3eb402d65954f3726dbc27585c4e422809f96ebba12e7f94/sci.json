@@ -1,0 +1,73 @@
+{
+  "title": "Same-date and next-year tide subtraction reduced the mean tail persistence difference at two Pacific gauges in 2015-2024",
+  "abstract": "We tested whether NOAA tide subtraction changes the difference between high- and low-tail next-day persistence at San Francisco and Seattle. We used 21,279 station-days from six US gauges in 2015-2024 and kept the same dates for all measures. Each site and calendar month had its own 5th and 95th percentile thresholds. The equal-site Pacific high-minus-low difference was -19.66 percentage points before correction and -7.81 points after same-date tide subtraction. The paired change was +11.85 points, with a 95% three-year block interval of +2.96 to +15.99 points after threshold refitting. Subtracting the next year's tide prediction gave a larger change of +17.82 points. The same-date-minus-next-year contrast was -5.98 points, with an interval of -12.89 to +1.23 points. Thus the smaller tail difference is not specific to the correct tide dates under this control. Low-tail persistence remained greater in the corrected Pacific mean. The test shows sensitivity to the daily measure, not a unique physical tide cause or a recovery time. Ten years, selected gauges, daily extrema, changing tail membership, and conditional block intervals limit inference. The package gives exact source hashes, daily evidence, counts, all resampling weights, code, a figure, source and rational arithmetic audits, and an exact offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal water levels",
+    "tail persistence",
+    "tide prediction",
+    "daily midpoint",
+    "paired comparison",
+    "negative control",
+    "NOAA CO-OPS",
+    "block bootstrap",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/persistence.png",
+      "caption": "High-minus-low next-day tail probability before and after same-date tide subtraction at six gauges, and the two-site Pacific mean with a next-year control. Intervals use three-year blocks with threshold refitting. Site intervals are unadjusted. The next-year control reduces the mean difference more than same-date subtraction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:154b66db1e7043562283ea709633f7868d1b3d3c59516bd98b4af2b77c0f4c6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified daily observations, full daily tide summaries, coverage decisions, source metadata, and provenance. Its signed bundle preserves all 60 raw hourly tide-prediction responses. We add a paired tail-persistence correction test."
+    },
+    {
+      "target": "sci:sha256:88a8ecb586b2acb27ff62bbbd8efc45653101e22429526bdfdd12ece705f92b7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The prior high-minus-low persistence result selects the two Pacific sites and the statistic. We test the effect of a full NOAA tide correction on a shorter matched period. Its code and derived data were not copied."
+    },
+    {
+      "target": "sci:sha256:d8f7182757df0564ea50c6690ea567d0b61f757a69c903949d9f48203eab2e65",
+      "reason": "Prior lunar-envelope fits tested shared high-water dates. This study tests sign differences in next-day persistence with daily summaries of hourly NOAA predictions."
+    },
+    {
+      "target": "doi:10.1017/cft.2025.10008",
+      "reason": "Prior global study of temporal clusters of storm surges. Its declustered event measure and longer time windows differ from this daily endpoint statistic."
+    },
+    {
+      "target": "doi:10.5194/os-14-1057-2018",
+      "reason": "Tide predictions can include periodic weather-related components. This limits pure astronomical attribution."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA definitions of daily hourly extrema, completeness and inferred flags, monthly means, and predictions."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source service for the exact observation and prediction queries in the preserved provenance files."
+    }
+  ]
+}

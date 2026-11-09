@@ -1,0 +1,65 @@
+{
+  "title": "Passive reference models for 31 Allen mouse slice pairs admit zero direct electrical conductance",
+  "abstract": "We tested whether two-cell steady-state electrical measurements identify a direct connection when passive hidden nodes and unknown membrane leaks are allowed. A constructive circuit proof gives the sharp direct-edge range from zero to the effective mutual conductance for a reciprocal two-port matrix with positive residual shunts. We applied the method to reference matrices based on 31 Allen mouse visual cortex slice pairs. The measured directional transfer estimates differed by a median factor of 1.158. We used their geometric mean to form reciprocal references. The median effective conductance was 0.479 nS. Every reference admitted both zero and fully direct conductance. All 310 circuit witnesses across two resistance definitions preserved their reference port matrices to numerical precision, and an independent checker passed. This is a conditional model result, not a confidence bound on anatomical junctions or evidence for hidden paths. Finite pulse windows, separate resistance measurements, active currents, and the reference adjustment limit biological interpretation. Code, selected measurements, circuit witnesses, source hashes, and reproduction instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "electrical coupling",
+    "hidden nodes",
+    "identifiability",
+    "passive circuit",
+    "Kron reduction"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Measured transfer disagreement, conditional direct-edge ranges, and exact port equivalence in passive reference circuits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.1310983110"
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known passive circuit reduction provides the mathematical basis."
+    },
+    {
+      "target": "sci:sha256:597f4cea5c2b6dc05718bee3c2bf9a54b1f90b750d4482f07c514ddae9c1fd8b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published electrical-loop study supplied the cohort rule and motivates the distinct direct-edge identifiability test. No numerical tables or code were reused."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=87ba3ca6-f51a-473d-9521-4cfa269f0678",
+      "reason": "Shared public metadata reports the prior resistance-correction test."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/pipeline/multipatch/gap_junction.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/database/schema/intrinsic.py"
+    }
+  ]
+}

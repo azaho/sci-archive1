@@ -1,0 +1,83 @@
+{
+  "title": "Kepler pixel sums retain the BKJD 1250.96 dip of KIC 3542116 under tested aperture and pointing changes",
+  "abstract": "We test a previously selected shallow dip in Kepler quarter 13 of KIC 3542116. The full measured pixel stamp gives a fixed-template depth of 318 parts per million without pointing terms and 279 parts per million with linear pointing terms. The conditional 95 percent interval is 196 to 364 parts per million for 12-row residual blocks. The dip remains under two other quality masks and eight baseline, window, and pointing choices. A complete transfer of aperture light to measured outside pixels does not explain the fitted net loss. The nearby star gives opposite dip directions in raw and corrected flux and has a crowding estimate of 0.1423. It supplies no clean source veto. The signed pixel map has both gains and losses and gives no reliable source position. We confirm no new planet or comet. These same-telescope tests do not exclude nonlinear instrument effects, stellar variation, or a blended source. The package includes exact raw files, hashes, code, all fit and noise outputs, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 3542116",
+    "KIC 3542117",
+    "pixel photometry",
+    "pointing",
+    "unconfirmed dip",
+    "artifact tests"
+  ],
+  "display": [
+    {
+      "path": "files/pixels.png",
+      "caption": "Signed pixel loss at the fixed day-1251 template. Large pixel gains and losses limit source location."
+    },
+    {
+      "path": "files/profiles.png",
+      "caption": "The dip remains in aperture and full-stamp fits. The nearby-star raw fit does not give a matching dip."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a98e1bf451ca24216089f19fdbb25cf5b4f861e67d02fb5af686acf7a1cfb017",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the selected event, center, widths, and baseline design. This study adds a pixel test of the second-ranked event."
+    },
+    {
+      "target": "sci:sha256:2b5ebb2ff88db209d8cf548e8ff3f9cde903dd9529ad2e980032623a9113b7d0",
+      "reason": "Prior campaign tests of three deep events on the same star."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Prior discovery and physical context of known exocomet-like events."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior automated searches and quality-flag context."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348498",
+      "reason": "Prior physical dust models; no such model is fit here."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of source products, quality flags, and aperture metadata."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003542116/kplr003542116-2012179063303_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public DR25 observation object. Hash and file copy are preserved."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0035/003542116/kplr003542116-2012179063303_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public DR25 observation object. Hash and file copy are preserved."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003542117/kplr003542117-2012179063303_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public DR25 observation object. Hash and file copy are preserved."
+    }
+  ]
+}

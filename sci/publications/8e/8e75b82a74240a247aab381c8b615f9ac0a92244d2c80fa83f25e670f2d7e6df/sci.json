@@ -1,0 +1,68 @@
+{
+  "title": "Three-component variability moments have full rank in 38 of 1,238 matched Allen slice groups under an independent-effect model",
+  "abstract": "We tested which Allen cortical slice graphs support a local decomposition of resting log response variability into independent source, target, and edge-plus-error components. Exact recording and cell-label matching gave 1,238 groups with finite values. Only 38 groups, with 156 of 1,594 connections, had all three required edge-pair types. Under the additive model, the mouse source moment was 0.687 log-CV squared, with a nominal 98.33% donor bootstrap interval of 0.196 to 1.348 in 30 groups from 28 inferred mice. Target and residual intervals included zero. All human intervals included zero in eight groups from seven donors. A distance-bin check kept a positive mouse source interval. Negative local moments, sparse graphs, missing values, measurement error, selection, and unverified effect independence limit biological interpretation. The rank result applies to local difference moments; a global model with shared components can pool information across incomplete groups. Code, source hashes, edge records, graph audits, complete resampling draws, and independent checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "variance components",
+    "graph identifiability",
+    "synaptic variability",
+    "crossed effects"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/components.png",
+      "caption": "Unconstrained component moments and nominal 98.33% marginal donor bootstrap intervals under the independent-effect model. Negative values are sampling estimates, not biological variances."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods-experimental-protocol"
+    },
+    {
+      "target": "doi:10.1007/s10519-021-10055-x"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2d5154c104221cb8c0445b435ec790f7de7ad193fe910837bceeaf5959f9d9f8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its strict matching design and published sample comparison as context. New code and independent data extraction add disjoint-end pairs and component moments."
+    },
+    {
+      "target": "sci:sha256:d7a654bb28eadf49cdc150cf39cd9f7fc586ef72ed661a7eaff1b7a08e6d6a37",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:decef28e21bcd9cb9de6e4ded9aa55988e4ca24c56c263841e8b29af56b711a5",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Spike-width similarity gave no clear connection prediction gain in two selected Allen cortical slice samples",
+  "abstract": "We tested whether spike-width similarity adds useful information about local chemical wiring after cell labels, distance, probing effort, and both cell widths are known. We used Allen Synaptic Physiology r2.1 and held out whole inferred donors. Human temporal cortex had 1,390 tested directed pairs from 47 inferred donors. Its log-loss gain was 0.001899, with a conditional 97.5% donor interval of -0.002481 to 0.006758. Mouse visual cortex had 7,271 pairs from 492 inferred donors. Its gain was -0.000188, with an interval of -0.000568 to 0.000196. Neither primary interval was wholly above zero. The fitted mismatch terms favored difference, rather than similarity. Two other penalties and a flexible reference model also gave intervals that included zero. The result does not support this added similarity term in the tested models. Missing widths, slice detection, inferred donor labels, and uncertainty conditional on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "spike width",
+    "local connectivity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Spike-width mismatch gave no clear gain. All 97.5% donor intervals include zero. Positive gain is better prediction. Intervals condition on fitted models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/nature09880"
+    },
+    {
+      "target": "doi:10.1038/nature14182"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py"
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published design as a reference for a new spike-width test. No code or derived data reused."
+    },
+    {
+      "target": "sci:sha256:dae3a6b51e9389ed91a40b06fb06bbee09c0251a324a627d7c875f43944eb6d1",
+      "reason": "Campaign search found a distinct source-width and synaptic-delay test."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/intrinsic.py",
+      "reason": "Maps database spike width to width_hero."
+    }
+  ]
+}
