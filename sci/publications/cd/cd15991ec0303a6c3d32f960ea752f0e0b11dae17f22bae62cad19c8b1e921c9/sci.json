@@ -1,0 +1,67 @@
+{
+  "title": "Ten equal pair averages made selected positive models of eight worm maps unstable near unit gain",
+  "abstract": "We tested whether averaging individually stable positive linear models preserves stability. We used eight C. elegans brain maps and 161 common cells. Each nonnegative site-target count matrix was divided by its spectral radius. Ten of 28 equal pair averages had radius above one; the largest was 1.005305. This gives an unstable average for gains from 0.994723 to one while each component stays stable. Binary weights gave 13 of 28 and a largest radius of 1.007552. Counting repeated target slots kept 10 of 28 count mixtures above one. The equal eight-map mean and the adult-only pair on 180 cells did not show the risk. All sampled pair mixtures were stable at gain 0.99. A shared source-column sum bound guarantees stability under a different normalization rule. Independent graph and eigenvalue checks passed. The effect is small and concerns an assumed positive linear model. Unknown signs and gains, partial maps, different ages, and no linked activity prevent a claim about real brain instability. Original code, aggregate results, source hashes, retrieval steps and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "C. elegans",
+    "model stability",
+    "spectral normalization",
+    "network averaging"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Pair mixture spectra and normalization controls in positive models. Count weights count each distinct site-target pair once. All-map scope has 161 cells; adult scope has 180. These are model results, not measured brain dynamics."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Eight anatomical maps across development."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source version; individual file URLs and hashes are in provenance.json."
+    },
+    {
+      "target": "doi:10.1101/2023.08.23.554519",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Methods context for spectral normalization in connectome models."
+    },
+    {
+      "target": "https://skoge.folk.ntnu.no/prost/proceedings/cdc-ecc-2011/data/papers/0362.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established distinctions between stability, convex combinations and switched positive systems."
+    },
+    {
+      "target": "sci:sha256:41c728d7ea2eb60c02bf25d58fecc7d39cdebb3a6f69189d7b000ee7b0b7d5a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior transient growth test on two adult maps. We test stability after averaging and reuse no code or tables."
+    },
+    {
+      "target": "sci:sha256:1a5311bcd5b8cc299b7ef21c5a278e2e76089f4d04582bd2352ef23480d4c1eb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior norm dependence of transient growth. Our asymptotic criterion does not depend on a state norm."
+    }
+  ]
+}
