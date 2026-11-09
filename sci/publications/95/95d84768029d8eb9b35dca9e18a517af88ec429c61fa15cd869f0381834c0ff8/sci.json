@@ -1,0 +1,54 @@
+{
+  "title": "Eight binary worm maps had higher three-step return than shuffles with fixed degrees and reciprocal links",
+  "abstract": "We tested short feedback routes in eight public C. elegans brain maps. We used a fixed panel of 162 neurons and a binary chemical graph. Each outgoing edge had equal transition probability. The mean probability of return in three steps was 1.20 to 2.06 times the mean from sampled graphs with the same input degrees, output degrees and exact reciprocal links. Seven observed scores exceeded the central 95 percent shuffle range. A rule that required at least three contacts per edge did not retain a consistent excess: three maps were above their shuffle means and five were below. Four chains per graph had split R values at most 1.006. Longer runs on maps 1 and 8 gave similar reference ranges. Fixed degrees and reciprocal links also fix the two-step return score. Thus the three-step contrast describes route arrangement beyond that two-step score. The result depends on the edge rule and a simple routing model. It does not test neural activity, synaptic gain, causal feedback or transfer across species. Code, derived edges, all sampled scores, source hashes and a retrieval recipe support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectomics",
+    "directed cycles",
+    "reciprocity",
+    "random walks",
+    "degree controls"
+  ],
+  "display": [
+    {
+      "path": "files/returns.png",
+      "caption": "Three-step return scores in binary routing models of eight worm maps. Gray bars show central 95 percent ranges from sampled graphs with fixed degrees and exact reciprocal links. These are reference ranges for graph shuffles, not confidence intervals for animals. Left: all observed links. Right: links with at least three contacts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary developmental connectomes and prior finding of more feedforward wiring with age."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source for the eight site lists."
+    },
+    {
+      "target": "sci:sha256:bec99dca908045dd09f516b13db2e4faf0543f793309470abef5590e2ecfbd88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified fixed panel file. Tests a different score and a different graph control; no analysis code or edge tables reused."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.85.046103",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on directed degree-preserving randomization motivates explicit mixing limits. Our constrained sampler is not claimed to implement its exact ensemble."
+    }
+  ]
+}
