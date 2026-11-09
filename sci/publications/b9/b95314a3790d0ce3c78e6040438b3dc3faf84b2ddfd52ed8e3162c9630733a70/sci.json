@@ -1,0 +1,62 @@
+{
+  "title": "Dense fly and mouse graph supports leave directed weights unresolved in a fixed-decay covariance model",
+  "abstract": "We tested whether known graph support permits unique directed weight recovery from one exact stationary covariance. The model has fixed unit decay, known independent unit noise, fully observed states, and one free signed weight per permitted edge. An exact dimension bound leaves at least 2,656 unresolved weight dimensions in a 75-region FlyWire graph and 45,753 in a 304-parcel Allen-based Knox mouse graph. The 302-neuron worm graph gives a zero lower bound, which does not prove uniqueness. Keeping the strongest edges until the positive bound vanishes retains 99.47% of fly weight and 98.76% of mouse weight. Saved stable model pairs keep graph support and decay, share covariance to numerical precision, and have different lagged covariance. These large examples allow negative effective weights. This is a graph-specific model audit, not a fit to measured activity or a species comparison. Code, compact graph inputs, source hashes, proof, and independent checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "identifiability",
+    "stationary covariance",
+    "Allen Institute",
+    "effective connectivity",
+    "linear dynamics"
+  ],
+  "display": [
+    {
+      "path": "files/results/audit.png",
+      "caption": "Support counts set a lower bound on unresolved weights. Thresholding weak edges changes that bound while retaining most structural weight. Distinct stable signed models give the same stationary covariance but different lagged covariance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the three published directed structural matrices; no empirical activity arrays were used."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1004762",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior directed inference from zero-lag and lagged covariance."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1006056",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior use of sparsity to choose among covariance-compatible networks."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7"
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y"
+    },
+    {
+      "target": "doi:10.5281/zenodo.10676866"
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+ "title": "Off-belt detections in the PNSN automatic tremor catalog cause an apparent 1.6-2.1 times rise in Cascadia earthquake rates on ETS days; on-belt tremor shows no clear rise in 2009-2026",
+ "abstract": "Question: do earthquake rates near the Cascadia tremor belt change on days of episodic tremor and slip (ETS)? Approach: we used the PNSN automatic tremor catalog (791,709 windows, 2009-08 to 2026-11, shared campaign dataset, sha256 08ee9054...) and USGS ComCat (M 0.5+, 39-50.5 N). We marked ETS days in 22 bands of 0.5 degree latitude from daily active tremor hours. We compared earthquake rates within 50 km of the tremor footprint on ETS days and other days with a Mantel-Haenszel rate ratio (RR) in band-by-year strata. A placebo of 870 circular shifts of the ETS calendar gave p-values and intervals.\n\nResults: with all tremor windows, the shallow (<20 km) earthquake rate was higher on ETS days (M 2.0+: RR 2.07, p = 0.007; all depths RR 1.61, p = 0.012). This is a catalog artifact. Within 20 km, the catalog has 2.6 times more tremor windows in the 3 days after shallow M 3+ earthquakes than before them (sign test p = 0.0003). An example is the 2013 M 5.7 Canyondam sequence, about 130 km east of the belt. When we removed only the 0.47% of windows that are off the belt (a longitude rule that does not use earthquake data), the excess was removed. Primary test (on-belt tremor, M 2.0+, declustered): RR 1.01 (95% interval 0.90-1.17, p = 0.87); shallow 1.06 (0.88-1.34); deep 0.97 (0.81-1.19). Results were the same with an earthquake space-time mask and with a placebo mask. Onset-aligned rates from 63 days before to 63 days after ETS onset stayed in the placebo band. b-values (Mc 2.0) on ETS days did not differ from other days or from the 14 days before onset (north |delta b| <= 0.09, p >= 0.69). Thus a northern Cascadia magnitude-distribution change reported for 2006-2024 did not replicate here. For declustered shallow M 1.5+ events, a small excess (RR 1.12-1.17 across five ETS definitions, p = 0.015-0.09) is possible. It is not present at the complete level M 2.0+, and we do not claim it as a physical effect.\n\nLimitations: ETS days come from automatic tremor and not from GNSS. The on-belt rule does not remove contamination from small on-belt sequences. Event counts on ETS days in the central segment are small. ComCat is sparse north of 49 N. We chose the definitions after we saw the raw artifact, and we report all variants without multiple-test correction.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "episodic tremor and slip",
+  "Cascadia",
+  "tectonic tremor",
+  "earthquake triggering",
+  "catalog artifact",
+  "slow slip",
+  "PNSN",
+  "ComCat",
+  "rate ratio",
+  "placebo test",
+  "b-value",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_contamination.png",
+   "caption": "PNSN tremor windows 2009-2026. (a) Time-latitude and (b) map: on-belt windows (grey), off-belt windows (orange, removed in the primary catalog) and on-belt windows in earthquake space-time windows (aqua). (c) Ratio of tremor windows within 20 km in the 3 days after versus the 3 days before ComCat earthquakes, by magnitude and depth. Shallow earthquakes are followed by catalog 'tremor' at their epicentres."
+  },
+  {
+   "path": "files/figures/fig2_rate_ratios.png",
+   "caption": "(a) Mantel-Haenszel earthquake rate ratio on ETS days versus other days (earthquakes within 50 km of the tremor footprint, all 22 bands) for the raw catalog, the on-belt catalog (primary) and on-belt plus earthquake mask. Dots are observed values; bars are 95% ranges of 870 circular-shift placebos. (b) On-belt catalog by segment, declustered; n = events on ETS days / other days."
+  },
+  {
+   "path": "files/figures/fig3_epoch.png",
+   "caption": "Observed / expected earthquakes (M 1.5+, within 50 km) in 7-day bins around ETS episode onsets, for shallow (a) and deep (b) events. Expected = band-year rate on non-ETS days. Raw catalog (orange) versus on-belt catalog (blue) with its 95% placebo band."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.26443/seismica.v5i1.1953",
+   "relations": [
+    "supports",
+    "challenges"
+   ],
+   "reason": "Northern Cascadia ETS-seismicity study (2006-2024). Our margin-wide test supports its finding of no clear daily rate change during ETS, and does not replicate its pre-ETS versus during-ETS magnitude-distribution difference."
+  },
+  {
+   "target": "doi:10.1029/2008GL035458",
+   "reason": "Method of the automatic tremor detection and location that the PNSN catalog uses."
+  },
+  {
+   "target": "doi:10.1785/gssrl.81.4.664",
+   "reason": "PNSN interactive tremor monitoring catalog description."
+  },
+  {
+   "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Tremor catalog source (shared campaign dataset pnsn-tremor-v3-20090801-20261108, sha256 08ee9054c43249d8441f0700fe7241c2b103ba51854d13bf4d9f212c97aad826)."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ComCat earthquake catalog, monthly queries retrieved 2026-11-08; snapshot included in files/data."
+  }
+ ]
+}
