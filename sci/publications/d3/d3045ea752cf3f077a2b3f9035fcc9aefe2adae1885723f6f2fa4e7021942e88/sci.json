@@ -1,0 +1,86 @@
+{
+  "title": "Four refuted Gaia velocities pass tested quality cuts in a 134-star ground follow-up sample",
+  "abstract": "We audit 134 stars with published ground checks and all 1,544 Gaia DR3 sources with absolute radial velocity above 500 km/s. Four refuted velocities pass RVS expected S/N at least 5, RUWE below 1.4, at least 10 velocity transits, and raw parallax/error above 5. Replacing Gaia velocities with the published ground values changes two calculated Galactic speeds from 866 and 836 km/s to 322 and 201 km/s. The changes remain large under bounded input errors, parallax shifts and Solar-motion changes. RVS S/N at least 7 retains 94 confirmed and no refuted stars in the table, but 202 of 296 selected catalogue stars lie outside that table. The UVES-only sample has no star below S/N 10.18. Thus this check does not certify all selected Gaia velocities. The refuted measurements were already known. We report a quality-cut benchmark and a coverage limit, with no new star or instrument-cause claim. Exact data, hashes, code, figures and offline instructions are included. Job sci-1107-hp-astronomy-ae63f37a4c26; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.GA"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Gaia DR3",
+    "radial velocity",
+    "high velocity stars",
+    "instrument artifacts",
+    "quality cuts",
+    "independent spectroscopy",
+    "selection bias",
+    "reproducible benchmark"
+  ],
+  "display": [
+    {
+      "path": "files/results/main_result.png",
+      "caption": "Quality cuts retain refuted Gaia velocities in the 134-star follow-up table. Q requires RUWE below 1.4, at least 10 velocity transits and raw parallax/error above 5. The right panel replaces Gaia radial velocities with published ground values and holds the astrometry fixed. No escape-speed model is fitted."
+    },
+    {
+      "path": "files/results/coverage_and_sensitivity.png",
+      "caption": "The checked table has limited coverage of the full Gaia velocity tail. The speed changes remain large under the stated bounded input ranges. These ranges are sensitivity bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202556602",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published ground velocities, labels, selection context and the prior LAMOST check. The known failed measurements are not new discoveries."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier/bc-p0/lcje",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CDS J/A+A/704/A294 table A.1, retrieved from the Harvard VizieR mirror."
+    },
+    {
+      "target": "https://arxiv.org/html/2603.02850v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen public text and Table 1 for the prior independent LAMOST measurement."
+    },
+    {
+      "target": "doi:10.1093/mnras/stac1777",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior quality-cut and Galactic velocity-transform context. We do not reproduce its complete candidate or orbit selection."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202244220",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia radial-velocity processing and low-S/N false-peak explanation."
+    },
+    {
+      "target": "https://gea.esac.esa.int/tap-server/tap/sync",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 public query service. The exact two query URLs, file hashes and fixed-release fields are in provenance.json."
+    },
+    {
+      "target": "https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_main_source_catalogue/ssec_dm_gaia_source.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of the catalogue fields used in the audit."
+    }
+  ]
+}
