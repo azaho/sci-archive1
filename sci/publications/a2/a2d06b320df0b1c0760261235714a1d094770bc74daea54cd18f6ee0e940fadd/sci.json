@@ -1,0 +1,64 @@
+{
+  "title": "Input memory gave negative partial correlations at nonlinks in two passive adult worm circuit models",
+  "abstract": "We tested input memory in passive electrical models of two partial adult worm maps with 180 cells each. Equal independent Ornstein-Uhlenbeck inputs gave negative partial correlations at 751 and 1099 pairs without direct links. An exact covariance identity explains this result through shared neighbors. Inverse covariance still ranked all true links first with signed scores across the tested grid. At coupling one and input memory time 0.1, normalized inverse covariance had relative drift errors of 0.25968 and 0.39055. A correction from central lag curvature and inverse covariance reduced these errors to 0.000952 and 0.001431 at a lag of 0.01 input memory times. Added covariance errors of relative size 1e-6 raised median errors at this lag to 0.20974 and 0.21634. A tenfold larger lag gave lower median errors in this stress test. Exact recovery assumes full observation, uniform leak and equal independent inputs with one memory time. No neural activity records were used. Partial anatomical annotations, assumed conductance and artificial covariance errors limit biological and practical inference. Code, aggregate results, a proof, a figure and external retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "colored noise",
+    "inverse covariance",
+    "covariance curvature",
+    "C. elegans",
+    "circuit inference"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Input memory creates negative partial correlations at model nonlinks. Curvature reduces exact weight error, but small lags amplify covariance errors. These are model tests with all cells observed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevResearch.7.023042",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevX.6.031024",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:d0f0efc3be95c9f3c477090afe999789204d117478b1d5cd51aa3d6834aa6e3c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests unequal white input noise in these model graphs. We test temporal input dependence with original code."
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests white-noise positive-lag curvature with hidden cells. We test central curvature times inverse covariance with full observation and colored input."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
