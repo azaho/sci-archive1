@@ -1,0 +1,57 @@
+{
+  "title": "A fixed HARPS second harmonic does not reduce ESPRESSO error for HD 20794 in 32 model checks",
+  "abstract": "We test whether the second harmonic of the known 647.6-day velocity signal of HD 20794 transfers between instruments. We fit a fixed 323.8-day sine curve to 746 HARPS nights and test it on 65 separate ESPRESSO nights. The central curve increases weighted prediction error by 5.25 percent. All 32 stated model settings increase error. Resampling 30-day groups in both instruments gives a 95 percent gain interval from -24.67 to 3.97 percent; this is not a general rejection of eccentric orbits. The test uses a free harmonic component and differs from the published Kepler and noise models. Fixed periods come from prior joint work. No new planet, new signal, or instrument fault is established. Code, selected data, raw source hashes, all model settings, bootstrap draws, a figure, and offline steps are included. Job sci-1107-dell-astronomy-a11125279933; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 20794",
+    "radial velocity",
+    "eccentricity",
+    "second harmonic",
+    "HARPS",
+    "ESPRESSO",
+    "instrument transfer",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Fixed HARPS curve tested on ESPRESSO. Lines are block-bootstrap 95 percent intervals; both means that both instruments are resampled. Dots mark the central result. The second panel gives every stated model setting. Negative gain means increased error."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202451769",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known periods, eccentric orbit, instrument context and public velocity data."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36930297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source table for velocities and diagnostics."
+    },
+    {
+      "target": "https://arxiv.org/html/2501.17092v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Accessible source text, orbital parameters and limits."
+    },
+    {
+      "target": "sci:sha256:bb38199b8ce744d6bcb4ac6008813893bbfe52173e0f0600aa6285bc25861dc1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw parser adapted in prepare.py and weighted projection method. The present test concerns the known outer second harmonic, not the weak annual alias pair."
+    }
+  ]
+}
