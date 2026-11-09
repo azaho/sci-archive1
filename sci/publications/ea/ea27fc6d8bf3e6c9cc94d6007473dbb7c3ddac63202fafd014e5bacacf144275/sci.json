@@ -1,0 +1,66 @@
+{
+  "title": "Daily clocks missed more 30-kt wind-loss than wind-gain storm labels in Atlantic HURDAT2 in 1982-2023",
+  "abstract": "We tested whether daily sampling removes different fractions of rapid wind-loss and wind-gain storm labels. We used fixed Atlantic HURDAT2 records for 1982-2023. A valid 24-hour window had five six-hour records with tropical storm or hurricane status. Net changes of at least 30 kt in either direction defined labels. Among 488 eligible storms, 165 had gain labels and 130 had loss labels. Daily clocks missed 28.5% of gain labels and 40.4% of loss labels, averaged over four UTC clocks. The paired difference was 11.90 percentage points. Its conditional 95% year-bootstrap interval was 6.01 to 17.44 points. The ratio of mean retained gain to loss counts was 20.0% above the full-record ratio. Three-year blocks and all planned rule checks retained a positive loss difference. An exact clock-coverage identity explains the sampling result. This does not identify a physical cause. The record includes land exposure and revised wind estimates. Eligibility uses the full record, so this is a controlled sampling test, not a daily-only processing system or an estimate of missed true events. The package gives code, aggregate counts, uncertainty draws, a figure, source hashes and an independent numerical audit. External source and storm records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "tropical cyclone",
+    "HURDAT2",
+    "temporal sampling",
+    "rapid intensification",
+    "rapid weakening",
+    "wind change",
+    "measurement bias",
+    "storm labels",
+    "UTC clock",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Daily clocks miss more 30-kt loss labels than gain labels in the tested Atlantic catalog. A: loss by clock. B: exact clock coverage. C: paired conditional 95% year-bootstrap intervals. No land mask is used."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:df6834b8d8b808db05d5d73279ce42eaac16afefee77c318e87fed19d998b879",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the external data version, years and primary eligibility rules from its daily wind-gain sampling test. We add wind-loss labels and paired directional contrasts. The source sample is shared; this is not independent replication."
+    },
+    {
+      "target": "doi:10.1002/2015GL066697",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior rapid-weakening definition uses a 30-kt threshold, monotone weakening and over-water filters. Our primary net-change label has no land mask and a wider scope."
+    },
+    {
+      "target": "doi:10.1175/MWR-D-12-00254.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Best-track format and source uncertainty."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source snapshot. Full hash, shared path and retrieval recipe are supplied. Source records are not bundled."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf",
+      "reason": "Official source format reference. The paper citation also documents the source format."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "NOAA/NWS data terms checked for public-domain attribution and no implied endorsement."
+    }
+  ]
+}

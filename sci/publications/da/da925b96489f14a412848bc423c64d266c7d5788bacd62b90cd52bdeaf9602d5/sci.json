@@ -1,0 +1,69 @@
+{
+  "title": "An error bound of 0.10 preserves opposite early and late changes in 67 of 1,097 selected Allen synapses",
+  "abstract": "We tested a necessary condition for monotone responses during a 50 Hz train in Allen Synaptic Physiology r2.1 small. Initial and late normalized response changes had opposite signs in 222 of 1,097 selected connections. In 67 connections the signs must remain opposite if each summary has absolute error at most 0.10. Of these, 62 had an initial increase and a late decrease. Fourteen exclusions remained at bound 0.20. The primary sample required at least ten trials and equal trial counts at both endpoints. An exact distance to the fixed-polarity sign set gives the exclusion rule. Independent linear programs and aggregate checks passed, and a second raw-data run gave the same aggregate table. These are conditional tests of stored summaries. Equal counts do not ensure identical trials. Unknown fit error, slice selection and different region and cell mixtures prevent a biological rate or species-effect claim. Original code, aggregate results, a figure, source hashes and retrieval steps support reproduction. External records remain outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "monotone response",
+    "50 Hz",
+    "error bounds",
+    "facilitation",
+    "depression"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Opposite-sign exclusions decrease as the assumed error bound increases. Equal-donor estimates at bound 0.10 have nominal 95 percent bootstrap intervals. The bound is not measured uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.81863",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the scalar endpoints; source code is not bundled."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-cell plasticity test; no code or record tables reused."
+    },
+    {
+      "target": "sci:sha256:932583ca65714fa87cece0eb485c39e609b2249f6ff17ad0ddf30df5c5f273c4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior cross-input order test; this study tests fixed polarity within each connection."
+    }
+  ]
+}
