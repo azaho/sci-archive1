@@ -1,0 +1,59 @@
+{
+  "title": "A detector-season model reduces held-year amplitude error for KIC 8164262 in Kepler release 25",
+  "abstract": "We test the main known oscillation of KIC 8164262 in Kepler release 25 long-cadence data. We remove intervals near periastron and fit amplitude by quarter. A four-season model reduces conditional held-year squared prediction error from 71.24 to 19.97 for corrected flux and from 34.18 to 23.36 for aperture flux. High corrected-flux amplitudes recur on detector channel 44. The result persists under three periastron masks. A steady time trend does not improve prediction. The repeated channel pattern is evidence for a seasonal measurement confound. It does not identify the cause, exclude an intrinsic annual variation, or test resonance locking directly. Both flux products share exposures. There is no independent instrument confirmation. Model choice followed inspection, and prediction errors are conditional on frequency and variance estimates from all quarters. No new planet or astronomical event is claimed.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "heartbeat binary",
+    "tidal oscillations",
+    "seasonal systematics",
+    "KIC 8164262"
+  ],
+  "display": [
+    {
+      "path": "files/season_pattern.png",
+      "caption": "Measured oscillation semi-amplitudes by quarter number modulo four. The four returns to each detector orientation show a repeated pattern, most clearly in corrected flux. Bars give one-day cluster errors."
+    },
+    {
+      "path": "files/quarter_stability.png",
+      "caption": "Oscillation amplitude and phase over time with the five-day periastron mask. The two flux products share exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Target, known oscillation, and orbital ephemeris."
+    },
+    {
+      "target": "doi:10.1093/mnrasl/slx130",
+      "reason": "Physical interpretation of resonance locking in this system."
+    },
+    {
+      "target": "https://arxiv.org/abs/1207.3093",
+      "reason": "Kepler instrumental artifact context."
+    },
+    {
+      "target": "https://stdatu.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/KSCI-19033-002-instrument-hb.pdf",
+      "reason": "Kepler instrument context."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw release 25 light curves."
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "reason": "Published campaign exocomet search read during scope selection; its data and code are not reused."
+    }
+  ]
+}

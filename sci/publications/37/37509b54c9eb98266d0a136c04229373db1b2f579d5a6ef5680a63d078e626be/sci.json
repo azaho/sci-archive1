@@ -1,0 +1,55 @@
+{
+  "title": "Stanley size labels depart from a 10 km type-and-area shuffle on days 1 to 30 at magnitude 2 or more",
+  "abstract": "We tested whether small and larger recorded earthquakes have the same time distribution after the 2020 Stanley, Idaho earthquake. We used 532 USGS events with preferred magnitude at least 2 on days [1,30), within 100 km. The groups were magnitude 2 to below 2.5 and magnitude 2.5 or more. The larger-minus-smaller mean log-time contrast was -0.9821. Size-label shuffles within preferred magnitude type and 10 km cells gave an exact mean of -0.0992 and a two-sided Monte Carlo p value of 0.00005. The p value after Holm correction across seven settings was 0.00035. These are tests of a conditional label model. They do not identify physical magnitude change, catalog completeness, or recovery. Temporary station changes, missed events, mixed magnitude scales, location error, and dependent events limit inference. We preserve the raw snapshot, code, all shuffle draws, exact-moment checks, figures, and offline repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Stanley Idaho",
+    "aftershocks",
+    "magnitude composition",
+    "catalog selection",
+    "conditional permutation"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Left: observed size fractions by elapsed time. Right: observed log-time contrast minus its exact shuffle mean, with central 95% null ranges. Null ranges are not confidence intervals for an effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ea72bdce4a2f7660b377888093335e660368372a7f6fd1e2434feb6cb6e1b774",
+      "reason": "Prior campaign work tests a late magnitude-distribution slope change at Ridgecrest. We test time distributions for size groups in a new Stanley snapshot."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "reason": "Prior work describes transient detection bias in magnitude distributions."
+    },
+    {
+      "target": "doi:10.1785/0220240179",
+      "reason": "Prior work separates aftershock-rate effects from early catalog loss."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/cfusion/external_grants/reports/G20AP00076.pdf",
+      "reason": "Field report records temporary station deployments during the first week."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public catalog service and query definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-03-31T23:52:30&endtime=2020-04-30T23:52:30&latitude=44.465&longitude=-115.118&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source query. The signed package contains the downloaded bytes and their hash."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Eight filter stages kept gain-limit error below 5% in delayed models of 91 Allen mouse E-I pairs",
+  "abstract": "We tested replacement of fixed onset delays by first-order filter chains in negative feedback models of 91 selected Allen mouse visual-cortex excitatory-inhibitory pairs. Both measured voltage decay times stayed fixed. A one-stage chain with the same mean delay raised the critical gain by a median 26.40% and at most 65.01%. Four stages kept the error within 5% in 54 of 91 pairs. Eight stages did so in all 91 pairs, with a maximum error of 4.65%. The least stage count ranged from two to eight. Doubling delays removed the uniform eight-stage guarantee. Independent phase, cubic, selection, and complex-root checks passed. The delay-distribution effect is established theory; this work supplies a linked-data approximation benchmark. Voltage decay times are assumed model filters. No neuronal gains, brain stability, oscillations, behavior, or representation reliability were measured. Three complete human pairs do not support a transfer test. Code, extracted evidence, source hashes, sensitivity results, and offline reproduction are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "feedback stability",
+    "filter chain",
+    "Erlang delay",
+    "model approximation"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/chain_error.png",
+      "caption": "Delay-chain approximation in 91 selected mouse pairs. Left: gain-limit error by stage count, with individual pairs and median. Middle: one-stage versus fixed-delay critical gain. Right: least integer stage count for at most 5% gain error. Results are conditional on the two-filter negative feedback model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen local connectivity and synaptic physiology data."
+    },
+    {
+      "target": "doi:10.48550/arXiv.0712.0036",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established effects of distributed delays on neural feedback stability."
+    },
+    {
+      "target": "doi:10.3389/fncom.2011.00025",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Response filters and oscillatory instabilities in E-I networks."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact r2.1 small source database; hash in provenance."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Field definitions; not a verified database build commit."
+    },
+    {
+      "target": "sci:sha256:367fb31164c30154685691c4289453c3ca5519e20951d1bf83162d5402c6cce7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published fixed-delay model, sample selection, donor parser, and endpoint sensitivity concept. No code or numeric table reused."
+    },
+    {
+      "target": "sci:sha256:906d8b623a15723a130cd76c98753b91636f683abe22e2a94e996e7654f49a66",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior analysis of delay and response variability; distinct from a model approximation test."
+    }
+  ]
+}

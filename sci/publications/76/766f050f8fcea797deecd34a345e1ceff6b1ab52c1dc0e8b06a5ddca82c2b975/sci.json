@@ -1,0 +1,60 @@
+{
+  "title": "A season model predicts the KIC 8164262 carrier better than fixed nearby modes in Kepler Q1 to Q16",
+  "abstract": "We test two explanations of small changes in the known strong oscillation of KIC 8164262. We fit Kepler release 25 quarters 1 to 16 and leave out four quarters at a time. A season model with a linear trend gives a corrected-flux squared prediction error of 43.27 ppm squared, against 138.75 for a linear trend and 206.38 to 211.44 for three separate fixed-frequency beat models. A joint three-frequency beat model has poor conditioning and larger prediction error. The season model stays better in corrected flux for all five fit variants. Raw aperture flux gives weaker support and one comparison reverses with a wider orbital exclusion. The test uses fixed published nearby frequencies and does not exclude other stellar models. Detector season can mark an instrument response, but its cause is not proved. There is one telescope and four held groups. No new planet or mode is claimed. Code, source hashes, retained samples, fold scores and reproduction instructions are included. Job sci-1107-dell-astronomy-8a1fad3ed08d; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "tidal oscillations",
+    "beating",
+    "seasonal effects",
+    "prediction"
+  ],
+  "display": [
+    {
+      "path": "files/model_scores.png",
+      "caption": "Held-group squared prediction errors for fixed-frequency beat models and seasonal models. Lower values give better prediction. The horizontal axis is logarithmic. Both products share the same exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:02fcad12ac41b078d18eb49e67aa5b62146189ce1618647d94b28888750255b1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The published seasonal result motivates a distinct comparison with fixed-frequency beating. No code or measurements are reused."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known carrier, nearby published peaks, nuisance frequencies and binary epoch."
+    },
+    {
+      "target": "doi:10.1093/mnrasl/slx130",
+      "reason": "Resonance-lock interpretation of the strong known mode."
+    },
+    {
+      "target": "https://keplergo.github.io/KeplerScienceWebsite/pipeline.html",
+      "reason": "Quarter rolls, detector channels and aperture changes."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source archive, release 25 long-cadence light curves."
+    }
+  ]
+}

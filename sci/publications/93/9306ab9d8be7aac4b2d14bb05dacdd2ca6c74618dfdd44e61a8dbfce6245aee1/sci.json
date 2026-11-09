@@ -1,0 +1,66 @@
+{
+  "title": "A shared-target calibration gave no clear voltage prediction gain in selected Allen mouse and human excitatory circuits",
+  "abstract": "We tested whether a measured input to a target neuron can calibrate the voltage response of another input when its current response is known. We used detected excitatory connections in Allen Synaptic Physiology r2.1 small. The main samples had 94 mouse visual cortex connections from 38 inferred donors and 39 human temporal cortex connections from 10 inferred donors. A same-target peer rule changed mean absolute natural-log prediction error by -0.110 and +0.065 relative to a donor-excluded target-class baseline. Positive values mean improvement. Both descriptive 95% donor bootstrap intervals included zero. A same-source peer rule had larger error than its baseline in the main samples. Higher amplitude floors left smaller samples and wide intervals. This exploratory result limits direct transfer of a measured current-to-voltage gain between connections. It does not exclude a target-cell effect. Separate recording modes, selected detected connections, inferred donor labels, and unmodeled fit errors limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "synaptic integration",
+    "Allen Institute",
+    "circuit topology",
+    "voltage prediction",
+    "shared target",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/calibration.png",
+      "caption": "Prediction gain from a measured peer connection. Positive values favor the peer rule. Lines show descriptive 95% intervals from inferred donor resampling. The main amplitude floors are 10 microvolts and 1 picoampere. Source and target rows use different selected connections."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and public slice circuit data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.2006223"
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior within-target current and voltage order test."
+    },
+    {
+      "target": "sci:sha256:bcfd8c73c33c3e3640ca279bd3dbd511f6971f9e6218fb35ade1a52f84e00e61",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior resistance prediction test and donor-label method."
+    },
+    {
+      "target": "sci:sha256:440f73e8d4eb739f4932915b8dc57b057e8d8391be9b01c97e8854c5f7467246",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior source and target voltage similarity test."
+    }
+  ]
+}

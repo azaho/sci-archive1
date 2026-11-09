@@ -1,0 +1,70 @@
+{
+  "title": "Finite rise reduced the mean onset-gap effect in models of selected Allen cortical inputs",
+  "abstract": "We tested whether finite response rise changes a model of excitation and inhibition at one target cell. We used passed current-clamp fits in the same -55 mV holding bin from Allen Synaptic Physiology r2.1. For each input pair, we minimized linear residual energy over inhibitory gain. We compared measured onset gaps with aligned onsets. In 57 mouse visual-cortex pairs from 43 inferred donors, finite rise reduced the mean gap effect from 0.0695 to 0.0277 of excitatory-input energy. The paired change was -0.0418, with a nominal 97.5% donor interval of -0.0615 to -0.0275. In 27 mouse pairs, the measured gap improved finite-rise overlap. Instantaneous onset predicts the opposite sign in those pairs. Five human temporal-cortex pairs from three inferred donors gave a paired mean change of -0.0282; this sample is too small for firm population inference. These are conditional model results. They do not measure simultaneous cancellation, circuit activity, or behavior. Missing fits, inferred donor groups, response reconstruction, and fixed linear addition limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "excitation and inhibition",
+    "finite rise",
+    "synaptic kinetics",
+    "model sensitivity",
+    "convergent inputs"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/comparison.png",
+      "caption": "Signed onset-gap effects for two response models. Negative finite-rise values mean that the measured gap improves overlap relative to aligned onsets. Right: paired model change with nominal donor intervals. Human inference is limited by three donors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the linked connection and response data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:e10e514b2ddace2fb424c56dbaf7d20b9d42dbcb59484a070cb1f5e9525af3c2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the prior instantaneous-onset cancellation question. We test its finite-rise sensitivity with new extraction and code."
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the precedent for linked convergent E/I input selection."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the finite-rise response function and onset-to-peak rise parameter."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines average-fit holding bins and quality checks."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    }
+  ]
+}

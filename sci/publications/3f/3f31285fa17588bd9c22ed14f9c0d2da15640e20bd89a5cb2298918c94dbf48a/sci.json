@@ -1,0 +1,98 @@
+{
+  "title": "Stored start values fix 119 of 204 selected Allen input order comparisons under 0.1 ms half-width windows",
+  "abstract": "We audited whether agreement in fitted synaptic input-onset order across current and voltage clamp is already required by documented fit windows. We used linked circuit and response records from Allen Synaptic Physiology r2.1 small. Same-sign inputs to one target gave 204 comparisons from 318 detected connections in mouse VisP and human TCx. Under a 0.1 ms half-width window around each stored start, interval bounds require agreement in 118 comparisons and reversal in one. The other 85 comparisons allow either relation. Thus 118 of 186 observed agreements are already fixed by the windows. All 2960 fits in 1480 paired-mode edges satisfy the window limits. Independent endpoint checks and reconstruction passed. Wider windows and stricter cell labels reduce the fixed counts. The inspected source commit is not known to be the database build commit, so the result is conditional on its documented rule. Shared start annotations can contain valid waveform information. These findings do not show incorrect timing, low biological jitter, or a rule across intact brains. The package supplies new code, scalar evidence, source hashes, endpoint witnesses, figures, and repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic timing",
+    "input order",
+    "fit constraints",
+    "current clamp",
+    "voltage clamp",
+    "structure and function",
+    "measurement audit"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/onset_windows.png",
+      "caption": "The documented onset windows fix agreement in 118 comparisons and reversal in one. Separate current and voltage fits provide 204 within-target comparisons. These are conditional interval certificates, not biological error limits."
+    },
+    {
+      "path": "files/evidence/window_sensitivity.png",
+      "caption": "Wider assumed onset windows remove fixed orders. Every selected fitted onset is within the documented 0.1 ms half-width window around its stored start. No waveform is refit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurements and experimental context."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw r2.1 small database; hash and shared path are preserved."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documented onset search window around a manual initial value. This commit is not asserted to be the database build commit."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Stored fit fields and the summary latency agreement check."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source onset and fit field definitions."
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-target peak-strength order comparison motivates the distinct onset-window audit."
+    },
+    {
+      "target": "sci:sha256:49076594879e25276472296465ad6c0ae7909fc9366f48d529a9c72225dde88e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-target summary onset comparison; we use mode-specific fits and do not require a summary onset."
+    },
+    {
+      "target": "sci:sha256:e289f79ce4d09ec644d5cdc63913e9edc52ad47ee272afd9a53fe0a3eddf76fc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior fit-choice audit notes shared initial annotations. We quantify window-implied input orders in a broader paired-mode sample."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior delay study supplies context for soma distance scope and inferred donor naming rules."
+    }
+  ]
+}

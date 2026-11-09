@@ -1,0 +1,101 @@
+{
+  "title": "Synaptic links had an uncertain relation to shared response changes in 193 Allen V1 cells",
+  "abstract": "We tested whether detected synaptic links mark shared changes in movie responses between recording periods. We used matched anatomy and activity from 193 selected cells and 6,416 pairs in Allen V1 Deep Dive mouse 409828. A 1,203-second pause splits repeat 4. We excluded that repeat and compared three early repeats with four late repeats. The mean recording times differ by 29.06 minutes. We used distinct-repeat covariances and fixed cell scales. After cell and geometry controls, the event link coefficient was 0.000298 within periods and 0.007543 between periods. Their difference was -0.007245. Its central 95% movie-block range was -0.017789 to 0.002900. All single-cell and single-repeat deletions kept the event difference negative, but signs differed across sessions. The dF/F difference and the secondary input-cosine effect also had ranges across zero. Raw EM checks reproduced every direct count and input cosine. We supply code, compact inputs, all sensitivity scores, figures, source hashes and repeat instructions. One animal, selected cells, few repeats, data-derived scales and period-shared nuisance signals limit interpretation. The test does not establish a zero wiring effect or a causal mechanism.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "functional connectomics",
+    "visual cortex",
+    "response changes",
+    "recording periods",
+    "covariance",
+    "repeat dependence",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/period_link.png",
+      "caption": "A pause splits movie repeat 4. Period-separated wiring coefficients remain uncertain in this selected one-mouse panel. Bars show conditional movie-block ranges. Reference assignments share the same observations."
+    },
+    {
+      "path": "files/figures/checks.png",
+      "caption": "The secondary shared-input model also gives uncertain change coefficients. Point checks show sensitivity to session, imaging planes, movie window and repeat grouping."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+      "reason": "Prior campaign analysis of cell-level control in a larger directed V1DD panel. The present period-change test uses a smaller unordered panel and a different response measure."
+    },
+    {
+      "target": "sci:sha256:61493f70793fe84518cda2d915ee245a5faddd7cf0c09067f1af189de354aaac",
+      "reason": "Related campaign work on per-cell movie reliability and connection odds in two mice. It does not test the period-change products used here."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=2d87e1a0-7d63-41dc-a5a6-b26e7cf3ffa1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source frame-aligned compact response arrays, cell table and pair table. Original file hashes are preserved."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=a872a3ed-ce83-479d-843d-d32fb506d0e6",
+      "reason": "Prior all-repeat covariance account motivates a test of the remaining slow-change assumption. It also retains source license records."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=e9f23a9a-18e1-4c40-a2ec-932ed3516633",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream shared-input graph and fixed anatomical opportunity panel."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=3b8f7386-8580-45c0-a8db-dccf94624213",
+      "reason": "Published graph-pooling analysis documents the source-vector rule used in the raw cosine audit."
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/syn_df_all_to_proofread_to_all_1196.feather",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact original EM export. The unchanged shared file was hashed and used to rebuild every selected direct count and input cosine."
+    },
+    {
+      "target": "https://allenswdb.github.io/physiology/ophys/V1DD/V1DD-overview.html",
+      "reason": "Original matched imaging and EM design and calcium sampling context."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "reason": "Prior evidence on visual response similarity and synaptic wiring in MICrONS."
+    },
+    {
+      "target": "doi:10.1016/j.cub.2021.07.062",
+      "reason": "Prior visual-response drift analysis across repeated movies and recording periods."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.2775-20.2021",
+      "reason": "Prior analysis of noise bias in neuronal signal correlation."
+    },
+    {
+      "target": "doi:10.1016/j.neuroimage.2015.12.012",
+      "reason": "Established cross-validated products remove trial-noise bias from change energies under independent errors."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1005508",
+      "reason": "Established second-moment and cross-validated response-distance framework."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=f6421f56-4bee-4346-8a56-e7de2eb42b10",
+      "reason": "Upstream recorded-frame alignment method used to construct the reused compact arrays."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=1869f6de-bafb-4bda-b91b-fe2bd773fb23",
+      "reason": "Upstream V1DD functional cohort and registration choices retained in the source panel."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Matching years reduced the Laptev Sea ice-return forecast gain from 43% to 12% in a 1979-2025 record",
+  "abstract": "We tested how missing threshold crossings affect a regional sea ice forecast comparison. We used Sea Ice Index Version 4 daily regional extent for 1979-2025. Each forecast used only earlier years. The base model used year. The added model also used the retreat date known by August 31. In the Laptev Sea, the 70% winter-reference threshold gave a 43.4% reduction in mean squared error over 27 tests in 1999-2025. When the 50% and 70% thresholds used the same training and test years, the 70% gain fell to 12.5% over 15 tests in 2011-2025. Its conditional 95% block interval was -73.0% to 52.7%. The 50% gain was 6.0%. In the Kara Sea, matched gains were 43.8% and 42.4%. These results show that threshold score comparisons can change when the year sample is held fixed. They do not prove a physical change in ice recovery or that all of the Laptev difference comes from sample choice. The common-year check was added after initial scores. Short records, selected crossing years, trend assumptions and final data versions limit the result. Code, daily input, source hashes, all forecasts, coverage tables and a numerical audit are included.",
+  "keywords": [
+    "sea ice",
+    "threshold selection",
+    "forecast validation",
+    "Laptev Sea",
+    "Kara Sea"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/matched_samples.png",
+      "caption": "Matching training and test years lowers the Laptev 70% point gain. These are regional extent thresholds, not local ice concentration. Credit: Sea Ice Index, National Snow and Ice Data Center."
+    },
+    {
+      "path": "files/forecast_skill.png",
+      "caption": "Forecast errors and threshold sensitivity before matching years. Missing points have fewer than 10 test years. Credit: Sea Ice Index, National Snow and Ice Data Center."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7265/a98x-0f50",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/2016GL069314"
+    },
+    {
+      "target": "sci:sha256:5bb3ce1a5621e3451a3b66ba58b1928346a2d0ad5e626af7cdaae55d5ca52ff5",
+      "reason": "Prior regional retreat and advance benchmark. This study adds a fixed predictor cutoff and a matched-year threshold check."
+    },
+    {
+      "target": "sci:sha256:1ba753a5d2607c9f42537f75d2cab1859ed3fb1e03856aa62db0b9abfac6c830",
+      "reason": "Prior fixed-issue summer-history test. The source data overlap."
+    },
+    {
+      "target": "sci:sha256:bf9351fc28ca05124d3880949cb9aa4f7be278e28a4e534bf95ef286a7dbad2f"
+    },
+    {
+      "target": "https://noaadata.apps.nsidc.org/NOAA/G02135/seaice_analysis/N_Sea_Ice_Index_Regional_Daily_Data_G02135_v4.0.xlsx",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

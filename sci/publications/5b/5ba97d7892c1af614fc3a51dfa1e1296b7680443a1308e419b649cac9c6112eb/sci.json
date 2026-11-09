@@ -1,0 +1,56 @@
+{
+  "title": "A repeated 262.15 climate value failed temperature range checks in 4,810 coral survey samples",
+  "abstract": "We audited the climate field in BCO-DMO coral survey dataset 773466 version 2. Of 27,005 distinct sample IDs, 4,825 had ClimSST equal to 262.15. This is 17.91% of numeric climate values. All 4,810 flagged samples with temperature bounds were below the supplied minimum by 18.44 to 38.20 degrees. The value occurred in all five ocean groups and eight source programs, in both time periods. Exclusion raised the sample mean by 6.94 degrees. This is an exclusion sensitivity, not a corrected climate estimate. The pattern is consistent with a missing-value code or processing error, but its origin is unknown. Source unit labels also differ from the apparent numeric scale. We provide sample IDs, quality flags, source hashes, code and an independent arithmetic check. The audit does not test a biological effect or invalidate other thermal fields.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "coral bleaching",
+    "data quality",
+    "climate baseline",
+    "observation bias",
+    "CoRTAD"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "The climate field has a repeated low value. Excluding it shifts sample means in both oceans and periods. This does not recover missing climate values."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.26008/1912/bco-dmo.773466.2",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41597-022-01121-y",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41467-019-09238-2"
+    },
+    {
+      "target": "doi:10.25921/ffw7-cs39"
+    },
+    {
+      "target": "https://www.bco-dmo.org/dataset/773466/description",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:a134d9a8506ac02b4215b062a961169333be63e48fd02161f8c0beabf22dbe0a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign heat-tolerance study read for context. No claim that it used the suspect field without checks."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Adding 313 selected connections removes an adjusted movie response similarity slope in one MICrONS panel",
+  "abstract": "We tested how additions to unrecorded connections can change a link between measured responses and circuit structure. We used public MICrONS v1 data from one mouse. The primary panel had 233797 candidate directions and 6587 recorded connections after quality and variation filters. We removed source-based opportunity strata and additive target effects from response similarity ranks. An exact sorted-score bound showed that 313 selected additions remove the positive linear slope. This is 4.75 percent of recorded connections or 4.54 percent of final connections. Uniform addition of 313 zeros retains 99.86 percent of the slope in expectation. A model feature score needs 446 additions. All four projection groups have positive slopes but thresholds differ. These are sensitivity bounds for fixed measurements and a fixed descriptive model. They do not estimate actual missing connectivity or establish a causal mechanism. One animal, selected candidate directions and unknown error patterns limit transfer. We provide source code, compact data, exact hashes, witnesses, numerical checks and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "functional connectomics",
+    "missing connections",
+    "sensitivity analysis",
+    "Allen Institute",
+    "neural representations",
+    "exact bounds"
+  ],
+  "display": [
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "The smallest adjusted slope under targeted additions differs from the expectation under uniform additions. Curves hold measured scores, candidate directions and controls fixed. The primary measured-response threshold is 313 additions in one MICrONS quality panel. The model feature threshold is 446. These are counterfactual completions, not detected missing connections."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original functional connectomics v1 measurements, model scores and source tables."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS resource and matched anatomy and activity data."
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior endpoint-control association study motivated the control blocks. This report tests a different linear rank estimand and its sensitivity to additions. No code was reused."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=c9642774-fe83-4105-a31e-d27cb48567dc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Immutable positive-opportunity compact data extraction reused in place; hash and original source rebuild are provided."
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/quickstart_notebooks/03-cave-query-proofread-cells.html",
+      "reason": "Primary documentation states that clean reconstructed compartments may be incomplete. It supplies no error rate for the tested panel."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08660-5",
+      "reason": "Primary work on proofreading and structural sampling errors. Its error rates were not transferred to this panel."
+    }
+  ]
+}

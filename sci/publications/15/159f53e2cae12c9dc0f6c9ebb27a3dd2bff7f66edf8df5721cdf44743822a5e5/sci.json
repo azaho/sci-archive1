@@ -1,0 +1,47 @@
+{
+  "title": "Five-day Kepler DR25 fits leave 694 of 7241 trial periods without a usable fixed-profile KIC 8027456 repeat at 40 to 402 days",
+  "abstract": "We test exact repeats of the known KIC 8027456 dip in 12 public Kepler release 25 quarters. We fix its published profile and epoch. On a 0.05-day grid from 40 to 402 days, 694 of 7241 trial periods have no usable repeat under a five-day local baseline rule. A 500-parts-per-million profile added at each covered passage passes a fixed empirical screen for at least one passage at 6547 periods. The corresponding count at 300 parts per million is 5843. We test three local windows, halve the period spacing, check raw file hashes, and compare direct linear fits. These are finite window and recovery tests on one corrected data record. They are not orbit exclusions, confidence limits, or evidence for a new planet or comet. Pipeline loss, changing dust output, other profiles, and uncertain repeat times remain possible. No independent telescope confirms an event. Code, selected data, source hashes and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8027456",
+    "exact repeat times",
+    "data gaps",
+    "injection recovery"
+  ],
+  "display": [
+    {
+      "path": "files/period_window.png",
+      "caption": "Usable repeat counts and individual-injection recovery at fixed trial periods in the available corrected Kepler record."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a374123457a6a62a11980769573864c31484061cf5d29557391091d86855630c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses selected flux, fixed profile and empirical screens; adds exact-repeat period coverage and recovery."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reports the known possible comet dip and the approximate circular-period scale that motivates the test range."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456_lc_Q110101010111011101.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw public Kepler DR25 data, checked against the preserved selected flux arrays."
+    }
+  ]
+}

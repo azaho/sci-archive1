@@ -1,0 +1,66 @@
+{
+  "title": "Five morphology measures increased threshold-contrast prediction error in 111 Allen human spiny cells at ridge penalty 10",
+  "abstract": "We tested whether five released morphology measures improve prediction of ramp minus long-square spike threshold voltage after electrical properties and cell labels are known. We joined Allen Cell Types tables by cell ID and kept donors separate in five-fold tests with ten partitions. Human: 111 cells from 31 donors. Root mean squared error changed from 2.203 to 2.274 mV. The reduction in squared error was -6.54%, with a conditional 95% interval from -10.89% to -1.77%. Mouse: 233 cells from 172 donors. Root mean squared error changed from 2.219 to 2.255 mV. The reduction in squared error was -3.27%, with a conditional 95% interval from -9.30% to 2.37%. These are selected slice cells and stored protocol summaries. The intervals keep fitted errors fixed. The test does not establish a causal mechanism or transfer across species. Code, input hashes, derived errors, and checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "morphology",
+    "spike threshold",
+    "donor validation",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Held-out error and relative error reduction at ridge penalty 10. The intervals resample donors and keep fitted errors fixed. Positive reduction favors morphology."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8"
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.5431-13.2014"
+    },
+    {
+      "target": "doi:10.1073/pnas.0701586104"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/documentation-cell-types-database"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/internal/ephys/core_feature_extract.py"
+    },
+    {
+      "target": "sci:sha256:0466123116d622a0e42ac9662435e9865605640d860c66fc950352d1c3e2cc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This report tests threshold current in the same source cohort. We test a voltage contrast."
+    },
+    {
+      "target": "sci:sha256:4cfe6cb5a34af562fd8fdd8bb41cfe36f44fde6e201c74f7e3f3d8d1633ad7bd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This report tests a brief-pulse current ratio in the same cohort. The present endpoint and structural summaries differ."
+    }
+  ]
+}

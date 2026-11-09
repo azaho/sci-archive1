@@ -1,0 +1,64 @@
+{
+  "title": "Spline fits reproduce a seasonal amplitude offset for KIC 8164262 in three complete Kepler DR25 cycles",
+  "abstract": "A separate fixed-frequency spline analysis reproduces a published campaign result for KIC 8164262. We test whether small changes in the known tidal oscillation of KIC 8164262 follow Kepler detector season. Public DR25 light curves give a 22.76 ppm season offset in corrected flux for three complete four-quarter cycles. The approximate conditional 95% interval is 13.60 to 31.92 ppm. The offset is about 2.5% of the mode amplitude and survives three trend scales, a wider orbital mask, and a check with raw aperture flux. A four-season model reduces held-out cycle prediction error. The time slope is consistent with zero. A detector or extraction response is plausible, but the cause is not established. Only three complete cycles are tested. Target and model choices followed data inspection. Both flux products share exposures, and no independent telescope data are used. No new mode or planet is claimed. Code, source hashes, tables, figures, and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "tidal oscillations",
+    "detector season",
+    "amplitude stability"
+  ],
+  "display": [
+    {
+      "path": "files/amplitudes.png",
+      "caption": "The known mode has a repeating seasonal amplitude offset in Kepler DR25 aperture flux. Error bars use two-day residual blocks."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "The corrected-flux pattern persists for three spline trend scales."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known carrier frequency, nuisance modes, and binary ephemeris."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1706.05053",
+      "reason": "Physical resonance-locking explanation for the known mode."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Detector roll and seasonal instrument effects."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source archive. Source and file hashes are preserved."
+    },
+    {
+      "target": "sci:sha256:75f2c651692f0147620aba4d8deb65f9fa53b596e01701683eb17358a03c7011",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "A separate fixed-frequency spline and nuisance-mode fit reproduces its detector-season amplitude pattern on the same raw data. This is computational replication, not independent observations."
+    }
+  ]
+}

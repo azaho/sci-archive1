@@ -1,0 +1,79 @@
+{
+ "title": "In one MICrONS mouse, the other targets of an axon predict its connections beyond pairwise response similarity; the extra signal is in the top shared response modes",
+ "abstract": "Question: mouse visual cortex neurons with similar responses connect more often (like-to-like rule). A pairwise rule uses only the axon and the candidate neuron. We tested if the other targets of the same axon add information. Data: public MICrONS functional connectomics tables (Ding et al. 2025, v1): 142 proofread axons, 11,035 candidate neurons, 292,855 pairs with axon-dendrite proximity, 8,118 connections. Method: for each axon and candidate j we computed ST, the mean response similarity of j to the other targets of the axon (leave-one-out), and SN, the same for the non-target candidates. Poisson regression with the similarity of j to the axon, proximity, distance and scan controls, and fixed effects for the postsynaptic neuron, axon x layer and axon x area; standard errors clustered by both neurons; plan written before the first fit. Results: the rate ratio per SD of ST was 1.18 (95% CI 1.10-1.26) for in vivo signal correlation, 1.38 (1.25-1.52) and 1.30 (1.20-1.40) for two digital-twin measures (Holm p < 1e-6). SN had a rate ratio below 1, so the signal is the target versus non-target contrast. The effect stayed with all three axon similarity measures together (1.16), cross-scan neurons only, receptive-field controls and in all projection classes and layers. It was not larger for axons with low response reliability. Most of it is in the top 5 shared response modes: the mode part of ST had 1.21 (1.12-1.31), the residual part 1.04 (0.99-1.09). Simulations of a pure pairwise rule gave no false positives (0/24); noise in the axon response gave mean 1.04 at reliability 0.4 and 1.10 at reliability 0.2. At the pair level, the pairwise rule with cell effects explains about 90% of the extra similarity between two targets of one axon. Limitations: one animal; a replication attempt in the V1 Deep Dive mouse (640 connections) did not detect the pairwise or the co-target term (movie signal 0.92, 0.76-1.12); very unreliable or structured noise in the axon response can give part of the effect; the mode split is post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "MICrONS",
+  "functional connectomics",
+  "like-to-like connectivity",
+  "shared input",
+  "higher-order connectivity",
+  "co-target similarity",
+  "electron microscopy",
+  "two-photon imaging",
+  "mouse visual cortex",
+  "V1 Deep Dive",
+  "Allen Institute",
+  "structure-function",
+  "fixed effects",
+  "response modes"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cotarget_effect.png",
+   "caption": "A: Connection rate by within-axon decile of similarity to the axon (gray) and of the co-target contrast ST - SN (blue), unadjusted. B: Rate ratio per SD of co-target similarity ST in the primary model and checks."
+  },
+  {
+   "path": "files/figures/fig2_noise_null_pairs_v1dd.png",
+   "caption": "A: ST rate ratio in simulations of a pure pairwise rule with axon-response noise at reliability rho; blue: observed with 95% CI. B: Similarity excess of two targets of one axon, observed versus pairwise-model draws. C: ST rate ratio in MICrONS and in the V1DD mouse."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the MICrONS functional connectomics node and edge tables (Ding et al. 2025)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS Consortium data release."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reproduce its two-way fixed-effects pairwise like-to-like estimate (RR 1.105) and extend it with co-target terms."
+  },
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its V1 Deep Dive EM pair and response-correlation tables for the replication attempt."
+  }
+ ]
+}

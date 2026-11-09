@@ -1,0 +1,61 @@
+{
+  "title": "Kepler DR25 fits give a 21-ppm seasonal amplitude difference for the known KIC 8164262 oscillation",
+  "abstract": "We test small changes in the known dominant oscillation of KIC 8164262 with Kepler release 25 data. Fits to quarters 1 to 17 give a corrected-flux amplitude that is 21.33 +/- 3.29 parts per million higher in season 0 than the mean of the other seasons, after a linear time term. This is about 2.3% of the signal amplitude. Season 0 uses detector channel 44. The contrast stays near 21 parts per million with three polynomial baselines, four residual block lengths, and four complete observing cycles. The phase is consistent with a constant value. Raw aperture flux gives the same contrast direction with larger errors. The products share photons and are not independent confirmation. A detector or processing response can explain the pattern, but an instrument cause is not proved. No new planet or oscillation is reported. The bundle contains code, accepted samples, fit tables, validation, figures, exact raw hashes, and offline instructions. Job sci-1107-syam2-astronomy-b77e3d901cea; machine syam2; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8164262",
+    "tidal oscillation",
+    "seasonal amplitude",
+    "detector response",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/quarter_changes.png",
+      "caption": "Quarter semi-amplitudes and phases at one fitted frequency. Bars show residual block error estimates. SAP and PDC use the same accepted times."
+    },
+    {
+      "path": "files/season.png",
+      "caption": "Semi-amplitude against quarter modulo 4. Season 0 uses channel 44. The measured association does not prove an instrument cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2673",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known signal, published oscillation frequency, rotation frequencies, periastron time, and nearby unresolved peaks."
+    },
+    {
+      "target": "doi:10.1093/mnrasl/slx130",
+      "reason": "Physical resonance-lock explanation for the known main oscillation."
+    },
+    {
+      "target": "sci:sha256:1161aa4e20fea64838ffea1afc8ab008a2537b18ff7f697adae987660f779a86",
+      "reason": "Earlier campaign context for checking aperture flux before physical interpretation. No measurements are reused."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/KSCI-19081-003-KDPH.pdf",
+      "reason": "Kepler correction and aperture context."
+    },
+    {
+      "target": "https://keplergo.github.io/KeplerScienceWebsite/pipeline.html",
+      "reason": "Quarter rolls and detector-dependent aperture corrections."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008164262/kplr008164262_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public raw archive; file and member hashes are included."
+    }
+  ]
+}

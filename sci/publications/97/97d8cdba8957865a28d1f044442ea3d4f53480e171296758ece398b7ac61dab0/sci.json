@@ -1,0 +1,116 @@
+{
+ "title": "GRACE water storage did not stay below a rainfall-based model after 3,875 meteorological droughts on global land in 2002-2026; a deficit of 0.12 SD or more is unlikely",
+ "abstract": "Question: after multi-year meteorological droughts, does total terrestrial water storage (TWS) stay lower than precipitation predicts (non-recovery), over global land in 2002-2026? Earlier campaign studies found no persistent deficit in US runoff and US well levels; this study tests TWS globally.\nApproach: CSR RL06.3 GRACE/GRACE-FO mascons, GPCP v2.3 precipitation and GHCN_CAMS temperature on 2,274 land cells of 2.5 degrees. A drought is a run of 12 or more months with SPI-12 below 0 that includes 6 or more months at -1 or less. For each drought, a reference model (trend, seasonal terms, precipitation anomalies weighted over 3, 12 and 36 months, temperature) was fitted on all months except that drought and its 36-month post-drought window. The metric R is the mean standardised residual in the post-drought window. The null comes from 244 common time shifts of all drought windows with refitted models.\nResults: for 3,875 droughts in 1,980 cells, mean R was -0.011 SD with a linear trend (placebo 95% range -0.055 to +0.064, p = 0.17) and -0.022 SD with a spline trend (-0.077 to +0.072, p = 0.42). In 13 variants, mean R was -0.024 to +0.013 SD (p 0.09-0.59). An injected 0.25 SD deficit was detected (p = 0.004). After correction for the 65-67% recovery of the leave-one-event-out design, the 95% upper bound on a uniform deficit is 0.11-0.12 SD (about 0.35 cm). Post-drought years 2-3 had a small negative mean (-0.05 to -0.07 SD) that was not significant. No group of aridity, TWS trend, severity, latitude or period passed a Benjamini-Hochberg correction; cells with long-term storage decline had no deficit.\nLimitations: 24-year record, few droughts per cell, a trend that can absorb slow deficits, a coverage rule that removes 14% of droughts (mostly long; a variant without it gave the same result), 2.5-degree precipitation, no human water-use terms, and a design change after the planned spline fit failed.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "GRACE",
+  "terrestrial water storage",
+  "drought recovery",
+  "hydrological drought",
+  "non-recovery",
+  "GPCP",
+  "placebo test",
+  "time-shift null",
+  "global land",
+  "water availability",
+  "mascons",
+  "GRACE-FO"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_tests.png",
+   "caption": "Event composite of standardised TWS residuals after droughts, variant tests with placebo ranges, and injected-deficit power tests."
+  },
+  {
+   "path": "files/figures/fig1_map.png",
+   "caption": "Mean post-drought residual R per 2.5 degree cell for the linear and spline trend models; red is lower storage than the reference model."
+  },
+  {
+   "path": "files/figures/fig3_groups.png",
+   "caption": "Subgroup means of R with placebo 95% ranges and Benjamini-Hochberg q values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "relations": [
+    "supports"
+   ],
+   "reason": "US runoff did not stay low after multi-year droughts; this study extends the non-recovery test to global total water storage and agrees."
+  },
+  {
+   "target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "US groundwater levels did not stay low after droughts, with a temporary dip in years 3-4; we use the same residual and time-shift placebo design and find a similar, non-significant dip in years 2-3."
+  },
+  {
+   "target": "sci:sha256:fd47a1b2b27bb4ce6df6e323179b5654419a5adc58201c473fdfb3e60417d2d2",
+   "reason": "Regional CSR GRACE storage recovery after the 2019-2022 California drought."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "reason": "Hydrological non-recovery after drought (Peterson et al. 2021), the hypothesis under test."
+  },
+  {
+   "target": "doi:10.1002/2016JB013007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR mascon method (Save et al. 2016)."
+  },
+  {
+   "target": "doi:10.3390/atmos9040138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 precipitation."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS temperature."
+  },
+  {
+   "target": "doi:10.1002/2014GL059323",
+   "reason": "GRACE storage deficit approach to drought (Thomas et al. 2014)."
+  },
+  {
+   "target": "doi:10.1038/s41586-018-0123-1",
+   "reason": "Global TWS trends (Rodell et al. 2018)."
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR RL06.3 mascon file, SHA-256 d4bd8b7364fb34d871198001563c70d344792cb7b0a577c04f8b91c713741292."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 file, SHA-256 d31c53ab8180a883bd01442212948c3db4372d481b94a90e69d3d86bb65d7f68."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS file, SHA-256 8dbe8e8ce86729f56a2234dec7420b94aecba804aa7df599c8fea68ade70802b."
+  }
+ ]
+}

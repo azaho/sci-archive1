@@ -1,0 +1,70 @@
+{
+  "title": "Local trial changes gave no clear positive covariance in 118 selected Allen mouse V1 output pairs",
+  "abstract": "We tested whether two outputs from one neuron retain positive covariance after a local time control. We used public Allen mouse V1 slice response fits. The revised exploratory sample had 118 target pairs, 196 detected connections, 91 source neurons, and 70 inferred mice. We paired nearby complete 50 Hz trains within each recovery protocol. Mean normalized covariance was 0.06124 for original train sums and 0.00791 for local trial differences. Nominal 95 percent mouse bootstrap intervals were [0.00990, 0.11254] and [-0.05158, 0.06762]. The paired decrease was 0.05333, with interval [0.01011, 0.09659]. All combined local-change sensitivity intervals included zero. The decrease was uncertain after some controls and did not occur for first pulses alone. An initial trial-matching rule retained only two mice; its result and the later revision are preserved. Independent scalar calculations and graph matching checks passed. These selected voltage fits do not establish independent release, a noise mechanism, or a rule across brain regions and species. We supply source hashes, code, derived evidence, uncertainty draws, and retrieval instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "divergent connectivity",
+    "trial covariance",
+    "synaptic variability",
+    "protocol matching",
+    "time control"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/covariance.png",
+      "caption": "Original train-response covariance and local trial-change covariance in selected mouse V1 output pairs. Lines show nominal 95 percent mouse bootstrap intervals. The revised analysis is exploratory. The 60 s check has only two mice."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Allen paired recordings and synaptic response framework."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public data source and access terms."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_medium.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned r2.1 medium release; existing selected trial cache is reused."
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2012.237685",
+      "reason": "Prior experiment on trial covariance between outputs of one hippocampal neuron in another preparation."
+    },
+    {
+      "target": "doi:10.21203/rs.3.rs-9916271/v1",
+      "reason": "Related comparison of plasticity similarity at shared source and target neurons."
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "reason": "Campaign prior work on scalar plasticity similarity; no code reused."
+    },
+    {
+      "target": "sci:sha256:6d67170692a7e7d3cdd5437fadf78322d9cf25fa6033dfcaf7fa1ad7b08a9755",
+      "reason": "Campaign prior work on within-connection successive-response correlation; no code reused."
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=cd0e4629-4c15-4170-913d-b028003ee527",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Legacy shared-output study credited by the reused trial cache. The remote page was unavailable; exact cache paths and hashes are preserved."
+    }
+  ]
+}

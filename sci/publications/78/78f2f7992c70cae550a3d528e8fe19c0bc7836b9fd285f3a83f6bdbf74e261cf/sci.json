@@ -1,0 +1,98 @@
+{
+ "title": "Forest-bird counts fell about 9% on North American survey routes after modelled storm winds of 83 kt or more in 1981-2023; winds of 34-83 kt gave no clear change",
+ "abstract": "We tested if Atlantic tropical cyclones change bird counts in the next North American Breeding Bird Survey (BBS). We modelled the peak wind at each eastern BBS route for each storm season from 1981 to 2023 with IBTrACS tracks and a simple symmetric wind profile calibrated to best-track wind radii. A stacked event study compared exposed routes with routes within 400 km that had no tropical-storm wind, with route-observer and cohort-year fixed effects (42 cohorts, 2,964 routes, 128,917 route-years). Most exposure gave no clear change: for 378 route-storm cohorts at 64-83 kt, the first post-storm count changed by -0.4% (95% CI -2.4 to +1.5). For 100 route-storm cohorts at 83 kt or more (24 storms), forest and woodland landbirds were 9.4% lower (CI -15.1 to -3.6) and dense-habitat landbirds 13.3% lower; the forest decrease stayed near 7% for three more years. The forest decrease occurred in the Gulf and on the US Atlantic coast, in storms of 1981-2002 and 2003-2023, in all leave-one-storm-cohort-out fits, and with the same observer before and after the storm. Sedentary and migratory landbirds decreased by similar amounts, so direct mortality of resident birds does not explain the result. The all-species decrease (-6.0%, CI -11.2 to -0.8) is less robust because one pre-storm lead was also negative. Storms did not change survey completion or observer turnover; post-storm surveys were 1.7 days earlier, which predicts slightly higher, not lower, counts. Limitations: the wind index is modelled and overestimates the 64-kt radius by about 30%; the strong-wind result rests on 18 cohorts; the 64-83/83+ split was a planned dose test done after the pooled null; counts cannot separate abundance from detection; no forest-damage data were used.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "tropical cyclones",
+  "hurricanes",
+  "Breeding Bird Survey",
+  "extreme weather",
+  "forest birds",
+  "event study",
+  "dose-response",
+  "IBTrACS",
+  "AVONET",
+  "observation bias",
+  "biodiversity",
+  "disturbance"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_event_study.png",
+   "caption": "Event study of exposed minus control BBS routes by modelled peak wind (64-83 kt, n=378; 83 kt or more, n=100). k=-1 is the last pre-storm survey (set to 0). 95% CIs, cohort-clustered."
+  },
+  {
+   "path": "files/figures/fig3_robustness.png",
+   "caption": "First post-storm survey effect for 83 kt or more: all species and forest/woodland landbirds across specifications, leave-one-storm-cohort-out extremes, regions, periods and region x period cells."
+  },
+  {
+   "path": "files/figures/fig1_map.png",
+   "caption": "BBS routes in the stacked design: control routes (<34 kt in all window years) and exposed route-storm cohorts by modelled peak wind, seasons 1981-2023."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1111/j.1365-2486.2009.02101.x",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Rittenhouse et al. 2010 found hurricane changes in BBS community similarity with little loss of abundance; we find no clear count change except at the strongest modelled winds."
+  },
+  {
+   "target": "doi:10.1175/2009BAMS2755.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBTrACS best-track data."
+  },
+  {
+   "target": "doi:10.1175/MWR3106.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Willoughby et al. 2006 radius of maximum wind relation where USA_RMW is missing."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET habitat, habitat density and migration classes."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS North American Breeding Bird Survey 2025 release (data to 2024)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.since1980.list.v04r01.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact IBTrACS v04r01 file used (shared campaign dataset)."
+  },
+  {
+   "target": "sci:sha256:979b781f810d43937eb31b584aa694c871a7e0d156d4980fcb81251be863c25f",
+   "reason": "Related campaign study of winter weather and resident vs migrant BBS counts; we reuse its AVONET name fixes."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Related campaign BBS climate study with route and observer controls."
+  },
+  {
+   "target": "sci:sha256:df6fa3a0f927ab712a3b65ebe1203a5bc41e60f533e0215983c7727cc5f148f8",
+   "reason": "Campaign study that added the shared IBTrACS dataset we use."
+  }
+ ]
+}

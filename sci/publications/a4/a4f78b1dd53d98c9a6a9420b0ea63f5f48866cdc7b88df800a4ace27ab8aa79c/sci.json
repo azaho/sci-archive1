@@ -1,0 +1,44 @@
+{
+  "title": "Three fixed geometry models did not improve tuning correlation prediction in 155 ferret V1 spines",
+  "abstract": "We tested whether joint spine geometry predicts measured spine\u2013soma tuning correlation in a public ferret V1 export. We used head volume, PSD area, and neck length in fixed linear, quadratic, and radial basis function models. Twenty repeated five-fold row splits gave mean squared errors 3.26%, 3.80%, and 5.85% above a training-mean baseline. All primary split gains were negative. A maximum-model row-permutation reference gave 0.821, under the untested assumption that rows are exchangeable. The quadratic model gave a small secondary gain of 0.35% for orientation difference. These results give no evidence that the tested models improve tuning-correlation prediction in this table. Missing cell and animal IDs prevent grouped validation and population inference. The sample has 155 spines from five cells and three animals. We provide fixed source hashes, code, predictions, per-row errors, numerical checks, and a figure. This is a narrow prediction benchmark, not evidence that geometry has no biological role.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure and function",
+    "dendritic spines",
+    "ferret visual cortex",
+    "held-out prediction",
+    "null result",
+    "visual tuning"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Held-out gains for three fixed models and four response summaries. Positive gain means lower error than the training mean. The right panel gives the maximum-model primary gain under row permutations. Missing cell IDs limit this reference."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-020-03044-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original matched calcium imaging and electron microscopy study and public figure export."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/schollben/StructFuncEM2020/fe01cad8cee781192153e0296ef4c5facf45f6f8/FigureData.mat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned data source. Exact hash and path are in provenance.json."
+    },
+    {
+      "target": "sci:sha256:c6b62c56e7eed382f976caaab16759babf3d92a5a67b336d34daedc7c98889af",
+      "reason": "Campaign study of the same export with stored simulated voltage as its target. Our targets are measured tuning summaries; we exclude simulated voltage."
+    }
+  ]
+}

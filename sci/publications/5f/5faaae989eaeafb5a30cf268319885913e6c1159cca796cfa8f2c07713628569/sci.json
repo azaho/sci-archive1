@@ -1,0 +1,67 @@
+{
+  "title": "Dendrite geometry gave no clear gain in ramp-minus-step voltage threshold prediction in selected Allen mouse and human cells",
+  "abstract": "We tested whether dendritic structure improves prediction of the voltage threshold difference between a slow current ramp and a one-second step. We linked Allen Cell Types reconstructions and electrical summaries by specimen ID. Ridge models used nested donor folds and passive physiology and cell labels as controls. In 495 mouse cells from 365 donors, added geometry reduced held-out mean squared error by 0.64%, with a conditional 95% donor interval from -2.28% to 3.50%. In 158 human cells from 35 donors, error reduction was -0.31%, with an interval from -6.52% to 5.92%. Thus neither primary test gave a clear gain. Intervals hold fitted predictions fixed. This is a protocol contrast in selected slice cells, not a test of a channel mechanism or intact-brain computation. Cut arbors, broad cell labels, source summary measurements, one fold partition, and clinical tissue limit inference. Code, source hashes, cell features, predictions, and checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendrite morphology",
+    "voltage threshold",
+    "donor validation",
+    "stimulus time course",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/threshold_prediction.png",
+      "caption": "Protocol threshold contrasts and held-out prediction error changes. Positive MSE reduction favors geometry. Intervals resample donors while fitted predictions stay fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0466123116d622a0e42ac9662435e9865605640d860c66fc950352d1c3e2cc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior threshold-current test in the same cache; overlapping cells, different response variable."
+    },
+    {
+      "target": "sci:sha256:4cfe6cb5a34af562fd8fdd8bb41cfe36f44fde6e201c74f7e3f3d8d1633ad7bd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior short-to-long current ratio test in the same cache; no code or tables reused."
+    },
+    {
+      "target": "doi:10.3389/fninf.2021.580873"
+    },
+    {
+      "target": "https://www.preprints.org/manuscript/202610.0455"
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0417-0"
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original linked morphology and electrical data; exact cache hashes and API recipe are in the package."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/master/allensdk/internal/ephys/core_feature_extract.py",
+      "reason": "Source mapping of first-spike voltage threshold summaries, checked 2026-11-08."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/documentation-cell-types-database",
+      "reason": "Stimulus protocol descriptions."
+    }
+  ]
+}

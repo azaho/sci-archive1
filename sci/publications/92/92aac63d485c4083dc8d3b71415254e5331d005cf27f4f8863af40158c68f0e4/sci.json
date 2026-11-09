@@ -1,0 +1,30 @@
+{
+  "title": "Gaia DR3 transit-table periods are sampling aliases for 161 of 174 known planets; TESS and Gaia epochs give true periods and five new non-TOI planet candidates among 40 unconfirmed sources",
+  "abstract": "Question: Are the periods and reference times in the corrected Gaia DR3 planetary-transit table (gaiadr3.vari_planetary_transit, 214 sources) correct, and do TESS data confirm the unconfirmed candidates?\n\nApproach: We compared the table with literature ephemerides of the 174 sources that now host confirmed planets. We folded the Gaia DR3 G epoch photometry of all 214 sources at the table and literature ephemerides. We searched 992 TESS light curves (TESS-SPOC, QLP, SPOC; at most 8 sectors per source) with box least squares. We measured per-transit odd/even and phase-0.5 depths with empirical errors. We linked TESS signals to dimmed Gaia epochs with a trials-corrected scan. The same rules were applied to known planets to measure their false-flag rates.\n\nResults: The Gaia period agrees with the literature period for only 13 of 174 known planets. For these 13, the current reference times agree with the literature ephemeris; the withdrawn 2022 reference times agree for 1. For 158 of the other 161, the table ephemeris still selects significantly dimmed Gaia epochs, and a median of 75 percent of these epochs fall inside true transits. The table periods are therefore aliases that fit a median of 3 in-transit Gaia epochs. TESS detects all 173 observed known planets. Of the 40 unconfirmed sources, 13 show a planet-like TESS transit linked to the Gaia epochs (8 are TOIs; 5 are not TOIs and are new candidates, with periods of 1.615, 2.124, 2.208, 3.549 and 17.69 d), 10 show eclipsing-binary indicators (two with matching Gaia SB1/SB2 orbits), 7 show no TESS transit although TESS should detect the Gaia depth, 5 have no TESS light curve, and 5 are inconclusive. For 15 of 23 linked candidates the Gaia period is an alias.\n\nLimitations: No pixel-level vetting, no transit-model fits, box-depth radii, at most 8 TESS sectors per source, and a link test that succeeds for only 76 percent of known planets. The five new candidates need spectroscopic and high-resolution imaging follow-up.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.IM"},
+    {"scheme": "arxiv", "code": "astro-ph.SR"}
+  ],
+  "keywords": ["Gaia DR3", "vari_planetary_transit", "TESS", "transiting exoplanets", "period aliasing", "eclipsing binaries", "planet candidates", "epoch photometry", "catalogue validation", "hot Jupiters"],
+  "display": [
+    {"path": "files/figures/fig2_gaia_epochs_alias.png", "caption": "A, B: Gaia G epochs of HAT-P-55 b folded at the literature period (3.5852 d) and at the Gaia DR3 table period (1.0147 d); the same four dimmed epochs are in transit at both periods. C: In-transit dimming significance at the Gaia table ephemeris against the literature ephemeris for 174 known planets; crosses use the withdrawn 2022 table."},
+    {"path": "files/figures/fig1_known_period_epoch.png", "caption": "A: Ratio of the Gaia DR3 transit period to the literature period for 174 known planets; 13 agree within 0.1 percent. B: Offset of the Gaia reference time from the nearest literature transit, in transit durations, for the current (2023) and the withdrawn (2022) table."},
+    {"path": "files/figures/fig5_non_toi_candidates.png", "caption": "Five Gaia DR3 transit candidates that are not TESS Objects of Interest and pass all tests. Top: TESS flux folded at the final period. Bottom: Gaia G epochs folded at the same ephemeris; orange points fall inside the TESS transit window."}
+  ],
+  "citations": [
+    {"target": "doi:10.1051/0004-6361/202243940", "relations": ["uses"], "reason": "Gaia DR3 data release (Vallenari et al. 2023): source, astrophysical-parameter, non-single-star, variability and epoch-photometry tables."},
+    {"target": "doi:10.1051/0004-6361/202243497", "relations": ["reviews"], "reason": "Panahi et al. 2022 describe the Gaia transit search and the first TESS checks. We test the published table periods and the candidates with later TESS data."},
+    {"target": "doi:10.1051/0004-6361/202244242", "relations": ["uses"], "reason": "Gaia DR3 variability processing summary (Eyer et al. 2023), which describes the 173 known and 41 new transit sources."},
+    {"target": "https://www.cosmos.esa.int/web/gaia/dr3-known-issues", "relations": ["uses"], "reason": "Documents the withdrawal of the 13 June 2022 table and its replacement on 7 February 2023."},
+    {"target": "doi:10.1117/1.JATIS.1.1.014003", "relations": ["uses"], "reason": "TESS mission (Ricker et al. 2015)."},
+    {"target": "doi:10.17909/t9-wpz1-8s54", "relations": ["uses"], "reason": "TESS-SPOC full-frame-image light curves (HLSP)."},
+    {"target": "doi:10.17909/t9-r086-e880", "relations": ["uses"], "reason": "QLP full-frame-image light curves (HLSP)."},
+    {"target": "doi:10.26133/NEA13", "relations": ["uses"], "reason": "NASA Exoplanet Archive Planetary Systems Composite Parameters table, used for literature ephemerides."},
+    {"target": "doi:10.3847/1538-4365/abefe1", "relations": ["uses"], "reason": "TESS Objects of Interest catalogue (Guerrero et al. 2021); ExoFOP TOI table from the shared campaign dataset."},
+    {"target": "doi:10.3847/1538-3881/ab3984", "relations": ["uses"], "reason": "wotan detrending (Hippke et al. 2019)."},
+    {"target": "https://gaia.aip.de/tap", "relations": ["uses"], "reason": "AIP Gaia TAP mirror used for DR3 epoch photometry while the ESA DataLink server returned HTTP 503."},
+    {"target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81", "reason": "Related campaign work: Gaia DR3 eclipsing binaries matched to TESS planet candidates."},
+    {"target": "sci:sha256:d57ede30e514369ac650d3ec09f73996d2292c6037da34fe5cc0254e2ea71fda", "reason": "Related campaign work: TESS transits at Gaia DR3 SB1 conjunction times."}
+  ]
+}
