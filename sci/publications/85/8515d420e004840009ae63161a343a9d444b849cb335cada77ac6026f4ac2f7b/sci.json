@@ -1,0 +1,55 @@
+{
+  "title": "Duration control reduced the count link with later quiet time in 2009-2026 Cascadia tremor episodes with at least 100 detections",
+  "abstract": "We tested whether episode duration removes the link between tremor count and later quiet time in Cascadia. We reused a published PNSN episode table and checked it against 791,720 raw detections. The primary sample has 1,310 complete episodes with at least 100 detections in 26 bins of 50 km. Duration control lowered the time-controlled pooled rank correlation from 0.275 to 0.147. The paired reduction was 0.127, with a 95% two-year calendar-block interval of 0.037 to 0.198. The remaining later link had an interval of 0.068 to 0.255. The conditional after-minus-before contrast was 0.134, with an interval of -0.001 to 0.325. Thus the later count link remains, but its time-direction contrast is uncertain after duration control. Count-threshold, active-day, and post-2017 checks gave positive later point estimates. This is a conditional catalog association, not proof of stress release, a causal duration effect, or forecast skill. Changing detection, fixed episode rules, shared regional events and block assumptions limit the result. Code, episode data, all bootstrap draws, source hashes, raw and numerical checks, and a figure are included.",
+  "keywords": [
+    "Cascadia",
+    "tectonic tremor",
+    "episode duration",
+    "quiet time",
+    "partial rank correlation",
+    "block bootstrap"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/results/duration_audit.png",
+      "caption": "Duration control lowers the count link with later quiet time. Bars show 95% calendar-block intervals. The test uses 1,310 complete episodes with at least 100 detections in 26 bins of 50 km."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:38bdf3cb911b69267bbdbc6408d3ce149f193ae56a61eda4ca2e96ffd282a08a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse and check its episode table, spatial trace and episode code, then test duration control. Data overlap; this is not independent replication."
+    },
+    {
+      "target": "doi:10.1785/0120110096",
+      "reason": "Prior geodetic scaling and recurrence study provides context."
+    },
+    {
+      "target": "doi:10.1029/2021JB022523",
+      "reason": "Catalog methods, count and duration measures, and the 2017 detection update."
+    },
+    {
+      "target": "https://pnsn.org/tremor",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw data provider and scientific context."
+    },
+    {
+      "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw source query for the shared 2026-11-08 snapshot. Hash and retrieval record are in provenance.json."
+    }
+  ]
+}

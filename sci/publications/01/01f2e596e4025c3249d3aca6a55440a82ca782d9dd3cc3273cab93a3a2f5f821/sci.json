@@ -1,0 +1,28 @@
+{
+  "title": "In 48 freely moving C. elegans, smooth wiring eigenmodes held more head activity variance than rewired graphs, but not more than a distance-only graph with the same edge count",
+  "abstract": "Question: in the C. elegans head, do the smoothest Laplacian eigenmodes of the synaptic wiring graph hold more spontaneous activity variance than eigenmodes of graphs made only from soma positions? This tests the geometry-versus-connectome claim of Pang et al. (2023) with a complete connectome. Data: whole-brain calcium activity of NeuroPAL-identified neurons in 40 freely moving animals (Atanas, Kim et al. 2023; primary) and 8 independent animals (Dag et al. 2023; replication); Cook 2019 and Witvliet 2021 connectomes; OpenWorm atlas positions. Outcome: fraction of activity variance in the span of the first 10 modes (random basis: 0.12). Results: the wiring basis held 0.228. A distance-only graph with the same edge count and weights held 0.227 (CON higher in 20 of 40 animals, p = 0.98); in the replication it held 0.267 vs 0.260 for wiring. The pre-specified advantage of wiring over a Gaussian distance kernel (0.228 vs 0.208, 38 of 40) did not replicate (8 animals, 3 of 8) and depended on kernel width. The observed wiring held more variance than degree-preserving and degree-and-length-preserving rewired graphs in 40 of 40 animals (mean z 6.8 and 3.5) and in 8 of 8 and 7 of 8 replication animals. All structural bases held much less than the modes of the other animals' mean correlation (0.468). Post hoc, modes of the whole head graph favoured wiring over the distance graph (Witvliet: 38 of 40, 8 of 8). Limitations: atlas positions, connectome and activity from different animals, partial neuron coverage, one lab, crosstalk between near ROIs, and post hoc changes listed in the README.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["C. elegans", "connectome", "eigenmodes", "graph Laplacian", "brain geometry", "whole-brain imaging", "NeuroPAL", "structure-function", "spontaneous activity", "null models", "network rewiring", "replication"],
+  "display": [
+    {"path": "files/figures/fig1_captured_variance.png", "caption": "Captured fraction of activity variance V(k) against the number of smoothest modes for wiring (CON), the distance graph with equal edges (GEOM), a Gaussian distance kernel (GEO), rewired nulls, a random basis and the leave-one-animal-out functional basis (LOOFC). A: Atanas 2023, 40 animals. B: Dag 2023, 8 animals. C: each animal at k = 10."},
+    {"path": "files/figures/fig2_contrasts.png", "caption": "Mean paired difference of V(10) with 95% bootstrap CI over animals for CON minus GEOM, CON minus GEO, and the CON+GEOM union minus GEOM, for each connectome, trace type, mode construction, kernel width and regulariser. Filled: Atanas; open: Dag."},
+    {"path": "files/figures/fig3_rewiring_nulls.png", "caption": "Per-animal z of the observed wiring V(10) against degree-preserving and degree-and-length-preserving rewired graphs. Bars show the mean over animals; the dashed line is z = 1.645."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a", "relations": ["uses"], "reason": "We reuse its verified connectome edge tables, atlas positions, behaviour-regression design and Atanas HDF5 hash list. It found pairwise gap-junction links to co-activity in the same activity data."},
+    {"target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814", "reason": "Related campaign result: shared input predicts functional coupling in worm, fly and mouse."},
+    {"target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1", "reason": "Related campaign result on multi-step connectome measures and functional connectivity across species."},
+    {"target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf", "reason": "Related campaign result: surrogate wiring with matched strengths and distances reproduces much of the gain of indirect-path measures."},
+    {"target": "doi:10.1038/s41586-023-06098-1", "relations": ["reviews"], "reason": "Pang et al. 2023: geometric eigenmodes versus connectome eigenmodes in human cortex. We test the comparison in C. elegans."},
+    {"target": "doi:10.1101/2024.04.16.589843", "reason": "Mansour et al. 2024: connectome eigenmodes reach geometric accuracy with improved connectomes."},
+    {"target": "doi:10.1101/2023.10.06.561240", "reason": "Faskowitz et al. commentary on Pang et al. 2023."},
+    {"target": "doi:10.1101/2025.08.08.669348", "reason": "Legare et al.: function aligns with geometry in locally connected networks (larval zebrafish)."},
+    {"target": "doi:10.1016/j.cell.2023.07.035", "relations": ["uses"], "reason": "Atanas, Kim et al. 2023 whole-brain activity (primary data)."},
+    {"target": "doi:10.1016/j.cell.2023.04.023", "relations": ["uses"], "reason": "Dag et al. 2023 whole-brain activity (replication data)."},
+    {"target": "https://zenodo.org/records/19388374", "relations": ["uses"]},
+    {"target": "https://zenodo.org/records/19414639", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-019-1352-7", "relations": ["uses"], "reason": "Cook et al. 2019 connectome."},
+    {"target": "doi:10.1038/s41586-021-03778-8", "relations": ["uses"], "reason": "Witvliet et al. 2021 connectomes."},
+    {"target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268", "relations": ["uses"], "reason": "Atlas soma positions."}
+  ]
+}
