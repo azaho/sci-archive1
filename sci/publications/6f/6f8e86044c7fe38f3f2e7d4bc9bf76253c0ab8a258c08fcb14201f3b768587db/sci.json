@@ -1,0 +1,75 @@
+{
+  "title": "Using all observed days narrowed ozone episode disagreement bounds in four US bird-survey samples in 2005-2019",
+  "abstract": "We tested missing-day bounds on disagreement between ozone episode labels near selected US bird surveys. We used 1,599 windows in California, Oregon, New York and Pennsylvania in 2005-2019. An episode had three consecutive days above 70 ppb in the 30 days before a survey. Retaining all observed site-days and sharing missing values across overlapping windows narrowed prior separate-window bounds in all four region-period samples. Final count bounds were 24-49 of 341, 6-64 of 629, 23-33 of 174, and 36-73 of 455 windows. Most gain came from retaining observations discarded by a common-date rule. Sharing still-missing days gave an extra gain only in early West, from 22-34 to 23-33. This gain did not repeat in the other primary samples. Binary optimization gave 48 optimal endpoint solutions across three thresholds. Independent code checked every saved witness. These are finite-record bounds under correct observed labels and freely varying missing high/low states. They do not estimate bird harm, weather effects or climate change. Selected routes, monitor location, broad remaining bounds and numerical solver assumptions limit use. The package gives daily evidence, source hashes, code, witnesses, tests and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "missing data",
+    "observation bias",
+    "biodiversity",
+    "episode exposure",
+    "partial identification",
+    "binary optimization"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Bounds on the number of survey windows with different three-day ozone episode labels at two nearby sites. Each segment shows minimum and maximum values under the stated evidence and sharing rules. These are finite-record bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:40ac0422902c49903c33d409eb776f5b2cd2e94ca80a088a263277c133fd35de",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified source of daily ozone evidence, survey windows, separate-window bounds, raw source hashes and retrieval code. We test its stated joint-attainability limitation. Records overlap."
+    },
+    {
+      "target": "sci:sha256:87a455ff1a82f79a12d74a6328ba8e808be5a22ab7110156d2ff58e0c3a16874",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream source of daily evidence and survey selection, reused through the verified parent."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bird and ozone work supplies context. We test exposure measurement, not a policy effect."
+    },
+    {
+      "target": "https://www.epa.gov/ground-level-ozone-pollution/ecosystem-effects-ozone-pollution"
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
