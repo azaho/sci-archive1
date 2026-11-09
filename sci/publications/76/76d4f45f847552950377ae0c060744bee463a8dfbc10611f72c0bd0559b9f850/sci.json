@@ -1,0 +1,52 @@
+{
+  "title": "A three-month ENSO change term raised Pacific rain-contrast test error in 2002-2025",
+  "abstract": "We tested whether the past three-month change in Nino 3.4 adds information about a concurrent Pacific north-minus-south rain contrast. We used GPCP V2.3 and CPC ERSSTv5 data for 15 S-15 N, 180-280 E. Both models were fit on 276 months in 1979-2001 and scored on 288 months in 2002-2025. The baseline had separate intercepts and linear and quadratic ENSO terms for each calendar month, plus a time trend. Adding the change term raised mean squared error by 6.39%. The conditional 95% paired 36-month block interval for the increase was 2.24% to 10.47%. RMSE rose from 1.258 to 1.298 mm/day. Fixed checks with other lags, no trend, a linear baseline and restricted scoring periods also raised error. Training error fell, but this gain did not transfer. The result applies to one contrast, two fixed products and one split. It does not exclude physical rainfall memory or establish forecast skill. Code, selected raw cells, source hashes, estimates, block draws and a numerical audit permit an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "Pacific precipitation",
+    "seasonal cycle",
+    "temporal transfer",
+    "negative result",
+    "GPCP"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Later-period rain contrast and annual MSE changes. Positive annual bars mean lower error with the added term. The total test MSE rose by 6.39%."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2021GL095204",
+      "reason": "Prior work on ENSO and seasonal coupling in the Pacific rain dipole."
+    },
+    {
+      "target": "sci:sha256:0d7e045ca4cc72a2efa3434cd3e2f389b10fc5861a9271dc69543a76b993dce5",
+      "reason": "Prior campaign test motivates a nonlinear seasonal baseline; no code or derived data were reused."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GPCP V2.3 monthly rain snapshot."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 monthly Nino 3.4 anomaly snapshot."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.gpcp.html",
+      "reason": "NOAA PSL data attribution and product entry point."
+    }
+  ]
+}

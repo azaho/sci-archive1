@@ -1,0 +1,130 @@
+{
+  "title": "Winter wave heights at 47 NDBC buoys fell 3.1% per decade near Hawaii in 1985-2025 and rose in no US region; the few instrument steps found by neighbour tests do not cause the decrease",
+  "abstract": "We examined winter (November to March) significant wave height (Hs) at 47 long-record NDBC moored buoys for 1985-2025. We added quality control, built regional fixed-effects composites, and fitted trends with the December-February Oceanic Nino Index (ONI) as a covariate. A pairwise neighbour test found breaks and adjusted them. Synthetic steps measured its detection power. NCEI NetCDF metadata gave a 2011-2025 hull and payload history for a network model with one offset for each deployment. Results: Hawaii winter mean Hs decreased by 3.1% per decade (95% CI 2.2 to 3.9), and the 95th percentile decreased by 3.9% per decade. All four Hawaii buoys show the decrease, and it continues in 2003-2025. The Southeast Atlantic decreased by 1.4% per decade. The Gulf of Mexico 95th percentile decreased by 1.6% per decade. The US West Coast trend depends on the start year (-1.5% from 1985, not clear; -5.0% from 1995). Alaska and the Northeast Atlantic shelf have no clear 1985-2025 trend. No region increased. The ONI coefficient is positive in all regions (+0.1% to +2.8% per degree C in the 95th percentile). The test assigned 4 breaks (11-31%, 1995-2002) to single buoys. Removal of these breaks changed regional trends by at most 0.54 points per decade. The test finds 41% of 10% steps and 93% of 22% steps. In 2011-2025, a new deployment shifts Hs by a median absolute 2.3%. Foam hulls read 1.7% higher than discus hulls (n = 37). This has the wrong sign to explain the decreases. Limitations: the method cannot see steps that occur at the same time on all buoys of a region, hull metadata starts in 2011, and Hawaii has few neighbours. Satellite or hindcast data must confirm the Hawaii decrease.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "significant wave height",
+    "NDBC buoys",
+    "wave climate trends",
+    "homogenization",
+    "pairwise break detection",
+    "ENSO",
+    "Hawaii",
+    "instrument change",
+    "buoy hull",
+    "NAO",
+    "PDO"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_regional_composites.png",
+      "caption": "Break-adjusted regional composites of winter mean significant wave height anomaly (percent) for 1985-2025. The color of each point is the December-February ONI of that winter. The text gives the trend with HAC 95% CI for two start years and the ONI effect."
+    },
+    {
+      "path": "files/figures/fig2_regional_trends.png",
+      "caption": "Regional trends (percent per decade, ONI as covariate, HAC 95% CI) of winter mean and 95th percentile Hs for three start periods. Dots are break-adjusted estimates. Black bars are estimates without adjustment."
+    },
+    {
+      "path": "files/figures/fig3_breaks_power_deployments.png",
+      "caption": "Left: winter Hs ratios of buoys 44013 and 46026 to each neighbour, with the assigned break years (dashed). Middle: detection power of the pairwise test for synthetic steps (150 injections each, 95% binomial band). Right: change of deployment offset at each 2011-2025 deployment change, from a network model of monthly neighbour ratios, by hull change type."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2011GL049518",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Earlier evidence that NDBC hull and processing changes put artificial changes into northeast Pacific wave records; our neighbour test and deployment model agree that instrument steps exist."
+    },
+    {
+      "target": "doi:10.1016/j.coastaleng.2009.12.005",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Reported increasing wave heights off the US Pacific Northwest; with records to 2025 we find no increase on the US West Coast."
+    },
+    {
+      "target": "doi:10.1126/science.aav9527",
+      "reason": "Global multiplatform wave height trends; an independent source for the next check of our buoy trends."
+    },
+    {
+      "target": "doi:10.1038/ngeo2539",
+      "relations": [
+        "supports"
+      ],
+      "reason": "ENSO dominates Pacific coastal wave energy; we find positive ONI effects on winter Hs in all six regions."
+    },
+    {
+      "target": "doi:10.2112/07-0894.1",
+      "reason": "Earlier study of increasing hurricane wave heights on the US East Coast from NDBC buoys."
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2263.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt the pairwise comparison and break attribution idea of this homogenization method."
+    },
+    {
+      "target": "https://strathprints.strath.ac.uk/84172",
+      "reason": "NDBC study of the effect of changes from NOMAD to discus hulls on long-term wave records."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "reason": "Related campaign result in which system changes in a product made false changes in ocean records, checked with moored buoys."
+    },
+    {
+      "target": "sci:sha256:aeb65c193b73dabff9a49e243b9f3a538306fc932b5048be5f73473c4df7f9c3",
+      "reason": "Related campaign result that uses NDBC buoy records for storm effects on ocean conditions."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary data: NDBC standard meteorological annual archive (1,901 files; hashes in files/provenance/ndbc_provenance.csv)."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/data/oceans/ndbc/cmanwx/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NCEI NDBC NetCDF files, used for 2011-2025 hull, payload and wave sensor metadata."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ONI v5 table, reused from the shared campaign dataset store."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSST v5 PDO index."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/pna/norm.nao.monthly.b5001.current.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CPC monthly NAO index."
+    }
+  ]
+}
