@@ -1,0 +1,64 @@
+{
+  "title": "Gaussian lower-tail estimates were 4.18 to 5.52 times too small at map medians in eight worm release models",
+  "abstract": "We tested a Gaussian approximation for rare low output in eight public worm brain maps. A fixed panel had 162 cells. Each selected source had at least 10 chemical sites. A successful site added one unit to each retained target. Sites released independently with an assumed common probability. We computed the exact sum distribution and compared its lower tail with a Gaussian law that had the exact mean and variance and a continuity correction. At release probability 0.9 and a cutoff three standard deviations below the mean, the exact probability divided by the Gaussian estimate had map medians of 4.18 to 5.52. All 499 selected source-map cases had ratios above two. Independent-contact controls also had errors, with map medians of 2.85 to 3.29. At release probability 0.5, shared-model median ratios were 0.47 to 0.67, so the error direction changed. Requiring 20 sites gave primary median ratios of 3.22 to 4.38. These are conditional model results, not measured neural failures. Unknown release laws, positive unit gains, partial anatomy and changing source sets limit biological use. Code, aggregate results, checks, source hashes and retrieval instructions support reproduction. External anatomical records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "Gaussian approximation",
+    "rare events",
+    "release noise",
+    "connectomics"
+  ],
+  "display": [
+    {
+      "path": "files/tails.png",
+      "caption": "Exact lower-tail probability divided by the Gaussian estimate at map medians. Each model uses its exact mean and variance. Release probabilities are assumptions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6147218/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified 162-cell panel; tests Gaussian approximation error with new code."
+    },
+    {
+      "target": "sci:sha256:a7369f2ced2c94411bf7290dd9ed5e8facbb992d1fcb08b643b1af238e8c3ec1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior exact output-loss calculation at fractional thresholds; the present test measures approximation error at standardized thresholds."
+    }
+  ]
+}
