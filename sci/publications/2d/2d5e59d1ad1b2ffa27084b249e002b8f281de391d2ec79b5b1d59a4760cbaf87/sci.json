@@ -1,0 +1,58 @@
+{
+  "title": "May-to-June DMI change gave no clear added autumn forecast skill in a 1981-2024 linear test",
+  "abstract": "We tested whether May-to-June change in the Indian Ocean Dipole Mode Index (DMI) improves September-November DMI forecasts beyond June DMI, June Nino 3.4 and a linear time trend. Each linear fit used only earlier years, starting in 1950. Across 44 targets in 1981-2024, adding the change reduced mean squared error by 0.15%. The conditional 95% three-year block interval was -2.14% to 3.19%. All four planned model checks also had intervals that included zero. Removing both 1997 and 2019 gave a point gain of 0.98%. The result gives no clear support for adding this simple measure of event growth to the tested baseline. It cannot rule out useful ocean dynamics, nonlinear effects or other predictors. Revised source products, a short record and uncertainty conditional on fitted forecasts limit use. The package includes exact monthly inputs, raw source paths and hashes, code, every forecast, uncertainty draws, audits and a static figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "Indian Ocean Dipole",
+    "DMI",
+    "forecast",
+    "null result",
+    "monthly change",
+    "ENSO"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Observed and predicted autumn DMI, annual squared error reductions, and five model checks. Positive reduction means lower error after adding DMI change. Intervals condition on the saved forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1e7bee76a0234b402a9c49cbdfe2637e16968d7a865cff4ed259dc7fb21628dc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior June-state test supplies the question and documents the shared source snapshots. We test added monthly change against a stronger baseline. Data overlap."
+    },
+    {
+      "target": "doi:10.1029/2019GL084196",
+      "reason": "Public abstract and introduction motivate state, ENSO and growth information. We do not reproduce its physical model."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/timeseries/month/DMI/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DMI definition and HadISST1.1 source."
+    },
+    {
+      "target": "https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact shared snapshot is recorded in provenance.json."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 index snapshot; exact hash and shared path are recorded."
+    }
+  ]
+}
