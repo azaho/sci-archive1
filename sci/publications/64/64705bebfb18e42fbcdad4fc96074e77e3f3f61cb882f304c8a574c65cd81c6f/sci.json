@@ -1,0 +1,103 @@
+{
+  "title": "State deletion tests gave no clear period change in seasonal ozone by warmth slopes in US bird records from 1995 to 2024",
+  "abstract": "We tested whether an ozone by seasonal warmth slope in recorded bird richness changed between 1995-2009 and 2010-2024. Four published US Breeding Bird Survey samples contain 30,986 distinct surveys on 2,019 routes. We fit the source model with observer and survey controls. We kept dependence across periods within states and refit the model after each state deletion. The western later-minus-earlier estimate was +0.776 recorded species per 10 ppb ozone and 2 C warmth. Its state jackknife interval was -0.799 to +2.351 after correction for three comparisons. The eastern change was -0.231 (-1.027 to +0.565). West change minus East change was +1.006 (-0.837 to +2.849). Route trends gave the same lack of a clear change. The early western cell slope stayed -0.551, but its four-test interval included zero with the jackknife. These results do not establish equal slopes or no joint environmental effect. Few western states, selected coverage, exposure error and detection bias limit inference. This is a reanalysis of one data system, not an independent biological replication or a test of causal climate change. The package gives the exact panel, source hashes, all 198 deletion fits, covariance evidence, code, figures and offline checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "seasonal warmth",
+    "birds",
+    "recorded richness",
+    "period change",
+    "regional comparison",
+    "state jackknife",
+    "observation bias",
+    "cluster covariance",
+    "Breeding Bird Survey",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/contrasts.png",
+      "caption": "Direct period changes and the difference between regional changes. Later means 2010-2024; earlier means 1995-2009. Intervals correct for three comparisons. All state jackknife intervals include zero with survey controls and with route trends."
+    },
+    {
+      "path": "files/cell_slopes.png",
+      "caption": "Secondary cell slopes with two uncertainty calculations. Intervals correct for four cell tests. All state jackknife intervals include zero. The point estimates are the same under both error calculations."
+    },
+    {
+      "path": "files/deletion_changes.png",
+      "caption": "Changes in each regional period contrast after one state is removed from both periods. All available state deletions are shown. These ranges are diagnostics and are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1476b68714a3433f1a6efc168fb650faa15d11997d8c0c4e96b40e4cefde95b4",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We reuse its verified panel and source model. We add direct period contrasts and all-state jackknife uncertainty. The biological data overlap."
+    },
+    {
+      "target": "sci:sha256:a8905e943e1ef9e875461c8b7b6625c57d34af9bc50d1f6624566a1e3055045b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its state information audit motivates all-state deletion inference. It did not test direct period changes or calculate all-state jackknife errors."
+    },
+    {
+      "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited bird, ozone and county climate data and raw-source reconstruction code. Raw data were not rechecked in this job."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior ecological work on ozone, birds and air quality rules. Its data and estimand differ."
+    },
+    {
+      "target": "doi:10.1177/1536867X231212433",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established CV3 and CV3J methods and guidance on fixed effects across clusters."
+    },
+    {
+      "target": "doi:10.1198/000313006X152649",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Reason to compare coefficients directly rather than significance labels."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited public BBS 1966-2024 data, 2025 release."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited ozone field definitions."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited county climate source; exact snapshot hashes are preserved."
+    }
+  ]
+}
