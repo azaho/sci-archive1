@@ -1,0 +1,118 @@
+{
+ "title": "Hemibrain and FlyWire head-direction wiring share a ring form: Delta7 inhibition peaks opposite the source, PEN outputs shift 48-58 degrees by side, and a cosine mode pair leads",
+ "abstract": "We tested ring-attractor wiring properties of the fly head-direction circuit in two adult Drosophila connectomes, hemibrain v1.2 and FlyWire v783. We used the EPG, EPGt, PEG, PEN1, PEN2 and Delta7 cell types (152 and 155 neurons). A spectral embedding of ellipsoid body (EB) wiring gave each columnar neuron an angle without labels. In hemibrain it agreed with protocerebral bridge (PB) glomerulus labels (median EPG error 4.9 to 5.6 degrees). In both brains, PB-only wiring followed the EB angles (Spearman -0.84 and -0.72, permutation p < 0.001). PEN outputs in the EB shifted from their PB input angle by +50 to +58 degrees for left-PB neurons and -48 to -56 degrees for right-PB neurons. All 78 PEN neurons with data had the sign of their side. PEG shifts were near zero. The two-step EPG -> Delta7 -> EPG weight in the PB was a cosine of angle difference with its peak at 178 and 176 degrees (R2 0.98 and 0.90, p < 0.001). In a signed linear network of these types, the second and third eigenvalues had cosine eigenvectors over EPG angle (cosine fraction 0.87 to 0.97, against 0.09 when neurons were moved off their angles). The eigenvalue split of this pair was 2.4% and 4.2%. Null result: with hemibrain glomerulus angles, the real neuron-level variation did not make the pair more symmetric than random placement of the same variation (p = 0.28 to 0.39). A low p value with inferred angles came from angle noise in the reference model. Limitations: one fly per connectome, about 4.7 times fewer PB synapses in FlyWire, FlyWire angles only from wiring with unknown reflection, no activity data, and a simple linear model. An exploratory nonlinear bump model failed and gives no evidence. Code, head-direction subsets, results and figures are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "head direction",
+  "ring attractor",
+  "central complex",
+  "connectome",
+  "FlyWire",
+  "hemibrain",
+  "Delta7",
+  "PEN neurons",
+  "EPG neurons",
+  "spectral embedding",
+  "eigenmodes",
+  "cross-animal replication",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_angles_and_pen_shift.png",
+   "caption": "A: In hemibrain, angles from EB-only wiring agree with PB glomerulus labels for EPG and PEG neurons. B: For same-side EPG pairs, PB-only partner similarity decreases with EB angle difference in both brains (lines: bin means of 22.5 degrees; dots: pairs). C: EB output angle minus PB input angle for each PEN and PEG neuron (circles: left PB; squares: right PB; black bars: circular means; dotted lines: one glomerulus, 45 degrees). FlyWire angles come from wiring and have an unknown reflection."
+  },
+  {
+   "path": "files/figures/fig2_angular_profiles.png",
+   "caption": "Row-normalised weight against target-minus-source angle. A: direct EPG -> EPG in the EB is local. B: PEN -> EPG in the EB (left and right PB pooled) has two peaks near +-45 to 67 degrees. C: two-step EPG -> Delta7 -> EPG in the PB is a cosine with its peak opposite the source (dashed lines: first-harmonic part of the fit)."
+  },
+  {
+   "path": "files/figures/fig3_spectrum_split.png",
+   "caption": "A: The top 8 eigenvalues (real part) of the signed linear network; labels give the cosine fraction h of modes with h > 0.5. Modes 2 and 3 are the ring pair in both brains. B: EPG components of the ring-pair eigenvectors against EPG angle. C: Ring-pair eigenvalue split (dots) against a null that places the neuron-level variation at random within each type and side (bar: median; band: 5 to 95 percent of 1,000 permutations). With hemibrain label angles the real split is not below the null; the low p values with inferred angles come from angle noise in the reference model."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain connectome; source of the v1.2 adjacency data."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact hemibrain v1.2 file used (SHA-256 07d8946e...)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections file."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell type annotations (Supplemental file 1)."
+  },
+  {
+   "target": "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/a83b2776d60d5764cef36b927f5f9679c16c47a2/supplemental_files/Supplemental_file1_neuron_annotations.tsv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.7554/eLife.66039",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Hemibrain central complex connectome analysis; our FlyWire results repeat its wiring motifs in a second animal."
+  },
+  {
+   "target": "doi:10.1038/nature14446",
+   "reason": "Head-direction bump in EPG neurons."
+  },
+  {
+   "target": "doi:10.1126/science.aal4835",
+   "reason": "Ring attractor dynamics in the fly central brain."
+  },
+  {
+   "target": "doi:10.7554/eLife.23496",
+   "reason": "PEN neurons and angular velocity integration."
+  },
+  {
+   "target": "doi:10.1038/nature22343",
+   "reason": "Shifted PEN projections rotate the bump."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Earlier campaign result that also uses FlyWire v783 wiring."
+  },
+  {
+   "target": "sci:sha256:d115ed1dfe7d0feb4f39ecfb6c82d4579aec7b3a5e3681420c057373e8e2307c",
+   "reason": "Earlier campaign result on FlyWire T4/T5 wiring."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Earlier campaign result that compares synapse counts between fly connectomes."
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Larger 3-day rain maxima did not give larger annual floods in 368 US rain-dominated basins in 2003-2025; lower pre-storm streamflow explains about half of the shortfall",
+  "abstract": "Question: in US CAMELS reference basins, did annual maximum daily flow (AMF) follow the increase in heavy rain after 2002, and does lower antecedent wetness explain any shortfall (Sharma, Wasko and Lettenmaier 2018)? Approach: USGS daily discharge and Daymet v4 basin precipitation (3,454 sample points) for water years 1981-2025. Per basin, a storm-response model was fit on 1981-2002 declustered 3-day storms (4 per year) and tested on 2003-2025, with and without pre-storm streamflow and 30-day rain. Results (368 rain-dominated basins, 95% water-year bootstrap intervals, log units): the largest 3-day rain increased by 0.062 (0.014 to 0.105), but AMF did not increase (-0.056; -0.203 to 0.100). At fixed storm size the flood peak was 0.106 lower (-0.203 to 0.005); with wetness terms the decrease was 0.057 (-0.096 to -0.017). A rain-only model over-predicted the AMF change by 0.171 (0.091 to 0.256); with wetness terms, by 0.091 (0.031 to 0.166). A placebo split (1981-1991 against 1992-2002) gave -0.058 (-0.169 to 0.056). Most of the response decrease is in Plains-Texas and western (mainly California) rain basins; eastern and Midwest basins show none. The lower pre-storm flow is not explained by 3 years of prior rain and only slightly by warmer weather. Limitations: daily peaks, one precipitation product (its RX3 trend is about 0.016 larger than the CAMELS v1.2 Daymet trend), wetness proxies instead of soil moisture, statistical models, and wide regional intervals.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["floods", "extreme precipitation", "antecedent wetness", "CAMELS", "streamflow", "Daymet", "USGS NWIS", "out-of-sample test", "baseflow", "flood trends", "rainfall-runoff response"],
+  "display": [
+    {"path": "files/figures/fig2_summary.png", "caption": "Basin-mean changes (WY2003-2025 minus WY1981-2002, log units) with 95% water-year bootstrap intervals: largest 3-day rain (RX3), annual maximum daily flow (AMF), storm response at fixed storm size without (S2) and with (S3) antecedent wetness terms, and pre-storm flow at storms. Red: placebo split 1992-2002 against 1981-1991."},
+    {"path": "files/figures/fig3_pred_vs_obs.png", "caption": "Observed against predicted change in mean log AMF for 368 rain-dominated basins. Predictions use per-basin storm-response models fit on WY1981-2002 events: rain only (left) and rain plus pre-storm flow and 30-day rain (right)."},
+    {"path": "files/figures/fig4_yearly.png", "caption": "Yearly basin means for 368 rain-dominated basins: anomalies of log RX3, log AMF and log pre-storm flow (top), and storm-response residuals of the two models (bottom). Grey: test period."}
+  ],
+  "citations": [
+    {"target": "doi:10.1029/2018WR023749", "relations": ["reviews", "supports"], "reason": "We test the antecedent-wetness explanation proposed in this commentary; the data support it for about half of the shortfall."},
+    {"target": "doi:10.1007/s10584-015-1476-1", "reason": "US evidence that heavy rain gives high discharge mainly in wet conditions."},
+    {"target": "doi:10.1016/j.jhydrol.2019.05.054", "reason": "Rainfall and soil-moisture contributions to flood trends in Australia."},
+    {"target": "doi:10.5194/hess-19-209-2015", "relations": ["uses"], "reason": "CAMELS basin set and v1.2 forcing used for the forcing check."},
+    {"target": "doi:10.5194/hess-21-5293-2017", "relations": ["uses"], "reason": "CAMELS attributes (snow fraction, area, HUC2)."},
+    {"target": "doi:10.3334/ORNLDAAC/2129", "relations": ["uses"], "reason": "Daymet v4 R1 daily precipitation, temperature and SWE."},
+    {"target": "https://zenodo.org/records/15529996", "relations": ["uses"], "reason": "CAMELS files (polygons, attributes, v1.2 time series)."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS daily mean discharge."},
+    {"target": "sci:sha256:88eddf50d9c7f470c5100e90784ddb4ed2d9c0121a63d83268b4bf573f7be159", "relations": ["uses"], "reason": "We reuse its CAMELS v1.2 byte-range retrieval code and member list for the forcing check."},
+    {"target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af", "reason": "Prior campaign test of annual runoff after multi-year droughts in CAMELS basins."},
+    {"target": "sci:sha256:07ca7c27870e5db5585553e28f4a17aeabff4e7a5fec234eb10b3f6962baa792", "reason": "Prior campaign CAMELS study of post-fire runoff."},
+    {"target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e", "reason": "Prior campaign GRACE storage recovery after droughts."},
+    {"target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1", "reason": "Prior campaign US groundwater levels after droughts; relevant to lower pre-storm flow."}
+  ]
+}
