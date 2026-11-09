@@ -1,0 +1,69 @@
+{
+  "title": "Mean-minus-median latitude trend intervals included zero in four US trawl samples in 1982-2019",
+  "abstract": "We tested whether mean and median catch latitude changed at the same rate in two US trawl surveys and two periods. We used fixed survey strata, area and haul-effort weights, and fixed cohorts of 59 eastern Bering Sea and 62 Northeast US fall taxa. Mean-minus-median trends were +2.34, +1.70, +0.74 and -0.73 km per decade in 1982-2000 and 2001-2019. All four primary corrected intervals included zero. Only the early Northeast interval was within a chosen -5 to +5 km per decade band. Typical absolute location gaps were about 19-20 km across taxon-years. Early Bering Sea intervals excluded zero under some sensitivity choices, including removal of four years flagged in later documentation. Thus the main null result does not show equal trends. Survey boundaries, catchability, selected taxa, known early data concerns and short series limit inference. We did not measure climate or pollution exposure. The package preserves source hashes, a raw-data rebuild, derived evidence, code, uncertainty and checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "species distributions",
+    "observation bias",
+    "marine biodiversity",
+    "mean latitude",
+    "median latitude",
+    "climate indicators",
+    "trawl survey",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/mean_median.png",
+      "caption": "Mean and median catch latitude changes and paired trend differences in two surveys. Intervals give approximate family coverage for four primary tests. The shaded band is -5 to +5 km per decade."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:47342d1cebb56136665a83f348b35ee77b188ba05aa9445e5e888441b255bc8d",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Verified source build code, survey design and taxon-year mean and quantile panel. Raw rebuild matches. We test the paired mean-minus-median trend rather than catch-width trends; observations overlap."
+    },
+    {
+      "target": "https://github.com/pinskylab/OceanAdapt/tree/0d4bcaffe649e970674fe165fe892ab4d787e76a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned raw trawl compilation, source metadata and methods."
+    },
+    {
+      "target": "https://www.epa.gov/system/files/documents/2024-06/marine-species_documentation.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Section 6 gives a half-mass interpretation of a centroid. Later source quality flags motivate the Bering Sea sensitivity. We do not reproduce its numerical indicator."
+    },
+    {
+      "target": "https://ecowatch.noaa.gov/thematic/marine-species-distribution",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "NOAA defines a biomass-weighted mean indicator. Its current spatial-surface method differs from our direct survey calculation."
+    },
+    {
+      "target": "doi:10.1126/science.1239352",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/gcb.13578",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
