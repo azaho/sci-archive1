@@ -1,0 +1,47 @@
+{
+  "title": "Mirror edges improved prediction between two adult worm maps after physical contact controls",
+  "abstract": "We tested whether a left-right mirror connection predicts chemical edge presence in a second C. elegans map after control for measured physical contact. We used Witvliet maps 8 and 7 for adults, and maps 1 and 2 for an L1 age check. In 1703 selected adult edges, the mirror marker improved the source-family held-out log score by 0.02745 nats per edge after contact controls. A nominal two-way family bootstrap interval was 0.00630 to 0.04883. The adult target-family gain was 0.02615. The L1 source-family gains were 0.06527 and 0.03592; the interval for the second gain included zero. Only one adult direction had a contact matrix. The maps came from four different animals; the L1 animals had different ages. The test measures observed wiring reproducibility, not reliable neural activity or a causal effect of symmetry. The package provides new code, aggregate scores, a figure, and exact retrieval and regeneration instructions. External data and record-level tables are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "bilateral symmetry",
+    "physical contact",
+    "C. elegans",
+    "prediction",
+    "wiring reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Mirror score gains before and after physical contact controls. Bars show nominal 95 percent two-way family bootstrap intervals with fitted predictions fixed. L1 maps 1 and 2 have ages 0 and 5 hours. The two holdout tests reuse the same edges."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary chemical synapse records, physical contact matrices, and cell metadata."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact release commit. External inputs remain outside the publication."
+    },
+    {
+      "target": "sci:sha256:710ee5da304163904fcaa1916e4d948b6ef59bb945fa6fbd3f8311455874083b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates this extension. The prior study found a mirror marker gain but did not control for physical contact. No code or record-level tables were reused."
+    }
+  ]
+}

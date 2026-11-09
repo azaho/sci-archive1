@@ -1,0 +1,22 @@
+{
+  "title": "Warm bottom water moved the oxygen response of 55 demersal trawl taxa toward higher oxygen on the northern Gulf of Mexico hypoxic shelf in 1982-2025, but the low-oxygen part alone was uncertain",
+  "abstract": "Question: does bottom temperature change how strongly nutrient-driven hypoxia removes demersal taxa from trawl catches? The metabolic index model predicts a temperature sensitivity Eo above 0 eV. Data: 3,330 summer SEAMAP 40-ft shrimp trawl tows (102 cruises, 1982-2025) at 5-50 m depth between 94.5 and 89.0 W, with bottom oxygen, temperature and salinity; 780 tows had less than 2 mg/L oxygen. Method: for 55 common taxa, presence-absence models with cruise fixed effects, depth and temperature splines and a spline of the metabolic index; Eo by profile likelihood; cruise-block bootstrap for all taxa together. Result: the median Eo across taxa was 0.86 eV (95% interval 0.53-1.20); 48 of 55 taxa were above zero and 15 had intervals above zero. The result repeated in four region and period samples (medians 0.64-0.94, all intervals above zero). A parametric null with Eo = 0 gave -0.09 to 0.20, and temperature shuffled within cruises gave 0.07. Nine model checks gave medians from 0.65 to 0.91. A simple hypoxia x temperature term was negative (-0.066 per C, interval -0.119 to -0.017) but did not repeat in the west 1982-2003 sample. Limitations: the estimate uses the full catch-oxygen curve; a post hoc test with only tows below 10 kPa pO2 gave 0.51 (interval -0.04 to 1.07), so a rise of the avoidance threshold alone is not shown. Bottom temperature and depth are strongly related (r = -0.73), trawl absence can mean escape from the net path, and oxygen instruments changed over time. The package has derived tow and catch tables, code, all bootstrap estimates, a simulation check, figures and data provenance.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["hypoxia", "metabolic index", "temperature-dependent hypoxia", "Gulf of Mexico", "SEAMAP", "demersal fish", "penaeid shrimp", "nutrient pollution", "species distribution", "dissolved oxygen", "climate warming", "bottom trawl", "observation bias"],
+  "display": [
+    {"path": "files/figures/fig2_pooled_eo.png", "caption": "Median Eo across 55 taxa with 95% cruise-block bootstrap intervals for the full sample, four region and period samples (blue), model checks (gray), placebos (orange) and a post hoc low-oxygen check. Gray band: below the 95th percentile of a parametric Eo = 0 null. Green band: laboratory mean +/- 1 SD."},
+    {"path": "files/figures/fig1_raw_presence_by_pO2.png", "caption": "Raw fraction of tows that caught each of six taxa with the strongest oxygen response, by bottom pO2, for cool (<= 24.5 C) and warm (>= 26.5 C) bottom water, tows at 10-35 m. Bars: 95% binomial intervals; bins with fewer than 15 tows are not shown."},
+    {"path": "files/figures/fig3_taxon_eo.png", "caption": "Eo for each of 55 taxa in the full sample with 95% cruise-block bootstrap intervals (100 resamples). Orange: interval above zero. The profile grid ends at -1 and 2 eV."}
+  ],
+  "citations": [
+    {"target": "doi:10.1126/science.aaa1605", "relations": ["uses", "reviews"], "reason": "Defines the metabolic index and Eo that we test with field trawl data."},
+    {"target": "doi:10.1038/s41586-020-2721-y", "relations": ["reviews"], "reason": "Laboratory Eo values (mean about 0.4 eV) that we compare with the field estimate."},
+    {"target": "doi:10.3354/meps09437", "reason": "Hypoxia avoidance and edge aggregation of brown shrimp and demersal fishes in the same region; motivates the catchability limitation."},
+    {"target": "doi:10.4319/lo.1992.37.6.1307", "relations": ["uses"], "reason": "Oxygen solubility equations used to convert DO to pO2."},
+    {"target": "https://seamapdata.gsmfc.org/pages/download-form.php", "relations": ["uses"], "reason": "SEAMAP Gulf Shrimp/Groundfish survey CSV package, updated 2026-06-08."},
+    {"target": "sci:sha256:edec25d0faea54bfa8e98e8d103351c0014eb2f4703edf9966b42f9cbc7833da", "reason": "Related campaign study of trawl community temperature tracking that includes the Gulf survey without oxygen."}
+  ]
+}
