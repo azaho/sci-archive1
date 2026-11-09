@@ -1,0 +1,90 @@
+{
+  "title": "Variable chemical wiring across 8 C. elegans brains did not predict more variable co-activity across animals; gap junctions in more brains gave stronger, and in moving worms more variable, co-activity",
+  "abstract": "Question: do neuron pairs with wiring that varies between individuals also have co-activity that varies more between individual animals? We linked the eight Witvliet 2021 C. elegans connectomes (stable, developmentally dynamic and variable chemical connections; number of brains with a chemical synapse or a gap junction) to per-animal pair correlations in three whole-brain calcium data sets: Atanas 2023 (40 moving animals, 5,700 pairs), Baskoylu (27 moving animals) and Randi 2023 (112 immobilised, stimulated animals). Models controlled for adult synapse counts, per-neuron fixed effects, soma distance, ganglion and the mean. Inference used 2,000 QAP permutations and 1,000 animal bootstraps; the plan was written first. Result: pairs with only variable chemical connections did not have a larger across-animal spread than pairs with stable connections (Atanas log SD difference -0.004, 95% CI -0.073 to 0.082). Each additional brain with a gap junction increased the mean Fisher z (0.024, 0.022 and 0.009 per brain; all QAP p < 0.003) and, in the two moving data sets, also the across-animal SD (+3.3% and +3.2% per brain), not decreased it. Neuron-level wiring variability did not predict profile consistency. A post hoc split-half analysis put the extra spread mostly between animals with all labels, but not with high-confidence labels only. Limitations: wiring and activity come from different animals; few pairs have highly stereotyped gap junctions; label errors and state changes can explain part of the spread.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome variability",
+    "gap junctions",
+    "whole-brain calcium imaging",
+    "individual differences",
+    "structure-function",
+    "Witvliet 2021",
+    "functional reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_prespecified.png",
+      "caption": "Pre-specified coefficients for across-animal spread (left) and mean co-activity (right) in three data sets, with animal-bootstrap 95% intervals and the QAP null range."
+    },
+    {
+      "path": "files/figures/fig2_within_between.png",
+      "caption": "Atanas data: within-animal (half 1 versus half 2) and between-animal variance of pair co-activity by the number of brains with a gap junction or a chemical synapse."
+    },
+    {
+      "path": "files/figures/fig3_decomposition.png",
+      "caption": "Post hoc decomposition: per-brain effect of gap-junction and chemical-synapse stereotypy on within-animal and between-animal variance, for label confidence 3 or more and 4 or more."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its Atanas per-animal pair correlation table, soma positions, contact table and processing recipe."
+    },
+    {
+      "target": "sci:sha256:fea404fc826486791a933e7997984e6864538661c3296f9983f3c22227c76e3e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its Baskoylu, Randi and Kato per-animal pair correlation tables."
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "reason": "It tested two-adult-map edge presence against evoked responses; we test eight-brain stereotypy against spontaneous co-activity spread."
+    },
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "reason": "Related analysis of synapse count variability across the same eight worm connectomes."
+    },
+    {
+      "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+      "reason": "Related C. elegans structure-function test on the same activity data."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "reason": "Witvliet et al. 2021 connectomes and connection classes."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "reason": "Atanas, Kim et al. 2023 whole-brain activity data."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "reason": "Randi et al. 2023 activity data."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2015.09.034",
+      "reason": "Kato et al. 2015 activity data."
+    },
+    {
+      "target": "doi:10.5061/dryad.w9ghx3g4v",
+      "reason": "Baskoylu and Flavell data set."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "reason": "Exact source commit of the connectome files."
+    },
+    {
+      "target": "https://zenodo.org/records/19388374",
+      "reason": "Atanas raw traces and NeuroPAL labels."
+    }
+  ]
+}

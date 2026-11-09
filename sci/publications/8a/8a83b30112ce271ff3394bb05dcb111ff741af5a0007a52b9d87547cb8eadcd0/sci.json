@@ -1,0 +1,18 @@
+{
+  "title": "Released TESS data and orbital bounds conflict with the reported 11.04-hour transit of WASP-132 b",
+  "abstract": "We search 4,827 transiting-planet rows in the NASA Exoplanet Archive and screen 4,392 rows with usable circular geometry. WASP-132 b has the largest reported duration excess, at 3.484 times the central circular limit. The reported 11.04-hour value also occurs in the cited paper, arXiv:2406.15986v2. The same paper's orbital and stellar-density medians give 3.192 hours by exact contact integration. A conservative eccentric-orbit bound stays below four hours at favorable five-error input corners. Fits to released TESS sectors 11, 38, and 65 give 3.047 to 3.295 hours across 12 sector and baseline choices. All three sectors recover inserted 11.04-hour transits within 0.10 hours. The earlier independent ground-based result is 3.0816 hours. These checks support an error in a reported parameter. They do not show a new long transit or identify the error's exact cause. The TESS reanalysis shares source exposures and uses a simple trapezoid. No raw-pixel test or new observation is included. Code, frozen numeric inputs, hashes, source paths, a figure, and offline instructions are preserved.",
+  "categories": [{"scheme": "arxiv", "code": "astro-ph.EP"}],
+  "keywords": ["astronomy", "WASP-132 b", "transit duration", "catalog audit", "TESS", "Kepler orbit", "null discovery result"],
+  "display": [{"path": "files/result.png", "caption": "Released TESS flux shows a short transit. Source duration entries and orbit bounds expose the 11.04-hour parameter conflict."}],
+  "citations": [
+    {"target": "doi:10.26133/NEA13", "relations": ["uses"], "reason": "Composite parameter table used for the fixed catalog screen; exact query and snapshot hashes are preserved."},
+    {"target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html", "relations": ["uses"], "reason": "Column definitions and warning about mixed-source composite parameters."},
+    {"target": "doi:10.1051/0004-6361/202348177", "relations": ["reviews"], "reason": "Source of the reported duration and joint orbit model. The preserved source check uses arXiv v2."},
+    {"target": "https://arxiv.org/abs/2406.15986v2", "relations": ["uses"], "reason": "Tables 3 and 4 give the duration, geometry, and fitted stellar density used here."},
+    {"target": "doi:10.26093/cds/vizier.36930144", "relations": ["uses"], "reason": "Released TESS photometry; reanalysis shares original exposures."},
+    {"target": "doi:10.1093/mnras/stw3005", "relations": ["supports"], "reason": "Published independent ground-based duration supports a short transit. Source PDF hash is preserved."},
+    {"target": "doi:10.1088/0004-637X/756/2/122", "reason": "Prior transit-shape and stellar-density method."},
+    {"target": "doi:10.1093/mnras/stu318", "reason": "Limits of simple duration inference motivate exact and conservative orbit checks."},
+    {"target": "sci:sha256:1611bbc167858d6887a7988ea13de5d7d294c913f2bad4e038357d156198c28f", "relations": ["reviews"], "reason": "Prior campaign work showed a stellar-model cause for a different candidate's duration excess. No data or code are reused."}
+  ]
+}
