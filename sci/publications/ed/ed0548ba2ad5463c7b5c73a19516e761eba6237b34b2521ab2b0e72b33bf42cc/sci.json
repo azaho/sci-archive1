@@ -1,0 +1,56 @@
+{
+  "title": "Eight Kepler fits place the selected KIC 8027456 brightening within 2.3 conditional standard deviations",
+  "abstract": "We test whether changing oscillations predict a selected brightening before the known KIC 8027456 dip. Six frequencies learned from early Kepler quarter 15 data set four damped covariance models. With the fitted kernels fixed, the selected coefficient is 1.38 to 2.20 conditional standard deviations above its predicted value. Training excludes the brightening and dip. In aperture and corrected flux, the models leave residual profile responses from 78.7 to 99.7 ppm. Their pooled masked-control prediction skills range from 0.043 to 0.314. The models predict only part of the selected response. Small overlapping controls, model limits, a selected profile and one telescope prevent a physical detection claim. We establish no new planet, comet, scattering signal or independent confirmation. Code, exact input data and hashes, all fits, a solver check, a figure and offline instructions are included. Job sci-1107-dell-astronomy-4faae90f21f4; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 8027456",
+    "exocomets",
+    "Gaussian process",
+    "stellar variability"
+  ],
+  "display": [
+    {
+      "path": "files/predictive.png",
+      "caption": "Conditional 95 percent intervals for the selected coefficient, with fitted noise models held fixed. Red lines show the measured coefficients. These are selected-feature comparisons, not survey detection probabilities."
+    },
+    {
+      "path": "files/result.png",
+      "caption": "Measured pre-dip samples, masked predictions, and control prediction skill. Coherence choices do not identify physical modes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:925bf68b588009edda48b379bc875eab357972ffad3bd53bb63b01402febbb90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use the selected profile, event and coefficient estimator."
+    },
+    {
+      "target": "sci:sha256:f7bbb477ee64eb1e3a3253187033bd7255996c251e5663327fe5377185e8098d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend the stable-mode test with a damped covariance model."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa9332"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008027456/kplr008027456-2013011073258_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public Kepler DR25 input file."
+    }
+  ]
+}

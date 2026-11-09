@@ -1,0 +1,66 @@
+{
+  "title": "An early ZTF model predicts later eclipses near TOI-1546.01 within a Gaia period window",
+  "abstract": "We tested a published nearby-binary lead for TOI-1546.01 with a retrospective time split of 1,504 ZTF observations. A six-harmonic model fitted to 940 early observations within a fixed Gaia period window predicts 564 later observations with RMSE 0.249 mag. The listed TOI-period model gives 0.287 mag; the exact Gaia-period model gives 0.243 mag. The early-model mean squared error gain over the listed TOI period is 0.0207 mag squared, with a conditional 95 percent night-bootstrap interval of 0.0096 to 0.0335. Nine model settings retain the gain. Two tested daily aliases predict less well. An exploratory later-data window test gives unequal primary and secondary eclipses. Global errors do not clearly distinguish half and double periods. The target was selected after a prior full-data study, so this is not a new confirmation sample. The period difference is only 1.06 quoted TOI standard errors. No TESS source location, new planet, or new source association is established. We preserve the frozen data, hashes, code, predictions, bootstrap draws and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "TESS",
+    "TOI-1546.01",
+    "ZTF",
+    "Gaia DR3",
+    "eclipsing binary",
+    "chronological prediction",
+    "daily alias",
+    "retrospective test"
+  ],
+  "display": [
+    {
+      "path": "files/results/prediction.png",
+      "caption": "Early-data templates predict later observations near the Gaia period. The listed central TOI period gives weaker prediction."
+    },
+    {
+      "path": "files/results/scores.png",
+      "caption": "Prediction errors on later observations for eight models fitted to early data."
+    },
+    {
+      "path": "files/results/eclipse_contrast.png",
+      "caption": "An exploratory test gives unequal eclipse windows. Intervals use later-night resampling conditional on the early model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published lead and frozen ZTF and Gaia inputs. We add a retrospective chronological prediction and eclipse contrast test."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "reason": "Established ephemeris matching method."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aaecbe",
+      "reason": "ZTF data processing and archive."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+      "reason": "ZTF light curve API and selection rules."
+    },
+    {
+      "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen ExoFOP catalog row from the shared dataset; source path and hash are recorded."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_TOI_columns.html",
+      "reason": "TOI table parameter definitions."
+    }
+  ]
+}

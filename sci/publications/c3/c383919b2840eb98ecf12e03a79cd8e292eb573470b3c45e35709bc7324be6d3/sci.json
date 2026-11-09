@@ -1,0 +1,49 @@
+{
+  "title": "Cortical pair orientation gave no clear slice-held-out delay prediction gain in four Allen mouse and human groups",
+  "abstract": "We tested whether cortical pair orientation adds information about synaptic delay beyond soma distance, image-plane separation, cell class, and layer. We used 1,839 connected pairs from Allen Synaptic Physiology r2.1 small. Four groups separate mouse and human records and excitatory and inhibitory synapses. Five-fold tests held out whole slices. Adding vertical orientation did not give a clear decrease in mean absolute log error in any group at ridge penalty 10. All four slice-bootstrap intervals included zero. Adjusted full-sample slopes were negative for excitatory pairs in both species. These associations did not establish useful prediction across slices. The test uses selected brain-slice recordings. Slice groups can share a donor. The small human inhibitory group and missing geometry limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "cortical geometry",
+    "grouped validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/orientation.png",
+      "caption": "Adjusted orientation slopes and changes in held-out prediction error. All four error-change intervals include zero. Intervals use slice groups."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and local circuit survey."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "reason": "Earlier campaign test of distance and delay. The present test adds cortical orientation."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/cortical_location.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines cortical lateral and vertical distances."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Cell-body distance gave no clear gain in PSP rise-time predictions in four Allen slice groups",
+  "abstract": "We tested whether cell-body distance improves predictions of the rise time of a postsynaptic potential (PSP). We used 2,100 detected connections in the Allen Synaptic Physiology r2.1 small database, with mouse visual cortex and human temporal cortex in separate groups. We held out whole inferred donors and compared ridge models with cell labels, with and without distance. No primary rise-time gain interval was wholly above zero after correction for four groups. Mouse inhibitory connections had a 0.31% reduction in squared log error, with a conditional 98.75% donor bootstrap interval of -0.80% to 1.43%. In the same sample, distance reduced onset-latency error by 7.18%, with a descriptive 95% interval of 3.04% to 11.44%. Human excitatory rise-time predictions became worse at all tested penalties. Other penalties and joint cell labels gave no clear rise-time gain. These results restrict the use of cell-body distance as a timing predictor in these slice data. They do not test dendritic path length or establish a difference between the two outcome gains. Missing measurements, inferred donor labels, and uncertainty that conditions on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic rise time",
+    "cell-body distance",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gains.png",
+      "caption": "Distance gave no clear rise-time prediction gain. Positive values mean less error. Rise-time intervals have a correction for four groups. Onset-latency intervals are descriptive. All intervals condition on the fitted models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of the Allen paired recordings."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Source definitions for the timing fields and fit QC."
+    },
+    {
+      "target": "https://www.jneurosci.org/content/23/19/7358",
+      "reason": "Williams and Stuart 2003: synapse location can affect the rise of a potential measured at the soma."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The published distance-latency test motivates a test of a different timing measure. Its donor rule and local range informed the plan. No code or data tables were reused."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "reason": "Related campaign test of shared-cell timing; found in the campaign search."
+    }
+  ]
+}

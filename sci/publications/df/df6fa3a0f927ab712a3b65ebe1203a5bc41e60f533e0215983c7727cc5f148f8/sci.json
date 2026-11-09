@@ -1,0 +1,72 @@
+{
+ "title": "Tropical cyclones gained 1.5 kt less wind per 24 h over 3-40-day-old tracks of earlier storms than over later-storm tracks in 1982-2022; only 3-10-day-old wakes gave a clear deficit",
+ "abstract": "We tested whether tropical cyclones intensify less over water that an earlier storm crossed 3 to 40 days before (a cold wake). We used 41,279 six-hourly open-ocean fixes of 2,888 storms in six basins from IBTrACS v04r01 (1982-2022) and weekly 1-degree OISST v2 sea-surface temperature (SST). A placebo control used fixes over the tracks of later storms (3 to 40 days after the fix). These mark the same active corridors but cannot change the ocean before the fix. Models had wind, basin-month, season, latitude, climatological SST, translation speed and nearby-storm terms; intervals come from 2,000 basin-season cluster bootstrap samples. The planned contrast (earlier minus later tracks) was -1.48 kt per 24 h (95% interval -2.58 to -0.43); the sample mean change was +2.1 kt. Pre-storm SST was 0.26 °C colder over earlier tracks (-0.30 to -0.21), and an SST covariate reduced the contrast to -0.45 kt (-1.55 to +0.57). The contrast was stable for 100 and 200 km radii and in the Northern Hemisphere. It was -2.48 kt for 3-10-day-old tracks and -1.93 kt after storms of 64 kt or more, but near zero for 11-40-day-old tracks, which had colder measured SST. Limitations: with storm fixed effects the contrast was -1.02 kt (-2.35 to +0.34). A post hoc scan found differences of up to +1.8 kt in time windows with no expected wake effect, so corridor or seasonal confounding of 1-2 kt is possible. Weekly 1-degree SST does not resolve young wakes, and we did not measure atmospheric conditions. The bundle has code, the derived fix table, results and input hashes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone",
+  "cold wake",
+  "intensification",
+  "sea surface temperature",
+  "IBTrACS",
+  "OISST",
+  "placebo control",
+  "air-sea interaction",
+  "storm-storm interaction",
+  "cluster bootstrap"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_wake_vs_placebo.png",
+   "caption": "24 h wind change and pre-storm SST anomaly for fixes over earlier-storm tracks (wake), later-storm tracks (placebo), and their difference, with 95% basin-season bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_lag_scan.png",
+   "caption": "Post hoc lag scan: adjusted differences in 24 h wind change and SST anomaly by time between another storm's passage within 150 km and the fix."
+  },
+  {
+   "path": "files/figures/fig3_basins_strength.png",
+   "caption": "Wake minus placebo contrast by basin, and differences by wind of the earlier storm at passage."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:aeb65c193b73dabff9a49e243b9f3a538306fc932b5048be5f73473c4df7f9c3",
+   "reason": "Campaign study of cold-wake recovery at Atlantic buoys; motivates the 3-40 day wake window."
+  },
+  {
+   "target": "sci:sha256:9bc0e5f0dbed1b1156d222cfc9bd80cc4672ccb2bf62b4da79ffe5496964010d",
+   "reason": "Campaign study of best-track intensity change and event selection."
+  },
+  {
+   "target": "doi:10.1002/2014GL061489",
+   "reason": "Balaguru et al. 2014: cyclone-cyclone interactions through the ocean pathway."
+  },
+  {
+   "target": "doi:10.1029/2020GL091676",
+   "reason": "Karnauskas, Zhang and Emanuel 2021: the feedback of cold wakes on tropical cyclones."
+  },
+  {
+   "target": "doi:10.1038/s41612-025-01029-5",
+   "reason": "John et al. 2025: faster recovery of North Atlantic cold wakes."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.since1980.list.v04r01.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBTrACS v04r01 best tracks."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2 weekly SST and land mask."
+  }
+ ]
+}

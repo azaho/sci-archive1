@@ -1,0 +1,26 @@
+{
+  "title": "Volcanoes within 200 km of M7.5+ shallow earthquakes did not have more eruption onsets in the next 5 years (1960-2020); an excess after M8+ earthquakes is regional and not confirmed",
+  "abstract": "Question: do large earthquakes start eruptions at nearby volcanoes? Nishimura (2017) reported an increase of approximately 50% in new-eruption probability within 200 km for 5 years after M>=7.5 earthquakes. Approach: we paired USGS ComCat shallow (<=70 km), declustered mainshocks with Smithsonian GVP confirmed eruption onsets (3,904 onsets, 1900-2026) and compared onsets in the T years after and before each mainshock at each volcano within R km. A random-time placebo that keeps volcano rates, earthquake locations and catalog trends gave the null; bootstrap over mainshocks gave the intervals. Pre-specified result: for M>=7.5, R<=200 km, T=5 yr, 1960-2020 (107 mainshocks, 619 pairs), there were 150 onsets after and 148 before (ratio 1.01, 95% CI 0.80-1.29, placebo p=0.43); the binary new-eruption ratio was 0.99 (0.81-1.20). These intervals exclude a 50% increase. Short-term tests (M>=7, <=750 km, day-precise onsets) gave 3 vs 3 onsets in 0-2 days and 43 vs 29 in 0-30 days (p=0.08). In a 48-cell grid of magnitude, radius and window, no cell survived the Westfall-Young correction (best family-wise p=0.66). Exploratory result: M>=8 earthquakes gave more onsets within 200 km in 5 years in 1960-2020 (32 vs 19) and in the independent period 1900-1959 (35 vs 12, p=0.007), but three other M>=8 cells did not replicate, Kamchatka-Kuril-Japan volcanoes gave most of the excess (30 vs 6), and the ratio did not increase steadily with magnitude. Limitations: eruption reporting can increase after large earthquakes, old onset dates are uncertain, distances are epicentral, and we did not compute stress at volcanoes.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["volcanic eruptions", "earthquake triggering", "eruption onset", "Global Volcanism Program", "ComCat", "placebo test", "great earthquakes", "replication", "multiple testing", "volcanic hazard"],
+  "display": [
+    {"path": "files/figures/fig1_forest.png", "caption": "Post/pre ratio of eruption onsets at volcanoes near large shallow earthquakes for the primary, short-term, sensitivity and M>=8 tests. Grey band: 90% random-time placebo range. Line: 95% bootstrap interval over mainshocks."},
+    {"path": "files/figures/fig2_epoch.png", "caption": "Eruption onsets in 1-yr bins relative to mainshock time, with the placebo 90% range, for M>=7.5 within 200 km, M>=8 within 200 km and M>=8 within 500 km."},
+    {"path": "files/figures/fig3_contributions.png", "caption": "Onsets in the 5 years before and after each M>=8 shallow mainshock with any onset within 200 km, 1900-2020."}
+  ],
+  "citations": [
+    {"target": "doi:10.1002/2017GL074579", "relations": ["challenges", "reviews"], "reason": "We repeat its 200 km, 5 yr, M>=7.5 test with current catalogs and a placebo null and do not find the reported increase of approximately 50%."},
+    {"target": "doi:10.1038/27650", "relations": ["reviews"], "reason": "We repeat its short-term (0-2 day, 750 km, M>=7) test with day-precise GVP onsets."},
+    {"target": "doi:10.1007/s00445-018-1232-2", "relations": ["supports"], "reason": "Our short-term null agrees with its weak evidence for short-term triggering."},
+    {"target": "doi:10.1146/annurev.earth.34.031405.125125", "reason": "Review of seismic triggering of eruptions."},
+    {"target": "doi:10.1038/s41467-021-21166-8", "reason": "Review framework of triggering mechanisms."},
+    {"target": "doi:10.1038/ngeo1855", "reason": "Observed volcanic subsidence after the 2010 Maule earthquake; physical link for great earthquakes."},
+    {"target": "doi:10.1038/ngeo1857", "reason": "Observed volcanic subsidence after the 2011 Tohoku earthquake."},
+    {"target": "https://volcano.si.edu/", "relations": ["uses"], "reason": "Smithsonian Global Volcanism Program Volcanoes of the World eruption and volcano tables (WFS export 2026-11-08)."},
+    {"target": "https://earthquake.usgs.gov/fdsnws/event/1/", "relations": ["uses"], "reason": "USGS ComCat earthquake catalog, M>=6.5, 1900-2025."},
+    {"target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c", "reason": "Related campaign study of global M6+ aftershock productivity with ComCat; this study adds the earthquake-volcano interaction."},
+    {"target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1", "reason": "Related campaign null result on Earth-system interaction (GRACE water load and earthquake timing)."}
+  ]
+}

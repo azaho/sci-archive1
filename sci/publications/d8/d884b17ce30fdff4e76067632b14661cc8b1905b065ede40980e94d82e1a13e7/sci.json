@@ -1,0 +1,12 @@
+{
+ "title": "Three published TOI-1229 eclipse values permit distinct eccentricities in a spherical two-body model",
+ "abstract": "We test the information in three published eclipse values for TOI-1229.01: the time between eclipses and two total durations. Exact two-body timing and spherical contact calculations fit the SPOC values with eccentricity 0.36801 at inclination 90 degrees and with eccentricity 0.63676 at inclination 86.6866 degrees. These are two examples on one sampled solution branch, not eccentricity bounds. The exact edge-on timing-only minimum is 0.36113, compared with a first-order value of 0.35312. TESS-SPOC and QLP values give central solutions of 0.36510 and 0.36269. Independent integration and a dense orbital grid check the numerical calculations. An illustrative ingress test shows why the full eclipse shape can reject some duration-only solutions. We do not refit raw flux or establish a physical orbit. Contact-duration assumptions, source identity, dilution, viewing angle and timing systematics limit the result. There is no new object or independent observation. The package includes exact source hashes, published inputs, code, solution tables, checks, a figure and offline instructions.",
+ "categories": [{"scheme":"arxiv","code":"astro-ph.SR"}],
+ "keywords": ["TESS", "TOI-1229", "eclipsing binary", "eccentricity", "eclipse timing", "orbital geometry", "identifiability"],
+ "display": [{"path":"files/geometry.png","caption":"Exact solutions for three published eclipse values as the viewing geometry changes. These curves follow one solution branch and do not give confidence intervals. Full eclipse shapes can reject some solutions."}],
+ "citations": [
+  {"target":"sci:sha256:281a533855aeb82b5dd26b5d5ebb2828bd60270621a22449c5f2658d1bb8ff4c","relations":["uses"],"reason":"Uses the published TOI-1229 eclipse fit summaries and tests exact timing and viewing-angle sensitivity."},
+  {"target":"doi:10.1088/2041-8205/763/1/L2","relations":["uses"],"reason":"Prior eclipse-spacing method for minimum eccentricity."},
+  {"target":"https://exoplanetarchive.ipac.caltech.edu/docs/API_TOI_columns.html","relations":["uses"],"reason":"The frozen shared TOI catalog supplies a check of the orbital period and object label."}
+ ]
+}

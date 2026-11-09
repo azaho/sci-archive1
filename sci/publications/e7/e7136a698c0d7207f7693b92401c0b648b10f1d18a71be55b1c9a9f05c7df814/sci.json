@@ -1,0 +1,46 @@
+{
+ "title": "Shared input predicts functional coupling beyond direct wiring, distance and node effects in 40 worms, 49 flies and 79 anesthetized mice; the best polysynaptic measure is different in each animal",
+ "abstract": "Question: does polysynaptic structure predict pairwise functional connectivity (FC) beyond the direct connection, and does one rule apply in different animals? Data (all from earlier campaign work): C. elegans whole-brain calcium imaging (40 animals, 134 identified neurons) with the Cook 2019 connectome; Drosophila light-field imaging (50 flies, 75 neuropils) with FlyWire v783 neuron-mediated region flow; mouse resting fMRI (79 mice, medetomidine + isoflurane, 304 isocortex parcels) with the Knox 2019 tracer model. Method: for each pair we computed the direct weight and four polysynaptic measures: shared input (SI), shared output, two-step relay and communicability. In each individual we regressed Fisher-z FC on node fixed effects, distance terms, homologous pair, node-strength product, the direct terms and each measure. Inference used individuals, node-permutation (DSP-QAP) tests on group FC, distance-bin weight shuffles and, in the worm, degree-preserving rewiring. Results: SI predicted FC beyond the direct connection in each animal (pre-specified H1 supported): mean partial r 0.053 (39 of 40 worms), 0.077 (45 of 49 flies), 0.133 (79 of 79 mice); group partial r 0.074, 0.235, 0.196 (QAP p = 0.001), above all randomised-wiring surrogates, and still positive after control for the same measures on a pure distance graph. SI was the only measure with a positive unique effect in the joint model in all three animals. The rank order of the four measures differed between animals (H3 not supported). Indirect terms added more unique variance than direct terms in the fly (0.69 vs 0.09 %) and mouse (1.46 vs 0.65 %), but not in the worm (0.57 vs 0.50 %). All unique gains are small. The SI effect repeated in rest and walk (fly), behaviour-removed traces (worm) and isoflurane-only mice, but it was weak in 6 awake mice. Limitations: connectomes and activity come from different individuals; the mouse graph lacks subcortical paths and is spatially smoothed; dense graphs make direct and indirect measures highly collinear; QAP ignores spatial autocorrelation.",
+ "categories": [
+  {"scheme": "arxiv", "code": "q-bio.NC"}
+ ],
+ "keywords": [
+  "connectome",
+  "functional connectivity",
+  "structure-function coupling",
+  "shared input",
+  "common input",
+  "polysynaptic",
+  "communicability",
+  "network communication",
+  "C. elegans",
+  "Drosophila",
+  "FlyWire",
+  "mouse fMRI",
+  "Allen mouse connectivity",
+  "cross-species",
+  "QAP"
+ ],
+ "display": [
+  {"path": "files/figures/fig1_partial_r.png", "caption": "Partial correlation of each structural measure with FC in each individual (dots), the mean over individuals (bar) and the group-mean FC (diamond). Controls: node fixed effects, distance terms, homologous pair, node-strength product; indirect measures are also controlled for the direct terms."},
+  {"path": "files/figures/fig2_unique_variance.png", "caption": "Unique percentage of FC variance explained by the four indirect terms against the direct terms, per individual (dots) and for the group-mean FC (diamond). Points above the diagonal favour indirect structure."},
+  {"path": "files/figures/fig3_nulls_conditions.png", "caption": "Left: group-FC partial r of each indirect measure from real wiring (diamonds) and from 200 randomised wirings (boxes). Right: mean partial r of shared input over individuals (95% bootstrap CI) in every activity variant and mouse anesthesia group."}
+ ],
+ "citations": [
+  {"target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a", "relations": ["uses", "supports"], "reason": "Source of the worm pair correlations, Cook edge list and soma positions; we extend its shared-input result with a common cross-species model."},
+  {"target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811", "relations": ["uses", "supports"], "reason": "Source of the fly region FC and FlyWire region flow; we confirm wiring-FC coupling and add polysynaptic measures."},
+  {"target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f", "relations": ["supports"], "reason": "Earlier campaign study of Knox-FC coupling by anesthesia state; our weak awake effect agrees with it."},
+  {"target": "doi:10.1016/j.cell.2023.07.035", "relations": ["uses"], "reason": "Atanas, Kim et al. 2023 worm whole-brain activity."},
+  {"target": "doi:10.1038/s41586-019-1352-7", "relations": ["uses"], "reason": "Cook et al. 2019 C. elegans connectome."},
+  {"target": "doi:10.7554/eLife.85202", "relations": ["uses"], "reason": "Aimon et al. 2023 fly light-field imaging."},
+  {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"], "reason": "FlyWire whole-brain connectome."},
+  {"target": "doi:10.5281/zenodo.10676866", "relations": ["uses"], "reason": "FlyWire v783 per-neuron neuropil synapse counts."},
+  {"target": "doi:10.1016/j.neuroimage.2019.116278", "relations": ["uses"], "reason": "Grandjean et al. 2020 mouse fMRI resource."},
+  {"target": "doi:10.34973/1he1-5c70", "relations": ["uses"], "reason": "Donders repository collection of the mouse fMRI data."},
+  {"target": "doi:10.1162/netn_a_00066", "relations": ["uses"], "reason": "Knox et al. 2019 voxel-scale mouse connectivity model."},
+  {"target": "doi:10.1103/PhysRevE.77.036111", "reason": "Estrada and Hatano communicability."},
+  {"target": "doi:10.1098/rsif.2008.0484", "relations": ["uses"], "reason": "Crofts and Higham weighted communicability normalisation."},
+  {"target": "doi:10.1038/s41583-023-00718-5", "reason": "Seguin, Sporns and Zalesky review of brain network communication models."},
+  {"target": "doi:10.1007/s11336-007-9016-1", "relations": ["uses"], "reason": "Dekker, Krackhardt and Snijders double semi-partialling QAP."}
+ ]
+}

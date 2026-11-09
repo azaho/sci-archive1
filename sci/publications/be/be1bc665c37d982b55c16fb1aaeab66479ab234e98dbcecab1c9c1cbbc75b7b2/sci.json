@@ -1,0 +1,60 @@
+{
+  "title": "Matched Allen slice pairs do not resolve a direction effect of axon preservation on detected connections",
+  "abstract": "We tested whether axon preservation has a source-specific association with detected chemical connections in Allen Synaptic Physiology r2.1 slice data. We compared both directions between the same two cells. One axon was labeled intact and the other truncated. We matched nonsynaptic class, Cre label, and target layer, and required tests in both directions. The sample had 81 mouse visual-cortex pairs from 52 inferred animals and 22 human cortical pairs from eight inferred donors. Outgoing-minus-incoming detection rates from the intact cell were 0.0 percentage points in mice and -9.1 points in humans. Donor bootstrap 97.5% intervals were -5.7 to 5.6 and -40.0 to 8.3 points. Each species had only four pairs with a connection detected in one direction alone. Higher test counts, broader labels, and inclusion of borderline axons gave no clear result. This exploratory audit does not establish equal rates or refute slice-damage corrections. Sparse detections, selected morphology labels, inferred donors, and possible joint axon and dendrite damage limit the comparison. The package supplies the paired control method, cohort tables, bootstrap draws, source hashes, and code.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "axon preservation",
+    "slice sampling",
+    "paired comparison",
+    "functional connectivity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/contrast.png",
+      "caption": "Paired detection-rate contrasts. Strict intervals use 97.5% bootstrap quantiles; sensitivity intervals use 95%. All intervals include zero. Few directional detections limit precision and coverage."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the paired slice recordings and morphology."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods",
+      "reason": "Primary description of connection detection and quality control."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed source definition of axon-length correction; our comparison uses labels without length imputation."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/morphology.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:d7a654bb28eadf49cdc150cf39cd9f7fc586ef72ed661a7eaff1b7a08e6d6a37",
+      "reason": "Published within-recording source-versus-target comparison informed the control design and inferred donor rules. No code or tables were reused."
+    }
+  ]
+}

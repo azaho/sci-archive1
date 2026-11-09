@@ -1,0 +1,56 @@
+{
+  "title": "Membrane time-constant similarity gave no clear connection prediction gain in two Allen slice samples",
+  "abstract": "We tested whether cells with similar membrane time constants were more likely to connect after cell labels, distance, probing effort, and both time constants were known. We used Allen Synaptic Physiology r2.1 paired recordings and held out whole inferred donors. The human sample had 1,691 tested pairs from 48 inferred donors. The log loss gain from absolute log time-constant mismatch was -0.000664, with a 97.5% donor interval of -0.001390 to 0.000059. The mouse sample had 14,058 tested pairs from 719 inferred donors. The log loss gain from absolute log time-constant mismatch was -0.000076, with a 97.5% donor interval of -0.000296 to 0.000135. Neither primary interval was wholly above zero. Two other fixed penalties gave no clear gain. This test does not support adding this similarity term to the tested connection model. It does not show that time constants have no role in wiring. Missing measurements, slice detection, inferred donor labels, and uncertainty conditional on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "membrane time constant",
+    "local connectivity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Connection prediction gain from the time-constant mismatch term. Positive values favor the added term. Bars show conditional 97.5% donor bootstrap intervals for the two primary comparisons."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study of the paired recordings and cell measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "reason": "Defines the more-than-ten correct-sign test spike rule."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py",
+      "reason": "Defines membrane time constant and linked cell ID."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published methods informed donor grouping and the local distance range. No source code or evidence was reused."
+    }
+  ]
+}

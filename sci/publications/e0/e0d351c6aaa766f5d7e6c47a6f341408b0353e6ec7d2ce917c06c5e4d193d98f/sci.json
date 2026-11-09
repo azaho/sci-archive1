@@ -1,0 +1,62 @@
+{
+  "title": "Two known dips of KIC 3542116 retain slower egress under tested Kepler quality cuts and baseline models",
+  "abstract": "We tested whether quality cuts remove slow egress from three known deep dips of KIC 3542116. We fit integrated split Gaussian profiles to public Kepler release 25 light curves from quarters 10, 12, and 13. We varied the flux product, quality selection, fit window, and stellar baseline. D1176 and D1268 have egress-to-ingress width ratios above one in all 36 fits per event. Strict-quality primary PDC fits give ratios of 1.55 and 1.75. Their 95 percent residual block intervals remain above one for blocks of 6 and 24 rows. D992 has weaker support: its primary intervals include one, and some SAP fits reverse direction. The result shows that flagged data alone do not produce the fitted direction for D1176 and D1268 under these models. It does not establish a new comet, a tail length, or an independent confirmation. Stellar variation, model error, and unflagged instrument errors remain possible. The package includes raw inputs, hashes, source URLs, code, all 108 sensitivity fits, bootstrap draws, null simulations, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 3542116",
+    "exocomets",
+    "quality flags",
+    "asymmetry",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/event_fits.png",
+      "caption": "Strict-quality fits. Red crosses show rejected finite measurements. Baseline subtraction uses the full fitted window. Smooth lines are shape summaries."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "PDC width ratios for three windows and two baseline models under each quality cut. A ratio of one is symmetric."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known event times, target selection, and two stellar rotation periods. This work does not discover these events."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior asymmetric-event search and warnings about quality flags on the egress of two events."
+    },
+    {
+      "target": "https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/KSCI-19116-002.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Quality bit definitions."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 light curves. Exact object URLs and hashes are in the package."
+    },
+    {
+      "target": "sci:sha256:21da57f32fa4341d07a680c5c984805b5d69674df15a19bf09b468e0325a5517",
+      "reason": "Campaign prior work on shape sensitivity for a different star. No numerical inputs are taken from that work."
+    }
+  ]
+}

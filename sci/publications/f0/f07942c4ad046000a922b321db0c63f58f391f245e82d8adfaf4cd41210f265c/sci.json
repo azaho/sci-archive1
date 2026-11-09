@@ -1,0 +1,55 @@
+{
+  "title": "Reverse connections give no clear strength prediction gain across four Allen slice groups after interval correction",
+  "abstract": "We tested whether a detected reverse connection improves predictions of resting-state synaptic response size in Allen brain-slice data. We used 2,003 connections from mouse visual cortex and human temporal cortex. We held inferred animals or donors out of model training. Models included cell labels, cell-body distance, and reverse-direction test counts. For 716 mouse excitatory connections, reverse connection status reduced transformed response RMSE from 0.9688 to 0.9553. The mean squared error gain was 0.0260, with a donor bootstrap 95% interval of 0.0044 to 0.0474. Its 98.75% interval was -0.0003 to 0.0530. All four group intervals included zero after this four-comparison correction. The other three groups had no clear gain at 95%. More reverse tests and a richer label model gave similar mouse excitatory estimates. This exploratory test gives limited evidence that reverse connections add strength information beyond cell labels. It does not establish no effect. Slice selection, incomplete detection, inferred donor IDs, and intervals that condition on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "reciprocal connectivity",
+    "synaptic strength",
+    "Allen Institute",
+    "grouped validation",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Held-out prediction error and donor bootstrap intervals. Pale intervals use a four-comparison correction. All pale intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and database."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "doi:10.1038/nature14182"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/master/aisynphys/database/schema/synapse.py",
+      "reason": "Definitions of resting-state PSP amplitude and manual fit QC."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published donor grouping approach and local distance audit; different outcome and test."
+    }
+  ]
+}

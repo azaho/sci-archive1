@@ -1,0 +1,58 @@
+{
+  "title": "Decay mismatch limited cancellation in exponential models of selected Allen cortical inputs",
+  "abstract": "We tested how direct onset gaps and decay mismatch constrain two-input exponential models at shared targets in Allen Synaptic Physiology r2.1. We allowed a free inhibitory amplitude and bounded changes in relative source-spike timing. In 71 mouse visual-cortex input pairs from 50 inferred donors, measured onset gaps added 0.0538 of excitatory-input energy to the minimum residual, with a nominal 97.5% donor bootstrap interval of 0.0329 to 0.0786. In seven human temporal-cortex pairs from four inferred donors, the penalty was 0.0499, with interval 0.0110 to 0.0957. Neither sample resolved whether the penalty exceeded the preset 0.05 threshold. Unlimited timing control left mean residuals of 0.309 and 0.406 because of decay mismatch. A 1 ms timing budget reduced residual by 0.0405 and 0.0234. These are conditional model bounds, not measured cancellation. Instantaneous onset, linear addition, unknown membrane state, fit error, selected slice graphs, and few human donors limit inference. The package supplies the bound, code, source hashes, input records, resampling evidence, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "excitation and inhibition",
+    "synaptic timing",
+    "decay mismatch",
+    "conditional model",
+    "circuit structure"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing_bound.png",
+      "caption": "Model residual at bounded relative spike-time changes, and donor onset-gap penalties. Energy is divided by excitatory-input energy. Intervals are nominal 97.5% donor bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Decay mismatch score and shared-target circuit design precedents; no code or result tables reused."
+    },
+    {
+      "target": "sci:sha256:49076594879e25276472296465ad6c0ae7909fc9366f48d529a9c72225dde88e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Direct onset comparison, local distance scope and inferred donor grouping precedents; no code or result tables reused."
+    }
+  ]
+}

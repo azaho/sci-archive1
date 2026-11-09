@@ -1,0 +1,69 @@
+{
+  "title": "February temperature had a clear prediction gain only at Liestal in a three-site test for 2004-2025",
+  "abstract": "We tested whether local February temperature improves cherry bloom predictions beyond a time trend at Kyoto, Liestal, and Washington. We used 44 annual records per site in 1982-2025 and NASA POWER monthly temperatures. Warmer February temperatures were linked to earlier bloom at all sites after a local trend, with slopes from -1.59 to -2.49 days per degree Celsius. We then predicted 2004-2025 from earlier years only. Mean absolute error changed by +0.75 days at Kyoto, -2.18 at Liestal, and -0.93 at Washington. Only Liestal had an error decrease with a block interval fully below zero, including an interval adjusted for three sites. Quadratic trends gave the same site pattern. The Kyoto temperature slope was weaker in the later period. Adding November-January temperature did not improve mean error at any site. Fixed sites and complete annual records reduce some observation bias, but changes in observers and trees remain possible. Monthly grid data cannot test chilling hours or frost. This study does not measure air pollution or community biodiversity. Code, weather snapshots, hashes, figures, and aggregate evidence are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "cherry bloom",
+    "temperature",
+    "temporal validation",
+    "observation bias",
+    "MERRA2"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Changes in later-year prediction error. Negative values mean lower error. Bars show nominal 95% intervals from paired four-year block resampling."
+    },
+    {
+      "path": "files/associations.png",
+      "caption": "Bloom date and February temperature after removal of a local linear time trend, 1982-2025. Each panel uses a separate biological record."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e014c4c5361a2363eabe0084bb2095f73d8b9fad554b8a6856e965eafc04ceb4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the fixed bloom archive and build on the earlier ENSO test with local temperature data."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0027439",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior chilling and heat model with tests across years and sites."
+    },
+    {
+      "target": "doi:10.1002/joc.1594",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on Kyoto flowering and spring temperature."
+    },
+    {
+      "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed biological data archive and source notes."
+    },
+    {
+      "target": "https://power.larc.nasa.gov/docs/services/api/temporal/monthly/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Monthly temperature data service. Exact requests and snapshots are in the package."
+    },
+    {
+      "target": "https://power.larc.nasa.gov/docs/tutorials/service-data-request/api/",
+      "reason": "Meteorological grid resolution."
+    }
+  ]
+}

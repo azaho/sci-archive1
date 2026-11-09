@@ -1,0 +1,103 @@
+{
+ "title": "Hurricane-force winds gave at most a small decrease in next-summer resident bird counts on 2,025 eastern US survey routes in 1970-2024, and the decrease did not repeat across regions and periods",
+ "abstract": "Question: do Atlantic hurricanes decrease the next breeding-season counts of resident birds on North American Breeding Bird Survey (BBS) routes? Long-distance migrants are absent during most storms, thus they are a negative control on the same survey. Data: BBS 2025 release, 2,025 US routes east of 100 W and south of 46 N, 65,117 surveys in 1970-2024, 192 species (43 resident, 40 partial migrant, 109 migrant in AVONET), 4.18 million route-species-year counts; Atlantic HURDAT2 tracks 1966-2024. Method: modelled peak wind at each route and season (symmetric modified Rankine vortex, Willoughby-Rahn radius); 497 surveys on 298 routes followed hurricane-force wind (64 kt or more; 75 storms). Event models of log(1+count) with route x species, observer and species x year or species x region x year fixed effects; two placebo seasons after the survey; resident-minus-migrant contrast with route x year fixed effects; two-way clustered intervals; 1,300-draw season permutation; survey-process checks; dose response; four region and period subsets. Results: resident counts were -3.0% (95% CI -5.3 to -0.7) after hurricane-force wind with national year effects and -2.1% (-4.4 to +0.2) with regional year effects; placebo seasons were near zero; partial migrants (+0.4%) and migrants (-0.3%) did not change; estimates two and three seasons later were near zero. The resident-minus-migrant contrast was -3.0% (-5.4 to -0.5) with national and -1.2% (-4.0 to +1.6) with regional year effects. Season permutation: p = 0.055 for residents and p = 0.23 for the contrast. The resident decrease occurred west of 84 W (-4.0%) and in 1998-2024 (-3.3%) but not in the east or in 1970-1997; the contrast did not repeat in any subset. There was no monotonic dose response. Exposure did not change run completion, observer change or survey date. Seven resident woodpecker species decreased by 7.0% (SE 1.6), an unplanned exploratory result. Limitations: simple wind model, no detection model, few exposed surveys clustered in 38 seasons, imperfect migrant control, observational design. Conclusion: any mean resident decrease is small (likely under 4-5%) and not robust.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "hurricane",
+  "tropical cyclone",
+  "extreme weather",
+  "HURDAT2",
+  "resident birds",
+  "migratory birds",
+  "negative control",
+  "placebo test",
+  "permutation test",
+  "event study",
+  "fixed effects",
+  "AVONET",
+  "woodpeckers",
+  "eastern United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_map_event_time.png",
+   "caption": "A: BBS routes in the study region, coloured by the number of surveys that followed a season with modelled hurricane-force wind (64 kt or more). B: change in log(1+count) after hurricane-force wind in each season relative to the June survey of year t, by AVONET migration class (species x BCR x year fixed effects); grey area = placebo seasons that occur after the survey. C: resident and partial-migrant change relative to migrants within the same route-year. 95% intervals clustered by route and year."
+  },
+  {
+   "path": "files/figures/fig2_dose_splits_permutation.png",
+   "caption": "A: dose response by modelled wind bin for season t-1 (dots) and placebo season t (crosses). B: season t-1 hurricane-force estimates for all routes and four subsets (east and west of 84 W; 1970-1997 and 1998-2024), residents and resident-minus-migrant; crosses = placebo. C: null distributions from 1,300 season permutations of the complete wind field, with observed values and one-sided p-values."
+  },
+  {
+   "path": "files/figures/fig3_species_survey_process.png",
+   "caption": "A: per-species season t-1 hurricane-force estimates for 43 resident species (route-clustered 95% intervals, exploratory); crosses = placebo season t. B: hurricane exposure effects on the survey process in the next season: acceptable run, any run, observer change, first observer year, survey day, wind and sky codes."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:979b781f810d43937eb31b584aa694c871a7e0d156d4980fcb81251be863c25f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse and modify its BBS panel code, AVONET name mapping and fixed-effects estimator, and extend its resident-versus-migrant design from winter cold to hurricanes."
+  },
+  {
+   "target": "sci:sha256:9bc0e5f0dbed1b1156d222cfc9bd80cc4672ccb2bf62b4da79ffe5496964010d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use the exact HURDAT2 file bytes preserved in this bundle (SHA-256 75202780...b6125b4)."
+  },
+  {
+   "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+   "reason": "Prior campaign BBS study of warm breeding seasons and next-year counts."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2486.2009.02101.x",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Rittenhouse et al. 2010 found no significant loss of total BBS abundance after hurricanes; our small and non-robust resident decrease agrees."
+  },
+  {
+   "target": "doi:10.5066/P14SNUV4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey 2025 data release."
+  },
+  {
+   "target": "doi:10.1175/MWR-D-12-00254.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 Atlantic best-track database format and content."
+  },
+  {
+   "target": "doi:10.1175/MWR2831.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Willoughby and Rahn 2004 radius of maximum wind relation used in the wind model."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET migration class and traits."
+  },
+  {
+   "target": "doi:10.1198/jbes.2010.07136",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Two-way cluster-robust inference."
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Prior-year cold pool area did not change groundfish northing in eastern Bering Sea trawl surveys in 1982-2026; a northward offset of about 9 km stayed after 2000",
+  "abstract": "Question: do eastern Bering Sea fish and invertebrate distributions keep a northward shift after warm periods (hysteresis), or do they follow the summer cold pool with no memory? Approach: we used the NOAA AFSC bottom trawl survey (1982-2026, 44 surveys) on the 271 stations sampled in every year, with area-swept CPUE and zero catches. For 17 taxa we calculated the biomass-weighted centre of gravity. We modelled northing with the official cold pool area (2 C or less) and log abundance. Specified tests: (1) the effect of the previous-survey cold pool when the current cold pool is held fixed; (2) out-of-sample residuals in the cold years after two warm periods (2006-2013 after 2001-2005; 2022-2026 after 2014-2021), compared with cross-validated training blocks. Results: the previous cold pool had no clear effect (+0.3 km north per 100,000 km2, 95% CI -2.4 to +3.1; current-year effect -3.3 km). In 2022-2026 the taxa were at their predicted positions (community z -0.18, rank p 0.55). Exploratory (post hoc) result: the mean northing residual moved up by about 9 km between 1999 and 2000 (HAC SE 1.4 km; break scan sup-F 21.6 at 2000) and stayed up through both later cold periods, including 2026. This shift was present in 11 of 17 taxa (largest for Pacific cod, walleye pollock, flathead sole, arrowtooth flounder and Pacific halibut). It stayed after controls for survey date, fixed station positions and taxon set. Vessel, gear and route changes do not explain it. Limitations: one survey region; the step was found by inspection; causes such as age structure, prey or unrecorded observation changes are not identified; the memory test cannot exclude effects smaller than about 70% of the current-year cold pool effect.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": ["Bering Sea", "cold pool", "groundfish", "distribution shift", "hysteresis", "bottom trawl survey", "centre of gravity", "marine heatwave", "climate change", "structural break", "observation bias"],
+  "display": [
+    {"path": "files/figures/fig1_coldpool_northing.png", "caption": "Official EBS cold pool area and the mean northing residual of 17 taxa from cold pool and abundance models, 1982-2026. The residual moved north at 2000 and stayed north."},
+    {"path": "files/figures/fig3_persistence_tests.png", "caption": "Specified persistence tests: return-year community residuals compared with cross-validated blocks (left), and per-taxon previous-survey cold pool coefficients (right)."},
+    {"path": "files/figures/fig2_oos_residuals.png", "caption": "Out-of-sample northing residuals for each taxon and year in the two warm-then-cold episodes."}
+  ],
+  "citations": [
+    {"target": "doi:10.1890/07-0564.1", "relations": ["supports"], "reason": "They found a northward EBS community shift not fully explained by temperature through 2006; our data show a persistent post-2000 northward offset through 2026."},
+    {"target": "doi:10.1016/j.dsr2.2013.03.017", "relations": ["uses", "challenges"], "reason": "We use their cold pool and abundance model structure. Our extended record shows a post-2000 offset that the cold pool and abundance do not explain."},
+    {"target": "doi:10.1007/s00300-018-2431-1", "reason": "Context on northward shifts during the 2017-2019 warm years."},
+    {"target": "doi:10.2307/2951764", "relations": ["uses"], "reason": "Critical values for the unknown-break sup-F test."},
+    {"target": "https://apps-st.fisheries.noaa.gov/ods/foss/afsc_groundfish_survey_haul/", "relations": ["uses"], "reason": "AFSC FOSS haul table, retrieved 2026-11-08."},
+    {"target": "https://apps-st.fisheries.noaa.gov/ods/foss/afsc_groundfish_survey_catch/", "relations": ["uses"], "reason": "AFSC FOSS catch table, retrieved 2026-11-08."},
+    {"target": "https://github.com/afsc-gap-products/coldpool", "relations": ["uses"], "reason": "Official cold pool area table, commit fe890bf8bcb22a733b0fa79bf335b4b42fe14aec."},
+    {"target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91", "reason": "Related campaign study of lagged community response to warming (bird community temperature index), on land."}
+  ]
+}

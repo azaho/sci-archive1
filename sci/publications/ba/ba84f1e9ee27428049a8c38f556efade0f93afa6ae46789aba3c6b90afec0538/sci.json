@@ -1,0 +1,57 @@
+{
+  "title": "Matched mouse slice data do not resolve lower resting variability in reciprocal inhibitory outputs",
+  "abstract": "We tested whether reciprocal inhibitory outputs have lower resting response variability than one-way outputs in Allen Synaptic Physiology r2.1 mouse slice data. Exact matching on recording and ordered cell labels retained 128 directed edges from 40 inferred animals. The equal-animal reciprocal-minus-one-way log variability contrast was -0.042. Its descriptive 95% animal bootstrap interval was -0.340 to 0.263, and the two-sided sign-flip p-value was 0.788. Distance, amplitude, reverse testing, and pvalb restrictions also gave uncertain contrasts. This extends a prior campaign test of excitatory connections to inhibitory outputs. The data do not establish equal variability or a general reliability rule. Selected local graphs, missing estimates, inferred animal labels, and reverse detection errors limit the result. Code, provenance, derived evidence, and independent point-estimate checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "inhibitory connectivity",
+    "reciprocal connections",
+    "synaptic variability",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/contrast.png",
+      "caption": "Matched reciprocal-minus-one-way log variability contrasts in mouse inhibitory outputs. Lines show descriptive 95% animal bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source data and local synaptic physiology context."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition of the stored resting variability field."
+    },
+    {
+      "target": "sci:sha256:decef28e21bcd9cb9de6e4ded9aa55988e4ca24c56c263841e8b29af56b711a5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its matched excitatory comparison to inhibitory outputs; uses its matching logic and field interpretation with new code."
+    },
+    {
+      "target": "sci:sha256:2d5154c104221cb8c0445b435ec790f7de7ad193fe910837bceeaf5959f9d9f8",
+      "reason": "Prior shared-source versus shared-target variability test."
+    }
+  ]
+}

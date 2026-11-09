@@ -1,0 +1,67 @@
+{
+  "title": "Target input resistance gave no clear voltage prediction gain in four Allen slice groups with donor-held-out ridge models",
+  "abstract": "We tested whether target input resistance improves a prediction of resting synaptic voltage amplitude from current amplitude at the same connection, cell labels, and cell-body distance. We used 1,116 detected connections from Allen Synaptic Physiology r2.1 small. We kept inferred donors separate in five validation folds and repeated the split ten times. None of four species and synapse-type groups had a positive mean squared error gain interval wholly above zero at the 98.75% level. Some fitted amplitudes were near numerical zero. Two post hoc amplitude cutoffs greatly reduced log-scale errors. In the mouse inhibitory group, the higher cutoff left 526 connections and reduced root mean squared error from 0.327 to 0.315 log10 mV when resistance was added, but the 98.75% gain interval still crossed zero. The result does not show that resistance has no role in synaptic integration. It limits the tested prediction method and shows why amplitude floors must be checked. Donor labels were inferred, current and voltage came from separate trials, and intervals did not refit the models.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic integration",
+    "input resistance",
+    "voltage prediction",
+    "grouped validation",
+    "amplitude fit audit"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/audit.png",
+      "caption": "Prediction gains for the main sample and two post hoc amplitude cutoffs. Lines show 98.75% donor bootstrap intervals. Positive gains favor target resistance. Each panel has its own x-axis scale."
+    },
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Main sample prediction errors and gain intervals. The amplitude audit shows that near-zero fits strongly affect these log-scale errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen paired recording data and study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw data release; byte hash is in the report."
+    },
+    {
+      "target": "https://pubmed.ncbi.nlm.nih.gov/30655351/",
+      "reason": "Primary experimental study of membrane resistance and voltage fluctuation amplitude."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/master/aisynphys/database/schema/synapse.py",
+      "reason": "Definitions of resting PSP and PSC amplitude and response kinetics."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/master/aisynphys/pipeline/multipatch/resting_state.py",
+      "reason": "Independent IC and VC resting amplitude fits."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/master/aisynphys/pipeline/multipatch/intrinsic.py",
+      "reason": "Resistance unit conversion from megohms to ohms in source database."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign analysis of distance and onset delay. Its local 500 micrometre range informed this analysis range; no code or derived data were reused."
+    }
+  ]
+}

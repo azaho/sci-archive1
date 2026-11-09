@@ -1,0 +1,72 @@
+{
+  "title": "A five-day coverage rule leaves one-sided samples at eight selected KIC 11084727 flux features",
+  "abstract": "We test eight selected raw-flux features and one known comet-like dip of KIC 11084727 with Kepler release 25 cotrending basis vectors. Coefficients are fitted outside all event windows. A five-day running-mean filter and an 80 percent coverage rule retain only one side of each of the eight extra features. Eight-vector fits predict 99.7 and 100.7 percent of two quarter-10 responses. Adjacent-channel fits predict 91.2 and 100.9 percent. These are responses on the retained samples, not complete dip depths. Other filter and vector choices change the predictions. The known quarter-11 dip has two-sided samples and predicted fractions of 1.19 to 3.34 percent across nine choices. The result supports further tests of shared instrument trends, but does not establish a cause or a new body. The basis vectors come from the same telescope. Target exclusion from their construction is not established. Code, exact used data, hashes, coverage counts, validation, injection checks, figures, and offline instructions are included. Job sci-1107-dell-astronomy-56cea8fb2278; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "cotrending basis vectors",
+    "sampling",
+    "instrument effects",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/windows.png",
+      "caption": "Fixed event windows. The five-day coverage rule leaves one-sided samples for all eight extra features. The known quarter-11 dip retains both sides."
+    },
+    {
+      "path": "files/outputs/responses.png",
+      "caption": "Measured and predicted responses for the five-day, eight-vector fit. Bars describe only retained samples. Error bars are conditional coefficient ranges."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed event selection and public light-curve source."
+    },
+    {
+      "target": "sci:sha256:26a0ab6a554b3e388e72776fffe63ec5d0a64cb9ec2428c16316227b6b0f0694",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior pointing test and its extrapolation limit motivate this basis-vector test."
+    },
+    {
+      "target": "sci:sha256:cecc5729b222124a410bc3f78fca2c15b71dc4e239d71b6d5dc2cd39f9929f7a",
+      "reason": "Prior cross-quarter pointing test; different predictor and test."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Known comet-like dip."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior automated search and recovery of the known event."
+    },
+    {
+      "target": "https://arxiv.org/abs/1203.1383",
+      "reason": "Basis vectors use correlated light curves; simple least squares can distort signals."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/cbv.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public release-25 basis files. Full URLs and hashes are in cbv_sources.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/Data_Characteristics.pdf",
+      "reason": "Basis-vector construction, channel structure, and release matching."
+    }
+  ]
+}

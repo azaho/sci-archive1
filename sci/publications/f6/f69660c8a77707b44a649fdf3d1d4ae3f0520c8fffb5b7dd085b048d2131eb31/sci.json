@@ -1,0 +1,64 @@
+{
+  "title": "Fixed lunar terms reduced next-day upper-tail persistence at six US gauges in 2011-2025",
+  "abstract": "We tested how fixed tide-related filters change daily upper-tail persistence at six US tide gauges. We reused verified public NOAA CO-OPS evidence and models fitted in 1996-2010, then measured persistence in 2011-2025. Each site, model and calendar month had its own test-period 95th percentile. The equal-site mean chance of another tail day on the next day fell from 43.45% with a seasonal filter to 30.40% with fixed lunar terms. The decrease was 13.05 percentage points, with a conditional 95% three-year block interval of 9.85 to 15.98 points. An equal-size control filter with other periods gave 44.05%. All six site point estimates fell, but the interval included zero at Sewells Point. Mean lag-28 recurrence fell from 24.76% to 7.50%. Aggregate decreases also held at the 90th and 99th percentiles, but the rare-tail change did not have the same sign at every site. This shows that the filter changes temporal event grouping in these records. It does not measure flood duration, recovery, or a causal storm effect. Fits and thresholds stay fixed in the uncertainty calculation. The package gives input provenance, daily evidence, saved predictions, new code, bootstrap draws, a figure, source checks and a model refit check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "tides",
+    "temporal clustering",
+    "upper tails",
+    "persistence",
+    "NOAA CO-OPS",
+    "harmonic regression"
+  ],
+  "display": [
+    {
+      "path": "files/persistence.png",
+      "caption": "Next-day upper-tail probabilities at six sites and equal-site mean recurrence by lag. Lunar terms reduce next-day grouping and near-monthly recurrence. Each filter has a separate test-period monthly 95th percentile; these are different sets of relative tail days."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d8f7182757df0564ea50c6690ea567d0b61f757a69c903949d9f48203eab2e65",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse public daily evidence, predictions, coefficients, provenance and retrieval code. We add temporal persistence tests and new analysis code."
+    },
+    {
+      "target": "sci:sha256:f4d67b9a7d6b2e5715e6a5d45ebe292c308857b2937a8914c105b9c139e2b5d4",
+      "reason": "Prior common-date and lag pattern motivated the upstream filter test and this temporal extension."
+    },
+    {
+      "target": "doi:10.1038/sdata.2016.107",
+      "reason": "Prior study of temporal and spatial groups of extreme sea levels and skew surges in the UK."
+    },
+    {
+      "target": "doi:10.1007/s10236-025-01766-4",
+      "reason": "Prior long-model-run study of coastal event clustering under natural variability."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source API; exact snapshot URLs and hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definitions of daily hourly maxima, coverage, monthly means and inferred flags."
+    },
+    {
+      "target": "https://livnocweb2.nerc-liv.ac.uk/ntslf/tides/about-tides/tides-faq",
+      "reason": "Physical explanation of tidal forcing and the spring-neap cycle."
+    }
+  ]
+}
