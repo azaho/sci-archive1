@@ -1,0 +1,26 @@
+{
+  "title": "Short-term air sensitivity predicted 2000-2012 to 2013-2025 summer warming at 356 US stream gauges, but Nov-Mar water warmed about 0.1 C more than predicted, mainly in the East",
+  "abstract": "Question: does the month-to-month sensitivity of stream temperature to air temperature and discharge predict the decadal change? Approach: at USGS NWIS sites with long daily water temperature records, we fitted the sensitivity on monthly anomalies in 2000-2012 only and predicted the change in mean water temperature to 2013-2025. Air temperature came from GHCN_CAMS (primary), nClimGrid and Berkeley Earth. Intervals come from a 5-degree spatial block bootstrap. Result: for July-August at 356 sites, the ratio of mean observed to mean predicted change was 0.86 (0.40 to 1.20) with GHCN_CAMS, 1.05 with nClimGrid and 1.11 with Berkeley Earth, and the predictions reduced site-level squared error by 30% relative to no change. Annual means warmed more than predicted (ratio 1.26 to 1.52 over the three products). At 281 year-round sites, the predicted monthly pattern of change agreed with the observed pattern (correlation 0.92 to 0.96), but November-March water warmed 0.11 C (0.04 to 0.17) more than predicted. This excess was mainly east of 100 W (cold-minus-warm residual +0.14 to +0.23 C; West near 0). A placebo (2000-2006 vs 2007-2012, sensitivity from 2013-2025) gave no all-site or eastern contrast, but it gave a western contrast of +0.14 C, so regional residuals near 0.1 C can occur in this design. The excess was not larger at ice-affected or high-baseflow sites and did not increase with local air warming, so a simple groundwater-lag explanation does not fit. Limitations: non-random, partly regulated sites; 13-year periods; gridded air temperature; linear monthly model; the cause of the cold-season excess is not identified.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370704"}
+  ],
+  "keywords": ["stream temperature", "air-water temperature sensitivity", "climate change", "USGS NWIS", "out-of-sample test", "groundwater", "winter warming", "nClimGrid", "GHCN_CAMS", "placebo test"],
+  "display": [
+    {"path": "files/figures/fig1_summer_transfer.png", "caption": "July-August test, GHCN_CAMS air, 356 USGS sites. (a) Observed minus predicted change in mean water temperature from 2000-2012 to 2013-2025 (C, clipped at 1.5). (b) Observed change against the change predicted from the 2000-2012 month-to-month sensitivity; black points are octile means; dashed line is 1:1."},
+    {"path": "files/figures/fig2_monthly_excess.png", "caption": "Calendar-month test at year-round sites. (a) Mean observed and predicted change by month (GHCN_CAMS, 281 sites). (b) Observed minus predicted change by month with 95% 5-degree box bootstrap intervals for three air products, and a placebo (2007-2012 minus 2000-2006, sensitivity fitted on 2013-2025)."},
+    {"path": "files/figures/fig3_transfer_ratios.png", "caption": "(a) Transfer ratio R = mean observed / mean predicted change by season and air product, with 95% box bootstrap intervals. (b) November-March minus May-September residual (C) for all, eastern and western year-round sites, in the test and in the placebo."}
+  ],
+  "citations": [
+    {"target": "doi:10.1088/1748-9326/9/8/084015", "relations": ["reviews"], "reason": "Prior test of air-temperature regression transfer for stream temperature; we repeat the question at national scale out of sample."},
+    {"target": "doi:10.1029/2012GL051448", "reason": "Reported that western US stream temperature trends did not follow air temperature trends."},
+    {"target": "doi:10.1016/j.jhydrol.2020.124929", "reason": "Groundwater control of paired air-water annual temperature patterns at US sites; basis of the groundwater-lag hypothesis."},
+    {"target": "doi:10.1007/s10584-011-0326-z", "reason": "Regional stream temperature trends and air sensitivity in the northwest US."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS monthly air temperature analysis (primary air product)."},
+    {"target": "doi:10.1175/JAMC-D-13-0248.1", "relations": ["uses"], "reason": "nClimGrid / nClimDiv temperature data set (air product check)."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily values for water temperature and discharge, retrieved 2026-11-09."},
+    {"target": "https://berkeleyearth.org/data/", "relations": ["uses"], "reason": "Berkeley Earth Complete_TAVG_LatLong1 (CC BY-NC 4.0), used for an analysis-only check; no values are bundled."},
+    {"target": "sci:sha256:e5105d76d1a3f05fb412728d910c72859391f6dfae8fb58febcc7865d11ce147", "reason": "Related campaign test of an air-temperature model for Lake Superior summer water temperature."}
+  ]
+}
