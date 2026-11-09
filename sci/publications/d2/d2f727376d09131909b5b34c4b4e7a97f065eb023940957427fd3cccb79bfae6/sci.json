@@ -1,0 +1,57 @@
+{
+  "title": "Continuous recordings gave higher median positive-lag drift error than independent triples in two adult worm circuit models",
+  "abstract": "We tested a temporal-averaging correction for drift inference in two positive linear circuit models from adult C. elegans chemical maps. Each model had 180 cells. We simulated exact full-bin averages along continuous stationary recordings. We compared two matrix-log estimates with controls based on independent Gaussian triples. Intervals were 0.1 and 0.5 assumed leak times. Product counts were 10,000 and 30,000, with eight draws per setting. In all eight settings, continuous-record median positive-lag error was 20 to 51 percent higher than the independent-triple median at the same product count. It was also 29 to 101 percent higher than the continuous zero-lag median. At 30,000 products, corrected continuous medians were 1.231 to 2.269 times the true off-diagonal drift norm. Subtracting sample means changed medians by less than 0.26 percent. Exact population covariances gave positive-lag errors below 2.1e-13. No sample estimate was complex or removed. Thus exact population correction did not ensure useful finite-record accuracy in these tests. The controls match product counts, not acquisition cost. Positive weights, full observation, white drive, two partial maps and eight draws limit transfer. No measured activity is used. Original code, aggregate results, figures, hashes and external-data retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "temporal averaging",
+    "drift inference",
+    "continuous recording",
+    "Ornstein-Uhlenbeck",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Relative off-diagonal drift error. Lines show medians and shaded ranges show all eight draws. Continuous recordings and independent triples have the same moment-product counts, not the same acquisition cost."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:15cae57985656da0523095acfd8108a6f6debeae59ef84cc07e01e06f63497ed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its independent-triple finite-sample test to exact continuous recordings. No source code or result tables are reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1007/s11222-017-9779-x",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

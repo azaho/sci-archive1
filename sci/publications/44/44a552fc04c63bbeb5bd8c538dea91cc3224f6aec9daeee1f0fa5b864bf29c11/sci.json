@@ -1,0 +1,60 @@
+{
+  "title": "Moving grid boundaries changed seasonal null spread from 6.03 to 8.20 points in a 2013-2025 shallow earthquake test",
+  "abstract": "We tested the effect of grid position on a seasonal earthquake uncertainty model. We used 2,558 USGS ComCat test events with preferred magnitude at least 5.5, depth 0-40 km and absolute latitude at least 20 degrees in 2013-2025. A phase from 2000-2012 was held fixed. For 20-degree spatial bins and one-year time bins, 19,999 random grid positions gave conditional rotation-null standard deviations from 6.03 to 8.20 percentage points. The central 95% range was 6.48 to 7.96 points. The original grid gave 6.22 points. We derived an exact mean variance over uniform grid positions from triangular pair weights. Its square root was 7.25 points, 16.5% above the original grid value. A separate pair calculation and a small exact integration checked the formula. The observed seasonal coefficient remained +1.25%. This method study does not establish a seasonal effect, correct error coverage, or a physical cause. It removes grid position only under the stated averaging rule; bin widths, coordinates and rotation assumptions remain choices. The package includes code, aggregate results, all grid experiment draws, a figure and source hashes. External source records are not included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "seasonal seismicity",
+    "grid boundaries",
+    "conditional variance",
+    "origin averaging",
+    "earthquake clustering"
+  ],
+  "display": [
+    {
+      "path": "files/origins.png",
+      "caption": "Null SD across 19,999 uniform grid positions for the same 2,558 test events. This is a sensitivity distribution, not a confidence interval for earthquake seasonality."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ed3f85a87d319c0d45c2d5c7e7cc1bbc4eea3a85fa411f46f4f53c3c00405f88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its measured boundary effect and stated grouping limits set this extension. We reuse the sample and source, but wrote new code. This is not independent replication."
+    },
+    {
+      "target": "sci:sha256:3f4cbf70a66c5747284ec207e5ba6e1cd021e0b34784cf0407936ca8d8511c1b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the chronological phase statistic and original grid comparison."
+    },
+    {
+      "target": "doi:10.1214/aos/1176349654",
+      "reason": "Established precedent for averaging shifted bins and the relation to kernels."
+    },
+    {
+      "target": "doi:10.1002/2015GL065088",
+      "reason": "Prior discussion of clustering and data selection in seasonal earthquake tests."
+    },
+    {
+      "target": "doi:10.1126/sciadv.abf7282",
+      "reason": "Prior regional evidence of seasonal water-load and earthquake relations."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}
