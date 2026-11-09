@@ -1,0 +1,70 @@
+{
+  "title": "December Pacific SST gave an uncertain spring North Atlantic forecast gain in a 1981-2025 ERSSTv5 test",
+  "abstract": "We tested whether December sea surface temperature in the Nino 3.4 region adds spring forecast information for the tropical North Atlantic. We used NOAA ERSSTv5 and 45 March-May targets from 1981 to 2025. Each fit used earlier target years only. Adding Pacific temperature to local December temperature and a linear year term reduced mean squared error by 24.6%. RMSE fell from 0.444 to 0.385 C. The conditional 95% five-year block interval for error reduction was -13.6% to 47.6%. Rolling 30-year fits and a local November control gave positive point gains with intervals that included zero. The known Pacific-Atlantic link thus gave an uncertain added forecast benefit in this test. One revised SST product, a short test record, model choices and conditional intervals limit inference. This result does not establish an operational gain or a physical cause. Code, aggregate inputs, every forecast, source hashes, checks and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "North Atlantic",
+    "seasonal forecast",
+    "persistence",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Added Pacific temperature forecast gains and cumulative saved squared error. The 95% intervals use paired five-year blocks and hold fitted forecasts fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/96JC03296",
+      "reason": "Prior evidence for the spring ENSO link to tropical Atlantic temperature."
+    },
+    {
+      "target": "doi:10.1007/s00382-024-07312-0",
+      "reason": "Prior coupled-model study of spring prediction beyond persistence."
+    },
+    {
+      "target": "doi:10.1029/2008GL034734",
+      "reason": "Prior work shows that the Atlantic response is not the same for every El Nino."
+    },
+    {
+      "target": "sci:sha256:78aca01fe579c6370f460b832d5d867177fd14561e20e5e76c3344365274c3d1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related campaign benchmark informed the training-history checks. Our predictor, target season and region differ. Source grid overlaps; this is not independent data."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA ERSSTv5, two ocean boxes, January 1949 to December 2025."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "reason": "ERSSTv5 methods."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen 2026-11-08 shared snapshot. Exact hash is in provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/disclaimer/",
+      "reason": "Data use and attribution terms."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+      "reason": "Product versions and limits."
+    }
+  ]
+}
