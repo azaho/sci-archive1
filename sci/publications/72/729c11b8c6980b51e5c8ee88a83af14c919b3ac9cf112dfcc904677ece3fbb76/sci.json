@@ -1,0 +1,74 @@
+{
+  "title": "Short-lag covariance ranked all direct links first in 200 half-observed samples of two equal-noise worm circuit models",
+  "abstract": "We tested direct electrical link inference in passive models of two partial adult C. elegans maps. Each model had 180 neurons, symmetric count-weighted conductance, unit leak and equal independent white current noise. We used exact population covariance and 100 random half-observed samples per map. Positive-lag covariance curvature tends to the direct drift block even with hidden neurons. At lag steps 0.001 and 0.01 membrane-time units, its scores ranked all direct links before all absent links in every sample. Inverse covariance did so in 84 and 66 samples. Median precision at the known edge count was one for both methods. At lag step one, median curvature precision fell to zero in both maps. A covariance error bound shows that small lags amplify error as the inverse square of the step. A three-node counterexample shows that unequal source noise breaks exact curvature support. This is an exact-covariance benchmark, not a test on recorded activity. Incomplete electrical annotations, assumed conductances and noise, known edge counts and no finite-record test limit practical use.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "hidden neurons",
+    "covariance curvature",
+    "network inference",
+    "C. elegans",
+    "passive circuit",
+    "finite lag"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact population covariance benchmark. Solid curves show finite-lag curvature. Dashed lines show inverse covariance. Edge scores use the known number of true links. Error bars are omitted because observation masks measure selection sensitivity, not biological uncertainty. Both methods have median precision one at short lags; curvature fails at long lags."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source connectomes; electrical synapses are only partly annotated."
+    },
+    {
+      "target": "sci:sha256:05abc482e549c15ad2c2df4fd5269443581dbb136195e6e4239d89ed3d5597ae",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its passive electrical model definition and covariance identity as prior context. New code tests direct-link inference under random partial observation. No source code or numerical tables reused."
+    },
+    {
+      "target": "doi:10.1103/PhysRevX.6.031024",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior inference of coupling from covariance and its positive-lag derivative in Ornstein-Uhlenbeck models."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4452541/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior noise-driven network inference and Lyapunov covariance relations."
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established Schur-complement circuit reduction."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

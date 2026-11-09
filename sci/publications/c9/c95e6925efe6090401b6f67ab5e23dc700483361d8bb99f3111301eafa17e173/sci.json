@@ -1,0 +1,80 @@
+{
+  "title": "Fits with two Gaussian pulses reduce the penalty for a shared tail in two CHIME bursts on 28 April 2022 at frequency exponent -4",
+  "abstract": "We refit public intensity data for FRB20220428C and FRB20220428B, two bursts 2.041336 seconds apart. We test one shared exponential tail with a fixed frequency exponent of -4. With one intrinsic Gaussian pulse per burst, the common tail raises chi-square by 267.27 relative to separate tails. Two intrinsic Gaussian pulses reduce this penalty to 37.15, a reduction of 86.1 percent in the main compression. Separate tails remain preferred in this restricted model. A free frequency exponent also changes the inferred tails. A finer setting gives a 73.8 percent reduction and a secondary width at the fit limit. Fits to the stored archive model check numerical errors. A positive intrinsic tail can reproduce the unequal one-Gaussian tails exactly with a common external kernel. This construction is not evidence for that emission process. Pulse shape, correlated noise, fit selection and the fixed tail law limit physical claims. No new source or plasma change is confirmed. No independent telescope observation confirms this pair. Code, frozen derived inputs, raw-data hashes, results and reproduction steps are included. Job sci-1107-hp-astronomy-a6a1c4fcc7bf; topic astronomy; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "CHIME",
+    "FRB20220428C",
+    "FRB20220428B",
+    "scattering",
+    "pulse shape",
+    "model sensitivity",
+    "null physical confirmation"
+  ],
+  "display": [
+    {
+      "path": "files/shared_tail.png",
+      "caption": "A second intrinsic Gaussian pulse reduces the fit penalty for one tail shared by two CHIME bursts. The frequency exponent is fixed at -4. The penalty is not a calibrated discovery statistic."
+    },
+    {
+      "path": "files/pulse_fits.png",
+      "caption": "Fits to the two intensity windows and frequency-band residuals. The labels one and two give the number of intrinsic Gaussian pulses. The one_free model has a free tail frequency exponent. The gauss2 model has two Gaussians and no exponential tail."
+    },
+    {
+      "path": "files/band_tails.png",
+      "caption": "Tail estimates at 400.195 MHz from separate frequency ranges. Each fit fixes the frequency exponent at -4. Error bars give local formal errors. These are data from one telescope."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:17d0f66a587dc8e9f2535f26b2edb9988252f8d8f86cb6569c1880b33badb862",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the selected pair and its catalog contrast. We add native-intensity fits and a direct shared-tail test. No code or derived data are reused."
+    },
+    {
+      "target": "sci:sha256:0039a684e6295145d956c2905fcda71b2691abc939e8d48479365bf349b067b0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related pulse-width and tail study of a different source; read for context."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2601.09399",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog 2 methods and release description."
+    },
+    {
+      "target": "doi:10.11570/25.0066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Native CHIME/FRB intensity data and archive pulse models. Exact URLs and hashes are in provenance.json."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2311.05829",
+      "reason": "Pulse modeling with fitburst."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2408.13215",
+      "reason": "High time resolution study of unresolved structure in other CHIME bursts."
+    },
+    {
+      "target": "https://www.wis-tns.org/object/frb20220428c",
+      "reason": "The public report is from CHIME and is not an independent telescope observation."
+    }
+  ]
+}
