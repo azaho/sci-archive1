@@ -1,0 +1,73 @@
+{
+  "title": "Added winter SST cut northeast Atlantic forecast error in expanding fits for 1981-2025, but rolling fits were uncertain",
+  "abstract": "We tested whether previous winter sea surface temperature (SST) adds next-winter forecast information after local summer SST and a linear time term. We used two fixed North Atlantic boxes, ERSSTv5 and HadISST1, and 45 test years from 1981 to 2025. Each fit used earlier years only. In the northeast Atlantic, added winter SST cut mean squared error by 19.19% in ERSSTv5 and 26.86% in HadISST1. Conditional 97.5% three-year block intervals were -0.03% to 33.09% and 7.24% to 41.96%. Sargasso gains were 15.30% and 11.01%, with intervals that included zero. With rolling 30-year training, northeast Atlantic gains fell to 6.87% and 6.42%, with uncertain signs. Thus the point gains depend on the training history. This is a forecast benchmark for known winter recurrence, not proof of heat storage below the surface. Revised data, shared source observations, two selected boxes, linear models, and uncertainty conditional on fitted forecasts limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "North Atlantic",
+    "sea surface temperature",
+    "reemergence",
+    "seasonal forecast",
+    "training history"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "Added winter SST forecast gains. Intervals are conditional 97.5% paired three-year block limits for two regions."
+    },
+    {
+      "path": "files/cumulative.png",
+      "caption": "Cumulative squared error saved by adding winter SST. Positive values favor the added predictor."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://journals.ametsoc.org/abstract/journals/clim/15/18/1520-0442_2002_015_2707_otrona_2.0.co_2.xml",
+      "reason": "Prior North Atlantic reemergence study; motivates the Sargasso and northeast Atlantic regions."
+    },
+    {
+      "target": "https://journals.ametsoc.org/view/journals/clim/16/9/1520-0442_2003_16_1364_tpowss_2.0.co_2.xml",
+      "reason": "Prior study of winter persistence with seasonal mixed-layer depth."
+    },
+    {
+      "target": "sci:sha256:02a1e8154b2eaa815e8fd879d65457a99b8b3fc75f47922b1629bc42bb9984de",
+      "reason": "Related North Pacific forecast test. Our target is January-March and our regions and years differ. We reuse no code."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 data."
+    },
+    {
+      "target": "doi:10.1029/2002JD002670",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HadISST1 data and reconstruction method."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadisst/",
+      "reason": "Source description and January 2025 correction notice."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw source; hashes in the package define the tested snapshot."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadisst/data/HadISST_sst.nc.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Raw source; hashes in the package define the tested snapshot."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Two Kepler composite rows mix different period solutions in a 5545-row orbit check",
+  "abstract": "We check period, orbit size and stellar mass in 5545 selected rows of a frozen NASA Exoplanet Archive response. There are 51 factor-two mass flags. We inspect the five largest departures. Kepler-1632 b and Kepler-1633 b combine older periods with orbit sizes from DR25 solutions whose periods are about two and three times shorter. The complete DR25 rows agree with Kepler's law within 0.4 percent. The period and mass changes reproduce both composite discrepancies exactly. TOI-262 b retains a conflict in its source table, but its scaled-orbit and physical-orbit errors give different bounds. We find no new planet or signal. We do not choose the correct periods or supply independent observations. Code, frozen CSV inputs, source hashes, figures and offline steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler-1632 b",
+    "Kepler-1633 b",
+    "TOI-262 b",
+    "catalog consistency",
+    "period alternatives",
+    "Kepler law"
+  ],
+  "display": [
+    {
+      "path": "files/consistency.png",
+      "caption": "The left panel shows the mass ratio for 5545 selected rows. The right panel compares two composite rows with their complete DR25 solutions. The panels test catalog consistency, not new signals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2216f79a64fbac937a615213aa90c6470a057dc2eba50c6c0055dfa75d80ef75",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its frozen shared composite response for a different physical constraint."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines composite source selection and its consistency limits."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines units and column meanings."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/acb4e3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source paper for the TOI-262 parameter and error check."
+    },
+    {
+      "target": "https://arxiv.org/abs/2301.08162v3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact paper version, Table 14, printed page 35."
+    },
+    {
+      "target": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Default older Kepler period solutions are attributed to Morton et al. in the PS response."
+    },
+    {
+      "target": "https://arxiv.org/abs/2302.07713",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known low-mass companion context for KOI-2513; not new discovery here."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cdiscoverymethod%2Ccb_flag%2Csy_snum%2Cpl_orbper%2Cpl_orbsmax%2Cpl_orbeccen%2Cst_rad%2Cst_mass%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbperlim%2Cpl_orbsmaxerr1%2Cpl_orbsmaxerr2%2Cpl_orbsmaxlim%2Cpl_orbeccenerr1%2Cpl_orbeccenerr2%2Cpl_orbeccenlim%2Cst_raderr1%2Cst_raderr2%2Cst_radlim%2Cst_masserr1%2Cst_masserr2%2Cst_masslim%2Cpl_orbsmax_reflink%2Cpl_orbeccen_reflink%2Cst_rad_reflink+from+pscomppars+order+by+pl_name&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact TAP response; hash and frozen input are included."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Cdefault_flag%2Cpl_refname%2Cst_refname%2Cpl_orbper%2Cpl_orbsmax%2Cst_mass%2Cpl_bmassj%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbsmaxerr1%2Cpl_orbsmaxerr2%2Cst_masserr1%2Cst_masserr2%2Cpl_orbperlim%2Cpl_orbsmaxlim%2Cst_masslim+from+ps+where+pl_name+in+%28%27KOI-2513.01%27%2C%27Kepler-1632+b%27%2C%27Kepler-1633+b%27%2C%27HD+240237+b%27%2C%27TOI-262+b%27%29+order+by+pl_name%2Cdefault_flag&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact TAP response; hash and frozen input are included."
+    },
+    {
+      "target": "sci:sha256:6a67d4440884d33357a533a6a1dcde4d7945fea077292c98303b02d7afe9d0bf",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects one sentence on error coverage: 3285 lower-bound rows and 3284 upper-bound rows. Calculations and main results are unchanged."
+    }
+  ]
+}
