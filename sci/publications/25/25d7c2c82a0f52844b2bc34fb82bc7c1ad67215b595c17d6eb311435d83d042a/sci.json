@@ -1,0 +1,110 @@
+{
+ "title": "Omori decay exponent p did not increase with surface heat flow in California, Japan or global aftershock sequences; Japan and global samples showed a decrease",
+ "abstract": "Kisslinger and Jones (1991) reported faster aftershock decay (higher Omori p) where surface heat flow is high in southern California. We tested this in three samples with the IHFC Global Heat Flow Database (release 2024, v2026.03): California-Nevada ComCat (M4.0+, 1986-2025, 501 sequences), Japan JMA (M4.5+, 2000-2024, 176 sequences) and global ComCat (M6.5+, 1995-2025, 158 sequences). A pooled likelihood fit lambda = mu + K t^-p with a fixed pre-event background, free productivity per sequence, and p linear in log10 of the local median heat flow, with magnitude, depth and year controls. Intervals are 95% cluster-bootstrap intervals over spatial cells. The change in p per tenfold heat flow was +0.14 (-0.23 to +0.43) in California-Nevada, -0.59 (-0.88 to -0.09) in Japan and -0.29 (-0.43 to -0.04) globally. Thus the pre-set hypothesis of a positive slope was not supported in any sample, and two samples showed the opposite sign. Productivity per tenfold heat flow changed by a factor of 1.9 (0.5 to 6.9), 4.1 (1.9 to 9.1) and 0.42 (0.21 to 0.84), so it had no common sign. The Japanese slope remained outside the 2011-2020 Tohoku zone and in a low-background subset, but it disappeared when the background was set to zero. The global slope weakened with a low-background subset or a 200 km heat-flow radius. In California, a foreshock-free subset gave a negative slope. Heat flow also marks tectonic setting, so this study cannot isolate a temperature effect.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370609"
+  }
+ ],
+ "keywords": [
+  "aftershocks",
+  "Omori law",
+  "aftershock decay",
+  "heat flow",
+  "aftershock productivity",
+  "Global Heat Flow Database",
+  "ComCat",
+  "JMA catalog",
+  "California",
+  "Japan",
+  "statistical seismology",
+  "damage rheology",
+  "cluster bootstrap",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_p_by_heatflow.png",
+   "caption": "Top: pooled Omori p in heat-flow terciles for California-Nevada (ComCat, M4.0+), Japan (JMA, M4.5+) and global shallow M6.5+ sequences. Error bars are profile-likelihood 95% intervals (too narrow, because they ignore between-sequence scatter). Panel titles give the model B slope of p on log10(heat flow) with its 95% cluster-bootstrap interval. Bottom: stacked event rate above background per sequence, scaled to 1 at 1 day, for each tercile; the dotted line shows p = 1."
+  },
+  {
+   "path": "files/figures/fig3_robustness.png",
+   "caption": "Slope of Omori p (left) and of ln(productivity) (right) on log10(heat flow) under all analysis settings. Dots are estimates; lines are 95% cluster-bootstrap intervals for p (model C: profile interval) and cluster-robust intervals for productivity. Rows marked expl. are exploratory checks added after the main result."
+  },
+  {
+   "path": "files/figures/fig1_map.png",
+   "caption": "Analysed mainshocks colored by the median heat flow of IHFC GHFDB 2024 sites within 50 km (California-Nevada, Japan) or 100 km (global). Grey dots are heat-flow sites. Circle size grows with mainshock magnitude."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1029/91JB01200",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Kisslinger and Jones (1991) reported higher Omori p at high heat flow in southern California; our three samples do not support a positive slope."
+  },
+  {
+   "target": "doi:10.1111/j.1365-246X.2009.04145.x",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Yang and Ben-Zion (2009) found lower aftershock productivity at high heat flow; we find no common sign across samples."
+  },
+  {
+   "target": "doi:10.48550/arXiv.1706.08922",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Nandan et al. (2017) found higher ETAS productivity at high heat flow in California; we test productivity in three samples."
+  },
+  {
+   "target": "doi:10.5880/fidgeo.2024.014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IHFC Global Heat Flow Database, Release 2024, version 2026.03: source of heat-flow values."
+  },
+  {
+   "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its archived global ComCat M4.5+ 1973-2026 yearly CSV files; it suggested heat flow as a productivity covariate."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its JMA hypocenter parser."
+  },
+  {
+   "target": "sci:sha256:c8ed26f5ca7d7484640ca25e043981deb520e2765f0781dd79a3ae3aac4c72ce",
+   "reason": "Related campaign study of how the start time changes the Omori exponent; it motivated our late fit start and the start-time checks."
+  },
+  {
+   "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+   "reason": "Related campaign study of aftershock duration against strain rate, another physical control on decay."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ComCat event web service for the California-Nevada catalog (retrieved 2026-11-09)."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA unified hypocenter catalog, 1998-2024 yearly files."
+  }
+ ]
+}
