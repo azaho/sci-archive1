@@ -1,0 +1,76 @@
+{
+  "title": "Count pruning gave higher time irreversibility than matched uniform scaling in eight equal-noise linear worm models",
+  "abstract": "We tested how synapse-count thresholds change time irreversibility in positive linear models of eight partial C. elegans brain maps. We kept 161 common cells and assumed equal leak and equal independent noise. At gain 0.5, removal of links with fewer than three sites retained 63.7 to 100.1 percent of the full stationary rate. Uniform scaling with the same total retained weight kept only 12.0 to 63.2 percent. Restoring total weight after pruning raised the rate to 1.59 to 6.33 times its original value. At gain 0.8, that restoration made six of eight models unstable. A known two-cell formula shows why removing a weak reverse link can increase the rate. Exact covariance solves, analytic checks, all tested settings, source hashes, code and a figure support reproduction. These are model results, not measured neural activity or heat production. Partial anatomy, selected cells, assumed positive weights and noise, and age-confounded maps limit biological use. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "time irreversibility",
+    "count threshold",
+    "Ornstein-Uhlenbeck",
+    "normalization",
+    "weak connections"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Model rate ratios at count threshold three. Uniform scaling matches the pruned total weight. Mass restoration restores the original total weight. Six mass-restored models at gain 0.8 are unstable and have no last point. Lines identify maps; they are not time courses or confidence intervals. Panels use different vertical scales."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary source of eight anatomical maps."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external synapse lists; exact file URLs and hashes in inputs.json."
+    },
+    {
+      "target": "doi:10.1088/1751-8121/aaf190",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established stationary linear time irreversibility theory."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.110.034313",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior directed network and entropy production analysis, including two-node models."
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.110.069901",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Erratum to the prior directed-network study."
+    },
+    {
+      "target": "sci:sha256:668597ed9fe04c679f2d61e27aa253a776b0a47f0b1af77171c5ab4efb56fd33",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior weak-edge route test in adult worm maps; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:2fdc1822eef36ec9966ab6ea7940d16ecb09bec59170182c6db6209c6bcfebec",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior equal and unequal noise lag test in reciprocal electrical models; a different circuit and outcome."
+    }
+  ]
+}
