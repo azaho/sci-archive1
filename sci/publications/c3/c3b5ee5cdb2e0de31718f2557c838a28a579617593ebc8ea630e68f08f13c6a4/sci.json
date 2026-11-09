@@ -1,0 +1,58 @@
+{
+  "title": "State-code padding marked 1,407 valid next-year US bird surveys as missing in a published 1995-2023 sample",
+  "abstract": "A raw-register audit found 1,407 false missing-survey labels in a published sample of 25,803 US bird route-years in 1995-2023. The earlier join did not pad single-digit state codes to match the count panel. Its stored labels match that faulty rule exactly. Integer-field matching and corrected string matching agree for every record. The corrected next-year missing rate is 12.85%, compared with the reported 18.30%. Errors occur in all four East and West, early and late samples. All are valid accepted surveys in state codes 2, 6 and 7. The package gives code, exact source hashes, aggregate evidence and a retrieval script. It does not re-estimate the earlier environmental slopes or establish an ecological effect. The audit concerns one selected sample and fixed source version. An initial weighting plan and completed descriptive estimates are preserved separately; their uncertainty analysis was stopped and supports no inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "observation bias",
+    "survey coverage",
+    "Breeding Bird Survey",
+    "data audit",
+    "record linkage",
+    "ozone",
+    "climate",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/return_audit.png",
+      "caption": "Omitting state-code padding raised reported next-year missing-survey rates in all four tested US region-period samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified count, weather and ozone panel. Its accepted count records provide independent return labels."
+    },
+    {
+      "target": "sci:sha256:105663b9ac2fc839f869c3216e9d37b2dff42113323b67d2235f5369147fdc45",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "The code and actual signed panel mark 1,407 valid next-year surveys as missing because state codes lack matching padding. The audit corrects labels and missing rates, not fitted environmental slopes."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact 2025 raw survey register independently checks accepted next-year records."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117"
+    },
+    {
+      "target": "doi:10.1177/0962280210395740"
+    },
+    {
+      "target": "https://data.usgs.gov/datacatalog/data/USGS%3A691cfb53d4be021d1d89b482"
+    }
+  ]
+}
