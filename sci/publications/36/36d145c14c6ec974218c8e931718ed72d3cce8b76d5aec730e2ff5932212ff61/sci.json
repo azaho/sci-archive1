@@ -1,0 +1,94 @@
+{
+ "title": "Victorian catchments that had not recovered from the Millennium Drought by 2017 stayed in a low-runoff state through the wet years 2020-2022 and to 2025 (143 gauges, annual hidden Markov models)",
+ "abstract": "Question: Peterson et al. (2021, Science) reported that 37% of Victorian catchments had not returned to their pre-drought rainfall-runoff relation by 2017, 7 years after the Millennium Drought. Did these catchments recover in the 8 later years 2018-2025, which include the wet La Nina years 2020-2022? Approach: we used 143 catchments of the Saft Victorian set in CAMELS-AUS v2.03, Bureau of Meteorology daily flow for 1950-2025 and SILO catchment rainfall. We wrote a Python port of the default hydroState annual model (Box-Cox runoff linear in rainfall, two hidden states that change the intercept and error, optional AR1, AIC selection). We fitted it with data to 2017, then tracked and scored 2018-2025 with fixed parameters, and refitted to 2025. We wrote the plan before we calculated any output after 2017. Result: with data to 2017, 46 of 143 catchments (32%; 37% with no-AR models) were in the low state, which agrees with the original study. After the refit to 2025, 34 of these 46 (74%) were in the low state in 2022 and in 2025. For 2018-2025 annual runoff, 'stay low' predicted better than 'return to normal' by a median of +1.37 log units per year (95% CI 0.87-1.72; +1.28 in 2020-2022 only). Their mean residual relative to the pre-1997 relation was -1.74 SD in 2010-2017 and -1.58 SD in 2020-2022, although 2020-2022 rain was 11% above the pre-1997 mean. Catchments with a return had less 2022 rain than those without one. A 97% data-completeness sensitivity (133 catchments) gave the same results. Limitations: not the exact original catchments or code; state labels have a 13-24% false-alarm level before 1997; rainfall-only model; calendar years; 8 out-of-sample years.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "drought recovery",
+  "hidden Markov model",
+  "Victoria Australia",
+  "CAMELS-AUS",
+  "out-of-sample test",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeline.png",
+   "caption": "Rainfall anomaly, share of 143 Victorian catchments in the low rainfall-runoff state, and mean runoff residual by 2017 group, 1975-2025."
+  },
+  {
+   "path": "files/figures/fig2_persistence.png",
+   "caption": "Per-catchment runoff residual in 2010-2017 against 2018-2025 and against the wet years 2020-2022."
+  },
+  {
+   "path": "files/figures/fig3_scores.png",
+   "caption": "Out-of-sample log-score differences for the 46 catchments that had not recovered by 2017."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "We test its persistence claim out of sample with 2018-2025 data; the new data support it."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 catchment set, boundaries and cross-check series."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "reason": "CAMELS-AUS v2 data description."
+  },
+  {
+   "target": "https://www.bom.gov.au/waterdata/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daily streamflow 1950-2025."
+  },
+  {
+   "target": "https://www.longpaddock.qld.gov.au/silo/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gridded monthly rainfall 1950-2025."
+  },
+  {
+   "target": "doi:10.1016/S1364-8152(01)00008-1",
+   "reason": "SILO method reference."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "reason": "Review of explanations for the post-drought runoff shift."
+  },
+  {
+   "target": "doi:10.1002/2014WR015348",
+   "reason": "Earlier multi-year drought rainfall-runoff shift study."
+  },
+  {
+   "target": "https://github.com/peterson-tim-j/HydroState",
+   "reason": "Reference implementation whose default model we port."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "reason": "Campaign study of runoff after multi-year droughts in US catchments."
+  }
+ ]
+}

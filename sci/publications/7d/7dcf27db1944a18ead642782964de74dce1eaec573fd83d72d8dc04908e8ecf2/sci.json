@@ -1,0 +1,87 @@
+{
+  "title": "Long repose before large eruptions in the GVP Holocene catalog comes mostly from old incomplete records; within volcanoes in 1950-2026, repose weakly raised VEI and did not follow VEI",
+  "abstract": "Question: do volcanoes give larger eruptions after longer repose (size-predictable), or longer repose after larger eruptions (time-predictable)? Data: Smithsonian GVP Holocene catalog (9,916 confirmed eruptions, downloaded 2026-11-09). Approach: we compared the naive whole-catalog pattern with designs that remove era and volcano differences. Then we tested both models inside volcanoes in the 1950-2026 record of VEI 2 and larger eruptions, where global recording rates are near constant. Results: in the whole catalog, 74% of VEI 5 and 93% of VEI 6+ eruptions came more than 100 years after the previous recorded eruption (9% for VEI 2). But 61% of VEI 4 and 79% of VEI 5+ records start before 1500, when small eruptions were rarely recorded. The slope of VEI on log gap fell from 0.29 to 0.10 per tenfold gap when we compared eruptions of the same volcano and era. Within volcanoes in 1950-2026, the odds of VEI 3+ (against VEI 2) rose 1.77 times per tenfold longer repose (95% CI 1.12-2.78; permutation p = 0.019; 691 eruptions, 60 informative volcanoes). This signal was not significant for 1900-2026 or 1980-2026 windows, disappeared when VEI 1 eruptions entered the sequence, and was absent at 52 frequently erupting volcanoes. Large eruptions did not lengthen the next repose: the hazard of the next VEI 2+ onset after VEI 3+ eruptions was 1.17 times that after VEI 2 eruptions at the same volcano (0.98-1.39). Eruption duration had no effect. In a 2000-2026 forecast test, volcano history reduced log loss by 0.038 (0.006-0.069); time since the last eruption added 0.008 (-0.004 to 0.021). Limitations: VEI is coarse and partly a default value, few volcanoes have both outcomes, completeness per volcano is not proven, and VEI 4+ eruptions after 1950 are too few to test.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "volcanic eruptions",
+    "repose time",
+    "Volcanic Explosivity Index",
+    "time-predictable model",
+    "size-predictable model",
+    "catalog completeness",
+    "Global Volcanism Program",
+    "eruption forecasting",
+    "stratified Cox model",
+    "conditional logistic regression"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_naive_pattern_and_record_eras.png",
+      "caption": "Naive GVP Holocene pattern and its record source. A: median gap to the previous recorded eruption, and the share of gaps longer than 100 years, by VEI. B: onset era of the records in each VEI class; most VEI 4 and 5+ records start before 1500. C: recorded rate per year by era relative to 1950-2026; small eruptions are rarely recorded before 1950."
+    },
+    {
+      "path": "files/figures/fig2_design_ladder.png",
+      "caption": "Change in VEI per tenfold longer preceding gap under six designs, with 95% intervals from resampling volcanoes. Comparison within volcano and era (C) removes about two thirds of the pooled slope (A). Orange rows use only the 1950-2026 record; F is the primary within-volcano estimate."
+    },
+    {
+      "path": "files/figures/fig3_within_volcano_tests.png",
+      "caption": "Within-volcano tests, VEI 2 and larger eruptions, 1950-2026. A: share of VEI 3+ eruptions by quintile of preceding repose relative to the volcano's geometric-mean repose; the odds ratio comes from conditional logistic regression with volcano strata. B: pooled survival of the following repose after VEI 2 and VEI 3+ eruptions; the hazard ratio comes from a Cox model stratified by volcano. A time-predictable model needs a hazard ratio below 1."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5479/si.GVP.VOTW5-2025.5.3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source catalog (Volcanoes of the World). We analysed the live WFS layers downloaded 2026-11-09; the data are not redistributed."
+    },
+    {
+      "target": "doi:10.1029/2005JB003709",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Reported time-predictable behaviour at open-conduit volcanoes; we found no longer repose after larger eruptions, also at frequently erupting volcanoes, in this within-volcano design."
+    },
+    {
+      "target": "doi:10.1111/j.1365-246X.2011.05298.x",
+      "reason": "Repose, run-up time and magma viscosity relation."
+    },
+    {
+      "target": "doi:10.1186/s13617-022-00115-0",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Showed that volcano-specific history improves VEI forecasts; our 2000-2026 test agrees and finds little added skill from repose."
+    },
+    {
+      "target": "doi:10.1007/s00445-022-01605-0",
+      "reason": "Eruptions from long-dormant volcanoes and catalog completeness."
+    },
+    {
+      "target": "doi:10.1038/s41598-018-25286-y",
+      "reason": "Global time-size distribution of eruptions from the GVP catalog."
+    },
+    {
+      "target": "doi:10.17226/24650",
+      "reason": "Review of eruption repose, unrest and timing."
+    },
+    {
+      "target": "sci:sha256:17680dc448e858d55d83d139e42b0daf79ba612cce7c24722222cae5269239a8",
+      "reason": "Earlier campaign test of the same GVP catalog (onset seasonality and record eras)."
+    },
+    {
+      "target": "sci:sha256:cbe6f23c075adc86c7840040f4917ceb4c05582e1c8a8ddf0050dca5f981b4c6",
+      "reason": "Earlier campaign test of eruption onsets with the GVP catalog (earthquake triggering)."
+    },
+    {
+      "target": "sci:sha256:38bdf3cb911b69267bbdbc6408d3ce149f193ae56a61eda4ca2e96ffd282a08a",
+      "reason": "Campaign time-predictable versus size-predictable test for Cascadia tremor episodes; it found the opposite pattern."
+    }
+  ]
+}
