@@ -1,0 +1,98 @@
+{
+ "title": "Autumn leaf colouring became later at East German stations with high early-1990s SO2 after the SO2 fall, but the delay was small, faded after 2010 and was uncertain in a permutation test",
+ "abstract": "Question: after the SO2 emissions of former East Germany fell by more than 80% in the 1990s, did tree phenology change more at places that had high SO2? Data: DWD phenology 1961-2023 (93,217 autumn-colouring records at 1,580 East German stations; leaf unfolding and spring flowering as comparison classes); early-1990s SO2 interpolated from 196 EEA AirBase monitors (38 in the East; station median 32 ug/m3); E-OBS weather. Design: a plan written before the models; station x species and year x species fixed effects, so only differences inside the East are used; weather terms; change of the exposure slope from 1976-1990 to 1996-2008; errors clustered on 81 spatial blocks. Result: autumn colouring of birch, oak and horse chestnut became later by +0.37 days per 10 ug/m3 (95% CI +0.03 to +0.71), about 2 days across the East German range. The pre-trend was +0.09 (CI -0.07 to +0.25). Leaf unfolding did not change (-0.03) and spring flowering became earlier (-0.18). The triple difference against flowering was +0.55 (CI +0.21 to +0.89). Thus the planned decision rule was met. But the delay was largest in 2001-2010 and near zero after 2015. A post-hoc block-permutation test gave p = 0.16 (p = 0.04 with latitude and altitude terms). Several variants had CIs that included zero. West Germany had too small an SO2 gradient to replicate the test. Relative to West Germany, all East stations shifted after 1995 (autumn +1.4 days, spring -1 to -1.9 days), but this mixes the SO2 fall, warming and the 1991-1992 change of the observer network. Limitations: few East monitors before 1994; no pre-1990 exposure data; no observer identity; confounding by the economic change in the polluted south. The evidence agrees with a small temporary recovery effect but does not establish an SO2 cause.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "air pollution",
+  "sulfur dioxide",
+  "SO2",
+  "plant phenology",
+  "autumn leaf colouring",
+  "leaf senescence",
+  "natural experiment",
+  "German reunification",
+  "East Germany",
+  "DWD phenology",
+  "EEA AirBase",
+  "E-OBS",
+  "difference in differences",
+  "event study",
+  "observation bias",
+  "observer network change",
+  "negative control",
+  "permutation test",
+  "climate change",
+  "pollution recovery"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_event_study.png",
+   "caption": "Change in the SO2 exposure slope of phenology dates by five-year period, relative to 1976-1990, with 95% CIs. East (left) and West (right) Germany. Autumn colouring became later at formerly high-SO2 East stations in 1996-2010; the shift faded after 2015."
+  },
+  {
+   "path": "files/figures/fig3_robustness.png",
+   "caption": "Robustness of the 1996-2008 slope change in East Germany for autumn colouring (left) and spring flowering (right), 95% CIs."
+  },
+  {
+   "path": "files/figures/fig1_exposure_map.png",
+   "caption": "Interpolated early-1990s SO2 (1992 level) at DWD phenology stations and the EEA AirBase monitors used."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/phenology/annual_reporters/wild/historical/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Phenology dates (DWD annual reporters, wild plants)."
+  },
+  {
+   "target": "https://eeadmz1-downloads-api-appservice.azurewebsites.net/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EEA air quality download service, dataset 3 (AirBase) SO2 for Germany."
+  },
+  {
+   "target": "https://discomap.eea.europa.eu/map/fme/metadata/PanEuropean_metadata.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Monitor coordinates and station types."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS gridded daily temperature and precipitation (v31.0e)."
+  },
+  {
+   "target": "https://ceip.at/the-emep-grid/gridded-emissions",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We checked the 1990 gridded SOx; it does not resolve the GDR sources, so we did not use it."
+  },
+  {
+   "target": "sci:sha256:70b69f10765f3c0c6114e4131551020643445032d887563a907e07979caab796",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same DWD network; we reuse its fixed-effects code (fe.py) and screening rules, and extend the autumn-colouring analysis to air pollution."
+  },
+  {
+   "target": "sci:sha256:268004a08eb37a3a36207332736b005b07fe9d13a4687a19b1e966f96044ecb6",
+   "reason": "Related campaign test of ozone injury in bioindicator plants."
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "title": "Marine warming-by-baseline links to assemblage richness and abundance trends were not clear when the link could vary among studies, in 2020 BioTIME data and 29 new BioTIME 2.0 studies",
+ "abstract": "Antao et al. (2020) used 21,500 temperate BioTIME assemblage time series. They reported that in the sea, warming increased richness and decreased abundance more at warm baseline temperatures, and that there was no such link on land. We tested these marine results with three methods. (1) With the authors' published series table, a REML version of their model gave the published warming x baseline terms (richness 0.078, abundance -0.177), and an added intercept changed nothing. When the warming effects could also vary among the 75 marine studies, the richness term was 0.063 (95% CI -0.05 to 0.18) and the abundance term changed sign to +0.24 (-0.13 to 0.62). Study-clustered SEs were 3.6-6.3 times the model SEs. Removal of the largest study (a pelagic longline observer programme, 20% of marine series) changed the richness sign to -0.073. Removal of 3 or 5 large surveys changed the abundance sign. (2) Series rebuilt from raw BioTIME 2.0 records for the same studies (r = 0.73 with the original trends) gave a richness term of -0.15 with the original model and +0.05 (-0.14 to 0.23) with study-level effects. (3) In 367 marine series from 29 studies first added in BioTIME 2.0, the terms were +0.074 (SE 0.072) for richness and -0.12 (SE 0.14) for abundance. These are the published signs, and the signs were stable in leave-one-study-out fits, but both intervals include zero. The original-series model predicted new richness trends with calibration slope 0.94 (SE 0.52) and did not predict abundance trends (-0.05, SE 0.06). Land (72 new studies) and freshwater (88 studies) gave no clear interaction. Conclusion: a few large surveys supply most of the evidence for the reported marine coupling, and it is not robust when the effect can vary among studies. The new studies are consistent with it but too few to confirm it. Limitations: frequentist approximation of the brms model, square instead of hexagonal cells, coarse mapped baselines, and a small new marine sample from mainly the North Atlantic.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410401"
+  }
+ ],
+ "keywords": [
+  "BioTIME",
+  "assemblage time series",
+  "species richness",
+  "abundance",
+  "climate change",
+  "warming",
+  "baseline temperature",
+  "marine biodiversity",
+  "meta-analysis",
+  "random slopes",
+  "replication",
+  "out-of-sample test",
+  "observation bias",
+  "rarefaction",
+  "study clustering",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig_marine_interaction.png",
+   "caption": "Marine warming x baseline coefficients for richness (left) and abundance (right) trends. Purple: published brms estimate. Blue: the original series table (REML refit, added intercept, study-level random slopes, large studies removed, our temperature). Orange: the same studies rebuilt from BioTIME 2.0. Green: 29 new BioTIME 2.0 studies. Thick bars: model 95% CI. Thin bars: study-clustered 95% CI."
+  },
+  {
+   "path": "files/figures/fig_transfer.png",
+   "caption": "Observed trends in new BioTIME 2.0 series against the trends predicted by the model fitted to the original series. Points: decile medians and interquartile ranges. Dashed line: full transfer. Marine richness calibration slope 0.94 (SE 0.52), marine abundance -0.05 (SE 0.06). Terrestrial predictions have almost no spread, so their slopes give no useful information."
+  },
+  {
+   "path": "files/figures/fig_map.png",
+   "caption": "Locations of the 21,500 original temperate series (Antao et al. 2020) and of the new BioTIME 2.0 marine, terrestrial and freshwater series used for the out-of-sample test."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41559-020-1185-7",
+   "relations": [
+    "reviews",
+    "challenges",
+    "uses"
+   ],
+   "reason": "We re-analyse the published series table and re-test the marine warming x baseline interaction of this study."
+  },
+  {
+   "target": "https://github.com/lauraantao/Temp_Biodiv_Change",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Series table, model formula and published coefficients (MIT repository)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.15222193",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BioTIME 2.0 raw records, metadata, licences and references (version v4, 15 April 2025)."
+  },
+  {
+   "target": "doi:10.1111/geb.70003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BioTIME 2.0 data paper."
+  },
+  {
+   "target": "doi:10.1126/science.aaw1620",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gridding, coverage filter and sample-based rarefaction method."
+  },
+  {
+   "target": "doi:10.1111/geb.12729",
+   "reason": "Original BioTIME database used by Antao et al. (2020)."
+  },
+  {
+   "target": "https://berkeleyearth.org/data/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Berkeley Earth Complete_TAVG_LatLong1 land and ocean temperature (CC BY-NC 4.0; not redistributed)."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1.1 sea surface temperature (not redistributed)."
+  },
+  {
+   "target": "doi:10.1890/11-1952.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Chao and Jost coverage estimator."
+  },
+  {
+   "target": "sci:sha256:566c05207cc6c7b1802d659122fab3152e1fcd1a7c488a5d1a08362a17f030ba",
+   "reason": "Related campaign work on trawl-survey community temperature indices."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Related campaign work on demersal range shifts and bottom temperature."
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+  "title": "Complete channel loss covered all sampled recall failures in three selected fly calyx models",
+  "abstract": "We tested whether complete glomerular channel loss finds odor recall failures seen under partial suppression. We linked verified FlyWire v783 and hemibrain v1.2 circuit models to 23 receptor channels for 110 odors. FlyWire left and right are one fly; hemibrain is another. The model stored baseline top-10-percent Kenyon cell codes and used fixed nearest-template recall. It tested 21 suppression levels for each odor and channel. No primary pair failed at a sampled partial level and then recalled correctly at complete loss. Complete loss gave 180, 191 and 199 failures among 2530 pairs per calyx, with ties counted as failures. Thus, equal-weight recall was above 92 percent in each model. An added targeted-loss diagnostic found at least one damaging channel for 102, 106 and 107 of 110 odors. Code change and recall gave different scores. A synthetic nonnegative model failed at partial loss and recovered at complete loss, so the empirical grid result is not a general theorem. Incomplete input profiles, two anatomical animals, an ideal activity threshold, exact stored templates, no trial noise and a finite grid limit the result. Code, aggregate evidence, source hashes and verified input retrieval support reproduction. Source-derived matrices and per-odor records remain outside the baseline publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Drosophila",
+    "connectomics",
+    "mushroom body",
+    "odor recall",
+    "input loss",
+    "sparse coding",
+    "representation reliability"
+  ],
+  "display": [
+    {
+      "path": "files/figure_recall.png",
+      "caption": "Fixed-template recall across channel suppression. The targeted-loss diagnostic selects a channel separately for each odor. Values are finite-model scores, not natural failure probabilities."
+    },
+    {
+      "path": "files/figure_checks.png",
+      "caption": "Model sensitivity and a synthetic case that fails at partial loss and recovers at complete loss. The synthetic case is a method check, not fly data."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:41cb795c03857c14b06ee329ab03ec570fdc506399c39e4e7a0cdc8434b4dcc7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse three verified model archives outside the signed publication and extend the active-set loss test to fixed-template recall across graded suppression."
+    },
+    {
+      "target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior odor identification test with noise and wiring controls; the current test uses fixed baseline templates and graded input suppression."
+    },
+    {
+      "target": "sci:sha256:d47d61cecf35201e4dfa315a4550acd1f6f7038e2cc7d15a7828e387c956b142",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Structural selection lineage for the model archives reused through the input-loss publication."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2006.01.050",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2010.04.009",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.57443",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.1099-11.2011",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.0682-12.2013",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://home.flywire.ai/guidelines",
+      "reason": "External data terms were checked. No source tables or derivative connectivity matrices are bundled."
+    },
+    {
+      "target": "https://zenodo.org/records/10676866"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/tom-f-oconnell/drosolf/2ff359109ed9d4c05e2f4c296111ca186cb0e892/drosolf/data/hc_data.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned receptor export for the independent rate rebuild audit only; kept outside the signed publication."
+    }
+  ]
+}
