@@ -1,0 +1,85 @@
+{
+ "title": "TESS data taken after submission show transits for 88% of testable community TOIs, but 67% of 1,978 CTOI ephemerides no longer locate the transit (sectors to 107, 2026)",
+ "abstract": "Question: are the ephemerides of community TESS Objects of Interest (CTOIs) on ExoFOP reliable for follow-up? Approach: we did a forward test. For each CTOI we used only TESS light curves (SPOC 2-min, TESS-SPOC and QLP FFI) recorded after the CTOI last-modified date, up to sector 107 (August 2026). In the first later sector we searched for the transit inside a window of plus or minus 5 propagated sigma, with a red-noise box statistic and an empirical null from random phase windows. Results: 1,978 CTOIs had a predicted transit in later data. 1,334 (67%) cannot be tested against a prediction: 738 give no period or epoch errors, and for 596 the 5-sigma window is wider than a quarter period. Of 283 sensitive testable CTOIs, 250 (88%) show the transit in the window; the control false-recovery rate is 0.05%. Timing errors are correct in the core (median abs z 0.69) but have heavy tails: 8.4% have abs z above 3 and 5.2% above 5. An independent comparison of 284 promoted CTOIs with current TOI ephemerides gives 6.7% above 3. A period-only test finds a periodic signal for 83% of 777 sensitive lost CTOIs. All CTOIs of one large submitter give durations in days in the hours column. We give updated transit times for 947 CTOIs (569 on stars with no TOI), which agree with current TOI ephemerides within half a duration for 86-95% of promoted cases. Limitations: recovery shows periodic dimming on the target aperture, not a planet; we did no centroid or binary vetting; the last-modified date is not the submission date; depths from different pipelines differ.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "CTOI",
+  "community TOI",
+  "ExoFOP",
+  "ephemeris",
+  "transit timing",
+  "forward test",
+  "planet candidates",
+  "follow-up",
+  "QLP",
+  "TESS-SPOC",
+  "false alarm"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_outcomes_by_submitter.png",
+   "caption": "Outcome of the first TESS sector after the CTOI last-modified date for 1,978 CTOIs, by submitter: recovered in the prediction window, not recovered although sensitive, ephemeris lost (no errors given, or 5-sigma window wider than P/4), or low sensitivity."
+  },
+  {
+   "path": "files/figures/fig2_timing_z.png",
+   "caption": "Timing offset divided by the predicted uncertainty for 250 light-curve recoveries (blue) and for 284 promoted CTOIs compared with current TOI ephemerides (orange). The core follows N(0,1) (dashed); the tails are much heavier."
+  },
+  {
+   "path": "files/figures/fig3_example_drift.png",
+   "caption": "CTOI 2760219.01 (TOI-2382.01): the measured transit time drifts linearly from the CTOI prediction to -21 h (2.7 sigma) by sector 107 (right: folded sector 107 data)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the CTOI and TOI tables that we test."
+  },
+  {
+   "target": "doi:10.17909/t9-nmc8-f686",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPOC 2-min TESS light curves."
+  },
+  {
+   "target": "doi:10.17909/t9-wpz1-8s54",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS-SPOC FFI light curves."
+  },
+  {
+   "target": "doi:10.17909/t9-r086-e880",
+   "relations": [
+    "uses"
+   ],
+   "reason": "QLP FFI light curves."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/ac545b",
+   "reason": "Ivshina and Winn 2022, TESS transit timing of known planets; ephemeris maintenance context."
+  },
+  {
+   "target": "sci:sha256:434ee8c005d10e3938ec3e5252ee06ef6f7e8830823099f4b6726f2254df6b0f",
+   "reason": "Related campaign forward test of TOI follow-up predictions (TRICERATOPS FPP calibration)."
+  },
+  {
+   "target": "sci:sha256:dd04348fcad9296dd08f6abe0d55984cd9d4986d758fafe8712b2d775be0876d",
+   "reason": "Related campaign study of TESS transit timing against published ephemerides."
+  }
+ ]
+}
