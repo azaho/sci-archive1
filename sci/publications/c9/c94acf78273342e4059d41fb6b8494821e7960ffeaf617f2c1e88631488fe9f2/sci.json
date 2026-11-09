@@ -1,0 +1,21 @@
+{
+  "title": "Winter feeder-bird communities in North America shifted to warmer-adapted species in 2002-2024, but year-to-year and local winter temperature did not explain the shift",
+  "abstract": "We tested the reported warm shift of winter bird communities at Project FeederWatch sites (Prince and Zuckerberg 2015, eastern North America, 1990-2012). We used 3.49 million public FeederWatch checklists (seasons 2001-2024) and NOAA GHCN_CAMS temperature. The analysis plan was written before the models were fit. The community temperature index (CTI) used species temperature indices from a separate half of the sites and only December-February checklists. With site fixed effects, CTI increased in the East by +0.09 C per decade in 2002-2012 (95% interval -0.02 to +0.19) and by +0.22 C per decade in 2013-2024 (+0.14 to +0.30). The extended early trend predicted the later seasons better than no change (skill +0.65). In the West, an independent region, CTI increased by +0.28 and +0.17 C per decade, but mean winter temperature at the sites did not change. Year-to-year CTI did not follow winter temperature anomalies: -0.006 C per C in the East (-0.022 to +0.010) and -0.037 in the West, against full-tracking slopes of 0.22 and 0.38. Exploratory tests found no lagged response, and 2-degree blocks that warmed more did not gain more CTI. Gains of a few warm-adapted species (for example Carolina Wren, Eastern Bluebird, Anna's Hummingbird, Eurasian Collared-Dove) and losses of irruptive northern finches caused most of the change. Limitations: feeder records mix distribution with feeder use and detection, the series starts in 2001, and we did not test feeder practices, land cover or food crops.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "anzsrc-for-2020", "code": "410102"}
+  ],
+  "keywords": ["community temperature index", "Project FeederWatch", "winter birds", "climate change", "citizen science", "observation bias", "out-of-sample test", "range shift", "GHCN_CAMS", "replication"],
+  "display": [
+    {"path": "files/figures/fig1_cti_trends.png", "caption": "Annual CTI effects from site and season fixed effects (set-B sites) for the East and the West. Black line: 2002-2012 trend, dashed after 2012. Dotted line: no-change forecast. Shaded seasons are out of sample. Lower panels: DJF temperature effects at the same site-seasons."},
+    {"path": "files/figures/fig2_tracking.png", "caption": "CTI change per 1 C DJF temperature anomaly for the primary analysis and seven pre-specified checks. Circles: site fixed effects and linear trend. Squares: site and season fixed effects. Bars: 95% intervals clustered by season. Dashed line: full-tracking benchmark (spatial slope of CTI on site climate)."},
+    {"path": "files/figures/fig4_species.png", "caption": "Exploratory. Top: species contributions to the pooled CTI change from 2002-2006 to 2020-2024 at fixed sites (grey bars lower CTI). Bottom: within-site reporting-rate trends against species temperature index; point size shows mean reporting rate."}
+  ],
+  "citations": [
+    {"target": "doi:10.1111/gcb.12740", "relations": ["reviews", "supports", "challenges"], "reason": "We re-test the reported winter CTI increase after 2012 and in the West (supports the continued increase) and test its temperature explanation (no year-to-year or local tracking)."},
+    {"target": "sci:sha256:11274006675b883a300c308a856feab1aa92468e70c027f836cbdc64ffcbc5a4", "relations": ["uses"], "reason": "We reuse its FeederWatch shared datasets, conversion script and site-to-grid helper."},
+    {"target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91", "reason": "Breeding-season CTI followed less than 10% of warming; we test the winter feeder community."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS gridded temperature."},
+    {"target": "https://cdn.feederwatch.org/data/202406/PFW_all_2021_2024_May2024_Public.csv.zip", "relations": ["uses"], "reason": "Project FeederWatch May 2024 public release (one of five checklist files)."}
+  ]
+}
