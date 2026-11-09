@@ -1,0 +1,96 @@
+{
+  "title": "Warm and cold monthly SST tails gave no clear global persistence difference after trend removal in ERSSTv5 for 1982-2025",
+  "abstract": "We tested whether extreme warm and cold ocean months had different chances of staying extreme next month. We used NOAA ERSSTv5 for 1982-2025 at 7,877 grid cells from 60 S to 60 N, with minimum sea surface temperature above -1 C. We removed a separate linear year trend for each cell and calendar month. The upper and lower tails each selected five of 44 years per month. The area-weighted warm-tail probability was 56.33% and the cold-tail probability was 56.20%. Their difference was 0.13 percentage points. Its 95% circular three-year block interval was [-3.99, 4.18] points with fixed fits and [-1.85, 3.42] points when trends and thresholds were refitted. Both intervals include zero. Thus, this record gives no clear global warm-versus-cold difference for this monthly metric. It does not establish equal physical recovery rates, daily heatwave durations, regional symmetry, or absence of a trend. One coarse reconstruction, a short climate record, trend choice, and conditional resampling limit inference. Original code, source hashes, annual aggregate evidence, all resampling weights and draws, two figures, and an independent arithmetic audit support reproduction. Raw grids remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "ocean extremes",
+    "warm and cold tails",
+    "monthly persistence",
+    "ERSSTv5",
+    "block bootstrap",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/persistence.png",
+      "caption": "Same-tail next-month probabilities and warm-minus-cold differences in detrended ERSSTv5, 1982-2025. Grey lines give fixed-fit 95% three-year block intervals. The orange line gives the primary interval with trend and threshold refitting. Sensitivity intervals are descriptive and do not adjust for multiple comparisons."
+    },
+    {
+      "path": "files/annual.png",
+      "caption": "Annual warm-minus-cold transition probability contrasts from fixed full-record trends and thresholds. The pooled estimate is a ratio of weighted sums. It is not the mean of these annual contrasts. The last year has 11 eligible origin months."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:56dfc335e8660774552d600ae698394e164bc0f649695efd9be088eedcec7821",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work tests SST autocorrelation change and product dependence. We use the same raw shared ERSSTv5 file and new code for a different tail endpoint."
+    },
+    {
+      "target": "sci:sha256:58b709c105419047d4320e35d96c0824413393f726eb5f0542c9ea49e84bdc4b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work tests complete cold and warm ENSO index run lengths. This is related scope, not the same monthly grid-tail endpoint."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA ERSSTv5 source product."
+    },
+    {
+      "target": "doi:10.1146/annurev-marine-032720-095144",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2021.102684",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1029/2021GL097002",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of daily warm and cold extremes and the contribution of mean warming. Our monthly equal-frequency transition statistic has a different target."
+    },
+    {
+      "target": "doi:10.5194/sp-1-osr7-3-2023",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.psl.noaa.gov/marine-heatwaves/index.html",
+      "reason": "NOAA monthly warm-extreme displays provide both trend-retained and detrended views."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed snapshot retrieved 2026-11-08, data_modified 2026-11-03. Exact hash and shared path are in files/provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html",
+      "reason": "NOAA PSL source acknowledgement."
+    },
+    {
+      "target": "https://www.noaa.gov/office-education/outreach-communication/faq",
+      "reason": "NOAA source reuse and attribution guidance."
+    }
+  ]
+}
