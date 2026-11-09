@@ -1,0 +1,19 @@
+{
+  "title": "GCMT centroid delay identified classic tsunami earthquakes but gave no clear out-of-sample tsunami forecast gain for 1,202 shallow coastal M6.5+ earthquakes (1976-2025)",
+  "abstract": "Tsunami earthquakes have slow ruptures and make larger tsunamis than their magnitude predicts. We used the Global CMT centroid time delay, with the moment scaling removed (delay ~ M0^0.30), as a slowness measure. We matched 1,202 shallow (50 km or less), offshore or coastal GCMT earthquakes of Mw 6.5 or more (1976-2025) to the NCEI/WDS tsunami database. The five classic tsunami earthquakes (Nicaragua 1992, Java 1994, Peru 1996, Java 2006, Mentawai 2010) had delay residuals at the 79th to 99.5th percentiles. In the planned test, we fitted logistic models on 1976-2005 and tested them on 2006-2025. Adding the delay residual to Mw, depth, mechanism and coast distance did not reduce the log loss for tsunamis of 1 m or more: +0.06% (95% bootstrap -2.8% to +2.8%; base AUC 0.94). The reverse time split, any-tsunami and maximum-height outcomes, reverse faults only, Mw 7 or more, and the GCMT half-duration also gave no clear gain. A simulation showed only 7.4% power at the full-period effect size. In exploratory fits for Mw 7 or more, the delay coefficient was positive in both eras (all years 2.31 +/- 0.94). Without the five classic events, it fell to 1.67 +/- 0.97 (p = 0.085). The catalog delay marks rare extreme slow ruptures but carries little general tsunami-size information. Limitations: incomplete small-tsunami reports, observation-density effects on maximum height, hypocentre-time errors, and few tsunami earthquakes.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}],
+  "keywords": ["tsunami", "tsunami earthquake", "Global CMT", "centroid time delay", "rupture duration", "out-of-sample test", "NCEI tsunami database", "earthquake source", "hazard forecasting", "null result"],
+  "display": [
+    {"path": "files/figures/fig1_delay_scaling.png", "caption": "GCMT centroid delay against Mw for 1,202 shallow coastal M6.5+ earthquakes (1976-2025). Blue: tsunami of 1 m or more. Orange rings: five classic tsunami earthquakes, all above the delay ~ M0^0.30 fit."},
+    {"path": "files/figures/fig3_oos_gain.png", "caption": "Out-of-sample error reduction from adding the delay residual (percent of base log loss or MSE, 95% event bootstrap). The planned test (orange) and all secondary tests include zero or show a loss."},
+    {"path": "files/figures/fig4_height_residual.png", "caption": "Mw 7+ tsunamis: maximum-height residual after Mw, depth, mechanism and coast distance against the delay residual. Most of the slope (0.41) comes from the five classic tsunami earthquakes (0.14 without them)."}
+  ],
+  "citations": [
+    {"target": "doi:10.1016/0031-9201(72)90058-1", "relations": ["uses"], "reason": "Defines tsunami earthquakes with slow ruptures; we test a catalog proxy for this slowness."},
+    {"target": "doi:10.1029/JB086iB04p02825", "relations": ["uses"], "reason": "Centroid-moment tensor method behind the GCMT catalog."},
+    {"target": "doi:10.1016/j.pepi.2012.04.002", "relations": ["uses"], "reason": "Global CMT project catalog that supplies the centroid delays, moments and mechanisms."},
+    {"target": "doi:10.1029/98JB02236", "relations": ["uses"], "reason": "Energy-to-moment discriminant for tsunami earthquakes; the comparison measure that we did not compute."},
+    {"target": "doi:10.7289/V5PN93H7", "relations": ["uses"], "reason": "NCEI/WDS Global Historical Tsunami Database supplies the tsunami outcomes."},
+    {"target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/", "relations": ["uses"], "reason": "GCMT NDK files for 1976-2025."}
+  ]
+}
