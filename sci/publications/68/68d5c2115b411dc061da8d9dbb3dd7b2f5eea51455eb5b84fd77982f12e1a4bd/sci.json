@@ -1,0 +1,84 @@
+{
+  "title": "Contact size gave no clear response prediction gain for omitted pairs after cell effects in one MICrONS mouse",
+  "abstract": "We tested whether mean synaptic cleft size improves the prediction of measured movie response similarity when one connected pair is omitted from model fitting. We reused 8,128 MICrONS v1 connections from one mouse. The model had separate source and target effects and controls for contact count, geometry, region, layer and imaging scan. Only 5,158 pairs had an identified omitted prediction. The other 2,970 pairs were bridges in the source-target sampling graph. Adding log mean cleft size reduced mean squared error from 0.04176198 to 0.04168493, a 0.185% reduction. The absolute reduction was 0.00007705. A shared-neuron interval conditional on fitted predictions was -0.00013861 to 0.00029272. A complete source-deletion refit interval was -0.00020469 to 0.00035880. Both included zero. Joint omission of reverse-direction pairs gave a similar result. Independent solvers and raw data checks passed. This provides a response-completion benchmark and a check of prediction support. It does not reject a size-function relation. One mouse, selected cells, overlapping training sets, unstable small regional fits and approximate uncertainty limit the result. The test does not predict new neurons or animals.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "synapse size",
+    "functional connectomics",
+    "prediction",
+    "cell effects",
+    "graph support",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Prediction support, fit and omission errors, and conditional uncertainty for the contact-size increment in one selected MICrONS mouse panel."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source functional connectomics v1 data and prior size-function relation."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "reason": "Matched MICrONS anatomy and activity resource."
+    },
+    {
+      "target": "https://archive.sci.azaho.org/publications/64c18783-2f97-4c55-88ab-24c71fb2ecb6/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior published size association and compact input extraction; the current work tests omitted-pair prediction with new code."
+    },
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign contact-count analysis motivated separation of association and prediction. Its code and fitted values were not reused."
+    },
+    {
+      "target": "doi:10.1093/pan/mpv018",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared-neuron score variance principle for the fixed-prediction diagnostic."
+    },
+    {
+      "target": "doi:10.3982/ECTA16410",
+      "reason": "Prior leave-out identification and large two-way-effects model methods; no variance-component estimator from it is claimed here."
+    },
+    {
+      "target": "https://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/statug_intromod_sect046.htm",
+      "reason": "Standard exact PRESS residual identity."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions",
+      "reason": "Source data terms and attribution."
+    }
+  ]
+}

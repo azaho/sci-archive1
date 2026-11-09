@@ -1,0 +1,93 @@
+{
+ "title": "Grid cells in opposite hemispheres of two rats kept their open-field share of toroidal phase coupling in REM and slow-wave sleep in three testable modules",
+ "abstract": "Question: do grid cells in the left and right medial entorhinal cortex keep one shared toroidal state when there is no shared spatial input? Approach: we used Gardner et al. 2022 recordings from two rats with one Neuropixels probe per hemisphere (six bilateral grid modules). For each module and state (open field, wagon wheel, REM sleep, slow-wave sleep), we measured the slope of pair spike-count correlation (50 ms) on open-field grid-phase similarity, for pairs across hemispheres and within a hemisphere, with cell-bootstrap intervals. We also decoded the toroidal phase every 100 ms from each hemisphere separately. Result: in the three modules that we could test in sleep, cross-hemisphere phase coupling stayed positive in REM and slow-wave sleep (all 95% intervals above zero). The cross/within slope ratio was 0.53 to 0.79 in the open field and 0.56 to 0.81 in sleep. A gain-normalised ratio changed from open field to sleep by factors of 0.92 to 1.16; all six intervals include 1. Phases decoded from the two hemispheres agreed better than all 200 time-shift controls, with best agreement at zero lag. Limitations: two animals; in one rat most probe-1 cells are conjunctive cells, so cell class and hemisphere are confounded; one module was untestable because its probe-1 cells had no phase coupling among themselves, so the strict pre-specified rule failed; the data show a shared state, not the path (commissural axons, common input, or one bilateral attractor). The gain-normalised and state-invariance statistics are post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "grid cells",
+  "medial entorhinal cortex",
+  "continuous attractor",
+  "interhemispheric coupling",
+  "sleep",
+  "REM",
+  "slow-wave sleep",
+  "toroidal topology",
+  "Neuropixels",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_state_invariance.png",
+   "caption": "Gain-normalised cross-hemisphere phase coupling by state, and its change from the open field (95% cell bootstrap)."
+  },
+  {
+   "path": "files/figures/fig1_pair_coupling.png",
+   "caption": "Pair correlation against grid-phase similarity, and slopes and ratios for opposite- and same-hemisphere pairs in each module and state."
+  },
+  {
+   "path": "files/figures/fig2_joint_decoding.png",
+   "caption": "Agreement of toroidal phases decoded separately from each hemisphere, with time-shift controls and lag profiles."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-021-04268-7",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source recordings, sleep epochs and module labels; we add an explicit cross-hemisphere test of the shared torus."
+  },
+  {
+   "target": "https://figshare.com/articles/dataset/Toroidal_topology_of_population_activity_in_grid_cells/16764508",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spike-time data, version 6 (CC0)."
+  },
+  {
+   "target": "https://github.com/erikher/GridCellTorus/tree/ce920c1d849edc6b6eb40dc091f38f27b1226009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "REM and SWS epoch times copied from utils.py."
+  },
+  {
+   "target": "https://sci.azaho.org/publication/?id=8d4ddead-f922-409c-be5c-e1a3a55ad829",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cell table, probe labels, grid phases, lattices and artefact flags (shared dataset gardner_2022_grid_cell_pair_ccg v1)."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0360-0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Grid-cell correlation structure is preserved in sleep; we extend this to pairs across hemispheres."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0359-6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Sleep co-activity reflects grid-field overlap."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2022.03.011",
+   "reason": "Module coordination without sensory cues in the same kind of recordings."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2022.08.013",
+   "reason": "Commissural MEC input affects spatial cells in the other hemisphere; a candidate path."
+  },
+  {
+   "target": "doi:10.1371/journal.pcbi.1000291",
+   "reason": "Continuous attractor model of grid cells."
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+  "title": "The gap between observed bloom variance and frozen model variance increased at 46 Japan sites in 1954-2021",
+  "abstract": "We tested whether changes in year-to-year cherry bloom variance exceeded changes from a frozen forcing model. We used the same sites in 1954-1987 and 1988-2021 and removed local linear trends. The samples had 3,098 records at 46 Japan sites and 1,811 records at 29 Swiss sites. In Japan, observed mean residual variance changed from 16.12 to 21.59 days squared. Model variance changed from 9.73 to 7.90. The excess change was 7.30 days squared, with a 97.5% five-year block interval of 0.98 to 13.35. All planned Japanese checks kept positive intervals. The Swiss excess was 5.51, with an interval of -17.88 to 34.18. A common excess change was not established. The Japanese ratio of variance ratios had an adjusted interval that included one. The result thus depends on the additive variance scale. The observed Japanese variance change alone also had an interval that included zero. We reuse a published panel and hold model parameters fixed. Selected records, unknown observation changes, monthly Japanese weather, and omitted model uncertainty limit inference. The result does not identify a cause. The package includes code, source hashes, all bootstrap draws, raw-date checks, numerical checks, and figures.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "cherry bloom",
+    "phenology",
+    "variance change",
+    "thermal time model",
+    "observation bias",
+    "Japan",
+    "Switzerland",
+    "block bootstrap",
+    "reproducible analysis"
+  ],
+  "display": [
+    {
+      "path": "files/results/variance_comparison.png",
+      "caption": "Observed and frozen-model residual variance in two equal periods. The additive variance-gap increase is clear under the stated block model in Japan. The Swiss contrast is uncertain. Intervals are 97.5% and condition on the fitted model."
+    },
+    {
+      "path": "files/results/annual_residual_energy.png",
+      "caption": "Annual mean squared bloom residuals at fixed selected sites. Local site and period trends were removed. Shared unusual years remain together in bootstrap samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d997794cd5da3aabb17a004339fe9e877502137746ec1c02d19fd110ce5bb960",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified source of observed dates, frozen model dates, model code, and raw-data provenance. This is a new variance test on overlapping data."
+    },
+    {
+      "target": "sci:sha256:a893337e0f64f73382ff79f62aea73d1510b1a533e38a0c1805ac0fcbc617d93",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior slope reanalysis motivates attention to shared years and site trends; its outcome differs."
+    },
+    {
+      "target": "doi:10.1111/gcb.15746"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2604.23744",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Version 2 motivates a thermal-model reference for event variance. We test one historical frozen model, with a different statistic and scope."
+    },
+    {
+      "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979/data",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.data.jma.go.jp/stats/etrn/index.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited Japanese model weather source; not reprocessed here."
+    },
+    {
+      "target": "doi:10.1029/2017JD028200",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inherited E-OBS source method; raw climate inputs are not independently rebuilt here."
+    },
+    {
+      "target": "https://opendata.swiss/en/dataset/phanologische-beobachtungen",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MeteoSwiss source named by the fixed compiled archive; this study audits against that archive."
+    }
+  ]
+}

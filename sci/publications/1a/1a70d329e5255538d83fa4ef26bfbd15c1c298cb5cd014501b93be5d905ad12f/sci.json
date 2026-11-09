@@ -1,0 +1,77 @@
+{
+  "title": "All 20 selected short-period box signals on KIC 11084727 have a larger shifted control in later Kepler data",
+  "abstract": "We search for short periodic losses of light in Kepler release 25 data for the known exocomet-candidate host KIC 11084727. Early data select 20 free-epoch box signals from 46,111 trial periods between 0.5 and 20 days. We refine the periods on early data only. In later data, every selected signal has at least one larger local depth among 39 shifted-epoch controls. These finite comparisons are not false-alarm probabilities. At its refined discovery ephemeris, the leading 1.881657-day signal falls from 39.4 to 7.4 parts per million. The later quarter-resampling interval includes zero. All selected fits reach the widest tested duration. Smooth periodic fits outside the selected core explain the broad discovery minima, but have weak or negative predictive skill in later data. Matched fixed-ephemeris injections retain about 94 to 96 percent of the added short-box depth. This is not blind-search completeness. We report no new planet, comet, or physical source. One filter, a selected peak list, ephemeris uncertainty, broad stellar variation, blends, and instrument effects limit the test. Source hashes, retained data, code, all selected events and controls, figures, and offline reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 11084727",
+    "transit search",
+    "stellar variation",
+    "time validation"
+  ],
+  "display": [
+    {
+      "path": "files/morphology.png",
+      "caption": "Full-phase flux for the two leading trial periods. Smooth models use discovery data outside the selected event core. Broad variation and changed phase patterns limit a transit interpretation."
+    },
+    {
+      "path": "files/validation.png",
+      "caption": "Refined discovery and later depths with conditional quarter intervals; matched short-box injection response."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates the selected target with its known isolated exocomet-like event."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior automated search recovered the known isolated event."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The standard box least-squares search method."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/api/astropy.timeseries.BoxLeastSquares.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign isolated-dip search and detector-season audit, using the same raw archive."
+    },
+    {
+      "target": "sci:sha256:eef3f5bcf1f677f4f36a85b080e40a0c85afabb8795a076402c58c9eba1a0206",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fixed-known-epoch shape repeat test differs from this free-epoch short-box search."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public raw-data source."
+    }
+  ]
+}

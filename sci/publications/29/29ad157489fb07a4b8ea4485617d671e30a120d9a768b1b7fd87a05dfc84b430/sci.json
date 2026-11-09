@@ -1,0 +1,67 @@
+{
+  "title": "Quality-flag choices change fixed-template repeat coverage for KIC 11084727 in Kepler release 25",
+  "abstract": "We compare three quality rules in 18 quarters of public Kepler release 25 data for KIC 11084727. A fixed shape from the known dip and a 90-percent local support rule give 9554 eligible centers with zero flags, 36465 when only the corrected aperture cosmic-ray flag is allowed, and 54279 with the default Lightkurve mask. The default rule retains 15.42 percent more exposures than the zero-flag rule but gives 5.68 times as many eligible centers. On 95001 periods from 50 to 1000 days, the fraction with a covered repeat rises from 29.48 to 84.37 percent. No extra corrected-flux dip reaches the 596.16-ppm threshold. Full reference-depth injections pass at all 1000 tested eligible centers per rule. The result is a selection audit under one demanding coverage rule. It is not an orbit exclusion, population rate, new object, or independent confirmation. Code, source hashes, derived data, maps and numerical checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "quality flags",
+    "repeat coverage",
+    "exocomets"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Three quality rules change local template support and repeat coverage. The period curves use 25-day bins. Fractions describe the tested grid and are not orbit probabilities."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3ad3ef7074f8b344bacecfb328a882f9e97bab854a49a742f425c63bac2dae95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior null repeat and activity tests motivate a quality-selection audit with a different coverage rule."
+    },
+    {
+      "target": "sci:sha256:26a0ab6a554b3e388e72776fffe63ec5d0a64cb9ec2428c16316227b6b0f0694",
+      "reason": "Prior instrument tests caution against physical claims from aperture dips."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735"
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "https://lightkurve.github.io/lightkurve/reference/api/lightkurve.KeplerTargetPixelFile.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the default Kepler quality bitmask."
+    },
+    {
+      "target": "https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/kepler/_documents/KSCI-19116-002.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the corrected aperture cosmic-ray flag."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

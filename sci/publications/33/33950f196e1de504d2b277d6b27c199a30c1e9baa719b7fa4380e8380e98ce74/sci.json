@@ -1,0 +1,66 @@
+{
+  "title": "Mouse cortical slice reciprocity exceeds a group and distance null in Allen r2.1 data",
+  "abstract": "We tested detected reciprocal connections in Allen Synaptic Physiology r2.1. The sample had 10,622 mouse and 1,048 human cortical cell pairs with eligible tests in both directions. A uniform null model held the connection count fixed within each recorded group, ordered cell class, and 50 micrometre distance bin. Mouse data had 348 reciprocal pairs versus 296.059 expected. The central 95% null range was 284 to 309. Human data had 24 versus 21.464 expected, within the range of 17 to 26. The mouse result remained above the null range after Cre and layer controls. These are conditional tests of finite slice tables. They do not establish a species difference, a reciprocal growth rule, or an effect on neural dynamics. Cell degrees, detection error, slice damage, and unequal sampling remain limits. Code, selected records, exact means, randomization draws, and checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocity",
+    "conditional randomization",
+    "cortical circuits",
+    "distance"
+  ],
+  "display": [
+    {
+      "path": "files/reciprocity.png",
+      "caption": "Recorded-group and distance controls increase the null mean. Bars show central null ranges, not population confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and measured local circuit data."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior evidence for nonrandom reciprocal wiring."
+    },
+    {
+      "target": "doi:10.1038/s41593-026-02395-w",
+      "reason": "Prior work connects motif statistics to models of activity dimensionality."
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related fixed-degree test in selected complete excitatory graphs. This report tests different constraints in all eligible dyads."
+    },
+    {
+      "target": "sci:sha256:eeecd73fe7bc03229d7032ac8a05c575de66133a08f55bbd97d02b6b19a27844",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bounds on missing calls state that pooled probability variation is not controlled."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/connectivity.py",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

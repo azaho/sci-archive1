@@ -1,0 +1,68 @@
+{
+  "title": "Daily type-preserving shuffles give no clear positive one-hour magnitude-count direction in two earthquake catalogs on days 1 to 30",
+  "abstract": "We tested whether larger earthquakes have more events in the next hour than in the previous hour. We used fixed USGS catalogs for Ridgecrest and Monte Cristo, with preferred magnitude at least 2.5 on days [1,30) after each mainshock. We held times fixed and shuffled magnitudes within each elapsed day and preferred magnitude type. The mean product of centered magnitude and future-minus-past count was -0.04022 at Ridgecrest and 0.04552 at Monte Cristo. Neither score gave clear evidence for the tested positive relation in 9,999 shuffles per case. Checks of time window, local area, time bin, magnitude floor, radius and start time also gave no clear positive result. This extends published local count and adjacent-wait tests to one-hour counts over each query region. It does not show that physical triggering is independent of magnitude. Selected sequences, mixed preferred scales, missed events, and the shuffle assumption limit inference.",
+  "keywords": [
+    "earthquake",
+    "Ridgecrest",
+    "Monte Cristo",
+    "time direction",
+    "magnitude type",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/time_direction.png",
+      "caption": "One-hour count scores and daily type-preserving permutation reference distributions. Red lines are observations. Null ranges are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:34ec48e5a5a33b8bf4cbcd0a6360963c71e29e2bc4182a5a639a82db831e8518",
+      "reason": "Related Ridgecrest local count-gradient test; this study adds regional one-hour counts in two cases."
+    },
+    {
+      "target": "sci:sha256:4343da7c45893b1150f403b1417d841e36a05bedd1e57a4ad45ad7b194aea499",
+      "reason": "Related waiting-time diagnostic in the same catalogs."
+    },
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "reason": "Daily count test gives context for within-sequence rate change."
+    },
+    {
+      "target": "sci:sha256:15b802229634c625004f1dd8f8beddb0f6c5c8ac4653a0082dc155efe48c83a1",
+      "reason": "Spatial boundary audit motivates radius check."
+    },
+    {
+      "target": "doi:10.1029/2021JB022454",
+      "reason": "Earlier work on time asymmetry; statistic differs."
+    },
+    {
+      "target": "doi:10.1029/2023JB027089",
+      "reason": "Detection loss can bias rate inference."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "reason": "USGS event query specification."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen public catalog input."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen public catalog input."
+    }
+  ]
+}

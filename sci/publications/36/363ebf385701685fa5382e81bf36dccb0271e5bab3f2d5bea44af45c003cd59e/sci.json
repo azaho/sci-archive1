@@ -1,0 +1,127 @@
+{
+ "title": "GRACE land water storage did not stay below a precipitation-memory model after 6,987 droughts in 2002-2026; a short symmetric overshoot followed extreme months",
+ "abstract": "Question: after a meteorological drought ends, does land total water storage stay below the level that precipitation and temperature history predict, as reported for runoff in Victoria, Australia?\n\nApproach: we used CSR GRACE/GRACE-FO RL06.3 mascons, GPCP v2.3 precipitation and GHCN-CAMS temperature on 1,739 land cells of 2.5 degrees (56 S to 60 N). Droughts and wet spells come from precipitation only (6-month standardised anomaly). For each event, a per-cell linear model (trend, seasonal terms, leaky precipitation and temperature memory) was fitted without the event window. The endpoint D is the mean out-of-sample residual in the 24 months after the event end. A common time shift of all event windows (182 offsets) gave the placebo distribution and kept the spatial correlation.\n\nResults: for 6,987 droughts in 1,706 cells, D = +0.044 SD (placebo 95% range -0.047 to +0.080; one-sided p = 0.89). Storage did not stay low. The one-sided 95% bound on a mean deficit is 0.028 SD (about 0.09 cm). An added deficit of 0.25 SD was detected. Wet spells gave W = -0.057 SD, and D + W was at the placebo centre, so there was no asymmetry. No trend term, a 12-month window, a stricter threshold and glacier-box removal gave the same conclusion. No cell passed a false discovery rate of 0.1. Exploratory: storage was above the model in months 1-6 after droughts (+0.13 SD) and below it after wet spells (-0.12 SD). Both were outside all placebo values. These values follow single extreme months that the event rule selects. A fast 1-month memory term did not remove them.\n\nLimitations: GRACE resolution of about 300 km, one precipitation product, a linear model, other events in the fit set, and a post hoc analysis of the overshoot with an unknown cause.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "GRACE",
+  "GRACE-FO",
+  "terrestrial water storage",
+  "drought recovery",
+  "hydrological memory",
+  "GPCP",
+  "placebo test",
+  "out-of-sample prediction",
+  "wet spells",
+  "non-recovery",
+  "CSR mascons",
+  "global hydrology"
+ ],
+ "display": [
+  {
+   "path": "files/figures/placebo.png",
+   "caption": "Observed post-window mean residuals (vertical lines) against 182 common-shift placebo values (gray). Left: D after 6,987 droughts. Middle: W after 7,702 wet spells. Right: D + W. Dashed lines in the left panel: D after added deficits of -0.25 and -0.5 SD."
+  },
+  {
+   "path": "files/figures/composite.png",
+   "caption": "Mean out-of-sample storage residual from 24 months before to 36 months after drought ends (orange) and wet-spell ends (blue), with 95% 10-degree block bootstrap bands. Left: primary model. Right: exploratory model with an added fast 1-month memory term. The post window is shaded."
+  },
+  {
+   "path": "files/figures/map_post_drought.png",
+   "caption": "Per-cell mean residual in months 1-24 after drought ends. Red: storage below the model. No cell passed a Benjamini-Hochberg false discovery rate of 0.1 against its own placebo distribution."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Tests the same non-recovery idea for runoff in US reference catchments and finds no persistent deficit. Our global total-storage result agrees."
+  },
+  {
+   "target": "sci:sha256:3a9efb99ba32f6796260be8d434434bb7c2140aab8360b039f7ef010c8066a5b",
+   "reason": "Uses the same shared CSR GRACE file for a different question (earthquake rates)."
+  },
+  {
+   "target": "sci:sha256:fd47a1b2b27bb4ce6df6e323179b5654419a5adc58201c473fdfb3e60417d2d2",
+   "reason": "Uses the same shared CSR GRACE file to measure California storage recovery after 2019-2022."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "reason": "Peterson et al. 2021: runoff did not recover after the Millennium Drought in about one third of Victorian catchments. Source of the tested hypothesis."
+  },
+  {
+   "target": "doi:10.1002/2016JB013007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR mascon method (Save et al. 2016)."
+  },
+  {
+   "target": "doi:10.15781/cgq9-nh24",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR RL06 mascon land mask."
+  },
+  {
+   "target": "doi:10.3390/atmos9040138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GPCP v2.3 monthly precipitation (Adler et al. 2018)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS land air temperature (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "doi:10.5194/essd-11-1153-2019",
+   "reason": "GRACE-REC: statistical model of climate-driven storage from precipitation and temperature, similar in form to our model."
+  },
+  {
+   "target": "doi:10.5194/hess-25-511-2021",
+   "reason": "Precipitation-based drought recovery estimates from GRACE storage deficits."
+  },
+  {
+   "target": "doi:10.5194/hess-29-3359-2025",
+   "reason": "Global drought recovery time from GRACE/GRACE-FO and gridded precipitation including GPCP."
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL0603_Mascons_all-corrections.nc",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://download.csr.utexas.edu/outgoing/grace/RL0603_mascons/CSR_GRACE_GRACE-FO_RL06_Mascons_v02_LandMask.nc",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/gpcp/precip.mon.mean.nc",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Matched Allen slice circuits give no clear endpoint timing similarity after correction",
+  "abstract": "We tested whether detected synapses that share a source or target cell have similar timing beyond cell labels and recording conditions. We used Allen Synaptic Physiology r2.1 and fixed each sampled circuit. We shuffled positive timing values within recording, synapse type, and exact source and target labels. We tested voltage and current rise and decay times, plus onset delay, in mouse and human data. 0 of 20 tests passed Holm correction at 0.05. The smallest raw permutation p-value was 0.0072, for mouse target psc_decay_tau; its corrected value was 0.1440. The comparison uses all matched edge pairs as its shuffle reference. It adds current-response tests and a different reference to prior campaign work on voltage timing. Small selected slice circuits, uncertain fitted responses, missing data, and unverified exchangeability limit inference. Slice bootstrap intervals do not measure animal-level replication. The package supplies code, extracted edge records, exact source hashes, random draws, an independent score check, and a figure. This study does not establish timing independence or a rule for intact brains.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic kinetics",
+    "shared target",
+    "shared source",
+    "conditional permutation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/kinetics.png",
+      "caption": "Reduction in squared log2 timing difference for shared endpoints against a fixed-graph shuffle reference. Positive values mean more similar timing. Intervals are nominal 95% slice bootstrap intervals. Holm tests control 20 comparisons."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and prior cell-type findings."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "reason": "Definitions of stored response kinetics; this commit is not known to be the database build commit."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published question and matching precedent. We add current measures and use all within-stratum pairs as the null reference. No code or evidence table was reused."
+    },
+    {
+      "target": "sci:sha256:58ac228473dc3480633fee92bf7ee192ba9edc69c29e0b7d633e0cd60f0abe69",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior voltage-current decay comparison; our tests score each shared endpoint against reassignment separately."
+    }
+  ]
+}

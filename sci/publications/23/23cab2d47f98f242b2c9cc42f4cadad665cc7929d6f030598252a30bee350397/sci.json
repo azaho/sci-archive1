@@ -1,0 +1,66 @@
+{
+  "title": "Separate lateral and vertical squared-distance slopes gave no clear prediction gain in selected same-layer mouse V1 slices",
+  "abstract": "We tested whether separate lateral and vertical squared-distance slopes improve detected chemical connection prediction within the same intended cortical layer. Allen Synaptic Physiology r2.1 supplied 16,304 mouse V1 directions, 1,425 detected connections and 744 inferred donors. The vertical-minus-lateral slope was -0.055 per (100 micrometres) squared, with nominal 95% donor cluster interval -0.242 to 0.132. Five-fold donor validation gave directional-minus-radial log loss 0.000178 nats per direction, with conditional donor interval -0.000041 to 0.000409. Thus, the added slope gave no clear gain. An exploratory excitatory-to-excitatory contrast did not pass correction for four class tests and had uncertain prediction gain. This extends prior angle-term tests with an explicit quadratic metric. It is not an independent biological replication. Slice selection, inferred donors, coordinate error, intended layer labels and fixed model form limit the result. The package contains source provenance, code, source-row extracts, predictions, checks and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "cortical connectivity",
+    "spatial geometry",
+    "quadratic model",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/geometry.png",
+      "caption": "Vertical-minus-lateral squared-distance slopes with nominal 95% donor cluster intervals. The right panel shows pooled-model curves for excitatory pairs in intended layer 5. Secondary class contrasts are exploratory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source experiment links cell geometry and measured chemical connections."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:fbf72e5e346730a40eb36692d05fb31a2a9bd6431389df34cdcd3c97c1ca6c15",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior alignment main-effect test. We test separate squared-distance slopes on the same raw release."
+    },
+    {
+      "target": "sci:sha256:9be684ef4becd13196677924a8c7ec3c732deeff4763166a6635710a89335b3f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior angle interaction with reverse connection call; used for context and donor grouping design."
+    },
+    {
+      "target": "sci:sha256:2a0427bbf298e2f9824dc0ad925a2edd94f532d518ce4b1bf868a0e160b16edb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related signed-depth direction test on the same source."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/database/schema/experiment.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/connectivity.py"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Dendrite geometry reduced short-to-long current ratio prediction error in 509 Allen mouse cells under a tuned linear model",
+  "abstract": "We tested whether reconstructed dendrite geometry improves prediction of the stored short-square to long-square current ratio after electrical properties and broad cell labels are known. We used linked Allen Cell Types data and nested validation with whole donors held out. In 509 mouse cells from 372 donors, six geometry terms reduced mean squared log error from 0.16288 to 0.15321, a 5.94% reduction. The conditional 95% donor bootstrap interval for absolute reduction was 0.00228 to 0.01731. In 158 human cells from 35 donors, error fell from 0.03141 to 0.02849, but the interval for reduction was -0.00252 to 0.00794. Geometry increased error in the human spiny-only check. Cross-species spiny-cell transfer gave opposite gain directions. The stored short-square field is a selected stimulus amplitude, not a fitted strength-duration curve. Selected slice cells, cut arbors, incomplete labels, one fold partition and intervals that hold fitted predictions fixed limit inference. The mouse prediction gain does not establish a cable mechanism or a rule across species. Code, source hashes, cell-level evidence and independent checks are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendritic morphology",
+    "current ratio",
+    "donor validation",
+    "cross-species transfer"
+  ],
+  "display": [
+    {
+      "path": "files/geometry_gain.png",
+      "caption": "Change in held-out mean squared log-ratio error after six geometry terms are added. Positive values favor geometry. Bars are nominal conditional 95% donor intervals. Full all-cell tests are primary. Other tests are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0466123116d622a0e42ac9662435e9865605640d860c66fc950352d1c3e2cc7f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior long-step threshold-current prediction in the same cache. We change the endpoint and model test. No code or numerical tables were reused."
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0417-0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03813-8"
+    },
+    {
+      "target": "doi:10.1016/j.neuroscience.2012.04.004"
+    },
+    {
+      "target": "https://celltypes.brain-map.org/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/ephys/ephys_extractor.py",
+      "reason": "Defines selection of the stored short-square stimulus amplitude."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/AllenSDK/v2.16.2/allensdk/internal/ephys/core_feature_extract.py",
+      "reason": "Maps stored current fields to extracted features."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

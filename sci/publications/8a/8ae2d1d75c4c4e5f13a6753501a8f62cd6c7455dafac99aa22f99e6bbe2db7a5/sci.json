@@ -1,0 +1,74 @@
+{
+  "title": "The usual fixed-degree reciprocity test cannot reject at 0.05 in 194 selected Allen mouse slice graphs",
+  "abstract": "We tested the power of conditional circuit-motif tests with exact graph counts from two signed Allen Synaptic Physiology analyses. The primary sample has 194 mouse excitatory slice graphs. After each cell input and output count is fixed, its smallest attainable upper-tail p-value is 5/16. The usual test at 0.05 therefore has zero power for any allowed wiring. For an alternative that weights configurations by exp(theta times reciprocal count), every size-0.05 test has power at most 0.16. A boundary-randomized test reaches this limit as theta increases. The mouse three-cell cycle test also has an empty ordinary rejection region under degrees, class totals, and reciprocal count. A design benchmark with new independent copies of the primary reference profile first reaches 80% ordinary power after 31, 9, and 6 copies at count weights 2, 4, and 8. These are conditional model calculations, not animal-number recommendations. New enumeration reproduced the histograms for 484 source graphs. The package includes source tables, code, exact counts, power curves, a figure, source hashes, and independent checks. Fixed conditioning, selected slice graphs, inferred donors, detection error, and the absence of activity outcomes limit the result. It does not show that reciprocal wiring lacks a biological function.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit motifs",
+    "conditional power",
+    "reciprocal connections",
+    "exact test",
+    "study design"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/power.png",
+      "caption": "Exact conditional test limits and a hypothetical design benchmark. The usual fixed-degree reciprocity test has no rejection region at 0.05 in the selected 194 mouse graphs. Power curves use a specified exponential count-weight model, not measured neuronal dynamics."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the published excitatory graph tables and exact reference histograms. We add attainable-p and conditional power calculations."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the published mixed-class graph tables and exact joint histograms for three-cell power diagnostics."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original Allen paired-recording data and source methods."
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068",
+      "reason": "Prior cortical motif study."
+    },
+    {
+      "target": "doi:10.2307/2531456",
+      "reason": "Prior use of minimum attainable p-values in discrete testing."
+    },
+    {
+      "target": "doi:10.1080/01621459.1981.10477598",
+      "reason": "Prior exponential-family model for directed graphs and reciprocity."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Underlying raw source, read for initial exploratory counts; final power inputs are the cited signed derived tables."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "reason": "Public data registry and source attribution."
+    }
+  ]
+}

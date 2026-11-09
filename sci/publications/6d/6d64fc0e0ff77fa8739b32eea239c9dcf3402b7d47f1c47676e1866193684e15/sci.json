@@ -1,0 +1,76 @@
+{
+  "title": "Chemical delay values cover fewer Pvalb links with electrical calls in Allen mouse V1 data",
+  "abstract": "We tested whether electrical calls mark faster chemical transmission among Pvalb cells in Allen Synaptic Physiology r2.1 small. We selected 509 inhibitory chemical directions from mouse visual cortex with binary electrical calls in both directions. Delay values were present for 19 of 96 electrical-positive directions (19.8%) and 342 of 413 electrical-negative directions (82.8%). The difference was -63.0 percentage points, with an animal-bootstrap 95% range of -71.9 to -53.1. In 361 directions with delay values, the adjusted geometric mean delay ratio was 1.112 (95% interval 0.983 to 1.258; p=0.090). The model controlled for log soma distance, target layers, and project. Uncertainty used inferred animal groups. The measured subset did not support shorter chemical delays. PSP rise and decay estimates were uncertain. The large difference in kinetic coverage prevents a claim about all detected chemical links. These slice data do not establish anatomical gap junctions, in vivo synchrony, or a causal effect. We include source identifiers, derived data, code, source hashes, and repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Pvalb",
+    "electrical coupling",
+    "chemical latency",
+    "missing data",
+    "Allen Synaptic Physiology"
+  ],
+  "display": [
+    {
+      "path": "files/availability.png",
+      "caption": "Delay values cover fewer electrical-positive chemical directions. Counts refer to directed chemical links, not independent animals."
+    },
+    {
+      "path": "files/timing.png",
+      "caption": "Adjusted geometric mean ratios and normal animal-cluster 95% intervals. The recording check has only five to seven animal groups. Secondary outcomes and checks are exploratory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and released Allen multipatch database."
+    },
+    {
+      "target": "doi:10.1073/pnas.192159599"
+    },
+    {
+      "target": "doi:10.1152/jn.00304.2015"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://sci.azaho.org/publication/?id=a27386e9-8adf-4697-9709-cda8180bbc0c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published prior analysis of electrical and chemical call occurrence. We extend the question to timing and kinetic coverage."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/tree/b264d8b61abf11d015222865ca081f80655d33d4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Field definitions and kinetic aggregation methods; exact database build commit unknown."
+    },
+    {
+      "target": "sci:sha256:cebedcac7a4bcf2b4da3455fa17238cb5476156489c2be517926a71d503a85e9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published co-occurrence test shows sensitivity to the electrical-call rule and comparison support. The present endpoint is delay and kinetic availability."
+    },
+    {
+      "target": "sci:sha256:4b4b96155e7c48a44519e6bfe284be95088b19d8be9ff149097cb29d902b98e7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related test of excitatory strength-delay ordering; it does not test the present Pvalb electrical-label contrast."
+    }
+  ]
+}

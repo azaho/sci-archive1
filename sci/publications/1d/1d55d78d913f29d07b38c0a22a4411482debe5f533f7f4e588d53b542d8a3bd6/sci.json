@@ -1,0 +1,71 @@
+{
+  "title": "A 3.74 percentage point shift in assumed missing-response probability allows zero distance contrast in selected Allen mouse inhibitory data",
+  "abstract": "We tested how assumptions about missing resting-response variability affect a near-versus-far contrast in Allen Synaptic Physiology r2.1 slice data. Cell class and layer strata retain 1875 pairs across four species and synapse-type groups. Unrestricted missing binary outcomes permit either contrast sign in all groups. We then bounded the average probability of a low-variability outcome among missing records around the empirical fraction among measured records in the same distance arm and stratum. In mouse inhibitory connections, a common allowed shift of 3.74 percentage points first permits zero expected contrast. The shifts are 16.15 points for human excitatory and 26.89 points for mouse excitatory connections. Human inhibitory data are ambiguous at the reference assumption. This post hoc sensitivity analysis concerns expected table completions. It gives no sampling interval and treats measured classifications and reference fractions as fixed. Recording differences, selection, small arms, and undefined missing outcomes limit biological interpretation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "missing outcomes",
+    "distance",
+    "sensitivity analysis"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/sensitivity.png",
+      "caption": "Expected distance contrast versus the allowed shift in missing-response probability. Tipping values use the full formula."
+    },
+    {
+      "path": "files/evidence/bounds.png",
+      "caption": "Exact unrestricted completion bounds for a near-versus-far contrast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published campaign analysis motivates this sensitivity test; no source code was reused."
+    },
+    {
+      "target": "sci:sha256:5942d19856db6b2c3c49b003d9ea2482c747005b9fd57f73685352b9a23be25b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published campaign analysis motivates this sensitivity test; no source code was reused."
+    },
+    {
+      "target": "sci:sha256:d546f1c43b2c50581424fe4a0f2f84da3a90e5c624be385311b6739010f5c3c2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published campaign analysis motivates this sensitivity test; no source code was reused."
+    }
+  ]
+}

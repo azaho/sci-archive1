@@ -1,0 +1,55 @@
+{
+  "title": "Target sag gave no clear input connection prediction gain in four Allen slice samples at C=1",
+  "abstract": "We tested whether the stored target-cell sag feature adds information for detected chemical input connections. We used Allen Synaptic Physiology r2.1 small paired recordings. Separate models tested excitatory and inhibitory sources in mouse visual cortex and human temporal cortex. The reference used cell labels, recording project, solution, distance, test effort, target membrane time and input resistance. Five folds held out whole inferred donors, with three fixed fold allocations. At the primary inverse penalty C=1, 0 of four conditional 98.75% donor bootstrap intervals were wholly above zero. Gains in equal-donor mean log loss were human in: -0.008181, human ex: -0.002991, mouse ex: -0.000402, mouse in: 0.000264. This result concerns a fixed prediction model and selected slice pairs. It does not measure an HCN-current mechanism or intact-brain computation. Missing data, detected-edge selection, inferred donor labels, and intervals conditional on fitted models limit the result. Code, pair records, held-out predictions, uncertainty draws, and an independent score audit are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectivity",
+    "voltage sag",
+    "paired recordings",
+    "prediction",
+    "Allen Institute"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/gain.png",
+      "caption": "Primary gain from the stored target sag feature. Positive values mean better prediction. Intervals are conditional donor bootstrap intervals with a four-comparison correction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source experiment and public linked connectivity and physiology data."
+    },
+    {
+      "target": "doi:10.1038/s41467-021-22741-9",
+      "reason": "Prior work on sag and frequency preference in human cortical neurons."
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Informed source selection, donor parsing, and held-out prediction design. This study tests target sag rather than pairwise time-constant similarity."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/ipfx"
+    }
+  ]
+}

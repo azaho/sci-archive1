@@ -1,0 +1,127 @@
+{
+ "title": "Winter temperature changed next-summer counts of the same bird species only in states where the species stayed for winter, on 4,758 North American survey routes in 1967-2024",
+ "abstract": "Question: does local winter temperature change the next-summer count of a bird species only where the species spends the winter? Data: USGS Breeding Bird Survey 2025 release (6,385,153 year-to-year changes in log(1+count), 373 land-bird species, 4,758 routes, 1967-2024), NOAA GHCN_CAMS December-February temperature anomalies from a route trend, and a new winter presence index for each species in each US state and Canadian province from GBIF records (December-February records divided by June records, corrected for seasonal reporting effort). Models had route x year and species x year fixed effects, so observer, survey-day and species-wide annual effects are removed; winter-absent species on the same survey are the negative control. Results: in 40 species that stay for winter in some states and leave other states, a +1 C winter was followed by +1.09% (95% CI 0.75 to 1.43) on routes where the species stays and +0.19% (-0.05 to 0.44) on routes it leaves; random-effects mean within-species difference +0.68% per C (0.22 to 1.14), 27 of 40 species positive, sign-flip p = 0.007. Over all species, winter-present species changed 0.80% per C more than winter-absent species (0.62 to 0.97); the route-level slope was 6.5 permutation SDs from zero (year-field permutation p = 0.0005). Winters colder than -2 SD gave -4.0% (-5.2 to -2.7). The slope was clear in the Central and East regions and in 1967-1985, 1986-2005 and 2006-2024, but uncertain in the West (0.30, -0.14 to 0.75) and Canada (0.19). About half of the change reversed in the next year and the third-year level effect was uncertain. Small species (< 20 g) and Carolina Wren (+8.6% per C) were most sensitive. This independently replicates three campaign studies that used species-level classes. Limitations: counts are an index without a detection model; the placebo (winter after the survey) gave -0.27% per C (permutation p = 0.08); state-clustered SEs are about 1.5 times smaller than permutation SDs; the GBIF index is state-level and mostly from recent records; monthly mean temperature does not measure snow or short cold spells.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "winter severity",
+  "weather extremes",
+  "winter presence",
+  "GBIF",
+  "within-species test",
+  "negative control",
+  "observation bias",
+  "resident birds",
+  "migratory birds",
+  "GHCN_CAMS",
+  "AVONET",
+  "fixed effects",
+  "permutation test",
+  "population dynamics",
+  "climate change",
+  "North America"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dose_response.png",
+   "caption": "Dose response: change of winter-present minus winter-absent species by winter anomaly bin, at route level (A) and species level with route x year and species x year fixed effects (B)."
+  },
+  {
+   "path": "files/figures/fig4_within_species.png",
+   "caption": "Within-species test: 40 species, slope on routes in states where each species stays for winter (blue) and in states it leaves (gray), with pooled summaries."
+  },
+  {
+   "path": "files/figures/fig3_dynamics_species.png",
+   "caption": "Cumulative level effect of one winter anomaly in the first three Junes with the placebo (A), and species slopes on winter-present routes (B)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:46ebf207bbe4de80002291579e40aae3276656ead0d38a9cd6807d4e95cc12fe",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "Same main result with expert guilds; our within-species test supports it. Our small-species and body-mass result differs from its null mass result."
+  },
+  {
+   "target": "sci:sha256:979b781f810d43937eb31b584aa694c871a7e0d156d4980fcb81251be863c25f",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "Same resident slope (about 0.8% per C) with AVONET classes. We found a similar negative placebo but an uncertain western slope."
+  },
+  {
+   "target": "sci:sha256:e2f6bd3df8252a066a5e0e70ab2347988f8c31530d4541dc5a930b631e38be23",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "Same route-year contrast design with AVONET classes; we add species x year effects, a state-level winter index and a within-species test."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Earlier campaign BBS climate study; shared GHCN_CAMS data."
+  },
+  {
+   "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+   "reason": "Earlier campaign study of breeding-season warmth and next-year BBS counts."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BBS 2025 release counts, routes, run data and species list."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS monthly temperature."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS method reference."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET traits (mass, migration code, trophic niche)."
+  },
+  {
+   "target": "https://ndownloader.figshare.com/files/34480856",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET Supplementary dataset 1 file."
+  },
+  {
+   "target": "https://api.gbif.org/v1/occurrence/search",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GBIF occurrence facets by state for the winter presence index (queried 2026-11-08)."
+  },
+  {
+   "target": "https://pubs.usgs.gov/publication/5224790",
+   "reason": "Prior BBS and Christmas Bird Count analysis of winter effects."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "A 2 km time shuffle leaves Ridgecrest depth similarity uncertain on days 1 to 30 at magnitude 2.5 or more",
+  "abstract": "We tested a published depth-similarity result with a time shuffle that keeps each full event location fixed. A fixed USGS Ridgecrest sample has 931 events and 157 pairs within 10 minutes and 5 km on days 1 to 30 at preferred magnitude at least 2.5. Their mean absolute depth gap is 1.2788 km. Shuffling times within elapsed days, magnitude types, and 2 km cells gives a mean of 1.4058 km and a central 95% range of 1.2536 to 1.5575 km. The lower-tail Monte Carlo p value is 0.0549 from 9999 draws. A 1 km check gives p=0.6644; a location-error filter gives p=0.0448. The primary test gives no clear departure at the conventional 0.05 level. This does not prove no depth structure. Fine groups limit the time orders that can change. The time shuffle preserves horizontal-depth relations that a depth-label shuffle breaks, but it also tests a different null. Geometry, detection, location error, and local time changes remain possible causes. The package gives code, event and pair evidence, all draws, exact inclusion-probability checks, and an offline repeat.",
+  "keywords": [
+    "Ridgecrest",
+    "aftershock depth",
+    "time shuffle",
+    "fault geometry",
+    "conditional test",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/geometry.png",
+      "caption": "Observed depth gaps and time-shuffle means with central 95% reference ranges. These ranges are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f94e7b2bc2e8e96ef613f390861b6206ddf1449901e8a832ac4623dc007c8663",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its published depth statistic and sample rules to test a different randomization model."
+    },
+    {
+      "target": "sci:sha256:ce920d7d612412f1d3b0ca17e07d5a64656c0ea105541f3e39430b0884a334bb",
+      "reason": "This prior result tests mean depth change, a different target."
+    },
+    {
+      "target": "sci:sha256:c37e6ecb140a75c186445fc76031a08f6d038c9f468ca13143459331fffedfd1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This bundle preserves the raw catalog needed for offline retrieval."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027"
+    },
+    {
+      "target": "doi:10.1785/0220190309"
+    },
+    {
+      "target": "doi:10.1029/2020GL089650"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
