@@ -1,0 +1,102 @@
+{
+ "title": "Sst and Vip interneurons did not keep natural-movie responses more stable across days than excitatory neurons in two Allen two-photon datasets, but Pvalb neurons did in one dataset",
+ "abstract": "Question: do interneurons, which receive dense and unspecific local input, keep more stable visual responses across days than excitatory neurons? Approach: we measured a noise-corrected stability S (response similarity between days divided by similarity of trial halves on the same day) for natural-movie responses of cells matched across three sessions. Data: Allen Brain Observatory Visual Coding 2P (271 fields, 10,263 cells, 180 mice, Sst, Vip, Pvalb and 10 excitatory Cre lines) and Allen Visual Behavior 2P (146 fields, 4,805 cells, 55 mice, task-trained, familiar-image sessions 1-3). Results: Sst and Vip cells were not more stable than excitatory cells. Visual Coding field-level differences in S were -0.058 (95% CI -0.131 to +0.016) for Sst and -0.014 (-0.083 to +0.055) for Vip; Visual Behavior gave +0.030 and -0.005 for the natural movie, and Vip familiar-image responses were less stable (-0.194, -0.270 to -0.119). Pvalb cells (Visual Coding only) were more stable (+0.139, +0.070 to +0.208); smoothing of GCaMP6f traces and a GCaMP6s versus GCaMP6f excitatory comparison did not explain this, but Pvalb data come from one line, one reporter and 9 mice. All interneuron classes changed their mean activity level less than excitatory cells. Coupling to the local labelled population gave a small stability gain in Visual Coding excitatory cells (+0.023 per SD) that did not replicate clearly in Visual Behavior. S fell by 0.010 per day within a field and did not fall along the cortical hierarchy. Limitations: synaptic connectivity was not measured; cell class is confounded with reporter, field density, area and depth; the data transfer stopped at a cutoff, so 161 of 336 excitatory Visual Coding containers and 146 of 202 Visual Behavior containers were analysed (all 120 interneuron containers of Visual Coding are included).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "representational drift",
+  "interneurons",
+  "Sst",
+  "Vip",
+  "Pvalb",
+  "two-photon calcium imaging",
+  "Allen Brain Observatory",
+  "Visual Behavior",
+  "natural movie",
+  "population coupling",
+  "cortical hierarchy",
+  "response stability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_class_contrasts.png",
+   "caption": "Visual Coding 2P: difference in cross-day stability S of Sst, Vip and Pvalb cells relative to excitatory cells in areas VISp, VISl and VISpm (95% CI, mouse-clustered), for the primary field-level model and sensitivity models."
+  },
+  {
+   "path": "files/figures/fig5_visual_behavior.png",
+   "caption": "Visual Behavior 2P (task-trained mice): Sst and Vip minus Slc17a7 stability for natural-movie and familiar-image responses across sessions 1-3."
+  },
+  {
+   "path": "files/figures/fig1_stability_by_cre.png",
+   "caption": "Visual Coding 2P: median cross-day stability S per imaging field by Cre line. S = 1 means no change beyond trial noise."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the Allen Brain Observatory Visual Coding 2P data."
+  },
+  {
+   "target": "https://portal.brain-map.org/explore/circuits/visual-behavior-2p",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the Allen Visual Behavior 2P (Visual Behavior Ophys) data."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2021.07.062",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We extend their excitatory-only drift analysis to Sst, Vip and Pvalb lines and also find no decrease of stability along the visual hierarchy."
+  },
+  {
+   "target": "doi:10.1038/s41467-021-25436-3",
+   "reason": "Prior report of natural-movie drift in V1."
+  },
+  {
+   "target": "doi:10.7554/eLife.77907",
+   "reason": "Behavioural-state confound of drift; we control for running differences."
+  },
+  {
+   "target": "doi:10.1038/nn.2876",
+   "reason": "Dense, unspecific local input to interneurons motivates the hypothesis."
+  },
+  {
+   "target": "doi:10.1038/nature14273",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Population coupling measure."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy order of visual areas."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hierarchy order of visual areas used in Neuropixels work."
+  },
+  {
+   "target": "sci:sha256:c04ca7acc5f74df806f61909ea4679edaf2d667ad34eecfd9c32d8a3ec12377c",
+   "reason": "EM evidence that population coupling predicts local input connections; basis for using coupling as a proxy for local input."
+  },
+  {
+   "target": "sci:sha256:4c4b055411d0a22f5abbd228b24dbba2a36fd63bb6384749db1947532f7729e7",
+   "reason": "MICrONS evidence that spine input count predicts population coupling."
+  }
+ ]
+}
