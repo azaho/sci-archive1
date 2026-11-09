@@ -1,0 +1,75 @@
+{
+  "title": "Prior three-year precipitation raised forecast error in seven California divisions during water years 1949-2025",
+  "abstract": "We tested whether precipitation in the previous three water years improved forecasts of the next water year in seven California climate divisions. We used a fixed NOAA nClimDiv snapshot for 1896-2025. Each regression used earlier targets only. There were 77 test years, 1949-2025. The predictor raised pooled variance-scaled squared error by 1.65% relative to the training mean. The conditional 95% five-year block interval was an increase of 0.20% to 3.11%. All seven division point estimates had higher error. Mean lag-one correlation was -0.010 for annual totals and 0.657 for three-year running totals. The latter was near the center of the shuffled-year range, 0.563 to 0.734. Shared years can thus explain the apparent running-total memory under the tested null. The results do not prove annual independence or exclude useful forecasts from other predictors. They do not measure runoff, groundwater, or drought recovery. The package gives fixed source rows, 910 annual totals, all forecasts, code, uncertainty draws, figures, and an independent numerical audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "California",
+    "precipitation",
+    "water year",
+    "drought",
+    "persistence",
+    "overlapping windows",
+    "chronological forecasts",
+    "nClimDiv",
+    "block bootstrap",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/persistence_and_skill.png",
+      "caption": "Annual and running-total correlations, and chronological forecast skill. Adjacent three-year totals share two years. Forecast intervals are conditional on fixed predictions."
+    },
+    {
+      "path": "files/results/history.png",
+      "caption": "Annual precipitation in two divisions and cumulative contributions to the final pooled forecast score."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:613b0ddfe29853a816c1880f84c061841d758ecaa5365c184a32464943d46fda",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared precipitation snapshot and saved NOAA format document. We test full water-year persistence with new code."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0423.1",
+      "reason": "Prior California deficit recovery analysis reports weak annual precipitation dependence and sensitivity to the recovery threshold. The current forecast and overlap tests have a different scope."
+    },
+    {
+      "target": "doi:10.1175/JAMC-D-13-0248.1",
+      "reason": "Source methodology for the gridded observations used to form the division estimates."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact precipitation source version. Full hash and exact California rows are preserved."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA format, units, source construction, and missing-value codes. Saved bytes were reused from the cited SCI bundle."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/usclimdivs/data/map.html",
+      "reason": "Official California climate division codes and names."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00005%3Bview%3Diso",
+      "reason": "NOAA metadata describe the gridded source and division area averages."
+    }
+  ]
+}

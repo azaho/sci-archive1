@@ -1,0 +1,32 @@
+{
+  "title": "United States stream gauges show no detectable median discharge change in rain-free windows after 1980-1990 earthquakes; evidence above 1 J/m3 is too sparse to test",
+  "abstract": "Question: Does earthquake shaking change the discharge of United States streams in rain-free periods, and does the change have a threshold or a dose response? Approach: Earthquake time is independent of weather. We compared each gauge after an earthquake with the same gauge in the same season of other years. We used 94 earthquakes (M >= 5.5, 1980 to 1990), USGS daily discharge, GHCN-Daily rain data, and seismic energy density e as the exposure. A plan and two amendments were written before outcomes were computed. Filters kept 1,276 gauge-event pairs from 22 earthquakes and 711 gauges. Findings: At e >= 0.1 J/m3, the literature threshold, the median discharge change on days +1 to +5 was +2.2 percent (124 pairs, 13 events; placebo p = 0.23). The slope of the median effect against log10 e was -0.009 per decade (95 percent interval -0.113 to +0.054; placebo p = 0.77). For e of 0.01 to 0.1 J/m3 the 95 percent interval was -0.9 to +2.1 percent. For e of 0.1 to 1 J/m3 it was 0.0 to +7.6 percent. A test for a larger response above 1 J/m3 was inconclusive (19 pairs, 7 events). No retained pair reached 10 cm/s peak ground velocity, so we could not test the binary response reported by Mohr et al. (2018). Limitations: Downloads stopped at a time limit, so the study covers 1980 to 1990 and only 20 ShakeMap grids. Rain and interference filters removed most pairs near strong earthquakes. A median test has low power when only a minority of gauges respond. Exploratory results suggest a response at Loma Prieta 1989 (17 pairs, median +11.5 percent), but this is a post-hoc look at one event.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": [
+    "streamflow response to earthquakes",
+    "seismic energy density",
+    "natural experiment",
+    "placebo test",
+    "null result",
+    "hydrology",
+    "NWIS daily discharge",
+    "GHCN-Daily",
+    "ShakeMap"
+  ],
+  "display": [
+    {"path": "files/results/fig1_dose_response.png", "caption": "Median change in ln discharge on days +1 to +5, relative to the same gauge in the same season of other years, by seismic energy density. Bars show 95 percent event-clustered bootstrap intervals. The two strongest bins have few pairs and opposite signs."},
+    {"path": "files/results/fig2_event_time.png", "caption": "Median event-time discharge change for rain-filtered pairs at e >= 0.1 J/m3 and e < 0.001 J/m3. The rain filter stops at day +5, so later changes can be from rain."},
+    {"path": "files/results/fig3_power.png", "caption": "Exploratory power of the median test H1 for synthetic discharge increases added to the observed pairs at e >= 0.1 J/m3. Power is low when only 25 percent of pairs respond."}
+  ],
+  "citations": [
+    {"target": "doi:10.1029/2018GL078621", "reason": "Mohr et al. (2018) reported a binary stream discharge response above a PGV threshold in Chile. This work attempted a test, and it could not reach that shaking level with its retained pairs."},
+    {"target": "doi:10.1029/2011RG000382", "relations": ["uses"], "reason": "Manga et al. (2012) give the energy-density relation (their Equation 2) and the threshold near 0.1 J/m3 used for H1."},
+    {"target": "https://typeset.io/pdf/hydrologic-responses-to-earthquakes-and-a-general-metric-6wox1hmlmh.pdf", "relations": ["uses"], "reason": "Wang and Manga (2010, Geofluids 10) define seismic energy density as a metric for hydrologic response. The text was not retrieved in this work; see README."},
+    {"target": "https://earthquake.usgs.gov/fdsnws/event/1/", "relations": ["uses"], "reason": "USGS ComCat catalogue and ShakeMap products."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily discharge data."},
+    {"target": "doi:10.7289/V5D21VHZ", "relations": ["uses"], "reason": "GHCN-Daily station precipitation data."}
+  ]
+}

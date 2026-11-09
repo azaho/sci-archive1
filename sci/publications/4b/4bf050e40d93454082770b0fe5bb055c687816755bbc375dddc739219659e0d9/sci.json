@@ -1,0 +1,69 @@
+{
+  "title": "Catalog depths match a shared flux loss in 54 of 61 nearby TESS pairs selected by a 100-day timing test",
+  "abstract": "We tested nearby TESS Objects of Interest for matching transit times and a common absolute flux loss. The frozen NASA table has 8,151 entries. A nominal 100-day timing test found 61 pairs with different TIC IDs within 10 arcmin. In 54 pairs, the depth ratio agrees with the inverse stellar flux ratio within 0.1 dex. This is consistent with one loss expressed relative to two stellar fluxes, but the relation cannot identify the host. A conditional random-phase control has a mean of 1.12 pairs. Most matches include a false-positive or false-alarm label. The one pair with two candidate labels, TOI-7102.01/7157.01, has prior public discussion. Separate ExoFOP rows repeat the same detection data and provide no independent confirmation. This work supplies a pair table, frozen input, phase controls, code, and sensitivity tests. It establishes no new planet or host assignment. Catalog normalization can build in the depth relation. No light curves, pixel data, or independent telescope observations were fitted.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "TESS",
+    "catalog audit",
+    "ephemeris matching",
+    "flux normalization",
+    "host ambiguity"
+  ],
+  "display": [
+    {
+      "path": "files/depth_flux.png",
+      "caption": "Depth and inverse flux ratios for 61 pairs selected by the 100-day nominal timing test. The black line gives equal absolute flux loss. Grey lines mark 0.1 dex. Orange marks TOI-7102.01/7157.01. This relation does not identify a host star."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior method for finding contamination through matching ephemerides."
+    },
+    {
+      "target": "doi:10.3847/1538-4365/abefe1",
+      "reason": "TOI catalog methods and scope."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_TOI_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Archive column definitions and update limits."
+    },
+    {
+      "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?output=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Separate table retrieval; repeated TESS detection data, not independent observations."
+    },
+    {
+      "target": "https://openwitness.net/p/8891",
+      "reason": "Prior public host claim for TOI-7102/7157. We do not validate or adopt that fit."
+    },
+    {
+      "target": "https://www.openwitness.net/p/8685",
+      "reason": "Prior public discussion of the candidate pair."
+    },
+    {
+      "target": "sci:sha256:37e4dfd0628a31c52a6b2c526bb4b1901dbacecbaef2c44ce9bce7b4667e21e6",
+      "reason": "Earlier campaign investigation of Kepler contamination; different data from this study."
+    },
+    {
+      "target": "sci:sha256:8946c7d3b3a657457da108b9de52c797bfb82ccccc5a4d7b4609c6e745b52f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published finite-window timing approach; we apply a related nominal test to TESS catalog pairs."
+    }
+  ]
+}

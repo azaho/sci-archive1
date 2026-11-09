@@ -1,0 +1,80 @@
+{
+  "title": "KOI-3330.01 and KOI-3355.01 show matched dips on different modules in 14 Kepler quarters",
+  "abstract": "We tested a published timing match between KOI-3330.01 and KOI-3355.01 with 31 public Kepler light curves. Both targets show a dip near a common 16.295-day ephemeris. In all 14 quarters with data for both stars, the targets use different detector modules. This excludes direct video crosstalk between them through the documented same-module path, if the module headers are correct. Corrected mean depths are 194.8 +/- 15.0 and 231.2 +/- 24.1 ppm under a fixed-window event-scatter model. A 400-draw event bootstrap gives a duration-difference interval of -1.73 to +3.43 hours. Thus, the duration test does not resolve a shape difference. Chance timing agreement, optical ghosts, other sources, and common errors remain possible. We establish no new planet, false positive, or shared source. No independent telescope was tested. The package includes raw files, hashes, source URLs, event tables, figures, code, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-3330",
+    "KOI-3355",
+    "Kepler-1470",
+    "video crosstalk",
+    "transit duration",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/profiles.png",
+      "caption": "Both apertures show a dip at the common ephemeris. Flux types use the same photons."
+    },
+    {
+      "path": "files/shape.png",
+      "caption": "The event bootstrap does not resolve a duration difference."
+    },
+    {
+      "path": "files/depths.png",
+      "caption": "Fixed-window depths in the tested quarters."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:37e4dfd0628a31c52a6b2c526bb4b1901dbacecbaef2c44ce9bce7b4667e21e6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published timing-pair table supplied the lead. We test a separate pair with mission light curves and module headers."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ephemeris matching and documented contamination paths."
+    },
+    {
+      "target": "doi:10.3847/0004-637X/822/2/86",
+      "reason": "Prior statistical planet validation."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-1470"
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_4_electronic_noise/instrumental_noise_4_electronic_noise.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same-module condition for significant video crosstalk."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler source files; exact URLs and hashes are included."
+    }
+  ]
+}

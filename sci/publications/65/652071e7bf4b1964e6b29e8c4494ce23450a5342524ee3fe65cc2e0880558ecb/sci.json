@@ -1,0 +1,67 @@
+{
+  "title": "Warmer survey ends were linked to lower relative bird richness after survey controls in US data from 1985 to 2024",
+  "abstract": "We tested whether a warmer end of a bird survey was linked to fewer recorded taxa in the last ten stops relative to the first ten. We used 64,682 surveys from the USGS North American Breeding Bird Survey 2025 release. We fit separate models for Canada and the United States in 1985-2004 and 2005-2024. Models controlled for start temperature, route-observer and state-year effects, date, clock time, duration, wind, sky, and assistant status. In the US, a 5 degree Celsius warmer end was linked to -0.241 and -0.260 taxa in the last-minus-first difference. Intervals adjusted for four tests were -0.402 to -0.080 and -0.434 to -0.087. Canada estimates were +0.038 and -0.225, with adjusted intervals that included zero. Route trends, fair-weather restrictions, and log richness ratios kept the negative US pattern. Full-survey richness had positive point estimates in all four samples, so the relative contrast does not imply overall richness loss. This small association can reflect activity, detection, habitat, or measurement differences. It does not identify a causal heat effect, detection probability, long-term climate change, or air pollution. Complete-case selection and repeated routes limit transfer and independence. The package includes a derived panel, fixed input hashes, source code, figures, and all planned model checks. Four independent numerical checks passed. A full repeat-run script is included, but the repeat could not start because host computation slots were occupied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "bird richness",
+    "survey weather",
+    "observation bias",
+    "Breeding Bird Survey",
+    "temperature",
+    "within-survey contrast",
+    "temporal replication",
+    "null regional result"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "The end-temperature association with last-minus-first recorded taxa. Left: four country-period tests with Bonferroni-adjusted intervals. Right: means in ten bins after removal of the other model terms. The bins are exposure values, not time points."
+    },
+    {
+      "path": "files/sensitivity_figure.png",
+      "caption": "Difference and log-ratio estimates under the main model, route trends, and fair-weather restriction. Bars are individual 95% intervals. The checks use the same survey records."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed USGS BBS 2025 data release. Raw count and weather bytes are identified by SHA-256 in the package."
+    },
+    {
+      "target": "https://pubs.usgs.gov/publication/5210258",
+      "reason": "Robbins (1981) studied the relation between weather and bird counts, including BBS data."
+    },
+    {
+      "target": "doi:10.1093/condor/duz009",
+      "reason": "Prior evidence that changes in BBS counting procedures can change counts."
+    },
+    {
+      "target": "https://www.canada.ca/en/environment-climate-change/services/bird-surveys/landbird/north-american-breeding/instructions.html",
+      "reason": "Official instructions for route order, timing, weather codes, and counting effort."
+    },
+    {
+      "target": "doi:10.1002/ecog.07949",
+      "reason": "Prior use of BBS communities in a climate and land-cover analysis with limits on detection inference."
+    },
+    {
+      "target": "doi:10.1111/ecog.07163",
+      "reason": "Prior observation models use survey weather and note the lack of weather values at each stop."
+    },
+    {
+      "target": "sci:sha256:19eeca0d858cefec579a3566da7605d74af09e83a15cf8e6f4015f609c0f59e8",
+      "reason": "Published campaign context on weather exposure and ecological timing. We read this study before choosing the bird question and reuse none of its data."
+    }
+  ]
+}

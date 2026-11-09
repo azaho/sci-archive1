@@ -1,0 +1,63 @@
+{
+  "title": "KIC 12557548 shows weak adjacent-depth correlation in Kepler quarters 4 to 7, with most support in quarter 6",
+  "abstract": "We measured transit core depths for the known disintegrating planet system KIC 12557548 in Kepler release 25 quarters 4 to 7. There are 503 accepted events and 469 consecutive-orbit pairs. The pooled raw-flux correlation is 0.147, with a 95% block interval of 0.042 to 0.246. Quarter 6 has the strongest value, 0.363. Omitting that quarter gives 0.078, with an interval that includes zero. Corrected flux and three baseline choices give similar results. A slow trend and fixed rotation-period terms reduce the pooled residual correlation to 0.078, with a conditional interval of -0.009 to 0.165. A simulation tests sensitivity to ideal linear persistence. These results do not establish stable dust memory or a dust lifetime. No new object or independent telescope confirmation is claimed. The package contains all four raw files, exact source hashes, derived event tables, validation code, figures, and offline reproduction instructions. Job sci-1107-dell-astronomy-6f8e5a61c974; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "KIC 12557548",
+    "Kepler-1520",
+    "dust",
+    "transit depth",
+    "serial correlation",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/persistence.png",
+      "caption": "Core depths, adjacent pairs, quality checks, and simulated linear persistence for Kepler quarters 4 to 7."
+    },
+    {
+      "path": "files/slow_model.png",
+      "caption": "Correlation by lag and quarter before and after a slow model. The residual pooled interval includes zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/201322398",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior consecutive-depth null result and quality-flag warning."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629250",
+      "reason": "Conditional relation of depth correlations to dust survival."
+    },
+    {
+      "target": "doi:10.1088/2041-8205/776/1/L6",
+      "reason": "Prior stellar rotation period and transit-depth variation."
+    },
+    {
+      "target": "https://arxiv.org/abs/1410.4289",
+      "reason": "Physical alternatives for the stellar rotation and depth relation."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen NASA Exoplanet Archive DR25 KOI row for period and epoch."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public STScI release 25 light curves. Exact URLs and hashes are in the package."
+    }
+  ]
+}

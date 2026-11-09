@@ -1,0 +1,70 @@
+{
+  "title": "Gaia-based stellar data reduce the duration excess of KOI-3105.01 in a Kepler DR25 test",
+  "abstract": "We tested long transit durations in the Kepler DR25 catalog. A screen of 346 high-score candidates selected KOI-3105.01. Its reported duration is 3.36 times the maximum central circular duration under the DR25 stellar model. The Gaia-based mass and radius from Berger et al. (2020) reduce this ratio to 1.16. Favorable changes within the quoted input errors can bridge the remaining excess. Thus, the old duration excess does not establish high eccentricity. A fixed-time check of four Kepler quarters gives a pooled dip in both SAP and PDC flux. The later quarters are weak. These data do not locate the host or independently measure the duration. The stellar-model errors lack a joint covariance, and a blended source or detector effect is not excluded. We find no new planet. The package contains the catalog screen, source records, four light curves, hashes, code, uncertainty checks, a figure, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-3105.01",
+    "stellar density",
+    "transit duration",
+    "Gaia",
+    "eccentricity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "The revised stellar model reduces the mean duration excess. Four Kepler quarters show a weak pooled dip. The model error bar is a mass-radius sensitivity box, not a confidence interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-637X/756/2/122",
+      "reason": "Prior inference of eccentricity from transit shape and stellar density."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2001.07737",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia-based stellar mass, radius and errors from Berger et al. 2020."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.51590280",
+      "relations": [
+        "uses"
+      ],
+      "reason": "VizieR catalog records for KIC 12168993; exact responses are preserved."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive DR25 KOI data."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Units and definitions of catalog transit and stellar parameters."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Kepler DR25 long-cadence light curves. Exact source URLs and hashes are included."
+    },
+    {
+      "target": "sci:sha256:8946c7d3b3a657457da108b9de52c797bfb82ccccc5a4d7b4609c6e745b52f06",
+      "reason": "Published campaign prior work on signal contamination and separate-quarter artifact checks; not a source of our target or numerical inputs."
+    }
+  ]
+}

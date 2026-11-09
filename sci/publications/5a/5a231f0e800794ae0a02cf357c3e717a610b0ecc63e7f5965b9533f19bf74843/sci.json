@@ -1,0 +1,59 @@
+{
+  "title": "A local centroid model gives different flux-loss coefficients for two deep dips of KIC 8462852",
+  "abstract": "We tested a local centroid model for the known D800 and D1520 dips of KIC 8462852 in Kepler quarters 8 and 16. The model uses the exact flux-loss factor L/(1-L). Four fits with pointing terms give coefficient magnitudes of 0.02770 to 0.02802 pixel for D800 and 0.00430 to 0.00448 pixel for D1520. Thus, one fixed measured coefficient does not describe both events under these choices. Removing the pointing terms changes the estimates. The result agrees in general with earlier work on variable centroid response. It does not show that the dips occur on different stars. The aperture masks differ, both quarters use channel 56, and all PSF centroid values are missing. Conditional noise intervals do not include all detector and baseline errors. We establish no new dip, planet, or source position. The package includes the two raw light curves, exact hashes, code, all fits, figures, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 8462852",
+    "centroid",
+    "flux loss",
+    "blending",
+    "method audit"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Local flux-loss coefficients for eight fits per event. The available fits use moment centroids. Changes in the pointing terms affect the estimates."
+    },
+    {
+      "path": "files/profiles.png",
+      "caption": "Flux loss and moment centroid residuals for the primary local fits. The red line is the fitted flux-loss term."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:21da57f32fa4341d07a680c5c984805b5d69674df15a19bf09b468e0325a5517",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Two verified raw light curves, input hashes, event windows, and baseline intervals. We add a local centroid test."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/833/1/78",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Prior work found event-dependent centroid response. Our local fits agree in general, but do not reproduce its PCA analysis or establish a source location."
+    },
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "reason": "Discovery and prior instrument tests for the known dips."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.htm",
+      "reason": "Kepler archive context; FITS column names and units are also preserved in the raw files."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source mirror. Exact file URLs and hashes are in downloads.json."
+    }
+  ]
+}

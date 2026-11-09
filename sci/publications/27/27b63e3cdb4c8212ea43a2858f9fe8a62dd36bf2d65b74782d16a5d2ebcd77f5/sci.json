@@ -1,0 +1,86 @@
+{
+  "title": "Local controls leave size agreement uncertain for dual spine connections in one Allen V1DD mouse",
+  "abstract": "We tested whether distant contacts between the same excitatory neurons have more similar cleft sizes than local contacts that share only one neuron. We used Allen V1 Deep Dive release 1196 from mouse 409828. We matched exact cell type, two-contact connections, spine labels, and local position. We then selected sets with no repeated neuron. Of 3,213 eligible dual connections, 119 had a source control within 10 micrometres and 11 had a target control. The selected source comparison had 57 sets. Its control-minus-connection contrast in squared log size was 0.512, with a 97.5% conditional bootstrap interval of -0.213 to 1.355. The target comparison had six sets and a contrast of 0.966, with an interval of -1.597 to 3.633. Both intervals include zero. Fixed spatial sensitivity tests also gave intervals that include zero. This test does not resolve extra size agreement under these local controls. It does not show equal sizes or refute prior size-correlation results. One animal, sparse matches, tissue dependence, selected arbors, and cleft size as a proxy limit the result. We supply source hashes, code, selected contact data, matches, uncertainty draws, figures, and an independent audit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "Allen Institute",
+    "synapse size",
+    "dual connections",
+    "local controls",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/size_agreement.png",
+      "caption": "Size differences in matched dual spine connections from one mouse. Bars show mean squared log size differences. Intervals show conditional resampling of 57 source sets and six target sets, with no repeated neuron within each comparison. Both 97.5% intervals include zero."
+    },
+    {
+      "path": "files/evidence/sensitivity.png",
+      "caption": "Fixed spatial sensitivity tests. Blue points use source controls. Orange points use target controls. All conditional intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.76120",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence for size correlation within dual connections motivated this separate-volume test with local cell and position controls."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03134-2",
+      "reason": "Paired physiology and ultrastructure motivate synapse size as a structural weight proxy."
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/data_description.json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen V1DD release metadata, mouse 409828, materialization 1196, and source license."
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/annotation-tables.html",
+      "reason": "Defines the standard CAVE synapse size field."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "reason": "The reported loss of support after graph constraints informed our decision to report matching yield. Different data and no reused code or tables."
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/syn_df_all_to_proofread_to_all_1196.feather",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/soma_and_cell_type_1196.feather",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/proofread_axon_list_1196.npy",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/proofread_dendrite_list_1196.npy",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/syn_label_df_all_to_proofread_to_all_1196.feather",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "The eclipse amplitude near TOI-2541.01 falls from 0.125 to 0.034 mag under robust loss in 54 ZTF measurements",
+  "abstract": "We tested a published nearby-binary lead for TOI-2541.01 with 54 frozen ZTF measurements on 35 nights. A fixed Gaussian eclipse template gives a weighted amplitude of 0.125 mag. A Huber fit with equal observation scales gives 0.034 mag. Separate bands give 0.015 mag in g and 0.177 mag in r. A phase-shift control gives a tail fraction of 0.0038, while a night-sign control gives 0.0814 under a different residual model. Only four observations lie within one template width. An illustrative added 0.239 mag eclipse passes a conditional 1 percent threshold in 76 percent of draws. Thus these sparse data do not give a stable ground eclipse measurement. They do not exclude a binary or overturn the prior TESS image result. No new planet or host assignment is established. Band response, blending, time references, and error assumptions limit the test. We include frozen inputs, hashes, code, random draws, figures, and offline reproduction steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "TESS",
+    "TOI-2541.01",
+    "ZTF",
+    "Gaia DR3",
+    "eclipsing binary",
+    "model sensitivity",
+    "sparse sampling"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "The fixed-template fit, night-sign controls, and omitted-night fits use 54 ZTF measurements."
+    },
+    {
+      "path": "files/model_audit.png",
+      "caption": "The amplitude changes with the loss and weight choices. The Gaia G depth is a reference in a different band."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published target lead, frozen ZTF table, and catalog model row. We add fit and sampling checks for TOI-2541.01."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202245330",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia binary eclipse model and duration definition."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+      "reason": "ZTF API fields and retrieval method."
+    },
+    {
+      "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen shared ExoFOP context row."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aaecbe",
+      "reason": "ZTF data processing and archive."
+    }
+  ]
+}

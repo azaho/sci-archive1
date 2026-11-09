@@ -1,0 +1,80 @@
+{
+  "title": "A winter Pacific temperature contrast gave no clear next-winter prediction gain with an asymmetric strength baseline in 1981-2025",
+  "abstract": "We tested whether the winter Nino 1+2 minus Nino 4 temperature anomaly improves prediction of the next winter Nino 3.4 anomaly. We used a fixed NOAA CPC ERSSTv5 monthly table and 45 test issues from 1981 to 2025. Each issue used only earlier origins for fitting. The baseline included current strength, its recent change, and an absolute centered-strength term. Adding the contrast changed mean squared error from 1.1325 to 1.1470 C squared. The paired gain was -0.0145 C squared, with a 95% five-year block interval of -0.0564 to 0.0291. A simpler baseline without the absolute-strength term gave a positive but uncertain gain. Regional normalization, a different contrast, shorter training, and period checks gave no clear gain. These results do not show that spatial ocean information lacks value. They give a small forecast benchmark in which the baseline matters. The saved table is a retrospective reconstruction, not historical issue-time data. Short records, model form, and conditional block intervals limit inference. The package includes exact source bytes, code, predictions, uncertainty draws, figures, and independent checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "Nino 3.4",
+    "sea surface temperature",
+    "Pacific temperature contrast",
+    "forecast validation",
+    "strength asymmetry",
+    "block bootstrap",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_skill.png",
+      "caption": "Predictions, paired error gains, and model checks for issue winters 1981-2025. Positive gain means lower error after the contrast is added. All shown 95% five-year block intervals include zero."
+    },
+    {
+      "path": "files/annual_diagnostics.png",
+      "caption": "Annual paired error gains and the fitted contrast coefficient at each issue winter. Coefficients are descriptive model terms, not physical response estimates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:401953e3b53a0f43ceebf89af8a6ac48aec1860a3ff76e8aeca5a89b5a535b6a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared monthly source and build on its strength-adjusted retention question. We test forecasts with new code."
+    },
+    {
+      "target": "sci:sha256:b2d64a1f5c8413a4195f341f51d3c83e81b15dd6685e68ec785098ea0b125470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public monthly source. Its threshold and reference-period results motivate explicit data and scope checks."
+    },
+    {
+      "target": "doi:10.1175/1520-0442(2001)014%3C1697:LIOENO%3E2.0.CO;2",
+      "reason": "Prior definition of a normalized Nino 1+2 minus Nino 4 index and changing lead-lag relations. Our main raw contrast is not that filtered index."
+    },
+    {
+      "target": "doi:10.1175/2010JCLI3592.1",
+      "reason": "Prior duration asymmetry motivates a baseline with different strength slopes."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2302.11357",
+      "reason": "Prior use of spatial SST gradients for ENSO prediction. We do not test its convolutional models."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 data product. We use the CPC regional subset with a 1991-2020 anomaly reference period."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source URL. Fixed shared path, retrieval time, and source hash are in files/provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/climateindices/list/",
+      "reason": "Regional definitions and identification of this exact CPC table as ERSSTv5."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+      "reason": "Product reconstruction, versions, and data citation."
+    }
+  ]
+}

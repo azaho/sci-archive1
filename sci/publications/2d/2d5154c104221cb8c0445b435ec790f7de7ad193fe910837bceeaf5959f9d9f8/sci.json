@@ -1,0 +1,57 @@
+{
+  "title": "Matched Allen slice circuits do not resolve a source-versus-target difference in resting synaptic variability",
+  "abstract": "We tested whether resting synaptic variability is more similar among connections with a shared source neuron than among connections with a shared target neuron. We matched recording, synapse type, cell class, Cre label, and layer in Allen Synaptic Physiology r2.1 slice data. The test retained 29 mouse recordings from 28 inferred animals and 8 human recordings from 7 inferred donors. The source/target squared-difference ratio was 0.515 in mouse and 1.737 in human. Neither primary permutation test passed correction for two comparisons; both corrected p-values were 0.328. The mouse donor bootstrap interval was below one, but the fixed-graph permutation test did not give clear evidence. Absolute differences and distance matching moved the mouse estimate toward one. These data do not establish a common source-level reliability rule or equivalence between the roles. Small selected circuits, inferred donor labels, different cell-type mixtures, and uncertain response estimates limit the result. The package supplies reproducible code, derived evidence, and an independent point-estimate check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic variability",
+    "shared neurons",
+    "circuit structure",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/contrast.png",
+      "caption": "Ratios of source and target difference scores in matched Allen slice circuits. Lines show uncorrected 95% donor bootstrap intervals. Primary corrected permutation p-values are 0.328 in both samples. The horizontal axis is logarithmic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and cell-class context for the public Allen paired recordings."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned source definition of the stored resting variability measure."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published shared-neuron timing test informed exact matching; no code or tables were reused."
+    },
+    {
+      "target": "sci:sha256:14d77b457d2000e4668254c85e1b099540688408f2b05aab48cbae8087621278",
+      "reason": "Related campaign test of distance and resting variability; the present test compares source and target sharing."
+    }
+  ]
+}

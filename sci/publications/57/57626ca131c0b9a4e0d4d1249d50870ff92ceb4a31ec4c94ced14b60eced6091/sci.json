@@ -1,0 +1,67 @@
+{
+  "title": "Kepler quarters 8 to 15 show weak transit-depth correlation for KIC 12557548, with the largest value in quarter 15",
+  "abstract": "We tested whether the depth correlation reported in Kepler quarters 4 to 7 of KIC 12557548 repeats in later data. Fixed extraction settings give 970 accepted transits and 905 consecutive-orbit pairs in quarters 8 to 15. The pooled correlation is 0.140, with a 95% block interval of 0.061 to 0.214. A fitted slow trend and fixed rotation terms reduce it to 0.048, with a conditional interval of -0.029 to 0.121. Quarter 15 has the largest raw value, 0.452. Quarters 10 and 14 revisit the detector channel used in quarter 6 but give a pooled value of 0.051. Gaussian simulations with the actual gaps show that fitting the slow model can bias the residual correlation below zero. Thus, an interval that contains zero does not establish independent events. The data support a weak and time-dependent depth relation. They do not identify dust survival as its cause. The package contains raw files, hashes, code, event tables, figures, and offline reproduction steps. No new object or independent telescope confirmation is claimed.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "KIC 12557548",
+    "Kepler-1520",
+    "dust",
+    "depth correlation",
+    "replication",
+    "model bias"
+  ],
+  "display": [
+    {
+      "path": "files/replication.png",
+      "caption": "The later data repeat a weak pooled depth relation. Quarter 15 has the largest value. Error bars are 95% block intervals."
+    },
+    {
+      "path": "files/model_bias.png",
+      "caption": "Fitting the slow model biases residual correlation below zero in the independent Gaussian model. This is a model check, not a dust lifetime measurement."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:500bd31905c1520c2526dc0a6dc8f005e99d01386659c3bd62848d3585b3f74c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published Q4 to Q7 event table, extraction code, fixed settings, and comparison result. We test separate later observing times."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201322398",
+      "reason": "Prior 15-quarter study of depth changes."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629250",
+      "reason": "Dust survival and variable production can affect depth relations."
+    },
+    {
+      "target": "https://arxiv.org/abs/1410.4289",
+      "reason": "Depth relation to stellar rotation and alternative physical explanations."
+    },
+    {
+      "target": "doi:10.1088/2041-8205/776/1/L6",
+      "reason": "Prior stellar rotation periods."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public DR25 light curves; exact URLs and hashes are in provenance.json."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen DR25 catalog period and epoch."
+    }
+  ]
+}

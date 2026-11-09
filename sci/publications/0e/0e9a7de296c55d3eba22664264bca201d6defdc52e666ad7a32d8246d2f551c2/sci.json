@@ -1,0 +1,67 @@
+{
+  "title": "Matched Allen slice data do not resolve an axon preservation effect on mean detected voltage response",
+  "abstract": "We tested whether source axons marked intact had a larger mean detected absolute resting voltage response per tested cell pair than axons marked truncated. We used Allen Synaptic Physiology r2.1 small data. We matched recording, ordered cell classes, and 100 micrometre distance bins. Pairs called unconnected received zero. Matched groups with a missing response estimate for a detected connection were excluded. In 671 mouse visual-cortex pairs from 68 inferred mice, the difference was 0.00648 mV per pair. The nominal 97.5% donor bootstrap interval was -0.00916 to 0.01989 mV. In 128 human temporal-cortex pairs from eight inferred donors, the difference was -0.01091 mV, with interval -0.05588 to 0.00097 mV. Neither primary interval excluded zero. A mouse high-spike sensitivity test gave a positive descriptive interval. About 28% of detected connections in each eligible sample lacked voltage estimates. Sparse matches, missing measurements, inferred donors, and residual cell differences limit the result. The method tests detected coupling in selected slices. It does not estimate lost synapses or intact-brain coupling.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "axon preservation",
+    "circuit sampling",
+    "synaptic strength",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Matched differences in mean detected absolute resting voltage response per tested pair. Main intervals are nominal 97.5% donor bootstrap intervals. Other intervals are descriptive 95% intervals. Panels use separate scales."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen slice data."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/resting_state.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/morphology.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:370bc73ac3c597a2824ff628d75e4228161dfa549a0e3cdc17fc707a9bc07b1f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published preservation and detection-rate audit supplied the comparison design; this study adds response magnitude and missing-fit selection."
+    },
+    {
+      "target": "sci:sha256:be1bc665c37d982b55c16fb1aaeab66479ab234e98dbcecab1c9c1cbbc75b7b2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published same-pair direction control showed sparse support. No code or tables were reused."
+    }
+  ]
+}

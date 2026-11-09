@@ -1,0 +1,68 @@
+{
+  "title": "Ridgecrest cloud spread point estimates change sign with the magnitude floor between days 1-7 and 7-30",
+  "abstract": "We tested whether Ridgecrest catalog events spread out or changed their center between days 1-7 and 7-30 after the 2019 M7.1 event. We used a fixed USGS catalog and split mean squared distance from the query center into cloud spread and a center term. At magnitude at least 2.5 within 100 km, spread rose from 611.4 to 723.5 square km in 931 events. The change was 112.1 square km. Its one-day and three-day block weight intervals were -62.2 to 265.9 and -83.6 to 249.1 square km. Thus, expansion is uncertain. At magnitude at least 3.5, spread fell by 225.5 square km in 88 events. Its daily interval crossed zero; its three-day interval did not. Mean squared distance fell by 504.9 square km. The center term supplied 55.3 percent of that decrease. Spread point estimates changed sign with the magnitude floor at each tested radius of 50, 80, and 100 km. These are descriptive results from one selected sequence. Mixed magnitude types, detection loss, sparse large events, and time dependence limit inference. The result does not show fluid diffusion or a general magnitude effect. The package includes fixed inputs, code, block draws, figures, source hashes, and a successful offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Ridgecrest",
+    "aftershock spatial distribution",
+    "magnitude threshold",
+    "cloud spread",
+    "centroid shift",
+    "block weights",
+    "catalog completeness"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "All fixed checks. Blue is mean squared distance from the query center. Orange is cloud spread about the event center. Lines show three-day block weight intervals. Daily intervals in the text also matter; the high-threshold spread interval crosses zero with daily blocks."
+    },
+    {
+      "path": "files/spatial_comparison.png",
+      "caption": "Events at magnitude at least 2.5 within 100 km in two fixed windows. The right panel splits the radial moment change into cloud spread and a center term. Thin gray lines use one-day blocks. Thick black lines use three-day blocks. Both include zero for all terms."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the fixed source snapshot and build on its time-window audit. We test spatial moments, not its decay exponent. No analysis code is reused."
+    },
+    {
+      "target": "doi:10.1029/2003JB002503",
+      "reason": "Prior work tests weak diffusion and discusses triggering cascades, background events, and fault geometry."
+    },
+    {
+      "target": "doi:10.1785/0220240179",
+      "reason": "Prior Ridgecrest work tests early distance-dependent rates with an incompleteness-resistant method. Our spatial comparison uses a different target."
+    },
+    {
+      "target": "doi:10.1126/science.aaz0109",
+      "reason": "Prior work shows a complex system of intersecting faults."
+    },
+    {
+      "target": "doi:10.1029/2020GL089650",
+      "reason": "Prior work studies changes in spatial, potency, and focal-mechanism properties. Our moments use event counts and two fixed late windows."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS query service and parameter definitions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2019-07-06T03%3A19%3A53.040&endtime=2019-08-05T03%3A19%3A53.040&latitude=35.770&longitude=-117.599&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact query. The compact table keeps all source rows and the original strings of the used columns."
+    }
+  ]
+}

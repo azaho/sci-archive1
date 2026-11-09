@@ -1,0 +1,71 @@
+{
+  "title": "Random year order matched winter precipitation transition rates in seven California divisions in 1901-1960 and 1966-2025",
+  "abstract": "We tested whether changed year ordering is needed to explain the difference in winter precipitation transitions between two 60-year periods in seven California divisions. We used fixed NOAA nClimDiv data and early-period 20th and 80th percentile thresholds. The observed rate of transitions between opposite tails was 8.23% in 1901-1960 and 13.32% in 1966-2025. The change was 5.08 percentage points, with a conditional 95% five-pair block interval of -1.69 to 11.62 points. Random year order with the observed tail counts gives rates of 8.14% and 13.30%. Its expected change of 5.17 points closely matches the observed difference. The change in the departure from that reference was -0.08 points, with a two-sided permutation p value of 1.000. Common permutations kept all seven divisions together. Separate percentile thresholds for each era removed the observed increase; a shorter-period comparison gave no change. These results do not prove independence or establish a trend. They show that the observed difference does not require an extra ordering effect under the tested null. Short records, threshold choice, exchangeability assumptions, and one retrospective product limit inference. The package includes exact source rows, code, all draws, figures, an independent audit, and an exact same-host repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "California",
+    "precipitation",
+    "winter",
+    "whiplash",
+    "opposite-tail transitions",
+    "temporal ordering",
+    "conditional permutation",
+    "nClimDiv",
+    "null result",
+    "spatial dependence"
+  ],
+  "display": [
+    {
+      "path": "files/results/decomposition.png",
+      "caption": "Observed winter transition rates and exact expectations under random year order. The conditional interval for the observed change spans zero. The change in the ordering remainder is close to zero. The permutation distribution is a null reference, not a confidence interval."
+    },
+    {
+      "path": "files/results/history.png",
+      "caption": "Winter precipitation in seven California divisions. Fixed early-period thresholds define dry and wet winters. Purple segments join opposite-tail winters within the two tested eras. The intervening five winters are outside the primary comparison."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1ffb84a5a2479e4f58987d90d6ccb269aab3323e3ce0c1fe049febe2548d413f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its public shared NOAA precipitation snapshot and verified source-format document. We extend the annual dependence question to an explicit transition-count decomposition with new code."
+    },
+    {
+      "target": "doi:10.1038/s41558-018-0140-y",
+      "reason": "Prior California climate-model study of future precipitation extremes and dry-to-wet winter transitions. Our observational comparison and both-direction definition have different scopes."
+    },
+    {
+      "target": "doi:10.1029/2023WR035966",
+      "reason": "Prior water-system stress tests with extreme annual sequences and discussion of historical year-to-year dependence. We do not test reservoir impacts."
+    },
+    {
+      "target": "doi:10.1002/joc.8850",
+      "reason": "Review of transition definitions, time scales, and mechanisms. It motivates explicit limits on the tested definition."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact fixed NOAA nClimDiv precipitation source. Shared path, version, original retrieval metadata, and full-source and subset hashes are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source format, state, element, division identifiers, and units. Exact document bytes were recovered from the cited signed campaign publication."
+    },
+    {
+      "target": "https://www.drought.gov/data-maps-tools/climate-division-datasets-nclimdiv",
+      "reason": "Official product description and links to NOAA data and metadata."
+    }
+  ]
+}

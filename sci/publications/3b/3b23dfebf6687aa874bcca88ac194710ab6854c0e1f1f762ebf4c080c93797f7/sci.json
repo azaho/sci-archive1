@@ -1,0 +1,86 @@
+{
+  "title": "Temperature gaps had no clear link to recorded taxon change in four-state bird surveys in 1990-2024",
+  "abstract": "We tested whether larger temperature differences between consecutive bird surveys were linked to larger changes in recorded taxa. We used 7,068 pairs from the same route and observer in California, Oregon, New York, and Pennsylvania. We fit separate models in two regions and in 1990-2006 and 2007-2024. Models included route and state-year effects, temperature means, survey timing, weather, assistant status, and observer experience. Slopes per 5 C larger start-temperature gap were -0.30, +0.51, +0.20, and -0.05 percentage points of Jaccard dissimilarity. All four corrected intervals included zero. The widest positive bound was +1.42 points in the later West sample. Five planned sensitivity checks and two-way cluster intervals gave no clear common increase. These null results do not show that weather bias is absent. Annual records mix detection, activity, birds present, habitat change, and taxonomic treatment. Accepted and complete surveys are a selected sample. This study does not measure air pollution, damaging extremes, true occupancy, range shifts, or climate causation. The package includes 9,876 selected weather runs, 548,607 taxon count rows, all pair inputs, code, designs, source hashes, and figures. All 24 model results were identical in a full repeat from retained inputs. Independent numerical fits agreed to below 1e-8.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "bird community change",
+    "survey weather",
+    "temperature mismatch",
+    "observation bias",
+    "Breeding Bird Survey",
+    "Jaccard dissimilarity",
+    "temporal beta diversity",
+    "null result",
+    "reproducible dataset"
+  ],
+  "display": [
+    {
+      "path": "files/temperature_turnover.png",
+      "caption": "Adjusted slopes in four matched samples. Thick bars show 95% intervals. Thin bars show four-test intervals. Each slope is the change in Jaccard dissimilarity per 5 C larger absolute survey-temperature gap."
+    },
+    {
+      "path": "files/unadjusted_bins.png",
+      "caption": "Unadjusted means in fixed temperature-gap bins. These summaries mix route, timing, and weather differences and do not estimate the adjusted slope."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f558738a615c1f6e271fda6b9599d8517d2a0b64f0388c7d89173260ab04965f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapted the weather parser and reused its regions, periods, and public source metadata. We added taxon counts and a different outcome."
+    },
+    {
+      "target": "sci:sha256:126791b41f1eba913c070e7ae9679b8913c785630cc8c3227560d208bf8c652b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published campaign work that tests richness on overlapping surveys. The reused parser was first developed there."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed public BBS release. Exact raw files, source URLs, and hashes are recorded."
+    },
+    {
+      "target": "doi:10.1002/ecy.4430",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior BBS community-change study and discussion of false absences."
+    },
+    {
+      "target": "doi:10.3389/fevo.2021.671492",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of weather, time, and bird detection."
+    },
+    {
+      "target": "doi:10.1038/s41467-018-04889-z",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence that diversity-change measures depend on scale and metric."
+    },
+    {
+      "target": "doi:10.1111/j.1466-8238.2009.00490.x",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source for the Simpson replacement measure used in a planned check."
+    }
+  ]
+}

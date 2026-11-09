@@ -1,0 +1,23 @@
+{
+  "title": "Ground-level ozone had no robust association with bird counts on 2,155 US Breeding Bird Survey routes from 1995 to 2024 in fixed-effects models with observer control",
+  "abstract": "We tested if a known eBird result also occurs in a standardized survey. Liang et al. (2020) found that 1 SD more ozone went with 0.117 SD fewer birds in US counties. We connected 31,894 North American Breeding Bird Survey (BBS) route-years (2,155 routes, 1995-2024) to EPA ozone monitors within 50 km. The models used route, observer, and Bird Conservation Region by year fixed effects, county weather, and survey conditions. Ozone from April to mid-June had no association with the June count of all birds: -0.01% per +10 ppb (95% CI -1.23% to +1.23%). In z-score units, the estimate was -0.004 SD per SD (CI -0.018 to +0.011), which excludes the eBird value. Ozone in the previous May-September gave -1.16% per +10 ppb (CI -2.41% to +0.11%). It was negative in 13 of 18 regions, but its CI excluded zero in only 2 of 16 model variants. A placebo with next-year ozone was null. The pre-specified replication rule (East and West, 1995-2009 and 2010-2024) failed. A NOx Budget Program comparison gave a weak ozone decrease (-1.8 ppb, with a pre-trend) and no change in birds (+0.6%, CI -2.3% to +3.7%). A post hoc signal for species richness (-0.38 species per +10 ppb of previous-year ozone) did not replicate in 1995-2009 and decreased with route trends. The data exclude an effect as large as the eBird estimate. They cannot exclude a small lagged effect of about 1-2% per 10 ppb. Limitations: monitors cover routes nearer to cities, monitor ozone is not route ozone, counts are not abundance, and the West has few routes. The bundle includes code, the derived panel, all estimates, and source hashes.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": ["ozone", "air pollution", "Breeding Bird Survey", "bird abundance", "species richness", "replication", "observer bias", "fixed effects", "NOx Budget Trading Program", "EPA AQS", "biodiversity", "null result"],
+  "display": [
+    {"path": "files/figures/fig1_ozone_coefficients.png", "caption": "Ozone coefficients for log(1 + total birds) per BBS route-year, as percent change per +10 ppb with 95% CI, clustered by state. Left: same-year ozone (1 April-15 June). Right: previous-year ozone (May-September). Rows show the primary model, placebo, regions, periods, and observation-bias and specification checks."},
+    {"path": "files/figures/fig3_nbp_event_study.png", "caption": "NOx Budget Program event study on BBS routes, 1995-2012, treated minus control states, reference year -1. Left: planned April-mid-June ozone window. Middle: May-September ozone (post hoc). Right: total birds per route (percent). The ozone decrease is small and the pre-period is not flat. Birds show no decrease."},
+    {"path": "files/figures/fig5_richness_replication.png", "caption": "Post hoc check of the one primary outcome with a CI below zero: species per route per +10 ppb of previous-year ozone. The signal is near zero in 1995-2009 and decreases with route-specific linear trends."}
+  ],
+  "citations": [
+    {"target": "doi:10.1073/pnas.2013568117", "relations": ["challenges"], "reason": "Liang et al. 2020 report a negative ozone-bird association from eBird. We test whether it replicates in the BBS and find a much smaller or null association."},
+    {"target": "https://www.sciencebase.gov/catalog/item/691cfb53d4be021d1d89b482", "relations": ["uses"], "reason": "USGS North American Breeding Bird Survey dataset, 2025 release (1966-2024)."},
+    {"target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html", "relations": ["uses"], "reason": "EPA AQS pre-generated daily ozone files (parameter 44201), 1994-2024."},
+    {"target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/", "relations": ["uses"], "reason": "NOAA nClimDiv county monthly maximum temperature and precipitation, v1.0.0-20261006."},
+    {"target": "doi:10.1175/JAMC-D-13-0248.1", "reason": "Method description for nClimDiv (Vose et al. 2014)."},
+    {"target": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_counties_national.zip", "relations": ["uses"], "reason": "County internal points to link routes to counties."},
+    {"target": "https://www.epa.gov/sites/default/files/2015-08/documents/noxreport03.pdf", "reason": "NOx Budget Trading Program participating states and start dates."}
+  ]
+}

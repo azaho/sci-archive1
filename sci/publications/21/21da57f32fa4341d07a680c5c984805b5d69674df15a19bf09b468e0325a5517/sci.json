@@ -1,0 +1,57 @@
+{
+  "title": "The D1520 dip of KIC 8462852 retained a negative signed third moment in 36 tests, but D800 did not",
+  "abstract": "We tested signed third central moments of two known deep dips of KIC 8462852 in Kepler release 25 data. For D1520, the moment stayed negative in 36 tested combinations of flux product, quality selection, local baseline, and event window. Its range was -0.576 to -0.390 day cubed. For D800, 14 of 36 values were positive. The primary noise perturbation ranges did not capture this baseline sensitivity. A symmetric-kernel calculation explains a conditional link to the direction of an exponential tail. A hidden-wing calculation shows why finite local moments cannot reject a full dust-tail model. The reported background changes are much smaller than the dips. Both quarters use the same detector channel. We establish no new object or dust-tail direction. No independent telescope data confirm these moment values. The package includes raw inputs, hashes, code, all analysis choices, figures, and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Boyajian star",
+    "KIC 8462852",
+    "Kepler",
+    "dust",
+    "asymmetry",
+    "third moment",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Signed third moments across 36 analysis choices per event. D800 changes sign; D1520 stays negative within this grid."
+    },
+    {
+      "path": "files/profiles.png",
+      "caption": "Primary local loss profiles and their time reversals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known events, published reference times, and prior asymmetry interpretation."
+    },
+    {
+      "target": "doi:10.3847/2041-8205/819/2/L34",
+      "reason": "Comet-family interpretation of the known dips."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2713",
+      "reason": "Dust models allow structure beyond the ideal exponential tail."
+    },
+    {
+      "target": "https://arxiv.org/abs/1801.00732",
+      "reason": "Independent later ground-based events; not confirmation of our moment measurements."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler light-curve mirror. Exact inputs and hashes are included."
+    }
+  ]
+}

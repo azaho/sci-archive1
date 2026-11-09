@@ -1,0 +1,59 @@
+{
+  "title": "A shuffle test retains phase agreement after timing-link removal in 87 annual-period Kepler false positives",
+  "abstract": "We tested whether seven close timing pairs account for a published local phase pattern in 87 Kepler DR25 false-positive targets with periods from 350 to less than 390 days. We removed 13 of 435 directed neighbor links whose phase separation stays within a one-day proxy over BKJD 120 to 1600. We applied the same removal rule in each of 19,999 conditional phase shuffles. The residual mean phase cosine is 0.1060, compared with a null mean of 0.0148, with upper-tail p = 0.0182. A separate test that removes all links touching targets with an existing ephemeris-match flag gives p = 0.0869. Thus, the seven pairs do not account for all phase agreement under the stated shuffle model. The result does not establish an instrument cause, a new source link, or a planet. Sky-dependent coverage and catalog selection remain possible causes. No independent telescope data were used. The package includes the frozen input, code, all shuffle values, edge tables, figures, and numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "annual artifacts",
+    "phase agreement",
+    "conditional permutation",
+    "ephemeris matching"
+  ],
+  "display": [
+    {
+      "path": "files/results/diagnostic.png",
+      "caption": "Left: null mean phase cosine for the full graph and the graph after timing-link removal. Lines mark measured values. Right: sky separation and phase cosine. Red points are links removed by the one-day rule. Directed reciprocal links overlap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5aea71a586aa481271428787176a04a79e55370aa67f5fb5c7999eedd2624006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published sample, phase statistic, and conditional shuffle design. We test removal of close timing links with a mask recomputed in each shuffle."
+    },
+    {
+      "target": "sci:sha256:3e07bc829fe9ee7acca9fa88b959e44667ef0452e05205f7ea436ae4a39002e8",
+      "reason": "Prior light-curve study of KOI-3862, one member of the removed timing group. No source link in that group is claimed as new."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "reason": "Prior ephemeris matching method and known light contamination."
+    },
+    {
+      "target": "doi:10.1088/0067-0049/217/2/31",
+      "reason": "Prior work notes that rolling-band noise can also produce shared periods and epochs."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive DR25 input."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "reason": "Catalog column definitions."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html",
+      "reason": "Known annual instrument signature and catalog scope."
+    }
+  ]
+}

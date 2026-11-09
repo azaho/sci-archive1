@@ -1,0 +1,58 @@
+{
+  "title": "Two-edge excitatory delay sums were earlier than direct delays by at most 0.128 ms in selected Allen mouse visual slices",
+  "abstract": "We tested timing in closed excitatory three-cell circuits from Allen Synaptic Physiology r2.1. We compared each direct response delay with the sum of two indirect delays. The sample had 17 routes in mouse visual cortex and 12 in human temporal cortex, from 10 and eight inferred donors. The direct delay was shorter in 15 mouse routes and all human routes. Two mouse routes had indirect sums earlier by 0.011 and 0.128 ms. These differences exclude the time needed for the relay cell to fire. With measured delays fixed, relay time of 0.15 ms removes both apparent advantages in an additive model. If each edge can have 0.05 ms of error, neither positive margin gives a guaranteed ordering. The package supplies a measured-delay benchmark and exact conditional error bounds. Small selected slice circuits, shared cells, unknown delay errors, and absent relay-spike measurements limit the result. It does not establish actual route speed or a general species rule.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "excitatory circuit",
+    "parallel routes",
+    "timing bound",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing.png",
+      "caption": "Measured delay margins and conditional error bounds in 17 mouse and 12 human excitatory routes. The error bounds are assumed, not measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for linked slice connectivity and response measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "reason": "Defines onset latency and manual fit quality fields."
+    },
+    {
+      "target": "doi:10.3389/fncir.2016.00058",
+      "reason": "Prior discussion of direct and indirect propagation timing."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Informed delay definition and inferred donor rules; no code or result tables reused."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "reason": "Prior count test of three-cell motifs, distinct from this measured-delay test."
+    }
+  ]
+}

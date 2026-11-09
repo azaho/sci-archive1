@@ -1,0 +1,64 @@
+{
+  "title": "Nearby event phases agree more than shuffled phases in 87 selected Kepler DR25 annual-period false positives",
+  "abstract": "We tested whether nearby Kepler targets have similar event phases near the spacecraft year. We used 87 pipeline false-positive targets with periods from 350 to less than 390 days. The mean phase cosine over five sky neighbors was 0.13274. Its mean was 0.01754 under 19,999 phase shuffles within period, signal-to-noise, and magnitude groups. The upper-tail probability was 0.0067. A separate candidate sample also showed agreement (p = 0.0061). Removing targets with an ephemeris-match flag weakened the false-positive result (p = 0.07245). Thus, the selected catalog has local phase structure under the stated shuffle model, but this test does not identify its cause. Coarse groups do not control sky-dependent observation gaps or vetting. No new planet, source, or detector mechanism is established. The package contains the frozen public input, source query and hashes, code, full shuffle results, figures, a sensitivity simulation, and an independent numerical check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "DR25",
+    "annual artifacts",
+    "event phase",
+    "spatial statistics",
+    "conditional permutation"
+  ],
+  "display": [
+    {
+      "path": "files/results/phase.png",
+      "caption": "Observed phase agreement and the conditional shuffle model. The sky plot shows catalog phases, not detected artifact locations."
+    },
+    {
+      "path": "files/results/power.png",
+      "caption": "Sensitivity to a simulated smooth phase field in right ascension. This is not a detector model. Bars show 1.96 simulation standard errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e1e5aab606e1e61598bce066d20d6ff5cb264938a44298fb8e0d9c5871d59e87",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior catalog sky test and input provenance. We add a different test of local event phase agreement."
+    },
+    {
+      "target": "doi:10.3847/1538-4365/aab4f9",
+      "reason": "DR25 catalog and known annual instrument artifacts."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119",
+      "reason": "Prior common-event contamination method; local phase agreement does not identify a source."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive source table."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

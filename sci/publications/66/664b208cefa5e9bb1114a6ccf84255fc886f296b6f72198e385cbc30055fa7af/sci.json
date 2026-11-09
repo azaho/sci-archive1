@@ -1,0 +1,21 @@
+{
+  "title": "Runoff in 555 U.S. reference catchments did not stay low after 1,392 multi-year droughts (1951-2025) when annual precipitation and temperature are controlled",
+  "abstract": "Question: after multi-year droughts, does annual runoff in U.S. reference catchments stay below the value that precipitation and temperature predict, as reported for approximately one third of catchments in Victoria, Australia after the Millennium Drought?\n\nApproach: we used 670 CAMELS catchments, USGS daily discharge for water years 1951-2025, and basin-mean NOAA nClimGrid precipitation and temperature. A drought is 3 or more consecutive water years below mean precipitation with a mean deficit of 10 % or more. Per catchment, we fitted sqrt(runoff) on current and previous-year precipitation and temperature with normal years only. Then we calculated the standardised residual R in the 5 years after each drought. The null distribution came from a time-shift placebo that moves the drought windows of all catchments together, which keeps the spatial correlation.\n\nResults: for 1,392 droughts in 555 catchments, the mean R was -0.043 SD (placebo 95 % range -0.099 to +0.117; p = 0.25). The median event change in runoff was -0.4 %. Significant low events occurred at 11.5 % against 9.0 % in the placebo (p = 0.15). Injected deficits of 5 % in all events, or 10 % in 37 % of events, were detected in 30 of 30 draws; the 95 % upper bound on the mean deficit is approximately 2.4 % of annual runoff. Small deficits occurred mostly in post-drought years 1-2. No HUC-02 region passed a Benjamini-Hochberg correction. Nine variants gave mean R between -0.09 and -0.01 SD; two had uncorrected p < 0.05 for small, short deficits. A higher baseflow index went with lower post-drought runoff, but nine attributes explained only 4 % of the variance.\n\nLimitations: annual scale, 5-year window, residual method (not hidden Markov models), reference catchments only, interpolated precipitation, and some provisional recent discharge data.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}, {"scheme": "arxiv", "code": "stat.AP"}],
+  "keywords": ["drought", "hydrological recovery", "rainfall-runoff relationship", "non-recovery", "CAMELS", "USGS streamflow", "nClimGrid", "placebo test", "null result", "baseflow index"],
+  "display": [
+    {"path": "files/figures/fig2_tests.png", "caption": "(a) Mean standardised runoff residual in the last drought years (red) and post-drought years 1-5 (blue), with the time-shift placebo 95 % range. (b) Observed mean post-drought residual and placebo range for nine variants. (c) Mean residual after injected runoff deficits, compared with the observed value."},
+    {"path": "files/figures/fig1_map.png", "caption": "Mean post-drought residual per CAMELS catchment (mean over droughts, WY 1951-2025). Red shows less runoff than the reference model predicts."},
+    {"path": "files/figures/fig3_regions.png", "caption": "Mean post-drought residual per HUC-02 region with placebo 95 % ranges and Benjamini-Hochberg q-values."}
+  ],
+  "citations": [
+    {"target": "doi:10.1126/science.abd5085", "relations": ["challenges"], "reason": "Reports persistent low runoff after the Australian Millennium Drought; we test if the same occurs in U.S. reference catchments and find no general effect."},
+    {"target": "doi:10.1002/2014WR015348", "reason": "Rainfall-runoff shifts during multi-year drought; basis for the residual approach."},
+    {"target": "doi:10.5194/hess-21-5293-2017", "relations": ["uses"], "reason": "CAMELS catchment attributes."},
+    {"target": "doi:10.5194/hess-19-209-2015", "relations": ["uses"], "reason": "CAMELS catchment set and basin polygons."},
+    {"target": "doi:10.1175/JAMC-D-13-0248.1", "relations": ["uses"], "reason": "nClimGrid precipitation and temperature."},
+    {"target": "https://zenodo.org/records/15529996", "relations": ["uses"], "reason": "CAMELS version 1.2 files used."},
+    {"target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/", "relations": ["uses"], "reason": "nClimGrid monthly NetCDF files, last modified 2026-10-06."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily discharge, retrieved 2026-11-08."}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "July-September ENSO gave no clear precipitation forecast gain in seven California divisions in winters 1981-2026",
+  "abstract": "We tested whether July-September Nino 3.4 improves forecasts of November-March precipitation in seven California climate divisions. We used fixed NOAA ERSSTv5 and nClimDiv sources. Each forecast used earlier winters only. The test covers 46 winters, 1981-2026, after 30 initial training winters. The baseline was the expanding training mean. The ENSO model added a linear Nino 3.4 term. South Coast mean squared error skill was 1.95%, with a 95% five-year block interval of -38.54% to 29.92%. North Coast skill was -1.33%, with an interval of -6.54% to 2.24%. The planned South Coast minus North Coast comparison was 3.28 percentage points, with an interval of -35.29 to 30.52 points. All seven division intervals included zero. Checks with unequal warm and cold slopes, recent training, prior precipitation, and a year term left the geographic comparison uncertain. South Coast skill changed sign between the two test periods and after deletion of one influential winter. These results do not show that ENSO has no effect or that useful skill is absent. They give a transparent forecast benchmark with limited precision. Retrospective data, short records, model form, and conditional block intervals limit inference. The package includes fixed source subsets, code, annual forecasts, uncertainty draws, figures, an independent numerical audit, and offline repeat instructions.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": ["ENSO", "California", "precipitation", "seasonal forecasts", "Nino 3.4", "chronological validation", "block bootstrap", "null result", "water availability"],
+  "display": [
+    {"path": "files/results/forecast_skill.png", "caption": "MSE skill relative to the expanding training mean, with marginal 95% five-year block intervals. Positive skill means lower error. All intervals include zero. Cumulative error gains show the influence of individual winters."},
+    {"path": "files/results/forecast_history.png", "caption": "Observed November-March precipitation, forecasts, and fitted ENSO slopes for the planned North Coast and South Coast comparison. A positive fitted slope does not establish useful forecast accuracy."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:052912e523273b0db9cc3a13e6f7f1ccfb2c72565d6e9b88a4e004b308ed207a", "relations": ["uses"], "reason": "We reuse its public shared SST snapshot and its transparent chronological forecast approach. We test a new precipitation target with new code."},
+    {"target": "doi:10.1088/1748-9326/11/5/054021", "reason": "Prior evidence for region, season, and strength differences motivates the planned comparison. Our forecast protocol and spatial and seasonal scope differ."},
+    {"target": "doi:10.1175/BAMS-D-21-0252.1", "reason": "Prior work finds limited seasonal prediction skill and discusses circulation variation that is independent of ENSO. We do not test its dynamical explanation."},
+    {"target": "doi:10.1175/JAMC-D-13-0248.1", "reason": "Source methodology for the gridded observations used to form nClimDiv."},
+    {"target": "doi:10.7289/V5T72FNM", "relations": ["uses"], "reason": "ERSSTv5 data product. We use the fixed CPC regional anomaly subset."},
+    {"target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii", "relations": ["uses"], "reason": "Exact SST source URL. Source hashes and the fixed shared path are recorded in provenance.json."},
+    {"target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpndv-v1.0.0-20261006", "relations": ["uses"], "reason": "Exact precipitation source, nClimDiv v1.0.0, dated 20261006. The package preserves all exact California source lines and the full-object hash."},
+    {"target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/divisional-readme.txt", "relations": ["uses"], "reason": "Source format, units, missing codes, and construction. The exact documentation bytes are preserved."},
+    {"target": "https://psl.noaa.gov/data/usclimdivs/data/map.html", "reason": "Official division names and numeric codes."}
+  ]
+}

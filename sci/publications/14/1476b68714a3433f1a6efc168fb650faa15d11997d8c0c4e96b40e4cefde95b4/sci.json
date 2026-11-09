@@ -1,0 +1,100 @@
+{
+  "title": "A negative ozone and temperature interaction did not repeat in US bird surveys in 1995-2024",
+  "abstract": "We tested whether a warmer previous May-June period made the association of previous May-September ozone with next-year recorded bird richness more negative. We used a published US Breeding Bird Survey panel and added survey temperature and duration controls. The full model had 31,256 surveys on 2,020 routes. We tested four separate region and period samples. The early western interaction was -0.55 recorded species per 10 ppb ozone and 2 C warming. Its four-test interval was -1.09 to -0.01. The later western estimate was +0.23, with an interval of -0.82 to +1.27. Both eastern intervals included zero. Route trends reduced the early western estimate to -0.39, with a 95% interval of -0.91 to +0.14. Thus, a common negative interaction did not repeat. This does not show that ozone and warming are safe for birds. Exposure and survey filters retained 19-33% of accepted western surveys and 63-65% of eastern surveys. Coarse seasonal weather, monitor changes, habitat change, and detection bias limit inference. The study tests seasonal mean temperature, not extreme heat or climate-change effects. The package has all model inputs, code, figures, source hashes, and offline checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "seasonal temperature",
+    "birds",
+    "species richness",
+    "compound exposure",
+    "observation bias",
+    "Breeding Bird Survey",
+    "regional replication",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/interaction.png",
+      "caption": "The target is the change in the prior ozone slope for 2 C more prior May-June temperature. Thick lines show 95% state-cluster intervals. Thin lines show 98.75% intervals for the four primary tests. The full sample is descriptive."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Planned checks did not give a common negative interaction in all four samples. Lines show 95% intervals. Route trends count redundant trend terms in a conservative degrees-of-freedom bound."
+    },
+    {
+      "path": "files/selection.png",
+      "caption": "Exposure and survey filters selected a smaller fraction of western records. These comparisons are descriptive. They do not correct sample selection."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2603c41c0fe979d3cf70d08c3bdfb1b052386c2cee04f2e9e054d5c5fa10d6a2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified national bird, ozone, and county weather panel. We add survey conditions and test a new interaction."
+    },
+    {
+      "target": "sci:sha256:eee5c6480fa55ee48ff901c2b6e9c4bf5507d74a880cbe97812ce9967b5e8522",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This four-state study tests a prior-month ozone slope and documents monitor selection. It does not test the seasonal temperature interaction used here."
+    },
+    {
+      "target": "sci:sha256:fb8dc263088d828ad4663b9a9277ffaf616acb3e560c70a4de805a1300364e79",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "A publication found in the final campaign search tested survey-start temperature with prior-date ozone in 2005-2024. Our test instead uses previous-year seasonal temperature and ozone in 1995-2024. The bird sources overlap."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior US study of ozone, bird counts, and air quality regulation."
+    },
+    {
+      "target": "doi:10.1016/j.scitotenv.2023.162711",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior mountain bird study of ozone and later population growth."
+    },
+    {
+      "target": "doi:10.1093/ornithapp/duab028",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Evidence that smoke can change bird observation probabilities. It concerns a different pollutant."
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS BBS 1966-2024 data, 2025 release. Shared Weather.csv is a direct input; count records are reused from the signed source panel."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EPA daily ozone field definitions for the inherited exposure."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA county monthly climate source for the inherited May-June summaries. Exact snapshot hashes are preserved upstream."
+    }
+  ]
+}

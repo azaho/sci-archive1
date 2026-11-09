@@ -1,0 +1,72 @@
+{
+  "title": "KOI-3862 shows intervening eclipse signals between three deeper 359-day events on Kepler channel 54",
+  "abstract": "We tested two integer-related KOI periods on KIC 3644601. A frozen DR25 screen found two same-target pairs whose longer-period events overlap shorter-period events at ratios from 2 to 100. Both pairs have only false-positive labels. For KOI-3862, eight events between the three measured 359-day events have a mean corrected-flux box depth of 485 ppm. The three long-period events average 1665 ppm and all use channel 54. Raw flux and four baseline settings give the same direction of depth difference. A measured 119.680-day eclipse template from the nearby known binary KIC 3644542 has positive scales at all 11 accepted events. This supports the existing contamination flags and a period alias affected by detector season. It does not establish a new planet, source association, or light-transfer path. The event and season classes are confounded. We used one telescope, with no pixel localization or independent telescope confirmation. The package includes all raw inputs, hashes, source URLs, code, event tables, figures, and offline reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KOI-3862",
+    "KIC 3644542",
+    "period alias",
+    "contamination",
+    "detector season",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/events.png",
+      "caption": "Box depth at each accepted 119.687-day event. Error bars are conditional 0.3-day wild-block standard deviations. All three measured 359-day events use channel 54."
+    },
+    {
+      "path": "files/results/source.png",
+      "caption": "Target residuals and scaled observed source eclipses. Each event has its own fitted scale; these are descriptive fits, not held-out predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b7ac11e777b7df750b7491be9638f0a33056a82eeebc32ac7c7182802bf409b7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior same-target screen and different case study; we add event-time overlap and a KOI-3862 test."
+    },
+    {
+      "target": "sci:sha256:8946c7d3b3a657457da108b9de52c797bfb82ccccc5a4d7b4609c6e745b52f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier campaign preservation of the shared DR25 catalog."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/147/5/119"
+    },
+    {
+      "target": "doi:10.3847/1538-4365/aab4f9"
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/Q1Q17-DR25-KOIcompanion.html"
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/eclipsing_binaries.html"
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html"
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Fixed wiring summaries leave different growth thresholds in equal-weight models of three selected Allen mouse circuits",
+  "abstract": "We tested whether wiring summaries fix a transient-growth threshold in equal-weight signed linear models. We reused published graphs from Allen Synaptic Physiology r2.1: 247 inferred mice in VisP and 17 inferred human donors in TCx. Exact enumeration fixed each cell input and output count, class connection totals, and reciprocal-pair count. The numerical abscissa could change in five mouse graphs. Fixing unsigned three-cell counts left four; fixing reciprocal-pair class counts left three. No human graph retained variation under the primary constraints. In one six-cell example under the last constraints, two allowed wirings had the same largest eigenvalue real part of 1 but numerical abscissae of 1.151388 and 1.244245. At gain 0.85, both linear systems were stable, but only the latter allowed transient norm growth. This is a model counterexample, not measured neuronal amplification. Independent enumeration and trajectory checks passed. Sparse sampled circuits, slice detection, inferred donor labels, assumed weights, and a common time constant limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "transient amplification",
+    "signed connectivity",
+    "exact enumeration",
+    "circuit summaries",
+    "linear model"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/dynamics.png",
+      "caption": "Exact ranges for numerical abscissa under nested wiring constraints. These are support ranges, not confidence intervals."
+    },
+    {
+      "path": "files/evidence/witness.png",
+      "caption": "Stable model examples with different norm-growth criteria. The gains and examples were selected after the primary calculation."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses selected graph and pair records, provenance, and reconstruction code; adds signed circuit model calculations."
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior exact reciprocal-count benchmark motivates checking conditional variation."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.86.011909"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
