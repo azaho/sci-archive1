@@ -1,0 +1,120 @@
+{
+  "title": "Ridge partial correlation kept a gap junction weight link and had lower time stability in two worm cohorts",
+  "abstract": "We tested whether electrical wiring is linked to pair activity after conditioning on other recorded cells. We used 40 Atanas, Kim recordings and eight Dag recordings, with Cook anatomy, contact, distance, chemical wiring and neuron controls. The primary ridge partial score used fixed shrinkage 0.1. Its mean adjusted gap weight associations were 0.1130 and 0.0566. Animal bootstrap 95 percent intervals were 0.1001 to 0.1252 and 0.0391 to 0.0778. Both means also stayed positive with zero shrinkage. The primary difference from Pearson was uncertain in the first cohort and negative in the second. Pair-score time stability was lower for the ridge partial score: mean split-half correlations were 0.388 versus 0.587 and 0.176 versus 0.382. Thus population conditioning kept an electrical wiring link without a repeated gain in anatomical association or time stability. Two other anatomy maps, stricter labels, removal of same-class pairs and an early time window kept positive associations. Fixed anatomy from other animals, one laboratory, partial recording, optical mixing, calcium filters and conditioning bias prevent a direct electrical-causation claim. Code, new aggregate evidence, a figure, source hashes and retrieval instructions support reproduction. External record data stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "electrical connectivity",
+    "partial correlation",
+    "precision matrix",
+    "gap junctions",
+    "calcium imaging",
+    "structure and function",
+    "time stability",
+    "regularization"
+  ],
+  "display": [
+    {
+      "path": "files/figures/gap_conditioning.png",
+      "caption": "Gap junction weight has a positive adjusted link to ridge partial activity scores in both worm cohorts. There is no repeated primary gain over Pearson, and time stability is lower. Error bars and bands show animal bootstrap 95 percent intervals. The anatomy and cell scope are fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:00ff0bddf5dfd7c13799d1ce980a1f7b8eb159a9da31fba0db5dd20396bec7f4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt preparation and preprocessing code under MIT terms, reuse the same input definitions, and extend the mode-removal test to population partial scores and time stability."
+    },
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The verified publication supplies exact anatomy, contact and position extracts to an external directory. They are not included in this bundle."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source paper for the Atanas, Kim activity cohort and cell labels."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source paper for the Dag, Nwabudike, Kang re-fed activity cohort and labels."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the main Cook electrical and chemical anatomy."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of two adult anatomy maps and physical contact controls."
+    },
+    {
+      "target": "doi:10.5281/zenodo.19388374",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external v4 activity and label source; hashes are in INPUTS.json."
+    },
+    {
+      "target": "doi:10.5281/zenodo.19414639",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external v1 activity and label source; hashes are in INPUTS.json."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1406.7865",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier partial correlation method for calcium connectivity inference. This study does not claim a new estimator."
+    },
+    {
+      "target": "doi:10.1162/IMAG.a.162",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on regularization, structural agreement and reliability in fMRI. It motivates separate checks in these worm data."
+    },
+    {
+      "target": "doi:10.1162/jocn_a_01580",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows how conditioning on a common effect can create a false causal link."
+    },
+    {
+      "target": "https://github.com/openworm/CElegansNeuroML/tree/b36380a36d2a6dda0f03c946c433524b25ea2268",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned atlas source for the external coordinate extract."
+    },
+    {
+      "target": "https://github.com/flavell-lab/WormWideWeb-data/tree/0422546192ef58d0de4740a0aa91fd38de22da2e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned recording condition metadata, checked by hash."
+    }
+  ]
+}
