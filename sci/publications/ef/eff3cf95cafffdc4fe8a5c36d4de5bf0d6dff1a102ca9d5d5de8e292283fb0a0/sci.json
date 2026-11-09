@@ -1,0 +1,75 @@
+{
+  "title": "Fixed early fits at 13.2543 days reduce late GJ 3293 error in A88 velocities but increase it in SERVAL",
+  "abstract": "We test a known weak radial velocity signal in public HARPS data for GJ 3293. Early fits at the fixed 13.2543-day period reduce last-season squared error by 10.45 percent in the 2017 A88 velocities. They increase error by 1.51 percent in corrected SERVAL velocities and by 1.94 percent without the nightly correction. The sign of each result persists across 12 baseline and weight choices. Block resampling ranges include zero. A matched-date check retains the product comparison. Eight G2-mask DRS records have a large offset; an early-fitted mask offset reduces the DRS prediction error from 67.67 to 3.81 m/s. Early-only period searches, yearly aliases, a rotation harmonic and activity indicators give no secure physical attribution. The products share spectra, and the fixed published periods used the full historical data. This is a conditional model test, not independent confirmation or rejection of the known planet. We report no new planet or phenomenon. Code, selected data, exact raw hashes, figures and offline instructions are included. Job sci-1107-dell-astronomy-083fca514533; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 3293",
+    "HARPS",
+    "SERVAL",
+    "radial velocity",
+    "sampling alias",
+    "prediction test",
+    "spectral mask",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Fixed-period late squared-error reductions across nuisance harmonics, weight floors and constant or linear baselines. A88 and SERVAL give opposite signs. These are point scores, not significance tests."
+    },
+    {
+      "path": "files/forecast.png",
+      "caption": "Fixed early fits and late prediction errors in corrected SERVAL. The plotted residuals subtract the early nuisance fit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/201630153",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known signals, fixed periods, stellar rotation context and A88 velocities."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36020088",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public A88 tablea5 input."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HARPS RVBank methods, SERVAL and instrument corrections."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/HARPS_RVBank.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 02 archive and release context."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ3293_RVs/GJ3293_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public RVBank input. Hash and shared path are preserved."
+    },
+    {
+      "target": "sci:sha256:9318fd462fa0ddeb3449065111a227e3c9ffa962de73fd0a9870f86b9e0babdb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign velocity prediction test for another source. It supplies no code or measurements here."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Exact cell counts permit zero to 30 reciprocal pairs in 145 selected MICrONS cells",
+  "abstract": "We tested whether exact cell input and output counts force the observed seven reciprocal pairs in a selected MICrONS graph. The public matched structure-function table gave 145 cells, 1,722 eligible pairs, and 148 directed connections. Integer optimization gave a minimum of zero and a maximum of 30 reciprocal pairs. A direct degree bound and saved graphs confirm both endpoints. Adding area and layer edge totals reduced the maximum to 29. Adding separate quartile edge totals for movie response similarity and two opportunity lengths left bounds of zero and 29. The fewest changes needed to remove all reciprocal pairs were eight edge removals and eight additions with degrees fixed, or ten removals and ten additions with all controls fixed. All nine runs had zero reported solver gap. Independent checks verified every witness graph. Exhaustive three-cell graphs passed 288 checks. These are feasible bounds, not null probabilities. One mouse, selected source cells, coarse controls, and possible connection errors limit the result. Code, selected candidates, witness graphs, source hashes, and retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "reciprocal wiring",
+    "exact degrees",
+    "integer optimization",
+    "structure-function",
+    "opportunity mask"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Minimum and maximum reciprocal counts and the fewest changes needed to reach zero. Lines show feasible bounds, not probability intervals. All models keep each cell input and output counts fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public matched structural and functional edge table."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w"
+    },
+    {
+      "target": "doi:10.1371/journal.pbio.0030068"
+    },
+    {
+      "target": "sci:sha256:de1aaf1d1c0de98f63081f16788801c323408e929de0eeaecfd575b8b97a35c6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its same-sample reciprocal-count diagnostic with exact fixed-degree support bounds. No code or derived tables reused."
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Tests its fixed-degree motif-identifiability question in a larger MICrONS opportunity graph; no data or code reused."
+    },
+    {
+      "target": "sci:sha256:0db8313db8f0332f0bbb9334ffa71d993b84ec46316c5d1511c985fc4641aa06",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    }
+  ]
+}
