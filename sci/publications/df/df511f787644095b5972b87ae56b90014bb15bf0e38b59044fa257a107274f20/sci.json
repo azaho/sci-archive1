@@ -1,0 +1,63 @@
+{
+  "title": "Two-step route counts gave no clear added prediction of edge presence between two adult worm maps",
+  "abstract": "We tested whether directed two-step route counts improve prediction of a chemical edge in a second adult C. elegans brain map. We used 180 common neurons, 1933 source edges in adult 7, and 1931 in adult 8. There were 1279 shared edges. The baseline model used direct synapse count, all four endpoint degrees and reverse-edge presence. Five folds held source families out. Added route count changed log loss from 0.481451 to 0.481884 for adult 7 predicting 8, and from 0.492691 to 0.491865 in the reverse direction. Both source-family bootstrap ranges included zero gain. Requiring two or three synapses on route edges gave no clear gain. This is a conditional null result for one model class and two dependent map comparisons. It does not test activity, behavior or biological compensation. We provide original code, aggregate results, a figure, source hashes and external data retrieval steps. Source records and per-edge outputs remain outside the baseline publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "two-step routes",
+    "edge sharing",
+    "source holdout",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Held-out prediction change and count-binned edge sharing in two adult maps. Bars are descriptive source-family bootstrap ranges with fixed predictions, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the two adult brain maps."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015834/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior common-neighbor and local circuit analysis; local route structure is not a new concept."
+    },
+    {
+      "target": "sci:sha256:668597ed9fe04c679f2d61e27aa253a776b0a47f0b1af77171c5ab4efb56fd33",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior route backup study in the same adult maps. No code or result tables reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository terms. No external records or derivative databases are bundled."
+    }
+  ]
+}
