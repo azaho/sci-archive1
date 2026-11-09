@@ -1,0 +1,76 @@
+{
+  "title": "A source-excluded readout has less than half the long-window information in an equal-noise passive network",
+  "abstract": "We derive a bound for a readout of all cells except a known input cell. The model has symmetric nonnegative conductances, positive membrane leak and equal independent white current noise at each cell. For a constant input amplitude and long-window mean voltages, the remote Fisher information per unit time is q/((d+leak)^2+q), where d is the source weighted degree and q is the sum of its squared link weights. Full-population information is one. Thus the remote fraction is below one half. Links among remote cells do not change this score if source links and leak stay fixed. We check the formula in two partial adult worm electrical maps and random graphs. At count weights and leak equal to 0.1 times median weighted degree, median fractions are 0.2366 and 0.2060 across 147 and 149 sources. Direct covariance solves agree within 5.50e-13. Unequal noise can break the half bound. The result concerns an ideal decoder of long-window mean voltages, not measured activity, finite-window information or complete voltage trajectories. Code, graph arrays, hashes, all source scores and checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "passive network",
+    "Fisher information",
+    "gap junction",
+    "C. elegans",
+    "population readout",
+    "source exclusion"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Remote information fractions in two partial adult worm models. The half bound requires equal independent current noise and a long-window mean readout."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/nn.3807",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.princeton.edu/~bejjanki/Documents/Beck_bejjanki_Pouget_2011_neco.pdf",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:21a5bdb55f830f3a318433a7beef6a3907eadd5f34cd022db6c8ca846ad3f5ce",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses graph-selection rules and passive model context. No code or result table reused."
+    },
+    {
+      "target": "sci:sha256:e43b2b2b6ea6cc8e63bd79199c4cc2f509332b8064d5e0d31a35704132fd0628",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends single-cell signal-to-noise context to an ideal population readout."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
