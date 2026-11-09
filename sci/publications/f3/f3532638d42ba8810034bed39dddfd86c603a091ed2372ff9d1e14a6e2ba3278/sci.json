@@ -1,0 +1,64 @@
+{
+  "title": "Bilateral pooling gave median minimum routing errors of 0.133 and 0.124 in two adult worm count models",
+  "abstract": "We tested whether left and right neuron partners can share one output-routing row after destination partners are merged. We used two public adult C. elegans chemical synapse maps with 180 common neurons and 83 bilateral pairs. For each active source pair, half the total variation between its two normalized count rows is the least possible worst-source error of any common row. The median error was 0.133 in D7 and 0.124 in D8. Errors exceeded 0.10 in 57 of 74 and 49 of 73 active pairs. Yet only 37 of 73 pairs had a positive dot product between left-minus-right routing differences across maps; the median cosine was 0.004. No pair passed a conditional independent-contact allocation test at q below 0.05 in both maps. These fixed count models lose routing detail when partners are merged, but the tests do not establish stable side-specific routing across animals. Synapse counts are not transmission probabilities. Partial maps, shared reconstruction methods, an artificial contact-allocation model, and two animals limit inference. We supply code, matrices, scores, source hashes, a proof, independent checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "bilateral neurons",
+    "Markov aggregation",
+    "synapse counts",
+    "routing",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "A: Minimum worst-source total variation error for each active bilateral pair. B: Observed total variation and its mean under fixed-total contact allocation. C: Errors in both maps, with color for the direction agreement of routing differences. These are fixed-map model results, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.isci.2024.110713",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://math.pku.edu.cn/teachers/yaoy/Fall2011/Kemeny-Snell_Chapter6.3-4.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Classical strong lumpability condition; no novelty claimed for the condition or elementary minimax identity."
+    },
+    {
+      "target": "sci:sha256:4758cdea8ce172e3b65fe29fb17050a6f62214c9fbe09f6dee33cd2f0e137a50",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its published cohort rule and source metadata. No code or derived tables were reused. Tests merged destination routing rather than side assignment."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

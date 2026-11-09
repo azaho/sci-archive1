@@ -1,0 +1,83 @@
+{
+  "title": "A quadratic test left the response similarity wiring curve uncertain in one MICrONS mouse",
+  "abstract": "We tested smooth curvature in the relation between measured movie responses and recorded synaptic connections. Public MICrONS v1 data gave 295371 candidate directions, 8128 connections and 148 source cells in one mouse. A quadratic linear probability model controlled for target cells and source-by-target-area-by-target-layer-by-contact-opportunity strata. The quadratic coefficient was 0.01487 percentage points per squared score standard deviation. Its nominal 95 percent shared-neuron interval was -0.03333 to 0.06307, with p = 0.543. Two-bin, eight-bin, clipped-tail and four projection-group checks also left curvature uncertain. This result does not prove linearity. One animal, selected cells, coarse geometry controls and unmeasured network dependence limit transfer. Code, a compact pair table, source hashes, fit checks and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure-function",
+    "neural computation",
+    "response similarity",
+    "curvature",
+    "cell effects",
+    "null result",
+    "Allen Institute"
+  ],
+  "display": [
+    {
+      "path": "files/results/curvature.png",
+      "caption": "The adjusted curve shows a contrast from zero movie correlation. The quadratic term remains uncertain in the primary fit and all seven checks. Bands and bars are nominal shared-neuron 95 percent intervals within one mouse."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior linear response wiring test motivates a distinct smooth curvature test. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:ff9265df9523b75c4b22132aabbbec317b3c2e6103b3aaa6611bce3950c5bb04",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior change point test at zero provides context. This test uses a smooth quadratic on the probability scale."
+    },
+    {
+      "target": "sci:sha256:3f79e5bcb3d2b1c561f66cd5dbec9171365773bd17b7fd8b1c2aa223f45e3270",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior missing connection sensitivity report distinguishes a separate uncertainty source."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/1312.3398",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known shared-neuron sandwich covariance provides the interval method. This work adds no new covariance estimator."
+    }
+  ]
+}
