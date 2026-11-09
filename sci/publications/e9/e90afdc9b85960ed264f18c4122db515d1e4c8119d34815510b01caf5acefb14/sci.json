@@ -1,0 +1,75 @@
+{
+  "title": "A baseline change reverses free-tail timing curvature for KOI-2700 in Kepler Q1 to Q16",
+  "abstract": "We test whether a changing dust tail and baseline choice can bias transit timing for KOI-2700. Free-tail fits to Kepler release 25 Q1 to Q16 aperture flux give an apparent period rate of -1.226 seconds per year with linear per-orbit baselines and +0.739 seconds per year with quadratic baselines. Conditional 95 percent block intervals are [-1.908, -0.453] and [0.343, 1.393]. The same exposures thus give opposite curvature signs under these choices. Removing the short first quarter makes both free-tail rates negative. This prevents a stable orbital interpretation. A separate constant-time signal with a tail scale that falls from 0.07 to 0.04 orbital phase gives 8.62 minutes of false timing range with a fixed-tail fit at the actual exposure times. A free-tail fit recovers that input time within 8.8 seconds. The synthetic tail change does not explain the full measured curve. We also test corrected flux, ingress width, detector seasons, and quarter omissions. The intervals depend on 12-orbit blocks, finite parameter bounds, and a descriptive profile. Poor profile fits, residual stellar variation, dust geometry, and instrument response limit physical claims. No new planet, orbital evolution, or independent telescope confirmation is established. Code, aggregate profiles, bootstrap fits, hashes, figures, and separate-scratch reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "KOI-2700",
+    "KIC 8639908",
+    "Kepler",
+    "dust tail",
+    "transit timing",
+    "model bias",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/curvature.png",
+      "caption": "A quadratic baseline reverses the sign of free-tail timing curvature in aperture flux. Bars show conditional 95 percent intervals from 400 within-quarter 12-orbit block draws. These are apparent period rates under descriptive profile models, not established orbital evolution."
+    },
+    {
+      "path": "files/cadence_test.png",
+      "caption": "A constant-time signal with a shrinking tail, sampled at the actual Kepler exposure times, gives 8.62 minutes of false timing range with a fixed-tail fit. A free-tail fit recovers the input time within 8.8 seconds."
+    },
+    {
+      "path": "files/profiles.png",
+      "caption": "Selected aperture quarter profiles and fixed- and free-tail models. Bars show one block standard deviation for each phase mean. Phase errors are correlated. The descriptive fits do not explain every profile."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:996f37808b0df04ee00816dd83f37aa0530f3e962a7e91ffe10b078883406629",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents the shared raw input, fixed phase reference, prior tail-shape tests, and limits of independent TESS data. No code or fitted output is reused."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/784/1/40",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Discovery, fading, and asymmetric descriptive transit profile."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629676",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published period and prior null test for long-term period change."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201424876",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Physical dust-tail interpretation and limits."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008639908/kplr008639908_lc_Q011111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact Kepler release 25 raw source; hash and retrieval code included."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "External NASA data rights and attribution policy."
+    }
+  ]
+}
