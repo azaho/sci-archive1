@@ -1,0 +1,77 @@
+{
+  "title": "Multiple-contact connections had larger mean cleft size after cell controls in one MICrONS mouse",
+  "abstract": "We tested whether more contacts compensate for smaller contact size in selected mouse visual cortex connections. We used the public MICrONS functional connectomics v1 table. The sample had 8,128 connected pairs. Separate source and target cell effects left 5,158 pairs for the main contrast. Connections with at least two contacts had a mean cleft size contrast of 2,388 source-table units after controls for both cells, proximity lengths and measured movie correlation. The nominal 95% shared-neuron interval was 1,352 to 3,424 units. A source-deletion refit interval was 967 to 3,809 units. Clipped sizes, one- and two-contact pairs, and omission of the movie control also gave positive estimates. These results oppose a simple size-compensation prediction in this selected sample. They do not establish synaptic strength, release reliability or a causal process. One mouse, partial arbors, contact detection, additive controls and conditional uncertainty limit transfer. Code, selected data, hashes, numerical checks and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "synaptic contact count",
+    "cleft size",
+    "circuit allocation",
+    "cell effects"
+  ],
+  "display": [
+    {
+      "path": "files/results/figure.png",
+      "caption": "Unadjusted means and controlled size contrasts in one mouse. Intervals are nominal 95% conditional diagnostics. The source-deletion interval includes full refits. Models use different samples; see the report."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original functional connectomics analysis and v1 data."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original matched calcium imaging and electron microscopy resource."
+    },
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior contact-count relation to function motivated the test of size allocation conditional on count. No code or tables were reused."
+    },
+    {
+      "target": "sci:sha256:68d5c2115b411dc061da8d9dbb3dd7b2f5eea51455eb5b84fd77982f12e1a4bd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior mean-size prediction test used the same panel. This report tests size versus contact count, rather than response prediction."
+    },
+    {
+      "target": "doi:10.1093/pan/mpv018",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared-neuron sandwich variance principle."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025/blob/main/funconnect/stats/quantity.py",
+      "reason": "Source code defines mean size as total cleft volume divided by count."
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    }
+  ]
+}
