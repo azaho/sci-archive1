@@ -1,0 +1,106 @@
+{
+ "title": "Gaia DR3 radial-velocity scatter flags on-target binaries among TESS planet candidates: 41 of 46 flagged 2020 candidates became false positives, and 133 open PCs show stellar-mass scatter",
+ "abstract": "Question: Does the Gaia DR3 radial-velocity (RV) variability test find on-target stellar binaries among TESS Objects of Interest (TOIs), before ground spectroscopy? Method: We matched 7,502 of 8,175 ExoFOP TOIs (2026-11-09) to Gaia DR3. For 3,334 TOIs with G_RVS <= 12, at least 10 RV epochs and template temperature 3900-8000 K, we applied the Katz et al. (2023) criterion (rv_chisq_pvalue <= 0.01, rv_renormalised_gof > 4). We derived the epoch RV scatter from radial_velocity_error, subtracted a magnitude noise model, and converted the scatter to a minimum companion mass at the TOI period. Results: The flag marks 5 of 447 hosts of planets with K < 0.3 km/s (1.1%), 46 of 50 spectroscopic-binary false positives (92%; ROC AUC 0.97), and 24 of 54 on-target eclipsing binaries. For 734 testable TOIs that had no TFOP verdict on 2020-11-20 (before Gaia DR3), 41 of 46 flagged TOIs with a 2026 verdict became false positives (89%), against 108 of 307 unflagged TOIs (35%; p = 3e-12). The 5 flagged TOIs that became confirmed are all brown dwarfs. The scatter gives the published companion mass within 26% for WASP-18 b, TOI-4603 b, TOI-5882 b and KELT-1 b. Now 386 open PC/APC TOIs have the flag; 133 TFOPWG PCs without a binary note have a Gaia NSS period match or stellar-mass scatter. WASP-163 and TOI-7154 show RV scatter that their known planets cannot cause. Limitations: The test applies to 41% of TOIs, sees only the target star, gives false flags for broad-lined and young stars, and a flagged planet in a wide binary is not a false positive. FP reasons come from comment keywords. TFOP observers could see Gaia data, so the forecast is not fully blind.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "TOI",
+  "false positives",
+  "eclipsing binaries",
+  "Gaia DR3",
+  "radial velocity",
+  "brown dwarfs",
+  "planet candidate vetting",
+  "forecast test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_forecast_2020.png",
+   "caption": "TOIs that had no TFOPWG verdict on 2020-11-20, split by the Gaia DR3 RV-variability flag. Bars show their TFOPWG verdict on 2026-11-09. Of flagged TOIs with a verdict, 41 of 46 became false positives; the 5 confirmed ones are brown dwarfs."
+  },
+  {
+   "path": "files/figures/fig1_flag_rate_by_class.png",
+   "caption": "Fraction of TOI host stars with Gaia DR3 RV variability, by TFOPWG class. Error bars are 95% Wilson intervals. Hosts of low-K planets: 1.1%; spectroscopic-binary false positives: 92%."
+  },
+  {
+   "path": "files/figures/fig4_scatter_vs_period.png",
+   "caption": "Intrinsic Gaia RV scatter against TOI period for flagged TOIs. Dashed lines show K/sqrt(2) for companions of 13 M_J, 0.075, 0.3 and 1 M_sun around a 1 M_sun star. Most flagged open candidates fall in the stellar-companion region."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1051/0004-6361/202244220",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 RV variability statistics and the variability criterion."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 catalogue."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/abefe1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Objects of Interest catalog."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP TOI table with TFOPWG dispositions."
+  },
+  {
+   "target": "doi:10.26133/NEA13",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Planet masses and RV semi-amplitudes for the mass check and the low-K null sample."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2310.12380",
+   "reason": "Earlier rejection of TOIs with Gaia DR3 NSS SB1 orbits."
+  },
+  {
+   "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+   "reason": "Campaign study that matched Gaia DR3 eclipsing binaries to TOIs; a complementary Gaia vetting method."
+  },
+  {
+   "target": "sci:sha256:434ee8c005d10e3938ec3e5252ee06ef6f7e8830823099f4b6726f2254df6b0f",
+   "reason": "Campaign forecast test of TRICERATOPS false-positive probabilities for TOIs."
+  },
+  {
+   "target": "sci:sha256:d57ede30e514369ac650d3ec09f73996d2292c6037da34fe5cc0254e2ea71fda",
+   "reason": "Campaign study of TESS transits at Gaia DR3 SB1 conjunction times."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Live TOI table, retrieved 2026-11-09."
+  },
+  {
+   "target": "http://web.archive.org/web/20201120061920id_/https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TOI table capture of 2020-11-20 used for the forecast sample."
+  }
+ ]
+}
