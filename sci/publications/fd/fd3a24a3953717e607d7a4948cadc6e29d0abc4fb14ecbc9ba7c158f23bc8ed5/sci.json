@@ -1,0 +1,89 @@
+{
+  "title": "Insect catch was linked to warmer days in two Swedish samples under fixed daily weather and 1-45 day windows in 2019",
+  "abstract": "We tested whether collection totals establish that captured insect mass was linked to warmer daily weather than the days available to a trap. We used 5,836 measured collections in two periods per country in Sweden and Madagascar in 2019-2020. We held daily site temperatures fixed and permitted any nonnegative daily mass allocation that preserved each collection total. Sharp bounds for the mean catch temperature minus available temperature were +2.00 to +7.68 C and +1.20 to +6.75 C in Sweden. Both Madagascar bounds included zero. The Swedish bounds also included zero after a 3-21 day collection filter. On common traps, windows over 21 days covered 31-33 percent of observed days but held 6-8 percent of mass. Removing them changed weather support. These bounds concern selected records, not confidence intervals or causal effects. One survey year per country, missing collections, habitat differences, daily weather error and capture bias limit wider use. The package includes a proof, code, source hashes, aggregate results, two figures and independent numerical checks. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "insect biomass",
+    "temperature",
+    "observation bias",
+    "collection interval",
+    "sharp bounds",
+    "partial identification",
+    "Sweden",
+    "Madagascar",
+    "seasonality"
+  ],
+  "display": [
+    {
+      "path": "files/temperature_bounds.png",
+      "caption": "Bounds for catch temperature minus available temperature under fixed daily weather and nonnegative daily mass. Lines show attainable intervals for selected records. Circles assume uniform catch within each collection. The intervals are not confidence intervals."
+    },
+    {
+      "path": "files/duration_sensitivity.png",
+      "caption": "Duration filters change the observed weather support. Swedish bounds include zero after restriction to 3-21 day or 5-10 day collections. A filter changes the target sample and does not correct a fixed target."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1098/rspb.2024.0090",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The source study describes the insect networks and weather data."
+    },
+    {
+      "target": "doi:10.5061/dryad.ghx3ffbtk",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source dataset; the tested mirror is fixed by file hashes."
+    },
+    {
+      "target": "https://zenodo.org/records/11205860",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version v1, 16 May 2024. Five shared files were read in place."
+    },
+    {
+      "target": "doi:10.24381/cds.e2161bac",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERA5-Land is the origin of source-provided daily weather."
+    },
+    {
+      "target": "doi:10.1111/icad.12555",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This German trap study uses uniform allocation across collection days. It motivates an audit without that assumption."
+    },
+    {
+      "target": "sci:sha256:33081dacfdd7e6835872f82ebee425fee5f193895dbd6f75b0b86881c48b98d2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its source selection and duration diagnostic informed our data checks. No code or derived records were reused."
+    },
+    {
+      "target": "sci:sha256:006c74222e580233abebb7511aaa354e95e18449377a656b7c828aeccabe16d0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign application of sharp bounds to uncertain flowering dates. Our target and data constraints differ."
+    },
+    {
+      "target": "https://xds.ecmwf.int/licences/licence-to-use-copernicus-products",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "External weather credit and terms; no raw weather database is bundled."
+    }
+  ]
+}
