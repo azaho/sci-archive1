@@ -1,0 +1,69 @@
+{
+  "title": "A local-season fit from 2001-2012 gave lower month scores for shallow USGS earthquakes in 2013-2025",
+  "abstract": "We tested whether a fixed annual cycle improves later earthquake month probabilities. We used a shared USGS catalog with preferred magnitude at least 5.5. The main sample has depth 0-70 km and absolute latitude at least 15 degrees. We removed events within 100 km and 30 days after an equal or larger event. A fit to 2,243 events in 2001-2012 was scored on 2,316 events in 2013-2025. Southern months were shifted by six months. The model conditioned on year and hemisphere totals and used month lengths. The log score gain over a constant rate per day was -0.00377 bits per event. The conditional 95% three-year block interval was -0.00659 to -0.00112. The separate-year interval was -0.00741 to +0.00005. Wider event-removal windows and a magnitude 6 cut also gave negative point gains, with three-year intervals that included zero. This simple local-season fit gave no held-out gain. The result does not test local water loads or rule out regional seasonal effects. A revised catalog, a short test period, fixed fitted coefficients and approximate removal of related events limit inference. Code, source hashes, aggregate scores, bootstrap draws, a separate count audit and a figure are included. External event records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake seasonality",
+    "held-out log score",
+    "ComCat",
+    "annual harmonic",
+    "null result",
+    "hydrological loading"
+  ],
+  "display": [
+    {
+      "path": "files/scores.png",
+      "caption": "Held-out score gains for fixed seasonal fits. Bars show conditional 95% three-year block intervals. Zero is a constant rate per day. Tests share events and are not independent."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign water-load test informed the held-out season question. Catalogs and events overlap in time; this is not independent event evidence."
+    },
+    {
+      "target": "sci:sha256:9fbb894aad4008d9f3b3a5b5df194d60558f163e192a86b99d9ed2bbfd2be3ac",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Read prior matched deep-event season test and reused its shared broader ComCat snapshot. Our target is later month score, not size contrast."
+    },
+    {
+      "target": "doi:10.1126/science.aak9547",
+      "reason": "Prior California study of hydrological load and small earthquake timing."
+    },
+    {
+      "target": "doi:10.1002/2015GL065088",
+      "reason": "Prior deep-earthquake study explains the risks from clustering and selection after inspection."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}

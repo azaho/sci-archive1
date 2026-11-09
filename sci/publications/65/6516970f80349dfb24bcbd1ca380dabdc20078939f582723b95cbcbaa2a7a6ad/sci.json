@@ -1,0 +1,121 @@
+{
+ "title": "Faulting style did not improve out-of-sample b-value forecasts for global shallow Mw 5.7+ GCMT earthquakes in 2004-2026, but plate-boundary setting did",
+ "abstract": "Schorlemmer et al. (2005) found that the Gutenberg-Richter b-value is highest for normal faults, lowest for thrust faults and between for strike-slip faults. We tested this relation out of sample in the Global CMT catalog. We fitted b as a linear function of the folded rake for shallow (centroid depth 50 km or less) Mw 5.7+ earthquakes in 1977-2003 (4,726 events) and tested the frozen model on 2004 to mid-2026 (4,838 events). The plan was written before the b-rake statistics. The training slope was -0.138 per 90 degrees of rake (95% tile-bootstrap CI -0.203 to -0.072). The test slope was -0.073 (-0.129 to -0.022), half as large. The frozen rake model gave no test log-likelihood gain over a constant b (+0.0002 nats per event, CI -0.0037 to +0.0029), so the pre-set transfer rule failed. With one b intercept per Bird (2003) plate-boundary setting, the test slope was -0.005 (-0.048 to +0.034); in training it was -0.098. Spreading ridges and oceanic transforms have high b and few thrust events; subduction zones have b near 1.0 and most thrust events. Inside subduction zones there was no rake slope in either period. In an exploratory comparison, a frozen setting model gave +0.0078 nats per event (CI +0.0032 to +0.0125) in the test period, and rake added nothing. The within-setting slope was negative in all three pre-2004 windows and near zero in all three later windows. This step coincides with GCMT procedure changes in 2004, which we did not test as the cause. Limitations: one catalog, Mw 5.7+ only, a coarse nearest-boundary setting label, strong rake-setting correlation, and a low-power test of the corner-magnitude effect. Code, plan, aggregate tables and figures are included; raw catalogs are retrieved by script.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370609"
+  }
+ ],
+ "keywords": [
+  "b-value",
+  "Gutenberg-Richter",
+  "faulting style",
+  "rake",
+  "Global CMT",
+  "plate boundaries",
+  "PB2002",
+  "out-of-sample test",
+  "differential stress",
+  "earthquake magnitude distribution",
+  "replication",
+  "catalog homogeneity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_b_by_rake.png",
+   "caption": "b-value (Aki ML, 95% CI) in 20-degree folded-rake bins for GCMT shallow Mw 5.7+ earthquakes, 1977-2003 (training, blue) and 2004-2026.5 (test, orange), with the maximum-likelihood linear fits and tile-bootstrap slope CIs."
+  },
+  {
+   "path": "files/figures/fig2_slope_forest.png",
+   "caption": "Rake slope b1 (change in b from rake 0 to +90) with 95% tile-bootstrap CIs in both periods: pooled, with plate-boundary setting intercepts, inside single settings, Mw 5.7-6.5 only, and sensitivity versions."
+  },
+  {
+   "path": "files/figures/fig3_class_by_setting.png",
+   "caption": "b-value by Frohlich mechanism class (normal, strike-slip, thrust) inside PB2002 settings, 1977-2003 and 2004-2026.5. High b at ridges and transforms, and no normal-over-thrust excess in subduction zones."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/nature04094",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Original faulting-style b-value relation that we test out of sample; the global relation did not transfer as a forecast after 2003 and is mostly a plate-boundary-setting contrast."
+  },
+  {
+   "target": "doi:10.1016/j.epsl.2019.115791",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Rake-dependent b-value model; our out-of-sample GCMT test finds no within-setting rake effect after 2003."
+  },
+  {
+   "target": "doi:10.1029/2019GL083997",
+   "reason": "Joint faulting-style and depth dependence of b in California."
+  },
+  {
+   "target": "doi:10.1785/0120030107",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Plate-boundary-class analysis of the magnitude distribution; our setting model transfers out of sample."
+  },
+  {
+   "target": "doi:10.1029/2001GC000252",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PB2002 plate boundary steps used to label the setting of each earthquake."
+  },
+  {
+   "target": "doi:10.1016/j.pepi.2012.04.002",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Global CMT catalog and its 2004 procedure changes."
+  },
+  {
+   "target": "doi:10.1029/JB086iB04p02825",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Global CMT method; required citation for the catalog."
+  },
+  {
+   "target": "doi:10.1002/2014GL062863",
+   "reason": "Review of the stress dependence of b."
+  },
+  {
+   "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We read the exact GCMT monthly NDK files for 2021-01 to 2026-06 from this publication."
+  },
+  {
+   "target": "sci:sha256:e52c68b2e1361162f3ebd5cc9a8f17d4109ed89f22dc6ecd14b5e92805a822d0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found that one b-value explains the faulting-style Bath-law difference; we find that rake does not add out-of-sample information on b beyond setting."
+  },
+  {
+   "target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13",
+   "reason": "Related GCMT b-value stress test (tidal shear stress)."
+  },
+  {
+   "target": "sci:sha256:856fb5e21c1b94f7b2bf8ec5ebd259b883033f28b7571f02a2c5b905a2c5c82f",
+   "reason": "Documents a 2004 GCMT source-shape change that may relate to the 2004 step in the within-setting slope."
+  },
+  {
+   "target": "sci:sha256:83ef543067675996b6fb8240b913850c38fb11a2a3e7e62149aaa59894833a21",
+   "reason": "Documents a 2004 GCMT depth-constraint change that may relate to the 2004 step."
+  }
+ ]
+}
