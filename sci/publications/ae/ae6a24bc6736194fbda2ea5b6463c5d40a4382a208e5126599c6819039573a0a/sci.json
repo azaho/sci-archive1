@@ -1,0 +1,130 @@
+{
+ "title": "Projection-neuron wiring in three fly brain hemispheres predicts lateral horn odour tuning better than shuffled wiring, but with mean r 0.16 against 0.46 between cells of the same type",
+ "abstract": "Question: does electron-microscopy wiring from uniglomerular projection neurons (uPNs) predict the odour tuning of Drosophila lateral horn (LH) cell types? Approach: we used whole-cell recordings of 117 LH cells (Frechter et al. 2019) that match hemibrain bodies in 55 types, and 35 single odours. For each type, the predicted tuning was the sum over glomeruli of signed uPN synapses times the DoOR receptor response; no parameter was fitted to the recordings. We repeated the test with wiring from both FlyWire v783 hemispheres. Results: the own wiring of a type predicted its tuning better than the wiring of other types (mean r 0.159, 95% CI 0.091-0.229; type-permutation null 0.057, p=0.0001) and better than wiring with permuted glomerulus labels (null 0.064, p=0.0005). Types with similar uPN input had more similar tuning (Mantel rho 0.145, p=0.0005). FlyWire left and right gave mean r 0.136 and 0.137 against nulls near 0.05 (p<=0.008), and uPN input vectors agreed across hemispheres (median cosine 0.82-0.94). The result held within lineage families and for several receptor-to-PN models and match-quality cuts. But the effect is small: cells of the same type agree at mean r 0.46, while the fixed wiring model reaches 0.12 for the same cells. A free cross-validated readout of DoOR glomerulus responses did not do better (best 0.16), and the mean tuning of other types predicted better (0.31). Limitations: DoOR is a proxy for uPN firing, light-to-EM matches are approximate, 27 of 55 types have one recorded cell, and 35 odours limit model fits. Conclusion: LH wiring carries consistent type-specific odour information, but a linear uPN-plus-receptor model explains only a small part of reproducible LH tuning.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "lateral horn",
+  "olfaction",
+  "connectome",
+  "hemibrain",
+  "FlyWire",
+  "structure-function",
+  "odour tuning",
+  "DoOR",
+  "projection neurons",
+  "cell types",
+  "permutation test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_primary.png",
+   "caption": "A: mean r between connectome-predicted and measured odour tuning (blue line) against type-label and glomerulus-label permutation nulls (10,000 each). B: r for each of 55 hemibrain LH types; dot size shows recorded cells. C: pairwise uPN input similarity against pairwise measured tuning correlation for 1,485 type pairs, with octile means."
+  },
+  {
+   "path": "files/figures/fig2_replication.png",
+   "caption": "Observed mean r and null means for 12 analyses: hemibrain fine and coarse types, FlyWire left and right hemispheres, odour-coverage and match-quality cuts, and Olsen-type PN normalisation. p1 = type-permutation p, p2 = glomerulus-permutation p, rho = Mantel input-similarity vs tuning-similarity."
+  },
+  {
+   "path": "files/figures/fig3_ceiling.png",
+   "caption": "Prediction quality of the fixed connectome model compared with cross-validated fitted models, the mean tuning of other types, and the agreement between recorded cells of the same type (noise ceiling). The fixed wiring is as good as a free linear readout but far below same-type agreement."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.44590",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the LH odour responses (via the lhns R package) that we predict."
+  },
+  {
+   "target": "https://github.com/jefferislab/lhns/tree/7638e3db36342b9ebb4c10a84914d734d7d23f63",
+   "relations": [
+    "uses"
+   ],
+   "reason": "lhn_odour_responses and lm_em_matches tables (GPL-3); not bundled."
+  },
+  {
+   "target": "doi:10.1038/srep21841",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DoOR 2.0 consensus receptor responses (CC BY-SA 4.0); not bundled."
+  },
+  {
+   "target": "https://github.com/ropensci/DoOR.data/tree/db323a496577c4b4a72b5c2fcd1859e07521ffb5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact DoOR data version used."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 connectome (traced adjacencies)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome v783 connections."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire neuron annotations (uPN glomerulus, transmitter, hemibrain type, side)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zenodo record of FlyWire v783 proofread connections."
+  },
+  {
+   "target": "doi:10.7554/eLife.66018",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our weak connectome-to-tuning relation agrees with their report of no clear correlation between hemibrain synapse counts and functional connections."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2018.05.011",
+   "reason": "Functional glomerulus-to-LHN connectivity map that predicted many LHN responses."
+  },
+  {
+   "target": "doi:10.7554/eLife.43079",
+   "reason": "LH cell types and lines (Dolan et al. 2019)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2010.04.009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Divisive normalisation model used in a sensitivity analysis."
+  },
+  {
+   "target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835",
+   "reason": "Campaign test of wiring-based odour models in the mushroom body; we extend the question to the lateral horn."
+  },
+  {
+   "target": "sci:sha256:d47d61cecf35201e4dfa315a4550acd1f6f7038e2cc7d15a7828e387c956b142",
+   "reason": "Campaign study of PN-to-Kenyon-cell co-convergence in three calyces."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Campaign study linking FlyWire wiring to neuropil calcium correlations."
+  }
+ ]
+}

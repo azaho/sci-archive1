@@ -1,0 +1,102 @@
+{
+ "title": "In 57 mice, LFP Granger influence in visual cortex went from lower to higher anatomical areas in all bands from 3 to 120 Hz; beta was not a feedback band",
+ "abstract": "Question: does the primate rule that gamma carries feedforward and beta carries feedback influence apply to the mouse visual hierarchy? We used Allen Visual Coding Neuropixels LFP from 57 mice (LGd, six visual cortical areas, LP) in gray-screen, drifting-grating and natural-movie conditions. We measured pairwise spectral Granger causality on 80 um local bipolar signals and compared the directed asymmetry index (DAI) with the Harris et al. (2019) anatomical hierarchy. For all pairs, DAI from the lower to the higher area was above zero in all 15 band x condition tests (p <= 0.007 across mice). Within visual cortex, DAI was 0.23 to 0.33 in gratings (3 to 80 Hz) and increased with hierarchy distance (rho about +0.2). The rank of the six areas by received DAI was exactly the anatomical order in five gratings or movie tests (exact p = 0.003). Beta had a larger feedforward asymmetry than gamma; no band showed net feedback. Running decreased theta to beta asymmetry but not gamma asymmetry. Shuffle, time-reversal, same-layer and no-V1 controls kept the result. LGd and LP did not follow their anatomical scores. Main limitation: unipolar LFP gave feedback-like beta DAI in spontaneous activity, and a CSD-like derivation gave DAI near zero, so the result depends on the signal derivation.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Granger causality",
+  "visual hierarchy",
+  "feedforward",
+  "feedback",
+  "beta oscillation",
+  "gamma oscillation",
+  "local field potential",
+  "Allen Brain Observatory",
+  "Neuropixels",
+  "mouse visual cortex",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dai_spectra.png",
+   "caption": "Mean DAI from the lower to the higher area (top) and within-mouse Spearman rho of DAI with hierarchy distance (bottom), for all 8 areas (left) and visual cortex only (right). Bipolar LFP, all running states. Bands show 95% CI over mice."
+  },
+  {
+   "path": "files/figures/fig4_functional_hierarchy.png",
+   "caption": "Functional score (mean DAI each area receives) against the Harris 2019 anatomical hierarchy score. Rho values in each title are for spontaneous, gratings and movie. Cortical areas follow the anatomical order; LP and LGd do not."
+  },
+  {
+   "path": "files/figures/fig3_controls.png",
+   "caption": "Mean oriented DAI with 95% CI over mice for theta, beta and gamma under controls: cortex only, different probes, unipolar and CSD-like derivations, running and still states, time-reversal-corrected net Granger (x10) and a segment-shuffle null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:bd6b73fd2d18273dde91a4e9aef1e8b694c7b66c3b9b63253b219f68b820357d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its per-channel CCF layer table, the Allen session and probe metadata tables and its LFP range-read method."
+  },
+  {
+   "target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59",
+   "reason": "Prior campaign test of spike coupling direction between the same mouse visual areas against axon density."
+  },
+  {
+   "target": "sci:sha256:8652596e8108893e95c268255b4fd1d8779b572e76b1aee818940bff44dbae1b",
+   "reason": "Prior campaign test of short-latency spike links between mouse visual areas against tracer projection density."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "reason": "Prior campaign test of the same anatomical hierarchy against spiking timescales."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2014.12.018",
+   "reason": "Primate frequency-channel rule (Bastos et al. 2015) that we test."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores and pair feedforward/feedback classes (Harris et al. 2019)."
+  },
+  {
+   "target": "https://github.com/AllenInstitute/MouseBrainHierarchy",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source files of the hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels data set (Siegle et al. 2021)."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NWB files read by HTTP range requests."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.3001534",
+   "reason": "Earlier directed-connectivity study of 11 Allen mice with gratings."
+  },
+  {
+   "target": "doi:10.1073/pnas.1402773111",
+   "reason": "Primate laminar evidence for alpha feedback and gamma feedforward."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2012.09.036",
+   "reason": "Time-reversed Granger control."
+  }
+ ]
+}
