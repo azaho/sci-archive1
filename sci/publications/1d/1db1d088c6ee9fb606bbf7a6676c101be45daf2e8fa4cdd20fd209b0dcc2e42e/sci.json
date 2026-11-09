@@ -1,0 +1,68 @@
+{
+  "title": "Five percent covariance error left over 112 percent readout variance error in eight worm map models",
+  "abstract": "We tested whether common fluctuations among sites of one source make pairwise wiring counts sufficient to predict input noise. We rebuilt site and source matrices from eight public C. elegans brain maps. A model mixed private site fluctuations with common source fluctuations. A count-only comparator replaced private site fluctuations with private contact fluctuations. Both models had the same mean inputs and single-target variances. At common-source correlations from 0.215 to 0.649, whole-matrix relative error fell to 5 percent. The largest relative variance error over linear readouts was still 112 to 410 percent. Exact integer checks found source-cancelling contrasts with more than 5 percent error for every correlation below one in each map. These contrasts can have vanishing absolute noise and also cancel source-count signals. Thus the result tests a covariance accuracy certificate, not measured coding loss. Unknown release laws, signed decoder weights, omitted target noise and partial brain maps limit the result. Code, aggregate scores, checks, a figure and pinned external retrieval instructions support reproduction. External records are absent from the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "polyadic synapses",
+    "noise covariance",
+    "common source",
+    "linear readout",
+    "model approximation"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Whole-matrix covariance error and worst readout variance error differ in eight fixed worm map models. The dashed line is 5 percent. Correlation is assumed, not measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary site records from eight worm brain maps; exact pinned sources are recorded in inputs.json."
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Physiological evidence for shared miniature events at worm neuromuscular synapses; does not establish the brain release model."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the verified fixed cell panel. Extends independent-site covariance calculations to correlated sites within a source."
+    },
+    {
+      "target": "sci:sha256:991c3b4455a8565df0475459457c96a1b4f55a8061a69d2ee45667b4cb118d2b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior source variance scales kept distinct sites independent. This test adds dependence among sites of one source."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.4536-14.2015",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model study of how input correlations shape neural variability."
+    }
+  ]
+}
