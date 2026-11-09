@@ -1,0 +1,52 @@
+{
+  "title": "Weekend daytime share was 8.28 points higher for northern Cascadia tremor detections in 2017-2025",
+  "abstract": "We tested whether a reported weekend daytime excess remains in a recent public tremor catalog. We used PNSN API v3.0 data at 47-50 N for local dates in 2017-2025. Daytime was 08:00-18:00 and night was 20:00-06:00 in Pacific civil time. The daytime share of detections in these hours was 40.39% on weekends and 32.11% on weekdays. The difference was 8.28 percentage points. A 28-day block bootstrap gave a conditional 95% interval of 6.42 to 10.34 points. No one of 20,000 block calendar-phase draws gave as large an absolute difference. Equal weight for 1,080 active days gave a difference of 8.05 points, with limits of 4.90 to 11.29. Each annual contrast was positive. This extends earlier reports of a weekend effect; it is not its first discovery. The pattern is consistent with a time-dependent observation process but does not identify its cause. Unknown uptime, burst dependence, catalog changes and conditional block assumptions limit inference. Code, daily evidence, source hashes, simulation draws, checks and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Cascadia",
+    "tectonic tremor",
+    "weekend effect",
+    "detection bias",
+    "block bootstrap",
+    "calendar phase"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Annual weekend minus weekday daytime share and conditional block intervals. Gray bars show the earlier catalog period. Blue bars show 2017-2025. Daytime and night each cover ten civil hours except on daylight-saving transition dates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1002/2014JB011430",
+      "reason": "Prior northern Cascadia LFE study reports daily detection variation and a weekend effect; this work tests the recent routine tremor catalog."
+    },
+    {
+      "target": "doi:10.1029/2021JB022523",
+      "reason": "Describes the updated routine PNSN tremor detection and energy catalog."
+    },
+    {
+      "target": "https://pnsn.org/blog/tremor-catalog-update-again",
+      "reason": "Documents January 2017 start of reprocessing and potential station and algorithm errors."
+    },
+    {
+      "target": "sci:sha256:4c3b95145152987706689de4339f3e1efe7fe74c7365f02efb52319f05e504e8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal audit identifies the shared snapshot and catalog changes. Raw data are reused in place; subdaily code is new. Data overlap, so this is not independent confirmation of its seasonal result."
+    },
+    {
+      "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed shared CSV snapshot retrieved on 8 November 2026."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Model choices reverse the ESPRESSO ranking of two known annual-alias signals in HD 20794",
+  "abstract": "We test the known 111.51-day residual signal of HD 20794 against its exact 85.428785-day annual alias. A curve fitted to 746 HARPS nights gives a 12.39 percent prediction gain on 65 separate ESPRESSO nights. The alias gives 3.71 percent. The gain difference is 8.68 percentage points, with a conditional 30-day group interval from -7.97 to +28.00. Its sign reverses across 27 nuisance models. The weighted signal bases are not identical at the observed dates. However, a 0.276 m/s true sinusoid gives an expected wrong-alias error increase of only 2.21 to 3.02 in ESPRESSO under the adopted independent-noise model. Thus sample geometry allows discrimination, but this transfer test gives no stable choice. Periods and data come from prior work. Training error, colored noise and orbit-model error limit inference. No new planet or physical cause is found. Code, frozen samples, hashes, tables, figures and offline steps are included. Job sci-1107-dell-astronomy-3b0395004eec; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 20794",
+    "annual alias",
+    "radial velocity",
+    "HARPS",
+    "ESPRESSO",
+    "model sensitivity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/alias_test.png",
+      "caption": "HARPS fits and conditional ESPRESSO gains for fixed curves. Bars show 30-day group percentile intervals. Both alias intervals include zero."
+    },
+    {
+      "path": "files/geometry.png",
+      "caption": "Principal cosines and conditional expected wrong-alias error increases at the real sample times. The signal amplitude is 0.276 m/s; errors follow the fixed independent-noise model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1051/0004-6361/202451769",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Appendix D supplies the known weak alias peaks and the 111.51-day circular amplitude. The main text supplies known periods and instrument context."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.36930297",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public velocity and activity data; source response hash is preserved."
+    },
+    {
+      "target": "https://arxiv.org/html/2501.17092v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Accessible full text for prior methods and Appendix D."
+    },
+    {
+      "target": "sci:sha256:9dfd3376acb1d03ad9a0b15140770a65bb57a69e9145f361a3d45abea51efa56",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign instrument transfer method and data inventory. New code and fresh raw parsing are used here. The tested alias pair and basis geometry differ."
+    }
+  ]
+}
