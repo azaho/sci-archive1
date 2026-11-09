@@ -1,0 +1,107 @@
+{
+  "title": "A cubic trend and three planet terms limit fixed 40.208-day and 51.56-day power overlap to 11.4 percent in 232 HD 40307 HARPS nights",
+  "abstract": "We test whether the known 51.56-day velocity signal of HD 40307 can be a twice-yearly sampling alias of one steady 40.208-day rotation wave. We use 448 selected HARPS-RVBank version 02 exposures on 232 nights before the 2015 fibre change. With common weights, a cubic trend, and three fixed inner planet periods, the two residual wave spaces share at most 11.36 percent of power at any phase. Corrected SERVAL and DRS velocities fit better at 51.56 days, with weighted error differences of 48.61 and 37.61. The preference stays positive in 54 model and weight settings per reduction. Conditional parent-only residual-sign tail fractions rise to 0.0056-0.0107 for year-long groups. These fractions depend on symmetric and independent group errors. A paired extraction difference does not resolve a 51.56-day term. This tests one steady rotation explanation. It does not establish a new planet, exclude changing activity, or provide independent telescope confirmation. The package includes code, aggregate results, figures, exact input hashes, and retrieval steps. Raw observations and record-level transforms stay outside the signed package. Job sci-1107-hp-astronomy-e99675a40e1d; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 40307",
+    "HARPS",
+    "radial velocity",
+    "sampling alias",
+    "stellar rotation",
+    "principal angles",
+    "conditional noise test",
+    "null explanation test"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/alias_evidence.png",
+      "caption": "The fixed 40.208-day parent has weak overlap with the 51.56-day wave at the selected observing times. The bound includes a cubic trend and three planet terms. Activity curves and a free seasonal parent show the scope of the comparison."
+    },
+    {
+      "path": "files/evidence/noise_controls.png",
+      "caption": "Fixed-period tail fractions depend on residual group width and origin. All 54 tested model and weight choices in each corrected reduction favor the 51.56-day fit. These checks do not exclude arbitrary activity."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d614861f746dda336a382dcaa83b34efae9e00e40db54ce52943f539e355a02c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Identifies the reused public target input and gives a long-period forecast plus a short 51.56-day control. Our work adds a distinct fixed-parent alias test and new code."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201220268",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Reports the original planet candidate periods and spectral tests."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201526729",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the fixed inner periods, the 51.56-day period, and activity context."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201833272",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Recovers the signal near 51.68 days after wavelength calibration changes."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/722/1/937",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Explains why actual sampling must be tested to distinguish aliases."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Describes the public HARPS velocity database and correction methods."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Describes HARPS-RVBank version 02 and calcium activity indices."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ2046_RVs/GJ2046_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public raw source. The used file has a recorded SHA-256 hash and stays outside this bundle."
+    },
+    {
+      "target": "https://github.com/3fon3fonov/HARPS_RVBank/blob/master/LICENSE",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source CC0 notice. Its Git blob and decoded text hash are recorded separately from the publication license."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348251",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent ESPRESSO work covers a one-week campaign. No data from this instrument are analyzed in our test."
+    }
+  ]
+}
