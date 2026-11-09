@@ -1,0 +1,87 @@
+{
+  "title": "Angular momentum excludes a bounded central launch for 53 of 81 selected stars under axisymmetric motion",
+  "abstract": "We test a central-launch explanation for known Gaia extreme radial velocities with published ground spectra. We select 81 confirmed stars with RUWE below 1.4 and parallax/error above 5. An exact polynomial bound covers continuous ranges of parallax, proper motion, ground velocity and Solar inputs. Under the stated idealized axisymmetric geometry, 53 stars cannot have left a region within 10 pc of the centre at speeds at most 2000 km/s. Five stars lack finite distance bounds and 23 finite intervals include zero. A wider combined error box retains 34 exclusions. This test needs no Galactic mass profile. It does not identify central ejecta, a new star, or an unbound orbit. Input boxes are sensitivity assumptions, not confidence regions. Binary motion, astrometric errors, force-axis changes and non-axisymmetric torques limit the interpretation. Code, exact inputs, hashes, tables, a figure and offline reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.GA"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Gaia DR3",
+    "angular momentum",
+    "Galactic centre",
+    "interval bounds",
+    "high velocity stars",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/results/momentum.png",
+      "caption": "Exact input-box bounds and launch exclusions for selected stars with published ground velocities. Static axisymmetric motion and the stated idealized Galactic frame are assumptions. Missing finite distance bounds add no exclusions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d3045ea752cf3f077a2b3f9035fcc9aefe2adae1885723f6f2fa4e7021942e88",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Locates shared public inputs and provides the parsing rule. We rebuild the star table from raw files and test a different physical constraint."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202556602",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ground observations, source labels and prior kinematic interpretation."
+    },
+    {
+      "target": "https://arxiv.org/html/2603.02850v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Public source text and prior orbit context."
+    },
+    {
+      "target": "doi:10.1093/mnras/stac1777",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/2406.14134",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202555939",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cl%2Cb%2Cphot_g_mean_mag%2Cradial_velocity%2Cradial_velocity_error%2Crv_nb_transits%2Crv_expected_sig_to_noise%2Crv_template_teff%2Cruwe+FROM+gaiadr3.gaia_source+WHERE+abs%28radial_velocity%29%3E500",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; frozen bytes and SHA-256 are included."
+    },
+    {
+      "target": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Crv_method_used%2Crv_atm_param_origin%2Crv_chisq_pvalue%2Crv_amplitude_robust%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+abs%28radial_velocity%29%3E500",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; frozen bytes and SHA-256 are included."
+    },
+    {
+      "target": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/A+A/704/A294/tablea1&-out.all&-out.max=1000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; frozen bytes and SHA-256 are included."
+    }
+  ]
+}

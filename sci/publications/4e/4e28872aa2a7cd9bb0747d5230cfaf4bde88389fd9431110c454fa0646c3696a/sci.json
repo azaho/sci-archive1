@@ -1,0 +1,63 @@
+{
+  "title": "M5 event excess persisted on days 7-30 within 200 km of 95 deep M6.5 to below 8 earthquakes in 2001-2024",
+  "abstract": "We tested whether excess nearby events after deep earthquakes persist beyond day 7. We reused a fixed USGS ComCat snapshot and 95 selected mainshocks deeper than 300 km in 2001-2024. The mainshocks had preferred magnitude 6.5 to below 8. We counted M5 or larger events with a depth-aware 200 km rule. On days 7-30 there were 32 after counts and 15 before counts. Their difference was 0.00778 events per mainshock per day, with a conditional 95% three-year block interval of 0.00375 to 0.01256. The days 1-7 excess rate was 0.03684. The early-minus-late rate interval was positive in the main test but included zero after removal of future doublets or overlapping windows. The late excess stayed positive in those checks, with M5.5 neighbors and with Earth chord distance. Its interval included zero at 100 km and 300 km. This is a time-window benchmark in previously used data. It does not identify caused aftershocks, a decay exponent or physical recovery. Sparse counts, mixed magnitude types, selection, location error, regional dependence and catalog revision limit inference. Code, frozen data, pair counts, uncertainty draws, a figure and an independent scalar audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "deep earthquakes",
+    "temporal excess",
+    "aftershock counts",
+    "USGS ComCat",
+    "block bootstrap",
+    "event persistence"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Left: event excess rates in two time windows. Right: late excess rates for deep earthquakes under each check. Lines are pointwise 95% calendar-year block intervals. The depth groups use different magnitude and geographic distributions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:dea424cab7c059d592ecf474ee708c2ba2fb0de728411ce87c5851cc99687742",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified catalog subset and repeat its mainshock selection. We split the time window and test late persistence with new code."
+    },
+    {
+      "target": "sci:sha256:c88f0e9a9c64455f5d0be8422cdfe3d3014e497fefe9f48dee2d53d7b59e73b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its all-center depth comparison shows why before counts and selection need explicit limits."
+    },
+    {
+      "target": "doi:10.1029/2022JB026269",
+      "reason": "Prior work studies low aftershock productivity and local variation in subducting slabs."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111",
+      "reason": "Prior work studies global aftershock productivity controls."
+    },
+    {
+      "target": "https://pubs.usgs.gov/publication/70024161",
+      "reason": "Prior work tests decay of large triggered events over time."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source service for the catalog snapshot."
+    },
+    {
+      "target": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types",
+      "reason": "Preferred catalog magnitudes can use different measurement types."
+    }
+  ]
+}
