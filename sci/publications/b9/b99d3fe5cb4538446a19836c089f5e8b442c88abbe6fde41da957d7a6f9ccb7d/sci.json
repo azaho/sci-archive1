@@ -1,0 +1,108 @@
+{
+ "title": "ZTF 2018-2025 period changes of 1,706 Gaia DR3 Cepheids are mostly not evolutionary: Gaia 2014-2017 timing confirms about 40% of the curvature, and signs are balanced",
+ "abstract": "We measured pulsation timing in each half observing season of ZTF DR24 (2018.2-2025.8) for Gaia DR3 Cepheids north of Dec -31 deg. 1,706 stars passed quality cuts (1,389 classical, 279 type II, 38 anomalous). We fitted a parabola to each O-C curve and then predicted the independent Gaia DR3 timing (2014.6-2017.4) from it. 13.3% of the stars have |z| > 3 for the curvature and 5.5% have |z| > 5, against 0.77% and 0.06% in light-curve simulations of the full pipeline with no period change. For periods of 1-8 d the significant rates are 0.3-20 s/yr, far above century-scale evolutionary rates. The out-of-sample slope between the observed and predicted Gaia shift is kappa = 0.35 (95% CI 0.28-0.42) for all stars and 0.47 (0.29-0.59) for |z| > 5 stars. The same pipeline gives -0.02 for simulated stars with no change and 0.91 for stars with an injected constant dP/dt. Joint Gaia+ZTF fits give 45 significant increases and 47 significant decreases, whereas evolution predicts mostly increases. At equal timing precision (P = 1-6 d), 10.7% of first-overtone classical Cepheids have |z| > 5, against 2.0% of fundamental-mode stars (p = 7e-7). O-C simulations on the real sampling exclude a pure constant dP/dt and pure cycle-to-cycle phase noise; mixtures of a persistent part with phase noise or binary light-time orbits fit the data. Gaia RUWE is only slightly higher for the changing stars. We list 29 stars whose ZTF curvature also predicts the Gaia epoch. Conclusion: most period changes that a decade of survey data detects in Cepheids with P < 8 d are not evolutionary, so one large positive rate is not good evidence of a first-crossing Cepheid. Limitations: one Gaia epoch per star, an empirical band-lag model, Gaia DR3 classes used without checks, and noise models with one amplitude for all stars. Raw Gaia and ZTF data are not bundled; scripts retrieve them.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "Cepheids",
+  "period change",
+  "O-C diagram",
+  "ZTF",
+  "Gaia DR3",
+  "stellar evolution",
+  "first-overtone Cepheids",
+  "type II Cepheids",
+  "out-of-sample test",
+  "timing noise",
+  "light-travel time"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_backcast_test.png",
+   "caption": "Out-of-sample backcast test. x: ZTF quadratic minus linear O-C prediction at the Gaia DR3 epoch; y: observed Gaia time shift minus the ZTF linear prediction, after removal of the band lag (both in phase units). Left: data (kappa 0.35). Middle: light-curve simulation of the full pipeline with no period change (kappa -0.02). Right: simulation with a constant dP/dt (kappa 0.91). Black points: binned medians."
+  },
+  {
+   "path": "files/figures/fig4_rates_vs_period.png",
+   "caption": "Absolute period-change rates with |z_joint| > 5 (Gaia+ZTF, 2014-2025) by Gaia DR3 class; filled symbols are increases and open triangles decreases. Grey: century-long O-C rates of LMC (Rodriguez-Segovia et al. 2022) and Galactic (Csornyei et al. 2022) Cepheids. Dashed line: median 5-sigma limit of this work for classical Cepheids."
+  },
+  {
+   "path": "files/figures/fig1_example_oc.png",
+   "caption": "Six of the 29 persistent-change candidates. Points: ZTF half-season O-C relative to the ZTF linear ephemeris; curve: ZTF parabola; square: Gaia DR3 timing point (lag-corrected), which the fit did not use."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:daf0fd31dd887ab0209168a4aeffffffbcb57097f0d0cddc560cdff4cbfc0804",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We adapted its ZTF DR24 (SNAD) and AIP Gaia epoch-photometry retrieval scripts and followed its warning that phase-extrapolation tests need light-curve-level null simulations."
+  },
+  {
+   "target": "sci:sha256:4d73946f5cd6360d399980189dc1eed40a7997f687f0edc38ea7817c8bd5dd14",
+   "reason": "A similar partial persistence (kappa about 0.4) of decade-scale period changes in contact binaries."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201629272",
+   "reason": "Gaia mission paper."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 summary; source of the Cepheid sample, epoch photometry and RUWE."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aaecbe",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF system overview (Bellm et al. 2019)."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF data system (Masci et al. 2019)."
+  },
+  {
+   "target": "https://db.ztf.snad.space",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SNAD mirror of ZTF DR24 light curves used for retrieval."
+  },
+  {
+   "target": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/MNRAS/511/2125",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Csornyei et al. 2022 Galactic Cepheid period-change rates, used for comparison."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2111.03503",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rodriguez-Segovia et al. 2022 LMC Cepheid period-change rates (VizieR J/MNRAS/509/2885), used for comparison."
+  },
+  {
+   "target": "doi:10.48550/arXiv.1604.05691",
+   "reason": "Model rates of period change by instability-strip crossing (Anderson et al. 2016)."
+  },
+  {
+   "target": "https://www.cosmos.esa.int/web/gaia-users/license",
+   "reason": "Gaia data licence (CC BY-NC 3.0 IGO); reason why Gaia data are not bundled."
+  }
+ ]
+}
