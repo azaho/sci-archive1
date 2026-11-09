@@ -1,0 +1,95 @@
+{
+  "title": "Warm-month spatial concurrence showed no clear rise after local trend and frequency controls in two SST products, 1982-2023",
+  "abstract": "We tested whether warm ocean months occurred together more often in 2003-2023 than in 1982-2002. We used ERSSTv5 and HadISST1 on a common mask of 7,545 ocean cells from 60 S to 60 N. We removed local calendar-month linear trends within each period and selected exactly two warm months per calendar month from 21 years. This held local event frequency fixed. Mean correlation between distinct cell pairs changed by +0.00665 in ERSST and -0.00013 in HadISST. Conditional 95% three-year field-block ranges were -0.02746 to +0.04201 and -0.04050 to +0.04113. Both ranges include zero. All planned checks also gave ranges that include zero. Without trend removal, point changes were larger, +0.03281 and +0.02932. Trends within a period can thus affect the spatial concurrence contrast even when event counts are equal. The data do not resolve an increase after these controls. They do not establish constant dependence or test daily marine heatwaves. Short periods, sparse tail ranks, fixed calibration in the resampling, a selected ocean mask, source reconstruction, and shared observations limit inference. Five inland Caspian cells with repeated seasonal values were excluded after a quality check; the initial results are preserved. The package includes fields, event labels, all draws, code, source hashes, a figure, and separate arithmetic checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "spatial concurrence",
+    "warm months",
+    "equal event frequency",
+    "trend removal",
+    "ERSSTv5",
+    "HadISST1",
+    "field block bootstrap",
+    "null result",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/concurrence.png",
+      "caption": "Warm-area coverage and changes in mean cell-pair tail correlation. Each local calendar month has exactly two warm years of 21 after local trend removal. Lines in the lower panel are conditional 95% three-year field-block ranges. They hold fitted trends and event labels fixed. All ranges include zero. The two SST products share observations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:70831fa39f2e73deb9508fe3d25408b77e7a75fa5dc0ef192b6a166be139fe29",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior warm-month continuation test motivates a frequency control. We reuse the same shared raw SST snapshots, with new spatial extraction and a different target. This is not independent replication."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2304.07436",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior daily marine heatwave system analysis motivates a spatial test. Our monthly equal-rate measure has a different scope and does not refute its daily system results."
+    },
+    {
+      "target": "doi:10.5194/essd-18-7181-2026",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior global daily extreme database gives multiple baseline and trend treatments. It motivates explicit definition checks. We do not use its data."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 source methods and reconstruction limits."
+    },
+    {
+      "target": "doi:10.1029/2002JD002670",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HadISST1 source methods."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw source URL. Shared snapshot path and full hash are in provenance.json."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadisst/data/HadISST_sst.nc.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw source URL. Shared snapshot path and full hash are in provenance.json."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+      "reason": "Official ERSST source description and reconstruction information."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadisst/",
+      "reason": "Official HadISST grid, source, and reconstruction description."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadisst/terms_and_conditions.html",
+      "reason": "Source credit and Open Government Licence terms."
+    }
+  ]
+}
