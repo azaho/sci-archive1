@@ -1,0 +1,136 @@
+{
+ "title": "Projection neuron co-convergence onto Kenyon cells repeats in three fly calyces, but in a rate model balanced input totals per Kenyon cell, not co-convergence, lower odor pattern overlap",
+ "abstract": "We tested which non-random features of projection neuron (PN) to Kenyon cell (KC) wiring repeat across fly calyces, and which features change the KC odor code in a model. We used FlyWire v783 left and right calyces (one fly) and the hemibrain v1.2 right calyx (a second fly): 55 glomeruli, 1744 to 2341 KCs each. An exact degree-preserving null inside each KC class showed excess glomerulus co-convergence in all three calyces (mean squared pair z 1.66 to 2.18; null 99th percentile at most 1.10). Pair z maps correlated between calyces (r = 0.36 to 0.38, Mantel p = 0.0002), and four pairs, all with DM1 or DM4, passed p < 0.01 in all three. The structure stayed with a null inside fine KC subtypes. We then drove a rate model with Hallem and Carlson receptor responses (110 odors and 36 fruit odors), divisive PN normalisation and a KC threshold at 10 percent coding level. With binary wiring, the co-convergence topology gave odor pattern overlap and dimension near the null (overlap +2 to +9 percent). With synapse-count weights, the observed wiring gave 12 to 19 percent less overlap than the null. A weight-only test found the cause. Shuffling each glomerulus's synapse counts across KCs raised overlap by 14.5 to 24 percent in all calyces, and rescaling each KC to its observed total removed the increase. Within a glomerulus, edges onto KCs with more inputs had fewer synapses (Spearman rho -0.12 to -0.17), and KC total input varied less than in shuffles. Thus balanced input totals per KC, not co-convergence, lowered model odor overlap; glomerular frequency bias lowered it by a further 2 to 5 percent. Main limitations: one simple rate model; receptor data for only 23 of 55 glomeruli; with unmeasured glomeruli set to zero instead of surrogate responses, the effect was weaker and clear in fewer calyces; two female flies only. Code, derived edges, null outputs, figures and pinned source hashes support reproduction.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mushroom body",
+  "Kenyon cells",
+  "projection neurons",
+  "FlyWire",
+  "hemibrain",
+  "connectome null models",
+  "curveball",
+  "odor coding",
+  "synaptic compensation",
+  "structure-function",
+  "Drosophila",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_structure.png",
+   "caption": "Glomerulus co-convergence onto KCs. A: mean pair z against a degree-preserving null (mean of three calyces; clustered order). B: pair z in FlyWire left against FlyWire right and hemibrain right. C: mean squared pair z for nulls inside KC class and inside fine KC subtype; black ticks show the null 99th percentile."
+  },
+  {
+   "path": "files/figures/fig2_mechanism.png",
+   "caption": "Which wiring change raises KC odor overlap in the rate model (110 odors). A: null minus observed overlap, as percent of observed; points are null means, bars cover 95 percent of null runs. Rewired nulls change topology; the other rows keep the observed topology and change only synapse counts. B: within-glomerulus z-score of edge synapse count against the number of glomerular inputs of the KC (mean and 95 percent interval)."
+  },
+  {
+   "path": "files/figures/fig3_sensitivity.png",
+   "caption": "Observed minus degree-preserving null mean (percent of null) for odor pattern overlap (A) and dimension (B), for each model setting and calyx. 'null weights from KC' keeps each KC's own synapse counts and so its total; 'unmeasured glomeruli = 0' silences the 32 glomeruli without receptor data."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connection table."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell type annotations (PN glomeruli, KC types)."
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Annotation file at the pinned commit."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain connectome."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 traced adjacency export."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2006.01.050",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ORN odor response data."
+  },
+  {
+   "target": "https://github.com/tom-f-oconnell/drosolf/tree/2ff359109ed9d4c05e2f4c296111ca186cb0e892",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Machine-readable Hallem and Carlson table with glomerulus labels."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2010.04.009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PN divisive normalisation model."
+  },
+  {
+   "target": "doi:10.1038/ncomms5114",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Curveball null algorithm."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2022.06.031",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Non-random PN-KC co-convergence; we find it in two more calyces."
+  },
+  {
+   "target": "doi:10.1073/pnas.2102158118",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Compensation between KC input number and input strength; we find it in both FlyWire calyces and isolate its coding effect."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2023.05.064",
+   "reason": "Input density per KC tunes odor overlap."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2017.01.030",
+   "reason": "Theory of KC expansion dimension."
+  },
+  {
+   "target": "doi:10.1038/nature12063",
+   "reason": "Earlier evidence for random PN-KC convergence."
+  }
+ ]
+}

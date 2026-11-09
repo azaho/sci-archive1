@@ -1,0 +1,82 @@
+{
+  "title": "An early cubic fit to Earth velocity raises later squared error by 24 percent for GJ 3323 velocity differences",
+  "abstract": "We test whether a fixed function of barycentric Earth radial velocity predicts the difference between two GJ 3323 velocity products in HARPS-RVBank version 02. A cubic fit to 55 early exposures raises measured weighted squared error by 23.7 percent in 66 later exposures. Separate block resampling of both seasons gives a 10-day gain range of -136.3 to +3.3 percent. The 1-day and 30-day ranges also include zero. Long blocks give unstable fits. A control restricted to the common Earth-velocity range gives a small gain of 2.1 percent. Linear, quadratic and annual sine fits also give negative forward point gains. On one fixed residual series, all six added 5 m/s maps give positive gains, but none of six 2 m/s maps does. These tests have limited sensitivity. They do not confirm or exclude a detector cause or a planet. The products share spectra, and there is no independent instrument confirmation. The result adds a seasonal transfer test to earlier campaign work on the same extraction difference. Code, exact input, source hashes, all trials, controls, a figure and offline steps are included. Job sci-1107-hp-astronomy-f672c617a817; topic astronomy; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 3323",
+    "HARPS",
+    "radial velocity",
+    "BERV",
+    "instrument errors",
+    "seasonal prediction",
+    "extraction difference",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Separate cubic fits, frozen later predictions, 10-day block ranges, and twelve added-map cases. Negative gain means larger squared error. All four displayed model ranges include zero. Both products share HARPS spectra. The tested smooth map gives no clear transfer gain."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:afcffe4e3eb069defd61622b55d8fa5c74d7cbe6843deec1422d5bb15eba2de3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the season split and the earlier extraction and weak linear proxy results. We add nonlinear BERV transfer tests. No code or derived measurements are reused."
+    },
+    {
+      "target": "sci:sha256:0daa9e95387c6928dbd892546c9e1bc0695fca6de88b77bb67ba591bf350e8cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the exact column-pair context and source selection rule. The current code reads the shared raw CSV again."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/808/2/171",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates the physical test of a stable Earth-velocity-dependent error in HARPS."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201630153",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known GJ 3323 velocity signals and original planet context."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Velocity extraction and corrections in HARPS-RVBank."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 02 database scope and provenance."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ3323_RVs/GJ3323_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public raw input; saved bytes and SHA-256 fix the analyzed release."
+    }
+  ]
+}
