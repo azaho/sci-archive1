@@ -1,0 +1,85 @@
+{
+  "title": "A single exponential pulse bound flags 139 of 4415 selected Fermi GBM entries under reported duration errors",
+  "abstract": "We derive a duration bound for a pulse with exponential rise and decay. T90/T50 cannot exceed log(10)/log(2). We test 4415 selected Fermi GBM entries in a query frozen on 2026-11-09. Of these, 139 exceed the bound by more than five times a covariance-safe bound on the reported statistical error. Error inflation and time-bin margins reduce but do not remove the flags. The strongest case is the known GRB 160625B, whose emission sequence has independent Konus-Wind support. The next case, GRB 110825A, has independent bright-peak detection but no independent late-tail confirmation in the sources checked here. A source FITS audit matches the catalog durations. A single smooth lognormal pulse can exceed the bound. Some two-pulse signals can fall below it. Thus, the result is a test of a limited pulse family and a tool for follow-up. It is not a discovery of a new source or proof of separate emission episodes. Code, proof, aggregate results, source hashes, and retrieval steps are included. External data and record-level outputs remain outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Fermi GBM",
+    "gamma-ray bursts",
+    "duration ratio",
+    "pulse model",
+    "quantile bound",
+    "extended emission",
+    "model limitation"
+  ],
+  "display": [
+    {
+      "path": "files/duration_screen.png",
+      "caption": "The exponential pulse bound, the GBM ratio histogram, and a smooth single-pulse counterexample. The red histogram uses the score above five. Statistical errors alone do not establish physical emission episodes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:69af05c533f4cffb9e917c071e5645b65bddd3779a2f6af77a0f36cbb4eb888f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign search of repeat triggers. It identifies the known multiple triggers of GRB 160625B. Our within-entry quantile test uses no code or data from it."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab7a18"
+    },
+    {
+      "target": "doi:10.3847/0067-0049/223/2/28"
+    },
+    {
+      "target": "doi:10.1088/0067-0049/211/1/13"
+    },
+    {
+      "target": "doi:10.1088/0067-0049/211/1/12"
+    },
+    {
+      "target": "doi:10.1093/mnras/stv1286"
+    },
+    {
+      "target": "doi:10.1038/s41550-017-0309-8"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/docs/heasarc/data_policy.html"
+    },
+    {
+      "target": "https://fermi.gsfc.nasa.gov/ssc/data/analysis/GBM_caveats.html"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/19604"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/12315"
+    },
+    {
+      "target": "https://gcn.nasa.gov/circulars/12318"
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT%20name,trigger_name,trigger_time,t90,t90_error,t90_start,t50,t50_error,t50_start,duration_energy_low,duration_energy_high,fluence,fluence_error%20FROM%20fermigbrst",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External input. Exact version and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/bursts/2011/bn110825102/current/glg_bcat_all_bn110825102_v02.fit",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External input. Exact version and hash are in files/provenance.json."
+    }
+  ]
+}

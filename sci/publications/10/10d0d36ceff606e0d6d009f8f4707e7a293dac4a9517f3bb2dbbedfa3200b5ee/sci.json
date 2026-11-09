@@ -1,0 +1,80 @@
+{
+ "title": "The Bugeon 2022 transcriptomic axis predicted running modulation of mouse V1 interneuron types during grey screen in an independent dataset, but not during visual stimuli in that dataset",
+ "abstract": "Question: Bugeon et al. (2022) found that one transcriptomic axis (tPC1) predicts how mouse V1 interneuron types change activity with running and arousal, also between types inside one subclass. Does this generalise to an independent dataset?\n\nApproach: We transferred the Bugeon tPC1 loadings (32 of 72 genes shared) to Allen DANDI:002015 (9 mice, jGCaMP8s, Xenium gene counts of the same neurons, ABC-atlas supertypes). The measure was the correlation of activity with running speed (5-s smoothing). Models had fixed effects for subclass (or type) and mouse; intervals come from a mouse bootstrap. As a positive control we ran the same pipeline on the Bugeon processed data.\n\nResults: In the Bugeon data the pipeline found the published relation: the type-mean slope inside subclasses was +0.26 per SD (95% interval 0.14 to 0.46). In DANDI:002015 the planned whole-session test (mostly gratings and movies) failed: -0.02 (-0.09 to 0.06; 7 mice). In an exploratory test on the same cells, the slope was +0.18 (0.05 to 0.28; 5 mice) during grey screen and +0.05 (-0.03 to 0.16) during stimulus periods. Across subclasses the cell slope was +0.10 during grey screen and +0.02 during stimuli. During stimuli, Pvalb and Sst cells became more running-correlated in both datasets, which reduced the tPC1 relation. A de novo tPC1 computed from the DANDI genes did not replicate the type-level relation.\n\nLimitations: The grey-screen result is exploratory and uses about 6 min of grey screen per session in 5 mice. The transfer uses 32 genes. Taxonomies, indicators and stimuli differ between the datasets. The publication contains only aggregate results; a script regenerates the record-level tables from CC BY 4.0 sources.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "interneurons",
+  "transcriptomic types",
+  "state modulation",
+  "locomotion",
+  "mouse V1",
+  "spatial transcriptomics",
+  "Xenium",
+  "two-photon imaging",
+  "replication",
+  "DANDI:002015",
+  "Pvalb",
+  "Sst",
+  "Vip",
+  "brain state"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_slopes.png",
+   "caption": "Change of the activity-running correlation per SD of tPC1, with 95% mouse-bootstrap intervals. A: type-mean tPC1 inside subclasses (Bugeon Fig. 5c claim). B: cell tPC1 inside subclasses. C: cell tPC1 across subclasses. Blue: Bugeon 2022 data (4 mice). Orange: DANDI:002015 (Bugeon loadings on 32 shared genes). Grey-screen and stimulus rows use the same cells; the whole-session row is the planned primary test."
+  },
+  {
+   "path": "files/figures/fig1_type_means_by_condition.png",
+   "caption": "Type-mean running correlation against type-mean tPC1, for grey screen and visual stimulus, in the Bugeon data (top) and DANDI:002015 (bottom). Each marker is a transcriptomic type with 5 or more cells; bars are SEM; lines are weighted fits inside each subclass."
+  },
+  {
+   "path": "files/figures/fig3_subclass_by_condition.png",
+   "caption": "Mean running correlation per subclass during grey screen and during visual stimuli (same cells). In both datasets Pvalb and Sst cells become more running-correlated when a stimulus is on, while Vip cells do not change much."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-022-04915-7",
+   "relations": [
+    "uses",
+    "reviews",
+    "supports"
+   ],
+   "reason": "We re-test its main claim (tPC1 predicts state modulation) in an independent dataset. The claim held for grey-screen activity at the type level, but not during visual stimuli in the Allen data."
+  },
+  {
+   "target": "doi:10.6084/m9.figshare.19448531",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Processed Bugeon 2022 data (v2, CC BY 4.0): gene counts, types, activity, running and pupil; used for the positive control and the tPC1 loadings."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/002015/draft",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Institute DANDI:002015 (draft, CC BY 4.0): two-photon activity, behaviour and Xenium gene counts of the same V1 neurons."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2018.03.037",
+   "reason": "Dipoppa et al. 2018 showed that running modulation of Sst and other types depends on visual stimulation, which agrees with the condition dependence found here."
+  },
+  {
+   "target": "sci:sha256:7340d496cb96ba9fec12fb5e4cd89f5dd88ac8209407a890cf614a18248488b3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Prior campaign study of DANDI:002015; we reused its Zarr HTTP chunk reader."
+  },
+  {
+   "target": "sci:sha256:53e2cd5ca024e7509b9f6204e3323461fc0f2847eb2a4a9f6e63240e1ea120b4",
+   "reason": "Related campaign study of running modulation in Allen Neuropixels data (regional, not cell-type level)."
+  }
+ ]
+}
