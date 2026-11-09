@@ -1,0 +1,23 @@
+{
+  "title": "No-flow days at 137 US drying stream gauges did not rise past their 1999-2017 level in 2018-2025, except in western deserts and mountains; P/PET did not explain the shifts",
+  "abstract": "Zipper et al. (2021) found that annual no-flow days at US non-perennial stream gauges changed in 1980-2017: drying in the south and west and wetting in the north. We tested if these changes continued in eight new climate years, 2018-2025. We used USGS NWIS daily discharge for 9,067 GAGES-II gauges and the same no-flow rule. We reproduced the published Mann-Kendall trend class for 96.8% of 539 matched gauges. Of 541 gauges with test data, 137 had a drying trend. In 2018-2025, 74% of these stayed above their 1980-2017 mean, but only 52% rose past their 1999-2017 mean (p = 0.73; median +1.5 days per year). In a placebo split inside the published period, 68% of drying gauges continued past their recent level in 2010-2017 (p = 0.002), so the stall is new. Wetting gauges continued a little (67% lower than their 1999-2017 mean, p = 0.002). Drying continued in the Western Deserts (13 of 16 gauges) and less in the Western Mountains. The 1999-2017 mean gave the lowest mean absolute error (29.0 days per year). Sen-trend extension (32.5) and a per-gauge model with basin precipitation over Thornthwaite PET (33.1) were worse. The climate model explained a median 33% of yearly variance. After the climate adjustment, 46% of drying trends and 70% of wetting trends stayed significant, and in 2018-2025 the trend gauges kept their offsets from the climate forecast. Thus, the changes acted as persistent level shifts that current- and prior-year P/PET did not explain. Limitations: only eight test years, near-zero discharge measurement sensitivity, most gauges are not reference gauges, temperature-only PET, and spatial clustering (HUC-2 cluster intervals include zero for some forecast differences). Code, derived public-domain tables, figures and source hashes are included. The CC BY-NC-SA Zipper et al. release is not bundled.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370704"}
+  ],
+  "keywords": ["stream intermittency", "no-flow days", "non-perennial streams", "out-of-sample test", "trend persistence", "USGS NWIS", "GAGES-II", "nClimGrid", "aridity", "replication", "drought", "hydrology"],
+  "display": [
+    {"path": "files/figures/fig1_trend_class_timeseries.png", "caption": "Mean annual no-flow-day anomaly (relative to each gauge's 1980-2017 mean) for gauges with a drying, wetting or no 1980-2017 Mann-Kendall trend (left), and residuals after a per-gauge P/PET model fitted on 1980-2017 (right). Shaded: test climate years 2018-2025 (541 gauges)."},
+    {"path": "files/figures/fig2_change_by_region.png", "caption": "Change in mean no-flow days from 1999-2017 to 2018-2025 per gauge, by region and 1980-2017 trend class. Bars are medians. Drying gauges rose further only in the Western Deserts and Western Mountains (and slightly in the South Great Plains)."},
+    {"path": "files/figures/fig3_forecast_mae.png", "caption": "Mean absolute error of four forecasts of each gauge's 2018-2025 mean no-flow days, all gauges and by region. The 1999-2017 mean was best overall; trend extension was better only in the Eastern Forests and north Great Plains."}
+  ],
+  "citations": [
+    {"target": "doi:10.1088/1748-9326/ac14ec", "relations": ["reviews", "uses"], "reason": "We re-test the 1980-2017 no-flow-day trends of this study with 2018-2025 data and use its no-flow definition and sample rules."},
+    {"target": "doi:10.4211/hs.fe9d240438914634abbfdcfa03bed863", "relations": ["uses"], "reason": "Zipper et al. data release (CC BY-NC-SA). Used only for aggregate replication statistics; not bundled."},
+    {"target": "doi:10.3133/70046617", "relations": ["uses"], "reason": "GAGES-II gauge list, attributes and basin boundaries."},
+    {"target": "doi:10.7289/V5SX6B56", "relations": ["uses"], "reason": "nClimGrid monthly precipitation and temperature for basin climate."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily discharge, retrieved 2026-11-09."},
+    {"target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af", "reason": "Related campaign test of runoff persistence after droughts in US reference catchments."},
+    {"target": "sci:sha256:9e64e735636c95e63afcade5982181f4c28f61e78da17ec27e8f3d2fb955907f", "reason": "Related campaign test in which 1941-2005 flood trends gave worse 2006-2025 forecasts than a stationary model."}
+  ]
+}
