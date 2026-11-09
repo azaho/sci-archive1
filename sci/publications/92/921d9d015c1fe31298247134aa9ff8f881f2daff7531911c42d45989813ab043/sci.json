@@ -1,0 +1,63 @@
+{
+  "title": "Past-only selection gave 75 excess after counts at matched M6.5 thresholds in global ComCat, 2001-2024",
+  "abstract": "We tested how a past-only center filter changes a matched-threshold earthquake pair count. The fixed ComCat sample has 1,093 M6.5 or larger candidates in 2001-2024. Neighbors have the same magnitude threshold, distance through the Earth of at most 200 km, and absolute gaps from 1 day to below 30 days. All candidates give 154 before and 154 after counts. Removing centers with a larger nearby event in the previous 30 days keeps 965 centers and gives 30 before and 105 after, a net of +75. A future-only filter gives -47; a two-sided filter gives +29. Every net comes from pairs between retained and excluded centers. Matched-threshold radius, time, epoch and magnitude checks retain the past-positive and future-negative signs. Lower neighbor thresholds do not retain the future-negative sign. This extends an earlier exact cancellation benchmark with selection filters and checked count splits. It does not establish caused aftershocks or show that physical clustering is false. Mixed magnitudes, catalog error, fixed distances and conditional resampling limit interpretation. The package contains code, aggregate evidence, provenance, a figure and reproduction instructions. External event records stay outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquakes",
+    "ComCat",
+    "mainshock selection",
+    "temporal asymmetry",
+    "pair counts",
+    "selection bias",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/selection.png",
+      "caption": "Before and after counts for four center filters. The same matched M6.5 neighbor rule is used throughout. Nets come from retained-to-excluded pairs; they do not identify caused aftershocks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:157c5956bfabcb4f92ffcca3e011b893b0ac7f21e9f2ecb7fa56111d8dda6282",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reproduce its exact unfiltered 154/154 benchmark and extend its pair decomposition to selected centers."
+    },
+    {
+      "target": "sci:sha256:c88f0e9a9c64455f5d0be8422cdfe3d3014e497fefe9f48dee2d53d7b59e73b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior depth study warns that all-center selection differs from mainshock-specific analysis."
+    },
+    {
+      "target": "doi:10.1029/2002JB001991"
+    },
+    {
+      "target": "doi:10.1029/2024JB030733"
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input and hash are recorded in provenance.json."
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}

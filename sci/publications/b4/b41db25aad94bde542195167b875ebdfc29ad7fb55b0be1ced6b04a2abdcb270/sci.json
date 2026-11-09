@@ -1,0 +1,95 @@
+{
+ "title": "High water above the annual mean had no network trend at 173 UHSLC tide gauges in 1980-2021; local trends exceeded chance but did not extrapolate to 2010-2021",
+ "abstract": "Question: does the height of high water above the annual mean sea level change, and is the cause the astronomical tide or the non-tidal part? Approach: we used UHSLC/JASL Research Quality hourly sea level at 173 stations (6,528 station-years, 1980-2021). For each station-year we fitted 31 tidal constituents by least squares. The primary metric was the 99th percentile of hourly sea level above the annual mean (P99). Trend models included 18.61-year and 4.43-year terms. A joint-year block-permutation null kept the correlation between stations. Results: the network median P99 trend was +0.17 mm per decade (95% interval -0.62 to +1.16). The median absolute P99 trend was 0.11 times the median absolute relative mean sea-level trend. But 35 stations had |t| > 1.96, against a null 95th percentile of 22 (p = 0.004). Models fitted on 1980-2009 with a linear trend had larger 2010-2021 errors than models without a trend (median MAE ratio 1.062, interval 1.033-1.089; trend better at 29% of stations). Tide trends explained more of the cross-station variance than non-tidal trends (R2 0.59 versus 0.32), but five large-tide stations caused this difference. Exploratory: on the US Atlantic and Gulf coasts (28 stations) P99 rose by a median 5.9 mm per decade (permutation p = 0.007), mainly in the 30-day-mean non-tidal part. This trend also did not extrapolate. Elsewhere the fast non-tidal part and skew surge decreased (p = 0.003 and 0.016), and instrument changes can explain this. Limitations: uneven network with few European stations, data end in 2021, one-year tide fits, post hoc regions.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "extreme sea level",
+  "tide gauge",
+  "UHSLC",
+  "storm surge",
+  "skew surge",
+  "tidal change",
+  "mean sea level",
+  "nodal cycle",
+  "out-of-sample test",
+  "permutation test",
+  "coastal flooding"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_map_obs_p99_trend.png",
+   "caption": "Trend of the annual 99th percentile of hourly sea level above the annual mean, 1980-2021, at 173 UHSLC stations (mm per decade). Large dark-edged markers have |t| > 1.96 (35 stations; the joint-year permutation null 95th percentile is 22)."
+  },
+  {
+   "path": "files/figures/fig3_forecast_mae_ratio.png",
+   "caption": "Out-of-sample test. For 2010-2021, log2 of the station MAE ratio between a model with a 1980-2009 linear trend and the same model without the trend (both with nodal and perigee terms). Values above 0 mean the trend made errors larger. Bars show the median and its 95% bootstrap interval. The axis clips a few stations."
+  },
+  {
+   "path": "files/figures/fig6_regions.png",
+   "caption": "Median station trends by region for observed P99 and its tide, slow (30-day mean) and fast non-tidal parts. The regions were chosen after the first results and are exploratory."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7289/V5V40S7W",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the hourly tide-gauge data (UHSLC/JASL Research Quality Data Set)."
+  },
+  {
+   "target": "doi:10.1029/2009JC005997",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that extreme high water mostly follows mean sea level; our network median result agrees."
+  },
+  {
+   "target": "doi:10.1002/2017JC013065",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Regional study of extreme sea-level change in the North Atlantic and Gulf of Mexico."
+  },
+  {
+   "target": "doi:10.1029/2018RG000636",
+   "reason": "Review of nonastronomical tidal change; we measured tide-part trends."
+  },
+  {
+   "target": "doi:10.1038/s41586-022-04426-5",
+   "reason": "Reported storm-surge trends in Europe near the rate of sea-level rise; our network has few European stations and cannot test this directly."
+  },
+  {
+   "target": "doi:10.1002/2017GL073926",
+   "reason": "Sea-level hot spots on the US East coast; context for the US Atlantic and Gulf result."
+  },
+  {
+   "target": "sci:sha256:ef81e5f0a9c865853fb85e9fd8c68bb249266923b1b7d861d191d6eda1865040",
+   "reason": "Campaign result on the 2010-2022 US Gulf coast sea-level surge; context for our regional result."
+  },
+  {
+   "target": "sci:sha256:a9e8d06cbaa080ffa921d8d1e3748bae1b1b16c196c6a4195424b0b6178e2da2",
+   "reason": "Campaign result on hourly water-level range at two US gauges with an 18.61-year fit; our study extends this to 173 global gauges."
+  },
+  {
+   "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+   "reason": "Campaign result on US high tide flood outlooks; related flood-frequency context."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Public-domain land outline for the map figure."
+  }
+ ]
+}
