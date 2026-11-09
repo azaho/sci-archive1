@@ -1,0 +1,24 @@
+{
+  "title": "Static Coulomb stress shadows did not decrease JMA earthquake rates in the first year after 11 shallow Mw 6.5+ Japanese earthquakes (1999-2024), with simple slip models",
+  "abstract": "We tested whether static Coulomb stress decreases (stress shadows) lower later earthquake rates. We used the JMA unified hypocentre catalogue for 1998-2024 and GCMT mechanisms for 11 isolated shallow Mw 6.5+ mainshocks near Japan. For each mainshock, we modelled a tapered rectangular rupture in an elastic half-space. We calculated the Coulomb stress change at each hypocentre, with mainshock-like receivers and friction 0.4. We compared rates in days 30-365 with the year before in shadow (<= -10 kPa), positive (>= +10 kPa) and control (|dCFS| < 1 kPa) regions. Placebo mainshock times at the same places gave the null distribution. Positive regions had a larger rate increase than control regions: the log rate-ratio difference was +1.09 above placebo (90% interval +0.74 to +1.43). Shadow regions showed no decrease relative to control regions: the difference was +0.10 (90% interval -0.31 to +0.52; one-sided p = 0.67). The data exclude a mean relative decrease of more than 27%. Absolute shadow-region rates increased by about 1.7 times. In 12 variants of the days 30-365 test (friction, receiver plane, source plane, distance, thresholds, Mc, selection) and in two other windows, no variant showed a shadow decrease. A year-2 decrease (-0.42, p = 0.084) did not remain in other versions. Tohoku 2011, a separate case study, had about 7.5 times higher shadow-region rates. Limitations: simple scaling-law slip models, mainshock-like receivers, 11 mainshocks, and one change to the isolation rules after a first look. Code, aggregate counts, placebo statistics, hashes and figures are included. The raw catalogues are not included.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}],
+  "keywords": ["Coulomb stress", "stress shadow", "aftershocks", "JMA catalogue", "Japan", "static stress triggering", "placebo test", "seismicity rate", "GCMT"],
+  "display": [
+    {"path": "files/figures/fig2_per_mainshock.png", "caption": "Days 30-365 versus the year before, for each mainshock. Left: shadow-region log rate ratio minus control-region log rate ratio. Right: the same for the positive region. Dots show the real mainshocks. Grey bars show the 5-95% range of placebo times at the same place, and ticks show the placebo median. Tohoku 2011 (pale) is a case study that failed the isolation rules."},
+    {"path": "files/figures/fig3_timecourse.png", "caption": "Mean log rate ratio relative to the year before, in log-spaced time bins, for the 11 included mainshocks, by Coulomb stress region (receiver = mainshock fault plane, friction 0.4). Shaded bands show the 5-95% range of the same mean at placebo times."},
+    {"path": "files/figures/fig1_maps.png", "caption": "Modelled Coulomb stress change at 8 km depth for Chuetsu 2004 (left) and Noto 2024 (right), with JMA M>=2 events in days 30-365. Contours show -10 kPa (blue) and +10 kPa (orange). The black outline shows the model rupture projected to the surface."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:031fd1c650720bda314e71bd14042d18b4daeea3feeb9649abcf17c235708c20", "relations": ["uses"], "reason": "We adapted its JMA hypocentre parser and the shared JMA archives that it used."},
+    {"target": "doi:10.1038/ngeo1465", "reason": "Static stress shadows reported after Tohoku 2011."},
+    {"target": "doi:10.1029/2004JB003277", "reason": "Earlier test of the stress shadow hypothesis in California."},
+    {"target": "doi:10.1029/2005JB004076", "reason": "Coulomb model rate tests in southern California and southwestern Japan."},
+    {"target": "doi:10.1029/98JB01576", "reason": "Stress triggers and stress shadows."},
+    {"target": "doi:10.1093/gji/ggv035", "reason": "Half-space triangular dislocation solution used for stress."},
+    {"target": "doi:10.1785/gssrl.81.6.941", "reason": "Interface rupture scaling."},
+    {"target": "doi:10.1016/j.pepi.2012.04.002", "reason": "Global CMT catalogue."},
+    {"target": "doi:10.1029/JB086iB04p02825", "reason": "Global CMT method."},
+    {"target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html", "reason": "JMA unified hypocentre catalogue."},
+    {"target": "https://github.com/tbenthompson/cutde", "reason": "Triangular dislocation software."}
+  ]
+}
