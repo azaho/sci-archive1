@@ -1,0 +1,57 @@
+{
+  "title": "One mouse call change or two human call changes can reverse matched Allen plasticity contrasts",
+  "abstract": "We tested how missed reverse connections can change a published matched plasticity contrast in Allen Synaptic Physiology r2.1. We retained 62 mouse and 20 human directed edges, the original groups, and fixed donor weights. A correction changes a negative reverse call to positive and moves the measured forward edge to the reciprocal set. Each group must retain one one-way edge. Exact bounds show that one targeted correction can reverse the mouse point estimate, and two can reverse the human point estimate. The mouse range with at most one correction is [-0.041194, 0.009649]. The human range with at most two is [-0.066247, 0.238137]. We provide all bounds and attaining edge IDs. Full enumeration checks the dynamic program. These are sensitivity bounds for fixed observations, not error-rate estimates or confidence intervals. The parent uncertainty intervals already include zero. Selected slice graphs, fixed groups, inferred donors, and unmeasured reverse responses limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "short-term plasticity",
+    "sensitivity analysis",
+    "partial identification"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/bounds.png",
+      "caption": "Exact bounds for a fixed matched contrast with a bounded number of negative reverse calls changed to positive. Every original group retains one one-way edge. The curves are envelopes, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses signed connection and matched-group tables and tests sensitivity of its point estimates."
+    },
+    {
+      "target": "sci:sha256:9fc4e81d161aa6ce8e294319942b984c12bb9eb8c482ffffbba6746228609c0b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related prediction analysis; not repeated here."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0084626"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    }
+  ]
+}

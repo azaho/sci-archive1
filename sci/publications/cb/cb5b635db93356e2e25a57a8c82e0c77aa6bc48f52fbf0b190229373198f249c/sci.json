@@ -1,0 +1,60 @@
+{
+  "title": "The full recorded Kepler pixel sum retains the known KIC 11084727 dip in 12 quarter 11 fits",
+  "abstract": "We test whether movement of charge into recorded pixels outside the aperture can explain the known KIC 11084727 dip. In public Kepler release 25 quarter 11 data, a fixed-profile fit gives a loss of 1059.6 parts per million across all 178 recorded pixels and 1051.0 parts per million in the aperture. Outside pixels give 8.5 parts per million, with a conditional 95 percent interval from -4.1 to 21.4. The full-stamp loss stays positive across 12 baseline and pointing choices. Adding back the reported background leaves 1008.1 parts per million in the main fit. Charge transfer confined to recorded pixels cannot account for this net loss under a calibration that preserves the total. Missing light outside the stamp, other detector errors, stellar variation, and blended sources remain possible. We establish no new object or event and have no independent telescope confirmation. Code, exact source hashes, compact evidence, all fit and noise results, a figure, and reproduction instructions are preserved. Job sci-1107-dell-astronomy-0fd20fe5765b; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "exocomets",
+    "saturation",
+    "pixel flux",
+    "instrument checks"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "The aperture and full recorded stamp retain the known dip. The pixel map and row sums show the measured loss. Twelve local fits test baseline and pointing choices."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:444e667c99af00a859b1f7d1e597cd8b5a5e272bdf0aba3540a038f43100b263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed profile and the stated limit on source location from centroid series."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735",
+      "reason": "Discovery and prior pixel validation of the known event."
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049",
+      "reason": "Prior automated recovery of the event."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/Archive_Manual_SOC9_3final.pdf",
+      "reason": "Pixel flux, background, and aperture definitions."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0110/011084727/kplr011084727-2012004120508_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input, with checksum and retrieval recipe."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input, with checksum and retrieval recipe."
+    }
+  ]
+}

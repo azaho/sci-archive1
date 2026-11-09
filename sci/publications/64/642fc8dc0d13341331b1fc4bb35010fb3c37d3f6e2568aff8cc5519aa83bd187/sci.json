@@ -1,0 +1,111 @@
+{
+ "title": "ZTF confirms Gaia DR3 ellipsoidal amplitudes of 126 compact-companion candidates, but 40 have shapes outside a dark-companion Roche model and 29 of 30 with good parallax overfill the Roche lobe",
+ "abstract": "Gaia DR3 lists 6,306 ellipsoidal variables that can have dark, massive companions. For 262 of them the one-sigma lower bound of the modified minimum mass ratio (mMMR) is more than 1. We fitted ZTF DR24 g and r light curves of 739 catalogue sources at the Gaia period: 126 high-confidence sources, 604 random comparison sources, and 14 systems that radial velocities already showed to have low-mass companions (Nagarajan et al. 2023). ZTF gives the Gaia double-wave period for 120 of 126 high-confidence sources, and the ZTF r to Gaia G amplitude ratio has a median of 1.01. Thus the large amplitudes are real and are not a Gaia sampling effect; with ZTF amplitudes, 117 of 126 keep mMMR > 1. We calculated 7,776 light curves per band of a Roche-distorted star with a dark point-mass companion (q = 0.5 to 20). In these models the cos(4 phi)/cos(2 phi) ratio is never above 0.086. The high-confidence group has an error-weighted mean ratio of 0.106 +/- 0.002, and 40 of 126 sources fail at least one shape test (2-sigma ratio rule or joint chi-square p < 0.001). Gaia GSP-Phot distances for these stars are about half the parallax distances, so we used parallax radii. If the companion is dark, 96% of 995 catalogue stars with parallax/error > 5 are larger than their Roche lobes (median R/R_L = 1.55); a conservative variant (lowest radius over all extinctions up to the SFD value, parallax +2 sigma, mass x1.5) gives 15%. The radius test flags 12 of 13 RV-rejected systems, but the shape test flags only 2 of 14, so a model-consistent shape is not evidence for a compact companion. The results agree with contact or near-contact binaries of two luminous stars for most candidates. One high-confidence source (Gaia DR3 1827494570016143232) passes both best-estimate tests at low parallax precision. Limitations: ZTF covers only declination > -30 deg, few candidates have precise parallaxes, the radius test depends on extinction and mass, and the Roche model has no spots.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  }
+ ],
+ "keywords": [
+  "Gaia DR3",
+  "ZTF",
+  "ellipsoidal variables",
+  "compact objects",
+  "black hole candidates",
+  "neutron star candidates",
+  "contact binaries",
+  "Roche model",
+  "false positives",
+  "vari_compact_companion"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_shape_vs_roche_model.png",
+   "caption": "ZTF r cos(4 phi)/cos(2 phi) against amplitude (left) and against |cos(phi)|/cos(2 phi) (right). Grey: dark-companion Roche models with q >= 1. Orange: high-confidence candidates; blue: random comparison sources; green: systems rejected by radial velocities."
+  },
+  {
+   "path": "files/figures/fig1_amplitude_ztf_vs_gaia.png",
+   "caption": "ZTF r cos(2 phi) amplitude against Gaia G cos(2 phi) amplitude. Dotted lines: amplitude that gives mMMR = 1 in the Gaia catalogue."
+  },
+  {
+   "path": "files/figures/fig3_roche_lobe_fill.png",
+   "caption": "Star radius divided by Roche-lobe radius if the companion is dark, for catalogue sources with parallax/error > 5. Filled: Gaia GSP-Phot temperature and extinction. Line: conservative lower bound."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1051/0004-6361/202243626",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the Gaia DR3 vari_compact_companion candidate catalogue and the mMMR values that we test."
+  },
+  {
+   "target": "doi:10.1093/mnras/stad2130",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Radial-velocity follow-up of 14 candidates; we use them as a validation set, and our photometric and radius tests support their contact-binary explanation."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/ab9cae",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF periodic variable catalogue used for a cross-match."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF data system and light curves."
+  },
+  {
+   "target": "doi:10.1086/160960",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Roche-lobe radius approximation."
+  },
+  {
+   "target": "doi:10.1086/305772",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SFD dust maps used as an upper bound on extinction."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/737/2/103",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SFD recalibration factor 0.86."
+  },
+  {
+   "target": "https://gaia.aip.de/tap",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AIP mirror of the Gaia DR3 archive used for all Gaia queries."
+  },
+  {
+   "target": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF DR24 light-curve API."
+  },
+  {
+   "target": "sci:sha256:6350aef75d67a6f30a959d6a7e67a1d722a609a2423c9f5212547bb343a64f02",
+   "reason": "Related campaign study of Gaia DR3 astrometric compact-companion candidates."
+  }
+ ]
+}

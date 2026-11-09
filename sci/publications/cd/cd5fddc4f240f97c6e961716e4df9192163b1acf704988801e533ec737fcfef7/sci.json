@@ -1,0 +1,65 @@
+{
+  "title": "Target dendrite labels gave no clear decay prediction gain in four Allen slice groups at ridge penalty 10",
+  "abstract": "We tested whether target dendrite type adds information for synaptic voltage decay after cell labels, geometry, and target membrane time are known. We used 724 connections from 253 inferred donors in Allen Synaptic Physiology r2.1 small data. We held whole donors out of training. At the fixed ridge penalty of 10, no group had a clear gain. Relative error changes were -0.657% for human excitatory, -2.774% for human inhibitory, -0.690% for mouse excitatory, and -0.525% for mouse inhibitory connections. The adjusted interval for mouse inhibitory connections was -0.957% to -0.198%. A stronger penalty gave a 2.185% gain in human excitatory connections. An exploratory audit found a 2.897% gain from a coarse morphology label that was fully determined by the target class already in the model. This shows why a repeated structure label can improve ridge prediction through changed shrinkage without new information. These results concern selected slice connections and conditional prediction errors. Missing morphology, inferred donor groups, small samples, and model dependence limit inference. The package includes code, selected data, predictions, figures, provenance, and a separate numerical check.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "dendrite type",
+    "synaptic decay",
+    "ridge regression",
+    "redundant labels",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/gain.png",
+      "caption": "Primary donor validation gains with 98.75% paired donor bootstrap intervals."
+    },
+    {
+      "path": "files/audit.png",
+      "caption": "Exploratory human excitatory audit. Coarse morphology repeats target class, yet changes ridge predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the local slice connectivity and physiology measurements."
+    },
+    {
+      "target": "sci:sha256:0c2867f8d195910c320574c3d279fe73104ed60039b61b003aca110f6c223111",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published decay benchmark motivated the controls and penalty sensitivity test; no code or selected records reused."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/morphology.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

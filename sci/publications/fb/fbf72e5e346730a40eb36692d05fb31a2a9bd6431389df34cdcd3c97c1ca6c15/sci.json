@@ -1,0 +1,57 @@
+{
+  "title": "Vertical alignment gave no clear prediction gain for detected connections in four Allen cortical slice groups",
+  "abstract": "We tested whether cell-body alignment along cortical depth helps predict a detected chemical connection after distance, cell labels, layers, and test-spike count are known. We used Allen Synaptic Physiology r2.1 slice data and kept inferred donors separate in validation. The primary sample had 18,806 directed pairs from mouse visual cortex and human temporal cortex. We fit four logistic model comparisons, split by species and excitatory or inhibitory source class. A single added alignment term gave no clear prediction gain in any group. Mouse excitatory log loss gain was 0.000070 nats per pair, with a conditional 98.75% donor bootstrap interval from -0.000404 to 0.000529. The mouse inhibitory model became slightly worse. Human estimates were uncertain, especially for 142 inhibitory pairs with 15 connections. We provide code, selected pairs, predictions, donor folds, uncertainty draws, source hashes, and checks. This result does not establish isotropic wiring. Slice selection, incomplete connection detection, inferred donor labels, restricted model form, and conditional uncertainty limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "cortical connectivity",
+    "spatial geometry",
+    "vertical alignment",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/main/prediction.png",
+      "caption": "Test log loss gain from the added alignment term. Positive values indicate better predictions. Intervals are conditional 98.75% donor bootstrap intervals. Mouse and human panels have separate horizontal scales."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the Allen multipatch data and spatial connection models."
+    },
+    {
+      "target": "https://academic.oup.com/cercor/article/27/9/4570/3872356",
+      "reason": "Prior model of morphology and local connectivity."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned definitions of soma distances, test-spike counts, and connection calls."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The donor grouping approach and local distance limit informed this test. No code or data tables were reused."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "title": "Extra pixels reduce two KIC 11084727 dip responses in six local baseline tests",
+  "abstract": "We tested two selected aperture-flux dips of KIC 11084727 with public Kepler quarter 10 pixel data. A fixed profile and quadratic local baseline give optimal-aperture responses of 624 and 1095 parts per million. All recorded pixels give 100 and 136 parts per million. Pixels outside the optimal aperture offset 82.6 and 86.5 percent of its fitted deficit in absolute light. All six baseline choices reduce the all-pixel coefficient, but the point offset fraction ranges from 40 to 91 percent and some resample ranges are unstable. The smaller all-pixel responses lie within the range of 35 off-event controls. These data support an aperture effect for the two selected features. They do not identify a specific instrument cause, a new planet or a comet. A smaller real dimming remains possible. No independent telescope observation is used. Code, local pixel arrays, source URLs, input hashes, all fits, controls and reproduction instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 11084727",
+    "aperture photometry",
+    "instrument effects",
+    "pixel data",
+    "exocomets"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/pixel_test.png",
+      "caption": "Larger pixel sums reduce two selected flux responses. Opposing pixel changes account for much of the optimal-aperture deficit under the stated local model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e95e88d62e63b100999b3d58dbbfe6150b542da263e39bb2437734ab360bff95",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This search provides the fixed event selection and profile widths."
+    },
+    {
+      "target": "sci:sha256:26a0ab6a554b3e388e72776fffe63ec5d0a64cb9ec2428c16316227b6b0f0694",
+      "relations": [
+        "supports"
+      ],
+      "reason": "The pixel-sum test supports an aperture explanation while the prior pointing fit required extrapolation."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2735"
+    },
+    {
+      "target": "doi:10.1093/mnras/sty3049"
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/KSCI-19033-001.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The handbook explains charge saturation and the need to include spilled charge in aperture sums."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The manual defines the flux columns, quality flags and aperture bitmap."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/target_pixel_files/0110/011084727/kplr011084727-2011271113734_lpd-targ.fits.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011084727/kplr011084727_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

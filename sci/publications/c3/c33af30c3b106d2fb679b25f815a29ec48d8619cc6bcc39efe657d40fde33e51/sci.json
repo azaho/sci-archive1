@@ -1,0 +1,55 @@
+{
+  "title": "Cell-body distance gives no clear gain in donor-held-out predictions of 50 Hz plasticity in Allen slice recordings",
+  "abstract": "We tested whether cell-body distance improves predictions of train-induced short-term plasticity after cell labels are known. We used 1,692 detected connections in Allen Synaptic Physiology r2.1 slice recordings. We held out whole inferred donors in five-fold validation with five splits. The reference model used cell class, Cre label, layer, and sex. The distance model added a linear distance term. No species and connection-type group had a clear gain under the four-comparison interval rule. For 932 mouse inhibitory connections from 400 inferred animals, transformed-response RMSE changed from 0.24485 to 0.24464. The mean squared error gain was 0.000103, with a conditional 98.75% donor interval of -0.000508 to 0.000704. Mouse excitatory and both human groups had worse point estimates with distance. Raw responses, joint cell labels, and squared distance gave no clear positive gain. These results limit the tested prediction model. They do not show that distance has no effect. Slice selection, inferred donor labels, small human samples, and uncertainty conditional on fitted models limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "short-term plasticity",
+    "cell-body distance",
+    "grouped validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/prediction.png",
+      "caption": "Distance gives no clear prediction gain. Left: MSE gain and conditional 98.75% donor intervals. Right: prediction errors. Responses use the asinh scale. ex means excitatory; in means inhibitory."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods-experimental-protocol"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "reason": "Defines the scalar induction metric."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Informed distance range and inferred donor grouping. No code or result tables were reused."
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "reason": "Prior campaign plasticity test for a different structural feature in the same release."
+    }
+  ]
+}

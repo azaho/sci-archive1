@@ -1,0 +1,129 @@
+{
+ "title": "Warm winters delay cherry bloom at warm sites in Japan and Korea; a fixed thermal-time model explains the Swiss drop in spring sensitivity but not the Japanese rise (1951-2023)",
+ "abstract": "Question: does the apparent drop of spring-phenology temperature sensitivity under warming need a physiological cause (chilling deficit), or does a model with constant physiology explain it? Approach: we used cherry bloom records from three independent networks: Japan (JMA, Somei-yoshino clone, 76 sites, 1953-2021, station monthly temperatures), Switzerland (MeteoSwiss, Prunus avium, 116 sites, 1951-2023, E-OBS daily) and South Korea (KMA, 58 sites, 1980-2020, ERA5 daily). We fitted a forcing-only thermal-time model (M1) on years up to 1987 only, simulated bloom dates for all years, and applied the same within-site sensitivity regression to observed and simulated dates. Intervals are 95 % site-cluster bootstrap intervals. Results: in Switzerland the sensitivity to 60-day preseason temperature dropped from -5.93 to -5.39 d/degC after 1988; M1 predicts an equal or larger drop (excess -0.14 [-0.46, 0.18] d/degC). In Japan the sensitivity rose from -3.33 to -4.28 d/degC while M1 predicts no change (excess -1.03 [-1.22, -0.85]); the rise remains in the 45 sites with continuous records, and models with chilling terms do not reproduce it. With spring temperature held constant, a warmer December-January delays bloom at sites with mild winters: +2.21 [2.01, 2.37] d/degC at the warmest Japanese sites (+1.60 before 1988, +3.25 after), +1.07 [0.53, 1.61] in Korea, +0.21 [0.02, 0.39] in cold-winter Switzerland. The delay increases with site winter temperature in all three networks; M1 dates show no such pattern. Chilling terms fitted before 1988 reduce later prediction error only at the warmest third of the Japanese sites. Limitations: Japanese temperatures are monthly and not homogenized; Korean records are short; chilling models are simple; the Japanese rise of sensitivity is not explained. No air-pollution data were used.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "cherry blossom",
+  "temperature sensitivity",
+  "chilling",
+  "winter warming",
+  "thermal time model",
+  "Japan",
+  "Switzerland",
+  "South Korea",
+  "climate change",
+  "Prunus",
+  "observation network change"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rolling_sensitivity.png",
+   "caption": "Within-site sensitivity of bloom day to 60-day preseason temperature in moving 20-year windows (95 % site bootstrap bands). Observed dates (blue) versus a forcing-only model fitted before 1988 (orange) and a sequential chill-forcing model (green). Swiss observations follow the model; Japanese observations do not."
+  },
+  {
+   "path": "files/figures/fig2_winter_delay.png",
+   "caption": "Per-site bloom delay per degC of warmer December-January, with spring temperature held constant, versus site winter mean. Observed (left) and forcing-only model dates (right). The delay grows with winter warmth in Japan, Korea and Switzerland; the model shows no such pattern."
+  },
+  {
+   "path": "files/figures/fig3_monthly_decomposition.png",
+   "caption": "Partial bloom-day response to monthly mean temperatures before (open) and after 1988 (filled), observed (blue) and forcing-only model (orange), for balanced Japanese and Swiss sites."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/a95298263523607c8489a7be091c8c8d8ce61979/data",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Compiled bloom dates for Japan (JMA), Switzerland (MeteoSwiss) and South Korea (KMA)."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/stats/etrn/index.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA monthly mean temperatures at the Japanese bloom observatories."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS gridded daily temperature (v31.0e used) for Swiss sites."
+  },
+  {
+   "target": "https://knmi-ecad-assets-prd.s3.amazonaws.com/ensembles/data/Grid_0.1deg_reg_ensemble/tg_ens_mean_0.1deg_reg_v31.0e.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact E-OBS file used."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 reanalysis temperatures for Korean sites."
+  },
+  {
+   "target": "https://open-meteo.com/en/docs/historical-weather-api",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Access path for ERA5 daily temperatures."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-11-00103.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Daily, used to check the parsed JMA temperatures."
+  },
+  {
+   "target": "doi:10.1038/nature15402",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Reported declining temperature sensitivity of spring leaf unfolding; we test whether such a decline needs a physiological cause."
+  },
+  {
+   "target": "doi:10.1111/gcb.15746",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Proposed that declining sensitivity can be an artifact of a non-linear response; our Swiss result agrees, our Japanese result does not show the decline."
+  },
+  {
+   "target": "doi:10.1111/gcb.13781",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Related changes of Swiss spring sensitivity to shifts of the preseason; our Swiss monthly decomposition shows the reduced April response."
+  },
+  {
+   "target": "doi:10.1006/jtbi.2000.2178",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Framework of forcing-only, alternating and sequential phenology models."
+  },
+  {
+   "target": "doi:10.1002/joc.1594",
+   "reason": "Long Kyoto cherry flowering series and its temperature relation."
+  }
+ ]
+}

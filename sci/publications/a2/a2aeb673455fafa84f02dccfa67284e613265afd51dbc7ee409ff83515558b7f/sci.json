@@ -1,0 +1,68 @@
+{
+  "title": "Missing-response bounds and donor intervals do not establish a near-pair advantage above 0.2 mV in four Allen slice groups",
+  "abstract": "We tested whether nearby cell pairs have more detected resting voltage responses of at least 0.2 mV per tested pair. We used Allen Synaptic Physiology r2.1 small data from mouse visual cortex and human temporal cortex. We matched recording and ordered cell classes, and compared distances of at most 100 micrometres with 100 to 200 micrometres. We allowed each missing connected response estimate to be above or below the threshold. In 5,440 mouse excitatory-source pairs, the sharp sample bounds for the near-minus-far difference were 0.33 to 3.46 percentage points. A nominal simultaneous donor bootstrap outer interval was -0.83 to 4.84 points. All four source-class and species groups had outer intervals that included zero. Missing estimates affected 24% to 40% of detected connections in these matched groups. The package gives exact bound formulas, pair records, code, provenance, sensitivity tests, and an independent check. The result does not establish equal coupling. It applies to detected slice responses and does not bound false-negative connection calls or fit error. Inferred donors, coarse classes, sparse human inhibitory data, and nonrandom slice sampling limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "partial identification",
+    "synaptic strength",
+    "distance",
+    "missing data",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Near-minus-far response-rate bounds at 0.2 mV, with approximate donor bootstrap outer intervals. The right panel shows missing voltage estimates among detected connections in the matched sample. ex and in are nonsynaptic source classes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source slice connectivity and physiology study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-quality-control"
+    },
+    {
+      "target": "https://brain-map.org/our-research/connectivity/synaptic-physiology"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/resting_state.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349"
+    },
+    {
+      "target": "sci:sha256:0e9a7de296c55d3eba22664264bca201d6defdc52e666ad7a32d8246d2f551c2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates keeping missing response estimates in the target sample and supplies donor grouping precedent. No code was reused."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related distance-latency study; this study tests thresholded response rate and missing-fit bounds instead."
+    }
+  ]
+}

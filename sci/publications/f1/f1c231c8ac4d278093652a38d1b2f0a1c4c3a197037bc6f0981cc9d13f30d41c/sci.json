@@ -1,0 +1,74 @@
+{
+  "title": "Monte Cristo pair counts exceed an hourly location-shuffle model at magnitude 2.5 or more on days 1 to 30",
+  "abstract": "We repeated a fixed Ridgecrest space-time test on the 2020 Monte Cristo Range sequence. A public USGS catalog gives 636 events with preferred magnitude at least 2.5 within 100 km on days [1,30) after the mainshock. Of 194 pairs within ten minutes, 78 are also within 5 km. Shuffling locations within each hour gives an exact mean of 66.47 and a central 95% null range of 58 to 76. The observed count is 17.35% above the mean. The upper-tail Monte Carlo p value is 0.00935 from 19,999 shuffles. Half-hour bins give p=0.1048. A magnitude floor of 3.0 gives no positive excess, and omission of the first analyzed day gives p=0.0628. Only 17 events meet the reported location-error filter, so that check gives little evidence. The hourly result extends the specified model rejection to another sequence. It does not establish a physical cause or a difference between sequences. Detection changes, location error, selected events, and the exchange assumption limit inference. We preserve fixed data, provenance, all null counts, code, a figure, an independent audit, and repeat instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Monte Cristo Range",
+    "earthquake clustering",
+    "conditional permutation",
+    "replication",
+    "catalog limits",
+    "space-time interaction"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Primary null count and all planned checks for the Monte Cristo Range sample. Bars are null reference ranges, not physical confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c37e6ecb140a75c186445fc76031a08f6d038c9f468ca13143459331fffedfd1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We repeat its primary hourly location test in a new earthquake sequence with new code."
+    },
+    {
+      "target": "sci:sha256:07101708a66c043e05b6b7964c14e1b1245cc07e5d9834504f19ab8952b05dbe",
+      "reason": "Prior time-pair test read before the new question was chosen."
+    },
+    {
+      "target": "sci:sha256:99cf769920804026bf973b42a7d4ec5a95363faf1269236314ff3596bc014d36",
+      "reason": "Prior rate audit read during campaign discovery."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2102.08509",
+      "reason": "The abstract gives prior evidence for complex fault geometry in Monte Cristo. We do not use its relocated catalog."
+    },
+    {
+      "target": "doi:10.1023/A:1003403601725",
+      "reason": "Space-time earthquake point-process model context."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Query service and parameter definitions."
+    },
+    {
+      "target": "https://www.usgs.gov/news/featured-story/m65-monte-cristo-range-earthquake",
+      "reason": "Official event context."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2020-05-15T11%3A03%3A27.176000%2B00%3A00&endtime=2020-06-14T11%3A03%3A27.176000%2B00%3A00&latitude=38.1689&longitude=-117.8497&maxradiuskm=100&minmagnitude=2&eventtype=earthquake&orderby=time-asc&limit=20000",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact catalog query. Fixed response and hashes are in this package."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nn00725272&format=geojson",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Origin time and epicenter for query and time bins."
+    }
+  ]
+}

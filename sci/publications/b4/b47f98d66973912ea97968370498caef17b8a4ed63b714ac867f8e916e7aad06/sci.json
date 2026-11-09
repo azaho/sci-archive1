@@ -1,0 +1,75 @@
+{
+  "title": "Gaps in three cell properties gave no clear connection prediction gain in selected Allen mouse cortical slices",
+  "abstract": "We tested whether three gaps between cell properties improve the prediction of detected chemical connections. We used Allen Synaptic Physiology r2.1 and five folds that held out whole inferred donors. The reference model used cell labels, region, distance, test effort, and each cell's input resistance, membrane time constant, and spike width. The added model used the absolute log ratio of each property. In 6174 mouse directions from 447 inferred donors, the joint addition reduced log loss by -0.093 percent. Its conditional 95 percent donor interval was -0.531 to 0.336 percent. A secondary human sample gave -2.808 percent, with interval -4.144 to -1.371. The main test gave no clear gain. This extends prior single-property tests on a common complete-data sample. Missing physiology, slice detection, inferred donors, fixed-model uncertainty, and the model form limit the result. The package includes code, selected measurements, predictions, scores, source hashes, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "intrinsic physiology",
+    "chemical connectivity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/gain.png",
+      "caption": "Log-loss reduction from three intrinsic-property gap terms. Bars show conditional 95 percent donor bootstrap intervals. Positive values favor gap terms. C=1 is the main model; other penalties are sensitivity checks."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the directly linked cell physiology and connection tests."
+    },
+    {
+      "target": "doi:10.1038/nature09880",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence on sensory-response similarity and local wiring; this study uses intrinsic properties instead."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods-experimental-protocol"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/intrinsic.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:d93b9ae37c62a950dc74e82893d0a03e0fcf2259c249801e642ac97d6ff50faa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior public test of intrinsic cell properties and detected wiring."
+    },
+    {
+      "target": "sci:sha256:778388aed3cb59a8d8cfc0a1e28ff7e551668221063781735796432fbd47cd81",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior public test of intrinsic cell properties and detected wiring."
+    },
+    {
+      "target": "sci:sha256:ac8be70ed43ca00bdb20e36d65eb0f928cb0c41e7f4449affb0902527899dcd6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior public test of intrinsic cell properties and detected wiring."
+    }
+  ]
+}

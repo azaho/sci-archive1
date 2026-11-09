@@ -1,0 +1,60 @@
+{
+  "title": "Connection-calibrated delay intervals covered all selected connections in 100 of 129 test mice in one Allen slice split",
+  "abstract": "We tested delay intervals for all selected connections from a new mouse. We used 1,327 inhibitory connections from 516 inferred mice in Allen Synaptic Physiology r2.1 small data. Whole mice were split between training, calibration, and testing. A model used cell labels, layers, and cell-body distance. In the primary split, connection-calibrated intervals covered 342 of 387 connections, but all connections in only 100 of 129 test mice. Calibration from the largest error per mouse covered all connections in 110 mice. Mean width rose from 1.464 to 1.898 ms. This second method did not reach the 90% target in the primary test; its approximate 95% animal-coverage interval was 78.1% to 90.4%. Across 100 fixed splits, median animal coverage was 81.4% and 90.7%, respectively. Splits reuse animals and are not independent tests. A finite-rank coverage guarantee requires exchangeable animal records, including connection sampling. Inferred animal IDs, slice selection, and untested sampling changes limit this result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "conformal prediction",
+    "animal calibration",
+    "circuit timing"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/coverage.png",
+      "caption": "Coverage of all selected connections from each test mouse and mean interval width in the primary split. The dashed line marks the 90% target. Both models use the same 129 test mice."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published local sample scope, animal grouping approach, and timing prediction question. New code adds interval calibration."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Allen slice study."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.1809.07441"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2306.06342"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-use/"
+    }
+  ]
+}

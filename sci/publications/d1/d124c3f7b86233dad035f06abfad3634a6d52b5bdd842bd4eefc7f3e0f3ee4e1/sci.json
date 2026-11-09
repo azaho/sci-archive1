@@ -1,0 +1,22 @@
+{
+  "title": "Groundwater levels in 1,576 long-record US wells did not stay low after multi-year droughts in 1951-2025: a small deficit in post-drought years 3-4 was gone by year 6",
+  "abstract": "Question: do groundwater levels in long-record US wells stay lower than precipitation predicts after multi-year droughts (non-recovery or a pumping ratchet)? Approach: we used USGS field measurements of depth to water (parameter 72019) for 5,993 wells with records from before 1976 to after 2022, water-year median levels, NOAA climate-division precipitation and GHCN_CAMS temperature. Droughts are 3 or more consecutive water years below the 1951-2025 division mean with a mean deficit of 10 % or more. A reference model (precipitation lags 0-3, temperature, linear or spline trend) was fitted on normal years only. The metric is the mean standardised residual R in the 5 post-drought years. A time-shift placebo (58 common shifts) gave the null distribution. Results: for 2,579 droughts bracketed by fitted years in 1,576 wells, the mean R was -0.08 SD (linear trend, placebo 95 % range -0.21 to +0.36, p = 0.12) and -0.17 SD (spline trend, -0.30 to +0.41, p = 0.12). Across 13 variants the mean R was -0.28 to +0.19 SD. The residual was positive during droughts, lowest in post-drought years 3-4 (-0.26 to -0.38 SD, at or below the placebo 2.5th percentile) and near 0 by year 6. Thus the response was delayed, not persistent. With equal weight per division the mean R was -0.18 SD (p = 0.034, linear) and -0.12 SD (p = 0.085, spline), approximately 0.3 ft. Injected deficits of 0.25 SD in all droughts were detected in 20 of 20 draws. Wells with long-term declines and High Plains wells did not have a larger deficit; no group passed a Benjamini-Hochberg correction. Limitations: division-scale precipitation, no pumping data, model-dependent sign, an uneven well network, and some design choices made after a preliminary run on two thirds of the wells.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370703"}
+  ],
+  "keywords": ["groundwater", "drought recovery", "hydrological drought", "non-recovery", "USGS wells", "placebo test", "High Plains aquifer", "groundwater ratchet", "water availability", "time-shift placebo"],
+  "display": [
+    {"path": "files/figures/fig2_tests.png", "caption": "Residual by year around the drought end, observed versus placebo mean post-drought residual for 13 variants (event- and division-weighted), and power for injected deficits."},
+    {"path": "files/figures/fig1_map.png", "caption": "Mean post-drought residual per well for linear and spline trend models; red means lower level than predicted."},
+    {"path": "files/figures/fig3_groups.png", "caption": "Group tests (aquifer, aquifer type, long-term trend, region, depth) with placebo 95 % ranges and Benjamini-Hochberg q-values."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af", "relations": ["uses", "supports"], "reason": "We use the same drought rule, residual metric and time-shift placebo for groundwater levels; the groundwater result agrees with its finding that US runoff did not stay low after multi-year droughts and tests its suggested groundwater mechanism."},
+    {"target": "doi:10.1126/science.abd5085", "reason": "Post-drought hydrological non-recovery in Victoria, Australia, the hypothesis that we test for US groundwater."},
+    {"target": "doi:10.5194/hess-17-4769-2013", "reason": "Groundwater drought and accumulated precipitation memory."},
+    {"target": "doi:10.1038/s41467-022-35582-x", "reason": "Drought-accelerated groundwater depletion in the California Central Valley (ratchet-like behaviour)."},
+    {"target": "doi:10.1038/s41586-023-06879-8", "reason": "Global groundwater-level decline and recovery from well records."},
+    {"target": "https://api.waterdata.usgs.gov/ogcapi/v0/", "relations": ["uses"], "reason": "USGS Water Data OGC API: field-measurements, field-measurements-metadata and monitoring-locations collections, retrieved 2026-11-08."}
+  ]
+}

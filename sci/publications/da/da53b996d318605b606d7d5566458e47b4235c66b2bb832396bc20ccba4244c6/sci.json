@@ -1,0 +1,63 @@
+{
+  "title": "Kepler quarter 4 corrected flux gives a core and egress variance excess that raw flux does not confirm",
+  "abstract": "We tested a fixed transit shape with variable amplitude for the known dusty system KIC 12557548. We used 409 accepted events in Kepler release 25 quarters 4 to 7. We measured core and late-egress deficits and removed the estimated measurement covariance, including shared baseline errors. In quarter 4, the small covariance eigenvalue is 370784 square ppm in corrected flux, with a conditional 95 percent block interval of 198009 to 569741. Raw aperture flux gives -44271 square ppm, with an interval of -116565 to 16660. Four baseline choices retain the corrected-flux excess but do not confirm it in raw flux. The products agree more closely in quarters 5 to 7. Tests include cadence sampling, fixed-shape simulations, and added late-egress variation. The result identifies a dependence on the flux product. It does not establish an instrument cause, a constant dust shape, or a new object. Conditional noise assumptions, long exposures, baseline errors, and the small sample limit the test. No independent telescope observation confirms this excess. Code, raw files, hashes, event tables, figures, and offline instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "Kepler",
+    "KIC 12557548",
+    "dusty transits",
+    "covariance",
+    "pipeline sensitivity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/rank_test.png",
+      "caption": "Small covariance eigenvalues after measurement-error subtraction. Bars show conditional 95 percent intervals from blocks of 10 accepted event records. Different colors use two flux products, two baseline orders, and two baseline windows."
+    },
+    {
+      "path": "files/product_difference.png",
+      "caption": "Paired corrected-flux minus raw-flux deficits for the same accepted events. Quarter 4 shows the largest differences."
+    },
+    {
+      "path": "files/core_tail.png",
+      "caption": "Raw-flux core and late-egress measurements in the primary reduction. Lines show the largest axis of the noise-corrected covariance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:500bd31905c1520c2526dc0a6dc8f005e99d01386659c3bd62848d3585b3f74c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public raw files, catalog record, and retrieval code. This study adds a core and late-egress covariance-rank test."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201322398",
+      "reason": "Prior detailed evidence for a complex transit shape in the known dusty system. We do not claim the first evidence of variable dust shape."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629250",
+      "reason": "Physical dust-tail models and limits of simple transit observables."
+    },
+    {
+      "target": "doi:10.26133/NEA4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DR25 catalog period and epoch."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Kepler release 25 long-cadence data. Exact source URLs and hashes are in source_provenance.json."
+    }
+  ]
+}

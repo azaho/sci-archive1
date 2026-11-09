@@ -1,0 +1,53 @@
+{
+  "title": "Distance improved onset predictions more than rise predictions in selected Allen mouse inhibitory connections",
+  "abstract": "We tested whether cell-body distance improves predictions of response onset more than voltage-response rise time in the same Allen Synaptic Physiology r2.1 connections. We reused a verified 2100-connection cohort and compared cell-label ridge models with and without distance. Whole inferred donors stayed together in repeated held-out folds. In mouse inhibitory connections, distance reduced onset error more than rise error. The difference was 6.78 percentage points, with a refitted 98.75% donor bootstrap interval from 0.74 to 14.08. We tested all four species and synapse-type panels with nominal 98.75% intervals. Donor bootstrap samples refit all models and kept copied donors out of their own test folds. The package supplies the paired endpoint, code, selected data, predictions, resampling draws, and direct numerical checks. Prior results selected the question, so this is exploratory reuse, not independent confirmation. Slice sampling, inferred donors, fit error, fixed folds, and an additive model limit interpretation. The data do not measure axon path length or establish a mechanism or transfer across regions and behavior.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic timing",
+    "cell-body distance",
+    "paired prediction",
+    "donor bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/contrast.png",
+      "caption": "Onset-minus-rise prediction gains with 98.75% donor bootstrap intervals. Models are refit in each draw. Positive differences favor onset. This is exploratory reuse of selected slice data."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:df736fd9f18eeb32e7953c11d079e187a02507e19ff7ccb3b46d9d86ee902d57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified common cohort, SQL and source provenance, and test the paired gain contrast left open in its report."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "sci:sha256:0c2867f8d195910c320574c3d279fe73104ed60039b61b003aca110f6c223111"
+    },
+    {
+      "target": "sci:sha256:a443f362023321dce7c87648e74704c4aefa19332dca93b64cb657ad3bbee0a7"
+    }
+  ]
+}

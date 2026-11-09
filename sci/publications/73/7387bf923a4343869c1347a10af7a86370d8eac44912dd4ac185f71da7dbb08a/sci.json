@@ -1,0 +1,107 @@
+{
+  "title": "A b-value drop in the first 24 hours did not forecast larger earthquakes after 205 M4.5+ events in US, Italian and New Zealand catalogs (2000-2025)",
+  "abstract": "The Foreshock Traffic Light System (FTLS) says that a b-value drop of more than 10 % after an earthquake, relative to the local background, signals that a larger earthquake will follow. We tested this rule as a pre-planned forward forecast. We used 1,955 first-largest shallow M4.5+ earthquakes (2000-2025) from ANSS ComCat regional networks, INGV (Italy) and GeoNet (New Zealand), with b-positive b-values from the first 24 h and from the prior 10 years in a rupture-scaled circle. 205 triggers had sufficient data, and 18 of them were followed by a larger event within 30 days. The b-value change gave an AUC of 0.56 (95 % CI 0.38-0.69; permutation p = 0.20). Larger-event rates were 8.0 % for red, 9.9 % for yellow and 7.8 % for green; 46 of 50 red alerts were false alarms. The b-value change did not improve out-of-sample logistic forecasts beyond productivity and magnitude. After events not followed by a larger one, b did not increase (median +1.5 %, CI -2.6 to +4.8 %). A simulation with the same sample sizes shows that an FTLS-size effect (20 % drop before larger events, 10 % increase otherwise) would give AUC 0.81 (5-95 %: 0.71-0.89); the data exclude it. A weak effect (about a 10 % drop, AUC near 0.6) remains possible. Sensitivity settings (6-72 h, 5 d-1 yr, Aki-Utsu estimator) mostly give AUC values from 0.5 to 0.7 with wide intervals. Limitations: few larger events, a fixed volume rule instead of expert choices per sequence, mixed magnitude types, and no Japanese data.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "foreshock traffic light system",
+    "b-value",
+    "b-positive",
+    "foreshocks",
+    "earthquake forecasting",
+    "aftershocks",
+    "ComCat",
+    "INGV",
+    "GeoNet",
+    "forecast verification",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_db_by_outcome.png",
+      "caption": "b-value change in the first 24 h by outcome, and larger-event rate by FTLS class (205 triggers, 18 larger events)."
+    },
+    {
+      "path": "files/figures/fig2_power.png",
+      "caption": "Simulated AUC under b-change hypotheses with the observed sample sizes, against the observed AUC of 0.56."
+    },
+    {
+      "path": "files/figures/fig3_sensitivity.png",
+      "caption": "AUC across evaluation times, outcome windows and estimators, with cluster-bootstrap 95 % intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-019-1606-4",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Proposes the foreshock traffic light rule that we test as a forecast."
+    },
+    {
+      "target": "doi:10.1785/0220190307",
+      "relations": [
+        "challenges"
+      ],
+      "reason": "Reports a red light for Ridgecrest M6.4; our fixed-volume value is +10 %."
+    },
+    {
+      "target": "doi:10.1785/0220200082",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Shows that FTLS classes depend on catalog and volume choices; our results agree."
+    },
+    {
+      "target": "doi:10.1029/2020JB021027",
+      "relations": [
+        "uses"
+      ],
+      "reason": "b-positive estimator."
+    },
+    {
+      "target": "doi:10.1029/2025GL121450",
+      "relations": [
+        "supports"
+      ],
+      "reason": "No systematic b-value change around large Japanese earthquakes; we find the same outside Japan."
+    },
+    {
+      "target": "doi:10.1029/2002JB001991",
+      "reason": "Stacked foreshock statistics and conditioning effects."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ANSS ComCat event data."
+    },
+    {
+      "target": "https://webservices.ingv.it/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "INGV event data."
+    },
+    {
+      "target": "https://service.geonet.org.nz/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GeoNet event data."
+    },
+    {
+      "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+      "reason": "Related campaign study of aftershock productivity forecasts."
+    },
+    {
+      "target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13",
+      "reason": "Related campaign study of b-value and tidal stress."
+    }
+  ]
+}

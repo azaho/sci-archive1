@@ -1,0 +1,63 @@
+{
+  "title": "Matched Allen mouse slice paths do not resolve a decay-time benefit of excitatory-inhibitory loop closure",
+  "abstract": "We tested whether closed excitatory-inhibitory paths had more closely matched voltage-response decay times than open paths through the same inhibitory cell. We used Allen Synaptic Physiology r2.1 small data and matched recording, middle cell, and excitatory cell labels. Mouse visual cortex supplied 30 closed and 40 open paths from 22 recordings and 19 inferred mice. The donor-weighted closed minus open decay mismatch was 0.0499, with a 95% donor bootstrap interval of -0.0595 to 0.1634. Negative values would favor closure. Three sensitivity checks also had intervals that included zero. Human temporal cortex had no matched strata. The result does not establish a decay-matching benefit or equal timing. The package provides code, derived evidence, uncertainty draws, provenance, and a figure. Small selected slice graphs, inferred donors, missing fits, and unmeasured cell properties limit inference. No intact-brain dynamics or species difference is tested.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "excitatory-inhibitory paths",
+    "synaptic decay",
+    "matched comparison",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/decay_loops.png",
+      "caption": "Closed minus open decay mismatch in matched mouse slice paths. Intervals resample inferred donors. Only the primary comparison is confirmatory; sensitivity intervals are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Allen connectivity and response data."
+    },
+    {
+      "target": "doi:10.1111/ejn.12294",
+      "reason": "Prior study of reciprocal E-I wiring and response kinetics in rat cortex."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:20b8047495b2b43394893632e213836809707f909e4827b5184f846ca12ef27b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses bounded decay mismatch and donor grouping as method precedents; adds closed versus open paths through the same inhibitory cell."
+    },
+    {
+      "target": "sci:sha256:ea126e6a11065e9fbcd14983df1d8d6ba9f48953e7c51cff3a9eeba18573117b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-neuron timing study excluded reciprocal and chain pairs from its disjoint controls."
+    }
+  ]
+}

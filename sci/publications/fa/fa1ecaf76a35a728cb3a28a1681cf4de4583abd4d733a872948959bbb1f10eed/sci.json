@@ -1,0 +1,101 @@
+{
+ "title": "Automated b-value traffic lights classified 9 of 65 Japanese M5+ foreshock sequences before the larger event, and over 80% of red alarms were false (JMA, 2000-2024)",
+ "abstract": "Question: Can the b-value foreshock traffic light (FTLS; Gulia and Wiemer 2019) tell in real time that a large earthquake is a foreshock? Approach: We applied the rule automatically and causally to all 1,459 shallow (depth 50 km or less) M5.0+ first events in the JMA unified catalog, 2000-2024 (240 of M6.0+). A first event is the largest event near it in the previous year. The post-event b-value used only events before a decision time of 0.25, 1, 3 or 10 days. The outcome was a larger event within one rupture length in the next 30 days. We varied 72 method settings and used three estimators (FTLS-style Aki-Utsu, common-Mc Aki-Utsu, b-positive). Findings: 65 first events had a larger event within 30 days, and half of these came within 8 hours. Only 8% of first events had enough events for a b-value at 1 day. The FTLS gave a valid class before the larger event in 9 of 65 cases (5 red, 2 orange, 2 green). At the primary setting (1 day), 4 of 35 red alarms (11%) and 3 of 72 non-red classes (4%) were followed by a larger event (Fisher p = 0.16). Red alarms occurred in 31% of sequences with no larger event. Kumamoto 2016 and the 2011 Tohoku foreshock were red, but Noto 2024 M7.6 was also red under b-positive. Over the settings, the signal at 1 day was positive but often not significant, and it was absent at 3 days. A simple magnitude gap (first event minus largest aftershock so far) ranked sequences better (AUC 0.83 versus 0.68). Limitations: few larger events (2-7 per test), a circular source volume instead of a fault volume, early incompleteness, and one catalog.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "foreshock",
+  "b-value",
+  "foreshock traffic light",
+  "earthquake forecasting",
+  "JMA catalog",
+  "Japan",
+  "b-positive",
+  "Kumamoto",
+  "Tohoku",
+  "pseudo-prospective test",
+  "seismicity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timing_warnings.png",
+   "caption": "(a) Delay from shallow M5+ (blue) and M6+ (orange) JMA first events to the first larger event within one rupture length; dotted lines mark decision times. (b) Traffic-light class at the last decision before each of the 65 larger events: 31 came before 6 hours and 25 had too few events for a b-value."
+  },
+  {
+   "path": "files/figures/fig4_grid_robustness.png",
+   "caption": "Over all method settings (M5+ set): (a) fraction of red alarms followed by a larger event within 30 days, with the rate after non-red classes; (b) fraction of sequences without a larger event that were red; (c) AUC of the b-value score and of a simple magnitude-gap score (diamonds)."
+  },
+  {
+   "path": "files/figures/fig2_case_series.png",
+   "caption": "Relative b-value change against decision time for eight Japanese sequences (median and 10-90% range over 72 settings). Kumamoto 2016 M6.5 and off Sanriku 2011 M7.3 were red before the larger event; Noto 2024 M7.6 (the largest event) was also red under b-positive."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-019-1606-4",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Proposes the foreshock traffic-light system and reports 95% success on selected sequences; we test the rule automatically on the full JMA catalog and find few usable classes and mostly false red alarms."
+  },
+  {
+   "target": "doi:10.1785/0220200082",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Shows that expert choices change FTLS outcomes; we use their parameter ranges for blind time, Mc correction and background period and confirm setting dependence at catalog scale."
+  },
+  {
+   "target": "https://arxiv.org/abs/2104.01598",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Kumamoto 2016 FTLS analysis with the JMA catalog; our automated version gives red before the M7.3 in most settings."
+  },
+  {
+   "target": "doi:10.1029/2020JB021027",
+   "relations": [
+    "uses"
+   ],
+   "reason": "b-positive estimator, robust to short-term incompleteness."
+  },
+  {
+   "target": "doi:10.1785/BSSA0840040974",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rupture-length scaling used for the source radius."
+  },
+  {
+   "target": "doi:10.1785/BSSA0720051677",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Standard error of the b-value."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo_e.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA unified hypocenter catalog, annual files hYYYY.zip."
+  },
+  {
+   "target": "sci:sha256:1bb48e7cfd1b90e98d20b1325fa9cc0e45f6dcc42647562b7c9436c9e25ac993",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign publication; its JMA fixed-width parsing recipe is reused and extended here."
+  }
+ ]
+}
