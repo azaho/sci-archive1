@@ -1,0 +1,77 @@
+{
+  "title": "A broader count distribution improved held-out synaptic contact predictions in one selected MICrONS mouse",
+  "abstract": "We tested contact counts for 275,986 selected MICrONS neuron pairs. Five test folds held out whole target neurons. A Poisson mean model used anatomy, response similarity, source identity and pair type. A negative binomial distribution used the same means. Its mean test log score was higher by 0.001352 natural-log units per pair. A fixed-prediction source bootstrap gave a 95 percent interval of 0.001036 to 0.001673. There were 680 pairs with two or more contacts. Poisson predicted 326.0; the broader distribution predicted 686.0. Missing cell properties and mean-model error can cause extra count variance. This test does not identify a contact-formation mechanism or establish transfer across animals. We provide code, selected data, predictions, source hashes, checks and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "synapse count",
+    "predictive calibration",
+    "negative binomial",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Held-out contact counts and log scores in five target-disjoint folds. Both distributions use the same mean. The source bootstrap holds fitted predictions fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior contact multiplicity slope; this study tests held-out count distributions."
+    },
+    {
+      "target": "sci:sha256:b03125d1867c00cdf21bd9f1d176dec3d6eadec4e7ab12ae1486c965a9c7d26b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior binary-mean Poisson estimator does not assert a Poisson count variance."
+    },
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior dispersion test used homologous pairs in other species and multiple animals."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    }
+  ]
+}

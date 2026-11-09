@@ -1,0 +1,62 @@
+{
+  "title": "Matched target rankings leave a model response advantage uncertain in one MICrONS mouse",
+  "abstract": "We tested whether model response similarity ranks connected targets better than measured movie response similarity when their rankings disagree. We compared connected and unconnected targets of the same axon. We matched target area, layer, and two proximity length bins. The primary test used 840,419 target comparisons from 148 sources. The rankings disagreed in 293,676 comparisons. With equal source weights, the model won 51.79% of disagreements. The nominal 95% source bootstrap interval was 49.48 to 54.08%. The average AUC difference was 0.00206, with interval -0.01550 to 0.01883. Finer bins, target centering, and response quality filters also left the advantage uncertain. This result does not show equal performance. One animal, selected cells, shared targets, and residual geometry limit inference. We provide code, derived pair data, source hashes, checks, and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "response similarity",
+    "model validation",
+    "target ranking",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/ranking.png",
+      "caption": "Model wins among opposite target rankings under six control choices. Bars are nominal 95% source bootstrap intervals conditional on the target panel. The right panel shows paired source AUC values for the primary test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public edge measures and prior wiring analysis."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Matched calcium imaging and electron microscopy resource."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign analysis reports separate and joint similarity slopes. We test opposite target rankings with matched geometry; we do not reuse its code or tables."
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    }
+  ]
+}
