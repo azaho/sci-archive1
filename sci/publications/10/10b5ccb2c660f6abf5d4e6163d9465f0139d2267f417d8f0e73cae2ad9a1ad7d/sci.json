@@ -1,0 +1,61 @@
+{
+  "title": "Trained peer weights gave no mean 50 Hz prediction gain in selected Allen slice circuits",
+  "abstract": "We tested completion of a missing 50 Hz response measure from connections that share a source or target cell. Exact cell-label matching in Allen Synaptic Physiology r2.1 left 78 mouse connections from 35 inferred animals and 12 human connections from six inferred donors. We learned a bounded peer weight on other donors. Mouse baseline, source, and target mean squared errors were 0.05831, 0.05852, and 0.05893. Human errors were 0.07145, 0.09426, and 0.09734. Neither trained method gave a mean gain. Most mouse weights were zero. This tests one simple method in sparse, selected slice circuits. It does not establish equal source and target roles or a lack of wiring information. Few human donors, fit error, and cell-type mixtures limit transfer. Code, aggregate evidence, a figure, hashes, and retrieval instructions support reproduction. External record-level data are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "short-term plasticity",
+    "peer prediction",
+    "shrinkage",
+    "circuit structure",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Baseline MSE minus peer MSE. Positive values show a gain. Lines show nominal 98.75% donor bootstrap intervals conditional on predictions. Trained rows are primary; half and full weights are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "sci:sha256:774028f84c600f1b3ccbc6db2f3dd42bd83e5bac4c2147392bdb78872f415f06",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its matched shared-cell question with donor-held-out prediction. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:bf38e4209a14677e50fd3fefa2b5c6ff4863cdc3b1d863a2aafc104810f70e67",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Tests its proposed learned shrinkage method in another dataset with exact cell-label matching."
+    }
+  ]
+}

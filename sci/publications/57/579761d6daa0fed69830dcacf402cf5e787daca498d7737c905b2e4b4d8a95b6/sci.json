@@ -1,0 +1,67 @@
+{
+  "title": "Corner checks missed the lowest gain limit in 10 of 91 Allen mouse E-I pair models under factor-1.25 timing ranges",
+  "abstract": "We tested endpoint checks for timing uncertainty in a two-filter negative feedback model. We used linked connectivity and response times from Allen Synaptic Physiology r2.1. Each decay and onset delay could vary independently from its stored value divided by 1.25 to its stored value times 1.25. In 91 complete mouse visual-cortex E-I pairs, corner checks overstated the lowest critical gain in 10 models, by at most 0.2034 percent. A factor-2 range gave 23 cases and a largest excess of 2.0776 percent. Most models had no corner error above numerical tolerance. Implicit derivatives show that an extremum must lie on the decay rectangle boundary, but need not lie at a corner. Boundary searches agreed with independent global searches. A synthetic example and 150 synthetic checks support inspection without external data. Only three human pairs were complete. The timing ranges are assumed sensitivity ranges, not confidence intervals. Unit-area filters, independent errors, missing measurements, and the lack of a measured loop gain limit biological inference. The package contains original code, aggregate results, figures, source hashes, and external retrieval steps. It contains no external database or derived record-level measurement table.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "negative feedback",
+    "timing uncertainty",
+    "stability",
+    "numerical bounds",
+    "synaptic decay"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Aggregate results for 91 selected mouse visual-cortex E-I pair models. Timing ranges are assumptions. A corner miss exceeds relative tolerance 1e-6."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for linked circuit calls and synaptic responses."
+    },
+    {
+      "target": "doi:10.3389/fncom.2011.00025",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:367fb31164c30154685691c4289453c3ca5519e20951d1bf83162d5402c6cce7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the selection design and two-filter model; no code or record tables reused. Adds timing-box searches."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
