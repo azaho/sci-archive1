@@ -1,0 +1,103 @@
+{
+ "title": "Later TESS sectors (2022-2026) do not repeat the planet-phase flare clustering of AU Mic, K2-25 and TOI-540; published Anderson-Darling p-values change with the phase origin",
+ "abstract": "Question: Ilin et al. (2024) reported tentative clustering of flares at the orbital phase of the innermost planet for AU Mic, K2-25 and TOI-540 (Anderson-Darling p = 0.12, 0.18, 0.084), and their best candidate was HIP 67522. Their TESS data stopped in July 2022. Method: We used TESS SPOC 2-min light curves from later sectors (2022-2026) as an out-of-sample test of the 13 TESS systems in their final table. We used their de-trending code, the AltaiPony flare finder, their ephemerides and their coverage-weighted expected phase distribution. We vetted the new candidates by eye. Results: With their flare table we reproduce all 13 published p-values. The Anderson-Darling statistic depends on the arbitrary phase origin, and for transiting systems the published values use origin 0 only. Over 40 origins the p-value for the old AU Mic flares goes from 0.003 to 0.32, and for HIP 67522 from 0.0013 to 0.47. An origin-free Kuiper test gives 0.026 (AU Mic), 0.026 (K2-25, 3 flares), 0.22 (TOI-540) and 0.010 (HIP 67522) for the old flares. In the new sectors, no system has a Kuiper p below 0.05 (AU Mic 0.41 with 29 flares, K2-25 0.53, TOI-540 0.66). For the phase arcs with the largest excess in the old flares, the new data put 9 of 40 flares of the three systems in the arcs. The null expectation is 7.8 (p = 0.37), and the full old effect predicts 17.8 (power 0.96). Automated-only vetting and an ED > 3 s cut give the same result. Limitations: The new data exclude the old effect size but not an effect of half that size (power 0.47) or intermittent interaction. K2-25 and TOI-540 have only 3 and 8 new flares. Our flare detection recovers 84% of the published flares in the same sectors.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "stellar flares",
+  "star-planet interaction",
+  "TESS",
+  "AU Mic",
+  "K2-25",
+  "TOI-540",
+  "HIP 67522",
+  "Anderson-Darling test",
+  "Kuiper test",
+  "out-of-sample test",
+  "replication",
+  "M dwarfs"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cumulative_phases.png",
+   "caption": "Cumulative orbital-phase distributions of flares (ED > 1 s) for AU Mic, K2-25, TOI-540 and HIP 67522. Top: the flares of Ilin et al. 2024 in the old sectors. Bottom: our flares in later TESS sectors. Grey: expectation from phase coverage times flare rate. Shaded: the phase arc with the largest excess in the old flares."
+  },
+  {
+   "path": "files/figures/fig2_pvalues_and_arc_test.png",
+   "caption": "Left: published p-values (squares) and new-sector Kuiper p-values (circles) against the expected power of star-planet interaction from Ilin et al. Right: fraction of flares in the old excess arc minus the coverage expectation, for old flares (blue, arc chosen on them) and new flares (red); 1-sigma binomial intervals."
+  },
+  {
+   "path": "files/figures/fig3_ad_origin_dependence.png",
+   "caption": "Two-sided Anderson-Darling p-value of the old flares as a function of the arbitrary phase origin. Squares: published values. Dotted lines: origin-free one-sided Kuiper p-values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48550/arXiv.2311.04316",
+   "relations": [
+    "reviews",
+    "challenges",
+    "uses"
+   ],
+   "reason": "Ilin et al. 2024 (MNRAS 527, 3395): the tested claim of an active branch of flaring star-planet interaction; we reuse their flare table, ephemerides, de-trending code and test design."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10065891",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Flare table and system table of Ilin et al. 2024 (CC BY 4.0)."
+  },
+  {
+   "target": "https://github.com/ekaterinailin/flaring-spi",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Analysis code and results.csv of Ilin et al. (commit 880742f); de-trending functions copied under MIT."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2204.14090",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Ilin and Poppenhaeger 2022: AU Mic p = 0.07 and the prediction that more TESS data would give a 3-sigma detection if the signal is real."
+  },
+  {
+   "target": "sci:sha256:26e5ff80f034ee4578445f7b204c803b71ec552f9784dbbc73ed8ef1fdf480bb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign out-of-sample test of HIP 67522 with TESS sectors 101-102; our HIP 67522 result agrees."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09236-z",
+   "reason": "Ilin et al. 2025: planet-induced flares on HIP 67522 (context)."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2509.22918",
+   "reason": "Whitsett and Daylan 2025: other periastron flare-clustering candidates, not tested here."
+  },
+  {
+   "target": "https://github.com/ekaterinailin/AltaiPony",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Flare finder (version 2.1.2) with two small patches."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC 2-min light curves from MAST."
+  }
+ ]
+}

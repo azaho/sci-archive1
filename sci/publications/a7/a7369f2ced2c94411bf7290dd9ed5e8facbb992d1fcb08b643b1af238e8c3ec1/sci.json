@@ -1,0 +1,58 @@
+{
+  "title": "Shared site loss raised a 20 percent output-loss risk at 10 percent failure in eight selected worm map models",
+  "abstract": "We computed large-loss probabilities from multi-target chemical sites in eight public worm brain maps. We selected sources with at least 20 contacts and 10 sites within a fixed 162-cell panel. The model assumes positive unit contacts, independent site failures and complete loss of all contacts at a failed site. At failure probability 0.1, the source-equal mean probability of losing at least 20 percent of output was 2.26 to 2.91 times the independent-contact value. Balanced site counts with the same site and contact totals recovered most of this effect. Observed site-count variation gave a smaller mean increase, but 72 of 432 source-map records had lower risk than their balanced reference. At failure probability 0.2, the site/contact mean risk ratio fell below one in every map at the same threshold. Thus increased variance does not specify the direction of a tail change. These are conditional model results, not measured neural failures. Partial coverage, selected cells, unknown contact gains and release dependence limit biological use. Code, site evidence, exact probabilities, hashes and a second numerical calculation support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "connectomics",
+    "failure probability",
+    "tail risk",
+    "reliability"
+  ],
+  "display": [
+    {
+      "path": "files/results/tails.png",
+      "caption": "Exact model output-loss probabilities and the effect of balanced site counts in eight selected worm maps."
+    },
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "The direction of a 20 percent loss-tail change depends on the assumed failure probability."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of eight developmental worm brain maps."
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Evidence for concurrent events at worm neuromuscular synapses; not validation of the brain failure model."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned raw site lists."
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuse its verified 162-cell panel and extend its covariance analysis to per-source tail probabilities. No analysis code is reused."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Feature similarity raised V1-trained wiring prediction error on HVA pairs in one MICrONS mouse",
+  "abstract": "We tested direct transfer of wiring prediction models between V1 pairs and pairs in the pooled higher visual area (HVA) group in one MICrONS mouse. The sample had 213,051 candidate pairs and 6,002 connections. No cell was shared between training and test sets. With geometry and layer controls, adding model feature similarity to V1 training raised mean HVA test log loss by 0.0010104 nats per pair, or 0.92%. The conditional 98.75% interval for the loss reduction was -0.0018087 to -0.0002121. In reverse transfer, measured movie similarity reduced loss by 0.0002479, with interval 0.0000538 to 0.0004419. The other two primary intervals included zero. Penalty 10 gave similar results. Thus the tested functional additions did not give a clear gain in both transfer directions. This is a model and sample limit, not a rejection of a within-sample wiring association. One animal, selected cells, pooled HVA labels, and intervals that omit model training variation limit inference. Code, predictions, fitted models, data provenance, and an independent checker are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "structure and function",
+    "wiring prediction",
+    "visual cortex",
+    "transfer",
+    "calibration"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/summary.png",
+      "caption": "Direct transfer of connection models between V1 and pooled HVA pairs. Positive values show lower test loss after adding similarity. Intervals condition on fitted models and do not include animal or training variation."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source functional connectomics analysis and released pair measurements."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS structural and functional resource."
+    },
+    {
+      "target": "sci:sha256:e894a56a9ce22229a9e71b749c98b0ba184b3f09780620ae44a5f7819392059c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published neuron exclusion prediction benchmark motivates a distinct area-group transfer test. No code or derived records reused."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    }
+  ]
+}
