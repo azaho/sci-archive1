@@ -1,0 +1,76 @@
+{
+  "title": "Cell scale spans below four prevented growth at gain 0.90 in two selected adult worm circuit models",
+  "abstract": "We tested whether large cell scale spans are needed for a diagonal norm with no growth in two selected adult C. elegans chemical wiring cores. Each core had 157 cells. Linear models used spectral-normalized contact counts, equal leak and arbitrary signed couplings within the count bounds. At gain 0.90, numerical lower and upper bounds placed the minimum scale spans near 3.5025 in adult map 7 and 1.6927 in adult map 8. A prior Perron construction used spans of 22,706 and 13,676. The requirements differ: the earlier norm guarantees the full decay rate of 0.10, while the optimized norms only prevent growth at this gain. An endpoint proof shows that the Perron scales are necessary for the full rate. Thus large spans from that construction do not establish a large minimum for weaker decay requirements. At the same actual gain, spans near 7.69 and 3.66 guarantee 52.6 percent of the full rate. We also test other gains and binary weights. Saved primal and dual matrices permit checks without the optimizer. These are conditional model results, not measured neural growth or a result about neural coding. Assumed count bounds, missing signs and cells, equal time constants, two maps and no matched activity limit biological inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "transient growth",
+    "diagonal norm",
+    "decay rate",
+    "semidefinite optimization"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Cell scale span bounds and the cost of a decay-rate guarantee in two selected worm models. These are model calculations, not measured neural responses."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1109/CDC.2016.7799076",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1146/annurev-control-061520-010621",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.86.011909",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:1a5311bcd5b8cc299b7ef21c5a278e2e76089f4d04582bd2352ef23480d4c1eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its graph selection and model. Reconstructs its selected edges from raw data and tests minimum gain-specific diagonal scale spans. The earlier norm guarantees a stronger decay rate."
+    },
+    {
+      "target": "sci:sha256:41c728d7ea2eb60c02bf25d58fecc7d39cdebb3a6f69189d7b000ee7b0b7d5a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of growth versus degree controls; no code or evidence files reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
