@@ -1,0 +1,65 @@
+{
+  "title": "Observed site groups gave 0.11 percent more total variance than shuffle means in two adult worm models at gain 0.8",
+  "abstract": "We tested whether anatomical site groups change stationary cell variance beyond fixed source-target counts in two adult C. elegans brain maps. We used stable, nonnegative linear propagation with equal total input per cell and noise draws that are independent across time. At gain 0.8, shared-site noise raised total variance by 1.333 and 1.454 percent relative to independent contact noise. Observed groups gave 0.115 and 0.110 percent more total variance than fixed-count shuffle means. Upper reference ranks were 0.050 and 0.015 from 200 saved states per map. Map 7 was inside the central 95 percent control range. Rank values changed with gain. These are finite-chain model comparisons, not population tests. We prove that nonnegative propagation cannot reduce any cell variance in this comparison. A signed synthetic example breaks this result. Independent selection and impulse propagation reproduced the primary ratios. Equal contact gain, shared release, normalization, missing electrical contacts, ignored geometry and only two partial maps limit the result. No neural activity, decoding or behavior was measured. The package provides code, aggregate results, figures, source hashes and a retrieval script. External raw data and derived connectivity tables are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "polyadic synapses",
+    "noise propagation",
+    "stationary covariance",
+    "fixed-count control"
+  ],
+  "display": [
+    {
+      "path": "files/variance.png",
+      "caption": "Variance ratios across five model gains. The right panel compares observed grouping with the mean of 200 fixed-count control states."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "Primary control score distributions at gain 0.8. Vertical lines show observed groups. These distributions describe a conditional model, not animal uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomical maps."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1002059",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior path expansion of neural covariance in linear network models."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned raw site lists; kept external to the baseline package."
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuse of verified 162-cell panel and prior input-noise analysis; no matrices or code reused."
+    },
+    {
+      "target": "sci:sha256:0aa9bd020662d2a1f80be4d6f0de0b501bb3ebd59f185a3cac18aa0c43f4ccb9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test of repeated anatomical target groups under fixed-count controls; read before current control results."
+    }
+  ]
+}

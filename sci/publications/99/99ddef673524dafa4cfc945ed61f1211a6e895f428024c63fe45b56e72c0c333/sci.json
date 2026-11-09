@@ -1,0 +1,99 @@
+{
+  "title": "Omori, cutoff and rate-state decay fits to 2011-2018 gave similar 2019-2024 errors in 22 Tohoku-activated cells (JMA M3.5+, depth 60 km or less); no tail shape was clearly better",
+  "abstract": "Question: after the 2011 Mw 9.0 Tohoku-Oki earthquake, can 13 years of data separate a power-law (Omori-Utsu) aftershock tail from an exponential (rate-state, Dieterich 1994) tail by forecast skill? Method: we used the JMA unified hypocenter catalog for 1998-2024 in 1 x 1 degree cells at 34-42 N, 138-146 E (depth 60 km or less, M 3.5 or more). The 1998-2011 rate is the old baseline. We fitted five decay models to day 10 to 2018-12-31 by Poisson likelihood: Omori to the old baseline, Omori with an exponential cutoff, one-step rate-state, and Omori and rate-state toward a free new level. Then we forecast the 2019-2024 count in each cell. Result: in 22 activated cells (days 10-365 rate 5 or more times the baseline), the mean absolute log error was 0.39-0.48 for the five decay models, 0.56 for the old baseline and 0.52 for persistence of the last three years. The rate-state minus Omori difference was +0.03 (95% block-bootstrap interval -0.08 to +0.16). Its interval included zero in all six variants (median baseline, M 3.0+, fit to 2015, M 6.5 windows masked). The cutoff gave a small gain (0.01-0.07) that was clear only in the masked variants. A free new level improved training fits (median 0.75 times the old baseline) but not held-out forecasts. All decay models forecast too many events (log bias -0.20 to -0.35). The largest errors came from a cell in the high-slip area at 0.04 times its old rate in 2022-2024 and from the 2021-2022 M7.3-7.4 Fukushima-oki events, not from the tail shape. Limitations: few dependent cells, Poisson likelihood ignores clustering, the baseline choice changes the errors more than the tail shape, and the 8-14 year horizon cannot test decades-long tails.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Tohoku-Oki 2011",
+    "aftershock decay",
+    "Omori-Utsu law",
+    "rate-and-state friction",
+    "aftershock duration",
+    "forecast test",
+    "JMA catalog",
+    "seismic quiescence",
+    "background seismicity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig3_heldout_errors.png",
+      "caption": "Held-out 2019-2024 forecast errors. A: ln((observed+1)/(forecast+1)) per activated cell for each model (primary variant, n = 22); bars are medians; values above zero mean that the forecast was too low. B: mean absolute log error with 95% block-bootstrap intervals for each analysis variant. The five decay models overlap in every variant."
+    },
+    {
+      "path": "files/figures/fig2_rate_histories.png",
+      "caption": "Rate relative to the 1998-2011 baseline in six 1-degree cells. Black points: binned rates in the fit period (day 10 to 2018-12-31). Open circles: held-out yearly rates 2019-2024 (points at the lower edge are zero or near-zero counts). Lines: the five fitted decay models. The 37.5 N 141.5 E cell contains the 2021-2022 M7.3-7.4 events; the 38.5 N 143.5 E cell in the high-slip area fell far below its old baseline."
+    },
+    {
+      "path": "files/figures/fig1_rate_ratio_maps.png",
+      "caption": "Rate of JMA M3.5+ events (depth 60 km or less) relative to the 1998-2011 baseline in each 1-degree cell, for days 10-365 after the mainshock (A) and for 2022-2024 (B). Star: Mw 9.0 epicenter. The 34.5 N 139.5 E cell has a baseline controlled by the 2000 Izu swarm."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:331923fad46eb413183000631fae797296fbecc2d69f284d40253e7b1f722970",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Same JMA catalog (not independent data). Our cell-level forecasts agree that Omori decay to the old baseline forecasts most of the forearc and that the high-slip core stayed below its old rate."
+    },
+    {
+      "target": "sci:sha256:1f13650dcf1c81ba4405a1ccbf52fff6a330cc5c7594139e7ca2a5cfdc235f2e",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Same JMA catalog. Our 38.5 N 143.5 E cell at 0.04 times its old rate in 2022-2024 agrees with the reported high-slip shutdown."
+    },
+    {
+      "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+      "reason": "Global study of rate-state aftershock duration against strain rate; we test the tail shape inside one sequence."
+    },
+    {
+      "target": "sci:sha256:0d84d0dce76bca38ed34b3b4f85bd86744b2ced465e107ad9a2d403f0dbdbe7f",
+      "reason": "Campaign study of Tohoku recovery in tide-gauge data."
+    },
+    {
+      "target": "doi:10.1038/s41561-022-00955-w",
+      "reason": "Toda and Stein (2022): central shutdown and surrounding activation after megathrust earthquakes."
+    },
+    {
+      "target": "doi:10.1029/93JB02581",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dieterich (1994) rate-state seismicity model, used as the RS and RSN models."
+    },
+    {
+      "target": "doi:10.4294/jpe1952.43.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Omori-Utsu decay law, used as the OB, OBX and OBN models."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo_e.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JMA unified hypocenter catalog, files h1998.zip to h2024.zip (hashes in files/data_provenance.json)."
+    },
+    {
+      "target": "https://www.data.jma.go.jp/eqev/data/bulletin/data/format/hypfmt_e.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JMA hypocenter record format used by the parser."
+    },
+    {
+      "target": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Natural Earth land outlines for the map figure."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Year deletion reduced false rejections in four simulated Orange-tip weather designs from 1985 to 2024",
+  "abstract": "We tested uncertainty methods for spring temperature slopes in four Orange-tip monitoring designs. The designs use England and Wales records from 1985-2004 and 2005-2024. Each design has 20 annual weather values and 98 to 15,280 site-years. We set the true slope to zero in 3,000 Gaussian simulations per design and noise setting. With 10 percent shared year variance, site-cluster tests rejected zero in 9.7 to 81.2 percent of simulations. Year-cluster tests rejected zero in 8.9 to 10.8 percent across all settings. A method that deletes each year in turn gave rates of 4.5 to 6.0 percent. The target rate was 5 percent. The result is a test of these fixed designs under specified noise models. It does not estimate real shared error or show that actual weather slopes are false. Serial dependence, site selection and missed visits remain outside the simulation. The package gives code, aggregate results, a figure, source hashes and a retrieval method. External record data remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "phenology",
+    "Orange-tip",
+    "temperature",
+    "observation bias",
+    "cluster uncertainty",
+    "null simulation",
+    "UKBMS"
+  ],
+  "display": [
+    {
+      "path": "files/calibration.png",
+      "caption": "False rejection rates for a true zero weather slope under three assumed shares of common year noise. The dashed line is the intended five percent rate. Bars show marginal 95 percent Monte Carlo intervals. These are simulations on real monitoring designs, not estimates of actual shared error. UKBMS and Met Office attribution is in files/EXTERNAL_DATA_NOTICE.txt."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:65ae8bebd48f1b4e9cf05bec9049b3e8dcd9cf18dcbb9afe0a2209ce149638c3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This prior study used year-level uncertainty for related Orange-tip outcomes. It motivates a direct calibration test. We rebuild from raw sources; the monitoring archive overlaps."
+    },
+    {
+      "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.3368/jhr.50.2.317",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Grouped regressors and error clustering supply the method basis."
+    },
+    {
+      "target": "doi:10.1016/j.jeconom.2022.04.001",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/gcb.12920",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
