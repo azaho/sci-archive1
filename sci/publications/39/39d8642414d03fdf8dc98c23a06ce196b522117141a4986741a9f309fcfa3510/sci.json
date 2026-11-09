@@ -1,0 +1,112 @@
+{
+  "title": "Shared typed inhibitory inputs had a small adjusted link to movie response similarity in one MICrONS mouse",
+  "abstract": "We tested whether shared input cells relate to visual response similarity after other known factors are controlled. We linked public MICrONS functional nodes v1, the v1300 connection export, and Allen soma class labels by nucleus ID. The test used 582,297 nearby pairs from 11,685 typed excitatory neurons in one mouse. Each pair had the same scan, area and layer. A linear model controlled both cells, observed shared excitatory inputs, distance, receptive fields and direct wiring. Shared typed inhibitory input overlap had a positive slope of 0.0591 Fisher z per unit overlap. Its nominal 95% spatial interval was 0.0352 to 0.0830. The partial correlation was 0.0194. The added term explained 0.0377% of the remaining response similarity variance. Almost all pairs, 99.57%, shared at least one typed inhibitory input. Area fits were positive in V1 and RL; AL was uncertain. Only 40 pairs had two whole-cell proofreading labels, too few for the planned check. This is a conditional association in largely automatic reconstructions. Missing untyped inputs, coarse class calls, incomplete proofreading, spatial dependence and one animal limit inference. The test does not show causation or a rule across animals. Code, input graphs, response vectors, source hashes and independent checks support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "shared inhibition",
+    "structure and function",
+    "visual cortex",
+    "cell fixed effects",
+    "connectomics",
+    "small effect"
+  ],
+  "display": [
+    {
+      "path": "files/main_figure.png",
+      "caption": "Adjusted response similarity and fitted slopes for selected target pairs in one MICrONS mouse. Bars show nominal 95% intervals with 100 micrometre spatial cubes. Scan estimates are checks in the same animal."
+    },
+    {
+      "path": "files/uncertainty_figure.png",
+      "caption": "The primary slope under four uncertainty assumptions. The point estimate is fixed. All intervals are within-volume estimates and do not measure variation across animals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "reason": "Dataset paper for linked calcium imaging and electron microscopy."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "reason": "Original functional wiring study and source of the node table."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07780-8",
+      "reason": "Prior structural study of inhibitory target specificity."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2023.12.013",
+      "reason": "Prior work on response tuning and inhibitory synaptic strength."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3",
+      "reason": "Official dataset inventory and cell type documentation."
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/static-repositories.html",
+      "reason": "Official public static data inventory."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source file; its hash and local path are in files/provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/cell_types/allen_soma_ei_class_model_v1.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source file; its hash and local path are in files/provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei.csv.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source file; its hash and local path are in files/provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei_header.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public source file; its hash and local path are in files/provenance.json."
+    },
+    {
+      "target": "sci:sha256:a4bfe03daf43583039d19846b6332edf597de0d7044d344297bd6afb4a2e1754",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior typed input amount and response reliability test motivated input-cell identity. No code or numerical table reused."
+    },
+    {
+      "target": "sci:sha256:4c4b055411d0a22f5abbd228b24dbba2a36fd63bb6384749db1947532f7729e7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior input anatomy and population coupling test provided context. No code or numerical table reused."
+    },
+    {
+      "target": "sci:sha256:748aa272d79394531e3e34931a140943b795b6f92d05e7aa412e7134fd27d14a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior numerical audit supported the use of the released response vectors. We wrote a separate correlation check."
+    },
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared excitatory target analysis motivated the distinction between direct and common-input tests. No code or numerical table reused."
+    }
+  ]
+}

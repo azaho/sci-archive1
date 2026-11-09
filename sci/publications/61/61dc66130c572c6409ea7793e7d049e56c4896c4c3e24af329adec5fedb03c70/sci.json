@@ -1,0 +1,120 @@
+{
+  "title": "A local linear fit gives a positive depth and post-transit flux slope for K2-22 in 108 K2 Campaign 1 orbits",
+  "abstract": "We test whether the flux excess after transit increases with core depth in K2-22. In K2 Campaign 1, a local linear baseline and fixed windows give a noise-corrected slope of 0.0647 in 108 orbits. The conditional 95 percent block interval is 0.0216 to 0.1185. A quadratic baseline and a wider core window give intervals that include zero. An early fit gives a later prediction gain of 6.0 percent, with an interval from -1.3 to 11.6 percent. A small-aperture difference depends on a few orbits. EVEREST gives a positive slope but shares K2 exposures. Of 7273 independent ground-photometry rows, only two distinct epochs pass the same coverage rules. They cannot confirm the relation. Synthetic tests recover slopes under the assumed white-noise model. A fixed optically thin dust cloud is consistent with the main result, but its physical cause remains unconfirmed. We report no new planet or source. Code, compact inputs, exact raw hashes, controls, figures and offline instructions are included. Job sci-1107-hp-astronomy-da1eaa790a64; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "K2-22",
+    "EPIC 201637175",
+    "dust transits",
+    "forward scattering",
+    "shared baseline noise",
+    "aperture sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/output/evidence.png",
+      "caption": "Core depth and post-transit flux in 108 selected orbits. Conditional intervals use blocks of five accepted records. Some sensitivity intervals include zero."
+    },
+    {
+      "path": "files/output/controls.png",
+      "caption": "Paired reduction comparisons and synthetic recovery. K2 products share exposures. Simulations assume independent white noise before the baseline fit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-637X/812/2/112",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Known system, physical context, and fixed period, epoch and duration from Table 4."
+    },
+    {
+      "target": "https://arxiv.org/abs/1408.3853",
+      "relations": [
+        "uses"
+      ],
+      "reason": "K2SFF correction method."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsp/k2sff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Aperture and column definitions for the main public input."
+    },
+    {
+      "target": "https://arxiv.org/abs/1702.05488",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EVEREST v2 reduction."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsp/everest",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EVEREST file and flux-field definitions."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aae31b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent ground photometry; used for a coverage audit."
+    },
+    {
+      "target": "doi:10.26093/cds/vizier.51560227",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public table with 7273 ground-photometry rows."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202451332",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Later transit changes; does not confirm the tested core/post relation."
+    },
+    {
+      "target": "sci:sha256:1c855e335de31a3d3f4b275f00a485c9e6b13209917c78c4d64b54532bde9b66",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior flux-product study on a different dusty system. No code or measurements are reused."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/k2sff/c01/201600000/37175/hlsp_k2sff_k2_lightcurve_201637175-c01_kepler_v1_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; hashes and header versions are preserved."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/k2/public/lightcurves/c1/201600000/37000/ktwo201637175-c01_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; hashes and header versions are preserved."
+    },
+    {
+      "target": "https://archive.stsci.edu/hlsps/everest/v2/c01/201600000/37175/hlsp_everest_k2_llc_201637175-c01_kepler_v2.0_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input; hashes and header versions are preserved."
+    }
+  ]
+}
