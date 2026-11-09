@@ -1,0 +1,25 @@
+{
+  "title": "In global shallow GCMT earthquakes (1977-2026), faulting style changed the b-value only at Mw 6.5 and larger; at Mw 5.8-6.5 and within 5-degree cells after 2005 the rake effect was absent",
+  "abstract": "We tested the claim that the Gutenberg-Richter b-value depends on faulting style (Schorlemmer et al. 2005: normal highest, thrust lowest). We used shallow (centroid depth 50 km or less) Global CMT earthquakes of Mw 5.8 and larger. We fitted on 1977-2004 (n = 3,687) and tested on 2005 to June 2026 (n = 3,320). We used an exponential magnitude likelihood with ln b = alpha + gamma sin(rake), 5-degree cell fixed effects and a cluster bootstrap. Globally, gamma stayed negative but became half as large: -0.117 (95% CI -0.176 to -0.064), then -0.061 (-0.110 to -0.006). After 2005, normal b was not clearly higher than thrust b. Within 5-degree cells, gamma was -0.070 (-0.157 to +0.006), then +0.022 (-0.038 to +0.092). For 5.8 <= Mw < 6.5, the rake slope was zero or positive in both periods. For Mw 6.5 and larger (post hoc), gamma was -0.16 in both periods, globally and within cells (intervals exclude 0). Thrust b was 0.97 and 0.87; strike-slip b was 1.23 and 1.12. Class b-values fitted on 1977-2004 did not improve the 2005-2026 magnitude likelihood (+0.8 millinats per event, -1.8 to +3.4). Cell b-values did improve it (+7.0, +3.2 to +11.2), and the faulting class added nothing beyond the cell b-values. Thus the faulting-style effect is in the large-event tail and is not a general change of slope. This agrees with rupture-width saturation more than with a stress control that acts at all magnitudes, but we did not test the mechanism. Limitations: the GCMT method changed in 2004, the Mw 6.5 split is post hoc, and the within-cell intervals are wide.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}],
+  "keywords": ["b-value", "Gutenberg-Richter", "faulting style", "rake", "Global CMT", "stress meter", "out-of-sample test", "replication", "earthquake magnitude distribution", "seismic hazard"],
+  "display": [
+    {"path": "files/figures/fig1_b_by_class_band.png", "caption": "b-value by faulting class (rake of nodal plane 1) in three magnitude bands, shallow GCMT events, 1977-2004 (open circles) and 2005-2026/06 (filled squares). Thrust b is lowest only for Mw 6.5 and larger. 95% event-bootstrap intervals."},
+    {"path": "files/figures/fig2_rake_slope_forest.png", "caption": "Rake slope gamma (change in ln b per unit sin(rake)) for all specifications and both periods. Negative values agree with Schorlemmer et al. (2005). FE = fixed effects. 95% intervals from 300 cluster-bootstrap samples over 5-degree cells. The first three rows are post hoc."},
+    {"path": "files/figures/fig3_forecast_check.png", "caption": "Out-of-sample log-likelihood gain per event for 2005-2026 magnitudes, relative to one constant b, with all parameters fitted on 1977-2004. Faulting class adds nothing at Mw 5.8+; location (5-degree cell b) does. 95% cell-bootstrap intervals."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/nature04094", "relations": ["challenges"], "reason": "We test its faulting-style b-value claim out of sample and within locations; it holds only for Mw 6.5 and larger."},
+    {"target": "doi:10.1016/j.epsl.2019.115791", "relations": ["reviews"], "reason": "Global faulting-style b-value model b ~ -sin(rake) that we test."},
+    {"target": "doi:10.1029/2019GL083997", "relations": ["supports"], "reason": "We also find b decreasing with depth within cells."},
+    {"target": "doi:10.1785/0120030107", "reason": "Plate-boundary class differences in corner magnitude."},
+    {"target": "doi:10.1038/355071a0", "reason": "Magnitude-dependent change of b at rupture-width saturation."},
+    {"target": "doi:10.1785/BSSA0640051363", "relations": ["uses"], "reason": "Gardner-Knopoff declustering windows."},
+    {"target": "doi:10.1029/JB086iB04p02825", "relations": ["uses"], "reason": "GCMT method and catalogue citation."},
+    {"target": "doi:10.1016/j.pepi.2012.04.002", "relations": ["uses"], "reason": "GCMT catalogue citation and the 2004 method change."},
+    {"target": "https://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/jan76_dec20.ndk", "relations": ["uses"], "reason": "GCMT 1976-2020 input file."},
+    {"target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1", "relations": ["uses"], "reason": "We read its GCMT monthly files for 2021-01 to 2026-06."},
+    {"target": "sci:sha256:e52c68b2e1361162f3ebd5cc9a8f17d4109ed89f22dc6ecd14b5e92805a822d0", "reason": "Related: faulting-style Bath gap explained by counts with one b-value (aftershocks)."},
+    {"target": "sci:sha256:311a95aeb912b60cbe8a3b98fb829fa9a0332d16fe2002f66ffc010628e5ce13", "reason": "Related: GCMT b-value contrasts driven by location and fault type."}
+  ]
+}
