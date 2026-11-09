@@ -1,0 +1,56 @@
+{
+  "title": "Mean depth changes had intervals across zero in a USGS sample of the 2023 Türkiye sequence",
+  "abstract": "We tested reported depth changes in the 2023 Türkiye earthquake sequence. We used a fixed USGS ComCat snapshot within 250 km of 37.166 N, 37.042 E. At magnitude 4 or more, days 1 to 7 had 151 events and days 7 to 30 had 83 events. Mean depth fell by 0.82 km. The conditional 95% interval from three-day blocks was -1.66 to +0.53 km. Removing exact 10 km values increased the fall to 1.83 km, with an interval of -3.64 to +1.09 km. All nine tested magnitude and depth-filter settings had intervals across zero. A depth-uncertainty limit of 5 km retained all 128 exact 10 km values. Fixed-depth flags were absent. Thus, the uncertainty filter did not remove the depth concentration, and this sample did not resolve a mean depth change under the tested resampling model. The results do not prove constant depth, identify assigned depths, or test relocated catalogs. Small samples, mixed magnitude types, changing event populations, and a short early window limit inference. Code, aggregate results, source hashes, and repeat instructions are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Türkiye",
+    "aftershocks",
+    "reported depth",
+    "ComCat",
+    "depth uncertainty",
+    "null result",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/depth_checks.png",
+      "caption": "Depth distributions and late-minus-early mean differences for magnitude 4 or more. Bars show conditional 95% intervals from three-day circular daily blocks. All bars include zero. Exact 10 km values are a diagnostic marker, not confirmed assigned depths."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1016/j.eqs.2023.06.002",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior relocated catalog study of the sequence; our test concerns routine preferred depths and does not assess its physical conclusions."
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/why-do-so-many-earthquakes-occur-a-depth-10km",
+      "reason": "USGS explains its common fixed-depth convention."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Preferred-origin XML source. Exact query and hash are in provenance.json."
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "reason": "USGS source terms and attribution."
+    },
+    {
+      "target": "sci:sha256:0a71c00223732ee37135afa976dfcaf167fd6f7038dcecd85f6f170070c9dd3b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Campaign context on earthquake sequence dynamics. That study compares aftershock counts and GNSS displacement; this study tests depth summaries. No code or data were copied."
+    }
+  ]
+}
