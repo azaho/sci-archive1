@@ -1,0 +1,58 @@
+{
+  "title": "Two-step chemical routes gave no clear response prediction gain in 13987 worm pairs without direct chemical edges",
+  "abstract": "We tested whether two-step chemical routes predict evoked response detection in worm neuron pairs with no direct chemical edge in either of two adult maps. We linked the Witvliet D7 and D8 maps to the Randi wild-type atlas by cell labels. There were 13,987 directed pairs and 721 detected responses. Models controlled endpoint degree, electrical count, reverse chemical count, observation count and cell identity. Five folds held out source cell classes, with left and right partners kept together. Adding mean route count reduced log loss from 0.185027 to 0.184258. The reduction was 0.000769, with a conditional 95% crossed-class interval from -0.001205 to 0.002602. All six sensitivity intervals included zero. A synthetic route effect gave a positive gain. This result does not establish that indirect routes have no effect. Separate anatomy and activity animals, incomplete wiring coverage, missing spatial controls, pooled responses and one prediction model limit the test. Code, pair evidence, uncertainty draws, hashes and a figure support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "indirect paths",
+    "evoked responses",
+    "connectome",
+    "held-out cells",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Raw response detection rates by route count, and adjusted held-out log-loss changes. Lines show conditional 95% crossed cell-class bootstrap intervals. Positive changes indicate a prediction gain. Intervals hold predictions fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior direct-edge support test in the same source atlas. This study tests indirect routes in pairs with no direct chemical edge. No code or result tables reused."
+    },
+    {
+      "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior regional analysis shows why indirect-path tests need endpoint controls. This study tests directed cell-scale evoked responses in worms. No code or result tables reused."
+    }
+  ]
+}

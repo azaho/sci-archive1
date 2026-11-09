@@ -1,0 +1,61 @@
+{
+  "title": "Source checks remove one of the two leading orbital-expansion flags in an ATNF 2.9.0 pulsar screen",
+  "abstract": "We screen 93 millisecond pulsars with spin and orbital period derivatives in ATNF 2.9.0. The difference between fractional orbital and spin change cancels a shared acceleration. Under nonnegative intrinsic spin-down, a positive difference requires intrinsic orbital expansion or a measurement error. Both leading positive entries differ from their source tables. The orbital derivative for Terzan 5aw omits a factor of 10^-12. The value for J1728-4608 is 100 times its source value. Applying source values removes the first flag. This remains true with either of two inconsistent spin rows in the Terzan 5 paper. J1728 remains positive across five-error rectangles, consistent with its already known orbital variability. We find no new object or unexplained signal. The other 91 rows are not source-verified. No independent telescope data or raw arrival times are tested. The bundle includes the frozen export, source values, hashes, code, figure, and offline instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "ATNF",
+    "pulsar timing",
+    "orbital period derivative",
+    "catalog audit",
+    "Terzan 5aw",
+    "J1728-4608"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "The catalog difference Q and source checks for the two largest positive entries. Source units remove the Terzan 5aw flag. Both source spin alternatives are shown. J1728 retains its known positive orbital term."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3d1ef7b932b95dba60c87ce3769fff1d39cef4c13fcd08a4c2745ce0b5a1bdb0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distance-based screen and shared ATNF package provenance; no analysis code reused."
+    },
+    {
+      "target": "doi:10.1086/428488"
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/2403.17799",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned Table 4 supplies Terzan 5aw orbital units and the inconsistent spin alternatives."
+    },
+    {
+      "target": "doi:10.1017/pasa.2025.10136",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Table 2 supplies J1728 orbital derivative; Section 5.1 gives prior physical interpretation."
+    },
+    {
+      "target": "https://academic.oup.com/mnras/article/504/1/1407/6177676",
+      "reason": "Prior use of spin and orbital derivatives to cancel cluster acceleration."
+    }
+  ]
+}
