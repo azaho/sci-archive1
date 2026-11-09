@@ -1,0 +1,71 @@
+{
+  "title": "Partial correlation improved link ranks at 16-fold noise variance in two passive worm models with half the cells observed",
+  "abstract": "We tested unequal independent current noise in passive electrical models of two partial adult worm maps. Each model had 180 cells. In 100 noise assignments and 90-cell observation masks per map, a 16-fold noise-variance range gave mean precision at the true link count of 0.8303 and 0.8180 for inverse covariance. Partial correlation raised these values to 0.9497 and 0.9405 and won every paired comparison. Under equal noise and half observation, it reduced mean precision. A three-cell path also gave positive partial correlation of 0.4468 between cells without a direct link under unequal noise. We provide code, source hashes, aggregate scores and checks. Exact population covariance, assumed conductance, independent white noise and known link counts limit the result. No recorded neural activity was tested.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "inverse covariance",
+    "partial correlation",
+    "unequal noise",
+    "hidden neurons",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Link precision at the known link count under unequal independent current noise. Bands show the central 95 percent of 100 noise assignments and masks. Exact population calculations in assumed passive models; no recorded activity."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevX.6.031024",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2403.05457",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Equal-noise benchmark informed the circuit comparison."
+    },
+    {
+      "target": "sci:sha256:8985f503ab4973203c9d40f9e8d9785036f256f37cfb9de7c48661ab63d6b310",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Finite-record inverse-covariance ranks motivated a noise-assumption test."
+    },
+    {
+      "target": "sci:sha256:f50d61373173d9c483f637b695ad39cc42b2a8ae9934889f9ebc89579957a940",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related unequal-noise lag correction. We test static scores without pair exclusion."
+    }
+  ]
+}
