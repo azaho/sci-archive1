@@ -1,0 +1,60 @@
+{
+  "title": "East-west Pacific temperature contrast gave no clear added six-month Nino 3.4 forecast value in 1981-2025",
+  "abstract": "We tested whether the current Nino 3 minus Nino 4 temperature anomaly improved six-month Nino 3.4 forecasts after the model included current Nino 3.4 and its three-month change. Separate monthly linear models used only targets observed by the issue month. We used a fixed NOAA CPC ERSSTv5 record and 540 monthly test targets in 1981-2025. The contrast reduced pooled mean squared error from 0.48524 to 0.47548 degrees C squared, a 2.01% reduction. The conditional 95% five-year block interval was -10.04% to +14.04%, where negative values mean higher error. Thus, the test did not resolve an added benefit. Checks with three- and twelve-month leads, 30-year training, and a current-only baseline also had intervals that included zero. An independent Decimal calculation checked all 540 primary forecast pairs. Code, forecasts, aggregate results, figures, source hashes, and a retrieval recipe are supplied. The test uses one reconstructed surface record, linear models, and 45 years. It does not establish equal forecast value, identify a physical cause, or measure operational forecast skill.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "Nino 3.4",
+    "temperature gradient",
+    "forecast verification",
+    "null result",
+    "ERSSTv5"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/forecast_evidence.png",
+      "caption": "Monthly forecast error and cumulative annual mean error reduction at six months in 1981-2025."
+    },
+    {
+      "path": "files/evidence/sensitivity.png",
+      "caption": "Added-contrast error reduction and conditional 95% paired five-year block intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ca30a058ef538c74350e2f2c5b11ecd2ba9218b7838aeee4a2821b453bc09445",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same fixed NOAA source bytes; prior seasonal error benchmark. Its preserved raw source provides an exact retrieval fallback. Our spatial-predictor comparison and code are new."
+    },
+    {
+      "target": "https://doi.org/10.1175/1520-0442%282001%29014%3C1697%3ALIOENO%3E2.0.CO%3B2",
+      "reason": "Prior two-index description of ENSO evolution. Our unscaled Nino 3 minus Nino 4 contrast differs from its normalized Nino 1+2 minus Nino 4 index."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-22-0013.1",
+      "reason": "Prior distinction between seasonal persistence and forecast predictability."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source endpoint; version, hash and unchanged shared path are recorded."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/climateindices/list/",
+      "reason": "NOAA source and index documentation."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/help/",
+      "reason": "Federal data status and attribution notice."
+    }
+  ]
+}
