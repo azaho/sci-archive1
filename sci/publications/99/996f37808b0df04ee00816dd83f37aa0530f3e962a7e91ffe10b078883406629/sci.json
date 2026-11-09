@@ -1,0 +1,113 @@
+{
+  "title": "Kepler Q1 to Q16 give a small and uncertain tail-to-core decrease for KOI-2700",
+  "abstract": "We test whether the known fading transit of KOI-2700 keeps a fixed shape. Kepler release 25 quarters 1 to 8 give an aperture-flux tail/core ratio of 0.4026. Quarters 9 to 16 give 0.3030. The change is -0.0996, with a conditional 95 percent block interval of [-0.1893, -0.0127]. Corrected flux gives a change of -0.1333. All nine measurement choices give a negative point estimate. Two other period choices and two shorter block lengths give intervals that include zero. Two of four detector seasons have positive changes. Profile fits with separate transit times favor smaller late tail scales, but the aperture interval permits zero change. Deterministic inserts show that the tested sampling and baseline removal do not create the measured ratio change from a fixed fading shape. Independent TESS sectors 81 and 82 have strong dilution and weak sensitivity. Their corrected-flux peak coefficient is 1640 ppm, with a 95 percent interval of [-174, 3721] ppm. They do not give a stable detection of a roughly 400-ppm source transit. Prior work already reported fading and shorter egress scales. This study adds explicit ratio, noise, timing, season, and signal-transfer tests. The data do not establish a physical change in dust lifetime. No new planet or periodic signal is claimed. Code, measured orbit tables, fit results, figures, exact input hashes, external-data notices, and reproduction steps are included. Raw mission files and source papers remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "KOI-2700",
+    "KIC 8639908",
+    "dust tail",
+    "Kepler",
+    "TESS",
+    "transit shape",
+    "noise models",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/shape.png",
+      "caption": "Early and late Kepler profiles after the mean core losses are matched. Blue and orange bands mark the core and tail. Bars show one conditional block standard error per bin. The ratio test includes covariance and scale error."
+    },
+    {
+      "path": "files/evidence/checks.png",
+      "caption": "Conditional 95 percent intervals for measurement choices, detector seasons, and descriptive tail scales. Some intervals include zero. The tests share data."
+    },
+    {
+      "path": "files/evidence/tess.png",
+      "caption": "Independent TESS data give wide 95 percent intervals for a fixed source-transit template. All four choices permit the 400-ppm reference. The aperture values use the reported target light fractions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1088/0004-637X/784/1/40",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known target, prior fading and egress changes, descriptive profile, and field-contamination context. We add uncertainty and sensitivity checks."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629676",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Main published period and prior mean-tail modeling. The study does not claim a new discovery of fading."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201424876",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Physical context for the relation between a dust-tail shape and grain survival."
+    },
+    {
+      "target": "https://www.sav.sk/?doc=journal-list&journal_article_no=30675&lang=en&part=article_response_page",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Later improved mean-tail model."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/overview/KIC_8639908",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Q1-Q8 epoch and DR25 period constants used as phase sensitivity choices. No table extract is bundled."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008639908/kplr008639908_lc_Q011111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public Kepler release 25 input. All used FITS member hashes are included."
+    },
+    {
+      "target": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2024196212429-s0081-0000000272938824-0276-s_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent TESS sector 81 source; release 114, 120-second exposures."
+    },
+    {
+      "target": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:TESS/product/tess2024223182411-s0082-0000000272938824-0278-s_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Independent TESS sector 82 source; release 115, 120-second exposures."
+    },
+    {
+      "target": "doi:10.1117/1.JATIS.1.1.014003",
+      "reason": "TESS mission."
+    },
+    {
+      "target": "https://archive.stsci.edu/kepler/manuals/archive_manual.pdf",
+      "reason": "Flux products, quality, and crowding context."
+    },
+    {
+      "target": "https://spacetelescope.github.io/mast_notebooks/notebooks/Kepler/instrumental_noise_3_seasonal_and_detector_effects/instrumental_noise_3_seasonal_and_detector_effects.html",
+      "reason": "Detector-season and aperture context."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "Public mission data terms. External raw files and papers are kept outside the signed package."
+    }
+  ]
+}
