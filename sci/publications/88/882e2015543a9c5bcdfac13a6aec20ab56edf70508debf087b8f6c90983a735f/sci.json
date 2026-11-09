@@ -1,0 +1,121 @@
+{
+ "title": "ZTF data from 2022 to 2025 and Gaia DR3 data from 2014 to 2017 do not follow the published sinusoids of 36 periodic-quasar binary black-hole candidates; at most 3 to 7 can have a coherent period",
+ "abstract": "Question: Foustoul et al. (2025) report 36 quasars with sinusoidal optical variation over 3-5 cycles in CRTS and ZTF data (to mid 2022) and propose them as sub-parsec binary black-hole candidates. Do their sinusoids predict data that the selection did not use?\n\nMethod: For each candidate we fit a sinusoid at the published period plus a damped random walk (DRW) to ZTF DR24 r data up to MJD 59800, and a DRW-only model to the same data. We score the log predictive density of two hold-outs: Gaia DR3 G epochs from 2014.6 to 2017.4 (31 candidates, in the CRTS-ZTF gap) and ZTF r and g data from August 2022 to October 2025 (36 candidates). Nulls: 200 random periods per source, and simulations on the real sampling of DRW with a period search (also with a CRTS+ZTF sinusoid selection) and of injected sinusoids at the fitted and half amplitude.\n\nResults: The sinusoid beats DRW alone in the forward ZTF r data for 3 of 36 candidates (all by less than 1 nat; sum -804 nats; g band 2 of 36). This agrees with the DRW nulls (0.07-0.15) and not with injected sinusoids (0.64-0.72). In Gaia the sinusoid wins for 9 of 31 (median -1.6 nats), close to the null with CRTS-based selection (0.18; binomial p = 0.10) and far from injected sinusoids (0.60-0.73; p < 0.0001). No candidate wins in both hold-outs (expected 0.43-0.56 for a coherent sinusoid). The published periods rank below the median of random periods in the forward data (mean percentile 0.26), as red noise with a period search predicts. A mixture fit gives a periodic fraction of 0 with a 95% upper limit of 0.08-0.19 (3-7 of 36). For the 111 Graham et al. (2015) CRTS candidates at their own periods, no source passes strict criteria; the 26 that Foustoul et al. kept predict worse than the rejected ones because their larger fitted amplitudes extrapolate badly. HS 2219+1944 has large positive scores but sparse ZTF data, an amplitude of 0.08 +/- 0.08 mag and an insignificant period rank.\n\nLimitations: CRTS data were not available, so the phase comes from ZTF alone at the published period; the end of the published ZTF data is estimated from figures; the DRW is a simple red-noise model; Gaia G and ZTF r amplitudes are assumed equal; 6 simulations per source and scenario.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "binary supermassive black holes",
+  "periodic quasars",
+  "quasar variability",
+  "damped random walk",
+  "red noise",
+  "out-of-sample test",
+  "hold-out prediction",
+  "ZTF DR24",
+  "Gaia DR3 epoch photometry",
+  "CRTS",
+  "Foustoul 2025",
+  "Graham 2015",
+  "HS 2219+1944",
+  "null result",
+  "Gaussian process",
+  "celerite"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_per_source_scores.png",
+   "caption": "Score difference (log predictive density, sinusoid+DRW minus DRW only) for each of the 36 Foustoul et al. 2025 candidates. Left: Gaia DR3 G epochs 2014.6-2017.4. Right: ZTF r after MJD 59800. Red: published period. Grey: 16-84% range and median of 200 random periods in 500-2500 d. Positive values mean that the sinusoid predicts better than red noise."
+  },
+  {
+   "path": "files/figures/fig1_examples.png",
+   "caption": "Three candidates: J141425+171811 (largest Bayes ratio in the paper), J082716+490534 (best forward score) and J131909+090814 (smallest GLS p-value). Black: ZTF r training data (one ZTF object). Green: later ZTF r (hold-out). Orange: Gaia G nightly means (hold-out; mean shifted to the sinusoid prediction for display). Red and blue bands: sinusoid+DRW and DRW-only predictions (1 sigma)."
+  },
+  {
+   "path": "files/figures/fig3_vs_simulations.png",
+   "caption": "Distributions of the score difference for the Gaia (left) and forward ZTF (middle) hold-outs, and the percentile of the published period among random periods (right). Red: the 36 real candidates. Blue and cyan: DRW simulations with a ZTF period search or a CRTS+ZTF sinusoid selection. Green: injected sinusoids at the published period and fitted amplitude. All simulations use the real sampling of each candidate."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1051/0004-6361/202452818",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the 36 candidates and their periods (Table 4). Their sinusoids do not predict later ZTF or Gaia DR3 data."
+  },
+  {
+   "target": "doi:10.1093/mnras/stv1726",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Graham et al. 2015 CRTS candidate list and periods; tested in sample B."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/ab9cae",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Chen et al. 2020 ZTF periodic-variable catalogue, used to resolve coordinates of 10 candidates."
+  },
+  {
+   "target": "https://arxiv.org/abs/2509.10601",
+   "relations": [
+    "supports"
+   ],
+   "reason": "El-Badry, Hogg and Rix find that Gaia-selected periodic AGN sinusoids fail in ZTF; our result for ground-selected candidates agrees."
+  },
+  {
+   "target": "doi:10.1093/mnras/stw1412",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Vaughan et al. 2016 show that red noise gives false periods over few cycles."
+  },
+  {
+   "target": "doi:10.26131/IRSA598",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF DR24 light curves (IRSA HATS Parquet copy on AWS S3)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 epoch photometry (via the AIP TAP mirror, doi:10.17876/gaia/dr.3/1)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/aa9332",
+   "relations": [
+    "uses"
+   ],
+   "reason": "celerite Gaussian-process method for the DRW likelihood."
+  },
+  {
+   "target": "sci:sha256:076e2c73615007a4f3a949d52ab7cba118ce28aa9d52cf0855ebc04c9f53c929",
+   "reason": "Related campaign study: out-of-sample test of published Fermi-LAT blazar periods with the same logic."
+  },
+  {
+   "target": "sci:sha256:1370d3912bd4d2bdf79365974bcc74ab344974c87e0c5761ea4750f332d99c15",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel campaign study: the 86 ZTF candidates of Chen et al. 2022 also fail a forward ZTF test. Different sample; no Gaia hold-out."
+  }
+ ]
+}
