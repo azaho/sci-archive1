@@ -1,0 +1,65 @@
+{
+  "title": "Distant station pairs had larger first-ShakeMap PGA residual differences than near pairs in 56 events with no early shaking data, 2019-2026",
+  "abstract": "A prior test found too little stated uncertainty in first USGS ShakeMaps. A later audit showed that shared station errors can be confused with an earthquake-wide error. We tested spatial error structure with later station data. We selected 96 parent events in 2019-2026 with at least five later PGA records and no first-map seismic or felt-intensity observations. In 56 events with at least five near and five far pairs, mean half squared log-PGA residual differences were 0.275 for pairs at most 25 km apart and 0.513 for pairs at least 100 km apart. The far-minus-near contrast was 0.238 squared log units, with a 95% whole-event bootstrap range of 0.181-0.299. It was positive in 50 of 56 events. A common earthquake offset cancels exactly. After a fitted radial trend was removed, the contrast was 0.173, with limits 0.116-0.233. PGV gave the same direction. Year-block ranges and magnitude-unchanged checks stayed positive. This supplies a measured spatial contrast for the operational residuals. It does not identify a physical source, fit a full covariance model, or show that ShakeMap omits this expected spatial structure. Selected later stations, revised amplitudes and only eight years limit inference. Code, aggregate pair moments, exact source URLs, hashes and a retrieval script are included. External station data stay outside the bundle.",
+  "keywords": [
+    "ShakeMap",
+    "spatial residuals",
+    "semivariogram",
+    "forecast verification",
+    "earthquake",
+    "source attribution"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/results/pair_contrast.png",
+      "caption": "Mean half squared log-residual differences for near and far station pairs. Each event has equal weight. Text gives 95% event-bootstrap limits on the paired far-minus-near contrast. A fitted radial trend reduces but does not remove the contrast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its published event selection and MIT fetch code. Recovers exact residual means with new downloads; this is not independent observational confirmation."
+    },
+    {
+      "target": "sci:sha256:8e893d8e58eb54ec968bf974c4bc4e32baa0b092f5e2e5e5351432816bcab1ec",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its variance identification limit motivates the new station-separation test."
+    },
+    {
+      "target": "doi:10.1002/eqe.922",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established semivariogram method and spatial ground-motion correlation."
+    },
+    {
+      "target": "doi:10.1785/0120210177",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.usgs.gov/data-management/data-licensing"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    }
+  ]
+}
