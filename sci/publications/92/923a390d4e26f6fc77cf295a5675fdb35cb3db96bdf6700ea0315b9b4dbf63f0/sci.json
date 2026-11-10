@@ -1,0 +1,24 @@
+{
+  "title": "Summer ozone did not make autumn canopy senescence earlier at 95 US PhenoCam deciduous sites in 2008-2025 with site and year controls; this excludes the US slope implied by Yin et al. 2026",
+  "abstract": "Yin et al. (2026) report from satellite phenology at ozone monitors that ozone (AOT40) makes the end of season (EOS) earlier, with a mean per-site temporal partial correlation of -0.14 for all sites and -0.06 for the USA. We tested this with ground cameras. We used 751 site-years of PhenoCam GCC90 autumn transition dates (EOS50) at 95 US deciduous broadleaf sites in 2008-2025. Ozone came from EPA AQS hourly monitors within 50 km, and weather came from Daymet. With site and year fixed effects, the EOS50 slope was +0.31 days per ppm h of June-August AOT40 (95% CI -0.21 to +0.83; standardised +0.04, CI -0.03 to +0.11). This interval excludes the slopes that the US and global correlations imply (-0.45 and -1.04). With site effects only, the slope was -0.08 (CI -0.53 to +0.37), which excludes only the global value. Results were the same for Sep-Nov and May-Sep ozone, daily MDA8 metrics, a 100 km radius, the nearest monitor, EOS25/EOS10, and 2017-2025. A next-year-ozone placebo gave a similar value (+0.44). Autumn temperature, as a positive control, delayed EOS50 by 0.9-1.5 days per degree C. Spring ozone was linked to earlier, not later, leaf-out with site effects only (r = -0.20); year effects removed this link. Per-site correlations at 49 sites had mean +0.03, and a year-block bootstrap gave a standard error 2.3 times the naive value. The released Yin et al. per-site file has 17,530 exact duplicates among 20,400 rows. The published means and errors match all rows, so the reported errors are about 2.8 times too small. Limitations: monitors are not canopy flux measurements, the sample is mostly eastern, and year effects remove network-wide ozone variation.",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "410102"},
+    {"scheme": "anzsrc-for-2020", "code": "370104"}
+  ],
+  "keywords": ["ozone", "AOT40", "autumn phenology", "leaf senescence", "PhenoCam", "deciduous forest", "end of season", "air pollution", "replication", "fixed effects", "EPA AQS", "Daymet", "observation bias"],
+  "display": [
+    {"path": "files/figures/fig2_slopes.png", "caption": "Standardised within-site slopes of PhenoCam EOS50 on ozone (approximately partial r) with 95% CI, for hourly AOT40 (blue) and daily MDA8 excess over 40 ppb (orange), across model checks. Dashed lines: the per-site temporal correlations of Yin et al. 2026 (USA -0.06, all sites -0.14). No model gives an earlier EOS with more ozone."},
+    {"path": "files/figures/fig3_site_r.png", "caption": "a: Mean R(AOT40, EOS) in the released Yin et al. per-site file, with all 20,400 rows (as published) and with the 2,868 unique rows. Duplicated rows narrow the naive 95% CI about 2.8 times. b: Yin-style per-site partial correlations at 49 PhenoCam sites with at least 8 years. The shaded band is the year-block bootstrap 95% interval of the mean."},
+    {"path": "files/figures/fig1_sample.png", "caption": "a: PhenoCam deciduous broadleaf sites with an EPA ozone monitor within 50 km (size shows number of years). b: Median June-August daylight AOT40 at the sites. c: Mean EOS50 anomaly relative to each site mean, with 95% CI."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41467-026-71959-y", "relations": ["challenges", "reviews"], "reason": "Tests the claim that ozone advances end of season in the USA with ground cameras, and audits the released per-site correlations."},
+    {"target": "doi:10.5281/zenodo.18826646", "relations": ["uses", "reviews"], "reason": "Released per-site temporal partial correlations and plotting code; used for the duplicate-row audit."},
+    {"target": "doi:10.3334/ORNLDAAC/2129", "relations": ["uses"], "reason": "Daymet V4 R1 daily weather at camera pixels."},
+    {"target": "doi:10.1038/sdata.2018.28", "relations": ["uses"], "reason": "PhenoCam image processing and transition-date method."},
+    {"target": "doi:10.1038/s41597-019-0229-9", "relations": ["uses"], "reason": "PhenoCam Dataset v2.0 methods."},
+    {"target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html", "relations": ["uses"], "reason": "EPA AQS pre-generated hourly and daily ozone files, 2007-2025."},
+    {"target": "sci:sha256:b0549936507be17c84cbf4179a219673cff3983bb39c8c869fb8e46f1dc44c24", "reason": "Prior campaign result on wildfire smoke effects on PhenoCam colour and transition dates."},
+    {"target": "sci:sha256:268004a08eb37a3a36207332736b005b07fe9d13a4687a19b1e966f96044ecb6", "reason": "Prior campaign result on ozone and foliar injury at US forest biosites."}
+  ]
+}
