@@ -1,0 +1,67 @@
+{
+  "title": "Aligned onsets kept peak loss below 5 percent in 128 of 134 selected Allen excitatory input models",
+  "abstract": "We tested response onset alignment for two excitatory inputs to one cell. We used passed current-clamp component fits in the -70 mV holding bin from Allen Synaptic Physiology r2.1. In a fixed linear model, onset alignment gave at least 95 percent of the attainable peak in 87 of 90 mouse visual-cortex pairs and 41 of 44 human temporal-cortex pairs. Median losses were 0.59 and 0.52 percent. Peak alignment attains the sum of the component amplitudes. Strict excitatory cell labels left no mouse pair and one human pair above 5 percent loss. Independent rise and decay changes of 20 percent gave at least one sampled corner above 5 percent in 27 mouse and 17 human pairs. The count is conditional on fitted parameters. We measured no simultaneous response, firing, behavior or fit uncertainty. Original code, aggregate evidence, a figure and external retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "convergent inputs",
+    "synaptic rise time",
+    "peak alignment",
+    "linear summation"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/timing.png",
+      "caption": "Model peak loss with aligned onsets and onset-to-peak time differences. Pairs are not independent animals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Equation and definitions; no upstream code copied."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:774fe2156e27ae6051c38dec840f31ec617996c807b2216786ddccdd6bfe5819",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior route-delay alignment test."
+    },
+    {
+      "target": "sci:sha256:23a243693faa924e9e275ccd3cb8d41f189c5f38286d821390baabdb43ef4c74",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-rise E/I energy benchmark and metadata caveat. This study tests E/E peak loss; no code or records reused."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    }
+  ]
+}

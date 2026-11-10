@@ -1,0 +1,69 @@
+{
+  "title": "A correlation cap of 0.5 selects one input in optimal positive readouts of 69 of 130 selected Allen input groups",
+  "abstract": "We tested positive linear readouts of linked Allen cortical input groups when cross-input noise correlation is unknown. Means were assigned from first-pulse medians. Standard deviations were taken from released response summaries. For any positive readout and a uniform absolute correlation cap r, the adverse covariance has all off-diagonal correlations equal to r. The ideal readout uses one input exactly when r reaches the ratio of the second largest to largest individual signal-to-noise ratio. At cap 0.5, 69 of 130 selected groups use one input: 15 of 29 mouse excitatory, 48 of 89 mouse inhibitory, and 6 of 12 human excitatory groups. Weights chosen for independent noise lose the best-input guarantee in 96 groups at this cap. An assumed factor 1.10 error box certifies 46 single-input solutions. Exhaustive subset and numerical checks agree. Unknown covariance, median-to-mean error, recording noise, selected slice groups and small high-count samples prevent a biological input-selection claim. Original code, a proof, aggregate results and retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic convergence",
+    "positive readout",
+    "correlation uncertainty",
+    "robust optimization",
+    "signal-to-noise ratio"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Conditional model results. Correlation caps are assumptions. A shows the exact threshold distribution. B shows the fraction of groups with one active input. C shows median optimal worst-case squared SNR gain over the best input."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2592773cb55908dee7cf99bc6159a27f90347ad466e7086dc6f5176240212a14",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its published sample definition and model motivation. New code; no code or record tables reused."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.columbia.edu/~dano/papers/rqp.pdf",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2602.21758",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
