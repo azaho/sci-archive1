@@ -1,0 +1,112 @@
+{
+ "title": "Swift and XMM-Newton data from 2023-2024 show two more X-ray flare cycles of eRASSt J0456-20: the recurrence time stays at 193 days and the flares fade by a factor of two per cycle",
+ "abstract": "Question: the second main example of fast orbital evolution in a repeating partial tidal disruption event (rpTDE) is eRASSt J0456-20. Liu et al. (2024) used Swift data up to 2023 May. They found that the recurrence time fell from about 300 d to about 190 d in five X-ray cycles, with an indication of a constant value at the end. Did the flares continue, and did the period stay constant? Approach: we reduced all 132 public Swift XRT observations (2021-2026) and 18 public XMM-Newton observations (2021-2024) without HEASoft or SAS. 61 Swift and 11 XMM observations are later than the published data. We fit each cycle with one rise-plateau-drop model and a faint-state floor, and we test forecasts made only from cycles 2-5. Results: cycle 6 (2023 Aug-Oct; up to 37 sigma above the floor in XMM) and cycle 7 (2024 Mar; about 10 sigma in XMM, new) occurred. With the best-measured timing marker, a constant period of 193.4 +/- 3.2 d fits cycles 3-7 (chi2 = 0.7 for 3 dof). The period change is +3 +/- 6 d per cycle, and a decrease faster than 6.8 d per cycle is excluded at 95 percent (the early decrease was 39-72 d per cycle). Constant-period forecasts hit cycles 6 and 7 within 6 d. A constant period-derivative fit to the published onsets misses cycle 7 by about 150 d (z = 2.1). The peak rate and the fluence fall by a factor of 0.50 and 0.49 per cycle; this law, fitted to cycles 2-5, predicts the cycle-6 fluence. A constant floor of about 1e41 erg/s is present between flares. Thus the period stopped changing while the flare output continued to fall. Limitations: pipeline-product photometry with one cross-calibration factor; a simple flare shape (the onset marker moves by up to 30 d); cycle 7 has no observed plateau; cycles 8-12 are not tested because the 2024-2026 data miss or are too shallow for the forecast active phases. We also report that no public data can test the November 2026 ASASSN-14ko forecasts yet.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "eRASSt J045650.3-203750",
+  "repeating partial tidal disruption",
+  "tidal disruption event",
+  "X-ray flares",
+  "recurrence time",
+  "period derivative",
+  "orbital decay",
+  "out-of-sample forecast",
+  "Swift XRT",
+  "XMM-Newton",
+  "ASASSN-14ko",
+  "flare fading"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_lightcurve.png",
+   "caption": "X-ray light curve of eRASSt J0456-20 from 2021 to 2026. Blue: Swift XRT detections; gray: Swift 3-sigma limits; orange: XMM-Newton EPIC-pn 0.2-2 keV rates divided by the cross-calibration factor 18.2. Gray lines: joint model with median parameters. The dashed line is the end of the data that Liu et al. (2024) used. Cycles 6 and 7 are new; the cycle-7 model is shown only up to the last observation of its rise."
+  },
+  {
+   "path": "files/figures/fig2_cycles6to8.png",
+   "caption": "Detail of cycles 6 and 7 (a) and of the 2024 Jul-Sep data before the forecast cycle-8 onset (b). The XMM data show the slow cycle-6 rise, the drop near MJD 60244, the floor in 2024 Feb and the cycle-7 rise on 2024 Mar 18. In 2024 Aug-Sep the source is at the floor level."
+  },
+  {
+   "path": "files/figures/fig4_fading.png",
+   "caption": "Peak model rate (a) and X-ray fluence (b) per cycle. Blue: training cycles 2-5; filled orange: cycle 6 (out of sample); open orange: cycle 7 (rise only). The line and band show the geometric fading law fitted to cycles 2-5 and its forecast. Black triangles: 95 percent limits for cycles 8-12 if the data cover the active phase; they lie above the forecast from cycle 9 on."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASASSN-14ko timing result (period stays near 108 d after 2021) that we compare with J0456-20."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASASSN-14ko random period changes and the absence of an optical amplitude trend, compared with the J0456-20 fading."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASASSN-14ko Swift/UVOT result that the period decrease slowed after 2021."
+  },
+  {
+   "target": "sci:sha256:9001f8c9a528ca9cb04578d2ab5163d59aa675d7d63a1ce1cf1e5a304103b403",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We adapt its Swift XRT photometry code (swiftphot.py, 02_reduce.py) and compare its missing AT2018fyk flare with the J0456-20 fading."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202348682",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Liu et al. 2024: published onsets of cycles 1-5. Our out-of-sample cycles 6-7 support their indication of a constant recurrence time."
+  },
+  {
+   "target": "https://arxiv.org/abs/2208.12452",
+   "reason": "Liu et al. 2023: discovery and first X-ray analysis of eRASSt J0456-20."
+  },
+  {
+   "target": "https://heasarc.gsfc.nasa.gov/FTP/swift/data/obs/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Swift XRT archive data."
+  },
+  {
+   "target": "https://nxsa.esac.esa.int/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "XMM-Newton pipeline products."
+  },
+  {
+   "target": "doi:10.1086/170124",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kraft, Burrows and Nousek (1991) Bayesian intervals for low counts."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler."
+  }
+ ]
+}
