@@ -1,0 +1,112 @@
+{
+ "title": "Wildfire smoke changed PhenoCam red and blue fractions by about 15% of their seasonal range but GCC by under 2%, and moved transition dates little, at 435 North American sites in 2011-2025",
+ "abstract": "We tested if wildfire smoke changes the canopy colour that PhenoCam cameras record, and if it moves transition dates calculated from camera greenness. We used 564,546 site-days at 435 sites (25-55 N, 130-60 W, March-November 2011-2025), NOAA HMS smoke classes at each site, and NASA POWER cloud and aerosol data. The outcome was the residual from the median of nearby smoke-free days, with site x year x month fixed effects, cloud and rain controls and two-way clustered errors. On heavy smoke days the scene blue fraction decreased by 9.6 x 0.001 (95% interval 8.2-11.1; 15% of the median seasonal range) and the red chromatic coordinate increased by 11.4 x 0.001 (9.6-13.3; 16%). These changes replicated in four samples (East and West of 100 W, 2011-2019 and 2020-2025), increased with smoke density and were absent in placebo years. The green chromatic coordinate GCC90 changed by +0.48 x 0.001 (-0.04 to +1.01; 0.9% of its range). It did not replicate, and smoke-free days before episodes had a residual of the same size. Removal of medium and heavy smoke days gave median transition-date shifts of 0.00-0.01 days and mean shifts of -0.12 to +0.20 days. Large autumn shifts of 3 days or more were only 1.2-2.2 percentage points more frequent than after removal of the same runs of days at other times; this run-preserving null was added after the first results. Limitations: HMS marks smoke only where analysts can see it, so smoke days are biased to clear sky; HMS is a column product; the live PhenoCam archive is provisional; sites are not a random sample. GCC-based phenology is robust to smoke, but red- or blue-based colour indices need smoke screening. Code, aggregate results and hashes are included; source data stay external.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370101"
+  }
+ ],
+ "keywords": [
+  "PhenoCam",
+  "wildfire smoke",
+  "phenology",
+  "observation bias",
+  "green chromatic coordinate",
+  "HMS smoke",
+  "air pollution",
+  "remote sensing artefact",
+  "transition dates",
+  "North America"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_smoke_day_effects.png",
+   "caption": "Heavy and medium HMS smoke-day residuals of the scene blue fraction, RCC90 and GCC90 as percent of the median seasonal range, in four region x period samples and pooled (95% intervals, two-way clustered by site and date)."
+  },
+  {
+   "path": "files/figures/fig2_event_profile.png",
+   "caption": "Mean colour residuals by day from the onset of 8,549 medium/heavy smoke episodes at 428 sites, East and West, with site-bootstrap 95% bands. Blue decreases and red increases on the onset day; GCC90 stays near zero."
+  },
+  {
+   "path": "files/figures/fig3_transition_shifts.png",
+   "caption": "Shifts of spring and autumn 10/25/50% transition dates after removal of medium/heavy smoke days (bars), compared with removal of the same smoke-day runs moved 10-45 days in time and with removal of random smoke-free days (one draw each; log scale)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:55541d9120adcdbb64b771ae3ac6723c4423d638c3a5c4e3311a669ce0241b7d",
+   "reason": "Earlier campaign PhenoCam spring-autumn timing study in the eastern USA; it did not test smoke."
+  },
+  {
+   "target": "sci:sha256:0299aeb5a247814099b96badce2e2c5991962ff189fabe495bc0a91db622b50f",
+   "reason": "Earlier campaign PhenoCam autumn timing study; camera dates whose smoke sensitivity we test."
+  },
+  {
+   "target": "sci:sha256:05407d959829f2e33063c758370595d92ef7a6c604e61c25bae1830bbabca44f",
+   "reason": "Earlier campaign PhenoCam spring temperature study."
+  },
+  {
+   "target": "sci:sha256:64f2d0489d2fffc5f9ec6a95c7447cb78d929c6103ac4fe844bf687e470aec0e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign HMS smoke study; we use its finding that HMS density classes are consistent from 2011."
+  },
+  {
+   "target": "doi:10.3334/ORNLDAAC/2389",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PhenoCam Dataset v3.0 (ROI list and site selection)."
+  },
+  {
+   "target": "doi:10.5194/essd-17-6531-2025",
+   "reason": "PhenoCam V3 processing description."
+  },
+  {
+   "target": "doi:10.1038/sdata.2018.28",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PhenoCam imagery processing and GCC90 definitions."
+  },
+  {
+   "target": "doi:10.1038/s41597-019-0229-9",
+   "reason": "PhenoCam V2 processing, including the 1-day summary products and flags."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0758.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MERRA-2 aerosol optical depth and precipitation via NASA POWER."
+  },
+  {
+   "target": "https://www.ospo.noaa.gov/products/land/hms.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA Hazard Mapping System smoke polygons."
+  },
+  {
+   "target": "https://power.larc.nasa.gov",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA POWER daily point data (CERES cloud amount, clearness index, MERRA-2)."
+  },
+  {
+   "target": "https://phenocam.nau.edu/webcam/fairuse_statement/",
+   "reason": "PhenoCam data license (CC BY 4.0) and acknowledgement terms."
+  }
+ ]
+}
