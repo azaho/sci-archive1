@@ -1,0 +1,156 @@
+{
+  "title": "Early-period temperature models forecast later spring timing of Swiss plants and UK butterflies, but gave no forecast gain for UK butterfly or eastern US bird abundance (1951-2025)",
+  "abstract": "Question: for which ecological responses does a temperature model fitted to an early period forecast a later period better than a model without climate? Method: one pre-specified protocol for 314 annual series in three monitoring systems. These are MeteoSwiss plant phenology (1951-2025), UK Butterfly Monitoring Scheme flight dates and abundance (England, 1976-2024) and Breeding Bird Survey abundance (eastern US, 1966-2025). Each series has fixed-effect year effects. We fitted simple monthly temperature models on early years and forecast later years (and the reverse). The score is skill against a no-climate baseline, with paired block-bootstrap intervals. We also simulated the skill expected if each model were stable. Results: median skill was 0.83 (95% CI 0.76 to 0.87) for Swiss spring phenology, which was equal to its stable expectation. The predicted shift (-7.8 days) agreed with the observed shift (-8.5 days). Skill was 0.43 (0.21 to 0.60) for UK butterfly flight dates, but this was no better than a linear trend, and the model explained about half of the observed advance. Skill was -0.67 (-1.23 to -0.29) for 4 long-record Swiss autumn phases, because the model predicted later dates and the dates became earlier. Skill was 0.00 (-0.10 to 0.07) for butterfly growth and -0.10 to 0.01 for resident, partial-migrant and migrant bird growth. The reversed split gave the same order. Training |t| predicted test skill for 67 timing series (Spearman 0.69). It did not predict test skill for 247 abundance series (-0.12). Only 48% of abundance series with a training p < 0.05 gave positive skill. Butterfly climate slopes decreased by about 70% in the test period. Bird winter effects were mostly too small to forecast. Carolina Wren's slope decreased from 0.114 to 0.063 per deg C. Limitations: simple linear monthly models, no detection models, only 4 long autumn series, brood mixing in flight dates. We added the bird system and a short Swiss split after the protocol was written.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "ecological forecasting",
+    "out-of-sample test",
+    "climate change",
+    "phenology",
+    "population growth",
+    "temperature sensitivity",
+    "nonstationarity",
+    "UKBMS",
+    "MeteoSwiss",
+    "Breeding Bird Survey",
+    "butterflies",
+    "birds",
+    "plant phenology",
+    "skill score",
+    "replication",
+    "winter severity",
+    "autumn leaf colour",
+    "pre-registered protocol"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_class_skill.png",
+      "caption": "Median out-of-sample skill score of early-period temperature models against a no-climate baseline, by response class. Bars are 95% paired block-bootstrap intervals over test years. Vertical ticks show the skill expected if the training model were true and stationary. Blue: timing classes. Red: abundance (growth) classes."
+    },
+    {
+      "path": "files/figures/fig2_evidence_vs_skill.png",
+      "caption": "Training evidence against test skill for each series (primary split, fixed window). Left: timing, training |t| of the temperature slope. Right: abundance, training sqrt(F) of the two temperature terms. The dashed line is approximately p = 0.05."
+    },
+    {
+      "path": "files/figures/fig3_shift_transfer.png",
+      "caption": "Predicted (training slope times temperature change) against observed change in mean event date between the training and test periods, for the timing classes. The line is 1:1."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Adélie penguin colony growth failed a forward test; our multi-system test shows that abundance responses in general fail."
+    },
+    {
+      "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Night light did not delay autumn colour; we find that autumn timing models also lose their long-term level out of sample."
+    },
+    {
+      "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+      "relations": [
+        "supports"
+      ],
+      "reason": "A nest-success heat contrast did not repeat; we generalise the failure of demographic climate responses."
+    },
+    {
+      "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Winter cold did not predict beetle outbreak growth; consistent with our null forecast skill for population growth."
+    },
+    {
+      "target": "sci:sha256:15270e894fa3ccc7440d212eec8eefbd61f3c871cb06b211e78f8dc74ca0b78f",
+      "relations": [
+        "reviews",
+        "uses"
+      ],
+      "reason": "We test out of sample the winter-temperature effect on resident birds that this work found in sample; the effect is real but mostly too small to forecast."
+    },
+    {
+      "target": "sci:sha256:423c44cb2c725c9b8b27bc357201aab928313efb449fa8e132701bb85bd3292f",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Swiss spring temperature sensitivity transferred to 1991-2025 with little decrease."
+    },
+    {
+      "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "UKBMS phenology 2024."
+    },
+    {
+      "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "UKBMS site indices 2024."
+    },
+    {
+      "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "UKBMS site locations 2024."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HadUK-Grid England monthly temperature and rainfall."
+    },
+    {
+      "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/phaeno_previous.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MeteoSwiss phenology observations."
+    },
+    {
+      "target": "https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-nbcn",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MeteoSwiss NBCN homogenised monthly temperature."
+    },
+    {
+      "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "North American Breeding Bird Survey 2026 release."
+    },
+    {
+      "target": "doi:10.1111/ele.13898",
+      "relations": [
+        "uses"
+      ],
+      "reason": "AVONET migration codes."
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHCN_CAMS monthly temperature."
+    }
+  ]
+}

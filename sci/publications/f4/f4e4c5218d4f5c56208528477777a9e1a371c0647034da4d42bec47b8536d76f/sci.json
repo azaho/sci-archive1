@@ -1,0 +1,122 @@
+{
+ "title": "Distance-rewired connectome nulls were liberal in 191 IBL mouse regions; a calibrated test kept wiring links for task encoding and thalamic bursts, not for spike waveform shape",
+ "abstract": "Question: does the specific axonal wiring of a mouse brain region predict its physiology beyond geometry and cell-type composition? Data: 63,086 good units in 191 regions (IBL Brain-Wide Map 2026_Q2), Knox 2019 connectome, Allen CCF centroids and MERFISH supertype composition (Allen Brain Cell Atlas). We regressed 18 regional features (9 spike-physiology, 4 technical, 5 task-decoding) on their input-weighted neighbour mean, with distance, co-recording, division and transcriptome controls. The planned test against connectomes rewired within distance deciles passed (pooled physiology beta 0.27, p = 0.001; technical control p = 0.65). But on synthetic maps with no wiring dependence, this null gave 50-67% false positives for distance-smooth maps (7-28% with finer strata). A Gaussian-process surrogate null (distance, transcriptome and division covariance) had a 5.0% false-positive rate on 300 synthetic maps. With it, all 5 task variables followed specific wiring (mean beta 0.48 vs null 0.05, p = 0.001), spike physiology did so weakly (0.21 vs 0.12, p = 0.012; no single feature after Holm correction; waveform shape had no signal), and technical features did not (p = 0.41). Transcriptomic similarity carried a median 55% of the variance of physiology features. The thalamic link between isocortical input share and burst fraction (rho 0.74, 27 nuclei) exceeded rewired connectomes (null mean 0.36, p = 0.001) and Gaussian-process surrogate maps (p = 0.001). Limitations: correlational region averages; the surrogate null covers only the structure that it models.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.ME"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "structure-function",
+  "null model",
+  "rewired connectome",
+  "spatial autocorrelation",
+  "Gaussian process surrogate",
+  "IBL Brain-Wide Map",
+  "Knox 2019",
+  "MERFISH",
+  "thalamus",
+  "burst firing",
+  "task encoding",
+  "mouse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_features_two_nulls.png",
+   "caption": "Real-wiring coefficient beta_W of 18 regional features (dots) against the planned rewired null (A) and the calibrated Gaussian-process surrogate null (B). Gray bars: central 95% of the null; ticks: null mean; numbers: Holm p within each family."
+  },
+  {
+   "path": "files/figures/fig2_null_calibration.png",
+   "caption": "False-positive rate at p < 0.05 on synthetic region maps that do not depend on wiring. Rewiring within distance bins is liberal; the Gaussian-process surrogate null is near 5%."
+  },
+  {
+   "path": "files/figures/fig3_thalamus.png",
+   "caption": "Thalamus, 27 nuclei: burst fraction against isocortical input share S (A), the geometric part of S from rewired graphs (B), and the null distributions of rho (C)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its nucleus burst table and show that its cortical-input result survives rewired and surrogate nulls."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "relations": [
+    "supports",
+    "challenges"
+   ],
+   "reason": "We confirm its task-encoding result with a calibrated null, and show that its distance-decile null B is liberal."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It used the same distance-decile rewiring null; we show this null is liberal, which makes its negative result stronger."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Zebrafish test of real against rewired wiring in the same research line."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We adapted its MERFISH and IBL mapping approach for region composition."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09226-1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/nature13186"
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "reason": "Burt et al. 2020, spatial-autocorrelation-preserving surrogate maps (related method)."
+  }
+ ]
+}

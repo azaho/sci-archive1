@@ -1,0 +1,104 @@
+{
+ "title": "On one GOES scale, Cycle 25 regions give 1.5 times more M flares than Cycle 24 regions of equal McIntosh class but about equal numbers at equal HMI flux; Cycle 25 has 27% more flux per sunspot",
+ "abstract": "Question: on one GOES X-ray flux scale, Solar Cycle 25 has 1.45 times more M flares per sunspot number than Cycle 24, but not per unit of F10.7 (previous campaign result). Does the excess come from more complex sunspot regions, or from more flares per region? Method: we assigned SWPC flares (true-scale peaks, 0.7 factor removed) to NOAA regions. We modelled the daily M-flare count of 45,202 SWPC region-days (1998-2026, McIntosh class, area, magnetic class) and of 19,821 SDO/HMI SHARP region-days (2010-2026, unsigned flux, R value) with Poisson regressions and 27-day block bootstrap intervals. Results: at the same McIntosh class, area and magnetic class, a Cycle 25 region gives 1.54 (95% CI 1.26-1.89) times more M1+ flares than a Cycle 24 region; Cycles 23 and 24 agree (1.02). At the same HMI flux and R, the ratio is 1.13 (0.90-1.38); for M5+ and X1+ flares it is 0.87 and 0.80. At fixed McIntosh class and area, Cycle 25 regions have 1.13 (1.09-1.18) times more HMI flux. Per sunspot number, the total active-region flux is 1.27 (1.17-1.40) times larger; per F10.7 unit it is 0.98 (0.91-1.05). Cycle 24 rates per McIntosh class predict 1.02 times the Cycle 24 flares per sunspot; Cycle 24 rates per HMI flux predict 1.45 (1.25-1.76), the observed excess. At fixed HMI flux, the SWPC classification is not more complex in Cycle 25 (delta odds 0.91), and productivity has no step at the December 2019 GOES change. Thus the excess per sunspot comes from more magnetic flux per sunspot, not from more flares per unit flux. Limitations: HMI covers Cycle 24 only from May 2010; the HMI-based ratio is 1.08-1.30 in model variants, so a residual excess of about 25% is possible; X-class intervals are wide; we did not test HMI or SWPC area calibration with a third instrument.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.space-ph"
+  }
+ ],
+ "keywords": [
+  "solar flares",
+  "active regions",
+  "McIntosh classification",
+  "SHARP",
+  "SDO/HMI",
+  "unsigned magnetic flux",
+  "GOES XRS",
+  "flux calibration",
+  "Solar Cycle 25",
+  "sunspot number",
+  "F10.7",
+  "flare productivity",
+  "flare forecasting",
+  "SWPC"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_per_ssn.png",
+   "caption": "Cycle 25/Cycle 24 ratios at matched sunspot number. Rates per McIntosh class do not predict the M-flare excess per sunspot; rates per HMI magnetic flux predict it."
+  },
+  {
+   "path": "files/figures/fig2_binned_rates.png",
+   "caption": "M1+ flare rate per region-day against SWPC sunspot area (a) and HMI unsigned flux (b), and HMI flux per SWPC area (c), for Cycles 24 and 25 on the true GOES flux scale."
+  },
+  {
+   "path": "files/figures/fig1_rate_ratios.png",
+   "caption": "Cycle 25/Cycle 24 flare rate ratio per region-day for M1+, M5+ and X1+ flares with SWPC and HMI covariates (95% 27-day block bootstrap)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:cf94434cc907d929fe2342675f1f0b92b966e8804019441c0241614b7d55cbb3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its homogeneous true-scale flare list. We confirm its excess of 1.45 M flares per sunspot and its null result per F10.7, and we explain both with HMI magnetic flux."
+  },
+  {
+   "target": "sci:sha256:d8fe105441f4a8deb0890611a7a4970adb89bee39e6907d41713aa800780c4cf",
+   "reason": "Related campaign work on the same GOES flux-scale change."
+  },
+  {
+   "target": "doi:10.1051/swsc/2025007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GOES 0.7 flux-factor correction of the flare record."
+  },
+  {
+   "target": "https://arxiv.org/abs/2510.23046",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Reports fewer delta regions but more M/X flares in Cycle 25 on raw counts; we normalise per sunspot, per flux and on one flux scale."
+  },
+  {
+   "target": "doi:10.1007/s11207-014-0529-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SHARP data product (HMI active-region patches and keywords)."
+  },
+  {
+   "target": "http://jsoc.stanford.edu/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the hmi.sharp_720s keywords."
+  },
+  {
+   "target": "https://www.swpc.noaa.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of SRS, event lists and daily solar data."
+  },
+  {
+   "target": "doi:10.1086/511857",
+   "relations": [
+    "uses"
+   ],
+   "reason": "R value (Schrijver 2007)."
+  },
+  {
+   "target": "doi:10.1007/BF00158405",
+   "reason": "McIntosh sunspot classification."
+  }
+ ]
+}
