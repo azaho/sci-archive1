@@ -1,0 +1,52 @@
+{
+  "title": "Surface pCO2 at HOT and BATS followed atmospheric CO2 in 2013-2025 forecasts frozen at 2012, but annual temperature anomalies did not pass to pCO2 and a shared alkalinity reversal stays unexplained",
+  "abstract": "Question: after 2012, did surface ocean carbonate chemistry at the two longest open-ocean time series (HOT, North Pacific, 1988-2024, 346 cruises; BATS, Sargasso Sea, 1991-2025, 378 cruises) follow frozen trend models, an atmospheric-tracking model, or tracking plus the thermodynamic temperature effect? Approach: pre-registered forward test. We fitted models on data to 2012 (check: to 2007), recalculated the carbonate system from DIC and TA with PyCO2SYS, and scored test-period bias and RMSE with year-block bootstrap intervals. Results: seawater pCO2 rose 2.74 (HOT) and 3.14 (BATS) uatm/yr in 2013-2025, against 2.42 and 2.51 in the atmosphere. The extra sea-air trend depends on the split year. Atmospheric tracking cut aragonite saturation forecast RMSE by 19-31% at both stations and splits. For pCO2 it did not beat a linear trend, and for pH the result was mixed. Pre-registered H3 failed: adding the observed temperature anomaly (test years about 0.5 C warmer) made all pCO2, pH and saturation forecasts worse (HOT pCO2 RMSE 7.5 to 14.2 uatm). Exploratory: annual-mean temperature anomalies passed 0.00 [-0.23, 0.23] (BATS) and -0.14 [-0.33, 0.12] (HOT) of the thermodynamic effect to pCO2. Within-year deviations passed 0.58 and 0.37. At both stations, TA rose above the pre-2013 TA-salinity line until about 2013-2016 and then fell. This adds about 0.5-0.7 uatm/yr to calculated pCO2, the same size as the extra post-2012 pCO2 acceleration. At HOT, measured spectrophotometric pH fell at -0.00231/yr, as atmospheric tracking predicts (-0.00237), while pH calculated from DIC and TA fell at -0.00272/yr (difference trend -0.00041/yr [-0.00064, -0.00019]). Limitations: two subtropical stations; 12-13 test years with large interannual noise; pass-through is correlational; we cannot tell if the TA reversal is oceanographic or analytical (shared reference-material calibration). External data are not bundled; scripts download them.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370803"}
+  ],
+  "keywords": [
+    "ocean acidification",
+    "carbonate system",
+    "pCO2",
+    "Hawaii Ocean Time-series",
+    "Bermuda Atlantic Time-series Study",
+    "air-sea CO2 disequilibrium",
+    "aragonite saturation",
+    "total alkalinity",
+    "temperature sensitivity",
+    "forecast verification",
+    "pre-registered test",
+    "out-of-sample test",
+    "PyCO2SYS",
+    "subtropical gyre"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_disequilibrium_forecasts.png",
+      "caption": "Annual mean seawater minus atmospheric pCO2 at HOT and BATS (black) and test-period (shaded, 2013+) annual means of three models frozen with data to 2012: linear trend (orange), atmospheric tracking with constant seasonal disequilibrium (blue), and tracking plus the thermodynamic effect of the observed temperature anomaly (green dashed). The thermal model predicts a large excess that did not occur."
+    },
+    {
+      "path": "files/figures/fig3_temperature_passthrough.png",
+      "caption": "Exploratory. Left: annual means of the pCO2 departure from the atmospheric-tracking baseline against the temperature anomaly; slopes are near zero at both stations. Right: within-year deviations, slopes are 37% (HOT) and 58% (BATS) of the thermodynamic slope (dotted). Brackets are 95% intervals."
+    },
+    {
+      "path": "files/figures/fig4_alkalinity_ph_check.png",
+      "caption": "Exploratory. Left: annual mean TA residual from the 1988/91-2012 TA-salinity line at both stations; a shared rise to about 2013-2016 and a later fall. Right: HOT annual mean of pH calculated from DIC and TA minus measured spectrophotometric pH; the difference falls after 2012."
+    }
+  ],
+  "citations": [
+    {"target": "doi:10.26008/1912/bco-dmo.3782.10", "relations": ["uses"], "reason": "BATS bottle data, BCO-DMO dataset 3782 version 10 (CC BY 4.0)."},
+    {"target": "https://hahana.soest.hawaii.edu/hot/hotco2/hotco2.html", "relations": ["uses"], "reason": "HOT surface CO2 data product, version of 1 January 2026."},
+    {"target": "doi:10.1073/pnas.0906044106", "relations": ["uses"], "reason": "Dore et al. 2009, citation requested for the HOT surface CO2 product."},
+    {"target": "https://gml.noaa.gov/ccgg/trends/", "relations": ["uses"], "reason": "NOAA GML Mauna Loa monthly CO2 and Tudor Hill (BMW) flask CO2."},
+    {"target": "doi:10.5670/oceanog.2014.16", "relations": ["reviews"], "reason": "Bates et al. 2014 station trend tables; the linear-trend form of model M0."},
+    {"target": "doi:10.1038/s43247-020-00030-5", "reason": "Bates and Johnson 2020 report accelerating change at BATS."},
+    {"target": "doi:10.1029/93GB02263", "relations": ["uses"], "reason": "Takahashi et al. 1993 temperature sensitivity of pCO2 (4.23%/C)."},
+    {"target": "doi:10.5194/gmd-15-15-2022", "relations": ["uses"], "reason": "PyCO2SYS carbonate system solver."},
+    {"target": "doi:10.1016/S0304-4203(00)00022-0", "relations": ["uses"], "reason": "Lueker et al. 2000 carbonic acid constants."},
+    {"target": "doi:10.1016/j.gca.2009.12.027", "relations": ["uses"], "reason": "Lee et al. 2010 total boron."},
+    {"target": "doi:10.1016/0304-4203(80)90024-9", "relations": ["uses"], "reason": "Weiss and Price 1980 water vapour pressure."}
+  ]
+}

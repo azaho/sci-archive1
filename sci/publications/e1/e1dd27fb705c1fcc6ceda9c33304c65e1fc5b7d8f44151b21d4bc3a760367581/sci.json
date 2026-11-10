@@ -1,0 +1,86 @@
+{
+  "title": "A linear flow-timing term gave no clear summer low-flow forecast gain at 144 Canadian gauges in 2000-2024",
+  "abstract": "We tested whether January-June flow timing improves August-September minimum seven-day flow forecasts at 144 Canadian reference gauges. We used fixed HYDAT and 2020 reference-network snapshots. Each forecast for 2000-2024 used earlier complete years from 1975. The reference used flow amount, June mean flow, and year. Adding a linear flow-weighted timing term gave -0.79% equal-gauge normalized squared-error reduction in 3,513 test station-years. The conditional 95% five-year block range was -2.83% to +0.97%. Thus the primary test gave no clear gain. All planned variants had negative point scores. Clipping negative predictions gave -0.54%, with a range across zero. An added diagnostic found that both regressions had more error than a past-mean forecast, but those ranges also included zero. This limits the result to a model benchmark. It does not show that melt timing has no physical effect. Final revised records, retrospective gauge selection, simple linear models, no weather forecasts, and only 25 test years limit inference. The package includes code, exact source hashes, aggregate errors, all resampling scores, a figure, and an independent numerical audit. External river records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "low flow",
+    "flow timing",
+    "HYDAT",
+    "Canadian reference gauges",
+    "chronological forecast",
+    "null result",
+    "water availability"
+  ],
+  "display": [
+    {
+      "path": "files/aggregates/forecast_timing.png",
+      "caption": "A linear timing term gave no clear added forecast gain. Left: primary and planned sensitivity scores, with conditional 95% block ranges. Positive values mean less error. All test periods are 2000-2024. Most rows use squared error; the absolute-error row uses that loss. The complete-record row uses 74 gauges. Right: cumulative primary score with fixed full-test gauge weights. This is a retrospective archive test. Neither main regression established skill over a past-mean forecast in an added diagnostic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8ae995f3a8d858f4a8d59297e379209a3d5380784cc4a683d43071a24fa0b680",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Read prior seasonal low-flow study and its verified source-selection code. Reuse the same shared input snapshots. The forecast endpoint and analysis are new. This is not independent data confirmation."
+    },
+    {
+      "target": "doi:10.1038/srep19299",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior physical and trend analysis of melt timing and summer flow in the Fraser River basin."
+    },
+    {
+      "target": "doi:10.1029/2008WR006975",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior runoff timing work distinguishes rain, snow, glacier, and water-amount effects."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-17-0813.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established January-June flow-weighted time window. This study computes it from daily flows."
+    },
+    {
+      "target": "doi:10.1038/s44304-026-00204-9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Recent summer drought attribution study provides context; our flow-only benchmark does not identify its climate drivers."
+    },
+    {
+      "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/Hydat_sqlite3_20261019.zip",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/RHBN/RHBN_Metadata.xlsx",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/data-products-services/reference-hydrometric-basin-network.html"
+    },
+    {
+      "target": "https://open.canada.ca/data/en/dataset/9473ed86-d984-477e-938e-705809d8ee0e"
+    },
+    {
+      "target": "https://open.canada.ca/en/open-government-licence-canada"
+    },
+    {
+      "target": "https://eccc-msc.github.io/open-data/licence/readme_en/"
+    }
+  ]
+}
