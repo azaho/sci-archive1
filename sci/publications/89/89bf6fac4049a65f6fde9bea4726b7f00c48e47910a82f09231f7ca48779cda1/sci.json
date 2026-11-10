@@ -1,0 +1,68 @@
+{
+  "title": "A learned past regional error correction raised high tide flood MSE by 6.9% at 69 US gauges in 2022-2025",
+  "abstract": "We tested whether past regional flood outlook errors improve annual count estimates beyond a local past-error correction. We used a fixed NOAA archive sample with 69 gauges in seven regions. A common slope linked target error to the previous year error at other regional gauges, after removal of past local median errors. Each fit used earlier target years only. Across 276 gauge-years in 2022-2025, the learned correction raised mean squared error from 22.52 to 24.07 days squared, an increase of 6.9%. The original NOAA midpoint had lower error at 18.66. The learned correction raised error in three of four years. Year deletion, full completeness and a shorter training window retained higher error. This is a null forecast-gain result for one annual memory rule. It does not rule out useful regional memory at other timescales. Four test years, revised records, changing methods, inherited observation cuts and conditional uncertainty limit inference. Code, aggregate scores, a figure, source hashes, a retrieval script and an independent scalar audit are included. Raw records and record-level forecasts remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "high tide flooding",
+    "regional memory",
+    "chronological validation",
+    "forecast correction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Mean squared count error by year and MSE reduction by region. Negative reductions mean higher error. Fits use earlier target years only."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified input and inherited observation controls."
+    },
+    {
+      "target": "sci:sha256:a8225034964061c9c76a5d118dd1bf76942856c385f6e09c5301eb19f4645d57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same-year peer gain and previous-year control motivate a fitted past-innovation test. Data overlap."
+    },
+    {
+      "target": "sci:sha256:12f60dce27a12234cad6f451bcd8f88c06ee7ae49e30e682301983fd03f946d6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Regional miss timing motivates a past-only transfer check."
+    },
+    {
+      "target": "sci:sha256:bc76049f0335b9bce1005ff61da647b117f352b57d5f56f1d543598984f689bc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior chronological range test; this study tests point estimates."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792"
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/high-tide-flooding/annual-outlook"
+    },
+    {
+      "target": "https://repository.library.noaa.gov/view/noaa/70863/noaa_70863_DS1.pdf"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json"
+    },
+    {
+      "target": "https://oceanservice.noaa.gov/about/faq.html"
+    }
+  ]
+}

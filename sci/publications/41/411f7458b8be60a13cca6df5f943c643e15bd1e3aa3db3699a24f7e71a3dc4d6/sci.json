@@ -1,0 +1,58 @@
+{
+  "title": "Local time swaps gave no clear first-day deep-event count excess in ComCat for 2000-2025",
+  "abstract": "We tested whether a published first-day deep-earthquake count excess remained under a local time-swap control without geographic grid cells. We used 785 ComCat events with preferred magnitude at least 5.5 and depth greater than 300 km in 2000-2025. An event counted if it had a neighbor within 200 km chord distance and one day in the same year. We greedily matched disjoint locations within each year-month and 500 km, then swapped their times in 9,999 draws. The observed count was 101, the null mean was 101.51, and the upper-tail p value was 0.755. The central 95% null range was 100-103. In all primary draws, 94 events had a neighbor. A 250 km check had no count variation. Thus the first-day grid result did not carry over to this control, but the control preserved much of the local graph. The result does not show that clustering is absent. Pairwise exchangeability, sparse matches, catalog error and chosen scales limit inference. Code, aggregate draws, provenance, an independent audit and a figure are included. External event records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "deep earthquakes",
+    "ComCat",
+    "matched randomization",
+    "null model",
+    "graph participation"
+  ],
+  "display": [
+    {
+      "path": "files/test.png",
+      "caption": "First-day event counts under four matched time-swap controls. Points show null means; bars show central 95% null ranges. The red line shows the observed count. Little count variation limits what this test can show."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b05bb7bd0f4fcee466231d0f1b9628786e4392c42f8628715990076948a7d646",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published first-day distinct-event result motivates a grid-free control on the same records. This is not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:3f3a445cedb4d57a6435d68b6ec65f2cc8353ab5006d6e5d0a26b4c5c9401a16",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior annual regional pair test provides context."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1029/2018GL080997"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed shared query snapshot; source hash in provenance.json."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    }
+  ]
+}

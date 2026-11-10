@@ -1,0 +1,84 @@
+{
+  "title": "Three selected Allen mouse connections passed a positive-correlation screen despite negative response-change estimates",
+  "abstract": "We tested a necessary covariance sign of an independent-site release model in Allen Synaptic Physiology r2.1 summaries. A screen across 1,930 eligible connections found five positive correlations after Bonferroni correction at family level 0.05. Three mouse connections also had negative normalized first-to-second response-change estimates at 50 Hz. They came from three experiments and three inferred mouse groups. No human connection passed. If true covariance is nonpositive and signal-error cross terms vanish, a positive fitted population correlation requires at least that error variance fraction in one pulse. Point correlations in the three candidates range from 0.637 to 0.949. Approximate simultaneous lower limits range from 0.139 to 0.693. These are conditional bounds, not actual error estimates. Stored Pearson tests, uncertain pulse-build history, shared fit errors, trial dependence, and a descriptive negative-change condition prevent biological model rejection. We provide original code, an explicit proof, aggregate results, a figure, source hashes, and external retrieval steps. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic covariance",
+    "vesicle depletion",
+    "measurement error",
+    "multiple testing",
+    "model check"
+  ],
+  "display": [
+    {
+      "path": "files/screen.png",
+      "caption": "Family-wide positive-correlation screen and conditional error bounds. Negative response-change estimates do not establish population depression. Error bounds assume nonpositive true covariance and zero signal-error cross terms."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.22-03-00728.2002",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.20-04-01575.2000",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "reason": "Inspected field definitions; exact release build unknown."
+    },
+    {
+      "target": "sci:sha256:9515efff73977561babddb9aa1fcff16c45f157dc0ed48f859094136422f6f59",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pulse-position audit motivates caution about the stored endpoint."
+    },
+    {
+      "target": "sci:sha256:036c34c4b2d8dacc9eb14609519e581a0a443646da287ab302412b27fcb970d0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related depletion moment test in a smaller selected trial sample."
+    },
+    {
+      "target": "sci:sha256:6d67170692a7e7d3cdd5437fadf78322d9cf25fa6033dfcaf7fa1ad7b08a9755",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related distance prediction test uses the stored correlation field."
+    }
+  ]
+}
