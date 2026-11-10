@@ -1,0 +1,129 @@
+{
+  "title": "Four CMIP6 historical runs do not reproduce the 1985-2014 oxygen loss on sigma0 26.5 off southern California; in their ideal-age fields AOU follows age, but the ventilation-only ratio is 0 to 1.4",
+  "abstract": "Question: do CMIP6 models reproduce the oxygen loss on sigma0 = 26.5 that bottle data show off southern California (CalCOFI) and at Bermuda (BATS), and how does the ventilation-only test of a GLODAP tracer study (observed ratio 0.55) behave in model worlds where the true water age is known? Approach: we read only the needed chunks of the public CMIP6 Zarr stores for GFDL-ESM4, CanESM5, ACCESS-ESM1-5 and IPSL-CM6A-LR (historical and piControl, r1i1p1f1). We put September fields of 16 years (1985-2014) on density surfaces and compared 2005-2014 with 1985-1994 in boxes. Three models give ideal age; for GFDL-ESM4 we calculated CFC-12 and SF6 transit-time ages. Results: off California, observed oxygen fell by 22.3 umol/kg; the models gave -15.0 (GFDL-ESM4), -3.4, -0.1 and +3.9 umol/kg, and piControl segments gave -3.2 to -0.2. At BATS, observations show no loss before 2015 (+2.7), but three models lost 3.6 to 12.0 umol/kg. In 10 of 12 ideal-age model-box cases, AOU followed age after detrending (r = 0.61 to 0.99), but the ratio of the AOU change to the ventilation-only prediction (AOU/age x age change) was 0.26-0.72 in IPSL-CM6A-LR, 0.01-1.39 in ACCESS-ESM1-5 and -2.9 to 0.6 in CanESM5. Thus the observed 0.55 is typical of model worlds where AOU follows age, and the ratio alone cannot separate ventilation from respiration. In GFDL-ESM4, CFC-12 and SF6 ages gave age increases that differ by a factor of 1.4. Limitations: one member per model, one month per sampled year, large mean-state biases, approximate drift control (no IPSL control oxygen), no respiration diagnostic, and runs that end in 2014.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ocean deoxygenation",
+    "CMIP6",
+    "ideal age",
+    "ventilation",
+    "apparent oxygen utilization",
+    "CFC-12",
+    "SF6",
+    "transit time distribution",
+    "isopycnal",
+    "California Current",
+    "CalCOFI",
+    "BATS",
+    "GFDL-ESM4",
+    "IPSL-CM6A-LR",
+    "CanESM5",
+    "ACCESS-ESM1-5",
+    "model evaluation",
+    "drift"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_o2_series.png",
+      "caption": "Oxygen anomaly on sigma0 26.5 (top) and on the model surface at the observed depth (bottom) in the BATS and CalCOFI boxes. Black: observed bottle series from campaign publications (reference 1985-1994; BATS 1989-1994). Colours: one historical member of each model, September samples. Grey bands: comparison windows."
+    },
+    {
+      "path": "files/figures/fig2_ventilation_ratio.png",
+      "caption": "Left: AOU change (2005-2014 minus 1985-1994) against the ventilation-only prediction OUR_E x d(age) for model boxes (squares; ideal age, or CFC-12 TTD age for GFDL-ESM4) and observed GLODAP section pairs (circles). Right: ratio R with 95% intervals (squares) and kappa = temporal AOU-age slope / OUR_E (open circles); dashed line: observed pooled ratio 0.55. Values clipped to -1 to 2.5."
+    },
+    {
+      "path": "files/figures/fig3_surface_depths.png",
+      "caption": "Mean September depth (1985-1994) of density surfaces 25.8-27.0 in each model, with the observed depth of sigma0 26.5 (star) in the BATS and CalCOFI boxes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We use its GLODAP section pairs and pooled ratio, and test in model worlds how its ventilation-only ratio behaves."
+    },
+    {
+      "target": "sci:sha256:d2aed83cfe2b4a27207c5bd10e25b2398ade09b4a6955fb06bb063a7136fb0d2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Observed CalCOFI sigma0 26.5 series and cast depths."
+    },
+    {
+      "target": "sci:sha256:710d488013378c0a36b95ef1a1d7389ba4761b9ee4309315c9f27ab4c553390b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Observed BATS sigma 26.5 annual aggregates."
+    },
+    {
+      "target": "sci:sha256:f8b4712853bb3861281c214ba2a4f627537fb7dd4db1f5c32ad8af6859f5c6c3",
+      "reason": "Earlier CalCOFI solubility result."
+    },
+    {
+      "target": "https://storage.googleapis.com/cmip6/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CMIP6 Zarr stores; objects listed in files/provenance/cmip6_chunk_manifest.csv."
+    },
+    {
+      "target": "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html",
+      "reason": "Current CC BY 4.0 license of the four models."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/archive/accession/0164584",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Atmospheric CFC-12 and SF6 histories."
+    },
+    {
+      "target": "doi:10.5194/gmd-9-1937-2016"
+    },
+    {
+      "target": "doi:10.1029/2019MS002015"
+    },
+    {
+      "target": "doi:10.5194/gmd-12-4823-2019"
+    },
+    {
+      "target": "doi:10.1071/ES19035"
+    },
+    {
+      "target": "doi:10.1029/2019MS002010"
+    },
+    {
+      "target": "doi:10.1029/2002JC001325",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/0198-0149(85)90099-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/S0967-0637(01)00051-6",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5194/essd-16-2047-2024",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

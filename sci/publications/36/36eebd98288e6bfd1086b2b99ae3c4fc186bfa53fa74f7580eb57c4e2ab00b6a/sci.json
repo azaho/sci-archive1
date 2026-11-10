@@ -1,0 +1,112 @@
+{
+  "title": "Across 195 mouse brain regions, distance and source-division wiring rules and cell types explained the input-similarity link to spike physiology; specific wiring helped only for cortical layer 6",
+  "abstract": "Question: does specific mesoscale wiring, rather than geometry, set the spike physiology of mouse brain regions? Data: 63,299 good IBL Brain-Wide Map units in 195 Knox connectome regions (459 sessions, 12 labs); nine amplitude-free features (rate, ISI statistics, autocorrelogram shape, waveform shape). Method: a pre-registered pair regression of physiological similarity on input-profile similarity (IS), with distance and division controls, tested against 1,000 distance-preserving rewired connectomes and a within-division label null. Results: IS predicted physiological similarity (rho 0.50), but rewired graphs reproduced about 95% of the coefficient (0.385 vs 0.364; p = 0.038; label null p = 0.096), so the pre-registered hypothesis failed its criterion. With MERFISH cell-type similarity as control the excess vanished (p = 0.33), while cell types kept an effect (p = 0.002). An exponential-distance-rule control and an exploratory null that also keeps each source's division also reproduced the real result, including in isocortex and in an Allen Visual Coding replication (28 regions). Exploratory exception: fingerprints from isocortical layer-6 units only (34 areas) beat both nulls (0.47 vs 0.31, p = 0.001), with cell-type and distance-rule controls, for L6a only, and in 18 of 20 lab-split halves. Limitations: region-level correlation; a smoothed voxel-model connectome without layer specificity; one MERFISH animal; the layer-6 result is one of about 50 exploratory tests and needs independent confirmation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure-function",
+    "mesoscale connectome",
+    "rewired connectome null",
+    "spatial null model",
+    "IBL Brain-Wide Map",
+    "Neuropixels",
+    "Knox 2019",
+    "MERFISH cell types",
+    "spike waveform",
+    "autocorrelogram",
+    "cortical layer 6",
+    "mouse",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_primary.png",
+      "caption": "Pre-registered test. A: binned pair data by distance quartile. B: beta_IS against 1,000 distance-preserving rewired connectomes. C: against within-division label permutations."
+    },
+    {
+      "path": "files/figures/fig4_exploratory_nulls.png",
+      "caption": "Exploratory tests against two nulls: distance-preserving rewiring (grey) and distance plus source-division preserving rewiring (green). Only isocortical layer-6 fingerprints beat both."
+    },
+    {
+      "path": "files/figures/fig2_features_prediction.png",
+      "caption": "A: per-feature tests against rewired graphs. B: leave-one-region-out prediction of the physiology fingerprint from input-similar, rewired, nearest and cell-type-similar regions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Starting work: thalamic burst firing and cortical input share; same IBL and Knox data."
+    },
+    {
+      "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+      "reason": "Axonal input predicts task-variable encoding; we test the analogue for intrinsic physiology."
+    },
+    {
+      "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+      "relations": [
+        "supports",
+        "uses"
+      ],
+      "reason": "Distance-preserving rewired null design; our brain-wide result agrees that geometry explains most of the effect."
+    },
+    {
+      "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+      "reason": "Zebrafish case where real wiring beat rewired graphs."
+    },
+    {
+      "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+      "reason": "Cell-type diversity and spike features in IBL and MERFISH data."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IBL Brain-Wide Map data (CC BY 4.0)."
+    },
+    {
+      "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Knox et al. 2019 voxel-model connectome."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2020.04.007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen CCF v3 annotation."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06812-z",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ABC Atlas MERFISH cell types."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03171-x",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen Visual Coding Neuropixels data."
+    },
+    {
+      "target": "doi:10.1038/nature13186"
+    }
+  ]
+}
