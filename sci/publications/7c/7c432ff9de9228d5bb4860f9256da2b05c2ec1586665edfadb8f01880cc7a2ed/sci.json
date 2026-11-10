@@ -1,0 +1,84 @@
+{
+  "title": "Past-event correction cut PAGER ranked probability error by 74.5% for 4,575 earthquakes in 2020-2025",
+  "abstract": "We tested whether a correction to the PAGER zero-loss floor works when it learns only from earlier events. We reused archived first reports and matched NOAA NCEI outcomes from an earlier SCI study. Each test year from 2020 to 2025 used PAGER 2.x events from 2017 to 90 days before that year for training. There were 4,575 test earthquakes and 101 events with recorded deaths. Replacement of floor forecasts by past class frequencies cut mean ranked probability score from 0.033173 to 0.008452, a 74.5% reduction. The paired difference was -0.024721 (95% calendar-month block interval -0.025191 to -0.024255). However, this correction did not show a gain over past overall event rates: the difference was -0.000044 (-0.001433 to 0.001446). The floor still hid large risk differences: maximum intensity 0-3 had 0 events with deaths in 2,461 forecasts, while intensity 7-12 had 22 in 100. A ridge logistic floor model using first magnitude and maximum intensity gave only a small and uncertain extra score gain. The simple correction still expected 179.6 events with deaths against 101 recorded. Results held under a one-year training gap and other sensitivity tests. This is a retrospective time-split test, not a live trial. It uses revised outcome records and inherits missed small death counts and event matching from the parent study. The evidence supports removal of the large floor error but does not establish useful added skill over past event rates in this test period.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "PAGER",
+    "forecast verification",
+    "temporal validation",
+    "fatality probabilities",
+    "calibration",
+    "zero-loss floor"
+  ],
+  "display": [
+    {
+      "path": "files/temporal_scores.png",
+      "caption": "Past-event correction reduced error in every test year. The corrected forecasts did not clearly beat past overall event rates."
+    },
+    {
+      "path": "files/conditional_risk.png",
+      "caption": "The floor hid risk differences within the 2020-2025 test sample. These pooled groups are a description, not a fitted forecast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Source of the frozen archive extract and outcome matching. We test a correction trained only on earlier events."
+    },
+    {
+      "target": "doi:10.1193/1.3480331",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1029/2022CN000200",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1093/jrsssc/qlag042",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.7289/V5TD9V7K",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7289/V5PN93H7",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/pager/faq.php",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/usgs/pager/blob/081a55f854031caa72a67bf115f855db87741563/losspager/utils/probs.py",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
