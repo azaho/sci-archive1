@@ -1,0 +1,84 @@
+{
+ "title": "Faster spectral decay in higher mouse visual areas held for gratings and movies and was not explained by receptive-field size or position in 32 Allen Neuropixels mice",
+ "abstract": "A prior SCI study found that cross-validated PCA spectra of natural-image responses decay faster along the anatomical mouse visual hierarchy. We asked if this gradient is specific to natural images and if receptive-field (RF) properties cause it. We used the same 32 Allen Visual Coding Neuropixels mice (11,559 units, 8 structures) and froze the plan before we calculated new area values. In the same units, the decay exponent alpha (ranks 2-30) increased with the hierarchy score for 118 natural images (slope 0.26, 95% mouse bootstrap 0.15 to 0.34), 120 static gratings (0.89, 0.69 to 0.94) and 120 natural-movie segments (0.48, 0.38 to 0.57); cortex-only slopes were also positive. In cortical units with a significant RF, nearest-neighbour matching of RF size and position across areas did not reduce the cortical slope (0.25, 0.06 to 0.36, versus 0.23, 0.08 to 0.39 unmatched; paired change -0.02, -0.18 to 0.13), and neither did added matching of spatial frequency, latency, reliability and rate (0.22). Inside areas, units with larger RFs had a slightly higher alpha (+0.078, 0.018 to 0.122), which predicts only about one fifth of the observed slope. Image-computable centre-surround and Gabor models with the measured RF parameters gave no hierarchy trend (slopes -0.08 to 0.10). Exploratory: the phase-dependent share of reliable grating variance fell from 0.52 in LGd to 0.21 in VISp and 0.075 in VISam, but phase averaging reduced the cortical grating slope only from 0.90 to 0.66. Higher areas put less of their reliable image variance on the top VISp image axes than VISp itself, so their steeper spectra are not a low-pass copy of VISp geometry. Limitations: correlational over 6 to 8 areas; RF tests use only significant-RF units; coarse RF metrics; simple noise-free models with an assumed screen mapping; one dataset; exploratory analyses need confirmation. Code, aggregate results, figures and exact data provenance are included; Allen data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "population code",
+  "cross-validated PCA",
+  "power law",
+  "dimensionality",
+  "receptive field",
+  "phase invariance",
+  "natural images",
+  "static gratings",
+  "natural movies",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "structure-function",
+  "image-computable model"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_stimulus_generality.png",
+   "caption": "(a) Decay exponent alpha (ranks 2-30) of pooled 300-unit populations against the anatomical hierarchy score, for 118 natural images (blue), 120 static gratings (orange) and 120 natural-movie segments (green), in the same 32 mice. Bars: 95% mouse bootstrap intervals; lines: OLS fits. (b) Hierarchy slope of alpha with 95% mouse bootstrap intervals for each stimulus, over 8 structures and over the 6 cortical areas."
+  },
+  {
+   "path": "files/figures/fig2_rf_controls.png",
+   "caption": "(a) alpha of 120-unit cortical populations of significant-RF units, without matching (blue) and with RF size and position matched across areas (orange). (b) Cortical hierarchy slope after five matching models, with 95% mouse bootstrap intervals. (c) Within-area median split on RF area: alpha of the smaller-RF and larger-RF halves in each cortical area."
+  },
+  {
+   "path": "files/figures/fig3_mechanisms.png",
+   "caption": "(a) Phase-dependent fraction of reliable static-grating variance by structure (95% mouse bootstrap). (b) Grating alpha (ranks 2-15) for all 120 conditions (orange) and after averaging over the 4 phases (violet); lines are cortical fits. (c) alpha of image-computable model populations on the 118 images as a function of an RF diameter scale factor, for three model types; grey band: measured cortical range; dashed line: VISam/VISp RF diameter ratio."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We extend this result. We reuse and adapt its extraction and cvPCA code, reproduce its natural-image values, and show that the gradient holds for other stimuli and after RF controls."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Related campaign result on a reliability gradient from the retina; it motivated the reliability covariate in the matching."
+  },
+  {
+   "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4",
+   "reason": "Related campaign reanalysis of the saved spectra (full-profile crossings between VISl and VISp)."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA method and power-law spectrum framework."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels dataset, RF metrics and the published hierarchy score values."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms of use for the external Allen data."
+  }
+ ]
+}

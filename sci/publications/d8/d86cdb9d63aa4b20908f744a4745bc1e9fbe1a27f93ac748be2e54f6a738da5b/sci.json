@@ -1,0 +1,164 @@
+{
+ "title": "HD 93683: Tycho, ASAS-3 and TESS eclipse depths from 1990 to 2026 fit one inclination drift of -0.33 deg/yr with central eclipse near 1999; added light from the Be star does not cause the eclipse loss",
+ "abstract": "HD 93683 (V736 Car) is an O9V+B0V eclipsing binary (P = 17.80 d, e = 0.27) with a Be-type third star. Its eclipses faded in TESS from 2019 to 2026. A prior campaign study and Martin-Ravelo et al. (2024) reported this; the second study proposed dilution by the Be star or a change of the orbital plane. We added Tycho epoch photometry (1990-1993), ASAS-3 (2001-2009), Harvard DASCH plates (1889-1989) and TESS full-frame images, and fitted one model of two limb-darkened spheres on an eccentric orbit with third light and a linear inclination drift to all data. Dilution does not explain the loss: the TESS primary depth fell by a factor of more than 10, but the TESS flux changed by less than 3.1 percent, ASAS-3 V by less than 0.02 mag, and the eclipse width and the secondary/primary depth ratio changed. A fit to TESS alone predicts the ASAS-3 depths of 2002-2008 (0.24-0.26, 0.20-0.21, 0.16-0.17 mag predicted; 0.28 +- 0.04, 0.24 +- 0.03, 0.19 +- 0.02 observed). A fit to TESS and ASAS-3 predicts the Tycho eclipses: Tycho shows dimming at a time shift of -0.28 d (Delta chi2 = 33.4; largest control 2.0) with a depth of 0.2-0.3 mag, and rejects models with third light below 0.3. The joint fit gives di/dt = -0.325 (+0.008/-0.009) deg/yr, i = 90 deg in 1998.7 (+1.2/-0.7), third light 0.51 +- 0.03 and radii consistent with O9V+B0V; eclipses deeper than 0.01 mag lasted from about 1972 to 2022.5. Sensitivity tests (band-dependent third light, free Tycho time offset) give -0.330 to -0.337 deg/yr and 1999-2001. REBOUND integrations show that this rate needs an outer period below about 4 yr (circular outer orbit, third star 8-25 Msun) and below about 12 yr in all tested cases; this agrees with the Gaia DR3 excess noise of 0.81 mas. A blind DASCH search finds no eclipses in 1889-1990 but is sensitive only to long-lasting central eclipses in 1889-1925 (85 percent recovery), so it does not constrain the precession period. Limits: a linear apsidal motion does not fit the Tycho eclipse times (offset -0.29 +- 0.04 d), omega-dot is not determined, the star model is simple, and the MCMC is short.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "eclipsing binaries",
+  "hierarchical triple stars",
+  "nodal precession",
+  "orbital inclination change",
+  "eclipse depth variation",
+  "HD 93683",
+  "V736 Car",
+  "Be stars",
+  "TESS",
+  "Tycho epoch photometry",
+  "ASAS-3",
+  "DASCH",
+  "Gaia DR3",
+  "N-body",
+  "REBOUND"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_depth_history.png",
+   "caption": "Eclipse depth of HD 93683 from 1955 to 2030. Points: Tycho (1991, diamonds), ASAS-3 (2002-2008, squares) and TESS (2019-2026, circles); filled = primary, open = secondary; depths are scale factors of the joint model times the model depth. Lines and bands: joint linear-inclination model (V band; median and 95 percent of 40 posterior samples). TESS depths are in the TESS band and the model curves are in V. Grey: no DASCH plates."
+  },
+  {
+   "path": "files/figures/fig4_dilution_test.png",
+   "caption": "Dilution test. Left: the flux increase that dilution needs (ratio of primary depths, triangles) and the measured TESS flux (circles, squares); the measured flux is constant to 3 percent. Right: Gaussian width against depth of each TESS eclipse; the width decreases with the depth, which dilution cannot do."
+  },
+  {
+   "path": "files/figures/fig3_tycho_asas.png",
+   "caption": "Left: improvement of the Tycho chi2 when the eclipse model predicted from TESS and ASAS-3 alone is shifted in time (free depth scale); the peak at -0.28 d is the detection; side peaks are aliases where one model eclipse falls on the other data eclipse. Middle and right: Tycho (1990-1993) and ASAS-3 (2001-2009) magnitudes near the model eclipses (primary at 0, secondary shifted by +3 d) with the joint model."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We extend this study of HD 93683. We reuse its ASAS-3 point table and its TESS 2-min detection. Our results support a geometric cause, but its linear impact-parameter model put central eclipse near 1980; Tycho data put it near 1999."
+  },
+  {
+   "target": "https://arxiv.org/abs/2409.03205",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Martin-Ravelo et al. (2024, YMDB catalogue) reported the TESS eclipse decrease of HD 93683 and proposed dilution by the Be star or a change of the orbital plane. Our flux data reject dilution."
+  },
+  {
+   "target": "sci:sha256:96d47af409125b7234db1e914f0900061522fc8e0d1fc46ef811acbcb5fd961b",
+   "reason": "Related population search for steady eclipse-depth changes."
+  },
+  {
+   "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+   "reason": "Related campaign work on dynamical changes from TESS timing."
+  },
+  {
+   "target": "sci:sha256:d18fffbf28b565aadb86a340119ed23e9e3476de9475b84f6122354a81843846",
+   "reason": "Related campaign work on third-body orbits tested with TESS."
+  },
+  {
+   "target": "sci:sha256:ce970001ac2e5a5ce7af8cf8b42f86e0abd681382bb5eac4f2e9d5d71f5184b2",
+   "reason": "Related campaign work that combines TESS with older survey data."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission (Ricker et al. 2015)."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC light curves from MAST."
+  },
+  {
+   "target": "https://mast.stsci.edu/tesscut/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESScut FFI cutouts."
+  },
+  {
+   "target": "https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/239",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hipparcos and Tycho Catalogues (ESA 1997), Tycho Epoch Photometry Annex B."
+  },
+  {
+   "target": "https://www.astrouw.edu.pl/asas/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 V photometry (Pojmanski 2002, Acta Astron. 52, 397)."
+  },
+  {
+   "target": "https://ibvs.konkoly.hu/pub/ibvs/5601/5681.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Otero (2006) ASAS ephemeris of HD 93683, used to mark eclipse phases in the ASAS-3 flux test."
+  },
+  {
+   "target": "https://dasch.cfa.harvard.edu/dr7/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DASCH DR7 photographic plate photometry of the Harvard plate collection."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 (Gaia Collaboration 2023): RUWE, astrometric excess noise, neighbours."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201118085",
+   "relations": [
+    "uses"
+   ],
+   "reason": "REBOUND N-body code (Rein and Liu 2012)."
+  },
+  {
+   "target": "doi:10.1093/mnras/stv1257",
+   "relations": [
+    "uses"
+   ],
+   "reason": "WHFast integrator (Rein and Tamayo 2015)."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler (Foreman-Mackey et al. 2013)."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2016AJ....152..190A/abstract",
+   "reason": "Alexander et al. (2016): HD 93683 as a double-lined binary with a Be-type companion (as cited by the YMDB paper)."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..42B/abstract",
+   "reason": "Bodensteiner et al. (2020): Be star companions (as cited by the YMDB paper)."
+  }
+ ]
+}
