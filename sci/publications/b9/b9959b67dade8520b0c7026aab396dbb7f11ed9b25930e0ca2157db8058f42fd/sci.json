@@ -1,0 +1,134 @@
+{
+ "title": "BBS observers recorded about 41% fewer birds that sing at 7 kHz or more after 20 years on a route; route x observer models put this loss into 1966-2025 trends of 446 species",
+ "abstract": "Question: long-serving North American Breeding Bird Survey (BBS) observers record fewer high-pitched birds. Standard trend models use observer-route effects and assume that detection does not drift while one observer serves. How large is the resulting bias in species trends? Data: 130,303 standard BBS runs (2026 release, 1966-2025; 5,319 routes; 10,417 observers), 446 species, song frequencies of Sagar et al. (2024), GHCN_CAMS climate, and the official USGS 1966-2025 trends (CC0). Methods: for each species, conditional Poisson models with (A) route x observer effects, (B) route effects, and (C) route effects plus a tenure term that resets at each observer change; all with year effects. We wrote the plan before we calculated trends. Post-hoc: tenure bins, end-of-service terms, a simulation, and song frequency as an external instrument. Results: the count change per year of tenure was -0.13% below 3 kHz, -0.55% at 3-5 kHz, -1.23% at 5-7 kHz and -2.06% at 7 kHz or more (slope -0.30% per kHz, SE 0.05). After a small gain in the first 2-4 years, counts after 20 or more years on a route were +2%, -8%, -24% and -41% relative to the first run in these classes. The visual control groups (raptors, water birds, swallows, swifts) had no late loss, but their linear drift also decreased with frequency. Model A put all of the drift into the trend (fraction 1.16, 95% CI 0.96-1.44). Its median 1966-2025 trends were 1.7 points per year lower than model C at 5-7 kHz and 0.4 lower below 3 kHz. A minus the drift had no frequency dependence (0.05). In the simulation, model C recovered the true trend and drift. The official USGS trends carried an uncertain part of the drift (0.39, CI -0.27 to 0.77); the pre-specified tests did not find it. Cold-adapted species had more drift (+0.053% per year per 1 C), which gives a false CTI warming of about 0.04 C per 10 years of tenure. With the drift removed, cold-adapted species did not decline more than warm-adapted species. Limitations: observer ages are not known; tenure is a proxy; the correction assumes no cohort-specific detection; a frequency-independent difference of 0.2-0.4 points per year between models remains unexplained; only 10 species sing at 7 kHz or more. Conclusion: route x observer trend models make trends of high-pitched, often cold-adapted species too negative unless they model tenure.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "observer effects",
+  "observer tenure",
+  "hearing loss",
+  "song frequency",
+  "detection bias",
+  "population trends",
+  "trend estimation",
+  "community temperature index",
+  "species temperature index",
+  "climate tracking",
+  "age-period-cohort",
+  "birds",
+  "North America",
+  "conditional Poisson"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_tenure_shape.png",
+   "caption": "Count difference from an observer's first run on a route, by years on the route and song frequency class (random-effects means of species, 95% CI; model with route, year and tenure-bin effects). Dashed: visual control groups."
+  },
+  {
+   "path": "files/figures/fig3_trend_difference.png",
+   "caption": "Median species difference of 1966-2025 trends from the tenure-corrected trend C, by frequency class (95% bootstrap CI). Route x observer models (A) are too low for high-pitched species; A minus the drift (A*) has no frequency pattern."
+  },
+  {
+   "path": "files/figures/fig1_drift_vs_frequency.png",
+   "caption": "Count change per year of observer tenure (model C) against dominant song frequency, for species detected mainly by song and for the a priori visual control groups. Squares: random-effects means by frequency band."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its turnover design, species matching and song-frequency data. We confirm its frequency-dependent tenure drift with a second estimator and extend it from the CTI to species population trends."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its observer fixed-effect CTI trend and tenure signal agree with our result that route x observer models carry the full tenure drift."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "It found that observer fixed effects made bird trends more negative; our models give the frequency-dependent part of this difference."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Related species-level weak tracking result from the same BBS release; detection drift can affect its within-observer responses."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Synthesis of weak climate tracking; the BBS network in it can contain the tenure drift that we measure."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Related BBS range-shift result; detection drift can also affect centroids of high-pitched species."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Another case in which detection changes affect climate-tracking estimates (Finnish atlas)."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Another detection artefact in long-term animal records (Japanese phenology network)."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Part of the campaign series on weak climate tracking."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Part of the campaign series on weak climate tracking; its diver-team effects are a similar observer problem."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Related BBS result on spatial and temporal CTI slopes."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BBS 2026 data release (1966-2025)."
+  },
+  {
+   "target": "doi:10.5066/P1OSNSFC",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Official USGS BBS analysis results 1966-2025 (CC0)."
+  },
+  {
+   "target": "doi:10.5061/dryad.69p8cz99k",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Song frequency data of Sagar et al. 2024 (CC0)."
+  },
+  {
+   "target": "doi:10.1098/rspb.2024.1908",
+   "reason": "Sagar et al. 2024, global analysis of bird acoustic frequency."
+  },
+  {
+   "target": "doi:10.1002/ece3.1101",
+   "reason": "Farmer et al. 2014, observer aging and long-term avian survey data quality; prior evidence of age effects on BBS detection."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS monthly temperature for the species temperature index."
+  }
+ ]
+}
