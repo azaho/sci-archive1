@@ -1,0 +1,102 @@
+{
+  "title": "The HD 93683 drift gives an outer-period limit of 4.3 years at quadrupole order for M12 = 33, m3 = 8-25 solar masses and e2 <= 0.5",
+  "abstract": "We use published inclination drifts of HD 93683 and HD 303514 to test their third-body models. We derive the largest possible sky-inclination rate from the standard double-averaged quadrupole torque. The bound includes inner eccentricity and does not require a known outer orientation. For HD 93683, the reported rate of 0.325 degrees per year, inner period of 17.8 days, eccentricity of 0.27, inner mass of 33 solar masses, third-star mass of 8-25 solar masses and outer eccentricity at most 0.5 give an outer-period ceiling of 4.25 years. The ceiling is 3.42 years for a circular outer orbit and 6.47 years if the third-star mass is unrestricted. Exact Newtonian averages over fixed orbits differ from the quadrupole rate by at most 0.69 percent in 36 tested cases with outer periods of 4-12 years. In 48 three-body integrations, a 12-year outer orbit can have short normal-speed peaks above the reported drift, but the largest 36-year inclination slope is only 0.043 degrees per year. Short peaks therefore give a weak test of a steady drift. We also derive a joint torque and radial-velocity test. In the circular-inner model for HD 303514 with inner mass of 5 solar masses, any 4-year companion orbit needs a binary-centre velocity amplitude of at least 7.72 km/s for outer eccentricity zero, or 5.61 km/s for outer eccentricity 0.5, after minimization over third-star mass and orientation. These are conditional bounds, not companion detections. We use prior aggregate measurements and do not refit photometry. Larger outer eccentricity, a different inner model, other torques, and the real time sampling require further tests. Code, synthetic trajectories, source hashes and reproduction instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "HD 93683",
+    "HD 303514",
+    "eclipsing binaries",
+    "nodal precession",
+    "hierarchical triples",
+    "quadrupole torque",
+    "radial velocity",
+    "orbital nutation",
+    "conditional bounds",
+    "reproducible methods"
+  ],
+  "display": [
+    {
+      "path": "files/figures/constraints.png",
+      "caption": "Conditional companion constraints. Left: the largest secular outer period for HD 93683, for inner mass 33 solar masses, inner eccentricity 0.27 and drift 0.325 degrees per year. The shaded mass range is 8-25 solar masses. Right: the smallest binary-centre radial-velocity amplitude for HD 303514 in the circular-inner model with inner mass 5 solar masses and drift 0.102 degrees per year. Each curve minimizes over all third-star masses and outer orientations. These curves use double-averaged Newtonian quadrupole dynamics."
+    },
+    {
+      "path": "files/figures/nutation.png",
+      "caption": "Three-body examples with third-star mass 25 solar masses, initial mutual angle 45 degrees, inner eccentricity 0.27 and outer eccentricity 0.5. The outer periods are 4, 8 and 12 years. Left: inclination change for one fixed observer, initially at 85 degrees. The dashed line is the published drift, shown as a reference. Right: the sampled instantaneous speed of the inner orbit normal. Short peaks above the reference rate can occur even when the long-term inclination slope is small. Initial outer mean anomaly and argument of pericentre are zero. These examples are diagnostic; they are not fits to the observed light curves."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d86cdb9d63aa4b20908f744a4745bc1e9fbe1a27f93ac748be2e54f6a738da5b",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We use its HD 93683 drift, eccentricity and adopted masses. We strengthen the conditional secular period limit and test its use of maximum orbit-normal speed."
+    },
+    {
+      "target": "sci:sha256:575e53bd97d3bf41769932250f0702d481c2a7b004d3e78e63fdf9c0118d4586",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its HD 303514 period, approximate inclination and drift to make a conditional radial-velocity test."
+    },
+    {
+      "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Initial campaign report of the HD 93683 eclipse loss."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2396",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Liu, Munoz and Lai (2015), equations 17 and 21 give the standard vector quadrupole dynamics used as the starting point."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201730655",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Jurysek et al. (2018) used inclination changes to constrain third bodies. This establishes prior work on the method."
+    },
+    {
+      "target": "https://arxiv.org/abs/2409.03205v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Martin-Ravelo et al. reported variable eclipse depths of HD 93683 before the campaign."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085",
+      "relations": [
+        "uses"
+      ],
+      "reason": "REBOUND is used as an external numerical library. It is not bundled."
+    },
+    {
+      "target": "doi:10.1093/mnras/stv1257",
+      "relations": [
+        "uses"
+      ],
+      "reason": "WHFast integrator for the three-body checks."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2164",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IAS15 gives an independent integrator check."
+    }
+  ]
+}

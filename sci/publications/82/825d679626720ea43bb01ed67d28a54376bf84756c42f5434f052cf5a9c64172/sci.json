@@ -1,0 +1,118 @@
+{
+  "title": "Heatwave-day trends stay positive under 0.14 C SST changes in 29,120 OISST cells in 1982-2025 with a 1983-2012 baseline",
+  "abstract": "Daily OISST input changes can bias marine heatwave metrics. We ask which event-day trend signs survive a whole class of changed SST records. We prove safe bounds that include new seasonal percentile thresholds, the five-day event rule, two-day gap joins, and signed OLS trend weights. We apply them to 29,120 ice-free native-pixel samples between 60 S and 60 N in OISST v2.1, 1982-2025. With a 1983-2012 baseline, the reference heatwave-day trend is +21.18 days per decade. Every record that differs by at most 0.14 C on every input day and cell still has a trend of at least +0.88 days per decade. The certificate fails at 0.15 C; this does not prove a reversal. At 0.10 C both the heatwave-day increase and cold-spell-day decrease are certified with either tested baseline. A second proof permits rare large changes through quantile-rank and local-influence bounds. With other changes at most 0.05 C, at most five large changes per 330-value baseline pool, and a total large-error area-time fraction at most 0.1%, the heatwave-day trend stays above +3.15 days per decade. The cold-spell sign is not certified under that budget. Four sampling phases give the same full-record amplitude grid radii. Ending in 2021 gives smaller heatwave radii. Exhaustive binary tests, random changed records, an external reference check, and aggregate audits pass. These are conservative finite-record sensitivity bounds, not confidence intervals. Real OISST errors are not shown to satisfy the budgets. Raw data and grid sampling overlap prior studies. The method does not bound event count or mean duration. Code, proofs, figures, aggregate evidence, and exact source hashes are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "OISST",
+    "marine heatwaves",
+    "marine cold spells",
+    "SST uncertainty",
+    "event days",
+    "trend bounds",
+    "quantile robustness",
+    "large errors",
+    "data homogeneity"
+  ],
+  "display": [
+    {
+      "path": "files/figures/amplitude_bounds.png",
+      "caption": "Safe annual and trend bounds under all daily SST changes within a stated amplitude. New percentile thresholds are included. These are conditional outer bounds, not confidence intervals."
+    },
+    {
+      "path": "files/figures/local_bounds.png",
+      "caption": "Local lower heatwave-day and upper cold-spell-day trend bounds at 0.10 C. The signs are certified where the bounds stay on the corresponding side of zero."
+    },
+    {
+      "path": "files/figures/large_error_bounds.png",
+      "caption": "Limiting area-time budgets for arbitrarily large input changes, conditional on the ordinary amplitude bound and the stated replacement cap in each baseline pool. Both assumptions are required."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its published findings to define the question. Raw SST sources overlap. This is a new conditional bound analysis, not independent observations."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its published findings to define the question. Raw SST sources overlap. This is a new conditional bound analysis, not independent observations."
+    },
+    {
+      "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its published findings to define the question. Raw SST sources overlap. This is a new conditional bound analysis, not independent observations."
+    },
+    {
+      "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its native-pixel sample design and compare with its published heatwave-day conclusion. We independently read the shared raw files and add bounds over classes of changed records."
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014",
+      "reason": "The event definition and threshold method."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "The NOAA OISST v2.1 product."
+    },
+    {
+      "target": "doi:10.1175/2007JCLI1824.1",
+      "reason": "The daily OISST analysis method."
+    },
+    {
+      "target": "doi:10.3389/fmars.2019.00737",
+      "reason": "Prior tests of data limitations in MHW detection."
+    },
+    {
+      "target": "doi:10.1038/s43247-024-01369-9",
+      "reason": "Prior cross-product MHW uncertainty in Asia and the Indo-Pacific."
+    },
+    {
+      "target": "doi:10.1029/2026GL124134",
+      "reason": "Prior global coastal cross-product comparison."
+    },
+    {
+      "target": "doi:10.3389/fmars.2023.1168368",
+      "reason": "Prior use of plus/minus SST error envelopes in MHW analysis. We add conditional proofs for recalculated thresholds and trend functionals."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The 44 exact NOAA source files are listed with hashes in provenance."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official source version and input-change description."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/ecjoliver/marineHeatWaves/d7292bf08ade0af213fa760b0d7e4adfe5f52894/marineHeatWaves.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned unbundled reference code for the 48-case validation. Source hash and numpy compatibility changes are recorded."
+    }
+  ]
+}
