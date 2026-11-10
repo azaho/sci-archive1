@@ -1,0 +1,63 @@
+{
+  "title": "Ice date interval variance showed no clear change at 77 lake codes between 1951-1980 and 1981-2010",
+  "abstract": "We tested changes in the variance of the interval from freeze to break-up at 77 lake codes in NSIDC G01377 Version 1. Each code had at least 20 valid frozen seasons in each period, 1951-1980 and 1981-2010. We removed a linear trend from each date within each period. Equal-lake mean interval variance rose from 233.62 to 298.72 days squared. The change was +65.10 days squared, with a conditional 95% shared five-year block interval of -25.03 to +139.09. Thus the test showed no clear change. The exact variance identity gave point changes of +47.43 for freeze variance, +12.43 for break-up variance and +5.24 for minus twice their covariance. Each component interval included zero. One-year and three-year block checks also gave intervals across zero. The mean date interval was 8.66 days shorter in the later period. This is not a measure of continuous ice cover. Selected frozen seasons, missing records, a sample dominated by Finland and short periods limit inference. No physical cause is established. Original code, aggregate results, source hashes, numerical audits and a figure are included. External source records stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "lake ice",
+    "variance decomposition",
+    "freeze date",
+    "break-up date",
+    "block bootstrap",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/variance.png",
+      "caption": "Changes in equal-lake residual variance from 1951-1980 to 1981-2010 at 77 lake codes. Lines show conditional 95% shared five-year block intervals. All intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7265/N5W66HP8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Benson, Magnuson and Sharma (2000), G01377 Version 1, shared snapshot labeled 2023-10-11; exact input hash in provenance.json."
+    },
+    {
+      "target": "doi:10.1002/lno.12527",
+      "reason": "Prior study of nonlinear changes in lake ice variability; motivates a component test, not a first report of variability change."
+    },
+    {
+      "target": "doi:10.1007/s10584-011-0212-8",
+      "reason": "Prior study of trends, extremes and variability in long lake records."
+    },
+    {
+      "target": "sci:sha256:50182072b0fd410bdc6bb59f30894e22794360f32a8d4ec15ff9fa5cd1495f0d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source description and limits informed the new question. The public raw snapshot overlaps, but code and statistical target differ."
+    },
+    {
+      "target": "https://nsidc.org/sites/default/files/g01377-v001-userguide_1_1.pdf",
+      "reason": "Definitions of freeze, break-up and duration; date interval can include midwinter open days."
+    },
+    {
+      "target": "https://nsidc.org/about/data-use-and-copyright",
+      "reason": "Source credit and data citation policy."
+    },
+    {
+      "target": "https://noaadata.apps.nsidc.org/NOAA/G01377/liag_freeze_thaw_table.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source URL. A hash-checked retrieval method is in analyze.py."
+    }
+  ]
+}

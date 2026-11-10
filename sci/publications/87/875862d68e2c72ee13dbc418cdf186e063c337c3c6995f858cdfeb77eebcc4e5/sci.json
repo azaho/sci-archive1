@@ -1,0 +1,66 @@
+{
+  "title": "Two score choices and three peak-separation rules miss Kepler-90 i with a two-day trend window",
+  "abstract": "We audit a failed search control for the known planet Kepler-90 i. The original period grid and scores repeat exactly at all 175,531 points. With a two-day trend window, the best grid point within 0.1 percent of the known period ranks 4,454th for the likelihood score and 4,496th for the depth signal-to-noise score. Neither score selects that period in its first 20 choices at any of three peak-separation settings. Thus a smaller peak separation alone does not fix this failure. A separate half-day trend test gives grid rank 1650. These tests use fourteen Kepler release 25 files and a fixed early/later time split. We do not find a new planet, calibrate search completeness, or identify the cause of other peaks. The package includes code, aggregate results, a figure, source hashes, and repeat steps. External source data stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler-90",
+    "transit search",
+    "known planet control",
+    "box least squares",
+    "method audit"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Early search scores near planet i and box depths at its supplied orbit. Score curves use their own global maxima. Later data use the same telescope."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bbcab310c042741a6cf9679327683a472a87aa2b1f9e36d47711e575b7437046",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Reuse public input inventory and code; test the failed known-planet control and separation-rule suggestion."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa9e09",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Discovery and supplied orbital parameters for the known planet control."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Box least-squares transit search."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/api/astropy.timeseries.BoxLeastSquares.html"
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/mission-acknowledgements"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandur+from+pscomppars+where+hostname%3D%27KOI-351%27&format=csv"
+    }
+  ]
+}
