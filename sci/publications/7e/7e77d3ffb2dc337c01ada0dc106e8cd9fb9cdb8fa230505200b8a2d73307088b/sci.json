@@ -1,0 +1,78 @@
+{
+  "title": "Mean daily flow concentration exceeded historical estimates across 69 Victorian gauges in 2010-2019",
+  "abstract": "We tested the share of annual flow in the highest 5% of observed daily flows at Victorian gauges. We used CAMELS-AUS v2.03 and fitted separate historical models with annual flow volume, daily rain concentration and seasonal rain fractions. Coverage rules retained 69 gauges, 2,608 training rows in 1950-1996 and 662 test rows in 2010-2019. The mean observed-minus-predicted share across gauges was +5.64 percentage points. Its conditional 95% spatial and time block interval was +1.86 to +10.32 points. A check with 1,000 training refits gave limits of +1.47 to +11.47 points; some resampled fits lost rank. The observed post-period share was 36.37%; the model predicted 30.73%. This is a model residual, not a raw increase of 5.64 points. Complete years, SILO rain, a bounded response model and individual training-range restrictions retained positive intervals. A historical test gave uncertain squared-error improvement from the rain terms and a negative mean residual. The result limits this fixed conditional relation. It does not identify a drought cause, groundwater loss, larger absolute floods or a permanent change. Selected and nested gauges, short time support, measurement error and model form limit inference. The package gives code, aggregate evidence, resampling draws, a static figure, source hashes and repeat instructions. External source records and derived gauge databases stay outside the signed bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Millennium Drought",
+    "Victoria",
+    "daily streamflow",
+    "flow concentration",
+    "CAMELS-AUS",
+    "drought recovery",
+    "historical model",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/results/flow_concentration.png",
+      "caption": "Daily flow concentration at 69 Victorian gauges. The left panel shows annual observed and modelled means; gauge coverage can change by year. The grey band marks 1997-2009. The middle panel gives equal-gauge 2010-2019 mean residuals and 95% intervals. The right panel gives sensitivity checks. Positive residuals mean greater annual flow concentration than the fixed historical relation predicts. These are conditional model results, not estimates of a causal drought effect."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:672c039d9e43607ac87973a55327f96bf0a3fa9ed71b643f31d4e16713710b97",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its annual runoff and daily rain test motivated a different test of daily flow distribution. Source records overlap; code and record tables are not copied."
+    },
+    {
+      "target": "sci:sha256:a543d03e2deabf3a55ebe32181f276d675340df270f3d065da0a4d3795d4979d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign study of annual runoff memory. We test annual flow concentration with overlapping source data."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2.03 supplies public source records. Exact source paths and hashes are recorded. Source and record-level derived data remain external."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source data description and quality cautions."
+    },
+    {
+      "target": "doi:10.1126/science.abd5085",
+      "reason": "Prior evidence of persistent runoff states in Victoria."
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022",
+      "reason": "Prior review of rainfall, groundwater and other possible controls on runoff shifts."
+    },
+    {
+      "target": "doi:10.1029/2024WR039750",
+      "reason": "Prior 2026 analysis of rainfall deficits and the timing of runoff state shifts."
+    },
+    {
+      "target": "https://zenodo.org/records/14289037/files/CAMELS_AUS_v2_Data_Description.pdf",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://creativecommons.org/licenses/by/4.0/",
+      "reason": "External source data terms; these do not replace the signed SCI baseline license."
+    }
+  ]
+}

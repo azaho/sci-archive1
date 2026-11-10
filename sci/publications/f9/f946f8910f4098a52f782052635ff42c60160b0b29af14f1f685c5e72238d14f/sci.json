@@ -1,0 +1,75 @@
+{
+  "title": "Fixed local pressure slopes reduced mean sea-level reconstruction error at four West Coast gauges in 1990-2024",
+  "abstract": "We tested a fixed local pressure response of -10 mm per hPa at San Diego, San Francisco, Astoria and Seattle. Models used monthly means from PSMSL and NCEP-NCAR Reanalysis 1. We fitted month effects and a linear trend in 1960-1989 and tested 1,664 site-months in 1990-2024. The fixed pressure term reduced the equal-site mean squared error by 29.38%. Its conditional 95% five-year block interval was 26.36% to 32.03%. The mean gain at the two northern sites exceeded that at the two California sites by 19.72 percentage points, with an interval of 16.04 to 25.24 points. Expanding and rolling fits gave similar mean gains. A quadratic trend kept a positive mean gain, but its north-south contrast interval included zero. A pressure slope fitted in the early period gave a larger primary mean gain, but did not transfer well under the quadratic trend. This test supports local pressure as a useful reconstruction term. It does not isolate atmospheric loading from wind and ocean effects, predict floods, or establish a new physical mechanism. The package gives code, aggregate errors, resampling evidence, figures, source hashes and an independent numerical audit. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "atmospheric pressure",
+    "inverse barometer",
+    "West Coast",
+    "held-out reconstruction",
+    "trend sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/outputs/result.png",
+      "caption": "Fixed and early fitted local pressure slopes reduced primary mean reconstruction error. Lines show conditional five-year block intervals. The pressure term uses the target month; this is not a forecast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:044ac87f66bae876bd3aa040284a6ad50471cc67449591b0a4350ef500a8f0a0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public PSMSL snapshot and site selection reused; new concurrent pressure test and new code."
+    },
+    {
+      "target": "https://journals.ametsoc.org/abstract/journals/phoc/12/8/1520-0485_1982_012_0757_mmslva_2_0_co_2.xml",
+      "reason": "Prior monthly pressure and sea-level study. Publisher abstract read through search."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-13-00225.1",
+      "reason": "Prior wind study applies a pressure correction. Indexed methods read; full-page access failed."
+    },
+    {
+      "target": "doi:10.2112/JCOASTRES-D-12-00175.1",
+      "reason": "Required PSMSL dataset description credit."
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/notes.php",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ncep.reanalysis.derived/surface/slp.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
