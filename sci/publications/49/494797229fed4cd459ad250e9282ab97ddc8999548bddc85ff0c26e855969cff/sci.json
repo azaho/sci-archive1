@@ -1,0 +1,134 @@
+{
+ "title": "Across 171 mouse brain regions, input wiring but not cell-type mix predicted similar task coding, while cell-type mix was the stronger predictor of similar intrinsic spiking (IBL)",
+ "abstract": "Question: do input wiring and local cell types set the same aspects of regional physiology? Earlier work found that cell-type mix predicts intrinsic spiking similarity more than wiring, and that axonal input predicts which task variables a region encodes, but it did not test cell types for coding. Data: 171 IBL Brain-Wide Map regions with published decoding scores of 5 task variables (coding) and 8 spike features of 62,049 units (intrinsic); Knox 2019 connectome; Allen MERFISH subclass composition. Method: a plan frozen before analysis. For region pairs, phenotype similarity was regressed jointly on input-fingerprint similarity (F_in), output similarity and composition similarity (T), with geometry and sampling controls. The wiring share s is the unique R2 of F_in over the unique R2 of F_in plus T. Inference used 1,000 spatial surrogate maps per family and a leave-one-region-out jackknife. Results: F_in predicted coding similarity beyond T (beta 0.17, surrogate p = 0.011), but T did not (beta -0.02, p = 0.66). The wiring share was 0.98 for coding and 0.25 for intrinsic phenotype (difference 0.73, 95% CI 0.33 to 1.14; Holm p = 0.0004). The F_in beta was equal in the two families; the T beta was lower for coding (difference -0.26, CI -0.41 to -0.12). Independent Steinmetz 2019 coding data gave the same direction (F_in 0.16, p = 0.045; T -0.05) with a wide interval. An inheritance model agreed: coding followed input sources, not similar-cell-mix regions. Limitations: correlational, region-level, one connectome and one MERFISH brain; small unique variances make the ratio noisy; the coding link depends mostly on feedback decoding and partly on the thalamus; coding reliability could not be measured.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function",
+  "connectivity fingerprint",
+  "cell types",
+  "MERFISH",
+  "Knox 2019",
+  "IBL Brain-Wide Map",
+  "task coding",
+  "decoding",
+  "spiking phenotype",
+  "spatial autocorrelation",
+  "brainsmash",
+  "mouse",
+  "Steinmetz 2019",
+  "double dissociation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dissociation.png",
+   "caption": "Unique variance and wiring share of input wiring (F_in) and cell-type mix (T) for coding and intrinsic phenotype similarity across 171 IBL regions; coding betas against 1,000 spatial surrogates."
+  },
+  {
+   "path": "files/figures/fig2_robustness.png",
+   "caption": "Difference of wiring share (coding minus intrinsic) in pre-listed variants and with one brain division left out."
+  },
+  {
+   "path": "files/figures/fig3_features_inheritance.png",
+   "caption": "Single-feature joint betas (exploratory) and the inheritance model (coding and intrinsic scores against input-source, cell-mix, distance and co-recording neighbour means)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its structure and phenotype code and confirm its intrinsic-phenotype result on 171 regions; we extend it to task coding."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its Steinmetz 2019 region decoding scores and test its listed cell-type confound; the input-coding link stayed after control of cell-type composition."
+  },
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "reason": "Prior thalamic burst result in the same research line."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Prior wiring-specificity test in mouse."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Prior wiring-specificity test in larval zebrafish."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "reason": "Prior test of transcriptomic diversity and spike-feature diversity."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09226-1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/int-brain-lab/paper-brain-wide-map/blob/de37454426bc4107047b5a18b854fc1ef7a5959c/brainwidemap/meta/region_info.csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1787-x",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/nature13186"
+  },
+  {
+   "target": "doi:10.1038/nrn893"
+  }
+ ]
+}
