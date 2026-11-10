@@ -1,0 +1,147 @@
+{
+ "title": "ERA5 SST day-to-day variance rose 4.9-fold at the 2007 HadISST2-to-OSTIA switch and biases its heatwave trends; with one common noise spectrum ERA5 and OISST agree on detrended trends (60S-60N)",
+ "abstract": "Question: Daily NOAA OISST v2.1 has steps in fast (sub-monthly) variance at input changes, and these steps bias marine heatwave (MHW) statistics. Does ERA5, the other daily SST product that many MHW studies use, have the same problem? If two products receive one common correction, do they agree? Approach: We read ERA5 SST at 12 UTC for 1979-2025 from ARCO-ERA5 at 28,805 ice-free one-degree sample cells (60S-60N), collocated with OISST. We measured fast variance, searched for change points, compared both products with up to 173 moored buoys, and calculated Hobday et al. (2016) statistics (1983-2012 baseline) for published data and for versions matched to one common target spectrum at periods shorter than about 32 days. Results: ERA5 day-to-day variance increased 4.9-fold on 2007-09-01, when its SST input changed from HadISST2 to OSTIA. Before this date ERA5 has 0.00-0.05 times the buoy power at 2-8 days. OISST steps go the other way. At 127 buoys, published ERA5 has a too-low MHW frequency trend (-0.135 events per year per decade, p = 2e-6), a too-high peak-intensity trend (+0.085 C per decade, p = 8e-12) and a false memory loss; after homogenisation these biases are not significant. Over the ocean, published ERA5 minus OISST trend differences are +0.090 C per decade for MHW peak intensity, -0.26 events per year per decade for frequency and +0.095 and -0.184 C per decade for the annual maximum and minimum anomaly. Homogenisation reduces them to -0.016, -0.12, -0.023 and -0.059. With each product's own linear trend removed, homogenised ERA5 and OISST agree on MHW and cold-spell duration, frequency and peak intensity within 0.06 per decade. A 0.043 C per decade slower mean warming in ERA5 remains and explains most of the remaining MHW-day and duration differences; at the buoys OISST drifts warm (+0.034 C per decade) and ERA5 does not (-0.009). Limitations: the correction fixes spectra, not event timing (day-level agreement stays near 0.3 before 2007); pre-2007 ERA5 fast variance after correction is synthetic; buoys feed both products and sample only the tropics and US waters; the study does not decide which mean warming rate is correct.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "marine heatwaves",
+  "ERA5",
+  "OISST",
+  "sea surface temperature",
+  "homogenisation",
+  "data inhomogeneity",
+  "OSTIA",
+  "HadISST2",
+  "cold spells",
+  "climate indicators",
+  "moored buoys",
+  "spectral matching"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_fast_variance.png",
+   "caption": "(a) Monthly day-to-day SST anomaly variance of ERA5 and OISST v2.1 on 28,805 common cells; ERA5 rises 4.9-fold on 2007-09-01 (HadISST2 to OSTIA). (b, c) Median product/buoy power ratio by period in each ERA5 and OISST input segment."
+  },
+  {
+   "path": "files/figures/fig3_series.png",
+   "caption": "Annual 60S-60N means of MHW duration, frequency, peak intensity and cold-spell duration for published (solid) and homogenised (dashed) ERA5 and OISST. Dotted lines: input changes in 2007."
+  },
+  {
+   "path": "files/figures/fig2_trends.png",
+   "caption": "1982-2025 trends per decade with 95% block-bootstrap intervals for published, common-target homogenised and 32-day low-pass versions of OISST and ERA5."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its MHW code, spectral matching method, segments and target; our cross-product test supports its homogenised OISST trends."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its parsed daily buoy SST, OISST at buoy cells and buoy points."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its OISST extreme and MHW biases agree with our cross-product result."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Original finding of OISST fast-variance steps."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "ESA CCI and buoy check of OISST variance steps."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We find MHW-day trends robust to noise steps in a second product."
+  },
+  {
+   "target": "sci:sha256:b4e19931a50ff723ade22d6598905c36d31554ac920712486c689178d876aae8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "MHW count trends differ by product noise, as its bounds allow."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Related robustness bounds for MHW area."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Input steps in spatial SST statistics."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Input steps in spatial SST statistics in DOISST and CCI."
+  },
+  {
+   "target": "sci:sha256:48ad9d2cdf9bb693fa40e29bb512ef08ab1ec0f25ccf46558a02d0d00d36c180",
+   "reason": "Shows that noise matching does not restore covariance with real changes."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 reanalysis."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OISST v2.1."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MHW definition."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-03732-9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Standard OISST MHW trend analysis that product noise affects."
+  },
+  {
+   "target": "doi:10.3390/rs12040720",
+   "reason": "OSTIA system description."
+  },
+  {
+   "target": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ARCO-ERA5 store that we read (CC BY 4.0, Copernicus Climate Change Service)."
+  },
+  {
+   "target": "https://www.ecmwf.int/en/elibrary/16555-sea-surface-temperature-and-sea-ice-concentration-era5",
+   "reason": "HadISST2 and OSTIA as ERA5 SST inputs."
+  }
+ ]
+}
