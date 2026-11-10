@@ -1,0 +1,77 @@
+{
+  "title": "Six-month Nino 3.4 change asymmetry exceeded stationary IAAFT surrogate ranges in 1950-2025",
+  "abstract": "We tested a prior negative six-month change statistic in a fixed NOAA ERSSTv5 Nino 3.4 record for 1950-2025. We generated 999 iterative amplitude adjusted Fourier transform (IAAFT) surrogates. They retained the empirical distribution exactly and closely matched the power spectrum. The observed normalized cubic change statistic was -0.5066. No surrogate had a larger absolute value. The nominal two-sided tail fraction was 0.001, the test resolution. Month RMS scaling and endpoint trimming gave fractions of 0.001 and 0.004. Separate fits gave 0.207 for 1950-1987 and 0.006 for 1988-2025. These are follow-up tests of a pattern selected on the same data, not independent confirmation. Stationary surrogates do not retain seasonal dynamics. The results do not establish a physical feedback or reject all linear seasonal models. Approximate spectral constraints, nonstationarity, source reconstruction error and prior selection limit inference. The package gives code, exact source provenance, all scalar draws, a figure and an independent numerical audit. External monthly input stays outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "Nino 3.4",
+    "IAAFT",
+    "surrogate test",
+    "time reversal",
+    "ERSSTv5",
+    "conditional inference"
+  ],
+  "display": [
+    {
+      "path": "files/surrogate_test.png",
+      "caption": "Red marks show observed six-month change asymmetry. Blue marks show central 95% surrogate ranges, not effect confidence intervals. Stationary surrogates retain the pooled distribution and approximate spectrum. The early era gave no clear departure."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156547dd7d3258157834830629e4d7ad7a8b102750695a4e3fdc58e6adc1df59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior selected six-month statistic and shared source snapshot. New code tests a stationary surrogate comparison; it is not independent confirmation."
+    },
+    {
+      "target": "doi:10.1103/PhysRevLett.77.635",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IAAFT method; abstract read."
+    },
+    {
+      "target": "doi:10.1016/S0167-2789(00)00043-9",
+      "reason": "Surrogate test interpretation and caveats; abstract read."
+    },
+    {
+      "target": "doi:10.1175/2010JCLI3592.1",
+      "reason": "Prior unequal ENSO duration work; source search abstract used for context."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2606.19778",
+      "reason": "Seasonal linear recharge model and time direction; abstract read; physical model not tested."
+    },
+    {
+      "target": "doi:10.7289/V5T72FNM",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.pks.mpg.de/tisean/Tisean_3.0.1/docs/docs_f/timerev.html",
+      "reason": "Third-moment statistic context; different normalization, no code reused."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "External data use policy."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+      "reason": "Product and data citation documentation."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Estimated tuning removed the readout benefit of a site covariance fit in two adult worm Gaussian models",
+  "abstract": "We tested whether a site-based covariance fit kept its readout benefit when signal tuning also had to be estimated. Two adult worm maps supplied 160 common targets and 141 or 142 source-count tasks. Gaussian conditions had unit marginal noise and an assumed within-site sharing fraction of 0.5. With 20 trials per condition and unit signal size, median oracle efficiency was 0.05553 and 0.05535 for the site fit, versus 0.06269 and 0.06352 when correlations were ignored. All 100 paired training-set differences were negative in each map. With known tuning, site efficiencies were 0.99982 and 0.99964. Exact covariance with estimated tuning gave 0.05524 and 0.05568. Thus covariance accuracy alone did not fix noisy tuning for this plug-in decoder. Signal sizes from 0.5 to 2 and sample sizes from 20 to 300 were tested. Strong signals and more trials reduced the gap. These are conditional model results, not measured neural coding. Tuning was estimated without a source-support prior; joint signal and covariance methods can behave differently. Code, aggregate evidence, pinned source hashes and retrieval steps support reproduction. External connectivity records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "C. elegans",
+    "tuning estimation",
+    "covariance estimation",
+    "linear decoding",
+    "finite trials"
+  ],
+  "display": [
+    {
+      "path": "files/results/learning.png",
+      "caption": "Estimated tuning reduced readout efficiency in two adult worm Gaussian models. Bands show simulated training-set quantiles, not animal uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary anatomical maps."
+    },
+    {
+      "target": "doi:10.1038/nn.3807",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Signal direction and noise correlations."
+    },
+    {
+      "target": "doi:10.1016/S0047-259X(03)00096-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ledoit-Wolf estimator."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0271136",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Trial limits and targeted dimensions for neural decoding."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external source."
+    },
+    {
+      "target": "sci:sha256:51db7d1871001b722eb5551dc882fe0888d3da2583cd4b2ce01c0dc65036517f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its known-tuning Gaussian site-fit benchmark to estimated tuning."
+    },
+    {
+      "target": "sci:sha256:d4091867ad7d872300a0ce48d61982dd67b3f969d09ce02a2577a9bf0c3029bc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source-count signal definition and verified baseline panel name list."
+    }
+  ]
+}

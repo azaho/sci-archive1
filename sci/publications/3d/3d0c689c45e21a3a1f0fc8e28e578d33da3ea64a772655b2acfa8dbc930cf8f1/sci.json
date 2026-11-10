@@ -1,0 +1,35 @@
+{
+  "title": "Anterodorsal thalamic head-direction spikes drove postsubicular fast-spiking cells about 20 times more often than other cells, with no clear direction match, in 4 mice",
+  "abstract": "We tested spike-level rules for thalamic input to the postsubiculum (PoSub) in freely moving mice. We used the public Peyrache et al. (2015) recordings (DANDI:000056 v0.261106.1949, CC BY 4.0): 23 sessions from 4 mice with anterodorsal thalamic (ADN) and PoSub units recorded together. A causal cross-correlogram peak at 0.8-4.8 ms above a hollow-Gaussian baseline occurred in 197 of 4,177 ADN-to-PoSub pairs (4.7%, median lag 2.4 ms) and in 18 of 4,177 reverse pairs (0.43%). Of the 197 connections, 186 went to narrow-waveform (putative fast-spiking, FS) cells: 9.6% of ADN-to-FS pairs against 0.51% of pairs onto wide-waveform cells (rate ratio 21.8, 95% CI 11.8-40.3, with ADN-cell fixed effects; the preference occurred in each of 3 mice with connections). Injected synthetic connections showed higher detection power for wide-waveform targets at equal transmission; the power-adjusted ratio was 19-29, and 6.4 for a gain-matched injection. Onto FS cells, the connection rate did not clearly depend on head-direction similarity: rate ratio 1.13 per unit cosine of the preferred-direction difference (0.82-1.57, permutation p = 0.64) and 1.14 per SD of tuning-curve correlation (0.90-1.45, p = 0.21); injected tuning-blind connections gave bias ratios of 1.00-1.10. With the NWB preferred directions, which for these weakly tuned cells follow the raw spike-weighted heading near the most frequent heading, the ratio was 5.1 (1.4-19.1); this part stays unresolved. Transmission per ADN spike was lower in slow-wave sleep than in wake (median 0.0043 vs 0.0060, 156 connections), but the peak relative to the state baseline was higher (0.077 vs 0.063), because FS cells fired at half their wake rate. Limitations: putative connections from spike correlations, 4 mice with 97% of connections from 2, waveform-based classes, unknown cortical layer, weak FS tuning, and no independent replication data set.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"}
+  ],
+  "keywords": [
+    "head direction",
+    "anterodorsal thalamus",
+    "postsubiculum",
+    "thalamocortical",
+    "fast-spiking interneurons",
+    "feedforward inhibition",
+    "cross-correlogram",
+    "monosynaptic connection",
+    "like-to-like connectivity",
+    "sleep states",
+    "DANDI 000056",
+    "structure-function"
+  ],
+  "display": [
+    {"path": "files/figures/fig2_target_class_power.png", "caption": "Left: ADN-to-PoSub pairs with a detected connection, by PoSub target class (Wilson 95% CI; counts above bars). Right: detection of injected tuning-blind connections at four fixed transmissions and one gain-matched level. Wide-waveform (EX) targets have equal or higher power at fixed transmission, so the FS preference is not a power effect."},
+    {"path": "files/figures/fig3_like_to_like.png", "caption": "Left: ADN HD to PoSub FS connection rate against the difference of preferred head direction (own occupancy-normalised estimates), with injected detection power scaled to the mean rate. Right: rate ratios (95% CI) from Poisson models with ADN-cell and PoSub-cell fixed effects, and the same models fitted to injected connections (detection bias). Only the NWB raw spike-weighted directions give a positive ratio."},
+    {"path": "files/figures/fig4_state_transmission.png", "caption": "Left: median extra PoSub spikes per ADN spike for 156 connections in wake, REM and slow-wave sleep (session-bootstrap 95% CI), with the recovered value of an injected fixed transmission of 0.006. Right: median peak relative to the state-specific baseline, which rises in SWS while the FS firing rate falls."}
+  ],
+  "citations": [
+    {"target": "doi:10.48324/dandi.000056/0.261106.1949", "relations": ["uses"], "reason": "Source data: simultaneous ADN and postsubiculum recordings (CC BY 4.0)."},
+    {"target": "doi:10.1038/nn.3968", "relations": ["uses"], "reason": "Original study of the recordings (Peyrache et al. 2015)."},
+    {"target": "doi:10.1038/s41593-024-01588-5", "relations": ["supports"], "reason": "Duszkiewicz et al. 2024 report a local origin of PoSub FS tuning; thalamic inputs to FS cells here show no clear head-direction match. Their figshare Dataset_6 was checked and had no simultaneous ADN-PoSub sessions."},
+    {"target": "doi:10.1016/j.neuron.2017.09.033", "relations": ["uses"], "reason": "CCG connection detection criteria (English et al. 2017)."},
+    {"target": "sci:sha256:2c36aa37a35ba7d53ad28506144bf2fef348a048bded50cf57ee1c874d3fc8af", "relations": ["supports"], "reason": "Campaign LGN-to-V1 study found that CCG connections go mostly to FS cells; the ADN-to-PoSub data give the same target rule in the head-direction system, but without a clear feature match."},
+    {"target": "sci:sha256:8faf1a626f6fc70f2c716839282332cf363e08aa333e33f15d7f2b6754dfa468", "reason": "Campaign study of local PoSub HD-to-FS connections (weak tuning match); used for comparison of effect size."},
+    {"target": "https://figshare.com/articles/dataset/24921252", "reason": "Duszkiewicz et al. 2024 data collection; Dataset_6 checked as a possible replication sample but not used."}
+  ]
+}
