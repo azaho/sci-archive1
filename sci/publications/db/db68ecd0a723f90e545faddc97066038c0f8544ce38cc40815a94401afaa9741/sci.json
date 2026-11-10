@@ -1,0 +1,82 @@
+{
+  "title": "A slope change at zero western water volume anomaly gave no clear 13-month ENSO forecast gain at 2000-2023 origins",
+  "abstract": "We tested whether different slopes below and above zero western Pacific warm water volume anomaly improve 13-month Nino 3.4 forecasts. We used fixed NOAA GODAS and ERSSTv5 records and 288 monthly origins in 2000-2023. Expanding ridge fits used only target months before the origin year. The reference used current and previous surface temperature, basin volume and western volume, with month intercepts. The test added one absolute western-volume term. Its mean squared error reduction was -0.10%. The conditional 95% three-year block interval was -5.95% to 5.06%. Both models had higher error than the past month-mean reference. Other fixed penalties, monthly current-state slopes, and 6- and 18-month leads also gave intervals across zero. This does not show that physical ENSO asymmetry is absent. Revised products, 24 test years, dependent errors, 61 negative-volume origins and one fixed threshold limit inference. The package includes code, source hashes, aggregate errors, all score draws, a figure, an independent numerical audit and an exact offline repeat. Raw and monthly derived records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ENSO",
+    "western Pacific",
+    "warm water volume",
+    "asymmetry",
+    "ridge regression",
+    "chronological forecast",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/result.png",
+      "caption": "Added slope-change forecast gains and annual error differences. All gains compare the model with one absolute western-volume term against its matched linear model. Lines give conditional 95% intervals from paired three-year blocks. Positive gain means lower error. The primary interval includes zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1a10bffd8d10be7ad0122ea2c742c04fa68e3454893cb16b6ca0bd6b94c975f3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior campaign history and western-volume comparison informed the new test. We reuse the same fixed data, with new code and a direct nonlinear forecast model. This is not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:2e7bf03b8e67380e75107f43c631cd8b44e71a72fdc3483f2d3ba4c6f1a0d96e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior long-lead linear forecast test informed the new fixed slope-change test. Source data overlap."
+    },
+    {
+      "target": "doi:10.1029/2018GL079341",
+      "reason": "Planton et al. report an asymmetric long-lead relation between western heat content and ENSO. This motivates the fixed zero-anomaly slope change. Our test uses a different product, index, calendar scope and forecast method."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/pubs/outstand/mein2119/abstract.shtml",
+      "reason": "Meinen and McPhaden (2000) studied warm water volume, ENSO recharge and discharge, and warm-cold asymmetry."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/readme.html",
+      "reason": "Product definition, anomaly base, source model and requested credit."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "Source use guidance."
+    },
+    {
+      "target": "https://www.noaa.gov/office-education/outreach-communication/faq",
+      "reason": "Source use and credit guidance."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/wwv.dat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source version is fixed by the SHA-256 hash in files/sources.json and files/results/provenance.json. The source file remains external."
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/wwv/data/wwv_west.dat",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source version is fixed by the SHA-256 hash in files/sources.json and files/results/provenance.json. The source file remains external."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact source version is fixed by the SHA-256 hash in files/sources.json and files/results/provenance.json. The source file remains external."
+    }
+  ]
+}
