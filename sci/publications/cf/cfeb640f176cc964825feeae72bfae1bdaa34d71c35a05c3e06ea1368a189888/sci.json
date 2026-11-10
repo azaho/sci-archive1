@@ -1,0 +1,111 @@
+{
+ "title": "OISST v2.1 input steps bias 1982-2025 trends of daily SST extremes and marine heatwaves; cold-spell lengthening is an artifact and heatwave-duration trends depend on product noise",
+ "abstract": "Question: daily NOAA OISST v2.1 lost most of its day-to-day variance in steps at satellite-input changes (1985, 2007, 2020, 2021). Which standard daily climate statistics does this bias, and which changes remain? Approach: for 29,120 ice-free pixels (1-degree subsample, 60S-60N, 1982-2025), we made three homogenized records. In each, the sub-monthly spectrum (periods of 32 days or less) of every input segment matches one target segment: 1985-2006 (noisy), 2007-2020 (main, near buoy variance) or 2021-2025 (smooth). We repeated the Hobday marine heatwave (MHW) and cold spell (MCS) analysis (1983-2012 baseline) and tested against 172 moored buoys on the same days. Results: at the buoys, raw OISST event duration relative to buoys increased after the input steps (paired ln-ratio change +0.069, p = 0.002); homogenization removed this drift (+0.022, p = 0.38). For all three targets, the raw 1982-2025 warming trend of the annual maximum daily anomaly is 42-44% too low (+0.108 against +0.19 K per decade), the trend of the annual minimum is 39-45% too high (+0.29 against +0.20), 83-100% of the MCS duration rise (+0.83 days per decade) is artifact, and the raw MHW count trend is 0-27% too low. Two mechanisms explain this: noise breaks events, and a noisy baseline raises the thresholds. For MHW days they almost cancel (raw +21.2, homogenized +18.1 to +24.1 days per decade). MHW duration trends depend on the target (raw +3.7; homogenized +1.7 to +3.9 days per decade), so they are not comparable across products with different noise. After detrending, the narrowing of daily extremes is entirely artifact; a smaller lengthening of events (MHW +0.5 to +1.2, MCS +0.5 to +1.1 days per decade) remains. Limitations: the true pixel-scale sub-weekly variance is unknown; smaller steps remain; buoys feed OISST and cover few regions; the last segment is short and includes the 2023-2024 warm event.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "marine heatwaves",
+  "marine cold spells",
+  "data homogeneity",
+  "satellite input change",
+  "temperature extremes",
+  "spectral homogenization",
+  "moored buoys",
+  "observing system artifact",
+  "climate trends"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_trends.png",
+   "caption": "1982-2025 global (60S-60N) trends with 95% block-bootstrap intervals for raw OISST v2.1 (blue) and three homogenized records (T1 noisy target, T2 main target, T4 smooth target)."
+  },
+  {
+   "path": "files/figures/fig2_global_mhw_series.png",
+   "caption": "Global annual marine heatwave (MHW) and cold spell (MCS) metrics, raw and homogenized. Dashed lines show the input steps in 1985, 2007, 2020 and 2021."
+  },
+  {
+   "path": "files/figures/fig5_buoy_test.png",
+   "caption": "Buoy test: median ln(OISST/buoy) by segment for day-to-day variance, event duration and event-day fraction, at buoys with 365 or more matched days per segment, with bootstrap 95% intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We extend its finding of a fast-variance loss at OISST input changes to marine heatwave and daily-extreme statistics."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its daily buoy SST table, buoy positions and change-point dates, and extend its detrended heatwave check to the standard fixed-baseline metrics."
+  },
+  {
+   "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+   "reason": "A third study that found the same loss of day-to-day variance in OISST v2.1."
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "reason": "The reported rise in SST persistence that the prior studies tested."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Marine heatwave definition."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-03732-9",
+   "reason": "Global marine heatwave trend study that uses daily OISST."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
