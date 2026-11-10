@@ -1,0 +1,165 @@
+{
+ "title": "Inside 162 mouse brain regions, between-region rules from input wiring and cell-type mix predicted unit spike physiology, but only the input rule kept a robust unique effect (IBL)",
+ "abstract": "Question: earlier work split wiring and cell-type control of mouse brain physiology only between regions, where region identity goes together with every structural map. We tested the split inside regions at 100 um scale. Data: 52,753 IBL Brain-Wide Map units in 162 regions (139 mice), 9 intrinsic spike features; the Knox 2019 voxel connectome gave the afferent input profile at each unit position, and Allen MERFISH (two brains) gave the local neuron-subclass mix. Results: regions held 11.6% of unit variance and insertion offsets inside regions 15.5%; offsets were reliable but nearly not shared by nearby insertions of other mice. The planned test, which learned rules from within-region data, failed: unique out-of-region R2 was about 0 (cell types -0.0006, input -0.0001), although both beat a rotation null (p 0.018, 0.009; 110 draws). An exploratory test applied the between-region rules to within-region structure differences. Observed deviations followed the predictions with slopes 0.54 (cell types, 95% CI 0.35-0.70; second brain 0.32) and 0.45 (input, 0.25-0.64); rotation nulls gave 0 (p 0.005). Slopes stayed positive for interior units and after a border-bleed control. In a joint model, the input slope (0.35) was robust to position, insertion and map-noise controls; the unique cell-type slope (0.26) was not. The wiring share was 0.19 between regions and 0.78 inside regions (difference 0.59, CI 0.09-0.94). Limitations: correlational; exploratory post hoc tests; atlas maps from other mice; unit localisation error; explained within-region variance is below 0.4%.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function",
+  "within-region variation",
+  "scale transfer",
+  "Knox 2019 voxel connectome",
+  "MERFISH cell types",
+  "IBL Brain-Wide Map",
+  "Neuropixels",
+  "spike physiology",
+  "variance components",
+  "rotation null",
+  "mouse",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/results/fig3_scale_transfer.png",
+   "caption": "Between-region rules applied inside regions. a: observed against predicted within-region deviations (5% bins of units x features, 95% CI) for the cell-type and input maps. b: slopes for all units, units more than 200 um from the region edge, and with the border-bleed term removed; grey: rotation null 95%; lines: slope expected if the full rule acts locally, with 100 or 200 um localisation error. c: joint per-feature slopes."
+  },
+  {
+   "path": "files/results/fig4_split_two_scales.png",
+   "caption": "The wiring versus cell-type split at two scales. a: wiring share uI/(uI+uT) between regions (cross-validated unique R2 of region means) and inside regions (joint regression of within-region deviations), with region-bootstrap 95% CI. b: joint within-region slopes of the cell-type and input predictions under three controls and with the second MERFISH brain as instrument."
+  },
+  {
+   "path": "files/results/fig1_variance_components.png",
+   "caption": "Where unit physiology varies. a: variance shares of 9 z-scored features. b: insertion offsets are reliable inside an insertion (odd/even units) but not shared by the nearest insertion in another mouse (raw r, which has a negative centring bias). c: excess cross-mouse offset correlation by centroid distance against a centroid-shuffle null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Starting work: region-level wiring share for intrinsic spiking (0.25). We reproduce it between regions (0.19) and show a higher share inside regions."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Calibrated spatial nulls; we use a within-region rotation null in the same spirit."
+  },
+  {
+   "target": "sci:sha256:a4fae2b20554c07f85decfa3d289742eead57e431b66963a1672e01bf6e11f20",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Joint structure predicted intrinsic spiking between regions; we test the same maps inside regions."
+  },
+  {
+   "target": "sci:sha256:7fc46a6a1f240286954071391c21d772763a4afcd6b67781dba4b8a63f2027b8",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Joint structure prediction across sessions between regions."
+  },
+  {
+   "target": "sci:sha256:36eebd98288e6bfd1086b2b99ae3c4fc186bfa53fa74f7580eb57c4e2ab00b6a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its 9 spike features and OpenAlyx session script."
+  },
+  {
+   "target": "sci:sha256:8811fcd163037e8b4296f164982385a82b6a30fef0e5e1d81f6cab23925dbe48",
+   "reason": "Transcriptome predicted intrinsic features between regions."
+  },
+  {
+   "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+   "reason": "Input and cell-type similarity both predicted spiking phenotype similarity between regions."
+  },
+  {
+   "target": "sci:sha256:18f77139dff654b47a941667ae1dada41b8d3adac3f068238fada92b5497833d",
+   "reason": "Narrow-unit link to Pvalb share reversed across cortical layers."
+  },
+  {
+   "target": "sci:sha256:745e2c94f424a0f459bbc217d844cf6c8ad1930a10e6b5cc4a228b107a9fe7e5",
+   "reason": "Narrow-spike fractions followed division, not interneuron content."
+  },
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "reason": "Thalamic burst link to cortical input share (campaign reference work)."
+  },
+  {
+   "target": "sci:sha256:db5590c64649c7f589082299864fe81e1acbdc6e3e261a507bd6b40c8030cffe",
+   "reason": "Burst-order analysis in the reference set."
+  },
+  {
+   "target": "sci:sha256:5d9610e93b0d6dd26e1868419d17a5c7a114fd35a449c05913ef80b5a9218670",
+   "reason": "Kv3 and spike duration between regions."
+  },
+  {
+   "target": "sci:sha256:3e4aadbdc51ffbfb8bd570062f92d949ecf46d7288a28ab388e7d1ec91a5db09",
+   "reason": "T-type expression and burst firing."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "reason": "Axonal input predicts regional task coding."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map data (CC BY 4.0)."
+  },
+  {
+   "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL 2026_Q2 aggregate unit table."
+  },
+  {
+   "target": "doi:10.7554/eLife.100840",
+   "reason": "IBL reproducibility study; variability between insertions and labs."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 voxel connectome (not redistributed)."
+  },
+  {
+   "target": "https://download.alleninstitute.org/publications/A_high_resolution_data-driven_model_of_the_mouse_connectome/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Voxel model files weights.csv.gz and nodes.csv.gz."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen MERFISH C57BL6J-638850 (not redistributed)."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06808-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zhuang-ABCA-1 MERFISH brain (not redistributed)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF 2017 annotation."
+  }
+ ]
+}
