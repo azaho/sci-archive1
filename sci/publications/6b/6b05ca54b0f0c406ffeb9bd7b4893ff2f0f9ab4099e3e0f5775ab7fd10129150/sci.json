@@ -1,0 +1,121 @@
+{
+  "title": "A three-planet model fits 2019-2026 TOI-682 timings with planet c near 16.134 days under fixed RV inputs",
+  "abstract": "We test whether a third planet can explain TOI-682 b transit timing variations while the reported RV planet c stays near 16.134 days. We use 23 published times from 2019 to 2026 and one transit-shape constraint. We first resolve a prior six-minute difference between TTVFast and REBOUND: their default Jacobi element inputs use different mass conventions. The same Cartesian initial state gives agreement below 0.0064 seconds for all 22 published two-planet examples. We then run 24 local three-planet searches, refinements, and two added tests. One model has chi-square 16.935 for 13 nominal degrees of freedom. Its c has a fixed initial period of 16.134 days and a mean conjunction period of 16.13205 days. Its third planet d has a mean period of 27.12937 days, mass 28.43 Earth masses, eccentricity 0.0447, and predicted RV semi-amplitude 6.18 m/s. Both c and d miss the star in the tested geometry. The model remains bound for 18,724 years in two Newtonian integrations with different time steps; the finer run has sampled fractional energy error below 2.1e-8. Other good timing examples trigger a numerical close-distance screen. Thus a concrete third-planet model can retain the RV period near its reported value. This is not a detection or a fit to individual RVs. Limits include fixed poster inputs without errors, inherited timing and shape results, incomplete local searches, no full light-curve or RV likelihood, and finite Newtonian survival tests. We preserve the Cartesian states, forecasts, failed fits, source hashes and reproduction code.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "TOI-682",
+    "HD 97260",
+    "transit timing variations",
+    "three-planet models",
+    "radial velocity",
+    "Jacobi coordinates",
+    "TTVFast",
+    "REBOUND",
+    "numerical validation",
+    "orbital survival"
+  ],
+  "display": [
+    {
+      "path": "files/models.png",
+      "caption": "One conditional three-planet timing fit, selected transit forecasts, and the full predicted stellar velocity. The model predicts an extra RV signal near 27.13 days. These are point examples, not posterior intervals or a planet detection."
+    },
+    {
+      "path": "files/audit.png",
+      "caption": "The two dynamics codes use different mass conventions for their default Jacobi element input. A Cartesian transfer gives agreement within milliseconds for 22 published point solutions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e039d250c59eff45ea21fad34e1f8400b879c76b62a87b98fc6d66d1760c632e",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We use its fitted transit times, shape constraint and 22 point models. We resolve its code difference and extend its alternative-perturber models to include the reported RV planet."
+    },
+    {
+      "target": "sci:sha256:0d45280973f40b6e7b59b207a0630c079fee9262084c81df960d78830a72afd1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier TESS and ground timing analysis. Our three-planet example tests its proposed extra-planet explanation without requiring the large RV period shift of a two-planet model."
+    },
+    {
+      "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Blind TESS timing survey that found this signal."
+    },
+    {
+      "target": "doi:10.5281/zenodo.5131353",
+      "reason": "Quinn et al. 2021 poster. The adopted stellar and RV scenario values are inherited through the cited SCI source study. No individual RVs are used."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/787/2/132",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Deck et al. 2014, TTVFast."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Rein and Liu 2012, REBOUND."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2164",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Rein and Spiegel 2015, IAS15 reference integrator."
+    },
+    {
+      "target": "doi:10.1093/mnras/stv1257",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Rein and Tamayo 2015, WHFast numerical survival tests."
+    },
+    {
+      "target": "doi:10.1093/mnras/stab2044",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Agol, Hernandez and Langford 2021. Prior comparison of dynamics codes with shared Cartesian states."
+    },
+    {
+      "target": "https://pyodide.hanno-rein.de/ipython_examples/OrbitalElements/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "REBOUND documentation for its default element convention and the alternative Jacobi mass convention."
+    },
+    {
+      "target": "https://github.com/kdeck/TTVFast/blob/master/c_version/README",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TTVFast input flags and Cartesian interface."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/756/2/122",
+      "reason": "Dawson and Johnson 2012, the relation between transit shape and eccentricity."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2836",
+      "reason": "Wheatley et al. 2018, NGTS. Credit for the facility used by the source timing study."
+    }
+  ]
+}
