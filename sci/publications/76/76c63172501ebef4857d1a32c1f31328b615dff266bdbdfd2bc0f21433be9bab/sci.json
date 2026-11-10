@@ -1,0 +1,115 @@
+{
+ "title": "Oklahoma M3+ earthquakes of 2021-2026 are not a long aftershock tail: ETAS memory is not identifiable from the catalog and overpredicts 2021-2026 counts 4-5 times",
+ "abstract": "Question: is the persistent 2021-2026 induced seismicity in Oklahoma a long aftershock (cascade) tail of the 2011-2016 sequence, or does it need a continuing external driver? Approach: we fit space-time ETAS models with a time-varying background (6-month bins or a 180-day time-smoothed kernel) to USGS ComCat M>=3 events (34.0-37.3 N, 99.6-95.9 W, 2010-2026; 3,119 events, 101 in 2021-2026). We tested identifiability with synthetic catalogs of known truth, made a predictive check with 200 simulated catalogs per fit, fit Omori-Utsu laws to the aftershock zones of the M>=4.8 mainshocks, and made forecasts from 2019 and 2021. Results: both fits are near-critical (branching ratio 1.55-1.99, p = 1.04-1.05) and assign 55-62% of the 2021-2026 events to descendants of pre-2017 events. But in synthetic catalogs with weak triggering (branching ratio 0.41) and a forcing on the same fault patches (0.5 km), the true share is 21-23% and the estimator returns 55-57%. Catalogs simulated from the fitted models give 411 (310-527) and 522 (382-691) events in 2021-2026 against 101 observed (0 of 200 simulations at or below). Omori tails of the Fairview, Pawnee, Cushing and 2014 Kansas mainshock zones explain about 22 of 378 M>=2.5 events (2-13% for p from 1.2 to free fits); the 2011 Prague zone had a new Mw 5.1 sequence in 2024. ETAS forecasts overpredicted 2019-2026 and 2021-2026 counts 5.2-10 times; exponential decay of recent counts was within a factor of 1.5. Conclusion: the residual seismicity occurs on the same faults but needs a decaying external driver, not cascade memory. Limitations: M>=3 only, 1-2 seeds per synthetic case, magnitude-type mix, 2-D kernels, one region, and a constructed forcing world.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Oklahoma",
+  "ETAS",
+  "aftershock decay",
+  "Omori law",
+  "earthquake forecasting",
+  "stochastic declustering",
+  "identifiability",
+  "wastewater disposal",
+  "seismicity decay",
+  "predictive check",
+  "branching ratio"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_predictive_check.png",
+   "caption": "Catalogs simulated from the fitted ETAS models (median and 5-95%) against observed annual counts."
+  },
+  {
+   "path": "files/figures/fig3_identifiability.png",
+   "caption": "Synthetic test: true and estimated share of 2021-2026 events that descend from pre-2017 events, for triggering and forcing worlds; lines show the real catalog."
+  },
+  {
+   "path": "files/figures/fig1_decomposition.png",
+   "caption": "Annual M>=3 counts with ETAS background and descendants of pre-2017 events (two estimators), and Arbuckle injection in the study box."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a2572246ee8f3fa15450d11e3c30647b50a431bf8bae5b361c1bcb5ea198c8",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its stored ComCat CSVs and its parsed OCC injection table, and we extend its finding that the residual rate stays above the pre-2009 level in cells active in 2014-2016."
+  },
+  {
+   "target": "sci:sha256:d6c0ec4f174b1330bc04ff13b32b6747e594058c722d3ada3a7a4f9069c8d5e6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our result that the tail needs a decaying external driver, not cascade memory, agrees with its finding that pressure loss within 1-4 years was necessary."
+  },
+  {
+   "target": "doi:10.1126/sciadv.1601542"
+  },
+  {
+   "target": "doi:10.1038/s41467-018-06167-4"
+  },
+  {
+   "target": "doi:10.1785/0120130017",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ETAS with a time-varying background rate for Oklahoma."
+  },
+  {
+   "target": "doi:10.1023/A:1003403601725",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Space-time ETAS model form."
+  },
+  {
+   "target": "doi:10.1198/016214502760046925",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stochastic declustering and kernel background."
+  },
+  {
+   "target": "doi:10.1198/016214508000000148",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM estimation of ETAS."
+  },
+  {
+   "target": "doi:10.4294/jpe1952.43.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Omori-Utsu law."
+  },
+  {
+   "target": "https://www.seismosoc.org/news/plugged-wells-and-reduced-injection-lower-induced-earthquake-rates-in-oklahoma/"
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
