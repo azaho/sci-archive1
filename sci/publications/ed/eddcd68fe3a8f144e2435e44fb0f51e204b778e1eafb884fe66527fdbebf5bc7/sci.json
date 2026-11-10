@@ -1,0 +1,61 @@
+{
+  "title": "NOAA flood outlook errors exceeded a one-standard-deviation moment target in 2019-2025 under half-day endpoint rounding",
+  "abstract": "A prior test of NOAA annual high tide flood outlooks compared 56.8% coverage with 68%. A mean plus or minus one standard deviation range does not promise 68% coverage without a distribution assumption. We give a count example with correct moments and 50% coverage. We then test the moment interpretation on the prior threshold-controlled sample for 2019-2025. We derive a lower bound on squared standardized error that permits endpoint errors. With at most half a day of error per endpoint, the mean bound is 2.395 in 409 outlooks with positive lower limits at 71 gauges. Correct conditional means and standard deviations imply an expected bound at most one. A station-and-year bootstrap gives a 95% interval of 1.494-3.477. Assigning zero to clipped rows gives 1.831 over all 535 rows, with interval 1.089-2.728. Removing any one year or region leaves the positive-limit mean above two. With one-day endpoint errors the mean is 1.390 and its interval includes one. Thus the half-day result supports a joint mean-and-spread mismatch without a Gaussian assumption. It does not separate mean error from variance error or prove that NOAA intended full predictive uncertainty. This is a retrospective analysis of reused evidence, with seven years and an unverified rounding rule. Code, an attributed input, hashes, aggregate results and a reproduction path are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "high tide flooding",
+    "forecast verification",
+    "moment calibration",
+    "rounding",
+    "prediction uncertainty",
+    "NOAA",
+    "count forecasts"
+  ],
+  "display": [
+    {
+      "path": "files/moment_audit.png",
+      "caption": "Lower bounds on squared standardized error under two endpoint error limits. The moment target is one. Right: descriptive 95% station-and-year bootstrap intervals under half-day endpoint errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Reuses its threshold-controlled sample. Challenges an unconditional 68% target for a one-standard-deviation range and supplies a rounded moment audit."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/publications/Techrpt_092_2019_State_of_US_High_Tide_Flooding_with_a_2020_Outlook_30June2020.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Section 3 and Figure 8 define the 2020 range using the expected value and one standard deviation."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual_outlook.json",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared frozen 2026-11-09 endpoint snapshot."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/webapi/htf/htf_met_year_annual.json",
+      "reason": "Upstream observations reused through the parent sample."
+    },
+    {
+      "target": "https://oceanservice.noaa.gov/about/faq.html",
+      "reason": "NOAA public-domain policy."
+    }
+  ]
+}
