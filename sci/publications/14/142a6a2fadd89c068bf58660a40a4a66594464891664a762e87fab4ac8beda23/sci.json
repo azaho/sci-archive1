@@ -1,0 +1,81 @@
+{
+  "title": "Cell degrees fix overlap of electrical and chemical calls in 574 of 576 selected Allen mouse V1 circuits",
+  "abstract": "We tested whether electrical links carry more chemical connections than expected after each cell keeps its chemical input and output counts. We used 576 selected Allen mouse visual cortex slice recordings, with one recording per inferred donor. Two agreeing electrical calls defined each eligible electrical label. The sample had 48 chemical directions on electrical-positive dyads. Exact graph enumeration showed that only two recordings permit this overlap count to change when cell degrees stay fixed. Total overlap can be 46, 47, or 48 with probabilities 1/4, 1/2, and 1/4. The observed upper-tail probability is 0.25, also the smallest attainable value. Adding joint Cre-label and distance-bin totals fixed overlap in every recording. A rule that accepts either positive electrical call gave a degree-conditioned probability of 0.00926, but only three recordings supplied variation and two selected recordings changed. Thus, the result depends on the call rule and reference set. It shows a limit on conditional overlap tests, not an absence of combined-wiring function. Sparse slice graphs, call errors, inferred donor labels, one source and no linked in vivo activity limit biological transfer. Original code, aggregate evidence, a figure, source hashes and retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "electrical coupling",
+    "chemical connectivity",
+    "cell degree",
+    "exact enumeration",
+    "conditional test",
+    "testability"
+  ],
+  "display": [
+    {
+      "path": "files/overlap.png",
+      "caption": "Exact overlap reference means and central 95 percent ranges. Red lines show observed counts. Labels give recordings with variable overlap. These are conditional graph ranges, not population confidence intervals. The either-positive rule changes two selected recordings."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.192159599",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3988957/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "sci:sha256:cebedcac7a4bcf2b4da3455fa17238cb5476156489c2be517926a71d503a85e9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior matched co-occurrence comparison. This work tests exact degree-conditioned overlap support; no records or code reused."
+    },
+    {
+      "target": "sci:sha256:c984d7cd051269e7af553d42f40bcd28a39355c8925a4dffb864c9f23b73e824",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior electrical triangle testability study. Extends its question to overlap of connection types."
+    },
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior chemical motif constraint study. Uses its testability approach as context, with new code and a different statistic."
+    }
+  ]
+}
