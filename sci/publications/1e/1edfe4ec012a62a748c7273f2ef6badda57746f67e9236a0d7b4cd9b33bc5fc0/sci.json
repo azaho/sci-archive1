@@ -1,0 +1,104 @@
+{
+  "title": "A logarithm correction and group tests support a CPV rate transition in young TESS rotators",
+  "abstract": "We test the claimed magnetic-pressure slope of the complex periodic variable (CPV) rate. In 394 young TESS rotators with BHAC15 corotation-to-stellar radius ratio x >= 2, the published coefficient -6.513 uses a log10 predictor and a natural-log link. Its true power-law exponent is -2.829. An independent Poisson fit recovers this value and the same probabilities. A bounded Bernoulli fit to 54 CPVs gives exponent -2.57 (95% profile interval -3.58 to -1.56). This is steeper than small-cloud transit geometry but shallower than a global inverse-sixth-power law. The range matters: above x = 3 the exponent is -6.44 (-9.97 to -3.36). A continuous model with detection exponent -1 inside a transition and -7 outside fits a transition at x = 3.275. With the same parameter count, it lowers AIC by 9.19 relative to one power law. In four withheld moving groups, log loss falls from 140.68 to 137.53. This predictive gain is modest. Photometric radii give no clear transition-model gain. The exact logarithm correction removes the earlier global magnetic-pressure comparison but does not change the contraction or age fits. A steep outer tail remains allowed. Radius systematics, selected targets, uncertain labels and only two young CPVs above x = 4 limit physical inference. We provide code, source hashes, aggregate results, future test curves and separate-scratch reproduction steps. No source record table is bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "corotation",
+    "stellar contraction",
+    "magnetic confinement",
+    "rate exponent",
+    "transit geometry",
+    "model validation"
+  ],
+  "display": [
+    {
+      "path": "files/rate_exponent.png",
+      "caption": "Single-power exponents for young TESS rotators. Points in the left panel are coarse aggregate rates without colour adjustment. Curves compare shapes at a common rate at x = 3; they are not separate profile fits. The middle panel is the bounded Bernoulli profile. The right panel gives conditional 95% intervals. A single power law does not measure a tail exponent."
+    },
+    {
+      "path": "files/turnover.png",
+      "caption": "A fitted transition permits a steep outer tail. Left: continuous probability laws at BP-RP = 3 and relative efficiency one. Right: transition profiles for fixed or free tail exponent. The dotted horizontal line marks a conventional one-parameter 95% profile loss. Radius and label errors are not included. The tail exponent is weakly measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the survey labels, periods and stellar photometry."
+    },
+    {
+      "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the age classes, group labels and injection efficiency."
+    },
+    {
+      "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We reuse its radius code. We correct its power-law exponent units. This changes its magnetic-pressure comparison but leaves its contraction fits intact."
+    },
+    {
+      "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior waveform-memory result. The present study concerns a population rate and not the lifetime of a clump."
+    },
+    {
+      "target": "sci:sha256:c1d97d85beab0db9bbb049c7ac3b3c3e8916fb87850e8d09d8ae9b848ab4cc43",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fixed-density geometry test; we use stellar radii and a fitted transition."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "doi:10.1093/mnras/stae2131"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201425481"
+    },
+    {
+      "target": "doi:10.1088/0067-0049/208/1/9"
+    },
+    {
+      "target": "doi:10.3847/1538-4357/aaae09"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940"
+    },
+    {
+      "target": "doi:10.1117/1.JATIS.1.1.014003"
+    },
+    {
+      "target": "doi:10.1117/12.2233418"
+    },
+    {
+      "target": "https://perso.ens-lyon.fr/isabelle.baraffe/BHAC15dir/"
+    },
+    {
+      "target": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+    },
+    {
+      "target": "https://www.cosmos.esa.int/web/gaia-users/license"
+    }
+  ]
+}
