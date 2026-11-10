@@ -1,0 +1,94 @@
+{
+  "title": "Bodega Bay wave data cut six-hour Monterey linear forecast mean squared error by 38.9% in retained 2010-2023 tests",
+  "abstract": "We tested whether a partner buoy adds six-hour wave-height forecast skill after recent local waves and winds are known. We used NDBC stations 46013 at Bodega Bay and 46042 at Monterey. Annual fits used only earlier data from 2000 onward. Both directions used the same 13,567 retained issue times in 2010-2023. Bodega Bay wave data reduced Monterey mean squared error by 38.85%. A conditional 95% three-year block interval was 35.70% to 41.49%. Root mean squared error fell from 0.279 m to 0.218 m. The reverse gain was -0.002%, with an interval of -0.174% to 0.178%. A six-hour partner-data delay reduced the Monterey gain to 0.112%, with an interval of -0.034% to 0.248%. Longer local wave history and two other penalties retained the gain. This fixed linear test supports the value of recent spatial data for this station pair. It does not identify wave travel as the cause or establish real-time forecast skill. Two sites, 66% issue retention, revised archive data, instrument changes and a limited local baseline restrict the result. Code, aggregate scores, fitted parameters, figures, an independent numerical audit, source hashes and retrieval instructions are supplied. Source series and record-level outputs remain outside the signed package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "wave height",
+    "spatial prediction",
+    "NDBC",
+    "Bodega Bay",
+    "Monterey",
+    "sequential validation",
+    "data delay",
+    "ocean waves"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "Partner wave data improved Monterey predictions in each retained test year. A six-hour delay removed the clear gain. Error bars use conditional 95% three-year calendar-block intervals."
+    },
+    {
+      "path": "files/forecast_error.png",
+      "caption": "Annual RMSE for current-height persistence, local wave and wind history, and the model with partner wave data. Both directions use identical issue times."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1175/JTECH-D-17-0003.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior wave assimilation includes propagation times and improves predictions at independent buoys. Spatial wave prediction is established; our contribution is a transparent conditional benchmark for another station pair."
+    },
+    {
+      "target": "doi:10.1016/j.oceaneng.2026.127187",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior multi-buoy study reports limited gains from architecture choice with local wave history and motivates external covariates."
+    },
+    {
+      "target": "sci:sha256:1d873f118e7a37218ea68913c43d9e327becad7d641f2fcd97fe96ec038cb8c9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work tests winter wave trends and instrument changes in NDBC. We write new code for a different forecast target. The underlying archive overlaps and is not independent evidence."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Annual source files. Exact URLs, shared paths and hashes for all 49 retrieved files are in files/provenance.json."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/faq/measdes.shtml",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source measurement definitions and units."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/faq/qc.shtml",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source archive quality control."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/station_page.php?station=46013",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/station_page.php?station=46042",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "Source public-domain terms and attribution conditions. External data remain outside this package."
+    }
+  ]
+}

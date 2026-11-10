@@ -1,0 +1,135 @@
+{
+ "title": "A transit-depth variability screen of 815 TESS TOIs with periods below 1.6 days finds no disintegrating-planet candidate and shows that wrong catalogue periods cause false depth changes",
+ "abstract": "Question: Do public TESS 2-minute light curves show new disintegrating planets among known short-period TOIs, from transit depths that change from orbit to orbit?\nApproach: We fitted the depth of each transit of 875 TOIs with periods below 1.6 days (4,724 SPOC light curves, sectors 1-107) with a local baseline. We applied the same fit at off-transit phases as noise controls. We measured the fractional transit-to-transit scatter f and used a pre-set rule with trials correction, odd-even, split-half and same-star control tests. 2,531 injections into real light curves measured the sensitivity. The known disintegrating planet BD+05 4868 Ab was a positive control.\nResults: 815 TOIs had enough data. The control BD+05 4868 Ab gives f = 0.27 (0.18-0.39) and passes. No TOI is a disintegrating-planet candidate after checks. Two TOIs pass the rule, but crowding (TOI-3070.01) and spot modulation at almost the TOI period (TOI-4710.01) explain them; three others are binaries or have small scatter. 464 of 575 planet-like TOIs have f < 0.5 (95 percent). The rule recovers 86 percent of CV = 0.5 signals at per-transit SNR 4 and passes 1 of 640 constant injections. Wrong catalogue periods made at least four of six rule passes in a first pass. Per-transit times confirm period errors of 0.0002-0.004 days for 17 TOIs, far above the quoted errors.\nLimitations: Most small planets have per-transit SNR below 2, so their limits are weak; Kepler-1520 b is too faint in TESS. Only TOIs with 2-minute data were tested. No new observations were used.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "astronomy",
+  "TESS",
+  "disintegrating planets",
+  "transit depth variability",
+  "ultra-short-period planets",
+  "TOI",
+  "null result",
+  "injection-recovery",
+  "ephemeris errors",
+  "BD+05 4868 Ab",
+  "Kepler-1520 b",
+  "false positives"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_population_and_injections.png",
+   "caption": "Left: fractional transit-to-transit depth scatter f (maximum likelihood and 95 percent interval) against median per-transit SNR for 815 TESS TOIs with periods below 1.6 days. Orange circles have significant extra scatter but fail the rule; red stars pass the rule (both are explained by artifacts); the black diamond is the positive control BD+05 4868 Ab. Right: fraction of 2,531 injections into real light curves that pass the candidate rule, against per-transit SNR, for four values of the injected depth coefficient of variation (CV)."
+  },
+  {
+   "path": "files/figures/fig2_depth_series.png",
+   "caption": "Per-transit depth divided by the sector mean depth. Grey band: scatter of the same fit in control windows of the same star. Upper left: the known disintegrating planet BD+05 4868 Ab (TESS-SPOC full-frame images). Upper right: a known planet with constant depth. Lower: TOI-958.01 with the ExoFOP period and only a time shift per sector (false variability), and with a period fitted per sector (constant depth)."
+  },
+  {
+   "path": "files/figures/fig3_flagged_artifacts.png",
+   "caption": "The two TOIs that passed the candidate rule. Left: the host of TOI-4710.01 has about 10 percent spot modulation at 1.4775 days, almost the 1.4798-day TOI period, with a shape that changes between sectors. Middle and right: for TOI-3070.01 in a crowded aperture, the fitted depth follows the fitted baseline level in transit windows and also in control windows that contain no transit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission (Ricker et al. 2015)."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPOC pipeline that produced the 2-minute PDCSAP light curves (Jenkins et al. 2016)."
+  },
+  {
+   "target": "doi:10.3847/2515-5172/abc9b3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS-SPOC full-frame-image light curves used for the positive control (Caldwell et al. 2020)."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/abefe1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TOI catalogue (Guerrero et al. 2021); ExoFOP snapshot of 2026-11-09 gave periods, epochs, durations and dispositions."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP TOI table; SHA-256 of the snapshot is in files/data/exofop_toi_snapshot_sha256.txt."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions/tess/download_scripts/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MAST bulk-download scripts that list the SPOC 2-minute light curves."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2501.05431",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Discovery of the disintegrating planet BD+05 4868 Ab (Hon et al. 2025), our positive control."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/752/1/1",
+   "reason": "Discovery of the disintegrating planet KIC 12557548 b (Rappaport et al. 2012)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/812/2/112",
+   "reason": "Discovery of the disintegrating planet K2-22 b (Sanchis-Ojeda et al. 2015)."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2110.01019",
+   "reason": "TIC 400799224 dust-emitting object (Powell et al. 2021); not used because its period is 19.77 days."
+  },
+  {
+   "target": "doi:10.1080/01621459.1974.10482955",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Brown-Forsythe test for equal spread."
+  },
+  {
+   "target": "sci:sha256:5df2cf96f97d88de12b2fdc4381741df9dddd762cb27b44c54d0a2352e994c03",
+   "reason": "Campaign search of TESS 2-minute M-dwarf light curves for ultra-short-period transits; we test depth variability of known TOIs instead."
+  },
+  {
+   "target": "sci:sha256:5df33e7fa0e380af1f7b7d45390f2100f3f3531aff66deb9d3dc509a5a76e494",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result that many community TOI ephemerides become stale; we find period errors also within single TESS sectors for 17 TOIs."
+  },
+  {
+   "target": "sci:sha256:dcbf57a88bdfa341483eae5bdad2fa615602bdcc83ae59103835ec7c0b2d834f",
+   "reason": "Campaign study of quiet transits of the disintegrating planet KIC 12557548 in Kepler data."
+  },
+  {
+   "target": "sci:sha256:500bd31905c1520c2526dc0a6dc8f005e99d01386659c3bd62848d3585b3f74c",
+   "reason": "Campaign study of depth correlation of KIC 12557548 in Kepler data."
+  },
+  {
+   "target": "sci:sha256:f251bf048e07696156efd025b3ff43dea96ec4dbcb121cebbba8d51a64299b06",
+   "reason": "Campaign study of K2-22 transit depths in K2 Campaign 1."
+  }
+ ]
+}

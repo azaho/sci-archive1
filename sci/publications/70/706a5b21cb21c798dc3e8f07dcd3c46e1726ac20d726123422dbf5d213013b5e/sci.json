@@ -1,0 +1,79 @@
+{
+  "title": "June-November low-flow dependence showed no clear change at 92 Canadian reference gauges between 1975-1999 and 2000-2024",
+  "abstract": "We tested whether low June-November flow occurred in the same year more often across 92 Canadian reference gauges. We used fixed HYDAT and 2020 reference-network snapshots with complete daily records for 1975-2024. Each seasonal value is a seven-day minimum. Separate ranks in 1975-1999 and 2000-2024 fixed each gauge low-flow weight at 20%. Mean pair probability was 5.110% and 4.960%. The change was -0.150 percentage points, with a 95% three-year whole-field block range of -1.226 to +0.858. Thus, the primary test gave no clear change. Distance, drainage weighting, tail, and window checks also had ranges across zero. A fixed early threshold gave a descriptive pair-frequency rise, showing sensitivity to the event reference. Strict partial-day exclusion left one gauge; an added window check left three. These checks cannot establish flag robustness. Short periods, selected coverage, measurement flags, final archive revisions, and unmeasured climate and storage drivers limit inference. Same-year minima are not simultaneous daily droughts. The package includes code, exact source hashes, aggregate evidence, all resample scores and indices, a figure, and an arithmetic audit. External records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "low flow",
+    "spatial dependence",
+    "HYDAT",
+    "Canadian reference gauges",
+    "water availability",
+    "rank thresholds",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/aggregates/low_flow_dependence.png",
+      "caption": "Low June-November flow ranks showed no clear same-year dependence change at 92 Canadian reference gauges. Left: network share with a low seasonal rank by year. Its mean is fixed at 20% in each period. Right: late-minus-early pair probability with 95% whole-field block ranges. The primary comparison is 1975-1999 against 2000-2024. Minima need not occur on the same day. The fixed sample and measurement flags limit inference."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8ae995f3a8d858f4a8d59297e379209a3d5380784cc4a683d43071a24fa0b680",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its shared source snapshots, station-screening method, and adapted retrieval code. New code tests same-year dependence rather than local median changes. Shared records are not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:e1dd27fb705c1fcc6ceda9c33304c65e1fc5b7d8f44151b21d4bc3a760367581",
+      "reason": "Read to avoid repeating the spring-timing forecast question."
+    },
+    {
+      "target": "sci:sha256:a5241ee5e18ad270f83425c1068b82d9cc5607576754f63f88a1c3dd8eef5ed0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Informs the distinction between local low-event rates and shared events. This test uses river discharge, a different gauge network, and ranks recalculated during resampling."
+    },
+    {
+      "target": "doi:10.1029/2023GL107918",
+      "reason": "Prior observed drought propagation and spatial connectedness in Central Europe."
+    },
+    {
+      "target": "doi:10.1016/j.ejrh.2024.102144",
+      "reason": "Prior Canadian low-flow trends differ among river regimes."
+    },
+    {
+      "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/Hydat_sqlite3_20261019.zip",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input version and SHA-256 hashes are recorded in files/provenance.json. External records are not bundled."
+    },
+    {
+      "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/RHBN/RHBN_Metadata.xlsx",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input version and SHA-256 hashes are recorded in files/provenance.json. External records are not bundled."
+    },
+    {
+      "target": "https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/data-products-services/reference-hydrometric-basin-network.html"
+    },
+    {
+      "target": "https://open.canada.ca/data/en/dataset/9473ed86-d984-477e-938e-705809d8ee0e"
+    },
+    {
+      "target": "https://open.canada.ca/en/open-government-licence-canada/"
+    },
+    {
+      "target": "https://eccc-msc.github.io/open-data/licence/readme_en/"
+    }
+  ]
+}
