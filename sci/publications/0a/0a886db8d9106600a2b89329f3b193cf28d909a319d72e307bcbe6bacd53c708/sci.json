@@ -1,0 +1,138 @@
+{
+  "title": "Gaia DR3 fits give faint and dominant tertiary light for tested 5.9-year models of TYC 9179-1083-1",
+  "abstract": "We test a proposed third-star orbit of TYC 9179-1083-1 with independent Gaia DR3 acceleration and jerk. The Gaia data span 2014-2017. The source orbit used TESS eclipse data from 2018-2026. We use the full Gaia covariance and the commanded scan law. Non-negative weights closely reproduce the published normal matrix. This gives a test over the observation window without epoch residuals. The published nominal point orbit gives Gaia chi-square 29.35 after a free sky angle and scale. Two formal degrees of freedom remain. A joint fit with fixed inner masses of 1.05 and 0.23 solar masses leaves Gaia chi-square 11.50. We also test inner masses of 1.3 and 0.7 solar masses. The secondary supplies 0.1 of the inner G-band light in this case. A joint example gives Gaia chi-square 3.96 and source-data chi-square 199.74. Its tertiary mass is 1.369 solar masses and its period is 2131.77 days. Its tertiary light fraction is 0.0238, with formal local error 0.0052. Another branch gives light fraction 0.7849. Thus the tested fits need strong mass-to-light contrast. Gaia does not reject the full third-star explanation. We include model states, code, tests of unknown scan weights, negative identification tests, and RV forecasts. The forecasts have about 19 km/s range. Limits include fixed stellar assumptions, local searches, unknown actual scan weights, constant light fractions, and inherited timing errors. We do not fit the full light curves. The bright branch has not passed an eclipse-shape test. No compact companion is identified.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "TYC 9179-1083-1",
+    "TIC 300560295",
+    "Gaia DR3",
+    "astrometric acceleration",
+    "jerk",
+    "third light",
+    "photocentre",
+    "eclipse timing",
+    "hierarchical triple",
+    "observation window",
+    "covariance",
+    "radial velocity"
+  ],
+  "display": [
+    {
+      "path": "files/figures/gaia_test.png",
+      "caption": "Independent Gaia acceleration and jerk test. The published orbit leaves a jerk mismatch. A joint example with higher fixed inner masses gives closer agreement. Contours use radii 1 and 3 in each marginal Gaussian plane."
+    },
+    {
+      "path": "files/figures/light_and_fit.png",
+      "caption": "Gaia fit statistics and a conditional tertiary light-fraction profile. A faint and a dominant-light branch remain. The profile fixes one orbit and an inner secondary light fraction of 0.1; it is not a posterior."
+    },
+    {
+      "path": "files/figures/rv_test.png",
+      "caption": "Two faint-tertiary point models predict an outer systemic RV range of about 19 km/s in 2026-2030. The constant velocity zero point is free. These curves are conditional forecasts without confidence bands."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bbb8cb3af30279b263948b43ed5df5dceb9e03150f8a2462b5ff5c32eb2c6dc4",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We reuse its TESS timing and geometry measurements, model states and code. We test the proposed orbit against Gaia acceleration and jerk that were not used by that study. The nominal point model leaves a mismatch, but a stated higher-mass case has better agreement."
+    },
+    {
+      "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source identification, deepening-eclipse result, and Gaia acceleration context. No external catalog from that bundle is included."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243969",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 astrometric binary processing and acceleration-model formalism."
+    },
+    {
+      "target": "doi:10.17876/gaia/dr.3/72",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 acceleration data at AIP."
+    },
+    {
+      "target": "doi:10.17876/gaia/dr.3/12",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 commanded scan law."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940",
+      "reason": "Gaia DR3 release and survey context."
+    },
+    {
+      "target": "https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu4nss/sec_cu4nss_astrobin/ssec_cu4nss_astrobin_acceleration.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Centered acceleration and jerk design at J2016.0."
+    },
+    {
+      "target": "https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_non--single_stars_tables/ssec_dm_nss_acceleration_astro.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Column-major covariance order and adjusted standard errors."
+    },
+    {
+      "target": "https://gaia.aip.de/metadata/gaiadr3/commanded_scan_law/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Time origin, scan angle, commanded-attitude limits and external license."
+    },
+    {
+      "target": "https://gaia.aip.de/metadata/gaiadr3/nss_acceleration_astro/",
+      "reason": "External acceleration-data license and schema."
+    },
+    {
+      "target": "https://www.cosmos.esa.int/web/gaia-users/license",
+      "reason": "External Gaia data terms."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085",
+      "relations": [
+        "uses"
+      ],
+      "reason": "REBOUND."
+    },
+    {
+      "target": "doi:10.1093/mnras/stv1257",
+      "relations": [
+        "uses"
+      ],
+      "reason": "WHFast."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2164",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IAS15 reference integration."
+    },
+    {
+      "target": "doi:10.17909/t9-nmc8-f686",
+      "reason": "TESS SPOC data underlying the inherited source measurements. We do not refit the raw light curves."
+    }
+  ]
+}

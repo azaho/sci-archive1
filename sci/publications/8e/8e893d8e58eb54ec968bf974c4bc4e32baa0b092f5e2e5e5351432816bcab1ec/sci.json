@@ -1,0 +1,53 @@
+{
+  "title": "Published ShakeMap residual moments do not identify excess between-event variance when shared station errors are allowed",
+  "abstract": "A prior test found too little stated uncertainty in first USGS ShakeMaps and assigned much of the error to a between-event term. We audit that assignment with its published event aggregates. The variance correction estimates between-event variance plus average within-event covariance between distinct stations. We prove this identity for unequal station variances and counts. An exchangeable Gaussian family then has the same full residual covariance with different variance partitions. On 193 PGA and 194 PGV events with at least five later records, shared within-event correlations of 0.262 and 0.215 make the between-event standard deviations equal to the parent model references. Event-bootstrap ranges are 0.167-0.351 and 0.124-0.297. These are sensitivity thresholds, not measured spatial correlations. Total residual spread stays fixed. The parent one-standard-deviation coverage of 49.5% for PGA and 53.5% for PGV is unchanged. The general correlation issue is known; the contribution is an exact audit and quantitative identification limits for this sample. No new shaking observations, station coordinates or covariance decay model are used. We support the marginal uncertainty finding but show that this estimator cannot establish its proposed variance source. Code, proof, licensed input aggregates, hashes and numerical checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "ShakeMap",
+    "uncertainty",
+    "spatial covariance",
+    "variance decomposition",
+    "identification",
+    "forecast verification"
+  ],
+  "display": [
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "A shared within-event error changes the variance assignment while the complete residual covariance stays fixed in the stated model family. Dots in the left two panels match the parent median model tau reference. The right panel shows the fixed total-spread ratio and 95% event-bootstrap ranges. Correlation is a sensitivity parameter, not a measurement."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+      "relations": [
+        "uses",
+        "challenges",
+        "supports"
+      ],
+      "reason": "We reuse published event aggregates. We support the marginal coverage result and challenge attribution of excess spread to the between-event term."
+    },
+    {
+      "target": "doi:10.1002/eqe.922",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.jackwbaker.com/Publications/Jayaram_Baker_(2011)_GMM_fitting,_ICASP.pdf",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1785/0120210177",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
