@@ -1,0 +1,111 @@
+{
+ "title": "In 182 mouse brain regions, similar axonal input and similar cell-type mix both predicted similar spiking phenotypes beyond geometry; the thalamic burst link to cortical input was not wiring-specific",
+ "abstract": "Question: does the specific axonal wiring of a mouse brain region set its intrinsic spiking phenotype, or do geometry and local cell-type composition explain the same pattern? Data: 62,049 good IBL Brain-Wide Map units in 182 regions (456 sessions, 139 mice, 12 labs), the Knox 2019 connectome, Allen MERFISH cell types and the CCF. Method: each region got an 8-feature spiking phenotype (rate, two autocorrelogram indices, ISI burstiness and memory, spike duration, peak-to-trough ratio, narrow fraction). For 16,471 region pairs we related phenotype similarity to input-fingerprint similarity (F_in) and cell-type composition similarity (T), with controls for distance, a distance-only connectome model and division. The plan was frozen before analysis; inference used 1,000 spatially autocorrelated surrogate phenotype maps. Results: F_in predicted phenotype similarity beyond geometry (partial beta 0.43, surrogate p = 0.001), and so did T (0.42, p = 0.001). In a joint model, T added more unique variance (0.034) than F_in (0.009), in 98 of 100 independent lab halves, but the jackknife interval of the difference just included zero. The distance-only connectome did not beat surrogates. The effect was in waveform shape and firing rate; the autocorrelogram burst index showed no link. In 27 thalamic nuclei, cortical input share predicted burst fraction beyond spatial surrogates (rho 0.74, p = 0.006), but distance from the midline gave the same rho, and S correlated 0.82 with midline distance and 0.90 with the relay cell-type share; S did not add clearly beyond midline distance (partial rho 0.35, p = 0.07). Conclusion: similar inputs go with similar phenotypes beyond geometry, but inputs and cell types are correlated parts of regional identity, and the data do not show that wiring rather than cell type sets the phenotype. Limitations: correlational, region-level, one connectome and one MERFISH brain, approximate isotropic surrogates, extracellular features with pair reliability 0.70.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectivity fingerprint",
+  "structure-function",
+  "cell types",
+  "MERFISH",
+  "Knox 2019",
+  "IBL",
+  "Brain-Wide Map",
+  "spatial autocorrelation",
+  "brainsmash",
+  "thalamus",
+  "burst firing",
+  "spike waveform",
+  "mouse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pair_tests.png",
+   "caption": "Pre-registered pair tests, 182 IBL regions. Left two panels: phenotype similarity against input-fingerprint similarity F_in and cell-type composition similarity T, as decile means within three distance bands. Third panel: partial betas (controls: distance spline, geometric-model input similarity, same division) against 1,000 spatially autocorrelated surrogate maps. Right: unique delta R2 of F_in and T in the joint model with jackknife intervals and the surrogate 95th percentile."
+  },
+  {
+   "path": "files/figures/fig3_thalamus.png",
+   "caption": "Thalamus, 27 nuclei. Burst fraction (from sci:sha256:0b0f9e1c) against cortical input share S, distance from the midline, and the share of the relay cell type 151 TH Prkcd Grin2c Glut (dot shade). Right: partial Spearman correlations for spike-train burst fraction (27 nuclei) and the ACG burst index (28 thalamic regions), with residual permutation p values."
+  },
+  {
+   "path": "files/figures/fig2_features_neighbours.png",
+   "caption": "Exploratory. Left: partial betas per phenotype feature (* surrogate p < 0.05, uncorrected). Middle: prediction of each region from its 5 most similar regions more than 2 mm away, by each similarity, with the surrogate mean + 1.96 SD. Right: betas in pair subsets."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its nucleus and unit burst tables and its S definition. We confirm that S predicts thalamic burst fraction beyond spatial surrogates, but we show that midline distance and relay cell-type share predict it equally well."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its finding that axonal input predicts regional task coding agrees with our finding that input fingerprints predict regional spiking phenotype beyond geometry."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Prior test of wiring specificity against distance-preserving rewired connectomes in mouse."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Prior test of wiring specificity in larval zebrafish."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "reason": "Prior comparison of transcriptomic type number and spike-feature diversity in IBL regions."
+  },
+  {
+   "target": "sci:sha256:18f77139dff654b47a941667ae1dada41b8d3adac3f068238fada92b5497833d",
+   "reason": "Prior link of narrow-unit share with Pvalb-type share across IBL regions; our waveform features carry the composition effect."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map: unit tables and autocorrelograms."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 mesoscale connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen MERFISH whole-brain cell-type atlas."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF 2017 annotation and ontology."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Variogram-matched surrogate maps (brainsmash)."
+  },
+  {
+   "target": "doi:10.1038/nrn893",
+   "reason": "Connectivity fingerprint hypothesis."
+  }
+ ]
+}
