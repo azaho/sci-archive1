@@ -1,0 +1,141 @@
+{
+ "title": "Stellar contraction predicts the K2 Pleiades, Praesepe and Hyades CPV counts, but TESS field M dwarfs near the main sequence have fewer CPVs than contraction predicts at the same corotation ratio",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period P. An earlier TESS result found that x = R_cor/R* (corotation radius over stellar radius, with contraction radii) explains the age decline of the CPV rate in 1-750 Myr BANYAN Sigma members, with no age term. We tested this x model with data that its fit did not use. (1) K2: we selected Pleiades (120 Myr), Praesepe and Hyades (about 700 Myr) members from Gaia DR3 kinematics, analysed 2,237 K2SFF light curves with the TESS pipeline, labelled the candidates blind, and measured the efficiency with injected TESS CPV shapes (visual recovery 32 of 40). In 209 Pleiades rapid rotators (P = 0.15-1 d, BP-RP = 2.4-3.8) we find 1 CPV; the 1-24 Myr rate at fixed P predicts 22.1 (p = 3e-7), the x model 1.9 (0.7-3.7) and a 44-Myr exponential 1.9. In 61 Praesepe and Hyades rapid rotators we find 0; the predictions are 5.1 (p = 0.008), 0.13 and below 0.01. Thus K2 confirms the decline at fixed P but cannot separate contraction from age, because no old cluster rapid rotator has x below 4.3 and K2 long cadence loses CPV shapes at P < 0.25 d. (2) TESS field stars less than 0.5 mag above the main sequence (old, not BANYAN members): 408 rapid rotators have 0 CPVs, while the x model fitted to 763 members predicts 5.1 (2.6-9.1; p = 0.015). The rate ratio at matched x and colour is below 0.41 (p = 0.003), and an exact stratified test expects 4.3 (p = 0.007). The deficit stays with RUWE < 1.4, dMG < 0.3, other radius scales (0 vs 5.2 and 10.2) and broader labels (13 vs 23.5). It comes mostly from early M dwarfs (BP-RP < 3.1); late M dwarfs give no useful test (0 vs 1.5). Thus x describes the CPV rate up to about 200 Myr, but old field M dwarfs need a second age-dependent factor or a different fast-rotator population. Limitations: one automated agent made the K2 labels; the efficiency uses a TESS-trained emulator; strict membership drops 4 of 6 literature Pleiades dip stars; tidally locked binaries among old early-M fast rotators can cause the field deficit; counts are small and many variants were tested.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "scallop shell stars",
+  "M dwarfs",
+  "K2",
+  "TESS",
+  "Pleiades",
+  "Praesepe",
+  "Hyades",
+  "corotation radius",
+  "pre-main-sequence contraction",
+  "stellar rotation",
+  "injection-recovery",
+  "occurrence rate",
+  "Gaia DR3 membership"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rate_vs_x.png",
+   "caption": "Efficiency-corrected CPV rate per rapid rotator versus x = R_cor/R* (BHAC15 radius at the age; field stars at 1 Gyr), P = 0.15-1 d, BP-RP = 2.4-3.8. (a) TESS 2-min BANYAN members of 1-24 Myr and 35-750 Myr, and field stars less than 0.5 mag above the main sequence (0 CPVs in 408). (b) K2 Pleiades and Praesepe + Hyades, blind visual labels and K2 injection efficiency. Dashed: x model fitted to all TESS members. Bars and triangles: 95% intervals and upper limits."
+  },
+  {
+   "path": "files/figures/fig2_observed_vs_predicted.png",
+   "caption": "Observed CPV counts (vertical lines, squares) and predictions with 95% bootstrap intervals. Left and middle: K2 Pleiades and Praesepe + Hyades against three TESS-fitted models (period with 1-24 Myr rates, period with a 44-Myr exponential, x model). Right: TESS near-main-sequence field stars against the x model in robustness variants, with the exact stratified p-value."
+  },
+  {
+   "path": "files/figures/fig3_k2_coverage.png",
+   "caption": "(a) x of the 75 TESS member CPVs and of the old rapid-rotator groups: old stars rarely have x < 4. (b) K2 long-cadence detection efficiency of injected TESS CPV shapes versus period (median and interquartile range; dashed: TESS plateau). (c, d) Folded K2 campaign 4 light curves of the Pleiades stars labelled C (EPIC 211047687) and A (EPIC 211070495) in blind vetting."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "Reuses its x model and stellar-parameter code. K2 cluster counts agree with its predictions (support), but old TESS field stars near the main sequence have fewer CPVs than its model predicts at the same x, so its conclusion that no age term is needed does not extend to field ages (challenge)."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Uses its BANYAN classes, TESS efficiencies, emulator training features and injection method. K2 data confirm the steep decline of the CPV rate at fixed period by 120 Myr."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Uses its CPV labels, folded curves, features and cpvlib pipeline, which we applied to K2. The K2 cluster results support its age trend with independent data."
+  },
+  {
+   "target": "sci:sha256:0737cdf0485ecfddc554a3f33a1f59e2035c5ead6835197030547385c9b181c3",
+   "reason": "Height above the main sequence predicts CPV detections; we test the stars at the lowest heights."
+  },
+  {
+   "target": "sci:sha256:c1d97d85beab0db9bbb049c7ac3b3c3e8916fb87850e8d09d8ae9b848ab4cc43",
+   "reason": "Period dependence of CPV detections and transit geometry."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPVs between sectors; K2 campaigns are longer than TESS sectors."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "reason": "Bouma et al. 2024, CPV definition and TESS sample."
+  },
+  {
+   "target": "https://arxiv.org/abs/1606.00055",
+   "reason": "Rebull et al. 2016, Pleiades K2 stars with angular dips; we recover the two that pass our membership."
+  },
+  {
+   "target": "https://arxiv.org/abs/1703.07031",
+   "reason": "Rebull et al. 2017, no such stars in Praesepe K2 data."
+  },
+  {
+   "target": "https://www.ipac.caltech.edu/publication/2018AJ....155...63S",
+   "reason": "Stauffer et al. 2018, rapidly rotating PMS M dwarfs with light curves that suggest orbiting clouds."
+  },
+  {
+   "target": "doi:10.1086/678764",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Vanderburg and Johnson 2014, K2SFF light curves."
+  },
+  {
+   "target": "doi:10.1086/676406",
+   "reason": "Howell et al. 2014, the K2 mission."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 astrometry and photometry for membership and colours (AIP TAP mirror)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BHAC15 evolutionary tracks."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/208/1/9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pecaut and Mamajek 2013 dwarf sequence (2022.04.16 table)."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/aaae09",
+   "reason": "BANYAN Sigma, used for the TESS age classes."
+  },
+  {
+   "target": "https://www.cosmos.esa.int/web/gaia-users/gaia-data-license"
+  },
+  {
+   "target": "https://archive.stsci.edu/hlsps/k2sff/"
+  }
+ ]
+}

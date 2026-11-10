@@ -1,0 +1,147 @@
+{
+ "title": "Passing vehicles hid low-pitched, warm-adapted birds at North American Breeding Bird Survey stops in 1997-2025, but traffic grew too little to change the bird temperature index trend by over 1%",
+ "abstract": "Question: bird community temperature indices (CTI) of the North American Breeding Bird Survey (BBS) follow only a small part of the spatial CTI-temperature slope. Known detection artefacts make the CTI trend larger. Can roadside traffic, which masks low-pitched songs, make it smaller? Data: BBS 2026 release, 1997-2025: 3.1 million stop counts in 62,179 runs on about 4,700 routes with the number of vehicles that passed during each 3-minute count; song frequencies of Sagar et al. (2024, CC0); GHCN_CAMS May-July temperature. Method (plan written before outcomes): Poisson pseudo-likelihood and linear models with stop x observer and run fixed effects, so that each stop is compared with itself on other mornings; 334 per-species models and a random-effects meta-regression; vehicle and CTI trends with route x observer effects; 100-draw route bootstrap; a traffic-standardized CTI. Results: each passing vehicle reduced counts by 0.83%, by 1.99% below 2 kHz and by 0.50% at 4-5 kHz. Species loss decreased by 0.40 percentage points per kHz (95% CI 0.26-0.57; inside families 0.26). Warm-adapted species sing lower (-0.81 C per kHz), and each vehicle lowered the stop CTI by 0.0019 C (CI 0.0012-0.0027). The observer noise flag reduced counts by about 13%. Traffic per stop increased by only 0.072 vehicles per decade (about +27% since 1998). Thus the bias of the within-observer CTI trend (0.071 C per decade; temperature 0.328) was -0.00014 C per decade (CI -0.00021 to -0.00007), 0.19% of the trend (0.26-0.30% with concave forms) and about 0.15% of the gap to the spatial expectation (0.165). The traffic-standardized trend differed by +0.00003 C per decade, and the spatial slope did not change (0.504). Vehicles remove low-pitched birds, but long observer tenure removes high-pitched birds; this opposite signature supports a hearing mechanism for the tenure drift. Conclusion: traffic masking is real but does not hide climate tracking; the known detection artefacts do not explain weak tracking. Limitations: constant noise from distant roads and long-term road avoidance are not measured; no vehicle data before 1997; 17 species lack song frequency.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "traffic noise",
+  "acoustic masking",
+  "song frequency",
+  "detection bias",
+  "community temperature index",
+  "climate tracking",
+  "climate debt",
+  "roadside surveys",
+  "birds",
+  "North America",
+  "natural experiment",
+  "species temperature index"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_vehicle_loss_by_frequency.png",
+   "caption": "A: count change per passing vehicle at the same stop, by dominant song frequency band (PPML; stop x observer and run fixed effects, or run x 10-stop block fixed effects; 95% CI with route clusters). B: precision-weighted species means per vehicle (blue) and the published change per year of observer tenure (red, sci:b9959b67) in the same bins. The two frequency signatures are opposite."
+  },
+  {
+   "path": "files/figures/fig2_species_slopes.png",
+   "caption": "A: per-vehicle count slope of 287 species against dominant song frequency; colour is the species temperature index; the line is the random-effects meta-regression (+0.40 percentage points per kHz). B: warm-adapted species sing lower (-0.81 C per kHz)."
+  },
+  {
+   "path": "files/figures/fig3_trend_and_budget.png",
+   "caption": "A: vehicles per stop relative to 1998 (route fixed effects). B: the 1997-2025 within-observer CTI trend, its spatial expectation, the traffic and noise biases measured here, and the published phenology and hearing-drift artefacts (1966-2025), in C per decade."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Source of the weak BBS CTI tracking result that this study tests for a cold detection bias."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Range-shift tracking deficit of BBS species; context."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Climate suitability and BBS abundance change; context."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Detection change in atlas range-shift estimates; context for detection artefacts."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Marine redistribution tracking; context for the tracking deficit."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Detection artefacts in animal phenology records; context."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index tracking; context."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Synthesis of tracking fractions across 75 networks; the gap that this study tests."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its BBS preparation, cross-fitted STI and song-frequency code; the opposite frequency signature of vehicle masking supports its hearing mechanism."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species-level tracking fractions; context."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local spatial benchmark of BBS thermal gradients; context."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Spatial versus temporal CTI slopes in the BBS; the gap that this study tests."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Forest type explains part of the gap; an ecological alternative to detection artefacts."
+  },
+  {
+   "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We compare its published tenure-drift frequency profile with the vehicle-masking profile (Figure 1B)."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Hearing drift is not identified by turnover; our mechanism test does not identify its size either."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its phenology-bias estimate in the detection budget."
+  },
+  {
+   "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+   "reason": "Bounds on slow lag; context for the part of the gap that detection does not explain."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "reason": "North American Breeding Bird Survey dataset, 2026 release (1966-2025), including 50-stop and vehicle data."
+  },
+  {
+   "target": "doi:10.5061/dryad.69p8cz99k",
+   "reason": "Song frequency data of Sagar et al. (2024), CC0."
+  },
+  {
+   "target": "doi:10.1098/rspb.2024.1908",
+   "reason": "Sagar et al. (2024), global analysis of bird acoustic frequency."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS gridded temperature (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "doi:10.1525/auk.2009.09056",
+   "reason": "Griffith, Sauer and Royle (2010): earlier test of traffic effects on BBS counts."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0027052",
+   "reason": "Francis, Ortega and Cruz (2011): noise pollution filters bird communities by vocal frequency."
+  }
+ ]
+}
