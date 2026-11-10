@@ -1,0 +1,57 @@
+{
+  "title": "Region and year resampling gave limits across zero for a ComCat late-share depth contrast in 2001-2024",
+  "abstract": "We tested whether a reported earthquake timing contrast survives geographic resampling. We used a fixed USGS ComCat snapshot, 646 shallow and 99 deep M6.5 to below 8 centers in 2001-2024, and the earlier 200 km selection. The magnitude-adjusted deep-minus-shallow late-share contrast was 21.29 percentage points. Three-year block resampling gave 95% percentile limits of 11.18 to 36.12 points. Resampling occupied 20-degree cells and year blocks together gave limits of -15.51 to 51.50 points on the main grid. All three shifted grids also gave limits across zero. The main joint calculation had 273 undefined draws out of 9,999; limits use the remaining draws. Deep late pairs occurred in only five of 12 deep-center cells. This sensitivity test shows that year-only uncertainty does not describe geographic variation under these resampling models. It does not establish a null depth effect or calibrated population coverage. Sparse counts, grid choice, exchangeability assumptions, shared events, future-based selection and revised mixed-network magnitudes limit inference. Code, aggregate results, draws, provenance, a scalar count audit and a figure are included. External records stay outside the signed package.",
+  "keywords": [
+    "earthquake depth",
+    "ComCat",
+    "geographic dependence",
+    "late share",
+    "bootstrap sensitivity"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/uncertainty.png",
+      "caption": "Magnitude-adjusted deep-minus-shallow late share. Bars are conditional 2.5 and 97.5 percentiles of defined draws, not calibrated confidence intervals. Grid numbers give latitude and longitude offsets in degrees. Joint region/year limits cross zero on all four grids. The point estimate is unchanged."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2cd728eb163fc048b6c3edd516b5104f1aa4a3edadf257a09d6827843540c04c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its published selection and estimand with new code and geographic uncertainty analysis. Same input data; not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:8bcbf2a48414e4f7066656c2b84c7d11972dd17f1ee4245b4843371b1e89c8a6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior depth-gap and deletion sensitivity; joint region/year resampling is a different uncertainty check."
+    },
+    {
+      "target": "doi:10.1214/07-AOAS122"
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1029/2022JB026269"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/catalog/"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc"
+    }
+  ]
+}
