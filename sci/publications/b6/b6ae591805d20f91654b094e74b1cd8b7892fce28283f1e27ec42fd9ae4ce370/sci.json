@@ -1,0 +1,138 @@
+{
+ "title": "Standard ETAS aftershock tails overpredicted Oklahoma M3+ earthquakes in 2019-2026 by about 4 times; an Omori law with a 1.4-2.2 year exponential taper contained the observed counts",
+ "abstract": "Question: is the 2021-2026 residual earthquake rate in Oklahoma an aftershock tail of the 2010-2020 earthquakes, or an independent rate that injection still drives, and which model forecasts it? Approach: we fit a space-time ETAS model with a quarterly, spatially varying background to the Oklahoma Geological Survey catalog, 2010-2026 (3,045 events of M 3.0 or more; 10,855 of M 2.5 or more), with EM estimation. We made forecasts from 2019-07 and 2021-01 with fits to earlier data only, and we checked the method on synthetic catalogs. Results: the standard ETAS model (Omori exponent p near 1) fit to 2010-2020 forecast 391 (95% range 273-521) M3+ events in 2021-2026 from earlier events alone; 102 occurred. From 2019-07 it forecast 704 (536-926); 179 occurred. Even fit to all data, it expected 104 direct aftershocks of pre-2021 events in 2021-2026, but assigned only 35. An exponential taper on the Omori law increased the log-likelihood by 103 (M3+) and 421 (M2.5+) for one parameter, with a taper time of 515-794 days. With a decaying background, the tapered model forecast 59 (22-137) and 157 (85-257) events, and it had the best cell log-likelihood of all tested models, also better than exponential decay of the recent rate. In 2021-2026, about half of the events descend from earlier earthquakes, and the independent rate (4.2 per year) is about 1.4-2.8 times the 1980-2008 rate after correction for a bias found in the synthetic test. Limitations: the taper was added after the standard forecasts failed; only two overlapping forecast starts; mixed OGS magnitudes; no triggering across the box edges.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Oklahoma",
+  "ETAS",
+  "aftershock decay",
+  "Omori law taper",
+  "earthquake forecasting",
+  "forecast verification",
+  "wastewater disposal",
+  "stochastic declustering",
+  "background seismicity",
+  "seismicity after injection reduction",
+  "Arbuckle"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_forecasts.png",
+   "caption": "Out-of-sample annual forecasts of M3+ earthquakes in the Oklahoma box from 2019-07 (left) and 2021-01 (right), each fit only to earlier data. The standard ETAS model (blue) and the epoch-productivity model (pink) forecast too many events. The tapered ETAS model with a decaying background (green; shading: 95% simulation range) contains the observed counts (black). Orange: exponential decay of the recent rate. Yellow: tapered cascade of pre-start events only."
+  },
+  {
+   "path": "files/figures/fig1_decomposition.png",
+   "caption": "Annual M3+ counts (black dots) separated into independent events (blue) and triggered events by the period of their root ancestor, for the tapered (left) and standard (right) ETAS fits to 2010-2026. Dashed line: 1980-2008 rate of all M3+ events in the box (1.52 per year)."
+  },
+  {
+   "path": "files/figures/fig5_model_likelihoods.png",
+   "caption": "Log-likelihood of ETAS variants relative to the standard model (M3+, 2010-2026). The taper of the Omori law gives +103 for one parameter; productivity by epoch gives +18 for four parameters; fixed p values are worse."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a2572246ee8f3fa15450d11e3c30647b50a431bf8bae5b361c1bcb5ea198c8",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its OGS catalog copy, study box and 1980-2008 reference rate. Our result supports its finding that rates stay above the 1980-2008 level and that residual events occur where earlier events occurred, and it explains part of this as tapered triggering."
+  },
+  {
+   "target": "sci:sha256:d6c0ec4f174b1330bc04ff13b32b6747e594058c722d3ada3a7a4f9069c8d5e6",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its ComCat download and parsed OCC disposal tables. Our ETAS background follows disposal with a short memory, which agrees with its finding that pressure loss in 1-4 years was necessary."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-06167-4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Published Oklahoma forecast that the parent studies tested; our study explains part of its overprediction."
+  },
+  {
+   "target": "doi:10.1126/sciadv.1601542",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Predicted that aftershock sequences would delay the decline; we find that such tails were short (taper 1.4-2.2 years)."
+  },
+  {
+   "target": "https://www.jakewalter.net/papers/Goebeletal2019.pdf",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Goebel et al. (2019, EPSL 522, 135-143) found an aftershock deficiency of Oklahoma sequences during rapid mitigation; our tapered and declining triggering agrees at catalog scale."
+  },
+  {
+   "target": "https://pubs.usgs.gov/publication/70048493",
+   "reason": "Earlier ETAS model of Oklahoma rate changes with a time-varying background (Llenos and Michael 2013)."
+  },
+  {
+   "target": "doi:10.1023/A:1003403601725",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Space-time ETAS model form (Ogata 1998)."
+  },
+  {
+   "target": "doi:10.1198/016214502760046925",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stochastic declustering with a kernel background (Zhuang et al. 2002)."
+  },
+  {
+   "target": "doi:10.1198/016214508000000148",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM estimation of ETAS (Veen and Schoenberg 2008)."
+  },
+  {
+   "target": "doi:10.1029/93JB02581",
+   "reason": "Rate-and-state response to stress changes (Dieterich 1994), used in the interpretation."
+  },
+  {
+   "target": "doi:10.1785/0220190211",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OGS statewide network and catalog (Walter et al. 2020)."
+  },
+  {
+   "target": "https://ogsweb.ou.edu/eq_catalog/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OGS earthquake catalog, retrieved 2026-11-08."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ComCat replication catalog, retrieved 2026-11-08."
+  },
+  {
+   "target": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OCC Form 1012A disposal volumes, files of 2026-11-08."
+  }
+ ]
+}
