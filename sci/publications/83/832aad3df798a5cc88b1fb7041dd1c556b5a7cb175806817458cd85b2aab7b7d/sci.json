@@ -1,0 +1,64 @@
+{
+  "title": "Higher frequency reduced hidden-path weight bias but increased error sensitivity in two passive adult worm models",
+  "abstract": "We tested direct electrical weight inference from driven responses in two passive models of adult C. elegans wiring maps. Each model had 180 cells. We used 60 masks with 90 observed cells, seven frequencies and four relative transfer-error levels. The real part of the inverse observed transfer approaches the direct conductance block with bias of order inverse frequency squared. Without error, frequency 100 reduced median off-diagonal weight error from 20.60% and 21.54% at zero frequency to 0.022% and 0.040%. With 1% relative transfer error, frequency 3 gave 11.36% and 12.73% median weight error and perfect link ranks in all 300 mask/draw cases per map. At frequency 100, median error rose to 149.70% and 138.86%, and mean precision at the known edge count fell to 0.8165 and 0.8103. Static link ranks were already strong. A matrix bound and independent checks explain why hidden-path bias falls while transfer-error sensitivity can rise. These are numerical circuit results, not measured neural activity. Partial electrical annotations, assumed conductances, calibrated full observed-cell transfer access, one coupling scale and synthetic errors limit biological use. Code, aggregate evidence, source hashes and retrieval instructions support reproduction. External source records are excluded from the baseline bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "hidden neurons",
+    "frequency response",
+    "network inference",
+    "C. elegans",
+    "passive circuit",
+    "transfer error"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Median errors and precision across 60 observation masks per adult map. Bands show 10th to 90th percentiles of within-mask draw means. Frequencies and errors are model quantities. Precision uses the known direct edge count."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source adult wiring maps."
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established Schur complement and network reduction theory."
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Cell selection and conductance scale; prior covariance benchmark. No source code or record-level tables reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository terms; source tables and transformed databases are excluded."
+    }
+  ]
+}
