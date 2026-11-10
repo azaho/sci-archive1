@@ -1,0 +1,65 @@
+{
+  "title": "A recent error term lowered PDO probability forecast scores in a 1981-2025 model test",
+  "abstract": "We tested whether recent error size improves one-month Pacific Decadal Oscillation prediction ranges beyond seasonal variance. We used fixed NOAA ERSSTv5 PDO and Nino 3.4 tables. Each year used earlier targets to fit a common mean model and two Gaussian variance models. There were 540 test months in 1981-2025. Adding the log of one plus scaled previous error squared gave a mean log score gain of -0.002891 nats per month. Its conditional 95% three-year block interval was -0.005295 to -0.000843. Five-year blocks and an ENSO variance control also gave negative intervals. Rolling training and recent-only scoring gave intervals across zero. Central 90% coverage fell from 88.33% to 88.15%. The method slightly reduced primary forecast skill. This does not show that all error-history methods fail or that physical noise has no persistence. Revised data, fitted training residuals, a selected formula and conditional uncertainty limit inference. Code, source hashes, aggregate scores, a figure and a separate numerical check are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "PDO",
+    "probability forecast",
+    "error persistence",
+    "conditional variance",
+    "NOAA",
+    "chronological test"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Recent error size gave a small negative primary probability score gain. Lines show conditional 95% three-year block intervals. Lower panel shows yearly score gains."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5cd067f63f8006231a7cf45bfe05d7d43dfff6d8676144decd60db5fa1ed4098",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its common mean, annual test calendar and seasonal variance comparison with recent error size. Training begins one year later. We wrote new code and share source observations."
+    },
+    {
+      "target": "sci:sha256:31dfe4e21a09c99614daa4e6ea9e108aa1419bba8709eee1da510e94cf755559",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published prior seasonal mean-response test. Its verified bundle preserves the two exact external source snapshots for reproduction."
+    },
+    {
+      "target": "sci:sha256:bedc4e04f9b7093ed7ee596c230571ac2922f79ca438971360cd01f9b7446bdc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior sign-dependent PDO mean test informed scope; our test concerns error-size information in variance."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-15-0508.1"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.noaa.gov/office-education/outreach-communication/faq"
+    }
+  ]
+}
