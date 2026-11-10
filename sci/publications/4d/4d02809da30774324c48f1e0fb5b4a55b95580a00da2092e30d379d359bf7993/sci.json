@@ -1,0 +1,66 @@
+{
+  "title": "Nonnegative filters fail for 35 of 480 selected Allen mouse current-to-voltage fit pairs",
+  "abstract": "We tested whether each selected chemical connection can have a causal nonnegative filter that converts its fitted current response shape into its fitted voltage response shape. We aligned onsets and allowed an instantaneous filter term. For the squared-rise fit family, a partial fraction formula gives an exact sign test with at most one interior extremum. After decay-limit screening in Allen Synaptic Physiology r2.1, the test rejects 35 of 480 main mouse V1 connections, 19 of 262 early mouse connections and 30 of 160 human connections. Mean and variance checks miss 20, 12 and 23 of these conflicts. The full sign test rejects 19, 12 and 21 connections that also pass the unit-mass atom bound. Negative filter mass exceeds 0.01 within 50 ms in 26, 15 and 22 connections. These are finite-sample model checks on exact fitted shapes, not measured error estimates or evidence against passive neurons. The fit family requires an instantaneous inverse term; separate clamp states, fit error, missing fits and selected slices limit biological claims. Original code, proof, aggregate results, figure, source hashes and external regeneration instructions support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic kinetics",
+    "nonnegative filter",
+    "inverse filter",
+    "passive model",
+    "model check"
+  ],
+  "display": [
+    {
+      "path": "files/filter.png",
+      "caption": "Exact sign failures and negative filter mass in three selected interior-decay samples. Each connection has its own filter. Fitted onsets are aligned. These are model diagnostics, not measured uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:fd63134619afce7c6ca077a5f7002c361243b4a79d24c66e3112ca75211b9c90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the moment audit with an exact full-sign test and separate filters for each connection. No code or record table reused."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    }
+  ]
+}

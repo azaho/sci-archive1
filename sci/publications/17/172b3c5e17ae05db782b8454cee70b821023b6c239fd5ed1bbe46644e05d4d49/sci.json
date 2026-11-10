@@ -1,0 +1,64 @@
+{
+  "title": "Two shape checks add 10 failures at a 0.10 change limit in 607 selected Allen recovery curves",
+  "abstract": "We tested necessary shape constraints for fixed-sign positive mixtures of exponential recovery processes in Allen Synaptic Physiology r2.1. The sample had 607 detected mouse VisP and human TCx connections with four finite 50 Hz recovery summaries and at least five trials per pause. A linear program found the smallest uniform change needed for each shape. At a 0.10 normalized-unit limit, 467 curves failed the sign and monotone constraints. Curvature added nine failures. A third-order divided-difference constraint added one more. Thus the two added checks flagged 10 of the 140 curves that passed the first test. At a ten-trial minimum, curvature added two failures among 37 connections; the third-order check added none. The checks are necessary but not sufficient for positive exponential mixtures. The tolerance is assumed, not measured. Separate trials, baseline drift, shared recordings and selected slices prevent a biological model rejection or a population-rate claim. Original code, a proof, aggregate evidence, source hashes and external retrieval steps support reproduction. Source records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic recovery",
+    "exponential mixtures",
+    "shape constraints",
+    "divided differences",
+    "model compatibility"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/recovery.png",
+      "caption": "The minimum change needed for three nested necessary shape sets. The right panel shows shares above 0.10. These are descriptive sample summaries, not population uncertainty intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:3cc12e6d0edfce315c1b81166368dbccc1cb332250dc26a5aa72e5022aca4f41",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its fixed-sign monotone audit with two higher-order necessary conditions. Matches its selected regions and reproduces its 607-curve primary count and 467 monotone failures. No source code or numeric tables copied."
+    },
+    {
+      "target": "doi:10.1073/pnas.94.2.719",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1515/9783110215311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Classical positive exponential mixture and complete monotonicity context; no theorem novelty claimed."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
