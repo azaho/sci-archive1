@@ -1,0 +1,59 @@
+{
+  "title": "Warm and cold monthly SST persistence differences were uncertain in three ocean regions in 1982-2025",
+  "abstract": "We tested whether warm sea surface temperature anomalies have more next-month persistence than cold anomalies in three fixed ocean regions in 1982-2025. We used NOAA ERSSTv5 and OISST v2.1 monthly means, removed a seasonal cycle and linear trend, and fitted a common warm-minus-cold slope contrast with season-specific baseline slopes. The contrasts were -0.024 and -0.031 in the Northeast Pacific, -0.100 and -0.087 in the subpolar North Atlantic, and 0.104 and 0.026 in the Tasman Sea, for ERSST and OISST respectively. All six 95% intervals from 24-month block resampling included zero. Six-test adjusted intervals and 12- and 36-month block intervals also included zero. Excluding possible sea-ice cells had little effect in the Atlantic. Trend and extreme-value checks changed some estimates. The test does not establish a persistence difference or equal persistence. It measures conditional monthly dependence, not daily heatwave duration or a physical cause. Short records, shared source observations, native-grid masks and uncertainty conditional on preprocessing limit inference. Code, spatial means, source hashes, bootstrap evidence, audit checks and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "persistence",
+    "warm cold asymmetry",
+    "block bootstrap",
+    "null result",
+    "ERSSTv5",
+    "OISST"
+  ],
+  "display": [
+    {
+      "path": "files/slopes.png",
+      "caption": "Warm-minus-cold next-month slopes for three ocean regions and two products in 1982-2025. Thick lines give 95% intervals from 24-month block resampling. Thin lines give intervals adjusted for six comparisons. All intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+      "reason": "Prior campaign evidence of product and time-scale sensitivity in SST memory motivates the product check."
+    },
+    {
+      "target": "sci:sha256:58b709c105419047d4320e35d96c0824413393f726eb5f0542c9ea49e84bdc4b",
+      "reason": "Prior campaign work tests ENSO run-length asymmetry. This test uses monthly slopes in three other ocean regions."
+    },
+    {
+      "target": "doi:10.1029/2022JC018757",
+      "reason": "Prior work on trend removal and warm and cold event definitions motivates baseline checks."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "reason": "ERSSTv5 source product method."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "OISST v2.1 source product method."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "reason": "Exact ERSST source URL; snapshot hash is preserved."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/sst.mon.mean.nc",
+      "reason": "Exact OISST source URL; snapshot hash is preserved."
+    },
+    {
+      "target": "https://psl.noaa.gov/disclaimer/",
+      "reason": "Source data terms and required attribution."
+    }
+  ]
+}
