@@ -1,0 +1,184 @@
+{
+ "title": "Most bilaterally repeated between-animal synapse-count change in adult fly nerve cord and brain is specific to the BANC connectome; two male FIB-SEM nerve cords share little",
+ "abstract": "Question: earlier SCI studies found that between-animal synapse-count changes in adult fly connectomes repeat on the left and right sides after neuron gains are removed, but with two animals they could not tell which animal carries this change. Approach: we used a three-cornered hat. With three animals and two sides, the cross-side covariances of pairwise animal contrasts identify, for each animal, the variance V of its edge-level deviation that is the same on both sides. Count noise does not enter these covariances. We used the ventral nerve cords of MANC v1.0 and the male CNS v1.0 (two males, one Janelia FIB-SEM pipeline) and BANC v888 (female, GridTape TEM), with 2,697 matched left-right neuron pairs. We also used the brains of the male CNS, FlyWire FAFB v783 and BANC (1,093 cell types), and the right hemibrain v1.2. Gains were fitted on other folds of edges. Results: for connections with a mean of 16 or more synapses per copy, V was 0.032 (95% crossed bootstrap 0.022 to 0.045) in MANC, 0.009 (0.000 to 0.018) in the male CNS nerve cord and 0.179 (0.164 to 0.194) in BANC. In the brain, V was 0.058 in the male CNS, 0.031 in FAFB and 0.224 (0.194 to 0.259) in BANC. Simulations without extra variance gave values within 0.006 of zero. After gains, the hemibrain did not share the specific deviation of any brain. Neuropil, transmitter, class, neuromere and hemilineage covariates did not change V(BANC). The component was diffuse over neurons and the same in two BANC synapse tables. Count noise factors of 3 to 5 explained most of the two-copy dispersion between the two male nerve cords. Limitations: one animal per dataset, so BANC biology and BANC reconstruction cannot be separated; matching depends on dataset annotations.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.QM"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "synapse count",
+  "wiring variability",
+  "reproducibility",
+  "three-cornered hat",
+  "variance decomposition",
+  "bilateral symmetry",
+  "neuron gain",
+  "Drosophila",
+  "MANC",
+  "male CNS",
+  "BANC",
+  "FlyWire",
+  "hemibrain",
+  "ventral nerve cord",
+  "reconstruction pipeline"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_hat.png",
+   "caption": "Figure 1. Cross-side covariance of between-animal log-count changes (A, C) and the dataset-specific bilateral variance V from the three-cornered hat (B, D), by connection strength, in the ventral nerve cord (top) and the brain (bottom). Bars: 95% crossed bootstrap intervals. BANC carries most of the repeated change; the two male FIB-SEM nerve cords share little."
+  },
+  {
+   "path": "files/figures/fig2_tests.png",
+   "caption": "Figure 2. Tests of explanations. A: edge-class covariates do not change V. B: removal of top-scoring neuron pairs (scored on independent edges) changes the BANC component little; the small MANC versus male CNS component is concentrated. C: after gains the hemibrain does not align with any brain (open symbols: without gains). D: two BANC synapse tables share the BANC component."
+  },
+  {
+   "path": "files/figures/fig3_simulation.png",
+   "caption": "Figure 3. Simulation checks in the ventral nerve cord (mean of 16 or more synapses per copy). A: with no extra variance, the estimates stay near zero. B: with simulated V, W and count noise set to the observed estimates, the estimator recovers the true values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Selected study; we identify which animal carries the between-animal excess it reported."
+  },
+  {
+   "target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Found bilateral repetition of between-animal changes; we attribute it mostly to one dataset."
+  },
+  {
+   "target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Direction-balance repetition across sides in the same three adult maps."
+  },
+  {
+   "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+   "reason": "Optic-lobe decomposition of fly count over-dispersion into shared factors."
+  },
+  {
+   "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+   "reason": "Count-noise factor kappa and edge term after gains; stated the animal-pipeline confound we address.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e",
+   "reason": "Related work on two-way connections and contact."
+  },
+  {
+   "target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f",
+   "reason": "Related work: wiring variability did not predict co-activity variability."
+  },
+  {
+   "target": "doi:10.7554/eLife.97769",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 connectome."
+  },
+  {
+   "target": "doi:10.7554/eLife.97766",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 annotations."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 connectome."
+  },
+  {
+   "target": "doi:10.1101/2025.07.11.664377",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC connectome."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC v888 data release."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire FAFB v783 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and hemibrain matches."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain v1.2 connectome."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-manc-exports/v1.0/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 export files."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 flat connectome files."
+  },
+  {
+   "target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire Codex v783 files."
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire supplemental file 1 (hemibrain type matches)."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain v1.2 traced adjacencies."
+  },
+  {
+   "target": "https://join.flywire.ai/guidelines",
+   "reason": "FlyWire data terms."
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Noise contrasts give a sample-based drift error bound with unknown fixed input and readout noise",
+  "abstract": "We study directed drift recovery from controlled noise in a fully observed stable linear stochastic system. Unknown fixed process noise and independent readout noise cancel from covariance contrasts. We combine the full contrast operator with a Gaussian covariance bound to give a confidence ball from measured covariances and independent sample counts. The bound includes uncertainty in every condition and in the shared baseline. It needs no true covariance error. A scalar counterexample shows that changing readout noise can give a wrong drift with a vanishing bound. We test fixed binary designs in six synthetic graphs with 4 or 8 nodes, two doses, three readout levels and four sample budgets. Of 4320 fits, 2160 bounds were finite and none missed the true drift. Finite bounds were at least 25.6 times the actual error. The study provides a proof, a reusable certificate tool, synthetic inputs and all 4320 trial records. The result needs calibrated diffusion increments, fixed drift and units, full observation and independent Gaussian snapshots. It does not establish recovery from neural recordings or identify the biological source of node similarity.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "functional connectivity",
+    "noise intervention",
+    "confidence ball",
+    "Lyapunov equation",
+    "readout noise",
+    "covariance uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/results/certificate.png",
+      "caption": "Sample errors, finite confidence bounds and their numerical coverage in synthetic fixed-design tests. Readout noise is unknown and fixed across conditions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected cross-species starting point; no data reused."
+    },
+    {
+      "target": "sci:sha256:4ef9d52256eccfbddf8a6d2b5119a3d7204c998bcdbd81815541dd806fb787bf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior covariance contrasts and binary noise designs with unknown fixed input noise."
+    },
+    {
+      "target": "sci:sha256:d5d44b56c64dbf18acbe1b6bc96097d2f33a50061bf8dc00797133bcb9e0991d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior conditional error bound with exact baseline and oracle covariance error."
+    },
+    {
+      "target": "sci:sha256:20a003e3e4c233ebeb412011fbeabe46b0bc1c6128e4685b4a1232d184857c28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior covariance subtraction under controlled decay changes."
+    },
+    {
+      "target": "doi:10.1137/22M1520311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Graph-constrained Lyapunov identification."
+    },
+    {
+      "target": "https://arxiv.org/abs/2609.19955v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Steady-state drift interventions under graph and spectral conditions."
+    },
+    {
+      "target": "https://arxiv.org/abs/1003.2990v2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Gaussian singular value inequality, equation 2.3, used in the proof."
+    },
+    {
+      "target": "https://case.edu/artsci/math/szarek/TeX/DavSzaHB.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Primary source for established Gaussian matrix concentration."
+    }
+  ]
+}
