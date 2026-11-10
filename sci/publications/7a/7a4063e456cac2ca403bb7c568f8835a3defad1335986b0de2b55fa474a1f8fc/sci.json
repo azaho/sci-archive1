@@ -1,0 +1,105 @@
+{
+ "title": "In 22 larval zebrafish, brain regions with more projectome input did not have longer neuron activity timescales; a weak negative trend followed the lower signal fraction of those regions",
+ "abstract": "Question: in primate models and human fMRI, brain regions with more structural input have longer intrinsic activity timescales. We tested this rule in the whole larval zebrafish brain. Data: Legare et al. 2025 two-photon calcium imaging (22 fish, 52,000-79,000 neurons each, about 1 Hz, 630 s of spontaneous activity) and the mapZebrain-derived directed region matrix from the same data set. Method (pre-specified): for each neuron we fitted an exponential decay to the autocorrelation at lags 1-30 s. For each region we took the fish-centred median log timescale. We correlated it with the region input strength across 58 regions, with a spatial-autocorrelation null and partial correlations for position, neuron count, signal fraction and imaging plane. Results: the prediction failed. The relation was negative and not significant (Spearman rho -0.25, 95% CI -0.47 to 0.00, spatial p 0.16, partial rho -0.22, p 0.12). The timescale map was reliable across fish (split-half rho 0.90), but input strength did not explain it. High-input regions had a lower calcium signal fraction (rho -0.59). With only high-signal neurons (rho 0.00) or with signal-adjusted timescales (rho 0.00), no trend remained. Region-average signals gave rho -0.04. Removal of global or principal-component activity did not give a positive relation. Together with earlier campaign results for mouse cortex and C. elegans, none of five data sets in three animals showed the positive input-timescale relation. Limitations: nuclear GCaMP6s at 1 Hz resolves only multi-second timescales; most neurons have a small signal fraction; the structural matrix is an atlas average from a limited set of reconstructed neurons; 58 regions give limited power for rho below about 0.35.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "intrinsic timescale",
+  "structural connectivity",
+  "larval zebrafish",
+  "whole-brain calcium imaging",
+  "mapZebrain",
+  "projectome",
+  "autocorrelation",
+  "structure-function",
+  "null result",
+  "spatial null model",
+  "cross-species"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timescale_map_and_in_strength.png",
+   "caption": "A: neuron timescale distribution in one fish. B: region timescale map (fish-centred log10 tau, mean of 22 fish). C: region timescale against SC in-strength; rho -0.25, spatial p 0.16."
+  },
+  {
+   "path": "files/figures/fig2_all_tests.png",
+   "caption": "All tests: Spearman rho with the spatial-null 95% range, partial rho after covariates, and median per-fish rho. No variant gave a positive in-strength relation."
+  },
+  {
+   "path": "files/figures/fig3_covariates_and_context.png",
+   "caption": "A: high in-strength regions have a low calcium signal fraction. B: structural input vs timescale in zebrafish (this study), mouse cortex and C. elegans (earlier campaign results)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Mouse cortex timescale-hierarchy study; we recomputed input-vs-timescale rank correlations from its area table and our zebrafish result agrees with its null."
+  },
+  {
+   "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "C. elegans timescale vs connectome study; we used its class tables for the degree-vs-timescale context."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "reason": "Earlier campaign study of the same zebrafish data set (wiring vs region coupling)."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Earlier campaign study of zebrafish projectome vs functional coupling."
+  },
+  {
+   "target": "doi:10.1126/sciadv.adv7576",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the calcium imaging data and SC matrices (Legare et al. 2025)."
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Borealis data set, version 1, CC BY 4.0."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.04.034",
+   "reason": "mapZebrain atlas (Kunst et al. 2019), source of the reconstructions behind the SC matrices."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2015.09.008",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Primate large-scale model in which input strength gradients set timescale hierarchy; the predicted relation did not appear in zebrafish."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00151",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Human fMRI study reporting longer timescales in more structurally connected regions; not reproduced in zebrafish."
+  },
+  {
+   "target": "doi:10.1038/nn.3862",
+   "reason": "Hierarchy of intrinsic timescales in primate cortex."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Variogram-matched spatial surrogate method (brainsmash)."
+  }
+ ]
+}
