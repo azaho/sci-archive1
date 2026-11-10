@@ -1,0 +1,57 @@
+{
+  "title": "Two-lag noise cancellation gave a limited link-recovery benefit in two partial adult worm circuit models",
+  "abstract": "We tested whether two nonzero covariance lags improve electrical link recovery under heterogeneous white sensor noise. Two partial adult worm maps supplied passive model graphs. At duration 1000, step 0.05 and noise multiplier 0.1, mean precision rose from 0.5601 to 0.8127 in map 7 and from 0.5074 to 0.7418 in map 8. Each setting used 12 simulations. At noise multiplier 1, or step 0.2, the two-lag estimate had lower mean precision than the one-lag estimate in both maps. The two-lag population transition was exact, but finite covariance inversion could amplify error. A known-noise correction also failed at high noise and the longer step. Partial maps, assumed conductances and noise, full observation, one sensor profile per map and a known link count limit the result. No measured activity was used. Original code, aggregate scores, figure, source hashes and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "sensor noise",
+    "lag covariance",
+    "network inference",
+    "C. elegans",
+    "finite records"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Mean link precision and one standard deviation over 12 exact stationary simulations per setting. Two-lag noise cancellation improved precision at moderate noise and the shorter step only. Data are simulated voltages on partial graph models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b778eb27ecf3e418f3a0db93f71488d3f99cd3fc69363e48e6d613491e89762f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior one-lag benchmark without sensor noise motivated the fixed graph and conductance-matched noise case. No code or tables were reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066"
+    },
+    {
+      "target": "doi:10.1103/PhysRevE.91.012814"
+    },
+    {
+      "target": "https://journals.ametsoc.org/view/journals/mwre/147/4/mwr-d-18-0104.1.xml"
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}

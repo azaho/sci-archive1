@@ -1,0 +1,85 @@
+{
+ "title": "Climate suitability change predicted little of US bird abundance change in 2010-2025: 0.05 per log unit within species on survey routes, and no species-level forecast skill",
+ "abstract": "Stephens et al. (2016) reported that climate suitability trends predict bird population trends. We tested this forward in time with the US Breeding Bird Survey (2026 release, 1966-2025) and nClimGrid monthly climate. We fitted one Poisson climate model for each of 367 species to its 1981-2000 distribution on 2,690 routes (346 species with spatial-block AUC 0.7 or more) and kept the models frozen. We compared suitability change with abundance change in 1981-2009 and in a forward period 2010-2025, in the East and the West, with observer controls. Within species, abundance change between 2010-14 and 2021-25 followed suitability change on 1,623 routes: 0.053 log units per log unit (95% CI 0.035 to 0.070), East 0.061, West 0.036. The result stayed positive with species x region fixed effects, same-observer routes, a boosted-tree model and US-centred species, and it followed 2010-2025 suitability change, not 1981-2009 change. In 1981-2009 the within-species link was weaker and not robust. Between species, suitability trends did not predict population trends in 1981-2009 (Spearman -0.01) and only weakly in 2010-2025 (0.085, p = 0.11); a model calibrated on 1981-2009 had no forecast skill for 2010-2025. Species suitability trends were not stable between periods (Spearman 0.03). Observer fixed effects made the median 2010-2025 trend more negative (-0.134 versus -0.050 log per decade). Limitations: US-only climate models cut cross-border ranges, the models have four climate variables and no land cover, suitability errors reduce the coefficient, and BBS counts do not model detection.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "climate suitability",
+  "species distribution model",
+  "climate impact indicator",
+  "forward test",
+  "population trend",
+  "observer bias",
+  "nClimGrid",
+  "climate change",
+  "birds",
+  "range dynamics",
+  "United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_route_coefficients.png",
+   "caption": "Within-species route coefficients: change in log abundance per 1 log-unit change in frozen-model climate suitability, for 1981-2009 (blue) and the forward period 2010-2025 (orange), all US, East and West, with nine model variants. Bars are 95% CIs (route and species clusters, or 2-degree cell and species clusters)."
+  },
+  {
+   "path": "files/figures/fig2_route_binned.png",
+   "caption": "Species-centred route abundance change against suitability change in 20 bins (bin means and 95% CI). The dashed line is full tracking (slope 1). The observed slope is about 0.05."
+  },
+  {
+   "path": "files/figures/fig3_species_level.png",
+   "caption": "Between species: population trend (Poisson, route and observer fixed effects) against climate suitability trend for all US routes. The link is absent in 1981-2009 and weak in 2010-2025. Values are clipped for display only."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.aac4858",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Stephens et al. 2016: climate suitability trends predict bird population trends. We test the idea forward in time on US BBS data; the between-species link was absent or weak and had no forecast skill."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey 2026 release (1966-2025), public domain."
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid monthly temperature and precipitation."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: BBS community temperature index followed less than 10% of warming. Our small within-species suitability response (about 5% of full tracking) agrees."
+  },
+  {
+   "target": "sci:sha256:dc5e34275966e371f633637d6d383f6d7d16553f65d33216fcb59a0923f9b43a",
+   "reason": "Related campaign BBS forward test (drought response) with the same data release."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Related campaign result on slow bird range-margin response to warming in Finland."
+  }
+ ]
+}
