@@ -1,0 +1,130 @@
+{
+ "title": "Warm springs act like a 1.5-day later survey per 1 C in Breeding Bird Survey counts of 317 species (1966-2025); this phenology-detection artefact is real but too small to explain weak climate tracking",
+ "abstract": "Question: the Breeding Bird Survey (BBS) counts each route once per year on a calendar date. In a warm spring the breeding cycle is earlier, so a warm spring must act like a later survey date. Does this phenology-detection artefact explain part of the weak climate tracking of bird communities? Data: 130,303 standard BBS runs on 5,319 US and Canadian routes (2026 release, 1966-2025), GHCN_CAMS April-May temperature anomalies, 317 species; UKBMS 2024 flight periods and site indices of 48 butterfly species with E-OBS temperature. Method: per-species models with route x observer and year fixed effects gave the within-route survey-date slope and the spring-anomaly response; a cross-fitted (odd/even years) random-effects meta-regression across species gave the implied phenological advance k. We wrote the plan before the outcomes. Results: species whose counts fall through the season had lower counts after warm springs. k was 1.45 days per 1 C (species bootstrap 1.19-1.72; permutation p = 0.001), 1.52 with migration, temperature-index and abundance covariates, 1.40 with family effects, and 1.24 from the within-species anomaly x date term. The previous spring (-0.07) and the next spring (-0.02) gave no relation. Residents gave 2.2 and migrants 1.3 days per 1 C (exploratory). The artefact explains about 20% of between-species variance in spring responses, but its effect on the community temperature index trend is +0.0003 C per decade, and survey-date drift adds -0.0011, against an observed 0.024 C per decade. In butterflies, flight dates advanced 3.9 days per 1 C, and an emulated single visit changed same-summer responses by 5-13% per 1 C, as much as the true response; the emulation showed that the count-based estimator recovers about 77% of k. Conclusion: the artefact is real and must be corrected in single-species weather responses, but it does not explain the tracking deficit. Limitations: correlational design, no breeding-date data, check terms after the survey gave small slopes (about one sixth of the main value), coarse temperature, Gaussian flight curves.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "climate tracking",
+  "phenology",
+  "detection bias",
+  "Breeding Bird Survey",
+  "survey date",
+  "community temperature index",
+  "UK Butterfly Monitoring Scheme",
+  "single-visit survey",
+  "spring temperature",
+  "observation artefact"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_response_vs_date_slope.png",
+   "caption": "Each point is one BBS species. x: change of the count per 10 days later survey date inside routes (odd years in panel 1). y: change of the count per +1 C April-May anomaly (even years in panel 1). Black: decile means with 95% intervals. Orange: cross-fitted random-effects meta-regression; the slope is the implied phenological advance in days per 1 C. The relation occurs for the same spring only; the previous spring and the next spring (placebo) give slopes near 0."
+  },
+  {
+   "path": "files/figures/fig2_kappa_forest.png",
+   "caption": "Implied phenological advance k (days per +1 C) with 95% intervals: main cross-fitted test, covariate and family controls, within-species estimate, migration classes and window variants (blue); placebo and check terms (orange). Variants below the within-species row use the full sample and are not cross-fitted."
+  },
+  {
+   "path": "files/figures/fig3_cti_bias_scale.png",
+   "caption": "Community temperature index (CTI) trend bias from the phenology artefact and from survey-date drift (this study), compared with the hearing-type observer drift and the within-observer CTI trend from sci:sha256:b113aa1b, and with the spatial expectation (0.40 C per C x 0.24 C per decade)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hearing-type observer drift and the within-observer CTI trend are the comparison scale for the new phenology-detection artefact; we use its BBS selection rules."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its species envelope rules and spatial-gradient estimator; we show that the small transient bird response is not mainly a single-visit phenology artefact."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bird CTI followed less than 10% of warming; the phenology artefact does not explain this deficit."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Synthesis of 75 networks: weak tracking is a small temporal sensitivity; we rule out one detection cause of it in BBS."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Shows that the spatial denominator is mostly thermal, so detection causes of the temporal deficit are the open question."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Spatial CTI slope 0.40 C per C used for the spatial expectation in figure 3."
+  },
+  {
+   "target": "sci:sha256:038fd80c4200e634276c00898cbd94431fd63fd2dfe8f5db47d86e3fa1fd9d70",
+   "reason": "Earlier work on survey-date slopes of recorded richness; we use species-level date slopes and spring anomalies."
+  },
+  {
+   "target": "sci:sha256:61e7e5212750799780dab7aee2ba9424dfe1df1b2360e9b363dcdf99ce91ddad",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found no clear link of spring warmth to survey dates; consistent with our near-zero date-anomaly error correlation."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Detection artefacts in phenology records; context."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Small bird range shifts; context for the tracking deficit."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "No species-level forecast skill of climate suitability; context."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Detection change in Finnish atlases; context for detection artefacts."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Demersal redistribution; context for where tracking is not weak."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index; context for where tracking is not weak."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "reason": "AVONET migration classes."
+  },
+  {
+   "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+   "reason": "UKBMS phenology 2024 data (OGL)."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "reason": "UKBMS site indices 2024 data (OGL)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS temperature."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "reason": "E-OBS temperature (Cornes et al. 2018)."
+  }
+ ]
+}
