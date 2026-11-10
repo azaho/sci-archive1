@@ -1,0 +1,36 @@
+{
+  "title": "Fly between-animal synapse count excess is left-right variation plus a bilateral part; the bilateral part is near zero between two male FIB-SEM nerve cords and does not come from synapse detection",
+  "abstract": "Question: earlier SCI studies found that gain-corrected synapse count differences between adult fly connectomes repeat on both sides of the animal. Is this bilateral part biology or a dataset effect? Approach: we matched neurons in five connectomes: MANC and the male CNS nerve cord (both male, FIB-SEM), BANC (female, TEM), FAFB (female, TEM) and the right hemibrain (female, FIB-SEM). Two datasets also have two synapse tables on one segmentation. For each pair of copies we cross-fitted per-neuron gains and split the extra-Poisson variance of the log count ratio into a part shared by the left and right sides (cross-side covariance, free of Poisson noise) and a side-specific part, with paired identity bootstraps. Results (connections with a reference mean of 16 or more synapses): in all six animal pairs, the side-specific part equalled the mean within-animal left-right excess (differences -0.010 to +0.017). Synapse-table swaps gave a shared part of 0.001 to 0.011, while animal pairs with a TEM dataset gave 0.26 to 0.42. MANC against the male CNS nerve cord gave a shared part of 0.035 (95% interval 0.018 to 0.061), against 0.260 and 0.283 for the pairs with BANC. Removal of annotated dimorphic neurons and a neuropil factor did not change this. On the right central brain, the FIB-SEM pair (male CNS against hemibrain, different sex) had an excess of 0.348, similar to the cross-method pairs (0.317, 0.363) and 0.07 to 0.12 above the within-animal baseline. Main limitations: one animal per dataset, so sex, pipeline, proofreading and matching are confounded; male CNS nerve cord types were assigned with MANC as reference; the brain and nerve cord results differ and are not resolved.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}, {"scheme": "arxiv", "code": "q-bio.QM"}],
+  "keywords": ["connectome", "synapse count", "wiring variability", "bilateral symmetry", "variance decomposition", "Poisson", "Drosophila", "MANC", "male CNS", "BANC", "FlyWire", "hemibrain", "synapse detection", "reconstruction error", "neuron gain", "reproducibility"],
+  "display": [
+    {"path": "files/figures/fig1_bilateral_decomposition.png", "caption": "Between-animal extra-Poisson variance split into a part shared by both sides (orange) and a side-specific part (blue), with the mean within-animal left-right excess (dashed), for nerve cord and central brain animal pairs and synapse-table swaps."},
+    {"path": "files/figures/fig2_hemibrain_and_strength.png", "caption": "(A) Right central brain: within-animal left-right excess and three animal pairs that differ in method only, sex only, or both. (B) Left-right correlation of the extra-Poisson part by connection strength."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69", "relations": ["uses"], "reason": "We reuse its conditional binomial gain model code and extend its dispersion test."},
+    {"target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88", "relations": ["reviews"], "reason": "We test whether its bilateral between-animal component is a dataset effect."},
+    {"target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049", "relations": ["reviews"], "reason": "Its direction-balance bilateral result shares the same animal pairs."},
+    {"target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9", "reason": "Optic lobe decomposition and synapse-table comparison."},
+    {"target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e", "reason": "Contact geometry limits the interpretation of count differences."},
+    {"target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f", "reason": "Wiring variability need not predict co-activity variability."},
+    {"target": "doi:10.7554/eLife.97769", "relations": ["uses"]},
+    {"target": "doi:10.7554/eLife.96084"},
+    {"target": "doi:10.7554/eLife.97766"},
+    {"target": "doi:10.1101/2025.10.09.680999", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-026-10735-w", "relations": ["uses"]},
+    {"target": "doi:10.7910/DVN/7WTH1N", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41592-021-01183-7", "relations": ["uses"]},
+    {"target": "doi:10.1101/2025.07.11.664377"},
+    {"target": "doi:10.1016/j.cell.2018.06.019"},
+    {"target": "doi:10.7554/eLife.57443", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/flyem-manc-exports/v1.0/", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz", "relations": ["uses"]},
+    {"target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2", "relations": ["uses"]},
+    {"target": "https://join.flywire.ai/guidelines"}
+  ]
+}
