@@ -1,0 +1,83 @@
+{
+  "title": "Missing response measurements permit either sign of a facilitation-rate contrast in selected Allen cortical connections",
+  "abstract": "We tested whether missing response measurements leave the sign of a reciprocal-minus-one-way positive-change rate open in Allen Synaptic Physiology r2.1. The fixed candidate sample had 290 mouse and 135 human directed excitatory connections with known reverse calls and a synapse summary. Early responses were observed for 211 mouse and 97 human connections. The complete-case rate differences were -3.75 and -4.71 percentage points. Exact bounds with unrestricted missing binary labels were -29.70 to +21.25 points in mouse and -27.34 to +20.33 in human. Late-response bounds also permitted both signs. Requiring ten test spikes in both directions did not fix either sign. The code checked all feasible missing-positive counts and 3136 synthetic cases. These are sharp finite-sample extrema, not confidence intervals. They assume well-defined missing response labels and fixed observed labels and connection calls. Selected slices, measurement error, and unknown reverse calls limit transfer. The package contains original code, aggregate evidence, a proof, a figure, source hashes, and external regeneration steps. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "reciprocal connectivity",
+    "short-term plasticity",
+    "missing outcomes",
+    "partial identification",
+    "finite-sample bounds"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Blue lines show exact missing-outcome bounds. Orange dots show complete-case differences. All four bounds permit both signs. Units are percentage points; these are not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for the linked connectivity and response measurements."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0084626",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model links short-term dynamics and circuit motifs."
+    },
+    {
+      "target": "sci:sha256:e51d11cc35cf7df1744e77c7c3fcc7c321e46bcc3c66d3f68e128007f871696e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior matched mean comparison. This study tests missing response labels in a larger fixed candidate sample."
+    },
+    {
+      "target": "sci:sha256:d9e0a3608c3aa45828fc9758ae3b11ecf48b986961a81cce273b1fb2fb29d4e3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-call error bounds. We keep calls fixed and bound missing response labels."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Scalar response definition check; external source is not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/database/schema/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Scalar response definition check; external source is not bundled."
+    }
+  ]
+}
