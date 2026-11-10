@@ -1,0 +1,128 @@
+{
+ "title": "TFOP verdicts to 2026 support a TESS multiplicity boost above 5 only below 6 Earth radii, and verdicts from 2020 over-stated the later false-positive fraction 1.2 to 5.7 times",
+ "abstract": "Question: Do two common reliability inputs for TESS planet candidates (TOIs) agree with later follow-up verdicts? The inputs are the multiplicity boost of Guerrero et al. (2021) (B = 20, or 54 below 6 Earth radii), and the false-positive (FP) fraction among TOIs that already have a verdict. Method: We froze 4,671 TOIs on 2020-11-20 (an Internet Archive copy of the ExoFOP table) or at alert from 2020-11-21 to 2022-12-31. We compared them with the TFOP verdicts of 2026-11-09. We estimated B as the FP odds ratio of single-candidate to multi-candidate hosts, with an exact conditional likelihood in strata of cohort, pipeline, radius and period. We compared the FP fraction of the verdicts available in 2020 with the later verdicts on the TOIs that were open in 2020. Results: Below 6 Earth radii, 0 of 122 verdicts on multi-candidate TOIs are FP, against 6.4 expected with no boost (p = 0.0002). This gives B > 5.5 (95%), and B = 20 and B = 54 both agree with the data. The result holds with planets that have a dynamical mass (B > 5.8), with a strict multiplicity definition, and in each cohort. At 6 Earth radii or more, 4 of 7 multi-candidate verdicts are FP (B = 1.4, range 0.25-8.0). The data reject B = 20 (p = 0.004) and B = 54 (p = 0.0002), but only three host systems give this result. On 2020-11-20, 88% of 622 verdicts were FP. Later verdicts on the TOIs then open were 40% FP (278 of 700). In seven stratification schemes, the 2020 verdicts over-state later FPs 4.1-5.7 times for SPOC 2-minute TOIs and 1.23-1.32 times for QLP TOIs (p < 1e-15). For SPOC TOIs below 6 Earth radii, the FP fraction changed from 73% to 7%. With Gaia DR3 RUWE and crowding in the strata, the SPOC factor stays at 3.7 and the QLP factor falls to 1.03. Latent-class competing-risks models fitted to the 2020 snapshot alone did not forecast the 2026 verdicts. Thus one snapshot cannot correct this verdict-timing bias. Limitations: There are only 4 multi-candidate FPs. Some planet verdicts come from validations that used a boost. 101 small multi-candidate TOIs are still open, and 3 new FPs among them would lower the estimate to B = 4. TFOP dispositions are heterogeneous. Job sci-1107-hp-astronomy-9243866ab9c7, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "TOI",
+  "false positives",
+  "multiplicity boost",
+  "statistical validation",
+  "TFOP",
+  "verification bias",
+  "planet occurrence",
+  "candidate reliability",
+  "forward test",
+  "Gaia DR3",
+  "RUWE"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_multiplicity_boost.png",
+   "caption": "Left: FP fraction among 2026 verdicts for TOIs that were open on the freeze date, for single- and multi-candidate hosts (Clopper-Pearson 95% bars). Right: profile of the exact stratified conditional likelihood of the multiplicity boost B; dotted lines mark the Guerrero et al. (2021) values 20 and 54."
+  },
+  {
+   "path": "files/figures/fig2_verdict_timing.png",
+   "caption": "FP fraction of the verdicts available on 2020-11-20 (grey) and of the later verdicts on the TOIs that were then open (orange), by pipeline and size. Blue and green: forecasts of competing-risks models fitted only to the 2020 snapshot (bootstrap 95% ranges)."
+  },
+  {
+   "path": "files/figures/fig3_state_vs_age.png",
+   "caption": "State of SPOC and QLP TOIs on 2026-11-09 against years since alert. The FP fraction among verdicts changes with age in a way that mixes verdict timing and cohort composition."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Prior campaign calibration of TOI vetting with Gaia DR3 eclipsing binaries; part of the reliability programme that this study extends."
+  },
+  {
+   "target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Introduced the 2020-11-20 frozen TOI cohort design that we reuse for a different question."
+  },
+  {
+   "target": "sci:sha256:434ee8c005d10e3938ec3e5252ee06ef6f7e8830823099f4b6726f2254df6b0f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that 2021 TRICERATOPS FPPs predicted too many FPs; our verdict-timing result shows that early verdict samples also over-state FP fractions."
+  },
+  {
+   "target": "sci:sha256:5df33e7fa0e380af1f7b7d45390f2100f3f3531aff66deb9d3dc509a5a76e494",
+   "reason": "Prior forward test of community TOI ephemerides in the same programme."
+  },
+  {
+   "target": "sci:sha256:df868bbd322adc16150440114d29b3f82a538993f6a7a71daaea71d1f8b1cf90",
+   "reason": "Prior campaign screen of short-period TOIs that found catalogue period errors."
+  },
+  {
+   "target": "sci:sha256:378382f2e630b5171431585ad92607e02c243e6e7844b917ec101586c68b02f7",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bounded missing-verdict selection for the 2020 cohort; we measure the verdict-timing bias directly."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/abefe1",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Guerrero et al. 2021 TOI catalogue: source of the multiplicity boost values 20 and 54 that we test; we find no boost for candidates of 6 Earth radii or more."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/750/2/112",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Lissauer et al. 2012 multiplicity-boost framework."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP TOI table and TFOP dispositions."
+  },
+  {
+   "target": "https://web.archive.org/web/20201120061920id_/https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Frozen 2020-11-20 TOI table."
+  },
+  {
+   "target": "doi:10.26133/NEA13",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA Exoplanet Archive pscomppars mass provenance."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 RUWE and neighbour photometry."
+  },
+  {
+   "target": "doi:10.2307/2530820",
+   "reason": "Begg and Greenes 1983, verification bias in diagnostic tests."
+  }
+ ]
+}
