@@ -1,0 +1,110 @@
+{
+ "title": "After quiet days, NOAA SWPC next-day solar proton (S1) probabilities were 2.8 times too high in 2020-2026, mainly because forecasts stayed flat over 3 days while S1 events persist",
+ "abstract": "We verified 11,238 daily SWPC proton (S1) probabilities from 1996 to 2026 against a GOES 5-minute >10 MeV series that we built and checked against SWPC reports. We pre-registered the hypotheses. In a forward test of Cycle 25 (2020-2026), day-1 forecasts of 40% or less gave 0.41 times the expected S1 days (95% interval 0.29-0.54), as in Cycle 24. The excess came from days with no S1 time at issue: 43 S1 days occurred against 121.5 expected (0.35, 0.26-0.47). Their skill against climatology fell from +0.30 (Cycle 23) to -0.05 (Cycle 25). Day-1 forecasts during events were calibrated (1.08). In an exploratory analysis, 88-95% of quiet-start forecasts give the same value for days 1, 2 and 3, but the observed S1-day frequency doubles from day 1 to day 3 because S1 events last more than one day. The resulting day-1 factor was 0.40-0.47 in all three cycles, and S1 episode durations predict 0.44-0.48. A pre-registered recalibration fitted on 2000-2019 lowered the 2020-2026 day-1 Brier score by 22% but did not help days 2-3. A lead-only correction lowered the quiet-start day-1 score by 17%. We found no change in S1 frequency per issued X-flare probability. Limitations: the GOES-R integral is rebuilt (93% S1-side agreement with SWPC reports), there are few Cycle 25 events, and the lead analysis was not pre-registered.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.space-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "solar energetic particles",
+  "solar radiation storm",
+  "space weather forecast",
+  "forecast verification",
+  "calibration",
+  "SWPC",
+  "GOES",
+  "proton event",
+  "reliability",
+  "forward test",
+  "pre-registration",
+  "lead time",
+  "persistence",
+  "Solar Cycle 25"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_lead_structure.png",
+   "caption": "After quiet days, SWPC issues nearly flat 3-day S1 probabilities (dashed), but the observed S1-day frequency (solid) rises with lead. Observed/expected and the lead factor, with 27-day block bootstrap 95% intervals, for Cycles 23-25. Short dashes give the lead factor predicted from S1 episode durations only."
+  },
+  {
+   "path": "files/figures/fig1_reliability_day1.png",
+   "caption": "Day-1 reliability of SWPC S1 probabilities by issue state (Wilson 95% intervals). After quiet days, forecasts of 5-40% are too high in all cycles and most in Cycle 25. After days with S1 time, forecasts are calibrated."
+  },
+  {
+   "path": "files/figures/fig4_truth_validation.png",
+   "caption": "Truth checks: GOES maxima against SWPC-reported RSGA peaks (2013-2026), and annual S1 days against SWPC verification tables (2000-2013)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1029/2020SW002670",
+   "relations": [
+    "reviews",
+    "supports",
+    "uses"
+   ],
+   "reason": "Prior verification of SWPC proton probabilities for 1996-2019. We forward-test its Cycle 24 low-range day-1 over-forecast in Cycle 25 and give a structural explanation."
+  },
+  {
+   "target": "https://www.swpc.noaa.gov/sites/default/files/images/u30/S1%20Proton%20Events.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SWPC definition change of January 2000 and annual event-day counts used to check our truth series."
+  },
+  {
+   "target": "https://www.swpc.noaa.gov/products/report-and-forecast-solar-and-geophysical-activity",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RSGA product description; the archive is at ftp://ftp.swpc.noaa.gov/pub/warehouse/."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/goes-space-environment-monitor/access/avg/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GOES-07 to GOES-15 5-minute proton fluxes."
+  },
+  {
+   "target": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GOES-16, 18 and 19 SGPS L2 5-minute proton fluxes."
+  },
+  {
+   "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+   "reason": "Campaign verification of NOAA geomagnetic storm probabilities; same verification series."
+  },
+  {
+   "target": "sci:sha256:cf94434cc907d929fe2342675f1f0b92b966e8804019441c0241614b7d55cbb3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RSGA parsing approach and the GOES X-ray 0.7 factor removal that motivated H5."
+  },
+  {
+   "target": "sci:sha256:318033e36a0ccccfddffb10085fbea8c4e4416ed48b40929b45a8897322eb938",
+   "reason": "Campaign study of SWPC flare probability shifts in Cycle 25; context for H5."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Campaign verification of USGS PAGER probabilities; rule-like miscalibration in a public hazard product."
+  },
+  {
+   "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+   "reason": "Campaign verification of issued USGS aftershock forecasts; same objective."
+  }
+ ]
+}
