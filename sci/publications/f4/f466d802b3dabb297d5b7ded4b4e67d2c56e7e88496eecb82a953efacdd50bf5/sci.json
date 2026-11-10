@@ -1,0 +1,84 @@
+{
+  "title": "A lower-severity correction gave no clear 2025 score gain for NOAA geomagnetic storm probabilities",
+  "abstract": "We tested a correction of NOAA next-day planetary storm probabilities. Two conditional log-odds offsets were fitted on 452 dates in 2023-2024. The formulas keep probabilities ordered and leave G3+ unchanged. On 364 dates in 2025, the normalized ranked probability score fell from 0.09503 to 0.09304, a gain of 2.09%. The 95% 27-day block interval was -4.59% to +9.90%; separate training and test resampling also included harm. Expected G1+ days fell from 116.35 to 56.90, against 97 observed. A simple low-cost protection rule missed more events and had higher modeled loss. With the same fitted forecasts, strict numerical GFZ Kp thresholds gave a 21.47% score gain, while NOAA estimated rounded outcomes gave -1.12%. An exact score identity attributes 88.5% of the strict-label absolute improvement to changed event labels. Thus a large gain for strict thresholds does not establish a gain for rounded storm categories. This retrospective test uses an archive already studied, with incomplete training coverage and only one test year. It does not support operational adoption. Code, source hashes, NOAA source records, aggregate evidence and an external GFZ retrieval method are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "geomagnetic storm",
+    "probability calibration",
+    "forecast verification",
+    "event definition",
+    "NOAA",
+    "Kp",
+    "cost-loss",
+    "temporal transfer"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "The same lower-severity correction gives different 2025 score gains under different event labels. G3+ probabilities are unchanged. Rounded GFZ G1+ totals change from a small excess to a large deficit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source snapshot, parsing rules and earlier calibration result; this is a new correction transfer test, not independent source evidence."
+    },
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected public hazard verification work motivates a test of an operational correction."
+    },
+    {
+      "target": "sci:sha256:80ba4ccecfcc615e3c6590f0f09a8f77e122714e4196a27d8cad04af0908f2cd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related correction test for deterministic Ap, a different target."
+    },
+    {
+      "target": "sci:sha256:a3f9a93bb8f40b3a899404b79a7d1f8c121c4e5d3cf94e3dbf5be680f72b8ffd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related matched-date storm forecast update test."
+    },
+    {
+      "target": "doi:10.5880/Kp.0001"
+    },
+    {
+      "target": "doi:10.1029/2020SW002641"
+    },
+    {
+      "target": "doi:10.1198/016214506000001437"
+    },
+    {
+      "target": "https://kp.gfz.de/en/data"
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/3-day-geomagnetic-forecast"
+    },
+    {
+      "target": "https://www.spaceweather.gov/sites/default/files/images/u30/Activity%20Category.pdf"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://www.ngdc.noaa.gov/stp/space-weather/swpc-products/daily_reports/geomag_forecast/"
+    }
+  ]
+}

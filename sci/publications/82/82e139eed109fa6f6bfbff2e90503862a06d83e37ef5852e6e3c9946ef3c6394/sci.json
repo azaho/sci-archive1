@@ -1,0 +1,95 @@
+{
+ "title": "At fixed rotation period and colour, the CPV rate of TESS M-dwarf rapid rotators falls from 16% at 15-24 Myr to 2% at 89-200 Myr in BANYAN Sigma groups, an e-folding time of 44 Myr",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips that repeat at the rotation period. We tested whether their rate depends on age when rotation, colour and detection efficiency are fixed. We used the released labels of 126 on-target CPVs among 29,707 red dwarfs within 150 pc in TESS sectors 56 to 107. BANYAN Sigma (2018 model, Gaia DR3 astrometry and radial velocities) put each star in one of five age classes. In the window P = 0.15-1 d and BP-RP = 2.4-3.8, an injection-recovery test with an emulator of the visual labels (AUC 0.96) corrected each rate. The corrected CPV rate per rapid rotator is 18% at 1-12 Myr (16/99), 16% at 15-24 Myr (42/322), 7.7% at 35-60 Myr (15/206), 2.0% at 89-200 Myr (2/116) and 0/20 at 400-750 Myr, while 20% of 89-200 Myr M dwarfs still rotate in the window. A Poisson model with period and colour terms gives an e-folding time of 44 Myr (95% interval 28-81 Myr). Seventeen robustness variants give 26-48 Myr, except one variant that we show is biased low. Efficiency differences between classes are less than 15%. Within each age class, CPVs are not higher above the main sequence than peers of the same colour (15-24 Myr: -0.02 mag, -0.13 to +0.15), so the height trend of the source work is an age trend, not binarity. In single stars, about 23% (11-35%) of sectors lose the CPV shape beyond the noise expectation, with no trend over gaps up to 4 yr. Limitations: one automated vetter made the labels; only 2 CPVs are older than 89 Myr; TESS 2-minute targets are not complete, and known CPVs were re-observed more often (odds ratio 2.4), which a weighted variant corrects; group ages come from the literature.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "stellar ages",
+  "moving groups",
+  "BANYAN Sigma",
+  "injection-recovery",
+  "circumstellar material",
+  "corotating material",
+  "occurrence rate",
+  "Gaia DR3",
+  "stellar rotation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rate_vs_age.png",
+   "caption": "Efficiency-corrected CPV rate per rapid rotator (P = 0.15-1 d, BP-RP = 2.4-3.8) versus BANYAN Sigma group age. Orange points are age classes with 95% Poisson intervals and k/n labels; open circles are single groups with 15 or more window stars (raw rates). The blue curve is the best exponential decay (tau = 44 Myr), and dotted curves are the 95% profile limits. Right: stars not in a 2018 group."
+  },
+  {
+   "path": "files/figures/fig2_height_within_class.png",
+   "caption": "Height above the median main sequence versus colour for window rapid rotators in each age class. CPVs (orange) sit at the same height as co-eval peers (grey) in each young class. Only the CPVs that BANYAN calls field are 1.55 mag higher than their peers, so they are probably young stars outside the 2018 groups."
+  },
+  {
+   "path": "files/figures/fig3_efficiency_persistence.png",
+   "caption": "Left: recovery probability of injected real CPV shapes versus binned noise, for observed and half amplitudes, with the noise distributions of the 15-24 Myr and 89-200 Myr window stars. Right: probability that a later sector of a CPV is CPV-like after a CPV-like sector, versus time gap, with star-bootstrap 95% intervals; the dashed line is the expectation if the shape did not change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the CPV labels, periods, light-curve features, folded curves and cpvlib code. We support its youth trend and show that it is an age trend at fixed rotation."
+  },
+  {
+   "target": "sci:sha256:0737cdf0485ecfddc554a3f33a1f59e2035c5ead6835197030547385c9b181c3",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Follow-up that showed height predicts CPVs after period and colour adjustment and asked for independent group ages and injection-recovery; we provide both."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "reason": "Bouma et al. 2024, CPVs in TESS sectors 1-55; known CPV list."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/aaae09",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gagne et al. 2018, BANYAN Sigma method, 2018 model and group ages."
+  },
+  {
+   "target": "https://github.com/jgagneastro/banyan_sigma",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma Python code, commit 6a3ddc6719d593fd9e34033218e7af6b29df18d0, MIT licence."
+  },
+  {
+   "target": "https://arxiv.org/abs/2602.15695",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gagne et al. 2026 MOCAdb models, used for a check only."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 astrometry, errors and radial velocities."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "reason": "TESS SPOC pipeline (Jenkins et al. 2016), via the source publication."
+  }
+ ]
+}

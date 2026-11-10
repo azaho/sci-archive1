@@ -1,0 +1,77 @@
+{
+  "title": "Joint structure improved spike prediction across held sessions and spatial regions in IBL data",
+  "abstract": "We test whether joint input-wiring and cell-type prediction of intrinsic spiking transfers across recording sessions and spatial regions. We use 59,047 good IBL units in a 176-region source sample. Twenty global session splits retain 146 to 162 regions with enough data in both halves. Kernel ridge models train and tune on one session half with nested spatial region folds, then predict medians from the other half. At a 1 mm spatial length, joint structure reduces mean error by 17.9 percent against space and division, 6.2 percent against input alone and 7.5 percent against types alone. The joint model wins in all 20 splits at each of three tested spatial lengths. Whole-brain half-map correlations average 0.458 to 0.891 across features; after division means are removed they average 0.237 to 0.506. These results support complementary prediction across recordings. They do not identify causal shares, independent mouse replication or a noise ceiling. Reused splits do not give independent population uncertainty. Code, aggregate scores, exact source hashes, retrieval steps and a figure are included. External data and region-level derivatives stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "IBL",
+    "structure-function",
+    "cell types",
+    "connectome",
+    "session transfer",
+    "spatial validation",
+    "repeatability"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Joint structure prediction transfers across global recording-session halves and spatial test regions. Points and ranges show reused splits, not independent replications or confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a4fae2b20554c07f85decfa3d289742eead57e431b66963a1672e01bf6e11f20",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We reuse its sample, structural kernels and ridge predictor, then add global session separation."
+    },
+    {
+      "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its feature definitions and source medians. Its session-split association test differs from held-region prediction."
+    },
+    {
+      "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The proposed wiring-versus-types physiology split motivates the study."
+    },
+    {
+      "target": "sci:sha256:cdc62391246093d8f2d12533d79751de6e9964c799970c12524863eda1ea161d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Failed residual checks motivate a test of recording transfer and measured repeatability."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0"
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066"
+    },
+    {
+      "target": "doi:10.1016/j.cell.2020.04.007"
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06812-z"
+    },
+    {
+      "target": "doi:10.1016/j.neuroimage.2015.12.012"
+    },
+    {
+      "target": "doi:10.1111/ecog.02881"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    }
+  ]
+}
