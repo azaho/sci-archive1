@@ -1,0 +1,100 @@
+{
+  "title": "Adding late ASASSN-14ko peaks reduces support for a fixed Schwarzschild disc-crossing clock under constant delay",
+  "abstract": "We test whether precession of a fixed Schwarzschild orbit can explain the flare times of ASASSN-14ko. The disc plane and mean delay from crossing to peak are fixed. Gaussian timing scatter is fitted. A clock with one emitting disc node fits 29 optical peak times through 2024 about as well as a cubic timing curve. Adding the January 2026 TESS peak changes its AICc score from 1.52-3.30 units below the cubic to 12.22-18.68 units above it. Higher scores are worse. The earlier fits predict this peak 17.28-19.30 days too late. These point predictions omit parameter uncertainty. Adding a separate SPHEREx peak without TESS gives a smaller score loss of 3.43-6.00 units, if infrared and optical peaks have zero offset. A clock in which both disc nodes emit fits poorly. Higher black-hole masses, a wider orbit search, and source light travel time do not rescue the full-record fit. Adding a three-day error floor retains the preference. Conditional simulations at the fitted one-node null give tails of 0.0050 and 0.0025 for two peak definitions that share observations. These are not uniform tests over all nuisance values. The package contains new orbit code, mass profiles, subset fits, simulations and numerical checks. This is a reanalysis, not new photometry. The result depends strongly on the latest TESS epoch. Moving discs, black-hole spin, changing delays and correlated noise remain possible. No orbital decay or common clock is established.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "ASASSN-14ko",
+    "repeating tidal disruption",
+    "disc crossing",
+    "relativistic precession",
+    "flare timing",
+    "null result",
+    "Schwarzschild orbit"
+  ],
+  "display": [
+    {
+      "path": "files/late_epoch_check.png",
+      "caption": "The late epochs change the one-node clock comparison. Negative AICc differences favor the fixed-orbit clock. The earlier sample contains 29 optical peaks through 2024. The SPHEREx test assumes zero infrared-to-optical peak offset. The two peak definitions share observations."
+    },
+    {
+      "path": "files/clock_comparison.png",
+      "caption": "Clock fit scores and one-node mass profiles. The two peak definitions share observations. AICc is a comparison score, not a detection probability. The shaded mass range is the search domain."
+    },
+    {
+      "path": "files/clock_null_check.png",
+      "caption": "Conditional null simulations compare a fitted one-node collision clock with a cubic timing curve. The null uses fixed fitted Gaussian noise and orbit parameters. It is not a uniform test over all physical nuisance values."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the published early peak times and the two later peak definitions. These share observations."
+    },
+    {
+      "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies one aggregate SPHEREx peak for a sensitivity test. No raw infrared data is used."
+    },
+    {
+      "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows why changing emission delay limits orbital inference from flare times."
+    },
+    {
+      "target": "sci:sha256:252d57705ccfd2023681bd4b0098ad00fdce0794754255f4fe90fd0791d8b8b2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows dependence on the timing marker relation."
+    },
+    {
+      "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows the need to treat correlated timing noise as a possible alternative."
+    },
+    {
+      "target": "doi:10.1093/mnras/stad3470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gives the geometric precession hypothesis and its earlier local derivative test. We test the full crossing curve on the longer timing record."
+    },
+    {
+      "target": "doi:10.1103/PhysRevD.93.044010",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Equation 2.6 gives the standard Schwarzschild orbit integrands implemented here."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/abe38d",
+      "reason": "Earlier flare measurements and source mass context, accessed through the cited SCI timing compilation."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2206.11278",
+      "reason": "Published ephemeris and early timing context."
+    },
+    {
+      "target": "doi:10.1093/mnras/staf2093",
+      "reason": "Host mass context. Its higher MUSE mass estimate motivates a broad search domain; no database is extracted."
+    }
+  ]
+}

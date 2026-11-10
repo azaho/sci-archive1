@@ -1,0 +1,53 @@
+{
+  "title": "Common lag models gave higher land and freshwater transfer errors than zero slopes in 54 network summaries",
+  "abstract": "We tested whether common lag models predict published thermal-response slopes in networks left out of training. The test uses 54 networks with positive spatial slopes: 14 terrestrial, 17 freshwater and 23 marine. Small-target, two-rate and mixed-rate models reduce the leave-one-network-out zero-slope score by about 13.5%, but gain only 2.4-2.7% over a rule with two mean tracking fractions. Paired sensitivity ranges include no extra gain. When a whole realm is left out, all three lag models give higher errors than zero slopes on land and in freshwater, and lower errors at sea. Training within realms lowers the mixed-rate score by 10.1%, but that gain is uncertain. Unweighted squared error favors the simpler fraction rule. Low tracking remains supported, while one common lag rule has limited demonstrated transfer across realms. Published summaries, fixed spatial slopes, missing error covariance, shared source data and temperature proxies limit inference. This is a conditional prediction test, not a causal test or a future climate forecast.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "climate tracking",
+    "community temperature index",
+    "model transfer",
+    "prediction baseline",
+    "cross-validation",
+    "mixed response rates"
+  ],
+  "display": [
+    {
+      "path": "files/results/transfer.png",
+      "caption": "Prediction score gains depend on the comparison rule and held-out realm. Scores use training heterogeneity and fixed published spatial slopes. Negative gains mean higher errors. These are conditional comparison scores, not likelihoods or future forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published slopes and climate emulators supply the numerical inputs."
+    },
+    {
+      "target": "sci:sha256:b9ab9d1c99cda5bb1085d610f4d35a51e096c28e874e87af6e680dd0ede97bf3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mixed-lag comparison motivates explicit prediction baselines and realm transfer."
+    },
+    {
+      "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Common mixture bounds motivate a test of the shared-response assumption."
+    },
+    {
+      "target": "doi:10.1111/j.2041-210X.2011.00170.x"
+    },
+    {
+      "target": "doi:10.1002/ecy.3336"
+    }
+  ]
+}
