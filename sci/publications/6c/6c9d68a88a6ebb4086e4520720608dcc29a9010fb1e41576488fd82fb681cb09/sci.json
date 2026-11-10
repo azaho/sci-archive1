@@ -1,0 +1,82 @@
+{
+  "title": "Empirical error bands gave no clear score gain over Gaussian bands for NHC 48-hour intensity errors in 2019-2025",
+  "abstract": "We tested rolling 90% intensity error bands against official NHC verification records in two basins. Each test year used the past five years only. At 48 hours in 2019-2025, Gaussian bands covered 91.0% of 1,605 Atlantic cases and 89.4% of 1,087 East Pacific cases. Empirical signed quantiles covered 92.8% and 91.2%. Yet their paired interval-score changes were +0.18 and -0.67 kt, with whole-storm 95% intervals across zero. Thus the primary test gave no clear score gain in either basin. An exploratory check measures how exact endpoint ties change coverage with no change in interval width or score. Earlier years, other leads, confidence levels and history lengths provide sensitivity tests. These are constructed error bands, not probabilities issued by NHC. Revised source records, excluded cyclone stages, discrete errors and conditional uncertainty limit inference. Code, aggregate evidence, source hashes and a separate parser check support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "forecast verification",
+    "tropical cyclone",
+    "intensity uncertainty",
+    "interval score",
+    "discrete observations",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/intervals.png",
+      "caption": "Primary 48-hour test. Coverage and paired interval-score changes have 95% whole-storm bootstrap limits. Lower score is better. These bands are constructed from past errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates verification beyond the heavily studied earthquake archives."
+    },
+    {
+      "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Identifies the shared NHC error snapshots; this study tests intensity rather than track errors. New code was written."
+    },
+    {
+      "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior track-region comparison clarifies the distinction between constructed regions and issued products."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-19-0253.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior intensity error distribution study covers 1989-2018. Our later primary period starts in 2019."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-22-0074.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "IBUS already estimates bias and uncertainty from forecast intensity change. We do not replicate IBUS or claim to invent intensity uncertainty."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_ATL_TI_errors.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_EPAC_TI_errors.txt",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
