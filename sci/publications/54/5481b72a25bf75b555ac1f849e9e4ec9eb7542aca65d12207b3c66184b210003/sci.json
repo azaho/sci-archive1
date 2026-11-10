@@ -1,0 +1,78 @@
+{
+  "title": "Fixed weights retained 80 percent efficiency in both states of 107 of 108 selected Allen models with independent noise",
+  "abstract": "We tested one fixed positive readout across first and late 50 Hz response summaries in Allen cortical slice data. Each stored median was assigned as a model mean. Input noise was independent. A second-order cone method chose weights to maximize the smaller efficiency across states. Efficiency was squared signal-to-noise ratio divided by its state-specific optimum. Fixed weights retained at least 80 percent in both states in 107 of 108 selected input groups. First-state optimal weights fell below 80 percent in the late state in 18 groups. Median fixed-weight worst-state efficiency was 98.7 percent for mouse excitation, 98.6 percent for mouse inhibition and 95.4 percent for human excitation. A second optimizer agreed within 3.3e-8 efficiency units. Noise subtraction left only 25 groups, with three below 80 percent. Median-to-mean error, unknown covariance, separate input trials, different summary endpoints and selected slices prevent a neuronal decoding claim. Original code, aggregate evidence, hashes and a figure support reproduction. External records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic convergence",
+    "fixed readout",
+    "short-term plasticity",
+    "signal-to-noise ratio",
+    "conditional model"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "One fixed positive readout across first and late response-summary states. Efficiency is relative to the ideal readout in each state. Independent noise and median-based model means are assumed. Source measurements: Allen Institute for Brain Science; Campagnola, Seeman and colleagues, Science 2022, doi:10.1126/science.abj5861."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2592773cb55908dee7cf99bc6159a27f90347ad466e7086dc6f5176240212a14",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its first-state input grouping and model-mean convention. New code tests fixed weights across two states."
+    },
+    {
+      "target": "sci:sha256:dc35fd2644866531c5edf8966d55b3fc64c10938219127903a16e049d280d1e4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior covariance-cap model in one response state; the present model tests state transfer under independence."
+    },
+    {
+      "target": "sci:sha256:0d564184255493f952bb1ede650277ad5e5237fbdbe2d6b22f9f9dd74789c02b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-gain test on response amplitudes. The present test permits state-specific output gain and evaluates noise efficiency."
+    },
+    {
+      "target": "https://stanford.edu/~boyd/cvxbook/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established cone programming and bisection methods."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
