@@ -1,0 +1,147 @@
+{
+ "title": "Behaviour-locked covariance carried 71% of reliable pair-specific coactivity in 40 moving C. elegans and 47-52% in 22 larval zebrafish; wiring explained under 8% of the remainder",
+ "abstract": "Question: earlier campaign work found that pair-specific functional connectivity (FC) is highly reliable, but wiring explains only 5-24% of it after node and distance effects. What sets the large, reliable, non-wiring part? Approach: in each animal, a cross-validated ridge model predicted each neuron or region from measured behaviour (worm: velocity, reversal, head bending, pumping; zebrafish: swims and dark flashes). The correlation of z-scored traces then splits exactly into a behaviour-locked part, a residual part and a cross term. After node fixed effects and distance terms were removed, split halves of animals gave the share of the reliable pair-specific coactivity that each part carries, and the correlation of wiring with the noise-free pattern of each part (rho). Nulls: time-shifted behaviour, node-label permutation and a simulation with known truth; leave-one-animal-out jackknife intervals. Results: in 40 freely moving off-food worms (Atanas 2023; 107 neurons, 4,293 pairs), the behaviour-locked part carried 0.712 (0.688-0.736) of the reliable pair pattern (time-shifted null 0.027). Locomotion features alone carried 0.708. Rank-3 node factors of this part, fit on independent animals, removed 70% of the reliable pattern. Anatomy (gap junctions, chemical synapses, shared input and output, contact) explained 1.9% of the locked part (rho 0.138) and 5.1% of the residual part (rho 0.226); with class, transmitter, type and lineage added, 7.7% of the residual. In 8 on-food worms (Dag 2023) the locked share was 0.490 (0.372-0.608; null 0.092), with more weight on pumping. In 22 larval zebrafish (Legare 2025; 65 regions) the swim- and flash-locked part carried 0.466 (0.397-0.535; null 0.048), 0.520 in 16 swimmers; there, locked and residual patterns had the same shape (calibrated r 0.72) and anatomy related to both equally (rho 0.34, 0.39). In simulation the share estimate was conservative and rho was accurate. Limitations: a linear behaviour model cannot separate activity that drives behaviour from activity that follows it, and it misses unmeasured behaviour; connectomes and activity come from different animals; the on-food cohort is small; zebrafish data are region averages at 1 volume/s; no fly or mouse data; analyses chosen after earlier campaign results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "functional connectivity",
+  "C. elegans",
+  "larval zebrafish",
+  "behaviour encoding",
+  "connectome",
+  "split-half reliability",
+  "variance decomposition"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_budget.png",
+   "caption": "Share of the reliable pair-specific coupling carried by the behaviour- or stimulus-locked part, the residual part and the cross term, with jackknife 95% intervals and the time-shifted null (A); split-half reliability of each part (B)."
+  },
+  {
+   "path": "files/figures/fig2_predictors.png",
+   "caption": "Correlation (rho) of wiring and node-identity predictors with the noise-free pair pattern of the total, locked and residual parts."
+  },
+  {
+   "path": "files/figures/fig3_lowrank.png",
+   "caption": "Reliable pair-specific coupling left after removal of node factors fit on an independent third of the animals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8c65c10b37dabd498acbaf41f5c4be7b8185c82f38d92f1f341a865a6e48723d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its calibrated split-half rho; our worm anatomy rho (0.182) agrees with its value (0.174), and we explain its rank-3 node factors."
+  },
+  {
+   "target": "sci:sha256:2d23aeb7232e2ede1774e1447962825fd9c5ef7947ff056d02c44d268c80f9a0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reliable pair-specific FC and the small wiring share that motivate the question."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "reason": "Node similarity absorbs wiring gain; source of reused zebrafish code copies."
+  },
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "reason": "Shared input beyond direct wiring in worm, fly and mouse."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "reason": "Surrogate wiring reproduces much of indirect-path gains."
+  },
+  {
+   "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+   "reason": "Eigenmode comparisons cannot identify the FC generator."
+  },
+  {
+   "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+   "reason": "Worm wiring eigenmodes versus distance graphs."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Fly wiring-FC coupling and behavioural state."
+  },
+  {
+   "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+   "reason": "Collateral patterns no better than source-matched shuffles."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Wiring relates more to behaviour-independent than to locked coactivity in the worm, the same direction as its trial-residual result."
+  },
+  {
+   "target": "sci:sha256:0310766661af92b67adba7d46522558a12e322f7c4b2189b5a8e430d1a88a14a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Worm loading rules and the Cook 2019 reader (MIT code)."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Soma positions, neuron types and contact tables retrieved from this bundle."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zebrafish preprocessing code (dF/F, swim detection, region rule)."
+  },
+  {
+   "target": "sci:sha256:00ff0bddf5dfd7c13799d1ce980a1f7b8eb159a9da31fba0db5dd20396bec7f4",
+   "reason": "Gap-junction link after population modes are removed."
+  },
+  {
+   "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+   "reason": "Predicted neuropeptide routes did not add positive co-activity."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "reason": "Atanas, Kim et al. 2023 worm data."
+  },
+  {
+   "target": "doi:10.5281/zenodo.19388374",
+   "reason": "Atanas 2023 processed recordings."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.04.023",
+   "reason": "Dag et al. 2023 worm data."
+  },
+  {
+   "target": "doi:10.5281/zenodo.19414639",
+   "reason": "Dag 2023 processed recordings."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "reason": "Cook et al. 2019 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "reason": "Witvliet et al. 2021 connectomes."
+  },
+  {
+   "target": "doi:10.7554/eLife.95402",
+   "reason": "Wang et al. 2024 neurotransmitter atlas."
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "reason": "Legare et al. 2025 zebrafish data (CC BY 4.0)."
+  }
+ ]
+}
