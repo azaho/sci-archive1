@@ -1,0 +1,62 @@
+{
+  "title": "Two- and three-day NOAA electron forecasts lost to persistence in 57 issue dates in September to November 2026",
+  "abstract": "We tested NOAA SWPC daily electron fluence forecasts at three leads in a fixed public table. On 57 common issue dates, two- and three-day mean squared log errors were 4.18 and 2.79 times persistence errors. Seven-day block intervals for paired excess error were above zero; one-day performance was uncertain. Small pooled log biases hid opposite errors. After solar wind speeds of at least 450 km/s, geometric forecast-to-observation ratios were 10.72 and 12.47 at the longer leads; below that speed they were 0.44 and 0.45. This split was post hoc. A simple level replacement kept negative skill, so it did not support a common-level-only remedy. The study adds a conditional error audit, not the first REFM verification. It uses sixty observed days from September to November 2026, selected after signs of poor performance. Few independent episodes, a rolling source table, lack of independent GOES truth and no internal model replay limit inference. Code, aggregate evidence, source hashes and a scalar audit support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    }
+  ],
+  "keywords": [
+    "space weather",
+    "electron fluence",
+    "REFM",
+    "forecast verification",
+    "persistence",
+    "solar wind",
+    "conditional bias"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Public electron fluence forecasts and observed values, common-sample errors, speed-dependent bias and seven-day excess errors. Future forecasts in the time series are not scored."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates a distinct test of lead structure in an operational space weather product. No data are reused."
+    },
+    {
+      "target": "doi:10.1002/2015SW001303",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior REFM verification, log scoring and offset description."
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/relativistic-electron-forecast-model",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Operational model description and threshold proxy."
+    },
+    {
+      "target": "https://services.swpc.noaa.gov/text/relativistic-electron-fluence-tabular.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen source table created 2026 Nov 10 0014 UTC."
+    },
+    {
+      "target": "https://services.swpc.noaa.gov/text/relativistic-electron-fluence-statistics.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source performance statistics for context, not independent validation."
+    }
+  ]
+}

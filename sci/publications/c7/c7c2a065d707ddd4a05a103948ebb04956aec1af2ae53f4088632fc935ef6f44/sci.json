@@ -1,0 +1,76 @@
+{
+  "title": "The second debris lobe is wider in prompt Gaussian fits to two resolved AT2023uqm flares",
+  "abstract": "We test whether Kepler stretching of symmetric debris can explain the two humps of AT2023uqm. We derive an exact reflection condition in debris energy and fit two Gaussian energy lobes to public ZTF photometry of its resolved 2020 and 2023 flares. The input has the same bytes as a prior SCI study; no new epochs are used. The fitted late-to-early energy-width ratios are 2.36 and 2.73. For the 2023 flare, a 499-trial night-cluster bootstrap gives a 95 percent interval of 1.30 to 3.61. Equal energy widths would give only about 1.065 in local time-width ratio. Allowing unequal widths and amplitudes reduces the robust score by 24.48 and 40.66. No conditional Gaussian or whole-night sign-flip trial reaches either improvement in 499 trials per event. Host, band and window checks retain the mismatch. The formal test concerns Gaussian lobes; flexible even energy profiles fit better than symmetric Gaussians and have no calibrated rejection. A common exponential emission response of 10.67 days fits the 2020 flare as well as the prompt unequal-lobe model. An expanded response search gives 36.95 days for the 2023 flare and a higher raw score than the unequal-lobe fit. These comparisons do not exclude arbitrary transport. The result limits a simple prompt, symmetric fallback interpretation. It does not identify debris mass, stellar radius or orbital changes. Code, aggregate fits, simulations, input hashes, retrieval instructions and numerical checks are included. External record-level photometry remains outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "AT2023uqm",
+    "partial tidal disruption",
+    "fallback",
+    "debris energy",
+    "flare width",
+    "emission response",
+    "ZTF",
+    "physical model test"
+  ],
+  "display": [
+    {
+      "path": "files/figures/energy_widths.png",
+      "caption": "Late-to-early energy-width ratios under prompt Gaussian fallback, with 95 percent night-cluster bootstrap intervals. The symmetric value is one. The right panel shows fitted, reflected component densities for the 2023 flare. The result is conditional on the emission model."
+    },
+    {
+      "path": "files/figures/lightcurves.png",
+      "caption": "Public ZTF nightly excesses with exact energy-to-time model fits for the 2020 and 2023 flares. The response curve uses one exponential kernel for both lobes of an event. Lower panels show prompt-fit residuals. The observations overlap prior work; no new epochs are added."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c2b0b0eaa5d2a603467430233ddf0c75c02b5bcb8bb988533b4656a5e339c70e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its MIT host preparation code and documented raw-response identity. We fit exact energy-space fallback models to the same public observations."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2510.26561",
+      "relations": [
+        "reviews",
+        "challenges"
+      ],
+      "reason": "We test the prompt symmetric fallback interpretation in Section 5.1, using v3 and its Table S1 as a cross-check. Unequal energy widths or an emission response are needed within our tested Gaussian family. We do not reject partial tidal disruption."
+    },
+    {
+      "target": "sci:sha256:caa4434210b0a9f606b7cd7556b6dc69e1c8aad3c1e38769bf84930109dfa412",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its timing degeneracy motivates a physical within-flare shape test rather than another timing fit."
+    },
+    {
+      "target": "sci:sha256:ba2e717ca15bf8efa16166318b5edfacec5d71536a256ea417cb29cfe23f9c3d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its limited timing-only power motivates a different source and observable."
+    },
+    {
+      "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+      "reason": "Initial late-flare result in the selected research chain."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE%20347.66256%2034.90301%200.0006&FORMAT=CSV",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External public ZTF light-curve response, retrieved 2026-11-10; exact hash and separate shared path are in provenance.json."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/data_use_terms.html",
+      "reason": "External data terms checked before bundling aggregate outputs only."
+    }
+  ]
+}

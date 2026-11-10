@@ -1,0 +1,147 @@
+{
+ "title": "The 2021 DOISST v2.1 input change causes 23-60% of the 2023 marine heatwave duration excess at 60S-60N; 2023 stays the record year, and the noise hid its peak-intensity record",
+ "abstract": "Question: NOAA DOISST v2.1 became much smoother at the October 2021 input change (Navy AVHRR to ACSPO L3S). Smooth data break marine heatwave (MHW) events less often. Which 2023 MHW record statistics come from the ocean and which come from this change? Approach: we calculated Hobday MHW statistics for 29,129 one-degree cells (60S-60N, 1982-2025, 1983-2012 and 1991-2020 baselines) in published DOISST and in three noise-homogenised versions. Each version gives all input segments the same sub-32-day spectrum (2016-20 level, 2021-25 level, or noise added to the 1985-2006 level). We compared 2023 with 1982-2022 and checked the results with ESA SST CCI v3.0.1 on the same cells (to 2024-06-22) and with 151 moored buoys. Results: in published DOISST, the 2023 mean event duration is 3.16 times the 1982-2022 mean (z 5.4). Homogenisation gives 1.88-2.68 times (z 3.2-4.3). CCI gives 2.31 times, against 3.07 for DOISST on the same cells and days. Thus 23-60% (CCI: 37%) of the 2023 duration excess is artifact. The DOISST/CCI duration ratio steps by +0.31 ln units after 2021 (4.5 SD of 2007-2020); matching gives -0.01 to +0.12. At 64 buoys, the DOISST/buoy event-duration ratio increased by +0.13 ln units after October 2021 (95% interval 0.08 to 0.29, p = 9e-5); homogenised versions show no significant change. 2023 is still the record year in all versions for event duration, MHW days, area and activity. MHW days (125 per cell), ocean area with a heatwave (97%) and activity (5.7e10 C day km2) change by 15% or less. The noise hides other records: 2023 peak intensity ranks 3rd in published DOISST (z 1.7) but 1st after homogenisation (z 2.5-2.9; CCI z 2.9), and the event count ranks 3rd but becomes 1st. North Atlantic, tropical and eastern Pacific duration ratios fall the most. Area-mean (basin) events do not depend on the noise. Limitations: the true pixel-scale fast variance is not known, so the three targets give a range, not a confidence interval; buoys are DOISST inputs and sample only the tropics and US waters; CCI ends in mid-2024 and has its own sensor steps; we did not reproduce the exact method of Dong et al. (2025).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "marine heatwaves",
+  "2023 marine heatwave",
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "ESA SST CCI",
+  "data homogenisation",
+  "input change",
+  "record statistics",
+  "moored buoys",
+  "climate indicators"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_global_series.png",
+   "caption": "Global (60S-60N) annual MHW statistics, 1983-2012 baseline. (a) Mean full duration of the events that are active in each year. (b) MHW days per year. Blue: published DOISST v2.1. Orange, green, yellow: DOISST homogenised to one sub-32-day spectrum (2016-20 level, 2021-25 level, noise added to the 1985-2006 level). Violet dashed: ESA SST CCI v3.0.1 on the same cells (to 2023). Dotted lines: DOISST input-change dates. After October 2021, published DOISST durations move from the 2016-20 curve toward the smooth 2021-25 curve, while MHW days agree in all versions."
+  },
+  {
+   "path": "files/figures/fig2_record_2023.png",
+   "caption": "How exceptional was 2023? (a) z-score of the 2023 value against 1982-2022 for nine MHW statistics (60S-60N, 1983-2012 baseline). Bars give the range over noise seeds. Diamonds: CCI on CCI cells and days (to 2024-06-22). Duration statistics are less exceptional after homogenisation and in CCI; peak intensity, mean intensity and event count are more exceptional. (b) Ratio of the 2023 mean event duration to the 1982-2022 mean by region."
+  },
+  {
+   "path": "files/figures/fig3_independent_checks.png",
+   "caption": "Independent checks. (a) ln ratio of global mean event duration, DOISST to CCI, on the same cells and days. Published DOISST steps up after the 2021 input change; the homogenised versions do not step (2016-20 target) or step less (2021-25 target). (b) Median per-buoy ln ratio of mean event duration, DOISST at the buoy cell to the buoy, on the same days, by input period (151 buoys; 95% bootstrap intervals over buoys). Published DOISST moves from shorter-than-buoy to longer-than-buoy events after October 2021; the homogenised versions are flat."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its validated MHW code and spectral matching method, and we extend its noise-step result to the 2023 record statistics."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its archived daily buoy SST table and DOISST buoy-cell series."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We adapt its CCI OPeNDAP fetch code; we confirm its finding that DOISST event durations moved relative to CCI after 2021."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "First evidence of the DOISST fast-variance steps at input changes."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier evidence that MHW duration trends depend on product noise."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Heatwave-day trends are robust; we find the 2023 heatwave-day record robust too."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Area-based heatwave metrics are robust; we find the same for 2023 area and activity."
+  },
+  {
+   "target": "sci:sha256:b4e19931a50ff723ade22d6598905c36d31554ac920712486c689178d876aae8",
+   "reason": "Heatwave count trends are unstable under small changes; we find that the noise hides the 2023 count record."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Related evidence of DOISST and CCI input steps in spatial statistics."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Related evidence of input steps in spatial detail."
+  },
+  {
+   "target": "doi:10.1126/science.adr0910",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test which of the reported 2023 record statistics depend on the DOISST 2021 input change."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "reason": "MHW definition."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "reason": "DOISST method."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 paper."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ESA SST CCI Analysis L4 v3.0.1 dataset (CC BY 4.0)."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1 daily files."
+  },
+  {
+   "target": "https://github.com/ecjoliver/marineHeatWaves",
+   "reason": "Reference MHW code used for validation only (commit d7292bf)."
+  }
+ ]
+}
