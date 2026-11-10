@@ -1,0 +1,108 @@
+{
+  "title": "Ten-larva sampling gave no clear change in thermal-index warmth slopes in four California spring samples in 2000-2022",
+  "abstract": "We tested whether fixed larva counts change the link between spring temperature and an equal-taxon thermal index. We learned 58 taxon scores from 1978-1999 CalCOFI records. We then tested 886 spring bongo tows in two California sectors and two periods, 2000-2010 and 2011-2022. A dynamic program computed the exact expected mean taxon score in ten larvae from each catch. Models controlled site, time, season, light and sampled volume. All four adjusted intervals for the full-minus-fixed warmth slope included zero. Contrast estimates ranged from -0.0029 to +0.0038 C/C. Both full and fixed-count indices had positive warmth slopes in the later southern sample. The ten-larva slope there was +0.0505 C/C, with an adjusted interval of +0.0315 to +0.0694. This positive link persisted in planned checks, but was not clear in all samples. Few year clusters, fitted local scores, selected catches, coarse surface temperature and taxon detection limit inference. The result does not prove absence of count bias or a causal climate effect. The package provides code, aggregate results, figures, source hashes and 14 numerical checks. External source tables and record-level derivatives stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.QM"
+    }
+  ],
+  "keywords": [
+    "CalCOFI",
+    "fish larvae",
+    "community temperature index",
+    "rarefaction",
+    "observation bias",
+    "thermal affinity",
+    "temporal transfer",
+    "regional comparison",
+    "dynamic programming",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/slopes.png",
+      "caption": "Full-catch and ten-larva thermal-index warmth slopes, and their paired differences. All four primary difference intervals include zero. Intervals adjust for four tests within each outcome family. Taxon scores use 1978-1999 records; test catches use 2000-2022 records."
+    },
+    {
+      "path": "files/annual.png",
+      "caption": "Year means of temperature and index residuals after the observation controls. Lines show slopes fitted to individual tows. Points are year-level diagnostics. The sectors share regional temperature and survey methods."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:149041b3c1099ab4366eeded6bb1a06693af1ff219b88ad93956362dc94ad635",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt its verified survey builder, solar calculation and fixed spring selection. We test a different outcome and learn thermal scores only in earlier years."
+    },
+    {
+      "target": "sci:sha256:b125a08d6f6864e3ec63c5938437288133dc0183d8e5bbd706c83e1c05461a4a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test of day-night richness contrasts in the same survey."
+    },
+    {
+      "target": "sci:sha256:dc8b0fcb8d4e0eb32bbdaaeac7b7bcdf03dc66c8f80e78b4de2a4cacd4a76493",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign test of taxon responses to warm events. We use overlapping source records but a different question."
+    },
+    {
+      "target": "doi:10.1111/ecog.03961",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier community temperature study used separate training data for taxon temperature associations."
+    },
+    {
+      "target": "doi:10.1111/gcb.16010",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "CalCOFI larval community response to the 2014-2016 marine heatwave."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 temperature product method."
+    },
+    {
+      "target": "https://coastwatch.pfeg.noaa.gov/erddap/info/erdCalCOFItows/index.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA SWFSC tow metadata and source terms. Exact snapshot URL and hash are in provenance.json."
+    },
+    {
+      "target": "https://coastwatch.pfeg.noaa.gov/erddap/info/erdCalCOFIlrvcnt/index.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA SWFSC larva counts and source terms. Exact snapshot URL and hash are in provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA PSL ERSSTv5 source and attribution information."
+    },
+    {
+      "target": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Solar equations for observation-light controls."
+    }
+  ]
+}

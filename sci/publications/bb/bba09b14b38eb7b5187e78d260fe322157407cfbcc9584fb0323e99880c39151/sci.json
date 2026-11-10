@@ -1,0 +1,67 @@
+{
+ "title": "Rolling Gutenberg-Richter forecasts gave the correct number of Md 4+ earthquakes at Campi Flegrei from May 2024 to November 2026, but they did not identify the months of these earthquakes",
+ "abstract": "Question: did the rolling Gutenberg-Richter (GR) and Poisson 30-day exceedance forecasts of Iervolino et al. (2024) give correct probabilities for large earthquakes at Campi Flegrei caldera (Italy) after their data ended on 21 May 2024? Approach: we applied the method every day from 1 January 2019 to 10 October 2026 to the public INGV-Osservatorio Vesuviano GOSSIP catalogue (CC BY 4.0; 34,655 events in 2005-2026; duration magnitude Md on a 0.1 grid; Mc 1.0, with 1.5 and 2.0 as checks). We fitted GR rates and Tinti-Mulargia b-values to the last 30 or 365 days, and scored forecasts for Md >= 3.0, 3.5, 4.0 and 4.4 in the next 30 days with non-overlapping windows, Poisson tests, AUC with a block bootstrap and log-likelihood. Results: after 21 May 2024 the last-365-day forecast expected 9.0 Md >= 4.0 and 4.5 Md >= 4.4 events; 8 and 5 occurred (the last-30-day forecast expected 9.7 and 5.0). The b-value was low and stable: 0.75 at Mc 1.0 in 2022-2026 (year-to-year p = 0.41). A GR fit to 1.0 <= Md < 3.0 in 2023-2026 predicts 11.1 Md >= 4.0 events; 11 occurred. The record Md 4.4-4.7 events therefore agree with more small events under a constant b. A generic b = 1 underestimated Md >= 4.0 counts by a factor of 4-5. But after May 2024 the forecasts did not rank windows with large events above windows without them (AUC for Md >= 4.0: 0.61, 95% interval 0.40-0.81, last-30-day fit; 0.44, 0.19-0.66, last-365-day fit). Both had a lower likelihood than a constant rate, and the 30-day window did not improve on the 365-day window. In 2026 the Md 4.4 and 4.7 events occurred in months with low small-event rates. Before May 2024 the forecasts ranked windows well (AUC 0.95-0.98) only because the rate increased. Limitations: few large events (8 Md >= 4.0 after May 2024), Md not Mw (so the published Mw probabilities are not tested directly), fixed Mc, live catalogue, and no ETAS or deformation-based comparison.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Campi Flegrei",
+  "volcano seismicity",
+  "operational earthquake forecasting",
+  "b-value",
+  "Gutenberg-Richter",
+  "forecast evaluation",
+  "out-of-sample test",
+  "GOSSIP",
+  "INGV-Osservatorio Vesuviano",
+  "bradyseism",
+  "caldera unrest",
+  "maximum magnitude"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_forecasts.png",
+   "caption": "(a) Daily-issued probability of at least one Md >= 4.0 earthquake at Campi Flegrei in the next 30 days from GR + Poisson fits to the last 30 and last 365 days (Mc 1.0). Triangles show Md >= 4.0 earthquakes. (b) Cumulative expected and observed Md >= 4.0 counts from 2019, with a b = 1 reference. The dotted line is 21 May 2024, the end of the data in Iervolino et al. (2024)."
+  },
+  {
+   "path": "files/figures/fig4_scores.png",
+   "caption": "(a) Observed / expected count of events above four Md thresholds for 30-day forecasts issued before and after 21 May 2024 (lines: range over 30 window offsets). (b) AUC for ranking windows with and without events (95% moving-block bootstrap). After May 2024 counts are calibrated but AUC is near 0.5."
+  },
+  {
+   "path": "files/figures/fig1_timeline.png",
+   "caption": "GOSSIP Campi Flegrei catalogue: (a) monthly count of Md >= 1.0 events, (b) Md >= 3.5 events, (c) b-value in consecutive blocks of 200 Md >= 1.0 events with a 1.96 standard-error band. b stays near 0.7-0.8 while the maximum magnitude increases to Md 4.7."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.13127/gossip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GOSSIP INGV-Osservatorio Vesuviano public seismic database (CC BY 4.0), Campi Flegrei yearly event files retrieved 2026-11-09."
+  },
+  {
+   "target": "doi:10.1038/s41467-024-55023-1",
+   "relations": [
+    "reviews",
+    "uses"
+   ],
+   "reason": "Iervolino et al. 2024: source of the rolling GR + Poisson 30-day forecast method that we test out of sample after their data end."
+  },
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "reason": "Related campaign test of the calibration of operational aftershock forecasts."
+  },
+  {
+   "target": "sci:sha256:7387bf923a4343869c1347a10af7a86370d8eac44912dd4ac185f71da7dbb08a",
+   "reason": "Related campaign test of b-value changes as a forecast of larger earthquakes."
+  },
+  {
+   "target": "sci:sha256:f83cdd0ebec6b19787b81f3d16a07e9b2349755dfe0b2d6a74817df148c829b7",
+   "reason": "Related campaign test of seismicity-rate alarms before volcanic eruptions in Japan."
+  }
+ ]
+}
