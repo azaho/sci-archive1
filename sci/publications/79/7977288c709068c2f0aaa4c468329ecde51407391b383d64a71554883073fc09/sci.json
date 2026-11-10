@@ -1,0 +1,76 @@
+{
+ "title": "In one mouse retina patch, ganglion-cell ON/OFF polarity follows dendrite stratification inside types, but this explains only 4% of reliable within-type variation; kinetics show no such link",
+ "abstract": "Question: in the e2198 mouse retina patch, does the inner plexiform layer (IPL) stratification of a ganglion cell predict its moving-bar calcium response only through its type, or also inside a type? Data: Briggman 2011 calcium responses and Bae 2018 EM reconstructions of the same cells (299 typed cells in 37 types for ON/OFF, 288 in 36 types for kinetics). Method: fraction of dendrite volume in the ON layer (f_on) and in the central band; ON/OFF index and decay from the source fits; between-type slope versus within-type slope with type and imaging-field fixed effects; within-type permutations; a fixed decision rule written before outcomes. Results: between types, f_on predicted the ON/OFF index (slope 1.30, r 0.77). Within types, the slope was 0.88 (95% interval 0.14-1.43; Holm p 0.005; ratio to between slope 0.68, 0.11-1.10), also outside the direction-selective types, and positive in 20 of 26 types. But f_on varies little inside types, and it explained about 4% of within-type ON/OFF variance, while that variance was 93% reliable across repeats. Without two atypical high-leverage cells the slope was 0.53 (p 0.067). The pre-set kinetics measure failed a sign check; the source sustainedness index showed the type-level rule (r -0.47) but no within-type link, with low reliability (0.52). Limitations: one animal, one stimulus, parametric fits, unestimated stratification error.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "retina",
+  "ganglion cell",
+  "dendritic stratification",
+  "structure-function",
+  "cell types",
+  "calcium imaging",
+  "connectomics",
+  "e2198"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_onoff_within_between.png",
+   "caption": "A: type means of the ON/OFF index against ON-layer dendrite fraction (between-type slope 1.30). B: within-type deviations after type and field effects (slope 0.88; dashed line = between-type slope). C: within-type correlation for each type with at least 5 cells."
+  },
+  {
+   "path": "files/fig2_slopes_reliability.png",
+   "caption": "A: between-type and within-type slopes with bootstrap intervals for the ON/OFF test (P1), the pre-set kinetics test (P2) and the exploratory sustainedness test (E1). B: reliable within-type variance (split-half) and the part explained by stratification."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1016/j.cell.2018.04.040",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM reconstructions, cell types, stratification profiles, calcium fits and EM-calcium matches."
+  },
+  {
+   "target": "doi:10.1038/nature09818",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source calcium imaging of the e2198 patch."
+  },
+  {
+   "target": "https://github.com/seung-lab/e2198_Ca_imaging/tree/f061873a23bbdd536f1f1344a5f6519a20779a6e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned source data and code."
+  },
+  {
+   "target": "https://github.com/seung-lab/e2198_reconstruction/tree/7165c900a3a99e35e36c9aeb6966970f1635858b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned ganglion-cell type lists."
+  },
+  {
+   "target": "doi:10.1038/nature16468",
+   "reason": "Type-level link between IPL depth and response kinetics in other mice."
+  },
+  {
+   "target": "sci:sha256:65ec64ca5809249c1c97298bb2464979d452202ecf4a53867544f58ea17d0804",
+   "reason": "Prior campaign result on the same tissue (starburst contact correction); different question, nothing reused."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Related cell-level versus type-level structure-function test in mouse cortex."
+  },
+  {
+   "target": "sci:sha256:a4bfe03daf43583039d19846b6332edf597de0d7044d344297bd6afb4a2e1754",
+   "reason": "Related test of structure and response reliability in mouse cortex."
+  }
+ ]
+}

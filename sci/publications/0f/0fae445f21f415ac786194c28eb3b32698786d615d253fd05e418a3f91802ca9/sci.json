@@ -1,0 +1,76 @@
+{
+  "title": "Two quarter-noise weight rules worsen Kepler-90 i grid ranks with 0.5-day and 2-day filters",
+  "abstract": "We test whether weights for noise in each Kepler quarter repair a failed search for known planet Kepler-90 i. We reuse fourteen release 25 light curves. At a two-day median filter, equal weights give a best nearby period rank of 4454. Residual-MAD and difference-MAD weights worsen it to 7132 and 8279. At a half-day filter, the ranks are 1650, 2004, and 1729. None of the six fixed choices selects a period match among its first 20 peaks. The supplied orbit still gives early and later depths of 83.1 and 97.7 ppm. These two weight rules do not repair this known-signal control. They do not identify the cause of other peaks or exclude new planets. Later data share the same telescope. Code, source hashes, derived results, a figure, and repeat steps are included. External observations and the orbit table stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler-90",
+    "transit search",
+    "noise weights",
+    "known planet control",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/weights.png",
+      "caption": "Grid ranks near the known period and early quarter noise scales. Lower rank is better. Neither quarter-weight rule repairs top-20 selection."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bbcab310c042741a6cf9679327683a472a87aa2b1f9e36d47711e575b7437046",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt its code, input inventory, and search rules."
+    },
+    {
+      "target": "sci:sha256:875862d68e2c72ee13dbc418cdf186e063c337c3c6995f858cdfeb77eebcc4e5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Our equal-weight ranks repeat this score and peak-selection audit."
+    },
+    {
+      "target": "sci:sha256:8fdc413b2377101e1cd0680f5fff60069b7fa01dd61b50d935d7e1f0ec0188d3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior filter transfer tests use a different injection and clipping design."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa9e09"
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802"
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/api/astropy.timeseries.BoxLeastSquares.html"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html"
+    },
+    {
+      "target": "sci:sha256:d935f53294f5e6cd9997180f48441601b47292d175b6fac0b47dfa1b2d45a943",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects the signing-key attribution for reused campaign code in EXTERNAL_DATA.md. Results and code are unchanged."
+    }
+  ]
+}
