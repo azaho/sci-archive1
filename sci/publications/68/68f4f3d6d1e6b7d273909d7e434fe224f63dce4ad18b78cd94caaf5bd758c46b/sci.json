@@ -1,0 +1,143 @@
+{
+ "title": "After node similarity is controlled, wiring adds at most 0.004 held-out R2 to functional coupling in worm, fly, zebrafish, mouse and human data; the anesthesia effect on mouse coupling is node-level",
+ "abstract": "Question: which part of the link between wiring and functional connectivity (FC) is pair-specific, and not node or geometry structure, and where does it change with brain state? Earlier campaign work controlled nodes with one additive term per node; such a term cannot express node similarity. Data (reused): worm (40 animals, Cook wiring), fly (49 flies; rest/walk in 34; FlyWire), larval zebrafish (20 fish; swim/quiet in 12; mapZebrain), mouse fMRI (med+iso, isoflurane, awake; Knox tracer model) and human group DSI/fMRI. Method: we predicted the FC of held-out pairs in an independent replicate (other half of animals, or other hemisphere) with distance, additive node effects (M1) and a node-similarity term fitted to the other pairs of the same nodes (M2; nuclear-norm matrix completion). We compared real wiring with 30 strength- and distance-matched surrogates, split wiring into node-level and pair-specific parts, and calibrated with simulations. Results: M2 predicted most reliable FC (held-out R2 worm 0.09 to 0.75, fly 0.67 to 0.80, zebrafish 0.54 to 0.77, mouse 0.63 to 0.97; ceilings 0.88-0.99). Wiring added 0.003-0.12 after M1 (surrogates 0.000-0.002; p = 0.032, the minimum), but only -0.001 to 0.004 after M2, at most 3% of the reliable FC left. Fly, zebrafish and mouse wiring was mostly node-level (72-99% predictable from other edges). Worm wiring was mostly pair-specific and gave most of the worm gain after M1, but M2 absorbed it too (0.027 to 0.001). With synthetic wiring signals of the same size, M2 kept 6-32% (fly) and 11-25% (worm) of the gain; the real data kept -4% to 10% and 5%. The mouse state effect after M1 (med+iso 0.122, isoflurane 0.027, awake 0.022) was absent after M2 (-0.001 to 0.001) and followed a larger node-similarity gain under med+iso (0.34 vs 0.14, 0.10). Fly walk/rest and zebrafish swim/quiet did not differ. Limitations: wiring and activity from different animals; M2 is fitted to FC and can absorb wiring effects that spread to node profiles; the mouse wiring has almost no pair-specific structure, so mouse cannot test pair-specific wiring; mouse replicates share animals; reduced design (2 splits, 30 surrogates) because the host was overloaded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "connectome",
+  "functional connectivity",
+  "matrix completion",
+  "node similarity",
+  "surrogate wiring",
+  "brain state",
+  "anesthesia",
+  "C. elegans",
+  "Drosophila",
+  "larval zebrafish",
+  "mouse fMRI",
+  "noise ceiling"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_variance_ladder.png",
+   "caption": "Held-out pair R2 in the other replicate for distance, + additive node effects, + wiring, + node similarity (no wiring) and + node similarity + wiring, per species. Black line: noise ceiling (replicate correlation). Human values are within-matrix cross-validation."
+  },
+  {
+   "path": "files/figures/fig2_wiring_gain_vs_surrogates.png",
+   "caption": "Wiring gain in held-out R2 after additive node effects (left) and after node similarity (right) for all main data sets and states, with the mean and 95% range of 30 strength- and distance-matched surrogate wirings and one-sided surrogate p (smallest possible 0.032). Symmetric-log axis."
+  },
+  {
+   "path": "files/figures/fig3_states_and_simulation.png",
+   "caption": "Left: brain-state contrasts (fly rest/walk, zebrafish quiet/swim, mouse med+iso/isoflurane/awake): the wiring gain after node effects changes with state in mouse, but no gain remains after node similarity. Right: share of the wiring gain kept after node similarity for synthetic FC with a known generator of the real gain size (6 repeats, 95% interval) and for the real data."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the derived worm, fly and mouse matrices. Its gains beyond additive node effects are mostly node-similarity structure in our test."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We reuse its matched surrogate generator. Its specific gain in sedated mouse after region effects disappears after node-similarity control."
+  },
+  {
+   "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its conclusion that eigenmode comparisons cannot identify the generator agrees with our held-out-pair result."
+  },
+  {
+   "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+   "reason": "Worm geometry-versus-connectome eigenmode result."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Fly FlyWire-FC coupling and walk/rest states; source of the fly FC used through e7136a69."
+  },
+  {
+   "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+   "reason": "Single-neuron collateral patterns gave no gain over source-matched shuffles."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Zebrafish projectome coupling beyond distance and region effects."
+  },
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the human group pair table."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its zebrafish preprocessing, swim-window and block-matching code."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mouse anesthesia-state dependence of tracer-FC coupling, which we locate in the node-level component."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "reason": "Worm activity pairs, Cook edges and soma positions used through e7136a69."
+  },
+  {
+   "target": "sci:sha256:3bd4459fa104b5cc588cee3dc3a490a7901c37c0ad3eb36a539345a237bc2280",
+   "reason": "Individual human SC-FC specificity."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035"
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7"
+  },
+  {
+   "target": "doi:10.7554/eLife.85202"
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y"
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866"
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2019.116278"
+  },
+  {
+   "target": "doi:10.34973/1he1-5c70"
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066"
+  },
+  {
+   "target": "doi:10.5281/zenodo.2872624"
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB"
+  }
+ ]
+}

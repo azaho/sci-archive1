@@ -1,0 +1,184 @@
+{
+ "title": "After 1997, 175 south-east Australian catchments lost a share of flow that grew in wet years, unlike any one-parameter Budyko change; the eastern US form was unresolved (annual, 1951-2025)",
+ "abstract": "Question: after 1997, runoff in south-east Australia (SE-AU) and the eastern US (East-US) fell below the 1951-1996 rainfall-runoff relation. Earlier work reported a slope loss in SE-AU and a constant offset in East-US. Do the two forms show two causes, or only different positions on the aridity curve? Approach: 175 SE-AU and 260 East-US CAMELS catchments (annual flow, AGCD/SILO and nClimGrid rain). For each catchment we fitted a Budyko (Fu) form curve on 1951-1996. Then we fitted seven one-parameter mechanisms to the test years: constant loss, proportional loss, effective-rain loss, rain scaling, energy-limit change, Budyko-partition change and wet-year-excess loss. We used cell-bootstrap intervals, a 1981-1996 placebo, and synthetic shape ratios k = slope change / offset. Results: on a Budyko curve, no single-parameter change of climate or partition gives k above about 1. In SE-AU (2010-2021) the proportional loss (median 21.6% of flow) was best and all other mechanisms were rejected, including the partition change. But k was 1.57 (95% CI 1.13-2.19), and 1.86-1.95 with linear and quadratic calibrations: the loss grew faster than flow in wet years. The SE-AU slope loss (-0.20 to -0.26) occurred at all runoff ratios. At equal runoff ratio it exceeded East-US by 0.14 (0.07-0.20). Rain-noise attenuation explains at most 4%. East-US lost about 7% at mean rain (38.8 mm/yr against 41.5 mm/yr in SE-AU), but its form depended on the calibration: k = 0.89 (Fu) against 0.04 (linear), and cross-validation did not choose between them. Conclusion: the SE-AU change is regional, is not a simple Budyko-curve change, and removes extra flow in wet years. The East-US offset form is not robust. Limitations: annual fingerprints do not identify processes; several tests are post hoc; SE-AU flow ends in 2021.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "rainfall-runoff relationship",
+  "Budyko framework",
+  "Fu equation",
+  "hydrological non-stationarity",
+  "mechanism fingerprint",
+  "runoff sensitivity",
+  "CAMELS-AUS",
+  "CAMELS-US",
+  "south-east Australia",
+  "eastern United States",
+  "calibration form",
+  "cross-validation",
+  "errors-in-variables"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rain_profiles.png",
+   "caption": "Flow residual in 2010-end against the annual rain anomaly, as a percentage of mean 1951-1996 flow, with the residual that each fitted mechanism predicts. SE-AU loses little in dry years and much in wet years, between a proportional loss (M2) and a wet-year excess loss (M7). East-US cannot separate M1, M2 and M6."
+  },
+  {
+   "path": "files/figures/fig2_mechanism_ranking.png",
+   "caption": "Mean normalised error of each one-parameter mechanism minus the best one, with 95% cell-bootstrap intervals, for 2010-end and for the 1981-1996 placebo. The proportional loss is best in SE-AU (AGCD and SILO) and East-US. In SE-AU all other mechanisms are rejected with AGCD rain."
+  },
+  {
+   "path": "files/figures/fig3_slope_by_runoff_ratio_and_k.png",
+   "caption": "Left: rain-slope change by runoff-ratio class. SE-AU loses 20-26% at all runoff ratios; East-US loses 4-8% at the same runoff ratios. Right: theoretical shape ratio k for each mechanism on a Fu curve, and observed k with three calibration forms. SE-AU k is above 1 with all forms; East-US k depends on the form."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "We reuse its annual CAMELS-AUS and US flow and rain tables and catchment rules. We confirm its SE-AU slope loss with a cross-validated Budyko-form calibration, and we show that its constant-offset form for East-US depends on the linear calibration."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its nClimGrid basin water-year rain and temperature table."
+  },
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "It found about 40 mm/yr losses in both regions after 2009; we find 41.5 and 38.8 mm/yr, and we show that the regional difference in slope loss remains at equal runoff ratio."
+  },
+  {
+   "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its effective-rainfall fingerprint for flow components; we test effective-rain loss and six other fingerprints in the annual rain dimension."
+  },
+  {
+   "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "Regional southern Australian change after 1997; our runoff-ratio analysis also shows that the change is regional."
+  },
+  {
+   "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "First report of the post-1997 shifts in both regions."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Victorian low-runoff state through wet years; our wet-year excess loss gives one explanation of its persistence."
+  },
+  {
+   "target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Seasonal rainfall fits at Victorian gauges; seasonal rain is not in our annual model."
+  },
+  {
+   "target": "sci:sha256:03b9bf625a08da8a69b147f0feeb508e3e9d1281921e92d1b81f195540ea527e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "US reference basins had no persistent low-runoff states."
+  },
+  {
+   "target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "US groundwater recovered after droughts."
+  },
+  {
+   "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "GRACE storage recovered after droughts."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 (via bundle 871b2192 and the master table)."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/15529996",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-US attributes v1.2."
+  },
+  {
+   "target": "doi:10.5194/hess-21-5293-2017",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5194/hess-19-209-2015"
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1029/2004WR003133",
+   "reason": "Fu's equation as given by Zhang et al. (2004)."
+  },
+  {
+   "target": "doi:10.1002/2014WR015348"
+  },
+  {
+   "target": "doi:10.1002/2016WR019525"
+  },
+  {
+   "target": "doi:10.1126/science.abd5085"
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022"
+  }
+ ]
+}

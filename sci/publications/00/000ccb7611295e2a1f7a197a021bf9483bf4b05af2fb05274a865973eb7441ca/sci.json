@@ -1,0 +1,81 @@
+{
+ "title": "USGS PAGER economic-loss probabilities for 9,130 earthquakes (2013-2026) were 8 times too high at USD 1 million, mainly from a PAGER 2.x zero-loss floor; first versions were calibrated at USD 100 M+",
+ "abstract": "We tested the economic-loss probabilities that the USGS PAGER system issued for 9,130 earthquakes from 2013 to mid-2026 against damage in the NOAA NCEI Global Significant Earthquake Database. We used the archived PAGER versions of an earlier SCI study and wrote the plan before we matched forecasts to outcomes. First versions (median 22.6 minutes after the origin) gave 2,390 expected events with USD 1 million or more damage; NCEI records 289 (ratio 0.12, 95% CI 0.11-0.13). Most of the error comes from one rule in the PAGER 2.x code: the economic model passes losses in millions of USD to a function that sets an expected value below 0.001 to 0.5. Thus a modelled loss below USD 1,000 becomes USD 0.5 million. This floor applied to 5,932 of 6,751 PAGER 2.x first versions (88%). They stated P(loss of USD 1 million or more) = 0.333, but only 0.52% (95% CI 0.37-0.74%) had such damage, 64 times fewer. NCEI would have to miss 1,946 damaging events to remove this error. Small positive model losses were calibrated at USD 1 million, so the floor makes the probability non-monotonic. Forecasts with positive model losses were too sharp: recalibration slopes were 0.52, 0.51 and 0.68 at USD 1 million, 100 million and 1 billion, and an interval-censored log-normal fit gave a spread of 4.3 against the issued 1.76 (natural-log units). At USD 100 million and 1 billion, first versions were calibrated (ratios 0.99 and 1.02), but the latest versions were too high (0.70, CI 0.58-0.82, and 0.60, CI 0.42-0.78). The issued forecasts had a ranked probability skill of -1.50 against climatology. Replacing only the floor forecasts gave +0.16. In an exploratory 2013-2019 training and 2020-2026 test, a floor repair plus log-normal recalibration gave skill +0.21 (0.11-0.31). The floor result held in ten sensitivity runs. Limitations: NCEI misses some damage, gives many losses only as classes, and assigns sequence damage to one event. These gaps can explain part of the excess for positive model losses and for later versions, but not the floor. Only 79 events had USD 100 million or more damage.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "PAGER",
+  "earthquake losses",
+  "economic loss",
+  "forecast verification",
+  "calibration",
+  "probabilistic forecast",
+  "NCEI significant earthquake database",
+  "rapid loss estimation",
+  "zero-loss floor",
+  "reliability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_floor_classes.png",
+   "caption": "Stated and observed P(loss of USD 1 million or more) by implied expected loss of the first version. The PAGER 2.x floor states 0.33; 0.5% of these events had such damage."
+  },
+  {
+   "path": "files/figures/fig2_oe_by_version.png",
+   "caption": "Observed/expected events at USD 1 million, 100 million and 1 billion for first, 24-hour and latest versions, with sensitivity runs."
+  },
+  {
+   "path": "files/figures/fig4_loss_vs_median.png",
+   "caption": "NCEI recorded damage against the PAGER implied median for non-floor first versions, with stated and fitted spreads."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its archived PAGER versions, NCEI download and NCEI-to-PAGER match, and test the economic histograms that it did not test."
+  },
+  {
+   "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+   "reason": "Past-event repair of the fatality floor; we test the analogous repair for the economic floor."
+  },
+  {
+   "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+   "reason": "Used the economic probabilities only as predictors of deaths; we verify them against damage."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "Related verification of a public USGS hazard product (ShakeAlert contours)."
+  },
+  {
+   "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+   "reason": "Related verification of issued USGS aftershock forecasts."
+  },
+  {
+   "target": "doi:10.7289/V5TD9V7K",
+   "reason": "NCEI/WDS Global Significant Earthquake Database (outcome data)."
+  },
+  {
+   "target": "doi:10.1193/1.4000096",
+   "reason": "Jaiswal and Wald (2013), empirical economic loss model used by PAGER."
+  },
+  {
+   "target": "https://github.com/usgs/pager/tree/081a55f854031caa72a67bf115f855db87741563",
+   "reason": "PAGER source code with the zero-loss floor rule (losspager/utils/probs.py) and the millions-of-USD conversion (losspager/models/emploss.py)."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/data/pager/",
+   "reason": "USGS PAGER products (forecast data)."
+  }
+ ]
+}
