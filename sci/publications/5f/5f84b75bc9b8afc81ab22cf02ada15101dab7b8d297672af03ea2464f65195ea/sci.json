@@ -1,0 +1,77 @@
+{
+  "title": "A synthetic 1.565-day noise process raises false alarms to 19 to 20 percent in a fixed GJ 674 test",
+  "abstract": "We audit the calibration of a fixed higher-harmonic test with 224 public GJ 674 HARPS times and errors. All Gaussian noise cases have the same individual error variances. A synthetic 2 m/s process with a 1.565007-day period and 30-day coherence raises the nominal 1 percent false alarm rate to 19.38 to 20.41 percent over 5184 fixed orbit templates. Correcting the threshold leaves 7.06 to 7.95 percent power for the original score. Correct covariance weighting gives 27.61 to 33.60 percent power. Slow exponential noise instead makes the white threshold conservative. Direct projection, a Bessel expansion, Gaussian draws and a finer phase grid check the calculation. This is a conditional method test. We do not measure the actual noise, use measured velocities, detect a new planet, or confirm a physical signal. Unknown covariance and orbit parameters limit use. Code, aggregate results, figures, exact input provenance and external retrieval steps are included. Source rows remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 674",
+    "radial velocity",
+    "eccentricity",
+    "correlated noise",
+    "false alarms",
+    "method validation"
+  ],
+  "display": [
+    {
+      "path": "files/oscillatory.png",
+      "caption": "Synthetic oscillatory noise changes the null rate and corrected-threshold power. Points show medians over 5184 known templates. Bars show extrema, not confidence intervals. No actual noise process is measured."
+    },
+    {
+      "path": "files/calibration.png",
+      "caption": "Slow exponential error correlation can make the independent-error threshold conservative. All cases have the same individual error variances. The covariance is assumed, not fitted."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3bfc4fc4b2f48aaaebd6240bd65adf74de6df9ce978f5111903b752dfe50711f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known-covariance power provides the prior assumption tested here. No code or tables are reused."
+    },
+    {
+      "target": "sci:sha256:91630dae4e4baf609621c22520260ca540bfb53ed51ba4e699ed2ba57755bd14",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior higher-harmonic transfer test defines the physical ambiguity."
+    },
+    {
+      "target": "sci:sha256:d7c65731154f9c96ad3277b6afe5c5d81150097b10a654010faf2e6f14710a7b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior second-harmonic test provides the five-season context."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/709/1/168"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347902"
+    },
+    {
+      "target": "https://arxiv.org/html/2409.01173v1"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263"
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ674_RVs/GJ674_HARPS_RVBank_ver02.csv"
+    },
+    {
+      "target": "https://github.com/3fon3fonov/HARPS_RVBank/blob/master/LICENSE"
+    }
+  ]
+}
