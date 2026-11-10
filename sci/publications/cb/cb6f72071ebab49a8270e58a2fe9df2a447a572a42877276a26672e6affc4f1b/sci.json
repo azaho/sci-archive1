@@ -1,0 +1,92 @@
+{
+ "title": "Canadian river ice-flag seasons became 0.6 days shorter, not the 3.3 days that air-temperature sensitivity predicts, at 568 HYDAT stations from 1966-1995 to 1996-2025; the gap is in western rivers",
+ "abstract": "Question: Water Survey of Canada stations flag ice-affected daily discharge with the symbol B. Does the year-to-year sensitivity of the first and last B day to local air temperature, fitted in 1966-1995, predict the mean change in 1996-2025?\n\nMethod: We used the HYDAT release of 2026-10-19 and GHCN-CAMS monthly air temperature. We kept 568 stations with complete 1 September to 31 July records, persistent ice and at least 15 winters in each period. A pooled within-station regression gave the sensitivity of each date to a two-month temperature window. We compared observed and predicted station-mean shifts, with 95% intervals from a bootstrap over HYDAT sub-drainage areas.\n\nResults: The cold-season air warmed by 0.8-1.0 C. The model predicted a 3.3-day [2.9, 3.7] shorter ice-flag season. The observed season became 0.6 days shorter (95% interval: 2.5 days shorter to 1.6 days longer). The first B day did not become later (observed +0.1 d, predicted +2.5 d). The break-up proxy agreed with the prediction within its interval. The gap is regional: Ontario, the Maritimes and Manitoba followed the prediction, but in British Columbia and Alberta the flagged season became 4.4 days longer [2.3, 6.4], and the North and Newfoundland and Labrador also had positive gaps. More sporadic short B runs explain part of the national gap: with runs of 14 or more consecutive B days, the gap on the same 449 stations fell from +2.2 d [0.4, 4.1] to +0.9 d [-1.2, 3.1], but the western and northern gaps stayed (West +2.8 d, North +4.9 d). In a 1981-2002 to 2003-2025 test, the season did not shorten (gap +4.2 d flag dates, +2.8 d continuous runs). Pre-freeze-up discharge did not explain the gap. Results were similar with Berkeley Earth temperature and another split year.\n\nLimitations: The B flag is an indirect ice indicator that depends on hydrometric practice; regional offices follow geography, so we cannot separate a practice change from a physical change. Window means do not show snow or cold snaps. The sample favours long-running southern stations.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "river ice",
+  "freeze-up",
+  "break-up",
+  "HYDAT",
+  "Canada",
+  "backwater flag",
+  "air temperature sensitivity",
+  "out-of-sample test",
+  "hydrometric data practice",
+  "climate indicator"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig6_regional_season_length.png",
+   "caption": "Change in ice-flag season length from 1966-1995 to 1996-2025 by region: observed (blue circles) and predicted from 1966-1995 air-temperature sensitivity (orange squares), with 95% sub-drainage bootstrap intervals. Left: first to last B-flag day. Right: first to last run of 14 or more consecutive B days. Eastern regions follow the prediction; western, northern and Newfoundland rivers do not."
+  },
+  {
+   "path": "files/figures/fig1_national_series.png",
+   "caption": "National mean station anomalies (blue) of the first B day, last B day and B-season length, and the anomalies predicted by the pooled 1966-1995 temperature sensitivity (orange), 1966-2025. Dashed lines are period means. Grey band: training period."
+  },
+  {
+   "path": "files/figures/fig5_intermittency_and_runs.png",
+   "caption": "Left and centre: the number of separate B-flag runs per winter and the days of sporadic flags at the season edges increased. Right: observed minus predicted shift on the same 449 stations for flag dates (blue) and 14-day-run dates (orange); the run definition removes most of the national gap."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5194/essd-12-1835-2020",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Defines first and last B dates as freeze-up and break-up proxies and documents their caveats."
+  },
+  {
+   "target": "doi:10.1029/2000WR900357",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Reported earlier freeze-up in Canadian rivers from RHBN data; we test whether B dates follow air temperature over decades."
+  },
+  {
+   "target": "doi:10.3390/w17202930",
+   "reason": "Recent analysis of ice-influenced maximum water levels from the Canadian River Ice Database."
+  },
+  {
+   "target": "sci:sha256:d945072eb8dcb4aa30bcb0046aec0ea7fbe5040278107f2ad25fab39ed643cec",
+   "reason": "Same test design for lake ice; lake ice-on became later than air-temperature models predicted, while river first-B dates became earlier."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS gridded land air temperature used as the main temperature input."
+  },
+  {
+   "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HYDAT national hydrometric archive, SQLite release 2026-10-19 (Open Government Licence - Canada)."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS data source page."
+  },
+  {
+   "target": "https://berkeleyearth.org/data/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Berkeley Earth gridded temperature, robustness check only (CC BY-NC 4.0)."
+  }
+ ]
+}
