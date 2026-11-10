@@ -1,0 +1,126 @@
+{
+ "title": "TESS and ground transit times (2019-2026) show an 821-day, 22-minute timing variation of TOI-682 b; a coplanar 9.6-Earth-mass planet c fits it only at 15.91-16.00 d, not at 16.13 d",
+ "abstract": "A prior campaign study found a large transit timing variation (TTV) of the sub-Neptune TOI-682 b (P = 6.84 d) in TESS data and fitted a 1,500-day period. TESS saw the star only once per season, so this period was aliased. We timed all 20 TESS transits (2019-2026) again with one transit shape and errors calibrated by 61 injected transits. We also timed 7 public ground light curves from ExoFOP-TESS (NGTS, LCO, PEST; 2019-2023) with the same shape; 4 show a clear transit. Two telescopes timed the same 2020 transit and agree, and LCO and TESS agree for a 2023 transit. A linear ephemeris gives chi2 = 482 for 22 degrees of freedom. A sinusoid with a period of 821 d (797-847 d) and a semi-amplitude of 22.4 +- 1.1 min fits (chi2 = 10.7 for 20 dof). The 1,500-day period gives chi2 = 143.6, but this rejection depends mostly on one LCO light curve. The transit is longer than a circular orbit allows for the stellar density, so e_b is 0.18 or more (97.5%), independent of radial velocities (RVs). Two-planet N-body models (TTVFast, coplanar) fit the times with perturber periods from 10 to 39 d, so the timing alone does not identify the perturber. With planet c fixed at its RV minimum mass (9.6 Earth masses, unrefereed poster) and the duration constraint on e_b, periods of 15.91-16.00 d (near the 7:3 ratio) fit with chi2 = 8.8-10.3, but every window from 16.05 to 16.25 d, which includes the reported 16.134 d, gives chi2 of 35 or more. Thus the RV planet explains the TTV only if its period is 0.13-0.22 d shorter than reported; otherwise another planet or a non-coplanar orbit is necessary. All acceptable models predict transits up to 24 min from a linear ephemeris in 2026-2029; we give forecast times. Limits: 24 times for 9 parameters, an incomplete random-plus-local search under heavy CPU load, coplanar orbits, and preliminary RV values without errors.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "transit timing variations",
+  "TOI-682",
+  "HD 97260",
+  "TESS",
+  "ExoFOP-TESS",
+  "NGTS",
+  "LCO",
+  "N-body",
+  "TTVFast",
+  "photo-eccentric effect",
+  "7:3 commensurability",
+  "non-transiting planet",
+  "aliasing",
+  "transit forecast"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc.png",
+   "caption": "O-C of TOI-682 b from 2019 to 2026 relative to one linear ephemeris. Blue: TESS; orange: ground transits used (open: weak, not used). Green: N-body model with planet c at the RV minimum mass (9.6 Earth masses) and P_c = 15.960 d. Lower panel: residuals."
+  },
+  {
+   "path": "files/figures/fig3_periodogram.png",
+   "caption": "chi2 of a sinusoid plus linear ephemeris against TTV period. TESS alone (blue) cannot separate 819 d and 1,490 d; with ground times (orange) 821 d is preferred."
+  },
+  {
+   "path": "files/figures/fig6_profile.png",
+   "caption": "Best chi2 against the period of planet c for c at 9.6 Earth masses (coplanar) with the transit-duration constraint on e_b (blue), and for free mass (orange). Fits prefer 15.91-16.00 d; near the reported 16.134 d chi2 is 35 or more."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the TOI-682 b TTV detection and of the transit-time table used for the sector clock check. We confirm the TTV but replace its 1,500-day period with 821 days."
+  },
+  {
+   "target": "sci:sha256:0e9b8fb5c8fba1dcfa8605d3e47bf8fc2f0e6508a48e3ed54ba6f45668e949c6",
+   "reason": "Related campaign follow-up of another TTV detection of the same search (HD 191939)."
+  },
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "reason": "Related campaign study of long-baseline TESS changes of orbits."
+  },
+  {
+   "target": "doi:10.5281/zenodo.5131353",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Quinn et al. 2021 poster: stellar parameters, mass of b, eccentricity of b, and the RV planet c (P = 16.134 d, m sin i = 9.6 Earth masses). Our timing prefers a shorter period of c."
+  },
+  {
+   "target": "doi:10.17909/t9-nmc8-f686",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC 2-minute light curves from MAST."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP-TESS ground-based time series (TFOP SG1) of TOI-682."
+  },
+  {
+   "target": "doi:10.1093/mnras/stx2836",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Wheatley et al. 2018, the NGTS facility; required citation for NGTS data."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 summary; FLAME radius and Teff of the host star."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/756/2/122",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dawson and Johnson 2012, photo-eccentric effect."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/787/2/132",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Deck et al. 2014, TTVFast N-body transit-time code."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kreidberg 2015, batman transit model."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Foreman-Mackey et al. 2013, emcee."
+  }
+ ]
+}
