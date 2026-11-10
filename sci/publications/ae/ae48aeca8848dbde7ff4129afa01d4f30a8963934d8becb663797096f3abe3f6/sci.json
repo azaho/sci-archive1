@@ -1,0 +1,100 @@
+{
+  "title": "Night light did not delay autumn leaf colour in US phenology records in 2009-2025; earlier spring leaf-out at bright sites followed regional, not local, light after site and observer controls",
+  "abstract": "Meng et al. (2022) reported from USA National Phenology Network (USA-NPN) records of 2011-2016 that artificial light at night made breaking leaf buds 8.9 days earlier and colored leaves 6.0 days later at bright sites. We tested these claims again with up to 61,490 spring and 55,383 autumn onset records of deciduous broadleaf plants at 9,543 conterminous US sites in 2009-2025. We used harmonized night-light DN, GHSL built-up land and Daymet temperature. We added location (2-degree cell), species-by-year, built-up, observer and 7-day visit-bracket controls in steps, in two periods (2011-2016 and 2017-2025) and two regions. The Meng-type model gave a colouring delay in both periods (+1.7 and +1.9 days per ln unit of light), but built-up control removed it (2009-2025: -0.01 days, SE 0.74), and with all controls colouring was earlier at bright sites (-2.0, SE 0.8). Bright eastern sites had earlier leaf buds in both periods, but all controls reduced the slope by about two thirds (-2.2 to -0.74 days, SE 0.30). The West had the opposite sign (+3.6, SE 1.3). In the East, light averaged over 9 km predicted the spring advance (-0.93, SE 0.40) but local light above that mean did not (-0.36, SE 0.26), and American beech, the most day-length-sensitive genus, had no slope (-0.4, SE 0.6). The raw top-quartile spring contrast for 2011-2016 was -1.5 days (95% bootstrap -4.3 to +1.5), not -8.9. These results agree with urban heat or urban planting, not a direct light effect at km scale. Limitations: the light DN saturates at the brightest sites, the units differ from the radiance of Meng et al., there is no direct urban-heat measurement, and street-lamp-scale exposure is not resolved.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "anzsrc-for-2020",
+      "code": "410102"
+    }
+  ],
+  "keywords": [
+    "artificial light at night",
+    "light pollution",
+    "plant phenology",
+    "leaf-out",
+    "leaf colouring",
+    "urban heat island",
+    "USA-NPN",
+    "Nature's Notebook",
+    "observer bias",
+    "replication",
+    "out-of-sample test",
+    "night-time lights",
+    "GHSL"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_light_slope_ladder.png",
+      "caption": "Light slope (days per 1 ln unit of night-light DN, 3x3 pixel mean) for breaking leaf buds and colored leaves, in two periods and three regions, as controls are added (A: Meng model with species and year; B: species-by-year and 2-degree cell; C: built-up land; D: observer; E: 7-day bracket; F: species-by-cell). Bars are 95% site-clustered intervals. Dotted line: Meng et al. 2022 estimate per ln radiance (different units)."
+    },
+    {
+      "path": "files/figures/fig2_local_regional_species.png",
+      "caption": "Left: local excess light (site pixel minus 9 km mean) and regional light (9 km mean) in one model with all controls, 2009-2025. Right: eastern species slopes for breaking leaf buds (year, 2-degree cell and built-up controls). American beech, the most day-length-sensitive genus, has no slope."
+    },
+    {
+      "path": "files/figures/fig3_meng_contrast.png",
+      "caption": "Top-quartile light sites minus other sites in 1 C temperature bins (the method of Meng et al.), raw and after removal of species-by-year and 2-degree cell means, with 95% site-bootstrap intervals. Crosses: published values (-8.9 and +6.0 days)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/pnasnexus/pgac046",
+      "relations": [
+        "reviews",
+        "challenges"
+      ],
+      "reason": "We re-test its claims that night light advances breaking leaf buds and delays colored leaves in USA-NPN data."
+    },
+    {
+      "target": "doi:10.5066/F78S4N1V",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USA-NPN individual phenometrics 2009-2025 (CC BY 4.0)."
+    },
+    {
+      "target": "doi:10.1038/s41597-020-0510-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Harmonized DMSP/VIIRS night-time light data (Li et al. 2020)."
+    },
+    {
+      "target": "doi:10.6084/m9.figshare.9828827",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Figshare record of the harmonized night-time light data, version 10."
+    },
+    {
+      "target": "doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHS-BUILT-S R2023A built-up surface, epochs 2010 and 2020."
+    },
+    {
+      "target": "doi:10.3334/ORNLDAAC/2129",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Daymet V4 R1 climate fields that the USA-NPN API adds to each record."
+    },
+    {
+      "target": "doi:10.1098/rspb.2016.0813",
+      "reason": "Earlier UK report of earlier budburst in brighter areas."
+    },
+    {
+      "target": "sci:sha256:52e8e53c2c770089d5df1ae9a1287b2f752884ecc823ef00dd3541e9c5902c1b",
+      "reason": "Campaign night-light test on bird counts that put the harmonized light data in the shared store."
+    },
+    {
+      "target": "sci:sha256:b0549936507be17c84cbf4179a219673cff3983bb39c8c869fb8e46f1dc44c24",
+      "reason": "Campaign observation-bias test of camera phenology."
+    }
+  ]
+}

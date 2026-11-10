@@ -1,0 +1,109 @@
+{
+ "title": "Signed FlyWire wiring from photoreceptors predicted the measured ON or OFF sign of 14 of 18 fly visual cell types only when glutamate was inhibitory; most errors were in weakly driven types",
+ "abstract": "We tested a parameter-free sign rule in the Drosophila optic lobe. Photoreceptors are ON. Each cell type gets the sign of its summed input, weighted by synapse fraction in the FlyWire v783 type graph, with acetylcholine excitatory and GABA, glutamate and histamine inhibitory. We compared the predicted sign with the ON or OFF sign that we measured from the phase of 0.1 Hz full-field flicker calcium responses (Currier and Clandinin 2025, 60 flies, 89 types). In 18 types with a clear measured sign and a FlyWire name, the right optic lobe predicted 14 correct signs and the left 13. Transmitter-label permutation gave mean accuracy 0.46 and one-sided p = 0.051 (right) and 0.092 (left). Predicted drive and measured polarity strength had Spearman rho 0.64 and 0.61 (p < 0.01). If glutamate was excitatory, only 7 of 18 signs were correct; a GABA sign change had no effect; without photoreceptor histamine nearly all signs inverted. Types with the strongest predicted drive had 82% correct signs, the weakest third 36 to 55%. In 29 types with at least 3 flies, accuracy was 0.72 and 0.66. Limitations: small sample, moderate p values, full-field calcium measurements, different flies for anatomy and activity, uncertain name matches, a linear steady-state model, and a primary setting fixed after a short trial run.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "Drosophila",
+  "optic lobe",
+  "ON/OFF polarity",
+  "neurotransmitter sign",
+  "FlyWire",
+  "structure-function",
+  "glutamate inhibition",
+  "calcium imaging",
+  "null result controls"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_measured_vs_predicted.png",
+   "caption": "Left: mean 0.1 Hz flicker responses of ON types (Mi1, C3), OFF types (Tm1, Mi9) and the R7y photoreceptor. Right: measured polarity score with fly bootstrap 95% interval for 35 types with at least 3 flies; colour is the sign that the right FlyWire optic lobe predicts, filled markers agree."
+  },
+  {
+   "path": "files/figures/fig2_sign_rules.png",
+   "caption": "Fraction of correct predicted signs for five transmitter sign rules in both hemispheres, against the transmitter-permutation null (grey band: 95% range; dashed: mean)."
+  },
+  {
+   "path": "files/figures/fig3_strength_and_pruning.png",
+   "caption": "Accuracy by tercile of predicted drive, predicted drive against measured score, and accuracy when only the k strongest input types are kept."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its unchanged CC0 extract of the Currier and Clandinin flicker responses and ROI metadata."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Related FlyWire structure-function test in which transmitter-matched wiring gave no gain for calcium correlations."
+  },
+  {
+   "target": "doi:10.5061/dryad.pg4f4qs1j",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the flicker responses (version 7, CC0)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2025.05.007",
+   "reason": "Original study of the activity data."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connection table (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cell-type and transmitter annotations (Supplemental file 1)."
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact annotation file version."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07981-1",
+   "reason": "Optic lobe cell-type names."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2024.03.016",
+   "reason": "Transmitter predictions."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07939-3",
+   "reason": "Connectome-constrained network predictions of fly visual responses."
+  },
+  {
+   "target": "doi:10.1038/nature13427",
+   "reason": "Literature polarities used to check the measurement axis."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2017.03.010",
+   "reason": "Literature polarities used to check the measurement axis."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2017.01.051",
+   "reason": "Literature polarities used to check the measurement axis."
+  }
+ ]
+}
