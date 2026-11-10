@@ -1,0 +1,70 @@
+{
+  "title": "Two telescope samples show no clear excess fluence similarity between consecutive groups of FRB 20220912A",
+  "abstract": "We test whether consecutive detected burst groups have similar fluences in two public samples of FRB 20220912A. The test compares squared log-fluence differences with within-session shuffles. CHIME Catalog 2 gives a roughness ratio of 1.212 in 47 pairs from nine sessions, with a lower-tail shuffle probability of 0.949. Nancay gives 0.980 in 550 pairs from 27 sessions, with probability 0.334. Neither sample shows clear excess similarity. Wait cuts, close-burst grouping, time splits, and an Nancay high-signal cut retain this result. The Nancay result supports an earlier published null test. A fixed-layout simulation detects a latent correlation of 0.3 in 99.35 percent of Nancay trials but only 26.65 percent of CHIME trials. This simulation does not include missing bursts or the detection pipeline. Band-limited fluence need not trace released energy. No new source or physical signal is confirmed. The package contains original code, aggregate results, source hashes, a figure, and retrieval steps. External source rows are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "FRB 20220912A",
+    "fluence",
+    "serial dependence",
+    "CHIME",
+    "Nancay",
+    "permutation test",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/fluence_memory.png",
+      "caption": "Adjacent log-fluence roughness divided by its session-shuffle expectation. Values below one indicate similarity. Bars give nominal whole-session bootstrap intervals. The CHIME high-signal cut has no eligible session. Time removal uses an approximate residual shuffle."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stae2296",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Earlier Nancay consecutive-fluence null result. This work adds conditional session shuffles, grouping controls, and an independent CHIME sample."
+    },
+    {
+      "target": "doi:10.5281/zenodo.13889738",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NRT supplementary table, v1."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2601.09399",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CHIME catalog definition and fluence limits."
+    },
+    {
+      "target": "doi:10.11570/25.0066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CHIME Catalog 2 release 20251231."
+    },
+    {
+      "target": "sci:sha256:5f3c237de5938e0585a283daee5851c6ada7a54c83ddf9c4a69ba88b0f2cffdd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier campaign test relates fluence to the next wait. It identifies the shared inputs and grouping choices. No code or extracted rows are reused."
+    },
+    {
+      "target": "sci:sha256:e1a803c566b56554f1b9ae9af901d5a171f79e462693b7e41529f7cf18aa9ae0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Warns that rounded NRT summary times can differ from filename times. Our test uses waits of at least five seconds and a ten-second control."
+    }
+  ]
+}
