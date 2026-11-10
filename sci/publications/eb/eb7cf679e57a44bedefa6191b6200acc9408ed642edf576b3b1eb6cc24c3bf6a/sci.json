@@ -1,0 +1,122 @@
+{
+  "title": "Published drought and immunity models of US West Nile neuroinvasive disease fitted to 1999-2013 did not forecast 24 state counts in 2014-2025 better than simple baselines",
+  "abstract": "Question: do published climate and immunity drivers of US West Nile virus neuroinvasive disease (WNND) forecast years that the original studies did not use? Approach: we wrote a test plan, then used CDC ArboNET state counts for 1999-2025, NOAA nClimDiv state climate and Census population. We kept the published state coefficients of Paull et al. (2017) for cumulative incidence (immunity), May-August PDSI (drought) and precipitation in 24 states, fitted only the intercepts to 1999-2013, and forecast 2014-2025 with the observed climate. We also refitted pooled negative binomial models with state fixed effects and tested the national temperature correlation of Hahn et al. (2015). Results: our state refits reproduced the published coefficients for 1999-2013. The published models had a skill of +0.44 (95% interval +0.32 to +0.53) against last-year persistence in 1999-2013, but -0.24 (-0.55 to +0.06) in 2014-2025 and -0.48 (-0.87 to -0.14) against a five-year mean. They predicted that mean cases would fall to 29% of the 1999-2013 mean; the observed value was 80%, and all 18 states with an immunity term had more cases than predicted. Without the immunity term, the models were equal to the baselines. The pooled drought coefficient was small in both periods (-0.049 and -0.033 per PDSI unit; intervals include zero; published -0.14), and refitted state drought slopes for 2014-2025 did not agree with the published slopes (Spearman 0.02). Observed national counts (mean 1321 per year) were above the published 95th-percentile projection (1331) in 8 of 12 years, although 2014-2025 was less dry. The national correlation with annual temperature decreased from r = 0.92 (2004-2012) to 0.28 (2013-2025). Limitations: state-level data, no temperature-R0 or freeze terms, observed-climate hindcasts, reporting changes, and wide intervals from 12 forward years.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "West Nile virus",
+    "neuroinvasive disease",
+    "drought",
+    "PDSI",
+    "herd immunity",
+    "temperature",
+    "out-of-sample forecast",
+    "replication",
+    "ArboNET",
+    "nClimDiv",
+    "vector-borne disease",
+    "climate change projection",
+    "negative binomial",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_national_and_pooled_forecast.png",
+      "caption": "A: US WNND cases per year with the Paull et al. projections (991 mean year, 1331 95th-percentile year). B: Sum of 24 test states: observed counts, the published models (intercepts fitted to 1999-2013), and the same models without the immunity term."
+    },
+    {
+      "path": "files/figures/fig2_forecast_skill.png",
+      "caption": "Forecast skill (1 - MAE ratio, log(1+cases)) of the published models and reduced forms against persistence and the 1999-2013 state mean, in 1999-2013 (in-sample) and 2014-2025 (forward). Bars: 95% bootstrap intervals over years."
+    },
+    {
+      "path": "files/figures/fig4_immunity_ratio.png",
+      "caption": "Predicted and observed ratio of 2014-2025 to 1999-2013 mean annual cases per test state. All states with an immunity term had more cases than the published models predicted."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1098/rspb.2016.2078",
+      "relations": [
+        "reviews",
+        "challenges",
+        "uses"
+      ],
+      "reason": "We test the forward forecasts of its state drought and immunity models and its national projection, using its published coefficients."
+    },
+    {
+      "target": "doi:10.6084/m9.figshare.c.3677074",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Electronic supplementary material (CC BY 4.0); Tables S1 and S2 give the coefficients we test."
+    },
+    {
+      "target": "doi:10.4269/ajtmh.14-0737",
+      "relations": [
+        "reviews",
+        "challenges"
+      ],
+      "reason": "We test its national temperature correlation and a state-level analogue of its county models in 2013-2025."
+    },
+    {
+      "target": "https://www.cdc.gov/west-nile-virus/data-maps/historic-data.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CDC ArboNET historic state WNND counts, read from the Internet Archive snapshot of 2026-07-26."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA nClimDiv state PDSI, Palmer Z, precipitation and temperature, v1.0.0-20261105."
+    },
+    {
+      "target": "https://www2.census.gov/programs-surveys/popest/datasets/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "US Census Bureau state population estimates."
+    },
+    {
+      "target": "doi:10.5061/dryad.t0027",
+      "reason": "Data deposit of Paull et al. (Colorado mosquito data only); not used."
+    },
+    {
+      "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Earlier campaign test in which published warming effects on fish production did not improve forecasts; we find a similar failure for a vector-borne disease."
+    },
+    {
+      "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+      "reason": "Earlier campaign forward test of a published climate-ecology relationship (Adelie penguins and sea ice)."
+    },
+    {
+      "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+      "reason": "Earlier campaign test (night light and leaf phenology)."
+    },
+    {
+      "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+      "reason": "Earlier campaign forward test (NestWatch heat contrast)."
+    },
+    {
+      "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+      "reason": "Earlier campaign test (mountain pine beetle and winter cold)."
+    },
+    {
+      "target": "sci:sha256:8e704f4e3124aadce2e7d4b7314abea6619f94906394f8158e20c71d5a94b128",
+      "reason": "Related campaign study of temperature and mosquito catches (NEON)."
+    }
+  ]
+}
