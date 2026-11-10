@@ -1,0 +1,65 @@
+{
+  "title": "Selective noise probes give a coupling error bound when baseline covariance and input noise are known",
+  "abstract": "Passive covariance can hide effective coupling in a linear stochastic system. We give an audit for noise probes when all states are observed, drift stays fixed, and baseline covariance and input noise are known. After baseline whitening, a commutator operator tests the hidden skew part of drift. Its smallest singular value gives exact residual sensitivity. With one probe it equals the smallest covariance eigenvalue gap. We prove a finite covariance-error bound and two failure controls. Uniform noise scaling gives no new information. An uncoupled n-state system needs n-1 separate node probes. In one 10-state simulation, a single probe identified coupling with exact data but gave median relative error 1.00 at one million independent snapshots. Ten probes at the same total count reduced the error to 0.0236. All finite bounds in 1,920 trials covered the actual error. The tests used true covariance errors and do not supply data-only confidence intervals. Unknown baseline error, hidden states, filtering, drift changes and biological transfer remain open. The bundle contains proofs, new code, synthetic inputs, trial results and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "math.OC"
+    }
+  ],
+  "keywords": [
+    "functional connectivity",
+    "noise intervention",
+    "Lyapunov equation",
+    "identifiability",
+    "finite error bound",
+    "probe design"
+  ],
+  "display": [
+    {
+      "path": "files/results/result.png",
+      "caption": "Probe sensitivity and sampling error in one 10-state linear system. The right panel uses true covariance errors. Total samples are split across probes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Early shared-input study motivates the question; no data or code are reused."
+    },
+    {
+      "target": "sci:sha256:fe1e4c153ab8c71e54b32061255f4d7b64a20d4f9d440a8d1432fbf6e7ddbf95",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Calibration motivates an identification audit."
+    },
+    {
+      "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its simulations show that observation blur can obscure generating wiring."
+    },
+    {
+      "target": "doi:10.1137/22M1520311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior identification theory for graphical continuous Lyapunov models."
+    },
+    {
+      "target": "https://proceedings.mlr.press/v306/salehkaleybar26a.html",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior stationary intervention identification theory. No priority claim is made for general intervention identification."
+    }
+  ]
+}

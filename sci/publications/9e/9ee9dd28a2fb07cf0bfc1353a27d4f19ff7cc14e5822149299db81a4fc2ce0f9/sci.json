@@ -1,0 +1,36 @@
+{
+  "title": "In four adult fly connectomes, synapse count differences that repeat on both sides are specific to one dataset, not shared by a pipeline; BANC has most, FAFB about one detector swap",
+  "abstract": "Question: earlier studies found that between-animal synapse count differences in adult flies repeat on both sides after neuron gains are removed. Is this shared bilateral part biology of each fly or a reconstruction effect? Approach: we used FAFB, BANC, the male CNS and the hemibrain (two TEM/FlyWire-type and two FIB-SEM/FlyEM datasets), plus two synapse tables of FAFB and of BANC. We used 1,944 cell types with one neuron per side and cross-fitted neuron gains. Every statistic is a mean product of log-count contrasts from four different samples, so independent sampling noise does not enter it. Results: an ascending-neuron side label convention (FAFB brain entry side against nerve cord soma side) reversed ipsilateral/contralateral ratios (3.3 to 3.7 against 0.56 to 0.67) and made most of the all-count FAFB component (0.72 against 0.065 squared natural-log units without these types). For connections present in all copies with at least 16 synapses per copy, 12 variants of four-animal products that test a shared pipeline branch were -0.015 to 0.011 (all 95% intervals include 0; simulations recovered a planted 0.06). The dataset-specific bilateral components were 0.025 (FAFB), 0.061 (male CNS) and 0.206 (BANC); a Princeton to Buhmann detector swap gave 0.011. The BANC component was present in all 15 neuropils and was not concentrated on a few types. Thus repeated count differences are mostly dataset-specific; in the FAFB fly, bilateral biological differences are at most about a 17% factor. Limitations: one animal per dataset; additive-component assumption; log-transform bias of about 15%; one-per-side types only. Record-level source data stay external.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"},
+    {"scheme": "arxiv", "code": "q-bio.QM"}
+  ],
+  "keywords": ["connectome", "synapse count", "wiring variability", "reconstruction pipeline", "synapse detection", "bilateral symmetry", "between-animal variability", "Drosophila", "FlyWire", "FAFB", "BANC", "male CNS", "hemibrain", "variance components", "neuron gain", "side label", "ascending neurons", "reproducibility"],
+  "display": [
+    {"path": "files/figures/fig2_leaves_by_strength.png", "caption": "Dataset-specific bilateral variance (three-point leaves) of FAFB, BANC and male CNS by mean synapse count per copy, with 95% crossed bootstrap intervals. Grey lines: the same statistic between two synapse tables of one volume (FAFB Princeton against Buhmann; BANC v3 against v2). (A) Connections present in all copies. (B) All connections, zeros kept."},
+    {"path": "files/figures/fig3_four_animal_splits.png", "caption": "Four-animal products that test a component shared within a pipeline (FAFB and BANC against hemibrain and male CNS). Present connections, mean count per copy 16 or more; two FAFB synapse tables and two sides; 95% intervals. Stars: simulations with a planted pipeline branch of 0.06; crosses: simulations without shared branches."},
+    {"path": "files/figures/fig1_side_convention.png", "caption": "(A) Ipsilateral to contralateral synapse ratio by presynaptic class: ascending neurons are reversed in FAFB against BANC and the male CNS. (B) Leaves with (light) and without (dark) ascending-neuron connections."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69", "relations": ["uses"], "reason": "We reuse its neuron selection rules, its conditional neuron-gain model and its datasets, and extend its between-animal result."},
+    {"target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88", "relations": ["reviews", "supports"], "reason": "We test the cause of the bilateral between-animal component it found. We confirm the component after neuron gains, and show that its all-count part is inflated by an ascending-neuron side label convention."},
+    {"target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049", "relations": ["reviews"], "reason": "Its open question (biology against shared reconstruction effects) is the question of this study."},
+    {"target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9", "relations": ["reviews"], "reason": "Its synapse-table comparison in the optic lobe motivates the detector-swap reference used here for the central brain."},
+    {"target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb", "relations": ["uses", "supports"], "reason": "We reuse its list of hemibrain-covered neuropils. Our Poisson-free FAFB to male CNS bilateral distance agrees with its between-animal edge-specific variance."},
+    {"target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e", "reason": "Contact geometry as a possible cause of count differences."},
+    {"target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f", "reason": "Wiring variability did not predict co-activity variability; limits the functional reading of our result."},
+    {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"]},
+    {"target": "doi:10.1101/2025.07.11.664377", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41592-021-01183-7", "relations": ["uses"]},
+    {"target": "doi:10.1101/2025.10.09.680999", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-026-10735-w", "relations": ["uses"]},
+    {"target": "doi:10.7910/DVN/7WTH1N", "relations": ["uses"]},
+    {"target": "doi:10.7554/eLife.57443", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/", "relations": ["uses"]},
+    {"target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz", "relations": ["uses"]},
+    {"target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2", "relations": ["uses"]},
+    {"target": "https://join.flywire.ai/guidelines"}
+  ]
+}
