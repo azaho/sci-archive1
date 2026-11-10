@@ -1,0 +1,125 @@
+{
+  "title": "South-east Australia lost a near-constant fraction of runoff in every month after 1997; in a monthly model, warming accounted for most of the eastern US offset after 2009 (CAMELS, 1948-2025)",
+  "abstract": "Question: after 1997, runoff in south-east Australia (SE-AU) and the eastern US (East-US) fell about 40 mm/yr below the 1951-1996 rainfall-runoff relation. In which months does the water go missing, and which cause has that seasonal fingerprint? Approach: monthly flow and climate for 277 CAMELS-AUS (AGCD and SILO rain, to 2021) and 536 CAMELS-US catchments (USGS flow, nClimGrid, to 2025-09). Two monthly models fitted on 1951-1996 only: a per-month regression and GR2M with a snow store and Oudin PET. In each calibrated GR2M we simulated eight mechanisms sized to each catchment's deficit and compared predicted and observed month profiles (cluster bootstrap; plan written first). Results: in 179 SE-AU catchments the 2010-2021 deficit was -47 mm/yr (95% CI -62 to -34), 15% of expected flow, and 6-25% in every calendar month; the warm season carried 37% (23-49%). More evapotranspiration (ET) in the growing season only was rejected in both periods (share difference -0.12, CI -0.22 to -0.03); a larger store to fill fitted poorly; cool-season-only ET was rejected after 2009. Proportional, rain-input, year-round ET and groundwater-loss mechanisms agreed and cannot be separated. Warming explained about 7 of 54 mm/yr; at most 20 mm/yr with a post hoc temperature correction. In 258 East-US catchments GR2M left only -10 mm/yr after 2009 (-19 to 0) against -45 for the regression; post hoc, with PET held at its 1951-1996 cycle the deficit was -32, so warming (+1.2 C, +6.6% Oudin PET) accounts for about two thirds in this model. But catchments that warmed more did not lose more (Spearman +0.18), and a 1997-2009 deficit of -16 mm/yr (-24 to -9) in February-March remains. Limitations: two-parameter model with a fixed snow store; similar fingerprints for four mechanisms; temperature-only PET; SE-AU drift before 1997 (placebo -25 mm/yr); post hoc temperature tests.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "runoff",
+    "Millennium Drought",
+    "rainfall-runoff relation",
+    "GR2M",
+    "evapotranspiration",
+    "seasonality",
+    "CAMELS",
+    "eastern United States",
+    "south-east Australia",
+    "potential evaporation"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig2_monthly_deficit_fraction.png",
+      "caption": "Deficit as a percentage of expected monthly flow. South-east Australia lost 6-25% of flow in every month after 2009."
+    },
+    {
+      "path": "files/figures/fig3_mechanism_fingerprints.png",
+      "caption": "Observed 2010-end deficit profile against eight GR2M mechanism fingerprints sized to the same annual deficit."
+    },
+    {
+      "path": "files/figures/fig5_temperature_role.png",
+      "caption": "Post hoc: deficit with PET held at the 1951-1996 cycle, with PET from observed temperature, and with the missed temperature response added."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+      "reason": "Victorian catchments stayed in a low-runoff state after the Millennium Drought."
+    },
+    {
+      "target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51",
+      "reason": "Seasonal rainfall terms did not remove the Victorian deficit."
+    },
+    {
+      "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+      "reason": "US reference catchments recovered after droughts."
+    },
+    {
+      "target": "sci:sha256:03b9bf625a08da8a69b147f0feeb508e3e9d1281921e92d1b81f195540ea527e",
+      "reason": "US hidden low-runoff states occurred at the rate of stationary simulations."
+    },
+    {
+      "target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1",
+      "reason": "US groundwater levels recovered after droughts."
+    },
+    {
+      "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+      "reason": "GRACE storage recovered after droughts."
+    },
+    {
+      "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+      "reason": "Found the post-1997 shifts in both regions; same groups and calibration period."
+    },
+    {
+      "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+      "reason": "Placed the deficit in southern Australia after 1997, independent of drought dose."
+    },
+    {
+      "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+      "reason": "Baseflow fingerprint of the south-east Australian loss."
+    },
+    {
+      "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+      "reason": "Fixed gauge networks confirmed both shifts (about 40 mm/yr)."
+    },
+    {
+      "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Slope loss in SE-AU and offset in East-US; we reuse its NWIS download script and group definitions."
+    },
+    {
+      "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+      "reason": "Annual evaporative-demand test of the same shifts; CRU PET fell in 1997-2009."
+    },
+    {
+      "target": "sci:sha256:7cecffa92eedcfd0120ad0a80f1367628835baff8dc7dfa8e637c1b20d472fe4",
+      "reason": "Faster recessions in southern Australia after 1997."
+    },
+    {
+      "target": "sci:sha256:ccf7e5d42f105c9851be6b10940013766830583fe5292184e632c5ba59749c2b",
+      "reason": "GRACE: the missing water was not stored."
+    },
+    {
+      "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+      "reason": "Annual Budyko-form mechanism tests."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "reason": "CAMELS-AUS v2.03 (CC BY 4.0)."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "reason": "CAMELS-AUS v2 description."
+    },
+    {
+      "target": "doi:10.5194/hess-21-5293-2017",
+      "reason": "CAMELS-US attributes."
+    },
+    {
+      "target": "https://waterservices.usgs.gov/nwis/dv/",
+      "reason": "USGS NWIS daily discharge."
+    },
+    {
+      "target": "doi:10.7289/V5SX6B56",
+      "reason": "NOAA nClimGrid."
+    },
+    {
+      "target": "doi:10.1016/j.jhydrol.2004.08.026",
+      "reason": "Oudin potential evaporation formula."
+    }
+  ]
+}
