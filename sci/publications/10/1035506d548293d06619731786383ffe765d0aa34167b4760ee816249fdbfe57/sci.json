@@ -1,0 +1,64 @@
+{
+  "title": "One fixed positive readout lost the best-input guarantee in 29 of 164 selected Allen two-state pair models",
+  "abstract": "We tested whether one positive linear readout can match the best single input in both first and late 50 Hz response states. Allen slice measurements gave 164 selected pairs of same-sign inputs to the same cell. Under an assumed noise correlation cap of 0.5, no fixed readout could match the best input in both states for 29 pairs. Separate state weights always permit this guarantee. Only 14 pairs permit a fixed gain of at least 5 percent in squared signal-to-noise ratio in both states; separate weights permit this in 15 pairs. The late response is a median of pulses 6 to 8, not a single event. Correlation, common signal content, and physical readout weights were not measured. Marginal summaries are treated as exact and medians are assigned as means. The result is a conditional model benchmark, not evidence of neural weight adaptation. Code, aggregate results, a figure, input hashes and external regeneration instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "convergent inputs",
+    "noise correlation",
+    "state changes",
+    "linear readout",
+    "robust optimization"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Fixed and separate-state readout guarantees in conditional models of 164 selected input pairs. The correlation cap is assumed. Counts describe dependent pairs, not independent biological replicates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5413111/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:7626d3a62470075698cee11a01cea6a82cf954fb58c00619585f88efa8782de0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the published one-state correlation-cap readout model to one physical weight ratio across two measured response states. No code or record table reused."
+    },
+    {
+      "target": "sci:sha256:8e75b82a74240a247aab381c8b615f9ac0a92244d2c80fa83f25e670f2d7e6df",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Distinguishes across-connection variability from joint trial noise."
+    }
+  ]
+}
