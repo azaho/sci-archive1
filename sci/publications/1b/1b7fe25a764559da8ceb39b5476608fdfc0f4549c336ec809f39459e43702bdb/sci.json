@@ -1,0 +1,74 @@
+{
+  "title": "Wind revisions of at most 5 kt can remove 103 of 201 Atlantic rapid-intensification storm labels in 1982-2025",
+  "abstract": "We tested whether a consistent change of at most 5 kt to each wind fix can remove a storm rapid-intensification label. We used NOAA/NHC Atlantic HURDAT2 release 092326 and storm years 1982-2025. Times, tropical status and valid daily windows were fixed. Revised winds stayed nonnegative on the 5 kt grid. Of 657 eligible storms, 201 had a daily gain of at least 30 kt. An allowed revision can remove all such windows in 103 storms. At least one window must remain in 98 storms, or 48.8% of original labels. The conditional 95% three-year season-block interval is 40.3% to 56.9%. Four of these 98 storms have no individually resistant window; shared endpoints prevent joint removal. An exact chain method, proof, independent linear programs and exhaustive synthetic checks support the counts. At 10 and 15 kt bands, 55 and 23 labels resist revision. A continuous-wind check gives 95 resistant labels at the 5 kt band. Original label incidence has no clear era change; the resistant subset is more common in the later sample. That secondary contrast does not establish a physical trend. These are bounded sensitivity results, not estimated wind-error probabilities or false-event counts. One release, changing source methods, frozen status, land exposure and unconstrained revision shapes limit inference. Code, aggregate evidence, source hashes, audit, figure and reproduction instructions are included. Raw source and storm tables remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "rapid intensification",
+    "hurricane",
+    "HURDAT2",
+    "bounded revision",
+    "shared observations",
+    "threshold sensitivity",
+    "difference constraints",
+    "Atlantic"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Atlantic storm labels under bounded wind revisions in 1982-2025. Left: labels that must remain when all daily windows use one revised value per wind fix. Right: original and 5 kt resistant label rates in two eras. Fixed source counts; the revision band is not an observation-error interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1175/MWR-D-12-00254.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Best-track format, 5 kt precision and uncertainty context; the reporting step is not an actual error bound."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-25-0106.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Atlantic intensification study that addresses wind discretization; source abstract and indexed text were read."
+    },
+    {
+      "target": "sci:sha256:df6834b8d8b808db05d5d73279ce42eaac16afefee77c318e87fed19d998b879",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published sampling benchmark supplied context and the shared source release. No code or source records were copied from the publication."
+    },
+    {
+      "target": "sci:sha256:e2daf26d2ac811bc6a5a112ad2f4528d4480ac7093808afaeb0d85504e25c958",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published window-grouping benchmark supplied prior context. The present question tests shared wind revisions instead of episode grouping."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external NOAA/NHC source release; shared file hash is recorded in provenance.json."
+    },
+    {
+      "target": "https://www.aoml.noaa.gov/hrd/data_sub/newHURDAT.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA source format documentation."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "External NOAA/NWS data use and attribution terms."
+    }
+  ]
+}
