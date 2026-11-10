@@ -1,0 +1,98 @@
+{
+  "title": "Capped SST exposure keeps a positive 1982-2025 trend under 0.05 C errors and three arbitrary errors per cell-year and baseline pool in a one-degree OISST sample",
+  "abstract": "We tested annual capped warm exposure in 29,120 fixed OISST v2.1 pixels at one-degree spacing, 60 S to 60 N, in 1982-2025. The daily response is positive SST excess above a seasonal 90th percentile, capped at 1 C and divided by 1 C. We derive bounds that allow small errors on most dates and arbitrary finite errors on a limited set. They include rebuilt thresholds, rank shifts, annual corrections over all possible corrupt-date choices and signed OLS weights. With errors of at most 0.05 C outside the corrupt set, at most three corrupt dates per cell-year and at most three corrupt entries in each 330-entry seasonal baseline pool, both tested baselines retain positive trend bounds. The lower slopes are +2.568 and +0.554 equivalent days per decade for 1983-2012 and 1991-2020 baselines. The later-baseline guarantee fails at a 0.10 C small-error limit, with five arbitrary errors, through 2021, or with a 2 C cap. Tropical bounds are weaker. We also prove that uncapped all-day dose has unbounded slope sensitivity to one arbitrary error outside the baseline. Independent calculations, complete threshold rebuilding and aggregate audits pass. These are conditional sensitivity results, not estimated actual errors or confidence intervals. Capping discards severity above the cap. One revised product and a fixed sample limit inference. Code, proof, source hashes, aggregate evidence and reproduction instructions are preserved.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "OISST",
+    "marine heatwaves",
+    "capped exposure",
+    "sparse errors",
+    "quantile robustness",
+    "trend bounds",
+    "thermal exposure"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Safe lower slopes for capped exposure under small daily errors and limited arbitrary errors. The two baselines use independently rebuilt thresholds. Bounds are conditional sensitivity results."
+    },
+    {
+      "path": "files/annual.png",
+      "caption": "Source exposure and primary annual envelopes. The input class permits three arbitrary errors per cell-year and per baseline pool, with at most 0.05 C changes elsewhere."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "Cap and endpoint controls show failed certificates as well as positive lower bounds."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6b5e961cffd2d4dd44a832863db71a7d8829b90450023059852a83a0a06926c9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior uncapped dose study. We address sparse errors of arbitrary size with a bounded response."
+    },
+    {
+      "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source sample, extraction code and percentile rank-bound method. Reused code has baseline MIT terms."
+    },
+    {
+      "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Noise steps and sensitivity of standard event metrics motivate this test."
+    },
+    {
+      "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Connected-area sensitivity results motivate separate guarantees for different indicators."
+    },
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Fast-variance steps motivate the measurement-error question."
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014"
+    },
+    {
+      "target": "doi:10.3389/fmars.2019.00737"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1"
+    },
+    {
+      "target": "doi:10.1175/2007JCLI1824.1"
+    },
+    {
+      "target": "https://ecowatch.noaa.gov/thematic/marine-heatwaves"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}

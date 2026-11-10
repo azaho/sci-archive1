@@ -1,0 +1,111 @@
+{
+  "title": "Averaging periods improves the four-season ZTF forecast score of G2698 under a fixed two-timescale noise model",
+  "abstract": "We test a possible orbital clock in Gaia DR3 2698173741829957888, an M0 field dwarf with deep dust dimming. We use 502 ZTF DR24 r-band nights, 398 g-band nights and 21 earlier Pan-STARRS1 band-nights. An exact covariance model fits fast and slow random changes. The ordinary three-year periodogram peak has conditional null probability 0.316. A covariance-aware search retains a roughly 1000-day feature, with probabilities 0.014 and 0.007 in two fitted null calibrations. Over four later ZTF seasons, a re-fitted best clock lowers the total joint forecast score by 11.43. A matched peak-frequency forecast gives -0.09 when covariance and coefficient priors are fixed. Averaging frequencies instead raises the score by 3.56 at a 0.5-mag coefficient scale. Added aperiodic covariance raises it by 6.48 at the same scale, and matches or exceeds the clock-average gain at three of four tested scales. The earlier-data comparison also changes sign across the broad period profile. Injection tests can miss a weaker coherent signal. Thus this record does not establish a specific orbital period or dust radius, and it does not exclude a weak periodic component. We provide exact-input retrieval, code, null simulations, forecast tests, figures and aggregate results. Limits include detections-only photometry, non-Gaussian residuals, fitted covariance parameters, specified signal priors and fewer than three candidate cycles. No ice abundance or dust source is measured. Job sci-1107-hp-astronomy-0a798b077123; topic astronomy; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "G2698",
+    "Gaia DR3 2698173741829957888",
+    "main-sequence dimmers",
+    "dust occultation",
+    "ZTF DR24",
+    "Pan-STARRS1",
+    "Gaussian processes",
+    "period uncertainty",
+    "red noise",
+    "predictive validation",
+    "injection recovery",
+    "Gaia20cdd"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_comparison.png",
+      "caption": "Forecast score differences for four later ZTF seasons. Selecting one clock, averaging clocks and adding aperiodic covariance give different results. The score gain does not by itself establish orbital phase coherence."
+    },
+    {
+      "path": "files/period_evidence.png",
+      "caption": "Fitted random variability, conditional period-search evidence and the broad period profile of G2698."
+    },
+    {
+      "path": "files/limits_and_recovery.png",
+      "caption": "Slow-time uncertainty, injected-clock recovery and the period dependence of the earlier Pan-STARRS1 comparison."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We test its unresolved two-timescale-noise question for G2698. Its target position and two optical extinction ratios are conditional inputs; no record table is bundled."
+    },
+    {
+      "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Blind-search discovery and source identification."
+    },
+    {
+      "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Ice-band context for the dimming class; no spectrum is reanalysed."
+    },
+    {
+      "target": "doi:10.1093/mnras/staf196"
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa9332"
+    },
+    {
+      "target": "doi:10.3847/2515-5172/aaaf6c"
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aaecbe"
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aae8ac"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2211.07605"
+    },
+    {
+      "target": "doi:10.48550/arXiv.1612.05560"
+    },
+    {
+      "target": "doi:10.3847/1538-4365/abb82d"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2508.03964"
+    },
+    {
+      "target": "https://db.ztf.snad.space/api/v3/help"
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/data/ZTF/docs/releases/dr24/ztf_release_notes_dr24.pdf"
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/data_use_terms.html"
+    },
+    {
+      "target": "https://panstarrs.stsci.edu"
+    },
+    {
+      "target": "https://celerite2.readthedocs.io/en/stable/api/python/"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940"
+    }
+  ]
+}
