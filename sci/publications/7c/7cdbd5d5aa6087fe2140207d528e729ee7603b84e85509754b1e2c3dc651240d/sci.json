@@ -1,0 +1,83 @@
+{
+  "title": "Symmetric positive low-rank recurrence has an exact shared-input model with the same neural and behaviour laws",
+  "abstract": "We tested whether complete passive time data can separate recurrent coupling from hidden shared input. For stable symmetric linear circuits with positive semidefinite recurrent weights, we construct a circuit with no links between observed nodes and with the same full stationary Gaussian neural law. Local leak and independent local noise are fixed. One hidden scalar source per positive recurrent mode is sufficient and necessary in source rank. A negative recurrent eigenvalue prevents this construction within the independent-added-input class. The same downstream behaviour readout gives the same joint observed law. In rank one, any behaviour-map share from zero to one can be approached or reached at any stable positive gain by changing readout noise. A 24-node example gives a share of 0.56 while all pair covariance in the recurrent model disappears after cross-node links are deleted. A direct node impulse separates the two circuits. State-space checks pass in 27 models. This is a mathematical benchmark, not an animal-data result. Symmetry, Gaussian noise, self terms, and tuned hidden sources limit its scope.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "functional connectivity",
+    "behaviour regression",
+    "recurrent networks",
+    "shared input",
+    "identifiability",
+    "causal intervention",
+    "low rank"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Two synthetic circuits have the same FC and all lag covariances. A downstream readout gives a 0.56 behaviour-map share. A direct node impulse separates the circuits. Map shares and causal link-deletion results are different measures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a59c0db9f14f70f160a76fb6c7311e414bc9798e831882d7f86ef775729d0ae8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The behaviour-locked share motivates the exact calibration. No data or code is reused."
+    },
+    {
+      "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The conditional node-similarity result motivates the identifiability question."
+    },
+    {
+      "target": "sci:sha256:fe1e4c153ab8c71e54b32061255f4d7b64a20d4f9d440a8d1432fbf6e7ddbf95",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Calibration motivates explicit generators with known causal structure."
+    },
+    {
+      "target": "sci:sha256:52df33b345978fb7b6d09a4e55e9fd7b5e90b59c2ad64a21ab9b67a645e6f5fa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related proof preserves FC and symmetric lag covariance. Here the whole observed law is preserved."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1013371",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior low-rank recurrent covariance theory."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1002596",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior feedback and feedforward noise comparison."
+    },
+    {
+      "target": "doi:10.1016/j.automatica.2017.12.013",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior network identifiability theory."
+    },
+    {
+      "target": "doi:10.1101/2023.06.06.543895",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distinction between neural activity and causal contribution."
+    }
+  ]
+}

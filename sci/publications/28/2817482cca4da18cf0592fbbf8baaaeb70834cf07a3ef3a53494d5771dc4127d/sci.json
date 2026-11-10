@@ -1,0 +1,106 @@
+{
+ "title": "In 32 Allen Neuropixels mice, higher-area spectral compression for natural scenes and movies is absent on VISp axes but present on other higher-area axes; pooled VISp units do not reproduce it",
+ "abstract": "Higher mouse visual areas have faster-decaying response spectra (larger alpha) for natural scenes, gratings and movies. We asked where in stimulus space this compression is, and whether pooled VISp units can make it. We used trial-level spikes of 11,559 units in 32 Allen Visual Coding Neuropixels mice. We measured the variance of a target population on the stimulus axes of a disjoint basis population, with axes and variance from disjoint trials. Intervals come from half-samples of mice. For gratings, the cortical hierarchy slope of alpha was 0.45 (0.25 to 0.64) on VISp axes, 69 percent of the slope on same-area axes. The kept VISp axes were the phase-invariant ones. For natural scenes, movie one and movie three, the slope on VISp axes was 0.01, 0.08 and 0.00 (all intervals include 0), against 0.14, 0.28 and 0.17 on same-area axes. The difference was significant for movie one only. In exploratory tests, the own-axis advantage stayed with bases from other mice. Axes of other higher areas gave the same slopes as own-area axes, and RF-position matching did not change the result. Disjoint pools of up to 13 VISp units (random, RF-local or tuning-similar; linear, threshold or energy output) did not reach the alpha of VISrl, VISal, VISpm or VISam. These pools also stayed aligned with VISp axes. Tuning-similar pools matched VISl and LP and raised the grating phase invariance. Limits: correlational tests in 6 cortical areas, two inconclusive pre-set verdicts, small pools, exploratory tests added after first results, and one data set.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "cross-validated PCA",
+  "power law",
+  "stimulus subspace",
+  "population geometry",
+  "invariance",
+  "pooling model",
+  "natural images",
+  "static gratings",
+  "natural movies",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cross_basis.png",
+   "caption": "Cross-basis spectra. (a) Natural-scene variance fraction of four cortical targets on the stimulus axes of VISp (log-log). (b-e) alpha (ranks 2-30, 200 units) on own axes (cvPCA), on same-area axes from other units, and on VISp axes, against the anatomical hierarchy score; bars are +/- 1.96 half-sample SD (100 half-samples of 16 mice); lines are cortical fits."
+  },
+  {
+   "path": "files/figures/fig2_pooling_models.png",
+   "caption": "VISp pooling models. (a-d) alpha of 100-unit populations of model units, each the mean of m disjoint same-mouse VISp units (rules: random, nearest RF, most similar drifting-grating tuning; dashed: noise-matched), with the 100-unit data alpha of each area (dotted). (e) Grating phase-invariant share. (f) m at which each model reaches the area alpha (points above 13: not reached)."
+  },
+  {
+   "path": "files/figures/fig3_area_axes.png",
+   "caption": "Area-specific stimulus axes. (a) Natural-scene alpha of each target area on the axes of each basis area (disjoint units, full sample). (b) Cortical hierarchy slope of the own-axis advantage over VISp axes with bases from the same or other mice, and over the other cortical axes (other mice); mean +/- 1.96 SD. (c) Own-axis advantage of the higher areas, VISp and VISp pool models (m = 3, tune rule; linear, threshold, energy), half-sample intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Prior work: stimulus generality, RF controls, model twins and phase invariance of the trend. We reuse its extraction code, estimator and half-sampling, and test the computation it left open."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source finding of the hierarchy trend; our own-axis slopes reproduce it."
+  },
+  {
+   "target": "sci:sha256:b00225bfa7494f6ddb391eb7fc07b397a1de5c807d1aadfb8547f25ff7c8cd82",
+   "reason": "Showed that saved spectra cannot identify information loss; we use trial-level data to locate the compression in stimulus space."
+  },
+  {
+   "target": "sci:sha256:bf04e82fe4d22c952f24191caecedfb0de21df41724015dbdeee7b798fb58c59",
+   "reason": "Showed that saved spectra cannot separate subject dimension from subject alignment; our mouse-split test measures cross-mouse axis sharing directly."
+  },
+  {
+   "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4",
+   "reason": "VISl-VISp spectral crossover; context for comparing areas by fitted slopes."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Reliability falls with distance from the retina; motivates the noise-matched pooling variant."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA method and the power-law spectrum framework."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels dataset and RF metrics."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.01.026",
+   "reason": "Communication-subspace view of inter-areal interaction, related to our cross-basis measure."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Public source of the NWB and metadata files (ETags in files/provenance)."
+  }
+ ]
+}
