@@ -1,0 +1,172 @@
+{
+ "title": "Kv3 channel expression predicted shorter spikes in 182 mouse brain regions beyond spatial and random-gene nulls, but T-type calcium-channel expression did not predict bursts (IBL, Allen MERFISH)",
+ "abstract": "Question: do the ion-channel genes that set spike features in single cells predict the same features across mouse brain regions? Earlier work found that input wiring and cell-type mix both predict regional spiking, and that cortical input share S predicts thalamic bursts. Data: spike phenotypes of 62,049 IBL Brain-Wide Map units in 182 regions; burst fraction in 27 thalamic nuclei; region expression of 14,377 genes from Allen MERFISH neurons (1.92 million, one brain; 0.99 million, a second brain) with 10x cluster-mean expression. The plan was frozen before analysis. Nulls: 1,000 spatial surrogate maps and 10,000 random gene sets. Results: the Kv3 index (Kcnc1-3) correlated with spike duration at rho -0.61 (surrogate p = 0.001; gene-set p = 0.007), and at -0.30 inside brain divisions (gene-set p = 0.0008). It replicated in the second MERFISH brain (-0.54) and in 26 Allen Visual Coding regions (-0.69). Pvalb predicted the narrow-unit fraction better than Kv3 (rho 0.61 vs 0.45), so that hypothesis failed. Cacna1g (Cav3.1) did not predict brain-wide burstiness (rho 0.12, p = 0.29) or thalamic burst fraction (0.37, p = 0.059). S kept partial rho 0.77 given Cacna1g, but not given midline position or a few genes of the medial-lateral thalamic axis. Removing Kv3 halved the link between input similarity and duration similarity (beta 0.43 to 0.20, still p = 0.041); removing Pvalb made it non-significant, but many genes also reduced it. Limitations: correlational, region averages, cluster-mean expression, extracellular unit bias; the gene null cannot separate Kv3 from co-expressed fast-spiking markers.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Kv3",
+  "Kcnc1",
+  "Cacna1g",
+  "T-type calcium channel",
+  "spike width",
+  "burst firing",
+  "thalamus",
+  "MERFISH",
+  "Allen Brain Cell Atlas",
+  "IBL Brain-Wide Map",
+  "Neuropixels",
+  "structure-function",
+  "gene-set null",
+  "spatial autocorrelation",
+  "connectome",
+  "mouse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_kv3_duration.png",
+   "caption": "Kv3 index against spike duration in 182 IBL regions (A), against 10,000 random 3-gene sets (B), and single-gene ranks brain-wide (C) and inside divisions (D)."
+  },
+  {
+   "path": "files/figures/fig2_thalamus.png",
+   "caption": "Thalamus, 27 nuclei: burst fraction against Cacna1g expression (A) and cortical input share S (B); partial relations (C)."
+  },
+  {
+   "path": "files/figures/fig3_mediation.png",
+   "caption": "Pair betas of input similarity (A) and cell-type similarity (B) for three features, before and after removal of Kv3 or Pvalb; surrogate p values above bars."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its region phenotypes, primary region set, pair design and structural code; our H5 extends its wiring versus cell-type comparison to named genes."
+  },
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its thalamic burst fractions and test whether Cav3.1 expression explains its S link; it does not."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "reason": "Prior result that axonal input predicts regional task coding."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Prior wiring-specificity test in mouse."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Prior wiring-specificity test in larval zebrafish."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "reason": "Prior test of transcriptomic type number against spike-feature diversity."
+  },
+  {
+   "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found cell-type mix the stronger predictor of intrinsic spiking; we name a gene program behind part of it."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "reason": "Calibrated null found no specific wiring link for waveform; consistent with our H5."
+  },
+  {
+   "target": "sci:sha256:745e2c94f424a0f459bbc217d844cf6c8ad1930a10e6b5cc4a228b107a9fe7e5",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Found no Pvalb link inside divisions for narrow fraction; we find Pvalb and Kv3 links inside divisions for duration."
+  },
+  {
+   "target": "sci:sha256:18f77139dff654b47a941667ae1dada41b8d3adac3f068238fada92b5497833d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Narrow-unit share follows Pvalb-type share; our H2 agrees that Pvalb beats Kv3 for this feature."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06808-9",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/mapmycells/WMB-10X/20240831/precomputed_stats_ABC_revision_230821.h5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/metadata/MERFISH-C57BL6J-638850-CCF/20231215/views/cell_metadata_with_parcellation_annotation.csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/metadata/Zhuang-ABCA-1/20241115/views/cell_metadata_with_cluster_annotation.csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/units.csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/S0166-2236(00)01892-0"
+  },
+  {
+   "target": "doi:10.1152/physrev.00018.2002"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "A monotone PAGER floor repair must also change the positive-loss formula to match recorded death rates",
+  "abstract": "We prove a constraint on repairs to a public PAGER fatality probability rule. At source commit 081a55f8, any repair confined to model losses below 0.00099 that preserves the positive-loss formula and risk order at fixed spread can assign at most 0.000043914 probability of at least one death. A reused frozen archive has 109 events with recorded deaths in 6,373 floor reports, a frequency of 0.0171034, or 389 times that bound. Thus a repair cannot meet all three conditions on this sample. We also tested the pinned source functions. Two-element ranges apply the floor, but three-breakpoint ranges do not. This gave inconsistent range representations in all 15 floor cases of a 50-case grid. CDF and quantile helpers also omit the small-loss spread cap. The production loss-model caller uses two-element ranges; we do not show that a public product used the other helpers. A minimal monotone envelope shows why a repair that retains a nonzero risk anchor must also change some positive-loss probabilities. It is a mathematical construction, not a validated forecast. Monotonicity is a design assumption, not a physical law. The outcome check reuses prior data and inherits incomplete death records. The result applies to one public commit, not a verified current operational executable. Code, proof, aggregate results, source hashes, tests and a figure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "PAGER",
+    "fatality probabilities",
+    "monotonicity",
+    "software verification",
+    "forecast repair",
+    "earthquake risk"
+  ],
+  "display": [
+    {
+      "path": "files/structural_conflict.png",
+      "caption": "The pinned range rule, the curve with no floor, and an illustrative monotone envelope. Recorded death frequencies exceed the sharp bound for monotone floor-only repairs at three tested thresholds. Wilson intervals assume independent events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of frozen probabilities and outcomes; prior discovery of the floor and risk inversion."
+    },
+    {
+      "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior past-event floor correction motivates a structural constraint on local repairs."
+    },
+    {
+      "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior missing-outcome and economic-input tests; this work uses a different mathematical question."
+    },
+    {
+      "target": "doi:10.1193/1.3480331"
+    },
+    {
+      "target": "doi:10.7289/V5TD9V7K"
+    },
+    {
+      "target": "doi:10.7289/V5PN93H7"
+    },
+    {
+      "target": "https://github.com/usgs/pager/tree/081a55f854031caa72a67bf115f855db87741563"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    }
+  ]
+}
