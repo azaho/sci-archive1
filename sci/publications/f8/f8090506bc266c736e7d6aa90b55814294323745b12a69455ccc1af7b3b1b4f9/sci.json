@@ -1,0 +1,63 @@
+{
+  "title": "Known cell noise reduced coupling errors in two fully observed passive adult worm models",
+  "abstract": "We tested symmetric drift recovery from covariance in two passive electrical models of adult worm maps. Each model had 180 cells, unit leak and capacitance, and independent cell noise. With noise variance-rate ratios bounded by 16, the equal-noise inverse-covariance estimate had median off-diagonal relative errors of 1.314 and 1.367 across 20 noise patterns. Known cell noise gave exact population-covariance recovery to numerical precision. Relative noise calibration errors with log standard deviation 0.1 gave median errors of 0.081 in both maps. At 1800 independent Gaussian snapshots, known noise still gave weight errors near one, although link ranking improved. The exact recovery identity is established linear algebra. The new evidence is a calibration and sampling benchmark on the two stated maps. Full observation, symmetric drift, independent white noise, partial anatomy and assumed conductances limit biological use. No measured neural activity was fitted. Code, aggregate scores, checks, a figure and external input hashes support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical connectivity",
+    "noise calibration",
+    "covariance",
+    "Lyapunov equation",
+    "C. elegans",
+    "network reconstruction"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Known noise and noise calibration errors in two fully observed passive electrical models. Lines show medians across 20 assumed noise patterns; shading shows 5th to 95th percentiles, not animal confidence limits. Sampling uses independent Gaussian snapshots. The noise variance-rate ratio is bounded by 16."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.1706.09709",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2403.05457",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:2fdc1822eef36ec9966ab6ea7940d16ecb09bec59170182c6db6209c6bcfebec",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior noise-induced lag reversal in the same model convention motivates noise-aware weight recovery. No code or derived tables reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
