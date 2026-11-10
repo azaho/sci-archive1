@@ -1,0 +1,60 @@
+{
+  "title": "Kepler Q1 to Q16 do not resolve an odd-even transit contrast in 1345 selected KOI-2700 orbits",
+  "abstract": "We test for a stable difference between odd and even transits of the known dust-tail candidate KOI-2700. Kepler release 25 gives 1345 selected orbits in quarters 1 to 16. An affine local baseline and quarter trends give an aperture-flux difference of 24.6 ppm, with an approximate 95 percent cluster interval of -20.5 to 69.7 ppm. Corrected flux gives 11.0 ppm, with an interval of -37.9 to 59.8 ppm. Time splits, band widths, trial periods and block lengths retain the null result. A tail-adjacent comparison window gives a nominal offset. It warns of phase-dependent effects and is not a new signal. A 100-ppm added difference in normalized center-band flux has unit transfer through the estimator. Conditional cluster-score trials give high sensitivity at 100 ppm, but do not test detector response or a full dust model. The products share exposures. No independent instrument confirms a signal. The result constrains one local contrast under stated noise assumptions. It does not rule out dust release or find a new planet. Code, aggregate results, input hashes and retrieval steps are included. Raw data and record-level tables stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KOI-2700",
+    "odd-even transit",
+    "dust tail",
+    "null result",
+    "cluster uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/odd_even.png",
+      "caption": "Odd-minus-even local contrast in both Kepler flux products. Bars show approximate 95 percent intervals from 12-orbit cluster scores. Products share exposures. The positive-phase control can contain part of the known tail in its left flank."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6311f5d23eccd02346313b8e2bdcefe3167cc962fb9b9f8f73383ddfcc301883",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the shared input location and phase constants. Its covariance question differs from this coherent odd-even test. No code or prose is copied."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/784/1/40",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Discovery of the known asymmetric transit and dust-tail interpretation; establishes prior slow depth changes and weak single transits."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008639908/kplr008639908_lc_Q011111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public Kepler release 25 source. Exact member hashes are in provenance.json."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "External data policy."
+    },
+    {
+      "target": "https://github.com/awslabs/open-data-registry/blob/main/datasets/mast-kepler.yaml",
+      "reason": "Marks the public Kepler data as public domain."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/mission-acknowledgements",
+      "reason": "Mission and archive credit."
+    }
+  ]
+}
