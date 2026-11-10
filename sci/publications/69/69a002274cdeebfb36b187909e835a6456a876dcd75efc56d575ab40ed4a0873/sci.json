@@ -1,0 +1,148 @@
+{
+  "title": "ESA CCI v3 and buoys show no 1982-2023 change in the slow decay of daily SST anomalies; DOISST v2.1 variance steps cause half its memory trend, its slow-decay rise and a false variance fall",
+  "abstract": "Question: Two studies found that the reported rise of daily SST-anomaly memory in NOAA DOISST v2.1 is mostly a loss of fast variance at satellite input changes. Over the full ocean, which statistics does this artifact reach, and what real change remains? Approach: We compared DOISST v2.1 with the satellite-only ESA SST CCI Analysis v3.0.1 on 28,458 ice-free 1-degree cells (60S-60N), on the same points and days (1982-01-01 to 2024-06-22). We then compared both products with in situ SST at 169 moorings (121 GTMBA, 48 NDBC; 2,766 buoy-years) on matched days. Results: Relative to CCI, DOISST day-to-day variance fell in steps on 1984-10-09 (x0.68), 2007-01-02 (x0.67), 2017-03-04 (x0.69), 2020-06-28 (x0.67) and 2021-11-01 (x0.59), in 99.9% of the ocean area. In CCI, the slow decay time (tau_s, lags 5-20 days) had no trend (-0.01 days per decade, 95% interval -0.66 to +0.63). DOISST gave +0.90 (+0.35 to +1.44). The tau10 trend was +2.23 days per decade in DOISST and +1.08 in CCI, and all of the CCI rise came from the fast-variance term. At 123 long-record buoys, the buoys' own day-to-day variance had no trend (-0.009 ln units per decade). Relative to the buoys, it fell by -0.32 per decade in DOISST and by -0.135 in CCI, with a CCI step near 2002. The buoy tau10 trend was +0.50 days per decade (per-buoy median; +0.12 to +1.06) and was not significant in a sample-robust series. The DOISST fall of total anomaly variance (-0.098 ln units per decade) is absent in CCI (-0.018) and at the buoys (+0.032). Detrended marine heatwave counts fell twice as fast in DOISST as in CCI. Before 2021, detrended DOISST event durations were 3.4-3.7 days shorter than in CCI, and this offset closed after 2021. Conclusion: The slow decay of SST anomalies did not change detectably. Most of the DOISST memory rise, its slow-decay rise and its variance fall are product artifacts. A real tau10 rise is at most about 0.5-1 day per decade. Limitations: CCI has its own fast-variance drift of up to 0.3 ln units; buoys are DOISST inputs and sample only the tropics and US waters; CCI data end in mid-2024; the products disagree on the mean warming trend.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "SST persistence",
+    "ocean memory",
+    "OISST",
+    "DOISST",
+    "ESA SST CCI",
+    "data homogeneity",
+    "observing system change",
+    "marine heatwaves",
+    "autocorrelation",
+    "moored buoys",
+    "TAO/TRITON",
+    "NDBC",
+    "change points",
+    "climate data record",
+    "replication"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig6_reach_summary.png",
+      "caption": "Trends per decade, 1982-2023, 60S-60N, with 95% block-bootstrap intervals, for DOISST v2.1 (blue), ESA CCI v3 (orange) and the median of per-buoy trends at 123 moorings (green). The DOISST trends of tau10, tau_s, fast variance, total variance and detrended MHW counts are larger than in CCI and at the buoys."
+    },
+    {
+      "path": "files/figures/fig2_daily_ratio.png",
+      "caption": "Top: global mean day-to-day variance (91-day running mean) in DOISST and CCI. Bottom: ln ratio DOISST/CCI with change points and local step ratios."
+    },
+    {
+      "path": "files/figures/fig1_global_series.png",
+      "caption": "60S-60N annual means: ln day-to-day variance, tau10, and the A and tau_s parameters of A exp(-k/tau_s) fits (lags 5-20 days) to the area-mean ACF. Dashed lines: documented DOISST input changes in 2007-01 and 2021-10."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "uses",
+        "supports",
+        "reviews"
+      ],
+      "reason": "We extend its fast-variance result to the full ocean with a second product, reuse its ACF fit code, and test the moderate tau_s rise that it left open (we find it is a DOISST artifact)."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses",
+        "supports",
+        "reviews"
+      ],
+      "reason": "We reuse its archived daily buoy SST table, buoy list and ACF helpers. We confirm its noise steps against CCI and test its remaining tail-fit rise (absent in CCI)."
+    },
+    {
+      "target": "doi:10.1038/s41558-025-02245-w",
+      "relations": [
+        "challenges",
+        "reviews"
+      ],
+      "reason": "The reported increase of SST-anomaly memory that we test."
+    },
+    {
+      "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ESA SST CCI Analysis L4 v3.0 data (CC BY 4.0)."
+    },
+    {
+      "target": "doi:10.1038/s41597-024-03147-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Description of the CCI v3 climate data record."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DOISST v2.1."
+    },
+    {
+      "target": "doi:10.1175/2007JCLI1824.1",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DOISST v2.1 daily mean files."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documented DOISST input changes (2007, October 2021)."
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Marine heatwave definition."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Nino 3.4 index for the ENSO control."
+    },
+    {
+      "target": "doi:10.1002/2014GL061322",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Triple collocation."
+    }
+  ]
+}
