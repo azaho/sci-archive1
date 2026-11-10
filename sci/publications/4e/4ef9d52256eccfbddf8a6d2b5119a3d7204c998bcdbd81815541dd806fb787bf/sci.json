@@ -1,0 +1,83 @@
+{
+  "title": "Four binary noise patterns reduced drift error in 16-node linear model tests",
+  "abstract": "We test whether added noise patterns improve directed drift recovery from equilibrium covariance. Unknown fixed correlated background noise is removed by baseline subtraction. At a scalar-decay drift, we prove that each skew drift direction has sensitivity equal to twice the pattern contrast times the square root of the Hamming distance between its node words. Distinct binary words identify the drift. We test five synthetic 16-node geometric graphs at two recurrent gains, using equal total independent sample counts and known diffusion increments. Four binary patterns gave 4.98 to 6.92 times lower median drift error than one graded pattern in all 20 graph, gain and sample-budget settings. Fifteen Hadamard patterns had a larger exact margin but higher sample error than four binary patterns in all settings. All 1200 estimates were stable, including inaccurate estimates. The design requires full observation, calibrated added noise, fixed units and drift that stays unchanged during injection. No animal data were fitted. The proof, code, all generated results and an offline reproduction procedure are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure and function",
+    "experimental design",
+    "noise injection",
+    "Lyapunov equation",
+    "identifiability",
+    "binary codes",
+    "finite samples"
+  ],
+  "display": [
+    {
+      "path": "files/results/design.png",
+      "caption": "Exact normalized design margins and finite-sample recovery in selected linear models. Shading gives the 10th to 90th percentile range across generated fits, not an animal confidence interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Cross-species shared-input association motivates the problem."
+    },
+    {
+      "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Matched surrogate results motivate the distinction between prediction and identification."
+    },
+    {
+      "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Eigenmode generator ambiguity motivates controlled tests."
+    },
+    {
+      "target": "sci:sha256:0dcdbdbdcd61bd3567ad85480c815cb1bb02e2f7a121a6def4d899e74824969a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its two-condition skew-matrix audit and addresses its error sensitivity."
+    },
+    {
+      "target": "sci:sha256:20a003e3e4c233ebeb412011fbeabe46b0bc1c6128e4685b4a1232d184857c28",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the covariance-difference cancellation of unknown fixed background noise."
+    },
+    {
+      "target": "doi:10.1137/22M1520311",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior identifiability under graph constraints."
+    },
+    {
+      "target": "https://arxiv.org/abs/2505.15987v5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior stationary-distribution intervention identification; read version 5 metadata."
+    },
+    {
+      "target": "doi:10.7554/eLife.110030.3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior perturbation input design for neural system identification; distinct time-resolved setting."
+    }
+  ]
+}

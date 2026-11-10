@@ -1,0 +1,127 @@
+{
+ "title": "NSM serotonergic state did not change wiring coupling of co-activity in 40 off-food C. elegans; an on-food decrease in 8 worms matched a drop in activity variance",
+ "abstract": "Question: does the state of the serotonergic neuron NSM change how strongly the C. elegans connectome predicts co-activity? Approach: we used NeuroPAL-identified whole-brain GCaMP recordings of 40 off-food moving worms (Atanas 2023) and 8 on-food worms (Dag 2023). In each recording we divided frames into NSM-high and NSM-low halves. In each half we fitted pair correlations with neuron fixed effects plus gap-junction and chemical synapse counts (Cook 2019). We compared the change with splits by every other neuron class, circular NSM shifts, speed and time. Results: off food, NSM state did not change gap coupling (change -0.0004, 95% CI -0.0062 to +0.0054, level 0.127; the CI excludes changes above 5% of the level) or chemical coupling. On food, gap coupling was 21% lower in NSM-high halves (-0.022, CI -0.037 to -0.008, 7 of 8 worms; also with Witvliet adult-8 wiring). But NSM-high halves on food had a large drop in activity variance, and other neuron-class splits with a similar drop gave a similar decrease (-0.018). The NSM value minus this matched value was -0.004 (CI -0.015 to +0.008). After behaviour regression it was -0.001. Pairs with serotonin-receptor reporters showed no clear specific change. Conclusion: in these data the NSM state does not have a specific effect on the wiring rule of co-activity; the on-food decrease is a general property of low-variance epochs. Limitations: observational state, no serotonin mutants, only 8 on-food worms, food condition confounded with data set, connectomes from other animals, and uncorrected secondary tests.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "serotonin",
+  "NSM",
+  "neuromodulation",
+  "connectome",
+  "gap junctions",
+  "functional connectivity",
+  "structure-function",
+  "whole-brain imaging",
+  "NeuroPAL",
+  "brain state",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_gap_coupling_by_nsm_state.png",
+   "caption": "Gap-junction coupling coefficient (Fisher z of pair correlation per log(1 + gap-junction contacts), with neuron fixed effects, Cook 2019 wiring) in the NSM-low and NSM-high halves of each recording. Left: 40 off-food worms, no change. Right: 8 on-food worms, 21% lower in NSM-high halves. Grey lines are worms; black line is the mean."
+  },
+  {
+   "path": "files/figures/fig2_variance_explains_state_change.png",
+   "caption": "Change of the gap coupling coefficient against the change of mean trace variance for each split of each worm. Grey: splits by other neuron classes; colored: NSM splits; line: fit to the other splits. On food, NSM splits have a large variance drop and fall near the trend of the other splits."
+  },
+  {
+   "path": "files/figures/fig3_effect_summary.png",
+   "caption": "Change of gap coupling (NSM-high minus NSM-low, or the stated comparison) as percent of the mean coupling level, with 95% animal-bootstrap CIs, for both cohorts. The on-food NSM decrease does not remain after variance matching or behaviour regression."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the 40 off-food whole-brain recordings and NeuroPAL labels."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.04.023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the 8 on-food recordings, NeuroPAL labels and the serotonin-receptor reporter table."
+  },
+  {
+   "target": "https://zenodo.org/records/19388374",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/19414639",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/7830052",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Primary hermaphrodite wiring (chemical and gap junction)."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Adult-8 wiring for replication."
+  },
+  {
+   "target": "https://github.com/openworm/ConnectomeToolbox/tree/ffe570268b7cffb9329cd009a1bb37d60db2d465",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/flavell-lab/NSM_5HTR_analysis/tree/47bc3704c13b389d58946e3e76df359c412b8716",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1002/bies.201100185",
+   "reason": "Bargmann 2012: hypothesis that neuromodulators reconfigure anatomically defined circuits."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We again find a positive gap-junction coupling of co-activity in both NSM states."
+  },
+  {
+   "target": "sci:sha256:fea404fc826486791a933e7997984e6864538661c3296f9983f3c22227c76e3e",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:bf655407c0a259a1bf89809a86e7b831bc649cb301c747443cdf9c70a8e8029c",
+   "reason": "Related state split by reversal bouts."
+  },
+  {
+   "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+   "reason": "Same two cohorts; on-food versus off-food activity timescales."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Mouse result where a state change of wiring slope was part of a general change of coupling."
+  }
+ ]
+}

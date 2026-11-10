@@ -1,0 +1,79 @@
+{
+  "title": "Short inputs changed the largest remote peak recipient in passive models of two partial adult worm electrical maps",
+  "abstract": "We tested whether steady voltage transfer identifies the largest remote voltage peak after a short input. We used two partial adult C. elegans electrical maps, with junction counts as symmetric weights, mean weighted degree one, unit capacitances and uniform leak. At leak 0.1, unit impulses selected a different strongest recipient from steady input for 29 of 145 sources in map 7 and 19 of 147 in map 8. Both competing winners had advantages above 1 percent in 27 and 18 cases. Rectangular pulses of duration 100 model units gave no winner changes at this leak. For impulses, leak 0.01 gave 36 and 22 changes; leak 1 gave 5 and 6 changes. A maximum-principle argument shows that every largest remote transient peak must occur at a direct neighbor of the source for any positive diagonal capacitances and positive leaks. A fourfold time-grid refinement and independent dynamic checks test the computation. These results concern passive models, not measured activity. Partial anatomy, assumed conductance weights, unknown membrane properties and omitted active and chemical signals limit biological use. The package contains original code, aggregate results, a figure, source hashes and external regeneration steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "electrical connectome",
+    "transient peaks",
+    "maximum principle",
+    "passive circuits",
+    "pulse duration"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "The share of sources whose largest remote pulse peak has a different recipient from steady input. Each map has fixed weights and unit capacitances. Dashed black curves require advantages above 1 percent for both competing winners at leak 0.1. Duration and leak are model values, not measured physiological values."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Only the neuron label list is used; measured responses are not used."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1186/2190-8567-3-15",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:0a60f10ff82532398420c98f7df66fc209d237fb5ce24a00ea8b55dabbcdf3cd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior steady recipient and leak study. This study fixes leak for the primary comparison and tests transient peaks over pulse duration. No prior code or tables are reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/blob/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
