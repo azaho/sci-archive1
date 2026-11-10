@@ -1,0 +1,32 @@
+{
+  "title": "PTWC tsunami threat categories (2014-2026) were reached at tide gauges in 29% of threat regions, but in 75% of regions with 11 or more gauges, so sparse gauges explain most of the gap",
+  "abstract": "The Pacific Tsunami Warning Center (PTWC) gives each threatened country or territory one of four amplitude categories (less than 0.3 m, 0.3-1 m, 1-3 m, more than 3 m) that are possible along some coasts. We parsed all 428 non-test PTWC Pacific and Caribbean threat messages from October 2014 to October 2026 (71 earthquakes, 1,121 event-region pairs). We compared the first- and last-stated category with the maximum NCEI tide-gauge amplitude in the region. The analysis plan was committed before the comparison. 208 pairs in 55 events had gauge records. For 139 threat pairs, the gauge maximum was below the stated category in 69% (event bootstrap 95% interval 60-83%), in it in 29% and above it in 2%. 'Less than 0.3 m' was exceeded in 10% (3-19%). Updates changed only 19 of 208 categories and gave no gain. The shortfall depended strongly on gauge count: 92% below with one gauge, 15% (0-41%) below and 75% exact with 11 or more gauges. In an exploratory check, reading one random gauge in regions with 6 or more gauges raised the below fraction from 27% to 83%. Only 16% of 846 individual gauge records reached the stated category. Thus the categories behave as statements about the regional coastal maximum. They were near calibrated and seldom too low where many gauges existed, but they are upper bounds for a single harbour. The main limitation is that gauges sample the coast sparsely, so the true coastal maximum is unknown in most regions. Also, only 30 pairs had categories of 1 m or more.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": ["tsunami", "forecast verification", "Pacific Tsunami Warning Center", "threat message", "tide gauge", "NCEI tsunami database", "calibration", "pre-registration", "operational hazard products", "sampling bias"],
+  "display": [
+    {"path": "files/figures/fig1_contingency.png", "caption": "First-stated PTWC category against the observed category for 208 event-region pairs. Left: NCEI tide-gauge maximum. Right: maximum of tide-gauge, survey and eyewitness values. Numbers are counts and row percentages; orange squares mark agreement."},
+    {"path": "files/figures/fig2_gauge_count.png", "caption": "Fraction of first-stated threat pairs whose gauge maximum was below the stated category, by number of NCEI tide-gauge records in the region (bars, event-bootstrap 95% intervals). Orange: expected fraction when only k random gauges of the 33 pairs with 6 or more gauges are read (exploratory). Green line: the same 33 pairs with all gauges."},
+    {"path": "files/figures/fig3_gauge_values.png", "caption": "Individual tide-gauge maxima (grey) and regional maxima (blue) by first-stated category, log scale; shaded bands are the stated ranges. Values below 0.01 m are drawn at 0.01 m."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2", "relations": ["uses"], "reason": "Its first-versus-update design for issued USGS aftershock forecasts is the model for our F1 versus FL test."},
+    {"target": "sci:sha256:9a5644cd2c4ad6eb4505f4f72617e1460e936eb409f7b84fde22c9169df9a304", "reason": "Parallel finding that first USGS aftershock forecasts were too high and updates near calibrated; PTWC updates did not show this pattern."},
+    {"target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056", "reason": "Related verification of issued USGS aftershock forecasts by depth and region."},
+    {"target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa", "reason": "Campaign verification of PAGER fatality probabilities; part of the same programme of operational-product checks."},
+    {"target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca", "reason": "Campaign verification of PAGER economic-loss probabilities."},
+    {"target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52", "reason": "Campaign verification of first-version ShakeMap uncertainty."},
+    {"target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0", "reason": "Campaign verification of ShakeAlert contours, where agreement came from offsetting errors; here we also separate truth-sampling effects from forecast error."},
+    {"target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06", "reason": "Campaign study of tsunami earthquakes and GCMT centroid delay; uses the same NCEI tsunami database."},
+    {"target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3", "reason": "Campaign verification of NHC error circles."},
+    {"target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4", "reason": "Campaign verification of NOAA geomagnetic storm probabilities."},
+    {"target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6", "reason": "Campaign verification of gravitational-wave p_astro alerts."},
+    {"target": "doi:10.7289/V5PN93H7", "relations": ["uses"], "reason": "NCEI/WDS Global Historical Tsunami Database: observed tide-gauge and survey values (truth)."},
+    {"target": "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py", "relations": ["uses"], "reason": "IEM AFOS archive of NWS PTWC TSUPAC and TSUCAX text products (forecasts)."},
+    {"target": "https://legacy.itic.ioc-unesco.org/legacy.itic.ioc-unesco.org/index66ff.html?option=com_content&view=article&id=1903&Itemid=2583", "reason": "PTWC enhanced forecast products with the RIFT model, introduced in October 2014; describes the amplitude categories."},
+    {"target": "doi:10.3389/fmars.2019.00350", "reason": "Angove et al. (2019) review of tsunami warning; discusses differences between forecast and observed coastal amplitudes."}
+  ]
+}

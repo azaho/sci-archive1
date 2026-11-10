@@ -1,0 +1,166 @@
+{
+ "title": "DOISST v2.1 noise steps make 1985-2023 coral heat-stress (DHW) trends 11-16% too low at 1,763 reef pixels; mean-warming differences between products are a larger uncertainty",
+ "abstract": "Question: NOAA DOISST v2.1 lost fast (day-to-day) SST variance in steps at satellite input changes. Degree Heating Weeks (DHW), the standard coral bleaching heat-stress index, adds only SST excesses of 1 C or more above the warmest-month mean, so it is a convex function of daily SST. Do the noise steps bias reef DHW trends? Approach: At 1,763 DOISST reef pixels (sites of a global coral-bleaching database), we calculated Coral Reef Watch statistics (CoralTemp v3.1 method) for raw DOISST and for three versions in which the spectrum at periods shorter than about 32 days is homogenised to one input segment. We tested the method on synthetic data, at 149 moorings (97 GTMBA, 52 NDBC; 2,816 buoy-years) on matched days, and against ESA SST CCI v3.0.1 on every day of 1982-2024 at 683 reef pixels in three boxes. Results: Relative to 2007-2015, reef 4-8 day power was 1.86 times larger in 1985-2006 and 0.29 times smaller after 2021. The 1985-2023 trend of annual maximum DHW was +0.92 C-weeks per decade (0.66 to 1.18) in raw DOISST and +1.04 to +1.10 after homogenisation; the trend of the reef fraction at DHW >= 4 was +9.8% and +10.4 to +11.7% per decade. Raw DOISST overstates 1985-2006 heat stress (mean annual maximum DHW 1.67 against 1.41 C-weeks) and understates 2022-2025 heat stress (6.35 against 6.66). Homogenisation recovered the synthetic truth (0.980 against 0.983). At 74 GTMBA moorings, after removal of the DOISST-minus-buoy mean warming drift (median +0.04 C per decade), the raw DOISST-minus-buoy DHW trend was -0.13 C-weeks per decade (-0.22 to -0.04) and the homogenised trend was +0.005 (-0.08 to +0.09); without this removal the two errors cancel. In the boxes, CCI gave +0.56 C-weeks per decade and DOISST +1.05; DOISST with the CCI mean warming gave +0.60, so about 90% of the product difference is the mean warming trend (DOISST +0.06 C per decade faster). Conclusion: The input steps make DOISST DHW trends too low by about 11-21%, opposite in sign to the heatwave-duration bias. Differences in mean warming between products change reef DHW trends by a factor of about two. Limitations: the true fast variance is unknown; moorings are not at reefs and are DOISST inputs; CCI has its own variance changes and covers three boxes to 2023; we did not test the CoralTemp product or bleaching observations.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "degree heating weeks",
+  "coral bleaching",
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "ESA SST CCI",
+  "data homogeneity",
+  "satellite input change",
+  "heat stress",
+  "Coral Reef Watch",
+  "spectral homogenisation",
+  "moored buoys",
+  "TAO/TRITON",
+  "climate data record",
+  "marine heatwaves"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reef_dhw_doisst.png",
+   "caption": "Reef-mean annual maximum DHW (a) and reef fraction at DHW >= 4 (b) at 1,763 DOISST reef pixels for raw DOISST and three noise-homogenised versions; (c) raw minus homogenised (2007-2015 noise) by year; (d) median 4-8 day power by DOISST input segment. Dotted lines: input changes."
+  },
+  {
+   "path": "files/figures/fig3_moorings.png",
+   "caption": "Mooring test on matched days. (a) GTMBA era means of annual maximum DHW for buoys, raw and homogenised DOISST. (b, c) Per-buoy trends of (DOISST minus buoy) annual maximum DHW with bootstrap intervals, without and with removal of the DOISST-minus-buoy mean warming drift (trend-matched)."
+  },
+  {
+   "path": "files/figures/fig4_cci_comparison.png",
+   "caption": "ESA CCI v3 versus DOISST at 683 reef pixels in the Caribbean, GBR and Coral Triangle boxes, 1982-2024: (a) day-to-day variance, (b) mean annual maximum DHW, (c) 1985-2023 DHW trends by box, including DOISST with the CCI mean warming."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found the DOISST fast-variance steps at input changes; we show that they reach coral heat-stress statistics."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its archived daily buoy SST table, DOISST at buoy cells, and its change-point dates."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its change-point dates and its ESA CCI OPeNDAP access method."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Spectral homogenisation of OISST for marine heatwaves; we apply a similar method to DHW and find a bias of opposite sign."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Related homogenisation of daily SST extremes and heatwaves."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Reach of the same input steps into SST front statistics."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Reach of the same input steps into spatial SST detail."
+  },
+  {
+   "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+   "reason": "Earlier replication of the DOISST memory rise."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CoralTemp v3.1 heat-stress method (MMM, HotSpot, DHW)."
+  },
+  {
+   "target": "doi:10.3390/rs61111579",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Coral Reef Watch 5-km heat-stress products."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Documented DOISST input-change dates."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41597-022-01121-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Reef site coordinates (BCO-DMO 773466)."
+  },
+  {
+   "target": "https://www.bco-dmo.org/dataset/773466",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "reason": "Original report of the DOISST SST memory rise that started this chain."
+  }
+ ]
+}
