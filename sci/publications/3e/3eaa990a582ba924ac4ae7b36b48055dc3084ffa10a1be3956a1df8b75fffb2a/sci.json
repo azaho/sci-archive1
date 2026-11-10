@@ -1,0 +1,83 @@
+{
+  "title": "Peak and charge orders differ in 65 of 222 selected Allen input pairs under squared-rise current models",
+  "abstract": "We compared peak current with total charge under squared-rise exponential current models for two detected inputs of the same sign to one neuron. In selected Allen Synaptic Physiology r2.1 mouse VisP and human TCx data, the orders differed in 65 of 222 input comparisons. Of these reversals, 44 remained under independent factor-1.10 changes in each peak and charge value. With equal target weights, reversal fractions were 24.6% for mouse excitation, 34.5% for mouse inhibition and 31.9% for human excitation. Human inhibition had only four targets from two inferred donors. Integration of only the first 10 ms left 30 reversals. Total fitted charge uses an extrapolated tail and is not a direct charge measurement. Fit error, assumed rise power, missing data and selected slice circuits limit inference. Original code, aggregate evidence, a figure, exact source hashes and external-data retrieval instructions support reproduction. External raw and record-level derived data are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic current",
+    "charge",
+    "input convergence",
+    "edge weight",
+    "response kinetics"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Peak and total model charge gave opposite orders within selected targets. Bars use equal target weights. Intervals resample inferred donors. Human inhibitory data have only two inferred donors. Orange bars impose hypothetical factor-1.10 error bounds on both metrics."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original local wiring and synaptic physiology data."
+    },
+    {
+      "target": "doi:10.1016/j.celrep.2024.114188",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior integration of a normalized squared-rise response kernel; no claim that integration itself is new."
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-target order comparison of current and voltage peaks. The present audit compares current peak and model charge."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-experimental-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected model or pipeline definition; source code is external and is not copied into the package."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/pipeline/multipatch/resting_state.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected model or pipeline definition; source code is external and is not copied into the package."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/resting_state.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Inspected model or pipeline definition; source code is external and is not copied into the package."
+    }
+  ]
+}
