@@ -1,0 +1,103 @@
+{
+  "title": "With one GOES-16 flux scale and one detection rule, Cycle 25 and Cycle 24 give equal M-flare rates at equal HMI flux; a GOES-15 offset and an SWPC listing change made the 1.15-1.21 residual",
+  "abstract": "Question: earlier campaign work put the NOAA/SWPC flare list on the true GOES flux scale. At equal SDO/HMI magnetic flux, Cycle 25 still gave 1.15-1.21 times more M1+ flares than Cycle 24, mostly in multi-region complexes. Is this residual physical or instrumental? Method: we compared simultaneous 1-minute NCEI science-quality XRS-B fluxes of GOES-8 to GOES-19, put the SWPC list on the GOES-16 scale, applied one NOAA-like detection rule to one GOES-16-scale composite (2010-2026), and refitted the Poisson region-sum models of the prior work (sunspot number, SRS regions, HMI SHARP parameters) with paired 27-day block-bootstrap intervals. Results: GOES-15/GOES-16 = 0.930 (95% CI 0.927-0.932) at all flux levels in 2017-2019; GOES-14/GOES-16 = 0.865; GOES-16 to 19 agree within 2.3%. On the GOES-16 scale the Cycle 24 M1+ count rises by 8.9% (paired factor 1.089, 1.066-1.113). At the same daily activity, the GOES-R-era SWPC list has about 11% more M1+ events than a fixed rule, relative to Cycle 24 (0.89, 0.87-0.93); in Cycle 25, 3.4% of SWPC M1+ events are secondary peaks in the decay of larger flares, and in Cycle 24 none are. With one scale and one rule, Cycle 25/Cycle 24 at matched HMI flux, R and TOTUSJH is 1.00 (0.86-1.15) for M1+ and 0.99 (0.90-1.16) for C5+ flares. The multi-region excess falls to 1.08 (0.86-1.44) in a full-disk model without the SWPC flare-region assignment. Per sunspot number the M1+ excess becomes 1.14 (0.92-1.46). Limitations: Cycle 23 cannot be linked to the GOES-16 scale; the detection rule merges overlapping flares; Cycle 25 is incomplete; 100-300 bootstrap replicates.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    }
+  ],
+  "keywords": [
+    "solar flares",
+    "GOES XRS",
+    "inter-satellite calibration",
+    "GOES-15",
+    "GOES-16",
+    "flare detection",
+    "event list homogeneity",
+    "Solar Cycle 25",
+    "SDO/HMI SHARP",
+    "magnetic flux",
+    "flare productivity",
+    "SWPC",
+    "space weather"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_crosscal.png",
+      "caption": "(a) Quarterly median ratio of simultaneous 1-minute XRS-B fluxes to GOES-16 (flux at least 1e-6 W m-2). (b) Prior true-scale peak and GOES-16-scale peak divided by the GOES-16 1-minute peak, for 371 SWPC events from GOES-15 in 2017-2019."
+    },
+    {
+      "path": "files/figures/fig2_cycle_factors.png",
+      "caption": "Cycle 25/Cycle 24 flare-rate factor at matched activity for four flare lists. (a) M1+ flares by normalization. (b) Dependence on the flare threshold at matched HMI flux, R and TOTUSJH. 95% block-bootstrap intervals."
+    },
+    {
+      "path": "files/figures/fig3_listing_patches.png",
+      "caption": "(a) Ratio of single-rule M1+ detections to SWPC M1+ events at matched daily activity, by cycle. (b) Cycle 25/Cycle 24 M1+ factor for HMI patches with one or more NOAA regions, with and without the SWPC flare-region assignment and with the single detection rule."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:cf94434cc907d929fe2342675f1f0b92b966e8804019441c0241614b7d55cbb3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its true-scale SWPC flare list and correct it to the GOES-16 scale."
+    },
+    {
+      "target": "sci:sha256:6f7a68ce69e34a4e76669e1235a8358616ea9e0477b2358bc1fbe3650920b245",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We reuse its SRS, SHARP and assignment tables and model code; we find that its residual Cycle 25 excess and multi-region result are mostly instrumental and procedural."
+    },
+    {
+      "target": "sci:sha256:59d4b3ec215762b4d0b8fb43acd423478324b98cfad3edf809ae62de81d6773a",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Our result supports its conclusion that the per-sunspot excess comes from more flux per sunspot."
+    },
+    {
+      "target": "sci:sha256:8e668598a54d08c5068624cedf57908e48b6f24b3c0e9fff141a6d7a9d7b29b2",
+      "reason": "Five-cycle comparison on the old GOES scale."
+    },
+    {
+      "target": "sci:sha256:d8fe105441f4a8deb0890611a7a4970adb89bee39e6907d41713aa800780c4cf",
+      "reason": "Related flux-scale correction of the X1 threshold."
+    },
+    {
+      "target": "https://arxiv.org/abs/2310.11457",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Earlier GOES-16/GOES-15 XRS-B ratio of about 1.10."
+    },
+    {
+      "target": "https://www.noaasis.noaa.gov/pdf/ps-pvr/goes-16/EXIS/XRS/Full/G16_XRS_FM1_Full_Validation_PS-PVR_v2.pdf"
+    },
+    {
+      "target": "doi:10.1051/swsc/2025007"
+    },
+    {
+      "target": "doi:10.1007/s11207-014-0529-3"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/data/goes-space-environment-monitor/access/science/xrs/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
