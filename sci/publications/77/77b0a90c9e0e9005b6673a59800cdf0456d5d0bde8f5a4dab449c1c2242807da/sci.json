@@ -1,0 +1,135 @@
+{
+  "title": "Heatwave area in patches of at least one million km2 keeps a positive 1982-2025 trend under 0.14 C SST changes in a one-degree OISST sample",
+  "abstract": "We tested which trends of connected marine heatwave area survive bounded changes in daily SST. We combined bounds for new seasonal percentile thresholds, five-day runs, two-day gap joins and fixed spatial graphs. The method gives safe OLS trend bounds for every changed record in the input class. We used 44 NOAA OISST annual files for 1982-2025 and 29,120 fixed ice-free native-pixel samples at one-degree spacing between 60 S and 60 N. For every input change of at most 0.14 C, annual mean area in daily patches of at least one million km2 retains a positive trend with both tested baselines and both four- and eight-neighbour graphs. The four lower bounds are +1.410, +1.342, +0.266 and +0.159 million km2 per decade. The raw rates and allowed ranges are much larger. The planned primary metric, mean largest daily patch area, has a positive lower slope at 0.10 C with both baselines; at 0.14 C it is certified only with the earlier baseline. Ending in 2021 weakens the result: with the later baseline, the 0.10 C area signs are unresolved, while all four metrics remain positive at 0.05 C. This extends earlier local event-day bounds to connected area and separates area growth from unstable event counts. Exhaustive small-record tests, independent graph searches, rebuilt-threshold checks, an external event reference and aggregate audits pass. These are finite-record sensitivity results, not confidence intervals or measured error bounds. Actual SST errors are not shown to satisfy the budgets. The sample is one product and does not reproduce native-resolution or tracked three-dimensional heatwave systems. Proofs, code, annual evidence, figures, exact source hashes and retrieval steps are included. Raw data stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "OISST",
+    "marine heatwaves",
+    "connected patches",
+    "spatial area",
+    "trend bounds",
+    "SST uncertainty",
+    "seasonal threshold",
+    "fixed graph",
+    "baseline sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/figures/area_trend_bounds.png",
+      "caption": "Safe area trend bounds under bounded SST changes. Both seasonal thresholds are recalculated within the proof. The shaded ranges are sensitivity bounds, not confidence intervals. Points are computed budgets; lines are guides."
+    },
+    {
+      "path": "files/figures/annual_connected_area.png",
+      "caption": "Source annual connected area and 0.14 C envelopes for 1982-2025, with the 1983-2012 baseline and four-neighbour graph. The bounds need not be jointly attainable."
+    },
+    {
+      "path": "files/figures/scope_checks.png",
+      "caption": "Positive lower slopes depend on metric, baseline and endpoint. Negative points show failed certificates, not proven reversals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates the input-change question through persistence, fast variance and buoy comparisons."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows persistence changes and product-noise steps against tropical and NDBC moorings."
+    },
+    {
+      "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests CCI and buoy comparisons and shows limits of product homogeneity."
+    },
+    {
+      "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows which local heatwave metrics depend on a chosen spectral noise correction."
+    },
+    {
+      "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses verified extraction and threshold code and the exact source sample. Extends the local event-day bound to connected spatial area."
+    },
+    {
+      "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests gradients and front statistics. Motivates a distinct spatial metric: connected heatwave patch area."
+    },
+    {
+      "target": "sci:sha256:b4e19931a50ff723ade22d6598905c36d31554ac920712486c689178d876aae8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published count-reversal construction as a logical comparison. The same 44 source hashes and input class mean our area certificate also covers that record. We do not regenerate its exact spatial slopes."
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014",
+      "reason": "Local percentile-based event definition."
+    },
+    {
+      "target": "doi:10.1088/2752-5295/accd0e",
+      "reason": "Prior analysis of large tracked heatwave systems; motivates spatial extent but uses a different graph, baseline and statistic."
+    },
+    {
+      "target": "doi:10.1029/2025GL115021",
+      "reason": "Object-based evaluation of spatial heatwave forecasts."
+    },
+    {
+      "target": "doi:10.1038/s43247-024-01369-9",
+      "reason": "Prior evidence of product sensitivity in local heatwave assessments."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "OISST v2.1 product method and version history."
+    },
+    {
+      "target": "doi:10.1175/2007JCLI1824.1",
+      "reason": "Daily high-resolution blended SST method."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+      "reason": "Exact annual source URLs and hashes are in the signed provenance manifest."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+      "reason": "NOAA product description and input history."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+      "reason": "NOAA PSL source acknowledgement."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/ecjoliver/marineHeatWaves/d7292bf08ade0af213fa760b0d7e4adfe5f52894/marineHeatWaves.py",
+      "reason": "Pinned independent local-event reference. Code remains external; exact hash and minimal compatibility edits are recorded."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "NOAA information policy and third-party notices."
+    }
+  ]
+}

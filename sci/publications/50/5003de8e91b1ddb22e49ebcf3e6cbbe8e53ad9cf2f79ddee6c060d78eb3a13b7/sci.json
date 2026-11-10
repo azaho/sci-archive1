@@ -1,0 +1,131 @@
+{
+ "title": "DOISST v2.1 input changes in 2007 and 2021 made SST fronts sharper and the quiet ocean smoother in steps; this causes false 1982-2025 front and gradient trends (50S-50N, MUR check)",
+ "abstract": "Question: Three campaign studies found that NOAA DOISST v2.1 lost day-to-day SST variance in steps at satellite input changes, which causes most of its reported persistence rise. Do the same changes also cause steps in the spatial structure of DOISST, and do they cause false trends in front and gradient statistics?\n\nApproach: For each day of 1982-2025 we calculated, on the 0.25-degree grid from 50S to 50N, the mean SST gradient G, the sub-75-km spatial variance V3 and the share of strong fronts F3, for the ocean and 12 regions. We tested steps at documented and known dates against placebo dates, grouped per-pixel steps by background gradient, compared DOISST with MUR SST v4.1 on 294 identical days and points, and fitted 1982-2025 trends with and without step terms.\n\nResults: On 2007-01-01 (Pathfinder to Navy AVHRR), V3 increased by a factor of 2.2 in the Gulf Stream and by 1.4 to 1.9 in the Kuroshio, Agulhas and Brazil-Malvinas, and decreased by 26-28% in the subtropical gyres. A blind change-point search put the break in the 10-day block containing 2007-01-01 in all four western boundary currents. At 2007-01-01 and 2021-11-01 (ACSPO input), V3 fell by 36-55% in the four lowest deciles of background gradient and rose by 16-28% in the highest decile. Undocumented steps on 1985-01-15 and 2020-06-28 lowered V3 everywhere. MUR did not show these steps: the ln ratio DOISST/MUR of V3 stepped by +0.74 +/- 0.15 in the Gulf Stream and -0.28 +/- 0.09 in the N Pacific gyre at 2007, by +0.48 +/- 0.08 (Agulhas) and -0.56 +/- 0.11 (S Pacific gyre) at 2021, and by -0.25 +/- 0.05 over the full ocean at 2020. The raw DOISST trends were +12.1 +/- 1.9% per decade for the 50S-50N strong-front share, +4.0 to +5.5% per decade for G in the Gulf Stream, Agulhas and Brazil-Malvinas, and -7.4% per decade for G in the N Pacific gyre. With the three documented steps in the model, none of these trends stayed positive and significant; with six steps, a small rise of strong fronts remained (+3.6 +/- 1.5% per decade).\n\nConclusion: The input changes changed the spatial structure of DOISST in steps: sharper strong fronts and a smoother quiet ocean. DOISST front intensification in western boundary currents, the rise of global strong-front area and the smoothing of the gyres are mostly product artifacts. Limitations: MUR has its own input changes and covers three step dates; step-adjusted trends remove any real change at the step dates; regions and front thresholds are fixed choices.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370903"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "SST fronts",
+  "SST gradient",
+  "mesoscale variability",
+  "data homogeneity",
+  "observing system change",
+  "AVHRR",
+  "ACSPO",
+  "MUR SST",
+  "western boundary currents",
+  "subtropical gyres",
+  "climate data record",
+  "change points",
+  "spurious trends"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_regional_series.png",
+   "caption": "DOISST v2.1 small-scale spatial variance V3 and mean gradient G, 1982-2025 (91-day means, seasonal cycle removed). The western boundary currents step up at 2007-01-01; the gyres step down at 2007 and 2021; all regions step down at 1985-01-15 and 2020-06-28."
+  },
+  {
+   "path": "files/figures/fig3_pixel_steps.png",
+   "caption": "Per-pixel step ratios of V3 at 2007-01-01 and 2021-11-01, and the mean step by decile of background gradient. These two changes made strong fronts sharper and the quiet ocean smoother; the 1985 and 2020 steps made all deciles smoother."
+  },
+  {
+   "path": "files/figures/fig4_mur_check.png",
+   "caption": "DOISST and MUR SST v4.1 V3 on the same days and points around the 2007, 2020 and 2021 steps. MUR does not show the DOISST steps."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Uses its DOISST day-to-day variance step dates; extends its reach analysis from time statistics to spatial statistics."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Shows that the DOISST input changes that cause its fast-variance loss also change its spatial structure."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same input-change steps found in spatial statistics."
+  },
+  {
+   "target": "doi:10.3390/rs14020409",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Zhu et al. 2022 found the 2007 jump of mesoscale variance in western boundary currents; we extend it to the global ocean, to more step dates and to front trends."
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "reason": "Lee et al. 2025, the persistence result that the earlier campaign studies evaluated."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST method."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1 daily files."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST input-change history."
+  },
+  {
+   "target": "doi:10.5067/GHGMR-4FJ04",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MUR SST v4.1 reference analysis."
+  },
+  {
+   "target": "doi:10.1016/j.rse.2017.07.029",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MUR method."
+  },
+  {
+   "target": "https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERDDAP access to MUR."
+  }
+ ]
+}

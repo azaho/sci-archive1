@@ -1,0 +1,145 @@
+{
+ "title": "In the mouse caudoputamen, where cell types are uniform, the voxel input map did not predict local task coding beyond a calibrated null, except for feedback (IBL, 2,646 units)",
+ "abstract": "Question: across mouse brain regions, axonal input predicts task coding, but input and cell-type mix change together. Does the input map predict coding inside one region whose cell types are nearly uniform? Data: IBL Brain-Wide Map spike times of 2,646 good caudoputamen (CP) units (74 probes, 69 sessions) and of 31,439 units in 60 regions (344 probes); the Knox 2019 voxel connectome (100 um); published BWM region decoding scores; Allen MERFISH cell types. Method (plan frozen before analysis): for each unit, condition-combined selectivity for stimulus side, choice, feedback and block prior. For each unit voxel, the input-weighted mean BWM score of each variable over all source regions. The statistic is the variable-specific match (unit and variable fixed effects, distance control). Null A permutes source scores within divisions and keeps the input topography. Results: in CP, the match was beta 0.049 (session bootstrap CI 0.003 to 0.086), but null A gave p = 0.082, so the hypothesis was not supported. On 200 smooth synthetic maps, null A had 7% false positives; a planned distance-rewiring null had 39% and is not valid. Exploratory: feedback selectivity matched its input map (beta 0.17, Holm p = 0.012; 0.20 to 0.26 with position controls), choice weakly, stimulus not, and block prior in the opposite direction. MERFISH composition was nearly uniform across CP bins (Bhattacharyya 0.97). The brain-wide within-region test was also not supported (beta 0.014, p = 0.051), but feedback matched there too (p = 0.007; 0.016 without CP). Limitations: a weak CP coding map (split-half 0.19), an interpolated connectome, source scores from the same data set, and exploratory per-variable results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "caudoputamen",
+  "striatum",
+  "mesoscale connectome",
+  "Knox 2019 voxel model",
+  "IBL Brain-Wide Map",
+  "task coding",
+  "feedback",
+  "cell types",
+  "MERFISH",
+  "null calibration",
+  "structure-function",
+  "within-region topography"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cp_maps_primary.png",
+   "caption": "Top: CP maps (top view, 300 um bins; square size = unit count) of the input-predicted map X and of observed selectivity relative to the unit mean, for feedback and choice. Bottom left: H1 beta against null A (calibrated) and null B (not calibrated), with the session bootstrap 95% CI. Bottom right: false-positive rates of the two nulls on 200 smooth synthetic maps without wiring dependence."
+  },
+  {
+   "path": "files/figures/fig2_variables_sensitivity.png",
+   "caption": "Left (exploratory): beta per variable in CP with null A 95% ranges, with distance control only, plus linear position, plus quadratic position; Holm-corrected p. Middle: S3 sensitivity variants of the pooled test with null A ranges and one-sided p. Right (exploratory): correlation of X with the cross-session smoothed CP selectivity map, per variable."
+  },
+  {
+   "path": "files/figures/fig3_brainwide_within_region.png",
+   "caption": "S1 brain-wide within-region test (344 probes). Left: pooled beta against null A. Middle (exploratory): within-region beta per region with its null A mean. Right (exploratory): per-variable betas for 60 regions and for 59 regions without CP, with null A 95% ranges and uncorrected p."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its input-weighted source-encoding predictor at the 100 um voxel scale. Inside the caudoputamen the general variable-specific match did not pass a calibrated null; only feedback coding matched."
+  },
+  {
+   "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "It found that input wiring, not cell-type mix, predicts region-level coding, mostly through feedback decoding. Inside a region with uniform cell types, we find the same feedback specificity, but no general match."
+  },
+  {
+   "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its shared helper code (ontology, Knox loading, mapper) and its motivation: input and cell-type similarity are confounded across regions."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our calibration shows that distance-rewired nulls are also liberal at the voxel scale inside one region (39% false positives)."
+  },
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "reason": "Prior campaign test of anatomy predicting regional physiology (thalamic bursts)."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Prior campaign test of wiring specificity with rewired connectomes in mouse."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Prior campaign test of wiring specificity in larval zebrafish."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "reason": "Prior campaign test of transcriptomic type number and spike-feature diversity."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map data and region decoding scores."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 voxel connectome model."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Allen Mouse Brain Connectivity Atlas."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen MERFISH cell types."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF 2017."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03166-8",
+   "reason": "Striatal activity reflects topographically connected cortex."
+  },
+  {
+   "target": "doi:10.1038/nn.4332",
+   "reason": "Mouse cortico-striatal projectome."
+  },
+  {
+   "target": "doi:10.7554/eLife.19103",
+   "reason": "Excitatory input map of the striatum."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03993-3",
+   "reason": "Mouse cortico-basal ganglia-thalamic network."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1787-x",
+   "reason": "Condition-combined selectivity tests."
+  },
+  {
+   "target": "https://github.com/int-brain-lab/paper-brain-wide-map/tree/de37454426bc4107047b5a18b854fc1ef7a5959c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of region_info.csv."
+  }
+ ]
+}
