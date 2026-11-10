@@ -1,0 +1,76 @@
+{
+  "title": "A division-local covariance cut simulated false wiring signals and kept five task links in 176 IBL regions",
+  "abstract": "We tested a fitted Gaussian-process (GP) null for a regional input-wiring coefficient on 176 IBL regions. Each of 12 geometry, division or cell-type covariance conditions supplied 200 maps with no wiring term. Each test used 499 surrogates. In the primary division-local condition, the fitted GP rejected 12.5 percent of maps, versus 4.5 percent with the known covariance. The fitted rate exceeded the exact nominal 4.8 percent after correction across eight primary conditions (p=0.000106). Other primary conditions and four exploratory nonstationary conditions had no clear excess after correction. We added a division-local spatial covariance term. On 200 new division-local maps, rejection fell from 13.0 to 6.0 percent; an exponential-distance control gave 5.0 and 4.5 percent. With this repair, all five measured task links passed Holm correction, while no intrinsic feature did. The result identifies and reduces one covariance error while preserving the task association. It does not prove causal wiring control or general calibration. The package includes code, fixed seeds, simulation records, aggregate results, figures and external retrieval steps. Source data and region-level derived databases are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "spatial null",
+    "Gaussian process",
+    "calibration",
+    "IBL",
+    "connectome",
+    "anisotropy",
+    "nonstationarity"
+  ],
+  "display": [
+    {
+      "path": "files/calibration.png",
+      "caption": "Rejection rates for maps with no wiring term. Bars show 95 percent Wilson intervals over 200 maps per condition. Each test uses 499 surrogates. The dashed line is 0.05."
+    },
+    {
+      "path": "files/repair.png",
+      "caption": "Fresh-map validation of the added division-local covariance component. Each condition has 200 maps and 499 surrogates per map. Bars show pointwise 95 percent Wilson intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+      "relations": [
+        "uses",
+        "reviews",
+        "challenges"
+      ],
+      "reason": "We reproduce the task contrast, identify division-local covariance as a calibration failure for its broad wiring-specific interpretation, and test a targeted repair."
+    },
+    {
+      "target": "sci:sha256:a4fae2b20554c07f85decfa3d289742eead57e431b66963a1672e01bf6e11f20",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source mapping and preparation code, exact common sample and external input hashes."
+    },
+    {
+      "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates distinct claims about input wiring and cell-type control; its pair-similarity statistic is not retested here."
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066"
+    },
+    {
+      "target": "doi:10.1016/j.cell.2020.04.007"
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06812-z"
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0"
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09226-1"
+    },
+    {
+      "target": "doi:10.1016/j.neuroimage.2020.117038"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "reason": "External data terms; source data and regional derivative databases are kept outside the baseline package."
+    }
+  ]
+}
