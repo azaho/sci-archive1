@@ -1,0 +1,100 @@
+{
+ "title": "In 22 larval zebrafish, brain regions with a longer projectome path from the retina had less reliable dark-flash responses, and real wiring predicted this better than rewired graphs",
+ "abstract": "Question: in mouse, brain regions farther from the retina in the connectome have less reliable visual responses, but distance-preserving rewired connectomes predict this equally well. Does the rule apply in the larval zebrafish, and does the specific wiring add information? Data: Legare et al. 2025 two-photon whole-brain calcium imaging of 22 larvae (1.23 million neurons, 12 whole-field dark flashes, about 1 volume per second) and the directed 70-region mapZebrain projectome of the same authors, which has a retina source. Method: the plan was frozen before region response values were computed. D_ret is the weighted shortest path from the retina through nine retinal arborization-field regions (step cost -log input share). Neuron reliability R is the split-half correlation of dark-flash responses; region value is the median over fish of per-fish medians. Results: region R decreased with D_ret (Spearman rho -0.66, 63 regions; fish bootstrap -0.70 to -0.61; negative in all 22 fish). Unlike in mouse, 1,000 rewired projectomes that keep each target's input weights within distance deciles gave a weaker relation (mean -0.51; p = 0.019). Euclidean distance from the retinal neuropils alone gave rho -0.74; after control of it, and of swim coupling, brightness and neuron count, D_ret kept partial rho -0.36 while rewired graphs gave about 0 (p = 0.004). The result stayed under a spatial-autocorrelation null, without tectal regions, without entry regions, without any single region, and after swim regression. Limitations: coarse atlas regions; an atlas-average projectome from sparse tracings of other larvae; soma-region versus terminal-region mismatch; one stimulus at 1 Hz with swims and arousal; multi-path drive and plain distance predict R better than D_ret, so we do not claim a shortest-path mechanism; the mouse comparison uses published numbers.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "larval zebrafish",
+  "projectome",
+  "mapZebrain",
+  "structure-function",
+  "retina",
+  "visual response reliability",
+  "dark flash",
+  "whole-brain calcium imaging",
+  "rewired connectome null",
+  "cross-species",
+  "Moran spectral randomization",
+  "connectome distance"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_response_vs_Dret.png",
+   "caption": "a: Mean dark-flash response of regions in the near, middle and far thirds of retinal path distance D_ret (region median, mean +/- SEM over 22 fish; grey = dark). b: Region reliability R against D_ret for 63 regions; open circles are retinal entry regions."
+  },
+  {
+   "path": "files/figures/fig2_nulls_per_fish.png",
+   "caption": "a, b: Observed rho (black line) against 1,000 distance-preserving rewired projectomes, raw and with Euclidean distance controlled. c: Single-fish rho values, raw and partial; all 22 are negative."
+  },
+  {
+   "path": "files/figures/fig3_cross_species.png",
+   "caption": "Spearman rho of visual response measures with D_ret in zebrafish (this study) and mouse (published SCI bundle 19f7eb8e), with rewired-graph means and one-sided rewired-null p values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "relations": [
+    "supports",
+    "challenges",
+    "uses"
+   ],
+   "reason": "We test its mouse rule in zebrafish. The reliability gradient repeats (supports); the rewired-null result differs (challenges); we copy its summary numbers for Figure 3 and use its design."
+  },
+  {
+   "target": "sci:sha256:f7e0f8902679341d600b16944f0b722343067300ded08575737ff07badc97447",
+   "relations": [
+    "supports"
+   ],
+   "reason": "First SCI report of the retinal-distance reliability gradient in mouse."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Earlier zebrafish projectome and functional coupling study in this campaign."
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Calcium imaging data, swim events, stimulus sequence, SC matrices and atlas files (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1126/sciadv.adv7576",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Paper that describes the data, the SC matrices and the dF/F method."
+  },
+  {
+   "target": "https://github.com/pdesrosiers/Legare-zebrafish-brain-networks",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Authors' code; we used its dF/F baseline and swim regressor definitions and checked the SC matrix direction."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.04.034",
+   "reason": "mapZebrain atlas and single-neuron reconstructions, the upstream source of the SC matrices."
+  },
+  {
+   "target": "doi:10.1111/2041-210X.12407",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Moran spectral randomization method."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "reason": "Mouse visual hierarchy background."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2014.01.016",
+   "reason": "Larval habenula light responses."
+  }
+ ]
+}
