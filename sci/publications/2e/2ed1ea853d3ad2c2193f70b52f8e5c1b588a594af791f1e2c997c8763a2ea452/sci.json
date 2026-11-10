@@ -1,0 +1,68 @@
+{
+  "title": "Early count timing gave no clear forecast gain after 323 shallow M6.5+ earthquakes in 2013-2024",
+  "abstract": "We tested whether the timing of early large earthquakes improves a forecast of later nearby counts after the early total is known. We used a fixed global ComCat snapshot, 363 training centers in 2001-2012 and 323 test centers in 2013-2024. Centers have M6.5 or more and depth at most 70 km. A negative-binomial baseline uses magnitude, depth, early count and past local count. We added the contrast between log counts on days 4-7 and days 1-4. Targets are M5.5+ counts on days 7-30 within 200 km. The mean test log-score change was -0.00512 nats per center. The conditional 95% three-year block interval was -0.01136 to 0.00142. All three secondary settings had negative point changes and intervals that included zero. The primary point change stayed negative when each test year was removed. This gives no clear support for this timing term. Only 81 test centers had an early event. Sparse counts, revised records, mixed magnitude scales, shared windows and twelve test years limit inference. The result does not test all timing models or exclude secondary triggering. Code, aggregate evidence, source hashes, an independent count and score audit, and a figure are included. External event records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquake",
+    "count timing",
+    "aftershock forecast",
+    "negative binomial",
+    "null result",
+    "ComCat"
+  ],
+  "display": [
+    {
+      "path": "files/recency.png",
+      "caption": "Timing gives no clear gain beyond early total and past local count. Intervals condition on fixed training fits. Positive values favor the timing term."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1692a78e3b446678452638f734376d5537e708eb7b879d99c9de3a9592704b25",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior negative-binomial benchmark informed the count distribution. We write new code. Data overlap."
+    },
+    {
+      "target": "sci:sha256:c70d9aba332188e0713394670ffc1e3ed58fab13cc59c18ce74c6bfd49bbaa05",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior maximum-magnitude test informed center and time windows. Our added variable is timing. Data overlap."
+    },
+    {
+      "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior regional-history forecast informs the need for a local past-count control. This is not independent catalog confirmation."
+    },
+    {
+      "target": "doi:10.1029/2023RG000823"
+    },
+    {
+      "target": "https://www.its.caltech.edu/~pagem/GlobalOmori.pdf"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/catalog/"
+    },
+    {
+      "target": "https://www.usgs.gov/data-management/access-controls-and-copyrights"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    }
+  ]
+}

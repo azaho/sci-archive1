@@ -1,0 +1,73 @@
+{
+  "title": "Recent activity gave no clear seven-day forecast gain for 316 shallow M6.5 to below 8 earthquakes in ComCat, 2013-2024",
+  "abstract": "We tested whether recent local earthquake counts improve the forecast of a nearby M5.5 or larger event in the next seven days after a shallow M6.5 to below 8 earthquake. We used a fixed global ComCat snapshot and fits that used earlier years only. We removed centers with an equal or larger event in the prior 30 days within 300 km. The baseline used magnitude, depth, and older local counts. For 316 test centers in 2013-2024, adding the prior 30-day count reduced mean Brier score from 0.19571 to 0.19136. The reduction was 0.00435, with a conditional 95% two-year block interval of -0.00344 to 0.01173. Mean log-score gain was also uncertain. All five other tests that kept the isolation rule had Brier intervals that included zero. When the isolation rule was removed, the reduction was 0.02503 for 381 centers, with an interval of 0.01098 to 0.03690. This is consistent with useful information from ongoing sequences, but the samples differ. The primary result does not establish a forecast benefit or its absence. Revised data, mixed magnitude scales, simple models, regional differences, and short dependent test records limit inference. Code, source hashes, aggregate scores, model coefficients, uncertainty draws, a separate audit, and a figure are included. Raw records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "earthquakes",
+    "ComCat",
+    "recent seismicity",
+    "aftershock forecasts",
+    "chronological test",
+    "Brier score",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/forecast.png",
+      "caption": "Brier score reduction for each fixed test and the primary reduction by year. Intervals use paired two-year blocks of test-year totals. Positive values favor recent counts. The test without isolation uses a different sample."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2182948ccf9d3297ee3ca28cdd0204ea9bf8162558495eb3b423983ebea9368c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior regional productivity forecasts motivate the control for older local counts. This study tests recent activity and binary outcomes with new code and an overlapping source catalog."
+    },
+    {
+      "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior evidence for catalog-period effects motivates a higher magnitude floor and limits on interpretation."
+    },
+    {
+      "target": "sci:sha256:7c0b53d1ce174b64f68364bad6f482198b93cab21ccc6d36b252f0ffa4357209",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior pre-event count analysis informs the distinction between recent activity and a physical precursor. Our outcome and magnitude band differ."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1126/science.243.4895.1173"
+    },
+    {
+      "target": "doi:10.1029/2023RG000823"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed ComCat source snapshot. Exact query and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/overview.php"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/catalog/"
+    }
+  ]
+}
