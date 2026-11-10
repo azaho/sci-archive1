@@ -1,0 +1,77 @@
+{
+  "title": "Recent error correction lost its large gain after a valid-time check in NHC 48-hour wind forecasts in 2019-2025",
+  "abstract": "We tested whether earlier signed errors can improve NHC wind forecasts when their outcomes must occur by the new issue time. Each target year used a linear fit from the previous five years. The primary common sample has 644 Atlantic cycles from 52 storms and 300 East Pacific cycles from 36 storms in 2019-2025. At a 48-hour lead, a six-hour-lag error needs an observation 42 hours in the future. This deliberately invalid control cut mean squared error by 73% and 81% against mean error correction. At lags of 48 and 72 hours, all primary whole-storm 95% limits for loss change included zero; point changes were increases of 1.79 to 4.08 kt squared. Separate available samples and earlier years support the timing contrast. A planned 72-hour-lead check showed gains in 13 East Pacific storms, so the primary null does not generalize to all leads. This is a retrospective correction benchmark, not a test of issued probabilities or an allegation of data leakage by NHC. Revised best track, long-storm selection, fixed-fit uncertainty and few test years limit use. Code, exact source hashes, aggregate evidence, a figure and an independent calculation are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "forecast verification",
+    "NHC",
+    "intensity forecast",
+    "data leakage",
+    "valid time",
+    "serial correlation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Paired MSE changes at 48 hours. Future-outcome correction gives a large gain; timing-valid corrections give no clear gain on identical cases. Limits resample whole storms."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "reason": "Motivates verification of other public hazard forecasts."
+    },
+    {
+      "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+      "reason": "Related verification of issued aftershock forecasts."
+    },
+    {
+      "target": "sci:sha256:6c9d68a88a6ebb4086e4520720608dcc29a9010fb1e41576488fd82fb681cb09",
+      "reason": "Prior intensity error-band test using the same NOAA snapshots."
+    },
+    {
+      "target": "sci:sha256:10f1a3ce87653b5080c968d0a0eb8bb95dcfda03374fa2b63d46f0dbcfb636e7",
+      "reason": "Prior revision correction test; same data source, different predictor and timing question."
+    },
+    {
+      "target": "doi:10.25923/m0ah-bh98",
+      "reason": "Established serial dependence in forecast errors; our test concerns availability of outcomes."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-22-0074.1",
+      "reason": "Prior intensity bias and uncertainty scheme; not tested here."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf",
+      "reason": "Source column definitions."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "External source terms."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_ATL_TI_errors.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source snapshot recorded with hash in sources.json."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_EPAC_TI_errors.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source snapshot recorded with hash in sources.json."
+    }
+  ]
+}

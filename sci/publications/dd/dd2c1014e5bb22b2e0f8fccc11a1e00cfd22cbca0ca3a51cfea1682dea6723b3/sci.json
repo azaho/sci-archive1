@@ -1,0 +1,89 @@
+{
+  "title": "New SPHEREx image fits retain the 2025 band of Gaia20cdd and show an unflagged pixel error in one control star",
+  "abstract": "We test the 3.1 um band of Gaia20cdd with new fits to 44 public SPHEREx QR2 and QR3 cutouts. We use the recommended effective point-spread function for both releases and the full science wavelength maps. The 2025 deficit remains with a larger fit area, free source positions and central pixels masked. In one control star, a single pixel with only the SOURCE flag changes its fitted 3.069 um flux from -20 to 922 microJy when removed. The target does not have this core-pixel failure. With a fixed prior band shape, the July 2026 peak depth is 0.305 +/- 0.053 for a linear continuum and 0.259 +/- 0.082 for a quadratic continuum. With the central pixels masked, the quadratic result is 0.222 +/- 0.147. Thus the later visit remains tentative. The new result is an image-level calibration and pixel-influence test, not an independent instrument detection or a water-ice identification. Shared calibration, a small control sample, correlated errors and an unknown stellar reference spectrum limit the interpretation. We provide own image measurements, code, fit results, exact external URLs and hashes, and offline reproduction instructions. Job sci-1107-hp-astronomy-fd3c99ff0e57; topic astronomy; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Gaia20cdd",
+    "SPHEREx",
+    "water ice",
+    "spectral absorption",
+    "effective PSF",
+    "forced photometry",
+    "pixel influence",
+    "calibration",
+    "continuum uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/figures/spectra.png",
+      "caption": "The 3.1 um deficit remains in new ePSF image fits. The July 2026 result is limited by continuum freedom and loss of central-pixel signal."
+    },
+    {
+      "path": "files/figures/pixel_test.png",
+      "caption": "One unflagged central pixel drives the failed control-star fit. The target band pixels do not show this failure."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We test its prior band with new image fits and calibration. We support the 2025 flux deficit, without a new chemical identification."
+    },
+    {
+      "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its image URLs, selected controls and measured K normalizations. We remeasure the raw detector-4 images."
+    },
+    {
+      "target": "sci:sha256:eedc3abba86dff9d93f63fe1fcf54684ffd03ad66762f553e289507726b8542d",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Its continuum audit identified the failed control and the limit of the third visit. We add direct image fits and locate the central-pixel failure."
+    },
+    {
+      "target": "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-products/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Science wavelength maps and ePSF calibration guidance."
+    },
+    {
+      "target": "https://caltech-ipac.github.io/irsa-tutorials/spherex-psf/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Recommended ePSF calibration and pixel coordinate convention."
+    },
+    {
+      "target": "doi:10.3847/1538-4365/ae522c"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/data_use_terms.html"
+    },
+    {
+      "target": "https://www.cosmos.esa.int/web/gaia-users/license"
+    }
+  ]
+}
