@@ -1,0 +1,131 @@
+{
+ "title": "Stock-specific warming effects on fish surplus production from Free et al. (2019) changed with RAM Legacy v4.66 assessment revisions and did not improve one-step forecasts of later years in 91 stocks",
+ "abstract": "Question: are the stock-specific sea-temperature effects (theta) on surplus production of Free et al. (2019, Science) stable enough to forecast? Approach: we refitted their Pella-Tomlinson model with AR(1) error per stock. We used the revised RAM Legacy v4.66 assessments and stock SST series emulated from ERSST v5 (median r = 0.99 with the original series). We compared theta before and after each stock's original end year (91 stocks, 742 forward stock-years, mostly 2010-2017), and one-step forecasts with and without theta. A simulation in which theta does not change gave the expected agreement. Results: our fit reproduced the published fixed-effect theta (Spearman 0.92). For the same years, the revised assessments changed theta (Spearman 0.73 between versions), and the change increased with the revision of the surplus-production series (Spearman -0.75). Of 11 published significant stocks, 6 stayed significant with the same sign. Forward theta agreed with earlier theta less than the constant-theta simulation expected (Spearman 0.18, expected 0.41, p = 0.02; median absolute change 0.62, expected 0.37, p < 0.01). Refitted theta made forecasts worse than theta = 0 (median skill -0.026, expected +0.008, p < 0.01; 45% of stocks better). The published shrunk theta was neutral (median skill +0.0007). Even with constant theta, the expected median gain was below 1%. HadISST and other sensitivity tests gave the same conclusions. Limitations: emulated SST, a fixed-effect fit, short forward periods, and assessment terminal years that are not independent observations. The test covers stock-level forecasts, not the long-term fleet average. RAM and SST data are external; code, our per-stock estimates and aggregates are bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "fisheries productivity",
+  "surplus production",
+  "sea surface temperature",
+  "ocean warming",
+  "RAM Legacy",
+  "stock assessment revision",
+  "forecast skill",
+  "out-of-sample test",
+  "replication",
+  "Pella-Tomlinson",
+  "climate change",
+  "non-stationarity",
+  "null result",
+  "marine fish"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_theta_agreement.png",
+   "caption": "Temperature effect theta per stock. A: our refit of the published input table compared with the published fixed-effect theta. B: the same years and SST with RAM v3.8 data compared with revised RAM v4.66 data. C: theta before compared with theta after each stock's original end year (v4.66, at least 5 forward years). Values beyond +/-3 are drawn at the edge."
+  },
+  {
+   "path": "files/figures/fig2_forecast_skill.png",
+   "caption": "A: median per-stock skill of one-step forecasts of forward surplus production relative to a model with theta = 0, with 95% stock-bootstrap intervals. The green band is the range expected if theta were constant. Asterisks mark exploratory variants. B: forward mean squared error of the theta = 0 model relative to its pre-period process variance, per stock."
+  },
+  {
+   "path": "files/figures/fig3_constant_theta_simulation.png",
+   "caption": "Constant-theta simulation (100 replicates, bars) compared with the observed values (orange line). A: Spearman correlation between theta before and after the original end year. B: median per-stock forecast skill of the refitted theta."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.aau1758",
+   "relations": [
+    "reviews",
+    "challenges",
+    "uses"
+   ],
+   "reason": "We test the stock-specific temperature effects of this study with revised and newer RAM Legacy assessments; we reuse its model form and its published input and output tables."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14043031",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RAM Legacy Stock Assessment Database v4.66 (CC BY 4.0), the source of revised and forward biomass and catch series."
+  },
+  {
+   "target": "doi:10.1111/j.1467-2979.2011.00435.x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Reference description of the RAM Legacy Stock Assessment Database."
+  },
+  {
+   "target": "https://github.com/cfree14/sst_productivity/tree/cd1d12abe291da2748d7bc76e69b7a182651ba11",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Analysis repository of Free et al. (2019); input table, output table and TMB model code at this commit."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSST v5, used to emulate stock SST series."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1, used for the SST sensitivity test."
+  },
+  {
+   "target": "https://repository.library.noaa.gov/view/noaa/55980",
+   "reason": "Szuwalski (2019) comment on Free et al. (2019) about production-model fits to age-structured assessment outputs."
+  },
+  {
+   "target": "https://repository.library.noaa.gov/view/noaa/53173",
+   "reason": "Response of Free et al. to the comment."
+  },
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign forward test (Adelie penguin sea-ice curve); our result adds a marine fisheries case where a published climate response did not forecast."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "reason": "Earlier campaign replication of a published environmental effect (night light and leaf colour) that did not survive newer data."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "reason": "Earlier campaign forward test (NestWatch heat contrast) that did not repeat in later years."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "reason": "Earlier campaign test (mountain pine beetle and winter cold) with a null result for a published climate response."
+  },
+  {
+   "target": "sci:sha256:22c704b09754aac1fca1b41db3092dc6a67df0832ca54504b195bbda6ab8885b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: a sea-temperature slope did not forecast later North Sea fish length-at-age; our result is consistent at the level of stock production."
+  },
+  {
+   "target": "sci:sha256:91ce877ccc73f4c829b483f9ecc6743abf9f2b68180b1d46821edd61da3999eb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: published temperature slopes did not forecast later North Sea fish latitudes better than no change."
+  }
+ ]
+}
