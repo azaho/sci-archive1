@@ -1,0 +1,76 @@
+{
+  "title": "Kepler Q1 to Q16 do not give stable evidence for a pre-ingress brightening in KOI-2700",
+  "abstract": "We test a fixed pre-ingress flux band for the known dusty transit of KOI-2700b in Kepler release 25. A reduction of 903 selected orbits gives an equal-quarter aperture contrast of 23.88 ppm, with a conditional 95 percent block interval of [0.89, 46.44] ppm. Corrected flux gives 29.48 ppm. Quadratic baselines, two alternate periods, and longer noise blocks give intervals that include zero. Q9 to Q16 give 10.31 ppm in aperture flux, with interval [-16.15, 35.76]. Only the first of four observing years has a separate interval above zero. An inserted 100-ppm Gaussian bump gives a 66.78-ppm band response. A specified extinction-only tail gives -1.73 ppm. These checks test the reduction, not the physical dust model. The evidence does not establish dust scattering, a new signal, or a new planet. Independent TESS work lacks the sensitivity needed for confirmation. The package includes code, derived measurements, input hashes, a figure and reproduction steps. Raw mission data remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "KOI-2700",
+    "Kepler",
+    "dust scattering",
+    "pre-ingress brightening",
+    "noise sensitivity",
+    "null discovery result"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Kepler mean profiles and fixed-band contrasts by observing year. The intervals condition on 12-orbit blocks within each quarter. The two flux products share exposures."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:76910e06facb541cc39225f21f1067ac64453488476ef5efe98cf720e49adc60",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents the shared data and fixed ephemeris; tests a different core-depth trend."
+    },
+    {
+      "target": "sci:sha256:996f37808b0df04ee00816dd83f37aa0530f3e962a7e91ffe10b078883406629",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents data provenance, phase constants and independent TESS sensitivity. No code or TESS samples are reused."
+    },
+    {
+      "target": "doi:10.1088/0004-637X/784/1/40",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Discovery study reported no compelling forward scattering evidence."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629676",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Dust-tail modeling and period context."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201424876",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Dust physics context."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External mission data policy and attribution."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008639908/kplr008639908_lc_Q011111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact Kepler release 25 input; hash in results.json."
+    }
+  ]
+}
