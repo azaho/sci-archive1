@@ -1,0 +1,137 @@
+{
+ "title": "In awake mice, putative LGN-to-V1 spike connections go mostly to fast-spiking layer 4 cells and follow retinotopy weakly, with no consistent ON/OFF rule, in two Allen Neuropixels data sets",
+ "abstract": "We tested cat and rabbit rules for thalamocortical connections in the awake mouse. We used spike cross-correlograms between LGd and V1 (VISp) units in two public Allen Institute Neuropixels data sets: Visual Coding (27 mice, 86,182 LGd-VISp pairs) and Visual Behavior (43 mice, 68,309 pairs). A causal 1-4 ms peak above a hollow-Gaussian baseline identified putative connections in 0.48% and 0.52% of pairs (LP control: 0.04% and 0.12%). Fast-spiking targets had 1.8% detection versus 0.13-0.24% for regular-spiking targets (odds ratio 7.5 and 4.1 after spike-count controls), and layer 4 had more detected input than layers 5 and 6. These effects stayed with strict thresholds, different-probe pairs only, and a sharp-peak detector. RF-centre distance had a graded effect (odds ratio per 10 degrees 0.85-0.88 with the main detector, 0.71-0.77 with the sharp detector), and connections still occurred at RF distances above 30 degrees. Same ON/OFF flash preference gave no consistent advantage (VCN null; VBN odds ratio about 2). Single connections were weak (median 0.5-0.7% excess spikes per LGN spike onto FS cells). Tonic spikes after 10-30 ms intervals had 14-26% lower relative gain than spikes after 30-100 ms intervals in both data sets. A burst-spike advantage appeared only with the broad baseline. Running did not change the relative gain. Limitations: CCG peaks are putative connections and can include LGN synchrony and a ~60 Hz rhythm; FS class, layer and RF estimates are approximate. Allen data are not bundled; code regenerates all derived tables.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "thalamocortical",
+  "LGN",
+  "V1",
+  "cross-correlogram",
+  "monosynaptic",
+  "fast-spiking interneuron",
+  "layer 4",
+  "retinotopy",
+  "ON/OFF",
+  "burst",
+  "short-term depression",
+  "running",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "Visual Behavior Neuropixels",
+  "mouse",
+  "structure-function",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_detection_rates.png",
+   "caption": "Percentage of LGd-VISp pairs with a detected causal 1-4 ms CCG peak, by target class (FS blue, RS orange), target layer, RF-centre distance and flash ON/OFF sign match, in Visual Coding (circles) and Visual Behavior (squares). 95% CI from a bootstrap over mice."
+  },
+  {
+   "path": "files/figures/fig1_population_ccg.png",
+   "caption": "Pooled CCG excess over the hollow-Gaussian baseline for all different-probe pairs (no threshold). LGd input to FS cells in layer 4 gives a causal peak at 1-4 ms (grey band) on top of a ~60 Hz rhythm; RS targets and the LP control show no clear causal peak."
+  },
+  {
+   "path": "files/figures/fig4_robustness.png",
+   "caption": "Odds ratios (95% CI, mouse-clustered) of a detected connection for target class, layer, RF distance and ON/OFF sign, across four detection variants and both data sets."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source and description of the Allen Visual Coding Neuropixels data set."
+  },
+  {
+   "target": "https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the Allen Visual Behavior Neuropixels data set used for replication."
+  },
+  {
+   "target": "doi:10.1038/378281a0",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Cat rules for LGN-to-V1 connections (RF overlap and ON/OFF sign); we test them in the awake mouse."
+  },
+  {
+   "target": "doi:10.1093/cercor/13.1.25",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Rabbit evidence that fast-spike layer 4 interneurons receive strong thalamic input; mouse data agree."
+  },
+  {
+   "target": "doi:10.1038/86054",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Burst efficacy rule at thalamocortical synapses; our result depends on the baseline method."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.20-14-05461.2000",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Cat paired-spike interactions of thalamic inputs to simple cells."
+  },
+  {
+   "target": "doi:10.1016/j.jneumeth.2008.12.029",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hollow-Gaussian CCG baseline and detection method."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2016.12.028",
+   "reason": "LGN narrowband gamma that can add rhythmic co-firing to CCGs."
+  },
+  {
+   "target": "doi:10.1523/jneurosci.5983-08.2009",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Stable thalamocortical transmission across awake states; our running result agrees."
+  },
+  {
+   "target": "doi:10.1523/jneurosci.2262-11.2011",
+   "reason": "Alert-state changes of visual thalamocortical dynamics in the rabbit."
+  },
+  {
+   "target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same range-read and CCG approach for in vivo cell-class connectivity in Allen Neuropixels data."
+  },
+  {
+   "target": "sci:sha256:6ea87a03ffd65472e95030d7a4287d8ffecd3df039d08f281ef3953e7928916a",
+   "reason": "Prior campaign work on LGd/LP versus cortex in the same data sets."
+  },
+  {
+   "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+   "reason": "Prior campaign work on directed coupling between visual areas in Allen data."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Prior campaign work on fast inter-regional co-variation in VBN."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms of the external Allen Institute data, which this bundle does not contain."
+  }
+ ]
+}

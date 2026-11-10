@@ -1,0 +1,92 @@
+{
+ "title": "Natural-image response spectra decayed faster in higher mouse visual areas in Allen Neuropixels (32 mice) and two-photon (193 mice) data after reliability, layer and Cre-line controls",
+ "abstract": "We asked if the geometry of visual population codes changes along the connectivity-defined mouse visual hierarchy. We used responses to the same 118 natural images in Allen Visual Coding Neuropixels data (32 mice, 11,559 units in LGd, LP and six cortical areas) and Allen Visual Coding two-photon data (193 mice, 38,466 excitatory cells in six cortical areas). For each area we calculated cross-validated PCA spectra and fitted the decay exponent alpha over ranks 2 to 30. We compared alpha with the anatomical hierarchy score of Harris et al. (2019). In Neuropixels populations of 300 units, alpha was 0.67 in LGd, 0.81 in VISp and 0.96 in VISam (Spearman rho 0.88 over 8 structures; slope 0.27 per hierarchy unit, 95% mouse bootstrap 0.15 to 0.34; cortex only 0.20, 0.08 to 0.29). Two-photon data agreed: alpha 0.61 in VISp and 1.11 in VISam, slope 0.55 (0.31 to 0.78), and 0.54 (0.38 to 0.69) inside 12 Cre-line and depth strata. The slope stayed positive after reliability matching, inside fixed reliability bands, after a simulation-based bias correction, in a 50-250 ms window, and inside CCF cortical layers (0.39, 0.19 to 0.54). Thus higher areas put more reliable image variance into fewer dimensions. Limitations: 118 images bias alpha low by about 0.09 and the spectra are curved, so alpha depends on the fit range; ranks 1 to 10 showed no cortical trend. Inside single mice, 20 to 30 units gave no clear cortical slope. The test is correlational over only 6 to 8 areas, and receptive-field size and position were not controlled. Code, aggregate results, figures and exact data provenance are included; Allen data files stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "population code",
+  "cross-validated PCA",
+  "power law",
+  "dimensionality",
+  "natural images",
+  "Neuropixels",
+  "two-photon imaging",
+  "Allen Brain Observatory",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_spectra_alpha_hierarchy.png",
+   "caption": "(a) Cross-validated PCA spectra of Neuropixels responses to 118 natural images, 300 units per structure. (b) Decay exponent alpha (ranks 2-30) against the anatomical hierarchy score, Neuropixels (blue circles, 8 structures) and two-photon (orange squares, 6 cortical areas), with 95% mouse bootstrap intervals. (c) Neuropixels alpha inside four fixed bands of unit reliability."
+  },
+  {
+   "path": "files/figures/fig2_robustness.png",
+   "caption": "(a) Slope of alpha on hierarchy score in all analyses (filled: 95% interval; open: point estimate only). (b) Simulation calibration: estimated against true power-law exponent with the noise level of each structure. (c) Neuropixels alpha inside CCF cortical layers (50 units per area and layer, ranks 2-20)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use the cvPCA method and the power-law spectrum framework."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels dataset and the published hierarchy score values."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding two-photon dataset used for replication."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CCF 2017 annotation used to assign cortical layers."
+  },
+  {
+   "target": "doi:10.1101/2024.02.16.580726",
+   "reason": "Shows that cvPCA power-law estimates can be biased; motivates our simulation check."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Reported lower response reliability far from the retina; we control reliability for this reason."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Found that laminar sampling explained a hierarchy association; we add a layer-stratified control for this reason."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms that apply to the external Allen data used by this work."
+  }
+ ]
+}

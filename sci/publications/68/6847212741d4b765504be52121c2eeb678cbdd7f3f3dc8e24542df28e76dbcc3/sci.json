@@ -1,0 +1,61 @@
+{
+  "title": "Shrinkage cut seasonal PDO forecast error but common slopes had lower error in 1981-2025",
+  "abstract": "We tested whether shrinkage of seasonal PDO and ENSO slope terms improves six-month PDO forecasts. We used fixed NOAA ERSSTv5 snapshots and 540 chronological targets in 1981-2025. Each penalty choice used only the last 120 completed validation forecasts. Tuning reduced mean squared error by 1.83% against unshrunk seasonal slopes, with a conditional 95% five-year block interval of +0.24% to +3.11%. It raised error by 0.66% against common slopes, with a reduction interval of -1.27% to -0.18%. Trailing 30-year training gave the same directions. Tuning selected the largest penalty in 334 of 540 forecasts. This test gives no gain over common slopes for the specified finite penalty set. It does not test all shrinkage rules or identify a physical cause. Fixed revised indices, dependent years, repeated campaign use and conditional intervals limit inference. Code, aggregate evidence, source hashes, retrieval instructions and a separate numerical audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "PDO",
+    "ENSO",
+    "seasonal forecast",
+    "shrinkage",
+    "chronological validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/forecast.png",
+      "caption": "Six-month forecast MSE comparisons in 1981-2025. Positive reduction means lower error. Intervals use paired five-year blocks and hold fitted forecasts fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7987ddb3d4c9d951d5e689dd61f6ea3c0e0804732ad8540576f8b9a9173f5770",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal slope model motivated shrinkage. Data and reference models overlap; not independent replication."
+    },
+    {
+      "target": "sci:sha256:ba062e27488cefb2d07500106a73b9c61ccdaa1cfb319feaaedda15f211bb2c8",
+      "reason": "Prior seasonal memory benchmark read for context."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-15-0508.1"
+    },
+    {
+      "target": "doi:10.1029/2025GL116122"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/index.php/disclaimer"
+    },
+    {
+      "target": "https://library.noaa.gov/blogs/news-research-highlights/question-of-the-quarter-noaacopyright"
+    }
+  ]
+}
