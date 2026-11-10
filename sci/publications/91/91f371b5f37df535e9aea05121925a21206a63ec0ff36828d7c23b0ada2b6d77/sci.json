@@ -1,0 +1,126 @@
+{
+ "title": "Year-to-year temperature responses of 320 North American bird species followed 5-14% of own spatial gradients, with no clear lasting part; 49 British butterfly species followed about 50% in 2 summers",
+ "abstract": "Question: community temperature indices follow only a small part of warming. Which part of the species-level response is missing? Data: North American Breeding Bird Survey 2026 release (1966-2025; 320 species, 4,802 routes, 9.1 million species-route-year counts), UK Butterfly Monitoring Scheme site indices (1976-2024; 49 species, 2,410 British sites), GHCN_CAMS and E-OBS temperature. Method: for each species, the spatial gradient g is the slope of route mean log abundance on route climatology at each route. Per-species fixed-effects models (route x observer or site, and species x year) related log counts to local temperature anomalies of the same season, four previous summers, four winters, and placebo seasons after the count. The ratio lambda = temporal response / g is 1 for full space-for-time equivalence. We refitted all species without each of 10 year blocks (jackknife). Results: in birds, the long-run lambda was 0.14 (95% CI 0.05-0.24) with linear detrending, but the placebo next-summer term was as large as the previous-summer term. With 11-year high-pass anomalies the placebos were near 0, the same-season term stayed at 0.045 (0.017-0.074), and the lagged terms gave 0.014 (-0.10 to 0.13). Within species, the response followed 14-20% of the gradient (intervals exclude 0); between species, mean responses did not increase with mean gradients (-0.13 and -0.31). British butterflies followed 0.44 (0.14-0.75) and 0.54 (0.04-1.05) of their gradients within the same and previous summer, five to ten times the bird value, with clean placebos; longer lags and winters added nothing clear, and their between-species part was not determined. Neither year-to-year sensitivities nor spatial gradients forecast species trends (bird Spearman -0.00 and 0.09; out of sample 0.03; butterflies -0.27 and 0.18). The implied bird CTI change was about one third of the same-species spatial expectation and about 0.002 C per decade. Conclusion: weak bird tracking is not mainly a long lag; the clear response is small and transient (possibly part detection), and species that spatial gradients predict to gain do not gain. Butterflies follow temperature faster. Limitations: correlational design; no detection model; gradients include non-thermal factors; the high-pass variant was added after the main fits; butterfly long-run totals are imprecise.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "climate tracking",
+  "space-for-time",
+  "community temperature index",
+  "Breeding Bird Survey",
+  "UK Butterfly Monitoring Scheme",
+  "distributed lag",
+  "spatial gradient",
+  "population trends",
+  "detection",
+  "climate debt"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_ratio_by_lag.png",
+   "caption": "Pooled ratio lambda of the local year-to-year abundance response to the spatial temperature gradient of the same species at the same routes or sites, by term group. Filled: linear detrended anomalies. Open: 11-year high-pass anomalies. Bars: 95% delete-one-year-block jackknife intervals. Dashed line: full space-for-time equivalence."
+  },
+  {
+   "path": "files/fig2_lag_terms.png",
+   "caption": "lambda for each temperature term. F1 and FW (grey band) are the summer and winter after the count, so they must be 0 (placebo). S0 is the same season; B1-B4 the 1-4 previous summers; W0-W3 the winters. 95% jackknife intervals; the linear-detrend placebo fits had no jackknife."
+  },
+  {
+   "path": "files/fig3_trend_forecasts.png",
+   "caption": "Observed species trends (observer-adjusted year effects) against trends that year-to-year sensitivities or spatial gradients predict from local warming. Birds 1966-2025, butterflies 1976-2024. No forecast had useful skill."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Bird CTI followed less than 10% of warming; we give a species-level cause and compare the implied CTI change with its observed trend."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Small bird centroid shifts agree with the small within-species response that we found."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Space-based suitability had no species-level forecast skill; time-based sensitivities also had none."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Finnish range margins slowed, partly from detection; context for detection effects."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Demersal redistribution offset warming only in one survey; context for where tracking is not weak."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Japanese animal phenology lag; context for detection artefacts in climate responses."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index followed region-wide year changes; our model removes species-wide year effects."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Network-level fast fraction was small and not a long lag; we test this at species level and split it into within- and between-species parts."
+  },
+  {
+   "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Warm seasons helped the cool part of bird ranges; our within-species ratio is the same pattern, scaled by the spatial gradient."
+  },
+  {
+   "target": "sci:sha256:15270e894fa3ccc7440d212eec8eefbd61f3c871cb06b211e78f8dc74ca0b78f",
+   "reason": "Winter temperature effects on next-summer bird counts; our winter terms add little to the gradient-scaled response."
+  },
+  {
+   "target": "sci:sha256:0bc2a582b81c55c60f6564490630a43ea169f4a5ce80b6c3c41d6d2921f0dcc6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spatial slope of the frozen bird CTI (0.33-0.44 C per C) used as a reference for the implied CTI responses."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+   "reason": "North American Breeding Bird Survey dataset 1966-2025, 2026 release (USGS ScienceBase item)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS gridded temperature (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "reason": "UKBMS site indices 2024 (EIDC)."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "reason": "E-OBS ensemble gridded temperature (Cornes et al. 2018)."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "reason": "AVONET traits (Tobias et al. 2022)."
+  },
+  {
+   "target": "doi:10.1038/nclimate1347",
+   "reason": "Devictor et al. 2012: climate debts of birds and butterflies in Europe."
+  }
+ ]
+}

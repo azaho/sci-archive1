@@ -1,0 +1,100 @@
+{
+ "title": "Issued USGS aftershock forecasts for 248 mainshocks (2019-2026) were calibrated after Bayesian updates at depths to 70 km but too high for deeper mainshocks and Guam-Marianas 10 km circles",
+ "abstract": "Question: are the aftershock forecasts that the USGS Operational Aftershock Forecast (OAF) system issued calibrated, and which archived model variant scores best? Approach: we downloaded all 14,437 issued OAF versions in ComCat for 252 mainshocks (M 3.8-8.8, 2019-2026; mostly the automated system from late 2024). We counted ComCat earthquakes in each stated search circle for windows of 1 day to 1 year that ended by 2026-11-01. We scored the probability of 1 or more events at magnitudes at or above the completeness magnitude that OAF used. We wrote the plan before scoring and bootstrapped by mainshock. Results: the first issued versions (median 10 minutes after the origin, mostly generic) gave 190 windows with events against 310 expected (O/E 0.61, 95% CI 0.47-0.75). Over all versions, mainshocks at depths to 70 km gave O/E 0.97 (0.84-1.10), with a reliability curve near the diagonal. For the same units, archived generic forecasts gave O/E 0.63, sequence-specific 1.02 and Bayesian (issued) 0.97; the Bayesian variant had the best Brier and log scores. The 31 mainshocks deeper than 70 km gave 45 against 294 (O/E 0.15) and 0 against 35 in 1-day windows; they received shallow subduction-zone generic parameters. Guam-Marianas mainshocks at depths to 70 km gave 12 against 161 in 10 km circles. In a post-hoc check with circles 3 times wider, the Guam-Marianas 1-day and 1-week ratios rose to about 1, but the deep 1-day ratio stayed at 0.09. Versions issued more than 90 days after the mainshock were too low (O/E 1.41). Limitations: the result depends on the counting circle and on the final ComCat catalog; groups for deep events, M 7+ bins and larger-than-mainshock events are small; we could not compare ETAS with RJ for the same units.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "aftershock forecasting",
+  "operational earthquake forecasting",
+  "USGS OAF",
+  "forecast verification",
+  "calibration",
+  "reliability diagram",
+  "Reasenberg-Jones",
+  "Bayesian updating",
+  "intermediate-depth earthquakes",
+  "ComCat",
+  "Guam-Marianas",
+  "Brier score"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_observed_expected.png",
+   "caption": "Observed over expected number of forecast windows with 1 or more events, for issued USGS OAF forecasts, by group (95% bootstrap intervals by mainshock)."
+  },
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Reliability of issued OAF probabilities: first versions (left) and all versions (right), for mainshocks at depths to 70 km (blue) and deeper (orange)."
+  },
+  {
+   "path": "files/figures/fig5_radius.png",
+   "caption": "Post-hoc check: observed over expected when events are counted in circles 1 to 3 times the issued radius, by window length."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign test of re-computed generic USGS aftershock forecasts; we extend it to the forecasts that USGS issued, as its limitation section proposed, and we follow its deep-event finding."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Campaign verification of another public USGS hazard product (PAGER); same verification approach."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "reason": "Campaign test of foreshock traffic-light alarms; part of the work that this study extends."
+  },
+  {
+   "target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06",
+   "reason": "Campaign test of tsunami-earthquake identification; part of the work that this study extends."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Campaign verification of public gravitational-wave alert probabilities; part of the work that this study extends."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/data/oaf/overview.php",
+   "relations": [
+    "reviews",
+    "uses"
+   ],
+   "reason": "USGS Operational Aftershock Forecasts: the issued products that we verify (U.S. public domain)."
+  },
+  {
+   "target": "doi:10.5066/F7MS3QZH",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ANSS Comprehensive Catalog (ComCat), source of the OAF archive and of the observed counts."
+  },
+  {
+   "target": "doi:10.1126/science.243.4895.1173",
+   "reason": "Reasenberg-Jones aftershock model used by OAF."
+  },
+  {
+   "target": "doi:10.1785/0120160073",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Generic global regime parameters used by OAF outside California."
+  },
+  {
+   "target": "doi:10.1785/0220180240",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Generic California parameters used by OAF in California."
+  },
+  {
+   "target": "doi:10.1785/0220210222",
+   "reason": "Earlier prospective evaluation of one issued OAF sequence (Puerto Rico 2020)."
+  }
+ ]
+}
