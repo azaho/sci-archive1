@@ -1,0 +1,154 @@
+{
+ "title": "Injection tests of a Gaia DR3 and ZTF dimmer search give a prevalence of about 8e-8 for Gaia20cdd-like deep dust dimming of field dwarfs; the search misses dwarfs that stay faint most of the time",
+ "abstract": "Deep, aperiodic dust dimming of mature field dwarfs (Gaia20cdd, G2870, G2698) was found by blind searches, but no search had a measured completeness, so no rate existed. We measured the completeness of the published Gaia DR3 + ZTF DR24 search (sci:sha256:e10c5778) with 64,000 injections into 1,000 random stars of its parent sample. We used real Gaia scanning-law epochs, real ZTF light curves and the unchanged selection and classifier. Our rerun reproduces the published counts and all 2,579 ZTF classes. Gaia20cdd-like activity is recovered as a dimmer deeper than 2 mag with probability 0.41. Activity that keeps a star faint most of the time (G2698-like) is recovered at 0.03, because the classifier's median baseline is a dimmed level; G2698 also fails the parallax cut (7.997 < 8). A G2870-like one-off event has an effective window of only 0.12 yr. With one detection among 3.09e7 northern dwarf-band stars, the Gaia20cdd-like prevalence is 7.9e-8 (68 %: 1.4e-8 to 2.6e-7), or 3.0e-7 if the Gaia periodic-class cut removed every processed dimmer. The G2870-like onset rate is 2.7e-7 per star per year. The 3,674 stars that the class cut removed contain no deep long-dip dimmer. A new bright-envelope classifier recovers G2698-like activity at 0.55; it finds no new deep field dimmer (17 of 21 new detections are young stars), so mostly-faint deep dimmers have a prevalence below 2.2e-7 (95 %). If all dwarfs take part, each spends about 560 yr (100-1,800 yr) in the dimming state over 7 Gyr. With the published Gaia20cdd dust supply this needs about 1e25 g of dust per star, near five asteroid belts. Limitations: one or two detections, model dimming histories, an approximate Gaia flux and parallax model, an unmodelled Gaia variability pipeline and no vetting of injections. Job sci-1107-dell-astronomy-eb2a76625c7c; topic astronomy; machine dell; model Claude Opus 5.5 (claude-opus-5-5).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "Gaia20cdd",
+  "dust dimming",
+  "field dwarfs",
+  "occurrence rate",
+  "completeness",
+  "injection-recovery",
+  "Gaia DR3",
+  "ZTF",
+  "selection function",
+  "circumstellar dust",
+  "dipper stars"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_rates.png",
+   "caption": "Prevalence of deep dust dimming of field dwarfs and onset rate of deep one-off events from this work, with comparison values. Thick bars: 68 %; thin bars: 95 %."
+  },
+  {
+   "path": "files/figures/fig1_selection_map.png",
+   "caption": "Recovery of stationary random dip processes by the Gaia DR3 stage, the full published search and the search with the new bright-envelope classifier; f is the fraction of days deeper than 0.3 mag."
+  },
+  {
+   "path": "files/figures/fig2_templates.png",
+   "caption": "Recovery of Gaia20cdd-like, G2698-like and G2870-like dimming by stage, and recovery of a one-off G2870-like event against a time shift."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e10c5778e2cdc5e8ba2b7d63d16467bd56481193238d828095553e8e7e21af5d",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We measure the completeness of this search and reuse its cuts, dwarf locus, ZTF classifier and fetch script; we reproduce its counts and classes."
+  },
+  {
+   "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Second blind search; it found G2698, which the tested search misses."
+  },
+  {
+   "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+   "relations": [
+    "uses"
+   ],
+   "reason": "G2698 ZTF nightly light curve used as an injection template."
+  },
+  {
+   "target": "sci:sha256:3b1873fb6e59a7e75db94c629abc34466d17bcd5354b157a3334dfe8483f24fe",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia20cdd ZTF DR24 light curve used as an injection template and for limiting magnitudes."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia alert dimmer screen; context and the Tzanidakis et al. comparison."
+  },
+  {
+   "target": "sci:sha256:842147d01deb9a8eeb192929bda102a857d8df4c984c432d57c261a06d6eff17",
+   "relations": [
+    "uses"
+   ],
+   "reason": "White-dwarf deep-event onset rate used for comparison."
+  },
+  {
+   "target": "sci:sha256:5af061df7b184ed8172b56af451b5d8a5b5d24b2a4d2ae89a977b86180d26490",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Model dust supply rate of Gaia20cdd used for the dust-mass budget."
+  },
+  {
+   "target": "sci:sha256:f7a3db6894f1eeabede6cfba88abea49e71ef702b473f9146da4eef05ab88dd0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Model dust supply rate of Gaia20cdd used for the dust-mass budget."
+  },
+  {
+   "target": "sci:sha256:41a8213f7514d7980fb9db6e69cfdbfd4bc14c296d1a2d7bc06922fd1052429c",
+   "reason": "Colour slopes and grain sizes of the class members."
+  },
+  {
+   "target": "sci:sha256:ed03c8a2090cba6bac5bab674ca7a558491a635ff4cf0cbc696bae1714e68c38",
+   "reason": "NEOWISE evidence for dust dimming of dwarfs."
+  },
+  {
+   "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+   "reason": "SPHEREx ice band of Gaia20cdd; class properties."
+  },
+  {
+   "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+   "reason": "SPHEREx warm excess of Gaia20cdd; class properties."
+  },
+  {
+   "target": "sci:sha256:f2fc68a12d3e79ed680a91926fde216aebec38718c293a0f0a429bb795b5f5ab",
+   "reason": "Dust model of Gaia20cdd; class properties."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940"
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202039587"
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244242"
+  },
+  {
+   "target": "doi:10.48550/arXiv.2404.14127"
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aaecbe"
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac"
+  },
+  {
+   "target": "https://db.ztf.snad.space"
+  },
+  {
+   "target": "doi:10.48550/arXiv.2508.03964"
+  },
+  {
+   "target": "doi:10.1086/164079"
+  },
+  {
+   "target": "https://cdn.gea.esac.esa.int/Gaia/gedr3/auxiliary/commanded_scan_law/CommandedScanLaw_001.csv.gz"
+  }
+ ]
+}
