@@ -1,0 +1,117 @@
+{
+ "title": "In Oklahoma M2.5+ seismicity, ETAS clustering lasted longer at lower background rates, as rate^-0.25 (0.19-0.32), not rate^-1 as rate-and-state theory predicts; it gave no forecast gain",
+ "abstract": "Question: does the duration of earthquake clustering in Oklahoma induced seismicity change with the local forcing rate, as rate-and-state theory predicts (aftershock duration = A sigma / stressing rate, so duration proportional to background rate^-1)? Approach: we used the ETAS code of an earlier campaign study (OGS catalog, 10,806 M2.5+ targets, 2010-2026, free background per 0.2-degree cell and 6-month bin, tapered Omori kernel exp(-t/tau)). For each parent we computed the background rate of its 3 x 3 cell block in the 6-month bin before its own bin, so that its offspring cannot change it. A new model gives each background quintile its own productivity and a taper tau = tau0 (r/r_ref)^-beta. We tested the method with 7 synthetic catalogs of known beta, repeated the test with time-only, space-only and injection covariates, within periods and magnitude classes and at M3.0+, and made forecasts from fits to 2018 and 2020. Results: over a 36-fold range of background rate, tau fell from 556-611 to 249 days. beta = 0.25 (95% profile interval 0.19-0.32; log-likelihood gain 26.6 for one parameter). beta = 1 was 146.6 log-likelihood units below the maximum. Synthetic catalogs returned beta = -0.05 to 0.04 for true 0, 0.21 for 0.25, 0.48 for 0.5 and 0.79-0.91 for 1. The effect was present in time (study-area rate; gain 36.4 for 4 parameters) and in space (beta = 0.30), with a magnitude control (0.24) and within periods (0.15; tau0 351 days before 2017, 563 after). By period, tau was 560, 333, 646 and 984 days in 2010-2013, 2014-2016, 2017-2019 and 2020-2026. Arbuckle injection volume within 20 km gave no trend. At M3.0+ beta = 0.14 (not clearly different from 0). Forecasts did not improve: from 2019, 1,552 events against 788 observed (one-taper model 1,763); from 2021, 275 against 413 (one-taper model 378). Interpretation: clustering follows the forcing in the direction of rate-and-state theory but much more weakly; if background rate grows as stressing rate^n, n is about 4. Limitations: the background rate is a model estimate from the same catalog; synthetic tests use ETAS itself, not pressure-driven swarms; c and p are shared by groups; one region; network and magnitude-practice changes after 2016.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Oklahoma",
+  "ETAS",
+  "aftershock duration",
+  "rate-and-state friction",
+  "stressing rate",
+  "tapered Omori law",
+  "background seismicity",
+  "wastewater injection",
+  "earthquake forecasting",
+  "synthetic recovery test",
+  "seismic hazard"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_taper_vs_background.png",
+   "caption": "Taper time of Oklahoma clustering against the background rate before the parent (a), other covariates (b), synthetic recovery of beta (c) and the profile likelihood of beta (d)."
+  },
+  {
+   "path": "files/figures/fig3_controls.png",
+   "caption": "Taper by parent period (a) and quartile fits inside periods and magnitude classes (b)."
+  },
+  {
+   "path": "files/figures/fig2_forecasts.png",
+   "caption": "Forecasts of yearly M2.5+ counts from 2019 and 2021 with one taper and with a rate-dependent taper, against observed counts."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:95e034623da423d9c75aeb5164b0dbd05415eda9de6ddfd841d2998c6ada5011",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its ETAS code unchanged and reproduce its fits and forecasts; we test its finding that the taper became longer after 2017."
+  },
+  {
+   "target": "sci:sha256:c0a2572246ee8f3fa15450d11e3c30647b50a431bf8bae5b361c1bcb5ea198c8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the OGS catalog bytes and OCC Arbuckle cell panels; its non-linear pressure response agrees with our interpretation."
+  },
+  {
+   "target": "sci:sha256:d6c0ec4f174b1330bc04ff13b32b6747e594058c722d3ada3a7a4f9069c8d5e6",
+   "reason": "Earlier finding that the post-2016 decline was faster than pressure models predicted."
+  },
+  {
+   "target": "sci:sha256:76c63172501ebef4857d1a32c1f31328b615dff266bdbdfd2bc0f21433be9bab",
+   "reason": "ETAS memory of 2021-2026 events is not identifiable; we test kernel shape against a covariate the offspring cannot change."
+  },
+  {
+   "target": "sci:sha256:a665789acaf5d7bbf3474ccaef5953a1b93b29b95a936d481dd627f408d121a9",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Tectonic aftershock time scaled as strain rate^-0.48, also weaker than -1."
+  },
+  {
+   "target": "doi:10.1029/93JB02581",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Rate-and-state prediction of aftershock duration inversely proportional to the stressing rate."
+  },
+  {
+   "target": "doi:10.1023/A:1003403601725",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1198/016214502760046925",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1785/0220190211",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1785/0120230098"
+  },
+  {
+   "target": "doi:10.1038/s41467-018-06167-4"
+  },
+  {
+   "target": "https://ogsweb.ou.edu/eq_catalog/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
