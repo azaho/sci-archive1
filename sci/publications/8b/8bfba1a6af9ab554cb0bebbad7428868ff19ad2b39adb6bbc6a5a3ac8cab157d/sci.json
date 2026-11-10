@@ -1,0 +1,35 @@
+{
+  "title": "A 1998-2020 farmland-versus-forest heat contrast in US NestWatch nest success did not repeat in 2021-2025 nests and depended on the habitat code and heat measure",
+  "abstract": "Lauck et al. (2023) reported that hot weather during nesting decreased NestWatch nest success in agricultural land and increased it in forest in 1998-2020. We rebuilt their variables from NestWatch Open Dataset version 6 and gridMET: success means at least one fledgling, land use comes from the habitat code at the nest, and heat is the 46-day maximum Tmax z-score against 1980-2000. We fitted logistic models with species, year and region fixed effects. We then applied the same method to 76,398 nests from 2021-2025 that the original study did not use. In 160,946 nests from 1998-2020, we found the published pattern: the agriculture slope was -0.070 logit per SD (SE 0.032), the forest slope +0.046 (SE 0.021) and the contrast -0.116 (SE 0.039). The contrast stayed negative with region-by-year, site and observer controls, nest-discovery filters, outcome-code filters and location-precision filters. In 2021-2025, the contrast was +0.085 (SE 0.080). The difference between periods was +0.201 (SE 0.089, p = 0.023). The contrast was negative in all five earlier year blocks and positive in both later blocks. Within 1998-2020, the contrast was absent with the 100-m habitat code (-0.014, SE 0.031) or with the 46-day mean temperature (-0.026, SE 0.039). It was mostly western (-0.295 west of 100 W, -0.062 east). Developed sites had negative heat slopes in both periods. Limitations: the forward period is short and had 31% power for a significant negative contrast of the earlier size. We used fixed-effect models, not the authors' GLMM, and did not add land-cover proportion covariates. NestWatch lay dates are often estimated, and the outcome does not use exposure days. NestWatch data are CC BY-NC and are not bundled; code, aggregate results, hashes and a retrieval script are included.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.PE"}
+  ],
+  "keywords": [
+    "nest success",
+    "extreme heat",
+    "land use",
+    "agriculture",
+    "forest",
+    "NestWatch",
+    "gridMET",
+    "forward test",
+    "replication",
+    "observation bias",
+    "participatory science",
+    "climate change",
+    "birds"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_binned_success.png", "caption": "Nest success (at least one fledgling), adjusted for species, year and region, by heat z-score bin and land use. Left: 1998-2020, the period of Lauck et al. Right: 2021-2025 forward period. Bars are 95% CI; bins with at least 30 nests."},
+    {"path": "files/figures/fig4_year_blocks.png", "caption": "Agriculture-minus-forest heat slope (logit per SD) by year block, main model. The grey band is the 1998-2020 estimate with 95% CI. The two 2021-2025 blocks are above zero."},
+    {"path": "files/figures/fig2_contrast_variants.png", "caption": "Agriculture-minus-forest contrast in 18 model variants for observation bias and design, for 1998-2020 (grey) and 2021-2025 (orange). LPM rows are in probability units. Bars are 95% CI."}
+  ],
+  "citations": [
+    {"target": "doi:10.1126/science.add2915", "relations": ["reviews", "challenges"], "reason": "We re-test its heat by land-use interaction on nest success in new 2021-2025 NestWatch nests and with observation-bias checks."},
+    {"target": "doi:10.5281/zenodo.8226606", "relations": ["uses"], "reason": "We copied the variable definitions (success, land-use codes, heat z-score) from this code."},
+    {"target": "doi:10.17632/wjf794z7gc.6", "relations": ["uses"], "reason": "NestWatch Open Dataset version 6, CC BY-NC 3.0, not bundled."},
+    {"target": "doi:10.1002/ecy.4230", "relations": ["uses"], "reason": "Data paper for the NestWatch Open Dataset fields and codes."},
+    {"target": "doi:10.1002/joc.3413", "relations": ["uses"], "reason": "gridMET daily maximum temperature and precipitation."},
+    {"target": "https://www.northwestknowledge.net/metdata/data/", "relations": ["uses"], "reason": "gridMET yearly netCDF files used for nest heat exposure."}
+  ]
+}

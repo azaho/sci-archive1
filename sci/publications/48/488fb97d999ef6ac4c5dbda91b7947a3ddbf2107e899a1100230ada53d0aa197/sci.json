@@ -1,0 +1,71 @@
+{
+  "title": "Frequency changes input strength order in 77 of 222 selected Allen squared-rise current models",
+  "abstract": "We tested whether two same-sign inputs to one target keep their transfer-magnitude order from zero through 200 Hz. We used selected Allen Synaptic Physiology r2.1 resting-current fits and assumed squared exponential rise and exponential decay. A cubic in frequency squared found order changes in 77 of 222 comparisons of 369 connections to 173 targets. Four comparisons kept the same endpoint order but changed order twice inside the band. Opposite orders at sampled frequencies remained under independent factor-1.10 magnitude changes in 61 comparisons, including two of the four endpoint failures. These finite model results show that one scalar connection order can miss frequency-dependent input strength. They do not measure responses to repeated stimulation or establish population, species or behavioral effects. Fit error, extrapolated tails and omitted short-term plasticity limit inference. Code, aggregate evidence, source hashes and external-data retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic filtering",
+    "input convergence",
+    "frequency response",
+    "model reduction"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Frequency changes relative input strength in selected squared-rise current models. Bars give equal weight to targets; the line pools comparisons. The factor-1.10 test bounds transfer magnitudes, not measured fit errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3eaa990a582ba924ac4ae7b36b48055dc3084ffa10a1be3956a1df8b75fffb2a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adapts the SQL query, selection and rise-time conversion from its MIT code. Extends peak-versus-charge analysis to frequency crossings."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1103/PhysRevLett.86.2186",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/resting_state.py",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/545a990ee171e6c0d23dd4bba413e1ccbf2f0853/aisynphys/pipeline/multipatch/resting_state.py",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
