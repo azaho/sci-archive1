@@ -1,0 +1,111 @@
+{
+  "title": "A common flow gain produced 26-31% storm wetness shares in 353 southern Australian catchment models",
+  "abstract": "We test whether a storm model can assign a flow loss to pre-storm wetness when only discharge scale changes. We use CAMELS-AUS v2.03 and the published event model. In 353 southern Australian catchments, we multiply reference hydrographs by 0.50 or 0.75 and keep weather and latent response times fixed. The model then assigns 26-31% of the log storm deficit to its pre-flow adjustment. A power-law example gives an exact 56% share with unchanged latent storage. Thus the share cannot identify a storage contribution by itself. We also use published annual runoff retention to scale storm volume and pre-storm flow in 175 south-east catchments. After weather and corrected pre-flow adjustment, mean storm changes are +1.0% and +1.2% with AGCD rain in 1997-2009 and 2010-2021, and +2.8% and +5.9% with SILO rain. All conditional spatial intervals include zero. In 2010-2021, even the rain-and-season model has small corrected means, +1.1% and -1.8%. During 1997-2009 it retains a 28-29% deficit. These results test a common amplitude description, not a physical cause. Individual catchments have substantial scatter. Annual and event statistics share the same flow record. Fitted retention uncertainty, model extrapolation, one regional episode and discharge quality limit inference. The package contains code, exact hashes, source terms, aggregate evidence, figures, resampling draws and numerical audits.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "rainfall-runoff change",
+    "storm runoff",
+    "pre-storm flow",
+    "flow amplitude",
+    "storage identification",
+    "CAMELS-AUS",
+    "Millennium Drought",
+    "causal mediation"
+  ],
+  "display": [
+    {
+      "path": "files/results/gain_test.png",
+      "caption": "A common discharge gain produces an apparent storm wetness share. Annual scaling leaves small adjusted mean storm effects. Bars are conditional spatial intervals. The synthetic and empirical panels use different samples and weather."
+    },
+    {
+      "path": "files/results/catchments.png",
+      "caption": "Annual and storm gains track one another across 175 south-east Australian catchments, with substantial scatter. Both estimates use the same streamflow observations. This is not independent evidence for a physical cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7cecffa92eedcfd0120ad0a80f1367628835baff8dc7dfa8e637c1b20d472fe4",
+      "relations": [
+        "uses",
+        "supports",
+        "challenges"
+      ],
+      "reason": "We reproduce its storm model and adjustment share. We quantify a common-gain ambiguity in a storage-share interpretation."
+    },
+    {
+      "target": "sci:sha256:39140e9279e6ecf107b1d19c40610bf48007e92c44a40ebfe720f9695db80f40",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its verified annual retention tables and extend the amplitude test from recession to storm runoff."
+    },
+    {
+      "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source annual weather-adjusted runoff estimates, reused through 39140e92."
+    },
+    {
+      "target": "sci:sha256:c8882d2111457d146f1e3daf05fc1f29d4b6c73aed2fcc82aad0a9ed3e241a7e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its data preparation and retrieval code and read its dry-spell-age result."
+    },
+    {
+      "target": "sci:sha256:95ea56ac79801a26d289e80a6f2d45231d2beb27680d193c0c1680ad5c6c45a0",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Prior evidence that flow data do not uniquely identify leakage, recharge or a storage-to-flow mapping."
+    },
+    {
+      "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior baseflow and storm-flow diagnostic read during question selection."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2.03 daily flow, rain and outlet attributes. Source credit, CC BY 4.0 terms, URLs and exact hashes are supplied."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2 methods and source licence."
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior review of physical hypotheses for the regional runoff change."
+    },
+    {
+      "target": "doi:10.1002/2015GL066007",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior scale-dependence result for recession models; general scaling concerns are not new here."
+    },
+    {
+      "target": "doi:10.1037/a0020761",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior causal mediation definitions and identification requirements."
+    }
+  ]
+}
