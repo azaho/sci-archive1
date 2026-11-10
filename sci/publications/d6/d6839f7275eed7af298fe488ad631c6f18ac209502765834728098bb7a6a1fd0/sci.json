@@ -1,0 +1,112 @@
+{
+ "title": "Larger crustal earthquakes in Japan and southern California mostly started at mid-depth of local seismicity, with an excess in the deepest tenth (JMA 1998-2024, SCSN 1981-2025)",
+ "abstract": "We tested if larger crustal earthquakes start deeper in the local seismogenic layer than smaller ones, after we remove differences between regions. For each event, we calculated its local depth rank p: the share of other events in the same 10 km map cell that are shallower. We removed the event's own sequence from its reference with Gardner-Knopoff time windows. We used 174,416 onshore crustal events (Mj 1.5 or more, 1998-2024) from the JMA catalog and 262,271 events (M 1.5 or more, 1981-2025) from the SCSN relocated catalog of southern California. Events of M 5 or more did not start near the base: the mean rank was 0.53 in Japan (95% cell-bootstrap interval 0.47-0.59, 164 events) and 0.59 in California (0.51-0.66, 94 events), and the median hypocentre was 1.5-1.8 km above the local D90. But the deepest tenth had an excess of larger events and the shallowest tenth did not: in Japan, 17.6% of Mj 3.5-4.5 events had p > 0.9 against 10.6% with p < 0.1 (difference +6.9 points, +3.7 to +10.1; both halves of the period agree). In California, the excess started at M 4.5 (24.1% against 12.2%; +11.9 points, +5.4 to +18.6). The small-event depth-size link was regional. In Japan, the mean rank increased by 0.023 per magnitude unit (0.013-0.032; permutation null -0.002), and the b-value of the locally deepest fifth was 0.079 lower than that of the shallowest fifth (-0.111 to -0.047), but only in cells with a D90 deeper than 10.2 km. In California, there was no clear rank increase for M 2.0-4.5 and no b decrease with relative depth. A pooled absolute-depth b decrease in Japan partly comes from a regional mix: cells with a deep D90 had a lower b at all depths, and among independent events this regional difference disappeared. Limitations: few events of M 6 or more (27 and 11); JMA velocity and displacement magnitudes rank differently at the same Mj, so a part of the Japanese effect at Mj 3-4.5 can come from the magnitude scale; the California large-event test uses mixed location types. Code, aggregate tables, figures and a hash-checked retrieval script are included; the raw catalogs are not bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "earthquake nucleation depth",
+  "seismogenic depth",
+  "D90",
+  "b-value",
+  "depth dependence",
+  "JMA catalog",
+  "SCSN relocated catalog",
+  "Japan",
+  "southern California",
+  "crustal earthquakes",
+  "magnitude-frequency distribution",
+  "local depth rank"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rank_by_magnitude.png",
+   "caption": "Mean local depth rank p (0 = shallowest, 1 = deepest event in the same 10 km map cell) by magnitude bin, for onshore Japanese crust (JMA 1998-2024) and southern California (SCSN relocated 1981-2025). Blue: all years; orange and green: early and late halves. Bars: 95% cell-bootstrap intervals. Grey band: 95% range of a within-cell magnitude permutation null. Large events had mean ranks of 0.52-0.62, far below the local D90 (rank 0.9)."
+  },
+  {
+   "path": "files/figures/fig3_rank_tails.png",
+   "caption": "Share of events in the deepest tenth (p > 0.9, coloured) and the shallowest tenth (p < 0.1, open grey) of the local depth distribution, by magnitude group. The expected share is 0.10. The deep tail rose above 0.10 at Mj 3.5-4.5 in Japan and at M 4.5 or more in California; the shallow tail did not, so random location error does not explain the excess."
+  },
+  {
+   "path": "files/figures/fig2_bvalue_depth.png",
+   "caption": "b-value (M 2.0 or more) by absolute depth (top) and by local depth rank quintile (bottom), for Japan (left) and southern California GrowClust solutions (right). Black: all cells; coloured: terciles of the cell D90. In Japan, b decreased in the locally deepest fifth only in cells with a deep D90; in California, b did not decrease with relative depth."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:892c866dce732ef30f969f95c46ffe76212170fe63ea4e75add4b1d6af57f43b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its JMA parser and hash list, and we extend its secondary test of mainshock depth relative to background seismicity to the full magnitude range and to southern California."
+  },
+  {
+   "target": "sci:sha256:031fd1c650720bda314e71bd14042d18b4daeea3feeb9649abcf17c235708c20",
+   "reason": "Origin of the JMA parser that we adapted through the publication above."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA unified hypocenter catalog, annual files 1998-2024 (Public Data License 1.0)."
+  },
+  {
+   "target": "doi:10.1785/0120120010",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SCSN waveform-relocated catalog of southern California (Hauksson, Yang and Shearer 2012), extended version to 2025."
+  },
+  {
+   "target": "doi:10.7909/C3WD3xH1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Southern California Earthquake Data Center, data source of the relocated catalog."
+  },
+  {
+   "target": "doi:10.7914/SN/CI",
+   "reason": "Caltech/USGS Southern California Seismic Network."
+  },
+  {
+   "target": "doi:10.1126/science.aat4723",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Slab2 slab geometry used to remove slab events."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Natural Earth 1:10m land polygons for the onshore mask."
+  },
+  {
+   "target": "doi:10.1029/2012GL054198",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Spada et al. (2013) report a generic b-value decrease with absolute depth; inside cells we found it only in Japanese regions with a deep D90 and not in southern California."
+  },
+  {
+   "target": "doi:10.1038/305621a0",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Das and Scholz (1983) argue that large earthquakes nucleate near the base of the seismogenic layer; most M 5 or larger events here started at mid-depth."
+  },
+  {
+   "target": "doi:10.1029/97JB01356",
+   "reason": "Mori and Abercrombie (1997), b-value decrease with depth in California."
+  },
+  {
+   "target": "doi:10.1785/0120040111",
+   "reason": "Mai et al. (2005), hypocentre positions in finite-source models."
+  }
+ ]
+}
