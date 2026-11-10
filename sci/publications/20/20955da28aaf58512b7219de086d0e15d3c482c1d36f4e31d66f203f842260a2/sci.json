@@ -1,0 +1,52 @@
+{
+  "title": "Fixed rain-gauge networks confirmed post-1997 runoff deficits in south-east Australia and the eastern US; both lost about 40 mm of runoff per year after 2009 (CAMELS, 1951-2025)",
+  "abstract": "Question: earlier work found that runoff in south-east Australia and in the eastern US fell below each catchment's 1951-1996 rainfall-runoff relation in 1997-1999 and stayed low. In Australia, the size of the shift with SILO rainfall was half of the size with AGCD rainfall. Do changes in the rain-gauge networks behind gridded rainfall cause these shifts? Why does the Australian shift look larger?\n\nApproach: we made catchment rainfall indices from fixed networks of long-record GHCN-Daily gauges (732 Australian and 1,455 US candidates). A gauge stayed in a network only if it had complete data in 80% or more of the years of each era 1951-1996, 1997-2009 and 2010-end. We fitted sqrt(runoff) on rainfall, previous-year rainfall and temperature for 1951-1996, with each rainfall source on the same catchment-years (CAMELS-AUS v2.03 to 2021; CAMELS-US with USGS flow to water year 2025). We also split daily flow into baseflow and quickflow and expressed the deficits in SD units, mm per year and percent of runoff.\n\nResults: with gauge rainfall, the mean residual was -0.77 SD (95% interval -1.05 to -0.51) in 1997-2009 and -0.78 SD (-1.03 to -0.51) in 2010-2021 in south-east Australia (114 catchments), and -0.42 and -0.47 SD (-0.62 to -0.26) in the eastern US (92). The western US stayed near zero. Coverage, temperature and calibration variants gave the same signs. SILO drifted 2.0% low relative to the gauges after 2009, which explains much of its smaller deficit. In 2010-end, runoff was 44 mm per year below the relation in south-east Australia and 42 mm per year in the eastern US (difference -2 mm, -22 to +17), about 4% of rainfall in both. As a fraction of runoff the deficit was 20% against 9%, because runoff ratios are lower in Australia (median 0.25 against 0.42). At runoff ratio 0.20-0.45, the regions did not clearly differ in any unit. Baseflow and quickflow both fell; baseflow carried 43% of the Australian volume deficit against a 38% baseflow index, and 41% against 42% in the eastern US.\n\nConclusion: the shifts are not gauge-network artifacts. A similar loss of water appears as a larger 'state shift' in low-runoff-ratio Australian catchments.\n\nLimitations: the networks use the same gauges as the gridded products; small networks; one annual model form; cause not tested; the unit comparison is post hoc.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370704"}
+  ],
+  "keywords": [
+    "rainfall-runoff relationship",
+    "hydrological non-stationarity",
+    "Millennium Drought",
+    "runoff efficiency",
+    "rain gauge network",
+    "GHCN-Daily",
+    "AGCD",
+    "SILO",
+    "nClimGrid",
+    "baseflow",
+    "runoff ratio",
+    "CAMELS-AUS",
+    "CAMELS-US",
+    "south-east Australia",
+    "eastern United States"
+  ],
+  "display": [
+    {"path": "files/figures/fig2_window_means_drift_network.png", "caption": "(a) Mean post-1996 residual relative to the 1951-1996 rainfall-runoff relation, by rainfall source, with 95% cell-bootstrap intervals (circles 1997-2009, squares 2010-end). Fixed-gauge rainfall keeps the south-east Australian and eastern US deficits. (b) Drift of gridded rainfall relative to the fixed gauges. (c) Number of long-record candidate gauges per year and size of the fixed networks."},
+    {"path": "files/figures/fig3_deficit_units_runoff_ratio.png", "caption": "2010-end deficit of south-east Australia and the eastern US in (a) SD units, (b) mm per year and (c) percent of runoff, for all catchments and for runoff ratio 0.20-0.45. (d) Relative deficit against runoff ratio. The mm deficits are equal; the percent deficit is larger in Australia because runoff ratios are lower."},
+    {"path": "files/figures/fig1_yearly_residuals_by_rain_source.png", "caption": "Mean standardized residual per year relative to each catchment's 1951-1996 rainfall-runoff relation, for gridded and fixed-gauge rainfall on the same catchment-years, in south-east Australia, the eastern US and the western US."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1", "relations": ["uses", "supports", "reviews"], "reason": "We reuse its US annual table and its 1951-1996 calibration test. Fixed-gauge rainfall confirms its south-east Australian and eastern US shifts; the unit comparison qualifies its 'similar size' statement."},
+    {"target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61", "relations": ["supports"], "reason": "The Victorian low-runoff state after the Millennium Drought is not an artifact of gauge network change."},
+    {"target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5", "relations": ["reviews"], "reason": "Its larger deficit in dry Australian catchments agrees with an additive loss of similar mm size."},
+    {"target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af", "relations": ["reviews"], "reason": "Its post-drought US null does not exclude a non-drought eastern US shift."},
+    {"target": "sci:sha256:03b9bf625a08da8a69b147f0feeb508e3e9d1281921e92d1b81f195540ea527e", "relations": ["reviews"]},
+    {"target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51", "relations": ["reviews"]},
+    {"target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1", "relations": ["reviews"]},
+    {"target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e", "relations": ["reviews"]},
+    {"target": "doi:10.1126/science.abd5085", "relations": ["supports"], "reason": "Peterson et al. (2021), Watersheds may not recover from drought."},
+    {"target": "doi:10.5194/hess-26-6073-2022", "reason": "Fowler et al. (2022), community hypotheses for the Millennium Drought rainfall-runoff changes."},
+    {"target": "doi:10.5281/zenodo.14289037", "relations": ["uses"], "reason": "CAMELS-AUS v2.03 (CC BY 4.0)."},
+    {"target": "doi:10.5194/essd-17-4079-2025", "reason": "CAMELS-AUS v2 description."},
+    {"target": "doi:10.5194/essd-13-3847-2021", "reason": "CAMELS-AUS v1 description."},
+    {"target": "doi:10.7289/V5D21VHZ", "relations": ["uses"], "reason": "GHCN-Daily version 3.35-upd-2026110717."},
+    {"target": "doi:10.1175/JTECH-D-11-00103.1", "reason": "Menne et al. (2012), GHCN-Daily overview."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily discharge, retrieved 2026-11-09."},
+    {"target": "https://zenodo.org/records/15529996", "relations": ["uses"], "reason": "CAMELS-US basin polygons and attributes (CC BY 4.0)."},
+    {"target": "doi:10.5194/hess-19-209-2015", "reason": "Newman et al. (2015), CAMELS-US basins."},
+    {"target": "doi:10.5194/hess-21-5293-2017", "reason": "Addor et al. (2017), CAMELS-US attributes."},
+    {"target": "doi:10.1002/2014WR015348", "reason": "Saft et al. (2015), rainfall-runoff shifts in Victoria."}
+  ]
+}
