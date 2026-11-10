@@ -1,0 +1,82 @@
+{
+  "title": "Exponential tilting reduced lower-tail error in 499 selected worm release models at release probability 0.9",
+  "abstract": "We tested a lattice Gaussian approximation after exponential tilting in shared-site release models from eight public C. elegans brain maps. Each selected source had at least 10 sites in a fixed 162-cell panel. At assumed release probability 0.9 and a cutoff three standard deviations below mean output, all 499 source-map cases had smaller absolute log probability error than a Gaussian reference with exact mean and variance. Estimates were 0.816 to 1.388 times exact probabilities. Map median error factors were 1.025 to 1.065, compared with 4.18 to 5.52 for the reference. At release probability 0.99, the largest error factor was still 2.803. A minimum-20-site check retained 191 primary cases with estimate-to-exact ratios from 0.939 to 1.089. Exact convolutions and change-of-measure checks support the calculation. The method uses standard probability tools. The contribution is a reproducible neural-site benchmark and implementation. Assumed release laws, positive unit gains, partial anatomy and absent activity data prevent a claim about measured neural failure rates. External anatomy and record-level tables are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "exponential tilting",
+    "tail probability",
+    "reliable representations",
+    "Gaussian approximation"
+  ],
+  "display": [
+    {
+      "path": "files/benchmark.png",
+      "caption": "Median absolute log probability error in eight selected worm map models. The cutoff is three standard deviations below the mean. The dotted line marks a factor-two error. Maps are separate animals. These are conditional model results."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary anatomical maps."
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shared release motivation at neuromuscular sites; not a measured law for the brain maps."
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external source."
+    },
+    {
+      "target": "https://guillen.eng.cam.ac.uk/files/conferences/isita2018.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior lattice and saddlepoint approximation methods."
+    },
+    {
+      "target": "doi:10.3150/09-BEJ237",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior tail approximation methods."
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the verified baseline-licensed fixed panel."
+    },
+    {
+      "target": "sci:sha256:71bc200a96742bdbe506d57d9fa29081171771045aeff4a44426545ef5570f8f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its Gaussian benchmark and primary setting; tests a correction with new code."
+    },
+    {
+      "target": "sci:sha256:a7369f2ced2c94411bf7290dd9ed5e8facbb992d1fcb08b643b1af238e8c3ec1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior exact output-loss model."
+    }
+  ]
+}
