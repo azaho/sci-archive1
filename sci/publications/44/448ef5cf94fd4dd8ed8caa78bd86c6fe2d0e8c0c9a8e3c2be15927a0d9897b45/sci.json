@@ -1,0 +1,178 @@
+{
+ "title": "A monthly water-balance model removed 20-45% of the post-1997 runoff deficits in south-east Australia and the eastern US; the Australian deficit grew gradually from before 1981 without a 1997 step",
+ "abstract": "Question: earlier SCI work found that runoff in south-east Australia (SE-AU) and the eastern US (East-US) fell 40-50 mm/yr below each catchment's 1951-1996 annual rainfall-runoff regression after 1997. Do seasonality, slow storage, snow and warming explain this in a monthly water-balance model? Which one-parameter change predicts post-2009 flow? When did the deficits start?\n\nApproach: abcd monthly model with snow and Hamon PET, calibrated on 1951-1996 for 153 SE-AU, 171 East-US and 224 West-US CAMELS catchments (CAMELS-AUS v2.03 to 2022 with AGCD or SILO rain; USGS flow and nClimGrid to 2025). Seven mechanisms were fitted on 1997-2009 and tested on 2010-end. Post hoc: bias correction, PET and rain-timing decomposition, and a 1952-1980 calibration for timing.\n\nResults: after 2009 the bias-corrected deficits were -31 mm/yr (95% CI -49 to -16) in SE-AU with AGCD and -37 (-50 to -22) in East-US, against -53 and -49 for the annual regression. Thus the model removed 20-45%, mostly through temperature-driven PET. With SILO rain the SE-AU deficit was -8 (-27 to +8). In SE-AU a proportional flow loss (about 31%) predicted best (skill 0.28), but it already had skill 0.18 in a 1989-1996 placebo. No mechanism predicted East-US flow (skill 0.011 or less). With 1952-1980 calibration, the SE-AU deficit grew gradually (-19 mm/yr per decade; 1997 step -7, CI -27 to +6). The East-US deficit started in the 1990s. West-US had no deficit.\n\nLimitations: one model structure and one PET formula; sqrt calibration causes volume bias; decomposition and timing tests are post hoc; no direct vegetation, dam or groundwater data.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "runoff",
+  "rainfall-runoff relationship",
+  "Millennium Drought",
+  "CAMELS",
+  "abcd model",
+  "monthly water balance",
+  "evaporative demand",
+  "hydrological non-stationarity",
+  "south-east Australia",
+  "eastern United States",
+  "attribution"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_deficit_by_model.png",
+   "caption": "Post-1997 runoff deficit (mm/yr, mean and 95% cluster-bootstrap interval) for the annual regression and for the monthly model and its variants, on the same catchments."
+  },
+  {
+   "path": "files/figures/fig2_timing.png",
+   "caption": "Annual runoff residuals with calibration 1952-1980. The SE-AU residual falls gradually; the East-US residual falls from the 1990s; the West-US has no deficit."
+  },
+  {
+   "path": "files/figures/fig4_mechanism_skill.png",
+   "caption": "Out-of-sample skill of seven one-parameter mechanisms for 2010-end monthly flow, with placebo skill for 1989-1996."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its catchment groups and coordinates and test its slope-loss and offset forms with a monthly model."
+  },
+  {
+   "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its US basin areas and NWIS retrieval code."
+  },
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its gauge-network result is the reason we do not prefer the SILO estimate; we re-estimate the deficits with a monthly model."
+  },
+  {
+   "target": "sci:sha256:ccf7e5d42f105c9851be6b10940013766830583fe5292184e632c5ba59749c2b",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test the mechanism forms it inferred, with one-parameter monthly mechanisms."
+  },
+  {
+   "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our temperature-based PET also explains part of the post-2009 East-US offset and little of its 1997-2009 onset."
+  },
+  {
+   "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test its finding of a SE-AU loss that grows in wet years in volume terms."
+  },
+  {
+   "target": "sci:sha256:7cecffa92eedcfd0120ad0a80f1367628835baff8dc7dfa8e637c1b20d472fe4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test a groundwater-store loss, which agrees with its faster recessions, as one mechanism."
+  },
+  {
+   "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "With a 1952-1980 calibration the SE-AU deficit grows gradually from before 1981 and has no separate 1997 step."
+  },
+  {
+   "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We re-date the regional SE-AU change that it attributed to the period after 1997."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "reason": "Victorian non-recovery result that motivated this line of work."
+  },
+  {
+   "target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our rain-timing counterfactual also leaves most of the SE-AU deficit."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "reason": "US post-drought recovery result and source of the basin areas used in 5b8df990."
+  },
+  {
+   "target": "sci:sha256:03b9bf625a08da8a69b147f0feeb508e3e9d1281921e92d1b81f195540ea527e",
+   "reason": "US hidden-state result; it noted eastern low blocks that started in 1985-2006, which agrees with our East-US timing."
+  },
+  {
+   "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+   "reason": "GRACE storage recovery after droughts."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "reason": "CAMELS-AUS v2 description."
+  },
+  {
+   "target": "doi:10.5194/hess-21-5293-2017",
+   "reason": "CAMELS-US attributes and basins."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS daily discharge, retrieved 2026-11-10."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid monthly precipitation and temperature."
+  },
+  {
+   "target": "doi:10.1029/2009WR008294",
+   "relations": [
+    "uses"
+   ],
+   "reason": "abcd model diagnostic form with snow (Martinez and Gupta 2010)."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "reason": "Hypotheses for Millennium Drought rainfall-runoff shifts."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "reason": "Peterson et al. 2021, watersheds may not recover from drought."
+  },
+  {
+   "target": "doi:10.1038/nclimate3046",
+   "reason": "Temperature-based PET can overstate drying (Milly and Dunne 2016)."
+  }
+ ]
+}

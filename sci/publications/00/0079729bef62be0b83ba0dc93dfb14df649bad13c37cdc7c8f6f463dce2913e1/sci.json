@@ -1,0 +1,118 @@
+{
+ "title": "Sea-temperature effects on recruitment of 282 RAM Legacy stocks rarely replicated, as weak constant effects predict, and gave no forecast gain; later effects diverged toward losses at warm range edges",
+ "abstract": "Question: do sea-surface temperature (SST) effects on fish and invertebrate recruitment that are fitted in an early period hold later and improve forecasts? Myers (1998) found that most environment-recruitment correlations failed when tested again, except at range limits. Data: RAM Legacy v4.66 recruits and spawning biomass, HadISST1 and ERSST v5 SST in hand-made stock-area boxes, and OBIS occurrence grids for each species' thermal range. Method: a Ricker model with brood-year SST per stock and period, in three splits: series halves (282 stocks, 142 species, brood years 1900-2022), before and after 1995 (217 stocks), and a real-time split that fits older RAM assessments and tests only newer brood years of the newest assessment (153 stocks). We compared observed statistics with stationary simulations (constant effects, AR(1) errors) through the identical pipeline. Results: in the half split, 35 stocks (12%) had an early effect at p < 0.05 and 6 of these (17%) replicated. Simulations with shrunk (realistic) true effects expected 31 (22-41) and 17% (7-28%); simulations that took each stock's full-period effect as true expected 57 and 34%. Thus low replication alone is what weak constant effects give. But the change between periods was larger than stationary: mean z-squared of the change was 1.72 (expected 1.29, 1.08-1.51) and the between-stock spread of true late effects was 0.25 per C (expected 0.17, 0.13-0.22); the calendar split agreed. The late spread followed thermal position: warm-edge stocks had more negative SST effects (slope -0.30 per C per unit position, SE 0.10; early -0.04, SE 0.06; within-region permutation p = 0.03), but region fixed effects reduced it by 30% (p = 0.12). Myers' range-edge exception was not supported (20 edge stocks, no replication). Stock-specific SST terms made late forecasts worse (mean log MSE ratio +0.042, 95% CI 0.013-0.072; +0.06 in the real-time split); shrunk terms and a thermal-position rule were neutral, and in 93% of stocks a correct SST term could give less than 1% gain. Limitations: assessment-model recruitment, approximate boxes and annual surface SST, survey-biased OBIS ranges, few edge stocks, and exploratory change diagnostics added after the first results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "fish recruitment",
+  "sea surface temperature",
+  "environment-recruitment correlation",
+  "replication",
+  "forecast skill",
+  "out-of-sample test",
+  "non-stationarity",
+  "RAM Legacy",
+  "stock-recruitment",
+  "Ricker model",
+  "thermal niche",
+  "range edge",
+  "winner's curse",
+  "empirical Bayes",
+  "climate change",
+  "marine fisheries",
+  "stationary simulation",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_observed_vs_stationary.png",
+   "caption": "Observed statistics (orange) against 95% ranges of stationary simulations with full-period (gray) or shrunk (green) true effects, for the half, 1995 and vintage splits. Replication agrees with shrunk constant effects; the change z-squared, late spread and late position slope do not."
+  },
+  {
+   "path": "files/figures/fig3_thermal_position.png",
+   "caption": "Standardized SST effect on log recruits per spawner against the stock's thermal position in its species range. Blue: weighted bin means with 95% intervals; orange: weighted regression. The negative slope is clear in the late period and in the vintage split."
+  },
+  {
+   "path": "files/figures/fig4_forecast_skill.png",
+   "caption": "Mean log ratio of late-period forecast error with and without SST (95% bootstrap intervals over stocks). Stock-specific SST effects made forecasts worse in every variant; shrunk effects and the thermal-position rule were neutral."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Extends the RAM Legacy v4.66 forward test from surplus production to recruitment; uses its data sources and its constant-effect simulation idea. Our forecast result agrees with its finding that stock-specific warming effects do not improve forecasts."
+  },
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "reason": "Earlier campaign forward test of a climate-ecology relation (Adelie penguins and sea ice); region confounding is also a limit here."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "reason": "Earlier campaign forward test (night light and leaf phenology)."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "reason": "Earlier campaign forward test (NestWatch heat contrasts)."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "reason": "Earlier campaign forward test (mountain pine beetle and winter cold)."
+  },
+  {
+   "target": "doi:10.1023/A:1008828730759",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Myers (1998). We test its retest-failure result and its range-limit exception at scale; low replication is explained by weak effects, and the range-limit exception was not supported."
+  },
+  {
+   "target": "doi:10.1126/science.aau1758",
+   "reason": "Free et al. (2019) warming effects on fisheries production."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14043031",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RAM Legacy Stock Assessment Database v4.66 (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1111/j.1467-2979.2011.00435.x",
+   "reason": "Ricard et al. (2012), RAM Legacy database description."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 sea-surface temperature."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSST v5 sea-surface temperature."
+  },
+  {
+   "target": "https://api.obis.org/v3/occurrence/grid/3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OBIS occurrence grids for species thermal ranges, retrieved 2026-11-10."
+  }
+ ]
+}
