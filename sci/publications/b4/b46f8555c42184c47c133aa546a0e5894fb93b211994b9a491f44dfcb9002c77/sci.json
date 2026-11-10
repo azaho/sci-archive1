@@ -1,0 +1,136 @@
+{
+ "title": "Old main-sequence M dwarfs in TESS 2-minute data with the corotation-to-stellar radius ratio of young CPV hosts have 2 CPVs where the contraction-only model predicts 8.9",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. An earlier result found that x = R_cor/R* (BHAC15 contraction radii) explains the age decline of the CPV rate in 1-750 Myr BANYAN Sigma members with no extra age term. That model predicts that old main-sequence M dwarfs at P = 3-5 h, which have the same x as young CPV hosts, are CPVs at the young rate. We tested this prediction. We froze the model (fitted to 858 young members of the TESS sector 56-107 sample) and applied it to old main-sequence rapid rotators of that sample and of a new sample: 39,130 red dwarfs with 2-minute data only in sectors 1-55, which we processed with the same pipeline and labelled blind (sensitivity 0.86 relative to the source labels on 150 mixed-in calibration stars). The model predicts 8.9 CPVs (95% interval 6.1-12.6) among 386 main-sequence rapid rotators; we observe 2 (p = 0.013). At fixed x, the main-sequence rate is 0.23 (0.04-0.74) times the young rate. All 12 variants give a deficit (p = 0.003-0.031, except p = 0.15 for a strict dMG < 0 cut). The new sample also has fewer young CPVs than predicted, probably because known CPVs were re-observed after sector 55; with a free normalisation for the new sample the factor is 0.32 (0.05-1.05, p = 0.07), or 0.18 (p = 0.03) without one probable eclipsing binary. Inside the groups the model still works (35-60 Myr: 15 observed, 13.4 predicted). We report one near-main-sequence CPV candidate, TIC 248394276 (P = 3.57 h, 54 pc). Thus x is probably necessary but not sufficient, and a second property that declines after a few hundred Myr is also necessary. Limitations: moderate significance; one automated vetter; selection of the new sample; model extrapolation to P < 0.2 d; no spectra.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "scallop shell stars",
+  "M dwarfs",
+  "TESS",
+  "corotation radius",
+  "main sequence",
+  "stellar rotation",
+  "circumstellar material",
+  "BANYAN Sigma",
+  "BHAC15",
+  "occurrence rate",
+  "falsification test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ms_test.png",
+   "caption": "(a) Efficiency-corrected CPV rate per rapid rotator against x = R_cor/R* for 1-24 Myr members, 35-750 Myr members and old main-sequence stars, with the x-only model fitted to S56-S107 1-24 Myr members. (b) Period and x of young and main-sequence rapid rotators; the grey band is the x range of the training stars. (c) Observed CPV counts against the frozen x-only prediction with 95% bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig3_lightcurves.png",
+   "caption": "Left: the near-main-sequence CPV candidate TIC 248394276 in TESS sectors 5 and 32. Right: folded light curves of the new main-sequence rapid rotators with x < 3.5; none shows sharp dips."
+  },
+  {
+   "path": "files/figures/fig2_tau_profiles.png",
+   "caption": "Profile likelihood of an extra exponential age term exp(-t/tau) in the x model: BANYAN members only (no age term needed) and with main-sequence stars at assumed ages of 0.3-4 Gyr (age term needed)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We reuse its stellar-parameter code and x-only rate model and test its prediction for old main-sequence stars; the prediction fails by a factor of about 4."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its BANYAN Sigma classes, injection efficiencies, label emulator and Gaia query code; the age decline at fixed period is consistent with our result."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its target tables, labels, folded curves and pipeline code, and we extend its search to the S1-S55-only stars."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Sector-to-sector shape memory of CPVs; context for the time scales."
+  },
+  {
+   "target": "sci:sha256:0737cdf0485ecfddc554a3f33a1f59e2035c5ead6835197030547385c9b181c3",
+   "reason": "Height above the main sequence predicts CPV detections; context."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Bouma et al. 2024: known CPVs (Table 1) and the finite-supply argument."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/aaae09",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BHAC15 evolutionary tracks."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/208/1/9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pecaut and Mamajek 2013 dwarf colour-temperature sequence."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC pipeline light curves."
+  },
+  {
+   "target": "doi:10.3847/0004-6256/152/5/114",
+   "reason": "Rebull et al. 2016, K2 Pleiades light-curve classes including orbiting clouds."
+  },
+  {
+   "target": "https://arxiv.org/abs/1702.01797",
+   "reason": "Stauffer et al. 2017, orbiting clouds at corotation in Upper Sco and the Pleiades."
+  },
+  {
+   "target": "https://arxiv.org/abs/2609.00136",
+   "reason": "Bouma et al. 2026, searched for our candidates."
+  },
+  {
+   "target": "https://www.cosmos.esa.int/web/gaia-users/gaia-data-license"
+  },
+  {
+   "target": "https://archive.stsci.edu/publishing/data-use"
+  }
+ ]
+}
