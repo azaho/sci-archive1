@@ -1,0 +1,63 @@
+{
+  "title": "Complete train summaries cannot add cell-gain tests in 524 of 538 selected Allen forest groups",
+  "abstract": "We tested whether additional train-response summaries can add constraints on separate source and target gains in Allen Synaptic Physiology r2.1 small. The sample had 879 usable connections in 545 experiment-and-sign groups from mouse VisP and human TCx. Of 538 groups with usable summaries and no constraint, 524 still have no constraint after all selected detected connections are added. The other 14 need 32 additional connection summaries in total: two groups need one each, seven need two, four need three and one needs four. A graph contraction method gives exact minimum counts. Across all 1721 selected detected groups, full completion gives at most 37 testable groups. Matrix-rank, exhaustive subset and synthetic checks passed. This is an optimistic design bound, not a test of biological gains or a promise of successful measurement. Selected slice circuits, omitted connections and response noise limit use. Code, aggregate counts, a figure, source hashes and external regeneration steps support reproduction. External records stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "measurement design",
+    "synaptic dynamics",
+    "source and target gains",
+    "cycle rank",
+    "identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Current test coverage and optimistic completion limits for selected Allen slice groups. Most usable forest groups cannot gain a cell-gain test through their detected connections."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2d3d70de821ab301ad763f781534af2372e115ac6cb4d0d19ac857f8f544097f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published train-gain model and selection rules. Adds exact measurement-completion limits with new code; no tables or code reused."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.95.9.5323",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
