@@ -1,0 +1,127 @@
+{
+  "title": "Recent temperature coefficients reduced ozone forecast error with archived GFS weather at 30 rural eastern US sites in 2022–2025",
+  "abstract": "We tested whether an old ozone-temperature response can support later forecasts. We used EPA CASTNET records for 2003–2025 and archived GFS temperature forecasts. At 45 rural eastern US sites, a fixed 2003–2007 temperature coefficient reduced 2008–2025 squared error by 26.5% with observed target weather. The 97.5% year-block limits were 22.1% to 30.1%. The history-adjusted coefficient fell from 2.32 to 1.58 ppb/C in period refits. At 30 sites in 2022–2025, the old coefficient gave no clear gain with bias-corrected GFS forecasts. A coefficient fitted to the preceding five years reduced error by 16.4% at one-day lead and 11.4% at two-day lead. Both gains were positive in all four summers. These four-year results have limited precision. An exact error decomposition showed how the larger old coefficient amplified temperature error. A regression-based error surface separated response size from input error. We also found reversed validity labels in 21 source dictionaries and checked the corrected analysis with an unflagged-data refit. The test uses final past observations, a selected rural panel, one afternoon target and one linear model family. It is an archive forecast test, not a live service test or a causal climate estimate. Code, source hashes, aggregate errors, audits, figures and repeat instructions are supplied. Source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "ozone",
+    "temperature response",
+    "forecast transfer",
+    "GFS",
+    "CASTNET",
+    "weather forecast error",
+    "climate penalty",
+    "response update",
+    "chronological validation",
+    "data quality"
+  ],
+  "display": [
+    {
+      "path": "files/gfs_transfer.png",
+      "caption": "Recent temperature coefficients gave ozone forecast gain with archived GFS weather in 2022–2025. The old coefficient gave no clear gain. Thirty rural eastern US sites were tested. Weather data by Open-Meteo.com (https://open-meteo.com/), based on NOAA NCEP GFS. We use afternoon means and past-only bias correction. Four summers limit inference."
+    },
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "The old coefficient kept observed-weather gain in 2008–2025. Independent temperature errors reduced the gain. The error curves assume zero mean and no association with ozone prediction residuals. They do not measure a weather service."
+    },
+    {
+      "path": "files/risk_surface.png",
+      "caption": "The error surface depends on response size and temperature error. The black line marks zero gain under the stated error assumptions. The star uses test outcomes and is only a diagnostic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1029/2009GL037308",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The old-period ozone-temperature response motivates the test. Our afternoon target and history controls differ from its hourly slope."
+    },
+    {
+      "target": "doi:10.5194/acp-25-2725-2025",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence of a declining US ozone-temperature response. We do not claim first discovery of this decline."
+    },
+    {
+      "target": "doi:10.5194/acp-19-13367-2019",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior work on shared weather drivers and interpretation of the ozone-temperature slope."
+    },
+    {
+      "target": "https://www.epa.gov/castnet",
+      "relations": [
+        "uses"
+      ],
+      "reason": "EPA CASTNET source data. Exact annual URLs, shared paths and hashes are supplied."
+    },
+    {
+      "target": "https://gaftp.epa.gov/Castnet/CASTNET_Outgoing/data/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source METDATA and SITE ZIPs. Raw source files stay external."
+    },
+    {
+      "target": "https://www.epa.gov/castnet/data-use-and-citation",
+      "reason": "Required source acknowledgment and source data use notice."
+    },
+    {
+      "target": "https://www.epa.gov/system/files/documents/2025-04/qapp_v10-2_main_body.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Quality-code meanings used to audit inverted source dictionary labels."
+    },
+    {
+      "target": "https://open-meteo.com/en/docs/previous-runs-api",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed-lead GFS temperature forecasts for 2021-2025. Source records stay external."
+    },
+    {
+      "target": "https://open-meteo.com/en/licence",
+      "reason": "Open-Meteo API data license and attribution requirements."
+    },
+    {
+      "target": "doi:10.5281/zenodo.7970649",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Open-Meteo API source citation. NOAA NCEP GFS is the weather model."
+    },
+    {
+      "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Extends the forward-test question from dengue to pollution and tests the weather forecast input explicitly."
+    },
+    {
+      "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Extends disease model forward tests to another fast climate-sensitive outcome."
+    },
+    {
+      "target": "sci:sha256:93f59d19c313d8dc7e3aa4ac5a2538e7df20a7849464bce4e5d5196caee9e408",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign ozone exposure work considered persistence, not the present temperature forecast test."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+ "title": "The dip widths of 126 TESS complex periodic variables stay almost constant in rotational phase and do not scale with the corotation-to-stellar radius ratio, as a compact clump at corotation predicts",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. The usual model is a compact clump that corotates at R_cor and transits the star. Then the dip width in phase must scale as 1/x, with x = R_cor/R*. We test this prediction. For each of the 126 on-target CPVs of a TESS sector 56-107 survey, we fitted a harmonic width scale n_c (n_c = 1/(2 pi sigma) for Gaussian dips) to the orbit-by-orbit harmonics of the 2-minute light curves. The prediction is n_c proportional to x. The median n_c is 6.4 (sigma = 0.025 of the rotation) with a scatter of 0.14 dex. The slope of log n_c on log x is 0.11 (95% interval -0.06 to 0.27) with photometric radii and 0.11 (-0.22 to 0.40) with BHAC15 radii at the BANYAN group age (79 members). Slope 1 is rejected at p = 6e-24 and 6e-8. The widths do not grow with period (slope 0.03, predicted 2/3). At fixed period, older CPVs are not sharper (+0.06 dex, predicted +0.23, p = 0.006). A forward simulation with the steep x dependence of the CPV rate, radius scatter of 0 to 0.3 dex and the measured estimator response gives p <= 0.002 for the observed slope and scatter. 300 injections into real light curves recover n_c without period bias, and the source pre-screen accepts all widths from n_c = 3 to 16. Thus the dip widths do not carry the 1/x signature of compact occulters at each star's own corotation radius. Extended structures with a fixed angular size, or material at a similar 2-3 stellar radii in all CPVs, agree better. The x dependence of the CPV rate is not changed. Limitations: one visual vetting, which we could not re-run on injections; model and photometric radii; only 18 CPVs older than 35 Myr, where 4 stars at x > 6 have larger n_c; no archive v sin i for an inclination test. Code, TESS-derived spectra and widths, aggregate results and file hashes are included. Gaia-derived record tables are excluded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "TESS",
+  "M dwarfs",
+  "corotation radius",
+  "dip width",
+  "circumstellar material",
+  "transits",
+  "stellar contraction",
+  "injection-recovery",
+  "forward simulation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_width_vs_x_and_P.png",
+   "caption": "Harmonic width scale n_c of 79 BANYAN-member CPVs. (a) n_c against x_iso = R_cor/R* with the pooled fit (black, slope 0.11), within-class fits (thin lines) and the corotation-transit law n_c proportional to x (dashed). (b) n_c against rotation period with the fixed-star law P^(2/3), a fixed duration in time (P^1) and a fixed phase width. (c) Class medians of n_c (filled) and the corotation prediction kappa times the class median x_iso (open), with 95% bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_forward_simulation.png",
+   "caption": "Forward simulation of the selected CPV population under the corotation-transit width law. (a) Predicted slope of log n_c on log x_iso (median and 95% of 1,000 simulations) against the true radius scatter about BHAC15, with the observed slope; the numbers give the chance that both slope and residual scatter are as small as observed. (b) The smallest residual scatter that the law gives with no intrinsic width scatter, with the observed value."
+  },
+  {
+   "path": "files/figures/fig3_injection_selection.png",
+   "caption": "(a) Recovered against injected n_c for 300 injections of three Gaussian dips into real control light curves (detected cases). (b) Fraction of injections that pass the source survey pre-screen as a function of injected n_c, with the scaled distribution of the observed CPV n_c."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source CPV survey: we use its CPV labels, periods, population table, TESS file list and pre-screen code."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its BANYAN Sigma age classes, window definition and injection efficiency."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We reuse its stellar-parameter code (x_sb, x_iso). Its rate result is not changed, but our dip widths do not follow the compact-clump-at-corotation geometry that its interpretation assumes."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Sector-to-sector shape memory of CPV sharp features; prior shape study on the same light curves."
+  },
+  {
+   "target": "sci:sha256:c1d97d85beab0db9bbb049c7ac3b3c3e8916fb87850e8d09d8ae9b848ab4cc43",
+   "reason": "Earlier test of a fixed-density transit-probability factor for the CPV period dependence."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "reason": "Bouma et al. 2024: TESS CPV sample and the corotating-clump interpretation."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2017AJ....153..152S",
+   "reason": "Stauffer et al. 2017: scallop-shell dip durations compared with a body at the Keplerian corotation radius."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "reason": "BHAC15 evolutionary models used for x_iso."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "reason": "TESS SPOC pipeline that produced the 2-minute light curves."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3 (photometry and parallaxes behind x, and the vbroad coverage check)."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/208/1/9",
+   "reason": "Pecaut and Mamajek 2013 dwarf colour-temperature sequence."
+  }
+ ]
+}
