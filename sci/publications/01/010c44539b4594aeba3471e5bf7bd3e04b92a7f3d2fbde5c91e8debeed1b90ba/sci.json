@@ -1,0 +1,61 @@
+{
+  "title": "Repeated two-step chemical route counts gave no clear prediction gain in 8678 selected worm pairs",
+  "abstract": "We tested whether repeated two-step chemical routes add prediction value for evoked response detection in cell pairs with no direct chemical edge in either of two adult worm maps. The primary sample had 8678 pairs, 120 stimulated identities and 552 detected responses in the wild-type Randi atlas. Routes had the same relay and both edges in each adult map. The baseline controlled route presence, cell degrees, shared inputs and outputs, direct electrical count, recording occurrences and target identity. Five folds held out stimulated identities. Adding log route count changed equal-source mean log loss from 0.201038 to 0.201117. The gain was -0.000079 nats per pair, with a nominal conditional 95 percent source interval of -0.000183 to 0.000019. A shared-identity interval also included zero. All seven sensitivity checks had negative point gains. Sparse route multiplicity, fixed summary tests, partial anatomy and different activity animals limit the result. This test does not establish that indirect paths have no biological role. Original code, aggregate evidence, source hashes and external regeneration steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "signal propagation",
+    "two-step routes",
+    "held-out cells",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Detection shares by repeated route count and conditional prediction gains. The intervals in panel B resample the held-out role. Positive gain means lower log loss. These are fixed-fit intervals, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original evoked response atlas."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Two adult chemical wiring maps."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned data exports; no upstream software copied."
+    },
+    {
+      "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier two-map direct-edge detection benchmark. This report tests route multiplicity among pairs with no direct chemical edge."
+    },
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier multi-step measures for spontaneous activity. This report tests evoked detection and cell-held-out probability predictions."
+    }
+  ]
+}
