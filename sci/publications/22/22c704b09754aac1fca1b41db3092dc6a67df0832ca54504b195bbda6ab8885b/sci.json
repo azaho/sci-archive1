@@ -1,0 +1,100 @@
+{
+  "title": "A 1983-2008 sea-temperature slope did not forecast 2009-2026 adult length-at-age of North Sea cod, haddock, whiting and saithe; before 2009, warmer years gave longer adults",
+  "abstract": "Earlier studies (Baudron et al. 2014; Ikpewe et al. 2021) linked North Sea warming to shorter adult and longer juvenile gadoids. We did a forward test with ICES NS-IBTS survey data (Q1 1983-2026, 16,371 hauls; Q3 1992-2025, 10,055 hauls). We calculated length-at-age with an age-length key weighted by survey length frequencies in fixed areas, which removes a 2-4 cm bias of raw otolith means. Exposure was the lifetime mean North Sea SST. In the training period, adult length-at-age decreased by 7.6% per 1 C (Q1, 95% CI -10.5 to -4.5) and 6.1% (Q3). This slope predicted a 4.2% decrease for 2009-2026, but the observed change was +0.3%. The SST forecast was worse than a no-change forecast (skill -0.30 in Q1, -0.31 in Q3; ERSSTv5 gave -0.41 and -0.44), and northern and central-southern series gave the same or a null result. After removal of linear trends, warmer years before 2009 gave longer adults (+8.5% per C in Q1, +7.7% in Q3), so the training link came from common trends. Models with survey density, ICES fishing mortality or both also did not beat no change for gadoid adults. Juveniles became longer after 2008 in Q1 (+5.9%), more than the SST forecast (+1.1%); the Q3 juvenile forecast had no skill, and the juvenile SST slope was zero with fishing mortality in the model. Herring, Norway pout and plaice adults followed survey density better than SST. Adult gadoids became shorter in 2018-2026 (-10.9% per decade), but nine years cannot identify the cause. Limitations: surface SST, simple density and fishing terms, possible otolith-reading changes, and short test periods.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "temperature-size rule",
+    "length-at-age",
+    "North Sea",
+    "IBTS",
+    "DATRAS",
+    "cod",
+    "haddock",
+    "whiting",
+    "saithe",
+    "climate change",
+    "forecast test",
+    "age-length key",
+    "sampling bias",
+    "fishing mortality",
+    "density dependence",
+    "null result",
+    "replication"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_forecast_series.png",
+      "caption": "North Sea SST (top) and mean length-at-age anomalies of gadoid adults (middle) and juveniles (bottom) in the Q1 and Q3 NS-IBTS surveys. Blue: observed, ALK-weighted. Orange: forecast for 2009 and later from the training-period SST slope. Dashed: no change. Adults were longer than the forecast in 2009-2023."
+    },
+    {
+      "path": "files/figures/fig2_slopes_by_period.png",
+      "caption": "Length-at-age change per 1 C of lifetime SST, by period, survey and region, for gadoid adults and juveniles. Filled circles: slopes with trends. Open diamonds: slopes after removal of linear trends. Before 2009 the detrended adult slopes are positive in all series."
+    },
+    {
+      "path": "files/figures/fig4_covariate_forecasts.png",
+      "caption": "Skill against a no-change forecast for 2009-2026 of adult length-at-age models fitted to years up to 2008, with SST, survey density, ICES fishing mortality and combinations. No model beat no change for gadoid adults; density forecast herring, Norway pout and plaice adults better than SST."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1111/gcb.12514",
+      "relations": [
+        "challenges",
+        "reviews"
+      ],
+      "reason": "Baudron et al. 2014 linked North Sea fish size decrease to warming with data to 2008; we test the link on 2009-2026 survey data."
+    },
+    {
+      "target": "doi:10.1111/1365-2664.13807",
+      "relations": [
+        "challenges",
+        "reviews"
+      ],
+      "reason": "Ikpewe et al. 2021 reported smaller adults and bigger juveniles linked to warming in IBTS data to 2017; we test the adult and juvenile links out of sample."
+    },
+    {
+      "target": "sci:sha256:bab49b783c94cfdc148897d50e16eed064de4238c5a32c3d08a27c7a2520801a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reused its DATRAS NS-IBTS web-service download recipe and gear and haul selection notes."
+    },
+    {
+      "target": "sci:sha256:91ce877ccc73f4c829b483f9ecc6743abf9f2b68180b1d46821edd61da3999eb",
+      "reason": "Earlier campaign forward test of a published North Sea fish-temperature relation with the same survey."
+    },
+    {
+      "target": "https://datras.ices.dk/WebServices/DATRASWebService.asmx",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ICES DATRAS NS-IBTS HH, HL and CA exchange data, CC BY 4.0."
+    },
+    {
+      "target": "https://sag.ices.dk/SAG_API/api/SummaryTable",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ICES Stock Assessment Graphs summary tables for fishing mortality, CC BY 4.0."
+    },
+    {
+      "target": "doi:10.1029/2002JD002670",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HadISST1 sea surface temperature (primary exposure; not bundled)."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 sea surface temperature (check exposure and Figure 1)."
+    }
+  ]
+}
