@@ -1,0 +1,24 @@
+{
+  "title": "ZTF and ASAS-SN superoutbursts of 78 SU UMa dwarf novae in 2021-2025 do not follow the Vogt et al. 2021 linear ephemerides; the timings agree with a cycle that has no long-term phase memory",
+  "abstract": "Vogt et al. (2021) gave linear superoutburst ephemerides for 206 SU UMa dwarf novae and reported a median timing residual of 9 percent of the cycle. We test these ephemerides as forecasts. We detect superoutbursts automatically in ZTF (2018-2025) and ASAS-SN Sky Patrol (2012-2025) light curves of 442 targets; 285 have usable ZTF data and 166 pass a light-curve quality cut set before the test. Superoutbursts inside the Vogt data spans fit their ephemerides as well as their error model expects (mean cos(2 pi phase) 0.64, 31 events, 18 stars; expected 0.62). After 2020-12-18 the phases are uniform: mean cos 0.02 (95 percent star-bootstrap range -0.08 to 0.14; 197 events, 78 stars), against 0.43 expected from the published errors. No subgroup by number of epochs, cycle length or residual keeps skill, and the full sample without the quality cut gives 0.03. Some published periods are aliases (for example VW CrB repeats at about 370 d, not 724 d). Ephemerides fitted to our own 2013-2020 data also fail (0.00, 112 events). A simulation of a memoryless (renewal) supercycle with 12-14 percent interval scatter reproduces the published 9 percent residual even with true cycle counts, and predicts the loss of phase skill within 4-8 cycles that we observe. Thus the published quasi-periodicity does not imply a stable clock, which agrees with a thermal-tidal disk reset at each superoutburst. Limitations: survey gaps miss some superoutbursts, very active ER UMa-like stars fail the quality cut, the interval-scatter estimate rests on a simulation matched to the median residual, and the direct lag-1 interval test (r = 0.12, 17 pairs) has low power.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.SR"},
+    {"scheme": "arxiv", "code": "astro-ph.HE"}
+  ],
+  "keywords": ["dwarf novae", "SU UMa stars", "superoutburst", "supercycle", "forecast test", "ephemeris", "ZTF", "ASAS-SN", "thermal-tidal instability", "renewal process", "cataclysmic variables"],
+  "display": [
+    {"path": "files/results/fig2_phase_histograms.png", "caption": "Forecast phase errors of detected superoutbursts. Left: events inside the Vogt et al. 2021 data spans (control). Middle: events after 2020-12-18 against the Vogt ephemerides. Right: events after 2020-12-18 against ephemerides fitted to our own 2013-2020 data. Dotted line: uniform phases. Quality-cut stars only."},
+    {"path": "files/results/fig3_phase_memory.png", "caption": "Mean cos(2 pi x phase error) against cycles since the last superoutburst used in the fit. Points: observed (95 percent star-bootstrap ranges). Lines: simulated clock (fixed period) and renewal processes with interval scatter s, using the N, time span and cycle of each Vogt star."},
+    {"path": "files/results/fig1_examples.png", "caption": "ZTF g/r and ASAS-SN light curves of four stars. Dashed lines: predicted maxima from Vogt et al. 2021. Blue: detected superoutbursts. Orange: 2020-12-18, start of the forecast test. VW CrB, BG Ari and HO Del repeat at periods different from the published ones."}
+  ],
+  "citations": [
+    {"target": "doi:10.1093/mnras/staa3711", "relations": ["uses", "challenges"], "reason": "Source of the 206 linear superoutburst ephemerides that we test; we show they have no forecast skill after 2020 and that their residuals agree with a memoryless cycle."},
+    {"target": "https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=J/MNRAS/460/2526", "relations": ["uses"], "reason": "Otulakowska-Hypka, Olech & Patterson 2016 catalogue of dwarf nova outburst properties; target list, positions and amplitudes."},
+    {"target": "doi:10.1088/1538-3873/aaecbe", "relations": ["uses"], "reason": "ZTF system overview (Bellm et al. 2019); ZTF public light curves."},
+    {"target": "doi:10.1088/1538-3873/aae8ac", "relations": ["uses"], "reason": "ZTF data system (Masci et al. 2019)."},
+    {"target": "https://arxiv.org/abs/2304.03791", "relations": ["uses"], "reason": "ASAS-SN Sky Patrol v2 (Hart et al. 2023); forced-aperture light curves."},
+    {"target": "doi:10.1088/1538-3873/aa80d9", "relations": ["uses"], "reason": "ASAS-SN light curve server and survey (Kochanek et al. 2017)."},
+    {"target": "doi:10.1088/0004-637X/788/1/48", "relations": ["uses"], "reason": "ASAS-SN survey (Shappee et al. 2014)."},
+    {"target": "https://arxiv.org/abs/1303.6248", "reason": "Prior report of changing supercycle lengths in active SU UMa stars."}
+  ]
+}
