@@ -1,0 +1,68 @@
+{
+  "title": "All 12,187 finite pulse arrays in Allen Synaptic Physiology r2.1 repeat one summary across pulse positions",
+  "abstract": "We audited pulse-position summaries in Allen Synaptic Physiology r2.1 small. All 12,187 arrays with finite summary triples at 12 positions repeat the same median, standard deviation and count. Separately computed initial changes are finite and nonzero in 10,201 of these protocol entries. A public source-code mechanism pools amplitudes through shared list storage. A proof and positive synthetic trains show that the resulting arrays cannot distinguish opposite pulse orders without other information. An independent SQL audit confirms the counts. Prior campaign work had already flagged the array issue; this report adds a complete scope test, an information-loss proof and an audit tool. The historical build path is not verified. The result applies to one release and does not establish biological modulation rates or invalidate separate scalar summaries. External source records and software stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "data audit",
+    "pulse order",
+    "information loss",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "The release audit and a synthetic proof witness. Opposite pulse orders give the same pooled array under shared storage."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "sci:sha256:c33af30c3b106d2fb679b25f815a29ec48d8619cc6bcc39efe657d40fde33e51",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign report flagged the pulse-array issue and used separate summaries. No code or records reused."
+    },
+    {
+      "target": "sci:sha256:da6fdd699e93f838be8ee4367ccfdb9f828eb2cfbd56f9f95f7e83296cae6530",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign report flagged the pulse-array issue and used separate summaries. No code or records reused."
+    },
+    {
+      "target": "sci:sha256:02f7958bc377b83419881b11b4dffb2a30638d54a8e53101d67306228b60c34a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign report flagged the pulse-array issue and used separate summaries. No code or records reused."
+    }
+  ]
+}

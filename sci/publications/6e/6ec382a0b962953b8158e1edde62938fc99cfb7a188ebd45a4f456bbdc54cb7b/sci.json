@@ -1,0 +1,65 @@
+{
+  "title": "Nonadjacent co-targets had lower downstream overlap than fixed-count control means in seven of eight selected worm maps",
+  "abstract": "We tested whether targets at the same chemical synaptic site share downstream partners beyond fixed source-target counts. We used eight Witvliet C. elegans brain maps and a fixed 162-neuron panel. The primary score was mean binary outgoing-partner cosine for co-target pairs with no direct chemical edge. The upstream source was excluded from each partner vector. Within-source Curveball trades kept source-target counts and site sizes fixed. Seven maps had scores below their control means. Six scores were below all 998 saved control values. No map passed the planned eight-map upper-rank rule at 0.05. Including directly connected co-targets gave scores above control means in all eight maps. A three-contact edge rule gave mixed directions. The result does not support a general excess of downstream overlap for nonadjacent co-targets under this control model. It does not measure computation, release, activity or reliability. Geometry, cell type, partial coverage and finite control chains limit the inference. Code, aggregate draws, source hashes and external retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "downstream overlap",
+    "fixed-margin controls",
+    "connectomics",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Mean downstream-partner cosine across eight partial worm maps. Blue: observed. White: control mean. Gray: central 95 percent of 998 saved control states. These ranges are conditional control ranges, not animal confidence intervals. The source is excluded from partner vectors. The primary panel excludes directly connected co-targets."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.2201699120",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial clustering and shared-partner analysis; the present test concerns membership at individual sites under fixed counts."
+    },
+    {
+      "target": "doi:10.1038/ncomms5114",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:53644ef72ffd70e630f961accef7d248d26c60308aaa41fe98f9d66ea5ada47e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses and adapts baseline code, retrieval steps and cell panel; changes the score from direct edges to downstream overlap."
+    },
+    {
+      "target": "sci:sha256:0aa9bd020662d2a1f80be4d6f0de0b501bb3ebd59f185a3cac18aa0c43f4ccb9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Baseline source of the inherited fixed panel."
+    }
+  ]
+}
