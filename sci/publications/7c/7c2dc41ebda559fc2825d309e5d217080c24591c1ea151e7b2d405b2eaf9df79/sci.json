@@ -1,0 +1,88 @@
+{
+ "title": "Projectome input count did not predict the shared dimensionality of single-neuron activity in 47 larval zebrafish brain regions after signal-quality controls (22 fish)",
+ "abstract": "Question: in the larval zebrafish brain, does the diversity of the anatomical inputs of a region predict the shared dimensionality of the single-neuron activity in that region? Data: processed whole-brain two-photon calcium imaging of 22 larvae (Legare et al. 2025, CC BY 4.0; about 600 s of spontaneous activity at 1 volume/s) and the source authors' directed mapZebrain projectome (70 regions). Method (pre-registered): for 47 regions with at least 200 ROIs in at least 11 fish, shared-variance component analysis (SVCA) on 50 random sets of 100 ROIs; outcome = participation ratio (PR) of reliable covariance; partial Spearman rho across regions with controls for in-strength, volume, ROI signal quality, brightness and ROI spread; region bootstrap. Results: input diversity did not predict SVCA PR (rho -0.18, 95% CI -0.56 to +0.25). None of 16 pre-registered variants had a CI above zero. A raw positive link (+0.25, positive in 19 of 22 fish) followed signal quality: regions with more inputs had noisier ROIs (rho -0.47) and fewer shared components above a noise floor (-0.52). A flatter noisy spectrum raises the PR. A pre-registered functional input diversity measure (PR of the SC-weighted correlations among source regions) beat a distance-matched input permutation null (+0.43 vs null mean +0.20, p = 0.019), but not after control for source signal quality (p = 0.35). Exploratory, post hoc: regions whose input sources were less correlated with each other had fewer detectable shared components (p = 0.002 against the null) and lower internal correlation (p = 0.021), after that control. Limitations: noisy 1 Hz nuclear-indicator single-ROI signals (median within-region r 0.008), coarse regions as the unit of inference, nearly collinear input count, diversity and strength, and a sparse projectome from other animals. Code, hashes, derived region data and figures are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "larval zebrafish",
+  "projectome",
+  "mapZebrain",
+  "input diversity",
+  "shared dimensionality",
+  "SVCA",
+  "participation ratio",
+  "whole-brain calcium imaging",
+  "structure-function",
+  "signal quality confound",
+  "null result",
+  "pre-registration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_input_vs_dimension.png",
+   "caption": "Input count and activity in 47 regions (fish means). A: raw input count against SVCA participation ratio. B: rank residuals after controls (no relation). C: ROI signal quality decreases with input count. D: shared components above a noise floor decrease with input count."
+  },
+  {
+   "path": "files/figures/fig2_tests.png",
+   "caption": "A: partial Spearman rho across regions with 95% region-bootstrap intervals for the pre-registered test and its variants (blue: input measures; orange: output measure; gray: other outcomes). B: per-fish partial rho (blue odd, green even fish); the black lines are means."
+  },
+  {
+   "path": "files/figures/fig3_fid_null.png",
+   "caption": "Functional input diversity (FID) against 1,000 distance-matched input permutations (exploratory null B). The PR result disappears after control for source signal quality (A, B); the negative links to detectable components and mean correlation stay (C, D)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Processed calcium imaging of 22 larvae, swim events, SC matrix and atlas files (v1, CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1126/sciadv.adv7576",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source article for the data, the SC construction and the dF/F method."
+  },
+  {
+   "target": "https://github.com/pdesrosiers/Legare-zebrafish-brain-networks/tree/1ed17e1a0f32b226c0484243df5aa269fb4477dc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We read the dF/F baseline function and the SC construction notebook."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.04.034",
+   "relations": [
+    "uses"
+   ],
+   "reason": "mapZebrain atlas and single-neuron projectome (Kunst et al. 2019)."
+  },
+  {
+   "target": "doi:10.1126/science.aav7893",
+   "reason": "SVCA method for spontaneous population activity (Stringer et al. 2019)."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "reason": "Same data: SC predicts region-pair FC; our study tests a node-level, within-region property instead."
+  },
+  {
+   "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+   "reason": "Same data: projectome hierarchy did not predict timescales; we add a second node-level null for input structure."
+  },
+  {
+   "target": "sci:sha256:2f2b0c3629bec09c4b93626d4b1776c3fc83d999b572332627532efde4cbde07",
+   "reason": "Same data: projection-lag alignment; related structure-function test."
+  },
+  {
+   "target": "sci:sha256:4c4b055411d0a22f5abbd228b24dbba2a36fd63bb6384749db1947532f7729e7",
+   "reason": "MICrONS: input count predicted population coupling; our exploratory input-coherence result is a region-level analogue."
+  }
+ ]
+}
