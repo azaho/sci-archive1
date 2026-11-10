@@ -1,0 +1,144 @@
+{
+ "title": "Temperature relations fitted before 2005 forecast 2005-2024 Swiss spring plant dates well, British butterfly flight dates weakly and butterfly population growth no better than shuffled climate",
+ "abstract": "Question: which kinds of ecological climate response are robust enough to forecast? Earlier campaign tests found that four published relations failed or became smaller in newer data. Approach: one protocol for 107 units. We used MeteoSwiss phenology (19 spring and 8 summer-autumn phases, 1951-2024) and the UK Butterfly Monitoring Scheme 2024 release (43 species for mean flight date and 37 species for site-index growth, 1976-2024), with E-OBS temperature and rain of each site's grid cell. For each unit we selected one 1-3 month climate window in training years only (up to 2004), fitted a within-site linear relation (Gompertz density dependence for growth), froze it, and forecast 2005-2024. The baselines had no climate term. Skill is 1 - MSE/MSE(baseline) of year-mean anomalies, with year-bootstrap intervals. We repeated the window search ten times per unit with shuffled climate years. Results: the mean forward skill was 0.80 (95% CI 0.76 to 0.84) for spring plant phases, 0.57 for summer-autumn phases, 0.16 (0.09 to 0.22) for butterfly flight dates and -0.15 (-0.25 to -0.04) for butterfly growth; a fixed five-term weather model for growth gave -0.22. A 1994 split gave the same order. Growth forecasts were not better than shuffled-climate forecasts (Mann-Whitney p = 0.085). With shuffled climate the window search gave growth a median training |t| of 2.2, and growth units that passed this null in training were not more often skilful. All 33 units with a year-level training |t| of 5 or more had positive skill. Spring plant slopes were stable (test/train 0.92). Butterfly temperature relations tracked year-to-year variation (median detrended r 0.51) but forecast only 16% of the 4.3-day median advance in 2005-2024; the error was negative for 42 of 43 species and largest in species with hibernating adults or immigrants. Limitations: the plant-butterfly contrast also contains differences in recording method; we tested linear window models only; E-OBS cell means are not site temperatures; the null has 10 draws per unit; test periods have 20 years. Source data are not bundled; a retrieval script and hashes are given.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  }
+ ],
+ "keywords": [
+  "forecast skill",
+  "out-of-sample test",
+  "phenology",
+  "population growth",
+  "butterflies",
+  "UKBMS",
+  "MeteoSwiss",
+  "E-OBS",
+  "climate window selection",
+  "shuffled-climate null",
+  "temperature sensitivity",
+  "Gompertz",
+  "climate change",
+  "replication",
+  "forecastability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forward_skill_by_class.png",
+   "caption": "Forward skill in 2005-2024 of climate relations that were fitted to earlier years and frozen. Each dot is one plant phase or butterfly species, with a 95% year-bootstrap interval. Bars are medians; dotted lines are the 95th percentile of shuffled-climate fits."
+  },
+  {
+   "path": "files/figures/fig3_training_evidence_vs_skill.png",
+   "caption": "Training-period |t| of the selected climate slope against forward skill. Grey points are fits with shuffled climate years. Black line: median skill of observed units in |t| bins."
+  },
+  {
+   "path": "files/figures/fig5_level_vs_interannual.png",
+   "caption": "Left: observed mean shift of event dates in 2005-2024 against the shift forecast by the frozen temperature relation. Right: correlation of detrended observed and forecast year anomalies."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of the Adelie penguin sea-ice curve; we use its result as one demographic case in the synthesis table."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign test of night light and leaf colour timing; used in the synthesis table."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a NestWatch heat contrast; used in the synthesis table."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign test of winter cold and mountain pine beetle growth; used in the synthesis table."
+  },
+  {
+   "target": "sci:sha256:423c44cb2c725c9b8b27bc357201aab928313efb449fa8e132701bb85bd3292f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result that leaf-out temperature sensitivity held to 2023; our stable spring plant slopes agree."
+  },
+  {
+   "target": "sci:sha256:b150e46a7db96d110d0d69b77bc53618ccf11e9387752ef3bfc92ace4e38ff29",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign ridge-model test in which weather raised butterfly index forecast error; our site-level growth result agrees."
+  },
+  {
+   "target": "sci:sha256:46ebf207bbe4de80002291579e40aae3276656ead0d38a9cd6807d4e95cc12fe",
+   "reason": "Campaign result in which cold winters reduced resident bird counts and replicated; a demographic counterexample that we report."
+  },
+  {
+   "target": "sci:sha256:2c2e6328c8144283f8775aa0c16deda11b7c895d9fb6d9a13b54f559a6386a96",
+   "reason": "Campaign estimate of Meadow Brown flight-date temperature slopes from the same UKBMS data."
+  },
+  {
+   "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS phenology 2024 (OGL v3)."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024 (OGL v3)."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site location data 2024 (OGL v3)."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss phenology open data, snapshot 2026-11-09."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS ensemble gridded temperature and precipitation (v32.0e tg, v31.0e rr)."
+  },
+  {
+   "target": "doi:10.1046/j.1365-2656.2001.00480.x",
+   "reason": "Roy et al. 2001, weather models of British butterfly abundance; our fixed five-term growth model follows this form."
+  },
+  {
+   "target": "doi:10.1046/j.1365-2486.2000.00322.x",
+   "reason": "Roy and Sparks 2000, phenology of British butterflies and climate change."
+  },
+  {
+   "target": "doi:10.1038/nature15402",
+   "reason": "Fu et al. 2015, declining sensitivity of spring leaf unfolding to warming."
+  }
+ ]
+}
