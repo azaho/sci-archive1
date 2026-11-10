@@ -1,0 +1,21 @@
+{
+  "title": "Kepler phase-modulation orbits predict 2019-2024 TESS pulsation-delay changes of 24 delta Scuti binaries (slope 1.04 +- 0.07), but absolute phases and weakly constrained orbits do not extrapolate",
+  "abstract": "Question: do the binary orbits that Murphy et al. (2018) found from the phase modulation (PM) of delta Scuti pulsations in Kepler data (2009-2013) predict the pulsation timing that TESS measured 6-11 years later? Approach: we measured the phases of the same modes in Kepler long-cadence and TESS 2-minute light curves (sectors 14-82) for 25 PM binaries, 110 PM single stars and 11 possible long-period stars. We selected modes with amplitudes only, never with TESS phases. We fixed the sign convention of the published orbits from Kepler data only: our Kepler delays follow minus the published delay with a median slope of -0.90 (23 of 25 stars). Results: for 24 binaries with two or more TESS sectors (75 sector pairs), the measured change of the pulsation delay inside the TESS era follows the published orbit, with a weighted slope of 1.04 +- 0.07 and a weighted skill of 0.32 against a no-orbit forecast. A random-periastron placebo gives p = 0.005. All 12 pairs with a predicted change above 2 sigma have the predicted sign. For 13 orbits that our Kepler delays reproduce, the weighted skill is 0.90. For 11 other orbits (periods near or above the 4-year Kepler baseline, wrong-sign or circular cases, incoherent modes), it is 0.03. Absolute phases do not carry over for binaries: the Kepler-extrapolated phase misses the first TESS sector by a median 0.125 cycles with the orbit, against 0.031 cycles for single stars. Possible long-period stars change their delay by a median 241 s per year, against 41 s for single stars (p = 0.008). Limitations: small sample, 2-minute data only, and a weighted metric that we chose after we saw that a few incoherent stars dominate the unweighted skill (-0.05).",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.SR"}
+  ],
+  "keywords": ["delta Scuti stars", "phase modulation", "pulsation timing", "binary stars", "light-travel time", "Kepler", "TESS", "forecast test", "asteroseismology"],
+  "display": [
+    {"path": "files/figures/fig2_measured_vs_predicted.png", "caption": "Measured change of pulsation delay between TESS sectors (2019-2024) against the change that the published Kepler PM orbit predicts. Left: 13 binaries whose Kepler delays our pipeline reproduces with the published orbit. Right: 11 other binaries. Dashed line: orbit prediction. Dotted line: no-orbit prediction. Triangles: points beyond +-1000 s."},
+    {"path": "files/figures/fig1_example_orbits.png", "caption": "Kepler 10-day pulsation delays (blue) and TESS sector delays (orange) with the published orbit (line, sign fixed from Kepler) for four Kepler-validated binaries. The first TESS sector of each star is placed on the orbit; only the later changes are a test."},
+    {"path": "files/figures/fig3_absolute_phase_error.png", "caption": "Difference between the Kepler-extrapolated pulsation phase and the phase in the first TESS sector (median over modes, cycles). Single stars keep their phase to a median 0.031 cycles over 8-13 years; binaries with the published orbit applied miss by a median 0.125 cycles."}
+  ],
+  "citations": [
+    {"target": "doi:10.1093/mnras/stx3049", "relations": ["uses", "supports"], "reason": "Source of the PM orbits and classes that we test; TESS data support the well-constrained orbits."},
+    {"target": "doi:10.1093/mnras/stu765", "relations": ["uses"], "reason": "Phase-modulation method."},
+    {"target": "doi:10.1126/science.1185402", "relations": ["uses"], "reason": "Kepler mission data."},
+    {"target": "doi:10.1117/1.JATIS.1.1.014003", "relations": ["uses"], "reason": "TESS mission data."},
+    {"target": "doi:10.48550/arXiv.2410.19729", "reason": "PM binaries found in TESS 2-minute data."},
+    {"target": "sci:sha256:d18fffbf28b565aadb86a340119ed23e9e3476de9475b84f6122354a81843846", "reason": "Related campaign forecast test of Kepler third-body timing orbits with TESS."}
+  ]
+}

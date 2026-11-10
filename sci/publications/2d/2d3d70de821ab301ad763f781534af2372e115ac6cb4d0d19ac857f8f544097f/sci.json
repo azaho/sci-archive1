@@ -1,0 +1,71 @@
+{
+  "title": "Only seven of 545 selected Allen recording-and-sign groups can test separate source and target train gains",
+  "abstract": "We tested whether first-to-late 50 Hz voltage response ratios factor into separate source and target cell gains in Allen cortical slice data. Exact cell and pair IDs link local connectivity and response summaries. The selected sample has 879 connections in 545 recording-and-sign groups. Only seven groups contain bipartite measurement cycles and can test the model; the other 538 groups fit arbitrary positive ratios exactly. All seven testable groups are from mouse. Three need changes greater than a factor of 1.10 in the fitted amplitudes to fit the model; the largest minimum factor is 1.370. These are conditional error-bound results, not measured physiological error. Count and amplitude filters change coverage and fit bounds. A cycle-rank audit and linear program with dual checks distinguish lack of test constraints from successful model evidence. Original code, aggregate results, a figure, source hashes and retrieval steps support reproduction. External source records and individual fit tables stay outside the baseline package. Small testable samples, unmatched trial sets, fit noise and slice selection prevent a general biological claim.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "source and target gains",
+    "identifiability",
+    "50 Hz",
+    "circuit structure"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Only seven primary recording-and-sign groups are testable. Right: minimum per-amplitude correction factor in those seven groups. Bounds are assumed, not measured noise. Source: Allen Institute for Brain Science, Synaptic Physiology r2.1; Campagnola, Seeman et al. (2022), doi:10.1126/science.abj5861."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.95.9.5323",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:0d564184255493f952bb1ede650277ad5e5237fbdbe2d6b22f9f9dd74789c02b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Extends the shared target-gain question to a two-sided cell-gain model for first-to-late ratios. No code or source tables reused."
+    },
+    {
+      "target": "sci:sha256:53bdf4fcc52afbcdb28febb40f81d43046609d9c90ee7bf5ae5ee3ce6026e62b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Uses the standard bipartite identifiability idea for changes in response strength, while permitting arbitrary baseline edge weights. No code or source tables reused."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "reason": "Field definitions inspected. External code excluded."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
