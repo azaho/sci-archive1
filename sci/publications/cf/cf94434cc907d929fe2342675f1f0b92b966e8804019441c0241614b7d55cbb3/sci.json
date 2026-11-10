@@ -1,0 +1,96 @@
+{
+ "title": "Removal of the GOES 0.7 flux factor in December 2019 explains the Cycle 25 M-flare excess per F10.7 unit and made SWPC M-flare forecasts too low in 2020-2024 (NOAA data 1998-2026)",
+ "abstract": "Question: how much of the high Solar Cycle 25 flare rate comes from the December 2019 change of the NOAA GOES X-ray flux scale, and did the SWPC flare forecasts follow this change? Method: we matched 34,845 SWPC operational flare events to NCEI science-quality GOES peaks (GOES-8 to GOES-19). We made one homogeneous flare list for 1998-2026. We compared flare rates of Cycles 23, 24 and 25 at matched F10.7, sunspot number and sunspot area with Poisson spline models and 27-day block bootstrap intervals. We verified 9,515 SWPC day-1 to day-3 M-class and X-class probabilities against outcomes on the operational and legacy scales. Results: the science/operational peak ratio steps from 1.451 to 1.016 when GOES-16 became primary in December 2019. Rescaling increases Cycle 24 M-flare counts by 1.53. The Cycle 25/Cycle 24 M-flare rate ratio at matched F10.7 is 1.38 (95% CI 1.10-1.77) with the operational list and 0.92 (0.74-1.15) on one scale. Per sunspot, it falls from 2.21 to 1.45 (1.14-1.84); the remaining excess agrees with about 7-10% more F10.7 per sunspot in Cycle 25. SWPC M-class forecasts were too high in Cycles 23 and 24 (observed/forecast 0.79, 0.78) and too low in Cycle 25 (1.12). The change, 1.43 (1.28-1.59), equals the removed factor; on the legacy scale it is 1.12 (0.99-1.26). Forecasts became higher in 2025-2026 (ratio 0.93), which agrees with an adjustment, but the cycle phase can also explain it. Limitations: three cycles, an incomplete Cycle 25, one constant cycle factor per model, and different answers for different activity indices.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.space-ph"
+  }
+ ],
+ "keywords": [
+  "solar flares",
+  "GOES XRS",
+  "flux calibration",
+  "Solar Cycle 25",
+  "SWPC",
+  "flare forecast verification",
+  "F10.7",
+  "sunspot number",
+  "instrumental artefact",
+  "reliability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_scale_change.png",
+   "caption": "(a) Quarterly median ratio of NCEI science-quality peak flux to SWPC operational peak flux for 34,845 matched flares. The ratio steps from 1.45 to 1.02 when GOES-16 became the primary satellite in December 2019. (b) Annual counts of flares of M1 or more: SWPC operational list, homogeneous true-scale list, and NCEI science detections."
+  },
+  {
+   "path": "files/figures/fig3_rate_ratios.png",
+   "caption": "Cycle 25/Cycle 24 rate ratio of flares of M1 or more at matched activity, for three activity indices (F10.7, SWPC sunspot number, SWPC sunspot area) and three variants (all days, common activity range, phase-matched Cycle 24), with 95% 27-day block-bootstrap intervals. Grey: operational list; orange: homogeneous list; blue: NCEI science detections."
+  },
+  {
+   "path": "files/figures/fig4_forecast_calibration.png",
+   "caption": "SWPC day-1 M-class forecasts. (a) Reliability with operational outcomes. (b) Reliability with outcomes on the legacy (x0.7) scale. (c) Observed M-flare-day frequency divided by mean forecast per year (years with mean forecast of 5% or more); the red line is the December 2019 scale change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1051/swsc/2025007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Janssens et al. 2025: recalculated GOES flare classes without the 0.7 factor for 1976-2019."
+  },
+  {
+   "target": "https://arxiv.org/abs/2508.01114",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Verification of SWPC flare forecasts 1998-2024; did not examine the December 2019 flux-scale change."
+  },
+  {
+   "target": "sci:sha256:d8fe105441f4a8deb0890611a7a4970adb89bee39e6907d41713aa800780c4cf",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign work that also corrected the GOES 0.7 factor (median ratio 0.690); our 1.451 science/operational ratio agrees."
+  },
+  {
+   "target": "sci:sha256:ec45cb745d5f008953765f6b90cb021dc7c6fea3ef875f5f48ad9a95223b5f2d",
+   "reason": "Related campaign test of Cycle 25 amplitude forecasts."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/goes-space-environment-monitor/access/science/xrs/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI GOES-1 to GOES-15 XRS science-quality flare summaries."
+  },
+  {
+   "target": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI GOES-R XRS L2 flare summaries (GOES-16 to GOES-19)."
+  },
+  {
+   "target": "https://www.swpc.noaa.gov/",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "SWPC event lists, RSGA probability forecasts and Daily Solar Data from ftp.swpc.noaa.gov/pub/warehouse."
+  },
+  {
+   "target": "https://www.sidc.be/SILSO/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SILSO daily sunspot number V2.0 for an aggregate cross-check only (CC BY-NC 4.0; not bundled)."
+  }
+ ]
+}
