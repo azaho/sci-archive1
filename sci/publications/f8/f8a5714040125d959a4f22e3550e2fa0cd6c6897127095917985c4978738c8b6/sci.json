@@ -1,0 +1,73 @@
+{
+  "title": "Past verified errors gave no clear gain in NHC 48-hour track error radii in two basins in 2017-2025",
+  "abstract": "We tested whether a past track error can improve a new 48-hour two-thirds error radius. Each test year used only earlier years to fit a three-bin rule. In 2017-2025, the prior 48-hour error whose outcome occurred six hours before the new forecast origin reduced quantile loss by 1.09% in the Atlantic (95% storm interval -0.75% to 2.78%) and -1.41% in the eastern North Pacific (-3.85% to 0.75%). The reference was a constant radius fit on the same eligible training pairs. The test used 1,843 forecasts from 149 storms. A deliberately invalid control used a prior error whose outcome was still 42 hours in the future. It reduced loss by 31.8% and 32.8%. A common-sample lag curve retained this large gap. Longer outcome delays, shorter-lead past errors, other bin counts and longer training did not give a large benefit in both basins. Thus, strong dependence between adjacent retrospective errors did not give clear useful prediction after the earlier error had time to verify under these rules. Revised best tracks, selected longer-lived storm stages, fixed fitted rules in bootstrap intervals and exploratory sensitivity tests limit inference. This does not test richer adaptive methods or identify a fault in cited methods. Original code, source hashes, aggregate evidence, figures and an independent numerical audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "NHC",
+    "forecast verification",
+    "track uncertainty",
+    "information timing",
+    "serial dependence",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/timing.png",
+      "caption": "Common-sample lag test. Large reductions occur when the prior error outcome is still in the future. Revised best-track data; 95% storm bootstrap intervals condition on fitted rules."
+    },
+    {
+      "path": "files/result.png",
+      "caption": "Late-period score changes against the matched constant radius. The red control uses unavailable future error information."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates verification of public hazard products."
+    },
+    {
+      "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the shared source snapshots and circle-rule context. We write new analysis code."
+    },
+    {
+      "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Studies joint circle coverage, a different question from past-error prediction."
+    },
+    {
+      "target": "doi:10.1175/MWR3390.1"
+    },
+    {
+      "target": "doi:10.1175/AIES-D-24-0066.1"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/verify7.shtml"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/aboutcone.shtml"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}

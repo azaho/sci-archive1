@@ -1,0 +1,168 @@
+{
+ "title": "In 40 moving C. elegans, 63% of reliable pair-specific co-activity was locked to six behaviour variables; wiring and transcriptomes explained about 10% of the behaviour-independent rest",
+ "abstract": "Question: earlier campaign work found that the pair-specific co-activity of worm head neurons (after node effects, soma distance and homologous pairs) is very reliable, but wiring explains only 3-5% of it. What sets this reliable non-wiring part? Approach: in 40 off-food worms (Atanas 2023; 119 NeuroPAL neurons, 4,348 pairs) we divided the co-activity of each animal into a behaviour-locked part (traces predicted out of fold from velocity, reversal, head angle, head angular velocity, pumping and body curvature) and a behaviour-independent part. We measured the share of the reliable pair-specific covariance in each part and how much wiring (Cook 2019), CeNGEN transcriptome similarity, shared transmitter and lineage explain (split-half reliability calibration, leave-one-animal-out jackknife, class-label permutations). Results: the behaviour-locked part held 0.69 [0.65, 0.74] of the reliable pattern (time-shifted behaviour 0.07; 0.63 after detrending with control 0.01; velocity and reversal alone 0.59). It was low-rank (three node factors removed 80%), and similarity of neuron tuning to behaviour, measured in other animals, explained 38% of the total pattern. The behaviour-independent part was still reliable (0.69) and had more dimensions (three factors removed 53%). Wiring explained 2.6% of the total pattern and 4.0% of the behaviour-independent part. Transcriptome similarity added 5.2 points beyond wiring (permutation p = 0.004), but only 1.4 points after control for same class, ganglion and sensory/inter/motor type (p = 0.005). Lineage had no effect. The behaviour-independent coupling was concentrated in nose-tip mechanosensory (IL1, OLQ, OLL) and pharyngeal (NSM, I3) neurons. Eight on-food worms (Dag 2023) agreed in direction with wide intervals (behaviour-locked share 0.50 after detrending); the wiring increase did not replicate. Limitations: correlational; linear behaviour model with no nose-movement data; connectome and class-level transcriptome from other animals; possible cross-talk between near neurons; several controls were added after the first results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "whole-brain calcium imaging",
+  "structure-function coupling",
+  "functional connectivity",
+  "behaviour encoding",
+  "connectome",
+  "CeNGEN",
+  "transcriptome similarity",
+  "low-rank structure",
+  "NeuroPAL"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_behaviour_share.png",
+   "caption": "Share of the reliable pair-specific co-activity covariance that is behaviour-locked (blue) or behaviour-independent (orange), for each behaviour model and data set. Black tick: the same procedure with time-shifted behaviour. Error bars: 95% jackknife interval of the behaviour-locked share."
+  },
+  {
+   "path": "files/figures/fig2_predictors.png",
+   "caption": "Share of reliable pair-specific variance (rho^2) that each predictor explains, for the total, behaviour-locked, behaviour-independent and behaviour-partial maps in 40 Atanas worms; right: with same-class, ganglion and neuron-type controls. Error bars: 95% jackknife intervals."
+  },
+  {
+   "path": "files/figures/fig4_neurons.png",
+   "caption": "Left: share of the reliable behaviour-independent versus total pair-specific covariance that each neuron carries, coloured by ganglion. Right: neurons that behaviour explains less carry relatively more behaviour-independent coupling."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:2d23aeb7232e2ede1774e1447962825fd9c5ef7947ff056d02c44d268c80f9a0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found the reliable pair-specific FC with a small wiring share; we test what sets the rest."
+  },
+  {
+   "target": "sci:sha256:8c65c10b37dabd498acbaf41f5c4be7b8185c82f38d92f1f341a865a6e48723d",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "We re-implement its pair design and reliability calibration and explain its rank-3 node factors."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Node similarity absorbed the wiring gain; we identify behaviour tuning as most of that node similarity in the worm."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cook 2019 edge list and OpenWorm soma positions."
+  },
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "reason": "Shared input beyond direct wiring across species."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "reason": "Strength- and distance-matched surrogates reproduce most indirect-path gains."
+  },
+  {
+   "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+   "reason": "Eigenmode comparisons cannot identify the generator of FC."
+  },
+  {
+   "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+   "reason": "Worm wiring eigenmodes versus distance graphs."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Fly wiring-FC coupling and behavioural state."
+  },
+  {
+   "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+   "reason": "Mouse collateral patterns versus shuffles."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Zebrafish projectome predicts trial-residual coupling."
+  },
+  {
+   "target": "sci:sha256:0310766661af92b67adba7d46522558a12e322f7c4b2189b5a8e430d1a88a14a",
+   "reason": "NSM state did not change wiring coupling in the same worm data."
+  },
+  {
+   "target": "sci:sha256:85b15b2ed2f5190947be7f0ee7537dd744a9ad3d9e5d60b75f9fc2a7e1973bb7",
+   "reason": "Wiring flow to muscles predicts how much behaviour explains each neuron."
+  },
+  {
+   "target": "sci:sha256:b41d39ab916c186df33bafc9bd8e170ed4cbbf8e704c3d6f86cef908c6e8df41",
+   "reason": "Muscle distance predicts locomotion encoding."
+  },
+  {
+   "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+   "reason": "Predicted neuropeptide routes did not increase co-activity."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Atanas, Kim et al. 2023 whole-brain activity and behaviour."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.04.023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dag et al. 2023 replication data."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cook et al. 2019 connectome."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2021.06.023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CeNGEN transcriptome (Taylor et al. 2021)."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Randi et al. 2023; wormneuroatlas package files (CeNGEN table, lineage, ganglia)."
+  },
+  {
+   "target": "doi:10.1016/0012-1606(83)90201-4",
+   "reason": "Sulston et al. 1983 embryonic cell lineage."
+  },
+  {
+   "target": "https://zenodo.org/records/19388374",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://zenodo.org/records/19414639",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

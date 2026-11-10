@@ -1,0 +1,111 @@
+{
+  "title": "1982-2025 OISST heatwave count trends can reverse under 0.14 C changes with a 1983-2012 baseline",
+  "abstract": "We tested which marine heatwave trends survive bounded changes in daily SST. We give a twelve-state dynamic program that finds exact extrema of a signed event-count trend over independent threshold-crossing intervals. We used 29,120 ice-free native-pixel samples between 60 S and 60 N in NOAA OISST v2.1 for 1982-2025. The event rule uses five-day runs and two-day joins. With a 1983-2012 baseline, every record within 0.05 C of the source retains a positive count trend, at least +0.028 events per decade. Yet a constructed record within 0.14 C changes the count trend from +0.656 to -0.086 events per decade after all thresholds are recalculated. It changes 0.630% of area-time inputs, has an RMS change of 0.0111 C, and changes the mean SST trend by only -0.000283 C per decade. The count reversal occurs in all four spatial sampling phases. The later-baseline check also reverses counts in its tested phase. Heatwave days still rise by +18.19 days per decade in the main constructed record. A separate bound proves that every record within 0.14 C retains at least +0.878 heatwave days per decade. We also give sharp bounds and attaining records when all historical threshold inputs are frozen. First attempts near the old threshold failed after threshold recalculation; these null results are retained. These are sensitivity results, not estimates of true SST errors or corrected ocean trends. Selected changes have no required physical spectrum or spatial smoothness. The source data overlap prior studies. Proofs, code, aggregate evidence, source hashes and independent event checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "OISST",
+    "marine heatwaves",
+    "event count",
+    "trend bounds",
+    "dynamic programming",
+    "SST uncertainty",
+    "threshold recalculation",
+    "sensitivity analysis"
+  ],
+  "display": [
+    {
+      "path": "files/figures/count_and_day_trends.png",
+      "caption": "Safe count-trend bounds and an actual changed record. The count trend reverses under 0.14 C changes; the day-total trend stays positive. Lines between computed budgets are visual guides."
+    },
+    {
+      "path": "files/figures/sampling_and_sharp_bounds.png",
+      "caption": "Local count trends, four spatial sampling phases, and sharp count bounds when all historical threshold inputs are frozen. These are sensitivity results, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published buoy and product evidence motivates the input-step concern. No buoy data are reused."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published product-noise evidence motivates the sensitivity test. No buoy data are reused."
+    },
+    {
+      "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published CCI comparison supplies context. No CCI data are reused."
+    },
+    {
+      "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Published spectral correction motivates the count question. This study uses a broader bounded-change class and does not estimate a correction."
+    },
+    {
+      "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its event-day bounds to non-monotone event counts. Reuses extraction and threshold code under the SCI baseline license. Raw source and grid sample overlap."
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014"
+    },
+    {
+      "target": "doi:10.1038/s41467-018-03732-9"
+    },
+    {
+      "target": "doi:10.3389/fmars.2019.00737"
+    },
+    {
+      "target": "doi:10.1038/s43247-024-01369-9"
+    },
+    {
+      "target": "doi:10.5194/os-22-1213-2026"
+    },
+    {
+      "target": "doi:10.1029/2026GL124134"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1"
+    },
+    {
+      "target": "doi:10.1175/2007JCLI1824.1"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+      "reason": "NOAA PSL raw source. All 44 exact file URLs, shared paths and hashes are in sources.json."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/ecjoliver/marineHeatWaves/d7292bf08ade0af213fa760b0d7e4adfe5f52894/marineHeatWaves.py",
+      "reason": "Pinned external implementation used only for independent checks. Its code is not bundled."
+    },
+    {
+      "target": "https://www.noaa.gov/office-education/outreach-communication/faq",
+      "reason": "NOAA source rights and attribution context."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "Government source rights and attribution context."
+    }
+  ]
+}
