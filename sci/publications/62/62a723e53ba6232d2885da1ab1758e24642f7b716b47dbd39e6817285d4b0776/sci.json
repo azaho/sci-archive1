@@ -1,0 +1,97 @@
+{
+  "title": "In 32 Allen Neuropixels mice, higher visual areas had steeper response spectra for natural scenes, gratings and movies; RF matching and RF-based model twins did not explain most of it",
+  "abstract": "A source study found that cross-validated PCA spectra of natural-image responses decay faster (larger alpha) in areas higher in the anatomical mouse visual hierarchy. We tested whether this is specific to one stimulus set and whether receptive-field (RF) size and position explain it. We used all 32 Allen Visual Coding Neuropixels brain_observatory_1.1 mice (11,559 units in LGd, LP and six cortical areas) and a plan with decision rules written before the analysis. The hierarchy slope of alpha (ranks 2-30, 300-unit populations) was positive for natural scenes (0.27; 95% half-sample interval 0.19 to 0.34), static gratings (0.91; 0.78 to 1.04), natural movie one (0.45; 0.36 to 0.54) and natural movie three (0.35; 0.23 to 0.47), and inside cortex for all four sets. Matching RF area and RF position across cortical areas (99 units per area) did not lower the slope (natural scenes 0.21 matched, 0.23 unmatched; difference -0.02, interval -0.32 to 0.29), but this test has low power. Image-computable model twins with the measured RF centre, size, spatial frequency, orientation and simple/complex class of each unit gave slopes of 0.09 to 0.11 with equal weights against 0.27 in the data, and 49% to 69% of the data slope with reliability weights at generous RF sizes. Exploratory: the phase-invariant share of grating variance increased along the hierarchy, and the phase-dependent part had no cortical trend. Limitations: area-level correlational tests over 6 to 8 areas, a selected RF-defined subset, a simple uncalibrated twin model, and half-sample intervals that replaced a biased planned bootstrap. Code, aggregate results and exact provenance are included; Allen data stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "mouse visual cortex",
+    "visual hierarchy",
+    "cross-validated PCA",
+    "power law",
+    "dimensionality",
+    "receptive field",
+    "invariance",
+    "natural images",
+    "static gratings",
+    "natural movies",
+    "Neuropixels",
+    "Allen Brain Observatory",
+    "model twins",
+    "structure-function"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_stimulus_generality.png",
+      "caption": "(a) Natural-scene cvPCA spectra of 300-unit pooled populations, colour by hierarchy score; grey band = fit ranks 2-30. (b) Decay exponent alpha against the anatomical hierarchy score for four stimulus sets in 8 structures; bars are +/- 1.96 half-sample SD. (c) Hierarchy slope of alpha with 95% half-sample intervals (filled: 8 structures; open: 6 cortical areas)."
+    },
+    {
+      "path": "files/figures/fig2_rf_controls.png",
+      "caption": "(a) Mean RF area of RF-defined units per cortical area before and after RF matching (99 units per area). (b) Natural-scene alpha, matched and unmatched; bars use smaller half-sample populations. (c) Cortical hierarchy slopes, unmatched (open) and RF-matched (filled), 95% half-sample intervals. (d) Inside each area, alpha of the larger-RF half minus the smaller-RF half."
+    },
+    {
+      "path": "files/figures/fig3_model_twins.png",
+      "caption": "Image-computable model twins of RF-defined units on the 118 images. (a, b) alpha against hierarchy for the data (cvPCA) and for twins with equal weights, reliability weights, and weights only (RF parameters permuted), envelope scale c = 0.5 and 0.7. (c) Hierarchy slopes with 95% half-sample intervals (filled: 8 structures; open: cortex)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Source finding; we reuse its estimator and test its generality and the RF explanation it left open. Our natural-scene values reproduce it."
+    },
+    {
+      "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reported lower reliability far from the retina; motivates the reliability-weighted twin variant."
+    },
+    {
+      "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4",
+      "reason": "Shows that the fitted decay slope does not imply one full-profile compression order; we report fit-range checks for this reason."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1346-5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "cvPCA method and the power-law spectrum framework."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1716-z",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the anatomical hierarchy scores."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03171-x",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen Visual Coding Neuropixels dataset and RF metrics."
+    },
+    {
+      "target": "doi:10.1038/s41593-019-0550-9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen Visual Coding two-photon dataset, source of the 118 image templates."
+    },
+    {
+      "target": "doi:10.1101/2024.02.16.580726",
+      "reason": "cvPCA power-law estimates can be biased; we compare only slopes and orders inside each stimulus set."
+    },
+    {
+      "target": "https://alleninstitute.org/terms-of-use/",
+      "reason": "Terms that apply to the external Allen data used by this work."
+    }
+  ]
+}
