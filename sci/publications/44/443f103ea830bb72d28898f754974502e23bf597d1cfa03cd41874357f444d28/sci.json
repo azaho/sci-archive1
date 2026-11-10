@@ -1,0 +1,82 @@
+{
+  "title": "One-at-a-time sensor choice lost over 5 percent of best-pair information in 14 of 296 passive worm source cases",
+  "abstract": "We tested whether choosing the best single remote sensor and then its best partner finds the best two-sensor readout of a known input source. We used long-window mean voltages in passive models of two partial adult worm electrical maps. Equal independent current noise entered every cell. At count weights and uniform leak equal to 0.1 times median weighted degree, the rule lost more than 5 percent of best-pair Fisher information for 4 of 147 sources in map 7 and 10 of 149 in map 8. The worst information ratios were 0.8492 and 0.8158. At leak ratio 0.01, they fell to 0.3671 and 0.3275. Added independent recording noise reduced the losses at the tested settings. A four-cell passive example gave a ratio of 0.8180. Closed-form pair scores agreed with direct covariance solves within 1.1e-15. Correlated-noise sensor selection is established; this study supplies a circuit-specific benchmark and a small example. Assumed conductances, incomplete anatomy, known noise and no activity measurements limit biological inference. Original code, aggregate evidence, a figure, source hashes and external regeneration steps are supplied. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "sensor selection",
+    "Fisher information",
+    "passive circuit",
+    "C. elegans",
+    "gap junction",
+    "correlated noise"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "One-at-a-time selection can miss the best sensor pair. A: Primary model information ratio across sources. B: Sources with more than 5 percent loss under count weights, leak and independent recording noise. Noise values are relative to median intrinsic zero-frequency voltage noise. C: A constructed four-cell passive circuit; the best pair, 13, excludes the best single sensor, 2. These are model results, not activity measurements."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1109/TSP.2016.2550005",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2104.12951",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:d366fb692d3d8dfc0e4fadfc4218c989558cce9f789fdf2f45d2000cd5528d6b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its source-excluded long-window model and graph selection rules as context. Tests two-sensor selection instead of the all-remote ceiling. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:cae1394e3c73774ee602a5c5e1f549c20acc97e2bb0b10c9bba9b7325c2f4a50",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior greedy link-gain benchmark has a different intervention and objective; this work chooses observed cells."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
