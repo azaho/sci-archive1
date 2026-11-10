@@ -1,0 +1,61 @@
+{
+  "title": "Assumed independent strength variation gave two positive gains in 10 of 11 selected Allen slice models",
+  "abstract": "We tested whether independent inhibitory strength variation changes the value of a second input in a linear cancellation model. Eleven panels from Allen Synaptic Physiology r2.1 had one excitatory and two inhibitory inputs at a shared target and voltage bin. With assumed inhibitory strength CV 0.5, independent variation gave two positive optimal gains in 10 panels. Fully shared variation gave two in four panels. Mean second-input energy benefits were 0.02913 and 0.00584 of excitatory energy. Only two panels exceeded a chosen 0.05 benefit with independent variation. A quadratic overlap test separates shape capacity from noise averaging. Dense time integration, separate nonnegative least squares and exact noise-state enumeration checked the result. Strength variation was assumed, not measured. Sparse slice sampling, fixed gains, exact fitted kernels and linear voltage addition prevent claims about observed cancellation, spiking or behavior. The human panels share one target. Original code, aggregate results, a figure and external-data regeneration instructions are supplied; external record-level data are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "convergent inhibition",
+    "strength variation",
+    "noise correlation",
+    "linear cancellation",
+    "conditional model"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "The assumed noise correlation changes the mean benefit of a second inhibitory input and the number of panels with two positive gains. These are conditional model scores, not measured cancellation. Source: Allen Institute for Brain Science, Synaptic Physiology r2.1; Campagnola, Seeman and colleagues (2022)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c1f077c1c9440309ca73518a55685add1001f16b880e0c755605cd92a0a5750a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its deterministic two-input model to correlated strength variation; independently extracts the same cohort. No record tables or code reused."
+    },
+    {
+      "target": "sci:sha256:22fde6c72afa59f893884fc12e95e9623056cfd42665a31e65559f78febc5777",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior one-input timing-variation model; this work tests two-input strength variation."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.7554/eLife.43415"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/51409573d4f2930775e084f20c05ea5f853242ad/neuroanalysis/fitting/psp.py"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-connection-characterization"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
