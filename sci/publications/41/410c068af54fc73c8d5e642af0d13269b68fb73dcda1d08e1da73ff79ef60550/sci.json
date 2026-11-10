@@ -1,0 +1,92 @@
+{
+  "title": "Winter ice gave no clear added May-November evaporation prediction gain at Lake Superior in 1995-2022",
+  "abstract": "We tested whether winter maximum ice cover adds information about May-November net evaporation at Lake Superior. The reference model used year, prior May-November evaporation and current January-March evaporation. Each fit used earlier years only. We used L2SWBM v2023.2 monthly medians and a fixed NOAA GLERL ice table, with 28 test years in 1995-2022. Adding ice reduced mean squared error by 8.84%. The conditional 95% five-year block interval was -50.71% to +47.72%. RMSE fell from 63.181 to 60.323 mm. Every planned check interval included zero. Omitting one scored year gave gains from -4.69% to +18.07%. All fitted ice slopes were negative, but the test does not establish added prediction value. It does not show that ice has no physical effect. One lake, few test years, shared model inputs, revised reconstructions and omitted joint posterior uncertainty limit inference. This is a retrospective benchmark, not a real-time forecast. The package includes original code, aggregate results, resampling draws, source hashes, independent checks and a figure. Source tables and annual records stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "Lake Superior",
+    "ice cover",
+    "evaporation",
+    "thermal memory",
+    "seasonal prediction",
+    "water balance",
+    "null result",
+    "chronological validation"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Ice predictor scores for 28 test years, 1995-2022. Positive values mean a reduction in mean squared error. Lines are conditional 95% percentile intervals. The primary row uses five-year circular blocks and L2SWBM v2023.2. Every interval includes zero. Other rows are descriptive checks with no correction for multiple comparisons."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2c928f5c1e367f12e4603cbddcc6bc6c5a72122630645e45af50a2fd804fa528",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior seasonal evaporation study motivated the question and identified the two shared source snapshots. We use new code and add an external ice predictor. Same source inputs; not independent replication."
+    },
+    {
+      "target": "sci:sha256:e5105d76d1a3f05fb412728d910c72859391f6dfae8fb58febcc7865d11ce147",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related ice predictor test for summer buoy temperature with weather controls. Our evaporation target, reference model and years differ."
+    },
+    {
+      "target": "doi:10.1175/JHM-D-12-0170.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior direct-flux study of spring and autumn controls on Lake Superior evaporation."
+    },
+    {
+      "target": "doi:10.1029/2025GL117112",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior study of winter ice and evaporation; motivates testing the later warm season separately."
+    },
+    {
+      "target": "doi:10.1038/s41597-024-03994-7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source water-balance reconstruction methods and limits."
+    },
+    {
+      "target": "doi:10.5281/zenodo.20633991",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary evaporation release v2023.2; exact CSV path and hash in provenance.json."
+    },
+    {
+      "target": "doi:10.5281/zenodo.13883098",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier evaporation release V3.0; same-year revision check."
+    },
+    {
+      "target": "https://www.glerl.noaa.gov/data/ice/glicd/dates_AMIC.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Superior annual maximum ice cover; exact snapshot hash in provenance.json."
+    },
+    {
+      "target": "https://www.glerl.noaa.gov/data/ice/",
+      "reason": "Official ice database history and chart sources."
+    },
+    {
+      "target": "https://www.glerl.noaa.gov/home/notice.html",
+      "reason": "External source attribution and reuse notice."
+    }
+  ]
+}
