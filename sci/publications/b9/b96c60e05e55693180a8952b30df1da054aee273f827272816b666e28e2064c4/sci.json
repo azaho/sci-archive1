@@ -1,0 +1,79 @@
+{
+ "title": "Northward tree seedling offsets did not pass to new saplings and predicted adult shifts only on disturbed plots in 121,814 remeasured eastern US forest plots, about 2002-2022",
+ "abstract": "Question: is the position of tree seedlings north of adult trees, used as an early sign of climate-driven range shift, a reliable forecast? Approach: we used USDA Forest Service FIA plots in 31 eastern US states that crews measured twice, about 20 years apart (median 2002 and 2022; 121,814 fixed plots; 104 species). For each species we calculated seedling, sapling, adult, new-sapling and adult-ingrowth centroids in latitude, longitude and plot temperature. We used split-sample regressions across species, county cluster bootstrap, five plot subsets, an east-west placebo, a within-state offset, and a state border test. Results: at the first visit seedlings were 27 km [20, 34] north of adults (57% of species), as in Woodall et al. (2009); at the last visit the offset was 14 km [7, 20]. Inside states it was only 3.0 km [1.2, 4.8]. The north-south seedling offset did not pass to new saplings: slope 0.08 [-0.01, 0.17] where full transfer gives 1, rank correlation 0.04; new saplings grew 29 km south of the old seedlings and near the old saplings. Sapling offsets did pass to adult ingrowth (rank correlation 0.52). Seedling offsets predicted adult centroid shifts on all plots (slope 0.38 [0.23, 0.52], rank correlation 0.18) but not on plots without harvest or planting (0.05) or fully forested plots (0.01 [-0.03, 0.05]). Adults moved 14 km north and to plots 0.13 C cooler, about one quarter or less of the plot warming. Seedling density jumped at state borders much more than adult density (mean squared z 4.7 vs 1.4). Conclusion: the single-survey seedling offset is a persistent species property, mostly between states, and not a reliable indicator of migration. Limitations: perturbed public coordinates, imperfect tree-number matching, genus-level taxa, and the border test cannot separate crew effects from state-level ecology.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "tree migration",
+  "range shift",
+  "seedlings",
+  "Forest Inventory and Analysis",
+  "FIA",
+  "climate change",
+  "forecast test",
+  "observation bias",
+  "state border effect",
+  "eastern United States",
+  "recruitment",
+  "demography",
+  "split-sample regression"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_recruit_transfer.png",
+   "caption": "Across 104 species, the t1 seedling minus sapling offset (x) did not predict where new saplings grew by t2 in north-south position (left, slope 0.08; dashed line is full transfer). East-west offsets passed in part (right). Points are species; titles give split-sample slopes and rank correlations with 95% county-bootstrap normal intervals."
+  },
+  {
+   "path": "files/figures/fig1_adult_shift_vs_seedling_offset.png",
+   "caption": "Seedling minus adult latitude offset at the first visit versus adult centroid change to the last visit, for all panel plots (left) and plots fully forested at both visits (right). The positive slope on all plots depends on disturbed plots and high-leverage taxa; it is near zero on fully forested plots."
+  },
+  {
+   "path": "files/figures/fig4_state_border_test.png",
+   "caption": "Mean squared z of log stem density jumps for plot pairs within 15 km across state borders (orange) and inside states (blue). Seedling counts jump at state borders much more than adult counts, at both visits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1016/j.foreco.2008.12.013",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Source of the seedling minus adult latitude indicator of tree migration that we test forward with remeasured plots."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2486.2011.02571.x",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Single-survey FIA study that found no general range expansion; our forward test agrees that seedling offsets are weak migration evidence."
+  },
+  {
+   "target": "doi:10.1126/sciadv.1603055",
+   "reason": "FIA study of species centroid shifts between periodic and annual inventories."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-13-0248.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid temperature data used for plot climate normals."
+  },
+  {
+   "target": "https://apps.fs.usda.gov/fia/datamart/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FIA DataMart CSV tables (public domain), downloaded 9 November 2026."
+  }
+ ]
+}

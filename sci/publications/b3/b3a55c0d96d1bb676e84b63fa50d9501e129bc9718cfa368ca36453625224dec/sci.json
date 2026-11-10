@@ -1,0 +1,70 @@
+{
+  "title": "One cell norm prevents growth below gain 0.996 in two selected adult worm circuit models",
+  "abstract": "We tested whether a cell norm fitted to one adult worm chemical map can transfer to another map. Two selected cores had 157 common cells. Each contact-count matrix was divided by its own spectral radius. Direct use of the map 8 Perron norm on map 7 gave a common non-growth gain limit of 0.347861. Equal cell weights gave 0.725536. A geometric compromise between the two fitted scale vectors gave 0.996788. Its cell scale span was 17,519. The shared bound covers arbitrary signs, reduced strengths and switching between the two specified coupling sets. It does not cover all independent edge maxima. The compromise improved both direct-transfer limits under binary and capped contact weights too. Independent spectral and dynamical checks passed. These results apply established matrix theory to two fixed anatomical models. Unknown effective strengths, separate spectral normalization, extreme norm weights, selected cells and no matched activity prevent a claim about neural reliability in animals. Original code, aggregate results, a figure, source hashes and external regeneration steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "norm transfer",
+    "positive systems",
+    "common Lyapunov function",
+    "model robustness"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Common non-growth limits for two adult worm models. The shared norm improves direct transfer under five weight rules. These are deterministic model bounds, not animal estimates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original anatomical maps. Source tables remain external."
+    },
+    {
+      "target": "doi:10.1109/CDC.2004.1429509",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established common diagonal Lyapunov theory."
+    },
+    {
+      "target": "sci:sha256:1a5311bcd5b8cc299b7ef21c5a278e2e76089f4d04582bd2352ef23480d4c1eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Graph selection and individual Perron norm benchmark. No source code or record tables reused."
+    },
+    {
+      "target": "sci:sha256:8d7df97dd7ed167c31811d02a8282cc7e0a5c36b8c627a3e13c9e550d45d7395",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-map minimum scale spans. The present work tests one norm shared by two maps."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository license; external data are not bundled."
+    }
+  ]
+}
