@@ -1,0 +1,68 @@
+{
+  "title": "Two depth tests give different filter losses for 100-ppm, 2.8-hour Kepler-90 injections",
+  "abstract": "We test transit depth loss from a median filter in fourteen Kepler release 25 light curves of Kepler-90. We inject exposure-integrated 2.8-hour boxes at a fixed 14.44912-day period before our filter. We test 128 phases, two depths, four window lengths, and early and later data. Each test retains 125 phases. For 100-ppm injections and a half-day window, median local depth transfer is 0.940 and 0.947 in the two data parts. Median global fixed-template transfer is 0.754 and 0.766. With a two-day window, local transfer is 0.989 and 0.992; global transfer is 0.931 and 0.940. A local depth check can understate loss in a global template fit. This test does not determine the cause of a prior blind-search failure for known planet i. Masks and outlier acceptance stay fixed. Injections enter after mission processing. Period, phase and shape are supplied. The test measures neither blind recovery nor planet occurrence. No new planet is found. Code, aggregate results, source hashes, figures and repeat steps are included. External inputs stay outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler-90",
+    "transit injection",
+    "median filter",
+    "signal transfer",
+    "sensitivity audit"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Local depth transfer and supplied-orbit contrast. Ranges show phase variation, not parameter confidence."
+    },
+    {
+      "path": "files/global.png",
+      "caption": "Global fixed-template depth transfer. Period, phase and shape are supplied."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bbcab310c042741a6cf9679327683a472a87aa2b1f9e36d47711e575b7437046",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published input inventory and residual mask and filter choices."
+    },
+    {
+      "target": "sci:sha256:875862d68e2c72ee13dbc418cdf186e063c337c3c6995f858cdfeb77eebcc4e5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its failed known-planet control motivates this paired depth test."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa9e09",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known planet i gives the period and duration scale."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ab3984",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior broad comparison of trend methods."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html"
+    }
+  ]
+}
