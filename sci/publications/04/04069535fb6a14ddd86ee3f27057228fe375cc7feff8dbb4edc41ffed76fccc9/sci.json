@@ -1,0 +1,136 @@
+{
+  "title": "In two adult fly eyes, columnar synapse counts vary 3 to 6 times more than Poisson; spatial, column and cell factors explain all of the excess in the male CNS and all but a 9% edge-specific CV in FAFB",
+  "abstract": "Question: when the same connection occurs many times, which part of its synapse count variation is specific to each connection? A prior SCI study found that two copies of homologous fly connections vary more than Poisson sampling, and that the excess increases with strength. With two copies it could not find the cause. Approach: the fly optic lobe has about 800 columns with one cell of each columnar type. We used column-assigned cells in both eyes of FlyWire FAFB v783 (female; Princeton and Buhmann synapse tables) and of the male CNS v1.0. This gave 64 to 206 connection types and 55,519 to 147,087 copies per eye. Covariances between different copies are free of Poisson noise. We used them to split the extra-Poisson variance into a spatial trend, a column factor, factors for each presynaptic and postsynaptic cell, and an edge-specific rest, with block-bootstrap intervals. Results: for type means of 16 or more synapses, phi around the type mean was 3.3 and 3.9 (male) and 5.2 and 5.9 (FAFB). Pairs of distant columns reproduced the rising two-copy curve of the central brain. Pairs of neighbouring male columns gave phi of 1.3 to 2.0 at all counts. In the male CNS, after a cubic spatial trend, the edge-specific variance was -0.0018 (95% interval -0.0029 to -0.0003) and 0.0020 (0.0001 to 0.0041) in CV squared units, so the edge-specific CV is at most about 6%. With identical type pairs, FAFB had 2.1 to 2.5 times the male excess and an edge-specific CV of about 9%. The Princeton and Buhmann tables shared the Princeton excess almost completely, so it is not detector noise. Type means agreed within 7 to 10% between the eyes of one animal, but differed by 30 to 38% between animals and by 40% between the two synapse tables of one eye. Limitations: two animals of different sex, imaging and reconstruction pipeline; columnar types only; additive-variance approximation.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "synapse count",
+    "wiring variability",
+    "Poisson",
+    "overdispersion",
+    "variance decomposition",
+    "optic lobe",
+    "visual columns",
+    "Drosophila",
+    "FlyWire",
+    "male CNS",
+    "neuron gain",
+    "reproducibility",
+    "synapse detection"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_pairs_spatial.png",
+      "caption": "Two-copy dispersion for random and neighbouring column pairs against prior central-brain curves (A), and covariance of the same connection type between columns by hex distance (B)."
+    },
+    {
+      "path": "files/figures/fig2_decomposition.png",
+      "caption": "Split of the extra-Poisson variance of strong columnar connections into column, presynaptic-cell, postsynaptic-cell and edge-specific parts, before (A) and after (B) a spatial trend."
+    },
+    {
+      "path": "files/figures/fig4_type_level.png",
+      "caption": "Mean counts of connection types between eyes and animals (A), and their SD beyond sampling error between eyes, synapse tables and animals (B)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its two-copy dispersion test to hundreds of copies and reuse its central-brain dispersion curves (strata_table.csv) in Figure 1A."
+    },
+    {
+      "target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e",
+      "reason": "Selected prior work on contact and two-way connection strength; it limits the interpretation of shared count factors."
+    },
+    {
+      "target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f",
+      "reason": "Selected prior work on wiring variability and co-activity in worms."
+    },
+    {
+      "target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88",
+      "reason": "Related campaign result: between-animal count differences repeat across sides after neuron gains."
+    },
+    {
+      "target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049",
+      "reason": "Related campaign result on direction balance of two-way pairs."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire FAFB v783 connectome."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire cell typing."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07981-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire optic lobe column assignment."
+    },
+    {
+      "target": "doi:10.1101/2025.07.11.664377",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Princeton synapse table."
+    },
+    {
+      "target": "doi:10.1038/s41592-021-01183-7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Buhmann synapse table."
+    },
+    {
+      "target": "doi:10.1101/2025.10.09.680999",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male CNS v1.0 connectome."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08746-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male optic lobe neuron inventory and column assignment."
+    },
+    {
+      "target": "doi:10.1073/pnas.1509820112",
+      "reason": "Prior analysis of count variation over seven medulla columns."
+    },
+    {
+      "target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire Codex public data files (see files/PROVENANCE.md)."
+    },
+    {
+      "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male CNS flat connectome files (see files/PROVENANCE.md)."
+    },
+    {
+      "target": "https://join.flywire.ai/guidelines",
+      "reason": "FlyWire data terms and citation requirements."
+    }
+  ]
+}
