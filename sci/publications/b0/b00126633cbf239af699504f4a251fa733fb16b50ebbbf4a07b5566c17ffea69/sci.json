@@ -1,0 +1,86 @@
+{
+  "title": "NOAA G1 and G2 probability revisions failed an ideal-update test on 804 matched days in 2023-2025",
+  "abstract": "We tested the size of NOAA planetary storm probability revisions against their score gains. Ideal later conditional probabilities must give a mean Brier score gain equal to the mean squared revision. On 804 matched target dates in 2023-2025, G1+ gain minus squared revision was -0.03106, with 95% 27-day block limits -0.04437 to -0.01819. G2+ gave -0.01807 (-0.02785 to -0.00882). Both remained below zero with a three-endpoint adjustment, other block lengths, strict GFZ labels and NOAA estimated outcomes. G3+ was uncertain. We then fitted one common convex revision weight on 442 dates in 2023-2024. The weight was 0.50741. On 362 dates in 2025, the mean three-level score fell from 0.09528 to 0.09293. The change was -0.00234, with limits -0.00634 to +0.00182; resampling the fit also gave uncertain gain. Thus a detected revision defect did not establish a useful repair. This is a retrospective extension on reused sources, not independent confirmation. Archive gaps, only three years, event definitions and conditional block assumptions limit inference. Code, aggregate results, source hashes, an independent parser audit and a frozen NOAA snapshot support reproduction. GFZ source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "geomagnetic forecasts",
+    "forecast revisions",
+    "Brier score",
+    "martingale",
+    "probability pooling",
+    "NOAA",
+    "transfer test"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Revision size and score gains on matched dates, and the fixed-weight 2025 transfer test. Negative blend score changes are better. Intervals hold the fitted weight fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Frozen NOAA source reports and definitive GFZ source identification."
+    },
+    {
+      "target": "sci:sha256:a3f9a93bb8f40b3a899404b79a7d1f8c121c4e5d3cf94e3dbf5be680f72b8ffd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Matched update score results and score expansion; we add a necessary ideal-update moment test and a fixed-weight transfer test."
+    },
+    {
+      "target": "sci:sha256:f466d802b3dabb297d5b7ded4b4e67d2c56e7e88496eecb82a953efacdd50bf5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier correction transfer and event-label checks motivate distinguishing diagnosis from repair."
+    },
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected hazard verification work motivates the objective."
+    },
+    {
+      "target": "doi:10.1287/mnsc.2016.2720"
+    },
+    {
+      "target": "doi:10.1111/j.1467-9868.2009.00726.x"
+    },
+    {
+      "target": "https://arxiv.org/abs/2106.06515"
+    },
+    {
+      "target": "doi:10.5880/Kp.0001"
+    },
+    {
+      "target": "doi:10.1029/2020SW002641"
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/3-day-geomagnetic-forecast"
+    },
+    {
+      "target": "https://www.spaceweather.gov/content/wmo/geomagnetic-activity"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://kp.gfz.de/app/files/Kp_ap_since_1932.txt"
+    }
+  ]
+}
