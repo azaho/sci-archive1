@@ -1,0 +1,137 @@
+{
+  "title": "Two FlyWire synapse detectors share left-right count excess above a Poisson bound under a fitted neuron-gain model",
+  "abstract": "We tested whether unexplained left-right synapse count variation repeats across two detectors on the same FlyWire segmentation. A fixed panel had 4,441 types with one neuron per side. We fitted separate neuron gains on other connection folds. We derived a paired residual score whose reference permits arbitrary detector overlap and dependence under marginal conditional-binomial models. Own-detector count weights preserve the expectation bound despite count selection. With total counts of at least 4, the observed score was 1.953 against a known-probability Poisson bound of 1; its 95% graph bootstrap range was 1.904 to 2.006. In the 4-15 total-count band the score was 1.352 (1.326 to 1.383). Central-neuron and gain-penalty checks gave similar results. Exact finite-distribution linear programs checked the bound. Full gain refits and a variable-training-count stress test checked estimation error. Arbitrary edge-specific log-odds errors of radius 0.168 can remove the weak-band excess. The shared excess can arise from biology, segmentation or common detector biases. One animal, one segmentation, fitted means and graph dependence limit inference. The package has code, aggregate evidence and a separate-data retrieval recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "connectome variability",
+    "synapse count",
+    "FlyWire",
+    "paired detectors",
+    "Poisson bound",
+    "conditional binomial",
+    "detector overlap",
+    "neuron gains",
+    "measurement error"
+  ],
+  "display": [
+    {
+      "path": "files/figures/shared_excess.png",
+      "caption": "Two detectors retain shared count excess after neuron-gain correction in one FlyWire brain. Count bands use each detector total. Error bars are graph bootstrap ranges."
+    },
+    {
+      "path": "files/figures/calibration_sensitivity.png",
+      "caption": "Probability-error sensitivity and full gain-refit checks show where the known-probability bound can fail after fitting. Shared biology and shared reconstruction errors remain confounded."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its unchanged conditional-binomial neuron-gain fitter under SCI baseline code terms."
+    },
+    {
+      "target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Tests which part of its unresolved low-count excess repeats across two detectors."
+    },
+    {
+      "target": "sci:sha256:82b126177507bcfa072eb00b4631a840efb68e2b6d88261b82f0055fe2af39bb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count-variation evidence read before this analysis. No record-level data reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y"
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5"
+    },
+    {
+      "target": "doi:10.1038/s41592-021-01183-7"
+    },
+    {
+      "target": "doi:10.1101/2025.07.11.664377"
+    },
+    {
+      "target": "doi:10.1016/j.cell.2018.06.019"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2610.29205"
+    },
+    {
+      "target": "https://home.flywire.ai/guidelines",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://codex.flywire.ai/about_flywire",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
