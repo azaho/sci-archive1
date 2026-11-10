@@ -1,0 +1,123 @@
+{
+ "title": "DOISST v2.1 input changes put steps of up to x3 into 1982-2024 SST front statistics that ESA CCI v3 lacks; CCI steps at its own sensor changes, and with step terms both agree on small trends",
+ "abstract": "Question: Earlier studies found that satellite input changes in NOAA DOISST v2.1 cause step losses of fast temporal SST variance. Do the same changes put steps into spatial statistics (gradients, fronts, small-scale variance), and what trend remains? Approach: We calculated daily gradient, front-fraction, sub-1-degree variance and structure-function statistics of DOISST (0.25 degree, 1982-2025, 28,458 ice-free 1-degree cells, 60S-60N). We compared them with ESA SST CCI Analysis v3.0.1 on the same 113,702 pixels on every 5th day (1982-01-01 to 2024-06-22). We tested steps with placebo dates, fitted trends with step terms at each product's input-change dates, and tested this adjustment with random dates. Results: On the documented change to Navy AVHRR (2007-01-01), the DOISST fraction of zonal gradients above 4 K per 100 km increased x2.6 (60S-60N) and x3.0 (western boundary currents); the 28-km structure function at these currents increased x1.7. CCI did not change (x0.96 to x1.03; placebo fractions 0.42 to 0.86). DOISST also steps in 1985 and mid-2020. The raw 1982-2023 trend of the global mean gradient was -0.031 ln units per decade in DOISST and +0.024 in CCI; the strong-front trend was +0.34 and +0.17. CCI has its own steps at dates that agree with NOAA-9, ATSR-1, the loss of AATSR and the two SLSTR launches. With step terms, the median DOISST-CCI trend difference over 41 statistic-region pairs fell from 0.068 to 0.022 ln units per decade; 200 random date sets gave a median of 0.136, and none was below 0.022. Adjusted trends are small: strong fronts +0.04 to +0.06 per decade, no detectable trend of the mean western-boundary-current gradient, and +0.03 to +0.05 for the 445-km structure function at 60S-20S. In a published Japan/East Sea Subpolar Front metric, the DOISST 1985-2020 trend (+0.23 K per 100 km per decade) is a 2007 step; about half of it is absent in CCI. Conclusion: Front and gradient trends from DOISST are mostly input-change artifacts, and CCI is not homogeneous either. Limitations: no in situ reference for gradients; CCI has zonal statistics only on one row per degree; some step dates come from change-point search; tropical adjusted trends still disagree.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.data-an"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "ocean fronts",
+  "SST gradient",
+  "OISST",
+  "DOISST",
+  "ESA SST CCI",
+  "data homogeneity",
+  "observing system change",
+  "structure function",
+  "western boundary currents",
+  "change points",
+  "climate data record",
+  "AVHRR",
+  "ATSR",
+  "SLSTR",
+  "Subpolar Front",
+  "Japan/East Sea"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_doisst_vs_cci_annual.png",
+   "caption": "DOISST v2.1 (blue) and ESA CCI v3.0.1 (orange) annual mean zonal gradient, strong-front fraction (> 4 K per 100 km) and 25-km structure function on the same pixels and days, 60S-60N and western boundary currents. Solid lines: documented DOISST input changes (2007-01-01, 2021-10-01). Dashed lines: earlier DOISST variance-step dates. DOISST steps up in 2007; CCI does not, but CCI steps at its own sensor changes (1985, 1991, 2016)."
+  },
+  {
+   "path": "files/figures/fig6_trend_agreement.png",
+   "caption": "DOISST against CCI 1982-2024 trends for 7 spatial statistics in 6 regions. (a) Raw linear trends. (b) Trends with step terms at each product's own input-change dates. The median absolute difference falls from 0.068 to 0.022 ln units per decade; random step dates give a median of 0.136."
+  },
+  {
+   "path": "files/figures/fig1_doisst_daily_spatial.png",
+   "caption": "DOISST v2.1 daily spatial statistics (91-day running mean, deseasonalised, ln change from the 1982-2006 mean) for 60S-60N, western boundary currents and 20S-20N. Steps occur on 1985-01, 2007-01-01 and 2020-06/07."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its ice-free cell mask and its DOISST step dates; we extend its reach analysis from time statistics to spatial statistics."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We show that the input-change steps it found in time statistics also occur in spatial statistics."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We show that the noise steps it found also change spatial gradients and fronts."
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "The DOISST persistence claim that the prior campaign studies tested."
+  },
+  {
+   "target": "doi:10.3389/fmars.2022.1038024",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We repeat its Subpolar Front intensity metric in DOISST and CCI and find that about half of the DOISST trend is a 2007 step absent in CCI."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Documented DOISST input-change dates."
+  }
+ ]
+}
