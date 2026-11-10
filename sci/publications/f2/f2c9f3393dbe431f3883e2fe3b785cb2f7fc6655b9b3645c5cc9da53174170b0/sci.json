@@ -1,0 +1,66 @@
+{
+  "title": "Zero-flow duration cut Brier error by 18.9% at 144 Australian gauges in a 2001-2021 logistic test",
+  "abstract": "We tested whether observed zero-flow spell duration adds information about return to positive daily flow after rainfall, evaporation demand and season are known. We used CAMELS-AUS v2.03, trained separate site models in 1971-2000 and tested 492234 risk days with 6349 returns at 144 gauges in 2001-2021. Adding duration to fixed logistic weather models reduced equal-site mean Brier error from 0.02126 to 0.01725, a gain of 18.88%. The conditional 95% shared three-year block interval was 16.19% to 20.21%. The median site gain was 9.86%. Scoring spells at least seven days old left a 23.64% gain. A three-day return target left a 17.49% gain. A post hoc flexible weather model left a 12.01% gain; a quality-A-only subset left a 17.97% gain at 84 sites. The main duration fit still had higher Brier error than an always-no-return reference (0.01649) and a training-site constant (0.01637). Both main logistic fits overpredicted returns. The flexible duration fit had lower point error (0.01475) than both simple references. These estimates use observed target-day rain and are not lead forecasts. Source errors, selected sites, model form and conditional intervals limit inference. Duration can summarize omitted state information, but this test does not identify storage depletion, physical drying or a causal recovery law. Original code, aggregate evidence, audits, figures and source hashes support reproduction. Source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "intermittent rivers",
+    "zero flow",
+    "spell duration",
+    "flow resumption",
+    "CAMELS-AUS",
+    "conditional probability",
+    "chronological validation",
+    "hydrological memory"
+  ],
+  "display": [
+    {
+      "path": "files/restart.png",
+      "caption": "Added zero-flow duration reduced later-year probability error in the tested models. Intervals use shared three-year blocks with fixed sites and fits. The flexible-model and quality-code checks are post hoc. Pooled age-group rates are descriptive and can have different weather and site composition."
+    },
+    {
+      "path": "files/absolute_scores.png",
+      "caption": "Post hoc absolute-score check. Lower Brier error is better. Both main logistic models have higher error than simple fixed references. The flexible model with duration has the lowest tested point error. No intervals are shown for these reference comparisons."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5194/hess-26-2671-2022",
+      "reason": "Prior event-response study motivates omitted wetness-state information."
+    },
+    {
+      "target": "doi:10.1002/wat2.1436",
+      "reason": "Prior work explains the limits of treating zero gauge readings as channel drying."
+    },
+    {
+      "target": "sci:sha256:59477deccf09e87cbdf8ce2c84996cb9857685360a68f85de96c3667deeb3563",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Read for source methods and annual-memory context. We use the same source collection for a new daily return target. No code or derived table was copied."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2.03 supplies the external flow and weather records. Exact source and member hashes are recorded."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "reason": "Source methods and data-rights statement."
+    },
+    {
+      "target": "https://www.bom.gov.au/water/hrs/qc_doc.shtml",
+      "reason": "Definition of quality code A for the post hoc subset."
+    },
+    {
+      "target": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "reason": "External source license, credited in the separate notice."
+    }
+  ]
+}

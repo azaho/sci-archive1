@@ -1,0 +1,77 @@
+{
+  "title": "A correlation cap of 0.5 left 101 of 108 selected Allen input models above 80 percent fixed-weight efficiency",
+  "abstract": "We tested one fixed positive readout across first and late 50 Hz response summaries in Allen cortical slice data. Noise covariance was unknown within an assumed absolute correlation cap. At cap 0.5, fixed weights chosen for that cap retained at least 80 percent of each state-specific robust optimum in 101 of 108 selected target-and-sign groups. Weights chosen under independence fell below 80 percent in 39 groups; choosing weights for the cap reduced this count to seven. At cap 0.9 the counts were 98 and 13. A cone solver agreed with the primary optimizer within 2.10e-8 efficiency units at cap 0.5. These are conditional model results. Medians were assigned as means, marginal summaries were treated as exact, and input covariance was not measured. Selected slice circuits, different first and late statistics, recording noise and no held-out decoding test limit biological inference. Original code, aggregate evidence, a figure, hashes and external retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic convergence",
+    "noise correlation",
+    "fixed readout",
+    "short-term plasticity",
+    "robust optimization"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Shared noise sensitivity of fixed positive readouts in 108 selected Allen input models. Solid curves use weights chosen for each cap; dashed curves retain weights chosen under independence. Efficiency uses the robust optimum for each state at the current cap."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:5481b72a25bf75b555ac1f849e9e4ec9eb7542aca65d12207b3c66184b210003",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its independent-noise fixed-weight benchmark to correlation uncertainty; no code or records reused."
+    },
+    {
+      "target": "sci:sha256:7626d3a62470075698cee11a01cea6a82cf954fb58c00619585f88efa8782de0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its one-state adverse covariance reduction as a model premise."
+    },
+    {
+      "target": "sci:sha256:1035506d548293d06619731786383ffe765d0aa34167b4760ee816249fdbfe57",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior two-state input-pair best-single-input guarantee; this study uses full target groups and efficiency relative to full state-specific optima."
+    },
+    {
+      "target": "https://web.stanford.edu/~boyd/papers/robust_bf.html",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
