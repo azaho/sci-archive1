@@ -1,0 +1,57 @@
+{
+  "title": "Two leak levels reduced exact-response weight error in two passive worm models under a uniform leak change",
+  "abstract": "We tested a two-leak estimate of direct electrical weights in passive models of two partial adult worm maps. A Schur-complement calculation shows that a known uniform leak change reduces full-matrix hidden-path bias in positive-semidefinite order. It does not guarantee better estimates at each pair. In 30 half-observed masks per map at base leak one, exact-response median weight errors fell from 13.92 and 14.78 percent at double leak to 8.28 and 9.43 percent with the two-leak estimate. Some pair errors grew and some estimated weights were negative. Under an assumed absolute response noise floor of 0.01 times the low-leak RMS response, the two-leak estimate lost to repeated high-leak measurements in all 60 masks. A change restricted to observed cells provides no added direct-weight information. The method requires calibrated full response matrices and a known leak change in hidden cells that preserves coupling. This is a conditional numerical method test, not measured neural conductance or activity. Original code, proof, aggregate evidence, source hashes and retrieval steps support reproduction. External records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical coupling",
+    "hidden neurons",
+    "leak conductance",
+    "Kron reduction",
+    "connectome",
+    "passive circuit",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Two-leak estimates reduce exact-response error but lose their advantage at the largest tested noise level. Lines show median off-diagonal weight error; bands show the middle half of 30 masks per map. Each method uses two acquisitions. Base leak is one and the higher leak is two."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomy, used through the pinned wormneuroatlas files."
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established Schur-complement circuit reduction."
+    },
+    {
+      "target": "sci:sha256:7eaecf41e966947b23e2700f98253e80b296610b49d25481b66f3c6411cf27d1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior frequency extrapolation benchmark. This study tests a uniform steady leak change and its hidden-cell requirement. No code or numerical tables reused."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
