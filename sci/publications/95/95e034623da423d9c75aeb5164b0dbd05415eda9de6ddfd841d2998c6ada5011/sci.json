@@ -1,0 +1,130 @@
+{
+ "title": "Oklahoma M2.5+ earthquake clustering in 2010-2026 faded within about 13 months, unlike tectonic aftershocks; tapered ETAS fit to 2020 forecast the 2021-2026 count and pure Omori ETAS 5 times too many",
+ "abstract": "Question: how long does earthquake-to-earthquake clustering last in Oklahoma induced seismicity, how much of the 2021-2026 rate is the late tail of the 2011-2020 sequences, and which clustering model forecasts the decline? Approach: we fitted space-time ETAS models to 10,806 OGS M2.5+ events (2010-2026) with a free background rate in each 0.2-degree cell and 6-month bin, and an Omori-Utsu kernel with or without an exponential taper exp(-t/tau). We applied the same code to three Japanese tectonic sequences (JMA) and to synthetic catalogs, and we made forecasts from fits that end in 2018 and 2020. Results: the data strongly prefer a taper: tau = 405 days (335-474 over six background designs), with a log-likelihood gain of 680 for one parameter (194 at M3+). The tectonic controls gave gains of 0.0-9.0 and tau of 3.6 years to infinity, and synthetic pure-Omori catalogs gave gains of 2.7-10.3. Parents of M3.5+ had longer, near-Omori tails (tau 6.5 years, p 1.09); small parents had short, swarm-like clustering. Productivity per parent fell from 0.556 (2014-2016) to 0.398 (2020-2026), and the ratio of all events to independent events fell from 5.1-5.8 to 3.4; productivity did not increase with current local injection. Of the 413 events in 2021-2026, the tapered models give 25-41% to independent events (about 22 per year, 3 times the 1980-2008 rate of all events) and 14-44% to descendants of pre-2021 events; pure Omori gives 40-58%. From a 2020 fit, pure Omori ETAS forecast 2,018 events from earlier events alone (4.9 times the observed 413); tapered models with a decaying background forecast 378 and 412, but too few in 2024-2026. From a 2018 fit, all models forecast too many (tapered 1,763 for 788). The 2021-2026 independent count follows the 2014-2016 count of each cell, not current injection (slopes 0.14-0.35, upper bounds below 0.6). Limitations: the free background cannot hold slow tails inside one cell-bin; ETAS clustering in Oklahoma includes swarms driven by common pressure changes; OGS magnitude practice and network density changed after 2016; the profile interval is model-conditional; many variants were compared.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "induced seismicity",
+  "Oklahoma",
+  "ETAS",
+  "aftershock duration",
+  "tapered Omori law",
+  "wastewater injection",
+  "earthquake forecasting",
+  "aftershock productivity",
+  "stochastic declustering",
+  "seismicity decay",
+  "Arbuckle Group",
+  "rate-and-state"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_taper_tests.png",
+   "caption": "Taper tests. a: Oklahoma M2.5+ log-likelihood gain over the pure Omori kernel against a fixed taper time; the diamond is the free fit (405 days). b: gain of a free taper for Oklahoma (blue) and three Japanese tectonic sequences (aqua), same code and settings. c: synthetic catalogs with a pure Omori truth (gray) or a 400-day taper (orange): recovered taper time and gain."
+  },
+  {
+   "path": "files/figures/fig3_forecasts.png",
+   "caption": "Out-of-sample yearly M2.5+ counts from ETAS fits that end in 2020 (a-c) and 2018 (d-e): offspring of earlier events only (orange), plus a decaying background (aqua) or a constant background (blue); means and 90% ranges of 300 simulations (100 for pure Omori); black dots are observed counts."
+  },
+  {
+   "path": "files/figures/fig2_decomposition.png",
+   "caption": "Yearly OGS M2.5+ counts (black), ETAS independent (background) events (blue) and events that descend from pre-2021 events (orange) for the tapered (a) and pure Omori (b) models; 2026 is scaled to 12 months. The dashed line is the 1980-2008 rate of all events."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a2572246ee8f3fa15450d11e3c30647b50a431bf8bae5b361c1bcb5ea198c8",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its exact OGS catalog bytes and its cell-year Arbuckle injection panels and repeat its cross-section design. Our ETAS results support its finding that rates fell faster than pressure forecasts and give a clustering explanation for part of it."
+  },
+  {
+   "target": "sci:sha256:d6c0ec4f174b1330bc04ff13b32b6747e594058c722d3ada3a7a4f9069c8d5e6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our falling clustering amplification (5.1-5.8 to 3.4) is of the same size as the factor 1.7 over-prediction of its best pressure model in 2020-2026."
+  },
+  {
+   "target": "doi:10.1785/0220190211",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OGS catalog (Walter et al. 2020)."
+  },
+  {
+   "target": "https://ogsweb.ou.edu/eq_catalog/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA unified hypocentre catalogue 2000-2024, tectonic controls."
+  },
+  {
+   "target": "https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OCC Form 1012A injection volumes, through the panels of the earlier study."
+  },
+  {
+   "target": "doi:10.1023/A:1003403601725",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Space-time ETAS model (Ogata 1998)."
+  },
+  {
+   "target": "doi:10.1198/016214502760046925",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stochastic declustering (Zhuang et al. 2002)."
+  },
+  {
+   "target": "doi:10.1198/016214508000000148",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM estimation of ETAS (Veen and Schoenberg 2008)."
+  },
+  {
+   "target": "doi:10.1029/93JB02581",
+   "reason": "Rate-and-state aftershock duration (Dieterich 1994)."
+  },
+  {
+   "target": "doi:10.1785/0120130017",
+   "reason": "ETAS for Oklahoma: background and productivity both increased in 2009 (Llenos and Michael 2013)."
+  },
+  {
+   "target": "doi:10.1785/0120230098",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Modelled aftershock durations of Oklahoma induced sequences of less than five years; our catalog-based taper agrees."
+  },
+  {
+   "target": "doi:10.1038/nature08502",
+   "reason": "Long aftershock sequences within continents (Stein and Liu 2009)."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-06167-4",
+   "reason": "Langenbruch et al. 2018 forecast tested by the earlier studies."
+  }
+ ]
+}
