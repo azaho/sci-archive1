@@ -1,0 +1,141 @@
+{
+ "title": "In 186 mouse brain regions, neuronal Kv3 transcripts predicted shorter spikes beyond space and random genes, but T-type calcium transcripts did not predict bursts (IBL, Allen atlas)",
+ "abstract": "Question: earlier work found that the neuron-type mix of a mouse brain region predicts its intrinsic spiking phenotype better than input wiring, but not which property of the type mix acts. We tested whether ion-channel transcripts predict the matching spike feature. Data: 62,545 IBL Brain-Wide Map units in 186 regions; the expected log expression of 20,378 genes per region, from Allen MERFISH type composition multiplied by 10x type means. The plan was frozen before any gene-to-feature statistic. Results: the Kv3 score (Kcnc1-3) had Spearman rho -0.60 with spike duration (spatial-surrogate p = 0.001; expression-matched random-gene p = 0.004; within divisions -0.28). It stayed after control of technical features, geometry, division and rate (partial -0.25) and in a second MERFISH brain (-0.54). But the Pvalb gene predicted equally well, Kv3 genes ranked only in the top 3% genome-wide, and the Kv3 link to the narrow-unit fraction did not survive controls. The T-type score (Cacna1g/h/i) did not predict burst firing (rho -0.18, against a positive prediction). In 27 thalamic nuclei it correlated negatively with burst fraction (-0.53), and cortical input share kept its link after control of the T-type genes (partial 0.71). In held-out spatial blocks, transcriptome PCs predicted intrinsic features better than input-wiring PCs (mean CV R2 0.39 vs 0.30; 7 of 8 features). Ion-channel genes beat random gene sets modestly (p = 0.036). Limitations: correlational region averages; expected transcripts, not channel protein; the IBL drift control is rate-linked.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Kv3",
+  "Kcnc1",
+  "T-type calcium channel",
+  "spike waveform",
+  "burst firing",
+  "thalamus",
+  "spatial transcriptomics",
+  "MERFISH",
+  "IBL Brain-Wide Map",
+  "structure-function",
+  "mouse",
+  "brainsmash"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_kv3_spike_duration.png",
+   "caption": "Kv3 transcript score against median spike duration in 186 regions, with spatial-surrogate and random-gene null distributions."
+  },
+  {
+   "path": "files/figures/fig2_specificity_controls.png",
+   "caption": "Correlations of channel-gene scores with intrinsic and technical features, and partial correlations after cumulative controls."
+  },
+  {
+   "path": "files/figures/fig3_thalamus_ttype.png",
+   "caption": "Thalamic burst fraction against cortical input share S, the T-type score, Cacna1g and Cacna1i in 27 nuclei."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its thalamic burst table and test whether T-type transcripts explain its cortical-input burst link; they do not."
+  },
+  {
+   "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its unit, region and centroid code and extend its type-mix result to a channel-gene level; transcriptome PCs out-predict wiring PCs."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "reason": "Prior result on wiring and task-variable encoding in the same IBL regions."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Prior structure-function test with a distance-preserving null in mouse."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "reason": "Prior structure-function test in larval zebrafish."
+  },
+  {
+   "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+   "reason": "Prior test of transcriptomic type number against spike-feature diversity."
+  },
+  {
+   "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Cell-type mix as the stronger predictor of intrinsic spiking; our held-out prediction agrees."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "reason": "Calibrated wiring nulls in IBL regions; the thalamic burst link."
+  },
+  {
+   "target": "sci:sha256:18f77139dff654b47a941667ae1dada41b8d3adac3f068238fada92b5497833d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Pvalb-type share and narrow units; a subclass-name Pvalb share did not predict the narrow fraction here, while Pvalb gene expression did."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06808-9",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41467-021-22862-1"
+  },
+  {
+   "target": "doi:10.1016/S0166-2236(00)01892-0"
+  },
+  {
+   "target": "doi:10.1152/physrev.00018.2002"
+  },
+  {
+   "target": "https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/mapmycells/WMB-10X/20240831/precomputed_stats_ABC_revision_230821.h5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
