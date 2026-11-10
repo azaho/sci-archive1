@@ -1,0 +1,106 @@
+{
+ "title": "An updated orbit of planet e and a new transit of d reduce the HD 191939 c mass tension between TESS transit times and radial velocities to about 2 sigma (coplanar N-body model, 2019-2024 data)",
+ "abstract": "A prior campaign study found transit timing variations (TTVs) of HD 191939 c and d near their 4:3 period ratio and an N-body mass of c (2.4 +- 0.8 Earth masses) about 4 sigma below the radial-velocity (RV) mass. We timed all TESS 2-minute transits again (70 of b, 20 of c, 15 of d; 2019-2024; errors calibrated with 551 injected transits). This adds one transit of d (sector 49). We fitted 544 public RVs and made TTVFast N-body fits with a profile likelihood over the mass of c and an MCMC. The RV mass of c is robust: 7.5 +- 1.0 Earth masses, and 7.0-9.8 in every instrument and time subset. With the prior study's inputs, our global fit already gives 4.6, not 2.4, Earth masses. The prior study used an old period of the Saturn-mass planet e (101.12 d). The full RV set gives 101.71 +- 0.08 d. With this orbit, the TTV fit improves by delta chi2 = 14.6 at equal timing errors and the extra timing scatter of d decreases from 5.5 to 2.4 min. The TESS times then give m_c = 5.4 (+0.6/-0.7) Earth masses (MCMC 5.6 +- 0.5). The TTV and RV masses differ by 1.8-2.2 sigma, and together they give 6.1 (+0.5/-0.6) Earth masses. Without the sector-49 transit, the TTV mass is 4.6 and the tension is 2.3-2.6 sigma. The fits need nearly aligned eccentricities of about 0.09 (c) and 0.08 (d), and these orbits are stable for 10,000 years. TESS will observe the star again in 2027-2028; we give posterior forecasts (68% widths about 2 min for c and 4 min for d). Limitations: a coplanar model, one timing pipeline, a fixed timing jitter, and an approximate (prior-based) combination of the TTV and RV data instead of a simultaneous dynamical RV fit.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "transit timing variations",
+  "HD 191939",
+  "TOI-1339",
+  "TESS",
+  "radial velocities",
+  "N-body",
+  "TTVFast",
+  "planet masses",
+  "mean-motion resonance",
+  "sub-Neptunes",
+  "forecast"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc_forecast.png",
+   "caption": "O-C transit times of HD 191939 b, c and d (TESS 2019-2024) with the best N-body fit (m_c = 5.4) and the best fit at the RV mass (m_c = 7.5); grey bands: TESS sectors 117-131 (2027-2028)."
+  },
+  {
+   "path": "files/figures/fig2_mass_profile.png",
+   "caption": "Profile likelihood of the mass of c from TESS times (updated and old orbit of planet e, with and without the sector-49 transit of d), the RV-only constraint, and their combination."
+  },
+  {
+   "path": "files/figures/fig3_residuals_rv_jackknife.png",
+   "caption": "Left: timing residuals of c and d; the residuals of d decrease from 5.9 to 3.0 min rms with the updated orbit of planet e. Right: RV mass of c in data subsets, with the TTV-only range and the combined value."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We test its HD 191939 c TTV mass and the reported 4-sigma tension with the RV mass; we compare our transit times with its times."
+  },
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "reason": "Part of the selected prior work on long-baseline TESS orbital evolution."
+  },
+  {
+   "target": "sci:sha256:96d47af409125b7234db1e914f0900061522fc8e0d1fc46ef811acbcb5fd961b",
+   "reason": "Part of the selected prior work (population search for eclipse-depth changes)."
+  },
+  {
+   "target": "sci:sha256:d18fffbf28b565aadb86a340119ed23e9e3476de9475b84f6122354a81843846",
+   "reason": "Part of the selected prior work (third-body timing forecasts tested with TESS)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad79ed",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lubin et al. 2024: source of the 544-RV compilation and of the updated period of planet e."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244120",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Orell-Miquel et al. 2023: CARMENES and HARPS-N RVs, RV masses, and the old orbit of planet e."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ac3d38",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lubin et al. 2022: HIRES and APF RVs, stellar mass and transit inclinations."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/aba0b5",
+   "reason": "Badenas-Agusti et al. 2020: discovery of the transiting planets."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC 2-minute light curves (MAST)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/787/2/132",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TTVFast N-body transit-time code."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/761/2/122",
+   "reason": "Lithwick, Xie and Wu 2012: near-resonant TTV theory (mass-eccentricity degeneracy)."
+  }
+ ]
+}
