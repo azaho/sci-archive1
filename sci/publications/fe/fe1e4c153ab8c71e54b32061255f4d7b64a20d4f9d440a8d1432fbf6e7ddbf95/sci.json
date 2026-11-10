@@ -1,0 +1,171 @@
+{
+ "title": "Matched-surrogate tests flag geometry-only FC as pair-specific wiring in worm, fly, mouse and human calibrations; only fly and sedated-mouse wiring gains exceed the largest geometry-only gain",
+ "abstract": "Question: earlier campaign studies compared the FC gain of real wiring with that of surrogate wiring with matched node strengths and distance law. What do these tests report when the source of FC is known? Method: for worm (40 animals), fly (48 flies; rest, walk), mouse (79 sedated, 10 isoflurane-only, 6 awake; one hemisphere) and human (69 persons) we made synthetic FC that keeps the observed node and distance structure and noise, and planted a signal from real wiring, surrogate wiring, mixtures or pure geometry. We ran the same cross-validated surrogate test (four definitions) on 451-766 synthetic data sets per condition. Results: without node terms (the earlier headline test), all planted signals gave overlapping surrogate shares, so the reported 48-100 % shares are not diagnostic. With node terms, planted surrogate wiring gave p <= 0.05 in at most 15 % of runs and planted real wiring was detected in 100 % at full amplitude. But geometry-only FC gave p <= 0.05 in 73-100 % of worm, 50-100 % of mouse, 0-70 % of human and 0-100 % of fly runs; a geometric base block did not remove this. At the observed gain level, power was 42-57 % in worm and 52-70 % in human. The observed direct + indirect wiring gain reached or exceeded the largest gain from geometry-only FC in fly (0.99-1.17x) and in mouse under medetomidine + isoflurane (1.14-1.60x), but not under isoflurane alone (0.52-0.82x), awake (0.44-0.70x), in worm (0.19-0.23x) or human (0.18x). With a geometric base block, fly (1.97x), mouse (2.73x) and worm (1.40x) exceeded the eigenmode ceiling; human (0.31x) did not. Thus the sedation effect in mouse survives calibration, and walking did not change the fly result. Limitations: two geometry families only; mouse iso and awake noise uses an assumed residual reliability; one mouse hemisphere; few replicates on an overloaded host; region-scale graphs; mouse and human wiring models are partly geometric.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.ME"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "connectome",
+  "functional connectivity",
+  "surrogate networks",
+  "null models",
+  "geometry",
+  "geometric eigenmodes",
+  "calibration",
+  "false positive rate",
+  "statistical power",
+  "C. elegans",
+  "Drosophila",
+  "FlyWire",
+  "mouse fMRI",
+  "anesthesia",
+  "human DSI",
+  "brain state"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_surrogate_share.png",
+   "caption": "Surrogate share of the wiring gain for observed data and for synthetic data with planted real wiring, surrogate wiring and geometry, for test definitions A, B and C."
+  },
+  {
+   "path": "files/figures/fig2_false_positives.png",
+   "caption": "Rate of surrogate p <= 0.05 when the planted signal has no pair-specific real wiring (surrogate wiring or geometry only), by data set and test definition."
+  },
+  {
+   "path": "files/figures/fig3_geometry_ceiling.png",
+   "caption": "Observed wiring gain divided by the largest gain that geometry-only FC gives; values above 1 mean that geometry alone cannot give the observed gain."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We reuse its measures, surrogate generator and pair models, calibrate its surrogate test, and show that its headline surrogate shares are not diagnostic; its sedated-mouse result survives calibration."
+  },
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its worm, fly and mouse structure and FC files; positive surrogate results of this kind do not by themselves separate wiring from geometry."
+  },
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its human pair table."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "The mouse anesthesia dependence of the wiring gain survives our geometry calibration."
+  },
+  {
+   "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Like its eigenmode result, we find that a standard comparison cannot separate the generator of FC."
+  },
+  {
+   "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Surrogate-based nulls of pair specificity have limited diagnostic value."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "relations": [
+    "reviews"
+   ]
+  },
+  {
+   "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+   "relations": [
+    "supports"
+   ],
+   "reason": "In worm, geometry-only structure performs like wiring in our calibration too."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the fly structure and FC; the fly wiring gain exceeds the geometry ceiling, and walking does not change it."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the worm structure and FC."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06098-1",
+   "relations": [
+    "reviews"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2019.116278",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.2872624",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

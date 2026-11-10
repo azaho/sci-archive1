@@ -1,0 +1,139 @@
+{
+ "title": "In 3 adult fly connectomes, homologous synapse counts vary as 2 to 3 times Poisson plus a 0.2 to 0.3 log-SD edge term after neuron gains; T-bars and clusters to 4 µm do not explain the 2 to 3 factor",
+ "abstract": "Question: a prior SCI study found that two copies of the same adult fly connection vary more than Poisson sampling, and that the excess increases with the synapse count. What is this excess, and at which anatomical level is it set? Approach: we used the exact conditional binomial test on cell types with one neuron per side in FlyWire v783 (left versus right), male CNS v1.0 (left versus right) and FlyWire versus hemibrain v1.2 (two animals). We compared one global scale, neuron gains, neuron x neuropil gains and measured neuropil totals, all evaluated on held-out connections with held-out Poisson nulls. We split the held-out excess into a constant factor kappa and an edge-specific SD sigma of log(muA/muB), from E[r^2] = kappa + sigma^2 n p(1-p). Results: kappa was 2.0 to 3.0 in all comparisons and almost no normalisation changed it. Neuron gains reduced sigma (excess over null) from 0.58 to 0.27-0.29 between FlyWire and the hemibrain, from 0.31 to 0.20 in FlyWire and from 0.28 to 0.21 in the male CNS. Neuron x neuropil gains gave in-sample phi near 2 but held-out phi of 3.2 to 3.8 (null 1.2 to 1.4), so in-sample values overstate them. In the male CNS, a T-bar almost never contacts the same partner twice (48,472,411 T-bar-partner pairs among 48,473,057 PSDs). Counting occupied 0.5 to 4 um grid cells lowered kappa from 2.94 to 1.55, but a saturation null with the real spatial clusters fell in the same way; the observed/null ratio stayed 2.6 to 2.9. kappa and sigma from one comparison gave 82 to 93% coverage of nominal 90% intervals for strong connections in another comparison, against 52 to 70% for Poisson. Limitations: between-animal comparisons confound animal and reconstruction pipeline; hemibrain neurons are truncated; only one-per-side cell types; the variance model is first order; the cause of kappa remains unknown.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "synapse count",
+  "wiring variability",
+  "Poisson",
+  "overdispersion",
+  "variance decomposition",
+  "neuron gain",
+  "neuropil",
+  "cross-validation",
+  "Drosophila",
+  "FlyWire",
+  "hemibrain",
+  "male CNS",
+  "T-bar",
+  "contact sites",
+  "reproducibility"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_heldout_dispersion.png",
+   "caption": "Held-out dispersion phi of homologous synapse counts (one connection in one neuropil) against the total count n, for four comparisons and four normalisations. Dotted grey: held-out Poisson null for neuron x neuropil gains."
+  },
+  {
+   "path": "files/figures/fig2_kappa_sigma.png",
+   "caption": "Constant factor kappa (A) and multiplicative edge-specific SD sigma, excess over the held-out null (B), for each normalisation and comparison, compartment level. 95% bootstrap intervals over presynaptic identities."
+  },
+  {
+   "path": "files/figures/fig3_mcns_contact_sites.png",
+   "caption": "Male CNS left versus right: kappa when the counted unit is the synapse or an occupied 0.5 to 4 um grid cell, against a saturation null that keeps the real spatial clusters (A, B), and sigma excess (C)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We extend its exact conditional test, reproduce its FlyWire and male CNS within-animal values, and decompose its rising adult fly excess."
+  },
+  {
+   "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+   "reason": "Related optic lobe variance decomposition; its constant phi of 1.3 to 2.0 for neighbouring columns agrees with our constant factor."
+  },
+  {
+   "target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88",
+   "reason": "Related result on residual between-animal differences after neuron gains."
+  },
+  {
+   "target": "sci:sha256:02d2476ffc23af0a6dac950f0d9d5f865632c5bf2fc7c3cab05b6972ce672049",
+   "reason": "Related result on residual between-animal differences after neuron gains."
+  },
+  {
+   "target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e",
+   "reason": "Related campaign work on fly and worm synapse counts and membrane contact."
+  },
+  {
+   "target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f",
+   "reason": "Related campaign work on the functional consequences of wiring variability."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07981-1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01183-7",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1126/science.add9330"
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

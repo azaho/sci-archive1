@@ -1,0 +1,106 @@
+{
+ "title": "A joint N-body fit of TESS transit times (2019-2024) and 545 RVs gives HD 191939 c a mass of 6.3 +- 0.6 Earth masses and reduces the reported 4-sigma TTV-RV tension to 2.4 sigma",
+ "abstract": "A prior campaign result found anticorrelated transit timing variations (TTVs) of HD 191939 c and d and a TTV mass of c of 2.4 +- 0.8 Earth masses, about 4 sigma below the radial-velocity (RV) mass of 8.0 +- 1.0. We measured 111 TESS transit times of b, c and d again (2-min and 20-s data, sectors 15-86), calibrated the timing errors with 450 injected transits (error scale 1.01-1.15), and fitted the times and 545 public RVs (CARMENES, HARPS-N, HIRES, APF) with a six-planet TTVFast N-body model in which the outer planets are also free. Our times agree with the prior times (RMS 1.0-1.8 min), so the change comes from the model. The joint fit gives m_c = 6.3 +- 0.6 and m_d = 4.1 Earth masses with aligned eccentric orbits (e_c = 0.10, e_d = 0.08) and fits the TTVs to chi2 = 12.8 (23 times) and 13.4 (16 times). Profile likelihoods give m_c = 5.6 +0.7/-0.8 from the transit times alone and 8.3 +- 0.9 from the RVs alone, a 2.4-sigma difference; separate TTV and RV masses for b, c and d improve 2 Delta lnL by 8.7 for 3 parameters (p = 0.03). The transit times alone exclude m_c = 2 (Delta chi2 = 50). Both the d TTVs and the RVs reject the published 101.12-d period of planet e (Delta lnL = 43); the fit gives 101.84 d. The masses do not change with a Rayleigh eccentricity prior, without four flagged transits, or with planet e inclined by 10 degrees. The b-c-d-e-f solution is regular for 10,000 years (MEGNO 2.0); the fitted orbit of the candidate g is chaotic. TESS sectors 117-131 (about 2027-2028) can test m_c = 8: that solution differs from the best one by up to 6 min (c) and 18 min (d). Limitations: profile likelihoods from a local optimiser instead of a full posterior, coplanar orbits, no RV activity model, and only TESS photometry.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "HD 191939",
+  "TOI-1339",
+  "transit timing variations",
+  "radial velocities",
+  "N-body",
+  "TTVFast",
+  "TESS",
+  "planet masses",
+  "mean-motion resonance",
+  "sub-Neptunes",
+  "eccentricity",
+  "profile likelihood"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_mass_c_profiles.png",
+   "caption": "Profile Delta chi2 of the mass of HD 191939 c from the TESS transit times (red), the RVs (blue) and both together (black). Shaded bands: the published RV mass (8.0 +- 1.0) and the prior campaign TTV mass (2.4 +- 0.8)."
+  },
+  {
+   "path": "files/figures/fig3_oc_models_forecast.png",
+   "caption": "O-C diagrams of HD 191939 b, c and d (TESS 2019-2024, this work) with the best joint TTV+RV N-body fit (red, m_c = 6.3) and the best fit with m_c fixed at the RV value 8.0 (blue), extended through the approximate span of TESS sectors 117-131 (yellow)."
+  },
+  {
+   "path": "files/figures/fig1_transit_windows.png",
+   "caption": "All 38 timed 2-min TESS transits of HD 191939 c (red model) and d (blue model), detrended, with O-C and calibrated errors in the panel titles."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We re-measure and refit the HD 191939 c and d TTVs that this work detected. Our times agree with its times, but our joint TTV+RV fit with free outer planets gives m_c = 6.3 +- 0.6 and excludes its m_c = 2.4. We used its table for the starting period of d and for a comparison figure."
+  },
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "reason": "Part of the same campaign line on long-baseline TESS dynamics (eclipse-depth changes); context only."
+  },
+  {
+   "target": "https://arxiv.org/abs/2211.00667",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Orell-Miquel et al. 2023: CARMENES and HARPS-N RVs, stellar parameters and RV masses of HD 191939."
+  },
+  {
+   "target": "https://arxiv.org/abs/2108.02208",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lubin et al. 2022: HIRES and APF RVs of HD 191939."
+  },
+  {
+   "target": "https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=J/AJ/168/196",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Lubin et al. 2024 (AJ 168, 196) RV compilation of HD 191939, VizieR J/AJ/168/196 table3."
+  },
+  {
+   "target": "https://arxiv.org/abs/2002.03958",
+   "reason": "Badenas-Agusti et al. 2020: discovery of HD 191939 b, c, d."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/787/2/132",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TTVFast N-body transit-time and RV code (Deck et al. 2014)."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit model (Kreidberg 2015)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/761/2/122",
+   "reason": "Lithwick, Xie and Wu 2012: near-resonant TTV theory and mass-eccentricity degeneracy."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC light curves and TESScut cutouts of TIC 269701147 from MAST."
+  },
+  {
+   "target": "https://arxiv.org/abs/2409.06795",
+   "reason": "Lubin et al. 2024: the HD 191939 system is well aligned and flat; source of the RV compilation."
+  }
+ ]
+}
