@@ -1,0 +1,133 @@
+{
+ "title": "Satellite input changes step the spatial detail of DOISST v2.1 and ESA CCI v3 daily SST and cause most 1982-2021 trends of SST front fraction and small-scale variance (60S-60N)",
+ "abstract": "Question: Earlier studies found that NOAA DOISST v2.1 lost day-to-day variance in steps at satellite input changes. Do the input changes also change the spatial detail of daily SST analyses, and how much of the 1982-2021 change of SST fronts and gradients do they cause?\n\nApproach: We calculated gradient, front-fraction and small-scale-variance statistics for every daily DOISST field in 1982-2025 on the full 0.25-degree grid (465,873 ice-free pixels, 60S-60N). We tested steps at input-change dates against all other dates. We repeated the statistics on the same pixels for the satellite-only ESA SST CCI Analysis v3.0.1 (1,020 sampled days, 1982-2024) and compared both with 148 pairs of moorings 100-400 km apart.\n\nResults: DOISST spatial detail steps at its input changes, and the sign depends on the region. At 2007-01-01 the small-scale variance changed by x2.8 in the Gulf Stream box and by x0.74 in 20S-20N; at 2021-11-01 by x2.2 and x0.71. The steps decrease with spatial scale. CCI has its own steps at its dual-view sensor dates: ATSR-1 start (x1.29), end of Envisat in April 2012 (x0.83) and SLSTR-A start (x1.24). Moorings confirm both: relative to the buoys, the DOISST 1-day change of the 100-400 km SST difference fell by 0.32 ln units at 2007 (113 of 129 pairs) and by 0.75 at 2022, and the CCI difference variance at mid-latitude buoys rose by 0.22 and 0.18 when ATSR and SLSTR data started. The steps cause most trends: the CCI global front-fraction trend fell from +9.7% to +3.8% per decade with three a-priori sensor step terms (+1.3% inside 1992-2011), and DOISST boundary-current gradient trends of +4% to +25% per decade became -7% to -1% with one 2007 step term. After step terms, both products still show a decrease of the mean gradient, mainly in the tropics; its cause is not known.\n\nLimitations: one threshold front definition on a 0.25-degree grid; CCI sampled on 2 days per month and as point samples; approximate CCI sensor dates; buoys are DOISST inputs and no mooring pair is in a boundary-current front; 60S-60N only.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "SST fronts",
+  "SST gradients",
+  "DOISST",
+  "OISST",
+  "ESA SST CCI",
+  "data homogeneity",
+  "satellite input change",
+  "effective resolution",
+  "western boundary currents",
+  "front intensification",
+  "moored buoys",
+  "change points",
+  "climate data record",
+  "AVHRR",
+  "ATSR",
+  "SLSTR"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_doisst_daily_series.png",
+   "caption": "DOISST v2.1 daily spatial statistics (ln, seasonal cycle removed; dark line 91-day mean) for 60S-60N, the Gulf Stream box and 20S-20N. Dashed lines: input changes on 2007-01-01 and 2021-11-01. Fronts sharpen in the Gulf Stream and smooth in the tropics at the same dates; the temporal day-to-day change falls everywhere."
+  },
+  {
+   "path": "files/figures/fig4_doisst_vs_cci.png",
+   "caption": "DOISST v2.1 and ESA CCI v3.0.1 on the same 0.25-degree pixels and 1,020 sampled days. Left: annual means; right: ln(DOISST/CCI). CCI steps up at ATSR-1 (1991) and SLSTR-A (2016) starts and down at the end of Envisat (2012); DOISST steps at 1985, 2007 and 2020-2021."
+  },
+  {
+   "path": "files/figures/fig6_trends.png",
+   "caption": "1982-2021 trends (% per decade, 95% block-bootstrap intervals) of the mean gradient, front fraction and small-scale variance by region, raw and with step terms fixed at documented input dates (DOISST 2007; CCI 1991, 2012, 2016)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We extend its finding of DOISST input-change steps from temporal to spatial statistics."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its daily buoy SST table and DOISST buoy-cell values, and its step dates."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We follow its CCI v3 OPeNDAP retrieval approach and its use of CCI as a satellite-only reference; we show that CCI v3 is not spatially homogeneous."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Related study of the reach of the DOISST input steps into extremes and marine heatwaves."
+  },
+  {
+   "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+   "reason": "Related study of DOISST memory and the 2022 input step."
+  },
+  {
+   "target": "doi:10.1038/s41467-024-48566-w",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Reports global front intensification from a CCI/C3S-family daily SST analysis; we show sensor steps of similar or larger size in CCI v3. We did not repeat their method or product version."
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "reason": "Origin of the DOISST persistence question."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
