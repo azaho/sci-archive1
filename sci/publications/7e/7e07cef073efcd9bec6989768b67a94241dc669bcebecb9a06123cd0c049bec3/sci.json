@@ -1,0 +1,119 @@
+{
+  "title": "Higher visual areas in 31 mice had more concentrated phase-averaged grating variance and lower linear spatial-frequency decoding accuracy",
+  "abstract": "We tested whether phase suppression can explain the concentration of visual response variance higher in mouse cortex. We re-read static-grating spikes in all 32 Allen Visual Coding Neuropixels mice, with 11,559 quality units. Thirty-one mice had at least three cortical areas with 30 neurons. Four disjoint repeat groups estimated invariant kernel concentration C=tr(K squared)/(tr K) squared. With equal 30-neuron samples, the mean mouse hierarchy slope was 0.0535 (95% t interval 0.0320 to 0.0749); 27 of 31 slopes were positive. Raw counts gave 0.0949 (0.0513 to 0.1385), and a distinct-neuron tuning-overlap check was positive. Phase-only attenuation with a fixed invariant kernel cannot change this concentration. A planned early-five-trial scale check was inconclusive: -0.0002 (-0.0536 to 0.0533). A post-hoc random held-out scale check was positive: 0.0520 (0.0318 to 0.0722). Exploratory linear discriminant readout at a new orientation had lower spatial-frequency accuracy higher in cortex: -4.48 percentage points per hierarchy unit (-7.49 to -1.47). A matched control also declined. Thus greater invariant variance concentration did not come with better accuracy on this readout. This study uses the same mice as the source work. It is not independent replication. Neuron metrics, sampling, state drift, and trial dependence limit the result. We do not identify a circuit cause, optimal decoding, or information loss. Code, aggregate results, controls, figures, source hashes, and retrieval steps are included. Allen record-level data remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "mouse visual cortex",
+    "phase invariance",
+    "kernel moments",
+    "visual hierarchy",
+    "spatial frequency",
+    "linear decoding",
+    "neuron sampling",
+    "Neuropixels",
+    "within-mouse analysis"
+  ],
+  "display": [
+    {
+      "path": "files/figures/within_mouse.png",
+      "caption": "Phase-averaged concentration increased within mice. Points in B are mouse slopes. C retains the planned early-scale null result and labels the random-scale check as post hoc. Intervals are 95% mouse t intervals. Most checks use 31 mice; 20-neuron and 50-neuron checks use 32 and 18."
+    },
+    {
+      "path": "files/figures/linear_readout.png",
+      "caption": "A linear spatial-frequency readout was less accurate at higher hierarchy scores. Training sizes and held-out test trials were matched. Both new-orientation and control accuracy slopes were negative in 31 mice. The transfer penalty also fell. The analysis is exploratory, and lower accuracy does not establish information loss."
+    },
+    {
+      "path": "files/figures/distinct_neuron_pairs.png",
+      "caption": "Invariant tuning overlap between distinct neurons increased in full-trial SD and raw-count metrics. Same-neuron terms were removed from both fourth moments. The early-five-trial SD check was inconclusive. These checks use the same 31 mice and are not independent replication."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Source cohort and motivating spectral hierarchy result."
+    },
+    {
+      "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same cohort, grating grid, source object identities, and exploratory phase-invariant result."
+    },
+    {
+      "target": "sci:sha256:42f571df54d82adb5307c69d33d047697e7a66436390ab1ffadd9ddb057b155c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Parallel stimulus and phase analysis in the same mice; not independent replication."
+    },
+    {
+      "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Full-profile crossings motivate a direct moment measure without a selected power-law range."
+    },
+    {
+      "target": "sci:sha256:b00225bfa7494f6ddb391eb7fc07b397a1de5c807d1aadfb8547f25ff7c8cd82",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Gain and information ambiguity motivate an actual held-out feature readout."
+    },
+    {
+      "target": "sci:sha256:bf04e82fe4d22c952f24191caecedfb0de21df41724015dbdeee7b798fb58c59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Four-partition kernel moments and within-mouse versus pooled identifiability."
+    },
+    {
+      "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related response-reliability gradient and a warning about wiring-specific interpretation."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03171-x",
+      "reason": "Allen Visual Coding Neuropixels data and required source credit."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1716-z",
+      "reason": "Anatomical hierarchy scores."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1346-5",
+      "reason": "Prior response-spectrum framework."
+    },
+    {
+      "target": "doi:10.1073/pnas.2506535122",
+      "reason": "Prior finite-sample spectrum and fit limitations."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2509.26560",
+      "reason": "Established distinct-index corrections for finite-sample participation-ratio moments; version 2, 2026-03-02."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1703.06726",
+      "reason": "Prior theory of pooling and representation geometry."
+    },
+    {
+      "target": "https://alleninstitute.org/terms-of-use/",
+      "reason": "Terms for external Allen raw data and record-level derivatives."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy",
+      "reason": "Required Allen data attribution."
+    }
+  ]
+}
