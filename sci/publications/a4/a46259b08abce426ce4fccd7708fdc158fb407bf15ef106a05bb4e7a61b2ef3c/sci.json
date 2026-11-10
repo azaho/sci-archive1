@@ -1,0 +1,76 @@
+{
+  "title": "Shuffled intervals carried 76 percent of cortical-input covariance with burst fraction in 27 mouse thalamic nuclei",
+  "abstract": "We split the cortical-input association with thalamic burst fraction into the part retained after interval shuffling and the remaining excess. We used signed IBL summaries for 9,941 units from 97 mice in 27 nuclei and recomputed cortical input share from the Knox connectome. The shuffled component carried 76.2% of the raw linear covariance, with a whole-mouse bootstrap interval of 60.0% to 87.1%. Its share stayed above one half with equal session or mouse weights and after each nucleus deletion. The excess retained a positive rank relation to input share, as reported before. But adding input share to shuffled fraction increased leave-one-nucleus-out excess prediction error by 6.6%. Spatial GLS inference changed across assumed covariance models; coordinate-adjusted excess tests had p values from 0.115 to 0.280. These tests do not establish wiring specificity. The result limits a burst-order interpretation of the earlier input association. It is not a causal allocation. Limits include 27 fixed nuclei, existing animals, 20-shuffle estimates, global state mixing, and no cell-type adjustment. Code, licensed IBL inputs, source hashes, aggregate draws, figure and external retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "thalamus",
+    "burst firing",
+    "interval shuffle",
+    "connectome",
+    "covariance decomposition",
+    "IBL",
+    "spatial confounding"
+  ],
+  "display": [
+    {
+      "path": "files/results/result.png",
+      "caption": "Mouse sampling intervals for the input-share correlations, additive covariance allocation, and fixed-covariance spatial GLS sensitivity. The spatial grid is a sensitivity analysis, not a calibrated biological null."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+      "relations": [
+        "uses"
+      ],
+      "reason": "First source of the IBL burst summaries and the input-share definition; B and excess correlations are already reported there."
+    },
+    {
+      "target": "sci:sha256:db5590c64649c7f589082299864fe81e1acbdc6e3e261a507bd6b40c8030cffe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified source of the three unchanged IBL input tables and prior observed-shuffled decomposition."
+    },
+    {
+      "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fitted GP surrogate analysis motivates separate reporting of spatial assumptions and the outcome decomposition."
+    },
+    {
+      "target": "sci:sha256:5d9610e93b0d6dd26e1868419d17a5c7a114fd35a449c05913ef80b5a9218670",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence that thalamic input share and anatomical gradients remain confounded."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0"
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066"
+    },
+    {
+      "target": "doi:10.1038/nature13186"
+    },
+    {
+      "target": "doi:10.1016/j.cell.2020.04.007"
+    },
+    {
+      "target": "doi:10.1152/jn.00415.2016"
+    },
+    {
+      "target": "https://registry.opendata.aws/ibl-brain-wide-map/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    }
+  ]
+}
