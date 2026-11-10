@@ -1,0 +1,70 @@
+{
+  "title": "Zero-frequency spectra removed unequal-filter weight bias in two fully observed passive worm models",
+  "abstract": "We tested whether a zero-frequency spectrum avoids weight bias from unequal observation filter times. We used passive electrical models of two partial adult worm maps with 180 common cells and known equal white drive. With all cells observed, an inverse spectral square root recovered weights to relative error below 7e-14. A covariance correction that assumed one common filter time had median errors 0.4190 and 0.4644 at the largest tested spread. With half the cells observed, spectral median errors were 0.2783 and 0.2884. In one fixed filter assignment, finite-window errors fell from about 0.64 at duration one to below 0.002 at duration 1000 in assumed leak-time units. Conditional Gaussian sampling tests also showed substantial finite-sample errors. These are model results, not measured activity. Hidden cells, unknown noise, unknown gains, finite windows and partial anatomy limit practical use. Original code, aggregate evidence, source hashes and retrieval steps support reproduction. External source records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "connectome",
+    "calcium filter",
+    "zero-frequency spectrum",
+    "weight inference",
+    "hidden neurons",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact covariance and conditional sampling errors in two passive circuit models. Spectral sampling uses an ideal zero-frequency target, not a fitted recording spectrum. Full and half refer to observed cells. See the text for finite-window bias."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary anatomical reconstructions; electrical annotation is partial."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1303.3250",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established spectral network reconstruction, including undirected networks."
+    },
+    {
+      "target": "sci:sha256:22289885c85ea0b6c529cb31aab98fe14df9d0b029cc0df8c4431f955bb6628b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Common-filter covariance correction and prior benchmark context; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:fd91a1c79670af323406194cf95b0732fa9efc7c726c6b8faa2dfc12922bcea0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distinction between snapshot and zero-frequency information."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
