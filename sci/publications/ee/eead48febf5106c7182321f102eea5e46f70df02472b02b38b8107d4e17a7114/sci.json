@@ -1,0 +1,68 @@
+{
+  "title": "With independent errors, an additive delay model needs a cell-to-error SD ratio above 1.133 in selected Allen mouse graphs",
+  "abstract": "We calculated the expected prediction error of an additive source-cell plus target-cell delay model on selected Allen cortical slice graphs. The reference signal has independent cell effects and independent edge errors of common variance. On 57 supported mouse visual cortex connections, the unregularized model has a noise error factor of 3.379, compared with 1.157 for a group mean. With equal source and target standard deviations, the cell model has lower expected error only above a cell-to-error standard deviation ratio of 1.133. Strict cell labels give a ratio of 1.189 on 39 connections. Recovery of all missing delays adds support but does not lower the threshold on the enlarged mouse test set. Four human connections give the rectangle threshold of 1.225. Actual cell variance and error variance are unknown. These are conditional design-risk results, not measured biological noise or a rule across species. Checks on 511 small graphs and reference simulations support the code. Original code, proof, aggregate results, a figure and external retrieval steps support reproduction. External records remain outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "prediction risk",
+    "graph design",
+    "cell effects",
+    "measurement error"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Expected prediction risk under independent edge errors and a correct additive cell signal. The left panel gives mouse noise error factors. The right panel gives the expected error advantage as the assumed cell-to-error SD ratio changes. Current and all-confirmed settings use different supported edge sets."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dc740390de93bd1b08e40436cd5f0d979130a25c2386c6c10470f9a8a93bc7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its sample definitions and graph-support question; no code or derived tables reused."
+    },
+    {
+      "target": "sci:sha256:5d189525f3e310ecc4462c62cb8b6e43bbbea224bb37696d0255d571d2c3525d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the full confirmed graph as an optimistic missing-delay recovery scenario; adds prediction-risk analysis."
+    },
+    {
+      "target": "sci:sha256:923e37111ac6b636270386be25f8e035f34f87f0e46448bb61a3a622da033a2b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior residual noise sensitivity test; present work studies prediction risk, not model rejection."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.3982/ECTA14605"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
