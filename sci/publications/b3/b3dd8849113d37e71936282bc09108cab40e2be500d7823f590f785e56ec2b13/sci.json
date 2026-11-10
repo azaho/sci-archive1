@@ -1,0 +1,77 @@
+{
+  "title": "No spatial input-loss test passed family correction in 22 selected MICrONS target models",
+  "abstract": "We tested whether removal of nearby input sources changes a fixed mean movie response more than response-location shuffles predict. The main sample had 22 targets with 8 to 12 measured inputs, 198 links and 73 distinct sources from one MICrONS mouse. We removed the nearest ceil(k/4) sources around each source position and scored the largest relative squared shift of the remaining mean. Each target had 999 response-location shuffles that fixed its input set and response Gram matrix. No target passed Holm correction at 0.05. The smallest raw Monte Carlo fraction was 0.039 and the smallest corrected value was 0.858. Mean loss was 0.31815, against 0.28843 under shuffling, a descriptive 10.3 percent excess. Contact weights, area-and-layer shuffles, other removal sizes and a coordinate stress check also gave no corrected target result. A finite-population identity checks random-subset loss. Few selected sources, one mouse, uncertain coordinate units and a fixed pooling model limit interpretation. This is not evidence of equal loss or an empirical lesion result. Original code, aggregate evidence, source hashes and retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "spatial loss",
+    "input pooling",
+    "connectomics",
+    "movie responses",
+    "null result",
+    "Allen Institute"
+  ],
+  "display": [
+    {
+      "path": "files/spatial_loss.png",
+      "caption": "Spatial loss relative to shuffled maxima and descriptive checks in one selected MICrONS mouse panel. No target passed family correction. The score uses a fixed response pool, not measured activity after a lesion."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:100b9f6bfd76176b28c79e9f524e1861b687d199ffcea463ce5119694551c1e2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior input-group similarity test in the same mouse. No code or extracts reused."
+    },
+    {
+      "target": "sci:sha256:3c17484618a016995eb261a146a133d8907c3c05c9aa8e710522a3d898ad4238",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior single-target loss test on output groups. This work tests spatial source-group loss on input groups."
+    },
+    {
+      "target": "https://www.microns-explorer.org/cortical-mm3"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://tutorial.microns-explorer.org/quickstart_notebooks/08-standard-transform.html"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
