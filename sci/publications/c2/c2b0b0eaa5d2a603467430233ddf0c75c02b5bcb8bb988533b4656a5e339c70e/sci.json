@@ -1,0 +1,141 @@
+{
+ "title": "Public ZTF data show a constant AT2023uqm period while its flare fluence grew 1.6-fold per flare; one energy-proportional clock for three periodic nuclear transients fails only for some markers",
+ "abstract": "Question: do the flare clocks of the three best-timed periodic nuclear transients (ASASSN-14ko, eRASSt J0456-20, AT2023uqm) follow one law in which the orbit loses energy in proportion to the radiated flare energy? Approach: we measured the five AT2023uqm flares again in public ZTF data-release light curves (2018-2025), with a seeing-dependent host model and two-Gaussian flare fits. For each source we fitted timing models with free jitter, including an energy-coupled clock (each passage changes the period by -k times its flare energy). A Monte Carlo over black-hole mass, stellar mass and bolometric energy converted k to Q, the orbital energy lost per passage over the radiated energy, and a simulation-calibrated likelihood-ratio test checked one common Q. Results: our AT2023uqm markers agree with the published markers within 0.0-2.7 d. The fluence grows by 1.59 +/- 0.07 per flare (r), but the period change per passage is +0.03 +/- 0.80 d (first peak) or +0.8 +/- 1.1 d (dip), and k is consistent with zero. The first peak moves earlier relative to the dip by 1.3 +/- 0.4 d per flare, so the period depends on the marker (524.45 to 527.06 d). For J0456-20 the energy-coupled clock fits cycles 1-5 as well as the best broken clock and forecasts cycles 6-7 with |z| <= 1.7 (X-ray weights). For ASASSN-14ko it is worse than a break in the period derivative. Q is 0.025 (95%: 0.003-0.21) for ASASSN-14ko and 0.023 (0.001-0.47) for J0456-20 (black-hole mass 1e7); these agree (p = 0.79). AT2023uqm disagrees with each of them for the dip marker (p = 0.015, 0.007); the three-source test gives p = 0.025 for the dip, but 0.11 with 2 d of extra jitter and 0.25 for the first peak. Q << 1 everywhere, so orbital energy does not power the flares. Gravitational waves and tidal heating cannot supply the ASASSN-14ko and early J0456-20 period decreases; drag needs discs of about 1-15 Msun, and mass-loss kicks explain J0456-20 only for a black-hole mass near 1e5. Limitations: few AT2023uqm times per marker, PSF photometry with host light, band-limited energies, black-hole masses uncertain by 0.3-2 dex, and no public data for the 2026 flares.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "AT2023uqm",
+  "ASASSN-14ko",
+  "eRASSt J0456-20",
+  "repeating partial tidal disruption",
+  "flare timing",
+  "orbital decay",
+  "ZTF data release",
+  "energy coupling",
+  "timing marker drift"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_uqm_ztf_lightcurve.png",
+   "caption": "AT2023uqm in the public ZTF data release: nightly nuclear excess flux in g and r after a seeing-dependent host model, with the five flares and our two-Gaussian fits. Flare 1 is not resolved into two peaks in the base fit; flare 3 is sparse; the first peak of flare 5 fell in the seasonal gap."
+  },
+  {
+   "path": "files/figures/fig2_uqm_timing_energy.png",
+   "caption": "Left: AT2023uqm timing markers (published and this work) relative to a 526.75-d ephemeris; orange lines show the dip times that the energy coupling of ASASSN-14ko would predict. Right: flare fluence grows by 1.59 +/- 0.07 per flare in r while the period stays constant."
+  },
+  {
+   "path": "files/figures/fig4_coupling_Q.png",
+   "caption": "Left: coupling Q (orbital energy lost per passage over radiated flare energy) for each source, with Monte Carlo 68% and 95% ranges. Right: marginal likelihood of a common Q (base case, dip marker; p = 0.025). ASASSN-14ko and J0456-20 agree; AT2023uqm prefers Q near zero."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its per-flare ASASSN-14ko fluences; our energy-coupled clock test agrees with its rejection of an energy-proportional period change for ASASSN-14ko."
+  },
+  {
+   "target": "sci:sha256:e2dd93204aab9cc901b4904e122743da728145237a45e3c40955c5865f1ec51f",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its J0456-20 cycle markers and fluences. With the Liu et al. cycle 1-5 data, a period change proportional to flare energy fits J0456-20, which qualifies its statement that flare energy does not set the period change."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its compiled ASASSN-14ko peak times and its AT2023uqm alert-coverage check."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "reason": "Prior out-of-sample ASASSN-14ko timing study (stochastic period changes)."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "reason": "Prior ASASSN-14ko timing with Swift/UVOT; source of the UV photometry behind the UVW2 fluences."
+  },
+  {
+   "target": "sci:sha256:9001f8c9a528ca9cb04578d2ab5163d59aa675d7d63a1ce1cf1e5a304103b403",
+   "reason": "AT2018fyk missed its predicted third flare."
+  },
+  {
+   "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our measured marker drift in AT2023uqm supports its point that variable emission delays limit timing tests of orbital decay."
+  },
+  {
+   "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+   "reason": "Period-noise tests for ASASSN-14ko."
+  },
+  {
+   "target": "sci:sha256:252d57705ccfd2023681bd4b0098ad00fdce0794754255f4fe90fd0791d8b8b2",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its curvature evidence depends on marker offsets; we find marker drift of similar size in AT2023uqm."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "reason": "SPHEREx timing of ASASSN-14ko and the 2026 data-coverage check."
+  },
+  {
+   "target": "https://arxiv.org/abs/2510.26561",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Wang et al. 2025: AT2023uqm discovery, published flare markers (Table S1) and black-hole mass estimates."
+  },
+  {
+   "target": "https://arxiv.org/abs/2401.14091",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Liu et al. 2024: J0456-20 onsets, bolometric energies and simulation results."
+  },
+  {
+   "target": "https://arxiv.org/abs/2208.12452",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Liu et al. 2023: J0456-20 black-hole mass."
+  },
+  {
+   "target": "https://arxiv.org/abs/2009.03321",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Payne et al. 2021: ASASSN-14ko black-hole mass and peak times."
+  },
+  {
+   "target": "https://arxiv.org/abs/2309.15849",
+   "reason": "Linial & Quataert 2024: star-disc drag and period evolution."
+  },
+  {
+   "target": "https://arxiv.org/abs/2606.06578",
+   "reason": "Hinkle et al. 2026: missing third flares of AT2022dbl and AT2020vdq."
+  },
+  {
+   "target": "https://irsa.ipac.caltech.edu/Missions/ztf.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF public data release light curves (IRSA)."
+  }
+ ]
+}
