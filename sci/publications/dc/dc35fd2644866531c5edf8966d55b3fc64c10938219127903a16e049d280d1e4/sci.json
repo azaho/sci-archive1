@@ -1,0 +1,70 @@
+{
+  "title": "A correlation cap of 0.5 gave zero input weights in 79 of 130 selected Allen slice readout models",
+  "abstract": "We tested nonnegative linear readouts in 130 selected Allen cortical input groups. Each stored first-response median was assigned as a model mean. Marginal noise scales were fixed, but cross-input correlations were unknown. We derived an exact solution that maximizes the worst squared signal-to-noise ratio over all valid covariance matrices below a correlation cap. At cap 0.5, 79 groups had at least one zero input weight and 69 used one input. Fixed weights optimized for independent noise fell below the best single input in 96 groups at the cap. The robust solution retained 196 of 287 input records. All 2046 exhaustive subset checks agreed within relative variance error 6.95e-16. The cap is assumed, not measured. Median-to-mean error, fitted noise, small selected slice groups, and missing joint trials prevent a biological readout claim. Original code, proof, aggregate evidence, a figure, source hashes and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic convergence",
+    "robust readout",
+    "covariance uncertainty",
+    "nonnegative weights",
+    "signal-to-noise ratio"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Model readout weights and gains across assumed correlation caps. The cap is not a measured correlation. Source measurements: Allen Institute for Brain Science; Campagnola, Seeman, and colleagues (2022), doi:10.1126/science.abj5861; Allen Synaptic Physiology r2.1 small."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:2592773cb55908dee7cf99bc6159a27f90347ad466e7086dc6f5176240212a14",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its selection rules and model-mean assignment; extends fixed-sum sensitivity to minimax nonnegative weights. No prior code or record tables reused."
+    },
+    {
+      "target": "sci:sha256:9515efff73977561babddb9aa1fcff16c45f157dc0ed48f859094136422f6f59",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Stored endpoint labels do not by themselves establish physical pulse positions."
+    },
+    {
+      "target": "https://stanford.edu/~boyd/papers/risk_bnd.html",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}

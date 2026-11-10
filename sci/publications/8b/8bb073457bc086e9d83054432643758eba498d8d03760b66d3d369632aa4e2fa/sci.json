@@ -1,0 +1,87 @@
+{
+ "title": "In the V1 Deep Dive mouse, frame-level co-activity predicted excitatory connections after control for both cells (1.11 per SD) in the superficial session; trial-based correlations did not",
+ "abstract": "Question: a campaign study (a932e167) found that the like-to-like wiring rule of the MICrONS mouse disappears in a second mouse, the Allen V1 Deep Dive (V1DD), when the analysis controls the postsynaptic cell. We tested if this null comes from the cell-level control, the proximity control or the activity measure. Data: V1DD mouse 409828, EM release 1196 and DANDI:001780 event traces of 3 coregistered sessions; 34,266 same-session ordered pairs of excitatory neurons (174 presynaptic cells with proofread axons, 482 postsynaptic cells), 653 connected. Method: Poisson and logistic models with presynaptic fixed effects (FE), soma-distance splines, synapse-site proximity, the a932e167 postsynaptic control, or FE for both cells; CIs cluster-robust by presynaptic cell; stratified permutation tests. Results: the pre-registered primary test (Allen natural-movie correlation) met its rule (OR 1.08 per SD, 95% CI 1.01-1.16, permutation p 0.004). With FE for both cells, our frame-level event correlation over the whole session gave rate ratio 1.11 (1.04-1.18) and the Allen 6-stimulus mean correlation 1.12 (1.02-1.24); the a932e167 control did not change them. Split-half signal correlation (1.07, 0.98-1.18), noise correlation (1.04, 0.96-1.13) and spontaneous correlation (1.00) gave no clear link, as in a932e167. So the activity measure, not the cell control, explains the earlier null. The link holds for pairs on different imaging planes (1.12). Exploratory: the fast part (<2 s) carries the link (1.08) more than 10-s bins (1.02); the link is in the superficial L3/L4-IT session (1.15) and not in the deep L5 sessions (0.98, 0.83-1.15). Limitations: one animal, small effects, undocumented Allen correlation method, calcium events at 6 Hz, association only.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "functional connectomics",
+  "like-to-like wiring",
+  "V1 Deep Dive",
+  "mouse visual cortex",
+  "signal correlation",
+  "noise correlation",
+  "fixed effects",
+  "replication",
+  "electron microscopy",
+  "two-photon imaging"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ladder.png",
+   "caption": "Model ladder. Rate ratio of an E-to-E connection per SD of six similarity measures. M1 presynaptic FE and soma distance; M2 adds synapse-site proximity; M3 adds the a932e167 postsynaptic mean-similarity control; M4 uses FE for both cells. 95% CIs are cluster-robust by presynaptic cell."
+  },
+  {
+   "path": "files/figures/fig3_plane_timescale.png",
+   "caption": "Crosstalk and time-scale check with FE for both cells. Frame-level co-activity keeps its link in pairs on different imaging planes and in pairs more than 30 micrometres apart. In a joint model, the fast part (under 2 s) keeps a link and the 10-s part does not."
+  },
+  {
+   "path": "files/figures/fig5_session_split.png",
+   "caption": "Exploratory session split with FE for both cells. The link is in the superficial session (L3-IT and L4-IT neurons, 462 connections) and not in the two deep sessions (mostly L5-ET neurons, 191 connections)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Prior V1DD study with the same data; we test which analysis choice gives its pair-level null and reuse its proximity definition and postsynaptic control (re-implemented, no code reused)."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "MICrONS like-to-like rule survives FE for both neurons; motivates the two-way FE test in V1DD."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "reason": "MICrONS effect sizes (OR 1.08-1.16 per SD) used for comparison."
+  },
+  {
+   "target": "sci:sha256:e9455e37a00547b613cd8ac12ee466cdd4b5cbc7b7684413cb08d05a9e0ab1dd",
+   "reason": "MICrONS noise-correlation null; we test noise correlation in V1DD."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "reason": "Ding et al. 2025, like-to-like rule in the MICrONS mouse."
+  },
+  {
+   "target": "doi:10.1038/nature09880",
+   "reason": "Ko et al. 2011, response similarity and connection probability in mouse V1."
+  },
+  {
+   "target": "doi:10.1038/nature14182",
+   "reason": "Cossell et al. 2015, functional organisation of excitatory connections in mouse V1."
+  },
+  {
+   "target": "doi:10.1038/nature14273",
+   "reason": "Okun et al. 2015, population coupling of cortical neurons."
+  },
+  {
+   "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/data_description.json",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen V1DD EM analysis release 1196 (CC BY 4.0): synapses, cell types, proofread lists, coregistration, Allen correlations."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/001780",
+   "relations": [
+    "uses"
+   ],
+   "reason": "V1DD two-photon NWB files (CC BY 4.0), draft version accessed 2026-11-09; event traces, ROI and stimulus tables of 3 sessions."
+  }
+ ]
+}
