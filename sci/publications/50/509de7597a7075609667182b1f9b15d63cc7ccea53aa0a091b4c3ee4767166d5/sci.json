@@ -1,0 +1,78 @@
+{
+  "title": "Quarter conditioning raises a 60-day dip-count tail fraction from 0.0010 to 0.25 for KIC 8462852",
+  "abstract": "We test a count statistic for known KIC 8462852 dips in Kepler DR25 data. Five events pass a 1 percent local aperture-flux threshold and persistence cuts. Four fall in a 60-day interval. In 100,000 trials, uniform eligible exposure times with a two-day separation cut give a tail fraction of 0.000980. Fixing the event count in each quarter gives 0.24955. Both models scan all start times. A five-day separation test retains the difference. Higher flux thresholds give weaker uniform-time evidence. The corrected flux product gives similar counts but shares photons. All accepted 2 and 5 percent Gaussian dips are recovered in quiet-patch tests. These checks cover one synthetic shape and do not establish survey completeness. The result shows that the timing evidence depends on the assumed rate model. The late dip group is known. Target and scale choices use prior knowledge, so the fractions are not discovery false-alarm probabilities. No new event, planet, dust cause, or independent confirmation is established. Code, hashes, event times, aggregate simulations, audits and retrieval steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8462852",
+    "dip clustering",
+    "event rate",
+    "conditional simulation",
+    "null model"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "The 60-day score under uniform usable exposure times and fixed event counts per quarter. Both null models require more than two days between event times. The observed score is four."
+    },
+    {
+      "path": "files/clustering.png",
+      "caption": "Local aperture flux and selected 1 percent events. Gray marks show valid samples excluded by coverage or quarter-edge rules. The red interval contains four selected events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0df36b4ac8c09bcc0e80ea2f2e810512e939047401b7718dba4cb75c1e4c5ec1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior phase test uses the same archive and a quarter-conditioned null. We test flux-selected event counts with new code."
+    },
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known irregular dips and astrophysical context."
+    },
+    {
+      "target": "doi:10.3847/2041-8205/819/2/L34",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known late dip group and comet-family model; motivates the 60-day scale."
+    },
+    {
+      "target": "doi:10.3847/2041-8213/aaa405",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent later ground-based dips and wavelength-dependent depths. Not confirmation of the count test."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008462852/kplr008462852_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact raw input, version fixed by archive and FITS hashes."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/",
+      "reason": "Public-domain source status and attribution."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "External data use policy."
+    }
+  ]
+}

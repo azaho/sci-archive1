@@ -1,0 +1,26 @@
+{
+  "title": "Tonga deep earthquakes had about twice the expected aftershocks in 1977-1994 and 1995-2026, but slab thermal parameter did not predict deep aftershock counts outside Tonga or beyond local activity",
+  "abstract": "Question: Wiens and Gilbert (1996) reported that deep earthquakes (300 km or deeper) in cold slabs with a large thermal parameter Phi (plate age x convergence rate x sin dip) have more aftershocks. Their data ended in about 1994. We tested the relation with independent 1995-2026 data. Approach: We used 358 USGS ComCat deep mainshocks of Mw 6.0 or more (119 in 1977-1994, 239 in 1995-2026) in 7 slab regions. We counted M 4.8+ events within 30 days in a magnitude-scaled cylinder. We computed Phi for each mainshock from Slab2 dip, Seton et al. (2020) seafloor age and PB2002 convergence. We fitted negative binomial models on 1977-1994 and scored forecasts on 1995-2026. The plan was written before any count was made. Results: Tonga mainshocks had 1.90 (1.46-2.42) and 2.18 (1.89-2.50) times the magnitude-expected count in the two eras; no other region was above 1.3. The slope on log10 Phi was positive (+1.27, 0.22 to 2.33; +1.79, 1.02 to 2.57), and Phi gave a small forecast gain (+0.071 nats per mainshock, +0.016 to +0.157). But the slope came from the Tonga contrast. Warm South America (Phi 1,224 km) had more aftershocks than Izu-Bonin-Mariana and Kuril-Japan (Phi 5,000-6,000 km). Without Tonga-Kermadec the slope was -1.03 (-1.91 to -0.16). Within regions and within Tonga the slope was near zero with wide intervals. The local deep-earthquake rate in the prior year predicted counts better than Phi (forecast gain +0.109 nats), and Phi added to it made the forecast worse (-0.039, -0.081 to -0.009). Deep b-values increased with Phi across regions (Spearman 0.79, p = 0.036, 1995-2026). Limitations: only 7 slab regions (region-cluster bootstrap intervals include zero), Tonga has 150 of the mainshocks, ComCat magnitudes change between eras, our Phi has no slab history, and 57 mainshocks (Banda Sea, Mindanao, slab tips) had no Phi.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["deep earthquakes", "aftershock productivity", "slab thermal parameter", "Tonga", "subduction", "b-value", "out-of-sample test", "ComCat", "Slab2", "negative binomial", "replication"],
+  "display": [
+    {"path": "files/figures/fig1_region_productivity.png", "caption": "A: observed / expected deep aftershocks (M 4.8+, 30 days) per slab region and era against median thermal parameter Phi; only Tonga is high, and South America (lowest Phi) is above Izu-Bonin-Mariana and Kuril-Japan. B: mean counts per mainshock with the background expected from the prior year (hatched)."},
+    {"path": "files/figures/fig2_beta_forest.png", "caption": "Slope of log aftershock rate on log10 Phi (negative binomial, 95% intervals) in each design. The slope is positive in the pooled designs, but near zero with the local background rate, negative without Tonga-Kermadec, and near zero within regions and within Tonga."},
+    {"path": "files/figures/fig3_oos_gain.png", "caption": "Out-of-sample log-score gain per 1995-2026 mainshock for models fitted on 1977-1994. Phi gives a small gain over magnitude only, the local background rate gives a larger gain, and Phi added to background makes the forecast worse."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/384153a0", "relations": ["reviews", "challenges"], "reason": "We re-test the reported relation between slab thermal parameter and deep aftershock productivity with 1995-2026 data; the Tonga excess and b-value pattern repeat, a general Phi trend does not."},
+    {"target": "doi:10.1029/96RG01050", "reason": "Thermal parameter definition and review of deep-earthquake mechanisms."},
+    {"target": "doi:10.1126/science.aat4723", "relations": ["uses"], "reason": "Slab2 geometry for slab assignment, trench points and dips."},
+    {"target": "doi:10.1029/2020GC009214", "relations": ["uses"], "reason": "Seafloor age grid (CC BY 4.0) for the plate age in Phi."},
+    {"target": "doi:10.1029/2001GC000252", "relations": ["uses"], "reason": "PB2002 subduction-step convergence rates for Phi (not redistributed)."},
+    {"target": "doi:10.1029/JB086iB04p02825", "relations": ["uses"], "reason": "Global CMT Mw for mainshock magnitudes."},
+    {"target": "doi:10.1016/j.pepi.2012.04.002", "relations": ["uses"], "reason": "Global CMT catalog reference."},
+    {"target": "https://earthquake.usgs.gov/fdsnws/event/1/", "relations": ["uses"], "reason": "USGS ComCat deep-earthquake catalog (public domain)."},
+    {"target": "sci:sha256:48ce270fa0678933e4d9f0e8190dc6858dec8177c045e30f7e4782080ce54503", "reason": "Related campaign study of deep earthquake pair order in ComCat."},
+    {"target": "sci:sha256:031fd1c650720bda314e71bd14042d18b4daeea3feeb9649abcf17c235708c20", "reason": "Related campaign test of a thermal control (surface heat flow) on shallow aftershock counts in Japan, also null."},
+    {"target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e", "reason": "Related campaign study of generic aftershock forecast calibration and catalog magnitude changes."}
+  ]
+}
