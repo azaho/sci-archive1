@@ -1,0 +1,120 @@
+{
+  "title": "In 40 moving C. elegans, behaviour-locked activity held 56% of reliable pair-specific co-activity and wiring at most 5% of the rest; in 22 zebrafish larvae swim and flash terms held 24-36%",
+  "abstract": "Question: earlier campaign work found that pair-specific functional connectivity (FC, after node effects and distance) is very reliable, that wiring explains only 3-11% of it, and that rank-3 node factors hold most of it. What are these factors? Method: in each animal we fitted every neuron or region with a cross-validated ridge model of lagged behaviour (worm: velocity, reversal, head angle, angular velocity, pumping, curvature, body shape; zebrafish: swim and dark-flash terms). This splits each pair covariance into behaviour-explained, residual and cross parts. Split-half covariances across animals measured the share of the reliable pair-specific map in each part; a control used time-shifted behaviour. Three-part splits tested tuning maps and node factors from other animals. Data: 40 off-food worms (Atanas 2023; 119 neurons), 8 on-food worms (Dag 2023), 22 larval zebrafish (Legare 2025; 65 regions). Results: in worms, 56% (95% CI 52-60%) of the reliable pair-specific covariance was behaviour-locked (shifted control 2%) and 27% survived as reliable residual covariance; on food, 72% (58-85%). In zebrafish, 36% (26-46%) with flashes and 24% (17-31%) in spontaneous activity. A map made only from other animals' tuning coefficients removed 55% of the reliable worm map, equal to a rank-1 factor. The worm factors were the forward-reversal axis (r = 0.72 with reversal tuning), a slow session drift (r = 0.61 with time) and pumping (r = 0.38). Removing behaviour did not unmask wiring: wiring explained 2.5% before and 2.8-5.4% after (time-shifted controls 3.0-3.1%). In the residual, a type-by-transmitter block model explained 13.5% (null 2.0%; on food 12.3%). Limitations: behaviour-locked is not behaviour-caused; linear model with measured variables only; the drift factor can be state or trace processing; connectome and activity from different animals; identity analysis and variants were post hoc; no fly time series.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure-function coupling",
+    "functional connectivity",
+    "connectome",
+    "behaviour encoding",
+    "low-rank node factors",
+    "split-half reliability",
+    "C. elegans",
+    "larval zebrafish",
+    "NeuroPAL",
+    "neuron identity",
+    "shared drive"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_budget.png",
+      "caption": "Share of the reliable pair-specific covariance that is behaviour-locked (blue, with time-shifted control tick) and the reliable residual covariance left (orange); 95% jackknife intervals."
+    },
+    {
+      "path": "files/figures/fig2_lowrank_tuning.png",
+      "caption": "Reliable pair-specific FC left in held-out animals after removal of a tuning map or node factors fit on other animals; A full maps, B residual maps after behaviour removal."
+    },
+    {
+      "path": "files/figures/fig3_worm_factors.png",
+      "caption": "The top-3 worm factors against each neuron's mean correlation with reversal state, recording time and pumping (119 neurons, 40 animals)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8c65c10b37dabd498acbaf41f5c4be7b8185c82f38d92f1f341a865a6e48723d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Found the reliable, low-rank, non-wiring pair-specific FC that we explain; we reuse its calibration code (calib.py)."
+    },
+    {
+      "target": "sci:sha256:2d23aeb7232e2ede1774e1447962825fd9c5ef7947ff056d02c44d268c80f9a0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ceiling and wiring-share decomposition in worm, fly and zebrafish; we reuse its zebrafish region-trace script."
+    },
+    {
+      "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the Cook 2019 edge list, OpenWorm soma positions and Witvliet neuron types used here."
+    },
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "reason": "Shared input predicts coupling beyond direct wiring in worm, fly and mouse."
+    },
+    {
+      "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+      "reason": "Surrogate wiring reproduces much of the indirect-path gain."
+    },
+    {
+      "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+      "reason": "Eigenmode comparisons cannot identify the generator of FC."
+    },
+    {
+      "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+      "reason": "Worm wiring eigenmodes versus distance-only graphs."
+    },
+    {
+      "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+      "reason": "Fly FC with walking regression; state effects on coupling."
+    },
+    {
+      "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+      "reason": "Single-neuron collateral patterns gave no specific gain."
+    },
+    {
+      "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+      "reason": "Zebrafish projectome predicts noise but not signal coupling."
+    },
+    {
+      "target": "sci:sha256:0310766661af92b67adba7d46522558a12e322f7c4b2189b5a8e430d1a88a14a",
+      "reason": "NSM serotonergic state did not change worm coupling."
+    },
+    {
+      "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+      "reason": "Zebrafish region selection and preprocessing method."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.07.035",
+      "reason": "Atanas, Kim et al. 2023 whole-brain worm data (Zenodo 19388374)."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2023.04.023",
+      "reason": "Dag et al. 2023 on-food worm data (Zenodo 19414639)."
+    },
+    {
+      "target": "doi:10.1126/sciadv.adv7576",
+      "reason": "Legare et al. 2025 zebrafish data (Borealis doi:10.5683/SP3/IIVGOB, CC BY 4.0)."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1352-7",
+      "reason": "Cook et al. 2019 connectome."
+    },
+    {
+      "target": "doi:10.7554/eLife.95402",
+      "reason": "Wang et al. 2024 neurotransmitter atlas and lineage names."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "reason": "Witvliet et al. 2021 neuron class types."
+    }
+  ]
+}
