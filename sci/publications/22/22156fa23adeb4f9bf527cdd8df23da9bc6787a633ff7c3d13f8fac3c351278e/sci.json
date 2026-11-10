@@ -1,0 +1,70 @@
+{
+  "title": "Relative shifts up to 2 ms permit model source ambiguity at 5 percent error in 29 of 133 selected Allen input pairs",
+  "abstract": "We tested whether fitted voltage waveforms can identify which of two connected source cells was active. We used 133 pairs of excitatory inputs to shared targets in Allen cortical slice data: 89 mouse VisP pairs and 44 human TCx pairs. With exact fitted kernels and free positive amplitudes, the least relative L2 waveform error that permits a common response is sqrt((1-rho)/2), where rho is the normalized waveform overlap. At a 5 percent error bound, 5 mouse pairs and 1 human pair permit source ambiguity with known spike time. A grid of relative shifts from -2 to +2 ms gives ambiguity witnesses in 20 mouse pairs and 9 human pairs. The grid counts are lower bounds for continuous timing freedom. An independent high precision calculation agrees within 1.3e-11 in the error threshold. These are deterministic model results, not measured decoding errors. Uncertain fits, separate recordings, selected slice circuits and assumed event timing limit biological inference. Original code, aggregate results, a figure, source hashes and an external data recipe support reproduction. External source records are excluded from the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "source identification",
+    "synaptic kinetics",
+    "waveform overlap",
+    "timing uncertainty",
+    "convergent inputs"
+  ],
+  "display": [
+    {
+      "path": "files/ambiguity.png",
+      "caption": "Fraction of selected input pairs with a common possible waveform at each relative L2 error bound. The timing grid gives explicit witnesses, not a continuous global optimum. Pair weights are equal; these curves are descriptive model results."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.bpj.2012.08.039",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:23a243693faa924e9e275ccd3cb8d41f189c5f38286d821390baabdb43ef4c74",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior response overlap test for excitation and inhibition. This study tests same-sign source identity and timing freedom; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:b141318c1fdf3efd720031a99c33ab245eb4e99e7783b16d41987dbd6dbf2b2c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior common-filter audit at shared targets; distinct question and new code here."
+    }
+  ]
+}
