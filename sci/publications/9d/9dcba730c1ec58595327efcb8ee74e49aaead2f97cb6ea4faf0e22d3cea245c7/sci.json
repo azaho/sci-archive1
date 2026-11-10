@@ -1,0 +1,110 @@
+{
+  "title": "Song frequency had no clear link to tenure curvature in 283 North American bird species in 1966-2025",
+  "abstract": "Question: does the reported late tenure loss of high-pitched birds have curvature that remains when observer cohort intercepts are free? We fitted new conditional Poisson models to 130,303 standard Breeding Bird Survey runs on 5,319 routes in 1966-2025. The model has free observer-route and year effects and a tenure spline. We test f(25) - 2 f(15) + f(5), which compares two ten-year log-count changes and cancels any linear drift. Of 446 species, 394 had stable primary fits. In 283 species outside the visual comparison group with frequency data, the slope of this contrast on frequency was +0.0084 log units per kHz (95% spatial-block interval -0.0063 to +0.0231). With family effects it was -0.0062 (-0.0271 to +0.0147). Eight species at 7 kHz or more had a mean contrast of -0.0129 (-0.1176 to +0.0919). Survey controls, region by year effects and log-count fits on a common set gave slope intervals that included zero. Some groups had curvature, but it did not decrease in order with frequency. Exact checks show that a linear tilt can change an endpoint loss while every fitted count stays fixed. The null frequency result cannot exclude linear hearing loss or identify its correction to climate trends. Tenure is not age, high-frequency species are few, unstable fits are excluded, and cohort-specific trajectories can violate the additive model. Code, source hashes, aggregate evidence, figures and numerical checks are included. Raw and record-level data stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Breeding Bird Survey",
+    "observer tenure",
+    "detection",
+    "hearing loss",
+    "song frequency",
+    "age period cohort",
+    "curvature",
+    "identifiability",
+    "climate tracking",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/results/curvature.png",
+      "caption": "A second difference of log counts showed no ordered decrease with acoustic frequency. Left: all eligible primary groups. Right: frequency slopes on the common set under four model forms. Bars are 95% intervals from joint two-degree spatial blocks. These are curvature effects, not detection losses."
+    },
+    {
+      "path": "files/results/equivalent_curves.png",
+      "caption": "Three choices of a linear tenure component give a 41% decrease, no endpoint change or a 41% increase from tenure year 5 to 25. Cohort and calendar terms change with each choice, so all expected counts stay the same. The curves illustrate non-identification; they are not three estimated detection outcomes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Use the fixed species list, acoustic matching, visual comparison definition and profile solver approach. New count fits test a second difference with free observer-route intercepts. The earlier 41% endpoint association is not this identified contrast."
+    },
+    {
+      "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Apply its linear drift and cohort equivalence. Add new empirical fits of cohort-invariant curvature and schedule-specific rank tests."
+    },
+    {
+      "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier observer-turnover and frequency evidence motivates the test. This study does not identify its linear thermal-trend correction."
+    },
+    {
+      "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Weak bird thermal tracking motivates a detection audit; no new climate tracking ratio is estimated."
+    },
+    {
+      "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Multi-network tracking deficit provides context; this study tests only a BBS observer component."
+    },
+    {
+      "target": "doi:10.2307/2531004",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established age-period-cohort result on estimable curvature and aliased linear slopes."
+    },
+    {
+      "target": "doi:10.1002/ece3.1101",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier bird survey evidence on observer aging and acoustic frequency."
+    },
+    {
+      "target": "doi:10.5066/P144YU3S",
+      "relations": [
+        "uses"
+      ],
+      "reason": "BBS 2026 release, 1966-2025. Raw files are reused in place and excluded from the publication."
+    },
+    {
+      "target": "doi:10.1098/rspb.2024.1908",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study for dominant acoustic frequency metadata, through the fixed prior matching table."
+    },
+    {
+      "target": "doi:10.5061/dryad.69p8cz99k",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Acoustic data version 326179, CC0. Raw archive is not directly read in the new analysis."
+    }
+  ]
+}
