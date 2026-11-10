@@ -1,0 +1,25 @@
+{
+  "title": "Seismogenic depth D90 in Japan changed with surface heat flow at 0.37 of the fixed-isotherm rate, and heat flow gave no clear held-out gain beyond nearby seismicity (JMA 1998-2024, GHFDB R2024)",
+  "abstract": "Question: Does surface heat flow predict the base of crustal seismicity (D90) in held-out areas of Japan, and is the D90 response as steep as a fixed cutoff isotherm predicts? Approach: We used 239,872 crustal JMA earthquakes (flag K, Mj 1.0 or more, 1998-2024, at least 20 km above Slab2) in 234 cells of 0.2 degrees with 100 or more events. We used the median IHFC GHFDB R2024 heat flow within 30 km of each cell. We held out each 1-degree block in turn and compared a spatial Gaussian-process model with and without heat flow and distance to Holocene volcanoes. We compared the slope of D90 on 1/q with the slope that a fixed isotherm in a steady conductive geotherm predicts. Results: D90 decreased with heat flow (Spearman -0.42, 95% interval -0.56 to -0.24). The slope was 0.37 (0.13 to 0.51) of the fixed-isotherm slope, and 0.41 (upper bound 0.56) after correction for heat-flow noise (split-half reliability 0.90). The primary design and 16 variants gave 0.17 to 0.45. Cells more than 30 km from volcanoes gave 0.40. The implied temperature at D90 rose from 286 C to 563 C from the lowest to the highest heat-flow tercile. Heat flow reduced held-out RMSE by 11.7% beyond the spatial model (-0.63 km, -1.38 to +0.07). The point gain was helpful in all 24 designs, but the interval excluded zero in only 4. The gain was about zero with 0.5-degree blocks. It fell to 4.9% when we removed 8 cells with D90 above 30 km (a post-hoc check). Volcano distance added no clear skill. Limitations: Heat-flow error shared by nearby sites, regional JMA depth bias and a simple uniform geotherm can bias the ratio. The study covers Japan only, and the cells exclude most of the forearc.",
+  "categories": [{"scheme": "arxiv", "code": "physics.geo-ph"}],
+  "keywords": ["seismogenic depth", "D90", "heat flow", "brittle-ductile transition", "JMA catalog", "GHFDB", "Japan", "cross-validation", "Gaussian process", "seismic hazard"],
+  "display": [
+    {"path": "files/figures/fig1_d90_vs_heatflow.png", "caption": "D90 of crustal earthquakes against surface heat flow for 234 cells of 0.2 degrees. Grey dots are cells. Blue points are binned medians with interquartile ranges. The orange line is the fit D90 = 7.2 + 5.0 x (100/q). Dashed lines are the depths of the 300, 400 and 500 C isotherms in a steady conductive geotherm. The data cross the isotherms: D90 changes much less than a fixed temperature predicts."},
+    {"path": "files/figures/fig3_robustness.png", "caption": "A: change of held-out D90 RMSE when heat flow is added to the spatial Gaussian-process model, in percent, for the primary design and 23 variants (95% block-bootstrap intervals). B: observed D90 slope on 1/q divided by the slope a fixed isotherm predicts, for the primary design, 16 variants and 8 subsets. 1 = fixed isotherm, 0 = no heat-flow effect."},
+    {"path": "files/figures/fig2_maps.png", "caption": "Maps of observed D90 (left), cell heat flow from GHFDB R2024 (middle) and held-out residuals of the spatial plus heat-flow model with 1-degree blocks (right)."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:892c866dce732ef30f969f95c46ffe76212170fe63ea4e75add4b1d6af57f43b", "relations": ["uses"], "reason": "We reuse its JMA 96-column catalog parser (01_parse.py)."},
+    {"target": "sci:sha256:1ca71b3eef25f9bcc982e857716437403da9e7c898e2308234b417690e424ec1", "reason": "Earlier campaign work used GHFDB heat flow and D90 as covariates of aftershock decay in Japan."},
+    {"target": "sci:sha256:643c5c689c49c90762e4290c6a8d72859144ac1664e5d33508d9a618556da5b2", "reason": "Earlier campaign work related Omori p to GHFDB heat flow in Japan."},
+    {"target": "doi:10.5880/fidgeo.2024.014", "relations": ["uses"], "reason": "IHFC Global Heat Flow Database Release 2024 (CC BY 4.0)."},
+    {"target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html", "relations": ["uses"], "reason": "JMA unified hypocenter catalog, yearly files 1998-2024."},
+    {"target": "doi:10.5066/F7PV6JNV", "relations": ["uses"], "reason": "USGS Slab2 slab geometry."},
+    {"target": "doi:10.1126/science.aat4723", "reason": "Slab2 reference (Hayes et al. 2018)."},
+    {"target": "doi:10.1186/BF03353340", "reason": "Tanaka (2004): D90 and heat flow in Japan."},
+    {"target": "doi:10.1016/j.tecto.2011.11.013", "reason": "Omuralieva et al. (2012): cutoff depth of shallow earthquakes beneath Japan."},
+    {"target": "doi:10.1016/j.tecto.2020.228426", "reason": "Zuza and Cao (2020): seismogenic thickness and heat flow in California."},
+    {"target": "https://volcano.si.edu/", "relations": ["uses"], "reason": "Smithsonian GVP Volcanoes of the World, Holocene volcano coordinates (non-commercial terms; only derived distances are included)."},
+    {"target": "https://www.naturalearthdata.com/", "relations": ["uses"], "reason": "Natural Earth 10m land polygons (public domain)."}
+  ]
+}
