@@ -1,0 +1,89 @@
+{
+ "title": "Mouse brain structures with more transcriptomic neuron types did not have more diverse spike features in IBL (185) or Allen Neuropixels (30) data; the link was negative, mostly in isocortex",
+ "abstract": "Question: do mouse brain structures with more transcriptomic neuron types contain units with more diverse extracellular spike features? Approach: for each MERFISH parcellation structure we calculated the effective number of neuron supertypes (Allen Brain Cell Atlas, mouse 638850, rarefied to 200 neurons). We compared it with the effective number of spike-feature classes from one Gaussian mixture on four amplitude-free features (log firing rate, peak-trough duration, half-peak width, log peak/trough ratio), rarefied to 30 units. The units came from the IBL Brain-Wide Map 2026Q2 (63,825 good units, 185 structures) and Allen Visual Coding Neuropixels (35,256 units, 30 structures). The primary test was a residual Spearman correlation after control for division, cell count, unit count, session count and amplitude, with permutations inside divisions. The plan was written before the tests. Result: the hypothesis failed. The association was negative in IBL (rho -0.20, 95% CI -0.36 to -0.04, p = 0.007) and had the same sign in Allen VCN (rho -0.44, CI -0.76 to 0.34, p = 0.06). Non-neuronal diversity gave no association. A second MERFISH brain (Zhuang-ABCA-1) gave the same result (rho -0.20). Exploratory analyses put the negative association mostly in isocortex (43 areas, rho -0.77; other divisions rho -0.06). Lateral and frontal association areas have more supertypes, lower firing rates and more uniform spike features. The association stayed inside single cortical layers. It became small (rho -0.22, p = 0.20) only after control of layer mix and mean rate together. Limitations: each atlas is one animal, extracellular units are a biased sample, four features are a narrow view, and structures are spatially autocorrelated.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "cell-type diversity",
+  "MERFISH",
+  "Neuropixels",
+  "IBL Brain-Wide Map",
+  "Allen Brain Cell Atlas",
+  "spike waveform",
+  "firing rate",
+  "structure-function",
+  "mouse cortex",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_diversity_scatter.png",
+   "caption": "Figure 1. Spike-feature diversity (effective number of Gaussian-mixture classes in 30 units) against MERFISH neuron supertype diversity (effective number in 200 neurons) for each structure. A: IBL raw values; blue = isocortex. B: IBL residuals after division, cell count, unit count, session count and amplitude; line = OLS fit. C: Allen Visual Coding Neuropixels residuals (30 structures)."
+  },
+  {
+   "path": "files/figures/fig2_all_tests.png",
+   "caption": "Figure 2. All tests: residual Spearman rho with 95% bootstrap CI over structures. Blue = primary test; dark = two-sided permutation p < 0.05; grey = not significant. Rows after 'feature SD log_ptr' are exploratory (added after we saw the primary result). No pre-listed test gave a positive association."
+  },
+  {
+   "path": "files/figures/fig3_isocortex.png",
+   "caption": "Figure 3. Exploratory, IBL isocortex (43 areas, raw values). A: areas with more supertypes have less spike-feature diversity. B: these areas have lower mean log firing rate. C: spike-feature diversity follows the mean rate. Primary sensory areas are top left in A; lateral and frontal association areas are bottom right."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:745e2c94f424a0f459bbc217d844cf6c8ad1930a10e6b5cc4a228b107a9fe7e5",
+   "reason": "Earlier campaign comparison of regional narrow-spike fractions with Allen MERFISH composition in IBL and Allen data."
+  },
+  {
+   "target": "sci:sha256:18f77139dff654b47a941667ae1dada41b8d3adac3f068238fada92b5497833d",
+   "reason": "Earlier campaign study of narrow-unit share against Pvalb-type share across IBL regions."
+  },
+  {
+   "target": "sci:sha256:26bf349d6081d9325c3a1da51e4a4a96c45aafb52ce37ce0b3c33ac4f5ee4fd5",
+   "reason": "Related campaign study of narrow-unit share against Pvalb-type share."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "reason": "Earlier campaign study of regional spiking timescales and anatomical hierarchy in IBL and Allen data."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Brain Cell Atlas whole-brain taxonomy and MERFISH 638850 data."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06808-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zhuang-ABCA-1 MERFISH data used as a second brain."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map spike-sorted units."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels units used for replication."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCFv3 ontology used to map locations."
+  }
+ ]
+}

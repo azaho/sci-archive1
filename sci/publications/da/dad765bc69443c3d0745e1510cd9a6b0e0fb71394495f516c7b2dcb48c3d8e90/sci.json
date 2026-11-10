@@ -1,0 +1,105 @@
+{
+  "title": "PAGER floor repair kept a Brier score gain with up to 681 missed deadly events in 4,478 fixed forecasts from 2020 to 2025",
+  "abstract": "An exact sensitivity analysis strengthens a prior PAGER forecast audit. For 4,478 fixed fatality-floor reports from 2020 to 2025, a constant repair based on earlier events keeps a lower mean Brier score than issued PAGER for every placement of up to 681 missed deadly events among 4,421 recorded zeros. At least 682 are needed to erase its gain. The bounds follow from the change in a paired Brier difference when a zero label becomes one; they are not estimates of missingness and do not refit the models. We added this check after a planned test of economic inputs gave a null result. That test trained ridge logistic models on earlier years with a 90-day gap. Adding two economic probabilities and an economic floor flag to magnitude and intensity changed the Brier score by +0.000161 (95% month-block interval -0.000168 to +0.000494). All planned sensitivity intervals included zero. The small unfavorable mean ranking can reverse with three missed events. Both floor signatures occurred in 92.5% of test floor reports. We use the parent study's frozen archive and outcomes, so this is not independent data replication. Historical label availability, incomplete death records, few severe events and one fixed predictor model limit interpretation. Code, aggregate evidence, fitted parameters, figures, exact input hashes and independent numerical audits are included. External event records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "PAGER",
+    "earthquake loss forecasts",
+    "forecast verification",
+    "Brier score",
+    "missing outcomes",
+    "economic losses",
+    "fatality probabilities",
+    "chronological test",
+    "sensitivity bounds",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/added_signal.png",
+      "caption": "Combined minus magnitude-and-intensity Brier scores for 4,478 PAGER fatality floor reports from 2020 to 2025. The primary difference is +0.000161, with a conditional 95% month-block interval from -0.000168 to +0.000494. Negative values favor added economic inputs. Planned sensitivity tests gave no clear added gain. The no-pending row is post hoc."
+    },
+    {
+      "path": "files/missing_outcomes.png",
+      "caption": "Sharp bounds when at most m recorded-zero events are changed to deadly events. Predictions remain fixed. The constant floor repair keeps a lower Brier score than issued PAGER for every placement of at most 681 missed deadly events; its worst-case bound crosses zero at 682. The unfavorable mean difference for added economic inputs can reverse with three events. Bounds are not confidence intervals or estimates of missingness."
+    },
+    {
+      "path": "files/dual_floor.png",
+      "caption": "Both floor signatures occur in 4,144 of 4,478 fatality floor reports. This group has 17 recorded deadly events, compared with 40 among 334 reports with other economic distributions. These pooled descriptive differences do not establish added chronological forecast gain. Wilson intervals assume independent events."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Uses its frozen PAGER archive and NCEI outcomes. Exact bounds show how robust the fixed floor repair is to missing test deaths. This is not independent outcome replication."
+    },
+    {
+      "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its chronological floor-repair and magnitude-intensity benchmark design, and tests the addition of economic probabilities from the same report with new code."
+    },
+    {
+      "target": "doi:10.7289/V5TD9V7K",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream NCEI earthquake death records, obtained through the frozen parent publication."
+    },
+    {
+      "target": "doi:10.7289/V5PN93H7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream tsunami-death flags, obtained through the frozen parent publication."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream ComCat archived PAGER records. Same-version economic probabilities are extracted from the frozen parent archive."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/pager/background.php",
+      "reason": "Describes the two loss products, exposure inputs and economic alert thresholds."
+    },
+    {
+      "target": "https://github.com/usgs/pager/tree/081a55f854031caa72a67bf115f855db87741563",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Public source defines the probability conversion and the economic loss scale. Source software is not bundled."
+    },
+    {
+      "target": "doi:10.1193/1.3480331",
+      "reason": "Describes the empirical PAGER fatality model."
+    },
+    {
+      "target": "doi:10.1093/jrsssc/qlag042",
+      "reason": "Prior joint earthquake impact model and PAGER comparison. This study does not claim that joint impact modelling or score comparison is new."
+    },
+    {
+      "target": "doi:10.1002/met.1626",
+      "reason": "Prior analysis of Brier scores under observation error."
+    },
+    {
+      "target": "doi:10.5194/ascmo-7-53-2021",
+      "reason": "Prior forecast-verification treatment of imperfect observations."
+    }
+  ]
+}

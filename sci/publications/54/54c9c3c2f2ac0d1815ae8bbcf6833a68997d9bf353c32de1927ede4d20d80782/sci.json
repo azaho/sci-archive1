@@ -1,0 +1,72 @@
+{
+  "title": "A fixed trait model raised mean prediction error across six bird drought abundance samples from a 2024 release",
+  "abstract": "We tested whether a fixed trait model predicts relative bird drought abundance responses outside its training study. Six samples from a 2024 public release supplied 179 records and 151 study-species units in Australia, Hawaii, Spain and North Dakota. A ridge model used body mass, longevity, clutch size and diet. Equal-study mean squared error rose by 8.79% when each study was held out and by 17.68% when each country was held out. Both tests lowered error in only one of six study samples. Error also rose with two alternative penalties, complete cases and exclusion of shared species from training. The target is species response differences within a study, not the unknown mean loss in a future drought. Six selected samples, shared ancestry, response noise, detection bias and incomplete dates limit inference. No temporal replication or pollution effect was tested. The result applies to the specified model and data, not to all trait models. Code, aggregate scores, source hashes, numerical checks and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "birds",
+    "drought",
+    "prediction",
+    "species traits",
+    "observation bias",
+    "structured validation"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Error ratios for relative species responses. Ratios below one show lower error than the equal-response reference. The axis has a log scale. Country exclusion removes all selected studies in the test country. These finite-sample scores have no sampling error bars."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.5061/dryad.2bvq83c0w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1111/1365-2656.14195",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/ecog.02881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Structured validation rationale."
+    },
+    {
+      "target": "https://datadryad.org/terms",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:05294297b6ff26c9d8d64b1618e06ec05418d9063cd10a6efae80d6e5ac04e7f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Six study-metric definitions. Records overlap."
+    },
+    {
+      "target": "sci:sha256:e5b3d5c9eec4c31e925712bd9244f17a94d61c79383e3d8a5a401d6938f62dc1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-study body mass slopes. Records overlap."
+    },
+    {
+      "target": "sci:sha256:cca5f72a65662f2cc2d43a686bafbca1c2ebb1f788deb654b80e9685a5e4c234",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior common-species rank transfer limits. Records overlap."
+    }
+  ]
+}

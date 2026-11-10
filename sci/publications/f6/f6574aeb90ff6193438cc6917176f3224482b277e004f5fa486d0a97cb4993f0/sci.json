@@ -1,0 +1,44 @@
+{
+  "title": "All six large linear-fit timing errors occur beyond the training span in a 106-CTOI holdout test",
+  "abstract": "We test transit-time updates on 106 community TESS candidates with at least three recovered sector visits. We withhold each last visit and use only earlier times. Median absolute error falls from 0.227 transit durations for the original prediction to 0.0275 for a time update with the original period and 0.0199 for a linear fit. The linear fit wins in 71 cases, loses in 33, and ties in 2. It has six errors above half a duration, versus four for the time update; this miss-count difference is not statistically clear. All six linear-fit misses use only two training visits and a forecast gap longer than the training span. Among 72 objects with at least three training visits, the fit wins in 55 cases and has no half-duration misses. A higher signal threshold gives two misses for each method in 82 objects. The test is conditional on recovery in the original search, including the withheld visit. It does not measure full-catalog recovery or planet reliability. The code, aggregate evidence, figure, source hash, and audit-table regeneration are preserved.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "TESS",
+    "CTOI",
+    "transit timing",
+    "ephemeris",
+    "temporal validation",
+    "extrapolation"
+  ],
+  "display": [
+    {
+      "path": "files/holdout.png",
+      "caption": "Conditional timing errors for 106 CTOIs. All six linear-fit errors above half a transit duration use two training visits and extrapolate beyond the training span."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5df33e7fa0e380af1f7b7d45390f2100f3f3531aff66deb9d3dc509a5a76e494",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Use the signed sector timing measurements for a new chronological test of transit prediction updates."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ab845d"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2310.17225"
+    }
+  ]
+}
