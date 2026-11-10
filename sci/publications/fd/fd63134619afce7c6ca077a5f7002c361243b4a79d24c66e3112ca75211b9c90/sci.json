@@ -1,0 +1,91 @@
+{
+  "title": "A common nonnegative filter needs centroid errors above 2 ms in 30 of 53 selected Allen mouse input groups",
+  "abstract": "We tested whether inputs to one neuron can share a nonnegative temporal filter between fitted current and voltage responses. A common filter must add equal temporal means and equal variances across inputs. We derived an exact bound on independent absolute moment errors needed to meet each necessary condition. In Allen Synaptic Physiology r2.1, after removing decay fits near default limits, 30 of 53 mouse V1 groups need more than 2 ms per centroid. The second mouse series has 14 failures in 24 groups; the human series has 8 in 17. Removing fitted onset shifts leaves these counts unchanged. In the main series, a variance test at 100 ms squared adds only one failure after the 2 ms centroid test. Numerical integration and independent linear programs checked the method. These are bounds for fitted shapes extended to infinite time, not measured error estimates. Separate clamp states, fit tails, space-clamp error, selected slices and missing inputs prevent a claim against passive filtering in real neurons. Original code, aggregate results, a figure, source hashes and external regeneration steps support reproduction. External data and record-level tables are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic kinetics",
+    "temporal moments",
+    "nonnegative filter",
+    "convergent inputs",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/moments.png",
+      "caption": "Failure shares for necessary common-filter moment conditions in three selected Allen projects. Decay fits near default limits are removed. Allowances are independent absolute errors per fitted moment, not measured uncertainty. Group counts are 17 human, 53 mouse V1 and 24 mouse pre-production."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and connection measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:24a87a3016705c0dd5e3b5150dd9cc2b0b54be759745a425368b8b026273e328",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared single-pole tail test. We test necessary moments for general nonnegative filters."
+    },
+    {
+      "target": "sci:sha256:0060132152fb5fcc19d779d8dfa3666f5fdaa581070e5c5f4b530684d58e4b54",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior rise-time order test; general common filters need not preserve that order."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.17-20-07606.1997",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Somatic clamp and synaptic waveform distortion."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-connection-characterization",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Inspected fit equation and default decay bounds. No source code copied."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
