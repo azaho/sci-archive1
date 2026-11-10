@@ -1,0 +1,28 @@
+{
+  "title": "TESS data from 2018 to 2026 show repeat events for 36 of 164 K2 single-transit candidates, give one period for 6 systems, and limit TOI-5560.01 (EPIC 211924561) to 70.25 or 140.49 days",
+  "abstract": "LaCourse and Jacobs (2018) listed 164 single transit and eclipse events in K2 Campaigns 0 to 14. We searched 511 TESS sector light curves (SPOC, TESS-SPOC, QLP and our own TESScut photometry, sectors 2 to 98 and a 2026 segment) and all K2 campaigns of the 163 stars for a second event with the K2 shape. We used a local matched filter with an empirical noise scale, sensitivity intervals, 5,090 injections (99.9 % recovered where expected SNR is 10 or more) and a sign-flipped control. 35 candidates show a shape-matched TESS repeat at SNR 15 or more (49 dips against 2 control brightenings). Seven more repeat only in later K2 campaigns. With all K2 and TESS coverage, six systems have one allowed period (22.9041, 34.7456, 49.2501, 62.5946, 73.9624 and 182.2453 d). All six have companions larger than 2 Jupiter radii and are probably eclipsing binaries. For EPIC 211924561 (TOI-5560.01, depth 0.23 %), events in K2 C5, K2 C16, TESS S46 and S72 leave only 140.494 or 70.247 d. VSX periods of 10 recovered eclipsing stars are excluded by the data. A small-companion duration model predicts 20.6 secure repeats for events deeper than 5 % and we see 15 (p = 0.027). This agrees with stellar companions. TESS removes a median 17 % of the log-period range for 76 sensitive non-detections. Limitations: no pixel-level vetting of each TESS event, approximate dilution, a strictly periodic solver, and a secure threshold chosen after the control. Code, aggregate results, input hashes and a retrieval script are included. Raw light curves stay at MAST.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.SR"}
+  ],
+  "keywords": ["K2", "TESS", "single transit", "long-period planets", "eclipsing binaries", "orbital period", "TOI-5560", "EPIC 211924561", "injection-recovery", "VSX"],
+  "display": [
+    {"path": "files/figures/fig2_epic211924561.png", "caption": "EPIC 211924561 (TOI-5560.01). Top: K2 C5, K2 C16, TESS S46 and TESS S72 data near each event (gray: cadences; blue: 30-min bins; orange: K2 trapezoid template, depth 0.23 %, duration 3.1 h). Bottom: the nine periods 983.455/N d that the two K2 events and all K2 and TESS coverage allow. Orange periods (70.247 and 140.494 d) also agree with both TESS dips."},
+    {"path": "files/figures/fig3_unique_periods.png", "caption": "The six systems that have one allowed period after K2 and TESS coverage. All K2 (blue) and TESS (orange) data are folded on the period, near the predicted eclipse."},
+    {"path": "files/figures/fig1_overview.png", "caption": "TESS outcome for the 164 K2 single-transit candidates against K2 event depth and TESS magnitude. Marker shape and color give the status."}
+  ],
+  "citations": [
+    {"target": "doi:10.48550/arXiv.1802.05823", "relations": ["uses", "reviews"], "reason": "Source of the 164 K2 single-transit candidates (LaCourse and Jacobs 2018, RNAAS 2, 28)."},
+    {"target": "doi:10.48550/arXiv.1908.08548", "relations": ["reviews"], "reason": "Sandford et al. 2019 period estimates for K2 single transits; we test them against TESS coverage."},
+    {"target": "doi:10.3847/1538-3881/ab594c", "relations": ["reviews"], "reason": "Dholakia et al. 2020 period estimates for C5 candidates with C16/C18 repeats."},
+    {"target": "doi:10.48550/arXiv.1806.08757", "relations": ["reviews"], "reason": "Giles et al. 2018 period estimate for EPIC 248847494."},
+    {"target": "doi:10.17909/t9-r086-e880", "relations": ["uses"], "reason": "QLP TESS FFI light curves (MAST HLSP)."},
+    {"target": "doi:10.17909/t9-wpz1-8s54", "relations": ["uses"], "reason": "TESS-SPOC FFI light curves (MAST HLSP)."},
+    {"target": "doi:10.3847/1538-3881/ab3467", "relations": ["uses"], "reason": "TESS Input Catalog v8 (Stassun et al. 2019)."},
+    {"target": "https://exofop.ipac.caltech.edu/tess/", "relations": ["uses"], "reason": "TOI and CTOI tables retrieved 2026-11-09; TOI-5560.01 maximum period."},
+    {"target": "https://www.aavso.org/vsx/", "relations": ["challenges"], "reason": "VSX periods of 10 recovered EPIC eclipsing stars do not agree with K2 and TESS data."},
+    {"target": "https://mast.stsci.edu/tesscut/", "relations": ["uses"], "reason": "TESScut FFI cutouts for sectors without pipeline light curves."},
+    {"target": "sci:sha256:e8b4dc705fcd37bb721bc1fc69f364ebafa174184c1e5172373571c7c68a37aa", "reason": "Related campaign study of Kepler single transits with TESS."},
+    {"target": "sci:sha256:d9f224da56fe0d0b41ca406203e26ffc5c99b6806a710273bb2267025c1dc810", "reason": "Related campaign study of single-transit TOIs."}
+  ]
+}
