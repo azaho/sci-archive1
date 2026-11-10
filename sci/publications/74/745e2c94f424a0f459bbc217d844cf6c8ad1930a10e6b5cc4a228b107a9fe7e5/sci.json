@@ -1,0 +1,92 @@
+{
+ "title": "Narrow-spike unit fractions in 169 mouse brain regions followed brain division, not Pvalb or GABAergic neuron fractions, in IBL and Allen Neuropixels data compared with Allen MERFISH",
+ "abstract": "Many Neuropixels studies use narrow extracellular spikes as a marker for fast-spiking Pvalb inhibitory neurons. We tested this marker across mouse brain regions. We compared the fraction of units with spike duration below 0.40 ms with the neuron composition of the same region in the Allen Brain Cell Atlas MERFISH data (2.02 million neurons, one mouse). The units came from the IBL Brain-Wide Map (169 regions, 62,089 units) and Allen Visual Coding Neuropixels (27 regions, 35,281 units). Narrow-spike fractions agreed between the two data sets (rank correlation 0.89 in 26 shared regions). Across IBL regions, the narrow fraction correlated with the Pvalb-type fraction (rho 0.48, 95% CI 0.35 to 0.59) and with the GABAergic fraction (rho 0.52), with no difference between them. But brain division explained 79% of the variance: the median narrow fraction was 0.27 in forebrain and 0.86 in midbrain, hindbrain and cerebellum. Inside divisions the Pvalb link was weak (rho 0.26, permutation p 0.001), absent in forebrain (rho -0.05) and absent in the Allen data (rho -0.01). In 76 isocortex area-layer groups, more Pvalb-type neurons went with fewer narrow units (within-area rho -0.48), because layer 5 had the most Pvalb neurons and the fewest narrow units. Thalamic and collicular regions with almost no Pvalb neurons had many narrow units, and striatum with more than 90% GABAergic neurons had few. Thus region-level narrow-spike fractions are reproducible but do not measure interneuron content. Limitations: one MERFISH mouse, no correction for recording bias toward large neurons, atlas registration error in small nuclei, and pipeline-dependent duration values.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Neuropixels",
+  "spike waveform",
+  "fast-spiking interneurons",
+  "parvalbumin",
+  "MERFISH",
+  "cell type composition",
+  "IBL Brain-Wide Map",
+  "Allen Brain Cell Atlas",
+  "Allen Visual Coding Neuropixels",
+  "structure-function",
+  "mouse brain",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_narrow_vs_composition.png",
+   "caption": "Narrow-spike unit fraction (duration below 0.40 ms) against the MERFISH Pvalb-type neuron fraction (top) and GABAergic neuron fraction (bottom) for eligible regions in IBL (left, 169 regions) and Allen Visual Coding Neuropixels (right, 27 regions). Color shows the CCF division; marker size shows unit count; the dotted line is identity. Forebrain regions sit low and midbrain, hindbrain and cerebellar regions sit high, nearly independent of composition."
+  },
+  {
+   "path": "files/figures/fig4_isocortex_layers.png",
+   "caption": "IBL isocortex area-layer groups (76 groups, 34 areas). The narrow-spike fraction decreased as the MERFISH Pvalb-type and GABAergic fractions increased. Layer 5 (red) had the most Pvalb-type neurons and the fewest narrow units."
+  },
+  {
+   "path": "files/figures/fig3_rho_summary.png",
+   "caption": "Spearman rank correlations across regions (dots, 95% region-bootstrap intervals) and within-division rank correlations (crosses) for the Pvalb-type (red) and GABAergic (blue) fractions, for the primary analysis and the pre-specified sensitivity variants."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-023-06812-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the MERFISH whole-brain cell type and CCF parcellation data (Allen Brain Cell Atlas, CC BY-NC 4.0)."
+  },
+  {
+   "target": "doi:10.1101/2023.07.04.547681",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map; we use the 2026 Q2 aggregate cluster table (CC BY 4.0)."
+  },
+  {
+   "target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/aggregates/2026_Q2_IBL_et_al_BWM/clusters.pqt",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels units and channels tables."
+  },
+  {
+   "target": "https://allen-brain-cell-atlas.s3.us-west-2.amazonaws.com/expression_matrices/MERFISH-C57BL6J-638850/20230830/C57BL6J-638850-log2.h5ad",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF v3 ontology for region mapping."
+  },
+  {
+   "target": "doi:10.1152/jn.00680.2018",
+   "reason": "Prior Allen Neuropixels work on waveform-based classification of fast-spiking units."
+  },
+  {
+   "target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd",
+   "reason": "Related campaign result that uses spike waveform classes in Allen Neuropixels data."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "reason": "Related campaign result on region-level spiking properties in Allen and IBL Neuropixels data."
+  }
+ ]
+}

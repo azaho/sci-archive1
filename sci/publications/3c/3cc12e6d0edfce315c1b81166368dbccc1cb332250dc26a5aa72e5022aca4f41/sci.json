@@ -1,0 +1,64 @@
+{
+  "title": "Monotone return to zero needs changes above 0.10 in 467 of 607 selected Allen recovery curves",
+  "abstract": "We tested a necessary shape constraint for one-state recovery after a stimulus train. We used first-response recovery summaries at four pauses in Allen Synaptic Physiology r2.1. Each pause had at least five trials. Of 607 detected cortical connections, 467 needed a uniform change above 0.10 normalized units to permit a monotone return toward zero. The counts were 168 of 217 for mouse excitation, 258 of 329 for mouse inhibition, 38 of 57 for human excitation, and 3 of 4 for human inhibition. Without the zero constraint, 340 curves still needed a change above 0.10 to permit either monotone direction. An exact formula agreed with linear optimization in 1229 observed and synthetic cases. The tolerance is an assumption, not a measured error bound. Noise, trial selection, protocol drift, and condition-specific baselines prevent a claim of biological model rejection. The package contains code, a proof, aggregate evidence, a figure, source hashes, and a retrieval method. External record-level data remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic recovery",
+    "shape constraint",
+    "model compatibility",
+    "measurement tolerance"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/recovery.png",
+      "caption": "Exact changes needed for monotone recovery in four-pause summaries. These are descriptive model checks, not uncertainty intervals. The right panel compares two shape constraints at tolerance 0.10."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.94.2.719",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:1bd3e1079906fefc1101105d407d30b55bdfbf8719fceea3c307110ec0ab89b5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior paired pause comparison; this work tests individual curve shape, not the mean signed endpoint contrast. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:159dd7b6464b8e45a1c0ac947fbd8ffc9aae4418152bd9c4d1ad45a499350ae8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates avoiding repeated pulse_amplitudes arrays; this work uses protocol-specific stp_recovery_single."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "reason": "Metric definitions, not a verified database build commit."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    }
+  ]
+}
