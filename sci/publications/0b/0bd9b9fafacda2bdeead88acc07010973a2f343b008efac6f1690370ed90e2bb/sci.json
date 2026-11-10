@@ -1,0 +1,64 @@
+{
+  "title": "Two-edge swaps reached all fixed-degree graphs in 655 selected Allen cortical slice recordings",
+  "abstract": "We tested graph shuffle reachability in 655 selected Allen mouse VisP and human TCx excitatory slice recordings with three to six cells. Exact enumeration fixed each cell input and output count and the tested-pair mask. Two-edge swaps reached every valid graph in all recordings, but 631 had only one valid graph. For the remaining 24, a sampler with a half-probability stay step and rejected proposals retained reached total variation distance at most 0.01 from uniform within 163 steps from every starting state, by numerical matrix calculation. A walk that selected only valid swaps had a nonuniform stationary distribution in eight recordings. Its largest stationary total variation error and absolute expected reciprocal-count error were both 1/6. These results audit defined algorithms, not a named software package. Small sampled circuits, repeated donors, uncertain connection calls, and no in vivo outcomes limit biological inference. Original code, aggregate evidence, synthetic validation, source hashes, and external-data retrieval instructions support reproduction. External record tables are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "graph shuffle",
+    "degree sequence",
+    "Markov chain",
+    "circuit motifs",
+    "sampling bias",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Most selected graphs had one state. A defined lazy proposal sampler reached the 0.01 marginal total variation threshold within 163 steps. A valid-swap-only walk had biased stationary mass in eight nontrivial cases."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0201995",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior exact degree-conditioned motif study motivated a state-space and sampler audit; no code or numerical tables reused."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    }
+  ]
+}
