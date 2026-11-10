@@ -1,0 +1,23 @@
+{
+  "title": "Rodell-2018 cause labels predicted which GRACE water-storage trends continued in GRACE-FO 2018-2026: 4 of 12 natural-variability trends kept their sign, versus 11 of 14 human and 8 of 8 climate trends",
+  "abstract": "Rodell et al. (2018) mapped 34 regional terrestrial water storage (TWS) trends in GRACE data from April 2002 to March 2016. They labelled each trend as caused by climate change, direct human impact, or natural variability. We used these labels as a forecast and tested them on independent GRACE-FO data (June 2018 to August 2026). We used CSR RL06.3 mascons and approximate region polygons, which we froze with training data only (Gt/yr agreement with Rodell Table 1: r = 0.99). The test was pre-registered. Only 4 of 12 natural-variability regions kept their trend sign (persistence slope 0.17, 95% CI -0.91 to 1.39). In contrast, 11 of 14 human regions (slope 1.89, CI 0.43 to 2.61) and 8 of 8 climate regions (slope 0.79) kept their sign. Fisher test, human versus natural: p = 0.026. The slope difference had bootstrap P = 0.045, but its CI includes zero. Trend extrapolation beat holding the 2014-16 level in 8/8 climate, 7/14 human and 3/12 natural regions. At 3-degree block scale, natural-region blocks kept their sign less often (45%) than land blocks outside all regions (64%; difference -0.18, CI -0.35 to -0.01). Individual forecasts often failed. The North China Plain depletion reversed (-1.0 to +1.5 cm/yr). NW Saudi Arabia did not slow down. The Caspian loss accelerated about 3x. Four natural regions kept significant same-sign trends. Changes in a 24-month-memory GPCP precipitation store correlated with the trend changes (Spearman 0.56 in 27 non-ice regions). The pre-registered memory-free measure was weaker (Spearman 0.21). Limitations: few regions, approximate outlines, a different data release, GIA and leakage errors that add apparent persistence, and a background restriction to |lat| <= 60 that was not pre-registered.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["GRACE", "GRACE-FO", "terrestrial water storage", "groundwater depletion", "trend persistence", "forecast verification", "attribution", "natural variability", "Rodell 2018", "CSR mascons", "GPCP", "pre-registered test"],
+  "display": [
+    {"path": "files/figures/fig1_trend_persistence.png", "caption": "Trend in each Rodell et al. 2018 region, Apr 2002 - Mar 2016 (x) versus GRACE-FO Jun 2018 - Aug 2026 (y), cm/yr on symlog axes, with AR(1)-adjusted 1-sigma error bars. The colour and shape give Rodell's cause label. The dashed line marks unchanged trends. Natural-variability regions (green circles) often fall in the sign-reversed quadrants."},
+    {"path": "files/figures/fig2_group_summary.png", "caption": "A: Fraction of regions and 3-degree blocks with the same trend sign in GRACE-FO, with 95% CI (Clopper-Pearson for regions, super-block bootstrap for blocks). Grey diamonds: land blocks outside all Rodell regions. B: For each region, the ratio of the 2018-26 forecast MSE from the extrapolated 2002-16 trend to the MSE from holding the 2014-16 level (log scale; black bar = group median)."},
+    {"path": "files/figures/fig3_example_series.png", "caption": "De-seasoned regional TWS (cm) for four direct-human and four natural-variability regions. Black: 2002-16 trend fit and its extrapolation (dashed). Violet: GRACE-FO trend fit. Grey band: late-GRACE period and GRACE to GRACE-FO gap."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41586-018-0123-1", "relations": ["reviews", "uses"], "reason": "Source of the 34 regions, the trend table and the cause labels that we test as forecasts."},
+    {"target": "doi:10.15781/cgq9-nh24", "relations": ["uses"], "reason": "CSR GRACE/GRACE-FO RL06 mascon data (RL06.3 file used)."},
+    {"target": "doi:10.1002/2016JB013007", "relations": ["uses"], "reason": "CSR mascon method reference."},
+    {"target": "doi:10.3390/atmos9040138", "relations": ["uses"], "reason": "GPCP v2.3 monthly precipitation used for the explanation check."},
+    {"target": "sci:sha256:7ca3c3b9fcc192ed10577330a9917185b5db4241ef384cccb2fdf033a8984dd8", "reason": "Related campaign test of well-level trend persistence and extrapolation skill in the US."},
+    {"target": "sci:sha256:2a272ce0fcfb5955020e580c5b6f683e12039d45b8bee777b6070e417e1bbbf3", "reason": "Related campaign GRACE study of deficit and surplus decay rates."},
+    {"target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1", "reason": "Earlier campaign use of the same CSR mascon product."}
+  ]
+}
