@@ -1,0 +1,64 @@
+{
+  "title": "Fixed cell noise statistics permit a 22 to 27 percent sum-variance gap in eight worm site models",
+  "abstract": "We tested whether static population covariance and full single-cell autocovariance fix temporally averaged population noise in models of eight worm brain maps. Independent Gaussian site noises had fast and slow components with time constants of 1 and 10. We fixed every site variance and every target slow-noise share. A linear program gave sharp bounds for the variance of the target sum averaged over a window of 10. Maximum variance was 1.217 to 1.269 times minimum variance, while the instantaneous joint law and each target marginal process were identical. Fixing an added slow-noise budget for each source reduced the ratios to 1.066 to 1.104. We give a row-space test for identification and numerical checks. This is a conditional model result, not measured neural noise. Unknown gains, release laws, partial maps and no linked activity data limit biological use. Code, aggregate results, a figure, hashes and external retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "polyadic synapses",
+    "temporal averaging",
+    "noise covariance",
+    "identification",
+    "linear programming"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Sharp sum-noise variance bounds with fixed anatomy, static covariance, and full target autocovariance. Time constants and window are model assumptions. Lines are bounds, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/dneu.20307",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/ncomms13805",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0a2a89fa7d5a7d66677725f2f9405cafd7c811e56ade4678bd30b4735b5d2768",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its baseline-licensed fixed cell panel and site selection rules. Extends static shared-site noise to temporal identification. New analysis code; external records are not bundled."
+    },
+    {
+      "target": "sci:sha256:53644ef72ffd70e630f961accef7d248d26c60308aaa41fe98f9d66ea5ada47e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior anatomical site organization test; read during scope selection."
+    }
+  ]
+}
