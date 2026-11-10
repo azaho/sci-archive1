@@ -1,0 +1,64 @@
+{
+  "title": "Four fixed curve terms gave mixed wiring prediction gains across 13 excluded target scans in one MICrONS mouse",
+  "abstract": "We tested whether four fixed curve terms improve wiring predictions beyond a linear movie-response correlation term. We used linked calcium-response and electron-microscopy data from MICrONS node and edge properties v1. The panel had 295,371 candidate pairs and 8,128 connections in one mouse. Each test used targets from one scan and sources from other scans. All cells from the test scan were absent from connection-model training. Geometry, layer, area and cell response reliability were controls. At ridge penalty 10, the equal-scan mean log-loss reduction was -0.000001447 nats per pair. Nine of 13 scans improved. Pair weighting gave a reduction of 0.000000588. Penalty 100 gave an equal-scan reduction of 0.000001925. Removing one scan could change the mean sign at both penalties. Thus, these fixed curve terms gave no stable prediction gain. This result does not prove a linear wiring rule. One mouse, selected cells, shared sources and fixed response summaries limit transfer. The package includes original code, aggregate evidence, fitted models, input hashes and retrieval instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "structure and function",
+    "prediction",
+    "response similarity",
+    "curvature",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Loss reduction from four fixed curve terms by excluded target scan at ridge penalty 10. Positive bars show lower loss. The dashed line is the equal-scan mean. Shared sources and training sets prevent an independent-scan uncertainty claim."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Linked functional and structural measurements and released node and edge properties v1."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS cortical mm3 resource."
+    },
+    {
+      "target": "sci:sha256:da97fd643aca5180b079b1aea9f35a3f1e63687d396cf6fbf2a5b45594069bc2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior in-sample quadratic test left curvature uncertain. Our fixed hinge model tests prediction on excluded scans."
+    },
+    {
+      "target": "sci:sha256:0a568b275a263a2602990741cfda0e5f785dac6e5fa7af3b5c24032eac104efb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior scan-exclusion benchmark tested addition of a linear similarity term. We test added curve terms with reliability controls."
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    }
+  ]
+}
