@@ -1,0 +1,25 @@
+{
+  "title": "The 1949-2016 global tropical-cyclone slowdown trend did not hold for raw 2017-2024 IBTrACS data; a 4% slowdown within region-latitude-month cells continued",
+  "abstract": "Kossin (2018) reported a 10% decrease in the annual-mean translation speed of tropical cyclones in 1949-2016, from 6-hourly NHC and JTWC best tracks. We repeated the method on IBTrACS v04r01 (USA-agency positions, 223,676 six-hour segments). Then we tested the frozen 1949-2016 trend on eight new seasons with final best tracks (2017-2024). We wrote the plan before the test calculations. The reproduction gave -8.6% globally (published -10%). The regional values were near the published values, for example -21% over land in the western North Pacific. In 2017-2024 the raw global mean (18.13 km/h) was above the extended trend (17.37 km/h) in all 8 seasons. The residual, +0.77 km/h, was outside the 95% range expected with AR(1) noise (p = 0.03). The extended trend had about twice the squared error of the 1949-2016 mean and the 2007-2016 mean. Variants without extratropical or weak points gave p = 0.06-0.11. Speed increases strongly toward the poles, and the share of segments at 30 degrees or more fell from 13.0% (1949-1969) to 9.4% (2007-2016), then rose to 12.5% in 2017-2024. Within region x 5-degree latitude x month cells, the 1949-2016 decrease was -3.9% (p = 0.007), and 2017-2024 was on its extended line (+0.04 km/h, p = 0.91). The latitude band alone gave the same result. Thus about half of the raw slowdown and all of the recent departure follow the latitude mix of recorded segments. A smaller decrease within cells continued, but the frozen line did not clearly beat the 2007-2016 mean. Published over-land slowdowns in the western North Pacific and Australian region did not clearly change (p = 0.54 and 0.55). Limitations: only 8 test seasons, with the raw excess mainly in 2018, 2020 and 2021; we cannot tell whether the latitude shift is physical or from recording practice; and adding the wind category reduced the within-cell decrease to -2.0% (p = 0.17).",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "370108"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["tropical cyclones", "translation speed", "IBTrACS", "out-of-sample test", "best-track homogeneity", "climate trends", "replication", "composition bias"],
+  "display": [
+    {"path": "files/figures/fig1_global_forecast_test.png", "caption": "Annual-mean global TC translation speed. Blue: 1949-2016 fit period and OLS trend; dashed: trend extended to 2017-2024; orange: test seasons; open circle: 2025 (operational JTWC data, not scored). (a) Raw means of all 6-hourly NHC/JTWC segments: all 8 test seasons are above the extended line (p = 0.03). (b) Season effects adjusted for region x 5-degree latitude band x month: 2017-2024 is on the extended line (p = 0.91)."},
+    {"path": "files/figures/fig2_latitude_composition.png", "caption": "(a) Mean 1949-2016 segment speed by absolute latitude band. (b) Share of segments at 30 degrees or more by season. (c) Mean speed expected from the region-latitude-month mix alone (cell means over all years). The mix explains the raw 2017-2024 rise."},
+    {"path": "files/figures/fig3_forecast_residuals.png", "caption": "2017-2024 mean minus the frozen 1949-2016 trend for global variants, hemispheres, basins and Kossin's over-land regions. Grey bars: 95% range expected if the trend continued (AR(1) simulation that includes refitting); orange dots: p < 0.05."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41586-018-0158-3", "relations": ["reviews", "challenges"], "reason": "Original 1949-2016 slowdown claim; we repeat its method and test its trend on 2017-2024 data."},
+    {"target": "doi:10.1038/s41586-019-1222-3", "reason": "Earlier critique: no robust slowdown in the satellite era."},
+    {"target": "doi:10.1038/s41586-019-1223-2", "reason": "Earlier critique: change points and data uncertainty in translation speed."},
+    {"target": "doi:10.1038/s41586-019-1224-1", "reason": "Kossin reply to the critiques."},
+    {"target": "doi:10.1088/1748-9326/ab4031", "reason": "Satellite-era trend critique (Chan 2019)."},
+    {"target": "doi:10.1175/2009BAMS2755.1", "relations": ["uses"], "reason": "IBTrACS description."},
+    {"target": "doi:10.25921/82ty-9e16", "relations": ["uses"], "reason": "IBTrACS v04r01 data set used."},
+    {"target": "sci:sha256:cf44cb4ab150425adb165c1d9a2a996b033ae64d9e9e6b4e8985ed086f4836fb", "reason": "Campaign study: TC peak-intensity latitude continued to move poleward in 2013-2025, a possible physical cause of the latitude-mix change."},
+    {"target": "sci:sha256:40c236337ec72ace826fa768f114593efc63af52bb3be87732d3e9feb6c4ede7", "reason": "Campaign study with the same frozen-trend test design for a different TC trend claim (landfall decay)."}
+  ]
+}
