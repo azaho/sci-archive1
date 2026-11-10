@@ -1,0 +1,112 @@
+{
+  "title": "Controls kept a weighted spring shift estimate near 1.25 days per C in 317 North American bird species",
+  "abstract": "We tested whether the bird survey spring count-curve shift survives nonlinear climate response, lagged shape controls and shared observation errors. We rebuilt the fixed BBS 2026 release and GHCN_CAMS climate for the 317 species in SCI 314c7ca6. Fits used 8,915,599 species-survey rows in 1966-2024. A free quadratic spring effect and previous and next spring date interactions kept the source variance-weighted estimate at 1.25 days per C, with a conditional 95% interval of 0.94 to 1.55. Corrected weighted same-minus-previous and same-minus-next intervals were 0.81 to 1.76 and 0.81 to 1.73. The planned equal-weight estimate was 0.73, with interval 0.03 to 1.43; its two corrected control contrasts included zero. Shared route and year errors caused little inflation for the source weighted estimator. Opposite-half seasonal curvatures correlated only 0.51. A secondary curve-noise ratio gave 1.43 days per C and a Fieller interval of 0.15 to 3.33 under zero cross-half error covariance. Early-period and June-only records did not give bounded calibration sets. The evidence strengthens the same-spring weighted shape result but does not identify detection, breeding dates or a thermal-trend correction. An exact count-model example shows that availability and seasonal abundance can give the same data. The package includes code, aggregate evidence, figures, source hashes and external-data retrieval. Selection, model shape, estimated weights and approximate uncertainty limit inference.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "bird surveys",
+    "climate tracking",
+    "phenology",
+    "detection",
+    "seasonal count curves",
+    "measurement error",
+    "Fieller interval",
+    "negative control",
+    "shared errors",
+    "Breeding Bird Survey"
+  ],
+  "display": [
+    {
+      "path": "files/results/lag_controls.png",
+      "caption": "Same-spring shape relations stayed positive under both weight choices. Timing-control contrasts were clear with variance weights and uncertain with equal weights. Intervals include shared route and year score errors."
+    },
+    {
+      "path": "files/results/calibration.png",
+      "caption": "Seasonal curve noise limited calibration of a common shift. Fieller sets can be unbounded when the cross-half curvature denominator is weak. The ratio requires additional error assumptions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We rebuild its data and weighted count-curve shape estimate, then add nonlinear climate terms, lagged shape controls, shared scores and ratio uncertainty. The field records overlap fully."
+    },
+    {
+      "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Weak thermal tracking across networks motivates careful separation of seasonal observation effects."
+    },
+    {
+      "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Linear observer drift has a cohort alias. We test a distinct seasonal shape relation and retain mechanism identification limits."
+    },
+    {
+      "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Species-level weak thermal responses motivate a check of the seasonal count response."
+    },
+    {
+      "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Local spatial gradients remain a real benchmark; this study does not re-estimate them."
+    },
+    {
+      "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Habitat explains only part of the spatial-temporal gap."
+    },
+    {
+      "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Hearing-related observation patterns are a separate mechanism; no hearing correction is estimated here."
+    },
+    {
+      "target": "doi:10.5066/P144YU3S"
+    },
+    {
+      "target": "doi:10.1029/2007JD008470"
+    },
+    {
+      "target": "doi:10.1525/cond.2011.100234"
+    },
+    {
+      "target": "doi:10.1093/ornithapp/duaf052"
+    },
+    {
+      "target": "doi:10.1007/s10336-020-01821-5"
+    },
+    {
+      "target": "doi:10.1073/pnas.1705897114"
+    },
+    {
+      "target": "doi:10.1198/jbes.2010.07136"
+    },
+    {
+      "target": "doi:10.1111/j.2517-6161.1954.tb00159.x"
+    }
+  ]
+}
