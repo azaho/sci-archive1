@@ -1,0 +1,72 @@
+{
+  "title": "An orbit-field check finds a source mismatch and an unresolved scale in ATNF 2.9.0",
+  "abstract": "We check 234 orbit-component pairs in a frozen ATNF Pulsar Catalogue 2.9.0 package. Of 52 records with a listed eccentricity, 34 use one reference tag for all three fields. An exploratory relative difference above 0.5 flags J1838+0024. Its stored components and errors match J0622+0339 instead of its cited source table. Using the source pair changes the calculated second harmonic of orbital delay by an amplitude of 41.17 microseconds with other parameters fixed. Only M62F has a component length at or above one. Its source paper prints the same suspect value and a large error, so the intended scale remains unresolved. Neither flag gives evidence for unusual orbital physics or a new planet. No arrival times or independent observations are tested. Original code, aggregate results, a figure, exact source hashes and retrieval steps are included. External raw data and record-level tables remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "ATNF",
+    "pulsar timing",
+    "eccentricity",
+    "data quality",
+    "ELL1",
+    "J1838+0024",
+    "M62F"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Audit counts and calculated second-harmonic delay change. The curve is a model sensitivity, not measured residuals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0bd44dbe1c52b76cb5d729f4d92ec865c65136b7329c40368860f1798ce8a90a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Identifies the reused public raw package and reports a different orbit-field audit."
+    },
+    {
+      "target": "sci:sha256:10b5db801ef1d709808641da4b30bb6ee09ec7e2d7014081504f76c9952a7a54",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior scale audit of different fields in this snapshot."
+    },
+    {
+      "target": "doi:10.1086/428488"
+    },
+    {
+      "target": "doi:10.1093/mnras/stae816",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Table 3, PDF page 8, source-scale check."
+    },
+    {
+      "target": "doi:10.1088/1674-4527/ada3b8"
+    },
+    {
+      "target": "https://arxiv.org/abs/2412.03062v2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Table A1, PDF page 21, source-component check."
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.25919/qkn0-vm25",
+      "reason": "External PSRCAT collection rights context."
+    }
+  ]
+}
