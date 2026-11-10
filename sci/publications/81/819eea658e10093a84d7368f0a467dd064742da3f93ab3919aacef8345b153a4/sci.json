@@ -1,0 +1,145 @@
+{
+ "title": "Noise steps cause 30-55% of the 1982-2025 marine heatwave duration rise in OISST v2.1, hide a peak-intensity rise and reverse the cold-spell duration trend at 60S-60N; heatwave-day trends are robust",
+ "abstract": "Question: Daily NOAA OISST v2.1 has step changes in fast (sub-monthly) variance at satellite input changes. Do these steps change the standard marine heatwave (MHW) and marine cold spell (MCS) statistics, and what trends remain after they are removed? Approach: For 29,129 ice-free native pixels (60S-60N, 1982-2025), we measured the anomaly spectrum in six input segments and compared it with 173 moored buoys. We made two noise-homogenised versions that change only periods shorter than about 32 days: spectral matching to the 2016-2020 segment (closest to the buoys), and noise addition up to the 1985-2006 level. We calculated Hobday et al. (2016) statistics (1983-2012 baseline) with code that agrees with the reference code to better than 2e-11. We tested the methods on synthetic data and at 127 long-record buoys on matched days. Results: Relative to 2016-2020, OISST had 1.8 times the 4-8 day power in 1985-2006 and 0.2-0.3 times in 2021-2025; segments agree at 64 days and more. The published MHW duration trend (+4.45 days per decade) falls to +3.12 (matching) or +1.99 (noise addition); the frequency trend rises from +0.66 to +0.85 or +0.97 events per year per decade. The MHW max-intensity trend changes from +0.006 to +0.053 C per decade (tropics: -0.044 to +0.025). The MCS duration trend changes from +0.75 to -0.28 days per decade. MHW days, area and cumulative intensity change by less than 5% (matching). tau10 falls from +2.33 to +0.34 days per decade. In synthetic tests the matching method recovered the homogeneous-target MHW trends within 10%. At the buoys, homogenisation removed the published biases in peak intensity (-0.055 C per decade, p = 6e-5) and memory, and the duration medians agree (buoy +1.45, homogenised +1.56, published +2.11 days per decade). Limitations: the method corrects only spectral properties, assumes the sub-monthly power changes are not real, keeps only about one third of a real tau10 change, and does not correct a 0.03 C per decade mean-warming offset relative to the buoys; buoys are OISST inputs and sample only the tropics and US waters.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "marine heatwaves",
+  "marine cold spells",
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "data homogeneity",
+  "observing system change",
+  "spectral matching",
+  "heatwave duration",
+  "heatwave intensity",
+  "SST persistence",
+  "moored buoys",
+  "NDBC",
+  "TAO/TRITON",
+  "climate data record",
+  "extremes"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_reach.png",
+   "caption": "1982-2025 trends (60S-60N) of 18 heatwave, cold-spell, extreme and memory statistics in published OISST v2.1 (orange) and in two noise-homogenised versions (green: match 2016-2020 spectrum; blue: add noise to 1985-2006 level). Lines: 95% block-bootstrap ranges. Durations, frequencies, peak intensities and memory change; heatwave days, area and cumulative intensity do not."
+  },
+  {
+   "path": "files/figures/fig1_spectral_ratios.png",
+   "caption": "(a) Median OISST anomaly power per input segment relative to 2016-2020, 29,129 pixels. (b) OISST power at buoy cells relative to buoy power on the same 128-day windows. The artifact is at periods shorter than about one month."
+  },
+  {
+   "path": "files/figures/fig4_buoy_trend_differences.png",
+   "caption": "Per-buoy 1982-2025 trend differences, OISST minus buoy on matched days, for published OISST and both homogenised versions (127 buoys). Black bars: medians."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Shows that the DOISST memory rise is a loss of fast variance at input changes; we extend this to marine heatwave statistics and confirm it with a homogenised record."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its parsed buoy SST tables, OISST at buoy cells, pixel sample and change-point dates."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Compares DOISST with ESA CCI and buoys for memory and detrended heatwave counts; our homogenised results agree."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Certifies the sign of OISST heatwave-day trends but does not bound counts or durations; we find day trends robust and counts and durations biased."
+  },
+  {
+   "target": "sci:sha256:48ad9d2cdf9bb693fa40e29bb512ef08ab1ec0f25ccf46558a02d0d00d36c180",
+   "reason": "Shows that added noise cannot restore the OISST response to real buoy changes; this limits our method."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Shows that the same input changes also step spatial front statistics."
+  },
+  {
+   "target": "sci:sha256:3f037a29b27a0673de03485f99d2eec12cc5580f334e684ce0257e3c20722ec2",
+   "reason": "Earlier replication of the OISST memory rise."
+  },
+  {
+   "target": "doi:10.1038/s41558-025-02245-w",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Reports a rise in daily SST persistence and links it to longer marine heatwaves; our homogenised tau10 trend is about one seventh of the published-data trend."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Marine heatwave definition."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-03732-9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Standard OISST-based MHW frequency and duration trends; we show which of these statistics the input steps bias."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://data.pmel.noaa.gov/pmel/erddap/tabledap/pmelTaoDySst.html",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/ecjoliver/marineHeatWaves",
+   "reason": "Reference code used only to validate our implementation."
+  }
+ ]
+}

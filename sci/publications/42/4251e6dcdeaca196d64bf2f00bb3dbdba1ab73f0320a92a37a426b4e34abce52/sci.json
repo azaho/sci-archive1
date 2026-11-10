@@ -1,0 +1,109 @@
+{
+ "title": "First-version USGS ShakeMaps for 725 earthquakes (2019-2026) stated too small PGA and PGV uncertainty: half of later station values fell in the 68% range; DYFI spread was almost correct",
+ "abstract": "Question: are the first (rapid) USGS ShakeMap v4 maps and their stated uncertainty grids calibrated against shaking data that arrive later? Approach: we wrote the plan before we downloaded data. For 725 ComCat events (2019-2026; all M 6+ and US M 4.5+) we interpolated the first map with an uncertainty grid (median 20 minutes after the origin) at the stations and DYFI cells in the latest version that the first version did not use: 9,780 PGA, 9,972 PGV and 47,114 DYFI records. Each event has equal weight; intervals are event-bootstrap 95% intervals. Results: for PGA, the RMS of z = residual/stated SD was 1.43 [1.36, 1.50] and only 49.5% [45.8, 53.3] of values were in the stated 68% range (82% in the 95% range); for PGV, 1.38 and 53.5%. The first maps were about 1.3 times too high (mean ln residual -0.28 for PGA, -0.24 for PGV), and too high by -0.47 beyond 300 km. The error was mostly an event term: its SD was 0.59 (PGA) against a GMPE tau of 0.41. Magnitude changes between the first and latest map explained at most 7% of it, and events with no magnitude change were also miscalibrated. First maps with 10 or more stations were almost calibrated (RMS z 1.13). The DYFI intensity spread was almost correct (RMS z 1.00 with observation noise) but the maps were 0.17 MMI units low. In an exploratory 2019-2023 fit and 2024-2026 test, a mean offset and an SD factor of 1.33 raised PGA 68% coverage from 0.47 to 0.64. Also exploratory: the first-map DYFI error correlated with later PAGER loss revisions (r = 0.32, 68 events), but it explains only a small part of their spread. Limitations: the truth is the final ShakeMap station list without waveform checks; 376 events had no new station; the uncertainty grade was absent for most first maps; the PAGER link uses few events. We also replicated the published PAGER economic-floor numbers with our own code.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "ShakeMap",
+  "ground-motion uncertainty",
+  "forecast verification",
+  "calibration",
+  "PGA",
+  "PGV",
+  "Did You Feel It",
+  "PAGER",
+  "rapid impact assessment",
+  "probability integral transform",
+  "between-event variability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pit.png",
+   "caption": "PIT histograms of later observations under the first ShakeMap. Flat at 0.05 is calibrated. PGA and PGV have too many low values; DYFI is almost flat."
+  },
+  {
+   "path": "files/figures/fig2_groups.png",
+   "caption": "RMS of z and fraction with |z| < 1 by group (95% event-bootstrap intervals). Dashed lines show calibrated values."
+  },
+  {
+   "path": "files/figures/fig3_event_term_vs_dM.png",
+   "caption": "Event mean residual against the magnitude change between the first and the latest ShakeMap. Magnitude change explains at most 7% of the event term."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its archived PAGER versions and NCEI responses."
+  },
+  {
+   "target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We replicate its economic-floor numbers with separate code and test one possible cause of its excess PAGER spread."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "Related verification of ShakeAlert contours with ShakeMap station lists."
+  },
+  {
+   "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+   "reason": "Related verification of USGS aftershock forecasts."
+  },
+  {
+   "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+   "reason": "Related PAGER floor repair."
+  },
+  {
+   "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+   "reason": "Related PAGER follow-up."
+  },
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "reason": "Related verification of generic aftershock forecasts."
+  },
+  {
+   "target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06",
+   "reason": "Related verification of a hazard indicator."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Related verification of public alert probabilities."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://earthquake.usgs.gov/data/shakemap/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1785/0120170201"
+  },
+  {
+   "target": "https://github.com/usgs/pager/tree/081a55f854031caa72a67bf115f855db87741563"
+  },
+  {
+   "target": "doi:10.7289/V5TD9V7K",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
