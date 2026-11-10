@@ -1,0 +1,92 @@
+{
+ "title": "Annual hidden low-runoff states in 554 US reference basins (WY1951-2016) occurred at the rate of stationary simulations, did not follow dry years, and mostly ended in WY2017-2025",
+ "abstract": "Question: Peterson et al. (2021) found that many Victorian catchments changed to a persistent low-runoff state during the Millennium Drought. Does this occur in the contiguous United States? Approach: we used 554 CAMELS-US reference basins with USGS daily flow and nClimGrid basin precipitation for water years (WY) 1951-2025. We fitted the annual two-state hidden Markov model form of hydroState (Box-Cox runoff linear in rainfall, states change the intercept and error sd, AIC selection) to WY1951-2016 and tested WY2017-2025 out of sample. We calibrated the detection with synthetic series from stationary 1-state models, with and without previous-year rainfall (3 replicates each). Results: AIC chose a 2-state model in 73% of real basins and in 72-76% of stationary synthetic series. The shift rule flagged 23.3% of real basins (95% CI 19.9-26.7%) and 13.5-18.4% of synthetic series. A post hoc mean-shift form (one shared error sd) flagged 11.2% of real basins versus 8.7-13.0% of synthetic series (expected 56, observed 62, P = 0.17). Low-state onsets did not follow dry periods (3-year precipitation z +0.06; null -0.15 to +0.15). Of 54 basins in the low state in WY2016, 42 returned to the normal state in WY2017-2025; 10 of the 12 others are eastern basins with one long low block that started in 1985-2006. Where AIC chose a 2-state model, it predicted WY2017-2025 runoff worse than the best 1-state model (median -0.087 log units per year, CI -0.106 to -0.068). California runoff fell below its rainfall relation in 2012-2016 (-0.34 SD) and was at or above it in 2017-2025 (+0.21 SD, CI -0.04 to +0.46). Conclusion: at the annual scale, US reference basins show no clear excess of hidden low-runoff states over stationary series and no Victorian-type non-recovery after the 2012-2016 drought. An AIC preference for a 2-state annual runoff model is not evidence of a state change without matched null simulations. Limitations: annual model only; our Python port of the model form, not the hydroState package; Gaussian synthetic errors; possible gauge, land-use and grid-network effects in the eastern low blocks; WY2026 provisional data not interpreted; mean-shift and memory tests were added after interim results.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "streamflow",
+  "drought recovery",
+  "hidden Markov model",
+  "rainfall-runoff",
+  "non-stationarity",
+  "CAMELS",
+  "hydroState",
+  "null simulation",
+  "forecast verification",
+  "contiguous United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_calibration.png",
+   "caption": "(a) Share of 554 basins where AIC chose a 2-state model, and where the shift rule flagged a low state, in real data (blue) and in stationary synthetic series N1 and N2 (grey, range of 3 replicates), for the hydroState form and the mean-shift form. (b) Mean precipitation z-score of the 3 water years before 164 low-state onsets (blue line) against a circular-shift null (grey)."
+  },
+  {
+   "path": "files/figures/fig1_map_residuals.png",
+   "caption": "(a) Result of the hydroState-form fit to WY1951-2016 for each basin, and the WY2017-2025 outcome for basins in the low state in WY2016. (b) Regional mean standardized residual (5-year running mean) relative to a stationary relation with current and previous-year precipitation fitted on WY1951-2016. Grey band: WY2012-2016; dashed line: start of the out-of-sample period."
+  },
+  {
+   "path": "files/figures/fig3_out_of_sample.png",
+   "caption": "(a) For 54 basins in the low state in WY2016: mean log score per year in WY2017-2025 under 'stay low' minus 'return to normal' (clipped at +/-5); colour shows whether the filtered normal-state probability exceeded 0.5 in any year. (b) Out-of-sample log-score differences per basin: AIC-chosen 2-state model minus best 1-state model; best memory model minus the hydroState choice; 1-state AR1 with previous-year precipitation minus 1-state AR1. Black bars: medians."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Reuses its Python port of the hydroState annual model (hmm.py) and compares the US result with its Victorian 2018-2025 result."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Peterson et al. (2021): the Victorian non-recovery result and model form that this study tests in US reference basins."
+  },
+  {
+   "target": "doi:10.5194/hess-21-5293-2017",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS data set (basin set and boundaries)."
+  },
+  {
+   "target": "doi:10.5194/hess-19-209-2015",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-US basin set definition (Newman et al. 2015)."
+  },
+  {
+   "target": "https://zenodo.org/records/15529996",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-US v1.2 basin boundary files (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid monthly precipitation and temperature."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS daily discharge for the 671 CAMELS gauges, retrieved 2026-11-09."
+  }
+ ]
+}
