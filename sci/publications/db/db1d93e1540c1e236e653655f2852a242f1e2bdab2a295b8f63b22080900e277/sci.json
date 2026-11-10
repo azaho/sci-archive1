@@ -1,0 +1,77 @@
+{
+  "title": "K2 moment centroids give direction-dependent blend sensitivity for 27 HD 139139 dips",
+  "abstract": "We test source-location sensitivity for the known irregular dips of HD 139139 with public K2 campaign 15 moment centroids. A local quadratic pointing fit retains 27 published events. Its depth-scaled centroid response has rank p = 0.133 against 164 accepted shifted event trains. No tested local window gives a response above its 5 percent reference threshold. At an ideal blend response of 0.83 pixel per fractional flux loss, recovery ranges from 20.7 to 100 percent across 16 directions. Thus, a null result with these moments cannot exclude a nearby source in all directions. Saturation, the box approximation and the selected time-shift reference limit the test. This does not locate the source, confirm an instrument cause, or find a new planet. The package contains code, aggregate results, figures, input hashes and a separate-input retrieval recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "HD 139139",
+    "K2",
+    "centroid",
+    "blend sensitivity",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/centroid.png",
+      "caption": "The main centroid response and shifted event-train controls. The dashed circle is the ideal pair-separation scale, not a calibrated limit for the saturated aperture."
+    },
+    {
+      "path": "files/power.png",
+      "caption": "Recovery depends on direction for an ideal response of 0.83 pixel per fractional flux loss. All trials reuse the control distribution."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1093/mnras/stz1772",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the fixed event table, source separation and prior instrument checks. External table remains outside this publication."
+    },
+    {
+      "target": "https://arxiv.org/html/1906.11268v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact version of Table 1 parsed by the analysis."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202347779",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent CHEOPS observations do not confirm the K2 dips."
+    },
+    {
+      "target": "https://baas.aas.org/pub/2025n2i160p17/release/1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior meeting abstract studies a pixel cause; it does not report a confirmed cause."
+    },
+    {
+      "target": "https://s3.amazonaws.com/stpubdata/k2/public/lightcurves/c15/249700000/06000/ktwo249706694-c15_llc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact public archive light-curve input."
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-k2/",
+      "reason": "Public-domain data status and source credit."
+    },
+    {
+      "target": "https://archive.stsci.edu/k2/manuals/k2_handbook.pdf",
+      "reason": "Documents the image-motion model and the archive position corrections."
+    }
+  ]
+}
