@@ -1,0 +1,181 @@
+{
+ "title": "In 40 worms, 50 flies and 22 larval zebrafish, wiring explained 2-24% of the reliable pair-specific coupling after node and distance controls; the link was pair-specific, and only swimming changed it",
+ "abstract": "Question: how much of the reliable pair-specific functional connectivity (FC) does wiring explain after node and distance effects, is that part truly pair-specific, and where does it change with brain state? Data: per-individual FC of C. elegans (40 worms, 119 neurons, Cook 2019 wiring), Drosophila (50 flies, 75 regions, FlyWire flow) and larval zebrafish (22 fish, 65 regions, mapZebrain projectome). Method: we removed node fixed effects, a distance spline and homologous pairs from group FC, and divided the split-half coupling of wiring with this pair-specific FC by the square root of its split-half reliability (rho = correlation with the noise-free pair FC). Checks: a network simulation, 200 strength- and distance-preserving surrogates, anisotropic geometry, rank-r node factors fit on other individuals, the Randi 2023 causal atlas, and paired state contrasts. Intervals are leave-one-individual-out jackknife 95% intervals. Results: in simulation, a noisier state cut the usual per-animal coupling by 62% while rho stayed at the truth. Pair-specific FC was reliable (split-half 0.88, 0.74, 0.81), but structure explained only 3%, 24% and 9% of it (rho of all structure 0.174, 0.485, 0.294; direct wiring 0.141, 0.392, 0.122). Surrogates reproduced only 8%, 18% and 0% of this coupling, so it is pair-specific; geometry changes moved rho by at most 0.03. Rank-3 node factors captured 62-78% of the reliable pair-specific FC; worm gap junctions (rho 0.164) and fly flow (0.284) still predicted the fine-grained rest. The worm causal atlas explained less than anatomy (rho 0.075 vs 0.171). Forward versus reversal (worm) and dark flashes (zebrafish) changed the pair pattern (cross-state rho 0.94 and 0.75) without a change of wiring coupling; rest versus walk (fly) changed neither, except a small decrease with global signal regression (0.031, CI 0.001-0.061). Swimming (14 fish) raised zebrafish coupling (direct 0.101 to 0.171, difference 0.070, CI 0.011-0.128; all structure 0.231 to 0.437), also after removal of the swim-evoked response. Limitations: connectomes and activity come from different animals; connectome error is not corrected; only 14 fish for swims; swim motion and gene co-expression were not controlled; some analyses were added after the first results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "structure-function coupling",
+  "functional connectivity",
+  "connectome",
+  "reliability",
+  "noise ceiling",
+  "brain state",
+  "node fixed effects",
+  "surrogate wiring",
+  "low-rank structure",
+  "C. elegans",
+  "Drosophila",
+  "larval zebrafish",
+  "FlyWire",
+  "mapZebrain",
+  "gap junctions",
+  "shared input",
+  "swimming",
+  "signal propagation atlas"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_budget_coupling.png",
+   "caption": "a: Share of group FC variance across pairs in each animal: node effects, distance, homologous pairs, and the pair-specific remainder split into the part explained by structure, the reliable unexplained part and noise. b: Calibrated coupling rho (correlation with the noise-free pair-specific FC) of direct wiring and of all structural predictors, with 95% jackknife intervals; black bars show the mean of 200 strength- and distance-preserving surrogates."
+  },
+  {
+   "path": "files/figures/fig3_states.png",
+   "caption": "State contrasts. a: Change of direct-wiring coupling (uncalibrated half-sample r in grey, calibrated rho in blue). b: Cross-state rho of the pair-specific FC (1 = same pattern). c: Split-half reliability of the state-difference map and its correlation with direct wiring. Pseudo-states (worm) and time halves (zebrafish) are controls. 95% jackknife intervals."
+  },
+  {
+   "path": "files/figures/fig5_lowrank.png",
+   "caption": "a: Share of the reliable pair-specific FC left after a rank-r node-factor term that was fit on a separate third of the individuals. b: Calibrated coupling of wiring with the remainder. Bands are 95% jackknife intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its per-fly FC and FlyWire region file and re-test its shared-input and state claims with calibrated coupling."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its surrogate generator; we show that after node effects its surrogates reproduce only 0-23% of the remaining coupling."
+  },
+  {
+   "target": "sci:sha256:0584b9967f0aa960584f2b369bd0e859c385d0a48228119197d097b13bdeda10",
+   "reason": "Eigenmode comparison that could not identify the FC generator; motivates a pair-level decomposition."
+  },
+  {
+   "target": "sci:sha256:01f2e596e4025c3249d3aca6a55440a82ca782d9dd3cc3273cab93a3a2f5f821",
+   "reason": "Worm eigenmode result on the same Atanas data."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the fly per-state FC and region centroids; our calibrated result supports its finding that walking does not change the pair pattern."
+  },
+  {
+   "target": "sci:sha256:a699045a9f0b50cd9fa5d1c0bff2e5e84a1d51e01d8adca5a3e27a9b02f9422c",
+   "reason": "Mouse collateral result in the same research line."
+  },
+  {
+   "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+   "reason": "Zebrafish projectome coupling in other data (Chen et al. 2018)."
+  },
+  {
+   "target": "sci:sha256:a250df14782a179b8bee744662c1a654f7fcf33a416f07366774b9b9bb58ab5a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the Cook 2019 edge list and soma positions; we confirm that gap junctions carry the worm wiring-FC link."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its zebrafish preprocessing; after node and distance controls we find that the swim increase is aligned with the projectome."
+  },
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "reason": "Mouse state dependence of connectome coupling with reliability correction."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2023.07.035",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.19388374",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5061/dryad.3bk3j9kpb",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1126/sciadv.adv7576",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2019.04.034",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06098-1"
+  }
+ ]
+}
