@@ -1,0 +1,91 @@
+{
+  "title": "Twenty early box signals do not pass a later Kepler test for KIC 8462852 at 1 to 10 days",
+  "abstract": "We search quiet Kepler release 25 data for short-period transit signals in KIC 8462852. Twenty box signals selected in quarters 1 to 8 do not pass a fixed later test in quarters 9 to 16. The largest later depth divided by phase-shift scatter is 1.68, below the 2.96 control threshold. The smallest family rank is 0.639. Aperture flux and two other median-filter widths give similar small later statistics. The full screen recovers 3 of 6 injected boxes at 100 ppm, 4 of 6 at 300 ppm, and 5 of 6 at 1000 ppm. A traced failure shows that phase controls can reject a recovered injected signal. This conditional null result applies to the selected periods, durations and masks. It does not exclude all planets or test the proposed long-period companion. No new planet or stable transit candidate is found. Code, aggregate results, figures, input hashes and an external-scratch retrieval recipe are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KIC 8462852",
+    "transit search",
+    "temporal validation",
+    "injection recovery",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/search.png",
+      "caption": "Early box search and fixed later predictions. No selected signal reaches the phase-shift control threshold."
+    },
+    {
+      "path": "files/folds.png",
+      "caption": "Folded early and later data for the leading early signal and the signal with the largest later statistic."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Full-screen recovery counts for 18 limited box injections. Recovery is incomplete even at 1000 ppm."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c4d22a0083e0b57ac867de1814e0c1fae30c74b2332a9fb7c7c4458606192596",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the shared input location and a distinct long-period alias test. No code or derived data are reused."
+    },
+    {
+      "target": "sci:sha256:d576e844583d7590eecc95e97c9a6c83a180ca88f0eb4b51f255bec3a25d0e9e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Tests the known 0.88-day wave in one quarter. Our test selects box signals in early quarters and checks later predictions."
+    },
+    {
+      "target": "doi:10.1093/mnras/stw218",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201731306",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://arxiv.org/abs/2607.20643v1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Reports an independent TESS event and a tentative long-period companion. That proposal is outside our search range."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Box least squares method."
+    },
+    {
+      "target": "https://docs.astropy.org/en/stable/timeseries/bls.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008462852/kplr008462852_lc_Q111111111111111111.tar",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "External data policy and attribution."
+    }
+  ]
+}
