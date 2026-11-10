@@ -1,0 +1,131 @@
+{
+ "title": "Bird abundance gradients between nearby US survey routes kept 69% of the regional temperature gradient per degree with 5 km route-path climate; year-to-year tracking stayed at about 3% (1966-2025)",
+ "abstract": "Question: prior campaign work measured weak bird climate tracking against continental spatial gradients from 0.5-degree temperature at route start points. Is that denominator a real thermal gradient, the same per degree between nearby routes as across regions? Data: 107,900 standard North American Breeding Bird Survey runs on 3,949 contiguous-US routes (1966-2025), 314 species, nClimGrid 1/24-degree May-July climate sampled along route paths, and GHCN_CAMS for comparison. Method: route climate T was split into a regional part (75 km Gaussian smooth) and a local part T_loc. For each species, y = s(T) + gamma*T_loc on route mean log counts; kappa = 1 + gamma/f' is the local slope per degree relative to the regional slope (1 = scale equivalence). Joint 2-degree block bootstrap, positive control and shuffle placebo. We also fitted community temperature index (CTI) slopes and within-species year-to-year ratios lambda with both climate products. Results: the CTI slope was 0.43 C per C across the continent and 0.37 (95% CI 0.30-0.43) for local contrasts; within 1-degree cells it was 0.40 with nClimGrid but 0.23 with GHCN_CAMS, so coarse climate halves within-region slopes. Pooled species kappa was 0.69 (0.58-0.76), 0.50 (0.39-0.58) with a precipitation control; the positive control gave 1.02 and the placebo 0.14 (expected leakage about 0.18). Exploratory: cold-adapted (low-STI) species kept their gradient locally (kappa 0.85, 0.74-0.91), but warm-adapted species did not (0.43, 0.25-0.54). Year-to-year lambda was 0.029-0.033 for both climate products and 0.040 for low-STI species. The CTI rose 0.025 C per decade within observers against 0.237 C per decade warming, 0.24-0.28 of every 5 km spatial slope before the hearing-drift correction of prior work. Conclusion: the spatial denominator is mostly thermal; it explains at most a factor of 1.4-2 of a deficit of about 4-30, so the deficit is mainly in the temporal response. Limitations: correlational; local contrasts follow elevation, which also changes habitat and moisture; interpolated climate; no detection model; the STI split was not planned.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "climate tracking",
+  "space-for-time",
+  "spatial scale",
+  "community temperature index",
+  "Breeding Bird Survey",
+  "nClimGrid",
+  "measurement error",
+  "elevation",
+  "thermal niche",
+  "climate debt",
+  "species temperature index"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cti_scales.png",
+   "caption": "A: local May-July temperature contrast T_loc of each route (route-path nClimGrid climatology minus its 75 km Gaussian smooth). B: route CTI against the regional part (binned means, partial on T_loc). C: route CTI against the local part (partial on a spline of the regional part); the dotted blue line has the regional slope. Within 1-degree cells the slope is 0.40 with 5 km climate and 0.23 with 0.5-degree climate."
+  },
+  {
+   "path": "files/figures/fig2_species_scales.png",
+   "caption": "A: for 314 species, the local abundance slope f'(T) + gamma against the regional slope f'(T) (log count per C; grey bars 1 bootstrap SE). Orange: pooled noise-corrected kappa. B: kappa for all variants with 95% joint block-bootstrap intervals: species main fit by region, smoothing scale, route-path and start-point climate, spline df 6, precipitation control, 1-degree cells, the positive control (1 expected), the shuffle placebo, exploratory STI halves, and CTI."
+  },
+  {
+   "path": "files/figures/fig3_denominator_and_lambda.png",
+   "caption": "A: spatial CTI slope for each scale and climate product (95% block-bootstrap intervals). B: pooled within-species year-to-year ratio lambda for the 2 x 2 design of gradient and anomaly products, and for exploratory STI halves (+/- 1.96 SE). Full space-for-time equivalence is 1, far off the scale."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bird CTI followed less than 10% of warming; we show that its spatial reference is mostly thermal, so the deficit is real."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its species filters, range envelope, spline gradient and high-pass lambda design, and confirm a ratio near 3-5% with 5 km climate and local denominators."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its 12% slow fraction used network-wide spatial gradients; local gradients in BBS are close to the continental gradient, which supports its conclusion."
+  },
+  {
+   "target": "sci:sha256:0bc2a582b81c55c60f6564490630a43ea169f4a5ce80b6c3c41d6d2921f0dcc6",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "It found lower CTI slopes within ecological regions; with 5 km route-path climate the within-region slope is almost the continental slope, so the lower values come mostly from coarse climate error."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We apply its 31-77% hearing-drift share to the within-observer CTI trend; we did not recompute it."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Small bird centroid shifts relative to isotherm shifts; same deficit at the range scale."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Frozen climate-suitability models had little forecast skill, consistent with a weak temporal response."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Related tracking deficit with detection artefacts in Finnish atlases."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Related tracking deficit in demersal fish."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Related animal-plant phenology gap with detection effects."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index tracked SST more strongly; contrast case."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey dataset 1966-2025 (2026 release)."
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly temperature and precipitation."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-13-0248.1",
+   "reason": "nClimGrid methods (Vose et al. 2014)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN_CAMS gridded temperature (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "https://purl.stanford.edu/vy474dv5024",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BBS route lines, National Atlas of the United States (public domain)."
+  }
+ ]
+}
