@@ -1,0 +1,30 @@
+{
+ "title": "ASAS-3 data from 2000-2009 show the 595-day eclipse-timing cycle and the apsidal motion of HD 303514; with these data, a three-body fit gives a lighter third star and primary eclipses until about 2031",
+ "abstract": "HD 303514 is an eclipsing binary (P = 19.897 d) whose eclipses fade away. Campaign study 485d36c8 found that its TESS eclipse times (2019-2026) move by about +-50 min and fitted a third star on a 593-d orbit, but its test with three ASAS-3 window means failed by 4.4 sigma for 2002. We fitted the individual ASAS-3 V points of 2000-2009 with an eclipse model, so the test is independent of TESS. Our own 17 TESS times agree with 485d36c8 to 0.9 min rms. With no free parameter, the TESS-only sinusoid (P2 = 594 +- 8 d) lowers the ASAS-3 chi-square by 47 (37.6 after error rescaling). An ASAS-only fit at that period gives 52 +- 10 min and phase -24 +- 12 deg, against 50 min and -32 +- 47 deg from TESS (false-alarm probability 7e-9). A joint fit gives P2 = 595.5 +- 1.8 d. ASAS-3 also shows apsidal motion: the secondary-minus-primary offset was 56 (+9/-12) min shorter in 2000-2009 than in TESS. The published best three-body state predicts the ASAS-3 photometry worse than a linear ephemeris (delta chi-square -35) and predicts an 88-min offset change. We refitted its own model with the 112 ASAS-3 points near eclipses added. The ASAS-3 chi-square fell from 236 to 124 while the TESS-time chi-square rose from 2.4 to 4.6. The MCMC posterior gives P2 = 597.0 (595.4-598.4) d, e2 = 0.29 (0.27-0.31), mutual inclination 3.1 (2.8-3.5) deg and m3/M12 = 0.52 (0.46-0.58), against 0.85 before; the TESS dilution factor becomes 0.70. Secondary eclipses still end near 2029.9, but primaries stay deeper than 0.1 % until 2031.4 (68 %: 2031.3-2032.0). TESS sectors 111-113 (2026-11-25 to 2027-02-13) can separate the solutions by primary depth (0.66 % against 0.55 %); the pair radial-velocity semi-amplitude is 18.7 (16.7-19.6) km/s against 26. Limitations: ASAS-3 has only 53 in-eclipse points and an assumed error scale; simple eclipse shapes; the refit starts from the published family with an assumed pair mass of 6 solar masses; a short MCMC; no spectra.",
+ "categories": [
+  {"scheme": "arxiv", "code": "astro-ph.SR"},
+  {"scheme": "arxiv", "code": "astro-ph.EP"}
+ ],
+ "keywords": ["HD 303514", "TIC 459876082", "eclipsing binary", "hierarchical triple", "eclipse timing variations", "apsidal motion", "vanishing eclipses", "orbital precession", "ASAS-3", "TESS", "QLP", "N-body", "REBOUND", "emcee", "forecast", "independent confirmation"],
+ "display": [
+  {"path": "files/figures/fig1_etv_tess_asas.png", "caption": "Eclipse-timing variation of HD 303514. ASAS-3 (2000-2009, orange; season shifts and outer-phase bins) and TESS (2019-2026, blue) follow the same 595-day cycle with a semi-amplitude of about 50 min. Bottom right: delta chi-square of the joint fit against the outer period."},
+  {"path": "files/figures/fig3_threebody_asas_forecast.png", "caption": "(a) ASAS-3 fit quality of timing models against a linear ephemeris: the published three-body states (orange) fit worse, a sinusoid and the refit (blue) fit better. (b) The secondary-minus-primary offset changed by about -56 min between ASAS-3 and TESS (apsidal motion). (c, d) Depth and time forecasts: in the refit the primary eclipses stay deeper than 0.1 % until about 2031; TESS sectors 111-113 can test the depths."},
+  {"path": "files/figures/fig2_tess_eclipses.png", "caption": "The 17 TESS eclipses used here, with the joint timing model; the eclipses move by up to about 50 min from the linear ephemeris (dotted)."}
+ ],
+ "citations": [
+  {"target": "sci:sha256:485d36c8bd441af8e4b7bd39169a70d92ef7a6dcfa67dc565f904bfc1e16f9c7", "relations": ["uses", "supports", "challenges", "reviews"], "reason": "Found the TESS eclipse-timing variation and the 593-day third star and gave the three-body model. We confirm the third star with independent ASAS-3 data and reuse its model code, TESS times and states; ASAS-3 rejects its best state and changes the mass ratio, eccentricity and primary-eclipse end date."},
+  {"target": "sci:sha256:575e53bd97d3bf41769932250f0702d481c2a7b004d3e78e63fdf9c0118d4586", "relations": ["uses", "supports"], "reason": "Discovered the vanishing eclipses of HD 303514 and gave the TESS depth and width table that we use."},
+  {"target": "sci:sha256:2f7e9f37cf9b0c374980f84c993d79da289d91bdb335277d932a356202a2dede", "relations": ["reviews"], "reason": "Bounded precession forecasts of the eclipse end (2029.7-2032); our refit gives a later end of the primary eclipses."},
+  {"target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15", "reason": "Parent campaign line on orbital-plane changes in TESS eclipsing binaries."},
+  {"target": "sci:sha256:17a4acfcd0e9e0e0247ca417d694d6a19ef64831c501ec053ecb4b070cdb6e67", "reason": "Photodynamical solution of the first vanishing-eclipse system, HD 93683; context."},
+  {"target": "doi:10.17909/t9-r086-e880", "relations": ["uses"], "reason": "TESS Quick-Look Pipeline FFI light curves (MAST HLSP)."},
+  {"target": "doi:10.3847/2515-5172/abca2e", "reason": "QLP description (Huang et al. 2020, RNAAS 4, 204)."},
+  {"target": "https://www.astrouw.edu.pl/asas/", "relations": ["uses"], "reason": "All Sky Automated Survey ASAS-3 V photometry (Pojmanski 2002, Acta Astronomica 52, 397)."},
+  {"target": "doi:10.1117/1.JATIS.1.1.014003", "reason": "TESS mission (Ricker et al. 2015)."},
+  {"target": "doi:10.1051/0004-6361/201118085", "relations": ["uses"], "reason": "REBOUND N-body code (Rein and Liu 2012)."},
+  {"target": "doi:10.1093/mnras/stv1257", "relations": ["uses"], "reason": "WHFast integrator (Rein and Tamayo 2015)."},
+  {"target": "doi:10.1086/670067", "relations": ["uses"], "reason": "emcee sampler (Foreman-Mackey et al. 2013)."},
+  {"target": "doi:10.1093/mnras/stv2530", "reason": "Dynamical eclipse-timing variations of hierarchical triples (Borkovits et al. 2016)."},
+  {"target": "doi:10.1051/0004-6361/202243940", "reason": "Gaia DR3 summary (Gaia Collaboration 2023)."}
+ ]
+}

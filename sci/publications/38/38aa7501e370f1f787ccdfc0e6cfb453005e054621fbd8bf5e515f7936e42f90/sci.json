@@ -1,0 +1,106 @@
+{
+  "title": "A public NOAA flood rule has a 12.23 percentage point jump in a fixed Gaussian tide test",
+  "abstract": "We test the daily probability rule in public NOAA CO-OPS flood code at commit a41ed82. The choice of the highest tide hour can cause a discontinuity. In a fixed 24-hour Gaussian test with lag correlation 0.95 to the lag power and hourly risks near 5%, tide vectors that approach the same flat tide give rule limits of 42.29% and 30.06%. A true union probability with continuous marginals must be continuous. At least one rule limit must err by 6.12 percentage points. We also derive a flat-tide rare-event limit from classical Gaussian tail independence. For 108 Gaussian cases built from 36 tide shapes and residual correlations at four prior-selected NOAA gauges in January-September 2026, errors range from 16.8% low to 50.0% high. Gaussian pairwise bounds exclude 90 rule answers; 73 violations exceed 0.0001 probability. Correct hourly marginal probabilities thus do not make this daily rule correct. Errors have both signs. The test does not explain an earlier observed low-probability flood deficit or verify the current production executable. Flat tides, Gaussian joint laws, selected dates and diagnostic covariance fits limit the scope. The package gives proofs, original code, all model cases, bounds, numerical checks, figures and exact external source hashes.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal flooding",
+    "daily probability",
+    "forecast verification",
+    "Gaussian dependence",
+    "NOAA CO-OPS",
+    "autocorrelation",
+    "probability bounds",
+    "software audit"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "The daily rule has a fixed jump as two tide inputs approach the same vector. Tests with 36 tide shapes and known Gaussian inputs give errors of both signs. These are conditional model tests, not measured flood calibration."
+    },
+    {
+      "path": "files/checks.png",
+      "caption": "Exact two-hour integration and Gaussian pairwise union bounds give independent checks on the aggregation rule. The right panel shows the 20 largest distances outside a valid bound."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:854385b61e2f4384938bf71092a8468f40349f503a6c26fe8d3a2d44eba63973",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates the structural question and supplies four exact shared hourly observation snapshots. We do not reuse its scored forecast table."
+    },
+    {
+      "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign work separated public product-rule error from physical forecast error. We apply that approach to a different rule."
+    },
+    {
+      "target": "sci:sha256:191cffb21de46fdd73afea868f2aedb10a5bafc184e97efae82f4773e10b975e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected work on coastal hazard products motivates attention to background sea level and verification definitions."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Model description and the four example gauge choices."
+    },
+    {
+      "target": "doi:10.3389/fmars.2025.1618367",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence that hourly residual tails are not generally Gaussian. We isolate aggregation with exact Gaussian inputs."
+    },
+    {
+      "target": "doi:10.1007/BF01682329",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Classical Gaussian tail independence supports the stated flat-tide rare-event limit; that theorem is not new."
+    },
+    {
+      "target": "doi:10.2307/3212481",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established spanning-tree upper bound on a union probability, implemented for independent checking."
+    },
+    {
+      "target": "https://github.com/NOAA-CO-OPS/Seasonal_High_Tide_Flooding_Prediction/tree/a41ed82bd9355394ea0b460048e47ee4a001b6ae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned public source aggregation formula. Exact inspected file hashes are preserved."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External water-level and tide-prediction snapshots. Exact queries, versions, paths and hashes are in source_provenance.json."
+    },
+    {
+      "target": "https://www.psl.noaa.gov/forecasts/sealevel/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Newer experimental outlook already uses hourly realization ensembles. We do not claim that method as new or test its calibration."
+    }
+  ]
+}
