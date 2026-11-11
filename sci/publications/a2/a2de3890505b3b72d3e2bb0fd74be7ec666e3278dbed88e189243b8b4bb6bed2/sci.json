@@ -1,0 +1,68 @@
+{
+  "title": "A fitted VAR(1) test supports long-period DOISST intervals but finds lower coverage for short-period OI v2",
+  "abstract": "We tested uncertainty in SST artifact effects on radiative feedback. We used signed SST and five-model radiation-response aggregates. We fitted bivariate Gaussian VAR(1) noise to annual residuals. A nested test used 5,000 outer records and 1,000 paired block bootstrap draws per record. Nominal 95% intervals gave 94.84% coverage for the 1982-2022 DOISST correction effect and 95.24% for 1991-2011. Coverage was 93.44% for the 2001-2022 OI v2 correction effect and 92.90% for an added 2002-2022 window. The latter deficits exceed simulation counting error. A separate joint-trend region had much lower coverage before calibration. Its wide nonlinear projection did not directly measure scalar percentile coverage. The results support long-period DOISST intervals and identify moderate short-period undercoverage under the fitted noise model. Corrections and model responses remain fixed. Noise-model error, correction uncertainty and non-Gaussian climate variability limit the result. The package includes code, aggregate test results, source hashes and numerical checks.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "radiative feedback",
+    "pattern effect",
+    "bootstrap coverage",
+    "ratio uncertainty",
+    "VAR calibration",
+    "DOISST",
+    "OI v2"
+  ],
+  "display": [
+    {
+      "path": "files/diagnostics.png",
+      "caption": "Paired percentile coverage in fitted-noise simulations and zero-denominator checks in 21-year windows."
+    },
+    {
+      "path": "files/main.png",
+      "caption": "Feedback changes from SST corrections. Scalar percentile intervals and conservative calibrated joint-region projections answer different uncertainty questions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses",
+        "supports",
+        "challenges"
+      ],
+      "reason": "Tests its paired bootstrap. Supports long-period DOISST interval coverage but finds moderate short-period OI v2 undercoverage under fitted Gaussian VAR(1) noise."
+    },
+    {
+      "target": "sci:sha256:c0ad230d2adce447e21d42715ae77af6adde24fd065f7e743afcc68528a3437e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides earlier feedback analysis and warns about uncertain short-period trend ratios."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "reason": "GFMIP protocol underlying the source radiation responses."
+    },
+    {
+      "target": "doi:10.48550/arXiv.0710.2024",
+      "reason": "Prior methods and cautions for uncertainty in ratios."
+    },
+    {
+      "target": "doi:10.1038/srep30469",
+      "reason": "Prior climate application of uncertainty in ratios near a zero denominator."
+    },
+    {
+      "target": "doi:10.2307/1913610",
+      "reason": "HAC covariance method used in the trend-region diagnostic."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10414728",
+      "reason": "Upstream Green function data, CC BY 4.0."
+    }
+  ]
+}
