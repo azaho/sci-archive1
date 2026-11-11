@@ -1,0 +1,186 @@
+{
+ "title": "A mean-and-variance homogenised DOISST v2.1 makes the 2023/24 SST record jump 0.20-0.22 C (not 0.25 C) and 1.3-3 times less rare, and lowers 1982-2025 heatwave-day trends by 19-22% (60S-60N)",
+ "abstract": "Question: NOAA Daily OISST v2.1 (DOISST) has steps in its mean (1985, 2005, an undocumented step on 2020-07-07, and a fixed ship adjustment) and in its day-to-day variance at satellite-input changes. Which published marine climate results survive when both artifacts are removed? Approach: we fitted regional step models of DOISST minus three references of different types (ESA CCI v3.0.1 at the same 29,129 one-degree cells and days, ERSSTv5, HadSST4.2), applied them with a variance homogenisation (spectral matching below about 32 days), and recomputed the record-jump statistics of Terhaar et al. (2025), Hobday heatwave and cold-spell statistics and the 2023 records. We tested the corrections by cross-validation, at 128 moored buoys not used in the fits, and with placebo dates. Results: raw DOISST reproduces the published 2023/24 60S-60N jump (0.249 C), end trend (0.269 C per decade) and return period (mean 501 against 512 years). The corrected records give a jump of 0.199-0.225 C, a trend of 0.214-0.219 C per decade and a mean return period of 167-400 years; the reference products give 0.196-0.217 C and 149-420 years. The 1982-2023 warming falls from 0.180 to 0.135-0.146 C per decade. The 1982-2025 heatwave-day trend falls from 21.2 to 16.5-17.2 days per year per decade (mean part), duration from 4.45 to 2.41-2.48 days per decade (variance part), the frequency trend does not change, peak intensity rises from 0.084 to 0.128-0.134 C per decade, and cold-spell lengthening disappears. 2023 stays the record heatwave year, with 16% fewer heatwave days. The 2020 step (+0.08 to +0.10 C) is large-scale and does not depend on in situ data density; its cause is unknown. Limitations: moorings confirm the step dates and signs, but at mooring sites the regional corrections remove about twice the observed trend excess; the references have their own errors.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "homogenisation",
+  "marine heatwaves",
+  "record jump 2023",
+  "ESA SST CCI",
+  "data artifacts",
+  "climate data records"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_record_jump.png",
+   "caption": "Record jump: (a) annual April-March 60S-60N SST anomaly for published and mean-corrected DOISST; (b) return period of a record-breaking jump as a function of the margin and the underlying trend, with published DOISST, the three corrected versions and the reference products."
+  },
+  {
+   "path": "files/figures/fig3_mhw_trends.png",
+   "caption": "1982-2023 trends of 60S-60N heatwave statistics for published DOISST, variance-only, mean-only and combined homogenisation (three references), with ESA CCI v3 for comparison; bars are 95% block-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig1_mean_steps.png",
+   "caption": "Mean steps: (a) 60S-60N DOISST minus ESA CCI, ERSSTv5 and HadSST4.2 (12-month means); (b) regional 2005 and 2020 step sizes; (c) step sizes relative to moored buoys before and after correction, and DOISST minus CCI at cells next to moorings."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its moored-buoy daily SST and DOISST buoy-pixel files and its pt cell sample."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its bounds certify the sign of the heatwave-day trend; our corrected trend stays positive."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its spectral-matching homogenisation and MHW code and combine it with the mean correction."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bound study for heatwave area under bounded SST changes."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its CCI fetch code and region masks, and we add the mean correction to its 2023 record analysis."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Earlier campaign result on DOISST input-change artifacts that this study combines and extends."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its step dates, its iQuam ship-bias field and iQuam aggregates, and we turn its step model into a regional correction."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08674-z",
+   "reason": "Published record-jump result that we test.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 reference data."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "reason": "Marine heatwave definition."
+  },
+  {
+   "target": "doi:10.1038/s41467-018-03732-9",
+   "reason": "Published heatwave trend results that we re-test.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-018-0383-9",
+   "reason": "99th-percentile heatwave-day metric."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5 reference."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST1, used for AR(1) parameters."
+  },
+  {
+   "target": "doi:10.1029/JD092iD09p10977",
+   "reason": "Enting smoothing spline."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "reason": "iQuam in situ data."
+  }
+ ]
+}
