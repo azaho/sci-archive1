@@ -1,0 +1,241 @@
+{
+ "title": "Daily climate explained at most about one third of multi-decadal runoff-efficiency changes at south-east Australian gauges (1889-2021); adjusted efficiency fell in two steps, near 1957 and 2010",
+ "abstract": "Question: south-east Australian (SE-AU) runoff at equal annual rain was about 20% above the 1957-1996 relation before 1957 and 15% below it in 2010-2021. Is this multi-decadal change in runoff efficiency caused by climate that annual rain does not show (rain seasonality, daily intensity, wet days, rain sequences, evaporative demand)? Approach: we drove two daily rainfall-runoff models with fixed parameters (GR4J, SIMHYD) with CAMELS-AUS daily SILO climate from 1889 at 50 long-record gauges (31 SE-AU, 19 northern control; Water Data Online flow). For each gauge, Q = a + bP + cP(t-1) was fitted on 1957-1996 to observed flow (D_obs) and to simulated flow (climate-implied D_clim); D_res = D_obs - D_clim is the climate-adjusted departure. 2-degree cell bootstrap. Plan written before any model run. Results (SE-AU): before 1957, D_obs was +22.6% (95% CI 12.6 to 29.6; 20 gauges) but D_clim only +4.3% (GR4J) and +7.1% (SIMHYD). In 2010-2021, D_obs was -15.0% (-24.5 to -9.0) and D_clim -1.7% and -3.2%. The post-drought contrast (2010-2021 minus 1946-1955) was -36.9 points observed and -2.4 from climate. Climate explained about half of the WWII/Millennium drought contrast (Millennium Drought had 15% fewer wet days) and 46% of the variance of 13-year group departures before 1997. The result held with AGCD rain, with climatological PET, with calibration on all pre-1997 years and without regulated gauges (climate share 4-34% across models and variants). Post hoc, the climate-adjusted series of 21 fixed gauges had three levels: +14.8% before 1957, -0.9% in 1957-2009, -12.9% after 2010 (breaks 1957 and 2010; same with calibration on all pre-1997 years). The Millennium Drought decade itself had only -3.6%. Northern gauges had a non-climatic fall near 1964-1978 and did not recover; their apparent recovery after 2009 was climatic. The IPO Tripole Index and PDO did not track the observed or adjusted efficiency (r -0.01 to 0.21). Conclusion: the multi-decadal efficiency change is mostly not climatic in this sense; after adjustment, efficiency fell in two steps rather than oscillating. The causes of both steps remain open (catchment change or flow measurement). By the planned rule the result is 'not climatic' with all gauges and 'partly climatic' by a small margin without the diverted gauge 410033. Limitations: two conceptual models; few pre-1957 gauges (20); early ratings unknown; sparse early rain network; step analysis post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "runoff efficiency",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "Millennium Drought",
+  "World War II drought",
+  "south-east Australia",
+  "GR4J",
+  "SIMHYD",
+  "climate attribution",
+  "multi-decadal variability",
+  "Interdecadal Pacific Oscillation",
+  "change points",
+  "CAMELS-AUS",
+  "SILO",
+  "Water Data Online",
+  "long streamflow records"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_climate_adjusted_series.png",
+   "caption": "Fixed-composition gauges: 13-year observed, climate-implied (daily models) and climate-adjusted departures from the 1957-1996 rainfall-runoff relation, 1937-2021; dashed: three-level fit."
+  },
+  {
+   "path": "files/figures/fig2_window_decomposition.png",
+   "caption": "Planned windows: observed, climate-implied (GR4J, SIMHYD) and climate-adjusted departures with 95% cell-bootstrap intervals, SE-AU and North."
+  },
+  {
+   "path": "files/figures/fig3_gauge_scatter.png",
+   "caption": "Per gauge: observed against climate-implied departure before 1957 and in 2010-2021; the dashed line is full climatic explanation."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Source of the gauge list, flow-download code and the open question. We confirm its pre-1957 excess and post-1997 deficit; after a daily-climate adjustment its northern recovery after 2009 disappears and the post-2010 SE-AU level is a new low, not a repeat of the 1959-1971 and 1983-1995 lows."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We reproduce the post-1997 SE-AU deficit with daily models; daily climate does not remove it."
+  },
+  {
+   "target": "sci:sha256:448ef5cf94fd4dd8ed8caa78bd86c6fe2d0e8c0c9a8e3c2be15927a0d9897b45",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its monthly water-balance model removed 20-45% of the deficit; our daily models remove 11-21% of the 2010-2021 deficit."
+  },
+  {
+   "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our climatological-PET variant gives the same result: evaporative demand does not cause the deficit."
+  },
+  {
+   "target": "sci:sha256:5eddb9c5471d41c58e267937e928348b72d2c7853d9c778e5265a13ae9a1d2b0",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Our land-cover split also finds forested catchments with a post-2010 adjusted deficit."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our adjusted series shows that low efficiency persisted through the wet years after 2010."
+  },
+  {
+   "target": "sci:sha256:e3ac7e4425f9706064e3301f8f1b64b43cd93db81d178a0896716c7ede512998",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It found a Victorian 1997-1998 step and an earlier NSW decline; we find adjusted steps near 1957 and 2010 in SE-AU and 1964-1978 in the north."
+  },
+  {
+   "target": "sci:sha256:df6e9774f90ddebf74ba9afc0baf25a27af0b64d403eb89144b51d09c99995eb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Rain timing within months gave little runoff change; daily rain structure also explains little of the long-term change here."
+  },
+  {
+   "target": "sci:sha256:47f425a9abd8f0f3209f790a2dfc12e5cfdd0210703fcabe37c8c8c1d513b3cd",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Water-table explanation of the deficit; relevant to our limitation about slow stores."
+  },
+  {
+   "target": "sci:sha256:795f820efc7ab83d8444f08f28f7ca8db98146e05456d5a82a7f8732636fe9ca",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Water tables and runoff losses."
+  },
+  {
+   "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Post-drought deficits after droughts ending 1997-2010."
+  },
+  {
+   "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Deficit belongs to southern Australia after 1997."
+  },
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Fixed rain-gauge networks confirm the deficit; relevant to our rain-network limitation."
+  },
+  {
+   "target": "sci:sha256:a3f0e3af7913a08b4dfbda3240b72c5ce098be6c960beb55d928c3b31c3deb3d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Bushfire excluded as cause."
+  },
+  {
+   "target": "sci:sha256:c651f0467890b08a18b00d70192c1ccc1cf25e73a627b8946d75fba870b9e1f1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Greening excluded as cause."
+  },
+  {
+   "target": "sci:sha256:1ace58a848f7f14b1a3fc03b447450fea00c37be554252eb838d8e3f2dcb2bcc",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Channel losses excluded."
+  },
+  {
+   "target": "sci:sha256:ccf7e5d42f105c9851be6b10940013766830583fe5292184e632c5ba59749c2b",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Stored water and gauge noise excluded."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "US reference catchments did not stay low after droughts."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2 data description."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data: daily SILO and AGCD catchment climate, areas, attributes."
+  },
+  {
+   "target": "https://www.bom.gov.au/waterdata/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Bureau of Meteorology Water Data Online, daily flow."
+  },
+  {
+   "target": "doi:10.1016/S0022-1694(03)00225-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Perrin et al. 2003, GR4J model."
+  },
+  {
+   "target": "doi:10.1007/s00382-015-2525-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Henley et al. 2015, IPO Tripole Index definition."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rayner et al. 2003, HadISST1."
+  },
+  {
+   "target": "doi:10.1016/S1364-8152(01)00008-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Jeffrey et al. 2001, SILO interpolation."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "reason": "Peterson et al. 2021, catchments that did not recover from drought."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "reason": "Fowler et al. 2022, community perspective on post-drought rainfall-runoff shifts."
+  },
+  {
+   "target": "doi:10.1002/2014WR015348",
+   "reason": "Saft et al. 2015, shifts in rainfall-runoff partitioning in multiyear drought."
+  }
+ ]
+}
