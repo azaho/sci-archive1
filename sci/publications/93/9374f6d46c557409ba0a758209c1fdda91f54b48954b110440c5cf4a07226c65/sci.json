@@ -1,0 +1,114 @@
+{
+  "title": "A 0.48 stellar flux blend increases the fit error for 20 WASP-105 b transits under a constant orbit and quadratic limb darkening",
+  "abstract": "We tested the unconfirmed 2.0028-day transit signal near WASP-105 and a published bright stellar companion hypothesis. We fitted 20 complete TESS transits of the known hot Jupiter with free density and physical quadratic limb darkening. Extra stellar light with a TESS flux ratio of 0.48 increases chi-square by 9.58. Corrected aperture photometry gives 9.61. Removing the sector with the largest contribution leaves 5.74. One of 512 sector noise sign patterns reaches the observed difference under the fitted null. This supports less extra light under the constant circular orbit and quadratic intensity model. This does not prove that the star is single or fit the full published two-star spectrum. A new local reduction of 87 complete small-candidate events in the same nine TESS sectors supports the dip. A circular fit gives a radius of about 1.84 Earth radii for a 0.90-solar-radius host, or 2.22 Earth radii with the 0.48 blend. These are not independent observing confirmations. We also test 58 archival HARPS velocities from 2014. After removing 37 points near the known planet transits, 21 points on 12 nights give only a weak two-day amplitude. It falls from 7.97 +- 3.37 to 3.72 +- 6.61 m/s when 10 m/s of nightly error is allowed. Formal circular-orbit profile upper limits are 13 to 15 m/s, or about 24 to 27 Earth masses for an unblended 0.89-solar-mass host. Noise coverage and host identity limit this interpretation. The candidate remains unconfirmed. We provide original code, exact external input hashes, aggregate evidence and noise tests. All data retrieval and regeneration write outside the signed package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "WASP-105",
+    "TESS",
+    "HARPS",
+    "transit dilution",
+    "stellar companions",
+    "hot Jupiter companions",
+    "radial velocity",
+    "null confirmation",
+    "correlated noise"
+  ],
+  "display": [
+    {
+      "path": "files/figures/blend.png",
+      "caption": "Twenty known-planet transits test a bright stellar blend. PDCSAP and corrected SAP give the same fit penalty. One of 512 whole-sector noise sign patterns under the fitted 0.48 blend reaches the observed difference. This test assumes a constant circular orbit and quadratic limb darkening."
+    },
+    {
+      "path": "files/figures/candidate.png",
+      "caption": "A new reduction of the same nine TESS sectors recovers the small candidate. This is a reduction check, not independent observing confirmation."
+    },
+    {
+      "path": "files/figures/radial_velocity.png",
+      "caption": "Independent 2014 HARPS velocities do not give a secure two-day mass detection. Nightly noise weakens the amplitude. The limits assume a circular orbit and specified velocity model."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:104e34b65f8917cd2e03c66a335d2f3a901df032c91f3132f6d891541bcd79c1",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We use the candidate ephemeris and nine source file identifiers. A new reduction supports the repeated dip. Independent archival velocities do not confirm a second planet."
+    },
+    {
+      "target": "doi:10.1093/mnras/stae2075",
+      "relations": [
+        "reviews",
+        "challenges"
+      ],
+      "reason": "Prior bright, unresolved stellar companion hypothesis for WASP-105. We test a TESS-band flux ratio of 0.48 with resolved transit shapes. The conclusion depends on the orbit and limb model; we do not fit or reject every two-star spectral model."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201730439",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Discovery of WASP-105 b; adopted stellar mass and radius scenario."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202349084",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier analysis of the HARPS transit time series. We exclude the large planet transits and test a new two-day ephemeris."
+    },
+    {
+      "target": "doi:10.18727/archive/33",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ESO Science Archive HARPS data and radial velocity catalogue, DR1."
+    },
+    {
+      "target": "https://arxiv.org/abs/2312.06586",
+      "relations": [
+        "uses"
+      ],
+      "reason": "HARPS radial velocity catalogue documentation and metadata cautions."
+    },
+    {
+      "target": "https://exoplanetarchive.ipac.caltech.edu/overview/WASP-105",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known-planet ephemeris from the Kokori et al. 2023 solution and context on stellar parameters."
+    },
+    {
+      "target": "https://archive.stsci.edu/missions-and-data/tess",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TESS SPOC light curves; exact URLs and hashes are in the input manifest."
+    },
+    {
+      "target": "doi:10.1086/683602",
+      "relations": [
+        "uses"
+      ],
+      "reason": "batman transit model, used as an external runtime library."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use",
+      "reason": "Source data use policy."
+    },
+    {
+      "target": "https://archive.eso.org/cms/eso-data-access-policy.html",
+      "reason": "Source data license and required attribution."
+    }
+  ]
+}
