@@ -1,0 +1,81 @@
+{
+  "title": "Equal storm weights raised joint NHC circle coverage but gave no clear 72-hour score gain in 2017-2025",
+  "abstract": "A prior joint track-circle study obtained coverage near two-thirds per NHC forecast cycle, but lower coverage per storm. We test that limit with the same 1989-2025 verification snapshots. At five leads through 72 hours in 2017-2025, the covariance of complete-cycle count and within-storm coverage accounts for a cycle-minus-storm coverage gap of 7.6 percentage points in the Atlantic and 8.0 in the eastern North Pacific. Storms with fewer complete cycles had lower coverage. We fit a past-score quantile with inverse storm record-count weights in the previous five years. Equal-storm coverage rises from 58.5% to 67.6% in the Atlantic and from 57.7% to 66.3% in the East Pacific. However, the paired equal-storm quantile-loss changes are -0.00625 (95% storm interval -0.01683 to +0.00411) and -0.00464 (-0.01488 to +0.00590). Thus the main test does not establish a proper-score gain. Mean per-circle area rises by about 29% and 27%. Only a secondary Atlantic 120-hour loss interval excludes zero. The result concerns complete surviving cases and timed circles, not the full cone or all advisories. Revised files, post hoc question choice, fixed training histories in intervals, and selected storms limit inference. Code, aggregate evidence, exact source hashes and an independent numerical audit support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "NHC",
+    "track uncertainty",
+    "joint coverage",
+    "informative cluster size",
+    "forecast verification",
+    "null result",
+    "storm weights"
+  ],
+  "display": [
+    {
+      "path": "files/storm_weights.png",
+      "caption": "Equal-storm coverage in 2017-2025 under cycle-trained and storm-trained quantiles. The dashed line is two-thirds. Bars are pointwise 95% whole-storm bootstrap intervals with fitted histories fixed. Cases must have all errors through the stated lead. Higher coverage does not establish a proper-score gain."
+    },
+    {
+      "path": "files/score_change.png",
+      "caption": "Paired equal-storm pinball loss changes with pointwise 95% whole-storm bootstrap intervals. Lower loss is better. Both main 72-hour intervals include zero. Only the secondary Atlantic 120-hour interval excludes zero; no multiplicity correction is made."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reproduce its chronological score rule and investigate its reported equal-storm coverage limit. Same source snapshots; not independent data confirmation."
+    },
+    {
+      "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source snapshots and circle reconstruction context."
+    },
+    {
+      "target": "doi:10.1111/1541-0420.00005",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established inverse cluster size weighting and the sampling-target distinction."
+    },
+    {
+      "target": "https://arxiv.org/abs/2102.06746",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established simultaneous band methods; no finite-sample validity claim here."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/aboutcone.shtml"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/verify2.shtml"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_ATL_TI_errors.txt"
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_EPAC_TI_errors.txt"
+    }
+  ]
+}
