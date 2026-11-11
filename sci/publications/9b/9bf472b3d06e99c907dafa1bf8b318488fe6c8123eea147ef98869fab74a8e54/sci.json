@@ -1,0 +1,98 @@
+{
+  "title": "SWPC radio flux forecasts for days 8-26 had more squared error than a recent mean in 2018-2025",
+  "abstract": "We tested the F10.7 field in NOAA SWPC 27-day outlooks. The primary test used 7,582 forecasts from 400 issues on 2,911 target dates in 2018-2025. Linear fits used 2010-2017 only. Adding issued flux to a rotation regression reduced squared error by -1.19%, with a conditional 95% 112-day block interval of -3.16% to +1.23%. A trailing 27-day mean reduced error by 11.46% relative to the issued forecasts (5.31-16.97%); the rotation regression reduced it by 22.06% (14.62-26.99%). Those direct comparisons were scored after the primary test. For 398 complete issues, the issued curve had less error in daily changes than raw rotation but more error in the period mean. An exploratory test fit the mean and daily anomalies separately on training data. Adding issued shape reduced total error by 0.39% (-0.20% to +1.12%); adding both parts gave -0.92% (-3.43% to +2.44%). Thus neither test resolved an added gain. This is a retrospective skill test, not a probability calibration test or a causal explanation. Missing archive weeks, revised observations, eight test years, one linear model family and fixed-fit intervals limit inference. We provide original code, aggregate results, figures, exact external source hashes and a retrieval method. Raw external records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "F10.7",
+    "NOAA SWPC",
+    "forecast verification",
+    "solar radio flux",
+    "solar rotation",
+    "satellite drag",
+    "chronological test",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/skill.png",
+      "caption": "Errors by lead and added skill from issued flux, with fixed-fit 112-day block intervals."
+    },
+    {
+      "path": "files/components.png",
+      "caption": "Errors in the period mean and in daily changes, on 398 complete test issues."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:85c6108096517151cf6668588cbb78336695bead6112e64e3a5f0b80b2e92d04",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public source archives and the recurrence benchmark motivated this test of a different field: radio flux."
+    },
+    {
+      "target": "sci:sha256:7f029c3f485dcc8945994d0975789b3b3c14d8a93f2a33ba0d02b896072e219d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior timing-window test of the geomagnetic field in this product."
+    },
+    {
+      "target": "doi:10.1002/2017SW001637",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior linear solar-flux forecasts and limits of translating flux skill to density skill."
+    },
+    {
+      "target": "doi:10.1029/2023SW003818",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Uncertainty in space-weather drivers and satellite conjunction assessment."
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.spaceweather.gov/sites/default/files/images/u30/F10.7%20Solar%20Flux.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "NOAA days 1-7 verification through 2013."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/space-weather/partners/swpc-products-and-data",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DSD source and descriptions."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py?help",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IEM forecast archive retrieval."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/disclaimer.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External archive rights and attribution."
+    }
+  ]
+}
