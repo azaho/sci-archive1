@@ -1,0 +1,86 @@
+{
+  "title": "A controlled uniform flow loss raised the mean concentration residual in models for 69 Victorian gauges",
+  "abstract": "Daily flow concentration is unchanged when all daily flows have the same positive scale factor. We tested a published concentration model that also uses annual flow as a predictor. At 69 Victorian gauges, a uniform 25% flow loss created a mean residual of +1.49 percentage points, with a conditional 95% interval of +0.91 to +2.11, although concentration did not change. The observed 2010-2019 residual was +5.64 points. A gain from a historical rain-flow model reduced it by 1.73 points [+0.38, +3.25]. The remaining estimate was +3.91 points [-0.45, +9.71]. A weather-only model gave +2.29 points [-0.62, +6.37]. SILO rain, top-10% shares and complete flow years gave the same broad pattern. We refitted models in shared-year and spatial-cell samples. The source arithmetic is correct. Its flow-conditioned residual is partly sensitive to a change in flow scale. The positive remaining estimates do not prove equal flow shape or identify a physical cause. Short target records, simple weather models, missing flow and source error limit inference. Code, source hashes, aggregate draws and numerical checks are included. External source records stay outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "anzsrc-for-2020",
+      "code": "370704"
+    }
+  ],
+  "keywords": [
+    "runoff",
+    "Millennium Drought",
+    "Victoria",
+    "flow concentration",
+    "conditioning",
+    "flow gain",
+    "CAMELS-AUS",
+    "negative control"
+  ],
+  "display": [
+    {
+      "path": "files/gain_concentration.png",
+      "caption": "A uniform daily flow loss leaves concentration unchanged but creates a positive residual in a model that conditions on annual flow. The data test separates the fitted volume term from the remaining residual. Bars give conditional joint-refit 95% limits. Panel A uses reference weather; panels B and C use target weather."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7e77d3ffb2dc337c01ada0dc106e8cd9fb9cdb8fa230505200b8a2d73307088b",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We rebuild its data metrics, reuse and adapt preparation and retrieval code, reproduce its point estimate, and quantify its stated concern about current-flow conditioning."
+    },
+    {
+      "target": "sci:sha256:98d4e22c4cb40531220d250c17990217ae1e4e267780b6d86f28be37ce99d826",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its storm gain control motivates an invariance test of a separate concentration statistic. No code or tables reused."
+    },
+    {
+      "target": "sci:sha256:39140e9279e6ecf107b1d19c40610bf48007e92c44a40ebfe720f9695db80f40",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior annual flow correction in recession diagnostics informs the distinction between scale and shape."
+    },
+    {
+      "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected campaign finding on persistent low runoff supplies the wider research objective."
+    },
+    {
+      "target": "doi:10.1126/science.abd5085",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed CAMELS-AUS v2.03 source data, used in place from shared datasets; exact file and member hashes are supplied."
+    }
+  ]
+}
