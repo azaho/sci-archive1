@@ -1,0 +1,126 @@
+{
+  "title": "The sign of a 1982-2022 DOISST feedback adjustment depends on drift and step dates in five linear models",
+  "abstract": "We tested how gradual product differences change the inferred radiation effect of DOISST input steps. We used verified complete monthly SST and radiation aggregates for five atmosphere-model Green's functions, two reference products and 1982-2022. With five fixed dates and the mean of ERSSTv5 and COBE-SST2 as reference, raw-minus-adjusted trend-ratio feedback is +0.057 W m-2 K-1 without drift, -0.076 with linear drift and -0.034 with quadratic drift. Conditional 95% intervals include zero for all three. With only the three reported mean-step dates, the linear result stays positive at +0.009. Four-year local fits retain warm steps of +0.097 K in 2005 and +0.090 K in 2020; their radiation signatures are consistent with uniform warming. An exact scalar contrast shows how smooth SST and radiation difference slopes control the feedback sign. Along the fitted five-date drift path, the mean effect reaches zero at 39% of the fitted drift. Buffered held-out reconstruction favors no drift for SST and the feedback contrast, but smooth terms for mean radiation. Thus the reversed fit is not established as a better correction. The test shows conditional attribution uncertainty, not a new true SST record or observed radiation change. It does not reproduce the source's full spatial correction. Shared observations, fixed dates, two references, linear kernels and missing CCI monthly radiation limit inference. Code, source hashes, figures, all tested cases and an independent QR audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "DOISST",
+    "radiative feedback",
+    "AMIP forcing",
+    "step correction",
+    "smooth drift",
+    "identification",
+    "Green functions",
+    "blocked validation"
+  ],
+  "display": [
+    {
+      "path": "files/feedback_sensitivity.png",
+      "caption": "The 1982-2022 feedback effect changes with drift assumptions and the reference in a five-date fit. Left: five-model mean and conditional paired 24-month block intervals. Right: constrained linear drift from zero to the fitted value. These fits do not establish which correction is true. Three-date results are given separately."
+    },
+    {
+      "path": "files/local_events.png",
+      "caption": "Local January 2005 and July 2020 warm steps remain visible. The radiation departure from a uniform-warming response has an interval that includes zero in the four-year fits. Local events do not uniquely set the total feedback adjustment."
+    },
+    {
+      "path": "files/difference_fits.png",
+      "caption": "DOISST minus the mean of ERSSTv5 and COBE-SST2, in SST and mean model radiation. Step-only and joint drift fits can assign different step sizes to the same record. Held-out checks favor the step-only fit for the feedback contrast."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified monthly SST and radiation aggregates, uniform response constants, and source provenance. We test a different temporal correction model and retain its two published spatial corrections as benchmarks."
+    },
+    {
+      "target": "sci:sha256:167ff86ca3b81d308096062c4863910288826089224fa25e968c1f2e0b8fcda3",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its joint drift and step audit motivates this extension from SST to radiation, feedback and held-out target contrasts."
+    },
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Original spatial correction and pattern evidence upstream of the numerical source."
+    },
+    {
+      "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows why DOISST correction uncertainty matters for official model forcing."
+    },
+    {
+      "target": "sci:sha256:0c7c0536756c38f5b3bc453f3a1d604a7fabe23bd7e9481f82c171eebbd57b99",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Shows that the chosen feedback estimator matters; our scope is the monthly trend ratio."
+    },
+    {
+      "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Independent input-switch evidence for the July 2020 event, whose local warm signature remains visible here."
+    },
+    {
+      "target": "sci:sha256:49814d2f72de6014600c1e2ded845edc84e59fbc76e3c1f67df8ae67088c7783",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Complementary spatial validation limits; this investigation tests temporal step and drift allocation."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00704.1",
+      "reason": "Prior work on changepoints with long-term trends."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-22-0954.1",
+      "reason": "Prior review of trend, correlation and change-point model assumptions."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "reason": "GFMIP protocol and linear-response limitations."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10414728",
+      "reason": "Underlying CC BY 4.0 Green-function source."
+    },
+    {
+      "target": "doi:10.1029/2022JD036675",
+      "reason": "Historical SST pattern and feedback dependence in atmosphere models."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "DOISST v2.1 product description."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "reason": "ERSSTv5 reference description."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00837.1",
+      "reason": "COBE-SST2 reference description."
+    },
+    {
+      "target": "doi:10.1029/2002JD002670",
+      "reason": "HadISST1 contributed to the upstream mask definition. Its SST series is not analyzed here."
+    }
+  ]
+}
