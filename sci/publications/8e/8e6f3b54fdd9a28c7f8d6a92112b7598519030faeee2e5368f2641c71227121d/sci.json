@@ -1,0 +1,170 @@
+{
+ "title": "A light-travel-time clock can stall the ASASSN-14ko period only for a black hole above about 1e8 solar masses seen edge-on, and it predicts no decrease after 2024, against the 2026 flare",
+ "abstract": "Question: the period of the repeating nuclear transient ASASSN-14ko decreased fast before 2020, stayed constant in 2020-2024 (X-ray clock) and became shorter again after 2024. Wu et al. (2024) proposed that the period change is a light-travel-time (Roemer) effect: the star orbits an intermediate-mass black hole that orbits the central supermassive black hole (SMBH). A Roemer clock stops a period change naturally. Approach: we repeated their calculation, then fitted a constant intrinsic period plus the exact Keplerian Roemer delay to 61 flare markers of 2014-2026 (X-ray suppression, UV, optical, TESS and SPHEREx times from signed SCI publications), with the amplitude bounded by a/c for each SMBH mass. We also trained all clocks on 2014-2021 data and scored their forecasts of 2022-2026 with nested sampling. Results: the published estimate dP/dt = Delta d/(cP) equals v_r/c, a Doppler factor, not the period derivative P a_r/c; their model gives at most |Pdot| = 0.0015 over 22 cycles and fits the flare times worse than a constant Pdot by 2 Delta lnL = 82. A correct Roemer clock is worse than a constant Pdot for SMBH masses up to the host value (10^7.86 Msun), equal at 10^7.95 and better by Delta AIC = 8-21 above 10^8.05, always with an edge-on outer orbit. With the host mass as prior, the posterior needs log10 M_BH = 8.19-8.80 (95%) and the Bayes factor is about e^2. Bounded Roemer clocks predict no period decrease after 2024 and put the 2026 TESS flare 5-8 d later than observed (2.6-2.7 sigma). Trained on 2014-2021 data, Roemer clocks forecast the stall (log predictive density -87 to -89, against -149 for a constant Pdot and -245 for a cubic), but random period kicks do as well (-84). These results hold without the 2022 optical peaks and with another X-ray marker. Limitations: the host mass is uncertain by a factor of about 2.5, and a mass above 10^8.2 Msun keeps the Roemer clock viable; marker classes have constant offsets; post-2024 evidence rests on four cycles; we did not measure line velocities, which must change by about 6,000 km/s between 2014 and 2020 in this model. Chandra data of 2026 June-July (public from December 2026) and flare-line velocities can test it.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "light-travel-time effect",
+  "Roemer delay",
+  "intermediate-mass black hole",
+  "supermassive black hole binary",
+  "flare timing",
+  "period derivative",
+  "period stall",
+  "O-C diagram",
+  "out-of-sample forecast",
+  "nested sampling",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc_models.png",
+   "caption": "All 61 ASASSN-14ko flare markers (2014-2026) relative to a linear 108.437-d clock, with five clock fits, and the period change per cycle of each fit. Roemer (light-travel-time) clocks with a bounded black-hole mass give a fast decrease near 2017-2019, a stall and no decrease after 2024; the 2026 TESS flare is earlier than they predict."
+  },
+  {
+   "path": "files/figures/fig2_mass_profile.png",
+   "caption": "Best Roemer clock for each upper bound on the SMBH mass, relative to a constant period derivative. The Roemer clock is better only for masses above about 1e8 solar masses, at the upper end of the host estimate (orange). Cross: the published model M05 of Wu et al. (2024)."
+  },
+  {
+   "path": "files/figures/fig4_forecast_test.png",
+   "caption": "Clocks trained on 2014-2021 data only and their forecasts of the 20 markers of 2022-2026. Constant-Pdot and cubic clocks fail; Roemer clocks and random period kicks forecast the stall about equally well."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its UVW2 peaks, XRT ingress times and repeated marker times. Its constant 2020-2024 X-ray clock is the stall that we test."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its NICER and XRT 30-percent deep-suppression times as the reference marker."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the ASAS-SN template peaks, half-rise times and the tabulated Payne et al. peaks (through SCI 049d6e3e)."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the SPHEREx peak of flare 37 and of the Chandra 2026 observation dates."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our fits confirm the late 2022-2026 flares relative to the Payne et al. ephemeris."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Random period kicks forecast the 2022-2026 markers as well as any tested clock in our out-of-sample test."
+  },
+  {
+   "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Our kick forecast (0.72 d per orbit) agrees with its period-noise scale."
+  },
+  {
+   "target": "sci:sha256:caa4434210b0a9f606b7cd7556b6dc69e1c8aad3c1e38769bf84930109dfa412",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "We test a geometric delay, a different delay model from its stationary emission delays."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its precessing-drag clock is one of the quasi-periodic modulations that our Roemer plus intrinsic Pdot fit cannot distinguish."
+  },
+  {
+   "target": "sci:sha256:3d3952f09e6637469c3246384b5c317663fe85889c414df7a3045a45a76eb412",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "As for its disc-crossing clock, the 2026 TESS flare is the marker that disfavours our bounded Roemer clocks."
+  },
+  {
+   "target": "sci:sha256:e2dd93204aab9cc901b4904e122743da728145237a45e3c40955c5865f1ec51f",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "The same light-travel-time bound can be applied to the levelled recurrence of eRASSt J0456-20."
+  },
+  {
+   "target": "sci:sha256:c2b0b0eaa5d2a603467430233ddf0c75c02b5bcb8bb988533b4656a5e339c70e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Related periodic nuclear transient with a constant period; context for clocks that stall."
+  },
+  {
+   "target": "sci:sha256:edf8ce3b287628806220327d395c2de85cc7cc659c6e9416c3f6865ab6e081d4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Energy-coupled clocks are an alternative to the geometric clock tested here."
+  },
+  {
+   "target": "doi:10.1093/mnras/stae641",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Wu et al. (2024) set dP/dt = Delta d/(cP), which is v_r/c, not the period derivative P a_r/c. Their model M05 gives at most |Pdot| = 0.0015 over 22 cycles and fits the flare times badly."
+  },
+  {
+   "target": "https://arxiv.org/abs/2009.03321",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Payne et al. (2021): published flare peaks, host SMBH mass and the H-beta shift limit."
+  },
+  {
+   "target": "https://arxiv.org/abs/2206.11278",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Payne et al. (2022): published peaks and the constant-Pdot ephemeris."
+  },
+  {
+   "target": "https://arxiv.org/abs/2309.15849",
+   "relations": [],
+   "reason": "Linial and Quataert (2024): physical models of period evolution in repeating nuclear transients."
+  }
+ ]
+}
