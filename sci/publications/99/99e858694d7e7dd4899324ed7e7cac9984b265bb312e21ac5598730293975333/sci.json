@@ -1,0 +1,138 @@
+{
+ "title": "CMIP6 perfect-model test: the North Pacific outcrop-lightening law fits sigma0 26.5 AOU gains to 0.4 kg/m3 but overpredicts SSP5-8.5 by about 2, fails at CalCOFI, and also holds without an outcrop",
+ "abstract": "Question: two published campaign projections of North Pacific (NP) oxygen on sigma0 26.5 extrapolate laws fitted to 1984-2025 data: an AOU-profile shift of kappa = 0.74-0.79 times the late-winter lightening L of the outcrop box 38-48 N, 150-170 E (sci:db350eb4), and renewal proportional to outcrop area (sci:bf71cd68). Do these laws reproduce the AOU change in Earth system models that ventilate this class? Approach: perfect-model test with a pre-registered plan. From ESGF OPeNDAP we read September temperature, salinity and O2 (0-1100 m) and March surface fields for every year 1950-2100 of GFDL-ESM4 and IPSL-CM6A-LR (SSP5-8.5, SSP2-4.5) and CNRM-ESM2-1 (SSP2-4.5), plus UKESM1-0-LL as a control. We applied each law to each model's own surface change and compared it with the model AOU change on 26.5 (2081-2100 vs 1984-1996; pass if model/law = 0.67-1.5). Results: in density space the models follow the shift law to L of about 0.4 kg/m3 (kappa 0.35-0.93, median 0.64), and the observed 2009-2025 point lies on the model curves. Beyond that the shift stops near sigma0 26.9 (IPSL SSP5-8.5: L 0.85, shift 0.43). The pre-specified test rejected the shift law for SSP5-8.5: 0 of 4 cases held, and the law overpredicted the gains at 120-180 W and CalCOFI by 1.9-3.6 times. Under SSP2-4.5 (L 0.24-0.39) it held in 5 of 6 open-ocean cases but in 0 of 3 CalCOFI cases (model/law 0.28-4.1 over all runs). The renewal law held in 1 of 4 (4 of 20 overall) and overpredicted by a median 2.6 times; to match, 5-72% of renewal at 120-180 W and 60-87% at CalCOFI must not depend on the outcrop. Only GFDL-ESM4 had the observed year-to-year O2-density link at 160 E-180 (slope 119-123 umol/kg per kg/m3; observed 70-230). In 2009-2025 the models lightened the box by 0.055-0.081 kg/m3 (observed about 0.12-0.15). The no-outcrop control UKESM1-0-LL also followed the shift law at 120-180 W (34 vs 40 umol/kg) and had a strong year-to-year link (r 0.81), so these agreements do not prove outcrop ventilation. Interpretation: the shift law describes model AOU well for lightening up to about 3 times the observed value; linear extrapolation beyond that and the outcrop-only renewal law overstate the gain, and these models do not support the CalCOFI projection. Limitations: three outcrop models, one member each, two with SSP5-8.5; one month per year; coarse coastal box; a perfect-model test cannot show that the real ocean saturates in the same way.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Pacific",
+  "sigma0 26.5",
+  "outcrop",
+  "ventilation",
+  "apparent oxygen utilization",
+  "perfect-model test",
+  "CMIP6",
+  "Earth system model",
+  "projection",
+  "SSP5-8.5",
+  "SSP2-4.5",
+  "isopycnal shift",
+  "renewal model",
+  "CalCOFI",
+  "GFDL-ESM4",
+  "IPSL-CM6A-LR",
+  "CNRM-ESM2-1",
+  "UKESM1-0-LL",
+  "ESGF OPeNDAP"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_predicted_vs_model.png",
+   "caption": "Perfect-model test. Model AOU change on sigma0 26.5 (2041-2060 small, 2081-2100 large symbols, against 1984-1996) against the prediction of (a) the observed shift law (kappa 0.74-0.79 times the model's own box lightening) and (b) the outcrop-area renewal law. Colour = model; symbol = region; filled = SSP5-8.5, open = SSP2-4.5. Grey band: factor 1.5."
+  },
+  {
+   "path": "files/figures/fig3_shift_vs_lightening.png",
+   "caption": "Fitted AOU-profile shift delta against the box surface lightening L for 20-yr windows (1960-2090 centres), in three regions. Dotted: observed law (kappa 0.74). Square: observed 2009-2025 value (sci:21ae52cf). The models follow the law to L of about 0.4 kg/m3; in IPSL-CM6A-LR SSP5-8.5 delta stops near 0.43."
+  },
+  {
+   "path": "files/figures/fig1_surface.png",
+   "caption": "(a) Late-winter (March) surface lightening of the box 38-48 N, 150-170 E against 1984-1996 (11-yr running mean) in each model run; square: observed WOA23 2005-2022 value. (b) Outcrop area of the 26.4-26.6 class relative to 1965-1984."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:db350eb4c66afe46724f5fc4763b544ac87fd4d86a40e5290de682fa80030d95",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We test its shift-law projection in models and reuse its shiftlib.py and observed kappa_box values."
+  },
+  {
+   "target": "sci:sha256:21ae52cf9d0e24f827f7e090eda5a0912177d80251d965f1562a6a1d6dac6f10",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the equivalent density shift method and the observed 2009-2025 shift."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We test its outcrop-area renewal law (Model B, phi = 0) in models; we checked our surface index against its per-year model values."
+  },
+  {
+   "target": "sci:sha256:bfaf6c907a3921f24772235a5c558c20640093bacf1d6aab37774570994ba61e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the observed source-region O2 sensitivity to surface density (147, 70-230 umol/kg per kg/m3) used in test T3."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Defines the outcrop mechanism and the regions that we test."
+  },
+  {
+   "target": "sci:sha256:f2580a7a9707b955afb41852fae4c8e54807eaf63b6f3f6e605071200ca9f13f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its model outcrop table selected the outcrop models; its bundle gave the CMIP6 license table."
+  },
+  {
+   "target": "sci:sha256:5f1c245bceaa5f1acb5d9d7721c02399cc9ac35507cc25238709f8bf8f263992",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found that the observed shift stops below the densest outcropping class; in the models the shift also stops near sigma0 26.9 at large lightening."
+  },
+  {
+   "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08"
+  },
+  {
+   "target": "sci:sha256:e62193bc82411e1eba8216153180725f10a0354095b71fc73e53e6d615c7af30"
+  },
+  {
+   "target": "sci:sha256:66c86fe2188e2bc4904f1126c0befee9c0d2a50665e98b7c88ff6241f5911038"
+  },
+  {
+   "target": "sci:sha256:cc75ea4ee42bb0552f162242a833759f9e12e921051e27040dc1af4ff6b89015"
+  },
+  {
+   "target": "sci:sha256:978770d06b38d468eb8ad85428682f7a8b995df12636e1a2fba6b6a7f8dce5f9"
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce"
+  },
+  {
+   "target": "sci:sha256:d73b9f651655097e48dad695d82ca8e3363c16c123d373bb305926cac62731ae"
+  },
+  {
+   "target": "sci:sha256:ea67ca59c8c830609ef22a9e4feaddc1ba6a3e2aa317a0afefc81f17fcfc03e3"
+  },
+  {
+   "target": "sci:sha256:710d488013378c0a36b95ef1a1d7389ba4761b9ee4309315c9f27ab4c553390b"
+  },
+  {
+   "target": "https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://esgf.ceda.ac.uk/esg-search/search",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

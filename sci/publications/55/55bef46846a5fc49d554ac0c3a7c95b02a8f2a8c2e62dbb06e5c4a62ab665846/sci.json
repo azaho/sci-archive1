@@ -1,0 +1,80 @@
+{
+  "title": "Two tracer kernels determine oxygen change after a renewal cut in fixed-volume networks with one source",
+  "abstract": "We derive an exact oxygen-response rule for a connected, fixed-volume transport network with one surface source, a steady initial state and fixed internal flow, source oxygen and oxygen use. The receiver and source baseline tracer kernels, plus the source oxygen deficit, determine the response to a permanent fractional renewal cut q. The final deficit rise is q Xs/(1-q). The mean time of the normalized adjustment is mur + q mus/(1-q), where mur and mus are baseline receiver and source mean transit times. A uniform CDF error bound is er + q es/(1-q). This gives sufficient precision targets, not necessary error levels. A calculator uses sampled kernel CDFs and analytic rounding and truncation bounds. In an original five-box chain with source and receiver mean ages of 10 and 50 years, mean adjustment takes 65 years for a 60 percent cut and 140 years for a 90 percent cut. Tests in 80 networks include directed flow, unequal volumes and nonuniform oxygen use. Independent scalar and ODE checks support the implementation. These are conditional method results. No ocean trend, outcrop share or future oxygen date is estimated. The rule does not convert outcrop area to flux and does not cover arbitrary changes in flow, volume, several surface contacts or oxygen use.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ocean oxygen",
+    "ventilation",
+    "renewal loss",
+    "tracer calibration",
+    "transit-time distribution",
+    "source kernel",
+    "response time",
+    "error bound",
+    "compartment model"
+  ],
+  "display": [
+    {
+      "path": "files/response.png",
+      "caption": "An original five-box chain has a fixed receiver mean age of 50 years. Its mean adjustment time rises with the renewal cut because source-region transit times enter a geometric sum. These are synthetic model results, not measured ocean changes."
+    },
+    {
+      "path": "files/precision_and_closure.png",
+      "caption": "The error bound gives sufficient source-kernel precision levels as renewal is reduced. Full closure has a linear long-time deficit rise under fixed oxygen use and no finite steady state. These are conditional model results."
+    },
+    {
+      "path": "files/verification.png",
+      "caption": "Kernel-only bounds contain direct operator responses. A separate time-varying calculation agrees with adaptive ODE integration. Numerical checks do not validate the model for an ocean basin."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:35091a2fb27339266df519d19be9c990b028f88debe6094b6baf8d37184d1447",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Uses its stated synthetic parameters for a context check and extends the two-box question to a general network response rule and a kernel-only calculator."
+    },
+    {
+      "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Context only; no code or data copied."
+    },
+    {
+      "target": "sci:sha256:aac1debf547cf1bcbe3e8a7ed0f729884c2d278a862fa8c4b856d6c8fc3fc072",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Context only; no code or data copied."
+    },
+    {
+      "target": "doi:10.1029/2024MS004637",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior ocean Green-function framework."
+    },
+    {
+      "target": "doi:10.1007/s00285-016-0990-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior mean-age equations."
+    },
+    {
+      "target": "doi:10.1007/s11004-017-9690-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior Markov and renewal framework."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "NCEP R1 and R2 ocean surface temperature fell 0.32-0.37 C in steps after 11 February 2020 (60S-60N); with a 2020 snow error this makes R1 2020-2026 global 2 m temperature 0.2-0.27 C too cold",
+  "abstract": "Question: do the SST input changes that put steps into DOISST and OI SST v2 also put steps into atmospheric reanalyses? Approach: we put the ocean skin temperature of NCEP/NCAR Reanalysis 1 (R1), NCEP-DOE Reanalysis 2 (R2) and CFSR/CFSv2 on one T62 grid and compared it with COBE-SST2, ERSSTv5 and DOISST v2.1 over ice-free ocean, 1982-2026. We fitted steps with autocorrelation-robust errors and measured the effect on 2 m temperature (T2m) against ERA5, NOAAGlobalTemp v6 and GHCN-CAMS. Results: R1 and R2 followed OI SST v2 until 2019. Then their 60S-60N skin temperature fell in three steps: on 11-12 February 2020 (-0.11 to -0.23 C, a one-day step), in December 2022 when NOAA stopped the weekly 1-degree OISST (-0.13 to -0.17 C), and in July 2023 (-0.03 to -0.06 C). The total is -0.32 to -0.37 C against in situ-based products. The ocean still follows ENSO, with an offset. About 45% of the step reaches R1 ocean T2m. R1 snow cover also broke in 2020: summer snow-covered land north of 30N doubled, and R1 summer land T2m is 2-3 C too cold over northern Asia. R1 global T2m is 0.22 C (2020-2022) and 0.27 C (2023-2026) colder than ERA5, and R1 keeps 2016 as its warmest year. With fitted steps removed, 2024 is warmest. CFSR follows DOISST and keeps its 2005 step; CFSv2 has smaller December 2022 and July 2023 SST steps (total -0.11 to -0.20 C) with little effect on its global T2m. Limitations: the causes of the 2020 and 2023 changes are not documented; dates and patterns are the only attribution; references have their own small steps.",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "370108"},
+    {"scheme": "anzsrc-for-2020", "code": "370803"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"}
+  ],
+  "keywords": ["reanalysis", "NCEP/NCAR Reanalysis 1", "NCEP-DOE Reanalysis 2", "CFSv2", "sea surface temperature", "data homogeneity", "inhomogeneity", "OISST", "DOISST", "snow cover", "2 m temperature", "global temperature records", "climate monitoring", "COBE-SST2", "ERSSTv5", "ERA5"],
+  "display": [
+    {"path": "files/figures/fig1_sst_breaks.png", "caption": "Ocean skin temperature of NCEP R1 (with R2 dotted) and CFSR/CFSv2 minus three SST products, ice-free ocean 60S-60N, 2014-2019 mean set to zero. R1 and R2 fall by about 0.35 C in steps on 11 February 2020, in December 2022 and in July 2023. CFSv2 has smaller steps in December 2022 and July 2023. Bottom: daily R1 minus ERA5 and minus DOISST, showing the one-day step on 11-12 February 2020."},
+    {"path": "files/figures/fig3_global_t2m.png", "caption": "Left: annual global 2 m temperature anomalies (1991-2020 base). R1 and R2 stay below ERA5 and NOAAGlobalTemp after 2019; R1 keeps 2016 as its warmest year. The dashed line is R1 with fitted steps removed. Right: R1 global T2m minus ERA5, R1 land T2m minus GHCN-CAMS, and R1 ocean T2m minus COBE-SST2 (3-month means)."},
+    {"path": "files/figures/fig2_maps_snow.png", "caption": "Top: change of R1 skin temperature minus COBE-SST2 at the 2020 break (left) and at the 2022-2023 breaks (right). Bottom left: R1 June-August land T2m minus GHCN-CAMS, 2020-2025 minus 2014-2019. Bottom right: R1 snow-covered fraction of land north of 30N; summer snow doubles from 2020 and winter snow nearly disappears in early 2023."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0", "relations": ["uses", "supports"], "reason": "OI SST v2 July 2018 Southern Ocean step; we find R1 keeps it (-0.13 to -0.17 C at 40-60S)."},
+    {"target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a", "relations": ["uses"], "reason": "DOISST July 2020 step, which affects DOISST as a reference."},
+    {"target": "sci:sha256:4751c4adc96fdf9c72da3babea2a2d3779ad60a27ab275758c6d53c00ba1fc6e", "relations": ["supports"], "reason": "DOISST January 2005 step; CFSR inherits it."},
+    {"target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2", "relations": ["uses"], "reason": "DOISST step dates and excess warming."},
+    {"target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26", "relations": ["uses"], "reason": "Product step list including a possible ERA5 2020 step."},
+    {"target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690", "reason": "NCEP sea-ice input steps in AMIP forcing; related NCEP supply-chain artifacts."},
+    {"target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e", "reason": "Consequences of DOISST steps for feedback estimates."},
+    {"target": "https://psl.noaa.gov/news/2026/r1datanotice.html", "reason": "PSL notice that R1 production ended on 17 March 2026."},
+    {"target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst", "reason": "NCEI note that the 1-degree weekly OISST at NCEP was discontinued on 5 December 2022."},
+    {"target": "doi:10.1175/1520-0477(1996)077%3C0437:TNYRP%3E2.0.CO;2", "reason": "NCEP/NCAR Reanalysis 1."},
+    {"target": "doi:10.1175/JCLI-D-12-00823.1", "reason": "CFSv2."},
+    {"target": "doi:10.1175/2010BAMS3001.1", "reason": "CFSR."}
+  ]
+}
