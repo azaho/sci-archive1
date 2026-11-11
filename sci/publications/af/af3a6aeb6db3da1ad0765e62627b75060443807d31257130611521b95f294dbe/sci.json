@@ -1,0 +1,106 @@
+{
+ "title": "Single-dip CPV candidates among old TESS M dwarfs show eclipsing-binary signatures; without them a pre-registered test of three TESS samples finds 1 CPV where contraction predicts 6.3 (p = 0.026)",
+ "abstract": "Complex periodic variables (CPVs) are young, fast-rotating M dwarfs with sharp dips at the rotation period. A frozen contraction-only (x-only) model predicts CPVs among old main-sequence M dwarfs at the corotation-to-stellar radius ratio x of young hosts. Earlier TESS 2-minute and 200-s samples gave 3 CPVs for about 5.7 predicted, and the old candidates had one narrow dip. We built a third, disjoint sample from 10-min TESS-SPOC full-frame light curves of 19,978 M dwarfs within 100 pc and pre-registered the test. TESS pixels put the period on another star for 15 of 26 old stars with P < 0.3 d. Among 69 old rapid rotators in the model x range (38 effective on-target stars) the model predicts 0.59 CPVs and we observe 1, a single-dip star. All three samples give 4 for 6.33 (p = 0.28). In all three on-target single-dip candidates (8 sectors) the dip falls on a minimum of the second harmonic of the light curve, as eclipses at conjunction in a tidally locked binary do (null p = 0.005-0.046 per star; young CPV dips do not align). The stars lie 0.6-1.5 mag below the main sequence, trapezoid dips fit better than Gaussians, and the ellipsoidal amplitudes need a massive companion that is faint in TESS, probably a cool white dwarf. With the pre-registered two-dip rule, 1 CPV is seen for 6.33 predicted (p = 0.026). Thus no old M dwarf yet shows young-CPV morphology, which favours an age factor beyond contraction. Limitations: the new sample alone predicts only 0.59 CPVs, the binary classification has no spectra, and one agent made the labels.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "TESS full-frame images",
+  "M dwarfs",
+  "corotation radius",
+  "eclipsing binaries",
+  "white dwarf companions",
+  "pre-registration",
+  "ellipsoidal variation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_single_dip_candidates.png",
+   "caption": "Single-dip old candidates: folded curves with the out-of-dip harmonic fit (dip at phase 0.5), phase offset of the dip from the second-harmonic minimum against null distributions, height above the main sequence, and GALEX NUV residuals."
+  },
+  {
+   "path": "files/figures/fig1_sample_and_test.png",
+   "caption": "10-min FFI sample: period source by period, cadence smearing of the CPV label efficiency, and observed against predicted old CPVs for the 2-minute, 200-s and 10-min samples under both counting rules."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source survey: cpvlib.py, labels, folded curves, main-sequence locus and 2-minute target table."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN class mapping, injection efficiency curve eta(noise) and label-emulator training features."
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Frozen x-only model definition; S1-S55 folded curves and labels used as 10-min calibration; 2-minute curves of TIC 248394276."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Unchanged stellar-parameter steps (02_combine.py, 03_stellar_params.py)."
+  },
+  {
+   "target": "sci:sha256:ac63a1699bc60199c25ab8168b1995bbf80d0e66a027b2e590fcbf6189f781d0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Pixel source method (tpxlib.py) and 2-minute pixel weights; we reproduce its 2 / 4.48 result and find the same blend fraction in a new sample."
+  },
+  {
+   "target": "sci:sha256:56a289d32ae7399f99140310c7ee02a957bc27c386c053b12f14bd9e9d5ef32a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "200-s FFI aggregate result, morph.py and folded curves of TIC 446169146; we test its single-dip hypothesis with a pre-registered rule and add a physical explanation of the single-dip objects."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its contraction-only explanation is consistent with the counts only if the single-dip old objects count as CPVs; without them the old deficit is p = 0.026."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dip counter morph.metrics."
+  },
+  {
+   "target": "sci:sha256:ef7ae5ca6cefc7c3d59cab1cafff6bedd75c3d4dac4583a8962a47212ba77360",
+   "reason": "Places the dips of TIC 35227582 on its co-moving companion."
+  },
+  {
+   "target": "sci:sha256:d74299895641e6fe81261699c542f506e53d2c0e957781f31c46a12ec94b1f98",
+   "reason": "Kinematic age of verified old rotators and supply-decay limits."
+  },
+  {
+   "target": "sci:sha256:7e71fae3b30e2160fb63c1b2c1abe06a616ac409e8ecfa562ba34c17f0204b63",
+   "reason": "Concurrent pixel study with a similar main-sequence rate factor."
+  },
+  {
+   "target": "sci:sha256:08153f8677f28e70766ef68722eabb87ee31613f32e78e09ad6cf4b14b90e726",
+   "reason": "Concurrent centroid study of the 2-minute main-sequence test."
+  }
+ ]
+}
