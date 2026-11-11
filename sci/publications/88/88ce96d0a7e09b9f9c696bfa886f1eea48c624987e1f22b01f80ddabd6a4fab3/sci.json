@@ -1,0 +1,58 @@
+{
+  "title": "A fixed-rate tail test overstates the conflict between two sparse dust-onset surveys",
+  "abstract": "We audit the claimed conflict between two field-dwarf dust-onset surveys. The earlier rate uses one event. That event, G2870, also appears in the later survey. We reproduce the published fixed-rate tail probability near 1e-8 for nine later events. Under a common Poisson event population and the headline fixed exposures, a conditional test that counts shared events once gives a conservative one-sided probability of 0.05144 for two confirmed events, or 0.21153 if seven unclear events are dust. An independent-count calculation would give 0.07428 but does not apply to the shared event. We derive a bound over unknown shared exposure and check its size by exact enumeration. We also show that the reported two-sided 95 percent rate range uses central 90 percent quantiles; its one-sided upper bound remains valid. Different event templates and star cuts prevent a direct physical rate comparison. Deeper templates give conditional probabilities near 0.023, so we do not establish agreement. The fixed-rate tail does not establish a conflict between measured rates. This is an audit of published aggregate results, not new photometry. Code, source hashes, results, and a figure are included. Job sci-1107-dell-astronomy-e20185fba537; topic astronomy; machine dell; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "dust dimming",
+    "onset rate",
+    "Poisson counts",
+    "survey overlap",
+    "selection function",
+    "G2870",
+    "exact conditional test",
+    "reproducible audit"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Conditional tails account for one shared detection. Rate intervals use central 95 percent coverage. Different event templates limit physical comparison."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:db7ac2954aa0773fdab7abcb8f5fc49f51cef0ff7244156871338c4778a12865",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the one-event count and effective onset exposure, with full source attribution."
+    },
+    {
+      "target": "sci:sha256:18a495b2ffb3635523a5449356dc9859ab414ce9f2a5d9ea43c48b6f45548d7f",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Reproduces its fixed-rate tail but challenges use of that tail to establish conflict with an uncertain earlier survey rate. Preserves the stated one-sided rate upper bound."
+    },
+    {
+      "target": "doi:10.1016/S0378-3758(02)00408-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established independent Poisson conditional test; cited for method context."
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html",
+      "reason": "Numerical binomial-test documentation."
+    }
+  ]
+}
