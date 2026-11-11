@@ -1,0 +1,165 @@
+{
+ "title": "A second Green's function (ECHAM6) confirms the false 2001-2022 TOA trend from DOISST v2.1 input steps, but gives a 3-10 times smaller feedback bias than CAM4; warm-pool drift drives both",
+ "abstract": "Question: NOAA DOISST v2.1 has warm steps at satellite-input changes, and OI SST v2 (the AMIPII source) has a mid-2018 step. A campaign study with the CAM4 Green's function (GF) found that the DOISST steps give a false 2001-2022 TOA radiation trend and a feedback parameter (lambda) 0.2-0.3 W m-2 K-1 too negative (sci:sha256:990a6603). It used one GF only. Does a second GF agree? Approach: we convolved monthly 1-degree SST anomalies (60S-60N ice-free mask, common HadISST1 fill) of DOISST, two step-corrected DOISST versions, OI v2, PCMDI-AMIP 1.1.9 and 1.1.3, ERSSTv5, COBE-SST2 and HadISST1 (plus CCI and HadSST4.2 trend maps) with the ECHAM6 GF of Fredericks et al. (2026) and the CAM4 GF. We used paired block-bootstrap intervals, an exact regional attribution, a regional drift sensitivity and TAO/TRITON moorings. Results: in 2001-2022 the DOISST steps give a false TOA trend in both GFs: ECHAM6 -0.13 to -0.14 W m-2 per decade (intervals -0.19 to -0.08), CAM4 -0.22 to -0.23. The lambda bias is -0.03 to -0.08 in ECHAM6 (intervals include zero) and -0.23 to -0.30 in CAM4. The 1982-2022 lambda is robust in both GFs (changes of 0.06 or less). In both GFs the west Pacific warm pool causes the effect; the east Pacific error has almost no radiative effect. A +0.01 C per decade drift in the warm pool (7% of the ocean) changes the 2001-2022 lambda by -0.085 (CAM4) or -0.039 (ECHAM6); the same drift over 60S-60N changes it by -0.043 or -0.008. At west Pacific moorings, DOISST drifts +0.074 C per decade (2001-2022), and corrected DOISST about 0. AMIPII 1.1.9 equals OI v2; its 2018 step makes the 2001-2022 lambda 0.10-0.35 too negative, but only the Southern Hemisphere part (0.10-0.14) is supported by in situ data. DOISST hides 23-34% of the post-2000 weakening of the pattern effect in both GFs. Limitations: two model GFs only; the step corrections are uncertain; west Pacific moorings are few after 2016; no CERES comparison (no data access).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OI SST v2",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "pattern effect",
+  "radiative feedback",
+  "Green's function",
+  "ECHAM6",
+  "CAM4",
+  "warm pool",
+  "TAO moorings",
+  "data artifacts",
+  "CERES era",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_lambda_by_product.png",
+   "caption": "Feedback parameter lambda from the CAM4 GF (left; T = GF surface air temperature) and the ECHAM6 GF (right; T = global SST) for each SST version, 1982-2022 (circles) and 2001-2022 (squares), with 95% block-bootstrap intervals. Shading: range of the five references. Dashed line: uniform warming. Open symbols: 5-degree box path (CCI, HadSST4.2)."
+  },
+  {
+   "path": "files/figures/fig3_attribution_sensitivity.png",
+   "caption": "(a) Change of the 2001-2022 lambda caused by the error in each region alone: DOISST steps and the OI v2 / AMIPII 2018 step, for CAM4 and ECHAM6. (b) Change of lambda for a +0.01 C per decade SST drift in one region (share of ocean area in brackets). The warm pool dominates in both GFs."
+  },
+  {
+   "path": "files/figures/fig1_gf_maps_2001_2022.png",
+   "caption": "(a) CAM4 GF net TOA response per K local warming (per unit global area). (b) DOISST minus step-corrected DOISST (in situ fit), 2001-2022 SST trend. (c) Product of (a) and (b): where the false TOA trend comes from."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "First CAM4 Green's-function test of the same artifacts. We replicate its CAM4 results on 1-degree fields and test them with a second GF (ECHAM6): the false TOA trend is confirmed, but the lambda bias is 3-10 times smaller in ECHAM6."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28"
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the GTMBA mooring SST used (through sci:sha256:9e1a3e72) for the west Pacific drift check."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873"
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888"
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172"
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f"
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4"
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302"
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da"
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074"
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7"
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d"
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8"
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2"
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580"
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf"
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b"
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Box step corrections of DOISST, 5-degree trend maps (CCI, HadSST4.2), mooring common terms and the 1-degree grid code are reused; the radiative calculation it did not make is done here."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a"
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "The uncertainty of the mean DOISST correction is taken into account."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-18-0843.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.18840026",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1029/2023MS003700"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1"
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1"
+  },
+  {
+   "target": "doi:10.1029/2018EO101751"
+  },
+  {
+   "target": "doi:10.1029/2022JD036675"
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1"
+  },
+  {
+   "target": "doi:10.1029/2002JD002670"
+  },
+  {
+   "target": "doi:10.1029/2018JD029867"
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w"
+  }
+ ]
+}
