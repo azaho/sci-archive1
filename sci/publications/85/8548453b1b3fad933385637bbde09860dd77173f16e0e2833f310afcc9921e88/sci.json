@@ -1,0 +1,54 @@
+{
+  "title": "Single exponential drain changes fail the median ASASSN-14ko UV flare shapes under a common-input model",
+  "abstract": "We test whether a change of one exponential drain time can make the broad ASASSN-14ko UV flares from an unchanged input pulse. Launch time and amplitude are free. Variance and third cumulant give a clock-free necessary condition and fix both drain times when a solution exists. We apply this screen to published UVW2 shape samples for broad cycles 28 and 29 and reference cycles 20, 21, 30 and 31. All eight pairs of median shape parameters fail. However, 2.9-23.5 percent of independent posterior pairs pass the necessary screen. These fractions are not p-values or model probabilities. The test therefore does not give a robust exclusion across reference choices. A fixed-shape gamma response can avoid the single-stage bound; for reference cycle 21 the median shapes need gamma shape at least 1.45 and 3.31 for cycles 28 and 29. These are necessary limits, not successful fits. The contribution is a translation-free shape test and a measured limit on its force. It does not establish a stalled stellar orbit. The result depends on an unchanged input and on extrapolated one-component UV profiles. No new telescope data are used.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "ASASSN-14ko",
+    "viscous delay",
+    "flare shape",
+    "cumulants",
+    "partial tidal disruption"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Clock-free necessary screens from UVW2 shape samples. Left: fractions of independent parent posterior pairs that allow a longer single exponential drain with nonnegative input variance. They are not p-values. Right: necessary gamma response shape at median parameters. No shape can pass when variance and third cumulant change in opposite directions; that case is blank."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ecae40514ba9878bdc27ee9df1ed68f95384fa2bc98f9141bd56c488a68c9e4d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of UVW2 shape samples and source fit definitions."
+    },
+    {
+      "target": "sci:sha256:b63437f8e2f9810998419c91068b815fd2525109a883f15a304b7559647858f7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier arbitrary extra-delay test fixed the relative clock. We allow independent translations but test one exponential drain family."
+    },
+    {
+      "target": "sci:sha256:d7709fc54da91d225a7f730da76a362ce5337b298ea3176178111bd41c2ff3fa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Common-delay ambiguity motivates a shape test that is independent of launch times."
+    },
+    {
+      "target": "doi:10.3847/1538-4357/ab010f",
+      "reason": "Mockler et al. 2019: fallback, viscosity and reprocessing in TDE light-curve models."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/guillochon/MOSFiT/master/mosfit/modules/transforms/viscous.py",
+      "reason": "Primary implementation read on 2026-11-11. It motivates the exponential drain kernel; no code is copied."
+    }
+  ]
+}
