@@ -1,0 +1,34 @@
+{
+ "title": "On most failed SWPC geomagnetic storm watch days in 2012-2026, the forecast CME or fast solar wind arrived, but the southward magnetic field was too weak for the watched storm level",
+ "abstract": "NOAA SWPC geomagnetic storm watches state the highest G level for each of the next three days. An earlier campaign study found that watched days reached the watched level on only 19-30% of days. We found the source of these failures. For 805 watched days from September 2012 to July 2026 we took the forecast driver (CME, coronal-hole high-speed stream, or both) from the Rationale of SWPC's own 3-Day Forecast. We compared it with CME arrivals (Richardson and Cane ICME list, SWPC sudden impulses), OMNI solar-wind speed and IMF Bz, and GFZ Kp. The plan was written before the join. On 67% (95% block interval 62-72%) of the 571 failed days, the predicted structure was present on the day: a catalogued CME or wind of 500 km/s or more. On CME-watched days with a CME present, the watched level was reached on 85% of days with a lowest hourly Bz of -10 nT or less, and on 17% of other days. Watches found the arrival days: a CME was present on 55% of CME-watched days and on 9% of days with no watch. But after arrival, G1 occurred on 39% of CME-watched G1 days, near the 35% for all CME days. G2 and G3 watches picked stronger CMEs (33% and 22% reached, against 17% and 7% for all CME days), but most still failed. For CME watches, missing or mistimed arrivals were 63% of G1 failures, 36% of G2 and 28% of G3 failures. Thus a perfect arrival forecast would raise the reached rate only to about 0.39 (G1), 0.33 (G2) and 0.22 (G3). Reached-rate tables by level and stated driver, fitted on 2012-2019, gave no Brier gain on 2020-2026 over rates by level only (skill -1.4%, interval -5.1% to +2.3%). The low reached rate is mainly a geoeffectiveness limit: day-ahead forecasts do not know the field direction inside the arriving structure, so a stated probability near 0.3 describes the information in a watch better than a deterministic level. Limitations: catalogues can miss weak CMEs, driver labels come from keyword rules on SWPC text and are missing for 2019-02 to 2022-03, the analysis uses daily resolution, and G3+ cases are few. Code, parsed SWPC texts, per-day derived tables, figures and retrieval manifests are included; raw OMNI and Kp files stay external.",
+ "categories": [
+  {"scheme": "arxiv", "code": "physics.space-ph"},
+  {"scheme": "arxiv", "code": "stat.AP"},
+  {"scheme": "arxiv", "code": "physics.geo-ph"}
+ ],
+ "keywords": ["space weather", "geomagnetic storm watch", "forecast verification", "NOAA SWPC", "coronal mass ejection", "high-speed stream", "IMF Bz", "geoeffectiveness", "ICME", "OMNI", "Kp", "operational hazard products", "error attribution", "pre-registration"],
+ "display": [
+  {"path": "files/figures/fig1_failure_decomposition.png", "caption": "Outcome classes of SWPC storm-watch days (2012-09 to 2026-07) by forecast driver and watched level: reached, driver present but below level, CME on adjacent day only, and no catalogued driver arrival."},
+  {"path": "files/figures/fig2_reach_vs_bz.png", "caption": "Share of watched days with the driver present that reached the watched G level, by lowest hourly OMNI IMF Bz on the day, with 95% Wilson intervals."},
+  {"path": "files/figures/fig3_arrival_vs_level.png", "caption": "A: watches find arrival days (driver present on watched days versus days with no watch). B: after arrival, the watched level is reached on a minority of days, compared with all days on which the driver was present."}
+ ],
+ "citations": [
+  {"target": "sci:sha256:240ce56739fccc85f7bfe5bb51acbcc217a8406b820df771df35addc41887637", "relations": ["uses", "supports"], "reason": "Source of the SWPC watch and sudden-impulse snapshot and parser; we reproduce its watch reached rates and explain them."},
+  {"target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4", "relations": ["supports"], "reason": "NOAA G1-G2 storm probabilities too high; our geoeffectiveness result gives a physical source."},
+  {"target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa", "reason": "Parent campaign work on miscalibration of public hazard products."},
+  {"target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80", "reason": "SWPC proton probability verification; another source-of-error study in the same product family."},
+  {"target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e", "reason": "NOAA electron forecast verification in the campaign."},
+  {"target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73", "reason": "PTWC tsunami category verification; sampling as a source of apparent miscalibration."},
+  {"target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2", "reason": "Campaign verification of USGS aftershock forecasts."},
+  {"target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52", "reason": "Campaign verification of ShakeMap uncertainty."},
+  {"target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3", "reason": "Campaign verification of NHC track-error circles."},
+  {"target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca", "reason": "Campaign verification of PAGER economic-loss probabilities."},
+  {"target": "doi:10.7910/DVN/C2MHTH", "relations": ["uses"], "reason": "Richardson and Cane near-Earth ICME list (CC0)."},
+  {"target": "doi:10.1007/s11207-010-9568-6", "relations": ["uses"], "reason": "Richardson and Cane (2010), description of the ICME list."},
+  {"target": "doi:10.1029/2004JA010649", "relations": ["uses"], "reason": "OMNI solar-wind data set (King and Papitashvili 2005)."},
+  {"target": "doi:10.5880/Kp.0001", "relations": ["uses"], "reason": "GFZ Kp index (CC BY 4.0)."},
+  {"target": "doi:10.1029/2018SW001962", "reason": "CME arrival-time forecast verification (CCMC CME Scoreboard)."},
+  {"target": "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py", "relations": ["uses"], "reason": "IEM AFOS archive of SWPC 3-Day Forecast texts."},
+  {"target": "https://www.ngdc.noaa.gov/stp/space-weather/swpc-products/daily_reports/3day_forecast/", "relations": ["uses"], "reason": "NCEI copy of SWPC 3-Day Forecasts for 2022-2023."}
+ ]
+}
