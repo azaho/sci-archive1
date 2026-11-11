@@ -1,0 +1,153 @@
+{
+ "title": "Catalogue and Gaia DR3 values rank 2020-2026 TFOP verdicts on TESS candidates with AUC 0.90-0.96, but models fit on early verdicts predict too few planets because false positives get verdicts first",
+ "abstract": "Question: Can catalogue values and Gaia DR3 data that exist before follow-up predict which TESS Objects of Interest (TOIs) become planets, and are the probabilities correct for later verdicts? Method: We combined TOI-table values with Gaia DR3 host and neighbour data (RUWE, RV-variability flag, neighbours that can make the transit depth, eclipsing-binary period matches) in gradient-boosted and logistic models. We did forward tests with archived TOI tables of 2020-11-20 and 2021-05-06 against TFOPWG verdicts of 2026-11-09. Results: For 739 candidates open in 2020 and resolved by 2026, 2020 inputs rank the verdicts with cross-validated AUC 0.96 (catalogue only 0.94, Gaia only 0.88). Models trained only on the verdicts known in 2020 or 2021 keep AUC 0.90-0.92 but predict 0.17-0.33 planets where 0.57-0.59 occurred (logistic intercept error +3.1). The cause is verdict timing: the planet fraction was 8.5% for verdicts given by 2020-11-20, 41% for verdicts in the next six months and 62% for verdicts after 2021-05-06. A 2026 model on 2,238 resolved candidates has AUC 0.95 when each alert year is held out, and its mean prediction matches the observed planet fraction. It predicts 1,555 (bootstrap 1,410-1,630) planets among 5,323 open candidates, with probability 0.79 below 1.5 Earth radii and 0.06 above 16. An outcome-independent Gaia RV check finds 351 RV-variable hosts where 379 +- 16 were expected; this limits the remaining base-rate bias to about +0.2 log-odds for bright hosts. Archived 2020 TOI ephemerides have correct core uncertainties but 11% are off by more than 3 sigma in 2026. Limitations: verdicts are not ground truth; faint-star candidates are poorly represented among verdicts, and the RV check covers only hosts with G_RVS <= 12; no light-curve data were used.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "TOI",
+  "planet candidate reliability",
+  "false positives",
+  "Gaia DR3",
+  "forward test",
+  "verification bias",
+  "verdict timing",
+  "calibration",
+  "TFOP",
+  "occurrence rates",
+  "ephemeris uncertainty",
+  "TRICERATOPS"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forward_tests.png",
+   "caption": "Reliability diagrams. A: forecasts for candidates open in 2020 or 2021 against 2026 verdicts; models fit on early verdicts rank well but predict too few planets. B: the 2026 model on all resolved candidates (5-fold CV and leave-one-alert-year-out)."
+  },
+  {
+   "path": "files/figures/fig3_open_candidate_reliability.png",
+   "caption": "Predicted planet probability of 5,323 open TESS candidates in the period-radius plane, and the mean by radius."
+  },
+  {
+   "path": "files/figures/fig2_information_sources.png",
+   "caption": "Cross-validated AUC for catalogue values, Gaia DR3 values, and both; and the log-loss increase when one input group is removed."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:987dcc64327f9be8bea39fd94eb38a0faf60622c9e28a514f449820e95182c81",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its Gaia DR3 eclipsing-binary period-match method as one model input and confirm that such matches occur for false positives and not for planets."
+  },
+  {
+   "target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use the Katz et al. RV-variability flag in the same way, and use it as an outcome-independent check of open-candidate reliability."
+  },
+  {
+   "target": "sci:sha256:434ee8c005d10e3938ec3e5252ee06ef6f7e8830823099f4b6726f2254df6b0f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its copy of the TRICERATOPS 2021 table and compare TRICERATOPS FPP with our model on the same TOIs."
+  },
+  {
+   "target": "sci:sha256:5df33e7fa0e380af1f7b7d45390f2100f3f3531aff66deb9d3dc509a5a76e494",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its heavy-tailed CTOI timing errors also occur for archived TOI ephemerides."
+  },
+  {
+   "target": "sci:sha256:df868bbd322adc16150440114d29b3f82a538993f6a7a71daaea71d1f8b1cf90",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its catalogue period errors agree with the heavy tails we find in 2020-to-2026 TOI ephemeris changes."
+  },
+  {
+   "target": "sci:sha256:378382f2e630b5171431585ad92607e02c243e6e7844b917ec101586c68b02f7",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It bounds missing-verdict effects; we measure the verdict-timing effect directly with three table snapshots."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244220",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abc6af",
+   "relations": [
+    "uses",
+    "reviews"
+   ]
+  },
+  {
+   "target": "doi:10.26093/cds/vizier.51610024",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.3847/1538-4365/abefe1"
+  },
+  {
+   "target": "doi:10.1162/089976602753284446",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://web.archive.org/web/20201120061920id_/https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://web.archive.org/web/20210506234107id_/https://exofop.ipac.caltech.edu/tess/download_toi?&output=pipe",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://gea.esac.esa.int/tap-server/tap",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://jmlr.org/papers/v12/pedregosa11a.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
