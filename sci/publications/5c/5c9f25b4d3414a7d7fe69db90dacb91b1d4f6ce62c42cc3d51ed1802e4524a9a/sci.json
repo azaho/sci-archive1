@@ -1,0 +1,60 @@
+{
+  "title": "Regional fits reduced spatial holdout trend error in 142 published DOISST buoy comparisons",
+  "abstract": "We tested whether one fraction of a global DOISST mean correction fits published station trends in different regions. We used a signed table of 142 product-minus-buoy trends. A group fit reduced spatial holdout mean absolute error from 0.04004 to 0.03752 C per decade against one fitted fraction, a 6.3% gain. A fixed half correction gave 0.04081. The fitted fraction was 0.762 at 67 Pacific GTMBA stations, 0.628 at 17 Atlantic stations, and zero at six Indian stations and 52 NDBC stations under a zero-to-one constraint. All six Indian raw trends were negative; the positive half correction raised their mean absolute error from 0.01904 to 0.04453 C per decade. NDBC error changes were small and uncertain. Alternate mean fields and spatial block sizes kept the main contrast. A pooled buoy median can hide regional failure of a correction. This is a reanalysis of station summaries, not a new global correction. Buoys are DOISST inputs, station periods differ, individual trend uncertainty is unavailable, and the Indian sample has only three spatial blocks. Spatial holdouts do not make the source product independent of buoy observations.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "DOISST",
+    "mean correction",
+    "spatial validation",
+    "moored buoys",
+    "regional drift"
+  ],
+  "display": [
+    {
+      "path": "files/regional_validation.png",
+      "caption": "Published station trends and mean-correction fits by network and region. Intervals are conditional spatial-block intervals under a zero-to-one fraction constraint. The Indian fit is at zero in every draw; this boundary does not mean zero uncertainty. Only six Indian stations in three blocks are tested. Half errors use interpolation of raw and full trends."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses the signed station trend table. Tests the spatial transfer of its mean correction and the limits of pooled buoy validation."
+    },
+    {
+      "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Introduces the mean correction tested through the later station summary."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides the original buoy comparison data used by the source station analysis."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-21-0001.1",
+      "reason": "Shows withheld-observation product runs for SST evaluation; motivates the independence limitation."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "Describes DOISST v2.1."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/hadobs/hadsst4/data/download.html",
+      "reason": "States source HadSST4 version and Open Government Licence terms."
+    }
+  ]
+}

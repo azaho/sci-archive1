@@ -1,0 +1,91 @@
+{
+  "title": "The station contrast test gave no clear variance excess in 96 first USGS ShakeMaps from 2019 to 2026",
+  "abstract": "We study peak ground acceleration (PGA) and peak ground velocity (PGV). Earlier tests found too narrow first USGS ShakeMap intervals, but shared station errors prevent a simple source-variance assignment. We tested whether errors beyond a common additive log offset exceeded a conservative variance budget. The statistic Q removes the event mean and divides the remaining squared errors by the sum of stated total variances. Its expectation is at most one under common-mean errors within that budget, for any station covariance matrix. In 96 maps with no early shaking data, PGA Q was 0.966, with a 95% event-bootstrap range of 0.801-1.180. PGV gave 0.928 (0.809-1.058; 95 events). A broader overlapping sample gave 0.947 for 193 PGA events and 0.966 for 194 PGV events; both ranges included one. The outcome-based best common shifts gave 90% interval coverage ceilings of 94.2% for PGA and 94.2% for PGV, from issued coverage of 71.1% and 75.1%. These ceilings have no forecast-skill meaning. The test did not rule out common offsets and did not identify the cause of marginal undercoverage. An added coordinate-layout check found rounded-spacing holes in the inherited verifier. Using grid extents added 78 PGA and 84 PGV records and left the contrast result unchanged. Later-station selection, revised amplitudes, archive overlap, few years and the conservative bound limit inference. The package includes proof, code, aggregate evidence, exact source URLs and hashes. External station data stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "ShakeMap",
+    "ground motion",
+    "uncertainty calibration",
+    "source attribution",
+    "station correlation",
+    "common event offset",
+    "variance bound",
+    "null result",
+    "forecast verification"
+  ],
+  "display": [
+    {
+      "path": "files/results/contrast_audit.png",
+      "caption": "Top: event-balanced contrast statistic Q and 95% whole-event bootstrap ranges. One is a conservative expectation bound under the stated error family. The two samples overlap. Bottom: issued 90% interval coverage and the exact best coverage from a common shift at fixed widths. The shift uses verification outcomes and is an optimistic ceiling. It is not a forecast correction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse licensed event aggregates and inherited station parsing and interpolation code."
+    },
+    {
+      "target": "sci:sha256:8e893d8e58eb54ec968bf974c4bc4e32baa0b092f5e2e5e5351432816bcab1ec",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its source and station covariance identification problem motivates this test."
+    },
+    {
+      "target": "sci:sha256:1b5d06cd297787a4a8de170ae5e3bdf6e9852e8837776496f30ed938c5911c4b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the fixed no-early-data sample, exact archive URLs, hashes and source-recovery helpers."
+    },
+    {
+      "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We adapt its sparse grid reader and review its expanded marginal uncertainty test. We do not reuse its station records."
+    },
+    {
+      "target": "doi:10.1785/0120210177",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Conditioned ShakeMap variance framework; USGS abstract and product documentation were read."
+    },
+    {
+      "target": "doi:10.1002/eqe.922",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior ground-motion spatial correlation context. We fit no correlation law."
+    },
+    {
+      "target": "https://ghsc.code-pages.usgs.gov/esi/shakemap/docs2020/manual4_0/ug_products.html",
+      "reason": "Official product and log-uncertainty documentation."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ComCat product archive; exact source URLs and versions are pinned in the package."
+    },
+    {
+      "target": "https://www.usgs.gov/data-management/data-licensing",
+      "reason": "External source rights policy; raw source materials are not bundled."
+    }
+  ]
+}
