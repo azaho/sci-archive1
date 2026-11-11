@@ -1,0 +1,179 @@
+{
+ "title": "A 1951-2005 degree-day relation kept forecast skill for US county corn and soybean yields in 2006-2025 but not for cotton; training signal fraction, not response class, ranked 70 state-crop skills",
+ "abstract": "Question: do the training signal fraction and a level update, rather than the response class, predict which climate-response relations keep forecast skill? Approach: we froze and timestamped a plan before we loaded yields. We refitted the Schlenker-Roberts (2009) degree-day model (county effects, state quadratic trends, degree days 10 C to T* and above T*, precipitation) on 1951-2005 NASS county yields with nClimGrid-daily weather. Then we scored 2006-2025 forecasts against a frozen trend (R1) and a trailing 10-year trend (R2). Results: the frozen relation gave clear gains for corn (skill 0.19, 95% year-block interval 0.13 to 0.28) and soybeans (0.18, 0.11 to 0.23), against the class rule. A frozen slope with an updated level (M2) gave 0.32 for both against R2. Upland cotton had a training signal fraction of 0.13 but no clear gain (-0.04; M2 0.04, -0.14 to 0.15), against the signal rule. Across 70 state-crop units, forward skill increased with the training signal fraction (Spearman 0.55, permutation p = 0.0001); the median ratio of skill to signal fraction was 1.00. Frozen trends missed later yield levels by up to 0.3 log units, and weather explained almost none of this drift. The heat slope weakened after 2005 for corn (-0.65% to -0.47% per degree day) and cotton (-0.74% to -0.23%), so a growing heat sensitivity was not supported. An exploratory pseudo-forward test inside 1951-2005 matched the later crop-level skills within 0.03, including the cotton failure. Limitations: realized season weather, county-average temperatures, fewer NASS counties after 2008, three crops only, and exploratory section 6.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "forecastability",
+  "out-of-sample test",
+  "pre-registration",
+  "crop yield",
+  "degree days",
+  "extreme heat",
+  "Schlenker-Roberts",
+  "signal fraction",
+  "level shift",
+  "nClimGrid-daily",
+  "NASS"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_crop_skills.png",
+   "caption": "Skill of four forecast comparisons for county log yields in 2006-2025, with 95% year-block bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_signal_vs_skill.png",
+   "caption": "Training LOYO signal fraction against forward skill for 70 state-crop units. Points below -1 are marked at the bottom."
+  },
+  {
+   "path": "files/figures/fig6_pseudo_forward.png",
+   "caption": "Exploratory: training-only predictors of the crop-level forward skill (left) and the extreme-heat slope by period (right)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "We test its response-class rule (not supported for corn and soybeans) and its signal-fraction and level-update proposals (supported for unit ranking and level update; a fixed signal threshold failed for cotton). We reuse its six-test summary table."
+  },
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:08251db7a4cca59caf9f437720f82ed7a5712df0d4848c6859399f384a050175",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:0079729bef62be0b83ba0dc93dfb14df649bad13c37cdc7c8f6f463dce2913e1",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:7a7ec3a0e9d6963d5f46b204df94df00108b989c0e576188674f2aa763339c0d",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:434d1de70f0383d39d24e379f64454ddb981bbe821f6c4bc0ebcc858cee230b7",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:6a99138664fc0c17339ac22bb8645f033cbb705450bdbceb662d552c737ff158",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:73ad6e6659b0910a78c0674696396e1c09141a5c7c4015c11ca87db5572f3408",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:0dd123d426114b1277aeeacdea8f4408cf47e213c9797495c783c66365a44c72",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:63b4bcb70ab4f2fa5893e67aec84fff2e07d931390226776508c3cf46c5be136",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:0de60f71ee6d2a6c84010bbe213b17eb06ac82ecade8ac71b5a75607e0da29a0",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:9e12efbbd2cc2d9dde77c085b619cbd0867e5f124b9928ed823894c3a4f3568f",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "sci:sha256:f6529817c732bcd1ea8872809b6b70a9f19848c48170f2bc2e8db0c608522da6",
+   "reason": "Earlier campaign forward test of a climate-response relation in the selected line of work."
+  },
+  {
+   "target": "doi:10.1073/pnas.0906865106",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "The degree-day yield relation that we test forward; we refit its specification on 1951-2005."
+  },
+  {
+   "target": "doi:10.1126/sciadv.aat4343",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Claim of growing climatic sensitivity; our 2006-2025 refit found a weaker corn and cotton heat slope."
+  },
+  {
+   "target": "doi:10.1126/science.1251423",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Claim of greater drought sensitivity of Midwest maize; related to our P6 test of the heat slope."
+  },
+  {
+   "target": "doi:10.25921/c4gt-r169",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid-daily county averages used for degree days and precipitation."
+  },
+  {
+   "target": "https://www.nass.usda.gov/datasets/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USDA NASS Quick Stats bulk file qs.crops_20261110.txt.gz (county yields and acres)."
+  },
+  {
+   "target": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_counties_national.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "County centroids for the 100 W filter."
+  }
+ ]
+}
