@@ -1,0 +1,128 @@
+{
+ "title": "eROSITA X-ray data show that many TESS main-sequence M dwarfs with periods below 0.3 d are not saturated fast rotators, which removes about half of the main-sequence CPV deficit",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. An earlier result found that main-sequence M dwarfs at the corotation-to-stellar radius ratio x of young CPV hosts have 2 CPVs where the contraction (x-only) model predicts 8.9. To reach that x, a main-sequence star must rotate in P < 0.3 d, and its corona must then be saturated (log Lx/Lbol near -3.2). We used eRASS1 (eROSITA-DE DR1) aperture photometry for all 41,046 TESS 2-minute red dwarfs of the CPV samples in the eROSITA-DE sky, with a censored Poisson model that includes non-detections. The X-ray-saturated fraction of the rapid rotators is 0.97 for 1-24 Myr members, 0.99 for 35-750 Myr members, but 0.82 (0.78-0.86) for main-sequence stars, and 0.34 (0.10-0.65) for main-sequence stars with P < 0.2 d. Most non-saturated stars have a bright or co-moving Gaia neighbour within 40 arcsec, so their TESS period probably belongs to another star. When we weight each star by its probability to be a saturated rotator, the frozen x-only model predicts 4.4 (2.3-7.2) main-sequence CPVs for 2 observed (p = 0.22), against 8.5 (p = 0.015) without weights. Variants give 4.0-4.8 (p = 0.18-0.28). Neighbour-clean main-sequence stars still have 0 CPVs for 2.5 predicted (p = 0.11), so a smaller second age effect remains possible. CPV hosts have normal saturated coronae: at fixed x their log Lx/Lbol differs by -0.05 +/- 0.10 dex from other rapid rotators. In neighbour-clean stars the coronal level does not depend on P, but falls by 0.1-0.2 dex at small x (p = 0.001-0.02), as centrifugal stripping predicts in direction. Limitations: half of the sky has X-ray data; one X-ray epoch; small cells at short periods; we did not inspect TESS pixels to confirm the period source.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "eROSITA",
+  "eRASS1",
+  "X-ray activity",
+  "coronal saturation",
+  "supersaturation",
+  "TESS",
+  "rapid rotators",
+  "corotation radius",
+  "main sequence",
+  "censored likelihood",
+  "blended periods",
+  "centrifugal stripping"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_saturated_fraction.png",
+   "caption": "Fraction of TESS 2-minute rapid rotators (eROSITA-DE sky, BP-RP 2.4-3.8) that have a saturated eRASS1 corona, against the TESS period, for 1-24 Myr members, 35-750 Myr members and main-sequence stars. (a) Stars without a bright (G < G*+1) or co-moving (parallax > 3 mas) Gaia neighbour within 40 arcsec. (b) Stars with such a neighbour. Bars are 95% profile-likelihood intervals; numbers are stars per point."
+  },
+  {
+   "path": "files/figures/fig2_ms_cpv_test.png",
+   "caption": "All-sky test of the frozen x-only CPV model of sci:sha256:b46f8555 in main-sequence rapid rotators. Grey: prediction for all TESS rapid rotators. Blue: each star weighted by the X-ray saturated fraction of its cell (group, neighbour flag, period bin). Violet: eROSITA-DE stars with their own posterior probability. Black diamonds: observed CPVs (open = 0). Bars are 95% bootstrap intervals. The 35-750 Myr row is a check."
+  },
+  {
+   "path": "files/figures/fig3_activity_clean.png",
+   "caption": "Mean log10(Lx/Lbol) (eRASS1 0.2-2.3 keV, censored Poisson model) of neighbour-clean rapid rotators against (a) the rotation period and (b) x = R_cor/R* with Stefan-Boltzmann radii, for 1-24 Myr members, 35-750 Myr members, main-sequence stars and CPV hosts (bins with at least 8 stars). Bars are standard errors."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its frozen x-only main-sequence CPV test and show that about half of its predicted main-sequence CPVs come from rapid rotators that are not X-ray saturated; the deficit becomes non-significant (p 0.015 to 0.18-0.28). We reuse its S1-S55 periods, labels, efficiencies and code."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its stellar-parameter code and x-only rate model; with X-ray-confirmed rotators its contraction model is consistent with the main-sequence CPV count."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma classes, injection efficiencies and the efficiency curve."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "The TESS sector 56-107 CPV survey: per-star periods and labels, and the 2-minute target table with Gaia DR3 values; neighbour-query code."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "K2 test of the contraction model that first reported the main-sequence deficit at matched x."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths of CPVs in rotational phase."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPV sharp features."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "Independent K2 test of the CPV age decline."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202347165",
+   "reason": "Merloni et al. 2024: eROSITA-DE DR1 and the eRASS1 catalogue."
+  },
+  {
+   "target": "https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/UpperLimitServer_dr1/",
+   "reason": "eRASS1 upper-limit and aperture-photometry products (Tubin-Arenas et al. 2024, A&A 682, A35)."
+  },
+  {
+   "target": "https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/Catalogues_dr1/FreundS_DR1/HamStar_eRASS1_Main_Likely_Identifications_v1.1.html",
+   "reason": "HamStar coronal counterparts of eRASS1 sources (Freund et al. 2024)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "reason": "BHAC15 evolutionary models."
+  },
+  {
+   "target": "https://arxiv.org/abs/1010.2152",
+   "reason": "Jeffries et al. 2011: coronal saturation and supersaturation in fast-rotating M dwarfs and centrifugal stripping."
+  },
+  {
+   "target": "https://arxiv.org/abs/2201.03897",
+   "reason": "Magaudda et al. 2022: eROSITA and TESS rotation for M dwarfs."
+  },
+  {
+   "target": "https://arxiv.org/abs/2604.07976",
+   "reason": "Swift/XMM X-ray study of ultra-fast-rotating M dwarfs without supersaturation."
+  }
+ ]
+}
