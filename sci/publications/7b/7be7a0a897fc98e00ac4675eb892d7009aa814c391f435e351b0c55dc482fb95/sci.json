@@ -1,0 +1,67 @@
+{
+  "title": "Three tropical region constraints cut the worst feedback range by 59% in a nine-region DOISST test",
+  "abstract": "We tested which regional validation constraints best reduce uncertainty in the feedback change from published DOISST step corrections. Regional scales range from 0.5 to 1 at a fixed mean scale of 0.75. We derived an exact worst-outcome range formula and searched all 512 region subsets at four measurement error bounds. We minimized the largest relative range over two periods, two correction maps and five model Green functions plus their mean. At a regional scale error bound of 0.05, the best single constraint is in the tropical Pacific. It leaves at most 61.98% of the initial range. Constraints in all three tropical sectors leave at most 40.78%, versus 56.21% for a tested SST-only ranking. The first three selected sets stay the same at all four error bounds. Independent linear programs confirm the range formula. These are conditional design bounds, not measured reductions or confidence limits. No new observations are used. Fixed global mean, coarse regions, common event scales, equal costs and static model responses limit the result. The package includes code, coefficients, all designs, exact witnesses, a figure and reproduction instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "DOISST",
+    "radiative feedback",
+    "validation design",
+    "bounded uncertainty",
+    "Green functions",
+    "minimax"
+  ],
+  "display": [
+    {
+      "path": "files/design.png",
+      "caption": "Worst remaining relative range and best region sets. Each selected region constrains a correction scale, not a single instrument. Bounds use fixed global mean and equal region costs."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:051df67c77caf7d368ff2c7f40fa888b1313bc2a7eeae192b2492af8d9ac06da",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its exact published regional temperature and radiation correction coefficients. Extends its sensitivity bounds to a finite validation design problem."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream model projections and scope."
+    },
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream correction maps."
+    },
+    {
+      "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Assimilated buoy validation can understate remote satellite-input steps."
+    },
+    {
+      "target": "doi:10.1029/2020MS002386",
+      "reason": "Prior target-based ocean observing design."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "reason": "GFMIP protocol and limitations."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10414728",
+      "reason": "Upstream Green function data."
+    }
+  ]
+}
