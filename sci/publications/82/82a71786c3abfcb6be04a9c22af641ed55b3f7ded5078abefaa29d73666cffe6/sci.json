@@ -1,0 +1,77 @@
+{
+  "title": "A mean log-error correction requires large raw electron forecast errors in a 2026 NOAA table",
+  "abstract": "We test whether a recent-error correction alone can explain large errors in 57 NOAA electron forecast rows from September to November 2026. We assume that each issued log forecast subtracts the mean of past raw log errors, with memories of one, twenty and twenty days at leads one to three. Linear programs allow all prior errors to take any value. At least one raw forecast within the scored window must differ from its observation by factors of 48.30, 46.29 and 71.02. Conservative source-rounding intervals lower these factors to 24.60, 42.09 and 65.07. Primal and dual checks confirm the bounds. An alternative rule that corrects past issued errors also implies large raw errors but a mixed score effect. Thus a uniformly accurate raw predictor is incompatible with either tested rule. Public documentation does not establish the exact 2026 correction code, so these are conditional bounds, not measured raw errors or causal attribution. The same selected table was tested before; no independent forecast validation is claimed. Code, a proof, aggregate results and an external-data retrieval script are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "electron forecast",
+    "REFM",
+    "inverse problem",
+    "bounded error",
+    "bias correction",
+    "partial identification"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Conditional lower bounds on maximum raw log error. Prior history can take any value in the scored-window test. The last bars allow conservative source rounding."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the same frozen NOAA table and issue rows to test the unresolved correction account. This is not independent verification."
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/relativistic-electron-forecast-model",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://services.swpc.noaa.gov/text/relativistic-electron-fluence-tabular.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1002/2014SW001057",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Log-space offset and limits of physical interpretation."
+    },
+    {
+      "target": "doi:10.1002/2015SW001303",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1016/0005-1098(90)90005-3",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1002/acs.2701",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.noaa.gov/disclaimer"
+    }
+  ]
+}
