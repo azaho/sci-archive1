@@ -1,0 +1,52 @@
+{
+  "title": "Fixed rain terms reduced aggregate wet-deposition error at 128 US sites in 2005-2024",
+  "abstract": "We tested whether fixed rain terms can improve later wet-deposition estimates after a climate-window test found little skill. We used NADP annual records for 128 US sites and nine ions, with coefficients fitted through 2004 and tests in 2005-2024. Recent pollution levels used past years only. A half-strength log-rain term reduced training-variance-normalized aggregate log error by 25.9%, with a crossed site and shared-year bootstrap range of 21.2% to 30.8%. The unit term gave 20.9% [12.9%, 29.0%]. Next-year rain increased error on matched rows. The planned mean series percentage gain was 24.9%, but its bootstrap range was -24.0% to 27.1% because small reference errors made ratios unstable. Aggregate gains persisted in both test halves and with three-, five- and ten-year level windows. This resolves part of a failed positive control but does not isolate why the earlier model failed. The response is defined from the same measured rain used as predictor. These are conditional estimates with observed rain, not advance-weather forecasts or causal effects. The package contains code, input hashes, aggregate results, a figure and independent checks. Source records remain external.",
+  "keywords": [
+    "wet deposition",
+    "precipitation",
+    "forward test",
+    "forecast baseline",
+    "dilution",
+    "uncertainty"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/pooled_skill.png",
+      "caption": "Aggregate normalized log error reductions against recent deposition levels. Ranges resample sites and shared three-year time blocks. Annual rain is observed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2c15bea979291ab376d4a1f94f52b24e394207928c25e470339008603ae127d3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses source retrieval recipe and follows up the failed wet-deposition positive control. Records overlap; new model and uncertainty test."
+    },
+    {
+      "target": "sci:sha256:788b1834ca23de947802b80a6ea5f7261b648374db94d79c925eaa2203fc1c0d",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its additive loss audit motivates transparent reference-denominator sensitivity."
+    },
+    {
+      "target": "doi:10.1029/2018JD029051"
+    },
+    {
+      "target": "https://www.nps.gov/articles/air-analysis-methods-2024.htm"
+    },
+    {
+      "target": "https://nadp.slh.wisc.edu/data-and-information-use-conditions/"
+    },
+    {
+      "target": "https://nadp.slh.wisc.edu/maps-data/ntn-interactive-map/"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+ "title": "DOISST v2.1 input steps add a false -0.22 to -0.27 W m-2 per decade to the 2001-2022 TOA trend in a CAM4 Green's function; the 1982-2022 feedback is robust (60S-60N)",
+ "abstract": "Question: NOAA DOISST v2.1 has mean steps at satellite-input changes, and NOAA OI SST v2 (the post-1981 source of the AMIPII forcing) has a cold step in mid-2018. How much do these artifacts change the TOA radiation trend and the feedback parameter (lambda) that a Green's function (GF) calculates from the observed SST pattern? Approach: we applied the CAM4 radiative-feedback GF of Dong et al. (2019) to monthly anomalies of 12 SST versions on 5-degree boxes (60S-60N ice-free; HadISST1 elsewhere for all versions). The versions are three in situ products, ESA SST CCI v3.0.1, HadISST1, DOISST with and without its input steps, OI v2, PCMDI-AMIP 1.1.9 and OI v2 without its 2018 step. We used paired 24-month block-bootstrap intervals, step signatures, kernel components, 20-year windows, SST# and 96 GTMBA moorings. Results: the 1982-2022 lambda is robust (all versions -3.31 to -3.01 W m-2 K-1; DOISST minus in situ -0.07, interval -0.23 to +0.08). For 2001-2022, DOISST adds a false TOA trend of -0.27 W m-2 per decade (-0.33 to -0.21) against the in situ mean and -0.22 (-0.29 to -0.16) against CCI; removing the steps reduces it to -0.05 to +0.01. Each warm DOISST step (2005, 2020) acts like a uniform 0.08-0.10 K warming with a TOA signature of -0.23 to -0.37 W m-2. The error is in the Indo-Pacific warm pool; at 30 west Pacific moorings DOISST minus buoy SST rises by +0.090 C per decade in 2001-2022, and +0.007 to +0.020 with the steps removed. The 2001-2022 lambda depends more on the reference type: in situ -2.35 to -2.16, CCI -2.71, HadISST1 -2.60, corrected DOISST -2.61 to -2.70, DOISST -2.89. Thus about 0.2-0.3 of the DOISST difference is step artifact. DOISST halves the post-2000 weakening of the pattern effect (+0.77 against +1.39); half of this is step artifact. PCMDI-AMIP 1.1.9 equals OI v2 in the mask and contains the 2018 step (-0.14 C at 40-60S), which makes its 2001-2022 lambda 0.15-0.38 more negative. Limitations: one GF (CAM4) and a linear method; absolute lambda values are model-dependent; in situ and satellite references disagree by about 0.4 in the 2001-2022 lambda; the correction size is uncertain.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OI SST v2",
+  "AMIPII",
+  "PCMDI-AMIP 1.1.9",
+  "pattern effect",
+  "radiative feedback",
+  "Green's function",
+  "CAM4",
+  "ESA SST CCI",
+  "TAO moorings",
+  "data artifacts",
+  "CERES era"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_lambda_by_version.png",
+   "caption": "Feedback lambda = trend(R)/trend(T) from the CAM4 Green's function for 12 SST versions, 1982-2022 (a) and 2001-2022 (b), with block-bootstrap 95% intervals (grey band: in situ range). (c, d) Error of the GF TOA trend against the in situ mean (filled) and against ESA CCI (open), paired intervals. DOISST (orange) has a TOA-trend error of -0.22 to -0.27 W m-2 per decade in 2001-2022; with the steps removed the error is near zero."
+  },
+  {
+   "path": "files/figures/fig2_gf_maps.png",
+   "caption": "2001-2022 SST trend differences and their TOA effect: (a) CCI minus in situ mean; (b) in situ mean trend; (c) DOISST minus in situ mean and (d) its GF-weighted TOA effect, which is concentrated in the Indo-Pacific warm pool; (e, f) the same with the DOISST steps removed."
+  },
+  {
+   "path": "files/figures/fig4_windows_moorings.png",
+   "caption": "(a) lambda in moving 20-year windows: all versions show less negative feedback after 2000, but DOISST shows about half of the in situ change. (b) Trend of product minus mooring SST, 2001-2022, at GTMBA moorings: DOISST warms too fast in the west Pacific (+0.09 C per decade); the step-corrected versions do not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "We read its GTMBA daily mooring SST table and buoy positions for the mooring test.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Source of the OPeNDAP CCI fetch method (MIT code).",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "It shows that ESA CCI v3 has its own sensor steps; we use this to interpret the satellite-versus-in situ split.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign study on DOISST or ERA5 SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "It found the DOISST mean steps (1985, 2005, 2020) whose radiative signature we calculate.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Earlier campaign result on the effect of the DOISST mean steps on the 2023/24 record; context."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Polar splices of DOISST, which our 60S-60N mask excludes; limitation."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "It found the size of the DOISST mean correction uncertain by about a factor of two at buoys; we test the feedback sensitivity to the correction size.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "We read its step-corrected DOISST 5-degree boxes and box step maps, reuse its grid, mask, CCI and step code (MIT), and add the radiative calculation it did not do. Its OI v2 2018 step is confirmed in the AMIP 1.1.9 forcing.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "It traced the 7 July 2020 DOISST warm step to the Navy MetOp-A AVHRR v1.0-to-v2.0 change; we give its radiative signature.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Correction ensemble of homogenised DOISST versions; context for which results depend on the correction."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-18-0843.1"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1"
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1"
+  },
+  {
+   "target": "doi:10.1029/2018EO101751"
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1"
+  },
+  {
+   "target": "doi:10.1029/2018JD029867"
+  },
+  {
+   "target": "doi:10.1029/2002JD002670"
+  },
+  {
+   "target": "doi:10.1029/2020JD033629"
+  },
+  {
+   "target": "doi:10.1029/2022JD036675"
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023"
+  },
+  {
+   "target": "doi:10.1002/2017MS001096"
+  },
+  {
+   "target": "doi:10.1029/2023MS003700"
+  }
+ ]
+}

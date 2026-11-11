@@ -1,0 +1,127 @@
+{
+ "title": "Rain character, temperature, IPO and GR4J did not explain multidecadal runoff efficiency in 27 eastern Australian records (1889-2021); the 1937-1960 high era was a flood-flow excess in both regions",
+ "abstract": "Question: campaign bundle 4e9ae7e7 showed that runoff efficiency in long south-east Australian (SE-AU) records varied at multidecadal scale (pre-1997 13-year departures -13% to +26%), so the post-1997 deficit was at the low edge of that range. Does a climatic variable that the annual rain total does not contain explain these changes and the post-1997 deficit?\n\nApproach: 27 gauges with BoM daily flow from before 1957 (18 SE-AU, 9 northern controls), CAMELS-AUS SILO daily rain, temperature and PET, HadISST tripole index, 42 fixed GHCN-Daily stations. Per gauge, Q = a + bP + cP(t-1) plus one covariate (cool-season share, heavy-day rain, wet days, Tmax, IPO, all rain-character terms, or a daily GR4J model). Nine fixed 12-year blocks, each predicted from a fit (and GR4J calibration) on the other pre-1997 years; V = share of pre-1997 block variance removed, R = share of the 2010-2021 deficit removed; 2-degree cell bootstrap. Plan written before covariate results.\n\nResults: no covariate met the planned rule (V >= 0.3 and R >= 0.5). In SE-AU, V was -0.03 to 0.12 for the annual covariates and 0.16 (0.06 to 0.45) for GR4J; R was -0.10 to 0.20 (seasonality 0.20, 0.08 to 0.30; GR4J 0.07; IPO -0.09). Station-based rain character (SILO drifts before 1937) also failed. GR4J reproduced the northern recovery after 2009 (North V 0.22-0.40). Post hoc: the block variation is about twice short-memory noise and shared between gauges; it is dominated by a 1937-1960 high era (+34 points over 1961-1996 in SE-AU, +44 in the North), mostly in flood flows (SE-AU +15.0% of flow above daily Q95, +7.4% moderate), with 3.6% less heavy station rain. The SE-AU 2010-2021 loss relative to 1961-1996 (-8%) was mainly in moderate flows (-5.7%). A time trend or Berkeley Earth temperature removed 40-138% of the SE-AU deficit but predicted a northern deficit that did not occur.\n\nConclusion: the tested climate variables do not explain the multidecadal efficiency changes. The earlier variation that made the post-1997 deficit look ordinary is mostly one shared flood-flow era, different in kind from the SE-AU moderate-flow loss.\n\nLimitations: few, clustered gauges (1-6 SE-AU before 1937); linear annual models and one daily model; possible early rating errors; several analyses post hoc; ends in 2021.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "runoff efficiency",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "Millennium Drought",
+  "multidecadal variability",
+  "south-east Australia",
+  "Interdecadal Pacific Oscillation",
+  "rainfall intensity",
+  "rainfall seasonality",
+  "GR4J",
+  "flood flows",
+  "long streamflow records",
+  "CAMELS-AUS",
+  "SILO",
+  "GHCN-Daily",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_model_scorecard.png",
+   "caption": "Share of pre-1997 block variance (V) and of the 2010-2021 SE-AU deficit (R) removed by each climatic covariate model, with 95% cell-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig1_block_departures.png",
+   "caption": "Mean 12-year block runoff departures from the pre-1997 relation, 1889-2021, SE-AU and northern control, for M0 and three covariate models."
+  },
+  {
+   "path": "files/figures/fig3_flow_classes.png",
+   "caption": "Departures from the 1961-1996 relation in 1937-1960 and 2010-2021, split into flood, moderate and low daily flow."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We reuse its 58-gauge list, BoM retrieval and station network, and test its framing that post-1997 windows match earlier multidecadal lows; the earlier variation is mostly one shared 1937-1960 flood-flow era that climate covariates do not explain."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its annual model form and cell bootstrap; the post-1997 SE-AU deficit remains after all tested climate covariates."
+  },
+  {
+   "target": "sci:sha256:448ef5cf94fd4dd8ed8caa78bd86c6fe2d0e8c0c9a8e3c2be15927a0d9897b45",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Relative to 1961-1996 the SE-AU deficit at the long gauges is small and the 1985-1996 block was already low, which agrees with its gradual decline without a 1997 step."
+  },
+  {
+   "target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Seasonal rain share removed only about one fifth of the 2010-2021 deficit in our long and 1951-2021 samples."
+  },
+  {
+   "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+   "relations": [
+    "supports"
+   ],
+   "reason": "A temperature term removed part of the SE-AU deficit but failed the northern control, so it does not establish evaporative demand as the cause."
+  },
+  {
+   "target": "sci:sha256:66562a586c15cdd29f7b84455e8e926841fd562cf92beda20b4543f3ac84f1db",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its GR4J storage result for 1951+ is related; our block-calibrated GR4J from 1889 removed none of the 2010-2021 SE-AU deficit."
+  },
+  {
+   "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We find the 2010-2021 SE-AU loss mainly in the moderate (Q50-Q95) part of the daily flow range, consistent with its baseflow loss."
+  },
+  {
+   "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+   "reason": "Context: post-drought deficits after droughts ending 1997-2010."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "reason": "Context: the low-runoff state persisted to 2025."
+  },
+  {
+   "target": "sci:sha256:5eddb9c5471d41c58e267937e928348b72d2c7853d9c778e5265a13ae9a1d2b0",
+   "reason": "Context: land use is not necessary for the post-1997 deficit; we also find no land-cover dependence of the 1937-1960 excess."
+  },
+  {
+   "target": "sci:sha256:05f7ac9cb828471b5195c8cf129970a7b55703fc920a392cff76bce2741f5a01",
+   "reason": "Context: gridded-rain elevation error does not explain the deficit."
+  },
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "reason": "Context: fixed rain-gauge networks confirm the deficit."
+  },
+  {
+   "target": "sci:sha256:978a2bab6c512fd4f4eb54189c92d6e728ad713cc214a274230e498a92512195",
+   "reason": "Context: the deficit is mainly a smaller event-water response."
+  }
+ ]
+}
