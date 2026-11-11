@@ -1,0 +1,122 @@
+{
+ "title": "With the measured preference of CPV labels for many dips, TESS rates and dip counts fit a corotating-clump model with clumps in most young M dwarfs; older-star counts are inconclusive",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. We test a published corotating-clump occurrence model with the number of dips in each light curve. We count dips at a common noise level in the folded TESS sector 56-107 curves of 126 CPVs. We remove dips from 61 young CPV curves and score them with an emulator of the visual CPV label. Relative to unchanged curves, the label probability is 0.21 for one dip, 0.48 for two, 0.80 for three and 0.94 for four or more. The published rate-only parameters predict 62% single-dip CPVs among 394 young (1-24 Myr) rapid rotators; 12% of 41 counted CPVs are single-dip (p < 2.5e-4). With the measured selection, a rate-only fit predicts the count distribution (p = 0.70), and a joint fit needs 2.6 times the published clump intensity. A host fraction below 0.85 (dipole, BHAC15 radii), 0.73 (ring), 0.56 or 0.44 (photometric radii) is excluded at 95%. Thus most young rapid rotators carry clumps in this model, and inclination, x and the label set the 14% rate. Up to 60 Myr, x explains the CPV rate (15 seen, 15.5 expected). Older and near-main-sequence cohorts have fewer CPVs than expected (2 of 3.8; 4 of 23.8). Their dip counts favour fewer hosts over fewer clumps per host in the joint model (Delta ln L 2.2-3.6), but a model-free test does not reject either. Limits: emulated vetting, dip-decomposition errors, assumed geometry and 1-13 older stars with counts. Code, TESS-derived morphology tables and aggregate results are included; Gaia-derived record tables are excluded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "TESS",
+  "M dwarfs",
+  "corotation",
+  "circumstellar clumps",
+  "selection effects",
+  "occurrence model",
+  "dip morphology",
+  "stellar age",
+  "forward simulation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_selection.png",
+   "caption": "(a) Removal of dips from a young CPV curve with the Gaussian-dip decomposition (grey: fitted spot term). (b) Emulated visual-label probability of young CPV templates as a function of the number of dips at a common noise of 0.15% per bin, relative to unchanged curves, with 95% template-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_young_counts.png",
+   "caption": "(a) Common-noise dip counts of 41 young CPVs (black) and the predictions of the published rate-only clump model without dip-count selection (orange), a rate-only fit with the measured selection (green) and a joint fit to labels and counts (blue), scaled to 41 stars. (b) Profile likelihood of the fraction of young rapid rotators that host clumps, for two geometries and two radius estimates; the dashed line is the 95% limit."
+  },
+  {
+   "path": "files/figures/fig3_older_cohorts.png",
+   "caption": "(a) Observed CPVs divided by the number that the young model expects from x alone, with 95% Poisson intervals. (b) Mean common-noise dip count of the remaining CPVs (black) and predictions for fewer hosts and for fewer clumps per host (joint model) and for random dip removal and shallower dips (forward model). The dotted line is the young mean."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "reason": "Source CPV survey: folded TESS curves, CPV labels, vetted sectors, noise values and feature code.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "reason": "BANYAN age classes, injection efficiency and the visual-label emulator code that we rerun to measure selection by dip number.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "reason": "Stellar-parameter code for x; the joint model confirms that x explains the CPV rate up to 35-60 Myr.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:8b763f4560e08f5baea4e3962ba4e61d3bd812731a1955cc9058f58371424834",
+   "reason": "Its published rate-only clump parameters fail the dip-count test; with the measured dip-count selection its aligned-dipole geometry fits rates and counts.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:1edfe4ec012a62a748c7273f2ef6badda57746f67e9236a0d7b4cd9b33bc5fc0",
+   "reason": "Same young cohort definition; we also find fewer CPVs than predicted above x = 4.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "reason": "Main-sequence CPV deficit that motivates the older-cohort test; we test whether the remaining CPVs have fewer dips."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "reason": "Contamination of main-sequence rapid-rotator lists, a limitation of the field cohorts."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "Earlier contraction test with K2 and TESS field stars."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "Independent K2 confirmation of the CPV age decline."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control of CPV rates."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths of the same CPVs; a related morphology test."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPV sharp features between sectors."
+  },
+  {
+   "target": "sci:sha256:92d3d54b7a0765ac26764bb7f09f15c4e6d59312a41bf24530013e134323ddb7",
+   "reason": "Drag instability of exact dust corotation; growth times used in the interpretation."
+  },
+  {
+   "target": "sci:sha256:2f6511efb2edf2637f1f191f2e8a1789f3543d9af0e8d51bd4bdb56c0e0fc525",
+   "reason": "Gas-drag growing mode at the synchronous radius; growth times used in the interpretation."
+  },
+  {
+   "target": "sci:sha256:9551e28b56824c06b502108a3aeb3651dd5bcbcff863ee0414e74a4f9c818a42",
+   "reason": "Gas-drag growing mode at the synchronous radius (second version)."
+  },
+  {
+   "target": "sci:sha256:bea11c2b517351dcba6d653888f8ba1ba5c2679ddf971c4a939d897d153defed",
+   "reason": "Dust mode at corotation with differential gas rotation."
+  }
+ ]
+}
