@@ -1,0 +1,61 @@
+{
+  "title": "Phase matching selects background dips in shear tests on 126 TESS CPV visits",
+  "abstract": "We test whether phase proximity identifies an added shearing clump in complex periodic variable light curves. We use published 15-harmonic models and noise thresholds for 126 TESS visits in 60 stars. We run 5,040 model-space trials with two phases, two initial depths, four radial spreads, real or flat backgrounds, and zero-signal controls. A uniform random phase has an exact mean chance of 18.3% of matching an existing long track (95% star-bootstrap interval 14.6-22.3%). At a full fractional radial spread of 0.01, phase matching gives 52 and 92 recoveries out of 252 trials at each depth. A known-signal curvature check reduces these counts to 3 and 36. All 17 long, strong matches at this spread give width-based radial limits below half the known input; their median limits are about twenty times too small. None passes the curvature check. Flat-background controls give no long, strong matches at spreads of 0.002 or 0.01. Thus phase matching can select a narrow background dip after the added clump spreads. This limits the use of injection recovery to support material-width bounds. It does not show that free gas explains long CPV dips, or invalidate the geometric bound for an isolated identified profile. These are model-space tests, not a repeat of cadence-level processing or a measurement of material life. Code, trial results, aggregate intervals, input hashes and separate-scratch reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "Keplerian shear",
+    "injection recovery",
+    "source confusion",
+    "dip tracking",
+    "selection effects"
+  ],
+  "display": [
+    {
+      "path": "files/selection.png",
+      "caption": "Model-space injection recovery, known-signal curvature checks, and large errors in width-based radial limits. Each rate uses all 252 trials in that group. Flat backgrounds separate signal loss from confusion with real CPV patterns."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f539247412c4c5c3248b0a1472c0fdb86d1fb83e3ae8af30a14fdfe6c81a36f2",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses its published TESS window models, visit and track tables, detector and linker. Tests its phase-only shear recovery rule. Challenges the sufficiency of that rule for identifying the added clump, not the observed existence of slow dip drift."
+    },
+    {
+      "target": "sci:sha256:a01f5abf266d497ae5fad46f657118c3250b39ba7f2f54e9cf45c73a0626af3a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior harmonic-phase test of symmetric smearing; distinct from source identity during injection recovery."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Parent selection of on-target CPV hosts, inherited through the window study. No Gaia record table is used."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "doi:10.1117/1.JATIS.1.1.014003"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
