@@ -1,0 +1,116 @@
+{
+ "title": "TESS sectors from 2018 to 2026 show that complex periodic variable behaviour stays with the same young M dwarfs for at least 18 years; fewer host stars, not shorter episodes, cause its age decline",
+ "abstract": "We test whether complex periodic variable (CPV) behaviour is a lasting property of young M dwarfs or a short state. We flagged the CPV pattern in every TESS 2-minute sector from 2018 to 2026 (S1-S107) of 1,837 rapid rotators in a matched period and colour window. We used an out-of-fold emulator of earlier visual labels, injection-recovery efficiencies, a blinded visual check and 4,268 newly processed S1-S55 light curves. A hidden Markov model separates host status, with correlation time T, from sector-to-sector flicker inside hosts. In 1,746 neighbour-clean stars (8,772 sectors, 245 flags), the probability of a flag after an unflagged sector stays at 0.02-0.05 for gaps from 1 month to 9 years, and after a flagged sector at 0.35-0.58. Host status lasts at least 18 years (95% lower limit; 10-32 yr in all eight-year variants). Host times of 1 or 3 years are excluded (Delta ln L = 83, 30). Permanent hosts with two flag repeatabilities fit as well as the best finite-T model. A model in which all young stars are flickering hosts is rejected (Delta ln L = 76). The host fraction is 0.26, 0.19, 0.086 and 0.016 at 1-12, 15-24, 35-60 and 89-750 Myr. The duty cycle inside hosts (0.64) does not decline with age. Thus the age decline comes from fewer hosts, as contraction and inclination predict, and supply episodes shorter than about 10-20 years are excluded. Limitations: flags copy one automated vetter, flicker partly reflects the flag threshold, the youngest classes have few sectors, and T above about 100 years is not measured. Code, derived tables, figures and hashes are included. TESS FITS files are not.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "stellar rotation",
+  "circumstellar material",
+  "hidden Markov model",
+  "variability persistence",
+  "young stars"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_transitions_and_T.png",
+   "caption": "A, B: probability of a CPV flag in a later sector after a flagged (A) or unflagged (B) sector of the same young star, against the time between sectors (points: TESS data with star-bootstrap 95% intervals; bands: simulations from the best fit and from fits with host time T = 1 and 3 yr). C: profile likelihood of the host correlation time T for one duty cycle and for two repeatability classes; the last point is a permanent host state."
+  },
+  {
+   "path": "files/figures/fig2_host_fraction.png",
+   "caption": "A: host fraction h by age class (95% star bootstrap) and per-sector flag fraction h x d. B: duty cycle d per class when h and d are both free per class, against one common d. The host fraction falls 10- to 16-fold; d does not decline steadily."
+  },
+  {
+   "path": "files/figures/fig3_examples.png",
+   "caption": "Folded TESS light curves of three 35-60 Myr stars across sectors from 2018 to 2026 (orange: flagged sectors). Unflagged sectors often keep weaker CPV features, which shows that part of the flicker is the flag threshold."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source CPV search: folded curves, features, visual labels, centroid tiers, file list and cpvlib code used to build per-sector flags."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "BANYAN age classes, matched window and emulator features used; we extend its persistence test to turn-on and an eight-year baseline and confirm that the age decline is in the host fraction."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Corotating-clump model with high intrinsic host fraction; we measure a visible-host fraction 1.6 times the single-sector rate and show that visibility is a lasting property."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Contraction (x) explanation of the age decline; our result that the decline is in the host fraction, with permanent visibility, agrees with it."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "relations": [
+    "supports"
+   ],
+   "reason": "K2 confirmation of the age decline and contraction fit."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658"
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77"
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6"
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Loss of shape memory between sectors; our flicker time of weeks agrees."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3"
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5"
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c"
+  },
+  {
+   "target": "doi:10.3847/1538-4357/aaae09"
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ac503c"
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003"
+  },
+  {
+   "target": "doi:10.1117/12.2233418"
+  },
+  {
+   "target": "https://archive.stsci.edu/publishing/data-use"
+  }
+ ]
+}
