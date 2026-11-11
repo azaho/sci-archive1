@@ -1,0 +1,116 @@
+{
+  "title": "Event corrections nearly close the 2001-2022 AMIP SST warming gap but preserve a feedback gap in five linear models",
+  "abstract": "We tested the released PCMDI-AMIP-OI2p1 1.0 prototype against AMIP 1.1.9 on a fixed ice-free 60S-60N ocean mask. We applied five published linear Green's functions and paired the published input-event correction maps for both SST histories. The new forcing retains a July 2020 warm step of 0.090 C against ERSSTv5 and COBE-SST2, while its old July 2018 Southern Ocean step estimate is small and uncertain. In 2001-2022, the central event correction removes 93% of the SST-trend gap and 64% of the SST-induced radiative-trend gap. The corrected SST trends are 0.134 and 0.129 K per decade. Yet the five-model mean feedback gap becomes more negative, from -0.267 to -0.368 W m-2 K-1 of ocean SST. Across 20 map choices, corrections remove 83-111% of the warming gap and 57-70% of the radiative gap. We derive exact feedback bounds by evaluating vertices of event-amplitude boxes. With every event varied independently from half to twice its published amplitude, the five-model mean feedback gap remains negative for all 20 map choices, with a total bound of -1.035 to -0.061 W m-2 K-1. The corresponding 1982-2022 bound includes zero. The recent remaining flux gap is mainly tropical. This conditional result shows that agreement in ocean-mean warming does not ensure agreement in model feedback. The maps are uncertain and are transferred to a new processed product. Bounds keep map shapes and dates fixed. The calculation excludes sea ice, polar SST, smooth error drift, nonlinear response and global air-temperature normalization. It does not determine the true SST history or observed feedback. Code, analytical series, numerical checks and exact source hashes are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "AMIP",
+    "OI2p1",
+    "input artifacts",
+    "radiative feedback",
+    "Green functions",
+    "correction uncertainty",
+    "linear fractional bounds"
+  ],
+  "display": [
+    {
+      "path": "files/figures/overview.png",
+      "caption": "Published event corrections nearly close the recent SST-trend gap but leave a feedback gap. All values use a fixed ice-free 60S-60N mask and five linear models. Error bars are conditional on fixed maps."
+    },
+    {
+      "path": "files/figures/evidence.png",
+      "caption": "The released prototype retains the 2020 warm step. The remaining modeled radiative pattern difference has contributions from the tropical Indian Ocean, east Pacific and Southern Ocean. Product differences do not identify the true SST error."
+    },
+    {
+      "path": "files/figures/amplitude.png",
+      "caption": "Shared-amplitude stress tests can erase the remaining radiation-trend gap. The feedback gap stays negative. The text also gives exact bounds with independent amplitudes for each event."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "reason": "We use its published daily-OISST correction maps as numerical scenarios.",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "reason": "We use its one-degree GFMIP response fields and extend its separate artifact calculations to a paired forcing comparison.",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+      "reason": "We use its old-AMIP event maps for five reference choices and two correction domains.",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+      "reason": "We use its sampled CCI series for a mean-trend check. Its warming-rate analysis motivates separate tests of mean rate and pattern.",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.25981/ESGF.input4MIPs.CMIP7Plus/2584107",
+      "reason": "The released OI2p1 1.0 prototype is the main new input."
+    },
+    {
+      "target": "doi:10.25981/ESGF.input4MIPs.CMIP6Plus/2583903",
+      "reason": "Old AMIP 1.1.9 source dataset."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "reason": "GFMIP protocol and model response definition."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10414728",
+      "reason": "Original GFMIP source data, used through the cited campaign extraction."
+    },
+    {
+      "target": "doi:10.1029/2025GL115914",
+      "reason": "Prior full-model evidence that SST and sea-ice dataset choice changes radiation trends. Our SST-only comparison does not reproduce those runs."
+    },
+    {
+      "target": "doi:10.1029/2022JD036675",
+      "reason": "Prior historical pattern-effect study and context for feedback normalization."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "Daily OISST v2.1 method and documented input changes."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "reason": "ERSSTv5 reference data."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00837.1",
+      "reason": "COBE-SST2 reference data."
+    },
+    {
+      "target": "doi:10.1038/s41597-024-03147-w",
+      "reason": "ESA SST CCI data method."
+    },
+    {
+      "target": "https://pcmdi.llnl.gov/mips/amip/",
+      "reason": "AMIP monthly SST and boundary-condition variable definitions."
+    },
+    {
+      "target": "https://github.com/PCMDI/amipbcs",
+      "reason": "Primary source for the data-generation code and release context."
+    },
+    {
+      "target": "https://input4mips-cvs.readthedocs.io/en/v6.7.54/database-views/input4MIPs_files_CMIP7Plus.html",
+      "reason": "Primary file catalog records the OI2p1 version and license."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+ "title": "In 158 TESS complex periodic variables, large flares change the dip pattern more often than chance only when corotation is within about 4 stellar radii; detected flares explain 4-11% of dip collapses",
+ "abstract": "Complex periodic variables (CPVs) are young M dwarfs with sharp dips at the rotation period, probably from magnetically held material near corotation. An earlier study stated that sudden dip collapses are almost always linked with flares, from about five events in two stars. We tested this in all TESS 2-minute sectors (2018-2026) of 158 CPVs: 620 sectors, 32,479 rotation cycles and 2,733 impulsive flares. A two-sided flare detector does not mistake step changes of the dips for flares. For each flare cycle, we compared the folded pattern of the 3 cycles after with the 3 cycles before, and ranked the change among flare-free cycles of the same sector that carry the same flare mask. For flares with equivalent duration >= 300 s (about 1e34 erg), 33.7% (95% interval 26.4-41.5%) of changes are above the 90th percentile of controls, against 12.9% expected; for 100-300 s, 19.5%; below 100 s, no significant effect. The effect stays when we skip one more cycle on each side or triple the flare masks, so it is not flare light. Sharp dips fill and deepen at similar rates, so flares rearrange the material. Injections show that the largest-flare excess equals a complete removal of one dip after 35-53% of these flares. The response depends on the corotation-to-stellar radius ratio x: it is strong at x < 4.2 and absent at x > 4.2 (slope against log10 x -0.37, interval -0.60 to -0.15), with equal injection sensitivity. Of 1,041 abrupt dip collapses, 24.1% have a flare within one cycle against 17.0% by chance, so flares explain 7% (4-11%), at most about 21% with hidden flares. Thus flares disturb the corotating material only when it is close to the star, and they are not the main cause of dip evolution. Limitations: association, not proven cause; long windows at long periods can dilute short changes; approximate x and energies; one band. Code, derived tables and hashes are included; TESS files are not.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "stellar flares",
+  "TESS",
+  "corotating material",
+  "corotation radius",
+  "magnetospheres",
+  "young stars",
+  "injection-recovery",
+  "dip collapse",
+  "superposed epoch analysis"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_flare_to_change.png",
+   "caption": "A: fraction of flare cycles whose dip-pattern change is above the 90th percentile of mask-matched flare-free control cycles, by flare equivalent duration (dashed: no effect). B: artefact checks for large flares. C: injection-recovery of sudden removal of a fraction q of the deepest sharp dip."
+  },
+  {
+   "path": "files/figures/fig4_period_x_leak.png",
+   "caption": "A, B: equivalent trigger fraction (filled, 95% star-bootstrap intervals) and injection recovery (open squares) for flares of ED >= 100 s, by rotation period and by corotation-to-stellar radius ratio x. The response is absent at x > 4.2 with equal sensitivity. C: the excess stays with a one-cycle gap and with three-times-longer flare masks."
+  },
+  {
+   "path": "files/figures/fig1_example_lp12-502.png",
+   "caption": "LP 12-502, TESS sector 18: an impulsive flare (orange) is followed by the collapse of a narrow dip (blue: pattern of 3 cycles before, red: 3 cycles after), with the per-cycle folded flux and the collapse statistic."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source CPV search: on-target CPV labels, periods, Bouma-star features, SPOC file list and star table (TESS magnitude, parallax for flare energies)."
+  },
+  {
+   "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its TESS download recipe. Flares explain few dip changes, which agrees with its finding that host status lasts decades while the pattern flickers for other reasons."
+  },
+  {
+   "target": "sci:sha256:68387f6cb6d0ae407d7112b5a4c7ec8829daa73d39fdc4eb332ac4d69648c074",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent test with a different sample definition, detector and time-based null; we confirm its energy threshold near 1e33 erg, the two-way rearrangement and the small flare share of changes, and add the dependence on corotation ratio."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "reason": "Corotation-to-stellar radius ratio x as the control parameter of CPV rates; we find that the flare response also depends on x."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "reason": "Age decline of the CPV rate."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Loss of sharp-feature shape memory between sectors; flares are a minor driver."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "reason": "Corotating-clump model of CPV rates and dip counts."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Bouma et al. 2024 stated that dip state-switches are almost always linked with flares; in the population, flares explain only about 7% (at most about 21%) of abrupt collapses."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2609.00136",
+   "reason": "Bouma et al. 2026: spectroscopy and chromaticity of CPVs; magnetically confined dusty plasma."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "reason": "TESS mission."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "reason": "TESS SPOC light curves."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3 parallaxes (via the source star table) for flare energies; not bundled."
+  },
+  {
+   "target": "https://archive.stsci.edu/publishing/data-use",
+   "reason": "MAST data-use terms for TESS light curves (not bundled)."
+  }
+ ]
+}

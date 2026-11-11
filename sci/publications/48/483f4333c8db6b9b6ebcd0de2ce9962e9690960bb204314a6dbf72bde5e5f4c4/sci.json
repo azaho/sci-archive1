@@ -1,0 +1,62 @@
+{
+  "title": "Dense-area wind and tornado reports exceeded SPC contour bounds in a 2021-2026 test",
+  "abstract": "We tested whether values between probability contours can explain report-based bias in SPC Day 1 outlooks. We reused verified grids for 2,128 days and 12,392 US points in 2021-October 2026. Under an interval reading of contours, exact pooled observed/expected bounds included 1 for hail (0.577-1.090), wind (0.927-1.706) and tornadoes (0.998-1.846). No planned pooled test established bias. In the most populated fifth, wind and tornado reports exceeded even the maximum allowed expected count by 30.4% and 25.9%. Pointwise seven-day block lower limits for their ratios were 1.244 and 1.145. These exploratory differences repeated in two time periods. A probability per layer fitted in 2021-2023 improved 2024-2026 report Brier scores by 4.37% for wind and 1.68% for tornadoes, with no clear hail gain. Midpoint values made hail and tornado scores worse. The method separates mean-bias claims that depend on contour interpretation from claims that survive all allowed values. It does not establish physical-event calibration: reports are incomplete, population and geography are confounded, and the report window includes the hour before forecast validity. Bounds depend on treating the next allowed contour as an upper probability limit.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "SPC",
+    "forecast verification",
+    "probability contours",
+    "partial identification",
+    "storm reports",
+    "population",
+    "Brier score"
+  ],
+  "display": [
+    {
+      "path": "files/results/population.png",
+      "caption": "Observed/expected bounds by population fifth. Thick lines span all allowed contour values. Thin lines give pointwise seven-day block endpoint limits."
+    },
+    {
+      "path": "files/results/bounds.png",
+      "caption": "Pooled report bounds and sensitivity to radar hail thresholds. All pooled report bounds contain 1."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified fixed grids and source provenance. We add exact contour bounds and forward tests of fitted layer values."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-17-0104.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of interpolated and non-interpolated probability verification."
+    },
+    {
+      "target": "https://www.weather.gov/media/directives/010_pdfs/pd01005012curr.pdf",
+      "reason": "Operational outlook probability contours and hazard definitions."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/outlooks.py"
+    },
+    {
+      "target": "https://www.spc.noaa.gov/climo/reports/"
+    },
+    {
+      "target": "https://noaa-mrms-pds.s3.amazonaws.com/index.html"
+    }
+  ]
+}
