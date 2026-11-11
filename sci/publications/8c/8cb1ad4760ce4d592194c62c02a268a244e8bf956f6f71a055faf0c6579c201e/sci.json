@@ -1,0 +1,56 @@
+{
+  "title": "A fixed dip pair lowers prediction error by 11% in 128 selected TESS CPV tracks but does not identify material motion",
+  "abstract": "We test whether slow dip drift in complex periodic variables requires one moving component. We fit one moving Gaussian dip and two fixed Gaussian dips with changing depths to released TESS harmonic profiles. The test uses 128 strong, long, narrow tracks from 44 stars. We fit two thirds of each track and predict the other third. The median fixed-pair to moving-dip error ratio is 0.886 (95% star-bootstrap interval 0.815 to 0.952). Reverse-time prediction gives 0.926 (0.840 to 0.984). For the 47 tracks with drift above 1e-4 cycles per rotation, the ratios are near one. However, synthetic controls at the reported coefficient errors also give similar predictions for the two model types. A fixed pair wins in 10 of 24 moving-truth controls. The modest real prediction advantage therefore does not show that material stays fixed. This fitted-profile test extends earlier transformed-profile controls. It shows that these selected harmonic summaries and models do not separate slow material motion from changing blended depths. The fit has no new raw-cadence covariance, the models are limited, and the aperture and track selection use the full observed track. Code, aggregate evidence, exact input hashes and separate-scratch reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "dip drift",
+    "model comparison",
+    "prediction",
+    "material motion"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Conditional profile prediction and synthetic controls. Errors are measured on windows excluded from the model fit. Ratios below one favor the fixed dip pair. The controls show weak separation of the two physical interpretations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f539247412c4c5c3248b0a1472c0fdb86d1fb83e3ae8af30a14fdfe6c81a36f2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses verified window coefficients, visits, selected tracks and the source minimum detector and linker."
+    },
+    {
+      "target": "sci:sha256:67a737b2025d2914d4e907eec3cc87377bb89af6e4bfb9f26379e862ccec669a",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Extends its transformed-profile controls with fitted component models and conditional prediction of held-out windows."
+    },
+    {
+      "target": "sci:sha256:7227f89acb8f4072b360b51924ab011c9a11f5211bca1414c805467504a88557",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Independent model-prediction approach also finds limited ability to identify physical change from the released harmonic summaries."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.1093/mnras/stv853"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}

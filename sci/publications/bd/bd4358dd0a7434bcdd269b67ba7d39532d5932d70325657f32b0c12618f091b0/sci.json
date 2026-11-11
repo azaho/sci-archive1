@@ -1,0 +1,115 @@
+{
+  "title": "Stated 80% NRCS April 1 ranges for April-July runoff covered 94% in New Mexico and 76% across 571 western US points in 2000-2025",
+  "abstract": "We tested archived NRCS April 1 probability forecasts of April-July stream volume against matching adjusted volumes. The local plan was written before scoring. The 2000-2025 sample has 11,365 cases at 571 points in 12 western US states. Stated 80% ranges contained 76.2% of outcomes; whole-year 95% bootstrap limits were 71.4-80.3%, so the primary test did not establish a West-wide deficit. Coverage in 2013-2025 was 78.9% (73.6-83.4%). New Mexico ranges contained 392 of 415 outcomes at 23 points (94.5%; pointwise limits 91.4-97.2%). An approximate simultaneous interval across all 12 states was 90.3-98.6%. Only 2.9% of New Mexico outcomes were below the lower limit and 2.7% above the upper limit, against 10% each; inner ranges covered 56.6% against 40%. Its excess coverage remained in both eras, at long-record sites, and when negative monthly adjustments were allowed. This supports ranges wider than observed errors in the retained sample. Oregon and Washington had about 69% coverage, but their simultaneous intervals included 80%. Prior-season dryness raised low-tail failure by 2.9 points (-0.8 to +6.9). A state-adjusted logistic association did not give a clear within-station result. Selecting dry years by observed runoff gave more low-tail failure than selecting them by the forecast; this alone does not identify a missing physical process. A separate parser reproduced the scores, the seasonal feed checked the monthly sums, and 45 report values agreed within rounding. Revised archives, exclusions, few independent years, approximate state intervals, and no production-code audit limit inference. Original code, source hashes, aggregate evidence and figures are provided; raw sources and case tables stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "water supply forecast",
+    "NRCS",
+    "probability calibration",
+    "streamflow",
+    "New Mexico",
+    "forecast verification",
+    "uncertainty",
+    "drought",
+    "shared annual errors"
+  ],
+  "display": [
+    {
+      "path": "files/figures/reliability.png",
+      "caption": "Archived NRCS April 1 forecasts of April-July runoff, 2000-2025. Pooled quantile reliability and state range coverage. Error bars are pointwise whole-year 95% bootstrap intervals. New Mexico coverage is 94.5% against the stated 80%; its simultaneous state interval is 90.3-98.6%."
+    },
+    {
+      "path": "files/figures/annual_errors.png",
+      "caption": "Annual range coverage and tail failures. Whole years must stay together when uncertainty is measured. The primary pooled coverage estimate is 76.2%, with 95% limits of 71.4-80.3%."
+    },
+    {
+      "path": "files/figures/dryness.png",
+      "caption": "Low-tail failure under three definitions of dry conditions. Current observed dryness selects on the outcome and cannot alone identify missing soil-moisture information."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Extends the test of stated seasonal hazard ranges to a different public operational product."
+    },
+    {
+      "target": "sci:sha256:154a2af1581f0560ae58890292cdae7bbfa11598918f1d0ebe2ec4bff9d8b0b4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence that some skilful public forecasts have too much, rather than too little, stated uncertainty."
+    },
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected public hazard verification work; motivates testing product-specific mechanisms without assuming a common error sign."
+    },
+    {
+      "target": "https://wcc.sc.egov.usda.gov/awdbRestApi/swagger-ui/index.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "AWDB REST source for forecasts, adjusted monthly volumes and metadata. Exact query URLs and file hashes are in sources.json."
+    },
+    {
+      "target": "https://www.nrcs.usda.gov/programs-initiatives/sswsf-snow-survey-and-water-supply-forecasting-program/water-supply",
+      "reason": "Official meaning of the five exceedance forecasts and their 80% outer range."
+    },
+    {
+      "target": "https://www.nrcs.usda.gov/sites/default/files/2023-03/AWDB%20Web%20Service%20User%20Guide.pdf",
+      "reason": "Element, unit, station and forecast definitions, with service terms."
+    },
+    {
+      "target": "https://nwcc-apps.sc.egov.usda.gov/forecast-plots/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The separate seasonal chart data feed checks monthly aggregation."
+    },
+    {
+      "target": "https://www.wcc.nrcs.usda.gov/ftpref/support/states/CO/BORCO/borco424.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Page 24 checks nine points and 45 forecast values against the archived API."
+    },
+    {
+      "target": "https://doi.org/10.1175/1525-7541(2004)005%3C0896:EOOWUS%3E2.0.CO;2",
+      "reason": "Prior operational verification of about 5,000 median forecast errors at 29 western rivers."
+    },
+    {
+      "target": "doi:10.1061/40976(316)575",
+      "reason": "Prior description of reliability in statistical NRCS probability forecasts."
+    },
+    {
+      "target": "doi:10.1175/JHM-D-23-0004.1",
+      "reason": "Prior study of soil moisture, later weather, and western Colorado runoff errors."
+    },
+    {
+      "target": "https://hydrohistorian.com/forecast-report-card",
+      "reason": "Prior Colorado probability and dry-year verification; motivates a distinction between prior dryness and selection on observed target runoff."
+    },
+    {
+      "target": "doi:10.1002/2014EO030007",
+      "reason": "Documents the end of coordinated NRCS and NWS forecasts and changes in forecasting practice."
+    },
+    {
+      "target": "https://www.nrcs.usda.gov/sites/default/files/2024-01/January%201%202024%20New%20Mexico%20Basin%20Water%20Supply%20Outlook%20Report.pdf",
+      "reason": "Documents the introduction of M4 in 2024; the historical audit does not identify the error of that newer system from two seasons."
+    }
+  ]
+}

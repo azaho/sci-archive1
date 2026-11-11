@@ -1,0 +1,73 @@
+{
+  "title": "The generic prior raised first-update Brier error for 30 deep USGS aftershock sequences in 2024-2026",
+  "abstract": "We tested how the generic prior changed archived USGS aftershock probabilities for 237 mainshocks. The test reuses a signed 2019-2026 data set and is exploratory. We paired Bayesian and sequence-specific forecasts for the same targets and gave each mainshock equal weight. For 30 mainshocks deeper than 70 km, the first update with both models had Brier scores of 0.008545 and 0.005366. The prior raised error by 0.003179 (59%; mainshock-bootstrap 95% interval 0.000248 to 0.007135). The median update was 4 hours after the mainshock. The result held after any one deep mainshock was removed, but only 13 of 30 had positive differences. Across all updates, the deep difference was smaller and uncertain; shallow mainshocks gained from the prior. An exact score decomposition shows that added error on no-event rows exceeded the benefit on event rows. Alaska supplied most of the deep mean loss. Both updated models still overpredicted deep-event occurrence. This is an audit of the incremental prior effect, not a physical explanation of absent aftershocks or a validated repair. Dependence between sequences, catalog errors, small circles, a fixed paired subset, and exploratory choices limit inference. Code, inputs, hashes, aggregate results, a figure, and an independent source audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "aftershock forecasts",
+    "USGS",
+    "Bayesian prior",
+    "Brier score",
+    "depth",
+    "paired verification"
+  ],
+  "display": [
+    {
+      "path": "files/scores.png",
+      "caption": "The first paired update had more Brier error with the generic prior for deep mainshocks. All-update scores show a different effect by depth. Each mainshock has equal weight; bars on the left are bootstrap 95% intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of verified paired forecasts, counts, model metadata, original calibration results, and upstream provenance. We add a first-update prior comparison, depth contrast and score decomposition."
+    },
+    {
+      "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier audit identified completeness as a limit on verification."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official description of the generic, sequence-specific and Bayesian model distributions."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/schedule.php",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1785/0120160073",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Global generic-prior method; technical context from the USGS background page and the paper search abstract."
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.5066/F7MS3QZH",
+      "relations": [
+        "uses"
+      ],
+      "reason": "USGS ComCat upstream source through the cited fixed snapshot."
+    }
+  ]
+}

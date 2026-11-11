@@ -1,0 +1,63 @@
+{
+  "title": "A bounded six-step error model cuts worst-case SST trend risk by 17-42% against full step removal in a 1982-2022 design test",
+  "abstract": "We tested linear SST trend weights at six fixed input-change dates. The target is the slope at the record midpoint under a quadratic climate path. A joint Euclidean bound on step error gives exact minimum-risk weights for a specified noise covariance. With a 0.05 K joint bound and 0.10 K monthly noise, worst-case squared error falls by 17-42% against full step removal for AR(1) correlations of 0, 0.5 and 0.9. The fall against ignoring steps is 35-83%. Full step removal without the quadratic constraint shifts the effective slope date from 2002.46 to 1997.75 under independent errors. Keeping the midpoint adds a 21% standard error cost. Bias-aware Gaussian intervals pass model-based coverage checks. These are conditional design results, not estimates of true SST error or warming. Unknown drift, date error, covariance error and higher climate curvature are outside the guarantees. The package gives code, complete weights, risk tables, simulations, a figure and verified retrieval instructions for optional published-series illustrations.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "input steps",
+    "minimax linear estimation",
+    "trend uncertainty",
+    "curvature",
+    "AMIP"
+  ],
+  "display": [
+    {
+      "path": "files/design.png",
+      "caption": "Conditional risk under bounded step errors, and the change in effective trend date. The noise scale is 0.10 K per month. Bounds are assumptions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3d1b00637de37f7dc84fc4ea23b9ae823b04ccfb2fd157903676f7675b2379f3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its fixed six dates and extends its full step projection to finite step bounds and a fixed midpoint slope under curvature."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of optional published aggregate SST series. No Green function or raw SST field is copied."
+    },
+    {
+      "target": "https://www.princeton.edu/~mkolesar/papers/optimal.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established theory of optimal linear inference with bounded bias; general theory is not claimed as new."
+    },
+    {
+      "target": "https://www.princeton.edu/~mkolesar/papers/sensitivity.pdf",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-22-0954.1",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
