@@ -1,0 +1,116 @@
+{
+ "title": "TOI-682 b: two ground transits confirm the 20-min TESS timing variation; N-body fits prefer an outer planet near 15.96 d to the reported 16.13 d and predict 2027 transits 27 min early",
+ "abstract": "A blind TESS search found a large transit timing variation (TTV) of the mini-Neptune TOI-682 b (P = 6.84 d). An unrefereed poster reports a non-transiting radial-velocity planet c (P = 16.134 d, m sin i = 9.6 Earth masses) and e_b = 0.41. We timed all 20 TESS 2-min transits again (2019-2026) and two independent ground transits from public ExoFOP data (NGTS 2020, LCO 2022). A linear ephemeris gives chi2 = 748 for 22 times. The ground transits are 21.0 +- 2.2 and 15.4 +- 4.3 min early, so the TTV is real. The TESS transit shape needs a stellar density of 0.54 solar for a circular orbit, against about 1.0 for the K0 V host. Thus e_b > 0.14 (97.5 %, median 0.32), which agrees with the RV value. The TTVs alone do not need an eccentric b. Coplanar two-planet N-body fits (TTVFast) with many random starts give chi2 = 11.2 at P_c = 15.963 d with e_b = 0.40 and m_c = 10.7 Earth masses. Within 15.6-16.8 d all good fits have P_c = 15.90-16.00 d (7:3 commensurability). At the reported 16.134 d the best fit found has chi2 = 34.2. The two ground times cause most of this difference; TESS alone gives delta chi2 = 6.6. The TTVs do not measure the mass of c (0.4-105 Earth masses fit), and 18 perturber periods from 3 to 39 d give chi2 < 22. Fits near the RV period predict that TESS sector 114 transits (2027) arrive 27 min early (95 %: 22-33 min). Fits at 16.134 d predict 10-11 min, so S114 can test the period of c. Limitations: the likelihood has many minima, so the chi2 values are upper limits and we give no posterior; a coplanar model; RV values from a poster without uncertainties and no public RV data; an assumed stellar density; two ground times with observer reductions.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "TOI-682",
+  "transit timing variations",
+  "TESS",
+  "N-body",
+  "eccentricity",
+  "photo-eccentric effect",
+  "ExoFOP",
+  "NGTS",
+  "LCOGT",
+  "mini-Neptune",
+  "mean-motion commensurability",
+  "forecast"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc_forecast.png",
+   "caption": "O-C transit times of TOI-682 b (TESS black, ground orange) with 34 acceptable two-planet N-body solutions near the RV period of c and their forecast for TESS sector 114 in 2027 (green band). Bottom: the two ground transits (NGTS 2020, LCO 2022) arrive 21 and 15 min before the linear-ephemeris time (dashed)."
+  },
+  {
+   "path": "files/figures/fig2_period_scan.png",
+   "caption": "Best chi2 found (22 times) against the period of the perturbing planet. Many periods fit; near the RV planet the minimum is at 15.90-16.00 d, and the reported 16.134 d fits worse. Points are upper limits from finite local searches."
+  },
+  {
+   "path": "files/figures/fig3_profiles.png",
+   "caption": "Profile chi2 near the RV period. Left: eccentricity of b; only the transit shape with the stellar density requires e_b > 0.14. Right: the mass of c is not constrained by the TTVs."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:302c828025a9bd83fc117b7e011530d375577d6ed8f66ac5072e7bb3d26e51b2",
+   "relations": [
+    "uses",
+    "supports",
+    "reviews"
+   ],
+   "reason": "Parent blind TTV search that found the TOI-682 b TTV. We confirm the TTV with independent ground transits, compare our TESS times with its times, and extend its two-planet scan of the reported RV planet."
+  },
+  {
+   "target": "sci:sha256:0e9b8fb5c8fba1dcfa8605d3e47bf8fc2f0e6508a48e3ed54ba6f45668e949c6",
+   "reason": "Follow-up of another detection of the same blind TTV search (HD 191939); context for the campaign objective."
+  },
+  {
+   "target": "doi:10.5281/zenodo.5131353",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Reported RV parameters of TOI-682 b and c (TESS Science Conference II poster, Quinn et al. 2021)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abc6af",
+   "reason": "Statistical validation of TOI-682 b (Giacalone et al. 2021)."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "reason": "TESS mission (Ricker et al. 2015)."
+  },
+  {
+   "target": "https://exofop.ipac.caltech.edu/tess/target.php?id=429304876",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP-TESS ground-based light curves and target data of TOI-682."
+  },
+  {
+   "target": "doi:10.1093/mnras/stx2836",
+   "reason": "NGTS facility (Wheatley et al. 2018)."
+  },
+  {
+   "target": "doi:10.1086/673168",
+   "reason": "Las Cumbres Observatory network (Brown et al. 2013)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/787/2/132",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TTVFast N-body transit times (Deck et al. 2014)."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit model (Kreidberg 2015)."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler (Foreman-Mackey et al. 2013)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201118085",
+   "relations": [
+    "uses"
+   ],
+   "reason": "REBOUND N-body code (Rein and Liu 2012), used with WHFast and MEGNO."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/756/2/122",
+   "reason": "Photo-eccentric effect (Dawson and Johnson 2012)."
+  }
+ ]
+}
