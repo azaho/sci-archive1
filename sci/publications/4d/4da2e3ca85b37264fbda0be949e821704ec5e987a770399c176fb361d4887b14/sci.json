@@ -1,0 +1,89 @@
+{
+  "title": "Harvard plate tests favor one HD 303514 recovery state over one eclipse-loss state",
+  "abstract": "Two published HD 303514 states fitted TESS and ASAS-3 data but predict different eclipse histories. We test their single best training states on 2,855 DASCH DR7 plate measurements from 1889 to 1955. A common IAS15 solver gives weighted fit gains of 88.34 for the recovery state and 53.49 for the loss state, with one free amplitude and separate plate-series offsets. Common-shape templates that test timing alone give 82.54 and 66.39. Every tested plate cut and each of three eras favors the recovery state. The native finite-step loss-state solver gives gains of 53.21 and 66.70, so its numerical timing error does not change the ranking. This is a fixed-state comparison. No orbital fit to plates or probability of eclipse loss is claimed. Plate calibration, error correlations, twin-star assumptions and unsearched orbital branches limit the result. Code, fitted states, aggregate evidence and an external-data retrieval script are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "HD 303514",
+    "DASCH",
+    "eclipse timing",
+    "hierarchical triples",
+    "held-out test",
+    "eclipse loss"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Predicted primary separation, held-out plate fit gain against time shift, and model preference under plate cuts. The gain is a weighted residual statistic, not calibrated evidence odds. Timing uses the same eclipse shape for both states."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3288fe7d5bc8240ef4834be8e6d59089b4c114c3714a7c7f358763356b841d1c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Recovery state and orbit code tested on held-out Harvard plates."
+    },
+    {
+      "target": "sci:sha256:ccdc9586a30e391d72cdf5ac81bc026ac1ef400fe9cac414c17cf39c25855821",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Eclipse-loss state and native orbit code tested on held-out Harvard plates."
+    },
+    {
+      "target": "sci:sha256:7939b19ac7d8dadc2b1908d54832624d5db26f6938f73fd57230123a33c31397",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Plate loader and eclipse code; earlier plate test does not test the two new states."
+    },
+    {
+      "target": "sci:sha256:90287c1180724b1507b2f1fb15c9140e195a55877b2f7b3bd7eed8869e45b3cf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the reference state and orbit solver."
+    },
+    {
+      "target": "sci:sha256:bd1c8dcce7fa69786cf55908e739d098708151f380a091deb88421b2dad40734",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior plate cut tests motivate sensitivity analysis."
+    },
+    {
+      "target": "sci:sha256:2e627e69c37a6f6a06b189dd85b965dafc62efb386c45b9ef0e5ea978b9abc13",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier evidence for historic partial eclipses."
+    },
+    {
+      "target": "https://dasch.cfa.harvard.edu/dr7/"
+    },
+    {
+      "target": "https://dasch.cfa.harvard.edu/citing/"
+    },
+    {
+      "target": "https://dasch.cfa.harvard.edu/dr7/reduce-lightcurve/"
+    },
+    {
+      "target": "doi:10.1017/S1743921312000166"
+    },
+    {
+      "target": "doi:10.1088/0004-6256/140/4/1062"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085"
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2164"
+    }
+  ]
+}
