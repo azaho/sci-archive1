@@ -1,0 +1,69 @@
+{
+  "title": "Four exact seasonal harmonics bound the pulse signal below 0.05301 per day in a specified parallel-store routing test",
+  "abstract": "We test a fixed-store routing explanation for runoff loss. Store drainage times and effective recharge stay the same, but different fractions of store outflow reach the stream. We represent retained and diverted recharge volumes as positive measures over all positive drainage times. This gives linear bounds that cover any number of parallel linear stores, including continuous mixtures. We fix synthetic targets: mean stream retention 0.784 and pulse decline indices 0.2079 and 0.2316 between days 3 and 8. Four exact positive annual harmonics limit the reference pulse endpoint sum below 0.05301 per day per unit recharge pulse. One harmonic allows about 0.07549 per day, and no harmonic allows about 0.07762. With one exact annual harmonic and a pulse endpoint sum of at least 0.04 per day, the least reference mean storage per mean recharge is between 11.04583 and 11.04635 days. A positive finite witness meets the upper limit. Thus large storage in one prior example is not required for this wider, nonmonotone routing class. Transfer error weakens the bounds. Continuous-domain dual inequalities and finite-witness existence are checked with interval arithmetic. Code, proofs, coefficients, witnesses, source hashes and figures are included. This is a method and synthetic test, not a catchment fit. The scalar targets come from different prior summaries. Effective recharge, pulse initial conditions and complex transfers would need joint field estimates. The cause of Australian runoff loss remains open.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "runoff loss",
+    "parallel stores",
+    "routing",
+    "recession",
+    "positive measures",
+    "interval arithmetic",
+    "seasonal transfer",
+    "storage bounds"
+  ],
+  "display": [
+    {
+      "path": "files/certified_bounds.png",
+      "caption": "Continuous-domain bounds for synthetic fixed-store routing. The targets are f=0.784, D0=0.2079 and D1=0.2316 between pulse days 3 and 8. The left panel uses one exact positive annual harmonic. The right panel varies the number of exact positive annual harmonics. These are model bounds, not field estimates or confidence intervals."
+    },
+    {
+      "path": "files/witness.png",
+      "caption": "A positive finite synthetic witness with pulse endpoint sum 0.04 per day and reference mean storage per mean recharge 11.04635 days. Seasonal and pulse panels are separate forcing experiments. Internal drainage times and input shares stay fixed. Another outlet carries the diverted water."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4e9c2abeed079d9e08e08ddd1f986300569cebc195f22b74192b494b7b5bba04",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the finite-frequency routing question and three credited scalar anchors. We replace a fixed-grid feasibility search with bounds over all positive store times."
+    },
+    {
+      "target": "sci:sha256:af0b285299fd46d6daf6ff766c41e331de0f6e68cf75587906c99a57855df1d7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the storage and event-signal question and scalar targets. Our wider nonmonotone routing class has a different storage envelope; its result does not reject the two-store all-frequency limit."
+    },
+    {
+      "target": "sci:sha256:2119ec1086b106cbb71c73debc897cb0245f134859a5066f84a0db3643afb13d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Annual slope changes alone do not identify a new catchment state. This motivates a joint response test."
+    },
+    {
+      "target": "sci:sha256:509746945963c56d6df824bc5262ed70c0961f4446234eda1b56d48b1686bcc4",
+      "reason": "Selected long-record runoff-efficiency work provides the research objective; no record-level data are reused."
+    },
+    {
+      "target": "doi:10.1061/(ASCE)HE.1943-5584.0001518"
+    },
+    {
+      "target": "doi:10.5194/hess-26-4391-2022"
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022"
+    },
+    {
+      "target": "doi:10.1137/S1052623401399903"
+    }
+  ]
+}
