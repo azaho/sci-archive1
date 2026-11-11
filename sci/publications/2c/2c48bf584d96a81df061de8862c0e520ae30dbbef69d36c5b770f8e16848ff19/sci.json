@@ -1,0 +1,73 @@
+{
+  "title": "Added daily variance can lower coral Degree Heating Weeks under a fixed baseline",
+  "abstract": "The coral Degree Heating Week (DHW) rule includes the full daily HotSpot only when it reaches 1 degree C. This jump makes the rule nonconvex. We derive the exact expected dose for Gaussian daily temperatures and a general response rule under added independent Gaussian noise. Added variance lowers expected dose when the density rises steeply at the threshold. For a Gaussian distribution, the sign changes at a mean HotSpot of a + sigma squared divided by a, where a is the threshold. A stationary 84-day hot-season model proves that a variance loss can create either sign of annual maximum DHW trend. A drop in daily standard deviation from 0.3 to 0.1 degrees C gives false trends of -1.235 and +0.834 degrees C-weeks per decade for two fixed seasonal means. Numerical integration and simulation confirm the formulas. An audit of the cited 1,763-pixel reef arrays preserves the positive average correction. However, the three corrections lower annual maximum trends at 107 to 127 pixels, including 50 pixels in all versions. These counts do not identify the local mechanism. The results reject a general sign argument, not the observed SST input artifacts or the published average reef correction. Fixed baselines, additive Gaussian noise, and the designed seasonal model limit application. Code, proofs, figures, aggregate results, and verified retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "Degree Heating Weeks",
+    "coral heat stress",
+    "variance bias",
+    "SST artifacts",
+    "threshold discontinuity",
+    "Gaussian noise",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/threshold_response.png",
+      "caption": "Exact response to Gaussian variance. The finite variance loss can raise or lower expected 84-day DHW. The colour scale is clipped at plus or minus 3."
+    },
+    {
+      "path": "files/trend_audit.png",
+      "caption": "A stationary seasonal model gives both signs of false annual maximum trend. Published reef corrections retain a positive average but give lower trends at some pixels."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses verified annual arrays. Challenges the convexity explanation and the general sign argument. Confirms the average trend results."
+    },
+    {
+      "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Starting evidence for input-related daily variance steps."
+    },
+    {
+      "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Correction-target dependence motivates a sign test."
+    },
+    {
+      "target": "https://coralreefwatch.noaa.gov/product/5km/methodology.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official DHW rule."
+    },
+    {
+      "target": "doi:10.3390/rs61111579"
+    },
+    {
+      "target": "doi:10.5194/gmd-17-6513-2024"
+    },
+    {
+      "target": "doi:10.1029/2025GL119516"
+    },
+    {
+      "target": "doi:10.1038/s41597-022-01121-y",
+      "reason": "Reef site source in the cited prior analysis. No coordinates are redistributed."
+    }
+  ]
+}
