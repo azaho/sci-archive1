@@ -1,0 +1,78 @@
+{
+  "title": "Early-period width corrections did not show a clear score gain for NOAA hurricane count ranges in 2014-2025",
+  "abstract": "A prior study assigned most missed NOAA seasonal hurricane outcomes to narrow ranges. We test whether an early fitted width rule transfers to later seasons. We fit one location shift or one symmetric extension per basin, issue month and count type on 99 ranges from 2003-2013. We test 108 count ranges in 2014-2025. Extension raised coverage from 68.5% to 88.0%, but mean central 70% interval score rose from 8.688 to 8.978. The paired score change was +0.290, with a 95% year-bootstrap interval from -0.759 to +1.219. Fixed shifts kept the mean width unchanged and gave a score change of -0.123 (-0.556 to +0.309). Neither rule showed a clear score gain. Extension helped the eastern Pacific and hurt the Atlantic in subgroup means. Rolling fits also gave no clear gain. An independent parser reproduced all 207 count outcomes from HURDAT2. These results limit the transfer of an early width correction; they do not overturn historical undercoverage. The test has only 12 later years, uses an inherited archive and a split informed by prior results, and evaluates central ranges although NOAA states a coverage target without equal tails. Code, fitted parameters, aggregate evidence, exact input hashes and a figure are included. External source records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "seasonal hurricane outlook",
+    "forecast verification",
+    "interval score",
+    "temporal transfer",
+    "null result",
+    "forecast calibration"
+  ],
+  "display": [
+    {
+      "path": "files/results/comparison.png",
+      "caption": "Fixed rules trained on 2003-2013 count ranges were tested on 108 ranges in 2014-2025. Bars show coverage. Points show mean score changes from issued ranges; lower is better. Lines show 95% year-bootstrap intervals. Widening increased coverage but did not give a clear score gain."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses its frozen verification table and Poisson comparator. A later-period test does not establish a score gain from early fitted width corrections. This does not challenge its historical outcome counts."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2410.05503",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Forecast-error bound conditional on a Poisson count model class."
+    },
+    {
+      "target": "doi:10.1175/MWR-D-26-0085.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Search abstracts report count underdispersion in large climate ensembles. Full publisher text was not accessible; no numerical data are reused."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-20-0160.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Cyclone count forecast context for underdispersion and Poisson interval width."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane2025/May/hurricane.shtml",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Official 70% range wording does not require equal tails."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2025-092926.txt",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+ "title": "HadISST1 and AMIP 1.1.9 SST warm 13-26% too slowly at 60S-60N in 1982-2022 (ship-buoy bias), so their Green's-function pattern effect is 0.12-0.16 W m-2 K-1 too strong; HadISST1 steps in June 2020",
+ "abstract": "Question: do documented input changes in the two SST datasets that force atmosphere models (HadISST1, and PCMDI-AMIP 1.1.9 = NOAA OI SST v2 after 1981) cause artifacts, and why does the Green's-function pattern effect differ between SST products? Approach: we compared both datasets on 5-degree boxes (60S-60N, 1982-2022) with satellite-only ESA CCI v3, ERSSTv5, COBE-SST2, step-corrected DOISST and 146 tropical moorings. We added the HadSST4.2 bias adjustment (median minus unadjusted) that HadISST1 and OI v2 do not apply, fitted steps, and applied five GFMIP Green's functions. Results: HadISST1 warms 0.094 K per decade and AMIP 1.1.9 0.110, against 0.122-0.142 in the references (CCI 0.127). The missing adjustment gives -0.025 K per decade and removes most of the HadISST1 drift (against CCI -0.033 to -0.008); it over-corrects OI v2, which follows the buoys. The pattern term P equals Q/T, and Q (the radiative effect of the non-uniform warming) is similar in all products. Thus P tracks 1/T across six products (r = -0.92), and at one common T the product range of P falls from 0.25 to 0.13 W m-2 K-1. The uniform adjustment makes P less negative by 0.155 (HadISST1, -0.75 to -0.60) and 0.119 (AMIP 1.1.9) for 1982-2022, and by 0.19 and 0.15 for 1982-2014, with all five model intervals excluding zero. HadISST1 also has a warm step at its June 2020 satellite-source change (against CCI +0.10 K at 40-60S, t = 4.4; largest break against in situ data), and the OI v2 mid-2018 cold step is confirmed against CCI. Limitations: the true trend is uncertain by about 0.01 K per decade; the Green's functions cover only 60S-60N ice-free SST and give feedback per K of SST; the adjustment is approximate; we did not run full AMIP models.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "HadISST1",
+  "OI SST v2",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "pattern effect",
+  "radiative feedback",
+  "Green's function",
+  "GFMIP",
+  "ship-buoy bias",
+  "HadSST4",
+  "ESA SST CCI",
+  "data artifacts",
+  "homogenisation",
+  "climate sensitivity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_dilution.png",
+   "caption": "Pattern term P (5-model mean) against the 60S-60N SST trend T for the published products (filled) and for HadISST1 and AMIP 1.1.9 after ship-buoy adjustment and step removal (open; diamond = uniform adjustment, circle = spatial adjustment). The grey band is P = Q/T for the range of Q of the raw products: the products lie along it, so most of their spread in P comes from T."
+  },
+  {
+   "path": "files/figures/fig1_drift.png",
+   "caption": "Annual 60S-60N SST difference of (a) HadISST1 and (b) AMIP 1.1.9 / OI v2 from the mean of ERSSTv5 and COBE-SST2 (solid) and from satellite-only ESA CCI (dashed), with the false cooling expected from the missing HadSST4 ship/buoy adjustment (grey). Dotted lines: documented input changes."
+  },
+  {
+   "path": "files/figures/fig3_step2020.png",
+   "caption": "HadISST1 step at its June 2020 satellite-source change, fitted per box against (a) the in situ mean and (b) ESA CCI; (c, d) break-scan t-values of drift-adjusted HadISST1 minus the in situ mean (solid) and minus CCI (dashed) for 60S-60N and 40-60S. Dotted lines: documented HadISST1 input changes."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its GTMBA daily mooring SST for the mooring checks."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Uses its 5-degree box code and step-corrected DOISST boxes; confirms its OI v2 2018 step against ESA CCI."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "Earlier campaign result on input-change artifacts in daily and monthly SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Selected work: DOISST correction ensemble; this study extends the artifact audit to the two AMIP SST datasets."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its 5-degree GFMIP Green's functions and feedback method; explains its product spread of the pattern term by warming-rate differences."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675"
+  },
+  {
+   "target": "doi:10.1029/2023MS003700"
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w"
+  },
+  {
+   "target": "doi:10.1029/2018JD029867"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-19-0941.1"
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023"
+  },
+  {
+   "target": "doi:10.1029/2002JD002670"
+  },
+  {
+   "target": "https://www.metoffice.gov.uk/hadobs/hadisst/servicenotes.html"
+  }
+ ]
+}
