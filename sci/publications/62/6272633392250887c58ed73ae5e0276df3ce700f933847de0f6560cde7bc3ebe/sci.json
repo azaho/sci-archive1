@@ -1,0 +1,138 @@
+{
+ "title": "TESS centroids show that 13% of main-sequence M-dwarf rapid rotators have another star's period; after cleaning, contraction alone predicts 3.5 main-sequence CPVs for 2 seen",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. Earlier campaign results found that old main-sequence M dwarfs at the corotation-to-stellar radius ratio x of young CPV hosts have 2 CPVs where a contraction-only (x-only) model predicts 8.9, and that eROSITA X-ray weights reduce the prediction to 4.4. We located the source of the rotation signal for all 4,595 TESS 2-minute rapid rotators of these tests (P 0.08-2 d, BP-RP 2.4-3.8), with flux-weighted centroids of 7,972 light curves. The signal is more than 7 arcsec from the target for 13.3% (11.5-15.2%) of main-sequence rapid rotators, against 5.4% of 1-24 Myr members and 2.5% of 35-750 Myr members, and for 46% of main-sequence stars with P < 0.2 d. At fixed crowding, magnitude, period and neighbour flag, the main-sequence odds are 4.4 times higher (p = 3e-15). Off-target main-sequence stars are mostly X-ray quiet (58%, against 6% of on-target stars), so the two independent methods agree. With off-target stars removed and X-ray weights, the x-only model predicts 3.5 (95% interval 1.7-5.6) main-sequence CPVs for 2 observed (p = 0.37); the extra main-sequence rate factor at fixed x is 0.55 (0.09-1.82). Threshold variants give 3.4-4.0 (p = 0.29-0.43). The age decline inside young groups does not change (e-folding 41 Myr at fixed P; radius exponent gamma 0.65, 0.35-1.40). Thus no age factor beyond contraction is necessary, but a factor down to about 0.1 is still allowed. Limitations: 2 main-sequence CPVs; the centroid method cannot separate sources within about 5 arcsec; X-ray data cover half the sky; neighbour-clean main-sequence stars still have 0 CPVs for 2.2 predicted (p = 0.16).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "centroid",
+  "source localisation",
+  "blended periods",
+  "rapid rotators",
+  "corotation radius",
+  "main sequence",
+  "eROSITA",
+  "stellar contraction",
+  "age decline"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_offtarget.png",
+   "caption": "(a) Offset of the TESS rotation signal from the target (median over 1-3 light curves) for CPV hosts, 1-24 Myr members, 35-750 Myr members and main-sequence field stars (complementary cumulative fraction). Dashed: 5-arcsec on-target limit; dotted: 7-arcsec off-target limit. CPV hosts were selected on target by the source survey. (b) Off-target fraction against period with 95% intervals; numbers are main-sequence stars per bin."
+  },
+  {
+   "path": "files/figures/fig2_xray_vs_centroid.png",
+   "caption": "Agreement of the centroid class and the eRASS1 X-ray test (eROSITA-DE sky). (a) Fraction of stars with saturated probability p_sat < 0.5 for each centroid class and group, with 95% intervals; numbers are stars. (b) p_sat of on-target and off-target main-sequence rapid rotators."
+  },
+  {
+   "path": "files/figures/fig3_ms_test.png",
+   "caption": "Main-sequence CPV test of the frozen x-only model. (a) Predicted (95% bootstrap interval) and observed CPVs among 368 main-sequence rapid rotators in the training x range (orange) and the 185 without a bright or co-moving neighbour (grey), for six weightings; p is the probability of the observed count or fewer. (b) Profile likelihood of an extra main-sequence rate factor at fixed x; the factor 1 (no age effect) is inside the 95% range after cleaning."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its frozen x-only main-sequence CPV test. Off-target TESS periods inflated its prediction; with centroid and X-ray cleaning the deficit (8.9 predicted, 2 observed) becomes 3.5 predicted (p = 0.37). We reuse its S1-S55 periods, labels, efficiencies and features."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We do the TESS centroid check that it named as open. X-ray-quiet main-sequence stars are mostly off target, which supports its inference; combined with its X-ray weights the remaining deficit disappears. We reuse its code."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Its contraction (x-only) model agrees with the cleaned main-sequence count; its gamma result does not change after cleaning."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS survey tables, light-curve file list and the centroid source-location method, now applied to the rapid-rotator denominators."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "BANYAN classes and efficiencies; its 44 Myr age decline at fixed P survives removal of off-target periods (41 Myr)."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "Independent K2 confirmation of the CPV age decline."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "K2 test of the contraction model and the first main-sequence deficit."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "CPV dip widths stay fixed in rotational phase."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Earlier group-held-out tests of age and corotation control."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "CPV shape memory."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BHAC15 evolutionary models."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission (Ricker et al. 2015)."
+  },
+  {
+   "target": "https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/UpperLimitServer_dr1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "eRASS1 aperture photometry."
+  },
+  {
+   "target": "https://dc.zah.uni-heidelberg.de/tap",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GAVO TAP service, gaia.dr3lite."
+  }
+ ]
+}
