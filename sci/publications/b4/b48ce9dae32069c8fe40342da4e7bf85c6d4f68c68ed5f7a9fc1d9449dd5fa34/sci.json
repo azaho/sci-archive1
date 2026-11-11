@@ -1,0 +1,124 @@
+{
+ "title": "The dips of 118 TESS complex periodic variables stay at a fixed phase relative to the starspot pattern for months, then drift away as a random walk of 1e-5 cycles squared per day",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period, probably from material near corotation. We tested how the dip pattern moves relative to the starspot pattern of the same star. We split each folded TESS 2-minute light curve into a spot part (harmonics 1-2 with dip masks) and a dip part, and measured the phase of each part in 1.5-day chunks. We used 443 light curves (sectors 1-107) of 126 on-target CPVs from an earlier survey, and 3,300 injections into 300 non-CPV rapid rotators. Inside sectors, the dip phase scatters 4.1 (3.4-4.4) times less than the spot phase; CPV spots scatter like control spots. The mean fractional dip-minus-spot frequency is (-0.8 +/- 0.6)e-5 in 118 stars, so on average the material corotates to 2e-5 (95%). But the differences scatter 2.3 times more than calibrated errors, and the dip-minus-spot phase follows a random walk with D = 1.06 (0.86-1.31)e-5 cycles^2/day; strictly periodic injected dips give 0.04e-5. Between sectors, the fraction of pairs where the dips keep their phase relative to the spots within 0.05 cycles is 0.74 for gaps below 60 days, 0.36 for 60-400 days, 0.17 for 1-3 years and 0.14 for 3-8 years, against an injection null of 0.12. A random walk fitted to these pairs gives D = 1.0 (0.3-1.5)e-5, the same as inside sectors; the memory time is 166 (85-473) days. Deepest dips avoid the spot maximum (12% against 21%, p = 0.008), and dip pairs half a cycle apart are not common. Thus the stellar surface pattern sets the dip longitude for months, longer than single dips live, and the longitude then wanders as a random walk of about 0.06 cycles per year. Limitations: the spot/dip split is a model choice; template shifts mix motion and shape change; labels come from one automated vetter; no spectra. Code, per-unit TESS-derived measurements, injections, figures and hashes are included; TESS FITS files and Gaia records are not.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "TESS",
+  "M dwarfs",
+  "corotation",
+  "starspots",
+  "phase stability",
+  "random walk",
+  "magnetospheres",
+  "injection-recovery"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_anchoring.png",
+   "caption": "Left: dip shift minus spot shift between two sectors of the same CPV against the time between the sectors; dashed and dotted lines are the 1 and 2 sigma envelope of the random walk that we measured inside sectors. Middle: fraction of sector pairs with the dip pattern within 0.05 cycles of its earlier phase relative to the spots, with star-bootstrap 95% intervals and the injection null. Right: phase of the deepest dip relative to the spot minimum for 124 CPVs and for injected dips at random phases."
+  },
+  {
+   "path": "files/figures/fig2_frequency.png",
+   "caption": "Left: dip-minus-spot frequency difference divided by its error for 377 CPV sectors and 335 zero-offset injections. Middle: fractional frequency differences. Right: phase scatter of the dip pattern against the spot pattern inside sectors; most points are below the equality line."
+  },
+  {
+   "path": "files/figures/fig1_examples.png",
+   "caption": "Top: folded TESS model of two CPVs split into the spot part (harmonics 1-2) and the dip part (offset). Bottom: phase shifts of the two parts in 1.5-day chunks. In TIC 206544316 the spot phase moves by 0.06 cycles while the dip phase stays within 0.013 cycles."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source survey: CPV labels, catalogue periods and TESS file names that define the sample and the control stars."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "reason": "Age decline of the CPV rate; we add constraints on the material."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "reason": "Contraction model of the rate decline; our results constrain where the material is."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths fixed in phase; we measure the dip phases in time."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Sector-averaged shape memory declines over about ten sectors; our anchoring memory of months agrees."
+  },
+  {
+   "target": "sci:sha256:a01f5abf266d497ae5fad46f657118c3250b39ba7f2f54e9cf45c73a0626af3a",
+   "reason": "Harmonic phase changes between sectors; we separate dip and spot phases."
+  },
+  {
+   "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Host status lasts at least 18 years; we find that the dip longitude reforms near the same spot phase for months."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "reason": "Corotating-clump occurrence model; we test the corotation of the clumps directly."
+  },
+  {
+   "target": "sci:sha256:bea11c2b517351dcba6d653888f8ba1ba5c2679ddf971c4a939d897d153defed",
+   "reason": "Gives the radial spread that free orbits need to keep phase; we measure the phase stability."
+  },
+  {
+   "target": "sci:sha256:92d3d54b7a0765ac26764bb7f09f15c4e6d59312a41bf24530013e134323ddb7",
+   "reason": "Drag instability of exact dust corotation; our random walk is an observational counterpart."
+  },
+  {
+   "target": "sci:sha256:9551e28b56824c06b502108a3aeb3651dd5bcbcff863ee0414e74a4f9c818a42",
+   "reason": "Gas-drag growing mode at corotation; related theoretical context."
+  },
+  {
+   "target": "sci:sha256:d74299895641e6fe81261699c542f506e53d2c0e957781f31c46a12ec94b1f98",
+   "reason": "Latest result on the age question (supply decline beyond contraction is limited)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Bouma et al. 2024: CPV definition, dip lifetimes of about 100 cycles."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2017AJ....153..152S",
+   "reason": "Stauffer et al. 2017: scallop-shell stars and dip durations at corotation."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2005MNRAS.357..251T",
+   "reason": "Townsend and Owocki 2005: rigidly rotating magnetosphere model with clouds at the magnetic and rotational equator intersections."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2853J",
+   "reason": "Jardine and Collier Cameron 2019: slingshot prominences above active regions."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC 2-minute light curves from MAST."
+  }
+ ]
+}
