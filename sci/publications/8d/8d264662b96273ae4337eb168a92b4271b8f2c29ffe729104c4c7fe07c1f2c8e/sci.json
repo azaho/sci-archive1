@@ -1,0 +1,74 @@
+{
+  "title": "A two-stage temperature model gave no clear ice forecast gain over a direct model in five Great Lakes in 2011-2026",
+  "abstract": "We tested whether a forecast of January-February temperature improves a frozen Great Lakes ice forecast issued with November-December temperature. Separate lake fits used 1973-2010 and were held fixed for 2011-2026. A two-stage regression reduced ice mean squared error by 2.96% relative to a direct early-winter model, with conditional 95% three-year block limits of -5.41% to 12.84%. Thus the test gives no clear added gain. An exact error budget found a large residual cross term for temperature-anomaly persistence: 124.75 percentage-point squared, with unadjusted limits of 9.65 to 263.15. Dropping this term underestimated actual unbounded ice error by 22.44%. A training projection identity explains the difference between direct and two-stage fits. The result shows why temperature error alone cannot determine response forecast error. Revised records, nominal release dates, five correlated lakes and 16 test winters limit use. No archived numerical weather forecasts or current-ice controls were tested. Code, source hashes, aggregate losses, audits and a figure are included; source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Great Lakes",
+    "ice cover",
+    "forecast transfer",
+    "temperature forecast",
+    "correlated error",
+    "error budget",
+    "forward test",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Ice forecast scores and an exact error budget for 2011-2026. Left: conditional 95% shared-winter block intervals. Full weather is a future-input diagnostic. Right: the residual cross term changes the error budget. Ice MSE on the right uses unbounded predictions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f6529817c732bcd1ea8872809b6b70a9f19848c48170f2bc2e8db0c608522da6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its exact sources, boxes and split, adapt its MIT data-reading code, and test the independence assumption in its temperature-error budget."
+    },
+    {
+      "target": "sci:sha256:255bac1045fca33f0feae3a47f92aae2acf28b19927f7a0389ad53b61099f60d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its issue-date test motivates prediction of unknown weather instead of filling it only with recent means."
+    },
+    {
+      "target": "sci:sha256:6081bf7661bffeef1115a8ec3adc9b107ff0e2f5a291100cbc2d1a64c6bccfa4",
+      "reason": "Training-only selection of climate-response forecasts motivates joint forward tests."
+    },
+    {
+      "target": "doi:10.1175/2011JCLI4066.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-17-0283.1"
+    },
+    {
+      "target": "doi:10.1029/2007JD008470"
+    },
+    {
+      "target": "https://www.glerl.noaa.gov/data/ice/glicd/dates_AMIC.txt"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc"
+    },
+    {
+      "target": "https://www.glerl.noaa.gov/data/ice/"
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html"
+    },
+    {
+      "target": "https://oceanservice.noaa.gov/about/faq.html"
+    }
+  ]
+}
