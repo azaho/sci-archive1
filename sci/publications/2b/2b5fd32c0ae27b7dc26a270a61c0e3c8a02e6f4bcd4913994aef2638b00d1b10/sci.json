@@ -1,0 +1,138 @@
+{
+ "title": "NICER 2021 data show that deep soft X-ray suppression in ASASSN-14ko keeps a 108.46-day period and a 5.5-day lead on the UV peak in 2020-2024, while the dip onset moves by up to 6 days",
+ "abstract": "Question: a Swift XRT clock found that the soft X-ray dips of the repeating nuclear transient ASASSN-14ko repeat at a constant 108.44 d in 2020-2024, so the published period decrease stopped. That clock had no dip in 2021-2022 and used one marker definition. Approach: we reduced all 163 public NICER observations (2020-2023, 413 ks) without HEASoft, with an empirical background model calibrated and validated on 139 NICER blank-sky observations. We froze the predictions of nine published ephemerides for cycles 21-25 before fitting, then measured the dip time of every cycle (NICER and XRT combined) with four definitions and tested ephemerides and a random-walk period-kick model. Results: the 2021 dips start to fall 1-6 d before the deep suppression, so onset markers move by up to 6 d and need 0.85-2.2 d of jitter. The time of deep suppression (first crossing of 30 percent of the pre-dip rate) fits one period of 108.46 d with no excess jitter in eight cycles (residuals below 0.6 d, except a poorly sampled cycle), Pdot -0.0006 to +0.0009 (95 percent), and stays -5.50 +/- 0.36 d before the UVW2 peak in seven cycles (chi2 2.4 for 6 dof). All four markers reject the published Pdot = -0.0026 (delta chi2 14.6-26.1, jitter free). The NICER-era dips cannot separate the frozen stall models (differences up to 3 d); only a constant-Pdot fit is disfavoured for small jitter. For the deep-suppression marker, period kicks are below 0.35-0.6 d per orbit (95 percent), which disfavours the 0.6-0.9 d fitted to optical peaks. Limitations: we chose the 30 percent marker after inspecting the light curves; the kick limit and constant lag depend on it, the Pdot rejection does not; the background model is empirical; no X-ray data exist after 2024 July.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "NICER",
+  "soft X-ray dip",
+  "flare timing",
+  "period derivative",
+  "period kicks",
+  "background model",
+  "Swift XRT",
+  "O-C diagram",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dips_nicer_xrt.png",
+   "caption": "Soft X-ray dips of eight ASASSN-14ko flares from NICER (blue) and Swift XRT (red), aligned on the linear 108.437-d X-ray clock. Green and orange bands: 30 and 50 percent crossing times (68 percent). The 2021 dips start to fall days before the deep suppression, which stays on the clock."
+  },
+  {
+   "path": "files/figures/fig2_oc_markers.png",
+   "caption": "Top: four X-ray dip markers minus the linear clock, with the best fit that uses the Payne et al. Pdot and three frozen predictions. Bottom: marker minus UVW2 peak. The 30 percent crossing stays on one period and keeps a constant 5.5-d lead; the onset markers do not."
+  },
+  {
+   "path": "files/figures/fig3_background_and_kicks.png",
+   "caption": "Left and middle: validation of the empirical NICER background model on 139 blank-sky observations. Right: likelihood profile of random period kicks for the four marker sets; the deep-suppression marker disfavours kicks of 0.6-0.9 d per orbit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "supports",
+    "reviews"
+   ],
+   "reason": "We use its XRT light curves, box-ingress and UVW2 posteriors and linear clock. NICER adds 2021 dips; the deep-suppression time confirms its constant period and 5.5-d lag, but its box ingress is shape dependent for gradual dips."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We froze its clock-model predictions for the NICER cycles. Only its constant-Pdot fit M0 is disfavoured, and only for small jitter; the stall models cannot be separated there."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its Swift UVOT UVW2 per-visit photometry in Figure 1."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Its random period kicks of about 0.6 d per orbit are disfavoured by the deep-suppression X-ray clock, if that marker is the orbital clock."
+  },
+  {
+   "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Its period noise beyond a cubic trend is not seen in the deep-suppression X-ray times of 2020-2024 (marker-dependent result)."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its constant period near 108 d after 2020 agrees with our X-ray clock of 108.46 d in 2020-2024."
+  },
+  {
+   "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "A changing UV emission delay after the debris arrives is excluded by the constant lag of deep suppression to the UV peak in seven cycles."
+  },
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its wider optical rises after 2021 agree with the more gradual X-ray dip onsets that NICER shows in 2021."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "reason": "Later SPHEREx timing that the X-ray clock does not cover."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2206.11278",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Payne et al. ephemeris with Pdot = -0.0026; rejected by all four X-ray dip markers in 2020-2024. Also the first NICER reduction of 2020-2021."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2009.03321",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Discovery of the ASASSN-14ko periodic flares."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2105.09901",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "3C50 NICER background model; our empirical model uses similar proxies."
+  },
+  {
+   "target": "https://heasarc.gsfc.nasa.gov/FTP/nicer/data/obs/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NICER cleaned event and filter files of ASASSN-14ko and of the blank-sky fields BKGD_RXTE_1-8."
+  }
+ ]
+}
