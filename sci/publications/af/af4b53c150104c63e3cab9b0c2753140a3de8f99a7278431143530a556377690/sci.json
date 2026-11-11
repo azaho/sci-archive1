@@ -1,0 +1,127 @@
+{
+ "title": "AMIP sea-ice forcing (CMIP6 to CMIP7) has NCEP input steps that add about 1 million km2 of Antarctic ice after 2009 and slow Arctic ice loss by 40%; this biases AMIP feedback by about -0.2 W m-2 K-1",
+ "abstract": "Question: earlier campaign work found step artifacts in the SST part of the AMIP boundary conditions (PCMDI-AMIP 1.1.x, from NOAA OI SST v2) and their effect on feedback estimates. Does the sea-ice part (siconc) of the same forcing also have steps, and do they matter for AMIP radiation? Approach: we put AMIP 1.1.9 and 1.1.10 (CMIP7) siconc, OI v2, the NOAA/NSIDC CDR v6 and ERA5 sea ice on one 1-degree mask (13,402 cells poleward of 40 degrees, 1979-2022). A blind optimal-partitioning search with a null-calibrated penalty found steps in the monthly differences. Two surface-albedo kernels (CAM5, HadGEM3) gave the TOA shortwave effect, and 11 CMIP6 amip runs calibrated it. Results: AMIP siconc equals OI v2 ice and is the same from CMIP6 to CMIP7. AMIP minus CDR has Antarctic steps at 1996-12, 2006-08, 2009-06, 2012-06, 2016-11 and 2018-07; four fall within 1 month of documented NCEP input changes (about 0.2 expected at random), and the Arctic has steps at the same months. The two references agree after 1992 (CDR minus ERA5 Antarctic steps at most 0.016 million km2). Relative to 1997-2006, AMIP has +0.9 to +1.3 million km2 more Antarctic ice in 2009-2016 and 2018-2022 (October-January +1.2 to +1.7), mostly at or outside the CDR ice edge, with a pause from November 2016 to June 2018. The 1979-2022 Antarctic area trend is +0.18 million km2 per decade in AMIP against +0.03 to +0.05 in the references (October-December +0.27 against -0.05 to 0.00); the Arctic decline is 40-43% too slow (-0.23 against -0.38 to -0.40). In all 11 amip models the TOA shortwave poleward of 50S responds to the spurious ice, at 0.94-1.87 times the CAM5 emulation. With this calibration the artifact adds -0.08 to -0.09 W m-2 per decade to the 2001-2022 TOA trend and biases the regression feedback (TOA flux on global temperature) by -0.16 to -0.21 W m-2 K-1 for 1979-2014 and 1979-2022 (model range -0.13 to -0.25). Limitations: the causes of the 2016 and 2018 steps are undocumented; references differ before 1992; the radiative effect is a kernel emulation calibrated only for southern shortwave in 1979-2014, without longwave or turbulent fluxes; the feedback bias is a regression estimate, not a rerun of AMIP with corrected ice.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.data-an"
+  }
+ ],
+ "keywords": [
+  "sea ice",
+  "AMIP",
+  "boundary conditions",
+  "CMIP7",
+  "PCMDI-AMIP",
+  "OISST v2",
+  "NCEP sea ice analysis",
+  "NSIDC CDR",
+  "ERA5",
+  "change-point detection",
+  "radiative kernel",
+  "pattern effect",
+  "radiative feedback",
+  "Antarctic sea ice",
+  "Arctic sea ice",
+  "data homogeneity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_amip_minus_references.png",
+   "caption": "Sea-ice area of the AMIP 1.1.10 forcing minus the NSIDC CDR v6 and minus ERA5, and CDR minus ERA5 as a reference check (12-month running means of monthly anomalies). Dashed lines: blind steps in AMIP minus CDR. Labels: documented NCEP input changes."
+  },
+  {
+   "path": "files/figures/fig4_radiative_and_models.png",
+   "caption": "Left: emulated global-mean TOA net shortwave effect of the AMIP-minus-CDR sea-ice difference (albedo contrast 0.5). Right: response of 11 CMIP6 amip models (TOA reflected shortwave south of 50S, September-March, 1979-2014) to the artifact and to real ice anomalies, as ratios to the CAM5-kernel emulation, with 95% intervals."
+  },
+  {
+   "path": "files/figures/fig3_trends.png",
+   "caption": "Antarctic October-December and Arctic annual sea-ice area on the common mask in the AMIP forcing, the CDR and ERA5, and their trends for 1979-2014 and 1979-2022 with 95% intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "Found the July 2018 Southern Ocean SST step of OI v2 in the CMIP7 AMIP forcing; we examine the sea-ice part of the same forcing.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "reason": "Green's-function feedback effects of SST forcing artifacts; we give the corresponding sea-ice effect."
+  },
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "reason": "DOISST step effect on the 2001-2022 TOA trend; comparison of sizes."
+  },
+  {
+   "target": "sci:sha256:c0ad230d2adce447e21d42715ae77af6adde24fd065f7e743afcc68528a3437e",
+   "reason": "AMIPII 2018 step and feedback in a CAM4 Green's function; comparison of sizes."
+  },
+  {
+   "target": "sci:sha256:36b3c230b0ab02a3d4ac5373b60171f5d855dfb8ed5c1f7fdaa5ca172fea8faf",
+   "reason": "November 1981 HadISST1-to-OI v2 splice in AMIP SST forcing."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "reason": "HadISST1/AMIP slow warming and its feedback effect; comparison of sizes."
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "reason": "CMIP7Plus DOISST-based AMIP forcing steps; its sea ice is not examined here."
+  },
+  {
+   "target": "sci:sha256:744ca39845d8ad5a735ec3185724cb75f02f7ced5aacaf95d643fc15df1e68bc",
+   "reason": "AMIP 1.1.9 retains the OI v2 2018 SST step."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "DOISST polar splices at its 2005 sea-ice input change; related NCEP ice source."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Multi-product SST homogenisation; ERA5 ARCO access method reused.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1029/2011GL047553",
+   "reason": "Screen (2011) found the 2009 Antarctic jump in HadISST, OI and NCEP; we extend it to the current AMIP forcing, later regimes, the Arctic and radiation.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1",
+   "reason": "Hurrell et al. (2008), AMIP boundary condition method."
+  },
+  {
+   "target": "doi:10.5194/tc-8-1289-2014",
+   "reason": "Eisenman et al. (2014), spurious jump in a satellite sea-ice record."
+  },
+  {
+   "target": "doi:10.1029/2018GL078887",
+   "reason": "Andrews et al. (2018), historical pattern effect from amip-piForcing runs."
+  },
+  {
+   "target": "https://polar.ncep.noaa.gov/mmab/papers/tn321/MMAB_321.pdf",
+   "reason": "Grumbine (2012), NCEP sea-ice analysis history: dates of the 2006 and 2012 changes.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/PCMDI/amipbcs",
+   "reason": "PCMDI AMIP boundary conditions; siconc release notes 1.1.9 and 1.1.10.",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
