@@ -1,0 +1,173 @@
+{
+ "title": "CoralTemp v3.1 has undocumented SST steps in June 1995 (-0.10 C) and July 2002 (+0.09 C) at 35S-35N reefs; they make the 1998 bleaching-level heat-stress extent about 9 points too small",
+ "abstract": "Question: NOAA Coral Reef Watch (CRW) v3.1 heat-stress products (HotSpot, Degree Heating Week DHW) use CoralTemp, which joins the OSTIA reanalysis (1985-2002), the Geo-Polar Blended reanalysis (2002-2016) and a near-real-time analysis (from October 2016). The bleaching threshold (MMM) comes from 1985-2012 monthly means, re-centred to 1988.29 with a fitted trend. Is CoralTemp homogeneous at reefs, and do steps change published heat-stress results?\nApproach: We compared CoralTemp monthly SST on a 1-degree grid (35S-35N; 574 reef cells) with DOISST v2.1, ERSSTv5, COBE-SST2 and HadSST4.2 (24-month windows, placebo dates, blind break search). Daily CoralTemp at 60 reef cells gave the step days. We re-emulated the CRW climatology (median error 0.00001 C), removed the steps, and re-computed DHW with exact daily CoralTemp (58 cells) and a hybrid daily record (559 cells, 1985-2025).\nResults: Relative to all four references, CoralTemp cools by 0.086-0.124 C on about 4 June 1995 (mean -0.105 C, placebo z -7.1) and warms by 0.074-0.099 C on about 15 July 2002 (+0.088 C, z +5.4). Both steps are inside the OSTIA segment and are not documented by CRW. Their dates agree with the start of ATSR-2 data and of the ATSR-2/AATSR overlap. The 1995 step occurs only in the Indo-Pacific. DOISST has no step on these dates. The documented October 2016 merge has no clear step (+0.07 C at reef cells, 0.00 C over 35S-35N, -0.03 C in daily data). Through the MMM re-centring, the steps make operational HotSpots 0.10 C too low at Indo-Pacific reefs from June 1995 to July 2002, and 0.12 C too high at Atlantic-Caribbean reefs after July 2002. With both steps removed, the 1998 share of reef cells at DHW >= 4 increases from 33.6% to 42.5% (40.4-45.3%; exact daily cells 22.4% to 27.6-29.3%). The 2010, 2014-2017 and 2023-2025 extents change by 2 points or less. The ratio of the 2023-2025 extent to the 1998 extent falls from 2.7 to 2.1, and 2023-2025 stays the largest event. The 1985-2025 trend of annual maximum DHW falls by 1-4%, or by 19-20% if the uncertain 2016 step is also removed.\nLimitations: The references share in situ data. Grid points are near reefs, not on reef pixels. Box-scale step patterns are not better than noise. The step causes are not proven. Raw CoralTemp data are not redistributed because of the OSTIA terms; code, provenance and aggregate results are included.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370202"
+  }
+ ],
+ "keywords": [
+  "CoralTemp",
+  "Coral Reef Watch",
+  "degree heating weeks",
+  "coral bleaching",
+  "sea surface temperature",
+  "homogenisation",
+  "OSTIA reanalysis",
+  "ATSR",
+  "step change",
+  "climatology re-centring",
+  "global bleaching event",
+  "DOISST",
+  "ERSSTv5",
+  "HadSST4",
+  "COBE-SST2"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_steps_in_time.png",
+   "caption": "(a) CoralTemp v3.1 minus four references at 539-574 one-degree reef cells, 12-month running means. Dashed lines: the two large steps (June 1995, 15 July 2002); dotted lines: smaller or uncertain changes. (b-d) Daily CoralTemp minus DOISST at 58 reef cells (7-day mean, 95% band) around the 1995, 2002 and 2016 changes, with the best break day."
+  },
+  {
+   "path": "files/figures/fig2_basin_steps_hotspot_bias.png",
+   "caption": "(a) Step sizes at reef cells by basin (IP Indo-Pacific, AC Atlantic-Caribbean) for each reference (dots) and their mean (bar). (b) Operational minus homogenised HotSpot by period for variant V2 (1995 and 2002 steps removed): squares are the mean of four references, dots single references."
+  },
+  {
+   "path": "files/figures/fig3_dhw_consequences.png",
+   "caption": "(a) Yearly share of 559 reef cells with annual maximum DHW >= 4 in the hybrid daily record, operational CRW method against homogenised (V2). (b) Extents of the four global bleaching events; error bars: range of the four references. The 1998 extent increases by about 9 points; later extents change by 2 points or less."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRW method emulation and DHW definitions at reef sites; earlier DOISST-based DHW homogenisation that this study extends to the CRW record itself."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST mean steps (1985, 2005, 7 July 2020) used as known reference artifacts."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "Cause of the 7 July 2020 DOISST step (satellite input version change); same type of mechanism as proposed here."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Mean-and-variance homogenised DOISST and surviving marine climate results."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Removal of DOISST mean steps and the 2023/24 record."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Ensemble of homogenised DOISST versions; robustness approach."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST step at its HadISST2-to-OSTIA switch; this study tests the OSTIA-based segment of CoralTemp."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Noise steps and marine heatwave statistics in DOISST."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "DOISST compared with ESA CCI and buoys."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "CoralTemp and the CRW v3.1 method (Skirving et al. 2020); this study finds undocumented steps in CoralTemp."
+  },
+  {
+   "target": "doi:10.3390/rs61111579",
+   "reason": "CRW 5-km products (Liu et al. 2014)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-11-00648.1",
+   "reason": "OSTIA reanalysis 1985-2007 (Roberts-Jones et al. 2012)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "COBE-SST2 reference."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1038/s41597-022-01121-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Coral bleaching database; site coordinates only."
+  },
+  {
+   "target": "https://coralreefwatch.noaa.gov/product/5km/methodology.php",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "CRW climatology re-centring and DHW method that this study tests."
+  },
+  {
+   "target": "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW_monthly.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CoralTemp monthly mean SST source."
+  },
+  {
+   "target": "https://pae-paha.pacioos.hawaii.edu/erddap/griddap/dhw_5km.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CoralTemp daily SST and DHW source."
+  },
+  {
+   "target": "https://csw.ceda.ac.uk/geonetwork/srv/api/records/97e5db7e92ded2f321405041a7d5513f",
+   "reason": "ATSR-2 L2P SST record start date (1995-05-31)."
+  },
+  {
+   "target": "https://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-SST-QUID-010-011.pdf",
+   "reason": "OSTIA reanalysis: ATSR-2/AATSR overlap July 2002 to June 2003."
+  },
+  {
+   "target": "https://www.scientificamerican.com/article/worst-coral-mass-bleaching-on-record-caused-by-warming-oceans/",
+   "reason": "Reported NOAA global bleaching event extents (21%, 37%, 68%, 84%)."
+  }
+ ]
+}

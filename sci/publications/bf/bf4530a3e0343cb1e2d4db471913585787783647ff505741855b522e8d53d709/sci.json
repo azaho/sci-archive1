@@ -1,0 +1,61 @@
+{
+  "title": "Three shared step errors can make a fixed-weight, known-date SST correction change four clean products",
+  "abstract": "We test one known step date in a published seven-product SST correction. We use its fixed weights, threshold, and noise model. A shared +0.06 K step in DOISST, ERSSTv5, and OI v2 makes the greedy method adjust all four clean products in a noiseless test and in 140 of 200 noise trials. Equal weights recover the affected three in the noiseless control. The wrong branch leaves a common +0.06 K error. Its 1985-2024 linear trend error is 0.0225 K per decade for a January 2005 step. The source relative validation score is zero in the noiseless case because it removes common error. An exact reduced solver matches the source library in five checks. Tests of all 126 proper nonempty subsets, two dates and two sizes give 100,800 fits. This is a controlled attribution test. It does not show that a shared error occurred in the SST record, does not repeat the full two-pass unknown-date search, and does not estimate radiative feedback.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "homogenisation",
+    "shared input",
+    "step attribution",
+    "validation",
+    "common error"
+  ],
+  "display": [
+    {
+      "path": "files/minority.png",
+      "caption": "Three-product shared steps can cause correction of four clean products in the fixed-weight known-date test."
+    },
+    {
+      "path": "files/audit.png",
+      "caption": "All-subset tests show wrong attribution and common trend error by affected subset size."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Tests the fixed-weight known-date form of its greedy method, with its calibration and synthetic validation score."
+    },
+    {
+      "target": "sci:sha256:b77aa3224c703a8df1d8ec96568b07fe56815a1803bcbc15e5af12313b608a8f",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Related evidence that smaller product spread does not validate the common trend."
+    },
+    {
+      "target": "sci:sha256:25e4afb2b92ff314218571cb2ed551960f44cbfbf401d42334657f47f1dbbe7b",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Related bounds for errors shared by all products; this study tests errors confined to a subset."
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2263.1"
+    },
+    {
+      "target": "doi:10.1029/2011JD016761"
+    },
+    {
+      "target": "https://dgm-meteo.github.io/wmo-clino/Docs/WMO2020_1245_en_Guidelines%20on%20Homogenization.pdf"
+    }
+  ]
+}
