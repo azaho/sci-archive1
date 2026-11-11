@@ -1,0 +1,147 @@
+{
+ "title": "In 32 Allen Neuropixels mice, higher visual areas are a linear VISp read-out for gratings but not for natural scenes and movies; movie spectral compression is outside the VISp-predictable part",
+ "abstract": "Higher mouse visual areas (HVAs) have faster-decaying response spectra than VISp. For natural scenes and movies this compression is on axes that HVAs share, not on VISp axes. We tested whether this signal is a linear read-out of VISp. We used trial-level spikes of 11,559 units in 32 Allen Visual Coding Neuropixels mice and cross-validated kernel ridge regression with noise-corrected scores. Predictors were 400 VISp units from other mice or from the same mice on disjoint trials, 400 units of the other HVAs, and image models. Intervals are spreads over random 16/16 mouse splits. For gratings, VISp explained HVA variance as well as VISp variance (ratio 0.99 to 1.13), and the compression was in the VISp-predictable part. For natural scenes the ratio was 0.36 to 0.81, for movie three 0.63 to 0.88 and for movie one 0.79 to 1.00. Same-mouse VISp did no better. Other HVAs predicted each HVA better than VISp (FEV +0.11, +0.07, +0.09). For both movies the hierarchy slope of alpha was in the VISp residual (0.37 and 0.32) and not in the predicted part (0.16 and 0.03, intervals include 0). For natural scenes the result was not determined. A local Gabor-energy model added HVA-specific natural-scene signal beyond VISp (slope 0.075, 0.038 to 0.112); global statistics and ImageNet AlexNet layers added little. The dominant shared movie axis was motion energy. Why HVA spectra are lower-dimensional stays open. Limits: one data set, 6 cortical areas, finite predictor samples, several inconclusive pre-set verdicts, and exploratory tests added after first results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "linear span",
+  "encoding model",
+  "kernel ridge regression",
+  "cross-validated PCA",
+  "power law",
+  "energy model",
+  "complex cells",
+  "motion energy",
+  "AlexNet",
+  "natural images",
+  "natural movies",
+  "static gratings",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "population geometry",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_linear_span.png",
+   "caption": "Linear span. (a) Noise-corrected explained variance (FEV) of 150-unit targets in each cortical area, predicted by 400 VISp units (blue) or 400 units of the other HVAs (orange), from other mice (filled, solid) or the same mice on disjoint trials (open, dashed), against the anatomical hierarchy score. (b) Share of the target's variance on its top-5 own-area axes that the predictor reproduces (other mice). Bars: mean +/- 1.96 SD over mouse splits (60; 12 for movie three main; 30 same-mouse)."
+  },
+  {
+   "path": "files/figures/fig2_compression_parts.png",
+   "caption": "Where the spectral compression is. (a) Cortical hierarchy slope of alpha for the total response, the part predicted by 400 VISp units, and the VISp residual (circles: VISp of other mice; squares: same mice), with split intervals. (b, c) alpha of each area for the total response and for the VISp residual, natural scenes (ranks 2-20) and natural movie one (ranks 2-30)."
+  },
+  {
+   "path": "files/figures/fig3_features.png",
+   "caption": "Image-computable features. (a, b) FEV gain over 400 VISp units when a feature kernel is added (Gabor energy on a 6 x 8 grid, low-level statistics, AlexNet conv2 and conv5, other HVAs), natural scenes and movie one. (c) Exploratory: gain of Gabor energy pooled on grids from 12 x 16 to 1 x 1, VISp (open) and VISam (filled). (d) alpha of the feature kernels on the 118 natural scenes: ImageNet and random-weight AlexNet layers and Gabor energy at five pooling scales."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its NWB extraction code and test its finding that natural-image compression lies on shared HVA axes outside VISp axes; we find these axes are poorly predicted by a linear VISp read-out."
+  },
+  {
+   "target": "sci:sha256:0aac19e1832eec63bde606e990a57e7424db873ac38dc09431991adb3c5744e5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "It shows that axis powers cannot identify variance outside the VISp span; we measure span predictability directly from trial-level data."
+  },
+  {
+   "target": "sci:sha256:4168866506f3de29b01bf7d7607eb664b65cf034bce401dd8a7cfd01971d834e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its in-span linear-mixing models are one of the two cases that our encoding test separates."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Hierarchy of alpha for scenes, gratings and movies; same units and estimator."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Source finding of steeper spectra in higher areas, reproduced here in the total spectra."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Related grating phase-invariance result."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73"
+  },
+  {
+   "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4"
+  },
+  {
+   "target": "sci:sha256:b00225bfa7494f6ddb391eb7fc07b397a1de5c807d1aadfb8547f25ff7c8cd82"
+  },
+  {
+   "target": "sci:sha256:bf04e82fe4d22c952f24191caecedfb0de21df41724015dbdeee7b798fb58c59"
+  },
+  {
+   "target": "sci:sha256:42f571df54d82adb5307c69d33d047697e7a66436390ab1ffadd9ddb057b155c"
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels data."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding 2p stimulus templates."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator."
+  },
+  {
+   "target": "doi:10.1364/JOSAA.2.000284",
+   "reason": "Energy model."
+  },
+  {
+   "target": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ImageNet AlexNet weights (torchvision IMAGENET1K_V1), not redistributed."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
