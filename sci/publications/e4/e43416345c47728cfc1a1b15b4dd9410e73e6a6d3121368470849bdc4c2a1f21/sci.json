@@ -1,0 +1,64 @@
+{
+  "title": "Shared Gaussian input errors raised total-area SD by 52-594 times in a reference model for six USGS landslide maps",
+  "abstract": "We test whether cell uncertainty in six archived USGS landslide maps can set uncertainty in total landslide area. We reuse a published Gaussian input-error reference and fixed selected cells. We keep each cell distribution unchanged and vary only dependence. A common Gaussian error gives the exact largest total variance over all joint laws with these marginals. Its total-area standard deviation (SD) is 52-594 times the independent-cell SD. A smooth Gaussian field with latent pair correlation 0.01 raises SD by 4.0-53.3 times. At twice each reference mean, the common-error exceedance probability is 12.3-14.5%. The independent-cell probability is at most 0.00025-0.1024%, by Cantelli's inequality. We give a scalable Hermite method for a shared Gaussian factor and an upper risk bound that allows any dependence. The latter is 34.3-44.3% at this threshold. The proof and methods use known probability results; the contribution is their application and reproducible tools for these maps. This is a conditional model study, not observed landslide calibration. Six selected later products, an assumed Gaussian error law and fixed masks limit the scope. The results show that a cellwise uncertainty repair alone does not set regional area risk.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "landslides",
+    "spatial dependence",
+    "uncertainty propagation",
+    "USGS ground failure",
+    "risk bounds",
+    "Gaussian factor",
+    "Hermite expansion"
+  ],
+  "display": [
+    {
+      "path": "files/figures/dependence.png",
+      "caption": "The same conditional cell distributions give very different regional uncertainty. The common Gaussian field attains maximum variance; it does not maximise every tail probability."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3f7348871c77bf837b223a19d7c637d41aafeb00b8d1e5a0078da01ab40f43b4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses the six-case selection and Gaussian marginal reference, and resolves part of its open regional dependence problem."
+    },
+    {
+      "target": "doi:10.1016/S0167-6687(02)00134-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known comonotonic convex-order bound; no claim of a new theorem."
+    },
+    {
+      "target": "doi:10.1177/87552930211032685"
+    },
+    {
+      "target": "doi:10.1029/2017JF004494"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/ground-failure/background.php"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    },
+    {
+      "target": "sci:sha256:6b651bc9c621af665816857b77650620b0eedfeb28574f2aed83c96aeff227ea",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Adds portable scratch input retrieval to the Gaussian-factor script. Numerical results are unchanged."
+    }
+  ]
+}
