@@ -1,0 +1,85 @@
+{
+ "title": "ASAS-3 eclipse times from 2001-2009 confirm the 1.6-year third body of HD 303514 and, with TESS times, limit its mass to 1.8-4.1 solar masses for a 4-solar-mass binary",
+ "abstract": "HD 303514 is a detached 19.897-day eclipsing binary whose eclipses became shallower from 2002 to 2026. SCI 90287c11 explained a TESS (2019-2026) timing variation with a third body on a 1.6-year, near-coplanar orbit, but found no upper limit on its mass. We used the raw ASAS-3 V photometry (2000-2009; 808 points, 98 inside eclipses) as an independent timing data set. ASAS-3 alone shows a timing variation: a sinusoidal term decreases chi-square by 32 at 550-600 d (semi-amplitude 46 min), or at its one-year alias near 1,050 d. Two other apertures give 33 and 20. We integrated 17 published three-body solutions back to 2001. They did not use these times. The TESS-only near-coplanar solution predicts them: with a free linear ephemeris it is better than a linear ephemeris alone by 14.0 in chi-square. Near-polar solutions are worse by 626-1,358, and published fits with third-body masses of 4.5-12 solar masses are worse by 73-417. A joint photodynamical fit of the TESS times and geometry and all ASAS-3 points (REBOUND three-body model, twin-star eclipses) gives m3 = 3.2 solar masses for an inner pair of 4 solar masses, outer period 597.3 d, e2 = 0.21 and mutual inclination 2.9 deg (chi-square 798.5 for 835 data). A profile over fixed m3, with continuation from both sides, gives m3 = 1.8-4.1 solar masses at delta chi-square 4 and 1.3-4.7 at 9; m3 = 6.5 is worse by 30. Limits on the light fraction of the binary do not change this. No accepted solution loses its primary eclipses before 2045. The shallowest eclipses occur in 2028-2036 at 8-76 percent of the 2026 depth, depending on the poorly constrained light fraction. For m3 <= 1.7, the secondary eclipses can stop for a short time. Limitations: a twin-star model with a fixed inner mass, a multimodal likelihood with local fits and no MCMC, Gaussian noise, and an extrapolated forecast. A main-sequence third star of this mass would be too bright for most fits, so the third body is probably underluminous.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "HD 303514",
+  "eclipsing binaries",
+  "hierarchical triple stars",
+  "eclipse timing variations",
+  "ASAS-3",
+  "TESS",
+  "photodynamical model",
+  "REBOUND",
+  "third-body mass",
+  "nodal precession",
+  "eclipse depth forecast",
+  "out-of-sample test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_oc_2001_2026.png",
+   "caption": "O - C of HD 303514 primary eclipses. Left: ASAS-3 normal points from 2001-2009 (this work) with the joint fit and predictions of published TESS-only solutions; right: TESS eclipse times."
+  },
+  {
+   "path": "files/figures/fig3_mass_profile.png",
+   "caption": "Left: ASAS-3 chi-square of published profile solutions relative to a linear ephemeris. Right: chi-square profile of the joint TESS + ASAS-3 fit over the third-body mass m3 (M12 = 4 solar masses)."
+  },
+  {
+   "path": "files/figures/fig4_b_forecast.png",
+   "caption": "Impact parameter of primary and secondary eclipses from 2000 to 2045 for joint solutions with free light fraction (blue) and with light fraction at most 0.6 (orange). No eclipse occurs above b = 2."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:90287c1180724b1507b2f1fb15c9140e195a55877b2f7b3bd7eed8869e45b3cf",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Uses its TESS eclipse times, geometry, three-body code and solutions. Independent ASAS-3 times confirm its near-coplanar third body and reject the near-polar family; the joint fit adds an upper mass limit and changes the forecast depth minimum."
+  },
+  {
+   "target": "sci:sha256:575e53bd97d3bf41769932250f0702d481c2a7b004d3e78e63fdf9c0118d4586",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 selection rules, reference ephemeris and discovery of the HD 303514 eclipse fading."
+  },
+  {
+   "target": "sci:sha256:2f7e9f37cf9b0c374980f84c993d79da289d91bdb335277d932a356202a2dede",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its eclipse-loss forecast near 2030 is not supported by the dynamical model fitted to TESS and ASAS-3 times."
+  },
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "reason": "Earlier campaign work on orbital-plane changes in TESS eclipsing binaries."
+  },
+  {
+   "target": "sci:sha256:17a4acfcd0e9e0e0247ca417d694d6a19ef64831c501ec053ecb4b070cdb6e67",
+   "reason": "Analogous photodynamical solution of the vanishing-eclipse system HD 93683."
+  },
+  {
+   "target": "https://www.astrouw.edu.pl/asas/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 photometry (Pojmanski 2002, Acta Astron. 52, 397)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201118085",
+   "relations": [
+    "uses"
+   ],
+   "reason": "REBOUND N-body code (Rein and Liu 2012)."
+  }
+ ]
+}
