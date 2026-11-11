@@ -1,0 +1,71 @@
+{
+  "title": "Archived NHC 24-hour rapid-intensification probabilities broke threshold order in 2,074 of 61,862 vectors from 2020 to 2025",
+  "abstract": "We tested whether public NHC rapid-intensification probabilities describe one possible distribution of 24-hour wind change. We checked 237 ATCF e-decks from 2020-2025 at 25, 30, 35 and 40 kt. Of 61,862 complete model vectors, 2,074 had increasing probability at increasing thresholds. In 873 vectors the reversed adjacent gap exceeded one percentage point, so rounding cannot explain all failures. The discriminant models had no failures; Bayesian, logistic, DTOP and consensus models had failures. For Ida, the Bayesian model gave 26% for at least 30 kt but 54% for at least 35 kt. Reviewed source contains an order guard in discriminant routines but separate threshold fits and no such final guard in the logistic and Bayesian routines. The source snapshot is from 2026 and does not prove the path used in every historical run. A standard decreasing least-squares projection removes the failures and cannot increase the sum of Brier errors for any wind outcome. The measured mean score gain was small: 0.15% for RIOB and about 0.005% for RIOC on matched best-track samples. The main result is an outcome-free check of joint probability validity, not a large skill improvement. Limits include archive completeness, only numbered storms in three basins, and incomplete historical source versions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "rapid intensification",
+    "probability coherence",
+    "NHC",
+    "SHIPS-RII",
+    "forecast verification",
+    "isotonic projection"
+  ],
+  "display": [
+    {
+      "path": "files/results/coherence.png",
+      "caption": "Ordering failures and largest adjacent reversed gaps for complete 24-hour probability vectors in the 2020-2025 NOAA archive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Starting study. Its calibration test, model definitions and source paths motivate a separate joint probability audit."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-15-0032.1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Describes individual RI models and arithmetic consensus."
+    },
+    {
+      "target": "https://science.nrlmry.navy.mil/atcf/docs/database/new/edeck.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://ftp.nhc.noaa.gov/atcf/archive/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/data/hurdat/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nhcg.v5.2.0/sorc/iships.fd/",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.cmu.edu/dietrich/philosophy/docs/seidenfeld/Calibration%2C%20Coherence%2C%20and%20Scoring%20Rules.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established relation between coherence and squared-error scoring; no claim of a new projection theorem."
+    }
+  ]
+}
