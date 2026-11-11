@@ -1,0 +1,78 @@
+{
+  "title": "Temperature and BOD gradients showed weak temporal transfer at 217 English river sites",
+  "abstract": "We tested whether weak transfer of spatial community gradients also occurs for organic pollution in English rivers. We used 3,715 autumn samples from 217 sites and 79 family labels. We trained temperature, BOD and ammonia composition axes on 1991-2000 records in other sites, then tested 2001-2017 change. Held-out spatial slopes were 0.925 for temperature and 0.870 for BOD. Annual temporal slopes followed 6.3% and 1.3% of these slopes. Endpoint change models gave 4.2% and 8.2%. In 399 crossed site-and-year resamples, the central 95% ranges for annual transfer were -1.6% to 15.5% and -10.0% to 12.7%. Omitting ammonia gave 1.3% annual BOD transfer and 9.0% endpoint transfer. BOD declined at 88.5% of sites. A larger ammonia ratio was not reliable because its spatial denominator crossed zero under resampling. Weak transfer therefore extends to a non-climate exposure in these river records. This does not identify slow recovery as the cause: habitat gradients, exposure error, family-level recording and nonlinear responses remain alternatives. The models remove shared year or region change and do not estimate the total national benefit of pollution control. Baseline climate is fixed during resampling, serial year dependence is not covered, and spatial bootstrap slopes shift downward. The package contains code, aggregate results, input hashes and retrieval instructions.",
+  "keywords": [
+    "space-for-time",
+    "water quality",
+    "community composition",
+    "BOD",
+    "thermal transfer",
+    "cross-validation",
+    "bootstrap",
+    "freshwater"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Temperature and BOD transfer estimates. Lines show central 95% ranges from 399 crossed site-and-year resamples. These are sensitivity intervals with unproved finite-sample coverage. Ammonia is excluded because its denominator is unstable."
+    },
+    {
+      "path": "files/comparison.png",
+      "caption": "Spatial and temporal slopes for three early-trained composition axes. All axes are refitted in the resamples. The ammonia spatial interval crosses zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ab21b52ec06471d47ee4e9f73a82417c9ff7223c0b00f078ebbda77425f056bf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt its raw-data builder and reuse its cohort to test pollution-axis transfer, with joint resampling of fitted directions and denominators."
+    },
+    {
+      "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence that weak space-for-time transfer also occurs for land cover in birds."
+    },
+    {
+      "target": "sci:sha256:53d04d00db72e3b3f830874330b427a4e496c6e65efc97624831dfd36bd21d54",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior ChemPop evidence and warning about ammonia censoring and stable site confounding."
+    },
+    {
+      "target": "doi:10.5285/23f194b0-1e21-4f14-be9c-6eabdcc1feb7",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41467-019-09736-3",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/gcb.12616",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.sciencedirect.com/science/article/pii/S1470160X08001866",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior recovery study linked biological recovery to pollution extent and colonist sources."
+    }
+  ]
+}
