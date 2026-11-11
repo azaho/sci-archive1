@@ -1,0 +1,65 @@
+{
+  "title": "Pinned USGS ground-failure code gives negative area SD and zero one-cell mean-mode uncertainty",
+  "abstract": "We test area and population aggregation in pinned public USGS ground-failure source. Equal weights must give equal uncertainty. The area routine negates the independent-cell standard deviation (SD). Its min mode returns negative SD and its mean mode subtracts the independent SD instead of adding it. For one cell, mean-mode SD is zero and beta interval endpoints are undefined despite positive input SD. For four equal cells, the SD is one third of the repaired value. We derive an exact error law from the effective number of cells. We execute 500 function calls across 25 fields and five paths. A one-character repair restores all 125 repaired paired comparisons. Default full covariance, its tested fallback and max mode are unchanged. The negative min SD is squared before beta shapes are computed, so min intervals are unchanged in these tests. We provide a reproducible consistency test and repair. We do not establish that deployed alerts used affected modes or that the repair improves observed hazard calibration. Grid adapters bypass projection, file I/O, resampling and variogram fitting.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "ground failure",
+    "uncertainty aggregation",
+    "source audit",
+    "liquefaction",
+    "landslides",
+    "software verification"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Exact mean-mode SD loss and area-population consistency in controlled source tests. Default full mode is unchanged."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:3f7348871c77bf837b223a19d7c637d41aafeb00b8d1e5a0078da01ab40f43b4",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:41a87ef2a3e0df3abc9354b63628f48857a4e5c6c8a9e6f27f15e0573a398b9f",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "sci:sha256:6b651bc9c621af665816857b77650620b0eedfeb28574f2aed83c96aeff227ea",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://code.usgs.gov/api/v4/projects/ghsc%2Fesi%2Fgroundfailure%2Fgroundfailure/repository/files/src%2Fgfail%2Fstats.py/raw?ref=312441e3ab7d8684df6d51458d796e7e41db15ff",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1177/87552930211032685"
+    },
+    {
+      "target": "https://usgs.github.io/groundfailure/gfail.stats.html"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/ground-failure/background.php"
+    }
+  ]
+}
