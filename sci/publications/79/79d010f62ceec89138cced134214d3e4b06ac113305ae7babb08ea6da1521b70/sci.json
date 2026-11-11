@@ -1,0 +1,40 @@
+{
+  "title": "Issued NHC wind speed probabilities for 592 storms (2008-2025) were too low in the Atlantic and too high in the eastern Pacific against best-track wind radii",
+  "abstract": "Question: are the public NHC/CPHC Tropical Cyclone Wind Speed Probabilities calibrated? Approach: we parsed all 12,978 archived text products of 2008-2025 (249,386 rows of location, threshold and 12-120 h cumulative probability; 592 storms). The outcome is exposure to the final HURDAT2 quadrant wind radii of the same storm, interpolated in azimuth as in the developer verification. We wrote and hashed the plan before scoring. Confidence intervals resample whole storms. Results: for 0-120 h, observed/expected events were 1.18 (95% CI 1.09-1.27) at 34 kt, 1.28 (1.12-1.42) at 50 kt and 1.10 (0.96-1.23) at 64 kt. Mid-range probabilities occurred about 10 points more often than stated. Pre-specified truth variants move these ratios by about 0.1 (0.85 x radii: 0.99, 1.08, 0.90). The basins had opposite errors under every truth: at 34 kt the ratio was 1.28 (1.16-1.39) in the Atlantic and 0.89 (0.79-0.98) in the eastern and central Pacific. In exploratory matching to official forecast advisories, Pacific ratios fell from about 1.0 within 75 nm of the official track to 0.34 at 200-300 nm, and official Pacific 34-kt radii were 6-19% larger than best-track radii at 24-72 h. Atlantic ratios were 1.30-1.37 within 150 nm of the track, with official radii within 6% of best track; the Atlantic deficit was largest at the coast and in 2020-2025 (1.52). The pre-registered intensity hypothesis was not supported (recalibration slope difference -0.05, CI -0.16 to 0.07). A lagged five-season track-error climatology had weak support (Spearman rho -0.29, one-sided p 0.042). Limitations: best-track radii are uncertain maximum extents; only listed locations (34-kt 120-h probability of 3% or more) are scored; attribution is correlational and the NHC Monte Carlo model was not re-run.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": [
+    "tropical cyclone", "wind speed probabilities", "forecast verification", "calibration",
+    "reliability diagram", "National Hurricane Center", "HURDAT2", "wind radii",
+    "Monte Carlo probability model", "eastern North Pacific", "Atlantic hurricanes",
+    "public hazard products", "pre-registered test"
+  ],
+  "display": [
+    {"path": "files/figures/fig2_oe_by_lead.png", "caption": "Observed/expected events by cumulative forecast period for 34, 50 and 64 kt (592 storms, 2008-2025). Points: primary truth with 95% storm-bootstrap CI. Band: range from 0.85 x interpolated radii to quadrant-step radii."},
+    {"path": "files/figures/fig3_subsets_34kt.png", "caption": "34-kt, 0-120 h observed/expected events by basin and coast-distance class, and by basin and era. The Atlantic is under-forecast and the eastern Pacific over-forecast under every truth definition (pale bars)."},
+    {"path": "files/figures/fig4_attribution.png", "caption": "Left: 34-kt observed/expected events by minimum distance of the location from the official forecast track. Right: best-track/official mean 34-kt radius by official lead time. Pacific probabilities are too high far from the track, where official radii were too large."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3", "relations": ["uses"], "reason": "Campaign result on rebuilt NHC error circles (over-coverage for hurricanes); it gave our pre-registered hypothesis H2, which these probabilities did not support."},
+    {"target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde", "reason": "Related campaign work on NHC timed track circles and past-error scaling."},
+    {"target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa", "reason": "Parallel pre-registered verification of a public hazard product (USGS PAGER)."},
+    {"target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2", "reason": "Parallel verification of issued USGS aftershock forecasts with a storm/sequence cluster bootstrap approach."},
+    {"target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52", "reason": "Related campaign verification of stated uncertainty in a public hazard product (ShakeMap)."},
+    {"target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73", "reason": "Related campaign verification of PTWC tsunami threat categories, where truth-network density changed the hit rate; here the truth convention changes calibration in the large."},
+    {"target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80", "reason": "Related campaign verification of NOAA SWPC solar proton probabilities."},
+    {"target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4", "reason": "Related campaign verification of NOAA geomagnetic storm probabilities."},
+    {"target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6", "reason": "Related campaign verification of public alert probabilities (gravitational waves)."},
+    {"target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e", "reason": "Related campaign verification of NOAA electron forecasts."},
+    {"target": "doi:10.1175/2009WAF2222286.1", "relations": ["reviews"], "reason": "DeMaria et al. (2009): the Monte Carlo wind speed probability model and its verification method, whose truth convention we follow."},
+    {"target": "doi:10.1175/WAF-D-12-00116.1", "reason": "DeMaria et al. (2013): improvements to the operational wind speed probability model."},
+    {"target": "doi:10.1175/MWR-D-12-00254.1", "reason": "Landsea and Franklin (2013): HURDAT2 format and best-track uncertainty, including wind radii."},
+    {"target": "https://www.nhc.noaa.gov/archive/text/", "relations": ["uses"], "reason": "Archived PWS and TCM text products, 2008-2025 (read 2026-11-11)."},
+    {"target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt", "relations": ["uses"], "reason": "Atlantic HURDAT2 best track."},
+    {"target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2025-092926.txt", "relations": ["uses"], "reason": "Northeast and North Central Pacific HURDAT2 best track."},
+    {"target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_ATL_TI_errors.txt", "relations": ["uses"], "reason": "Official track errors for H3 (Atlantic)."},
+    {"target": "https://www.nhc.noaa.gov/verification/errors/1989-present_OFCL_v_BCD5_ind_EPAC_TI_errors.txt", "relations": ["uses"], "reason": "Official track errors for H3 (eastern Pacific)."},
+    {"target": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip", "relations": ["uses"], "reason": "Natural Earth 10 m land for coast distance."}
+  ]
+}
