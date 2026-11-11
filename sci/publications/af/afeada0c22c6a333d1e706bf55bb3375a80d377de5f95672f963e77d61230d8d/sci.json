@@ -1,0 +1,112 @@
+{
+ "title": "Population dependence in SPC Day 1 hail outlook verification (2021-2026) came from storm reports, not forecasts: at fixed probability, report hits rose with population, MRMS radar hail hits did not",
+ "abstract": "We tested whether calibration of NOAA Storm Prediction Center (SPC) Day 1 hail probabilities depends on population, and whether the dependence is in the forecasts or in the storm reports. We used 2,128 convective days (2021-01 to 2026-10), 1300 UTC outlooks, and a 20 km grid of 12,392 points east of 105 W near WSR-88D radars. Truth was hail reports (1 in or more) or MRMS radar MESH (29 mm or more) within 40 km. The plan was written and hashed before matching. At fixed forecast level and longitude band, the log-odds of a report event rose by 0.48 (95% CI 0.44-0.51) per tenfold population; the radar slope was 0.047 (0.020-0.070), a ratio of 0.10 (0.04-0.14). Report O/E for forecasts of 15% or more was 1.01 in the least and 1.38 in the most populated quintile. Reports captured 28% of radar hail events in the sparsest and 42% in the densest quintile; in the Plains the radar event rate was flat with population while the report rate almost doubled. The result held for MESH thresholds 25-50 mm, all issuances, each year, the final SPC database and all CONUS. Wind and tornado reports had the same population slope (0.50). Pooled hail O/E was 1.09 with contour values and 0.75 with mid-layer values, so the sign of the overall bias depends on how contours are read. 2026 Conditional Intensity Group 1 areas separated 2 in hail about as well as the former hatched areas. Limitations: MESH is a radar estimate whose relation to hail changes by region; population is confounded with region; wind and tornado have no independent truth here.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "Storm Prediction Center",
+  "convective outlook",
+  "hail",
+  "forecast verification",
+  "MRMS MESH",
+  "storm reports",
+  "population bias",
+  "reliability",
+  "conditional intensity",
+  "pre-registration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability_by_population.png",
+   "caption": "Reliability of SPC Day 1 1300 UTC hail probabilities, 2021-2026, east of 105 W, by quintile of population within 40 km. Left: report truth. Right: radar MESH truth. Bars: 95% day-bootstrap intervals. At fixed forecast, report frequency rises with population. Radar frequency is highest in the sparse quintile because sparse points are mostly in the hail-prone Plains (no regional control in this figure)."
+  },
+  {
+   "path": "files/figures/fig2_region_capture.png",
+   "caption": "Inside three longitude regions: top, radar (MESH 29 mm) and report hail event rates by population quintile; bottom, capture P(report | radar event) and confirmation P(radar event | report). Radar rates are nearly flat with population inside regions, but report rates and capture rise. Exploratory analysis."
+  },
+  {
+   "path": "files/figures/fig3_sensitivity_slopes.png",
+   "caption": "Log-odds slope of event frequency per tenfold population (fixed forecast level and longitude band), reports versus MESH, for the primary analysis and all sensitivity runs; wind and tornado report slopes at the bottom. Bars: 95% day-bootstrap intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Sparse observers understate hits for PTWC tsunami threat categories; we find the same observation effect for SPC hail outlooks."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "sci:sha256:baf949859f081b99e648dc1c95df01b0d0c7157a8f91a16387d0a440e8a50a9e",
+   "reason": "Campaign work that looked for physical sources of forecast failure."
+  },
+  {
+   "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+   "reason": "Part of the campaign series on verification of operational hazard products."
+  },
+  {
+   "target": "doi:10.1175/WAF-D-17-0104.1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Herman et al. 2018 report-based probabilistic verification of SPC outlooks; we show that report-based calibration depends on population."
+  },
+  {
+   "target": "doi:10.1175/WAF-D-11-00151.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cintineo et al. 2012: MESH 29 mm severe-hail threshold."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-18-0247.1",
+   "reason": "Murillo and Homeyer 2019: regional limits of MESH as hail truth."
+  },
+  {
+   "target": "https://www.spc.noaa.gov/publications/melick/mesh2014.pdf",
+   "reason": "Melick et al. 2014: MESH verification of experimental hail forecasts in one testbed season."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf_2026/scn26-11_SPC_conditional-intensity.pdf",
+   "reason": "NWS SCN 26-11: SPC conditional intensity groups from about 2026-03-02."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/outlooks.py",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM archive of SPC convective outlooks."
+  },
+  {
+   "target": "https://noaa-mrms-pds.s3.amazonaws.com/index.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA MRMS on AWS: MESH_Max_1440min."
+  },
+  {
+   "target": "https://www.spc.noaa.gov/climo/reports/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPC daily storm reports."
+  }
+ ]
+}
