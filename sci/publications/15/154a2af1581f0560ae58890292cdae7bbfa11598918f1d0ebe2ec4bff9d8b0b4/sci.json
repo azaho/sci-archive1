@@ -1,0 +1,127 @@
+{
+ "title": "NOAA CPC ENSO probabilities issued 2013-2026 were skilful but under-confident, as were the IRI model probabilities they follow; a past-data sharpening gave no score gain",
+ "abstract": "Question: were the official NOAA CPC ENSO probability outlooks (La Nina, neutral, El Nino for nine overlapping seasons) calibrated, and what caused any error? Method: we collected 159 monthly issues (August 2013 - October 2026) from IRI Quick Look tables, digitised CPC charts (maximum error 0.5 points) and CPC RONI archive pages, and the objective CCSR/IRI model-based probabilities for the same months. A plan was written before scoring. The 150 ONI-era issues (1,349 forecasts) were verified against the current CPC ONI, with a cluster bootstrap over 12-month issue blocks. Results: the outlook was skilful (RPSS 0.49, 95% interval 0.32-0.61, against 1991-2020 climatology; 0.28, 0.05-0.42, against a damped-persistence regression trained on 1951-2012). It was under-confident, not over-confident: the best tempering q ~ p^b had b = 1.50 (1.11-2.05); categories forecast at 55-65% occurred 74% of the time, and categories forecast at 5-15% occurred 3.6%. The IRI objective probabilities had the same exponent (1.57, 1.22-2.08) on matched targets, while the 1951-2012 regression was calibrated (0.90, 0.66-1.32). The implied Gaussian width of the IRI forecasts was too large up to about six months lead (RMS standardised error 0.58 at leads 0-2, 0.76 at 3-5, 0.97 at 6-8). CPC follows IRI closely (CPC ~ IRI^0.89 climatology^0.11), and we found no clear human value added or lost. A sharpening estimated only from earlier years changed the RPS by -2.5% (-9.2% to +3.6%); the in-sample gain is only 2.3%, and sharpening failed in years when ENSO changed against the guidance (2016, 2024). Against ERSSTv5 ONI the La Nina total was calibrated (ratio 1.02); the current ONI revision makes it 1.20, and RONI 0.62, which shows the category change from the February 2026 switch to RONI. Limitations: about 13 independent years and few ENSO events, revised index values, eleven digitised issues, and too few RONI-era forecasts (36) for a calibration test.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "ENSO",
+  "probabilistic forecast verification",
+  "Climate Prediction Center",
+  "IRI ENSO forecast",
+  "calibration",
+  "under-confidence",
+  "ranked probability skill score",
+  "Oceanic Nino Index",
+  "Relative Oceanic Nino Index",
+  "forecast reliability",
+  "hazard product verification",
+  "ERSSTv6"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability_and_exponent.png",
+   "caption": "(A) Reliability of pooled category probabilities for CPC official ENSO outlooks (Aug 2013 - Jan 2026 issues), IRI objective probabilities on matched targets and a 1951-2012 regression baseline, against current ONI. (B) Recalibration exponent b (q ~ p^b; b > 1 means the forecasts should be sharper) by lead group with 95% cluster-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_implied_width_vs_error.png",
+   "caption": "Mean implied Gaussian width of the three-category forecasts against the RMS error of the implied mean, by lead, for IRI objective (A) and CPC official (B) forecasts with both tail probabilities between 2% and 98%. The stated width exceeds the actual error at short and middle leads."
+  },
+  {
+   "path": "files/figures/fig4_yearly_exponent_forward_correction.png",
+   "caption": "(A) Under-confidence exponent b of CPC forecasts by issue year. (B) RPS change when each year's forecasts are sharpened with factors from earlier years only; the correction fails in 2016 and 2024."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+   "relations": [],
+   "reason": "Earlier campaign verification of a NOAA seasonal climate outlook (hurricane ranges too narrow); contrasts with the under-confidence found here."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "relations": [],
+   "reason": "Selected prior hazard-product verification (SWPC proton probabilities too high)."
+  },
+  {
+   "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+   "relations": [],
+   "reason": "Selected prior hazard-product verification (NOAA G1-G2 storm probabilities too high)."
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "relations": [],
+   "reason": "Selected prior verification of a NOAA ocean outlook (Coral Reef Watch Alert probabilities too high)."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "relations": [],
+   "reason": "Prior attribution of a probability error to product rules; this work attributes the ENSO outlook error to the model-guidance error width."
+  },
+  {
+   "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+   "relations": [],
+   "reason": "Prior attribution of operational probability calibration to consensus members."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "relations": [],
+   "reason": "Selected prior work in the hazard-product verification line (PAGER fatality probabilities)."
+  },
+  {
+   "target": "sci:sha256:26cbf67c0e92fd531538d8f3431ca915759646f5b880826aa78d36c824ea65f1",
+   "relations": [],
+   "reason": "Campaign statistical ENSO probability forecasts; here an independent damped-persistence baseline is used."
+  },
+  {
+   "target": "sci:sha256:11e2e2d41fb975d53c9455b571e87f712c0dad29cb132bd48086d77d0511e153",
+   "relations": [],
+   "reason": "Campaign test of statistical three-category ENSO probability skill."
+  },
+  {
+   "target": "doi:10.1007/s00382-017-3721-y",
+   "relations": [],
+   "reason": "Tippett et al. (2017): probabilistic verification of NMME ENSO phase forecasts; context for three-category ENSO probabilities."
+  },
+  {
+   "target": "https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of CPC official tables and CCSR/IRI model-based probabilities (CC BY 4.0)."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/probabilities/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CPC RONI-era official probabilities and archive."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/announcement.php",
+   "relations": [],
+   "reason": "CPC announcement of the February 2026 change from ONI to RONI."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Verifying ONI values (downloaded 2026-11-11)."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Verifying RONI values (downloaded 2026-11-11)."
+  }
+ ]
+}
