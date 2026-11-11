@@ -1,0 +1,167 @@
+{
+ "title": "Higher south-east Australian rain gauges had no new relative rain loss after 1997, and runoff loss did not grow with catchment height above gauges (470 gauges, 125 catchments)",
+ "abstract": "Question: after 1997, south-east Australian runoff fell about 20% below its 1951-1996 relation to rain and stayed low. Gridded rain (AGCD, SILO) comes mostly from low gauges. If rain fell more at high elevation, gridded rain overstates post-1997 rain on high catchments, and part of the runoff deficit is a rain error. Approach: for 1,810 GHCN-Daily gauges we interpolated each gauge's yearly rain from neighbours within 60 km (leave-one-out) and regressed the change of gauge/interpolated rain on the gauge's height above its neighbours (1-degree cell bootstrap). For 125 CAMELS-AUS v2.03 catchments we fitted Q = a + bP + cP(t-1) + dT on 1951-1996 and tested whether the 2010-2021 deficit grows with catchment height above nearby gauges. The plan was written before any gauge-elevation result. Results: from 1951-1996 to 1997-2021, higher gauges lost -0.65% of rain per 100 m (95% interval -1.42 to -0.03; 470 gauges), one seventh of the -4.3% per 100 m that the median AGCD deficit needs. The pre-1997 placebo (1975-1996 vs 1951-1974) gave the same slope (-0.58%, -1.05 to -0.22), and the change from 1975-1996 to 1997-2021 was -0.19% (-0.53 to +0.20): a slow drift, not a 1997 step. Seasonal, radius, era and 5,160-pair variants gave -0.2 to -1.0%. The AGCD runoff deficit did not change with catchment height above gauges (-0.7 points per 100 m, -4.3 to +3.2): catchments more than 200 m above their gauges lost 17.4%, catchments within 50 m lost 16.4%. A rain correction with the gauge slope removed 13% (0.5-28%) of the mean AGCD deficit of 51 mm/yr, and 4% (-4 to 10%) with the slope relative to 1975-1996. Conclusion: an elevation error in gridded rain does not explain the persistent deficit; the cause remains open and probably lies in the catchments. Limitations: no gauges above 1,082 m, so the alpine zone is not sampled; relative elevation is a simple proxy for orographic exposure; inverse-distance interpolation, not the AGCD method; gauge network approximated by GHCN-Daily; 125 catchments; linear annual model; the step comparison is post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "runoff deficit",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "orographic precipitation",
+  "rain gauge representativeness",
+  "elevation-dependent rainfall change",
+  "gridded rainfall error",
+  "AGCD",
+  "SILO",
+  "GHCN-Daily",
+  "CAMELS-AUS",
+  "south-east Australia",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_gauge_elevation_test.png",
+   "caption": "Gauge test: change of rain at 470 south-east Australian gauges relative to interpolated neighbours (1997-2021 vs 1951-1996) against height above the neighbours, and slopes for all variants. The slope is far smaller than the slope needed to explain the runoff deficit, and the same slope occurred before 1997."
+  },
+  {
+   "path": "files/figures/fig2_catchment_test.png",
+   "caption": "Catchment test: the 2010-2021 runoff deficit of 125 catchments does not grow with catchment height above nearby gauges (AGCD and SILO rain), and a rain correction from the gauge slope removes only a small share of the deficit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We extend its fixed-gauge test from network change to gauge representativeness and use the same annual model form; our result supports its conclusion that the deficit is not a rain-data artefact."
+  },
+  {
+   "target": "sci:sha256:ee2119789e993f6216f5756ccece390a23019d615fc313427a494927bd444b53",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It left an unmeasured orographic rain pattern open as a limitation; we test that alternative directly."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We reproduce its post-1997 deficit with AGCD and SILO rain on CAMELS-AUS v2.03."
+  },
+  {
+   "target": "sci:sha256:448ef5cf94fd4dd8ed8caa78bd86c6fe2d0e8c0c9a8e3c2be15927a0d9897b45",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its finding that the deficit grew gradually before 1981 is relevant to our pre-1997 placebo slope."
+  },
+  {
+   "target": "sci:sha256:1ace58a848f7f14b1a3fc03b447450fea00c37be554252eb838d8e3f2dcb2bcc",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Both studies find a loss that acts on all parts of the catchments; ours shows no dependence on catchment height above gauges."
+  },
+  {
+   "target": "sci:sha256:978a2bab6c512fd4f4eb54189c92d6e728ad713cc214a274230e498a92512195",
+   "reason": "Context: the deficit is mainly a smaller event-water response."
+  },
+  {
+   "target": "sci:sha256:d8cf8c144b5a82bda74c072ec5d400b255542ce283766afde38efc4093d0746a",
+   "reason": "Context: groundwater disconnection is not the general cause."
+  },
+  {
+   "target": "sci:sha256:646c1422b5e5026ae3d6b766034b24afae6ea7ab24bfa31867ca19b2cc478a58",
+   "reason": "Context: the spatial groundwater-runoff link weakened after adjustment."
+  },
+  {
+   "target": "sci:sha256:905bbb47f668269fcdcee518410a39baac87f4aae4b56c4fb84b783f6853fb52",
+   "reason": "Context: runoff stayed low at matched bore levels."
+  },
+  {
+   "target": "sci:sha256:47f425a9abd8f0f3209f790a2dfc12e5cfdd0210703fcabe37c8c8c1d513b3cd",
+   "reason": "Context: Victorian water tables fell about 1 m after 1997."
+  },
+  {
+   "target": "sci:sha256:795f820efc7ab83d8444f08f28f7ca8db98146e05456d5a82a7f8732636fe9ca",
+   "reason": "Context: groundwater and runoff losses in Victoria."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "reason": "Context: Victorian catchments stayed in a low-runoff state."
+  },
+  {
+   "target": "sci:sha256:996e77764e103dbe322e05e1fdf424be0e48956ee5e947a8096430564aac6c51",
+   "reason": "Context: seasonal rainfall fits retained the deficit."
+  },
+  {
+   "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+   "reason": "Context: form of the deficit."
+  },
+  {
+   "target": "sci:sha256:ccf7e5d42f105c9851be6b10940013766830583fe5292184e632c5ba59749c2b",
+   "reason": "Context: the deficit was not stored water and not rain-gauge noise."
+  },
+  {
+   "target": "sci:sha256:5eddb9c5471d41c58e267937e928348b72d2c7853d9c778e5265a13ae9a1d2b0",
+   "reason": "Context: land use is not necessary for the deficit."
+  },
+  {
+   "target": "sci:sha256:b0a9a233c8a917e989d3397137f7da635219336686361a03293c4e5ccc9b01e6",
+   "reason": "Context: stream-side water tables after 1997."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 rain, temperature, flow and attributes (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "reason": "CAMELS-AUS v2 data paper."
+  },
+  {
+   "target": "doi:10.7289/V5D21VHZ",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Daily rain gauge records (Australian series from the Bureau of Meteorology)."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-11-00103.1",
+   "reason": "GHCN-Daily overview article."
+  },
+  {
+   "target": "doi:10.1175/JHM-D-10-05021.1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Reported a larger winter rain decline at high Snowy Mountains sites; this motivated our test. We do not sample the alpine zone it studied."
+  },
+  {
+   "target": "doi:10.1071/ES19014",
+   "reason": "High-elevation Snowy Mountains rain and its representation in gridded rain."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "reason": "Peterson et al. (2021): catchments that did not recover after the Millennium Drought."
+  }
+ ]
+}
