@@ -1,0 +1,299 @@
+{
+ "title": "Rain intensity, seasonality, PET and the IPO did not explain 1902-2025 changes in runoff at equal rain at 18 south-east Australian gauges; cool-season rain loss explains 1/3 of the 2010-2025 deficit",
+ "abstract": "Question: in long Bureau of Meteorology flow records, south-east Australian (SE-AU) runoff at equal annual rain was high before about 1957, low in the 1960s-1990s and low again after 1997 (bundle 4e9ae7e7). Do measured climate covariates explain this multi-decadal variation with the same coefficients that hold from year to year before 1997, and do they also predict the post-1997 deficit?\n\nApproach: 18 SE-AU gauges (8 cells of 2 x 2 degrees), annual panel model 100Q/Qbar = a + bP + cP(t-1) + z beta, calibrated before 1997. Covariates: daily heavy-rain share and wet-day count from a fixed network of 145 GHCN-D stations, May-October rain share (SILO), CRU TS 4.09 PET and the IPO tripole index (ERSST v5). Cross-validated 13-year blocks; 2,000-draw cell bootstrap. Plan and decision rules were written before any residual was calculated.\n\nResults: heavy-rain share had no clear effect (beta +0.34% of mean flow per share point, -0.56 to +1.00) and explained no block variation (CV R2 -0.01) or post-1997 deficit; this held for four alternative intensity indices. All five terms gave block CV R2 0.25 (-0.43 to 0.70); the 1941-1953 surplus (+17.6%) had a climate part of +2.5%. The 2010-2025 departure was -13.8% (-25.7 to -4.5); the five-term climate part was -1.5% (11%), and only the cool-season share contributed clearly (-4.4%, -6.9 to -1.9; 32%) after it fell to its lowest values of the record. The IPO predicted a small surplus. By the planned rules, rain intensity does not explain the variation, the five-term result is partial, and the state-shift reading was not met. Post hoc, the pre-1957 surplus of a gauge did not predict its 2010-2025 deficit (Spearman -0.10, n=16), while 1997-2009 and 2010-2025 deficits agreed (+0.73) and were larger in flatter catchments with less soil water storage.\n\nConclusion: measured climate, including daily rain intensity, does not explain century-scale SE-AU runoff efficiency; cool-season rain loss is a partial cause of the post-2010 deficit; the early surplus and the late deficit appear to be different processes.\n\nLimitations: only 5 usable 13-year blocks and 8 cells, so intervals are wide; unmeasured climate (orographic rain pattern, sub-daily rain) and early flow rating errors are not excluded; the cross-catchment test is post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "runoff efficiency",
+  "Millennium Drought",
+  "south-east Australia",
+  "rainfall intensity",
+  "rainfall seasonality",
+  "Interdecadal Pacific Oscillation",
+  "potential evapotranspiration",
+  "long streamflow records",
+  "GHCN-Daily",
+  "SILO",
+  "CAMELS-AUS",
+  "pre-registered analysis"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_departures_climate_part.png",
+   "caption": "Rolling 13-year departures of SE-AU runoff from the pre-1997 rainfall-runoff relation, the part predicted by five climate covariates, and the covariates, 1902-2025."
+  },
+  {
+   "path": "files/figures/fig2_post1997_and_blocks.png",
+   "caption": "2010-2025 departure and climate part by covariate model; cross-validated 13-year block departures against their climate part."
+  },
+  {
+   "path": "files/figures/fig3_crossgauge.png",
+   "caption": "Post hoc: per-gauge pre-1957 residual against 2010-2025 residual, both relative to a 1957-1996 fit."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We use its 18 long-record SE-AU gauges, BoM flow and SILO recipes and annual model, and test causes of the multi-decadal efficiency changes that it found."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its post-1997 SE-AU rain-sensitivity loss is the deficit whose climatic cause we test with records from 1901."
+  },
+  {
+   "target": "sci:sha256:448ef5cf94fd4dd8ed8caa78bd86c6fe2d0e8c0c9a8e3c2be15927a0d9897b45",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its monthly water-balance model removed part of the deficit; we find that cool-season rain share explains about one third of the 2010-2025 deficit."
+  },
+  {
+   "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It excluded evaporative demand from 1951; our CRU PET term from 1901 also explains none of the deficit."
+  },
+  {
+   "target": "sci:sha256:e74dce497d301fbe03bf69e72e4d186a6e879e2d54e534b799b2aff65ecbe477",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It found a near-constant monthly loss fraction; we test seasonal rain share and daily rain intensity as annual covariates."
+  },
+  {
+   "target": "sci:sha256:7dedc5bb300cbdbf2db790d0c4d0dffc0f9096c8e9b902f2e9ecdeae3b6b8ec1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It placed persistent post-drought deficits only after 1997-2010 droughts; we test whether measured climate explains them."
+  },
+  {
+   "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It attributed the persistent deficit to southern Australia after 1997; we test climatic covariates over 1901-2025."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its persistent low-runoff state in Victoria is the state-shift alternative in our decision rules."
+  },
+  {
+   "target": "sci:sha256:5eddb9c5471d41c58e267937e928348b72d2c7853d9c778e5265a13ae9a1d2b0",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It limited human land and water use as a post-1997 cause; our cross-catchment test suggests land development as a candidate for the pre-1957 surplus instead."
+  },
+  {
+   "target": "sci:sha256:8a3d6df70f6908a32b5a6892b0b0ea1bb8d7558632a540ae8739d89c33cf0d91",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Farm-dam behaviour is relevant to our post hoc interpretation of the pre-1957 surplus."
+  },
+  {
+   "target": "sci:sha256:20955da28aaf58512b7219de086d0e15d3c482c1d36f4e31d66f203f842260a2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Fixed rain-gauge networks confirmed the deficit; we also use a fixed daily station network."
+  },
+  {
+   "target": "sci:sha256:ccf7e5d42f105c9851be6b10940013766830583fe5292184e632c5ba59749c2b",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It excluded storage and gauge noise; we test climatic covariates."
+  },
+  {
+   "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its wet-year growth of the lost share is relevant to the rain-intensity hypothesis that we reject in SE-AU."
+  },
+  {
+   "target": "sci:sha256:d62649c0596eebb9ae7b27eaa58487098686077d6e5ce50ddfcd2330106fd9e4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Budyko evaporation change could not make the SE-AU slope loss; our PET term agrees."
+  },
+  {
+   "target": "sci:sha256:a3f0e3af7913a08b4dfbda3240b72c5ce098be6c960beb55d928c3b31c3deb3d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Bushfire was excluded as the post-1997 cause."
+  },
+  {
+   "target": "sci:sha256:c651f0467890b08a18b00d70192c1ccc1cf25e73a627b8946d75fba870b9e1f1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Greening was excluded as the post-1997 cause."
+  },
+  {
+   "target": "sci:sha256:1ace58a848f7f14b1a3fc03b447450fea00c37be554252eb838d8e3f2dcb2bcc",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Channel losses were excluded as the post-1997 cause."
+  },
+  {
+   "target": "sci:sha256:47f425a9abd8f0f3209f790a2dfc12e5cfdd0210703fcabe37c8c8c1d513b3cd",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Water-table falls did not predict the loss."
+  },
+  {
+   "target": "sci:sha256:795f820efc7ab83d8444f08f28f7ca8db98146e05456d5a82a7f8732636fe9ca",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Water tables did not track runoff year to year."
+  },
+  {
+   "target": "sci:sha256:5b8df99004820befad7ecabba469b69326b8173b5ac7d828664bd05bdc0376f2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "The SE-AU loss removed baseflow; relevant to our catchment-property pattern of the deficit."
+  },
+  {
+   "target": "sci:sha256:7cecffa92eedcfd0120ad0a80f1367628835baff8dc7dfa8e637c1b20d472fe4",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Faster drainage after 1997; relevant to the soil-storage pattern in our cross-catchment test."
+  },
+  {
+   "target": "sci:sha256:40fcfa6ad171ee8c3588ac89b8c6c350f0734becaefd15c5249c484d6ac578e6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Rain-matched years had less runoff after 2009; we add rain character to the match."
+  },
+  {
+   "target": "doi:10.1002/2016WR019525",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Saft et al. 2016: shifts were more likely in flatter, drier catchments; our post-1997 deficit pattern agrees."
+  },
+  {
+   "target": "doi:10.1002/2014WR015348",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Saft et al. 2015: multiyear drought shifted rainfall-runoff relations in south-east Australia."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Peterson et al. 2021: catchments may not recover from drought."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Fowler et al. 2022: community review of explanations of the Millennium Drought rainfall-runoff change."
+  },
+  {
+   "target": "doi:10.1007/s00382-015-2525-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Henley et al. 2015: definition of the IPO tripole index."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 catchment boundaries and attributes."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data record."
+  },
+  {
+   "target": "http://www.bom.gov.au/waterdata/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BoM Water Data Online daily flow."
+  },
+  {
+   "target": "https://www.longpaddock.qld.gov.au/silo/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SILO gridded rain."
+  },
+  {
+   "target": "doi:10.1016/S1364-8152(01)00008-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Jeffrey et al. 2001: SILO method."
+  },
+  {
+   "target": "doi:10.7289/V5D21VHZ",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Daily station data."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-11-00103.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Menne et al. 2012: GHCN-Daily description."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Harris et al. 2020: CRU TS 4 description (PET)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Huang et al. 2017: ERSST v5."
+  }
+ ]
+}

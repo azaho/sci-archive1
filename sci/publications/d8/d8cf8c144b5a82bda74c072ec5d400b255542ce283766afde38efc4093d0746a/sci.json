@@ -1,0 +1,125 @@
+{
+ "title": "Victorian stream-side water tables fell to the drainage line after 1997, but runoff stayed low at the pre-1997 connection state (141 bores, 30 catchments)",
+ "abstract": "Question: after 1997, south-east Australian runoff stayed 20-25% below its 1951-1996 rainfall-runoff relation. Earlier campaign studies found that Victorian water tables fell about 1 m and proposed that streams became disconnected from groundwater. We tested this threshold mechanism directly. Approach: for 1,016 Victorian WMIS bores near 105 CAMELS-AUS v2.03 catchments, we calculated the height above nearest drainage from the Geoscience Australia 1-second hydrologically enforced DEM (DEM-H) and the head above the drainage line (HAND minus depth to water). The primary set was 141 shallow bores within 500 m of a 5 km2 channel inside 30 catchments. The runoff deficit came from the annual model Q = a + bP + cP(t-1) + dT fitted on 1951-1996 (AGCD rain; SILO check). The plan was written before any comparison. Results: the median stream-side head fell from +0.47 m to -0.39 m relative to the drainage line; the share above it fell from 59% to 45%; 14% of bores (CI 9-21%) crossed below and none crossed back, but all crossings were within the 2.4 m DEM error. The planned cross-catchment link was not supported (Spearman rho 0.21, CI -0.09 to 0.53). Catchments in which no stream-side bore crossed still lost 20% of runoff (CI -48 to -10%). The head fall above the drainage line did not predict the deficit better than the total fall. Post hoc: in a fixed bore panel the connected share fell as much from 1985-1989 to 1990-1996 (0.77 to 0.67) without runoff loss as it did after 1997; in 2011 it returned to the 1990-1996 level while runoff was 45% low; in 1997-2021 years with a connected share at or above the pre-1997 level, runoff was still 14% low (CI -32 to -0%), about 70% of the deficit in other years. Zero-flow days rose equally in all classes. An aridity-adjusted class difference (-20 points) did not survive a 2 m change of the threshold. Conclusion: stream-side water tables moved to the drainage line, but stream-groundwater disconnection is not the general cause of the persistent runoff loss; a smaller local share is possible. Limitations: DEM vertical error near the size of the head changes; bores are not at the stream; 30 catchments in 12 one-degree cells; Victoria only; several key tests are post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370703"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "groundwater-surface water connection",
+  "stream disconnection",
+  "height above nearest drainage",
+  "DEM-H",
+  "water table",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "CAMELS-AUS",
+  "Victoria",
+  "bore hydrographs",
+  "threshold behaviour"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_heads_and_years.png",
+   "caption": "(a) Head above the drainage line for 141 stream-side shallow bores, 1985-1996 against 2010-2021, with the 2.4 m DEM error band. (b) Fixed panel of 89 bores: share above the drainage line and median runoff residual of 30 catchments, 1985-2021."
+  },
+  {
+   "path": "files/figures/fig2_classes_and_matched_state.png",
+   "caption": "(a) 2010-2021 runoff deficit by connection class; (b) the same adjusted for aridity (post hoc); (c) runoff residual change in years at or above the pre-1997 connection state and in other years, 9 configurations (post hoc)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:795f820efc7ab83d8444f08f28f7ca8db98146e05456d5a82a7f8732636fe9ca",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We reuse its bore selection rule, build_annual.py and runoff model, and test its proposed threshold-disconnection explanation, which the evidence does not support as the general cause."
+  },
+  {
+   "target": "sci:sha256:47f425a9abd8f0f3209f790a2dfc12e5cfdd0210703fcabe37c8c8c1d513b3cd",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Water-table fall after 1997 and the proposed disconnection or threshold model; we confirm the head fall at stream-side bores but find no threshold signature."
+  },
+  {
+   "target": "sci:sha256:905bbb47f668269fcdcee518410a39baac87f4aae4b56c4fb84b783f6853fb52",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Runoff stayed low at matched bore levels; we find the same at matched stream-side connection state."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Annual runoff model and the post-1997 runoff deficit."
+  },
+  {
+   "target": "sci:sha256:1ace58a848f7f14b1a3fc03b447450fea00c37be554252eb838d8e3f2dcb2bcc",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Nested gauges showed small channel losses; we also find no disconnection signal in the deficit."
+  },
+  {
+   "target": "sci:sha256:978a2bab6c512fd4f4eb54189c92d6e728ad713cc214a274230e498a92512195",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Stream salinity showed most lost water was fresh quickflow, not saline baseflow, which agrees with a weak disconnection role."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "reason": "Earlier campaign work on the post-1997 runoff deficit."
+  },
+  {
+   "target": "sci:sha256:646c1422b5e5026ae3d6b766034b24afae6ea7ab24bfa31867ca19b2cc478a58",
+   "reason": "Location and baseline controls on the groundwater-runoff link."
+  },
+  {
+   "target": "doi:10.1029/2008WR006953",
+   "reason": "Brunner et al. 2009, physical basis of stream-aquifer disconnection."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "reason": "Fowler et al. 2022, community review of hypotheses for the Millennium Drought rainfall-runoff shift."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2 description; data from Zenodo record 14289037 (CC BY 4.0)."
+  },
+  {
+   "target": "https://data.water.vic.gov.au/WMIS",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DEECA Water Measurement Information System bore depth below natural surface and station catalogue (CC BY 4.0), snapshot 2026-11-10."
+  },
+  {
+   "target": "https://data.gov.au/data/dataset/1-second-srtm-derived-hydrological-digital-elevation-model-dem-h-version-1-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Geoscience Australia DEM-H v1.0 (CC BY 4.0), fetched by WCS."
+  }
+ ]
+}
