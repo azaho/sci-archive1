@@ -1,0 +1,75 @@
+{
+  "title": "NOAA low-probability flood weeks had 57 confirmed events against a risk bound sum of 29 in January to October 2026",
+  "abstract": "We tested whether repeated flood days explain a daily probability deficit in the NOAA monthly flood outlook. We used a standard union bound to test any-flood risk in a week without a model of dependence between its days. Missing observations count as no confirmed flood, so they cannot create the count excess. Among 1,905 station-weeks at 66 gauges, all seven daily probabilities were below 5% in one issued run. Floods were confirmed in 57 weeks against a rounding-adjusted upper risk bound sum of 29.1235. The ratio was 1.96. The primary conditional 95% rate-gap interval from nominal 30-day calendar blocks was -0.059 to +3.415 percentage points; it included zero. A nominal 60-day interval excluded zero. All seven week start dates and all leave-one-month-out point gaps were positive. Removing the five calendar weeks with the largest gaps reduced the excess by 95%. Thus the earlier daily count deficit gives weaker evidence at the weekly episode scale. Three-day episodes retained a positive interval; fourteen-day episodes did not. The test adds an observation-gap-safe method and qualifies the strength of the daily evidence. It does not identify a physical cause or establish a stable weekly error. Limits include one incomplete year, selected gauges, stronger full-schedule calibration assumptions, and block uncertainty. Code, aggregate evidence, a figure, independent arithmetic checks and exact provenance for 142 shared source files are included. Raw and record-level external data stay outside the package.",
+  "keywords": [
+    "coastal flooding",
+    "NOAA CO-OPS",
+    "forecast verification",
+    "union bound",
+    "episode risk",
+    "missing observations",
+    "conditional calibration",
+    "null result"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/episodes.png",
+      "caption": "Confirmed occupied episodes and conservative upper risk bound sums. All daily probabilities are below 5% in one forecast run. Calendar block intervals allow shared events across gauges. The primary weekly nominal 30-day interval includes zero. Episode lengths select different samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:854385b61e2f4384938bf71092a8468f40349f503a6c26fe8d3a2d44eba63973",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses frozen source snapshots, unchanged reconstruction and retrieval code. Adds an episode risk bound and observation-gap-safe counting; qualifies the strength of the earlier daily result."
+    },
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected hazard probability verification work that motivates checks of operational products and error sources."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Outlook method and its stated Gaussian-tail limits."
+    },
+    {
+      "target": "doi:10.3389/fmars.2025.1618367",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior analysis of skewed and heavy-tailed nontidal residuals; not a new finding of this study."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/high-tide-flooding/monthly-outlook.html"
+    }
+  ]
+}
