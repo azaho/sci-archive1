@@ -1,0 +1,145 @@
+{
+ "title": "CoralTemp v3.1 coral SST has steps in mid-1995, November 2002 and January 2008 that cause its 1985-2025 warming excess over in situ SST and 8-28% of a reef heat-stress trend",
+ "abstract": "Question: NOAA Coral Reef Watch (CRW) CoralTemp v3.1 joins three inputs (OSTIA reanalysis to October 2002, Geo-Polar reanalysis to September 2016, near-real-time Geo-Polar after). The Geo-Polar bias reference also changed in January 2008. Do these input changes put steps into CoralTemp, and do the steps bias CRW reef heat stress (Degree Heating Weeks, DHW)? Approach: we compared CoralTemp with ERSSTv5 and HadSST4.2 (in situ), DOISST v2.1, ESA SST CCI v3.0.1 (satellite only) and 128 moored buoys, with joint step models, placebo dates and a blind break search (1985-2025, 1-degree sample, 60S-60N). We then applied the CRW v3.1 heat-stress method to 738 reef pixels in 16 reef boxes, with and without the steps. Results: at 30S-30N CoralTemp falls by 0.04-0.09 C in mid-1995 (undocumented; found by the blind search in all reference series), rises by 0.055-0.091 C at the November 2002 join and by 0.062-0.065 C in January 2008, relative to the in situ products. The October 2016 join has no step. CCI confirms 2002 (+0.094 C) and 2008 (+0.059 C); at the buoys CoralTemp minus buoy changes by -0.090, +0.076 and +0.063 C. CoralTemp warms 0.033-0.036 C per decade faster than ERSSTv5 and HadSST4.2; with step terms the excess is 0.000-0.002. The variance of the 1-day change also rises 2.4-fold at the 2002 join. Relative to its fixed 1985-2012 bleaching climatology, 2017-2025 CoralTemp is about 0.11 C too warm. The 1986-2025 trend of annual maximum DHW at the reef pixels is +1.17 C-weeks per decade in published CoralTemp, +0.84 with the mean steps removed and +0.91 to +1.08 when the sub-monthly noise is also matched to one segment: 8-28% of the trend is artifact. In 2024, DHW >= 4 occurs at 90% of these reef pixels in published CoralTemp and at 77% with the mean steps removed. The rise of reef heat stress and the 2024 record stay true in every version. Limitations: the references have their own errors; CCI was fetched only near the change dates; the reef sample is 16 boxes at 0.25-degree spacing; the cause of the 1995 step is not identified.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "CoralTemp",
+  "Coral Reef Watch",
+  "degree heating weeks",
+  "coral bleaching",
+  "sea surface temperature",
+  "homogenisation",
+  "inhomogeneity",
+  "change point",
+  "OSTIA",
+  "Geo-Polar Blended",
+  "ESA SST CCI",
+  "marine heat stress"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ct_minus_references.png",
+   "caption": "CoralTemp v3.1 minus ERSSTv5, HadSST4.2 and DOISST v2.1 at 30S-30N (12-month running means, relative to 2008-2015). Dashed lines: mid-1995 (undocumented), the November 2002 OSTIA-to-Geo-Polar join, the January 2008 change of the Geo-Polar bias reference and the October 2016 join. Black: joint step model fitted to the in situ products."
+  },
+  {
+   "path": "files/figures/fig3_reef_dhw.png",
+   "caption": "CRW v3.1 heat stress for 738 reef pixels in 16 reef boxes. Red: published CoralTemp. Blue: mean steps removed. Shaded: mean steps removed and sub-32-day noise matched to the 2016-2025 or the 1985-1995 level. Dashed: OLS trends 1986-2025."
+  },
+  {
+   "path": "files/figures/fig2_step_maps.png",
+   "caption": "24-month window steps of CoralTemp minus the mean of ERSSTv5 and HadSST4.2 in 5-degree boxes at the four dates. The windows also contain ENSO and regional variability, so single boxes are noisy."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same staircase approach (steps at input-change dates against several references) that found the DOISST warming excess; we apply it to CoralTemp."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its reef pixel list (van Woesik and Kratochwill site positions) and extend its DOISST DHW study to the CRW product itself."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its daily moored-buoy SST (NDBC and GTMBA) for the buoy step test."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Assimilated drifters hide part of a satellite-input step near in situ data, so buoy tests underestimate such steps."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Removing DOISST mean steps changes record-heat and heatwave results."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Mean-and-variance homogenised DOISST."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Ensemble of homogenised DOISST versions; noise target sets most of the spread."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "Satellite-input version change as the cause of the 2020 DOISST step."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "ESA CCI has its own steps at dual-view sensor changes, including the SLSTR-A start; this limits the CCI test of the 2016 join."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Input-change noise steps bias heatwave statistics in DOISST."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Noise steps bias marine heatwave statistics; spectral matching below 32 days."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "DOISST variance steps against CCI and buoys; DOISST 2007-2020 noise is near buoy level."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST variance step at its 2007 input change."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "First finding of DOISST fast-variance steps at input changes."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "OISST input steps bias daily extremes and heatwave trends."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Heatwave-day trend signs survive bounded SST changes."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "reason": "CoralTemp v3.1 inputs, join dates and the CRW heat-stress method."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4."
+  },
+  {
+   "target": "doi:10.1038/s41597-022-01121-y",
+   "reason": "Coral-bleaching site database (reef pixel positions)."
+  },
+  {
+   "target": "https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1",
+   "reason": "CoralTemp v3.1 daily data access."
+  }
+ ]
+}

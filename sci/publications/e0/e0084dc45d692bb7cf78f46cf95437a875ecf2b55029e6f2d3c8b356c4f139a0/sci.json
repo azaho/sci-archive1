@@ -1,0 +1,67 @@
+{
+  "title": "Three fitted TYC 9179-1083-1 states give small eccentricity cycles under an averaged triple model",
+  "abstract": "We test the long-term dynamics of three published local orbit fits for TYC 9179-1083-1. The nominal fit has a 50.6-degree mutual inclination and inner eccentricity 0.532. Energy and angular momentum in a finite-angular-momentum quadrupole model confine its eccentricity to 0.461-0.606. Its inner periapse angle librates within 10.1 degrees of -90 degrees relative to the outer plane. The cycle takes about 1094 years. Leading inner relativistic precession changes the range to 0.451-0.598. Two sensitivity fits retain small libration. All 512 draws from the published local Gaussian covariance also librate in the tested Newtonian model. Direct Newtonian integrations for 12000 years test the averaged result at two time steps. This is a conditional dynamical classification of existing fits, not new observations or a global orbit solution. It does not test dissipative tides, stellar evolution or long-term stability beyond the integration. We provide model inputs with source hashes, simulation outputs, code and a figure.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "TYC 9179-1083-1",
+    "hierarchical triples",
+    "Lidov-Kozai libration",
+    "secular dynamics",
+    "eccentricity bounds"
+  ],
+  "display": [
+    {
+      "path": "files/dynamics.png",
+      "caption": "Direct and averaged eccentricity cycles. Conserved energy and angular momentum bound the eccentricity for three local fitted states. All results depend on the source orbit branch and the forces stated in the text."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c3a82f937fcf2fb846984de549df266a6c168cf750e84c17ca7f4a2571a1eae2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Three fitted orbital states, local covariance and source numerical model. We test their long-term dynamical consequences."
+    },
+    {
+      "target": "sci:sha256:bbb8cb3af30279b263948b43ed5df5dceb9e03150f8a2462b5ff5c32eb2c6dc4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original triple_model.py code under SCI baseline MIT terms."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2396",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Finite-angular-momentum secular vector theory and short-range precession."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085",
+      "relations": [
+        "uses"
+      ],
+      "reason": "REBOUND numerical integration software."
+    },
+    {
+      "target": "doi:10.1093/mnras/stv1257",
+      "relations": [
+        "uses"
+      ],
+      "reason": "WHFast integrator."
+    },
+    {
+      "target": "sci:sha256:c171353878334f794bd251b20ce7b89a2432164dcc4723666fb4a0ee14914d68",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "The reproduction script now disables Python bytecode writes in the signed source folder. Scientific results are unchanged."
+    }
+  ]
+}
