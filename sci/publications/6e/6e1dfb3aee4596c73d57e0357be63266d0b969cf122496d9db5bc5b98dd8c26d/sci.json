@@ -1,0 +1,112 @@
+{
+ "title": "Stationary expectations from training years matched forward skill for Japanese cherry bloom and glaciers; rivers, Swiss bloom, birds and dengue lost more from level and slope changes",
+ "abstract": "Question: can the forward skill of a climate-response relation be predicted from training data alone? Approach: before analysis we froze and timestamped a plan for six panels with one common pipeline: WGMS glacier balance (59 glaciers), Canadian reference river flow (223 gauges), cherry peak bloom in Japan (56) and Switzerland (79), BBS species counts on routes (3,000) and OpenDengue national dengue cases (71). Each panel used one pooled temperature and/or precipitation window (GHCN_CAMS, CRU TS 4.09), trained on early years and scored on later years. For each series we simulated a stationary relation (same coefficients, AR(1) residuals, observed later climate) to get the expected skill E0. Results: E0 separated the panels: birds had no training signal (pooled E0 0.03, observed 0.004). The observed pooled skill against the training mean was 98% of E0 for Japanese cherry (0.646 vs 0.658), 87% for glaciers, 77% for Swiss cherry, 47% for rivers and 15% for dengue. Series-level rank calibration held in 4 of 6 panels (plan required 5). Skill fell below the stationary 5th percentile in 17-27% of series for rivers, Swiss cherry and dengue. Level shifts that the climate terms missed dominated for birds and dengue; slope changes dominated elsewhere: glacier temperature sensitivity tripled, Swiss bloom sensitivity fell by a quarter while Japanese rose, and the dengue slope halved. Class labels explained more variance than E0 (R2 0.15 vs 0.06). Limitations: six panels, simple linear windows, point climate, national dengue counts without population, Gaussian AR(1) null.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "forecastability",
+  "climate-response relations",
+  "out-of-sample test",
+  "stationarity",
+  "pre-registration",
+  "glacier mass balance",
+  "streamflow",
+  "cherry blossom phenology",
+  "Breeding Bird Survey",
+  "dengue",
+  "level shift"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pooled_skill.png",
+   "caption": "Pooled forward skill (blue, 95% series-cluster interval) against the stationary expectation (grey, 90% range of 1,000 simulations) for six panels: (a) frozen model vs training mean, (b) trailing mean vs training mean, (c) level-updated model vs trailing mean."
+  },
+  {
+   "path": "files/figures/fig2_series_expected_vs_observed.png",
+   "caption": "Observed forward skill S1 against the stationary expectation E0[S1] for each series (dashed: 1:1). S1 is clipped at -1.5 for display."
+  },
+  {
+   "path": "files/figures/fig3_level_and_anomaly.png",
+   "caption": "(a) Median observed level shift of the response and the shift that the frozen climate terms predicted, in training residual SD units. (b) Share of series whose level or year-to-year error part was above the stationary 95th percentile."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "reason": "We test its signal-fraction and level-stability proposal with a pre-registered stationary null in six new panels.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "reason": "Earlier forward test of Swiss plant phenology; our Swiss cherry panel overlaps this system.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+   "reason": "Earlier dengue temperature-curve forward test in Brazil; we add national series from other countries.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+   "reason": "Earlier disease forward test (West Nile) in the campaign line."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "reason": "Earlier BBS and butterfly population forward tests."
+  },
+  {
+   "target": "sci:sha256:050ca773432a510a0f1f7b2456ea5bfbba196ea18056f220a2854be1521ffb38",
+   "reason": "Earlier campaign use of WGMS glacier balances (melt memory)."
+  },
+  {
+   "target": "doi:10.5904/wgms-fog-2026-02-10",
+   "reason": "WGMS Fluctuations of Glaciers database, version 2026-02-10."
+  },
+  {
+   "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/",
+   "reason": "HYDAT national water data archive and RHBN metadata (Environment and Climate Change Canada)."
+  },
+  {
+   "target": "https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction",
+   "reason": "Cherry peak-bloom compilation (JMA and MeteoSwiss data)."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+   "reason": "North American Breeding Bird Survey data release."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03120-7",
+   "reason": "OpenDengue database (Clarke et al. 2024)."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "reason": "CRU TS gridded climate (Harris et al. 2020)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS land temperature analysis (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "doi:10.1038/nature15402",
+   "reason": "Declining sensitivity of spring leaf unfolding to warming (Fu et al. 2015)."
+  }
+ ]
+}
