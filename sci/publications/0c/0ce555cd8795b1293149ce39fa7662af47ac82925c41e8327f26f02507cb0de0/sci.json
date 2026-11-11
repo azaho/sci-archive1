@@ -1,0 +1,201 @@
+{
+ "title": "The CMIP7 AMIP SST forcing (OI SST v2) has a -0.28 C Southern Ocean step in July 2018 at the drifting-buoy TAC-to-BUFR change, a second step in December 2021 and a warm November 2021",
+ "abstract": "Question: NOAA OI SST v2 is the post-1981 source of the PCMDI-AMIP SST forcing (1.1.9, and 1.1.10 for CMIP7, both to December 2022). Earlier work found a cold Southern Ocean step near mid-2018 with an unknown cause. What causes it, are there other late events, and what do they change? Approach: we compared OI v2 (equal to AMIP tos within 0.014 C) with DOISST v2.1, ERSSTv5, COBE-SST2, HadISST1 and HadSST4.2 on a fixed ice-free 60S-60N 1-degree mask (2008-2022). We used step-date searches, block-bootstrap step intervals and a natural experiment: the superseded DOISST v2.0 used the same NCEP TAC in situ stream as OI v2, while v2.1 adds BUFR buoys from 2016 (300 sampled days, 2014-2020). We removed the events and applied five GFMIP Green's functions. Results: at 40-60S, 0-120E, OI v2 becomes 0.28 C colder than all references in July 2018 (references 0.23-0.33 C; all intervals exclude zero). This agrees with the loss of drifting-buoy reports from the TAC stream (about 1,480 to 320 buoy IDs, 2016-2018) and with a NOAA report of a cold bias in the Reynolds OISST in June-September 2018. In the same sector, TAC-fed DOISST v2.0 becomes 0.16 C colder than v2.1 in May-June 2018, and BUFR-fed v2.1 shows no step. A second cold step (0.16 C, references 0.13-0.21 C) occurs at 40-60S, 120-360E in December 2021, after a globally warm November 2021 (+0.22 C at 60S-60N). This is the month in which NOAA stopped Metop-A processing. The events change the AMIP 2001-2022 trend at 50-60S from -0.031 to +0.012 to +0.043 K per decade, and they make the 2001-2022 Green's-function feedback more negative by 0.15 W m-2 K-1 (models 0.05-0.22; references 0.11-0.18), mostly through the 2018 event. Limitations: the causes are inferred from timing, a NOAA report and the DOISST v2.0 test, not from OI v2 input logs; v2.0 does not reproduce the OI v2 change map outside the Southern Ocean; references share inputs; feedbacks are per K of 60S-60N SST with linear Green's functions; the 1.1.10 file was not downloaded (release notes state tos is unchanged).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "OI SST v2",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "CMIP7",
+  "AMIP forcing",
+  "drifting buoys",
+  "TAC to BUFR",
+  "Metop-A",
+  "DOISST",
+  "Southern Ocean",
+  "data artifacts",
+  "pattern effect",
+  "Green's function",
+  "radiative feedback"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeseries.png",
+   "caption": "OI v2 (= PCMDI-AMIP tos) minus five reference products (3-month means) at 40-60S, 0-120E (a) and 40-60S, 120-360E (b). All references show a cold step in July 2018 in (a) and in December 2021 in (b), and a warm November 2021. (c) In the same sector as (a), DOISST v2.0, which used the same NCEP TAC in situ stream, becomes colder than DOISST v2.1 (TAC plus BUFR buoys) in May-June 2018. Dashed lines: start of the TAC drifting-buoy decline (Nov 2016), July 2018, Metop-A shutdown (15 Nov 2021)."
+  },
+  {
+   "path": "files/figures/fig2_maps.png",
+   "caption": "Smoothed maps of OI v2 minus the in situ ensemble (ERSSTv5, COBE-SST2, HadISST1, HadSST4.2) for the 2018 event (a), the 2021-22 event (b) and November 2021 (c), each relative to January 2012-May 2018; (d) DOISST v2.0 minus v2.1 change, July 2018-March 2020 minus January-October 2016. Blue: OI v2 or v2.0 too cold."
+  },
+  {
+   "path": "files/figures/fig3_consequences.png",
+   "caption": "(a) Change of the Green's-function feedback (W m-2 K-1 per K of 60S-60N SST) when the events are removed from AMIP, for five models and six correction variants, 2001-2022 and 1982-2022. (b) Southern Ocean 2001-2022 SST trends: AMIP (red square), AMIP with the events removed (bar: five references), and the reference products."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "First report of the 2018 OI v2 step and OI v2/AMIPII trend-pattern work; we identify the probable cause of that step.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "July 2020 DOISST v2.1 warm step; reason why DOISST v2.1 is not in our in situ reference ensemble."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Earlier campaign result on SST-product input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "reason": "We reuse its GFMIP Jacobians (gf_boxes.npz); our feedback effect of the 2018 event agrees with its estimate.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:c0ad230d2adce447e21d42715ae77af6adde24fd065f7e743afcc68528a3437e",
+   "reason": "CAM4 Green's-function estimate of the AMIPII 2018 step effect; same sign as ours.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "DOISST v2.1 2020 step near buoys; context for reference errors."
+  },
+  {
+   "target": "sci:sha256:744ca39845d8ad5a735ec3185724cb75f02f7ced5aacaf95d643fc15df1e68bc",
+   "reason": "Showed that AMIP 1.1.9 keeps the 2018 OI v2 step; we confirm this and add the 2021-22 events.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9719f8c855c50418c6c8e1e06122d606d7c4d163bc3a96be9ed4bec3ec8d73cf",
+   "reason": "Located the 2018 step at 0-120 E and asked for a source audit; this work is that audit.",
+   "relations": [
+    "supports",
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Documents the DOISST v2.0 cold bias from lost TAC drifting-buoy reports, 2016 to August 2019; the mechanism we test for OI v2."
+  },
+  {
+   "target": "https://ams.confex.com/ams/2019Annual/webprogram/Paper352621.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI poster: TAC drifting-buoy decline since November 2016 and Reynolds OISST cold bias in June-September 2018."
+  },
+  {
+   "target": "doi:10.25981/ESGF.input4MIPs.CMIP7/2575015",
+   "reason": "PCMDI-AMIP 1.1.10, the CMIP7 AMIP SST and sea-ice forcing."
+  },
+  {
+   "target": "https://ospo.noaa.gov/data/messages/2021/11/MSG_20211116_1604.html",
+   "reason": "NOAA notice: Metop-A product processing ended on 15 November 2021."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GFMIP protocol and Green's functions."
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1",
+   "reason": "Method of the AMIP SST and sea-ice boundary data."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 reference product."
+  }
+ ]
+}
