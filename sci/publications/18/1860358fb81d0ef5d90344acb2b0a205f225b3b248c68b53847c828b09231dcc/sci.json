@@ -1,0 +1,75 @@
+{
+  "title": "NRCS April 1 runoff quantiles cut loss by 40% against earlier flow history at 470 western US sites in 2013-2025",
+  "abstract": "We tested whether archived NRCS April 1 probability forecasts of April-July adjusted runoff beat earlier runoff history. The test used 5,612 cases at 470 western US sites in 2013-2025. Each site had at least 30 valid seasons before 2013. The history forecast used only years before each target year. We scored all five issued quantiles with pinball loss, scaled by a site mean fixed before testing. NRCS reduced mean loss by 40.4%, with 95% whole-year bootstrap limits of 32.0-47.1%. Its 80% ranges were 44.8% narrower than history ranges; coverage was 78.7% and 79.0%. Fixed, recent and rolling history windows gave gains near 40%. An added exploratory test gave the history distribution the issued NRCS median. Full NRCS quantiles still reduced loss by 14.7% against shifted history and 16.6% against scaled history. Thus issued uncertainty added information beyond these median-matched references. New Mexico had 52.9% skill despite excess range coverage. This shows that calibration errors can coexist with useful probability information. Revised archives, adjusted flows, selected sites, 13 test years and simple reference methods limit inference. This is a forward calendar split, not original-vintage verification or a causal test. Code, aggregate results, figures, exact source hashes and retrieval instructions are included. Raw and case-level data stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "NRCS",
+    "water supply",
+    "probabilistic forecast",
+    "quantile score",
+    "runoff",
+    "forecast verification",
+    "climatology",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/results/benchmark.png",
+      "caption": "Quantile skill against earlier runoff history. Intervals resample whole years. State comparisons are diagnostic."
+    },
+    {
+      "path": "files/results/spread.png",
+      "caption": "Exploratory tests show information beyond the issued median under two simple history-shape references."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bd4358dd0a7434bcdd269b67ba7d39532d5932d70325657f32b0c12618f091b0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses forecast source snapshots, loader and extraction checks; adds long histories and quantile score comparisons, not independent coverage confirmation."
+    },
+    {
+      "target": "sci:sha256:bd487bf106665747c36e445b328bac8ca72ecabc9e6122b6c1666acf2ddb8983",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Shared errors motivate whole-year uncertainty."
+    },
+    {
+      "target": "sci:sha256:6fb468ce1a3069e7a30007038923cd17797884e5eef83f3eb17d84c6c0679f54",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Distinguishes later-weather error tests from forecast skill at issue time."
+    },
+    {
+      "target": "https://journals.ametsoc.org/view/journals/hydr/5/5/1525-7541_2004_005_0896_eoowus_2_0_co_2.xml"
+    },
+    {
+      "target": "doi:10.1061/40976(316)575"
+    },
+    {
+      "target": "doi:10.1198/jasa.2011.r10138"
+    },
+    {
+      "target": "https://directives.nrcs.usda.gov/sites/default/files2/1720456751/Chapter%207%20-%20Water%20Supply%20Forecasting.pdf"
+    },
+    {
+      "target": "https://wcc.sc.egov.usda.gov/awdbRestApi/swagger-ui/index.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Forecast and adjusted runoff sources; exact queries and hashes are in the manifests."
+    },
+    {
+      "target": "https://www.nrcs.usda.gov/sites/default/files/2023-03/AWDB%20Web%20Service%20User%20Guide.pdf"
+    }
+  ]
+}
