@@ -1,0 +1,43 @@
+{
+  "title": "A shared step in four of seven SST products causes the tested blind search to correct the clean products",
+  "abstract": "We test a published blind SST correction with simulated input steps and its fitted noise model. A +0.06 K step shared by one to three of seven products is removed in noiseless tests. A step shared by four to six products instead causes opposite corrections in clean products. In 24 tests with fitted AR(1) noise and four to six affected products, the remaining common jump is 0.0583-0.0614 K while product spread stays small. The relative data cannot separate two exact bias explanations; product sparsity favours fewer affected products. A retained uniform January 2005 step would add 0.02278 K per decade to the 1985-2024 trend. In a separate known-date test with four affected products, equal total weight per known input family reduces common-jump RMSE from 0.04950 to 0.00471 K over 10,000 draws. An incorrect family map increases RMSE to 0.05728 K. These are conditional method tests, not evidence of a shared artifact in the observed record. We provide the source detector, a family-weighted median estimator, calibration and reproducible tests.",
+  "keywords": [
+    "sea surface temperature",
+    "homogenisation",
+    "shared inputs",
+    "input lineage",
+    "synthetic benchmark"
+  ],
+  "display": [
+    {
+      "path": "files/results/family_benchmark.png",
+      "caption": "The blind search retains a shared step after the affected products become a majority. Correct family weights help in a separate known-date test; incorrect weights fail."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Test of the unchanged fitted pass-B detector with partially shared steps."
+    },
+    {
+      "target": "sci:sha256:25e4afb2b92ff314218571cb2ed551960f44cbfbf401d42334657f47f1dbbe7b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior fully shared-error bounds motivate a distinct test of partial input families."
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2263.1"
+    },
+    {
+      "target": "https://dgm-meteo.github.io/wmo-clino/Docs/WMO2020_1245_en_Guidelines%20on%20Homogenization.pdf"
+    },
+    {
+      "target": "https://climate.copernicus.eu/climate-bulletin-about-data-and-analysis"
+    }
+  ]
+}
