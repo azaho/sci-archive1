@@ -1,0 +1,142 @@
+{
+ "title": "In one MICrONS mouse, higher visual areas had steeper movie response spectra inside 13 scans but not clearly in pooled scans; simple stimulus features and behavior did not explain it",
+ "abstract": "We tested in an independent data set whether response spectra decay faster in higher mouse visual areas, as found in Allen data. We used MICrONS mouse 17797: 13 two-photon scans, 104,171 units in V1, LM, RL and AL, and six identical 10-s natural movie clips with 5 to 10 repeats. The cvPCA estimator and decision rule were fixed before area spectra were calculated. Inside scans (200 units per area), alpha rose along the anatomical hierarchy: V1 0.906, LM 0.950, RL 0.945, AL 1.021; mean slope 0.226 (0.129 to 0.323), positive in 11 of 13 scans. This is similar to Allen values for the same areas. The slope stayed after reliability and depth matching and with other bin sizes, and decreased to 0.132 after receptive-field position matching. In 300-unit populations pooled across scans the slope was only 0.052 (scan bootstrap -0.021 to 0.263), so the pre-registered pooled criterion failed. Exploratory tests showed why: V1 alpha did not change when units came from more scans, but higher-area alpha fell. The dominant stimulus directions of higher areas were specific to the scan. This was not explained by recording day, behavior, depth, receptive-field position or local plane signals, and it also occurred in the MICrONS digital twin on 4,999 new frames, where the area order held (alpha 0.77, 0.83, 0.84). Higher areas held more variance in global luminance, contrast and motion-energy subspaces, but removal of these subspaces or of shared higher-area directions did not decrease the slope. Removal of dominant V1 directions increased it. Slower temporal integration explained about 40% of the higher-area excess. Limits: one mouse, four areas, 216 stimulus points, exploratory post-hoc diagnostics. Code, aggregate results, figures and exact provenance are included; MICrONS data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "cross-validated PCA",
+  "power law",
+  "dimensionality",
+  "MICrONS",
+  "two-photon imaging",
+  "natural movies",
+  "digital twin",
+  "replication",
+  "motion energy",
+  "population code"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_microns_replication.png",
+   "caption": "MICrONS replication. (a) Pooled cvPCA spectra. (b) Per-scan alpha against hierarchy score; grey lines are 13 scans, dots are means. (c) Hierarchy slope of alpha across analyses with 95% intervals, scan-mixing diagnostics and published Allen values for the same four areas."
+  },
+  {
+   "path": "files/figures/fig2_mechanism_tests.png",
+   "caption": "Computation tests. (a) Share of reliable variance in explicit feature subspaces by area. (b) Slope after feature-subspace removal (blue) and time-shifted controls (grey). (c) Slope after removal of k V1, other-HVA or shifted directions. (d) Alpha against lag-1 signal autocorrelation for smoothed V1 (grey line) and the four areas."
+  },
+  {
+   "path": "files/figures/fig3_scan_specificity_twin.png",
+   "caption": "Scan specificity. (a) Alpha of 200-unit populations drawn from 1 to 13 scans. (b) Similarity of the top stimulus direction between disjoint units of the same scan (solid) and of other scans (hatched). (c) Digital-twin spectra on 4,999 new frames."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the cvPCA estimator and hierarchy scores; the per-scan MICrONS result supports the direction of its effect in an independent data set."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Published movie and natural-scene alpha tables used as the Allen reference for the same four areas."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Compression outside dominant VISp axes; removal of V1 directions increased the slope here as well."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Earlier grating result in the same research line."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Single-mouse result; MICrONS within-scan populations agree, but cross-scan pooling weakens the effect."
+  },
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Motion energy was the dominant shared movie axis there; here motion-energy subspaces held more higher-area variance but did not carry the compression."
+  },
+  {
+   "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+   "reason": "Macaque test of the same question (no compression)."
+  },
+  {
+   "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+   "reason": "Macaque THINGS test of the same question (no compression)."
+  },
+  {
+   "target": "sci:sha256:c6dfdd4012b42628ea69f62947ae65f0c522b6d79e57dc83c0be035a3be67094",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Removing ten shared higher-area directions reduced Allen movie slopes; in MICrONS the same removal did not reduce the slope."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS area labels and functional data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08829-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Digital-twin evaluation data and properties."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Node table with twin responses and readout weights."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA method."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hierarchy scores as used for visual areas."
+  },
+  {
+   "target": "https://www.microns-explorer.org/terms-and-conditions",
+   "reason": "Data terms (CC BY 4.0) for MICrONS material."
+  }
+ ]
+}

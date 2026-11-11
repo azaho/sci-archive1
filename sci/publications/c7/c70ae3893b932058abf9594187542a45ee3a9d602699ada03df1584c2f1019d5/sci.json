@@ -1,0 +1,57 @@
+{
+  "title": "A uniform-warming closure test finds a negative 1982-2022 pattern term in the OI2p1 AMIP prototype",
+  "abstract": "We test the uniform-warming reference in a published linear analysis of the CMIP7Plus OI2p1 AMIP prototype. The radiation operator sums globe-fraction weights, but the reference has an extra division by ocean area. A constant SST field then has a false positive pattern term. For the fixed ocean mask, a consistent reference changes the five-model mean 1982-2022 pattern term from +0.026 to -0.600 W m-2 K-1. All five models give negative terms. The spatial part of the removed 2001-2022 step response changes sign and accounts for 15-28 percent of that response across four correction choices. Most of the response is still uniform. Radiation trends, feedback ratios and differences on the same mask do not change. Thus the prior excess-cooling result survives, while its near-zero historical pattern term does not. The proof and tests use published aggregate series and eight response maps. They do not establish true SST or global air-temperature feedback.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "AMIP",
+    "pattern effect",
+    "normalization",
+    "uniform warming",
+    "Green function",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "The uniform-response test changes the reference and absolute historical pattern terms. Lines show the five-model range, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Tests its forward operator and corrects the uniform reference, absolute pattern terms and response decomposition. Radiation trends are preserved."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Uses its density Jacobians and confirms that its earlier box-reference definition has no extra area division."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Green function response construction and scope."
+    },
+    {
+      "target": "sci:sha256:a2396d68cd6a5f11174018034fd42aea918b918ba4290dd7ee3ab5f0483f587c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related forcing-gap analysis uses a consistent uniform reference on its own mask; it does not perform this closure audit."
+    }
+  ]
+}
