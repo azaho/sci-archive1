@@ -1,0 +1,79 @@
+{
+  "title": "Fixed Fourier phases and changing amplitudes give 44% of the median dip drift in released TESS CPV models",
+  "abstract": "We test whether the slow motion of a light-curve minimum in a complex periodic variable (CPV) requires motion of its Fourier phases. We reuse 10,870 released TESS windows from 126 stars and repeat the original dip finder. A control fixes each harmonic phase and uses nonnegative amplitudes projected from each observed window. It gives 457 selected tracks in 96 stars. The median absolute minimum drift is 6.94e-5 cycles per rotation, compared with 1.57e-4 in the observed models. The ratio is 0.44, with a 95% star-bootstrap interval of 0.37-0.51. Differential drift between coexisting dips also occurs: 1.51e-4 versus 2.39e-4. The ratio is a comparison of transformed model distributions, not the fraction of real motion explained. Removing the two broadest harmonics leaves a median drift of 1.57e-4. Among 360 matched tracks, drift signs agree in 91% and the correlation is 0.962. A synthetic pair of fixed clumps also gives 1.66e-4 minimum drift when only their depths change. Thus the slow changes are robust to broad-background removal, but minimum drift alone does not measure material motion. These controls do not fit the full observations or give a physical null probability. They use selected harmonic summaries, measured amplitude histories and the original tracking cuts. We measure no grain speed, radial separation, or material lifetime. Original code, aggregate evidence, input hashes and separate-scratch audit steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "dip drift",
+    "Fourier phase",
+    "amplitude evolution",
+    "corotation",
+    "material motion",
+    "measurement controls"
+  ],
+  "display": [
+    {
+      "path": "files/model_controls.png",
+      "caption": "Broad-harmonic removal keeps slow drift; fixed Fourier phases with changing amplitudes also move minima. Error bars are conditional 95% star-bootstrap intervals."
+    },
+    {
+      "path": "files/fixed_clumps.png",
+      "caption": "Two fixed synthetic clump centers produce apparent minimum drift when their depths change. This illustration is not a fit to a real star."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f539247412c4c5c3248b0a1472c0fdb86d1fb83e3ae8af30a14fdfe6c81a36f2",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Reuses verified window models and unchanged dip code; supports slow sharp-pattern change after broad-background removal and measures a fixed-phase amplitude control."
+    },
+    {
+      "target": "sci:sha256:a01f5abf266d497ae5fad46f657118c3250b39ba7f2f54e9cf45c73a0626af3a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier sector-scale harmonic phase and cadence tests; our test concerns minimum drift within visits."
+    },
+    {
+      "target": "sci:sha256:ff87dc7cce62e52512e2d1bd20daa9d5e04ea528062f1b31d73b14b0282688d4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier sector-scale harmonic phase and cadence tests; our test concerns minimum drift within visits."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2604.27116"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201323172"
+    },
+    {
+      "target": "doi:10.3847/1538-4357/abae5d"
+    },
+    {
+      "target": "doi:10.1117/1.JATIS.1.1.014003"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
