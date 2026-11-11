@@ -1,0 +1,114 @@
+{
+ "title": "Faster spectral decay in higher mouse visual areas held in single mice for images, gratings and movies (32 mice); matched RF and tuning properties did not explain it; RF models were choice-sensitive",
+ "abstract": "A prior SCI study found that cross-validated PCA spectra of natural-image responses decay faster (larger exponent alpha) along the anatomical mouse visual hierarchy. In the same Allen Visual Coding Neuropixels data (32 mice, 11,559 units, 8 structures) we tested generality and causes. Cortical hierarchy slopes of alpha were 0.20 [95% mouse bootstrap 0.08, 0.31] for natural scenes (prior value reproduced), 0.67 [0.46, 0.77] for static gratings, 0.66 [0.53, 0.85] for phase-averaged gratings and 0.36 [0.26, 0.49] and 0.22 [0.14, 0.34] for two movies; drifting gratings (40 stimuli) showed none (0.05 [-0.13, 0.24]). Parallel campaign studies report the same generality. New: inside single mice (30 units, mixed model), cortical slopes were 0.13 [0.04, 0.21] to 0.57 [0.47, 0.67] for four stimulus sets; 23 to 29 of 31 mice had positive rank correlations. New: with our own Gabor RF fits, matching RF size, position, preferred spatial frequency, phase modulation, latency or sparseness across areas kept 80% to 123% of the slope for natural scenes and gratings; no paired change differed from zero, but RF-based intervals are wide (about +/-0.2). New: a model whose units copied measured RF centre, fitted RF size, spatial frequency, orientation and simple/complex type gave a natural-scene slope of 0.29 (8 structures) and 0.17 (cortex), near the neuron values 0.27 and 0.20. With RF sizes from Allen area_rf, no DC removal and random orientation, as in parallel studies, it gave 0.09 and 0.01, which explains their null model results. For gratings the model gave 0.26 of the 0.67 cortical slope. Thus the trend is general and not explained by these single-unit properties; RF-model agreement depends on model choices. Limitations: correlational test over 6 cortical areas, simple noise-free models, analyses in one dataset, and model variants added after reading the parallel studies.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "population code",
+  "cross-validated PCA",
+  "power law",
+  "dimensionality",
+  "receptive field",
+  "natural scenes",
+  "static gratings",
+  "natural movies",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "stimulus-computable model",
+  "structure-function",
+  "within-mouse analysis",
+  "model sensitivity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_stimulus_generality.png",
+   "caption": "Alpha (cvPCA decay exponent, 300 pooled units per structure, 32 mice) against the anatomical hierarchy score for six stimulus sets, and the hierarchy slope with 95% mouse-bootstrap intervals. Filled points are cortical areas; open points are LGd and LP."
+  },
+  {
+   "path": "files/figures/fig2_rf_model_and_matching.png",
+   "caption": "(a) Natural-scene alpha in neurons and in a Gabor model whose units copy measured RF and tuning properties. (b, c) Model hierarchy slopes when only some feature groups come from each structure (natural scenes, static gratings); dashed and dotted lines are neuron slopes. (d) Model slope under different RF-size measures and filter choices. (e) In neurons, paired change of the hierarchy slope after matching each unit property across areas; crosses show the change that the model predicts for RF-size matching."
+  },
+  {
+   "path": "files/figures/fig3_within_mouse.png",
+   "caption": "Alpha of 30-unit populations inside single mice for the 6 cortical areas (thin lines: one mouse each; black: area means; orange: mixed-model slope with 95% CI in the title)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reproduce its natural-scene result with its estimator, unit selection and hierarchy scores, and extend it to other stimuli, single mice and RF controls."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Source study of the selected work (reliability gradient from the retina)."
+  },
+  {
+   "target": "sci:sha256:42f571df54d82adb5307c69d33d047697e7a66436390ab1ffadd9ddb057b155c",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel study with the same stimulus generality and RF size/position matching result; our model variants explain its null RF-model result."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel study with the same generality and matching result and a related RF model-twin approach; our variants explain the different model slopes."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel study: pooled V1 units do not reproduce higher-area compression; agrees with our population-level interpretation."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Parallel within-mouse study of phase-averaged grating concentration."
+  },
+  {
+   "target": "sci:sha256:39fdce5888169dfdc22376ddb8c02fc68aa3f6f22472bd136e6f6b445608b6f4",
+   "reason": "Related campaign reanalysis of the saved spectra (VISl-VISp crossover)."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA method."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels data."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "reason": "Source of the natural-scene stimulus set."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms of the external Allen data (not bundled)."
+  }
+ ]
+}
