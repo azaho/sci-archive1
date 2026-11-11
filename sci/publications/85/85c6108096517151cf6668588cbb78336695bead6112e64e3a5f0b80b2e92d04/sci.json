@@ -1,0 +1,133 @@
+{
+  "title": "SWPC 27-day outlooks gave no clear added daily storm probability skill beyond a recurrence model in 2018-2025",
+  "abstract": "We tested whether issued NOAA SWPC 27-day outlook values add daily storm probability skill beyond solar rotation, recent activity, solar flux and season. We fit fixed logistic models on 2010-2017 and tested forecast days 8-27 in 2018-2025. The written-plan sample gave 1,900 test days from 95 issues. For daily NOAA estimated planetary K of at least 5, adding the outlook reduced Brier error by 3.10%, with a conditional 95% four-issue block interval from -1.07% to +7.55%. Brier errors were 0.088586 for recurrence, 0.088629 for the outlook-only model and 0.085839 for the combined model. A post-result check applied the same frozen fits to 7,980 forecasts on 2,913 target dates. With equal date weights, the gain was 2.23% (-0.76% to +5.54%) under 112-day blocks. Final GFZ Kp and rounded thresholds gave small positive point gains, but all four full-archive intervals included zero. Issued Kp of at least 5 marked 96 sampled cases; 34 reached the strict NOAA event. These are numerical guidance values, not issued probabilities. The package gives 21,168 extracted forecast rows, source hashes, joined NOAA cases, frozen models, code, uncertainty draws and figures. Missing archive weeks, revised inputs, one model class, fixed-fit intervals and eight test years limit inference. The study does not show zero information or identify a physical cause of errors.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "geomagnetic forecasts",
+    "27-day outlook",
+    "NOAA SWPC",
+    "solar rotation",
+    "forecast verification",
+    "chronological test",
+    "Brier score",
+    "Kp",
+    "recurrence",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/added_skill.png",
+      "caption": "The added Brier score gain was small and uncertain. The left panel is the written-plan sample. The right panel is a post-result archive check with the same frozen fits and equal date weights. Intervals condition on training fits."
+    },
+    {
+      "path": "files/figures/forecast_meaning.png",
+      "caption": "Observed storm rates rose with issued largest Kp. The combined probability model had the lowest point Brier error. Issued numerical indices are not probability statements."
+    },
+    {
+      "path": "files/figures/subgroups.png",
+      "caption": "Planned lead and test-period subgroup estimates. These intervals have no multiplicity correction and do not replace the primary test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:baf949859f081b99e648dc1c95df01b0d0c7157a8f91a16387d0a440e8a50a9e",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its test of short-lead geomagnetic watches motivates a different question about the long numerical outlook. We do not reuse its scored cases."
+    },
+    {
+      "target": "sci:sha256:240ce56739fccc85f7bfe5bb51acbcc217a8406b820df771df35addc41887637",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier watch and warning verification in this campaign. Its low reached rates do not determine the skill of the 27-day product."
+    },
+    {
+      "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier work on short-lead SWPC storm probabilities. We test numerical long-range guidance with a new event-probability fit."
+    },
+    {
+      "target": "doi:10.1002/swe.20040",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior characterization of solar wind recurrence and its use as a forecast benchmark."
+    },
+    {
+      "target": "doi:10.1029/2020SW002624",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of geomagnetic recurrence and pattern methods."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2610.15213",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior comparison of issued Ap forecasts, including the SWPC 27-day outlook. We do not claim the first verification of the product."
+    },
+    {
+      "target": "doi:10.5880/Kp.0001",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GFZ final Kp source. We reuse the exact frozen shared file documented in provenance.json."
+    },
+    {
+      "target": "doi:10.1029/2020SW002641",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Definition and production of final Kp."
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Product definition and source rights statement."
+    },
+    {
+      "target": "https://www.spaceweather.gov/sites/default/files/images/u2/Usr_guide.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The 2012 user guide describes the outlook and its recurrence basis."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/space-weather/partners/swpc-products-and-data",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA archive descriptions, daily index definitions and source access."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py?help",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Bulk retrieval interface for the original NOAA WEKOUT texts."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/disclaimer.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IEM source terms and attribution."
+    }
+  ]
+}
