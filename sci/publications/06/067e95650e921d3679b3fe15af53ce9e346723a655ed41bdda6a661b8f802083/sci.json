@@ -1,0 +1,204 @@
+{
+ "title": "ASASSN-14ko flares in 2007 (SuperWASP) and 2008 (Swift) show a slow period decrease before 2016 and a temporary fast decrease in 2018-2020; earlier clocks miss them by 11-72 days",
+ "abstract": "Question: the repeating nuclear transient ASASSN-14ko has been timed only since its discovery in 2014. Payne et al. (2021) stated that no earlier data constrain when its flares began; all published and campaign clocks were fitted to 2014-2026 data. Do pre-2014 archives contain flares, and what do they show about the period history? Approach: we searched Catalina (no data returned), ASAS-3 (26 valid points) and SuperWASP DR1 (9,722 points, 2006-2008), and measured the only pre-2014 Swift visits (2008 July). We made SuperWASP differential photometry, ran a matched-filter flare search on the galaxy and 20 comparison stars, fitted the flare (MCMC), timed the 2008 UV flare against seven 2020-2024 UVW2 flares, converted both events to the campaign X-ray dip clock and added them to the 2014-2026 timing set. We tested frozen clocks, fitted ten clock models to 21 points, predicted the 2007-2008 points from 2014-2026 fits, and compared a period random walk (Kalman filter). Results: SuperWASP shows a flare in 2007 December (half-rise MJD 54437.58 +/- 0.24, amplitude 5.9 % of the aperture flux, decline 21 d; search statistic 12.7 against a comparison maximum of 4.2). Swift shows a declining UV flare in 2008 July (UVW2 above 95 % of 2020-2026 visits; peak MJD 54670.4 +/- 3.4). They are two cycles apart (local period 116.0 +/- 1.7 d) and 22 and 20 cycles before the first ASAS-SN flare; other cycle counts fit worse. The Payne et al. (2022) ephemeris misses them by 62-72 d, and frozen campaign clocks by 11-60 d, including the preferred precessing-drag clock (33-39 d). The forms of the b03f0a97 clocks fail by Delta AIC 35-51 (out-of-sample: 5.5 sigma). The best clocks have a slow decrease before 2016-2018 (-0.13 d per cycle, or zero), a fast episode of -0.55 d per cycle in 2018-2020, a constant period in 2020-2023 and -0.20 d per cycle after; the 2007-2026 mean is -0.13 to -0.19 d per cycle, 35-55 % below the published Pdot. A constant Pdot plus a 2.9-d sinusoid (19.7 cycles) fits equally on the main set but not with 2014-2016 V-band flares added. A period random walk fits worse than a smooth modulation (Delta AIC 15.8); a refitted precessing-drag clock is worse by Delta AIC 12-21. Flare 41 half-rise forecast: 2026 November 8-14. Limitations: two pre-2014 points; the 48-arcsec SuperWASP aperture includes faint field sources; the 2008 peak time has a 3.4-d error; lags assumed constant; episodic and sinusoid clocks are not separable.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "pre-discovery flares",
+  "SuperWASP",
+  "Swift UVOT",
+  "flare timing",
+  "period derivative",
+  "O-C diagram",
+  "timing noise",
+  "star-disc drag",
+  "forecast",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_prediscovery_flares.png",
+   "caption": "SuperWASP 2006-2008 differential photometry of ESO 253-G003 with the 2007 December flare, its fit, the matched-filter flare search against 20 comparison stars, and the Swift 2008 July UVW2 rates on 2020-2024 UVW2 flare light curves."
+  },
+  {
+   "path": "files/figures/fig2_clock_2007_2026.png",
+   "caption": "Dip-referenced O-C of ASASSN-14ko for 2007-2026 with fitted and frozen clocks, the mean period between successive timing points, and the miss of frozen clocks at the 2007 and 2008 flares."
+  },
+  {
+   "path": "files/figures/fig3_models_forecasts.png",
+   "caption": "Model comparison on 21 timing points, out-of-sample prediction of the 2007-2008 flares from 2014-2026 fits, and forecasts of flares 41 and 42."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b03f0a970bb16a26ea88c8acdb6314f1aef4c9d3dec5f2efd02d85506b788028",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its timing set, flare model and lags. Its on-off clocks, with the fast early decrease extended back, fail on the 2007-2008 flares (Delta AIC 35-51; out-of-sample 5.5 sigma); its renewed decrease after 2023 is confirmed."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We extend its frozen clocks M0-M3 backward; all miss the 2007-2008 flares by 11-60 d, and the refitted precessing-drag clock is worse than the best clocks by Delta AIC 12-21."
+  },
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its X-ray dip clock and UVW2 peak times; the constant 2020-2023 period is part of the 2007-2026 period history."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its deep-suppression dip times are in the reference timing set (via b03f0a97)."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol light curve, UVOT photometry code and UVW2 light curves."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Late 2022-2026 flares relative to the published ephemeris; the 2007-2008 flares show that the published Pdot is not the long-term rate."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "It preferred random period kicks of about 0.6 d per orbit; on 2007-2026 data a smooth modulation fits better than a random walk (Delta AIC 15.8)."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPHEREx timing point of flare 37 (via b03f0a97)."
+  },
+  {
+   "target": "sci:sha256:dc60fe15b6fd9e504eaddf8b4c42bbe252e2ce4da0318f4427b006a62eda1cf6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "The blended Swift XRT rates of 2008 include the obscured companion nucleus found by Chandra."
+  },
+  {
+   "target": "sci:sha256:9c84683e6d15fa5bfbc84bc1295a57bfe066ad5f70394fe11952d494b02c90d9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "X-ray dip properties of the reference clock."
+  },
+  {
+   "target": "sci:sha256:8e6f3b54fdd9a28c7f8d6a92112b7598519030faeee2e5368f2641c71227121d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Light-travel-time clock; an O-C modulation would need about 3 d amplitude on 6-10 years."
+  },
+  {
+   "target": "sci:sha256:77860d3a022b32a9b2ce15b6b2a11183636edb43a731eaa7164977e4afe0c8ef",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Steady decay and a cubic are also rejected on 2007-2026 data."
+  },
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Flare amplitudes; the 2007 flare amplitude is similar to the 2014-2017 V-band flares."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/abe38d",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Payne et al. 2021: ephemeris and the statement that the start of the flares is unconstrained; we find flares in 2007 and 2008."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/ac480c",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Payne et al. 2022 ephemeris (Pdot = -0.0026); it misses the 2007-2008 flares by 62-72 d."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201015655",
+   "relations": [
+    "uses"
+   ],
+   "reason": "WASP DR1 (Butters et al. 2010), data origin."
+  },
+  {
+   "target": "https://wasp.cerit-sc.cz/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SuperWASP DR1 archive at CERIT-SC."
+  },
+  {
+   "target": "doi:10.1086/422091",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Swift mission (Gehrels et al. 2004)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/788/1/48",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN (Shappee et al. 2014)."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2304.03791",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol v2 (Hart et al. 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 (source confusion check)."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler."
+  }
+ ]
+}
