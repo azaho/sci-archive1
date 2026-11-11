@@ -1,0 +1,91 @@
+{
+  "title": "A fixed June 2018 OI SST v2 step fit is larger at 0-120 E than elsewhere at 40-60 S",
+  "abstract": "We tested the date and spatial structure of a reported 2018 Southern Ocean OI SST v2 change. Monthly 2001-2022 data at 40-60 S were compared with ERSSTv5 and COBE-SST2 on fixed masks. We searched 192 dates with seasonal terms, polynomial drift and block-bootstrap calibration. ERSST selected June 2018, but the search p value rose from 0.0055 with linear drift to 0.1085 with cubic drift. COBE selected February 2014 with curved drift. A test that swapped longitude sectors and references succeeded in only one direction. An exploratory fixed June 2018 test found that 0-120 E carried 69-76 percent of the quadratic full-band step on 31 percent of the area. The steps there were -0.320 and -0.233 C against the two references. Outside that region they were -0.045 and -0.047 C, with intervals that included zero. The spatial contrasts stayed negative with quadratic and cubic drift on a warmer mask. This gives a target for a source audit, but does not establish one common step across the Southern Ocean. Region selection, shared source errors, residual dependence and one-step models limit inference. Code, aggregate evidence, figures, exact source hashes and retrieval instructions are included. Raw data and monthly extracts remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "OI SST v2",
+    "Southern Ocean",
+    "changepoint",
+    "spatial contrast",
+    "reference uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/spatial.png",
+      "caption": "Fixed June 2018 quadratic difference fits at 40-60 S, 2001-2022. The region split was selected after the date scans. Intervals are pointwise and conditional."
+    },
+    {
+      "path": "files/evidence.png",
+      "caption": "Date scans and transition-width fits show dependence on reference and model. Sector best dates are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "relations": [
+        "supports"
+      ],
+      "reason": "We test the spatial structure and date stability of its OI v2 feature with new raw-file analysis. Observations overlap."
+    },
+    {
+      "target": "sci:sha256:744ca39845d8ad5a735ec3185724cb75f02f7ced5aacaf95d643fc15df1e68bc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its AMIP source-transfer result motivates a spatial audit. We use its source-file provenance to locate existing shared data, not its monthly extracts."
+    },
+    {
+      "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Correction uncertainty motivates sensitivity tests; we do not reuse its data or code."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00837.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-22-0954.1"
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2263.1"
+    },
+    {
+      "target": "doi:10.1175/1520-0442(2002)015%3C1609:AIISAS%3E2.0.CO;2"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external snapshot and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external snapshot and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/COBE2/sst.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external snapshot and hash are in files/provenance.json."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/obs/download/Citation.html",
+      "reason": "External data credit and source use terms."
+    }
+  ]
+}
