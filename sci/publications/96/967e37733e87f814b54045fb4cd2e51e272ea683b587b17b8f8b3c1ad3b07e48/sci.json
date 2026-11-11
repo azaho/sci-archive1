@@ -1,0 +1,140 @@
+{
+ "title": "Einstein Probe shows that the October 2024 X-ray switch-off of ASASSN-14ko kept the constant 108.5-day period of 2020-2024; the early optical flare was a 4-day shorter lag, not an orbital change",
+ "abstract": "Question: the soft X-ray switch-off (ingress) of the repeating nuclear transient ASASSN-14ko repeated at a constant 108.44-d period in 2020-2024, but optical markers after mid-2024 arrived 3-8 d early on this clock. Campaign studies read this as a new period decrease after 2023. No X-ray marker existed after 2024 July, so an orbital change and a change of the optical emission lag were not separated. Approach: we used 12 public Einstein Probe FXT observations (ESA EPSA archive; 2024 October 1-24 and December 14), not used before. We did aperture photometry on the cleaned events of both modules with filter-corrected effective areas, fitted the box-dip ingress model of SCI 049d6e3e (MCMC and profile likelihood), and tested the X-ray clock out of sample. Results: the cycle-34 switch-off occurred between MJD 60605.18 and 60607.57. The source had its highest soft flux at 60605.13; at 60607.58 the 0.3-2 keV and 2-7 keV fluxes were 0.20 and 0.25 of the pre-dip mean, in both modules. The primary fit gives t_in = MJD 60607.03 (68 percent 60605.98-60607.38). The five 2020-2024 Swift XRT ingresses predicted 60606.22 +/- 0.77; O-C = +0.65 d (95 percent -1.5 to +4.3 d). With the EP point, P = 108.47 +/- 0.06 d and Pdot = +0.0003 (95 percent -0.0004 to +0.0011) for cycles 20-34. The ingress implied by the ASAS-SN half-rise and the calibrated 4.75-d lag (MJD 60603.18) is excluded in the primary model (no posterior sample before 60603.5; profile -2 delta lnL = 8.9 soft, 23.1 hard). The optical half-rise came 1.0 d (68 percent 0.4-2.0 d) after the ingress, so the lag became 3.8-4.9 d shorter. In the b03f0a97 timing set with the EP ingress, a post-2024 period step rests only on the SPHEREx (37) and TESS (38) optical markers; without them a constant period is preferred (delta AIC 3.2). Conclusion: the orbital X-ray clock stayed constant for 14 orbits (2020 August to 2024 October); the early 2024 optical flare is an emission-lag change of about 4 d, not an orbital change. Optical-only period changes of this size need an X-ray check. Forecast: flare-41 ingress MJD 61365.8 +/- 1.0 (2026 November 21), against November 8-10 for the step models. Limitations: one EP cycle with one visit in the dip; the 75-percent dip-depth prior comes from earlier dips (free depth: -2 delta lnL = 4.7, posterior 0.06); pipeline products without FXTSoft; optical markers not refitted; cycles 37-38 cannot be separated between orbit and lag change.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "Einstein Probe",
+  "FXT",
+  "X-ray dip",
+  "X-ray clock",
+  "emission lag",
+  "flare timing",
+  "period derivative",
+  "O-C diagram",
+  "forecast",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ep_cycle34_ingress.png",
+   "caption": "Einstein Probe FXT soft and hard photon fluxes of ASASSN-14ko in 2024 October-December, with the constant X-ray clock prediction, the ingress implied by the optical rise, the fitted ingress, and the profile likelihood of the ingress time."
+  },
+  {
+   "path": "files/figures/fig2_oc_xray_clock.png",
+   "caption": "O-C of X-ray ingress times (Swift XRT, NICER, Einstein Probe) and dip-referenced optical markers against the refit constant X-ray clock (P = 108.47 d); the EP ingress of cycle 34 is on the clock, the optical marker is 3.8 d early."
+  },
+  {
+   "path": "files/figures/fig3_lag_change.png",
+   "caption": "ASAS-SN g half-rise minus X-ray ingress per cycle: 4.75 d in cycles 21-31, 1.0 d in cycle 34."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "We use its five XRT ingress times and box-dip model; the EP ingress of cycle 34 confirms its constant X-ray clock out of sample, but challenges its reading that the period became shorter again after 2024: the early cycle-34 optical marker is a lag change."
+  },
+  {
+   "target": "sci:sha256:b03f0a970bb16a26ea88c8acdb6314f1aef4c9d3dec5f2efd02d85506b788028",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its optical half-rise and peak times, lag calibration and timing set. The EP ingress shows that its cycle-34 dip-referenced point is 3.8 d too early: the half-rise lag changed, so its no-excess-scatter lag and its post-2023 period shortening do not hold for cycle 34."
+  },
+  {
+   "target": "sci:sha256:77860d3a022b32a9b2ce15b6b2a11183636edb43a731eaa7164977e4afe0c8ef",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its XRT+NICER ingress set as a variant; the EP ingress agrees with its constant-clock era and rejects steady decay again."
+  },
+  {
+   "target": "sci:sha256:067e95650e921d3679b3fe15af53ce9e346723a655ed41bdda6a661b8f802083",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its best clocks have a renewed decrease of -0.20 d per cycle after 2023 from optical markers; the X-ray clock shows no change up to 2024 October."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "supports"
+   ],
+   "reason": "The NICER 2021 constant period continues to 2024 October in EP data."
+  },
+  {
+   "target": "sci:sha256:dc60fe15b6fd9e504eaddf8b4c42bbe252e2ce4da0318f4427b006a62eda1cf6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its state-dependent UV delays (+4.9 d in off cycles) and our -4 d optical lag change in a bright on-state cycle together show lag changes of several days."
+  },
+  {
+   "target": "sci:sha256:9c84683e6d15fa5bfbc84bc1295a57bfe066ad5f70394fe11952d494b02c90d9",
+   "relations": [
+    "supports"
+   ],
+   "reason": "The EP dip removes soft and hard flux together (0.20 and 0.25 of the pre-dip level), consistent with its grey switch-off."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its SPHEREx cycle-37 peak is one of the two optical markers that now carry the post-2024 period change; its lag to the orbit is not known."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its precessing-drag clock was fitted with the early optical cycle-34 point; its flare-41 forecast is compared with the X-ray clock forecast."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its near-constant 108-d period after 2020 agrees with the X-ray clock to 2024 October."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Random period kicks of 0.6 d per orbit are not needed for the X-ray clock in cycles 20-34 (chi2 3.7 for 4 dof without jitter)."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Source of the ASAS-SN flare times used by the cited timing sets."
+  },
+  {
+   "target": "sci:sha256:ecae40514ba9878bdc27ee9df1ed68f95384fa2bc98f9141bd56c488a68c9e4d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It predicted a longer dip-to-half-rise lag (about 6.7 d) if a fallback stretch made the lateness; cycle 34 shows a shorter lag (1.0 d)."
+  }
+ ]
+}
