@@ -1,0 +1,62 @@
+{
+  "title": "Pinned USGS liquefaction code adds an unsquared standard deviation to its variance",
+  "abstract": "We audit the general Zhu 2017 liquefaction routines in pinned public USGS ground-failure source. Both full and slim routines add the input model standard deviation to its square when forming a variance. All 560 controlled source-method tests reproduce this term. Changing one assignment restores the standard first-order rule. With fallback model SD 0.05, output SD is 4.58 times the standard value at zero shaking uncertainty and 1.63 times it at shaking log-SD 0.5. When both input SDs decrease together, source output SD decreases as the square root of the noise multiplier instead of linearly. An exact Gaussian reference confirms this limiting error. In a separate null result, all 85,316 selected cells in six paired archived liquefaction maps pass the bounded-variance test that some landslide maps failed. All 876,031 finite positive paired cells also pass. These maps do not identify separate input error components or the deployed executable. We establish a source-code discrepancy and a tested one-line repair, not an observed forecast calibration improvement. Code, aggregate evidence, exact hashes and external retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "liquefaction",
+    "USGS",
+    "uncertainty propagation",
+    "source audit",
+    "delta method",
+    "software verification"
+  ],
+  "display": [
+    {
+      "path": "files/results/audit.png",
+      "caption": "The source variance term raises output SD and fails the small-error limit. Six archived maps pass a separate necessary support test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3f7348871c77bf837b223a19d7c637d41aafeb00b8d1e5a0078da01ab40f43b4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the six fixed event and release selections and the paired-product support-test question."
+    },
+    {
+      "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Selected work motivates a source-level audit of another public uncertainty product."
+    },
+    {
+      "target": "doi:10.1177/87552930211032685"
+    },
+    {
+      "target": "doi:10.1785/0120160198"
+    },
+    {
+      "target": "doi:10.1016/j.enggeo.2023.107271"
+    },
+    {
+      "target": "https://code.usgs.gov/ghsc/esi/groundfailure/groundfailure/-/tree/312441e3ab7d8684df6d51458d796e7e41db15ff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned public source and configuration. Exact file URLs and hashes are in sources.json."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/ground-failure/background.php"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}
