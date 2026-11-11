@@ -1,0 +1,78 @@
+{
+  "title": "AMIP sea-ice errors add a positive 2001-2022 cloud-masking trend in two radiative kernels",
+  "abstract": "Sea-ice input errors can change a cloud radiation diagnostic even if cloud properties stay fixed. We apply matched all-sky and clear-sky surface-albedo kernels to the difference between AMIP sea ice and the NOAA/NSIDC Climate Data Record, version 6. With an ice-minus-water albedo contrast of 0.5, the CAM5 and HadGEM3-GA7.1 kernels give a positive cloud-masking trend of 0.0316 and 0.0488 W m-2 per decade in 2001-2022, summed over both polar caps as global-equivalent fluxes. The same ice differences give negative all-sky trends of -0.0685 and -0.0503. Thus input errors can add cooling to total shortwave radiation and warming to unadjusted cloud radiative effect at the same time. We retrieve matched rsut and rsutcs from three CMIP6 AMIP runs. For sunlit months south of 50 S in 1979-2014, with season, time, real-ice and prescribed-SST controls, CanESM5 and MIROC6 show a related cloud-diagnostic signal. NorESM2-LM is inconclusive over the full period. Results differ between period splits. These are conditional kernel calculations and model associations, not estimates of causal cloud feedback. The reference difference, albedo contrast, omitted atmospheric forcings and kernel base states limit attribution. A complete cloud-feedback method that removes albedo masking already addresses this mechanism. The package contains code, provenance, figures and research estimates; raw model fields and monthly derived databases remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea ice",
+    "AMIP",
+    "cloud radiative effect",
+    "cloud masking",
+    "radiative kernels",
+    "input discontinuities",
+    "CMIP6",
+    "data provenance"
+  ],
+  "display": [
+    {
+      "path": "files/recent.png",
+      "caption": "Both polar caps in 2001-2022: ice input differences add a positive cloud-masking trend while total shortwave changes are negative. Conditional on the reference, fixed clouds and albedo contrast 0.5."
+    },
+    {
+      "path": "files/overview.png",
+      "caption": "Antarctic kernel components and the three-model CRE test. Two runs have a clear related signal; one is inconclusive over the full period."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We use its fixed mask and source hashes and extend the all-sky test to clear-sky radiation and cloud masking."
+    },
+    {
+      "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+      "relations": [
+        "supports"
+      ],
+      "reason": "SST input errors reach model forcing; we test the cloud-diagnostic effect of the sea-ice part."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Motivates propagation of boundary-data errors into radiative diagnostics."
+    },
+    {
+      "target": "doi:10.1029/2011GL047553"
+    },
+    {
+      "target": "doi:10.1175/2007JCLI2110.1"
+    },
+    {
+      "target": "doi:10.5065/D6F47MT6"
+    },
+    {
+      "target": "doi:10.5281/zenodo.3594673"
+    },
+    {
+      "target": "doi:10.5194/essd-12-2157-2020"
+    },
+    {
+      "target": "doi:10.7265/b18j-z797"
+    },
+    {
+      "target": "https://pcmdi.llnl.gov/CMIP6/TermsOfUse/"
+    },
+    {
+      "target": "https://pangeo-data.github.io/pangeo-cmip6-cloud/overview.html"
+    }
+  ]
+}

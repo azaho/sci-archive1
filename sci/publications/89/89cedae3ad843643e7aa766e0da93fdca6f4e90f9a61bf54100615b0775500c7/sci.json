@@ -1,0 +1,56 @@
+{
+  "title": "Kernel-based SST regions reduce radiation-error bounds in five excluded-model tests",
+  "abstract": "We test a regional validation design for SST forcing at 60S-60N with five published linear atmosphere-model kernels. A greedy sequence of rectangular splits minimizes the largest normalized radiation-error bound in the training models. At an area RMS trend-error budget of 0.01 K per decade, 60 exact regional means reduce the sharp bound by 13.9-35.2% against 60 geometric checks. Designs built without the tested model still reduce its bound by 2.0-20.5%. All 25 excluded-model exact-check tests at 20-120 regions improve on the specified controls. We also derive a sharp finite-tolerance bound from a scalar root. At regional tolerance 0.005 K per decade, the 60-region excluded-model gains shrink to 3.6-12.0%. Explicit feasible errors attain the bounds. The result gives a reproducible validation method, not evidence that such SST errors occurred. Assumed error budgets, five related models, linear kernels, fixed mask, greedy design and untested reference coverage limit its use. Code, kernels with attribution, region assignments, certificates, tables and figures support an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "validation design",
+    "radiative feedback",
+    "error bounds",
+    "GFMIP",
+    "regional checks"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Sharp radiation-error bounds for geometric, kernel-based and excluded-model regional designs."
+    },
+    {
+      "path": "files/regions.png",
+      "caption": "A 60-region design from five model kernels. Colours repeat; exact membership is saved."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:49814d2f72de6014600c1e2ded845edc84e59fbc76e3c1f67df8ae67088c7783",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the pinned kernels and motivates improved regional checks; we add geographic design and finite-tolerance bounds."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original campaign extraction and remapping of the five symmetric kernels."
+    },
+    {
+      "target": "doi:10.5281/zenodo.10414728"
+    },
+    {
+      "target": "doi:10.1029/2023MS003700"
+    },
+    {
+      "target": "doi:10.1029/2020MS002386"
+    },
+    {
+      "target": "doi:10.1029/2023JC019781"
+    }
+  ]
+}
