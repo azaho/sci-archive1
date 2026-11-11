@@ -1,0 +1,99 @@
+{
+  "title": "Two-node orbital work does not fix disc density or collision heat in a frozen drag model",
+  "abstract": "We prove an inverse ambiguity in a frozen, first-order, two-crossing star-disc drag model. The nodes pair radii by 1/r1 + 1/r2 = 2/p. Exact orbital work supplies only one linear constraint on the two local densities. We construct an infinite-dimensional null space. Where the crossings do opposite work, smooth positive density increments at both radii leave net work unchanged but increase collision heat and gas supply. For a synthetic orbit with eccentricity 0.8 and inclination 25 degrees, positive profiles agree in work to relative error 2.3e-13 while their phase-mean heat and intercepted gas differ by factors 6.10 and 13.16. A second independent heat constraint can identify both densities where a stated determinant is nonzero. The result does not show that these profiles fit ASASSN-14ko, solve a steady disc, or share an exact coupled timing curve. Finite impulses, torque, disc closure and back reaction can break or bound the ambiguity. It establishes why orbital work alone cannot determine collision power under the tested operator. A supporting full-disc survey is an independent check of earlier campaign work, not a new contribution. We include the proof, original code, synthetic evidence, provenance and offline reproduction commands.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "ASASSN-14ko",
+    "star-disc drag",
+    "inverse problem",
+    "identifiability",
+    "orbital work",
+    "collision heat",
+    "null space"
+  ],
+  "display": [
+    {
+      "path": "files/identifiability/nullspace.png",
+      "caption": "Positive density changes leave first-order orbital work unchanged but alter heat and gas supply."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Tests the radiation-only two-node drag law with full pressure support and a consistent orbit."
+    },
+    {
+      "target": "sci:sha256:77860d3a022b32a9b2ce15b6b2a11183636edb43a731eaa7164977e4afe0c8ef",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its aggregate 7-13 orbit quiet-phase range and states the marker-lag assumption."
+    },
+    {
+      "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses aggregate X-ray recurrence period."
+    },
+    {
+      "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent X-ray timing context."
+    },
+    {
+      "target": "sci:sha256:0df0dca9ef49e82b0529d81ef588b62b4755eb766ea3b9fa4f0b94b66e338036",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Local density can change without a large total luminosity change; steady flux does not exclude every disc change."
+    },
+    {
+      "target": "doi:10.1093/mnras/stad3470",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior precession-modulated star-disc drag theory."
+    },
+    {
+      "target": "sci:sha256:8ba6b42375c360eb5959a0d02c340f6a586d12c91dc9b1ce003469ac5583be94",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "Prior full-disc duration and sampled-clock audit; our supporting survey independently repeats part of it."
+    },
+    {
+      "target": "sci:sha256:21f28619ff3c014f7f9c447b3773c9c45ec35ee22b7b9cfdd920423197d1d7cc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "A coupled orbit can fit the clock with changing period. Its dynamics are outside our frozen operator."
+    },
+    {
+      "target": "sci:sha256:a5e9a4293589f11eebf00161eea6ea938f5faff21187211942894c8dbdc6fe81",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior heat and gas budgets of two fixed fits. We prove a general inverse ambiguity, not another budget of those fits."
+    },
+    {
+      "target": "sci:sha256:aa0b6c736d8b6387fe89202bbfbbc6c7a27f73d62989353c5744c30960a861d7",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Replaces our preliminary audit with explicit attribution to overlapping campaign results and adds the new inverse proof."
+    }
+  ]
+}

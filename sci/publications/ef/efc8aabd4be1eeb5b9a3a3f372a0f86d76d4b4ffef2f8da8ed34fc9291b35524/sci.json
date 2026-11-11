@@ -1,0 +1,114 @@
+{
+ "title": "WPC Excessive Rainfall Outlook Marginal areas verified below their 5% floor against public flood data in 2022-2026, and both relabels (2017, 2022) came with about 1.5 times larger Marginal areas",
+ "abstract": "Question: the NWS WPC Excessive Rainfall Outlook (ERO) gives the probability of rain above flash flood guidance within 40 km. WPC raised the category probabilities in 2017 and in 2022 and said that the new numbers only described existing performance. Are the current numbers calibrated against public data, did practice stay the same, and which observations give the reported calibration? Approach: pre-registered test of 3,949 Day 1 outlooks (2016-2026) plus Day 2 and Day 3, on 50,504 CONUS points. An event is a NWS flash flood report or Stage IV 24 h rain above the NOAA Atlas 14 5-year depth within 40 km (primary set U). A designed May-September sample of 606 days (2019-2026) adds 6 h rain above flash flood guidance and above the 6 h 5-year depth. Week-block bootstrap intervals; relabel ratios are compared with placebo dates. Results: hit fractions per category stayed almost constant across the three label eras (Slight 0.125, 0.134, 0.144), while the labels changed by factors of 1.5-2. The 2017 relabel corrected labels that were too low. After 2022, Marginal verified at 0.039 [0.037, 0.041], below its 5% floor; Slight was at its lower edge (0.144 [0.135, 0.152] for at least 15%); Moderate and High agreed. Lead time had almost no effect. Reports alone gave 0.020 and 0.087 for Marginal and Slight; the Era 3 ranges are reached only when any of reports, 24 h or 6 h 5-year rain, or 6 h rain above guidance counts (Marginal 0.073, Slight 0.220). No public set reached the 25% Slight value that WPC quoted. Practice changed: mean Marginal area per outlook rose 1.45 and 1.50 times at the two relabels, and Slight area 1.39 times in 2022, all outside placebo ranges, while total event area did not step. Report hits rose 2.4-2.6 times from the lowest to the highest county population-density third at fixed category; 24 h rain hits did not rise. Limitations: WPC also verifies with USGS gauges, which we did not use; Stage IV artefacts; no Atlas 14 for western Oregon and Washington; FFG proxies are a 50% warm-season sample; Marginal area also grew before the 2017 relabel; other changes near the relabel dates can contribute to the area steps.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370903"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "Excessive Rainfall Outlook",
+  "flash flood",
+  "forecast verification",
+  "calibration",
+  "Weather Prediction Center",
+  "Stage IV",
+  "flash flood guidance",
+  "NOAA Atlas 14",
+  "local storm reports",
+  "pre-registration",
+  "relabel",
+  "reporting bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_calibration_by_era.png",
+   "caption": "Day 1 ERO hit fraction (share of category area with an event within 40 km) by category and label era, for public event sets. Grey boxes: the probability range WPC stated in that era. Bars: 95% week-block bootstrap."
+  },
+  {
+   "path": "files/figures/fig5_relabel_steps.png",
+   "caption": "After/before ratios at the 2017 and 2022 relabels (Day 1). Marginal area stepped up at both relabels and Slight area in 2022; hit fractions and total event area did not step. Pale bars: placebo 2.5-97.5% range."
+  },
+  {
+   "path": "files/figures/fig4_proxy_decomposition.png",
+   "caption": "Era 3 Day 1 hit fraction by event set on 379 designed May-September days. Marginal and Slight reach their stated ranges only with a union of report and short-duration rain proxies."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://www.weather.gov/media/notification/pdf2/scn22-18_updating_ero_probability_definitions.pdf",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "SCN 22-18 states that the 2022 ERO probability change brought no change to users and that about 25% of Slight areas verified. We find larger drawn areas after the change and at most 22% for Slight with public data."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdfs/scn17-100wpc_excessive_rainfall.pdf",
+   "relations": [
+    "supports"
+   ],
+   "reason": "SCN 17-100 states that the pre-2017 ERO labels were too low for a 40 km definition. Our Era 1 hit fractions agree."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf_2026/pns26-57_proposed_changes_to_ero.pdf",
+   "reason": "2026 proposal of an Enhanced category at 25%."
+  },
+  {
+   "target": "https://www.wpc.ncep.noaa.gov/archives/ero/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERO shapefile archive (outlook polygons)."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Iowa Environmental Mesonet archive of NWS Local Storm Reports, Stage IV QPE and flash flood guidance."
+  },
+  {
+   "target": "https://hdsc.nws.noaa.gov/pub/hdsc/data/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA Atlas 14 5-year 6 h and 24 h precipitation frequency grids."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that population dependence in SPC hail outlook verification comes from storm reports. We find the same report-density effect for ERO flash flood reports, and that the rain proxy does not share it."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Attributed a hazard-outlook miscalibration to the product's probability rules; we attribute ERO calibration to the verification event set and to label changes."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Observation density changes apparent hit rates of a public hazard product (PTWC); a parallel to the report-density effect here."
+  },
+  {
+   "target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e",
+   "reason": "Earlier campaign verification of an NWS probability outlook (NHC formation probabilities)."
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "reason": "Earlier campaign verification of a NOAA probabilistic outlook (Coral Reef Watch)."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Earlier campaign verification of a public hazard probability product (USGS PAGER)."
+  }
+ ]
+}
