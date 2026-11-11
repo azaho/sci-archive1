@@ -1,0 +1,160 @@
+{
+ "title": "Verified main-sequence M-dwarf rapid rotators of the TESS CPV test are kinematically about 1 Gyr old, so their CPV count excludes a supply decline beyond contraction faster than about 0.15-0.8 Gyr",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. Stellar contraction, through the corotation-to-stellar radius ratio x, explains the decline of the CPV rate inside 1-750 Myr groups. After blended periods are removed, old main-sequence (MS) M dwarfs at the same x have a rate factor near 0.5 with wide intervals. Whether the age decline is geometric or a decline in the supply of material depends on the age of these MS test stars, which nobody had measured. We first repeated the period attribution with TESS flux-weighted centroids for all 4,595 rapid rotators of the test (6,167 SPOC 2-minute light curves). In agreement with concurrent campaign studies, 48% of MS periods at P < 0.2 d come from another star, and eRASS1 confirms it: 97% of on-target and 14% of off-target MS stars have saturated coronae. With verified rotators the frozen x-only model predicts 4.0-5.3 MS CPVs for 2 observed (BP-RP 2.4-3.8) and 8.4-9.4 for 5 (BP-RP 2.0-4.2); the MS factor is 0.37-0.55 (95% lower bounds 0.06-0.08 and 0.17-0.19). Gaia tangential velocities give a dispersion of 14.2 (13.1-15.2) km/s for the 268 verified MS test stars, against 29.4 km/s for slow-rotating MS M dwarfs and 23.6 km/s for stars with blended periods. With an age-velocity relation calibrated on the slow stars, the mean age is 1.0 Gyr (0.6-1.4 Gyr for slopes 0.3-0.5). A supply factor exp(-t/tau_s) or (t/15 Myr)^-alpha on top of contraction must then have tau_s > 345-375 Myr and alpha < 0.44-0.47 in the colour-wide sample (reference model; 147-792 Myr and 0.36-0.63 over all age models), and tau_s > 42-512 Myr, alpha < 0.57-1.22 in the primary window. A 44-Myr decay (p = 7e-10) and a debris-disk-like t^-1 decay (p = 9e-6) are excluded in the colour-wide sample. Thus contraction is sufficient and a fast-decaying external reservoir is not the cause of the age decline; a factor of about 2 remains allowed. Limitations: 2-5 MS CPVs, an assumed age-velocity relation and age distribution, a frozen rate model, and a 5-arcsec centroid resolution.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "centroid",
+  "blended periods",
+  "eROSITA",
+  "Gaia kinematics",
+  "age-velocity relation",
+  "corotation radius",
+  "stellar contraction",
+  "material supply",
+  "rapid rotators",
+  "main sequence"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_kinematic_age_supply.png",
+   "caption": "(a) Tangential velocity dispersion relative to the LSR (Gaia DR3, BP-RP 2.4-3.8, 95% bootstrap intervals): slow-rotating MS M dwarfs, MS stars with off-target (blended) TESS periods, centroid-verified MS rapid rotators by period, the verified MS test stars, and 35-750 Myr members (kinematically selected, for scale). (b, c) MS rate factor predicted by a supply decline exp(-t/tau_s) or (t/15 Myr)^-alpha on top of contraction, averaged over the kinematic age distribution (uniform ages from 0.1 Gyr to the lower 95% value of the fitted upper age) for age-velocity slopes 0.3-0.5; dash-dot lines: 95% lower bounds of the measured factor (centroid + eRASS1 weights)."
+  },
+  {
+   "path": "files/figures/fig2_ms_test.png",
+   "caption": "(a) Frozen x-only CPV model applied to MS rapid rotators (BP-RP 2.4-3.8) with different cleaning: predicted CPVs (95% bootstrap intervals) for all stars in the x range (blue) and neighbour-clean stars (green); crosses: observed. (b) Profile likelihood of the MS rate factor at fixed x; the dashed black curve is the colour-wide sample (BP-RP 2.0-4.2)."
+  },
+  {
+   "path": "files/figures/fig1_centroid_vs_xray.png",
+   "caption": "(a) Offset of the TESS periodic signal from the Gaia target (flux-weighted centroids) against period for MS rapid rotators, coloured by eRASS1 class; circles: CPVs. (b) eRASS1 saturated fraction (95% profile intervals) by centroid class and group."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its frozen x-only MS test with centroid-verified rotators and measure the age of its MS test stars; its MS deficit becomes non-significant and constrains supply decay instead."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We run its eROSITA code unchanged; TESS centroids confirm that its X-ray-quiet MS rapid rotators are mostly blends, and we repeat its X-ray decline at small x with a centroid-clean sample."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Its x-only (contraction) model and stellar-parameter code; our supply limits support contraction as sufficient."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Population, feature and target tables, CPV labels and the centroid method (cpvlib.py, 06_centroid_source.py)."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma classes, efficiencies and the 44-Myr e-folding time that we test as a supply decay."
+  },
+  {
+   "target": "sci:sha256:6272633392250887c58ed73ae5e0276df3ce700f933847de0f6560cde7bc3ebe",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Concurrent centroid study of the same rapid rotators; our independent centroid results agree; we use its published factor bound in a supply-limit variant."
+  },
+  {
+   "target": "sci:sha256:08153f8677f28e70766ef68722eabb87ee31613f32e78e09ad6cf4b14b90e726",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Concurrent centroid study; our replication agrees (5.3 vs 5.1 predicted for 2 observed); we use its factor bound in a variant."
+  },
+  {
+   "target": "sci:sha256:ac63a1699bc60199c25ab8168b1995bbf80d0e66a027b2e590fcbf6189f781d0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Concurrent TESS pixel study with the same conclusion on blends and the MS test."
+  },
+  {
+   "target": "sci:sha256:7e71fae3b30e2160fb63c1b2c1abe06a616ac409e8ecfa562ba34c17f0204b63",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Concurrent pixel study with a BP-RP 2.0-4.2 sample (factor 0.52, 0.21-1.11), in agreement with our colour-wide result; we apply its bound to our age model."
+  },
+  {
+   "target": "sci:sha256:c8588dfae1dccafdaf5f5085487f36fa7fce466e08f8115e91b795a3eb6e76f3",
+   "reason": "Earlier kinematic study of CPV hosts above the main sequence; it gave no age scale; we measure the kinematic age of the MS test stars."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "K2 confirmation of the CPV age decline."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "K2 test of contraction and the first report of the MS deficit."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths fixed in rotational phase."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPV dips."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3 (Gaia Collaboration, Vallenari et al. 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202347165",
+   "reason": "eROSITA-DE DR1 (Merloni et al. 2024)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "reason": "BHAC15 models (Baraffe et al. 2015)."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2966.2010.16253.x",
+   "reason": "Solar motion relative to the LSR (Schoenrich, Binney and Dehnen 2010)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/200811191",
+   "reason": "Age-velocity relation of the Geneva-Copenhagen survey (Holmberg, Nordstroem and Andersen 2009)."
+  },
+  {
+   "target": "doi:10.3847/0004-637X/821/2/93",
+   "reason": "Rotation and kinematics of mid-M dwarfs (Newton et al. 2016)."
+  }
+ ]
+}

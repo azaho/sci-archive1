@@ -1,0 +1,166 @@
+{
+ "title": "TESS pixels show that 23 of 24 resolved flare-inactive ultra-fast M dwarfs of Ramsay et al. 2022 carry another star's period; with on-target rotators the main-sequence CPV deficit is not significant",
+ "abstract": "We tested in TESS 2-minute pixels whether the period of an M-dwarf 'ultra-fast rotator' (P < 0.3 d) belongs to the target. For each target pixel file we fitted a 3-harmonic signal at the period in every pixel and compared point-spread-function fits at the target and at every Gaia DR3 neighbour. We processed 1,032 files: 932 rapid rotators of the campaign CPV samples and 39 literature stars. Of the 29 flare-inactive ultra-fast rotators of Ramsay et al. (2022), 24 have a resolved class: 23 have the period off the target, at 8-90 arcsec, and only TIC 85407625, a known RV-variable binary, is on target. Gaia DR3 classes 13 of the 23 signal sources as eclipsing binaries (9), delta Scuti/gamma Doradus pulsators (3) or RS CVn (1). All 7 resolved stars of the Doyle et al. (2022) control sample are on target (Fisher p = 3e-6). Thus the missing flares of these stars need no new physics. Among the 368 main-sequence stars that carry the CPV test, 73% of resolved stars at P = 0.08-0.2 d are off target, against 3.5% in 1-24 Myr members. eRASS1 saturated-corona probabilities are 0.95 for on-target and 0.36 for off-target stars. Our classes agree with a second pixel method for 97.6% and with two centroid methods for 91-92% of resolved stars; X-ray data show that the centroid methods miss some blends. The dips of the main-sequence CPV TIC 35227582 are on its co-moving 9-arcsec companion. With pixel weights, the frozen contraction (x-only) model predicts 3.3 (1.7-5.5) main-sequence CPVs for 1 observed (p = 0.19); with the four-method consensus, 4.4 (2.4-6.7) for 2 (p = 0.23). A rate factor of 0.3-0.5 at fixed x stays possible. Limitations: a two-Gaussian PSF, mostly one sector per star, subsampled young stars and small numbers of genuine old ultrafast stars.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "ultra-fast rotators",
+  "M dwarfs",
+  "flare activity",
+  "TESS",
+  "target pixel files",
+  "blending",
+  "eclipsing binaries",
+  "delta Scuti",
+  "complex periodic variables",
+  "corotation radius",
+  "main sequence",
+  "eROSITA",
+  "Gaia DR3",
+  "period attribution"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_ufr_grid.png",
+   "caption": "Periodic signal images (signal over null error, 11 x 11 TESS pixels) of the 29 flare-inactive ultra-fast rotators of Ramsay et al. 2022 (R22) and the 10 stars of Doyle et al. 2022 (D22). Blue circle: target (Gaia DR3 position at the sector epoch); orange cross: fitted position of the variable source. Red pixels vary in phase with the aperture light curve; blue pixels vary in anti-phase (a bright variable star in the pipeline background estimate). Labels give the period and our class."
+  },
+  {
+   "path": "files/figures/fig2_validation.png",
+   "caption": "(a) eRASS1 probability of a saturated corona (709005b5) for rapid rotators whose TESS period is on target (blue) or off target (orange) in our pixel test, eROSITA-DE sky. (b) Fraction of resolved stars with an off-target period against the TESS period for main-sequence stars in the x range of the CPV test, 1-24 Myr members and 35-750 Myr members; bars are 95% Wilson intervals."
+  },
+  {
+   "path": "files/figures/fig3_ms_test.png",
+   "caption": "(a) CPVs among main-sequence rapid rotators at the corotation ratio x of young CPV hosts: prediction of the frozen x-only model (blue, 95% bootstrap interval) and observed count (orange) for no correction, X-ray weights (709005b5), our pixel weights and variants, and the four-method consensus. p is the probability of the observed count or fewer. (b) Profile likelihood of the main-sequence rate factor at fixed x; the dotted line marks the 95% level."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We rerun its code to rebuild stellar parameters and per-star eRASS1 saturation probabilities, reuse its rate model, and confirm with TESS pixels its inference that X-ray-quiet main-sequence rapid rotators carry periods of neighbours."
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its main-sequence CPV test with pixel-verified rotators; the deficit becomes non-significant, and one of its two main-sequence CPVs has its dips on the companion. We reuse its S1-S55 periods, labels and efficiencies."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS sector 56-107 CPV survey: periods, labels and the 2-minute target table with Gaia DR3 values."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma age classes, injection efficiencies and the efficiency curve."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "With on-target rotators its contraction (x-only) model is consistent with the main-sequence CPV count."
+  },
+  {
+   "target": "sci:sha256:ac63a1699bc60199c25ab8168b1995bbf80d0e66a027b2e590fcbf6189f781d0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Independent TPF pixel test; we compare its per-star classes with ours (97.6% agreement) and use them in a consensus class."
+  },
+  {
+   "target": "sci:sha256:08153f8677f28e70766ef68722eabb87ee31613f32e78e09ad6cf4b14b90e726",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Centroid source classes; compared star by star and used in the consensus class."
+  },
+  {
+   "target": "sci:sha256:6272633392250887c58ed73ae5e0276df3ce700f933847de0f6560cde7bc3ebe",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Centroid source classes; compared star by star and used in the consensus class."
+  },
+  {
+   "target": "sci:sha256:7e71fae3b30e2160fb63c1b2c1abe06a616ac409e8ecfa562ba34c17f0204b63",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent pixel test that identified the off-target sources as contact binaries and pulsators from colours and amplitudes; our Gaia DR3 variability classes confirm this."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "K2 test that first reported the main-sequence deficit at matched x."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "Independent K2 test of the CPV age decline."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "CPV dip widths in rotational phase; an open constraint on the material."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPV features."
+  },
+  {
+   "target": "https://arxiv.org/abs/2202.06888",
+   "reason": "Ramsay et al. 2022, MNRAS 511, 2755: the 29 flare-inactive ultra-fast rotators tested here (TIC IDs and periods from its Table 1)."
+  },
+  {
+   "target": "https://arxiv.org/abs/2202.06889",
+   "reason": "Doyle et al. 2022, MNRAS 512, 979: the 10-star control sample (TIC IDs and periods from its Table 1)."
+  },
+  {
+   "target": "https://arxiv.org/abs/2007.04071",
+   "reason": "Ramsay, Doyle and Doyle 2020: TESS ultra-fast rotators and their low flare rate at P < 0.2 d."
+  },
+  {
+   "target": "https://arxiv.org/abs/2507.10847",
+   "reason": "Late-M dwarf rotation study that noted a contaminated period in the Ramsay et al. 2020 catalogue."
+  },
+  {
+   "target": "https://arxiv.org/abs/2604.07976",
+   "reason": "Swift/XMM X-ray study of ultra-fast-rotating M dwarfs."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202347165",
+   "reason": "eROSITA-DE DR1 (Merloni et al. 2024)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3467",
+   "reason": "TESS Input Catalog v8 (Stassun et al. 2019)."
+  }
+ ]
+}
