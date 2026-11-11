@@ -1,0 +1,79 @@
+{
+ "title": "NHC wind speed probabilities (2010-2025, 604 storms) were nearly calibrated only with the model's 0.86 radius factor; in all radius rules they were too low for large and too high for small storms",
+ "abstract": "We tested NHC 0-120 h wind speed probabilities (34, 50, 64 kt) on 7,405 half-degree grids from 2010-2025 (604 Atlantic and eastern and central Pacific storms) against best-track wind areas of storms with an official forecast at issue time, under a plan written before outcomes were compared. With quadrant radii filled to their stated maximum (plan rule), observed events were 1.33, 1.46 and 1.30 times the forecast sums. With 0.86 times the azimuth-interpolated radii, the factor that the hour-0 WSP fields show and the model documentation states, the ratios were 1.04, 1.16 and 1.02. Thus, the overall verdict depends on the radius convention. In all conventions the error followed initial storm size: at 34 kt (product rule) the ratio was 0.73 for small storms and 1.31 for large storms, also inside each strength class. Official 34-kt radius forecasts for large storms were 6-10% smaller than the best track at 24-72 h, with no difference at hour 0. The expected strength difference in calibration slope was not found. In 2026 the hour-0 WSP field changed without a stated notice: the share of points inside 0.85 of the radius with WSP of at least 99% fell from 94-98% to 70%. Strength-by-size recalibration fitted on 2010-2021 reduced 2022-2025 Brier scores by 2-5% (product rule) but did not help on 2026. Best-track radii are uncertain analyses and the 2026 truth is operational. Code, aggregate tables, hashes and retrieval scripts are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone",
+  "wind speed probability",
+  "forecast verification",
+  "calibration",
+  "NHC",
+  "wind radii",
+  "hazard product"
+ ],
+ "display": [
+  {
+   "path": "files/figures/reliability.png",
+   "caption": "Reliability of NHC 0-120 h wind speed probabilities in 2010-2025 for 34, 50 and 64 kt, scored against best-track wind areas built with three radius rules: quadrant maximum (plan), azimuth-interpolated, and 0.86 times azimuth-interpolated (product rule). Bars are storm-bootstrap 95% intervals. The dashed line is perfect calibration."
+  },
+  {
+   "path": "files/figures/hour0_radius.png",
+   "caption": "Hour-0 test of the WSP files against as-issued NHC radii. Left: share of grid points with 34-kt WSP of at least 99% against distance divided by the radius, for 2010-2017, 2018-2025 and 2026. Right: yearly edge positions and interior shares; 2026 differs from all earlier years."
+  },
+  {
+   "path": "files/figures/conditional.png",
+   "caption": "Left: 34-kt observed/expected events by initial size group inside two strength classes, for the plan and product radius rules. Centre: best-track 34-kt size relative to the NHC official forecast size by forecast hour and initial size. Right: Brier score reduction from strength-by-size recalibration on 2022-2025 (fitted 2010-2021) and on 2026 (fitted 2010-2025). Bars are storm-bootstrap 95% intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the strength hypothesis (circle coverage by initial strength) and of the shared NHC error files used for the plan's active-storm rule."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Selected hazard-product verification work that motivated this test."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Related result: observation coverage changes the verdict on a hazard product."
+  },
+  {
+   "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+   "reason": "Related NHC uncertainty product test."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "reason": "Related hazard-product calibration result in the selected work."
+  },
+  {
+   "target": "doi:10.1175/2009WAF2222286.1"
+  },
+  {
+   "target": "doi:10.1175/WAF-D-12-00116.1"
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/gis/archive_wsp.php"
+  },
+  {
+   "target": "https://ftp.nhc.noaa.gov/atcf/"
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/"
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/pdf/2026NHCNewProductsAndServices.pdf"
+  },
+  {
+   "target": "https://www.weather.gov/disclaimer"
+  }
+ ]
+}
