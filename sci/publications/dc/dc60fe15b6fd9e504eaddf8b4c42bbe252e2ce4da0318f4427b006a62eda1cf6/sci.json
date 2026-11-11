@@ -1,0 +1,134 @@
+{
+ "title": "Chandra separates the two X-ray nuclei of ESO 253-G003: the steady hard X-rays are an obscured companion AGN, and ASASSN-14ko has an on-off soft state with late UV peaks in off cycles",
+ "abstract": "Question: the X-ray clock of the repeating nuclear transient ASASSN-14ko (a sharp soft X-ray drop 5.5 d before each UV peak, constant 108.44-d period in 2020-2024) and the test that its AGN stayed steady when the period decrease stopped both use data that blend the two AGN of ESO 253-G003. Which nucleus makes the dip, and why do the 2022 flares have no X-ray ingress? Approach: we reduced all 13 public Chandra ACIS-S visits (2020-2023, including nine of cycle 26 in 2022 and two inside the cycle-30 dip), registered them on field sources, and fitted two point sources jointly. We added 14 NuSTAR visits and the XMM-Newton pn spectra of the cycle-30 dip. Results: the two nuclei are 1.6 arcsec apart and match the two Gaia DR3 sources. The south-western companion is steady (2-7 keV scatter 9 percent, chi2 = 6.8 for 7 dof), obscured (N_H about 9e23 cm^-2, intrinsic L(2-10 keV) about 1.9e43 erg/s) and gives 81-95 percent of the hard counts in low states. NuSTAR 10-30 keV does not change at the dip (ratio 1.03 +/- 0.03). The component that switches off is soft and unabsorbed (kT 0.09 keV plus a power law); partial covering is excluded and full covering needs N_H >= 2e24. ASASSN-14ko itself was X-ray faint before flare 26 (hard rate 19 times lower than in January 2021), so 2022 had no state to switch off, and it burst 1.1 d after the predicted UV peak. The pre-flare soft state was on in cycles 19-25, 30, 31, 33 and off in 26, 28, 29. In off cycles the UVW2 peaks are +4.9 d late against the X-ray clock, compared with +0.2 d in on cycles (2.6 sigma with 1.2 d jitter). Conclusion: the X-ray clock marks the end of a soft state of the ASASSN-14ko nucleus; the period did not react to a change of its X-ray output by a factor of 7-19; part of the UV/optical period noise is a state-dependent emission delay. The quiescent Swift hard-band AGN check of earlier work measured the companion, and the companion can give about 0.3 of the blended WISE W2 flux, which weakens but does not remove the disc-state exclusion. Limitations: only three off cycles, consecutive in 2022; no CIAO/SAS processing; phenomenological spectral model.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "ESO 253-G003",
+  "dual AGN",
+  "repeating partial tidal disruption",
+  "Chandra",
+  "NuSTAR",
+  "XMM-Newton",
+  "X-ray dip",
+  "obscured AGN",
+  "flare timing",
+  "emission delay",
+  "period stall",
+  "periodic nuclear transient"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_chandra_two_nuclei.png",
+   "caption": "Chandra images of the galaxy centre (registered frame, west to the right). Left: eight low-state visits; right: two 2022 burst visits; top 0.5-2 keV, bottom 2-7 keV. In the low state the hard X-rays come from the south-western companion S; in the bursts the ASASSN-14ko nucleus N dominates."
+  },
+  {
+   "path": "files/figures/fig3_cycle30_energy.png",
+   "caption": "Cycle 30: XMM-Newton pn and NuSTAR rates relative to the pre-dip level (the dip is absent at 10-30 keV), and pn spectra before and in the dip with the switching soft component and the steady absorbed component."
+  },
+  {
+   "path": "files/figures/fig4_uv_timing_vs_xray_state.png",
+   "caption": "UVW2 peak minus the X-ray clock by pre-flare soft X-ray state (top) and the pre-flare level per cycle (bottom). Off cycles 28 and 29 have the latest UV peaks."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "supports",
+    "reviews"
+   ],
+   "reason": "We use its Swift XRT counts, XMM band rates and linear X-ray clock. Chandra shows that its ingress is the switch-off of the ASASSN-14ko nucleus and that the dip floor is the companion AGN; the clock itself is supported."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its pre-dip levels per cycle. Chandra confirms that cycle 26, like its cycles 28-29, had no pre-flare soft state, so the missing 2022 markers are physical, not a sampling gap."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Its quiescent Swift 2-10 keV AGN check measured mostly the obscured companion nucleus, and its WISE W2 flux blends both AGN; the disc-state exclusion becomes weaker (N ratio up to 1.27 at 95 percent for a 0.6 companion share)."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its Swift UVOT UVW2 photometry for cycle 26."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Part of the period noise that it fitted as orbital kicks coincides with the 2022 X-ray off state, where UV peaks are 4-5 d late against the X-ray clock."
+  },
+  {
+   "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its period noise beyond a cubic trend partly comes from the late UV peaks of the 2022 X-ray off cycles."
+  },
+  {
+   "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We find an observable predictor of a changing emission delay of about 4-5 d: the pre-flare soft X-ray state."
+  },
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "The 2022 flares with changed shapes coincide with the X-ray off state of the ASASSN-14ko nucleus."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [],
+   "reason": "Late flares and the period stall of ASASSN-14ko."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "relations": [],
+   "reason": "SPHEREx timing of the 2025-2026 flares; context for the flare-41 forecast."
+  },
+  {
+   "target": "https://arxiv.org/abs/2206.11278",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Payne et al. resolved the two nuclei in 2020-2021 Chandra data and assigned the hard X-rays to the southern nucleus; we extend this to 2022-2023 and to the dip."
+  },
+  {
+   "target": "https://arxiv.org/abs/2011.05998",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Tucker et al. found the second AGN in ESO 253-G003 with MUSE."
+  },
+  {
+   "target": "https://arxiv.org/abs/2506.15039",
+   "relations": [],
+   "reason": "Multiwavelength monitoring of ASASSN-14ko to 2024 with X-ray anticorrelation and early bumps."
+  }
+ ]
+}

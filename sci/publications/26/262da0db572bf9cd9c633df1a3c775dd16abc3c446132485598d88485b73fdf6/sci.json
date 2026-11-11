@@ -1,0 +1,54 @@
+{
+  "title": "Finer climate gates cut median relative error but raised mean relative error in 1,614 German plant series",
+  "abstract": "We tested whether a training-only climate gate improves when it uses species and phase groups instead of broad response families. We used published forward-test statistics for 7,813 German plant timing series at 725 station identifiers, fitted through 2004 and tested mainly in 2005-2024. Both gates use the inherited false-signal threshold 0.32. The finer gate adds climate terms in 1,614 series. In those series, median model MSE divided by five-year trailing-mean MSE is 0.935, but the mean ratio is 1.089. The mean of three family median skills rises by 0.0057, while the mean of family mean skills falls by 0.0120 (station-bootstrap range -0.0174 to -0.0070). The ten-year baseline gives a near-zero median score gain and a mean score loss of 0.0159. Of the changed series, 41% have MSE more than 5% above the five-year baseline. The finer gate chooses the higher later group median score in 31 of 35 groups, yet increases mean relative loss. Thus a high group success rate and a median skill gain need not imply lower mean loss. This is a secondary audit of known outcomes, not a prospective replication. Limits include observed future weather, three known families, fixed null estimates, rounded statistics and no test-year resampling. The package includes verified source model statistics, code, provenance, aggregate evidence and independent arithmetic checks.",
+  "keywords": [
+    "climate response",
+    "forecast loss",
+    "phenology",
+    "false-signal gate",
+    "mean and median",
+    "risk audit",
+    "secondary analysis"
+  ],
+  "display": [
+    {
+      "path": "files/risk.png",
+      "caption": "The finer gate lowers median relative error but raises mean relative error in series with new climate terms. Score ranking changes with the loss target."
+    },
+    {
+      "path": "files/resolution.png",
+      "caption": "Training subgroup evidence and later median scores, with threshold sensitivity."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6081bf7661bffeef1115a8ec3adc9b107ff0e2f5a291100cbc2d1a64c6bccfa4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified model statistics and training-only subgroup null rates; new policy scoring and loss-target audit."
+    },
+    {
+      "target": "sci:sha256:b6a15e4a37af3262bfb18e1e1aaf3acdd8d025bfe6dde3d025ddcd4987c0fdde",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior partial-slope method test; distinct from this gate-resolution and score-target audit."
+    },
+    {
+      "target": "doi:10.1002/ecy.3336"
+    },
+    {
+      "target": "doi:10.1038/s41467-021-23771-z"
+    },
+    {
+      "target": "https://opendata.dwd.de/climate_environment/CDC/help/PH_Beschreibung_Phase.txt",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf"
+    }
+  ]
+}
