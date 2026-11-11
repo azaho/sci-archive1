@@ -1,0 +1,76 @@
+{
+  "title": "PTWC tsunami timing scores changed from 41% to 64% within 10 minutes when earthquakes had equal weight, 2015-2026",
+  "abstract": "We checked first point-specific PTWC tsunami arrival estimates against a fixed NCEI archive. We parsed 5,672 issued ETA rows from 2014-2026 and matched each first forecast place to its closest coastal gauge within 20 km. Of 210 nearby forecast-place pairs in 43 earthquakes, 103 lacked a first-arrival clock. The 107 timed pairs in 19 earthquakes span 2015-2026. Forty-four arrivals were within 10 minutes: 41.1% of points. With each earthquake given equal weight, the mean share was 64.3% (95% earthquake-bootstrap range 47.2-80.4%). The equal-earthquake mean recorded-minus-forecast error was +7.3 minutes (-0.9 to +17.2), so the primary test did not establish overall bias. An unadjusted delay trend was +3.11 minutes per forecast hour. After earthquake and place effects were removed, only seven earthquakes supplied identifying variation and the bootstrap was unstable. A travel-speed cause was not established. Without assumptions about missing clocks, the within-10-minute point share over all 210 nearby pairs is only bounded by 21-70%. A separate bounded-delay calculation gives exact sensitivity limits for uncertain first-wave picks. These checks extend a prior height-category study to a different operational target. They do not verify all PTWC forecasts, establish physical onset times, or justify a warning-time correction. Code, source hashes, original figures, aggregate results and all resampling draws are included. Raw records and matched record-level tables stay outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "tsunami arrival",
+    "PTWC",
+    "forecast verification",
+    "missing data",
+    "source attribution",
+    "tide gauges",
+    "cluster bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/figures/identification.png",
+      "caption": "Point and earthquake weights give different timed-sample scores. Missing clocks permit a wide all-nearby-point score range. The right panel gives hypothetical bounds on the adjusted slope under nonnegative arrival-pick delays; it is not a confidence interval."
+    },
+    {
+      "path": "files/figures/arrival_errors.png",
+      "caption": "Earthquake mean timing errors and prespecified sensitivity tests. Positive error means the recorded wave arrived later than forecast. Intervals resample whole earthquakes."
+    },
+    {
+      "path": "files/figures/source_diagnostic.png",
+      "caption": "The adjusted travel-time slope has weak identification. Its ranges omit failed resamples and are diagnostic, not unconditional confidence intervals. Travel groups at right were added after initial results and have only 18, 6 and 4 earthquakes."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its fixed source snapshots and extend the height-category test to issued first-arrival times. We do not reuse its height scores."
+    },
+    {
+      "target": "doi:10.7289/V5PN93H7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NCEI/WDS Global Historical Tsunami Database; fixed snapshot retrieved 2026-11-10 in the parent SCI ZIP."
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Archive of NWS PTWC TSUPAC and TSUCAX text products, via the fixed parent snapshot."
+    },
+    {
+      "target": "doi:10.1007/s13131-021-1830-2",
+      "reason": "Earlier waveform and model study of delay and initial phase in the 2015 Chile tsunami. It motivates but does not establish an operational-error cause in this sample."
+    },
+    {
+      "target": "https://www.jodc.go.jp/jodcweb/info/ioc_doc/Technical/180097e.pdf",
+      "reason": "IOC Technical Series 87, Annex V: approximate travel times and potential sources of timing error."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/tsunamis/global-historical-data",
+      "reason": "NCEI first-arrival definition and warning about later-wave picks."
+    },
+    {
+      "target": "https://tsunami.ioc.unesco.org/en/twtools",
+      "reason": "Current IOC description of travel-time tools used by PTWC."
+    }
+  ]
+}
