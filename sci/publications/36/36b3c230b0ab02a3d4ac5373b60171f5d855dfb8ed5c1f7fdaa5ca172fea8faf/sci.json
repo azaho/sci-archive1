@@ -1,0 +1,122 @@
+{
+ "title": "The November 1981 HadISST1-to-OI v2 splice in AMIP SST forcing adds a pattern step (warm pool +0.08 K); in five Green's functions it makes 1979-2014 feedback 0.07 W m-2 K-1 more negative",
+ "abstract": "Question: the PCMDI-AMIP SST forcing (AMIPII; versions 1.1.3 for CMIP6 and 1.1.9) is HadISST1 to October 1981 and NOAA OI SST v2 from November 1981. CMIP6 amip runs start in 1979 and amip-piForcing runs in 1870, so the splice is inside many feedback windows. Does the forcing change at the splice, and what does this change in Green's-function feedback estimates? Approach: we compared AMIP 1.1.9 with in situ products (ERSSTv5, COBE-SST2, HadSST4.2) on 60S-60N ice-free 5-degree boxes, 1950-2022. We fitted the step at 1981-11 (60 months each side, calendar-month and ENSO terms), scanned other dates, did a placebo test at 46 pseudo dates, removed the step, and applied five GFMIP Green's functions. Results: before the splice, AMIP is HadISST1 plus a fixed calendar-month offset per cell (temporal SD 0.003 K). The step has a near-zero 60S-60N mean (+0.009 K, -0.005 to +0.024) but a regional pattern: warm pool +0.082 K (+0.066 to +0.098; the largest break in a 1972-1992 scan, t = 4.7), southeast Pacific +0.08, east equatorial Pacific -0.07 and 40-60S -0.09 K. Its radiative effect beyond uniform warming (-0.058 W m-2) is rank 1 of 47 dates (placebo SD 0.017). Removal makes the 5-model feedback less negative: 1979-2014 by 0.070 W m-2 K-1 (0.009 to 0.132; 12 alternative corrections 0.023 to 0.116), 7% of the pattern term; 1979-2022 by 0.041; 1950-2014 by 0.18 (33%); 1870-2014 regression by 0.09, which is as large as the raw pattern term there (-0.01). With the ship-buoy adjustment, the 1979-2014 pattern term goes from -0.98 to -0.80. The step makes the 1979-2014 Pacific zonal gradient trend only 3-4% stronger, so it does not cause the trend-pattern problem. Limitations: linear 60S-60N Green's functions, not model runs; feedback per K of SST; references are sparse in situ products, and outside the warm pool the step is not the largest break and is reference-dependent; the cause (offset method or input change) is not separated.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "AMIP",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "HadISST1",
+  "OI SST v2",
+  "dataset splice",
+  "pattern effect",
+  "radiative feedback",
+  "Green's function",
+  "GFMIP",
+  "homogenisation",
+  "CMIP6 amip",
+  "amip-piForcing",
+  "warm pool",
+  "data artifacts"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_splice_evidence.png",
+   "caption": "(a) 12-month running mean of AMIP 1.1.9 minus the in situ mean (ERSSTv5, COBE-SST2, HadSST4.2) for four regions; dashed line: the 1981-11 splice. (b) Single-step scan t-values (main fit) for AMIP 1.1.9 and HadISST1 in the warm pool and 30S-30N. (c) Smoothed splice step map (AMIP minus in situ mean, after minus before); boxes: warm pool, east equatorial Pacific and southeast Pacific regions. (d) Region steps with 95% bootstrap intervals and single-reference values."
+  },
+  {
+   "path": "files/figures/fig2_placebo.png",
+   "caption": "(a) Radiative effect beyond uniform warming (Q_S, 5-model mean) of the step pattern fitted at 46 pseudo-splice dates (grey) and at the real 1981-11 splice (orange). (b) The same by model, with the placebo 95% range."
+  },
+  {
+   "path": "files/figures/fig3_windows.png",
+   "caption": "(a) Change of the Green's-function feedback (5-model mean) when the splice step is removed, for 30- and 36-year windows by first year; bands: bootstrap 95%; dotted: range of 12 alternative corrections. (b) 1979-2014 (CMIP6 amip window) change by model with bootstrap 95% intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its GFMIP Jacobian maps (gf_boxes.npz) and OI v2 2018 step map; extends its AMIP feedback analysis to windows that contain the 1981 splice."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its uniform HadSST4.2 ship-buoy adjustment method for the artifact budget; this study adds the 1981 splice for windows that start before 1982."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "Earlier campaign result on OI v2 / AMIP 1.1.9 steps after 2018; context."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "Earlier campaign result on DOISST and OI v2 trend patterns; context."
+  },
+  {
+   "target": "sci:sha256:c0ad230d2adce447e21d42715ae77af6adde24fd065f7e743afcc68528a3437e",
+   "reason": "Earlier campaign result on CAM4 Green's-function feedback of SST artifacts; context."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Earlier campaign result on DOISST mean steps; context."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on input-change artifacts in SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Earlier campaign result on input-change artifacts in SST products; context for this study."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Earlier campaign result on input-change artifacts in SST products; context for this study."
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1",
+   "reason": "Describes the HadISST1 and OI v2 merge of the AMIP SST boundary dataset."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "reason": "GFMIP protocol and Green's functions."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675",
+   "reason": "Historical SST pattern effect in AMIP experiments."
+  },
+  {
+   "target": "doi:10.1029/2018GL078887",
+   "reason": "amip versus abrupt-4xCO2 feedback (pattern effect) for 1979-2014 type windows."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST1."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1",
+   "reason": "COBE-SST2."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4."
+  },
+  {
+   "target": "doi:10.1038/s41558-019-0505-x",
+   "reason": "Pacific zonal SST gradient trend boxes."
+  }
+ ]
+}
