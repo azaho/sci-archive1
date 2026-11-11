@@ -1,0 +1,132 @@
+{
+ "title": "NCEP R1 and R2 used ocean temperatures 0.14-0.23 C too cold from 11 February 2020 and 0.34-0.42 C too cold after 2022 (60S-60N); their 2020-2026 global surface air is 0.16-0.25 C too cold",
+ "abstract": "Question: do the SST and snow boundary inputs of the NCEP reanalyses agree with independent data in their final years? Over open water, NCEP/NCAR Reanalysis 1 (R1) uses the SST analysis that it receives as its skin temperature, so R1 ocean skin temperature records the SST input. Approach: we compared R1 and NCEP-DOE R2 ocean skin temperature with five SST products (OI SST v2, DOISST v2.1, ERSSTv5, COBE-SST2, ERA5) at 60S-60N, dated changes with 6-hourly R1 files, and measured the effects on 2 m temperature (against ERA5, GHCN-CAMS and Berkeley Earth), turbulent heat fluxes, snow and UAH lower-troposphere temperature. Results: on 11 February 2020 at 06 UTC the R1 SST field changed at 93% of ocean points and its 60S-60N mean fell by 0.21 C in 6 hours; on 7 March 2020 the daily update moved from 12 to 00 UTC. Relative to 2010-2019, R1 minus the references is -0.14 to -0.23 C in March 2020 to August 2022 and, after a drift in September 2022 to January 2023, -0.34 to -0.42 C to February 2026 (largest at 40-60N). R2 has the same errors. In R1 the 2023/24 ocean is 0.18-0.22 C colder than 2015/16, while products show +0.19 to +0.25 C. R1 snow at 40-70N stays too long in spring and summer from 2020 and nearly disappears in winter 2022/23; R1 land 2 m temperature is 0.39-0.47 C too cold (up to -2.2 C in June 2020 at 45-75N). Global 2 m temperature is 0.22-0.25 C (R1) and 0.16-0.23 C (R2) colder than ERA5, so 2016 stays the warmest R1 year. Over 60S-60N ocean, R1 turbulent heat loss falls by 7.2 +/- 1.5 W m-2, a false ocean heat gain. The free troposphere over the ocean has no step against UAH. Consequence: R1 and R2 surface fields from February 2020 to their end are not fit for trends, records or energy budgets without correction. Limitations: the cause and the new input product are not documented; 6-hourly checks cover four years; the flux and snow results have no independent flux or snow reference.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "NCEP/NCAR Reanalysis 1",
+  "NCEP-DOE Reanalysis 2",
+  "reanalysis",
+  "sea surface temperature",
+  "boundary conditions",
+  "data quality",
+  "snow cover",
+  "2 m temperature",
+  "surface heat flux",
+  "global temperature record",
+  "ERA5",
+  "OI SST v2",
+  "homogeneity",
+  "change-point"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_r1_r2_minus_sst_products.png",
+   "caption": "R1 (a) and R2 (b) ocean skin temperature minus SST products, 60S-60N, monthly, with the 2010-2019 mean seasonal difference removed. Both reanalyses follow all products until January 2020, drop on 11 February 2020 and drift colder again in September 2022 to January 2023."
+  },
+  {
+   "path": "files/figures/fig3_global_t2m.png",
+   "caption": "Annual global-mean 2 m temperature anomalies (1991-2020 base) in ERA5, R1 and R2, and their differences. After 2019, R1 and R2 are 0.16-0.28 C colder than ERA5, so R1 keeps 2016 as its warmest year."
+  },
+  {
+   "path": "files/figures/fig5_dating_6hourly.png",
+   "caption": "(a) 6-hourly R1 60S-60N ocean skin temperature: a -0.21 C change at 06 UTC on 11 February 2020 and an update-time change on 7 March 2020. (b) Size of each daily SST update. (c) R1 minus ERA5 daily SST, relative to 2019."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OI SST v2 steps in AMIP forcing; R1 followed OI SST v2 until February 2020, so those steps are also in R1 before 2020."
+  },
+  {
+   "target": "sci:sha256:744ca39845d8ad5a735ec3185724cb75f02f7ced5aacaf95d643fc15df1e68bc",
+   "relations": [],
+   "reason": "The 2018 OI SST v2 Southern Ocean step, also present in R1 before 2020."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "relations": [],
+   "reason": "Earlier OI SST v2 and DOISST pattern artifacts."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST July 2020 warm step; explains why DOISST gives the largest R1 error."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Multi-product homogenisation; possible small ERA5 2020 step used in our limitation."
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "relations": [],
+   "reason": "SST input steps in CMIP7Plus AMIP forcing; this work extends the reach of SST input errors to reanalyses."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "relations": [],
+   "reason": "HadISST1 and AMIP forcing artifacts."
+  },
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "relations": [],
+   "reason": "Feedback consequences of DOISST steps."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [],
+   "reason": "Five Green's-function study of SST step effects."
+  },
+  {
+   "target": "sci:sha256:9a827dbfe8c5cf80c48775ea2594f2a655a5ef779190c192cd6fd83e697aeeff",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Used R1 latent heat flux to 2025 in the western North Pacific, where the R1 SST boundary is 0.38-0.64 C too cold after February 2020; its post-2020 flux results need a check."
+  },
+  {
+   "target": "sci:sha256:63cec1f9a965b03549484bea688b090728ca4dff736ed394c668fed6d749e8a8",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Used R1 surface fluxes for a 2023-2025 extension; R1 surface fluxes after February 2020 are biased."
+  },
+  {
+   "target": "sci:sha256:3dd74f41fa7048e183a798ac41f59e3e17d91d3e5be840a4326edf64618aa278",
+   "relations": [],
+   "reason": "Used R1 wind stress to 2022; we did not test wind stress."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/reanalysis/problems.shtml",
+   "reason": "NOAA PSL list of known R1 problems; no 2020-2026 entry when read on 2026-11-11."
+  },
+  {
+   "target": "https://psl.noaa.gov/news/2026/r1datanotice.html",
+   "reason": "PSL notice that R1 updates ended when NCEP replaced CDAS with CORe in March 2026."
+  },
+  {
+   "target": "doi:10.1175/1520-0477(1996)077%3C0437:TNYRP%3E2.0.CO;2",
+   "reason": "Kalnay et al. (1996), the NCEP/NCAR 40-year reanalysis."
+  },
+  {
+   "target": "doi:10.1175/BAMS-83-11-1631",
+   "reason": "Kanamitsu et al. (2002), NCEP-DOE AMIP-II reanalysis (R2)."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "reason": "Hersbach et al. (2020), ERA5."
+  }
+ ]
+}
