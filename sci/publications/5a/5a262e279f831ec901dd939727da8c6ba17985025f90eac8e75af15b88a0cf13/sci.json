@@ -1,0 +1,61 @@
+{
+  "title": "Conditional tests leave a shared decay error uncertain in 17 active USGS aftershock forecast regions",
+  "abstract": "We tested the time and magnitude shapes of first USGS Reasenberg-Jones forecasts using a published ComCat snapshot from November 2026. Conditional event times remove any scalar productivity and its uncertainty. We reconstructed the first-week counts exactly for 235 forecasts. At conservative magnitude cuts, only 17 regions had events on days 1 to 7 (75 earthquakes, 16 overlap clusters). With each earthquake given equal weight, the fitted change in decay exponent was -0.77 (95% cluster bootstrap limits -1.16 to -0.23). With each active sequence given equal weight, it was -0.57 (-1.42 to 0.17). The full-week change was near zero. Higher magnitude cuts left too few events to resolve the error. The large-event share was consistent with the stated b value. An exploratory background check did not remove the late-time signal, but had uncertain rates. Thus the evidence suggests a late tail in the pooled events but does not establish a shared decay error across sequences. A productivity correction alone cannot alter these conditional shapes. The package gives code, sufficient statistics, input hashes, numerical checks and a fixed-snapshot reproduction script. This is a new shape test on earlier data, not an independent replication or proof of physical cause.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "aftershock forecast",
+    "conditional likelihood",
+    "Omori decay",
+    "forecast verification",
+    "catalog completeness",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/shape.png",
+      "caption": "Conditional event times and fitted decay changes. Zero is the issued decay exponent. Each active sequence has equal weight in the right panel; bars show 95% overlap-cluster bootstrap limits. The primary interval includes zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the fixed ComCat snapshot and issued forecast parameters; our new test conditions on count to remove productivity."
+    },
+    {
+      "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/oaf/background.php"
+    },
+    {
+      "target": "https://docs.cseptesting.org/getting_started/theory.html"
+    },
+    {
+      "target": "doi:10.1785/0220180240"
+    },
+    {
+      "target": "doi:10.1785/0120160073"
+    },
+    {
+      "target": "doi:10.1029/2023RG000823"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}
