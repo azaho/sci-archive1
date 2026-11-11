@@ -1,0 +1,61 @@
+{
+  "title": "A better annual rain forecast gave no clear extra wet-deposition skill at 128 US sites in 2005-2024",
+  "abstract": "We tested whether improved annual rain forecasts add wet-deposition skill on a published NADP panel of 128 US sites and nine ions. Models used coefficients fitted through 2004 and past-only levels for 2005-2024. A frozen autoregression reduced weighted log-rain mean squared error by 17.2% against a fixed historical mean, with a 95% crossed bootstrap range of 9.0% to 25.8%. Yet its added deposition gain was -0.03 percentage points, with limits of -1.93 to 2.60. The fixed-mean control was added after the first results and is exploratory. An exact shared-error bound showed that the observed-rain gain of 25.3% could tolerate weighted RMS log-rain error of 0.293 with zero residual cross moment, but only 0.111 for all shared-error alignments. At equal rain error of 0.20, constructed response gains ranged from -25.6% to +52.6%. These constructions use response outcomes and are sensitivity tests, not forecasts. Weather error alignment, not accuracy alone, controls forecast value in this model. The panel overlaps prior work. Revised data, a short record, selected sites, a shared rain input in the target and conditional uncertainty limit inference. Code, aggregate evidence, source hashes and audit instructions are supplied.",
+  "keywords": [
+    "wet deposition",
+    "forecast error",
+    "rain",
+    "out-of-sample test",
+    "error covariance",
+    "forecast value"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "The frozen rain AR1 had lower rain error than a fixed historical mean, but no clear added deposition gain. Paired 95% crossed site and shared-year bootstrap ranges. This added control is exploratory."
+    },
+    {
+      "path": "files/frontier.png",
+      "caption": "Exact gain bounds with one rain error per site-year across all ions. The center curve assumes a zero weather-error and response-residual cross moment. The shaded extremes use response outcomes and are sensitivity constructions, not forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:395e28e9351074e1bf505a070b8f4fe9afe8e59914598e67843cbd8cfcf56330",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same NADP panel and observed-rain model. Extends the conditional test to past-only rain forecasts and shared weather-error bounds. Fetch code reused under its baseline MIT terms."
+    },
+    {
+      "target": "sci:sha256:2c15bea979291ab376d4a1f94f52b24e394207928c25e470339008603ae127d3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior climate-window forecast test motivates the gap between conditional and advance skill."
+    },
+    {
+      "target": "doi:10.1029/2018JD029051",
+      "reason": "Prior precipitation correction and wet-deposition estimation."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-16-0115.1",
+      "reason": "Prior work on forecast calibration and mean squared error interpretation."
+    },
+    {
+      "target": "https://nadp.slh.wisc.edu/data-and-information-use-conditions/"
+    },
+    {
+      "target": "https://nadp.slh.wisc.edu/maps-data/ntn-interactive-map/",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

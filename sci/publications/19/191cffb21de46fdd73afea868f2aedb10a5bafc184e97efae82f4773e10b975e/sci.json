@@ -1,0 +1,121 @@
+{
+ "title": "NHC storm surge ranges in Atlantic advisories (47 US storms, 2017-2025) were exceeded at 10% of tide gauges, mostly by about 0.8 ft of background sea level that the ranges appear to omit",
+ "abstract": "We tested the storm surge ranges in NHC Atlantic public advisories ('the water could reach X-Y ft above ground somewhere in the indicated areas if the peak surge occurs at the time of high tide') against NOAA tide gauges. We parsed 5,695 advisories from 2017 to 2025 (1,315 with surge lists, 6,488 US range items), matched segments to 125 CO-OPS gauges, and used peak 6-minute water level above MHHW. The plan was written before we downloaded water levels. For the last advisory issued 6 h or more before the gauge peak (810 storm-gauge units, 47 storms), the peak was below the range in 36% (storm bootstrap 95% interval 28-45%), inside it in 54% and above it in 9.8% (5.7-13.6%). First advisories (median 53 h before the peak) gave the same result, so early track and intensity errors did not cause the misses. When we moved the observed peak surge to high tide, as the text assumes, 21% (16-27%) were above. The ranges were too sharp: the peak rose 0.30 ft per 1 ft of range midpoint; ranges with an upper end above 6 ft were below at 85% of gauges. Exceedances came mostly from weak, broad Gulf storms and gauges more than 150 km right of the track. In exploratory analyses, monthly mean sea level at storm time was a median 0.80 ft above the tidal-epoch mean sea level (0.56 ft relative sea-level rise since 1983-2001 plus 0.24 ft seasonal high water). Without this background, 1.5% (0.4-2.9%) of units were above the range, and 5.4% with the high-tide condition. The gauge error rose with the background at a slope of 0.83 (0.37-1.31), near the slope of 1 expected if the ranges omit it; both its parts gave similar slopes. Results held in nine sensitivity runs (above 6.4-12.8%). Limitations: one gauge cannot measure the segment maximum; USGS high-water marks were not available; MHHW is only a proxy for ground; river gauges include rain runoff; the background regression is observational; only active gauges were used.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "storm surge",
+  "National Hurricane Center",
+  "forecast verification",
+  "tide gauge",
+  "inundation",
+  "P-Surge",
+  "calibration",
+  "sea-level rise",
+  "tidal datum epoch",
+  "MHHW",
+  "pre-registration",
+  "operational hazard products",
+  "hurricanes",
+  "CO-OPS"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_background_attribution.png",
+   "caption": "A: outcome of 795 storm-gauge cases against the NHC surge range for four observation definitions (observed; peak surge moved to high tide; minus background sea level; both). B: gauge error (observed minus range midpoint, adjusted for midpoint, distance and side) against background sea level; fitted slope 0.83 (0.37-1.31)."
+  },
+  {
+   "path": "files/figures/fig1_ranges_vs_gauges.png",
+   "caption": "Tide-gauge peaks above MHHW (points) against the forecast range (gray boxes) of the last advisory issued 6 h or more before the peak, by range class; panel B gives below/inside/above fractions."
+  },
+  {
+   "path": "files/figures/fig4_segment_gauge_count.png",
+   "caption": "Segment maximum over the gauges inside each forecast segment against gauge count: fraction that reaches the lower end and that exceeds the upper end, observed (A) and with background removed (B)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Design model for verifying 'somewhere along the coast' hazard statements with sparse tide gauges; we compare the gauge-density effect."
+  },
+  {
+   "target": "sci:sha256:9f7a7c98a4f7116e0cdd8d96be9731dc69feac307715d4ad117f5d1a255659ce",
+   "reason": "Earlier verification of another NHC product (wind speed probabilities)."
+  },
+  {
+   "target": "sci:sha256:79d010f62ceec89138cced134214d3e4b06ac113305ae7babb08ea6da1521b70",
+   "reason": "Earlier verification of NHC wind speed probabilities in two basins."
+  },
+  {
+   "target": "sci:sha256:2f9816183cc59c34cf0da17b8ea30ac2ae4588cb554c275f8c7ed2bbf7044d5a",
+   "reason": "Earlier verification of NHC wind speed probabilities by latitude."
+  },
+  {
+   "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+   "reason": "Earlier verification of NHC rapid-intensification guidance."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Another attribution of an operational miscalibration to product construction."
+  },
+  {
+   "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+   "reason": "Related NOAA coastal water-level product verified at US tide gauges."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "Related work on how observation networks shape hazard-product verification."
+  },
+  {
+   "target": "doi:10.3390/jmse2020437",
+   "reason": "SLOSH evaluation against gauges and high-water marks; MHHW as the inundation reference."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/archive/text/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NHC public advisory text archive (TCPAT1-5, 2017-2025)."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/gis/breakpoints/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NHC breakpoints and storm surge communication points."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HURDAT2 best tracks."
+  },
+  {
+   "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA CO-OPS water levels, tide predictions, monthly means and datums."
+  },
+  {
+   "target": "https://slosh.nws.noaa.gov/docs/data/PETSS_ECMWF_AMS_extended-F.pdf",
+   "reason": "MDL description of the water-level anomaly that surge guidance omits."
+  }
+ ]
+}
