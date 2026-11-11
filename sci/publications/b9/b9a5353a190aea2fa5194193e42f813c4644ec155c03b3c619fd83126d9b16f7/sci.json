@@ -1,0 +1,123 @@
+{
+ "title": "Isopycnal salinity supports the sigma0 26.5 ventilation model west of 150 W; the model misses the 1997-2025 salt gain off California, which gives 3-9 of 24 umol/kg AOU gain there",
+ "abstract": "Question: does the two-dimensional outcrop-ventilation model of North Pacific sigma0 26.5 oxygen loss (sci:4525c37f) also give the observed change of isopycnal salinity, an independent conservative tracer, and does a water-mass change explain its California AOU excess? Approach: we added salinity tracers to the unchanged model and its 8 tracer-age-calibrated parameter sets, with source salinity from WOA23 decadal fields, and compared 2009-2025 minus 1984-1996 changes with published World Ocean Database ship and Argo epoch changes in 11 pre-set regions. The plan was fixed before any model salinity was calculated. Results: west of 150 W the water on 26.5 became fresher by 0.024-0.074 psu. The primary tracer had the observed sign in 10-11 of 11 regions (pre-set tests passed; median r 0.77, RMSE 0.031 against 0.044 psu), but gave only 4-63% of the western size; a winter-surface source gives the full size. In the model, about half of the western freshening comes from fresher winter source water and half from ventilation that moved into fresher water. East of 140 W the water became saltier (California +0.023, northern California Current +0.019 psu; already +0.025 to +0.035 in 1997-2008; unprecedented since 1956). No fixed-flow tracer gives this (-0.020 to +0.012). The decadal flow change gives a California salt gain too late and too large and none farther north. With the regional AOU-salinity slope, the unmodelled salt gain gives 3-9 of the 23.9 umol/kg California AOU gain: the median observed/model ratio falls from 2.15 to 1.42-1.78. Limitations: one isopycnal, 1-degree model without the coastal undercurrent, smoothed decadal WOA23 fields, two imperfect source-salinity definitions (one failed the pre-set climatology check in one set), published regional aggregates with few recent cruises in some regions, and a factor-2 uncertainty in the AOU-salinity slope.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Pacific",
+  "sigma0 26.5",
+  "isopycnal salinity",
+  "spice",
+  "ventilation",
+  "outcrop",
+  "California Current",
+  "CalCOFI",
+  "water mass",
+  "AOU",
+  "WOA23",
+  "World Ocean Database",
+  "Argo",
+  "model test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_regions.png",
+   "caption": "Observed (black, 95% cruise-bootstrap interval) and model salinity change on sigma0 26.5 in 11 regions, west to east. Top: 2009-2025 minus 1984-1996; bottom: 1997-2008 minus 1984-1996. Model tracers: S_obs (primary) and S_fixsrc with fixed flow (8 sets), S_obs with decadal flow (4 sets). The model gives the western freshening but not the eastern salt gain."
+  },
+  {
+   "path": "files/figures/fig1_maps.png",
+   "caption": "(a) Change of WOA23 late-winter surface salinity with the 26.5 and 26.2 late-winter outcrop lines; (b) model S_obs change on 26.5 (best set) with the observed regional changes as box colours and labels; (c) the same with source salinity fixed at 1965-1984."
+  },
+  {
+   "path": "files/figures/fig4_ccs.png",
+   "caption": "(a) Observed salinity anomaly on 26.5 off southern California (CCS) and in the northern California Current, and model CCS series with fixed flow (blue) and decadal flow (green). (b) Observed CCS AOU gain, the gain after removing the salinity-implied unmodelled mix term (WOA23 slope), and model gains."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+   "relations": [
+    "uses",
+    "reviews",
+    "supports",
+    "challenges"
+   ],
+   "reason": "We reuse its model code, fields and parameter sets unchanged; the salinity test supports its water-mass change west of 150 W and shows that its California AOU excess is partly an unmodelled salt gain; the decadal-flow mechanism gives the wrong salinity timing."
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Observed epoch changes and annual series of salinity and AOU on sigma0 26.5 (TZ, GYR, WEST, CCS, NCC and longitude bands)."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Observed epoch changes of salinity and AOU on sigma0 26.5 in the western North Pacific regions."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [
+    "uses"
+   ],
+   "reason": "WOA23 late-winter surface sigma0 maps (inside the model fields file); we reproduced them exactly."
+  },
+  {
+   "target": "sci:sha256:ea67ca59c8c830609ef22a9e4feaddc1ba6a3e2aa317a0afefc81f17fcfc03e3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "CalCOFI oxygen-salinity slope for T5; our eastern salt gain is the water-mix change that it found for 1997-2008."
+  },
+  {
+   "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CFC-12/SF6 tracer ages that calibrated the model parameter sets."
+  },
+  {
+   "target": "sci:sha256:431f2155311f350dc6bc6940efe31f15992cc2d3a01d116090474666fa40c8a3",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its fresher western outcrop surface is the source change that makes most of the model's western 26.5 freshening."
+  },
+  {
+   "target": "sci:sha256:5f1c245bceaa5f1acb5d9d7721c02399cc9ac35507cc25238709f8bf8f263992",
+   "reason": "Class-resolved O2 loss on the classes that stopped outcropping."
+  },
+  {
+   "target": "sci:sha256:21ae52cf9d0e24f827f7e090eda5a0912177d80251d965f1562a6a1d6dac6f10",
+   "reason": "Equivalent density-shift explanation of the AOU change."
+  },
+  {
+   "target": "sci:sha256:bfaf6c907a3921f24772235a5c558c20640093bacf1d6aab37774570994ba61e",
+   "reason": "Three-phase western surface-density history."
+  },
+  {
+   "target": "sci:sha256:d2aed83cfe2b4a27207c5bd10e25b2398ade09b4a6955fb06bb063a7136fb0d2",
+   "reason": "The CalCOFI sigma0 26.5 oxygen low."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+   "relations": [
+    "uses"
+   ],
+   "reason": "World Ocean Atlas 2023 (NOAA NCEI), annual and January-April temperature and salinity."
+  },
+  {
+   "target": "doi:10.17882/42182",
+   "reason": "Argo float data (salinity inside the cited WOD aggregates)."
+  }
+ ]
+}

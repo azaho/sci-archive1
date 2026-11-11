@@ -1,0 +1,95 @@
+{
+  "title": "NHC earliest reasonable arrival times of tropical-storm-force winds (2018-2025, 294 storms) came after the observed onset in 14-29% of cases, not 10%; the excess was in large Atlantic storms",
+  "abstract": "Question: are the National Hurricane Center (NHC) arrival and departure times of sustained 34-kt winds calibrated, and which forecast parts cause errors? Approach: we wrote a plan before matching, then compared 6,086 archived Atlantic and eastern and central Pacific base-data files of 2018-2025 with onsets and departures in the final HURDAT2 best tracks (1.14 million advisory-point cases, 294 storms). A best-track radius is a maximum extent, so we used two area rules (P: 0.86 times the radius, the product rule; Q: the full radius) and two time comparisons (10-min, and whole hours in the product's favour). Results: observed onsets came before the earliest reasonable time (stated 10%) in 0.208 (95% storm-bootstrap 0.167-0.251) of cases for rule P and 0.287 (0.240-0.331) for rule Q; with whole-hour times 0.144 (0.106-0.185) and 0.224 (0.178-0.266). The excess was in large storms (mean 34-kt radius above 70 n mi: 0.17-0.35) and Atlantic storms (0.17-0.32). Small storms (0.06-0.13) and eastern Pacific storms (0.04-0.14) were near calibrated or conservative. At leads of 12 h or less the share was 0.14-0.54. Until 2025 the model had almost no hour-0 spread, and a larger final best-track radius at the advisory time raised the 0-12 h share to 0.49 (rule P). Against the official deterministic forecast, onsets were 1.24 h early on average: 0.73 h from 34-kt radius errors and 0.51 h from track errors (Atlantic 0.93 and 0.59 h; eastern Pacific near zero). Late departures were found only with pooled weights. In 2026 the base data gained hour-0 spread, but an exploratory check did not show a smaller short-lead excess under rule Q. A 1-3 h earlier shift fitted on 2018-2023 gave 2024-2025 shares of 0.09-0.17 (exploratory). Limitations: the truth is a best-track wind area, not station data; the size of the excess depends on the area rule and time rounding; neighbouring cases are dependent.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "tropical cyclone",
+    "National Hurricane Center",
+    "arrival time",
+    "tropical-storm-force winds",
+    "forecast verification",
+    "calibration",
+    "Monte Carlo wind speed probability",
+    "wind radii",
+    "HURDAT2",
+    "pre-registered",
+    "hazard communication",
+    "operational forecast"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_primary.png",
+      "caption": "Observed shares of the four pre-registered timing statistics (2018-2025, 294 storms) against stated levels. Blue: rule P (0.86 x radius); orange: rule Q (quadrant maximum). Filled: 10-min observed times; hollow: whole-hour comparison in the product's favour; square: equal storm weight. Error bars: 95% storm-cluster bootstrap."
+    },
+    {
+      "path": "files/figures/fig2_strata.png",
+      "caption": "Share of observed onsets before the earliest reasonable arrival time (TOA10) by lead time, 34-kt radius at the advisory time, basin and intensity, in all four versions. The stated share is 0.10 (dashed)."
+    },
+    {
+      "path": "files/figures/fig3_sources.png",
+      "caption": "Sources (rule P). A: mean onset error against the official deterministic forecast, split into track and 34-kt radius parts. B: issued early-side width against observed widths. C: TOA10 share by lead and by the hour-0 radius difference between the final best track and the operational analysis."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:9f7a7c98a4f7116e0cdd8d96be9731dc69feac307715d4ad117f5d1a255659ce",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We reuse its HURDAT2 and ATCF parsing and download code and its 0.86 product radius factor. Our timing results show the same storm-size error and the same 2026 hour-0 change in a second NHC product."
+    },
+    {
+      "target": "sci:sha256:79d010f62ceec89138cced134214d3e4b06ac113305ae7babb08ea6da1521b70",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its wind speed probabilities were too low in the Atlantic and too high in the eastern Pacific; our arrival times show the same basin pattern."
+    },
+    {
+      "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+      "reason": "ATCF archive download recipe and an earlier test of NHC probabilistic guidance."
+    },
+    {
+      "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+      "reason": "Earlier test of NHC track error circles in the same campaign."
+    },
+    {
+      "target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e",
+      "reason": "Earlier test of another NHC probabilistic product in the same campaign."
+    },
+    {
+      "target": "doi:10.1175/2009WAF2222286.1",
+      "reason": "DeMaria et al. (2009): the Monte Carlo wind speed probability model that also makes the arrival times."
+    },
+    {
+      "target": "doi:10.1175/WAF-D-12-00116.1",
+      "reason": "DeMaria et al. (2013): improvements to the wind speed probability model."
+    },
+    {
+      "target": "doi:10.1175/MWR-D-12-00254.1",
+      "reason": "Landsea and Franklin (2013): HURDAT2 best-track database used as truth."
+    },
+    {
+      "target": "https://ftp.nhc.ncep.noaa.gov/toa/",
+      "reason": "NHC TOA/TOD base data archive (the tested product)."
+    },
+    {
+      "target": "https://www.nhc.noaa.gov/arrivaltimes/toapdd.pdf",
+      "reason": "NHC product description of the arrival time graphics."
+    },
+    {
+      "target": "https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_table4-2-0-2.shtml",
+      "reason": "NCEP GRIB2 table that defines parameters 227-230 (TOA10, TOA50, TOD50, TOD90)."
+    }
+  ]
+}

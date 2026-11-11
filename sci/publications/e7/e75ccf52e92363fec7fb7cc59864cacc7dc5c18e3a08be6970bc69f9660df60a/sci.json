@@ -1,0 +1,151 @@
+{
+ "title": "DOISST v2.1 shows one third of its 7 July 2020 satellite-input step near drifting buoys (0.02 against 0.06 C, 60S-60N), so buoy checks underestimate it; the 2005 step is reduced less",
+ "abstract": "Question: NOAA Daily OISST v2.1 (DOISST) has a warm step of about 0.07 C on 7 July 2020, caused by a change of the Navy MetOp-A AVHRR input from L2P v1.0 to v2.0. Buoy checks show a much smaller step. Where does DOISST keep the step, and how much can buoy validation see? Approach: we measured the step of DOISST minus ERA5 in bins of distance from the nearest in situ observation of the same day (iQuam drifting buoys, moorings, Argo floats, ships), with 30-day windows and control years, and repeated the test for the 1 January 2005 step. We added a lag test, a placebo date, the local analysis gain toward in situ data, and an independent test of the NAVO input offset against drifters. Results: in cells with a drifting buoy on the same day, the 2020 step is +0.020 C (95% interval 0.013 to 0.029); it is +0.039 C at 50-100 km, +0.057 C at 100-200 km and +0.062 to +0.066 C at 200-800 km. The area-weighted step is +0.059 C, so drifter cells show 34% of it; 66% of the ocean is more than 200 km from a same-day drifter. Ship cells show the full step (+0.071 C). The 2005 step is +0.072 C at drifter cells and +0.125 C at 200-800 km (ratio 0.58). A placebo date gives near zero in all bins. The same-day gain toward drifters stays at about 0.13-0.18 from 1984 to 2021 (ships 0.02-0.035), and on 2-degree boxes the step does not depend on drifter density, so the reduction is local. NAVO MetOp-A minus drifters changes by +0.096 C (0.055 to 0.137) relative to 2019, and v2.0 keeps 1.43 times more pixels. Conclusion: validation against assimilated drifters sees about one third of a satellite-input step; drifter and mooring estimates of 0.03-0.04 C for 2020 are 2-3 times too small. Limitation: ERA5 is the reference and must have no step at these dates; distance bins also sample different regions; DOISST internal data are not public.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "data assimilation",
+  "optimum interpolation",
+  "drifting buoys",
+  "validation",
+  "homogeneity",
+  "step change",
+  "NAVO AVHRR",
+  "GHRSST L2P",
+  "ERA5",
+  "iQuam",
+  "climate data record"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_anchoring.png",
+   "caption": "Step of DOISST minus ERA5 by distance from the nearest same-day in situ observation at 7 July 2020 (a) and 1 January 2005 (b), with 95% intervals; step of DOISST minus drifting buoys by lag (c)."
+  },
+  {
+   "path": "files/figures/fig1_step_timing.png",
+   "caption": "(a) Daily DOISST minus ESA CCI and minus ERA5, June-August 2020, with the ramp of an input change at 6 July 12 UTC seen through a 3-day window; (b) monthly differences 2018-2024."
+  },
+  {
+   "path": "files/figures/fig3_navo_input.png",
+   "caption": "(a) Change of NAVO MetOp-A L2P minus same-day drifting buoys across 7 July in 2020 (v1.0 to v2.0) and 2019 (v1.0 only); (b) quality level 5 pixels per 0.25-degree cell-day."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Found the 7 July 2020 step; we reuse its daily DOISST-minus-CCI series (figure 1) and explain why its buoy estimate is small."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found the NAVO v1.0 to v2.0 cause; our independent input-offset test agrees, and our distance test explains its small DOISST-minus-drifter change."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Homogenised DOISST including the 2020 step."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28"
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71"
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873"
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888"
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172"
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f"
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4"
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302"
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da"
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074"
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7"
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d"
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1"
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://podaac.jpl.nasa.gov/dataset/AVHRRMTA_G-NAVO-L2P-v1.0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://podaac.jpl.nasa.gov/dataset/AVHRRMTA_G-NAVO-L2P-v2.0",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/oceans/ghrsst/L2P/AVHRRMTA_G/NAVO/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.star.nesdis.noaa.gov/pub/socd/sst/iquam/v2.10/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
