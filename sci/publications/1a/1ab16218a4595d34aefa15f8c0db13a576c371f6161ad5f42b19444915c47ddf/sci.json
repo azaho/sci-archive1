@@ -1,0 +1,195 @@
+{
+ "title": "The CRW four-month outlook rules alone give its 3.7-times Alert over-forecast: a perfect-SST emulation at 3,595 reef cells (2019-2025) matches the measured error",
+ "abstract": "Question: what causes the Alert over-forecast of the NOAA Coral Reef Watch (CRW) Four-Month Coral Bleaching Outlook? The earlier SCI study a1c89b0a measured Alert 1+ probabilities 3-4 times too high at weeks 9-20 (2019-2026) and suggested a warm model SST offset. Approach: the outlook adds every predicted HotSpot above a threshold that falls from 1 deg C at lead day 0 to 0 deg C at day 70; the satellite product adds only HotSpots of at least 1 deg C. We applied the published outlook rules to observed SST (NOAA OISST v2.1) as a perfect forecast at 3,595 reef cells for 329 weekly issues (2019-04 to 2025-08), and compared with the satellite rules on the same SST. We measured the sub-monthly SST damping of 36 CFSv2 forecasts. Six predictions were pre-registered; all passed. Result: with a perfect forecast the rules give Alert 1+ observed/expected 1.23 at week 1 and 0.27 (95% interval 0.23-0.31) at weeks 9-20; the measured outlook value is 0.25. The rule explains 0.94 (0.85-1.05) of the measured log error, and the pattern by issue year (Spearman 0.89), region (0.94) and reef cell (0.69). CFSv2 sub-monthly variability is 0.76-0.80 of OISST and does not change with lead; even with no sub-monthly variability the rules give 0.27, so the ramp corrects for damping about 5 times too strongly. A long-lead threshold near 0.8-0.9 deg C would be neutral. In a 1985-2025 emulation the rule-only false-Alert excess rose from 1.6% to 14.6% of reef cell-weeks as heat just above the climatological maximum increased. Limitations: the emulation has no model bias or ensemble spread; short-lead (weeks 1-4) errors are not explained; truth is OISST, not the CRW 5km product.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "coral bleaching",
+  "Coral Reef Watch",
+  "seasonal forecast",
+  "forecast verification",
+  "degree heating weeks",
+  "HotSpot threshold",
+  "CFSv2",
+  "OISST",
+  "algorithm attribution",
+  "perfect-model emulation",
+  "marine heatwave",
+  "hazard products",
+  "pre-registration",
+  "reliability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ratio_by_lead.png",
+   "caption": "Observed/expected (log scale) by lead week for Alert 1+, Warning+ and Watch+. Blue: measured CRW outlook error (a1c89b0a, bin mid and bin range). Orange: perfect SST forecast run through the published outlook rules. Green and violet: forecast SST with reduced or no sub-monthly variability. Grey dashed: perfect SST with the satellite 1 deg C threshold at all leads. Issues 2019-04 to 2025-08, 3,595 reef cells."
+  },
+  {
+   "path": "files/figures/fig6_cfs_damping.png",
+   "caption": "CFSv2 sub-monthly SST variability at reef cells as a fraction of OISST (36 operational runs, 95% run-bootstrap intervals) is constant near 0.78, while the published HotSpot threshold falls from 1 to 0 deg C by day 70."
+  },
+  {
+   "path": "files/figures/fig5_long_record.png",
+   "caption": "Left: Alert 1+ frequency at weeks 9-20 by issue year 1985-2025: satellite-rule truth, perfect SST with the published rule, and perfect SST with a 1 deg C threshold. Right: annual HotSpot sums per reef pixel below and above 1 deg C."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Measured outlook error tables and reef cells. We support its finding that Alert probabilities are too high at long leads and challenge its suggested cause (a warm model SST offset): the published threshold rule alone gives the measured excess."
+  },
+  {
+   "target": "doi:10.3389/fmars.2018.00057",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Outlook algorithm (Table 1, Figure 1): lead-time dependent HotSpot and DHW thresholds that we emulate and test."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2.1 daily SST used as truth and as the perfect forecast."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00823.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CFSv2 operational forecasts; ocean top-layer temperature used to measure sub-monthly damping."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "reason": "CRW satellite heat-stress product definitions."
+  },
+  {
+   "target": "https://noaa-cfs-pds.s3.amazonaws.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA open-data bucket of CFSv2 operational output (36 runs, see provenance/cfs_runs.csv)."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PSL distribution of OISST v2.1 daily files (hashes in provenance/oisst_files.csv)."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:9a5644cd2c4ad6eb4505f4f72617e1460e936eb409f7b84fde22c9169df9a304",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:80ba4ccecfcc615e3c6590f0f09a8f77e122714e4196a27d8cad04af0908f2cd",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:0c7c6b6479f6ea2983944717112800efa58a904159cfa2c36ffb86b8589d9c84",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:baf949859f081b99e648dc1c95df01b0d0c7157a8f91a16387d0a440e8a50a9e",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:79d010f62ceec89138cced134214d3e4b06ac113305ae7babb08ea6da1521b70",
+   "reason": "Earlier campaign verification of a public hazard product."
+  },
+  {
+   "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+   "reason": "Earlier campaign verification of a public hazard product."
+  }
+ ]
+}
