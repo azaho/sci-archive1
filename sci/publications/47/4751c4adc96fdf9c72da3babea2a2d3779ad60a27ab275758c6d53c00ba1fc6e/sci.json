@@ -1,0 +1,166 @@
+{
+ "title": "The 1 January 2005 DOISST v2.1 warm step (+0.07 C, 60S-60N) is not from its sea-ice input or a sudden Pathfinder input change; it forms in the analysis as ICOADS input became real-time data",
+ "abstract": "Question: NOAA Daily OISST v2.1 (DOISST) has an unexplained warm step of about +0.07 C at 60S-60N on 1 January 2005. NOAA documents only a sea-ice input change on that date. Which input causes the step? We also found that the DOISST in situ input, ICOADS Release 2.4, took delayed-mode data up to 2004 and real-time GTS data from 2005. Approach: we binned archived Pathfinder v5.0 AVHRR files (the DOISST satellite input) and 5.5 million ICOADS R3 cell-days onto the DOISST grid for 2003-2006. We measured monthly steps against ERSSTv5 and HadSST4 with placebo dates, the change within one week of 1 January against moored buoys at the same cells, a year-on-year test inside one Pathfinder processing run, and the step against distance from ice. Results: the step is the largest New-Year change of DOISST minus ESA CCI in 1983-2024 (+0.095 C, z 3.7). Against ERSSTv5 it is +0.073 C (95% interval 0.060 to 0.086) and against HadSST4 +0.072 C; the 2004 and 2006 placebos are -0.040 to -0.016 C. It is zero within 500 km of ice (-0.004 C) and largest more than 4000 km from ice (+0.078 C), so the ice input is not the cause. In the week after 1 January DOISST rises against moored buoys by +0.083 to +0.093 C, but Pathfinder does not change (-0.006 and +0.013 C). DOISST also rises against ships and drifters at their own cells. Within one Pathfinder run, Pathfinder is 0.044 C warmer in January-May 2005 than in 2004, but this rise starts in February-March and is within its year-to-year drift. The archived Pathfinder record is three processing runs, one made after the DOISST v2 release. Conclusion: the step forms in the DOISST analysis; the change from delayed-mode to real-time in situ data is the best remaining cause. Limitation: the real-time data are no longer distributed, so we could not test that cause directly.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "data homogeneity",
+  "step change",
+  "AVHRR Pathfinder",
+  "ICOADS",
+  "real-time GTS data",
+  "sea ice input",
+  "satellite bias correction",
+  "climate data record",
+  "2005 step"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timing.png",
+   "caption": "Timing of the 1 January 2005 step: (a) DOISST minus ESA CCI around 1 January 2005 and the mean of 40 other New Years; (b) DOISST and Pathfinder minus moored buoys at the same cell-days (2005 solid; 2004 and 2006 controls); (c) DOISST minus its Pathfinder input more than 1000 km from ice."
+  },
+  {
+   "path": "files/figures/fig2_ice_distance.png",
+   "caption": "The 2005-01 step against distance from DOISST ice: the step is zero near ice and largest far from ice, and far from ice it is in DOISST minus Pathfinder, not in Pathfinder."
+  },
+  {
+   "path": "files/figures/fig3_monthly_processing.png",
+   "caption": "Monthly differences 2003-2006 more than 1000 km from ice with the three archived Pathfinder processing runs; DOISST minus ERSSTv5 jumps in January 2005 while Pathfinder minus ERSSTv5 does not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Found the 2005 step; we reuse its daily DOISST minus CCI series and test the cause."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Found the 2005 step largest far from in situ data; we interpret this with the in situ cause.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "Traced the 2020 step to a satellite input; we apply the input test to the 2005 step."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its homogenisation removes the 2005 step; we show the step is an artifact of the analysis."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mean-and-variance homogenised DOISST that corrects the 2005 step."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Homogenisation ensemble that includes the 2005 step correction."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "The 2005 step affects its east-Pacific and 50-60S trend results."
+  },
+  {
+   "target": "sci:sha256:167ff86ca3b81d308096062c4863910288826089224fa25e968c1f2e0b8fcda3",
+   "reason": "Joint drift fit of the DOISST steps."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Found the 2005 polar ice splice; we show it does not cause the 60S-60N step."
+  },
+  {
+   "target": "sci:sha256:5cba350c208ed7bd77e5299827bffe69cdfc2df12c654969a0da37d5f35d5ec1",
+   "reason": "Tests the 2020 NAVO offset by sampling groups; a related input-attribution study."
+  },
+  {
+   "target": "doi:10.5194/essd-8-165-2016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST input table (ICOADS 2.4 for 1981-2006, ice GSFC to NCEP in 2005)."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "reason": "DOISST method and bias correction."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1002/joc.2103",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ICOADS Release 2.4 composition: delayed-mode to 2004, real-time from 2005."
+  },
+  {
+   "target": "doi:10.1002/joc.4775",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ICOADS Release 3.0 in situ reference."
+  },
+  {
+   "target": "doi:10.1007/978-90-481-8681-5_16",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVHRR Pathfinder SST program."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 reference."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 used in the prior daily series."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/oceans/pathfinder/Version5.0/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pathfinder v5.0 files."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/international-comprehensive-ocean-atmosphere/v3/archive/netcdf/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ICOADS R3.0.0 monthly files."
+  }
+ ]
+}
