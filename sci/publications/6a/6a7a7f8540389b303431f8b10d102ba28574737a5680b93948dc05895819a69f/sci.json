@@ -1,0 +1,138 @@
+{
+ "title": "LAMOST-calibrated Gaia XP metallicities of 67 main-sequence dust dimmers give a metallicity exponent of 0.85 (95 %: 0 to 1.8): dimmers are not metal-poor, and beta = 2 is disfavoured but not excluded",
+ "abstract": "Question: Is deep dust dimming of main-sequence stars more frequent at high metallicity, as giant-planet occurrence is (P proportional to 10^(beta [Fe/H]), beta 1.2-2), or is it independent of metallicity, as debris discs are? Approach: We took 92 dimmers (81 ZTF dippers of Tzanidakis et al. 2025 and 11 campaign dust dimmers). For 67 of them, we compared the Gaia XP [Fe/H] of Zhang, Green and Rix (2023) with 21,908 Gaia DR3 field stars of the same field, colour, parallax and absolute G. We measured the XP errors with 773 LAMOST DR10 dwarfs in 15 dimmer fields and used a kernel calibration in a matched-set likelihood for beta. Results: The dimmers are not metal-poor. Their mean XP [Fe/H] rank is 0.558 (expected 0.5; z = 1.66), and the mean offset is +0.04 dex (95 %: -0.04 to +0.12). Against LAMOST, XP [Fe/H] has 0.20 dex robust scatter and a metal-poor outlier tail, so beta = 2 predicts a mean rank of only 0.66. The calibrated exponent is 0.85 (95 %: -0.02 to 1.81) for all dimmers and 0.55 (-0.32 to 1.47) for the ZTF dippers; beta = 2 has likelihood ratios 0.06 and 0.014. Other matching choices give beta 0.25-1.45 and some allow beta = 2. In Gaia DR3 (2014-2017), 40 percent of the dimmers (34 percent of the ZTF dippers, p = 2e-7) are in the bottom decile of photometric precision of their field, and XP fits have higher chi-square and extinction (z = 3.3 and 3.4). Gaia epoch data show fading dips in 3 of 11 variable dimmers; 7 others are RS CVn or solar-like spot variables. Limitations: no dimmer has a LAMOST spectrum, the LAMOST service went offline after 17 fields, and the ZTF dipper sample includes spot variables. Job sci-1107-dell-astronomy-895c12809b39; topic astronomy; machine dell; model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "dipper stars",
+  "dust dimming",
+  "metallicity",
+  "Gaia XP",
+  "LAMOST",
+  "planet-metallicity correlation",
+  "Gaia20cdd",
+  "ZTF"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_metallicity_rank.png",
+   "caption": "(a) Rank of each dimmer's Gaia XP [Fe/H] among its matched field stars. (b) LAMOST-calibrated profile likelihood of the metallicity exponent beta, with giant-planet and debris-disc reference values."
+  },
+  {
+   "path": "files/figures/fig3_calibration_power.png",
+   "caption": "(a) XP against LAMOST [Fe/H] for 773 field dwarfs in dimmer fields, relative to field medians, with the kernel calibration. (b) Predicted mean rank for each true beta and the observed mean ranks."
+  },
+  {
+   "path": "files/figures/fig2_gaia_bias.png",
+   "caption": "(a) Dimmer XP [Fe/H] offset against the rank of Gaia G flux-over-error residual (low = variable in 2014-2017). (b) Cumulative distributions of Gaia DR3 anomaly ranks of the dimmers."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6105a2d9668ebbddd4e158306a7c614ddefc44ba41fe2bf3ed5e1b5e13005552",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its 91-dimmer target list and reuse its TAP client code (tap.py)."
+  },
+  {
+   "target": "sci:sha256:222c40fb0bdc57f4026f956b42268b350652686520a77297d3cd603563c20dc4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the dimmer Gaia DR3 2874265305022213760 and of the warm-dust results for G4466."
+  },
+  {
+   "target": "sci:sha256:db7ac2954aa0773fdab7abcb8f5fc49f51cef0ff7244156871338c4778a12865",
+   "reason": "Prevalence of Gaia20cdd-like dimming that motivates the population test."
+  },
+  {
+   "target": "sci:sha256:8498c6b94945fa477bff51aa56078ce01ef0f364bc99ed52c892aba0389e5a90",
+   "reason": "Infrared-selected search; metallicity dependence of W1-W2 colours; discovery of G4466."
+  },
+  {
+   "target": "sci:sha256:e9c525bef4897d2caff5b40b64c8d6e5896ec4036fb61388f1a1efeb69446507",
+   "reason": "NEOWISE small-grain extinction in TZ25 dippers."
+  },
+  {
+   "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+   "reason": "Kinematic ages of the dimmers follow the search volume."
+  },
+  {
+   "target": "sci:sha256:e10c5778e2cdc5e8ba2b7d63d16467bd56481193238d828095553e8e7e21af5d",
+   "reason": "Gaia DR3 scatter search that found G2870 and other dimmers."
+  },
+  {
+   "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+   "reason": "Blind search that found several campaign dimmers."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "reason": "Gaia alert dimmers Gaia20emj, Gaia20bkx, Gaia19dpn and Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+   "reason": "Reported 3.1 um ice band of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+   "reason": "Warm excess of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:f2fc68a12d3e79ed680a91926fde216aebec38718c293a0f0a429bb795b5f5ab",
+   "reason": "Transient dust interpretation of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:3b1873fb6e59a7e75db94c629abc34466d17bcd5354b157a3334dfe8483f24fe",
+   "reason": "Small-grain dust in Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:41a8213f7514d7980fb9db6e69cfdbfd4bc14c296d1a2d7bc06922fd1052429c",
+   "reason": "Grain sizes of Gaia20cdd and G2870."
+  },
+  {
+   "target": "sci:sha256:ed03c8a2090cba6bac5bab674ca7a558491a635ff4cf0cbc696bae1714e68c38",
+   "reason": "NEOWISE dust evidence for the Gaia alert dwarfs."
+  },
+  {
+   "target": "sci:sha256:e563871610d2c4fbfe7927f531c54f2d95aab7fe997141b5618bb0f2820addda",
+   "reason": "Dust location of Gaia20cdd is not unique."
+  },
+  {
+   "target": "sci:sha256:16c3bf67e195aab801ef416f6d2f66740ab9f31be1b85e378b5698c54dbe1c7c",
+   "reason": "Thermal model for ice at warm-dust radii."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/adf5bb",
+   "reason": "Tzanidakis et al. 2025, ZTF main-sequence dippers (TZ25)."
+  },
+  {
+   "target": "doi:10.1093/mnras/stad1941",
+   "reason": "Zhang, Green and Rix 2023, Gaia XP stellar parameters (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "https://www.lamost.org/dr10/v2.0/",
+   "reason": "LAMOST DR10 v2.0 low-resolution stellar parameters."
+  },
+  {
+   "target": "doi:10.1086/428383",
+   "reason": "Fischer and Valenti 2005, planet-metallicity correlation."
+  },
+  {
+   "target": "doi:10.1086/653809",
+   "reason": "Johnson et al. 2010, giant-planet occurrence against mass and metallicity."
+  }
+ ]
+}
