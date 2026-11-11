@@ -1,0 +1,66 @@
+{
+  "title": "Monthly SST step corrections need changes in adjacent AMIP boundary months in ice-free water",
+  "abstract": "We tested how monthly SST input errors enter adjusted AMIP mid-month boundary values under linear interpolation without freezing-point clipping. A Gregorian-calendar inverse gives the required boundary correction. For an isolated 0.220 K November 2021 pulse, the boundary correction is 0.309 K at mid-month and about -0.054 K at each adjacent month. Direct subtraction at the knots leaves up to 0.0541 K of monthly error. A sweep of 366 step dates shows that keeping the event month and three months on each side limits the remaining monthly error to 0.000785 times the step amplitude. A released PCMDI-AMIP-OI2p1 1.0 file check at 144 warm grid points and 70 months recovers monthly observations from boundary knots with 0.000128 K RMS error. Some points are filled land cells. We also show that exact monthly averaging preserves any fixed instantaneous linear spatial radiation response, so this processing alone cannot remove published monthly linear radiation-trend gaps. This is an implementation method and audit, not a new SST error estimate or an atmosphere-model experiment. Daily event shapes, clipping, model memory and nonlinear responses remain outside the test.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "AMIP",
+    "boundary conditions",
+    "monthly means",
+    "input artifacts",
+    "temporal interpolation"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Calculated transfer of isolated monthly errors to boundary knots and residuals from two correction methods. Event sizes are specified examples, not new measurements."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a2396d68cd6a5f11174018034fd42aea918b918ba4290dd7ee3ab5f0483f587c",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://pcmdi.github.io/mips/amip/details/"
+    },
+    {
+      "target": "https://pcmdi.llnl.gov/report/pdf/60.pdf"
+    },
+    {
+      "target": "doi:10.25981/ESGF.input4MIPs.CMIP7Plus/2584107"
+    },
+    {
+      "target": "doi:10.1029/2025GL115914"
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2292.1"
+    },
+    {
+      "target": "sci:sha256:d7cf1b9ecb74cd88c6eef3d44355aa409e75d521442e8b5b56fafc5fa385350f",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects the sign of plotted residual monthly errors in the lower panels. Absolute errors, all tables, and conclusions are unchanged."
+    }
+  ]
+}
