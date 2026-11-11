@@ -1,0 +1,65 @@
+{
+  "title": "Five-day windows showed no clear added SWPC storm outlook skill over recurrence in 2018-2025",
+  "abstract": "We tested whether timing tolerance reveals added skill in NOAA SWPC 27-day numerical outlooks. We reused a fixed published archive and fit probability models on 2010-2017. In 2018-2025, the five-day event test used 6,384 forecasts from 400 issues on 2,903 target dates. Adding issued outlook values to a recurrence model with the same event window reduced Brier error by 1.43%, with conditional 95% 112-day block limits of -1.58% to +4.57%. One-, three- and seven-day tests also gave no clear gain. A new diagnostic conditioned each issue on its observed storm-day count. It removed a common issue-wide odds level and tested placement of storm days. The placement log-score gain was 1.53% (-1.15% to +4.09%) in 273 informative issues. An exact count-plus-placement score split gave uncertain gains in both parts. These controls did not expose a clear hidden timing gain. The method uses established conditional probability results. This is a retrospective application to the same archive, not independent validation or a measurement of solar wind arrival error. Eight test years, one probability model, revised historic inputs and an independent-day candidate joint law limit inference. Code, source entry hashes, original data provenance, fitted models, aggregate scores and checks are included. External record tables stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.space-ph"
+    }
+  ],
+  "keywords": [
+    "SWPC",
+    "geomagnetic forecast",
+    "recurrence",
+    "timing",
+    "conditional score",
+    "forecast verification",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/window_skill.png",
+      "caption": "Added Brier skill over a recurrence model with the same event window. Conditional 95% intervals use 112-calendar-day blocks. All four intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:85c6108096517151cf6668588cbb78336695bead6112e64e3a5f0b80b2e92d04",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its verified full weekly forecast and observation tables. Adds timing-window models and a count-versus-placement score diagnostic on the same archive."
+    },
+    {
+      "target": "sci:sha256:baf949859f081b99e648dc1c95df01b0d0c7157a8f91a16387d0a440e8a50a9e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Short-lead physical attribution motivates care in separating arrival error from activity level; we do not test its solar wind observations."
+    },
+    {
+      "target": "doi:10.1029/2020SW002624",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://support.sas.com/documentation/cdl/en/statug/68162/HTML/default/statug_logistic_details53.htm",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/disclaimer.php"
+    }
+  ]
+}
