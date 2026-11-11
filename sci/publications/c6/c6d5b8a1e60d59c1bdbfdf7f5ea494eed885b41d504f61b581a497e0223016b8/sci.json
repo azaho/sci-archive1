@@ -1,0 +1,104 @@
+{
+  "title": "Observed annual flow cut later runoff error, but recursive history had no clear gain at 188 south-east Australian catchments in 2010-2021",
+  "abstract": "Can useful annual runoff history explain the persistent post-1997 runoff deficit? We fitted weather-only and weather-plus-previous-flow ridge models before 1997 at 188 south-east Australian catchments. We then supplied the same measured weather to two runs of each lag model. One run used observed previous flow; the other used its own previous prediction, with no later flow reset. In 2010-2021, observed history cut normalized squared error by 6.68% (conditional 95% limits 2.12 to 10.13) with annual weather controls and 3.76% (0.22 to 5.98) with detailed controls. Recursive history gave 0.04% (-2.09 to 1.98) and 0.48% (-1.64 to 1.92). Recursive runoff stayed 17.40% and 17.90% below prediction, relative to the pre-1997 mean. Observed history reduced these deficits by only 1.55 and 0.65 percentage points. Complete daily-flow, nonnegative, fixed-penalty, mainland and square-root checks retained the paired distinction. A fixed linear identity shows how observed flow can pass an unexplained deficit into the next prediction. Thus the tested flow-history skill does not provide a climate-driven simulation of the persistent loss. This result concerns two annual regularized model forms. It cannot exclude long physical storage memory or identify the cause. Short records, related gauges, source errors and conditional uncertainty limit inference. Code, exact source hashes, aggregate uncertainty samples, independent solver and information-flow audits, and a raw-source repeat are supplied. External records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "anzsrc-for-2020",
+      "code": "370704"
+    }
+  ],
+  "keywords": [
+    "rainfall-runoff",
+    "Millennium Drought",
+    "hydrological memory",
+    "autoregression",
+    "recursive simulation",
+    "observed flow inputs",
+    "CAMELS-AUS",
+    "conditional uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Paired 2010-2021 test. Left: runoff departures relative to pre-1997 mean flow. Right: normalized error gains over weather-only models. Limits sample common year blocks and spatial cells. Fits stop in 1996; the recursive models use no later flow observation."
+    },
+    {
+      "path": "files/annual.png",
+      "caption": "Annual aggregate runoff departures in 1997-2021. The observation-fed and recursive runs use identical fitted coefficients and measured weather."
+    },
+    {
+      "path": "files/diagnostic.png",
+      "caption": "Left: decay of an initial-flow perturbation in the fitted linear models, added after the primary results. This does not bound physical storage memory. Right: an exact illustrative constant-offset example; its parameters are not fitted to the observations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:59477deccf09e87cbdf8ce2c84996cb9857685360a68f85de96c3667deeb3563",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We adapt its annual source preparation and retrieval code, then compare observed and recursive flow inputs with coefficients fixed before 1997."
+    },
+    {
+      "target": "sci:sha256:1523d567c95cc1d171fb94de7c0aff53e7a5bf8b5eeff53341faf7cd73fdf532",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Own-history gain after regional history motivates a direct test of simulation without later flow observations."
+    },
+    {
+      "target": "sci:sha256:f5ad8484d2368ce55f757cbe9521b8f8bc1b8e5bbe1bf71ed357a54dccf58418",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Rain-history model benchmark; our question concerns the separate information in observed flow."
+    },
+    {
+      "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Rain-response loss sets the scientific context; its slope claim is not retested."
+    },
+    {
+      "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Persistent post-drought low runoff motivates the test."
+    },
+    {
+      "target": "doi:10.5194/hess-26-5493-2022",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior hydrological tests of observed and simulated autoregressive flow inputs."
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Community review of runoff changes and possible physical causes."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2.03 source observations and location metadata; external source credit and terms are preserved."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2 data description."
+    }
+  ]
+}

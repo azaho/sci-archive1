@@ -1,0 +1,150 @@
+{
+ "title": "Young M dwarfs with a BHAC15 radiative core show no TESS CPV dips: 0 seen where the corotation-ratio model predicts 16 in 125 stars of 1-200 Myr, and dust sublimation does not explain this",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips, probably from material near corotation. Earlier work showed that the corotation-to-stellar radius ratio x explains the age decline of the CPV rate, but only for stars with BP-RP 2.4-3.8 and with a free colour term. We tested x for all colours (BP-RP 1.5-4.2) with the released TESS labels, BANYAN Sigma ages, detection efficiencies and BHAC15 radii, and added the BHAC15 radiative-core fraction at each star's group age. Among 855 rapid rotators of 1-200 Myr (P = 0.15-1 d, 77 CPVs), the 125 stars with a radiative core have no CPVs. An x-only model fitted to fully convective stars predicts 15.9 (bootstrap 12.7-19.2; p = 1e-7). At the same x, their rate is below 0.12 times that of fully convective stars (95%). Within the fully convective stars, x alone predicts each colour bin and age class. The early-M stars have 3-4 times higher signal-to-noise; ambiguous labels, a label-free sharpness score and RUWE < 1.4 give the same result. A threshold in the blackbody temperature at corotation (dust sublimation) fits worse than a Teff threshold (twice the log-likelihood difference 10.3) and leaves 7 CPVs above it. A fixed cut at 3450 K (0.36 solar masses) fits as well as radiative-core onset; the preferred model depends on the age scale. In K2, two CPV-like stars of rho Oph and Upper Sco are hotter than 3450 K and are fully convective in BHAC15 at 1-5 Myr, which agrees with a boundary that moves with core onset. The result favours confinement by the strong dipole fields of fully convective stars. Limitations: one automated vetter; non-magnetic models; 26 hot fully convective TESS stars and 2 K2 stars decide between structure and a fixed mass limit; the old-field test has no power and contains two early-M CPVs.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "scallop shell stars",
+  "M dwarfs",
+  "TESS",
+  "K2",
+  "fully convective boundary",
+  "radiative core",
+  "BHAC15",
+  "corotation radius",
+  "magnetic confinement",
+  "dust sublimation",
+  "occurrence rate"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_rate_vs_colour.png",
+   "caption": "CPV fraction of young BANYAN rapid rotators (1-200 Myr, P = 0.15-1 d) versus Gaia BP-RP. Blue: observed (68% Poisson intervals, counts under the axis). Grey: expected from an x-only model fitted to fully convective stars. Bottom: fraction of stars with a BHAC15 radiative core at their group age. No CPVs occur blueward of BP-RP = 2.4, where x alone predicts 17."
+  },
+  {
+   "path": "files/figures/fig2_teff_age_plane.png",
+   "caption": "Teff and group age of young TESS rapid rotators (grey) and CPVs (blue), with the BHAC15 radiative-core onset (orange; dashed: core mass fraction 0.4) and the best fixed Teff cut (3450 K). Green: K2 CPV-like stars of Upper Sco (plotted at 10 Myr) and rho Oph (1 Myr). All CPVs lie where BHAC15 stars are fully convective."
+  },
+  {
+   "path": "files/figures/fig3_models_variants.png",
+   "caption": "(a) Fit quality of threshold models in Teff and in corotation temperature T_eq, of the radiative-core model (no free cut) and of the x-only model (lower is better). A dust-sublimation threshold fits poorly. (b) Observed and expected (95% bootstrap) CPV counts in stars with a radiative core for 14 analysis variants."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "reason": "Uses its CPV labels, periods, Gaia photometry and light-curve scores for all colours (BP-RP > 1.5). Explains why its CPVs are absent among young early-M stars.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "reason": "Uses its BANYAN Sigma age classes and injection efficiencies for all 29,707 stars.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "reason": "Uses its stellar-parameter method unchanged. Its x-only model holds for fully convective stars of all colours without a colour term, but fails for stars with a radiative core.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "Reuses its transcribed K2 CPV-like labels (k2io.py) for the Upper Sco and rho Oph test.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "Its contraction model is the x-only baseline that we test across stellar colour."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "reason": "Its clump model has a colour term in the clump intensity; we show that the colour dependence comes mostly from the radiative-core boundary."
+  },
+  {
+   "target": "sci:sha256:67a1cdc9dd429d0cddac256854f79783e7a5acc6e5aa340dad09a721b09fc2ad",
+   "reason": "Its exclusion of cool blackbody dust agrees with our result that a corotation-temperature (dust sublimation) threshold does not set the CPV boundary.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:ed1da23fcd5cdf63d200e2c0d11a1d3690f49a67a3288a145448db65b7302ace",
+   "reason": "Flare links of CPV hosts; a possible supply route that we discuss."
+  },
+  {
+   "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+   "reason": "Long persistence of CPV host status, which agrees with a fixed stellar property such as internal structure."
+  },
+  {
+   "target": "sci:sha256:f539247412c4c5c3248b0a1472c0fdb86d1fb83e3ae8af30a14fdfe6c81a36f2",
+   "reason": "Rigid corotation of dips, which agrees with magnetic confinement."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BHAC15 evolutionary tracks with radiative-core mass."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/208/1/9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pecaut and Mamajek (2013) colour-temperature scales."
+  },
+  {
+   "target": "https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=J/AJ/155/196",
+   "reason": "Rebull et al. 2018 K2 Upper Sco and rho Oph periods (VizieR J/AJ/155/196).",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.3847/1538-3881/aa5eb9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stauffer et al. 2017 scallop-shell labels."
+  },
+  {
+   "target": "https://arxiv.org/abs/1712.04390",
+   "reason": "Stauffer et al. 2018 scallop-shell labels.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1088/0004-637X/755/2/97",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Gregory et al. 2012: the dipole field of pre-main-sequence stars weakens as a radiative core develops."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "reason": "Bouma et al. 2024 TESS CPV catalogue."
+  },
+  {
+   "target": "doi:10.1093/mnras/stac3302",
+   "reason": "Sanderson et al. 2023 dust trapped in the field of a fully convective M dwarf."
+  }
+ ]
+}

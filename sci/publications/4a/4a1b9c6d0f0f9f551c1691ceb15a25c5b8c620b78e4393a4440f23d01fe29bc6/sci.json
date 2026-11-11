@@ -1,0 +1,73 @@
+{
+  "title": "Setting negative predictions to zero cut the scale-versus-offset runoff error gap by 95% in 141 south-east Australian catchments",
+  "abstract": "We test whether recent annual runoff loss needs a change beyond a uniform flow scale. We use CAMELS-AUS v2.03 annual tables for 141 mainland catchments, a 1951-1996 rain model, and held-out three-year blocks in 2010-2021 with one-year training gaps. A scale correction had squared error 0.1003, against 0.1421 for an offset correction and 0.1414 for an affine correction. A post hoc check set all negative predictions to zero without refitting. Errors then fell to 0.0841, 0.0863 and 0.0898. This cut the scale-versus-offset gap by 94.7%. The clipped contrast was -0.0022, with a conditional space-time interval of -0.0173 to +0.0189. Negative predictions occurred in 6.8% of scale cases and 14.4% of offset cases, with equal catchment weighting. The affine offset was +0.040 of reference mean flow, with a joint refitted 95% interval of -0.236 to +0.192. Thus much of the apparent predictive separation came from invalid negative flow predictions. The clipped rules do not clearly distinguish fractional and additive losses in this short record. This does not establish equivalence or identify a physical cause. Parameter draws refit both eras; prediction intervals condition on trained rules. Clipping was added after result inspection and is not an optimal threshold fit. Only 12 recent years, 17 spatial cells and related rain products limit inference. Code, compatible inputs, all errors and draws, provenance and numerical checks permit an offline repeat.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "runoff",
+    "Millennium Drought",
+    "rainfall sensitivity",
+    "uniform scaling",
+    "blocked validation",
+    "CAMELS-AUS"
+  ],
+  "display": [
+    {
+      "path": "files/results.png",
+      "caption": "Joint space-time intervals for the recent affine offset, and primary held-out prediction errors before and after setting negative predictions to zero. The flooring check is post hoc and does not refit the corrections."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:463123a6329a6169583a00fc2b16f1322c6582db2abda06eb2201fce0160d78a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its absolute rain-slope loss motivates a test of uniform scaling versus added offset."
+    },
+    {
+      "target": "sci:sha256:c44ef4f36f8225a08779001fddac6d95c7028b686596418def351cbdd37f17cb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies exact compatible annual tables and gauge metadata; motivates joint time and space uncertainty."
+    },
+    {
+      "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original annual table preparation and SE-AU panel."
+    },
+    {
+      "target": "sci:sha256:39140e9279e6ecf107b1d19c40610bf48007e92c44a40ebfe720f9695db80f40",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related annual-scale correction test of daily recession; a different estimand."
+    },
+    {
+      "target": "sci:sha256:2bffa2ff9f3678c329abf22c8ec32451f66cac1b17cf5bf390c924c67d92edcc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related daily gain-invariant test; does not test these annual restrictions."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037"
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025"
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022"
+    },
+    {
+      "target": "doi:10.5194/hess-30-779-2026"
+    }
+  ]
+}
