@@ -1,0 +1,178 @@
+{
+ "title": "Insecticide toxicity load tripled on US bird survey routes in 1992-2014, but it explained only about 1% (at most 3%) of the gap between bird community warming and climate warming",
+ "abstract": "Question: did agricultural insecticides, a pollutant whose toxic load increased strongly, decrease warm-adapted birds and so hide part of the climate response of the bird community temperature index (CTI)? Data: 50,367 standard North American Breeding Bird Survey runs on 3,463 contiguous-US routes in 1992-2014; USGS EPest county pesticide estimates; honey-bee LD50 values of 82 insecticides (DiBartolo et al. 2019) to calculate the acute insecticide toxicity load (AITL) on route footprints; GHCN_CAMS May-July temperature. Method: within-route models with route x observer and year effects; a trend budget that compares the observed CTI trend with the spatial-slope expectation, with 400 state-block bootstraps; Poisson models for 294 species. Results: the route AITL increased about three times (89% from neonicotinoids in 2014). The CTI changed by -0.006 C per log unit of AITL (state-clustered SE 0.005); lag, lead, mass-based, EPest-low and BCR x year variants were also small. The expected CTI trend was 0.190 C per decade and the observed trend 0.041 C per decade. The pesticide part was -0.0015 C per decade, 1.0% of the gap (95% CI -0.4% to 3.0%); on the most exposed third of routes it was 3.4% (upper limit about 10%). Species did not show a general pesticide decline (17 negative and 40 positive significant slopes); slopes decreased only weakly with species temperature index (-0.12 points per C), and the species-implied CTI response (-0.005) agreed with the route estimate. Route-mean exposure did not change the spatial slope (0.453 to 0.446). Conclusion: insecticide pollution does not set the bird climate-tracking gap, because pesticide sensitivity is almost unrelated to thermal niche. Limitations: correlational design, a non-zero lead placebo, county-level exposure estimates, bee-based toxicity weights, no data after 2014.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "community temperature index",
+  "climate tracking",
+  "climate debt",
+  "pesticides",
+  "neonicotinoids",
+  "insecticide toxicity load",
+  "EPest",
+  "pollution",
+  "birds",
+  "North America",
+  "species temperature index",
+  "Poisson fixed effects"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_exposure_and_route_effect.png",
+   "caption": "a: mean acute insecticide toxicity load (oral honey-bee LD50 units per km2, EPest-high) on 3,463 sample routes, 1992-2014. b: year anomalies of May-July temperature and of CTI (x10). c: within-route CTI coefficient on log(1+load) for 13 model variants (95% CI, state clusters); none is clearly different from zero."
+  },
+  {
+   "path": "files/figures/fig2_species_pesticide_vs_sti.png",
+   "caption": "a: PPML count response of 294 species to log(1+load) against species temperature index; point size shows precision; the line is the meta-regression (-0.0012 per C). b: random-effects mean responses by diet, habitat and migration group (95% CI)."
+  },
+  {
+   "path": "files/figures/fig3_trend_budget.png",
+   "caption": "a: CTI trend expected from the spatial slope, observed CTI trend, gap, and the part from pesticide change (sign reversed), C per decade, with 95% state-bootstrap intervals. b: share of the gap from pesticide change in terciles of route-mean exposure, with the range from the coefficient error."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Source of the weak BBS CTI tracking result; our 1992-2014 tracking ratio (0.22) agrees and pesticides do not change it.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Synthesis of tracking fractions across 75 networks; the gap that this study tests for a pollution cause."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Forest type explains part of the gap; an ecological alternative and the source of the non-thermal spatial-slope caveat."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species-level temperature tracking fractions; context for the species models."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Spatial versus temporal CTI slopes in the BBS; context."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local spatial benchmark of BBS thermal gradients; context."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Range-centroid tracking deficit of BBS species; context."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Climate suitability and BBS abundance change; context."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "We reuse its BBS preparation and cross-fitted STI code; traffic is another tested non-climate process.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Origin of the BBS preparation code; observer hearing drift is a detection process tested before.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Warm-spring phenology detection artefact; another small part of the gap."
+  },
+  {
+   "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+   "reason": "Observer tenure detection loss; context."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Hearing drift identification limits; context."
+  },
+  {
+   "target": "sci:sha256:9dcba730c1ec58595327efcb8ee74e49aaead2f97cb6ea4faf0e22d3cea245c7",
+   "reason": "Song frequency and tenure curvature; context."
+  },
+  {
+   "target": "sci:sha256:7569534265ab613c33e24deb8f543e56365ca06f926a3bd66a851b3fc47aa4b1",
+   "reason": "Robustness of the spring shift estimate; context."
+  },
+  {
+   "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+   "reason": "Lag-model bounds on the same network summaries; we use new external data instead."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Atlas range-margin tracking deficit; context."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Marine redistribution tracking; context."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Detection artefacts in phenology records; context."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index tracking; context."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "reason": "Land-cover change does not explain the CTI gap; pesticides are a separate agricultural process."
+  },
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "reason": "LCMAP land-cover transfer; context."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S"
+  },
+  {
+   "target": "doi:10.5066/P9F2SRYH"
+  },
+  {
+   "target": "doi:10.3133/ds907"
+  },
+  {
+   "target": "doi:10.3133/sir20135009"
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0220029"
+  },
+  {
+   "target": "doi:10.1038/s41893-020-0582-x"
+  },
+  {
+   "target": "doi:10.1029/2007JD008470"
+  },
+  {
+   "target": "doi:10.1890/13-1917.1"
+  },
+  {
+   "target": "doi:10.1111/ele.13898"
+  },
+  {
+   "target": "doi:10.1177/1536867X20909691"
+  },
+  {
+   "target": "https://purl.stanford.edu/vy474dv5024"
+  },
+  {
+   "target": "https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_county_500k.zip"
+  }
+ ]
+}

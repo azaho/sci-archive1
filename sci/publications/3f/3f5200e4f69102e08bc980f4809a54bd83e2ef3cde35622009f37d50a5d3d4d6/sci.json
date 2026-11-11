@@ -1,0 +1,139 @@
+{
+ "title": "Species presence, not abundance, made 95% of spatial temperature gradients in 75 community networks; per 1 C, exchange of species in time was 16% of that in space (1948-2025)",
+ "abstract": "Question: community temperature indices (CTI) follow about 12% of their own spatial temperature slope in time. Does the gap come from membership (which taxa are present: colonisation and local extinction) or from dominance (abundance of resident taxa)? Data: 73 BioTIME 2.0 studies, the North American Breeding Bird Survey and the UK Butterfly Monitoring Scheme; 75 networks, 8,529 grid-box sites, 183,626 site-years, 1948-2025; GHCN_CAMS and HadISST temperature. Method: cross-fitted species temperature indices; an exact split of the abundance-weighted CTI into a membership CTI M and a dominance part D; spatial, slow (trend) and fast (anomaly) slopes; early-half versus late-half gain, loss and reweighting terms with permutation nulls; site-pair spatial benchmarks. The plan was written before outcomes; the window refinements and pair benchmark were added after the first results. Results: the spatial slope was 0.179 C per C, and its dominance share was 0.046 (95% CI 0.015-0.076); in the BBS it was zero. Membership followed 0.125 (0.025-0.285) of its spatial slope; the dominance trend slope was -0.004 (-0.012 to 0.007) and at its null. Membership held 93% of the gap. The planned hypothesis that residents reweight fast but membership lags was not supported. Gained taxa were warm-affinity taxa (+0.055 C per C, z 4.8), but lost taxa were also warm (-0.024); the net exchange was +0.028 (-0.001 to 0.059). Gained taxa had 28% of their count share in abundance in all 72 networks. Per 1 C, temporal exchange was 0.16 (0.01-0.34) of spatial exchange; temporal turnover (0.19) was below spatial turnover at zero distance (0.30) and did not rise with warming. Conclusion: the gap is in warming-driven species exchange, and newcomers stay rare. Limitations: membership change includes detection of rare taxa; STI-linked detection drift is not removed; selectivity in time is uncertain; network-internal STIs.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "climate tracking",
+  "colonisation",
+  "local extinction",
+  "species turnover",
+  "space-for-time substitution",
+  "BioTIME",
+  "Breeding Bird Survey",
+  "UKBMS",
+  "climatic debt"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_membership_dominance_slopes.png",
+   "caption": "Pooled and per-network slopes of the membership CTI M and the dominance part D (A = M + D). The spatial slope is almost all membership; only membership follows the warming trend."
+  },
+  {
+   "path": "files/figures/fig2_window_gain_loss.png",
+   "caption": "Early-half versus late-half terms per 1 C of warming after null correction (A), and abundance share against count share of gained and lost taxa (B): newcomers stay rare."
+  },
+  {
+   "path": "files/figures/fig3_space_time_turnover.png",
+   "caption": "Turnover rate, thermal selectivity and exchange term between site pairs (space) and between half-series (time). Temporal exchange per 1 C is 16% of the spatial value."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its 75 networks, cross-fitted STI method and build scripts, and divide its CTI gap into membership and dominance parts."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Bird CTI followed less than 10% of warming; our BBS anchor shows that the BBS spatial gradient is all membership.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Spatial CTI slopes hold between nearby routes; we show that these slopes are species-list gradients."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species-level abundance responses follow 5-14% of gradients in birds; we find that abundance reweighting adds no trend tracking.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Vegetation mediates half of the forested-route gap; we test a general process split across taxa."
+  },
+  {
+   "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+   "reason": "Rate-mixture bounds on the 54 network summaries; we use new record-level decompositions instead of the summaries."
+  },
+  {
+   "target": "sci:sha256:0bc2a582b81c55c60f6564490630a43ea169f4a5ce80b6c3c41d6d2921f0dcc6",
+   "reason": "Frozen-STI spatial slope is the benchmark for CTI change."
+  },
+  {
+   "target": "sci:sha256:26c7bb1ff13040ac893b129f270026126f92e19df4640888d442f93841367d69",
+   "reason": "Winter bird turnover without a temperature link; we find weakly thermal background turnover in many networks."
+  },
+  {
+   "target": "sci:sha256:adb306e044340c84a4bc25215ffc62ee8204c4934926b78cbb5f38dc19f96808",
+   "reason": "Tree community warming by mortality did not exceed a species-permutation null; our window terms use the same null idea."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "reason": "Land-cover change did not cause weak bird temperature tracking."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift is a detection effect that our permutation null cannot remove."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Phenology-detection artefact was too small to explain the gap."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic masking was too small to change the CTI trend."
+  },
+  {
+   "target": "sci:sha256:2a5fc1a77d6ce47a8a601d10ca7d03a3d60cde90713a2030e4eeb897e1185ee9",
+   "reason": "Insecticide change explained less than 3% of the bird CTI gap."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Bird centroids moved at 14% of the isotherm shift."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local thermal gradients are real at 5 km resolution."
+  },
+  {
+   "target": "doi:10.5281/zenodo.15222193",
+   "reason": "BioTIME 2.0 data (record-level data not bundled)."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "reason": "North American Breeding Bird Survey 2026 release."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "reason": "UKBMS site indices 2024 (Open Government Licence - UKBMS)."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "reason": "UKBMS site locations 2024."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS land air temperature."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST1 sea surface temperature."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "NOAA OISST v2.1."
+  }
+ ]
+}
