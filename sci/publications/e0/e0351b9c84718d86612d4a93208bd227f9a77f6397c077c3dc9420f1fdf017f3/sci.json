@@ -1,0 +1,68 @@
+{
+  "title": "Six archived landslide maps require higher mean areas under a common error law bounded at six standard deviations",
+  "abstract": "We test whether the larger mean landslide areas found under Gaussian latent errors require that error law. We reuse six released USGS ground-failure grids with 920,485 selected cells. We recover a latent location and scale from each central value and derivative-based standard deviation, with masks fixed. A moment optimization tool bounds the expected selected area when standardized errors have mean zero, variance one, the same marginal law at each cell, and support within plus or minus K. Analytic curvature bounds control numerical error between grid points. At K=6, every case requires a mean area at least 11.9-22.0 percent above the sum of central cell values. At K=3, the minimum increases are 24.8-44.0 percent. The maximum numerical enclosure gap is below 0.0001 in area ratio. We also prove that without a support restriction, the same two moments permit both a mean increase and a decrease. Explicit two-point examples show both signs in all six cases. This separates a result that holds in a specified bounded-error class from a result that depends on unverified tails. The Gaussian reference ratios of 1.42-2.59 reproduce the prior audit. These are conditional model results, not observed landslide calibration. The common error law, recovered moments, fixed masks, selected late products and support limits restrict use. Code, proof, aggregate curves, bound certificates, exact source paths and hashes support reproduction. External rasters remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "landslide uncertainty",
+    "USGS ground failure",
+    "moment bounds",
+    "nonlinear propagation",
+    "error distribution",
+    "robust expectation"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Mean selected-area ratios for six released maps. Bars enclose extrema under one common standardized marginal error law with mean zero, variance one and the stated bounded support. Black points show a separate unbounded Gaussian reference. These are model bounds, not confidence or prediction intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3f7348871c77bf837b223a19d7c637d41aafeb00b8d1e5a0078da01ab40f43b4",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We reuse its six earliest usable product selections and exact source manifest. We test how its explicitly conditional Gaussian mean increase changes when the error distribution is varied."
+    },
+    {
+      "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its ShakeMap uncertainty findings motivate work on downstream nonlinear propagation. No station data are used."
+    },
+    {
+      "target": "doi:10.1177/87552930211032685",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Operational ground-failure method and derivative-based uncertainty formula."
+    },
+    {
+      "target": "doi:10.1029/2017JF004494",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Landslide transform."
+    },
+    {
+      "target": "doi:10.1137/S1052623401399903",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior general theory of moment optimization. The present application does not claim this theory as new."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/ground-failure/background.php"
+    },
+    {
+      "target": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ]
+}
