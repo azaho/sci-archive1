@@ -1,0 +1,70 @@
+{
+  "title": "OISST daily changes had a 35% weaker buoy response in 2022-2025 than in 2016-2019 at 73 matched stations",
+  "abstract": "We tested whether the fall in fast OISST v2.1 variance can be explained by removal of independent product noise with a fixed buoy response. We used archived daily buoy and nearest-cell OISST records. At 73 stations, the mean slope of one-day OISST changes on buoy changes fell from 0.375 in 2016-2019 to 0.245 in 2022-2025. The paired change was -0.130 (95% spatial-block interval -0.155 to -0.101). It fell at 70 stations and in both buoy networks. An exact variance split shows that 9.9% of the fall in the mean daily OISST-to-buoy variance ratio was in the buoy-linked component. This share rose to 42.7% at seven days. Most daily variance loss was in the uncorrelated component. Across one-year windows around October 2021, 18 stations gave a slope change of -0.161; a 2019 placebo gave +0.009 at 30 stations. The result is inconsistent with removal of independent noise alone under a fixed-response model. Adding independent noise cannot restore the reduced covariance. Variance corrections therefore need a joint buoy-response audit. The test does not measure true ocean signal loss: buoys feed OISST, point and grid records differ, the sample is limited, and the periods can have different ocean signals. We provide code, input hashes, station moments, uncertainty tables, figures and exact retrieval instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "OISST",
+    "sea surface temperature",
+    "buoy response",
+    "variance decomposition",
+    "input change",
+    "data homogeneity"
+  ],
+  "display": [
+    {
+      "path": "files/response.png",
+      "caption": "Mean paired response and variance measures at four difference intervals."
+    },
+    {
+      "path": "files/decomposition.png",
+      "caption": "Daily station response and the exact split of normalized variance loss."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its exact archived daily buoy and nearest-cell OISST records; adds a covariance and response audit."
+    },
+    {
+      "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates joint-response validation beyond power matching. We do not re-evaluate its corrected heatwave results."
+    },
+    {
+      "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Adds a covariance test to its paired variance evidence."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00787.1",
+      "reason": "Prior work on feature resolution, noise and sampling in SST analyses."
+    },
+    {
+      "target": "doi:10.1175/2007JTECHO542.1",
+      "reason": "Three-way SST error analysis; independence assumptions limit error separation."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+      "reason": "Documents the 1 October 2021 ACSPO switch and the use of buoy data."
+    },
+    {
+      "target": "https://www.psl.noaa.gov/disclaimer/",
+      "reason": "Source attribution and public-domain information terms."
+    }
+  ]
+}
