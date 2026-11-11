@@ -1,0 +1,74 @@
+{
+  "title": "Eighteen NOAA hurricane outlooks permit zero joint range coverage under a count-order support model",
+  "abstract": "We tested whether all probability summaries in 18 NOAA seasonal hurricane outlooks from 2021 to 2026 can hold in one distribution. We kept the four 70% range probabilities, season-type probabilities, ordered storm counts, and the stated season-type rules. Every outlook was feasible. For each, explicit distributions gave either zero or 70% probability that all four ranges hold together. Mixtures give every value between them. Thus the season-type statements and count order did not tighten the generic joint probability bounds. This is not a measured forecast failure, and NOAA does not promise 70% joint coverage. An at-least-70% reading still gave a zero lower bound. Equal 15% tails were impossible in two outlooks with a range starting at zero; the other 16 still allowed zero joint coverage. We provide original code, aggregate bounds, synthetic endpoint distributions, and independent exact-arithmetic checks of 104 distributions. The sharp bounds apply to a stated support model, not full hurricane physics. Inputs are inherited transcriptions; no new outcomes or physical error sources are tested.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "seasonal hurricane outlook",
+    "probability coherence",
+    "joint coverage",
+    "linear programming",
+    "forecast verification"
+  ],
+  "display": [
+    {
+      "path": "files/results/joint_bounds.png",
+      "caption": "Sharp joint coverage bounds under the stated count-order support model. Blue segments use 70% per range. Orange segments add equal 15% lower tails, where feasible. No observed joint failure rate is estimated."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified source of outlook transcriptions; motivates the separate joint consistency question."
+    },
+    {
+      "target": "sci:sha256:c9d7dfe25217a6d582ca42e8b5f280e5507e17039eb88403a9c49081ece8acd7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Count model scope audit motivates a distribution-free support test."
+    },
+    {
+      "target": "doi:10.1287/opre.38.2.227",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior linear programming method for sharp probability bounds; no novelty claimed for that general method."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/outlooks/Background.html",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/Epac_hurr/Background.html",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane2025/May/hurricane.shtml",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
