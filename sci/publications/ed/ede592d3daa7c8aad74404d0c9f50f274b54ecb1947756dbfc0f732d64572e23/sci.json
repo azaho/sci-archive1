@@ -1,0 +1,78 @@
+{
+  "title": "A two-harmonic baseline permits half the Gaussian dip area in 119 selected TESS complex periodic variables",
+  "abstract": "We test the minimum absorption area required by 260 released folded TESS sectors of 119 complex periodic variable stars. A linear program permits any nonnegative absorption shape under a harmonic stellar baseline and a fixed flux error box. With two harmonics and an error radius of 3.5 times the source noise, the median minimum area is 0.515 of the published Gaussian area, with a star bootstrap interval of 0.471 to 0.551. Four harmonics give 0.203 (0.175 to 0.222). Matched unflagged stars retain much less area relative to flux amplitude, but often have positive bounds too. Primal and dual checks, Fourier witnesses, an independent solver and synthetic tests check the calculation. These are attainable conditional lower bounds, not measurements of the true dust area. The result shows that the area scale used in an infrared energy test depends on the stellar baseline and dip shape restrictions. It does not refit infrared data, reject dust or measure material lifetime. Original code, aggregate results, figures and exact input hashes are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "absorption area",
+    "linear programming",
+    "stellar spots",
+    "infrared energy budget"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Minimum positive absorption area falls when the baseline permits more harmonics. The curves show four error radii; the histogram uses two harmonics and radius 3.5."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "CPVs retain more minimum absorption area relative to flux amplitude than matched unflagged stars. Positive area alone is not a detection of circumstellar absorption."
+    },
+    {
+      "path": "files/examples.png",
+      "caption": "Minimum-area fits at the 10th, 50th and 90th percentiles of the sector area ratio."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:67a1cdc9dd429d0cddac256854f79783e7a5acc6e5aa340dad09a721b09fc2ad",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaussian area and noise for all 260 sectors. Tests whether this area is required by the released flux."
+    },
+    {
+      "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Early-sector folded flux, control labels and sector flags."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Late-sector folded flux."
+    },
+    {
+      "target": "sci:sha256:43529dd150e9baeafee617a6a2f5a106ce0a23f52865284d4d1e6323ff20a3a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior infrared temperature-mixture bound keeps the Gaussian area scale."
+    },
+    {
+      "target": "sci:sha256:23d9123fab6fa1f9bb19a8ade02d360395ff9ac4ad0b227ae9b0325a7e18dd7b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Historical dust duty can differ between the infrared and TESS epochs."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
