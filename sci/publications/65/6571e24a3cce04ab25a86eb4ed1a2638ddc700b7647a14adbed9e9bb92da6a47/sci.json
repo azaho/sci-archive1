@@ -1,0 +1,117 @@
+{
+ "title": "In two public macaque data sets, V2 and IT response spectra did not decay faster than V1 and V4, unlike the mouse visual hierarchy; class invariance increased without spectral compression",
+ "abstract": "Mouse higher visual areas have response spectra that decay faster (larger power-law exponent alpha) than VISp. We tested whether this holds in macaque, with the same cvPCA and noise-corrected read-out estimators, in two public Brain-Score data sets: Freeman/Ziemba 2013 (102 V1 and 103 V2 single units; 67 naturalistic textures and 68 spectrally matched noise images) and Majaj/Hong 2015 (88 V4 and 168 IT multi-unit sites in 2 monkeys; 3,200 object images). The plan was written before the tests. Intervals are mean +/- 1.96 SD over 200 random half-unit draws. No macaque comparison showed the mouse compression: Delta alpha (higher minus lower area) was -0.08 (-0.25 to 0.08) for V1 to V2 on textures, -0.07 on noise, -0.18 (-0.39 to 0.03) for V4 to IT on varied objects, -0.06 in one monkey, and -0.28 (-0.46 to -0.11) on objects without pose variation. With the mouse within-animal estimator (30 units, ranks 2-15; mouse natural scenes +0.14, 0.10 to 0.19), all 5 macaque points were below 0, and 66 of 72 robustness estimates were below 0 with none above 0. The share of reliable variance between texture families or objects rose from V1 to V2 (0.26 to 0.36; also for noise) and from V4 to IT (0.12 to 0.26), so invariance increased without compression. This rejects the account that invariance steepens spectra. IT was only partly a linear V4 read-out (ratio 0.37 against 0.56 in reverse), but in one monkey both directions were equal (0.22, 0.24). Limits: small public samples (29-51 units per draw), the 30 % public FZ split, multi-unit V4/IT sites, different stimuli across species, and exploratory robustness and cross-species contrasts.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "macaque visual cortex",
+  "mouse visual cortex",
+  "cross-species",
+  "visual hierarchy",
+  "V1",
+  "V2",
+  "V4",
+  "IT",
+  "cross-validated PCA",
+  "power law",
+  "population geometry",
+  "invariance",
+  "naturalistic textures",
+  "object recognition",
+  "linear read-out",
+  "Brain-Score",
+  "negative result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cross_species_spectra.png",
+   "caption": "Spectral decay across the hierarchy. (a) Mean cvPCA spectra of 51 V1 and 51 V2 units for naturalistic textures (Freeman/Ziemba 2013). (b) Mean spectra of 44 V4 and 44 IT sites for 1,280 varied object images per draw (Majaj/Hong 2015). Grey: alpha fit range. (c) Delta alpha (higher minus lower area): mouse VISp to HVAs (green; 30 units, ranks 2-15; mean +/- 1.96 SE over 30 mice, from sci:sha256:27b767c0), macaque with the same estimator (blue) and with the main estimator (orange; mean +/- 1.96 SD over 200 draws)."
+  },
+  {
+   "path": "files/figures/fig2_readout.png",
+   "caption": "Linear read-out between areas. (a) rho = FEV of the higher area from a lower-area predictor divided by FEV of held-out lower-area units (orange); rho_rev = the reverse (blue). FEV is noise-corrected; predictors and targets use disjoint repeat thirds. V1 to V2 rho_rev intervals exceed the axis because FEV of V2 from V2 is about 0.07. (b) Delta alpha of the lower-area-predicted part and of the residual part."
+  },
+  {
+   "path": "files/figures/fig3_invariance.png",
+   "caption": "Invariance without compression. (a) Class share of reliable variance (between texture families or objects; random-effects components from independent repeat halves) in the lower (blue) and higher (orange) area. (b) Delta alpha for all reliable variance (orange) and for within-class variance only (blue). Intervals: mean +/- 1.96 SD over 200 draws."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its per-mouse alpha tables as the mouse reference and test whether its within-animal hierarchy compression generalizes to macaque; it does not in these data."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Source finding of steeper spectra in higher mouse areas; our macaque data do not show it for V1-V2 or V4-IT."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same cvPCA estimator, unit normalization and half-sample intervals."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "reason": "Mouse natural-image compression on shared HVA axes; open question of mechanism that we test."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Mouse grating phase-averaged compression, related to invariance."
+  },
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Noise-corrected FEV and cross-fitted part spectra; its mouse read-out result is compared with our V4-IT read-out."
+  },
+  {
+   "target": "doi:10.1038/nn.3402",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Freeman/Ziemba 2013 V1/V2 data (Brain-Score public split)."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.5181-14.2015",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Majaj/Hong 2015 V4/IT data (Brain-Score public split)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2020.07.040",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Brain-Score distribution of the assemblies."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator."
+  },
+  {
+   "target": "https://brainio-brainscore.s3.amazonaws.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source URLs of the assemblies; SHA-256 in files/provenance/shared_datasets_used.tsv."
+  }
+ ]
+}
