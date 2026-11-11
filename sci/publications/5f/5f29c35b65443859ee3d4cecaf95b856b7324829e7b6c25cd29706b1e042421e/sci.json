@@ -1,0 +1,120 @@
+{
+ "title": "In 2 macaques with V1, V4 and IT arrays and 22,248 THINGS images, IT spectra did not decay faster than V1; V1 decay depended on coverage, and IT gained V4-predicted human-similarity concept variance",
+ "abstract": "Earlier SCI studies found faster-decaying cross-validated PCA response spectra (larger exponent alpha) in higher mouse visual areas, with the extra variance off the VISp stimulus axes. A parallel study found no such compression in two small macaque data sets. We tested this in the THINGS Ventral-stream Spiking Dataset: multi-unit activity from V1, V4 and IT arrays recorded together in 2 macaques, 22,248 single-presentation images (1,854 concepts x 12 exemplars) and 100 test images x 30 repeats. With 100 reliable channels and noise-corrected spectra, alpha (ranks 2-30) was 1.34, 1.12, 1.20 (monkey N) and 1.24, 1.18, 1.11 (monkey F) for V1, V4, IT; IT minus V1 was -0.14 and -0.12 (concept-bootstrap intervals about +/-0.01). An array-level model gave -0.16 per hierarchy level (-0.31 to -0.02); the mouse effect is about +0.15. However, V1 alpha fell from 1.55 to 1.29 (N) and 1.52 to 1.14 (F) when 28 channels came from 7 arrays instead of 1, while IT did not change; at the widest V1 coverage V1 and IT differed by less than 0.1, so a small compression relative to a fully covered V1 is not excluded. IT variance lay off the V1 image axes (top 10 V1 axes held 21% and 19% of IT signal against 75% and 59% for IT axes). The between-concept share of signal rose from 0.21 to 0.41 (N) and 0.19 to 0.35 (F). A 49-D human similarity embedding explained 41% to 68% (N) and 42% to 52% (F) of between-concept variance from V1 to IT. V4 concept means explained 82% and 62% of IT concept variance, V1 only 39% and 31%. Ridge from V4 explained 84% and 65% of IT between-concept but only 32% and 30% of within-concept variance; a kernel read-out of V1 added nothing. Thus IT gains semantic concept dimensions, mostly already present in V4, without spectral compression. Limits: multi-unit data, 2 monkeys, unmatched retinotopic coverage, exploratory analyses without a pre-written plan.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "macaque visual cortex",
+  "ventral stream",
+  "V1",
+  "V4",
+  "inferotemporal cortex",
+  "cross-validated PCA",
+  "power law",
+  "visual hierarchy",
+  "cross-species",
+  "THINGS",
+  "TVSD",
+  "multi-unit activity",
+  "concept representation",
+  "human similarity embedding",
+  "SPoSE",
+  "retinotopic coverage",
+  "linear read-out",
+  "population geometry",
+  "negative result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_spectra_alpha.png",
+   "caption": "Noise-corrected spectra of V1, V4 and IT (100 channels, 22,248 images) in two macaques, area and array alpha, and the mouse reference values. IT does not decay faster than V1."
+  },
+  {
+   "path": "files/figures/fig2_robustness.png",
+   "caption": "Alpha against image count, fit range, number of retinotopic arrays sampled (28 channels) and extra channel pooling. V1 alpha falls strongly as more arrays are included; IT does not."
+  },
+  {
+   "path": "files/figures/fig4_concept_semantic.png",
+   "caption": "Between-concept share of signal variance, share explained by the 49-D human similarity embedding, and the explained share along concept PCs. IT gains concept-level, human-similarity variance."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "challenges",
+    "uses"
+   ],
+   "reason": "Source mouse finding of faster spectral decay along the hierarchy; we copy its mouse alpha values and test the effect in macaque."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Generality of the mouse effect over stimulus sets."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "We use its cross-basis design (axes and variance from disjoint trials) and find the off-axis higher-area variance also in macaque."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Mouse kernel concentration study in the same programme."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Within-mouse generality of the compression; our macaque data show no compression at the sampled coverage."
+  },
+  {
+   "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel macaque test in two small data sets; we replicate the absence of compression and the class-share increase in a larger data set with all areas in the same animals."
+  },
+  {
+   "target": "doi:10.12751/g-node.hc7zlv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TVSD data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2024.12.003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TVSD paper (Papale et al. 2025)."
+  },
+  {
+   "target": "doi:10.1038/s41562-020-00951-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPoSE 49-D human similarity embedding of THINGS concepts (OSF z2784, CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0223792",
+   "reason": "THINGS object concept and image database."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA method and power-law spectra (Stringer et al. 2019)."
+  }
+ ]
+}
