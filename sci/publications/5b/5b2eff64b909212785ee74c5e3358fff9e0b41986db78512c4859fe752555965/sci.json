@@ -1,0 +1,113 @@
+{
+  "title": "Full-year tropical temperature reduced 2012-2024 CO2 growth squared error by 49%; early data gave no clear gain",
+  "abstract": "We tested whether the tropical temperature link reported by Wang et al. (2013) predicted annual atmospheric CO2 growth after its data ended in 2011. We fitted fixed slopes to Mauna Loa growth and Berkeley Earth land temperature in 1964-2011. A recent five-year mean controlled changes in level. In 2012-2024, full-year observed temperature reduced squared error by 49.3% and RMSE from 0.567 to 0.404 ppm/year. The 95% three-year block interval for skill was -17.3% to 79.9%; a check that also resampled training rows gave -22.7% to 79.7%. The published coefficient gave 49.4% skill. Diagnostic slopes were compatible: 1.583 ppm/K in training and 1.656 in test. Temperature through the prior December, March, June or September gave 9-20% estimated skill, with no clear positive gain. A post-result control gave the baseline its own growth offset and reduced these early estimates to 2-14%. Temperature lowered error in 6 of 13 years. The years 2023-2024 supplied 71% of the net squared-error gain; removing them gave 23% skill with a wide interval. Secondary estimates using global growth, another temperature field, a wider tropical band, volcanic-year exclusions and a ten-year mean were positive, but all anomaly-model intervals included zero. The annual relation transferred in size, while reliable early prediction was not established. Limits include 13 test years, revised rather than real-time inputs, a different land mask and filter, and no separation of emissions or carbon sinks. Code, hashes, aggregate results, figures and an independent numerical check are included. Licensed source grids and record-level derived tables stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "climate response",
+    "carbon cycle",
+    "CO2 growth",
+    "tropical temperature",
+    "forward test",
+    "forecast lead",
+    "baseline",
+    "out-of-sample prediction",
+    "uncertainty",
+    "extreme years"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_skill.png",
+      "caption": "Fixed-slope skill in 2012-2024 by temperature data cut-off and in six full-year variants. Every anomaly-model interval includes zero. December uses observed full-year weather. The matched-offset baseline is a post-result control."
+    },
+    {
+      "path": "files/slope_and_concentration.png",
+      "caption": "Training and test anomaly slopes are compatible with the published coefficient. The net error reduction comes from four years; this grouping is a post-result diagnostic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1073/pnas.1219683110",
+      "relations": [
+        "reviews",
+        "supports"
+      ],
+      "reason": "Tests transfer of its tropical temperature and CO2-growth response concept after 2011; changes the mask, annual sampling and detrending method."
+    },
+    {
+      "target": "doi:10.1038/nature11882",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related use of annual CO2 variability to constrain carbon sensitivity. Long-term sensitivity is outside this test."
+    },
+    {
+      "target": "sci:sha256:8804b69f25ac0e1b787854ca1294df6d9fe874839d368768e9953d468aee3016",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates forward tests against a recent-mean baseline and separates a training signal from forward skill."
+    },
+    {
+      "target": "sci:sha256:6081bf7661bffeef1115a8ec3adc9b107ff0e2f5a291100cbc2d1a64c6bccfa4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Recent campaign evidence on training signals, trends and forward skill. No code or data from it were copied."
+    },
+    {
+      "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its test of a response-class rule motivates adding information date and baseline to forecastability claims."
+    },
+    {
+      "target": "https://gml.noaa.gov/ccgg/trends/data.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mauna Loa annual growth from the 2026-10-09 file. Credit to Xin Lan, NOAA/GML, and Ralph Keeling, Scripps Institution of Oceanography."
+    },
+    {
+      "target": "doi:10.15138/9N0H-ZH07",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Lan, Tans and Thoning: NOAA global CO2 trends, version 2026-10; secondary growth response."
+    },
+    {
+      "target": "https://berkeleyearth.org/data/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Berkeley Earth land temperature and land fraction, file made 2025-01-09. External CC BY-NC source data are not in the bundle."
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHCN-CAMS monthly land temperature from NOAA PSL; source field for a secondary check."
+    },
+    {
+      "target": "https://www.metoffice.gov.uk/research/climate/seasonal-to-decadal/seasonal-forecast/forecasts/co2-forecast-for-2026",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior operational CO2 forecast method with emissions and forecast ENSO. Its forecasts were not scored in this study."
+    }
+  ]
+}
