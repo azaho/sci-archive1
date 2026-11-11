@@ -1,0 +1,138 @@
+{
+  "title": "Sound and click latencies of 132-158 mouse brain regions followed Knox input sources beyond distance and cell types, but net projection direction did not predict response order (IBL)",
+  "abstract": "Question: earlier work found that regions with similar axonal inputs have similar task coding, and regions with a similar cell-type mix have similar intrinsic spiking. A similarity has no direction. Does response timing, which has a direction, follow the mesoscale connectome? Data: IBL Brain-Wide Map passive-replay responses (607 probes, 398 sessions, 65,772 good units) to sounds, valve clicks and Gabor patches; we read only the passive segment of each spike file with HTTP range requests. Structure: Knox 2019 connectome, Allen CCF centroids, Allen MERFISH subclass mix. Method: a plan frozen before any latency was computed; region latency is the half-maximum time of the mean normalised response of responsive units; inference used 1,000 spatial surrogate maps, with post-freeze calibration on synthetic maps. Results: sound (132 regions, median 11.8 ms) and valve-click (158 regions) latency maps were reliable (split-half rho 0.46 and 0.54); the visual map was not (rho 0.07; 2.1% responsive units). The pre-registered direction test failed: the net projection asymmetry of a region pair did not predict which region responded later (sound p = 0.71; visual 0.52; valve 0.87); the raw order was reversed because Knox net flow is mostly corticofugal and brainstem, midbrain and thalamic targets responded first. The pre-registered visual-minus-sound test also failed (p = 0.49) because the visual map was noise. But region latency followed the input-weighted latency of input sources beyond distance, division, co-recording and cell-type mix: full-model beta 0.39 for sound (surrogate p = 0.007) and 0.95 for valve (p = 0.001); no synthetic no-wiring map reached these p values. Cell-type mix did not predict latency (p 0.82-0.89). Input and output wiring predicted latency equally (difference p 0.20-0.25), and division-plus-distance rewired nulls were liberal (31-36% false positives). Conclusion: sensory timing, like task coding, goes with wiring and not with cell types, but these data do not show a source-to-target direction. Limitations: correlational region averages, one connectome model, few passive trials, possible startle or movement responses, surrogate tests 9-12% liberal on synthetic maps, and the positive result rests on secondary and post-freeze analyses.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "response latency",
+    "mesoscale connectome",
+    "cell types",
+    "IBL Brain-Wide Map",
+    "Knox connectome",
+    "MERFISH",
+    "structure-function",
+    "spatial null models",
+    "information flow"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_latency_maps.png",
+      "caption": "Region latency to passive sound: example responses, split-half reliability of the three latency maps, and sound latency against the input-weighted latency of input sources."
+    },
+    {
+      "path": "files/figures/fig2_wiring_vs_celltype.png",
+      "caption": "Input wiring, not cell-type mix, predicted latency: joint betas against spatial and rewired nulls, held-out prediction gains, and null calibration on synthetic maps."
+    },
+    {
+      "path": "files/figures/fig3_direction.png",
+      "caption": "Net projection direction did not predict response order: H1 against surrogate nulls, latency differences by net-flow class, and within-division tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its structure script (Knox, CCF centroids, MERFISH composition) and extends its wiring versus cell-type comparison to response timing."
+    },
+    {
+      "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+      "reason": "Its finding that distance-rewired nulls are liberal motivated our division-plus-distance null and calibration."
+    },
+    {
+      "target": "sci:sha256:a4fae2b20554c07f85decfa3d289742eead57e431b66963a1672e01bf6e11f20",
+      "reason": "Held-out prediction of physiology from input and type structure; we apply the same idea to latency."
+    },
+    {
+      "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+      "reason": "Input-weighted source encoding predicted task coding; we test the timing and direction of this inheritance."
+    },
+    {
+      "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original source of the structure code."
+    },
+    {
+      "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+      "reason": "Related connectome-distance test of visual reliability in mouse."
+    },
+    {
+      "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+      "reason": "Related projectome-distance test in larval zebrafish."
+    },
+    {
+      "target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da",
+      "reason": "Earlier IBL spike-file retrieval recipe that we adapted to range reads."
+    },
+    {
+      "target": "sci:sha256:e251a8ce59e98e6012d542d56a428731e034a4e754ec2d0a6759d787ca5c39a6",
+      "reason": "Related cell-type diversity result in the same campaign line."
+    },
+    {
+      "target": "sci:sha256:8811fcd163037e8b4296f164982385a82b6a30fef0e5e1d81f6cab23925dbe48",
+      "reason": "Related ion-channel result in the same campaign line."
+    },
+    {
+      "target": "sci:sha256:db5590c64649c7f589082299864fe81e1acbdc6e3e261a507bd6b40c8030cffe",
+      "reason": "Related thalamic burst result in the same campaign line."
+    },
+    {
+      "target": "sci:sha256:3e4aadbdc51ffbfb8bd570062f92d949ecf46d7288a28ab388e7d1ec91a5db09",
+      "reason": "Related ion-channel and thalamic result in the same campaign line."
+    },
+    {
+      "target": "sci:sha256:5d9610e93b0d6dd26e1868419d17a5c7a114fd35a449c05913ef80b5a9218670",
+      "reason": "Related Kv3 result in the same campaign line."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "IBL Brain-Wide Map data."
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Knox 2019 mesoscale connectome model."
+    },
+    {
+      "target": "doi:10.1038/s41586-023-06812-z",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen MERFISH cell-type atlas."
+    },
+    {
+      "target": "doi:10.1016/j.cell.2020.04.007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen CCF 2017."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03171-x",
+      "reason": "Visual latency follows the anatomical hierarchy in mouse visual areas."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1716-z",
+      "reason": "Layer-based cortico-thalamic hierarchy."
+    },
+    {
+      "target": "doi:10.1016/j.neuroimage.2020.117038",
+      "relations": [
+        "uses"
+      ],
+      "reason": "brainsmash spatial surrogate maps."
+    }
+  ]
+}

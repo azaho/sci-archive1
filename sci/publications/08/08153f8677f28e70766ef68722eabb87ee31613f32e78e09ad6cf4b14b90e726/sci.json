@@ -1,0 +1,110 @@
+{
+ "title": "TESS pixel centroids show that the period of half of the main-sequence M dwarfs at P < 0.2 d comes from another star; with verified rotators, contraction predicts 5.1 CPVs for 2 seen",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. Earlier campaign results found that old main-sequence M dwarfs at the corotation-to-stellar radius ratio x of young CPV hosts have 2 CPVs where the contraction (x-only) model predicts 8.5-8.9 (p = 0.015). eROSITA data then showed that many of these short-period main-sequence stars are not X-ray saturated, which suggested that their TESS periods belong to neighbours. We tested this directly with TESS pixel data. For all 4,595 rapid rotators of the TESS 2-minute CPV samples (P = 0.08-2 d, BP-RP = 2.4-3.8) we used 8,390 light curves (up to 3 sectors per star) and found the sky position of the periodic signal from the regression of the flux-weighted centroid on the flux. Known CPV hosts give a median offset of about 2 arcsec, and 143 of 145 hosts are on target (offset <= 5 arcsec). The signal is off target (> 7 arcsec, > 3 sigma) for 14% of main-sequence rotators, but for 51% at P < 0.2 d, and for 19 of the 37 main-sequence stars at x < 3.5. Only 16 main-sequence stars at x < 3.5 are pixel-verified ultrafast rotators. eRASS1 X-ray data confirm the classes independently: the saturated fraction of main-sequence stars is 0.97 (0.94-0.99) when the signal is on target and 0.13 (0.05-0.24) when it is off target. With pixel-verified stars in training and test samples, the frozen x-only model predicts 5.1 (3.1-7.9) main-sequence CPVs for 2 observed (p = 0.14); the main-sequence rate factor at fixed x is 0.37 (0.06-1.22). Over 35 variant combinations (thresholds, error floor, best sector only, step-function and plateau-power-law x laws, X-ray weights) the prediction is 3.8-5.7 and p = 0.10-0.30. Both main-sequence CPVs are on target. The 35-750 Myr check agrees (17 seen, 15.3 predicted). Thus contraction alone is consistent with the main-sequence count, but a factor of about 0.4 is also allowed. A clean main-sequence sample 3-5 times larger is necessary to decide (power 0.83-0.98 for a factor of 0.4). Limitations: the centroid method cannot separate sources closer than about 5 arcsec; the main-sequence sample is small; the CPV labels, efficiencies and x model of the earlier publications are used without change.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "centroid analysis",
+  "blended periods",
+  "rapid rotators",
+  "ultrafast rotators",
+  "corotation radius",
+  "stellar contraction",
+  "main sequence",
+  "eROSITA",
+  "eRASS1",
+  "coronal saturation",
+  "period attribution",
+  "statistical power",
+  "x-only model"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_source_location.png",
+   "caption": "(a) Cumulative distribution of the offset between the TESS periodic signal (flux-weighted-centroid regression, inverse-variance mean over up to 3 sectors) and the target, for 1-24 Myr members, all CPV hosts and main-sequence rapid rotators at P < 0.3 d and P >= 0.3 d. Dashed and dotted lines: on-target (5 arcsec) and off-target (7 arcsec) limits. (b) Fraction of resolved stars with the signal on target against P; bars are 95% Clopper-Pearson intervals. (c) eRASS1 X-ray-saturated fraction (eROSITA-DE sky) of on-target (filled) and off-target (open) stars with 95% profile-likelihood intervals."
+  },
+  {
+   "path": "files/figures/fig2_ms_cpv_test.png",
+   "caption": "(a) Predicted CPVs (frozen x-only model trained on S56 1-24 Myr members, 95% bootstrap intervals) among the 368 main-sequence rapid rotators inside the training x range, for five weightings (rows) and three x-law shapes (colours). The black line is the observed count (2). (b) Profile likelihood of a main-sequence CPV rate factor at fixed x, fitted jointly with the young training stars, without weights, with pixel-verified weights, and with pixel and X-ray weights."
+  },
+  {
+   "path": "files/figures/fig3_xbins_power.png",
+   "caption": "(a) Observed main-sequence CPVs (stars) and x-only predictions (95% bootstrap intervals) in three ranges of x_iso, for all rapid rotators (grey) and pixel-verified rotators (green). (b) Probability that a one-sided 5% Poisson test rejects a factor of 1 if the true main-sequence factor is 0.25, 0.4 or 0.6, against the size of a clean main-sequence sample relative to the present one."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We confirm with TESS pixel data its inference that the X-ray-quiet main-sequence rapid rotators have periods from other stars (off-target signals are X-ray quiet: saturated fraction 0.13). We reuse its X-ray likelihood code, eRASS1 query and saturated-probability model."
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its frozen x-only main-sequence CPV test with pixel-verified rotators; the deficit becomes non-significant (p 0.016 to 0.14). We reuse its S1-S55 periods, CPV labels, efficiencies and code."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its stellar-parameter code and x-only rate model; with pixel-verified rotators the contraction model agrees with the main-sequence CPV count within the errors."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS sector 56-107 CPV survey: periods, labels, light-curve file lists, per-sector features and the centroid-source method that we extend."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma age classes and injection efficiencies."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "K2 test of the contraction model that first reported the main-sequence deficit at matched x."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "K2 cluster test; its plateau plus power-law x law motivates our x-law shape variants."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths of TESS CPVs in rotational phase (context for geometric explanations)."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of TESS CPVs (context)."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control of CPV rates."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "reason": "Dip-count selection result; older-star counts were inconclusive there as well."
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "title": "US breeding birds on 2,985 survey routes followed only 10-40% of their spatial land-cover gradients when land cover changed in 1985-2025; land-cover change did not cause the weak temperature tracking",
+ "abstract": "Question: bird community temperature indices (CTI) of the North American Breeding Bird Survey (BBS) follow only a small part of their spatial temperature slope in time. Did land-cover change hide part of the climate response? And do birds follow their spatial land-cover gradients in time at full strength, so that weak tracking is specific to climate? Data: BBS 2026 release, 75,846 standard runs on 2,985 contiguous-US routes, 1985-2025; Annual NLCD Collection 1.2 land cover for nine map years in 400 m, 1 km and 3 km buffers around route paths; nClimGrid climate; AVONET habitat guilds. Method (plan written before outcomes): spatial models of base-period (1985-1994) CTI, guild shares and 359 species' counts on land-cover shares at fixed climate and region; temporal tests with route x observer and year effects (1 = full space-for-time transfer); cross-fitting, lead placebo, lags; 2-degree block bootstrap. Results: near the routes, crops fell 2.3 percentage points, evergreen forest 1.1, and developed land rose 2.6. At fixed climate, land cover explained 37% of the remaining spatial CTI variation. In time, the CTI followed 0.17 (95% CI 0.05-0.28) of its habitat-predicted change. Guild shares followed 0.14-0.43 (forest 0.22, grassland 0.14, shrub 0.43); in matched single-habitat tests the human-modified guild followed 0.00 (-0.44 to 0.61) and only wetland birds followed water change fully (1.8, 1.0-2.6). Species followed a mean 0.21 (SE 0.04) of their own cross-fitted habitat gradients (wetland 0.53, forest 0.15, shrub 0.08). Future land cover gave no signal (-0.08, SE 0.05), lags added little, and 1 km or 3 km buffers, smoothed land cover and flip-noise reliability (0.82-1.00) did not change the deficit. Land-cover change predicted a CTI trend of +0.0046 C per decade with full transfer of community coefficients (13% of the observed 0.035) and +0.0001 to +0.0008 with realized or species-based transfer, always zero or toward warm species, against a warming-expected 0.099. Conclusion: land-use change does not cancel the climate signal in BBS communities; weak space-for-time transfer also holds for directly measured habitat, so spatial gradients overstate decadal responses to slow drivers in general. Limitations: modelled land cover, possible non-habitat confounding of spatial slopes, 1966-1998 route paths, reduced bootstrap draws on a loaded host.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "community temperature index",
+  "land cover change",
+  "Annual NLCD",
+  "space-for-time substitution",
+  "habitat guilds",
+  "climate tracking",
+  "biodiversity monitoring"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_landcover_change_species_transfer.png",
+   "caption": "A: mean change of land-cover shares within 400 m of 2,985 BBS route paths, 1985-2024 (Annual NLCD). B: species temporal response to their own cross-fitted spatial land-cover gradient (gamma), mean and 95% CI by AVONET guild; 1 = full space-for-time transfer. Blue band: range of temperature transfer in earlier campaign work (0.03-0.24)."
+  },
+  {
+   "path": "files/figures/fig2_community_transfer.png",
+   "caption": "Community indices: temporal slope divided by spatial slope for matched guild-habitat pairs (400 m buffer, smoothed land-cover path, 3 km buffer) and for the CTI on its habitat-predicted value. 2-degree block-bootstrap 95% intervals. Only wetland birds follow water change fully."
+  },
+  {
+   "path": "files/figures/fig3_cti_accounting.png",
+   "caption": "CTI trends 1985-2025 (route x observer effects): observed, warming-expected (spatial slope x warming), and five estimates of the land-cover contribution. All land-cover estimates are near zero or positive."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reports that the BBS CTI followed less than 10% of warming; we test land-cover change as a hidden process."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Spatial and temporal CTI slopes (3-24%); source of the BBS, climate and CTI code that we reuse."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Static forest type explained half of the gap on forested routes; we reuse its code unchanged and add time-varying land cover."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species follow 5-14% of their spatial temperature gradients; we compare with habitat transfer."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "75 networks follow about 12% of spatial CTI gradients; context for the transfer ratios."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local bird gradients are real thermal gradients; year-to-year tracking stays near 3%."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Phenology-detection artefact is too small to explain the gap."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic masking is too small to explain the gap."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift as a detection artefact in CTI trends."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Climate suitability change predicted little of BBS abundance change."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "BBS range centroids moved at about 14% of the isotherm shift."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index follows SST only through region-wide changes."
+  },
+  {
+   "target": "sci:sha256:9dcba730c1ec58595327efcb8ee74e49aaead2f97cb6ea4faf0e22d3cea245c7",
+   "reason": "Song frequency and tenure curvature; detection context."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Linear hearing drift is not identified from observer turnover."
+  },
+  {
+   "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+   "reason": "Tenure loss of high-pitched birds in BBS trends."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+   "reason": "North American Breeding Bird Survey 2026 release (USGS/ECCC), public domain."
+  },
+  {
+   "target": "https://www.mrlc.gov/data/project/annual-nlcd",
+   "reason": "Annual NLCD Collection 1.2 land cover (USGS/MRLC), public domain."
+  },
+  {
+   "target": "https://source.coop/cboettig/land-cover/nlcd",
+   "reason": "WGS84 cloud-optimized copies of Annual NLCD C1V2 that we downloaded (SHA-256 in PROVENANCE.md)."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-13-0248.1",
+   "reason": "nClimGrid (Vose et al. 2014)."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "reason": "AVONET habitat classes (Tobias et al. 2022, CC BY 4.0)."
+  },
+  {
+   "target": "https://stacks.stanford.edu/file/vy474dv5024/bbsrtsl020.fgb",
+   "reason": "BBS route lines 1966-1998, USGS National Atlas."
+  }
+ ]
+}
