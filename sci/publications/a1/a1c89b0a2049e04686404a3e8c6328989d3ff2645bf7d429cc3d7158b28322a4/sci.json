@@ -1,0 +1,125 @@
+{
+ "title": "NOAA Coral Reef Watch four-month outlooks issued 2019-2026 gave coral bleaching Alert probabilities about 3 times too high at 9-20 weeks ahead at 3,623 reef cells, but correct week-1 probabilities",
+ "abstract": "Question: are the probabilities of the NOAA Coral Reef Watch (CRW) Four-Month Coral Bleaching Heat Stress Outlook (v5, CFSv2 ensemble, 0.5 deg) reliable? Approach: a pre-registered verification of all 392 as-issued weekly outlooks from April 2019 to November 2026 against the CRW 5km satellite Bleaching Alert Area (7-day maximum) at reef pixels, 3,623 reef cells and 20 lead weeks. Because the outlook gives probabilities only in 10% bins, we use strict bounds: the observed count divided by the lowest (or highest) expectation that the bins permit. Result: at week 1 the Alert 1+ probabilities were correct (observed/lowest expectation 1.03, 95% interval 0.995-1.07). At weeks 9-20 the ratio was 0.32-0.35 (0.25-0.42), so Alert 1+ was given at least 2.9 times too often. Warning+ was at least 1.7 times too frequent; Watch+ was too rare. At weeks 5-20 the Alert 1+ probabilities had a worse Brier score than a cell climatology and an observed-state climatology. The excess acts like an additive floor: it was largest in the cool years 2020-2022 and in the Coral Triangle and Indian Ocean, and near zero in the Caribbean. Cell errors repeated between 2019-2022 and 2023-2026 (rank correlation 0.63). A lead-and-bin correction fitted on 2019-2022 removed the excess in 2023-2026 but only tied the climatology. The result holds for three truth definitions and in a back-filled 2011-2019 archive. Limitations: the truth is satellite heat stress, not observed bleaching; the suggested cause (a warm offset of model sea surface temperature against the satellite climatology) was not tested with model temperatures.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370801"
+  }
+ ],
+ "keywords": [
+  "coral bleaching",
+  "Coral Reef Watch",
+  "seasonal forecast",
+  "forecast verification",
+  "reliability",
+  "degree heating weeks",
+  "CFSv2",
+  "marine heatwave",
+  "Brier score",
+  "hazard products",
+  "probabilistic forecast",
+  "pre-registration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ratio_by_lead.png",
+   "caption": "Observed count of reef cell-weeks at each heat-stress level divided by the lowest (left) and highest (right) expectation that the 10% probability bins of the as-issued CRW outlook permit, for lead weeks 1-20, 2019-2026. Shaded: 95% block-bootstrap intervals. Left values below 1 mean too-high forecasts for any reading of the bins."
+  },
+  {
+   "path": "files/figures/fig3_counts_timeseries.png",
+   "caption": "Weekly number of reef cells at Warning+ and Alert 1+: satellite observation (black) and the number expected by the outlook at leads of 1, 4 and 12 weeks. At 12 weeks the outlook expects hundreds of Alert cells every austral summer, also in 2020-2022 when few occurred."
+  },
+  {
+   "path": "files/figures/fig7_cell_map.png",
+   "caption": "Per reef cell log2(observed / forecast frequency) of Alert 1+ at lead weeks 5-12, 2019-2026. Red: forecast too high. The excess is largest in the Coral Triangle, Hawaii and French Polynesia, and small in the Caribbean."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.3389/fmars.2018.00057",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Describes the CRW four-month outlook and a qualitative 2011-2015 skill check; we verify its as-issued probabilities."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Describes the CRW 5km v3.1 heat stress product suite that we use as truth."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00823.1",
+   "reason": "CFSv2, the model that drives the outlook."
+  },
+  {
+   "target": "https://coralreefwatch.noaa.gov/satellite/bleachingoutlook_cfs/outlook_cfs.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Outlook product description and netCDF archive."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign work on coral heat stress (degree heating weeks) from DOISST."
+  },
+  {
+   "target": "sci:sha256:053ae1380c211d172074dbb24811ca5ca0a63e4112efbad9fc0ce66ce2786ac2",
+   "reason": "Earlier campaign work on heat stress and observed coral bleaching."
+  },
+  {
+   "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+   "reason": "Same verification programme: NOAA high tide flood outlook ranges."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Same verification programme: PTWC tsunami threat categories."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "reason": "Same verification programme: SWPC solar proton probabilities."
+  },
+  {
+   "target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e",
+   "reason": "Same verification programme: NOAA electron forecasts against persistence."
+  },
+  {
+   "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+   "reason": "Same verification programme: NOAA geomagnetic storm probabilities."
+  },
+  {
+   "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+   "reason": "Same verification programme: NHC track error circles."
+  },
+  {
+   "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+   "reason": "Same verification programme: first-version ShakeMap uncertainty."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "Same verification programme: ShakeAlert contours."
+  },
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "Same verification programme: PAGER fatality probabilities."
+  },
+  {
+   "target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca",
+   "reason": "Same verification programme: PAGER economic-loss probabilities."
+  },
+  {
+   "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+   "reason": "Same verification programme: issued USGS aftershock forecasts."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Same verification programme: gravitational-wave p_astro."
+  }
+ ]
+}
