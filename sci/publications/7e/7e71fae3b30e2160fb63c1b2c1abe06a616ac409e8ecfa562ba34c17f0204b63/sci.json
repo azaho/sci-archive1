@@ -1,0 +1,139 @@
+{
+ "title": "TESS pixels show most main-sequence M dwarfs with periods below 0.2 d are blends; with checked rotators the old-field CPV rate at fixed corotation ratio is 0.5 (0.2-1.1) times the young rate",
+ "abstract": "Complex periodic variables (CPVs) are young, rapidly rotating M dwarfs with sharp dips at the rotation period. Stellar contraction, through the corotation-to-stellar radius ratio x, explains the decline of the CPV rate inside 1-750 Myr groups. But old main-sequence M dwarfs at the x of young CPV hosts had 2 CPVs where this x-only model predicts 8.9, and eROSITA data showed that many of these ultrafast stars are not saturated rotators. We located the source of the TESS period in the 2-minute target pixel files of 2,392 rapid rotators (P 0.08-2 d) on the full sky. We fitted the periodic signal in each pixel and fitted the signal image with a PSF at all Gaia DR3 positions in the stamp. Injections with a different PSF recover on-target and off-target sources correctly in 90-100% of cases at signal-image S/N >= 15. The period comes from another star for 35 of 52 main-sequence stars with P < 0.2 d and for 28 of 37 at x < 3.5, but for only 8.5% of 1-24 Myr members. The true sources are mostly blue background stars with 10-30% modulation at 0.1-0.4 d (contact binaries, delta Scuti stars). In the eROSITA-DE half, 91% of main-sequence stars with on-target periods are X-ray saturated, against 27% with off-target periods (odds ratio 26), and both methods find the same number of genuine fast rotators. With pixel weights the frozen x-only model predicts 4.1 (2.2-6.5) main-sequence CPVs for 2 observed (p = 0.26), against 8.5 (p = 0.016) without weights. In a larger sample (BP-RP 2.0-4.2, height < 1 mag; 631 effective stars) it predicts 12.2 for 7 observed; the old-field rate factor at fixed x is 0.52 (0.21-1.11, p = 0.10; variants 0.41-0.55, p = 0.04-0.13). Thus most of the old-star CPV deficit came from blends, contraction alone fits all counts within errors, and an age factor of about 2 remains possible. Limitations: 8-day pixel windows, a Gaussian PSF model, 4 of 79 vetted CPVs placed off target, the CPV labels and model of earlier work, and about 12 predicted CPVs.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "TESS",
+  "target pixel files",
+  "blended periods",
+  "period source localisation",
+  "difference imaging",
+  "rapid rotators",
+  "corotation radius",
+  "stellar contraction",
+  "main sequence",
+  "contact binaries",
+  "eROSITA",
+  "Gaia DR3"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_on_target_fraction.png",
+   "caption": "Fraction of TESS 2-minute rapid rotators (BP-RP 2.0-4.2) whose period comes from the target system (pixel probability p_grp >= 0.5). Left: against the TESS period for 1-24 Myr members, 35-750 Myr members, near-main-sequence field stars (0.5 <= dMG < 1.0) and main-sequence field stars (dMG < 0.5). Right: main-sequence stars against x_iso = R_cor/R*; numbers are stars per bin. Bars are binomial standard errors."
+  },
+  {
+   "path": "files/figures/fig3_pixel_vs_xray.png",
+   "caption": "eROSITA-DE half of the sky: fraction of rapid rotators with a saturated eRASS1 corona (p_sat >= 0.5, from the method of sci:sha256:709005b5) for stars whose TESS period the pixels place on the target system (dark) or on another star (light). Numbers are stars. Bars are binomial standard errors."
+  },
+  {
+   "path": "files/figures/fig4_ms_cpv_test.png",
+   "caption": "Frozen x-only CPV model (trained on 1-24 Myr members) against the observed CPVs in old field rapid rotators. Left: the sample of sci:sha256:b46f8555 (BP-RP 2.4-3.8, dMG < 0.5). Middle: BP-RP 2.0-4.2, dMG < 1.0. Squares: predictions with 95% bootstrap intervals for no weights and five pixel weightings; stars: observed; p = P(N <= observed). Right: profile likelihood of the old-field rate factor at fixed x (grey: no weights; black: pixel p_grp); the horizontal line marks the 95% level."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We repeat its frozen x-only main-sequence test and show from TESS pixels that most of its predicted main-sequence CPVs come from stars whose period belongs to another star; the deficit becomes non-significant (p 0.016 to 0.26). We reuse its S1-S55 periods, labels, centroid tiers and efficiencies."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its eROSITA code and saturation probabilities; the pixel test confirms its blend interpretation star by star (odds ratio 26) and extends it to the full sky and a wider sample."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Its x-only contraction model fits the old-field CPV counts within errors when the denominators are pixel-checked."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANYAN Sigma classes, injection efficiencies and the efficiency curve."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS S56-S107 CPV survey tables, light-curve features and candidate tiers."
+  },
+  {
+   "target": "sci:sha256:886711cb22f5e3e59e68d99f6c2ca6b1fc8cb17984ef1f6879414174519536a5",
+   "reason": "Its TESS near-main-sequence deficit (0 of 5.1) used the same kind of unchecked denominators."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "K2 confirmation of the CPV age decline in clusters."
+  },
+  {
+   "target": "sci:sha256:92b1393983048e30af43e71768e7f1d0d5cfdea5087209c54e98b1c5008dfcb3",
+   "reason": "Group-held-out tests of age and corotation control."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "CPV dip widths stay fixed in phase; an open problem for the clump geometry that this work does not address."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "reason": "Shape memory of CPV features over sectors."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 positions and photometry of the field sources."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions/tess/tid/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC 2-minute target pixel files."
+  },
+  {
+   "target": "https://dc.g-vo.org/tap",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GAVO Data Center TAP service (gaia.dr3lite)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425481",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BHAC15 evolutionary models for x_iso."
+  },
+  {
+   "target": "https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/UpperLimitServer_dr1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "eRASS1 aperture photometry for the X-ray cross-check."
+  }
+ ]
+}
