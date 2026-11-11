@@ -1,0 +1,149 @@
+{
+ "title": "DOISST v2.1 warms 0.03-0.05 C per decade too fast at 60S-60N in 1982-2024; steps at input changes (1985, 2005, 7 July 2020) and the fixed ship adjustment cause the excess",
+ "abstract": "Question: why does NOAA Daily OISST v2.1 (DOISST) warm faster in 1982-2024 than other current SST products, and is its fixed 0.14 C ship-to-buoy adjustment the cause, as Chan et al. (2026) suggested? Approach: we compared DOISST at 60S-60N with four references of different types: ESA CCI SST v3 (satellite only, daily, 1-degree points), HadSST4.2 and ERSSTv5 (in situ), and Roemmich-Gilson Argo (2005-2024). We fitted step models at the documented DOISST input-change dates, measured the ship-minus-buoy offset in iQuam in situ data, compared DOISST v2.1 with the retired v2.0, and used 198 moored buoys. Results: DOISST warms 0.044 +/- 0.005 C per decade faster than CCI (0.182 against 0.138), 0.033 faster than HadSST4.2, 0.047 faster than ERSSTv5 and 0.020 faster than Argo. The excess is a staircase of steps, not a drift: DOISST falls 0.065-0.08 C on 4 January 1985 (NOAA-9), rises 0.057-0.079 C on 1 January 2005 (sea-ice input change) and rises 0.057-0.089 C on 7 July 2020 (no documented change) against every reference. In iQuam the true ship-buoy offset was 0.088 C in 1982-1991, so the fixed 0.14 C adjustment made early DOISST about 0.04 C too cold; this adds 0.010-0.012 C per decade, 25-35% of the excess. Against CCI the excess divides into 1985-2011 steps (0.014), the ship term (0.018) and 2016-2023 steps (0.012). The excess is largest at 40-60S (0.05-0.09 C per decade), and DOISST anomalies for 2021-2023 are 0.08-0.13 C too warm relative to 1991-2020. Limitation: the references have their own errors, the cause of the 2020 step is unknown, and the ship term is an approximation whose fitted size depends on the reference.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "ESA CCI SST",
+  "HadSST4",
+  "ERSSTv5",
+  "Argo",
+  "iQuam",
+  "ship-buoy adjustment",
+  "homogeneity",
+  "warming trend",
+  "step change",
+  "Southern Ocean",
+  "climate data record"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_difference_series.png",
+   "caption": "DOISST v2.1 minus four references at 60S-60N. (a) 12-month running mean with the documented input-change dates; (b) the warm step of 7 July 2020 in daily CCI and monthly in situ and Argo differences; (c) DOISST v2.1 minus the retired v2.0."
+  },
+  {
+   "path": "files/figures/fig3_trend_budget.png",
+   "caption": "(a) 1982-2024 trends on matched masks (the dark bar equals the reference by construction). (b) Budget of the DOISST trend excess: steps at satellite and sea-ice changes 1985-2011, the fixed 0.14 C ship adjustment term and steps of 2016-2023, with 95% intervals."
+  },
+  {
+   "path": "files/figures/fig2_ship_test.png",
+   "caption": "Ship test with iQuam: (a) box-matched ship-minus-buoy offset against the fixed 0.14 C adjustment; (b) ship share of in situ super-observations; (c) implied DOISST ship bias against the observed DOISST-minus-reference offset before 2016."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "DOISST noise-step study that this work extends to the mean."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its archived buoy SST and DOISST buoy-cell files."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "CCI v3 comparison of DOISST memory; we use the same CCI access method."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "DOISST input steps in extremes; related artifact chain."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Heatwave-day robustness study; mean-warming errors found here affect heatwave days."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Found CCI v3 sensor steps; a limitation of CCI as a reference."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Heatwave homogenisation; it reported a DOISST-buoy mean offset trend that this work explains."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Spatial steps in DOISST and CCI at input changes."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Part of the selected DOISST artifact series."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reef DHW study; found that DOISST-CCI mean warming differences dominate; this work explains them."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Spatial step study at the 2007 and 2021 input changes."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "ERA5 study; found DOISST warms 0.043 C per decade faster than ERA5 and drifts against buoys."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-25-0210.1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Chan et al. 2026 found DOISST v2.1 to be the satellite-era trend outlier and suggested the fixed ship adjustment; we test and quantify this."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description (Huang et al. 2021)."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-22-0081.1",
+   "reason": "Huang et al. 2023 noted an increase of the DOISST difference against buoys after 2020."
+  },
+  {
+   "target": "doi:10.5194/essd-8-165-2016",
+   "reason": "Banzon et al. 2016 list the DOISST input data periods and satellite dates used as step dates."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "reason": "Reynolds et al. 2007 DOISST method."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA CCI SST v3 reference data (Embury et al. 2024)."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "reason": "ESA CCI SST CDR v3.0 data set."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4 (Kennedy et al. 2019)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5 (Huang et al. 2017)."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "reason": "Roemmich-Gilson Argo climatology."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "reason": "iQuam in situ SST quality monitor (Xu and Ignatov 2014)."
+  }
+ ]
+}
