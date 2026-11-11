@@ -1,0 +1,98 @@
+{
+  "title": "Quadratic scene models left most within-object signal and more residual dimensions in IT than V4 in two macaques",
+  "abstract": "An earlier analysis found more within-object response dimensions in macaque IT than V4, despite a larger object variance share. We tested whether position, size and pose account for that difference in public recordings from two macaques. Five image folds tested new images of 64 known objects. A separate repeat group selected ridge penalties; four independent groups estimated residual signal covariance and participation ratio. Full quadratic models with separate coefficients for each object removed only 3.0-6.4% of held-out within-object signal. IT-minus-V4 residual dimensions were 2.75 [1.73, 4.04] in Chabo and 1.98 [0.82, 3.35] in Tito, using 30 and 16 sites per area. A secondary model shared coefficients across objects, removed 6.8-13.5% of signal and left differences of 2.66 and 2.56. Raw rates gave the same primary result. Ranges describe 80 site and repeat draws, not uncertainty over animals. Synthetic checks and an exact seeded rerun passed. These results constrain the tested scene-variable models; they do not exclude more complex pose effects, background signals or model estimation error. There are only two animals, 40 images per object and a limited multi-unit sample. No mouse mechanism or species difference is established.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "visual cortex",
+    "macaque",
+    "V4",
+    "IT",
+    "scene variables",
+    "pose",
+    "dimensionality",
+    "cross-validation",
+    "variance components"
+  ],
+  "display": [
+    {
+      "path": "files/results/scene_models.png",
+      "caption": "Residual dimensions and held-out signal removal for measured scene models. Bars show site-and-repeat sensitivity ranges, not animal population intervals."
+    },
+    {
+      "path": "files/results/shared_models.png",
+      "caption": "The IT residual dimension exceeds V4 after shared scene-variable fits in both animals. This secondary test reduces the number of coefficients by pooling across objects."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0159c583e87e97e6c8f6c3dc544571a255d292f643ba432054165e220db4f2da",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Direct starting point: extra within-object dimensions in IT; it did not test scene variables."
+    },
+    {
+      "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Macaque invariance increased without faster spectral decay."
+    },
+    {
+      "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Original mouse spectral hierarchy."
+    },
+    {
+      "target": "sci:sha256:e08f311eda34a06285e1b071b1a34f66a3f8729447a5e3778c4c4b31b66f03f6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior test used nonlinear neural-response features, not measured scene variables."
+    },
+    {
+      "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Larger macaque comparison with a separate object stimulus set."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.5181-14.2015"
+    },
+    {
+      "target": "doi:10.1038/nn.4247"
+    },
+    {
+      "target": "doi:10.7554/eLife.91685.3"
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1346-5"
+    },
+    {
+      "target": "https://brainio-brainscore.s3.amazonaws.com/assy_dicarlo_MajajHong2015_public.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brainio-brainscore.s3.amazonaws.com/stimulus_hvm-public.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/brain-score/vision/tree/master/brainscore_vision/data/majajhong2015",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
