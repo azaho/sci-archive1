@@ -1,0 +1,205 @@
+{
+ "title": "No known SST product artifact explains the 1982-2022 east Pacific and pattern-effect gap to 31 CMIP6 models; DOISST steps put 60S-60N warming at the model median and hide 17-23% of the gap",
+ "abstract": "Question: can the known step and drift artifacts in SST products (DOISST v2.1 input steps, the 2018 OI SST v2 / AMIP forcing step, the missing ship-buoy adjustment in HadISST1 and OI v2) explain any part of the difference between the observed 1982-2022 SST trend pattern and CMIP6 coupled simulations? Approach: we read ts of 112 members of 31 CMIP6 models (historical + SSP2-4.5) from the public Pangeo zarr copy with a chunk-range reader and put them on the same 60S-60N ice-free 5-degree boxes as 11 observational versions (raw, step-corrected and bias-adjusted DOISST, OI v2, HadISST1, plus ERSSTv5, COBE-SST2 and ESA CCI). We compared trends of the 60S-60N mean (Tg), the east equatorial Pacific minus 30S-30N, the west-east Pacific gradient, 50-60S, and the Green's-function pattern term P (five GFMIP models), with equal model weights. Results: all 11 versions put the east Pacific contrast (-0.135 to -0.160 C/decade; CMIP6 mean +0.020, no member below -0.126), the gradient (0.155-0.203; no member above 0.134) and P (-0.45 to -0.75 W m-2 K-1; CMIP6 mean -0.07) outside or at the edge of all models. Thus the known artifacts explain none of the discrepancy. DOISST only moves Tg to the CMIP6 median (0.171, 52nd percentile; corrected 0.130-0.137, 14th-17th; other products 0th-21st). By this dilution it hides 17-23% of the P gap (20-26% for 1982-2014), while the radiative trend of the non-uniform warming (Q) changes by less than 8%. In a 30-model relation of ECS on Tg (r = 0.68), DOISST gives 3.7 K and the corrected DOISST 2.9-3.0 K (shift +0.64 to +0.76 K). In 2001-2022 no version is outside the CMIP6 range. Limitations: only documented artifacts are tested, model ts is clipped at freezing and coastal boxes are filled, the Green's functions are linear and model-dependent, correction sizes are uncertain by up to a factor of two, and the ECS relation is a sensitivity, not a new estimate.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OI SST v2",
+  "AMIP forcing",
+  "CMIP6",
+  "pattern effect",
+  "Green's function",
+  "Pacific trend discrepancy",
+  "Southern Ocean",
+  "climate sensitivity",
+  "emergent constraint",
+  "data artifacts"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_metric_strips.png",
+   "caption": "1982-2022 trend-pattern metrics: 112 CMIP6 members (grey), model means (dark), equal-weight CMIP6 mean (black line) and 11 observational versions (colour). All versions are outside CMIP6 for the east Pacific contrast and the Green's-function pattern term; only DOISST (orange) puts the 60S-60N warming rate at the CMIP6 median."
+  },
+  {
+   "path": "files/figures/fig3_pattern_gap.png",
+   "caption": "Observed minus CMIP6-mean Green's-function pattern term P for each observational version and period. DOISST (orange) has a gap 17-23% (1982-2022) and 20-26% (1982-2014) smaller than its step-corrected versions (blue). Grey band: 1 SD of CMIP6 (model spread and internal variability). In 2001-2022 the CMIP6 spread covers all versions."
+  },
+  {
+   "path": "files/figures/fig4_ecs_relation.png",
+   "caption": "CMIP6 ECS (Zelinka et al. 2020) against the 1982-2022 60S-60N SST trend of 30 models (r = 0.68). Vertical lines: observational versions. DOISST implies 3.7 K; its step-corrected versions 2.9-3.0 K; the other products 2.3-3.1 K."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "We use its grid and mask code, step-corrected DOISST boxes and pattern indices; we extend its trend-pattern result to CMIP6 coupled models.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "reason": "We use its 5-degree Green's-function boxes and OI v2 2018 step map.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "reason": "We use its CCI 5-degree box series and HadSST4.2 ship-buoy adjustment series.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "reason": "It showed that the CMIP7Plus AMIP forcing keeps the DOISST steps; our DOISST results apply to it."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "It found the 2018 OI v2 / CMIP7 AMIP forcing step that we remove in one version."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Correction-ensemble result; we cite the factor-two correction uncertainty as a limitation."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:c0ad230d2adce447e21d42715ae77af6adde24fd065f7e743afcc68528a3437e",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:36b3c230b0ab02a3d4ac5373b60171f5d855dfb8ed5c1f7fdaa5ca172fea8faf",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Earlier campaign result on SST product artifacts and their consequences; context for this study."
+  },
+  {
+   "target": "doi:10.5194/gmd-9-1937-2016",
+   "reason": "CMIP6 design (model data used)."
+  },
+  {
+   "target": "doi:10.5194/gmd-9-3461-2016",
+   "reason": "ScenarioMIP (SSP2-4.5 data used)."
+  },
+  {
+   "target": "doi:10.1029/2022GL100011",
+   "reason": "Wills et al. (2022): model biases in recent SST trend patterns; the discrepancy we test."
+  },
+  {
+   "target": "doi:10.1038/s41558-019-0505-x",
+   "reason": "Seager et al. (2019): Pacific gradient boxes and discrepancy."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "reason": "GFMIP protocol; source of the Green's functions."
+  },
+  {
+   "target": "doi:10.1029/2019GL085782",
+   "reason": "Zelinka et al. (2020): CMIP6 ECS values used in the secondary test."
+  },
+  {
+   "target": "doi:10.1126/sciadv.aaz9549",
+   "reason": "Tokarska et al. (2020): warming-trend constraint on CMIP6; motivates the ECS relation."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675",
+   "reason": "Andrews et al. (2022): SST-dataset dependence of historical pattern effects."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 description."
+  }
+ ]
+}
