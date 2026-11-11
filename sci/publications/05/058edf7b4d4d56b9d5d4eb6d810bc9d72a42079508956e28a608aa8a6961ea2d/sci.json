@@ -1,0 +1,113 @@
+{
+ "title": "Annual winter forcing triples the modelled 1997-2012 North Atlantic sigma0 26.5 AOU swings and gives BATS year-to-year timing, but swings stay 2-4 times too small; NP gains do not change (1950-2025)",
+ "abstract": "Question: the tracer-calibrated near-outcrop ventilation model of sci:dcfc9b0b gave the sign of North Atlantic (NA) AOU changes on sigma0 26.5, but its 1997-2003 rise and 2003-2012 fall on A20/A22 were 5-20 times too small. It was forced with decade-mean winter maps. Is a second process needed, or interannual forcing? Approach: the same model, fields, flow, tracer targets and comparison code, forced with annual late-winter surface sigma0 (WOA23 decadal backbone plus the ERSSTv5-based interannual anomaly of sci:e7f1a165), with original (42) and recalibrated (47) parameter sets, a 199-order shuffle test and a North Pacific (NP) extension; tests written before the runs. Results: the forcing agrees with BATS measured winter density (r = 0.79). The swing ratio |model|/|observed| for the four A20/A22 1997-2012 pairs rose from 0.06 (decadal) to 0.25-0.31 in the best sets (ensemble medians 0.31-0.32; 18 of 42 and 22 of 47 sets >= 0.33, none under decadal forcing), with 4 of 4 signs; the pre-set 0.33 rule failed for the best sets. The recalibrated best set passed the line-pair size test (slope 1.69, r 0.81, 11 of 11 signs). BATS annual r rose from 0.72 to 0.85 and first-difference r from 0.20 to 0.63; no shuffled year order matched (0 of 199). The signal comes from south of 45 N and west of 45 W; the 2010-2011 winters give half of the swing. Sets with full swings over-predict the long-term BATS change. The model AOU follows the observed 26.5 class thickness (r = -0.82), which the fixed-geometry model lacks; thickness explains part of the residual (exploratory). In the NP annual forcing changes regional gains by 0.89-1.11 and leaves the California excess. Limitations: SST-only anomaly, fixed flow and geometry, 11 line pairs, 2-4-fold spread among age-consistent sets.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Atlantic",
+  "North Pacific",
+  "sigma0 26.5",
+  "ventilation",
+  "Eighteen Degree Water",
+  "BATS",
+  "interannual forcing",
+  "isopycnal model",
+  "transit-time distribution",
+  "GLODAP",
+  "ERSSTv5",
+  "WOA23",
+  "AOU",
+  "shuffle test",
+  "mode water thickness"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_bats.png",
+   "caption": "BATS annual AOU anomaly on sigma0 26.5: observed and the ventilation model under decadal forcing (sci:dcfc9b0b) and annual forcing (original and recalibrated best sets; band: all 42 original sets). Right: model AOU under annual forcing against the observed 26.5 class thickness."
+  },
+  {
+   "path": "files/figures/fig3_line_pairs.png",
+   "caption": "Observed against model AOU changes for 11 GLODAP line pairs (best sets; diamonds: A20/A22 1997-2003 and 2003-2012), and the 1997-2012 swing ratio over all age-consistent parameter sets for each forcing."
+  },
+  {
+   "path": "files/figures/fig4_shuffle.png",
+   "caption": "Shuffle test: BATS and line-pair statistics of the best set under the historical order of annual anomaly maps against 199 random year orders (decadal backbone kept)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:dcfc9b0b167460ca079b8153d875c9bebad2d3e5968a58aadb16e3ba4aff2f88",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "NA ventilation model, fields, calibration, comparison code and BATS/line-pair inputs; this study tests its open interannual-forcing option."
+  },
+  {
+   "target": "sci:sha256:e7f1a16541e8f7bfd1d0d6bf725eadc9364b4dc6c50931d5ad702c63a6effa86",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Public annual late-winter sigma0 field (ERSSTv5 + WOA23) used for the interannual anomaly."
+  },
+  {
+   "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "NP ventilation model, fields, calibration sets and regional targets for the NP extension."
+  },
+  {
+   "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CFC-12/SF6 TTD ages and AOU in line bins on sigma0 26.5 (GLODAP)."
+  },
+  {
+   "target": "sci:sha256:597145cb4c8205876e18fb51374f103088ee1c2989fb260a5ef11699576b4e5f",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "BATS measured winter density and 26.5 class thickness; the forced model reproduces the thickness-AOU relation found there."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NP annual AOU series on sigma0 26.5 from WOD ship data."
+  },
+  {
+   "target": "sci:sha256:af00649e7edd249ab0076d45e62fec40a31c142ff936e4fd347d6a607efaaa3a",
+   "reason": "BATS late AOU excess after thickness and depth."
+  },
+  {
+   "target": "sci:sha256:db350eb4c66afe46724f5fc4763b544ac87fd4d86a40e5290de682fa80030d95",
+   "reason": "NP outcrop-lightening law gives only part of the BATS loss; a second NA process was proposed."
+  },
+  {
+   "target": "doi:10.5194/essd-16-2047-2024",
+   "reason": "GLODAPv2.2023."
+  },
+  {
+   "target": "doi:10.26008/1912/bco-dmo.3782.10",
+   "reason": "BATS bottle data, BCO-DMO 3782 v10."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+   "reason": "WOA23."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst",
+   "reason": "ERSSTv5."
+  }
+ ]
+}
