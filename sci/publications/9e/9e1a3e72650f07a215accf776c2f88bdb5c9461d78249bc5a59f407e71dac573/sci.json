@@ -1,0 +1,166 @@
+{
+ "title": "DOISST v2.1 input steps remove the 1982-2022 SST cooling of the east equatorial Pacific and 50-60S that in situ, CCI and mooring data show; OI v2 (AMIPII source) keeps it but has a 2018 cold step",
+ "abstract": "Question: do the satellite-input steps in NOAA DOISST v2.1 change the spatial pattern of 1982-2022 SST trends, and does NOAA OI SST v2 (the post-1981 source of the AMIPII model forcing) have similar artifacts? Approach: we compared both products with three in situ-only products (ERSSTv5, COBE-SST2, HadSST4.2), the satellite-only ESA SST CCI v3.0.1 and TAO/TRITON moorings on 5-degree boxes (60S-60N, fixed ice-free mask). We used block-bootstrap trend intervals, a break search, step models with a goodness-of-fit placebo, and a box-level step correction cross-validated between reference types. Results: DOISST shows no cooling in the east equatorial Pacific (+0.022 C per decade; references -0.046 to -0.001) or at 50-60S (+0.056; references -0.040 to 0.000), and it doubles the 40-60S warming. At 38 east Pacific moorings, DOISST minus buoy SST rises by +0.064 C per decade (95% interval 0.030-0.096) over 1993-2022; other products stay within +/-0.013. The differences are steps at input-change dates (mainly 2005-01-01 and 2020-07-07). Steps fitted to one reference type remove the errors against the other type and at the moorings (residual 0.000-0.005). The west-minus-east Pacific gradient trend and the SST# rise survive. OI v2 keeps the observed 1982-2022 pattern, but it has an undocumented Southern Hemisphere cold step in about mid-2018 (-0.10 to -0.15 C at 40-60S against in situ data) that changes the sign of its 2001-2022 50-60S trend. Limitations: the references disagree by up to 0.04 C per decade; CCI has its own step near 2018 and cannot confirm the OI v2 step; we did not calculate radiative feedback.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "OI SST v2",
+  "AMIPII",
+  "pattern effect",
+  "east Pacific cooling",
+  "Southern Ocean cooling",
+  "ESA SST CCI",
+  "TAO moorings",
+  "data artifacts",
+  "homogenisation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_trend_maps.png",
+   "caption": "1982-2022 SST trends on 5-degree boxes: (a) mean of ERSSTv5 and COBE-SST2; (b) DOISST v2.1 minus this reference; (c) DOISST with box-level steps removed (fitted to ESA CCI, independent of the reference) minus the reference; (d) OI v2 (AMIPII source) minus the reference. Dashed: east equatorial Pacific box and 40-60S."
+  },
+  {
+   "path": "files/figures/fig2_index_trends.png",
+   "caption": "1982-2022 trends of six pattern indices by product. Grey band: range of the four independent references (ERSSTv5, COBE-SST2, HadSST4.2, ESA CCI v3). DOISST (orange) lies outside the band for the east Pacific and the Southern Ocean; step-corrected DOISST (green, blue) and OI v2 (violet) lie inside or near it."
+  },
+  {
+   "path": "files/figures/fig3_difference_series.png",
+   "caption": "Monthly difference series (12-month running means): (a) DOISST minus each reference and minus TAO moorings, Nino 3.4 / east box; (b) DOISST minus each reference, 40-60S; (c) OI v2 minus each reference, 40-60S, with the Pinatubo period and the 2018 step. Dotted lines: input-change or break dates."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on DOISST variance steps at input changes; context for the input-change dates."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "We read its GTMBA (TAO/TRITON) daily mooring SST table and buoy positions for the mooring test.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "We adapt its OPeNDAP CCI fetch method (MIT code).",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign result on DOISST step effects on extremes; context."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Bound study on heatwave-day trends; context."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "It shows that ESA CCI v3 has its own sensor steps; we use this to interpret the weaker CCI-based tests.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign result on noise steps and heatwave trends; context."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign result on CCI and DOISST spatial-detail steps; context for CCI caveats."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Bound study on heatwave area trends; context."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Coral DHW study that found product mean-warming differences; context."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Front-trend artifact study; context."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "2023 heatwave study on the 2021 input change; context."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST variance step study; context."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "We use its documented DOISST input-change dates and the 2020-07-07 date; we confirm the steps with an independent satellite reference and moorings and show their spatial effect on trend-pattern indices.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "We confirm its 2005 and 2020 step fields and show their effect on the trend pattern.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Polar splices in DOISST; our ice-free sample excludes the seasonal ice zone that it covers."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "It found that regional DOISST corrections were too large at moorings; our smoothed box-level correction, cross-validated between reference types, gives a near-zero east Pacific mooring residual. We reuse its CCI fetch approach.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1"
+  },
+  {
+   "target": "https://doi.org/10.1175/1520-0442(2002)015%3C1609:AIISAS%3E2.0.CO;2"
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1"
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1"
+  },
+  {
+   "target": "doi:10.1029/2018JD029867"
+  },
+  {
+   "target": "doi:10.1029/2002JD002670"
+  },
+  {
+   "target": "doi:10.1038/s41558-019-0505-x"
+  },
+  {
+   "target": "doi:10.1029/2020JD033629"
+  },
+  {
+   "target": "doi:10.1029/2022JD036675"
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023"
+  },
+  {
+   "target": "doi:10.1029/2022GL100011"
+  }
+ ]
+}
