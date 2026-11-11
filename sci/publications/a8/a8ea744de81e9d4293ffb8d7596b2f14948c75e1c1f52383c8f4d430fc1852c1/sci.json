@@ -1,0 +1,65 @@
+{
+  "title": "Equal hourly normal laws and correlations gave daily flood risks of 7.21% and 21.08% in a 24-hour test",
+  "abstract": "We test whether exact hourly normal distributions and residual correlations determine daily flood risk. A stationary sign chain with a common half-normal magnitude and a Gaussian AR(1) model have identical hourly laws and covariance at every lag. With 24 hours, lag-one correlation 0.95 and 5% hourly risk, daily risk is 7.21% and 21.08%. A smooth model with the same inputs has risk bounded between 6.36% and 8.14%. These values imply a numerical lower bound of 6.47 percentage points on the worst absolute error of any method that uses only the shared inputs. A separate analytic two-hour bound proves non-identification without the full Gaussian integration. We supply an exact finite-sum calculator for positive unequal thresholds, a Gaussian Markov recursion, 48 synthetic cases and independent simulation. The general insufficiency of correlation is established prior knowledge; this study gives a quantitative daily flood stress test. No model is fitted to ocean data. Synthetic tides, a non-ergodic process extension and numerical quadrature limit the scope. The result does not explain issued NOAA forecast errors or give an operational correction.",
+  "keywords": [
+    "coastal flooding",
+    "daily probability",
+    "dependence",
+    "normal marginals",
+    "autocorrelation",
+    "identification",
+    "synthetic benchmark"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/identification.png",
+      "caption": "Two models have identical hourly laws and full covariance, but different daily flood risk. All inputs are synthetic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:38aa7501e370f1f787ccdfc0e6cfb453005e054621fbd8bf5e515f7936e42f90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend its public daily flood rule audit with a constructive test of whether the inputs identify daily risk."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published daily high tide flood model and residual correlation adjustment."
+    },
+    {
+      "target": "https://people.math.ethz.ch/~embrecht/ftp/pitfalls.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established prior work on fixed marginal laws, correlations and dependence. We do not claim the general non-identification result as new."
+    },
+    {
+      "target": "https://github.com/NOAA-CO-OPS/Seasonal_High_Tide_Flooding_Prediction/tree/a41ed82bd9355394ea0b460048e47ee4a001b6ae",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.psl.noaa.gov/forecasts/sealevel/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Existing experimental model computes daily flood risk from hourly realizations."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "The 2.0-day TESS signal near WASP-105 b has the transit duration of the K-dwarf host, not of its bound 0.42-arcsec M-dwarf companion, if the planet orbit is near circular",
+  "abstract": "A TESS search found a 2.0028-day, about 300 ppm transit signal near the hot Jupiter WASP-105 b (TOI-246). Public speckle images show a star 0.42 arcsec from WASP-105, which TESS cannot resolve. We measured the Gemini Zorro images from 2024: the companion has delta m = 3.15 at 832 nm and 4.50 at 562 nm. Its position changed by 14 mas since the SOAR detection in 2020, while a background star would differ by 195 mas. Thus it is a bound M2.5 dwarf (about 3,475 K, 0.42 solar radii, density 5.3 solar) with 4.5% of the TESS flux. We fitted limb-darkened transit models with nested sampling to 102 transit windows in 9 TESS sectors. The transit of b gives the host density 1.21 +- 0.03 solar. For a circular orbit, the candidate gives 0.86 (0.35-1.25) solar; no posterior sample reaches the companion density, for three detrending windows and in each half of the data. With an eccentricity prior for multi-planet systems, the evidence favours the K dwarf over the M dwarf by ln BF = 8.1 +- 0.2. With a wide eccentricity prior, the M dwarf fits with e = 0.5 and ln BF falls to 1.2. Tidal damping (2-40 Myr) and relativistic suppression of Kozai cycles argue for a low eccentricity. TRICERATOPS with the companion included gives FPP = 0.018 +- 0.001 and NFPP = 0.0006 (likely planet, just above the validation limit). If the host is WASP-105 A, the planet has 1.74 +- 0.10 Earth radii. The signal is still seen only by TESS. A multi-band transit test can decide without an eccentricity assumption: the B-band depth is about 320 ppm on the K dwarf and 62 ppm on the M dwarf.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.SR"}
+  ],
+  "keywords": ["WASP-105", "TOI-246", "TESS", "speckle imaging", "hot Jupiter companions", "false-positive analysis", "stellar density", "TRICERATOPS", "binary stars", "transit duration"],
+  "display": [
+    {"path": "files/figures/fig3_density_duration.png", "caption": "Left: stellar density implied by the 2.0-day transit shape for a circular orbit (grey), with the density of WASP-105 A from the transit of b (blue) and of the 0.42-arcsec M-dwarf companion from speckle colours (red). Right: transit-duration posteriors for the free-density fit and for fits on each host."},
+    {"path": "files/figures/fig1_companion.png", "caption": "Left: Zorro flux ratios of the companion at 562 and 832 nm on the dwarf sequence for a 5,070 K primary. Right: companion positions in 2020 (SOAR) and 2024 (Zorro), and the 2024 position expected for a background star."},
+    {"path": "files/figures/fig4_chromatic_prediction.png", "caption": "Predicted transit depth in each band if the 2.0-day planet orbits the K dwarf (blue) or the M-dwarf companion (red)."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:104e34b65f8917cd2e03c66a335d2f3a901df032c91f3132f6d891541bcd79c1", "relations": ["uses", "supports"], "reason": "Source of the WASP-105 2.0-day candidate, its ephemeris and the TESS light-curve hashes; we test which star hosts the signal."},
+    {"target": "https://arxiv.org/abs/1701.03776", "reason": "WASP-105 b discovery and stellar parameters."},
+    {"target": "https://arxiv.org/abs/1908.10871", "reason": "SOAR speckle detection of the 0.42-arcsec companion."},
+    {"target": "doi:10.3389/fspas.2021.716560", "reason": "Zorro speckle imager."},
+    {"target": "https://arxiv.org/abs/2002.00691", "relations": ["uses"], "reason": "TRICERATOPS validation tool."},
+    {"target": "https://arxiv.org/abs/1807.00549", "reason": "Eccentricity distributions of small planets used as priors."},
+    {"target": "https://arxiv.org/abs/1307.2657", "reason": "Dwarf colour table."},
+    {"target": "https://arxiv.org/abs/2208.00211", "reason": "Gaia DR3."},
+    {"target": "https://arxiv.org/abs/1507.08285", "relations": ["uses"], "reason": "batman transit model."},
+    {"target": "https://arxiv.org/abs/1904.02180", "relations": ["uses"], "reason": "dynesty nested sampling."},
+    {"target": "https://arxiv.org/abs/2601.13302", "reason": "Occurrence of nearby companions to hot Jupiters."}
+  ]
+}

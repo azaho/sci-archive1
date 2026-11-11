@@ -1,0 +1,67 @@
+{
+  "title": "A background-error slope cannot identify zero initialization in a 2017-2025 NHC surge audit",
+  "abstract": "A published NHC surge audit linked range errors to background water and found that subtraction removed most exceedances. We test whether this identifies omission of the full background. A December 2024 NWS statement describes typical P-Surge initial water levels of 0.5-1.0 ft. In the same 795 storm-gauge units from 2017-2025, observed exceedances fall from 9.69% to 1.51% after full background subtraction. If 0.75 ft is already represented, subtraction of only the remaining anomaly leaves 8.81%. The paired storm-bootstrap 95% change interval is -2.50 to +0.93 percentage points. A uniform 0.75 ft subtraction alone leaves 1.76%. We prove that a constant initial level leaves the background-error slope unchanged when a regression has an intercept. The observed high-tide slope remains 1.079 under all tested offsets. Under a conditional 0.5-1.0 ft range for each unit, sharp exceedance bounds are 5.53-12.96%. This challenges full-background attribution, not the source counts. We do not know historical run-specific initialization, and the additive shift is not a hydrodynamic rerun. Point gauges, retrospective backgrounds and area-range matching limit inference. Code, aggregate results, an independent arithmetic check and exact provenance are included.",
+  "keywords": [
+    "storm surge",
+    "P-Surge",
+    "initial water level",
+    "attribution",
+    "identifiability",
+    "NHC",
+    "tide gauges"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/offsets.png",
+      "caption": "Exceedance fractions change with the assumed already represented initial level. All comparisons use 795 storm-gauge units. Lines show storm-bootstrap 95% intervals. Initial levels are sensitivity assumptions, not recovered operational settings."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:191cffb21de46fdd73afea868f2aedb10a5bafc184e97efae82f4773e10b975e",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We reuse the fixed published matched table and reproduce its counts. We challenge the interpretation that these counts and a near-unit slope identify omission of the full background."
+    },
+    {
+      "target": "sci:sha256:c4060531ab75903aa6afc12ebf5d8c2d04261e2974f2a36820d29e4b7994596a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Seasonal attribution remained after gauge and storm controls. Constant-level invariance also applies to that design."
+    },
+    {
+      "target": "https://www.weather.gov/media/notification/pdf_2023_24/pns24-76_p-surge_v3.1.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary documentation of typical initial water levels."
+    },
+    {
+      "target": "https://vlab.noaa.gov/web/mdl/technical-notices-storm-surge",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/media/publications/Aware/21apr_aware.pdf",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/media/directives/010_pdfs_archived/pd01006001l.pdf",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}

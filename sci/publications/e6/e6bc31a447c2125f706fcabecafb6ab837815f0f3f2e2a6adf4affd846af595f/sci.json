@@ -1,0 +1,73 @@
+{
+  "title": "Exact ratio bounds retain a heatwave duration rise under 0.025 C SST changes at 211 OISST locations in 1982-2025",
+  "abstract": "We give an event-state method that finds exact limits on mean marine heatwave duration for independent allowed threshold crossings. It optimizes event days divided by event count through fractional dynamic programming. At 211 OISST buoy locations, mean duration rises from 13.519 days in 1982-2003 to 21.143 days in 2004-2025. With a 1983-2012 baseline, a safe bound proves that every daily input record within 0.025 C retains an increase of at least 0.0576 days, including recalculated thresholds. Separate bounds on days and counts fail to prove this sign. When historical threshold inputs are fixed, every record within 0.10 C retains at least 0.624 days of increase. A constructed record within 0.14 C reverses the change to -1.292 days with exactly unchanged rebuilt thresholds. It changes 2.012% of inputs and has 0.01986 C RMS change. Exhaustive short-series and longer partial-series checks pass. These are deterministic sensitivity results for an equal-location two-period statistic. The sample is not ocean-representative, the changes need not follow a physical error model, and no bound on true SST errors is estimated. Proof, code, aggregate evidence, source hashes and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "marine heatwaves",
+    "OISST",
+    "duration",
+    "dynamic programming",
+    "fractional optimization",
+    "uncertainty bounds"
+  ],
+  "display": [
+    {
+      "path": "files/results/duration_bounds.png",
+      "caption": "Mean duration change in 211 OISST locations. Safe outer limits allow threshold recalculation. Fixed historical inputs give sharp crossing limits and checked temperature witnesses. These are sensitivity bounds, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the exact daily OISST extract at 211 buoy locations."
+    },
+    {
+      "target": "sci:sha256:b4e19931a50ff723ade22d6598905c36d31554ac920712486c689178d876aae8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends event-count bounds to the mean duration ratio; reuses the seasonal threshold code."
+    },
+    {
+      "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends deterministic event-day bounds to a nonmonotone duration metric."
+    },
+    {
+      "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates a uniform sensitivity test beyond spectral correction choices."
+    },
+    {
+      "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Correction-ensemble robustness does not by itself establish a uniform error certificate."
+    },
+    {
+      "target": "doi:10.1287/mnsc.13.7.492"
+    },
+    {
+      "target": "doi:10.1016/j.pocean.2015.12.014"
+    },
+    {
+      "target": "doi:10.3389/fmars.2019.00737"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1"
+    }
+  ]
+}
