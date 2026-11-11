@@ -1,0 +1,102 @@
+{
+  "title": "Archived USGS landslide maps for three of six earthquakes had uncertainty moments outside the stated beta distribution bound",
+  "abstract": "We test uncertainty in archived USGS ground-failure landslide maps for six earthquakes in 2020-2024. We use the earliest usable archived UPDATE and the latest UPDATE for each case. Most early products in this sample were issued days or months after the earthquake. For any distribution on [0,b] with mean C and standard deviation s, s squared must not exceed C(b-C). The documented beta recipe fails this test in 383 of 920,485 cells with C at least 0.002 in the six earliest usable products: 7 in Haiti, 4 in Turkey and 372 in Hualien. All failures remain after allowed rounding error. The other three cases pass, and all cells pass the wider physical bound [0,1]. We recover the combined logit error scale from the released mean and delta-method standard deviation. Under an added Gaussian input-error assumption, exact nonlinear propagation gives a reference distribution without simulation. In feasible cells, nominal 95.45% beta intervals contain 85.76-89.92% of this reference mass by case. Exact means summed over the same selected cells are 1.42-2.59 times the issued sums. These are conditional model comparisons, not measured landslide calibration or validated corrections. Released TIFF and HDF5 standard deviations agree to at most 3.8e-9. We provide a support test, exact conditional quantile tool, independent checks, aggregate evidence, and retrieval instructions. Six selected cases, archive gaps, an assumed Gaussian error law and fixed masks limit the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "landslides",
+    "ground failure",
+    "USGS",
+    "uncertainty propagation",
+    "beta distribution",
+    "variance bound",
+    "forecast verification",
+    "Gaussian input error",
+    "nonlinear model"
+  ],
+  "display": [
+    {
+      "path": "files/figures/case_audit.png",
+      "caption": "Six fixed earthquake cases. Left: exact Gaussian-reference mass in nominal 95.45% beta intervals; invalid beta cells are excluded. Middle: selected cells outside the beta support bound; labels give counts. Right: exact reference means summed over the selected cells, divided by the issued sum. These are conditional calculations, not verification against observed landslides. Earliest usable archived UPDATE and latest UPDATE are shown."
+    },
+    {
+      "path": "files/figures/nonlinear_mechanism.png",
+      "caption": "Published model equations under an added Gaussian logit-error assumption. The diagram shows interval mass and the region with no proper beta representation. The example CDF shows how the beta recipe changes both tails. These are mathematical examples, not observations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Motivates a downstream test of uncertainty in another USGS hazard product. No station rows or code are reused."
+    },
+    {
+      "target": "sci:sha256:8e893d8e58eb54ec968bf974c4bc4e32baa0b092f5e2e5e5351432816bcab1ec",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier audit separates an uncertainty finding from its proposed source. We separate exact moment failure from a conditional propagation comparison."
+    },
+    {
+      "target": "doi:10.1177/87552930211032685",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Ground-failure uncertainty method and beta conversion, especially equations 6 and 8."
+    },
+    {
+      "target": "doi:10.1029/2017JF004494",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Landslide logistic model and areal-coverage conversion."
+    },
+    {
+      "target": "doi:10.1016/j.enggeo.2023.107271",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior uncertainty framework for logistic geospatial hazard models."
+    },
+    {
+      "target": "doi:10.1080/00029890.2000.12005203",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known bounded-variance result. We do not claim a new inequality."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Versioned product catalogue; exact snapshots and hashes are in the manifest."
+    },
+    {
+      "target": "https://code.usgs.gov/ghsc/esi/groundfailure/groundfailure/-/tree/312441e3ab7d8684df6d51458d796e7e41db15ff",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Inspected source for the transform, derivative-based SD, rounding and beta-interval convention."
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/ground-failure/background.php",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Product meaning and source-data background."
+    }
+  ]
+}

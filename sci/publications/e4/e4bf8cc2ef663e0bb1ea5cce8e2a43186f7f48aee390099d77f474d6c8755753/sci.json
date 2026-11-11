@@ -1,0 +1,132 @@
+{
+ "title": "In ResNet-18, stage, training and the spatial coverage of units set whether response spectra steepen or flatten; macaque IT spectra were flatter than V4 in 2 monkeys, unlike the mouse hierarchy",
+ "abstract": "Earlier campaign work found that cross-validated PCA response spectra decay faster (larger exponent alpha) in higher mouse visual areas. We asked whether this holds in macaque and what computation can make it. Part A used two public Brain-Score assemblies. With 60 animal-matched multi-unit sites per area and 3,200 object images, alpha (ranks 2-30) was 1.45 in V4 and 1.19 in IT (difference -0.26, 95% image half-sample interval -0.30 to -0.22; within-monkey label permutation p = 0.001). The direction held in each of 2 monkeys, with 118-image subsets, and with one Utah array per monkey (-0.18 to -0.40), but the difference was mainly above rank 10, and small single-array populations gave mixed signs. IT carried twice the object share of reliable variance (0.32 against 0.17) and was flatter also inside objects. V1 to V2 (textures and spectrally matched noise) showed no compression (-0.06 and 0.00, intervals include 0). These results agree with two parallel campaign studies. Part B (new) applied the same estimator to an ImageNet-trained ResNet-18 and to 3 untrained ResNet-18 networks, with populations of 60 units at 1, 4 or 16 spatial positions or over the whole map, for Allen natural scenes, HVM objects and FZ textures and noise. Early stages flattened the spectrum or left it unchanged in all 20 cases. From layer 2 to layer 4, untrained networks flattened or changed little, and training made the change larger in every case (+0.04 to +0.47; most for textures). Spatial coverage reversed the sign for HVM objects in the trained network (-0.22 at one position, +0.16 over the whole map). Global average pooling steepened the spectrum in all untrained cases (+0.18 to +0.66). Thus a steeper spectrum in a higher area is not a general signature of hierarchical processing: in one known network its sign depends on the stage type, training, the image set and the spatial sampling of units. Limits: re-analysis of public data, 2 V4 arrays, one network architecture, and model results that show possible mechanisms, not the mechanism in the brain.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "cs.NE"
+  }
+ ],
+ "keywords": [
+  "visual hierarchy",
+  "cross-validated PCA",
+  "power law",
+  "response spectrum",
+  "macaque V4",
+  "inferotemporal cortex",
+  "V1 V2 textures",
+  "mouse visual cortex",
+  "ResNet-18",
+  "untrained networks",
+  "spatial pooling",
+  "receptive-field coverage",
+  "Brain-Score",
+  "population geometry"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_macaque_vs_mouse.png",
+   "caption": "Macaque against mouse. (a) Mean cvPCA spectra of 60-site V4 and IT populations (3,200 HVM images; grey: fit range ranks 2-30). (b) Mouse alpha against the anatomical hierarchy score (Allen Neuropixels, natural scenes, 300 units; values from sci:sha256:528cd305). (c) Delta alpha (higher minus lower area) for all macaque tests (orange V4 to IT, blue V1 to V2; bars: 95% intervals where computed) and the mouse VISp to higher-area mean (green). (d) Cross-validated share of reliable variance between object means and between category means."
+  },
+  {
+   "path": "files/figures/fig2_cnn_dissection.png",
+   "caption": "Alpha of 60-unit populations at each ResNet-18 stage for four image sets. Top row: ImageNet-trained network. Bottom row: mean of 3 untrained networks (band: range). Colours: spatial coverage of the population (all channels at 1, 4 or 16 positions, or units over the whole map). At the global pool all coverages are the same population. FZ textures use ranks 2-20."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source finding of the mouse hierarchy trend of alpha; we use its estimator and reference values and show that the trend is not a general property of hierarchical processing."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stimulus generality and RF controls of the mouse trend; we reuse its template retrieval code for the Allen natural scenes."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cross-basis spectrum method; we apply it to V4 and IT."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Within-mouse phase-averaged grating concentration; part of the mouse evidence that we compare with."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "reason": "Within-mouse trend and RF matching controls; we discuss them as constraints on the pooling account."
+  },
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "reason": "Mouse higher areas are only partly a linear VISp read-out for natural scenes; context for the new-axes question."
+  },
+  {
+   "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel study of the same two macaque assemblies; our V4/IT and V1/V2 results agree and add permutation, per-monkey and array-matched tests."
+  },
+  {
+   "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel THINGS study (V1, V4, IT): no macaque compression and a coverage dependence of V1 alpha; our network results give a model of the coverage effect."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator and power-law spectrum framework (Stringer et al. 2019)."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.5181-14.2015",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the V4 and IT data (Majaj et al. 2015)."
+  },
+  {
+   "target": "doi:10.1038/nn.3402",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the V1 and V2 texture data (Freeman et al. 2013)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2020.07.040",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Brain-Score distribution of both macaque assemblies (Schrimpf et al. 2020)."
+  },
+  {
+   "target": "doi:10.1109/CVPR.2016.90",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ResNet architecture (He et al. 2016)."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Brain Observatory natural-scene stimuli (de Vries et al. 2020)."
+  }
+ ]
+}
