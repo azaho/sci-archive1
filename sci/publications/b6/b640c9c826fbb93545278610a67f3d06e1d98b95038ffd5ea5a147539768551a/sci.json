@@ -1,0 +1,158 @@
+{
+ "title": "In 52 monitoring networks, decadal community warming came from warm-affinity taxon gains (45% of spatial expectation), not cold-affinity losses, through shared time trends (1948-2025)",
+ "abstract": "Question: community temperature indices (CTI) follow only a small part of their spatial temperature gradients in time. Is the missing part on the warm side (warm-affinity taxa do not arrive or increase) or on the cold side (cold-affinity taxa persist)? Data: 73 BioTIME 2.0 networks, the North American Breeding Bird Survey and the UK Butterfly Monitoring Scheme (75 networks, 8,493 sites, 183,522 site-years, 1948-2025), GHCN_CAMS air temperature and HadISST sea surface temperature. Method: cross-fitted species thermal indices; the spatial CTI slope and the temporal CTI change of each network split into warm-side gains and cold-side losses, with a neutral-band correction for common changes in detection or richness; slopes on site warming trends (slow) and anomalies (fast); random-effects pooling; a space-for-time logistic emulator and a species-shuffle null. Results: in the 52 networks with a positive spatial CTI slope, the warm side followed the warming trend at 0.45 (95% CI 0.16-0.80) of its spatial slope and the cold side at -0.04 (-0.25-0.19); difference 0.50 (0.07-0.98). Under full tracking the estimator gives 1.26 and 1.12. The warm-side slope was 3.4 null SDs above the shuffle null (p = 0.024, minimum); the cold side was inside the null. Neutral bands of 15-50% and abundance weights gave 0.37-0.45 and -0.08 to -0.01. Year-to-year anomalies moved both sides by only 2-4%. With site and year fixed effects the sides were 0.26 (-0.05-0.69) and 0.13 (-0.28-0.63): the warm-side gain is a network-wide time change that local warming rates do not predict. Birds (BBS) gained warm-affinity species fully (0.95) but cold-affinity species increased (-0.53); butterflies (UKBMS) lost cold-affinity species as the emulator expects and gained too few warm ones. Conclusion: the decadal gap is mainly absent losses of cold-affinity taxa (persistence, extinction debt), with an exception in butterflies. Limitations: slow slopes contain all time-correlated changes; the neutral-band correction assumes no net response near the mean STI; heterogeneous BioTIME methods; no observer control for BBS.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "climate tracking",
+  "extinction debt",
+  "colonisation credit",
+  "thermophilization",
+  "space-for-time substitution",
+  "BioTIME",
+  "Breeding Bird Survey",
+  "UKBMS",
+  "climatic debt"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_side_fractions.png",
+   "caption": "Pooled temporal fractions of the warm side (orange: gains of taxa with an STI above the network mean) and the cold side (blue: losses of taxa with an STI below it), for the warming trend (left) and year-to-year anomalies (right). Bars: 95% network-bootstrap intervals. Black ticks: emulator values under full space-for-time tracking."
+  },
+  {
+   "path": "files/figures/fig3_shuffle_null.png",
+   "caption": "Pooled slow slopes of the warm side, the cold side and their difference against 40 species-shuffle permutations (main set)."
+  },
+  {
+   "path": "files/figures/fig4_sensitivity.png",
+   "caption": "Pooled slow fractions by variant: neutral-band size, abundance weights, and site and year fixed effects."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Uses its network screen, build code and inputs; splits its small net slow fraction into a warm-side gain and an absent cold-side loss.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Bird CTI followed less than 10% of warming; we find that BBS cold-affinity species did not decrease.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Bird centroid shifts at 14% of isotherm shifts; edge patterns compared with our side decomposition."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Frozen climate-suitability models predicted little abundance change; part of the weak-tracking pattern."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Finnish atlas leading and trailing edges and detection effects; related side-specific evidence."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Demersal fish redistribution offset; marine networks in our set."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Japanese animal phenology deficit; part of the research objective."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index followed SST only through region-wide years; we also find that the slow response is a network-wide time change.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift can change detection of cold-affinity BBS species; a limitation of our BBS anchor without observer control."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Year-to-year responses 5-14% for birds; we find fast responses of 2-4% on both sides.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local spatial bird gradients with route-path climate; spatial benchmark context."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Most recent BBS CTI change is national, not predicted by local warming; our year-effect variant gives the same for both sides.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Forest type explained half of the gap on forested routes; slow habitat change is one cause of cold-side persistence."
+  },
+  {
+   "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+   "reason": "Tenure-related loss of high-pitched species; a detection limitation for BBS cold-side values."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Linear hearing drift is not identified by observer turnover; part of the objective."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Phenology-detection artefact is too small for the CTI deficit; part of the objective."
+  },
+  {
+   "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+   "reason": "Lag-model allowances on 54 network summaries; we use new record-level decompositions instead."
+  },
+  {
+   "target": "sci:sha256:7569534265ab613c33e24deb8f543e56365ca06f926a3bd66a851b3fc47aa4b1",
+   "reason": "Spring survey-shift estimate; part of the objective."
+  },
+  {
+   "target": "sci:sha256:9dcba730c1ec58595327efcb8ee74e49aaead2f97cb6ea4faf0e22d3cea245c7",
+   "reason": "Song frequency and tenure curvature; part of the objective."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic masking changes the BBS thermal trend by less than 1%; a detection process we did not need to correct."
+  },
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "reason": "Land-cover transfer 11-25% and no slowing of community warming by land-cover change; complementary process test."
+  },
+  {
+   "target": "doi:10.5281/zenodo.15222193",
+   "reason": "BioTIME 2.0 data (Dornelas et al. 2025)."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "reason": "North American Breeding Bird Survey 2026 release."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "reason": "UKBMS site indices 2024."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "reason": "GHCN_CAMS land air temperature."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST 1.1 sea surface temperature."
+  }
+ ]
+}
