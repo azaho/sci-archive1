@@ -1,0 +1,142 @@
+{
+ "title": "Spatial, broad-window, lagged and trend temperature terms fitted before 2005 did not forecast the 2005-2024 level shift that interannual slopes missed in 149 Swiss plant and UK butterfly series",
+ "abstract": "Question: earlier campaign forward tests found that frozen climate-response relations track year-to-year variation but miss the later multi-year level of the response. Can a sensitivity estimated from training years alone forecast this missed level? Approach: a plan frozen and timestamped before fitting. 149 units: 66 MeteoSwiss plant phases, 43 UK butterfly species (mean flight date) and 40 species (log site index), with E-OBS temperature of each site's grid cell. Training up to 2004, test 2005-2024; second split at 1994. Against the usual interannual model (selected 1-3 month window), we tested a spatial slope (space-for-time), a broad window, all-month ridge, 5-year temperature memory, a spatial/interannual hybrid and the training trend. Rule: a mechanism explains the missed shift if the median missed shift falls by half and skill improves in most units. Results: the interannual model missed shifts with the sign of the observed shift in 52/66, 42/43 and 36/40 units (median shifts -3.0 days, -4.1 days, -0.15 ln units; 60%, 9% and 11% forecast). No pre-registered mechanism met the rule in any system or split. Spatial and interannual slopes were almost equal (median ratio 1.04 and 0.94). Exploratory checks: homogenised station temperature (NBCN, HadCET) gave the same warming. UK butterfly windows warmed only 0.15 C relative to the site training means, so the 4.1-day advance would need about ten times the interannual sensitivity. A daily thermal-time model forecast a median 83% of the Swiss plant shift (65% for the interannual model; better skill in 36 of 46 units; 92% in the second split) but only 20% of the butterfly shift. A trailing 5-year level plus the frozen climate anomaly gave the best skill against the training mean in all systems (0.48, 0.11, 0.24 against 0.19, 0.04, -0.03) and beat the interannual model in 66/66, 33/43 and 39/40 units. Interpretation: the missed plant level is mostly model form; the butterfly level is mostly not a temperature response in these data. A level update is the robust forecast practice. Limitations: exploratory analyses chosen after the main results; units share years and climate; UKBMS metric and recording changes were not tested; source data are not bundled (retrieval script and hashes given).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  }
+ ],
+ "keywords": [
+  "forecast evaluation",
+  "out-of-sample test",
+  "pre-registration",
+  "phenology",
+  "butterflies",
+  "UKBMS",
+  "MeteoSwiss",
+  "space-for-time",
+  "thermal time",
+  "level shift",
+  "trailing mean",
+  "temperature sensitivity",
+  "climate-ecology relations",
+  "nonstationarity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_missed_shift_by_model.png",
+   "caption": "Median absolute missed level shift in 2005-2024 for each model in three systems. Filled points are pre-registered models; open points are exploratory. No pre-registered climate mechanism reached the dotted line (half of the interannual model). The trailing level models (R2, R2I) gave the smallest missed shifts."
+  },
+  {
+   "path": "files/figures/fig4_warming_and_thermal_time.png",
+   "caption": "(a) Observed level shift against site-weighted warming of the selected window; dashed lines show the median interannual slope. UK butterflies advanced about 4 days with about 0.15 C of warming. (b) Fraction of the shift forecast by an exploratory daily thermal-time model against the interannual window model."
+  },
+  {
+   "path": "files/figures/fig2_residual_drift.png",
+   "caption": "Median residual of the interannual model over units (5-year running mean) in training years (in-sample) and test years (frozen), and the residual of the trailing-level model R2I in test years."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Tests the climate explanations of the level shifts that this synthesis found, and confirms its level-update model in 149 new unit-level tests."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Reuses its data preparation code and data sources; examines why its frozen relations forecast only part of the 2005-2024 phenology advance."
+  },
+  {
+   "target": "sci:sha256:d997794cd5da3aabb17a004339fe9e877502137746ec1c02d19fd110ce5bb960",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our exploratory thermal-time model also describes Swiss plant responses to warming better than linear window models."
+  },
+  {
+   "target": "sci:sha256:0de60f71ee6d2a6c84010bbe213b17eb06ac82ecade8ac71b5a75607e0da29a0",
+   "reason": "Earlier forward test that separated level and year-to-year skill."
+  },
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "reason": "Part of the campaign series of forward tests of published climate-ecology relations."
+  },
+  {
+   "target": "sci:sha256:434d1de70f0383d39d24e379f64454ddb981bbe821f6c4bc0ebcc858cee230b7",
+   "reason": "Earlier campaign test of Swiss plant timing and British butterfly growth forecasts."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS temperature data set."
+  },
+  {
+   "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS phenology 2024."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site locations 2024."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss phenology network data."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.ogd-nbcn/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss NBCN homogenised monthly station series."
+  },
+  {
+   "target": "https://www.metoffice.gov.uk/hadobs/hadcet/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Central England Temperature."
+  },
+  {
+   "target": "doi:10.1046/j.1365-2656.2001.00480.x",
+   "reason": "Weather models of British butterfly abundance."
+  },
+  {
+   "target": "doi:10.1006/jtbi.2000.2178",
+   "reason": "Thermal-time (forcing) models of plant phenology."
+  }
+ ]
+}
