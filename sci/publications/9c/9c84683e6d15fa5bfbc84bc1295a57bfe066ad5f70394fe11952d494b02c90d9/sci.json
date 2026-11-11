@@ -1,0 +1,119 @@
+{
+ "title": "The 2023 XMM-Newton X-ray dip of ASASSN-14ko is grey from 0.2 to 4.5 keV: the nucleus switches off in 1.4 d with no cold-absorption change, and slow 2021 onsets remove only soft flux",
+ "abstract": "Question: campaign studies use the deep soft X-ray dip of the repeating nuclear transient ASASSN-14ko as a constant-period orbital clock (2020-2024), but no study tested what the dip is. Is it cold absorption by returning debris, or does the X-ray source disappear? Approach: we fitted the unused EPIC-pn pipeline spectra of the daily 2023 XMM-Newton campaign (27 observations) and its five-band time series without HEASoft or SAS (forward folding, W-statistic), and measured band colours of five clean Swift XRT dips (2020-2024) and of the NICER dip onsets of 2021. Results: in the 2023 ingress, all bands from 0.2 to 4.5 keV fall with one e-folding time of 0.5 d; normalised band levels divided by the 1-2 keV level are 0.974 +/- 0.016 (0.2-0.5 keV), 0.953 +/- 0.020 (0.5-1 keV) and 1.08 +/- 0.04 (2-4.5 keV). Any uniform change of cold column is below 7e19 cm^-2. A cold absorber is worse than grey scaling by delta W = 389 and 1257 in the two bright ingress spectra. The flux above the floor falls from 80 to 5 percent in 1.4 d (rest frame) and stays at the floor for at least 32 d; the floor keeps less than 0.04 percent of the soft excess. In all five XRT dips the 2-10 keV flux falls as much as the 0.3-2 keV flux. In contrast, the slow NICER onsets of 2021 (cycles 23 and 24) remove soft flux only: removed (1-2 keV)/(0.3-1 keV) = 0.085 and 0.32, with no 2-4 keV flux. Interpretation: the deep suppression is an achromatic switch-off of the whole X-ray continuum (intrinsic, or an opaque screen with Thomson depth of at least 3.9), not a debris column; the wandering onset is a separate soft component. Only the switch-off is a valid clock, and its trigger stays locked to the orbit within 0.5 d. Limitations: one resolved XMM-Newton ingress; pipeline products and canned responses; a phenomenological floor; windows set after inspection; intrinsic switch-off and opaque screen are not separated.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "XMM-Newton",
+  "X-ray spectroscopy",
+  "soft X-ray dip",
+  "corona",
+  "absorption",
+  "NICER",
+  "Swift XRT",
+  "ESO 253-G003",
+  "W-statistic"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_xmm_grey_ingress.png",
+   "caption": "XMM-Newton 2023 ingress of ASASSN-14ko. (a) Flux above the deep-dip floor divided by the pre-dip value in four EPIC-pn bands (2-ks bins); all bands fall together with an e-folding time of 0.52 d. (b) Grey scale of the pre-dip spectrum per observation. (c) Band level divided by the 1-2 keV level: the data stay near 1, far from the cold-absorber curves."
+  },
+  {
+   "path": "files/figures/fig2_xmm_spectra.png",
+   "caption": "EPIC-pn spectra of the last pre-dip observation and two ingress observations with the grey model (floor plus scaled pre-dip spectrum), the best cold absorber with a free scale, and the floor. A pure cold absorber is worse by delta W = 145, 389 and 1257."
+  },
+  {
+   "path": "files/figures/fig3_nicer_xrt_colours.png",
+   "caption": "(a, b) NICER band rates of the 2021 dips of cycles 23 and 24. (c) The flux removed in the slow onset is much softer than the flux removed at deep suppression. (d) In five clean Swift XRT dips (2020-2024) the 2-10 keV flux of the flaring nucleus falls as much as the 0.3-2 keV flux."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its NICER segment counts, background model and deep-suppression times. Our colours explain its result: the periodic deep suppression is a grey switch-off, while the wandering onset removes only soft flux."
+  },
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its XRT per-observation counts, XMM-Newton observation list, ingress and UVW2 peak times. We add the first spectral test of the dip it uses as a clock."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its physical clocks treat the X-ray dip as a pericentre proxy; we show the dip is an achromatic switch-off locked to the orbit, not a debris absorption column."
+  },
+  {
+   "target": "sci:sha256:b03f0a970bb16a26ea88c8acdb6314f1aef4c9d3dec5f2efd02d85506b788028",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Uses the dip as reference clock; our result supports using only the deep-suppression marker."
+  },
+  {
+   "target": "sci:sha256:77860d3a022b32a9b2ce15b6b2a11183636edb43a731eaa7164977e4afe0c8ef",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Uses NICER box ingresses and deep-suppression times; our colours show the two markers have different physical causes."
+  },
+  {
+   "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Allowed constant decay with a changing emission delay; a locked switch-off trigger limits a changing fallback delay in 2020-2024."
+  },
+  {
+   "target": "sci:sha256:c2b0b0eaa5d2a603467430233ddf0c75c02b5bcb8bb988533b4656a5e339c70e",
+   "reason": "Energy budgets of period-change mechanisms for the related sources."
+  },
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "reason": "Flare energy and shape changes of ASASSN-14ko."
+  },
+  {
+   "target": "sci:sha256:edf8ce3b287628806220327d395c2de85cc7cc659c6e9416c3f6865ab6e081d4",
+   "reason": "Energy-coupled clocks for ASASSN-14ko and eRASSt J0456-20."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "reason": "First campaign evidence for late ASASSN-14ko flares."
+  },
+  {
+   "target": "https://arxiv.org/abs/2009.03321",
+   "reason": "Payne et al. 2021, discovery of the periodic flares."
+  },
+  {
+   "target": "https://arxiv.org/abs/2206.11278",
+   "reason": "Payne et al. 2022, X-ray minimum before the optical peak, spectral hardening."
+  },
+  {
+   "target": "https://arxiv.org/abs/2506.15039",
+   "reason": "Huang et al. 2025: Chandra spectra of both nuclei and the inner-disc destruction picture."
+  },
+  {
+   "target": "https://nxsa.esac.esa.int/",
+   "reason": "ESA XMM-Newton Science Archive, source of the PPS products."
+  }
+ ]
+}
