@@ -1,0 +1,200 @@
+{
+ "title": "North Pacific within-type O2 loss peaks on sigma0 26.6-26.7, the classes that stopped outcropping; a pre-set class test fails at the source and GFDL-ESM4 interior O2 does not respond (WOD 1950-2025)",
+ "abstract": "Question: does the within-water-type oxygen (O2) loss in the North Pacific thermocline follow, class by class, the loss of winter outcrop area of each density class, and does a CMIP6 model show the same pattern? Approach: World Ocean Database ship data (92,520 casts, 1950-2025) on 17 sigma0 classes (25.4-27.0) in 7 regions from 145 E to California; fixed-effects year series with a joint cruise bootstrap; winter outcrop area of each class in 30-50 N, 140 E-150 W from WOD ship and Argo surface data against WOA23; tests written in a plan before the results; the same test in GFDL-ESM4. Results (2009-2025 minus 1984-1996): within-type O2 loss peaks on sigma0 26.6-26.7 in all regions north of 28 N (26.6: -28 umol/kg at 36-46 N, 160 E-180; -22 to -25 from 180 to California; -20 at CalCOFI), while classes 25.4-26.3 lose 0 to -11. AOU rises as O2 falls. The share of winters in which 26.6 outcropped fell from 69% to 6%, and 26.7 from 15% to 0%. At the source the dense-class decline began near 1988-1990 and reached CalCOFI near 2004-2006. The pre-specified fingerprint test failed: correlations of class O2 change with class outcrop change were 0.19, 0.54 and 0.35 in the three test regions (one interval above 0); 0.59-0.76 downstream. Class depth predicts the pattern as well or better (r -0.68 to -0.93). An equivalent density shift of 0.07-0.095 kg/m3 fits the AOU change on 25.4-26.7 (r 0.79-0.96) but over-predicts 26.8-27.0, which never outcropped in the box, so the shift stops below the densest outcropping class. In GFDL-ESM4 the 26.6 outcrop almost vanished (0.149 to 0.015 million km2), but interior O2 on 26.5-26.7 changed by only -3 to +3 umol/kg. Interpretation: the sigma0 26.5 loss studied before is the upper flank of a larger loss on the densest classes that the open North Pacific stopped ventilating; the tested model misses the O2 response, not only the outcrop. Limitations: failed pre-set test; exploratory indices; collinear depth trend; outcrop box excludes the Okhotsk Sea and north of 50 N; few recent cruises at 180-130 W; one model, one member, three sampled years per epoch.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Pacific",
+  "isopycnal oxygen",
+  "density classes",
+  "ventilation",
+  "winter outcrop",
+  "mode water",
+  "equivalent density shift",
+  "World Ocean Database",
+  "Argo",
+  "CalCOFI",
+  "CMIP6",
+  "GFDL-ESM4",
+  "fingerprint test",
+  "pre-registered plan",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_class_profiles.png",
+   "caption": "Within-type O2 change on each sigma0 class in 7 regions from Japan (left) to the CalCOFI grid (right), against 1984-1996: 1950-1983 (grey), 1997-2008 (green), 2009-2025 (orange); 95% cruise-bootstrap bands. WOD ship data. The loss peaks on 26.6-26.7 except in the western subtropics (STGW)."
+  },
+  {
+   "path": "files/figures/fig1_outcrop_by_class.png",
+   "caption": "a: January-April maximum surface sigma0 from WOA23 plus WOD ship/Argo anomalies per 5x5 degree cell, 1984-1996 (blue) and 2009-2025 (orange); region boxes and the outcrop box (dashed). b: winter area with sigma0 >= class (mean of annual maps). c: share of winters in which the dense classes outcropped (area > 0.05 million km2)."
+  },
+  {
+   "path": "files/figures/fig5_cmip6_classes.png",
+   "caption": "GFDL-ESM4 historical r1i1p1f1. Left: winter outcrop area by class, model (blue; 1984-1996 and 2002-2014 samples) and observed (black). Right: model O2 change by class (solid; 2006/2010/2014 minus 1986/1990/1994) and observed change 2009-2025 minus 1984-1996 (dotted) in four regions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "reason": "We test its outcrop mechanism class by class and reuse its code and mask: the dense classes lost both outcrop and the most O2 (support), but the pre-set class test failed at its source region and the loss peaks on 26.6-26.7, not 26.5 (challenge).",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:21ae52cf9d0e24f827f7e090eda5a0912177d80251d965f1562a6a1d6dac6f10",
+   "reason": "Its equivalent density shift (0.06-0.105 kg/m3) fits our class shape on 25.4-26.7 with delta 0.07-0.095; we add that the shift stops below the densest outcropping class.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:e62193bc82411e1eba8216153180725f10a0354095b71fc73e53e6d615c7af30",
+   "reason": "Regenerated (not preformed) nature of the sigma0 26.5 loss; consistent with our AOU and class results."
+  },
+  {
+   "target": "sci:sha256:f2580a7a9707b955afb41852fae4c8e54807eaf63b6f3f6e605071200ca9f13f",
+   "reason": "40-run CMIP6 outcrop study; in our GFDL-ESM4 samples the dense outcrop shrank strongly but interior O2 did not respond, so outcrop size alone may not explain the model miss.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce",
+   "reason": "We reuse its WOD fixed-effects and ramp-onset code and extend its 26.4-26.6 analysis to 25.4-27.0; same eastward timing.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:ea67ca59c8c830609ef22a9e4feaddc1ba6a3e2aa317a0afefc81f17fcfc03e3",
+   "reason": "Within-water-type loss at CalCOFI; we show it is part of a basin-wide dense-class loss.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:cc75ea4ee42bb0552f162242a833759f9e12e921051e27040dc1af4ff6b89015",
+   "reason": "We reuse its CMIP6 Zarr reader; GFDL-ESM4 again does not reproduce the loss.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:66c86fe2188e2bc4904f1126c0befee9c0d2a50665e98b7c88ff6241f5911038",
+   "reason": "CMIP6 models change water age but change O2 less; GFDL-ESM4 loses outcrop but not interior O2.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:e7596e2a83aa1ee8b6d412ffc4fc94299e9b19d6bc0a40e33a1d4db7cddd3939",
+   "reason": "BGC-Argo continuation of the transition-zone loss; we use Argo only for surface T and S."
+  },
+  {
+   "target": "sci:sha256:72c350c9b7070e549b213d08263ec42da92df6c564cda9ec0fe2946e0bed8c1e",
+   "reason": "Float O2 stayed low at 25-46 N, 130-160 W on 26.5."
+  },
+  {
+   "target": "sci:sha256:d73b9f651655097e48dad695d82ca8e3363c16c123d373bb305926cac62731ae",
+   "reason": "CalCOFI sigma0 26.5 O2 index."
+  },
+  {
+   "target": "sci:sha256:d2aed83cfe2b4a27207c5bd10e25b2398ade09b4a6955fb06bb063a7136fb0d2",
+   "reason": "CalCOFI 2009-2025 low on sigma0 26.5."
+  },
+  {
+   "target": "sci:sha256:f8b4712853bb3861281c214ba2a4f627537fb7dd4db1f5c32ad8af6859f5c6c3",
+   "reason": "CalCOFI O2 deficit beyond solubility."
+  },
+  {
+   "target": "sci:sha256:710d488013378c0a36b95ef1a1d7389ba4761b9ee4309315c9f27ab4c553390b",
+   "reason": "BATS O2 loss on sigma0 26.5."
+  },
+  {
+   "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+   "reason": "Tracer-age attribution on GLODAP lines."
+  },
+  {
+   "target": "sci:sha256:0cea84fd3979e6a35d742bd0f8b3335392c018c68e3fd6dd25837ff935aaaa9f",
+   "reason": "Tracer ages near Bermuda and California."
+  },
+  {
+   "target": "sci:sha256:c5d76aae2d76b76edddc9aa473a47a6af22e31751912753bd34a57658447dfcc",
+   "reason": "Ventilation share of AOU increase."
+  },
+  {
+   "target": "sci:sha256:597145cb4c8205876e18fb51374f103088ee1c2989fb260a5ef11699576b4e5f",
+   "reason": "Class-thickness ventilation test at BATS."
+  },
+  {
+   "target": "sci:sha256:978770d06b38d468eb8ad85428682f7a8b995df12636e1a2fba6b6a7f8dce5f9",
+   "reason": "Tracer ages proved unreliable; we use a tracer-free class test."
+  },
+  {
+   "target": "sci:sha256:ad98ae6d10cb767775f049fc173171bbf60ba26974aa5bf15b77532cb29cbcd0",
+   "reason": "Earlier test of the source of the CalCOFI loss."
+  },
+  {
+   "target": "sci:sha256:657e576d99885e2f1de3c78bf460c06346192d58b5d8a0590ad30d2304cdd6a7",
+   "reason": "Fixed-ratio budget test."
+  },
+  {
+   "target": "sci:sha256:b0b6463845878495ea9bb8441b59bc5b4343311525a5d4ace117959748821b2a",
+   "reason": "Oxygen-use lower bound in a mixture test."
+  },
+  {
+   "target": "sci:sha256:08e82eeb5d54e25dbc867f3d8611da918b20d15123969ab8e739342c9782e2ca",
+   "reason": "No common AOU slope on sigma0 26.5 after region control."
+  },
+  {
+   "target": "sci:sha256:9bef7fc74b41f26236d282b9b31d306c20b2e1b7630f5242f5ac34293ccb9ca3",
+   "reason": "P16N O2 budgets on sigma0 26.5."
+  },
+  {
+   "target": "doi:10.5194/bg-21-1117-2024",
+   "reason": "Mecking and Drushka (2024): outcrop area of 26.4-26.7 in the NW Pacific and Station P O2; we test the outcrop link class by class.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/world-ocean-database",
+   "reason": "World Ocean Database 2023 (OSD, CTD, PFL).",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+   "reason": "WOA23 monthly climatology.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.22033/ESGF/CMIP6.8597",
+   "reason": "GFDL-ESM4 CMIP6 historical output (CC BY 4.0).",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.17882/42182",
+   "reason": "Argo GDAC data (surface T and S via WOD PFL).",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

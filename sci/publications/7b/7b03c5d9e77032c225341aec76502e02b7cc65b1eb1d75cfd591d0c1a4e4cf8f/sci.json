@@ -1,0 +1,273 @@
+{
+ "title": "Cross-validated training signal predicted 2005-2024 climate forecast skill in 4 of 5 families (6,630 river, plant and butterfly series); a shifted-climate null explained class differences",
+ "abstract": "Question: can training years alone show which climate-response relations keep forecast skill later, and does response class add information? Approach: a timestamped frozen plan, then one protocol for 6,630 series in five families: Australian and Canadian river flow (abiotic), Swiss plant phenology and UK butterfly flight dates (timing), and UK butterfly abundance (population). For each series we selected one temperature or precipitation window (120 candidates) on years up to 2004 and forecast 2005-2024 one year ahead with observed weather. Results: the leave-one-year-out signal with window reselection (R2_cv) ranked forward skill in four families (Spearman 0.30-0.41) but not in butterfly abundance (-0.06). A training-only level diagnostic ranked the gain of a trailing mean in four families (not Canadian rivers). Response class added rank R2 0.107 beyond these diagnostics, so the claim that class is only a proxy failed. Median gain of the climate anomaly with a trailing level over the trailing mean was 0.66 (abiotic), 0.02 (timing) and -0.36 (abundance). The pre-registered rule (climate if R2_cv >= 0.10, else trailing mean) had the best pooled median skill (0.265) but was best in only 1 of 5 families. Exploratory: a shifted-climate null showed that 12-67% of apparent signals were chance fits, in the same order as forward skill; across 7 subsystems this training-only false-signal rate ranked forward gain (Spearman -0.86) and slope-sign persistence (-0.93). A null-calibrated rule gave pooled median skill 0.278 and losses against the trailing mean in 6.9% of series (50% for always-climate). Limitations: exploratory parts are post hoc; one population and no disease family; single-window linear models; gridded observed weather.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  }
+ ],
+ "keywords": [
+  "ecological forecasting",
+  "forecastability",
+  "out-of-sample test",
+  "pre-registration",
+  "cross-validation",
+  "window selection",
+  "false discovery",
+  "null model",
+  "trailing mean",
+  "level shift",
+  "plant phenology",
+  "butterflies",
+  "UKBMS",
+  "river flow",
+  "CAMELS-AUS",
+  "HYDAT",
+  "climate-response relations",
+  "response class"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_calibration.png",
+   "caption": "Median 2005-2024 forward skill against the cross-validated training signal (R2_cv bins) in five families. Blue: frozen climate model against the training mean (O1). Orange: climate anomaly with trailing level against the trailing mean (O3). Dashed: skill equal to R2_cv."
+  },
+  {
+   "path": "files/fig2_null_signal.png",
+   "caption": "Share of series with R2_cv at least x for observed climate (blue) and for climate shifted by 5 or more years (grey, null). The false-signal rate is the null share divided by the observed share at R2_cv >= 0.10."
+  },
+  {
+   "path": "files/fig3_strategies.png",
+   "caption": "Median skill against the training mean for six forecast strategies per family and pooled. Orange: pre-registered rule (climate if R2_cv >= 0.10). Blue: exploratory null-calibrated rule (climate if q <= 0.2)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:08251db7a4cca59caf9f437720f82ed7a5712df0d4848c6859399f384a050175",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier family-level forward tests for Swiss plant dates and British butterflies; same 2005 split."
+  },
+  {
+   "target": "sci:sha256:0079729bef62be0b83ba0dc93dfb14df649bad13c37cdc7c8f6f463dce2913e1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:7a7ec3a0e9d6963d5f46b204df94df00108b989c0e576188674f2aa763339c0d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:434d1de70f0383d39d24e379f64454ddb981bbe821f6c4bc0ebcc858cee230b7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:6a99138664fc0c17339ac22bb8645f033cbb705450bdbceb662d552c737ff158",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:73ad6e6659b0910a78c0674696396e1c09141a5c7c4015c11ca87db5572f3408",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:0dd123d426114b1277aeeacdea8f4408cf47e213c9797495c783c66365a44c72",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:63b4bcb70ab4f2fa5893e67aec84fff2e07d931390226776508c3cf46c5be136",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:0de60f71ee6d2a6c84010bbe213b17eb06ac82ecade8ac71b5a75607e0da29a0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:9e12efbbd2cc2d9dde77c085b619cbd0867e5f124b9928ed823894c3a4f3568f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:f6529817c732bcd1ea8872809b6b70a9f19848c48170f2bc2e8db0c608522da6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign forward test of a climate-response relation in the synthesis that motivated this study."
+  },
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "We tested its proposal (signal fraction and level stability explain forecastability; trailing level plus frozen slope). Signal and level diagnostics worked inside most families, but response class still added information, against its claim that class is only a proxy."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024 (input data, OGL)."
+  },
+  {
+   "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS phenology 2024 (input data, OGL)."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site locations 2024 (input data, OGL)."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/phaeno_previous.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss phenology observations (input data)."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS gridded temperature and precipitation (Cornes et al. 2018)."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRU TS precipitation (Harris et al. 2020)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS monthly temperature (Fan and van den Dool 2008)."
+  },
+  {
+   "target": "doi:10.5194/essd-13-3847-2021",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS (Fowler et al. 2021); v2.03 Zenodo record 14289037 used."
+  },
+  {
+   "target": "https://zenodo.org/records/14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data record."
+  },
+  {
+   "target": "https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HYDAT national water data archive, release 2026-10-19 (input data)."
+  },
+  {
+   "target": "doi:10.1023/A:1008828730759",
+   "reason": "Myers 1998: environment-recruitment correlations often failed on retest; earlier evidence on transfer of climate correlations."
+  }
+ ]
+}
