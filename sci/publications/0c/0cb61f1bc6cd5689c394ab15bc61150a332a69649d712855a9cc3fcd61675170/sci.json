@@ -1,0 +1,136 @@
+{
+  "title": "Rain data choice changed the sign of a 25-year runoff comparison at nine south-east Australian gauges",
+  "abstract": "We test whether the full 1997-2021 runoff loss exceeded all earlier losses of the same length. We use nine fixed south-east Australian gauges and 26 earlier 25-year periods within 1947-1996. For each earlier period, one rain model is fitted on the other pre-1997 years and predicts both test periods. With SILO rain, the recent runoff departure was 4.97 points above the closest earlier departure, in 1969-1993. With AGCD rain on the same records, it was 7.39 points below that period and below every earlier comparison. Units are percentage points of fixed baseline mean runoff. Spatial 95% intervals are -2.46 to +10.39 and -14.98 to +1.31. Joint cell and three-year block intervals also include zero. Quadratic and seasonal rain fits retain the opposite sample signs. Gauge and cell omissions do too. An exploratory exact decomposition assigns -15.78 points of the -12.36-point product difference to their different recent-minus-earlier rain contrasts, and +3.42 points to different fitted responses. AGCD has a 57.11 mm/year larger current-rain contrast. This identifies the source of the statistical disagreement, not the better rain product. Five cells, early flow quality, short fits and only two non-overlapping historical periods limit inference. The test compares 25-year means; it does not test continuous annual non-recovery or a causal state shift. Code, external-source hashes, aggregate evidence, all resampling statistics and numerical audits are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "Millennium Drought",
+    "runoff",
+    "duration",
+    "rainfall uncertainty",
+    "CAMELS-AUS",
+    "historical comparison",
+    "SILO",
+    "AGCD",
+    "common calibration"
+  ],
+  "display": [
+    {
+      "path": "files/results/duration.png",
+      "caption": "Rain products give opposite 25-year comparisons at nine fixed south-east gauges. Each earlier period and 1997-2021 share a rain fit. Bands are pointwise spatial intervals. North is a secondary three-gauge check."
+    },
+    {
+      "path": "files/results/uncertainty.png",
+      "caption": "Earlier-period selection is repeated in each draw. Spatial and joint spatial and regional-year intervals describe different uncertainty assumptions."
+    },
+    {
+      "path": "files/results/product.png",
+      "caption": "An exact decomposition at 1969-1993 assigns the product difference to different rain contrasts and fitted responses. This does not show which product is correct."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Its 13-year comparison motivates our full-duration test. Its time and quality conventions inform preparation."
+    },
+    {
+      "target": "sci:sha256:f7a9b749b55eefa68b44a1defe5e26d1c7855829e921390259062b4212b2a50b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We use its published 27-gauge selection, region and cell labels, request URLs and hashes. We retrieve flow again and build new annual inputs and fits."
+    },
+    {
+      "target": "sci:sha256:fa5a3bf9c71421b0974ced1c6128b6e2a994223f6267e245aa8e5ddbb8daf3f9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "It leaves full duration and common-calibration refits open. We address these issues on a smaller fixed panel."
+    },
+    {
+      "target": "sci:sha256:f946775b7589d935a1969b3aa5f105403bc7ce7979d3ec509b67844be7419a70",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its rain-product sensitivity also occurs in our full 25-year paired comparison."
+    },
+    {
+      "target": "sci:sha256:c44ef4f36f8225a08779001fddac6d95c7028b686596418def351cbdd37f17cb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "It motivates separate spatial and regional-year uncertainty."
+    },
+    {
+      "target": "sci:sha256:463123a6329a6169583a00fc2b16f1322c6582db2abda06eb2201fce0160d78a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its distinction between loss size and response form limits interpretation of an analogue."
+    },
+    {
+      "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its persistence result motivates our full-period mean test, a different estimand."
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS v2.03 catchment rain and location data. Exact hashes and external paths are recorded."
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CAMELS-AUS methods, credit and license."
+    },
+    {
+      "target": "doi:10.1002/2014WR015348",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior Australian drought-related rainfall-runoff shifts."
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior review of causes and long-record limits."
+    },
+    {
+      "target": "doi:10.5194/hess-29-1319-2025",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Annual water-cycle memory. Our bootstrap does not model arbitrary multidecadal dependence."
+    },
+    {
+      "target": "https://www.bom.gov.au/waterdata/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public daily flow service. Exact requests and hashes are recorded."
+    },
+    {
+      "target": "https://www.bom.gov.au/waterdata/wiski-web-public/copyright.htm",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provider-specific external data terms were checked before packaging."
+    }
+  ]
+}

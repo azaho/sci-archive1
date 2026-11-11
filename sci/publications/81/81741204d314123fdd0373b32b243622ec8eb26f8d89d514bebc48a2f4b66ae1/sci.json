@@ -1,0 +1,160 @@
+{
+ "title": "A hot-Jupiter control in two Gaia XP catalogues shows quiet main-sequence dust dimmers are less metal-rich than hot-Jupiter hosts at equal magnitude; Gaia scatter biases most campaign dimmers",
+ "abstract": "Question: Do main-sequence dust dimmers have metal-rich hosts, as giant-planet hosts do? A prior campaign test with one Gaia XP catalogue gave beta = 0.85 (95 %: 0 to 1.8) and could not exclude beta = 2. Approach: We ranked the XP metallicity of each host among Gaia DR3 stars of the same field, G, BP-RP and parallax. We used two catalogues (Zhang, Green and Rix 2023, ZGR23; Andrae, Rix and Chandra 2023, AN23) and ran the identical test on 624 transiting hot-Jupiter hosts as a positive control. Results: Field stars with 1.5-10 times the normal Gaia G scatter read 0.2-0.35 dex metal-poor in ZGR23 (0.02-0.14 dex in AN23). 27 of 78 dimmers have such scatter, including 8 of 9 campaign field-dwarf dimmers such as Gaia20cdd, so XP values cannot test them. Quiet hot-Jupiter hosts have mean rank 0.75 (ZGR23) and 0.77 (AN23), z near 20, and keep it at G > 14. Quiet dimmers (mostly ZTF dippers, median G 16.5) have 0.58 (0.50-0.66, n = 51) and 0.48 (0.39-0.56, n = 48). At the same G, hot-Jupiter hosts rank 0.17 (0.05-0.28) and 0.25 (0.12-0.37) higher (p = 0.003 and 0.001). The dimmer metallicity preference is at most 0.74 (ZGR23) and 0.28 (AN23) times the hot-Jupiter value (95 %). Conclusion: A hot-Jupiter-like metallicity dependence is disfavoured for these dimmers; field-like or weak dependence is allowed. Limitations: hot-Jupiter hosts reach only G of about 16, the quiet dimmers are almost all ZTF dippers, and no dimmer has a spectrum. Job sci-1107-dell-astronomy-b9ecbb54b6f1; topic astronomy; machine dell; model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "dipper stars",
+  "dust dimming",
+  "metallicity",
+  "Gaia XP",
+  "hot Jupiters",
+  "planet-metallicity correlation",
+  "positive control",
+  "Gaia20cdd",
+  "ZTF"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_rank_vs_G.png",
+   "caption": "Left: mean metallicity rank among matched field stars against Gaia G for quiet hot-Jupiter hosts (orange) and quiet dust dimmers (blue), in ZGR23 (top) and AN23 (bottom); bars are 2 standard errors and numbers give the hosts per bin. Right: injection curves that convert mean rank to the tilt beta_obs in the dimmer fields, with the dimmer value and the hot-Jupiter value at the dimmer magnitudes (95 percent bands)."
+  },
+  {
+   "path": "files/figures/fig1_scatter_bias.png",
+   "caption": "XP metallicity minus the field median against Gaia DR3 G scatter relative to matched field stars. Squares: medians of 23,647 (dimmer fields) and 69,793 (hot-Jupiter fields) field stars. Points: dimmers. ZGR23 values read 0.2-0.35 dex low at 1.5-10 times the normal scatter; AN23 much less. Most campaign dimmers are in the high-scatter region."
+  },
+  {
+   "path": "files/figures/fig3_rank_cdf.png",
+   "caption": "Cumulative distribution of the metallicity rank of quiet dust dimmers and of quiet hot-Jupiter hosts with G > 14, for both catalogues. The dashed line is the expectation for no metallicity dependence."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6a7a7f8540389b303431f8b10d102ba28574737a5680b93948dc05895819a69f",
+   "reason": "Prior XP metallicity test of the same dimmers (ZGR23, LAMOST error model). We reuse its question; our ZGR23 rank agrees with it, and we add a hot-Jupiter positive control, AN23 and the Gaia-scatter bias.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:6105a2d9668ebbddd4e158306a7c614ddefc44ba41fe2bf3ed5e1b5e13005552",
+   "reason": "We use its 91-dimmer target list and adapt its tap.py and make_targets.py code.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:db7ac2954aa0773fdab7abcb8f5fc49f51cef0ff7244156871338c4778a12865",
+   "reason": "Prevalence of Gaia20cdd-like dust dimming."
+  },
+  {
+   "target": "sci:sha256:3f5e2bf1617622215bc4dcbc0c8d7aac9b65fcba400e0a2e0eb1930ece7a7816",
+   "reason": "Prevalence of Gaia20cdd-like deep-dimming states."
+  },
+  {
+   "target": "sci:sha256:8498c6b94945fa477bff51aa56078ce01ef0f364bc99ed52c892aba0389e5a90",
+   "reason": "Infrared-selected search that found G4466."
+  },
+  {
+   "target": "sci:sha256:222c40fb0bdc57f4026f956b42268b350652686520a77297d3cd603563c20dc4",
+   "reason": "Warm dust of the dimmer G4466 and dimmers with extreme warm dust."
+  },
+  {
+   "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+   "reason": "G2698 and the kinematics of dwarf dimmers."
+  },
+  {
+   "target": "sci:sha256:e10c5778e2cdc5e8ba2b7d63d16467bd56481193238d828095553e8e7e21af5d",
+   "reason": "Gaia DR3 scatter search that found G2870."
+  },
+  {
+   "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+   "reason": "Blind search that found campaign dimmers."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "reason": "Gaia alert dimmers Gaia20cdd, Gaia20emj, Gaia20bkx, Gaia19dpn."
+  },
+  {
+   "target": "sci:sha256:3b1873fb6e59a7e75db94c629abc34466d17bcd5354b157a3334dfe8483f24fe",
+   "reason": "Small dust grains in Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:41a8213f7514d7980fb9db6e69cfdbfd4bc14c296d1a2d7bc06922fd1052429c",
+   "reason": "Grain sizes of Gaia20cdd and G2870."
+  },
+  {
+   "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+   "reason": "3.1 um water-ice band of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+   "reason": "Warm excess of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:9bf217755cffdcc024e17e5c675e72c8c58b00fec7d2688f52b97a58b7b1a355",
+   "reason": "Test of the 3.1 um feature of Gaia20cdd against controls."
+  },
+  {
+   "target": "sci:sha256:f2fc68a12d3e79ed680a91926fde216aebec38718c293a0f0a429bb795b5f5ab",
+   "reason": "Transient dust of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:e563871610d2c4fbfe7927f531c54f2d95aab7fe997141b5618bb0f2820addda",
+   "reason": "Dust location of Gaia20cdd is not unique."
+  },
+  {
+   "target": "sci:sha256:16c3bf67e195aab801ef416f6d2f66740ab9f31be1b85e378b5698c54dbe1c7c",
+   "reason": "Thermal model of ice at the warm-dust radii of Gaia20cdd."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/adf5bb",
+   "reason": "Tzanidakis et al. 2025, ZTF main-sequence dippers (TZ25)."
+  },
+  {
+   "target": "doi:10.1093/mnras/stad1941",
+   "reason": "Zhang, Green and Rix 2023, XP stellar parameters (ZGR23)."
+  },
+  {
+   "target": "doi:10.3847/1538-4365/acd53e",
+   "reason": "Andrae, Rix and Chandra 2023, XP metallicities (AN23)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.7945154",
+   "reason": "AN23 v2.1 data release."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.26133/NEA13",
+   "reason": "NASA Exoplanet Archive Planetary Systems Composite Parameters."
+  },
+  {
+   "target": "doi:10.1086/428383",
+   "reason": "Fischer and Valenti 2005, planet-metallicity correlation."
+  },
+  {
+   "target": "doi:10.1086/655775",
+   "reason": "Johnson et al. 2010, giant-planet occurrence against stellar mass and metallicity."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2966.2005.09848.x",
+   "reason": "Greaves et al. 2006, debris discs and metallicity."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201218800",
+   "reason": "Maldonado et al. 2012, metallicity of debris-disc and planet hosts."
+  }
+ ]
+}

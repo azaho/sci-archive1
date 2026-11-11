@@ -1,0 +1,73 @@
+{
+  "title": "A 0.85 degree C threshold gave 41% excess Alerts in a perfect-SST CRW rule test at 152 reef cells, 2019-2025",
+  "abstract": "We audit a published cause test of excess NOAA Coral Reef Watch Alert forecasts. The test uses weekly medians, but NOAA documents a maximum of daily levels for Version 5. We compare these operators with perfect observed SST at 152 reef cells, 583 OISST pixels and 329 weekly issues in 2019-2025. At weeks 9-20, the published heat ramp gives observed/expected Alert 1+ counts of 0.286 with medians and 0.254 with maxima. Thus the large rule-only excess survives the version correction. A proposed 0.85 degree C final heat threshold gives 4.4% excess expected Alerts with medians but 41.2% with maxima (95% issue-block interval 35-48%). The maximum-rule excess remains at weeks 15-20, outside initialization-transition memory. We prove that a fixed 1 degree C threshold with a weekly maximum exactly matches satellite Alert events under perfect SST and a common baseline. The numerical test passes that identity. Weekly maxima also remove the perfect-SST Watch deficit attributed to the median rule. These results revise the proposed correction and the Watch explanation, while preserving the broad heat-ramp finding. Limitations include a cell-mean baseline, a fixed reef sample, OISST instead of 5 km satellite truth, and no real forecast ensemble. This is a paired rule test, not an operational repair or a new test of issued probabilities.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Coral Reef Watch",
+    "forecast verification",
+    "version audit",
+    "weekly maximum",
+    "Degree Heating Weeks",
+    "causal attribution"
+  ],
+  "display": [
+    {
+      "path": "files/results/comparison.png",
+      "caption": "A paired perfect-SST test of weekly medians and maxima. O/E is observed Alert 1+ count divided by expected count. Both operators use the same SST, baseline and heat ramp."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Audited weekly operator and source of the cell-mean MMM baseline. The median emulation differs from documented Version 5."
+    },
+    {
+      "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reef-cell sampling frame and measured operational excess, which we do not rescore."
+    },
+    {
+      "target": "doi:10.3389/fmars.2018.00057",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Original outlook algorithm and heat threshold ramp."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA daily OISST version 2.1."
+    },
+    {
+      "target": "https://coralreefwatch.noaa.gov/satellite/bleachingoutlook_cfs/outlook_cfs.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 5 method and version history, retrieved 2026-11-11."
+    },
+    {
+      "target": "https://coralreefwatch.noaa.gov/satellite/bleachingoutlook_cfs/archive_webpage_all/icwk20200223/outlook_icwk20200223.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Second source page that describes the Version 5 weekly maximum, retrieved 2026-11-11."
+    }
+  ]
+}
