@@ -1,0 +1,196 @@
+{
+ "title": "Heat-mortality relations fitted on 2000-2014 deaths improved 2015-2024 summer death forecasts in 114 European regions, but the heat response was 14% below stationary expectation",
+ "abstract": "Question: is a summer heat-mortality relation operationally forecastable, and which campaign rule identifies it: the response-class rule (disease and population responses: use a trailing mean) or the training-only false-signal gate? Approach: we froze and timestamped a plan, then fitted per-region relations (weekly log deaths with year and week effects and a temperature hinge for the week and the previous week) on Eurostat weekly deaths and E-OBS v32.0e temperature. Cohort A: 114 NUTS 2 regions in 18 countries, training summers 2000-2014, test summers 2015-2019 and 2022-2024 (ISO weeks 23-35). Cohort B: 94 regions in 10 countries, training to 2019, test 2022-2024. Forecasts used observed weather. Results: a trailing level plus the frozen heat term beat the temperature-blind trailing mean (median skill 0.18, 95% country-bootstrap interval 0.08 to 0.25; hot weeks 0.59; cohort B 0.11). No shifted-climate null reached the training signal (false-signal rate 0.00), so the gate chose climate correctly and the class rule did not. Training R2_cv ranked regional skill (rho 0.58). The calibration slope of the frozen heat term fell from 0.92 in held-out training summers (stationary expectation with estimation noise) to 0.79 in test summers (difference -0.13, interval -0.21 to -0.04). The decline was in warm and southern regions (-0.21) and absent in cool ones; 2022 was an exception (slope 1.01; COVID overlap). Cohort B showed no detectable change (-0.07, -0.20 to 0.14). Limitations: observed weather, all-cause all-age deaths, area-weighted exposure, no France, Germany, Italy or UK in cohort A, and no test of the causes of the decline.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "heat mortality",
+  "ecological forecasting",
+  "forecastability",
+  "out-of-sample test",
+  "pre-registration",
+  "false-signal rate",
+  "response class",
+  "adaptation",
+  "calibration slope",
+  "trailing mean",
+  "level shift",
+  "Eurostat",
+  "E-OBS",
+  "NUTS 2",
+  "climate-sensitive disease",
+  "climate-response relations"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_theta_by_summer.png",
+   "caption": "Calibration slope of the frozen heat-mortality term by test summer, with the stationary expectation from held-out training summers."
+  },
+  {
+   "path": "files/figures/fig3_campaign_context.png",
+   "caption": "Family false-signal rate against forward gain of the climate term: 18 earlier campaign units and heat mortality (this test)."
+  },
+  {
+   "path": "files/figures/fig4_decline_by_group.png",
+   "caption": "Change in the heat response beyond estimation noise by macro-region and summer-temperature tercile (cohort A, exploratory)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:08251db7a4cca59caf9f437720f82ed7a5712df0d4848c6859399f384a050175",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:0079729bef62be0b83ba0dc93dfb14df649bad13c37cdc7c8f6f463dce2913e1",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:7a7ec3a0e9d6963d5f46b204df94df00108b989c0e576188674f2aa763339c0d",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:434d1de70f0383d39d24e379f64454ddb981bbe821f6c4bc0ebcc858cee230b7",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+   "reason": "Earlier campaign forward test of a climate-sensitive disease (dengue) for comparison."
+  },
+  {
+   "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+   "reason": "Earlier campaign disease forward test (West Nile) with no forecast gain, for comparison."
+  },
+  {
+   "target": "sci:sha256:6a99138664fc0c17339ac22bb8645f033cbb705450bdbceb662d552c737ff158",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:73ad6e6659b0910a78c0674696396e1c09141a5c7c4015c11ca87db5572f3408",
+   "reason": "Earlier campaign disease forward test (coccidioidomycosis), for comparison."
+  },
+  {
+   "target": "sci:sha256:0dd123d426114b1277aeeacdea8f4408cf47e213c9797495c783c66365a44c72",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:63b4bcb70ab4f2fa5893e67aec84fff2e07d931390226776508c3cf46c5be136",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:0de60f71ee6d2a6c84010bbe213b17eb06ac82ecade8ac71b5a75607e0da29a0",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:9e12efbbd2cc2d9dde77c085b619cbd0867e5f124b9928ed823894c3a4f3568f",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:f6529817c732bcd1ea8872809b6b70a9f19848c48170f2bc2e8db0c608522da6",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "reason": "Source of the response-class rule that this test checks on a new disease-type family.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:a102dc43dfd203dfce32e548b979276d502c238ede43e585f61e4f827f2fc2de",
+   "reason": "Earlier campaign forward test of a published climate-response relation (part of the evidence that this test builds on)."
+  },
+  {
+   "target": "sci:sha256:7b03c5d9e77032c225341aec76502e02b7cc65b1eb1d75cfd591d0c1a4e4cf8f",
+   "reason": "Source of R2_cv screening and the shifted-climate null that we adapt to a weekly design.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:8804b69f25ac0e1b787854ca1294df6d9fe874839d368768e9953d468aee3016",
+   "reason": "Source of the family false-signal rate and the gate threshold region; we test the gate on heat mortality.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:6081bf7661bffeef1115a8ec3adc9b107ff0e2f5a291100cbc2d1a64c6bccfa4",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its h2_points.csv (family FSR and forward gain) for Figure 3 and test its FSR gate on a new family."
+  },
+  {
+   "target": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_mwk2_ts/default/table",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Eurostat weekly deaths by NUTS 2 region (demo_r_mwk2_ts)."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS gridded daily temperature (Cornes et al. 2018), v32.0e."
+  },
+  {
+   "target": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GISCO NUTS 2 polygons."
+  },
+  {
+   "target": "doi:10.1016/S0140-6736(14)62114-0",
+   "reason": "Gasparrini et al. (2015), multi-country temperature-mortality relations."
+  },
+  {
+   "target": "doi:10.1038/s41591-023-02419-z",
+   "reason": "Ballester et al. (2023), heat-related mortality in Europe in summer 2022 from Eurostat weekly NUTS deaths."
+  },
+  {
+   "target": "doi:10.1289/ehp.1409070",
+   "reason": "Gasparrini et al. (2015, Environ Health Perspect), temporal variation in heat-mortality associations."
+  }
+ ]
+}
