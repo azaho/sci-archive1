@@ -1,0 +1,155 @@
+{
+ "title": "Removing DOISST v2.1 mean steps cuts the 2023/24 record SST jump from 0.25 to 0.19 C, its return period from about 500 to 110-160 years, and 1982-2025 heatwave-day trends by about a quarter (60S-60N)",
+ "abstract": "Question: which published record-heat and marine heatwave (MHW) results from NOAA Daily OISST v2.1 (DOISST) survive when its mean steps (1985, 2005, 7 July 2020, 2021) and fixed ship adjustment are removed? Approach: we fitted 5-degree fields of 15 step sizes and a ship term against HadSST4.2 and ERSSTv5 (60S-60N, 1982-2025), smoothed them (1000 km) and tested the corrected record against ESA SST CCI v3, which the fit did not use. We then repeated the Terhaar et al. (2025, Nature) 2023/24 record-jump analysis and Hobday MHW statistics on 29,129 one-degree cells. Results: against CCI the DOISST warming excess falls from 0.044 to 0.002 C per decade and the 2020 step from +0.069 to -0.012 C. We reproduced the published jump (0.249 C over 2015/16) and end trend (0.269 C per decade) exactly. Homogenised DOISST gives a jump of 0.193 C (variants 0.187-0.200) and an end trend of 0.215; the 7 July 2020 step alone adds 0.080 C to the published jump. With the same AR(1) model, the mean return period falls from 435 years (published DOISST, our run; 512 published) to 130 years (110-155 for variants); ERSSTv5, HadSST4.2 and CCI give 138, 291 and 336 years. The jump stays unlikely but not unexpected, but the 1-in-512-year value is not robust. The 1982-2025 MHW-day trend falls from 21.2 to 15.7 days per decade (-26%), event frequency by 28% and cumulative intensity by 25%; CCI on the same cells lies between (16.1 against 18.6 and 13.5 for 1982-2023), so the steps cause 13-27% of the trend. 2023 MHW days fall from 125 to 103 per cell (CCI 114) and heatwave area from 96.9% to 94.7%, but 2023 stays a record and 2024 has more MHW days. The 2020 step enters over 3 days (4-8 July) with no change in the error field, which agrees with a satellite input change. Limitations: the in situ references share ships and drifters with DOISST, CCI has its own steps, and the jump correction differs by reference (CCI suggests 0.016 C, in situ fits 0.057 C on open water); the return period is very sensitive to the jump.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "OISST",
+  "DOISST",
+  "homogenisation",
+  "marine heatwaves",
+  "record SST jump",
+  "2023 ocean heat",
+  "return period",
+  "ESA CCI SST",
+  "HadSST4",
+  "ERSSTv5",
+  "step change",
+  "climate data record",
+  "warming acceleration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_record_jump.png",
+   "caption": "The 2023/24 record jump (60S-60N, April-March means). (a) Annual anomalies in published and homogenised DOISST, ESA CCI v3, ERSSTv5 and HadSST4.2. (b) Jump against end-of-record trend with return-period contours of the AR(1) model calibrated to Terhaar et al. (2025). (c) Mean return period and 95% range for each record."
+  },
+  {
+   "path": "files/figures/fig1_homogenisation.png",
+   "caption": "Mean homogenisation of DOISST v2.1. (a, b) Step fields for 1 January 2005 and 7 July 2020 fitted on HadSST4.2 and ERSSTv5. (c) Independent test: DOISST minus ESA CCI v3 (365-day mean, 60S-60N), published and homogenised. (d) The 2020 step rises over 3 days in the NCEI daily files; the analysis error field does not change."
+  },
+  {
+   "path": "files/figures/fig3_marine_heatwaves.png",
+   "caption": "Marine heatwaves on 29,129 one-degree cells (1983-2012 baseline). (a) Global MHW days per year for published, mean-homogenised, noise-homogenised and combined DOISST, and ESA CCI v3. (b) 1982-2025 trend ratios. (c) Published MHW-day trend. (d) Trend change after mean homogenisation. (e) 2023 values relative to published values."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the step dates, the implied ship-bias field and the daily DOISST-minus-CCI series; we build the corrected record that it recommended and confirm its steps with an independent test."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MHW and noise-homogenisation code and CCI MHW indices on the same cells; we add the mean correction to its 2023 record analysis."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Noise homogenisation of DOISST MHW trends; we combine it with the mean correction."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bounded MHW-day trends under arbitrary 0.14 C changes; our fitted correction keeps the trend positive."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Large-area heatwave trend bounds."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST variance step and mean-warming gap."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "CCI v3 has its own sensor steps, a limitation of our independent test."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Coral DHW study that found the mean-warming gap."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "First campaign study of DOISST input steps."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "DOISST noise steps and change dates."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "CCI comparison of DOISST memory."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "DOISST input steps in extremes and heatwave trends."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Spatial detail steps in DOISST and CCI."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Front statistics steps."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08674-z",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "We repeat its observation-based jump and return-period analysis with a homogenised DOISST; the jump and the 512-year return period are smaller, and its main conclusion stays."
+  },
+  {
+   "target": "doi:10.1126/science.adr0910",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Record 2023 marine heatwaves; our 2023 MHW days and area are lower after homogenisation, and 2023 stays a record."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2015.12.014",
+   "reason": "MHW definition."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "reason": "ESA SST CCI v3.0.1 dataset."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST1, used only for an AR(1) parameter check."
+  },
+  {
+   "target": "doi:10.1029/JD092iD09p10977",
+   "reason": "Enting smoothing spline."
+  }
+ ]
+}

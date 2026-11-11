@@ -1,0 +1,150 @@
+{
+ "title": "Two polar splices in DOISST v2.1 (2005 ice input, 2016 ice-to-SST method) remove the 2005-2025 Arctic summer SST warming and make false post-2016 cold-spell rises poleward of 60 degrees",
+ "abstract": "NOAA DOISST v2.1 is the standard daily SST record for marine heatwave (MHW) and cold-spell (MCS) studies. Earlier campaign work found input-change steps only at 60S-60N. We tested the two documented polar changes. (1) On 2005-01-01 the ice input changes from NASA GSFC to NCEP. On that day the DOISST ice extent (>=15%) increases by 1.11 million km2 (north) and 1.48 million km2 (south) relative to the NSIDC Sea Ice Index; ERA5 ice has no step. The excess grows later. The DOISST ice field gives 1982-2025 annual extent trends of -0.10 (Arctic; NSIDC -0.52) and +0.75 million km2 per decade (Antarctic; NSIDC -0.11). (2) On 2016-01-01 v2.1 starts a freezing-point ice-to-SST conversion; earlier data are identical to v2.0. NCEI produced v2.0 to April 2020, which gives a direct counterfactual for 1,578 days. Poleward of 60N, v2.1 minus v2.0 is -0.43 C in July and -1.34 C in cells with 35-50% ice; 37% of the July-September offset is in cells where only DOISST has ice. We removed this splice with a cell, month and ice-state offset. Poleward of 60N, the 2005-2025 July-September SST trend is +0.06 +/- 0.08 C per decade in published DOISST, +0.27 +/- 0.08 after the correction and +0.27 +/- 0.07 in ERA5. Published DOISST doubles the Arctic cold-spell days after 2016 (28.8 to 61.7 days per year) and raises them 2.5-fold in the Antarctic (40 to 101). With the correction they stay at 30.7 (Arctic) or fall to 24.9 (Antarctic); ERA5 shows no rise. The Arctic MHW intensity rise of 2007 (Huang et al. 2021) is also in ERA5 before its own input change, so it is not a DOISST artifact; the splice mainly lowers the recent MHW area cover. At 60S-60N v2.1 is 0.09 C warmer than v2.0 after 2016, but at 102 moored buoys v2.1 has no step (median -0.007 C, 95% interval -0.015 to 0.006); v2.0 drifted cold. Limitations: ERA5 is not truth and has its own 2007 step; the correction removes only the mean offset and returns 2016-2025 to the v2.0 method, which NOAA considers warm-biased in ice; the 2005 ice step is not corrected; no polar in situ SST and no CCI data were used. The bundle includes the correction field for |latitude| >= 50.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "DOISST",
+  "OISST v2.1",
+  "sea surface temperature",
+  "sea ice",
+  "Arctic",
+  "Antarctic",
+  "marine heatwaves",
+  "marine cold spells",
+  "homogeneity",
+  "data splice",
+  "ERA5",
+  "NSIDC Sea Ice Index",
+  "climate data record",
+  "ice-to-SST proxy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_polar_summer_sst.png",
+   "caption": "Summer SST anomaly poleward of 60 deg (relative to 1982-2011) in DOISST v2.1 as published, in DOISST with the 2016-01-01 v2.0-to-v2.1 splice removed, and in ERA5. Dotted lines: 2005-2025 trends."
+  },
+  {
+   "path": "files/figures/fig2_2016_splice.png",
+   "caption": "The 2016-01-01 splice. a) Daily DOISST minus ERA5 SST in cells where only DOISST has ice. b) v2.1 minus v2.0 SST by v2.1 ice concentration (May 2016-April 2020). c) v2.1 minus v2.0 area mean by month."
+  },
+  {
+   "path": "files/figures/fig1_ice_extent_vs_nsidc.png",
+   "caption": "DOISST v2.1 and ERA5 sea-ice extent (concentration >= 15%) minus the NSIDC Sea Ice Index v4, both hemispheres, 1982-2025. DOISST steps on 2005-01-01 when its ice input changes from NASA GSFC to NCEP."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1 fast-variance steps at satellite input changes; Extends the DOISST/OISST input-change artifact chain to the polar caps (poleward of 60 deg), which this work did not test."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the moored-buoy daily SST used for the 2016 splice test outside the polar caps."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "CCI and buoy test of DOISST memory steps; Extends the DOISST/OISST input-change artifact chain to the polar caps (poleward of 60 deg), which this work did not test."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "DOISST input steps bias extremes and MHW trends at 60S-60N; this work finds a different, polar mechanism (ice-to-SST splice)."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "MHW-day robustness at 60S-60N; polar MHW statistics are tested here."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Spatial front steps in DOISST and CCI; Extends the DOISST/OISST input-change artifact chain to the polar caps (poleward of 60 deg), which this work did not test."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Homogenised MHW and cold-spell trends at 60S-60N; this work shows a separate polar cold-spell artifact from the 2016 splice."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Spatial-detail steps in DOISST and CCI; Extends the DOISST/OISST input-change artifact chain to the polar caps (poleward of 60 deg), which this work did not test."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Large-patch heatwave area robustness in one-degree OISST."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Reef DHW effect of DOISST noise steps; it reported a DOISST-buoy warming drift that the 2016 splice does not explain (buoy test here)."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Spatial steps in DOISST at 50S-50N; Extends the DOISST/OISST input-change artifact chain to the polar caps (poleward of 60 deg), which this work did not test."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 SST input steps (2007-09-01 and later) and the ARCO-ERA5 retrieval method; ERA5 is the second record here."
+  },
+  {
+   "target": "doi:10.1029/2021GL095590",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Huang et al. 2021 Arctic MHW study with DOISST v2.1; we reproduce its metrics and test them against the 2016 splice and ERA5. Its MHW intensity/duration rise is robust; its OISST ice record is not homogeneous."
+  },
+  {
+   "target": "doi:10.1038/s43247-024-01215-y",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Barkhordarian et al. 2024 report a 2007 Arctic MHW regime shift in OISST; ERA5 shows the July-August 2007 warm anomaly before its own input change."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description: v2.1 changes (freezing-point ice-to-SST conversion, Argo, ship correction) start on 2016-01-01."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "reason": "DOISST method and ice-proxy SST."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 reanalysis SST and sea-ice cover."
+  },
+  {
+   "target": "https://nsidc.org/data/g02135",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NSIDC Sea Ice Index v4 daily extent, reference for the ice-field test."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2.1 and v2.0 products and version history."
+  },
+  {
+   "target": "https://zenodo.org/records/5042190",
+   "reason": "Banzon et al. 2019 poster on freezing-point versus regressed ice-to-SST proxies in DOISST."
+  }
+ ]
+}
