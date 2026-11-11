@@ -1,0 +1,163 @@
+{
+ "title": "In five model Green's functions, DOISST v2.1 steps hide 15-21% of the 1982-2022 SST pattern effect by near-uniform false warming; the 2018 OI v2 step makes 2001-2022 AMIP feedback more negative",
+ "abstract": "Question: how much do the known false steps in NOAA DOISST v2.1 (warm steps in 2005 and 2020) and in NOAA OI SST v2, the post-1981 source of the PCMDI-AMIP forcing (a cold Southern Hemisphere step in mid-2018), change the radiative feedback that atmosphere models give for the observed SST pattern? Approach: we read the Green's functions (dN/dSST) of CAM5, CanESM5, ECHAM6, GFDL-AM4 and HadAM3 (plus CAM4 and other variants as checks) from the GFMIP protocol data with a new byte-range JLD2/HDF5 reader. We applied them to monthly 5-degree SST anomalies (60S-60N, fixed ice-free mask) of DOISST, two step-corrected DOISST versions, OI v2 (identical to PCMDI-AMIP 1.1.9 here), OI v2 with the 2018 step removed, ERSSTv5, COBE-SST2, HadISST1 and ESA CCI. Feedback is the trend of N divided by the trend of the 60S-60N SST, and the pattern term is this feedback minus the uniform-warming value. Results: over 1982-2022, the DOISST pattern term is -0.50 W m-2 K-1 and the corrected terms are -0.59 to -0.63 (Delta +0.09, 95% interval +0.02 to +0.18, and +0.13, interval +0.04 to +0.26). The cause is dilution: the DOISST steps have a near-uniform radiative signature (step N/SST -1.1 to -1.8 against -1.44 for uniform warming), so their false warming moves the feedback toward the uniform value. Their regional maxima in the east Pacific and the Southern Ocean have little weight. In 21-year windows that end in 2010-2013, DOISST hides 29% of the pattern effect, and it shows a 35-38% smaller rise of the feedback to the 2001-2022 windows. The 2018 OI v2 step has a dipole pattern. It makes the 2001-2022 feedback of OI v2 and AMIP 1.1.9 more negative by 0.21 (five models -0.13 to -0.25; references -0.10 to -0.23). Limitations: the feedback is per K of 60S-60N SST, the Green's functions are linear and differ between models by a factor of about 3, the correction sizes are uncertain, and the in situ products differ among themselves by 0.24 in the pattern term.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OI SST v2",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "pattern effect",
+  "radiative feedback",
+  "Green's function",
+  "GFMIP",
+  "data artifacts",
+  "homogenisation",
+  "climate sensitivity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_pattern_term.png",
+   "caption": "Green's-function pattern term (feedback minus uniform-warming feedback, per K of 60S-60N SST) for nine SST versions, 1982-2022 and 2001-2022. Open symbols: five atmosphere models; bars: 5-model mean. DOISST (orange) is less negative than its step-corrected versions (blue) in 1982-2022; removing the 2018 OI v2 step (green against violet) makes 2001-2022 less negative."
+  },
+  {
+   "path": "files/figures/fig4_step_signatures.png",
+   "caption": "Radiative signature of product steps: step in Green's-function N against step in 60S-60N mean SST (5-model mean, bars: model range). The DOISST 2005 and 2020 steps (orange) lie near the uniform-warming line, so they dilute the pattern effect; the OI v2 2018 step (violet) lies far from it, so it acts through its pattern."
+  },
+  {
+   "path": "files/figures/fig1_maps.png",
+   "caption": "(a) Mean Green's function of five models per unit area; (b) DOISST minus step-corrected DOISST 1982-2022 trend; (c) contribution of (b) to the N trend, largest in the warm pool and Indian Ocean; (d) OI v2 (= AMIPII) step at 2018-06 against the in situ mean."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign result on DOISST/ERA5 input-change artifacts; context for this series."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "It found the DOISST mean steps whose feedback effect we calculate."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Mean-step correction of DOISST and its effect on records; context."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Polar splices in DOISST; outside our 60S-60N ice-free mask (limitation)."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Mean-and-variance homogenised DOISST; context for the size of the mean correction."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "We use its step-corrected DOISST box series, CCI and product trend maps, box step maps, grid and mask code; we extend its SST-pattern result to radiative feedback.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "It traced the 2020-07-07 DOISST step to the Navy MetOp-A AVHRR v2.0 input; this step is part of the dilution."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "Its buoy test shows that DOISST mean corrections can overshoot; we cite it as a limitation of the correction size."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "reason": "GFMIP protocol; source of the Green's-function data we use."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10414728",
+   "reason": "GFMIP protocol data (CC BY 4.0) read by byte range."
+  },
+  {
+   "target": "doi:10.5281/zenodo.18840026",
+   "reason": "Fredericks et al. ECHAM6 Green's function map (CC BY 4.0), used as a check."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-18-0843.1",
+   "reason": "Dong et al. (2019) Green's functions (CAM4, GFDL-AM4, HadAM3 patch layouts)."
+  },
+  {
+   "target": "doi:10.1002/2017MS001096",
+   "reason": "Zhou et al. (2017) Green's functions (CAM5, CanESM5 patch layouts)."
+  },
+  {
+   "target": "doi:10.1029/2023GL105795",
+   "reason": "Alessi and Rugenstein (2023), ECHAM6 Green's function."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675",
+   "reason": "Andrews et al. (2022): SST-dataset dependence of historical pattern effects."
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023",
+   "reason": "Modak and Mauritsen (2023): dataset dependency of pattern-effect estimates."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description."
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1",
+   "reason": "AMIP SST and sea-ice boundary dataset method (Hurrell et al. 2008)."
+  }
+ ]
+}
