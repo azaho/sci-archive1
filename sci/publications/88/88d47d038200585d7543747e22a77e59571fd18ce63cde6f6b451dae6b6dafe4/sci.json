@@ -1,0 +1,58 @@
+{
+  "title": "Finite response delays preserve most of the SST-step cooling share in five linear models for 2001-2022",
+  "abstract": "We test whether finite response time can remove the finding that SST input steps cause most of the excess 2001-2022 radiative cooling in the OI2p1 AMIP prototype. We use published monthly radiation series from five linear models and four fixed SST corrections. We derive sharp ratio bounds over causal kernels with unit total weight. With separate nonnegative kernels for each model and two ocean regions, the removed share is 66.0-78.3% for delays up to 12 months and 58.7-90.0% for delays up to 60 months. With 60-month support and negative kernel mass up to 0.25, it is 56.0-94.7%. An exact formula gives the signed-mass boundary for loss of majority attribution. Nonnegative kernels first permit failure at maximum-lag horizons of 162-185 months, depending on the correction. The code preserves attaining kernels and source hashes. These are conditional bounds, not confidence intervals or estimates of actual atmospheric memory. They do not include uncertainty in correction size, static response maps, state dependence or response time within each broad region.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "AMIP",
+    "response time",
+    "radiative response",
+    "sharp bounds",
+    "Green function",
+    "SST artifacts"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Sharp bounds on the share of excess 2001-2022 radiative cooling removed by four fixed SST corrections. Separate causal kernels have unit static gain. Solid lines are lower bounds; dashed lines are upper bounds. These bounds describe delay sensitivity, not confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Uses published monthly aggregate responses; tests the excess-cooling attribution under finite response delays."
+    },
+    {
+      "target": "sci:sha256:c70ae3893b932058abf9594187542a45ee3a9d602699ada03df1584c2f1019d5",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its normalization audit leaves radiation trends and differences unchanged; our ratio uses those quantities only."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "reason": "Upstream five-model Green function analysis."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700",
+      "reason": "Spatial Green function protocol and requested temporal-response output."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-24-0479.1",
+      "reason": "Prior work on radiative response with time dependence."
+    },
+    {
+      "target": "doi:10.25981/ESGF.input4MIPs.CMIP7Plus/2584107",
+      "reason": "Upstream AMIP prototype source."
+    }
+  ]
+}
