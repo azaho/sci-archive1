@@ -1,0 +1,166 @@
+{
+ "title": "Local insecticide change explained less than 3% of the gap between expected and observed bird community warming on 3,287 US survey routes in 1992-2012 (route x observer and year effects)",
+ "abstract": "Question: bird community temperature indices (CTI) on North American Breeding Bird Survey (BBS) routes follow only a small part of the change that the spatial CTI-temperature slope predicts from warming. Did change in agricultural insecticide use remove warm-adapted birds and hide part of this response? Data: 44,050 standard BBS runs on 3,287 contiguous-US routes (1992-2012); USGS EPest county pesticide estimates (neonicotinoids, organophosphates and carbamates, pyrethroids, herbicides) as kg per km2 in a 20 km disc around each route; nClimGrid May-July temperature. Method (plan written before outcomes): run CTI on insecticide intensity and temperature with route x observer and year fixed effects; a gap budget with a 2-degree spatial block bootstrap; pre-trend and lead tests; 12 model variants; 389 per-species Poisson models with meta-regression on species temperature index (STI). Results: the expected CTI trend was 0.207 C per decade and the observed trend 0.034, a gap of 0.173. The insecticide part was -0.0012 C per decade, -0.7% of the gap (95% CI -2.2% to +0.8%). To close the gap, neonicotinoids would need about -1.0 C per kg/km2; the estimate was -0.007 (95% CI -0.019 to +0.005). No neonicotinoid or organophosphate coefficient excluded zero with state clustering. Routes where neonicotinoids later increased already had a relatively decreasing CTI in 1992-2002, so the small estimate is probably not a chemical effect. Species neonicotinoid responses did not depend on STI. Conclusion: local insecticide change is not a material cause of the weak climate tracking. Limitations: year effects remove national-scale effects; EPest values are modelled kg, not toxicity; 2013-2014 used preliminary data because the shared 2013-2017 file was truncated.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "community temperature index",
+  "climate tracking",
+  "neonicotinoids",
+  "organophosphates",
+  "pesticides",
+  "EPest",
+  "pollution",
+  "space-for-time substitution",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_exposure.png",
+   "caption": "A: route-mean insecticide intensity near 3,287 BBS routes by class, relative to the 2008-2012 mean (USGS EPest-high, 20 km disc). B: neonicotinoid change from 1998-2002 to 2008-2012 at each route (kg/km2 per year, clipped at 1)."
+  },
+  {
+   "path": "files/figures/fig2_gap_budget.png",
+   "caption": "A: CTI trend budget for 1992-2012 with 95% 2-degree block-bootstrap intervals: expected trend from the spatial slope, observed trend, gap, insecticide part and herbicide part. B: neonicotinoid part as a fraction of the main gap for 12 model variants (95% CI from model SE)."
+  },
+  {
+   "path": "files/figures/fig3_tercile_profiles.png",
+   "caption": "A: expected and observed CTI trends in terciles of neonicotinoid change; observed trends stay near 0.03 C per decade while warming doubles. B: yearly CTI difference of the middle and high terciles from the low tercile (route x observer demeaned); the difference already moved before the neonicotinoid era."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its BBS, climate, STI and CTI code unchanged and its spatial-slope framework."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We copied the reused code from this package; land-cover change did not cause the gap, and we test a different co-occurring driver."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Bird CTI followed less than 10% of warming; our 1992-2012 tracking of 0.17 of the spatial expectation agrees."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Weak tracking in 75 networks; part of the objective."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Forest type explained half of the gap on forested routes; part of the objective."
+  },
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "reason": "Land-cover change did not slow community warming; part of the objective."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic masked warm-adapted birds but changed too little; we test another masking driver with the same budget logic."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Phenology-detection artefact; part of the objective."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift; part of the objective."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Hearing drift not identified; part of the objective."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species-level responses 5-14% of spatial gradients; part of the objective."
+  },
+  {
+   "target": "doi:10.5066/P144YU3S",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey, 2026 release."
+  },
+  {
+   "target": "doi:10.3133/sir20135009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EPest county pesticide estimates, method and 1992-2009 data."
+  },
+  {
+   "target": "doi:10.3133/ds907",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EPest county pesticide estimates 2008-2012."
+  },
+  {
+   "target": "https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Annual and preliminary EPest county files."
+  },
+  {
+   "target": "doi:10.5066/P9F2SRYH",
+   "reason": "2013-2017 v2 county estimates; the shared copy was truncated and not used."
+  },
+  {
+   "target": "https://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_county_500k.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "County boundaries."
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly temperature."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET habitat and migration classes."
+  },
+  {
+   "target": "doi:10.1890/13-1917.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EltonTraits 1.0 diet."
+  },
+  {
+   "target": "doi:10.1038/s41893-020-0582-x",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "County-level neonicotinoid effects on US birds; we did not reproduce the insectivore and grassland contrasts at route scale."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0057457",
+   "reason": "Insecticide toxicity and grassland bird declines."
+  },
+  {
+   "target": "doi:10.1038/nature13531",
+   "reason": "Neonicotinoids and insectivorous bird declines in the Netherlands."
+  }
+ ]
+}

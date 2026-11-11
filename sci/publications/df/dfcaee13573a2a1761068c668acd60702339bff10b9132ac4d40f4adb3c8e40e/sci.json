@@ -1,0 +1,180 @@
+{
+ "title": "NHC 7-day tropical cyclone formation probabilities were 1.2 times too low in 2023-2026, mainly for disturbances not yet formed and for days 3-7; 2-day values had no clear total bias",
+ "abstract": "We tested the formation probabilities of the US National Hurricane Center Tropical Weather Outlook with a pre-registered plan (written and timestamped before any comparison). We rebuilt all public outlooks from the NHC GIS archive for May 2023 to November 2026 (Atlantic and eastern North Pacific): 3,098 six-hour cycles, 5,153 outlook-disturbance units in 280 linked disturbance chains. We compared them with 142 formations in HURDAT2 (2023-2025) and in operational ATCF best tracks (2026). Intervals are 95% bootstrap intervals over whole chains. The 2-day probabilities had no clear total bias (observed/expected 0.94, 0.83-1.05), but stated 10-30% values were too high (0.66, 0.50-0.84). The 7-day probabilities were too low: 1.22 (1.12-1.33), with 1.22 in each basin and an excess in all four seasons. Stated 20% verified 34% of the time; stated 70-100% was near correct. The deficit came from two connected sources. For areas with no existing disturbance (a low expected to form) the ratio was 1.70 (1.51-1.91), against 1.08 (0.97-1.18) for existing disturbances. When no formation occurred by 48 h, the implied chance for days 3-7 was too low by 1.46 times (1.31-1.63). The outlooks put 46% of the 7-day probability in the first 48 h, but only 36% of formations occurred there. In a pre-registered efficiency test, a 10-point rise of the probability in the past 24 h increased the log-odds of formation at a fixed stated value (+0.23, 0.13-0.32, 7-day; +0.20, 0.07-0.33, 2-day). Thus the forecasts moved too slowly. A leave-one-season-out recalibration that uses the 7-day and 2-day values, an area-only flag and the basin reduced the 7-day Brier score by 10.7% (4.4-17.1%). The results held under five matching rules and a strict same-chain rule. Our 2024 counts match the NHC verification tables in the 20-90% bins, but the NHC tables contain about 280 more 10% (7-day) forecasts than the public products; these extra forecasts verified near 25%. Limitations: public geometry replaces the NHC internal disturbance database; large polygons allow chance matches (a year-shift placebo bound keeps the area-only result but not the small excess for existing disturbances); 2026 outcomes are preliminary; only four seasons; the timing, placebo and recalibration analyses are post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone genesis",
+  "Tropical Weather Outlook",
+  "National Hurricane Center",
+  "probabilistic forecast verification",
+  "reliability",
+  "forecast calibration",
+  "pre-registration",
+  "forecast efficiency",
+  "recalibration",
+  "hurricane",
+  "eastern North Pacific",
+  "Atlantic",
+  "HURDAT2",
+  "Brier score"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Reliability of NHC 2-day (left) and 7-day (right) formation probabilities, May 2023 to Nov 2026, Atlantic (blue) and East Pacific (orange). Points: observed frequency per stated 10% value; bars: 95% bootstrap over disturbance chains. Lower panels: number of units. The 7-day values from 20% to 60% verified more often than stated."
+  },
+  {
+   "path": "files/figures/fig4_timing.png",
+   "caption": "Stated (open diamond) and observed (blue, 95% CI) probability of formation within 48 h (left) and in 48-168 h when none occurred by 48 h (right), by disturbance group. Areas without an existing disturbance and days 3-7 carry the 7-day deficit; low 2-day values for weak disturbances were too high."
+  },
+  {
+   "path": "files/figures/fig3_revisions.png",
+   "caption": "Observed frequency against stated probability, split by the 24-h change of the same disturbance's probability (both basins). At equal stated values, rising probabilities verified more often than falling ones: the issued values move too slowly."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same pre-registered verification design for a public hazard product (PAGER fatality probabilities)."
+  },
+  {
+   "target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca",
+   "reason": "PAGER economic-loss probability verification in the same research line."
+  },
+  {
+   "target": "sci:sha256:0c7c6b6479f6ea2983944717112800efa58a904159cfa2c36ffb86b8589d9c84",
+   "reason": "PAGER floor repair; example of a product repair after verification, compared with our recalibration."
+  },
+  {
+   "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+   "reason": "Past-event correction of PAGER; related out-of-sample repair design."
+  },
+  {
+   "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+   "reason": "PAGER floor repair robustness; related repair design."
+  },
+  {
+   "target": "sci:sha256:06f1084f1a744733582e3a63a15947e064177f533a4b86e4f26b2d410d2df3b2",
+   "reason": "Issued USGS aftershock forecast verification in the same line."
+  },
+  {
+   "target": "sci:sha256:9a5644cd2c4ad6eb4505f4f72617e1460e936eb409f7b84fde22c9169df9a304",
+   "reason": "First-issued aftershock forecasts too high; we find the opposite sign for NHC 7-day outlooks."
+  },
+  {
+   "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+   "reason": "Aftershock forecast updates; related to our test of forecast revisions."
+  },
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "reason": "Generic aftershock forecast calibration in the same line."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "reason": "Hazard alarm verification in the same line."
+  },
+  {
+   "target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06",
+   "reason": "Tsunami forecast-gain test in the same line."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Public alert probability (p_astro) verification in the same line."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "ShakeAlert contour verification in the same line."
+  },
+  {
+   "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+   "reason": "First-version ShakeMap uncertainty verification in the same line."
+  },
+  {
+   "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+   "reason": "Earlier NHC product verification (track error circles); we extend the NHC work to formation outlooks."
+  },
+  {
+   "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+   "reason": "Earlier NHC error-circle correction; we extend the NHC work to formation outlooks."
+  },
+  {
+   "target": "sci:sha256:80ba4ccecfcc615e3c6590f0f09a8f77e122714e4196a27d8cad04af0908f2cd",
+   "reason": "NOAA Ap forecast correction; related recalibration design."
+  },
+  {
+   "target": "sci:sha256:54021ac2e3416683673b0abe7bd662d8aa68803b81146b21e9d510436aee70f4",
+   "reason": "NOAA storm probability verification in the same line."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "PTWC threat verification; shows how sparse observations can bias verification, compared with our polygon-matching placebo."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "reason": "SWPC proton probabilities stayed flat over three days; we find a related timing error (front-loading) in NHC 7-day outlooks."
+  },
+  {
+   "target": "sci:sha256:7d8b115bb6bcb5157d0250567f517447861a7cd19a6fb0120c4f92698867d09e",
+   "reason": "NOAA electron forecasts lost to persistence; related test of whether forecasts use recent information."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/gis/archive_gtwo.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of all public Graphical Tropical Weather Outlook GIS files (2023-2026)."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Atlantic HURDAT2 best track, formation times 2023-2025."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2025-092926.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Eastern and central North Pacific HURDAT2 best track, formation times 2023-2025."
+  },
+  {
+   "target": "doi:10.1175/MWR-D-12-00254.1",
+   "reason": "HURDAT2 format and description (Landsea and Franklin 2013)."
+  },
+  {
+   "target": "https://ftp.nhc.noaa.gov/atcf/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ATCF best-track and invest b-decks; 2026 formations and pre-formation positions."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/verification/pdfs/Verification_2024.pdf",
+   "relations": [
+    "reviews",
+    "uses"
+   ],
+   "reason": "NHC 2024 genesis reliability tables; we compare our public reconstruction with them."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/verification/pdfs/Verification_2025.pdf",
+   "relations": [
+    "supports"
+   ],
+   "reason": "NHC reports a low bias of the 168-h outlooks; we confirm it with public data and locate its sources."
+  }
+ ]
+}

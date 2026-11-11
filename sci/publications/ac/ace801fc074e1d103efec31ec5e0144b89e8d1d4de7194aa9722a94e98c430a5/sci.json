@@ -1,0 +1,107 @@
+{
+ "title": "First-issued USGS ShakeMap uncertainties were too narrow for PGA and PGV at stations that later versions added (3,547 events, 2018-2026); MMI intervals were approximately calibrated",
+ "abstract": "Question: are the standard deviations that USGS ShakeMap 4 issues in its first map calibrated against shaking that the map did not use? Approach: we read all archived ShakeMap versions in ComCat for 10,916 events (2018-2026; M 3.5 or more near the United States, M 5.5 or more worldwide). For each event we compared the first issued version (median 14 minutes after origin) with seismic stations and Did You Feel It? cells that only a later version of the same stream used. We wrote the plan before we downloaded station data. Results: in 3,547 events, only 69.9% (95% CI 68.8-70.9%) of 72,048 station PGA values were inside the stated 90% interval; PGV gave 73.6% and SA(1.0 s) 71.6%. The maps were also too high: for 1,913 maps without stations the mean event term was -0.42 ln units. The observed between-event standard deviation of ln PGA was 0.65 (0.62-0.68), but ShakeMap stated 0.43; after removal of regional means it was 0.58. Bias depended on region: -1.0 in Hawaii and Texas, -0.6 in Puerto Rico, -0.25 for global events, and +0.26 in southern California. Versions within 60 minutes or 24 hours were not better (74% and 72%). MMI intervals were approximately calibrated: 90.9% at seismic stations and 92.2% for 150,558 new DYFI cells, because the stated MMI spread includes conversion scatter. An exploratory bias-and-scale recalibration fitted on 2018-2022 raised 2023-2026 PGA coverage from 65.9% to 90.3% and increased log predictive density by 0.89 per station. Limitations: late stations are not a random sample, archived amplitudes contain some errors, and the recalibration is retrospective.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "ShakeMap",
+  "ground motion",
+  "uncertainty calibration",
+  "forecast verification",
+  "PGA",
+  "between-event variability",
+  "Did You Feel It",
+  "ComCat",
+  "earthquake hazard products",
+  "probability integral transform"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_coverage_first_version.png",
+   "caption": "Observed fraction of later station values inside the stated central intervals of the first ShakeMap version, for PGA, PGV, MMI and new DYFI cells. Bands are 95% event-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_spread_skill_magnitude.png",
+   "caption": "Stated standard deviation against observed robust spread of residuals (deciles), and PGA 90% interval coverage by magnitude for maps with and without stations."
+  },
+  {
+   "path": "files/figures/fig3_event_terms.png",
+   "caption": "Mean PGA event term by region for first maps without stations, and observed against stated between-event standard deviation by magnitude."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+   "reason": "PAGER verification; PAGER uses ShakeMap as input, and we test that input."
+  },
+  {
+   "target": "sci:sha256:7c432ff9de9228d5bb4860f9256da2b05c2ec1586665edfadb8f01880cc7a2ed",
+   "reason": "Follow-up on the PAGER floor; part of the same series of product verifications."
+  },
+  {
+   "target": "sci:sha256:dad765bc69443c3d0745e1510cd9a6b0e0fb71394495f516c7b2dcb48c3d8e90",
+   "reason": "Follow-up on the PAGER floor; part of the same series of product verifications."
+  },
+  {
+   "target": "sci:sha256:1bc9d0d0bdeda0f0adac9de2ea154364b1e8d97947499798a2bced60277e210e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Verification design for generic USGS aftershock forecasts; we use the same plan-first verification approach."
+  },
+  {
+   "target": "sci:sha256:1f633d0c50c92a779861de007b71513598d984cb9ae0370740808e59eb926056",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Verification of issued OAF versions in ComCat; we use the same archived-version approach for ShakeMap."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "ShakeAlert contour test; our California result (first maps too low for PGA) agrees in sign, other regions differ."
+  },
+  {
+   "target": "sci:sha256:fa1ecaf76a35a728cb3a28a1681cf4de4583abd4d733a872948959bbb1f10eed",
+   "reason": "Part of the series of operational product verifications."
+  },
+  {
+   "target": "sci:sha256:633843309812b43501c0c76ab7ea33c20f5e82e8f09e2a19b3d2e51b32847b06",
+   "reason": "Part of the series of operational product verifications."
+  },
+  {
+   "target": "sci:sha256:0b51eda417dea74c12c0f29122077ecf65d90a8eaf715085f7bc87efc11306b6",
+   "reason": "Parallel verification of public alert probabilities in astronomy."
+  },
+  {
+   "target": "doi:10.1785/0120170189",
+   "reason": "Worden et al. 2018: ShakeMap 4 interpolation and uncertainty method that we test."
+  },
+  {
+   "target": "doi:10.1785/0120210177",
+   "reason": "Engler et al. 2022: partition of ShakeMap uncertainty into tau and phi under conditioning."
+  },
+  {
+   "target": "doi:10.1177/87552930241283201",
+   "reason": "Engler et al. 2024: propagation of ShakeMap uncertainty into impact models."
+  },
+  {
+   "target": "doi:10.1177/87552930241266808",
+   "reason": "Use of evolving ShakeMap uncertainty in damage assessment."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ComCat FDSN event service and ShakeMap product archive (all versions), retrieved 2026-11-10/11."
+  }
+ ]
+}
