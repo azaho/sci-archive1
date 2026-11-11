@@ -1,0 +1,195 @@
+{
+ "title": "The 7 July 2020 warm step in DOISST v2.1 occurs when the Navy MetOp-A AVHRR SST input changes from v1.0 to v2.0; v2.0 reads 0.06-0.10 C warmer against ESA CCI and drifters (60S-60N)",
+ "abstract": "Question: NOAA Daily OISST v2.1 (DOISST) has an undocumented warm step of +0.06 to +0.09 C on 7 July 2020 (60S-60N), which adds about 0.08 C to the published 2023/24 record SST jump. What causes it? Approach: we tested the satellite input. DOISST uses Navy (NAVO) AVHRR SST from MetOp-A and MetOp-B. NAVO replaced its L2P processing v1.0 by v2.0 (new cloud screening, 4 km) in mid-2020 without reprocessing. We read the stream dates from NASA CMR and the NCEI archive, streamed 1,057 NAVO L2P granules, and compared them with ESA SST CCI v3.0.1 and with iQuam drifting buoys. We compared 30 days before and after 7 July, and removed the change for the same days of 2019. We also used the DOISST analysis error field and JPL MUR v4.1. Results: the NAVO MetOp-A v1.0 collection ends at 2020-07-07T00:00Z; the DOISST minus CCI rise of 4-8 July is the largest 4-day rise of 2016-2023 (z 4.9). Against CCI, MetOp-A L2P changes by +0.10 C (95% interval 0.09 to 0.13, area-weighted) or +0.06 C (0.04 to 0.09, pixel-weighted), by day and by night; against drifters by +0.14 C (0.11 to 0.18). CCI minus drifters does not change (-0.007 C). v2.0 keeps 1.64 times more pixels per granule (2019: 1.10). DOISST minus CCI changes by +0.074 C (0.049 to 0.100), 0.7 to 1.2 times the input offset, and the step stays for a year. DOISST also follows the NAVO stream in June 2020: when MetOp-B v1.0 files became empty on 28 May, the DOISST error rose from 0.176 to 0.197 C (2019: 0.171 to 0.180), and it fell again on 17-22 June when a satellite stream returned. MUR, which ingests NAVO MetOp-B, changes by +0.041 C (0.017 to 0.072). Conclusion: the 7 July 2020 DOISST step comes from the NAVO v1.0 to v2.0 input change, not from the ocean; homogenisation at this date is justified. Limitations: no same-orbit v1.0/v2.0 comparison was possible (NCEI lacks the overlap files); DOISST internal input data are not public; the latitude pattern of the L2P offset differs from that of the DOISST step, which is a large-scale response; the offset was measured only in July-August 2020.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "NAVO AVHRR",
+  "GHRSST L2P",
+  "MetOp-A",
+  "data homogeneity",
+  "step change",
+  "ESA SST CCI",
+  "MUR",
+  "iQuam",
+  "drifting buoys",
+  "climate data record",
+  "satellite input change",
+  "marine heatwaves",
+  "record SST 2023"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeline.png",
+   "caption": "May-August 2020 (blue) and the same days of 2019 (grey), 60S-60N. (a) DOISST analysis error: it rises when NAVO MetOp-B v1.0 files become empty (28 May) and falls when a satellite stream returns (17-22 June). (b) DOISST minus ESA CCI: rises in mid-June and on 4-8 July. (c) NAVO AVHRR L2P minus CCI: MetOp-A v2.0 (orange) is warmer than v1.0 (blue) after 7 July. (d) MUR minus CCI."
+  },
+  {
+   "path": "files/figures/fig2_step_maps.png",
+   "caption": "5-degree maps of (a) the MetOp-A L2P v2.0 minus v1.0 offset against CCI, (b) the DOISST minus CCI step for the same 30-day windows, both with the 2019 change removed, (c) the 365-day DOISST minus CCI step (sci:dbf09341) and (d) a placebo date; (e) zonal means."
+  },
+  {
+   "path": "files/figures/fig3_step_estimates.png",
+   "caption": "Step at 7 July 2020 with 95% day-block bootstrap intervals: change from 6 June-5 July to 7 July-5 August 2020 minus the same change in 2019. CCI minus drifters does not change, so the L2P and DOISST steps are not reference artifacts."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Found the 7 July 2020 DOISST step with no known cause; we use its daily DOISST minus CCI series and identify the cause."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its 365-day 1-degree step map, placebo maps and in situ density fields; our result supports its correction of the 2020 step."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Suggested a satellite input change for the 2020 step and corrected it; we identify the input change."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "DOISST input-change effects on 2023 marine heatwave statistics."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "DOISST noise steps and marine heatwave trends."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:69a002274cdeebfb36b187909e835a6456a876dcd75efc56d575ab40ed4a0873",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:cfeb640f176cc964825feeae72bfae1bdaa34d71c35a05c3e06ea1368a189888",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:825d679626720ea43bb01ed67d28a54376bf84756c42f5434f052cf5a9c64172",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:77b0a90c9e0e9005b6673a59800cdf0456d5d0bde8f5a4dab449c1c2242807da",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST input-change step."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "DOISST polar splices."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1175/2007JCLI1824.1",
+   "reason": "DOISST method."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ESA SST CCI v3 reference."
+  },
+  {
+   "target": "doi:10.5285/4a9654136a7148e39b7feb56f8bb02d2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ESA SST CCI v3.0.1 dataset."
+  },
+  {
+   "target": "doi:10.1016/j.rse.2017.07.029",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MUR SST analysis."
+  },
+  {
+   "target": "doi:10.5067/GHGMR-4FJ04",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MUR v4.1 dataset."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "iQuam in situ SST."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08674-z",
+   "reason": "Published 2023/24 record jump that the 2020 step affects."
+  },
+  {
+   "target": "https://podaac.jpl.nasa.gov/dataset/AVHRRMTA_G-NAVO-L2P-v2.0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NAVO MetOp-A L2P v2.0 collection."
+  },
+  {
+   "target": "https://podaac.jpl.nasa.gov/dataset/AVHRRMTA_G-NAVO-L2P-v1.0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NAVO MetOp-A L2P v1.0 collection."
+  },
+  {
+   "target": "https://podaac.jpl.nasa.gov/announcements/GHRSST_NAVO_MetOp-A/B/C_L2P_v2.0_Datasets_Release",
+   "reason": "Announcement of the NAVO L2P v2.0 release (forward stream only, no reprocessing)."
+  }
+ ]
+}
