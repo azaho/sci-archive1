@@ -1,0 +1,194 @@
+{
+ "title": "Adding winter temperature and precipitation to the spatial benchmark did not close the US bird thermal-tracking gap, and better-fitting niche models did not predict local change (BBS 1966-2025)",
+ "abstract": "Question: campaign work found that bird community temperature indices (CTI) follow only a small part of the spatial CTI slope on summer temperature. Is this gap an artefact of a one-axis yardstick, given that winters warmed faster than summers and precipitation changed? Data: North American Breeding Bird Survey (3,960 contiguous-US routes, 107,922 runs, 467 species, 1966-2025) with nClimGrid temperature and precipitation; UK Butterfly Monitoring Scheme (1,253 sites, 1976-2024) with E-OBS. Method (plan written before outcomes): cross-fitted species temperature indices; spatial benchmarks of route-mean CTI on May-July temperature alone, plus December-February temperature, plus annual and summer precipitation, and all four axes; expected trend = spatial slopes x route climate trends; observed trend with route and observer fixed effects; block bootstrap (186 BBS draws). For 357 bird species, cross-fitted quadratic niche models with one or four axes predicted route change from 1971-1990 to 2006-2025. Results: the expected BBS CTI trend was 0.093 C per decade with summer temperature and 0.096 with four axes; observed 0.023. Realised fractions were 0.25 (95% CI 0.18-0.37) and 0.24 (0.18-0.35); gap closure -5% (-19% to +2%). Precipitation change added at most 0.016 C per decade. Only summer temperature plus precipitation inside 2-degree blocks closed 29% (10-50%), and this vanished with winter temperature added (1%). The West followed 0.45 and the East 0.19-0.21 with every benchmark. Four-axis niche models fitted space much better (median cross-validated R2 0.28 vs 0.08) but did not predict local change inside 2-degree blocks (transfer -0.01, CI -0.09 to 0.07; one axis -0.02; full transfer 1; prediction reliability 0.96-0.98). Spatial fit did not predict temporal skill (Spearman -0.00). UK butterflies with European indices followed 0.14-0.28 of the four benchmarks, but GB temperature and precipitation are collinear and intervals are wide; UK niche models fitted poorly. Conclusion: the weak thermal tracking of US birds is not caused by a summer-only climate yardstick; the deficit is in the temporal response. Limitations: correlational design; collinear axes; simple additive niche models; start-point climate; no detection model; UK tests have low power.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310302"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "climate tracking",
+  "space-for-time substitution",
+  "climatic debt",
+  "multivariate climate niche",
+  "winter temperature",
+  "precipitation",
+  "species distribution models",
+  "Breeding Bird Survey",
+  "UK Butterfly Monitoring Scheme",
+  "nClimGrid",
+  "E-OBS",
+  "birds",
+  "butterflies",
+  "climate change"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_benchmarks.png",
+   "caption": "A: BBS expected CTI trend under full space-for-time transfer for four spatial benchmarks (bars, 95% block-bootstrap intervals) and the observed within-route, within-observer trend (grey line), for all routes, East and West, with continental or 2-degree-block spatial slopes. B: the same for UK butterflies with European and GB-internal species temperature indices. C: realised fraction observed/expected."
+  },
+  {
+   "path": "files/figures/fig4_species.png",
+   "caption": "A: cross-validated spatial fit of 357 BBS species models with May-July temperature only and with four climate axes. B: spatial fit against temporal skill (correlation of observed and predicted route change 1971-1990 to 2006-2025 inside 2-degree blocks). C: pooled transfer slopes (1 = full transfer) with species or species x block fixed effects, BBS and UKBMS; 95% block-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig3_axis_parts.png",
+   "caption": "Contributions of each climate axis to the four-axis expected BBS CTI trend (bars) and the observed trend (grey line)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Defines the space-for-time CTI tracking fraction that we test with multi-axis benchmarks; our fractions agree with its BBS anchor."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its BBS CTI pipeline (same 107,922 runs) and extend its single-axis spatial benchmark to four climate axes; the gap stays."
+  },
+  {
+   "target": "sci:sha256:e8e31ffb7e1dd56af7d1af014f5395ac6e5a86840f733a7315279941c07e78ac",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Day/night temperature did not explain the gap; we find that winter temperature and precipitation do not explain it either."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Shows the spatial denominator is mostly thermal at 5 km; our multi-axis benchmarks give the same expected trend."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Species-level responses do not follow spatial gradients; we show this also holds for multi-axis niche models with much better spatial fit."
+  },
+  {
+   "target": "sci:sha256:814f6d393d18214a8259af1e12c63fd1d1d81558bc5410f00c3a7eaf2a2a3d96",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its European species temperature indices for UK butterflies; with them the butterfly fraction stays low under all benchmarks."
+  },
+  {
+   "target": "sci:sha256:b83e55977c81f74c80ca35b4a5fedfbbb5fbf86e4f6cf46daed982427f7f2161",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Distance to a warmer climate does not set the gap; with our result, neither the climate yardstick nor arrival distance explains it."
+  },
+  {
+   "target": "sci:sha256:3f5200e4f69102e08bc980f4809a54bd83e2ef3cde35622009f37d50a5d3d4d6",
+   "relations": [],
+   "reason": "Membership change carries the gap; a candidate process for what remains."
+  },
+  {
+   "target": "sci:sha256:b640c9c826fbb93545278610a67f3d06e1d98b95038ffd5ea5a147539768551a",
+   "relations": [],
+   "reason": "Warm-side gains and cold-side persistence; a candidate process for what remains."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "relations": [],
+   "reason": "Forest type explains part of the gap on forested routes."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "relations": [],
+   "reason": "Weak space-for-time transfer also for land cover; consistent with a general temporal deficit."
+  },
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "relations": [],
+   "reason": "Species land-cover transfer 11-25%; consistent with a general temporal deficit."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "relations": [],
+   "reason": "Earlier BBS CTI design with route and observer controls."
+  },
+  {
+   "target": "sci:sha256:2a5fc1a77d6ce47a8a601d10ca7d03a3d60cde90713a2030e4eeb897e1185ee9",
+   "relations": [],
+   "reason": "Insecticides explain under 3% of the gap."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "relations": [],
+   "reason": "Phenology-detection artefact is too small to explain the gap."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "relations": [],
+   "reason": "Traffic noise does not change the CTI trend by over 1%."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BBS 2026 release (1966-2025)."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-13-0248.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid temperature and precipitation."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS temperature and precipitation."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site locations 2024."
+  },
+  {
+   "target": "doi:10.1126/science.aac4858",
+   "relations": [],
+   "reason": "Climate suitability indicators of bird population trends; we find weak national and zero local association."
+  },
+  {
+   "target": "doi:10.1038/nclimate1347",
+   "relations": [],
+   "reason": "Climatic debt of birds and butterflies measured with CTI."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2486.2012.02784.x",
+   "relations": [],
+   "reason": "Temperature and precipitation both shape bird range shifts."
+  }
+ ]
+}
