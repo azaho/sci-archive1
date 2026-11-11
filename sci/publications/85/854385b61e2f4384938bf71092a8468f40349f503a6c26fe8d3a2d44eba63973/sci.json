@@ -1,0 +1,94 @@
+{
+  "title": "Newer NOAA monthly flood forecasts cut Brier error by 8% at 65 gauges in January to October 2026",
+  "abstract": "We tested dated daily probabilities from the NOAA CO-OPS Monthly High Tide Flooding Outlook. The local plan was written before scoring. On 18,789 common station-days at 65 gauges in January to October 2026, forecasts with a median lead of 37 days had 8.2% less Brier error than forecasts with a median lead of 219 days. The paired score change was -0.001973; a 95% interval from 30-day date blocks was -0.003096 to -0.001003. Each date carried all gauges together. Seven-day, 60-day and station-cluster checks retained the gain. Error fell in all ten months. The Pacific Islands and U.S. West Coast supplied 99.86% of the net score gain; the other regions had little net change. Both issue-age groups beat a fixed 2021-2025 monthly gauge-rate reference. The newer forecasts gave 386.1 expected flood station-days against 581 observed. Below 5% probability, 191 occurred against 47.1 expected. At 5% or more, 390 occurred against 339.0 expected; the observed-to-expected ratio was 1.15, with a 30-day interval of 0.84 to 1.38. Thus this sample supports useful updates, with a count deficit mainly in the low tail that the source method does not aim to model well. Outcomes use local civil days and the forecast threshold. An independent parser reproduced the primary totals and scores. Limits include one incomplete calendar year, spatial and time dependence, incomplete October data, revised observations, and no proof of the exact production executable. We do not test the newer NOAA PSL model or prove a physical cause. Original code, aggregate evidence, figures, 142 exact source-file hashes and external retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "coastal flooding",
+    "forecast verification",
+    "Brier score",
+    "NOAA CO-OPS",
+    "daily probabilities",
+    "sea level",
+    "damped persistence",
+    "operational forecasts"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Paired score differences and count calibration at 65 gauges in January to October 2026. Negative score differences favor the newer forecasts. Lines are conditional 95% bootstrap intervals. Probability-band count intervals use 30-day date blocks. This finite test does not establish future-year performance."
+    },
+    {
+      "path": "files/verification.png",
+      "caption": "Daily probability calibration, monthly expected and observed flood station-days, and regional score changes on common forecast pairs. Near and far median leads were 37 and 219 days. October observations were available at fewer gauges. The lines through bins are descriptive."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:067fb171353ce1ccadde578e2a2bff2474b78421a93efe886d5c096403aa75ca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its annual flood outlook test showed why the forecast threshold must be preserved. We apply that lesson to a different product and use no data from its bundle."
+    },
+    {
+      "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "A selected hazard study that showed useful pooled coverage can coexist with large subgroup differences. It informed the scope of this new-product test; no data were reused."
+    },
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "reason": "Selected work motivates independent checks of public hazard probabilities; no PAGER data or model code are reused."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source method and retrospective skill test for daily high tide flood probabilities."
+    },
+    {
+      "target": "doi:10.25923/bq8t-vj17",
+      "reason": "NOAA 2023 methodology update, threshold changes and station dissemination criteria."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/dpapi/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Dated forecast runs and historical daily maximum observations. Exact query URLs and hashes are in source_provenance.json."
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Local civil time hourly observations used for primary event definitions."
+    },
+    {
+      "target": "https://tidesandcurrents.noaa.gov/high-tide-flooding/monthly-outlook.html",
+      "reason": "Operational product description."
+    },
+    {
+      "target": "https://github.com/NOAA-CO-OPS/Seasonal_High_Tide_Flooding_Prediction/tree/a41ed82bd9355394ea0b460048e47ee4a001b6ae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned source inspection establishes local forecast day boundaries and damped anomaly persistence. This is not proof of the production executable."
+    },
+    {
+      "target": "https://www.psl.noaa.gov/forecasts/sealevel/",
+      "reason": "Separate experimental model and prior expectations for regional skill. We do not verify that model."
+    }
+  ]
+}
