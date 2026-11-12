@@ -1,0 +1,102 @@
+{
+ "title": "Gaia DR3 eclipse times from 2014-2017 confirm the ASAS-3-to-TESS period changes of southern detached binaries; their size agrees with third stars on decade orbits, not with a constant period drift",
+ "abstract": "SCI 02d77ae9 found that 77 of 304 detached southern ACVS binaries (P = 5-22 d) have common-mode eclipse-time changes between ASAS-3 (2000-2009) and TESS (2018-2026), and interpreted them as light travel time (LTTE) from third stars on decade orbits. We tested this with a third, independent epoch: Gaia DR3 G-band epoch photometry (2014.6-2017.4). For 174 binaries with Gaia data we fitted empirical eclipse templates from each binary's own TESS QLP light curve to the sparse Gaia points and measured one time offset per eclipse kind. The error scale (1.28) comes from primary-secondary agreement. 48 common-mode binaries and 90 link-test passes (controls) give good offsets. Gaia departs from the TESS ephemeris by more than 3 sigma in 24 of 48 common-mode binaries and in 8 of 90 controls (Fisher p = 1.2e-7). In 21 of the 24 the sign agrees with a smooth ASAS-3-to-TESS path (p = 1.4e-4); Gaia offsets correlate with that prediction (Spearman 0.68, p = 8e-8). Gaia blindly tests published LTTE orbits: ASAS 063202-6750.7 agrees with its 16.9-yr orbit (predicted -23.8 +- 1.5, measured -22.3 +- 2.4 min) and rejects 8-9-yr alternatives by 14 sigma; ASAS 115007-6425.1 rejects its 7.3-yr best orbit (6.7 sigma) and favours the 20-yr solution; two other orbits agree within 1.1 sigma. Simulations with the real sampling show that detected tertiaries with P2 = 15-50 yr (or the field log-normal) reproduce the departure rate (0.50) and the slopes on three predictions, while near-constant period drifts give a rate of 0.10 and 50-200-yr orbits 0.27 (both p < 0.005). Limits: one Gaia epoch per binary; few in-eclipse points; 8.9 percent of controls also depart; the simulation assumes LTTE from one tertiary and does not measure the tertiary fraction; no spectroscopy.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "eclipsing binaries",
+  "eclipse timing variations",
+  "light-travel-time effect",
+  "hierarchical triple stars",
+  "Gaia DR3 epoch photometry",
+  "TESS",
+  "ASAS-3",
+  "ACVS",
+  "period change",
+  "independent confirmation",
+  "blind orbit test",
+  "empirical eclipse template",
+  "QLP",
+  "ASAS 063202-6750.7",
+  "ASAS 115007-6425.1"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_oc_examples.png",
+   "caption": "O-C diagrams of six common-mode binaries relative to the TESS ephemeris: TESS times, ASAS-3 chunk times, the ASAS-3 and TESS lines, the Hermite path, published LTTE orbits, and the independent Gaia DR3 offset (orange diamond). Gaia confirms the 16.9-yr orbit of ASAS 063202-6750.7 and the 20-yr solution of ASAS 115007-6425.1."
+  },
+  {
+   "path": "files/figures/fig2_population.png",
+   "caption": "(a) Gaia offsets against the Hermite ASAS-3-to-TESS prediction for 48 common-mode binaries and 90 controls. (b) Fraction of binaries above a given |Gaia offset|/sigma from the TESS ephemeris. (c) Slopes of Gaia offsets on the Hermite and quadratic predictions for simulated detected tertiary populations and the observed values."
+  },
+  {
+   "path": "files/figures/fig3_gaia_on_templates.png",
+   "caption": "Gaia DR3 G epoch points on empirical TESS eclipse templates of six binaries, at the TESS ephemeris (grey) and at the fitted Gaia shift (blue)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:02d77ae92e9db972b5feaaf49f7f0a037d2f89ff9327000c7719cd6e44fc34fa",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the ASAS-3 timing measurements, link-test classes, LTTE fits and Monte Carlo code; Gaia confirms its common-mode period changes and tests its LTTE orbits (one best orbit rejected)."
+  },
+  {
+   "target": "sci:sha256:521b99d2d2eb5a9780ee8ec1773ddefcfcc1b8e73783a19e3ba4eb0b5e41e137",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS eclipse times, sample and QLP file list with hashes."
+  },
+  {
+   "target": "sci:sha256:84e829506f504bd8456950ff868884a41cc7626505570e8c94437b6b5a9671b4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Tested a constant-drift (quadratic) ephemeris with ASAS-3 and TESS only; the Gaia epoch independently disfavours near-constant drifts as the main cause."
+  },
+  {
+   "target": "sci:sha256:3288fe7d5bc8240ef4834be8e6d59089b4c114c3714a7c7f358763356b841d1c",
+   "reason": "Related ASAS-3 and TESS timing of HD 303514 (no Gaia epoch photometry for this star)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202245330",
+   "reason": "Gaia DR3 eclipsing-binary candidates and their light-curve models."
+  },
+  {
+   "target": "doi:10.17909/t9-r086-e880",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Quick-Look Pipeline (QLP) high-level science product light curves at MAST."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/190/1/1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Field companion period distribution used in the simulations."
+  },
+  {
+   "target": "doi:10.1086/145604",
+   "reason": "Light-travel-time model (Irwin 1952)."
+  },
+  {
+   "target": "doi:10.1093/mnras/stv2530",
+   "reason": "Eclipse timing variations and quadratic ephemerides of Kepler triples (Borkovits et al. 2016)."
+  }
+ ]
+}
