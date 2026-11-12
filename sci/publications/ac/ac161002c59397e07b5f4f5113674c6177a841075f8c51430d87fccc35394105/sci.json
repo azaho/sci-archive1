@@ -1,0 +1,109 @@
+{
+ "title": "Dragonfly and damselfly flight dates moved 3-6.5 days earlier per 1 C of pre-flight warmth in 11 European regions in 1990-2024; recorder-effort drift leaves the long-term advance unresolved",
+ "abstract": "Question: do European Odonata flight seasons follow temperature in the same way in independent regions, how much of the 1990-2024 change does temperature explain, and how large is the recorder-effort error in opportunistic records? Data: 9.36 million dated GBIF records (daily facet counts) of 93 species in 11 regions (Netherlands, two British, two French and Swiss regions for 1990-2024; two German regions, Sweden, Finland and Spain for 2008-2024), 528 species-region series, and E-OBS v32.0e daily temperature. Method: a plan with seven hypotheses was written and hashed before any date data were downloaded; per species-region regressions of the median (P50) and early (P10) flight date on the mean temperature of the 90 days before flight and on previous-summer temperature; random-effects pooling; waterbird and all-bird placebo series in the same windows; effort weighting; a single-dataset replication; a 1990-2012 to 2013-2024 out-of-sample test. Results: P50 moved -4.69 days per C (95% CI -5.25 to -4.14), with region means from -3.0 (Sweden) to -6.5 (southern Britain); the result held with a year term (-4.58), after 2000 (-4.44), in single datasets (-5.07) and with effort weights (-3.83). Early-flying and larval-overwintering species were more sensitive (+3.2 days per C per 100 days of later flight; egg overwinterers +2.1). Region-year mean predictions for 2013-2024 had r = 0.88 and skill 0.78 against the 1990-2012 mean, but species-year skill was only 0.13 (-0.05 to 0.28), so the planned out-of-sample rule failed. Two earlier claims did not repeat: P10 was not more sensitive than P50 (difference +0.40, 0.09 to 0.71), and a warm previous summer did not delay flight (+0.10, -0.37 to 0.57). Median dates advanced 2.1 days per decade in the long-series regions, and temperature predicted 37-97% of this. But waterbird placebo records in the same windows also moved earlier by 1.7-6.2 days per decade, and effort-weighted trends were near zero in four regions. Conclusion: the interannual temperature response is strong and general; the long-term advance from opportunistic records is not identified without a better effort measure. Limitations: opportunistic records, regional temperature means, bird-based effort calendar, literature-coded overwintering stages, short series in five regions.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  }
+ ],
+ "keywords": [
+  "Odonata",
+  "dragonflies",
+  "damselflies",
+  "phenology",
+  "flight period",
+  "climate change",
+  "temperature sensitivity",
+  "observation bias",
+  "recording effort",
+  "placebo test",
+  "GBIF",
+  "E-OBS",
+  "out-of-sample test",
+  "pre-registration",
+  "Europe"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_region_sensitivity.png",
+   "caption": "a: Pooled sensitivity of flight dates to 90-day pre-flight temperature in 11 regions (median, effort-weighted median, early date) and of two placebo record series. b: Previous-summer temperature term."
+  },
+  {
+   "path": "files/figures/fig2_species_and_trends.png",
+   "caption": "a: Species-region sensitivities against the long-term median flight day, by overwintering stage, with the meta-regression line. b: Mean observed median-date trend, temperature-predicted trend, effort-weighted trend and waterbird placebo trend per region."
+  },
+  {
+   "path": "files/figures/fig3_out_of_sample.png",
+   "caption": "Out-of-sample test of 1990-2012 fits on 2013-2024. a: Region-year mean anomalies, observed against predicted. b: Mean-squared-error skill for species-years and region-year means, with 95% year-bootstrap intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:47e62856768014d2e9a1f75bbe477f01d0b5cb85be35ba195136585fc18e6223",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Temperature explained most of the advance of one-brood British butterflies; we find a similar strong interannual response in Odonata."
+  },
+  {
+   "target": "sci:sha256:22f257faa1d723116109587655858a511f13569bd888298c8c2b1bf0b5e2ef77",
+   "reason": "Recording artefact in 2020 butterfly flight dates; we test recorder-effort artefacts with placebo series. Odonata 2020 residuals were not late."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Phenology-detection artefact in bird survey counts; related observation-bias problem."
+  },
+  {
+   "target": "sci:sha256:00fa5e9404f5c28c027c79ca3bc0e3ede118a63b563838d41de45d8e4ad459b1",
+   "reason": "Frog calling seasons 2-3 days earlier per 1 C; a comparable ectotherm phenology response."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Japanese animal first dates became later than warming predicts; a trend that observation effort can also affect."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2311.2007.00982.x",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Dingemanse and Kalkman 2008: Dutch Odonata phenology; we test its P5-versus-P50 and previous-summer claims in 11 regions."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2486.2007.01318.x",
+   "reason": "Hassall et al. 2007: British Odonata phenology trend."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS ensemble temperature data set."
+  },
+  {
+   "target": "https://api.gbif.org/v1/occurrence/search",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GBIF occurrence search API facet counts, accessed 2026-11-12; contributing datasets listed in files/results/gbif_datasets_by_region.csv."
+  },
+  {
+   "target": "https://knmi-ecad-assets-prd.s3.amazonaws.com/ensembles/data/Grid_0.25deg_reg_ensemble/tg_ens_mean_0.25deg_reg_v32.0e.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS v32.0e daily mean temperature file."
+  },
+  {
+   "target": "https://naciscdn.org/naturalearth/50m/cultural/ne_50m_admin_0_countries.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Natural Earth country polygons for region masks."
+  }
+ ]
+}
