@@ -1,0 +1,129 @@
+{
+ "title": "Target receptor genes did not predict the sign of evoked responses at 1,175 wired C. elegans neuron pairs, and glutamate inputs mostly excited, unlike the fly sign rule",
+ "abstract": "We tested whether the receptor genes of a C. elegans neuron predict the sign of its response when a directly wired presynaptic neuron is stimulated. Responses came from the Randi et al. 2023 signal propagation atlas (wild type and unc-31). Wiring came from two Witvliet adults, source transmitters from Wang et al. 2024, receptor polarity lists from Fenyves et al. 2020, and receptor expression from CeNGEN. We wrote the test plan before the tests. At CeNGEN threshold 2, 82% of 1,175 wired wild-type pairs had a target with both excitatory and inhibitory receptor genes for the source transmitter. No target had only excitatory glutamate receptor genes. The pre-specified rule could be tested only for acetylcholine inputs (47 against 3 pairs) and gave a stratified AUC of 0.40 (permutation p = 0.73). A graded receptor balance, added after a count of rule calls, gave a within-transmitter Spearman rho of -0.042 (p = 0.90; 95% interval -0.096 to 0.018). None of 13 further variants gave p < 0.10, and 12 of 14 estimates were opposite to the hypothesis. unc-31 animals did not give better agreement. Of 55 detected responses to glutamatergic wired inputs, 5 were negative (9%). Thus a fly-type rule with inhibitory glutamate gave 39% correct signs on 102 detected wired responses, against 85% for an all-excitatory rule. Post hoc, single neuron labels gave almost no sign information, and unc-31 animals had more negative responses on 8,150 shared pairs (80 against 43 detected). Limitations: calcium imaging under-samples inhibition, two known inhibitory synapses were not negative in the atlas, transcripts do not show synaptic receptors, and indirect paths add to responses. Code, plan, aggregate results and figures are bundled. External records are not.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "signal propagation atlas",
+  "synapse sign",
+  "receptor expression",
+  "CeNGEN",
+  "glutamate-gated chloride channel",
+  "acetylcholine-gated chloride channel",
+  "structure-function",
+  "connectome",
+  "unc-31",
+  "null result",
+  "cross-species comparison"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_receptor_calls.png",
+   "caption": "(a) Receptor-gene calls for the targets of 1,175 directly wired wild-type pairs: most targets express both receptor polarities. (b) Negative share of detected responses at wired pairs by source transmitter: glutamate inputs mostly excite."
+  },
+  {
+   "path": "files/figures/fig2_receptor_tests.png",
+   "caption": "Primary receptor rule and graded receptor balance against receptor-profile permutations, and all 14 receptor tests with target-class bootstrap intervals. No test supports receptor-set sign."
+  },
+  {
+   "path": "files/figures/fig3_sign_sources.png",
+   "caption": "Post hoc: single labels carry almost no information on the sign of detected responses, and per-neuron negative shares do not clearly repeat between wild type and unc-31."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Signal propagation atlas: measured responses (funatlas.h5, wormneuroatlas commit b2e13d88)."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Adult wiring maps 7 and 8."
+  },
+  {
+   "target": "doi:10.7554/eLife.95402",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Neurotransmitter identity of source neurons (supplementary file 2)."
+  },
+  {
+   "target": "doi:10.1371/journal.pcbi.1007974",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Receptor gene polarity lists and reporter-based receptor expression; we test its sign-prediction approach against measured responses."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2021.06.023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CeNGEN receptor expression, release 021821, thresholds 1 to 4."
+  },
+  {
+   "target": "doi:10.1098/rstb.1986.0056",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Third wiring map in one sensitivity check."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "reason": "Fly sign rule that needed inhibitory glutamate; we compare the worm result with it."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "Fly sign rule in a second connectome; its open question on receptor-dependent sign motivated this test."
+  },
+  {
+   "target": "sci:sha256:81d500ae7566f06af9d1e0104bfd7193ba77ddc54afe8c2f7e68d6d458318ec0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found no sign gain from source transmitter labels; we add target receptor genes and also find no gain."
+  },
+  {
+   "target": "sci:sha256:03adae01b2937552130f579e45b8e8b5e15ad4fcc8ef416730a2660ef48b1458",
+   "reason": "Cell-level sign model on the same atlas."
+  },
+  {
+   "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+   "reason": "Wiring and response probability in the same atlas."
+  },
+  {
+   "target": "sci:sha256:4ec02acdf0367766c96d95527a137bf10317e75b7f3e1cd4d2f99ad5b0b0e20c",
+   "reason": "Direct wiring and sign agreement in the same atlas."
+  },
+  {
+   "target": "sci:sha256:65df4205652eaeb28e72f18af91a921df432c5c6e52ffedb7564b6d46bc61674",
+   "reason": "Caveat on stored observation counts in atlas exports."
+  },
+  {
+   "target": "doi:10.1038/nature06292",
+   "reason": "Known inhibitory AWC to AIY synapse (positive control)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2014.09.056",
+   "reason": "Known inhibitory AIY to AIZ connection (positive control)."
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned copies of atlas, wiring, CeNGEN and Fenyves files (GPL-3.0 repository); not bundled."
+  }
+ ]
+}
