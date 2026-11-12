@@ -1,0 +1,121 @@
+{
+ "title": "Chemical connections conserved between C. elegans and P. pacificus did not carry more evoked C. elegans responses at matched synapse count; wiring of either species gave small, uncertain gains",
+ "abstract": "Question: do chemical connections that two distant nematodes share carry more signals than connections that changed in evolution? We linked the comparative nerve-ring connectome of Cook et al. 2025 (two P. pacificus adults, homologous C. elegans neuron names) to the C. elegans signal propagation atlas of Randi et al. 2023 for the first time. Data: 16,297 directed pairs among 164 neurons in wild type (WT) and 6,136 pairs in unc-31 animals. Planned tests used logistic models with synapse count, gap junction, contact, reverse wiring, two-step route and cell propensity controls, a crossed stimulated-by-responding neuron bootstrap and stratified permutations. Results: for C. elegans-wired pairs, a P. pacificus edge did not raise detection (8.4% vs 8.4%; adjusted odds ratio 1.06, 95% interval 0.50 to 2.09; p = 0.77; unc-31 1.20, 0.05 to 9.5). For C. elegans-unwired pairs, P. pacificus edges had a raw detection of 9.2% vs 4.9%, but controls reduced the odds ratio to 1.41 (0.74 to 2.51; p = 0.055; unc-31 1.62, 0.37 to 4.33), below the pre-set claim rule. Exploratory: the own-species C. elegans edge also failed the same test (odds ratio 1.38, 0.95 to 1.88), and P. pacificus wiring predicted held-out C. elegans responses as well as C. elegans wiring (AUC gains 0.0031 and 0.0033). Class pairs wired in all 12 maps had 11.0% detection against 4.5% for pairs lost in P. pacificus (adjusted odds ratio 2.14, 0.90 to 8.27). Limitations: sparse detection with indirect paths, coarse contact control, unequal P. pacificus reconstruction depth, anatomy and activity from different animals. Code, aggregate results and retrieval steps are included; source data are not bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "comparative connectomics",
+  "Pristionchus pacificus",
+  "Caenorhabditis elegans",
+  "evolutionary conservation",
+  "signal propagation atlas",
+  "structure-function",
+  "unc-31",
+  "connectome transfer",
+  "null result",
+  "crossed bootstrap"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_conservation_vs_response.png",
+   "caption": "Planned tests: C. elegans WT detection by wiring in each species, by Cook et al. 2025 class category, and adjusted odds ratios of a P. pacificus edge (T1, T2) with crossed-neuron bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_exploratory_controls.png",
+   "caption": "Exploratory: own-species edge as positive control, P. pacificus edge over all pairs, class core vs C. elegans-specific contrast, and held-out AUC gains of wiring from each species."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.adx2143",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Comparative P. pacificus / C. elegans nerve-ring connectome and homology."
+  },
+  {
+   "target": "doi:10.1101/2024.06.13.598904",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Preprint of the comparative connectome; data availability and methods."
+  },
+  {
+   "target": "https://github.com/stevenjcook/cook_et_al_2025_pristionchus/tree/379361a942583d53dd95b6ab710a12d05619d12a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the connectivity tables (MIT)."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "C. elegans signal propagation atlas (WT and unc-31)."
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Distribution of funatlas.h5."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "C. elegans gap junction adjacency (SI5) and N2U map."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Witvliet developmental C. elegans connectomes in the Cook tables."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2012.12.013",
+   "relations": [
+    "uses"
+   ],
+   "reason": "P. pacificus EM series."
+  },
+  {
+   "target": "sci:sha256:7764c3fd656f8a0afe85d50fd7400030e7f33bca671aee510f4ac5373f42ec70",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Within-species map agreement gave no clear gain; we extend the test to cross-species conservation."
+  },
+  {
+   "target": "sci:sha256:568d2824dd6d7d3c1798d3f437c14832e3fd7c64015c6fdfc4354bce29bfc020",
+   "reason": "Developmental edge presence and response dispersion."
+  },
+  {
+   "target": "sci:sha256:90edc552f6295ca6cb42fdc9e0a9e5c83540dca2ea48b4c7e7fd4daa9def902d",
+   "reason": "Conserved two-step routes gave no clear gain."
+  },
+  {
+   "target": "sci:sha256:538ad3c5ff4efbe1bf560cbff2c9d78540c07f2a8e01c6e4a74e6d1fa5c74063",
+   "reason": "Two-step route counts; we use them as a control."
+  },
+  {
+   "target": "sci:sha256:a188ce3adfdf31b7a1045bed3583b1931ea1ec53cfa03f9ab20a14ce90cfb80f",
+   "reason": "Variable wiring across C. elegans brains and co-activity."
+  },
+  {
+   "target": "sci:sha256:bcd56cbbaf2b2a6017163f45c5983596ff749473db319cb2d95cfad91faaaaa6",
+   "reason": "Neuropeptide routes and the unc-31 atlas."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "reason": "Between-animal transfer of connectome predictions in flies."
+  }
+ ]
+}
