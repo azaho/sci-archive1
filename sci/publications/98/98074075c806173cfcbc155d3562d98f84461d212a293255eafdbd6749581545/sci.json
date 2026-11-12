@@ -1,0 +1,28 @@
+{
+  "title": "Human L2/3 pyramidal connections ran mostly downward in two slice cohorts, but depth and cell degrees did not explain the near-absence of cycles in one cohort",
+  "abstract": "Peng et al. (2024) reported directed and mostly acyclic connectivity among human layer 2/3 pyramidal neurons. We tested whether cortical depth sets connection direction and explains this topology. We used the public Planert tables of the same recordings (898 one-way pairs, 21 donors), Allen Synaptic Physiology human and mouse slices, and MICrONS mouse electron microscopy. In the Planert cohort, 66.4% of one-way connections went from the shallower to the deeper cell (95% donor interval 62.4% to 70.9%; 18 of 21 donors above half). The share increased from 56% at gaps below 50 um to 78% at 100 to 200 um. The independent Allen human cohort gave 61.9% (51.2% to 70.0%, 105 pairs). The depth rule explained only about 20% of the cycle deficit. Only 2 of 146 one-way triangles were cyclic. A random graph gave 35.1, a distance and depth model 28.4, and a null with fixed cell in- and out-degrees 14.5 (95% range 7 to 23). Fixed degrees plus depth and distance weights gave 12.5 to 13.4. Only 3 of 882 one-way edges went against the best order of cells in each cluster. Depth, channel number and cell properties predicted held-out direction in at most 71% of pairs. All three experimenters had fewer cycles than the fixed-degree null. The small Allen human cohort showed no deficit (2 of 7 cyclic, null 1.7), but this test had little power. In intact mouse L2/3, proofread axons did not connect preferentially to deeper cells (ratio 0.71, 0.44 to 1.09), although axon-dendrite proximity was higher toward them. Limitations: curated calls from one laboratory, slice-plane depth, small replication cohorts and one EM mouse. The cause of the missing cycles remains open. The bundle has new code, aggregate results, figures, hashes and a retrieval script; external record-level data are not bundled.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"},
+    {"scheme": "anzsrc-for-2020", "code": "320903"}
+  ],
+  "keywords": ["human cortex", "layer 2/3", "pyramidal neurons", "multipatch", "connection direction", "cortical depth", "acyclic graph", "directed cycles", "degree-preserving null", "Allen Synaptic Physiology", "MICrONS", "structure-function", "replication", "null model"],
+  "display": [
+    {"path": "files/figures/fig1_depth_rule.png", "caption": "Depth rule for connection direction: connection probability against signed depth difference, downward share by depth gap and cohort, per-donor shares, and MICrONS mouse L2/3 ratios (target deeper / target shallower)."},
+    {"path": "files/figures/fig2_acyclicity.png", "caption": "Cyclic one-way triangles in the Planert cohort against model nulls and fixed-degree nulls; fixed-degree null by experimenter and for Allen human L2/3; held-out accuracy of direction predictors against the best per-cluster order."}
+  ],
+  "citations": [
+    {"target": "doi:10.1126/science.adg8828", "relations": ["reviews", "challenges"], "reason": "Tests depth as an explanation of the reported directed and acyclic topology; finds the acyclic structure is not explained by depth or degrees, and is not visible in a small independent cohort."},
+    {"target": "doi:10.1038/s41593-025-02134-7", "relations": ["uses"], "reason": "Source study of the human L2/3 tables."},
+    {"target": "doi:10.6084/m9.figshare.28184126.v1", "relations": ["uses"], "reason": "Planert processed tables (GPL-3.0+), not bundled."},
+    {"target": "doi:10.1126/science.abj5861", "relations": ["uses"], "reason": "Allen Synaptic Physiology data, not bundled."},
+    {"target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-025-08790-w", "relations": ["uses"], "reason": "MICrONS data release."},
+    {"target": "doi:10.1038/s41586-025-08840-3", "relations": ["uses"], "reason": "Functional connectomics node and edge tables used for the EM depth test."},
+    {"target": "sci:sha256:908ee0ddaa05762b06a83334e115e46e51955727d5b9458dca656221abd4792f", "relations": ["reviews"], "reason": "Earlier use of the same human tables for reciprocity and paired-pulse ratio."},
+    {"target": "sci:sha256:bf38e4209a14677e50fd3fefa2b5c6ff4863cdc3b1d863a2aafc104810f70e67", "relations": ["reviews"], "reason": "Earlier use of the same human tables."},
+    {"target": "sci:sha256:e0ac0e263276dc80e728739020bc0e3df8cd546401409b2a53fd10870c3709b3", "relations": ["reviews"], "reason": "Earlier use of the same human tables."},
+    {"target": "sci:sha256:0bd9b9fafacda2bdeead88acc07010973a2f343b008efac6f1690370ed90e2bb", "relations": ["uses"], "reason": "Fixed-degree shuffle reachability; motivated the added 3-cycle reversal move."},
+    {"target": "sci:sha256:74970728e9bb3bfbcff7586748a78314908b209929abcaffefc0d0eabcb583ac", "relations": ["reviews"], "reason": "Cycle-free graph feasibility in MICrONS under fixed degrees."},
+    {"target": "sci:sha256:28c4d1b908d356a99f7260d1eca80c42fa202155cd3cc3d83297686a06c5bf6c", "relations": ["reviews"], "reason": "Dendrite opportunity predicts direction in MICrONS; we add depth asymmetry of proximity and connection."}
+  ]
+}

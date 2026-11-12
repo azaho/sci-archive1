@@ -1,0 +1,62 @@
+{
+  "title": "Four CNEOS states fail a direct-entry geometry test in an API v1.2 snapshot",
+  "abstract": "We test local entry geometry in a frozen NASA/JPL Fireball Data API v1.2 snapshot. Five of 363 records with a location and velocity vector point outward. Four also cross the solid Earth when traced back with constant velocity or two-body gravity in the documented frame. Their upward angles range from 19.0 to 72.8 degrees. All four retain the conflict at sampled corners of a wide location, altitude and velocity perturbation box. The fifth state permits a grazing path and is not flagged. These are catalog consistency results under simple flight models, not new objects or confirmed measurement errors. No independent trajectory was obtained. Code, source hash, aggregate evidence and retrieval steps are included; raw observations and per-event tables stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "CNEOS",
+    "fireballs",
+    "entry geometry",
+    "catalog validation",
+    "grazing meteors"
+  ],
+  "display": [
+    {
+      "path": "files/geometry.png",
+      "caption": "Seven aggregate bins show five outward vectors among 363 records. Four steep outward states also have backward paths through the solid Earth under the tested flight models."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:04f95799be4ee8954614cb306973ae0f60c83717cd672c1991efd8ced2eed16d",
+      "reason": "Related campaign test of instrument effects in GMN flags; no code or data reused."
+    },
+    {
+      "target": "sci:sha256:f70562be1af59d8cab461ba9c36173416b955a468a4326725b936312554aca22",
+      "reason": "Related campaign study of physical boundary checks; different data and test."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2508.01454",
+      "reason": "Prior CNEOS calibration and vector consistency study."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.06745",
+      "reason": "Prior CNEOS error calibration and independent-trajectory requirement."
+    },
+    {
+      "target": "https://ssd-api.jpl.nasa.gov/doc/fireball.html",
+      "reason": "API v1.2 field definitions."
+    },
+    {
+      "target": "https://cneos.jpl.nasa.gov/fireballs/intro.html",
+      "reason": "Earth-fixed vector convention and sensor source."
+    },
+    {
+      "target": "https://ssd-api.jpl.nasa.gov/fireball.api?vel-comp=true&date-max=2026-11-12",
+      "reason": "Exact retrieval query; source remains external."
+    },
+    {
+      "target": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+      "reason": "Inspected linked policy; not treated as a database license."
+    }
+  ]
+}

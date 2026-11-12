@@ -1,0 +1,95 @@
+{
+ "title": "MODIS-Aqua R2022 chlorophyll is 16-20% low in March-September 2023 against OLCI, S-NPP and NOAA-20 records, which makes a false 2023 global drop and doubles the MODIS 2003-2023 decline (60S-60N)",
+ "abstract": "We tested if the NASA MODIS-Aqua R2022 monthly chlorophyll record (ERDDAP science-quality stream, version label R2022.0.3) still has errors from the Aqua orbit drift. We compared it with three records that do not use MODIS-Aqua after 2019: ESA OC-CCI v6.0 (OLCI-A/B only from 2020), NOAA S-NPP VIIRS and NOAA-20 VIIRS. We used 2 x 2 degree box medians of strided 4 km pixels at 60S-60N and compared March-September 2023 with the same months of 2022 and 2024. MODIS-Aqua decreased by 19.8% against OC-CCI (95% tile-bootstrap interval 19.2-20.4%), 16.0% against NOAA-20 and 18.1% against S-NPP. Pairs without MODIS-Aqua changed by -2.2% to +4.5%. The decrease was nearly uniform over all basins and largest in April and September 2023 (about 25%). Thus MODIS-Aqua alone shows global anomalies of -24% in April and -25% in September 2023, where OC-CCI shows -1% and -2%. These months agree with a withdrawn 2024 preprint that reported a 22% global NPP drop in April 2023. The near-real-time MODIS stream had a larger error. With the 2023 months, the MODIS 2003-2023 global trend is -2.6% per decade and 19.5% of the area has a significant decline. Without them, the values are -1.25% and 13.6%; OC-CCI gives -0.45% and 13.2%. No global trend is significant. Since 2024, MODIS-Aqua also has a +10% summer-minus-winter ratio artefact. S-NPP VIIRS chlorophyll drifts by about 20-25% in NOAA and NASA R2018 processing. Limits: no in situ data, Rrs bands not tested, per-file product version not confirmed.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370801"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  }
+ ],
+ "keywords": [
+  "ocean colour",
+  "chlorophyll-a",
+  "MODIS-Aqua",
+  "orbit drift",
+  "sensor calibration",
+  "VIIRS",
+  "OLCI",
+  "OC-CCI",
+  "net primary production",
+  "2023",
+  "trend artefact",
+  "data homogeneity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_global_anomaly.png",
+   "caption": "Global (60S-60N) monthly chlorophyll anomaly relative to the 2003-2020 mean of each calendar month, on boxes where both products have data. MODIS-Aqua R2022 drops to -24% in April and -25% in September 2023; OC-CCI v6.0 (OLCI only after 2019) does not."
+  },
+  {
+   "path": "files/figures/fig2_step_by_pair.png",
+   "caption": "Change of the chlorophyll ratio between product pairs in March-September 2023 relative to March-September 2022 and 2024, for all boxes and for four chlorophyll classes. Bars are 95% intervals from 2,000 bootstrap draws of 20 x 20 degree tiles. Only pairs with MODIS-Aqua show a large decrease."
+  },
+  {
+   "path": "files/figures/fig4_trend_effect.png",
+   "caption": "Global-mean trend from 2003 and ocean area with a significant negative box trend (p < 0.05, AR(1)-adjusted), for MODIS-Aqua, MODIS-Aqua without March-September 2023, and OC-CCI v6.0, for four end years."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://sciety.org/articles/activity/10.21203/rs.3.rs-4014371/v2",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Withdrawn preprint that reported a 22% global NPP drop in April 2023 with the steepest drop in September 2023 from 21 years of chlorophyll data; these are the months of largest MODIS-Aqua error found here."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-06321-z",
+   "reason": "Cael et al. 2023: ocean-colour trends from MODIS-Aqua 2002-2022; its period ends before the 2023 error, and Rrs bands were not tested here."
+  },
+  {
+   "target": "doi:10.5067/AQUA/MODIS/L3M/CHL/2022",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA OBPG MODIS-Aqua L3 mapped chlorophyll R2022 (tested product)."
+  },
+  {
+   "target": "doi:10.5067/NPP/VIIRS/L3M/CHL/2018",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA OBPG S-NPP VIIRS L3 chlorophyll R2018, used for the S-NPP drift check."
+  },
+  {
+   "target": "https://climate.esa.int/en/projects/ocean-colour/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ESA Ocean Colour CCI v6.0 monthly product, used as the OLCI-based reference."
+  },
+  {
+   "target": "https://www.earthdata.nasa.gov/data/alerts-outages/aqua-modis-mini-reprocessing-r2022.0.3",
+   "reason": "NASA notice on the MODIS-Aqua R2022.0.x recalibrations for orbit drift; this work tests their result."
+  },
+  {
+   "target": "https://coastwatch.noaa.gov/erddap/griddap/noaacwNPPVIIRSSQchlaMonthly.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA S-NPP VIIRS science-quality monthly chlorophyll."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "Related campaign result: a satellite input change in DOISST inflates 2023 marine heatwave statistics; same type of artefact in a different variable."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Related campaign result on DOISST steps and the 2023/24 SST record."
+  }
+ ]
+}
