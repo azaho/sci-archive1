@@ -1,0 +1,116 @@
+{
+ "title": "Pixel-verified fast-rotating old M dwarfs from TESS full-frame images have no CPVs where contraction alone predicts 5.3; at fixed corotation ratio their CPV rate is below 0.37 of the young rate",
+ "abstract": "Complex periodic variables (CPVs) are young, fast-rotating M dwarfs with sharp dips at the rotation period. A frozen contraction-only model, in which the CPV rate depends only on x = R_cor/R*, predicts CPVs among old main-sequence M dwarfs at the x of young hosts. Earlier cleaned samples could not decide (3 seen, 6.4 predicted, p = 0.15). We built a deeper sample from the TESS All-Sky Rotation Survey (TARS): 3,100 old M dwarfs within 150 pc with periods below 0.3 d. We read 5x5-pixel 200-s cutouts (sectors 56-109) from the MAST FFI cubes, used the source pipeline, located each signal with a Gaia-scene pixel test, measured each star's efficiency by injection of young-CPV templates, and labelled curves blind. A pre-registration fixed the tests before processing. Of 438 old rapid rotators in the model window, 349 signals come from other stars and 65 are on target (21 at x < 3.5, 17 of them new). Among the 65, the model predicts 5.32 CPVs (4.05-6.98); we observe 0 (p = 0.006); the old/young rate factor is below 0.37. Combined with the earlier independent samples: 3 seen, 9.66 predicted, p = 0.025, factor 0.31 (0.07-0.86). A positive control with young 1-24 Myr stars gives observed/predicted 1.27 (0.77-2.01), and injection efficiency matches same-sector recovery of known CPVs. Seventeen variants give p = 0.001-0.042 except a small dMG < 0 subset (0.097). Thus contraction alone does not explain the low CPV rate of old stars; a second age-dependent factor, such as material supply, field structure or close binarity, is necessary. Limitations: about 5 predicted CPVs, one automated vetter, an extrapolated young model, and a simple PRF.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "TESS full-frame images",
+  "TARS",
+  "M dwarfs",
+  "corotation radius",
+  "rapid rotators",
+  "blended periods",
+  "pre-registration",
+  "stellar age",
+  "circumstellar material"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_ms_test.png",
+   "caption": "a: predicted CPVs (contraction-only model) and observed CPVs (0) among 65 on-target old main-sequence rapid rotators by x. b: likelihood of the old/young rate factor for this sample, the combination with earlier samples and the >= 2-dip rule, with the young positive control. c: injection efficiency against recovery of known young CPVs."
+  },
+  {
+   "path": "files/figures/fig1_signal_source.png",
+   "caption": "a: source of the periodic signal of 438 old main-sequence rapid rotators by FFI period (Gaia-scene pixel test). b: magnitude difference and separation of the off-target signal sources."
+  },
+  {
+   "path": "files/figures/fig3_gallery_x35.png",
+   "caption": "Folded FFI light curves of the 21 on-target old main-sequence rapid rotators at x < 3.5, where the young CPV rate is 13-30%. None shows sharp dips."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source survey: cpvlib pipeline, folded curves, labels, CPV templates, 2-minute target table and main-sequence locus."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Label emulator training features, injection method and eta0, BANYAN age classes for the young control."
+  },
+  {
+   "target": "sci:sha256:fe64afde04cfd9533b020f3d879bc20fe49e7f4941f89e799cef78cf78ac7be1",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its conclusion that contraction (x) alone explains the CPV age decline fails for old main-sequence stars at the same x."
+  },
+  {
+   "target": "sci:sha256:b46f8555c42184c47c133aa546a0e5894fb93b211994b9a491f44dfcb9002c77",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Frozen x-only model; our larger pixel-verified sample supports its main-sequence CPV deficit."
+  },
+  {
+   "target": "sci:sha256:709005b5d2d17e744309d63b4752de39f7f3f00114fd27556e4bdb34fd1a5658",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We confirm in a new, fainter sample that most old ultrafast TESS periods come from other stars."
+  },
+  {
+   "target": "sci:sha256:08153f8677f28e70766ef68722eabb87ee31613f32e78e09ad6cf4b14b90e726",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Published cleaned 2-minute prediction used in the combination; source classes used as a check."
+  },
+  {
+   "target": "sci:sha256:56a289d32ae7399f99140310c7ee02a957bc27c386c053b12f14bd9e9d5ef32a",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Frozen model refit and combination used; its conclusion that contraction alone remains allowed is not supported by the larger sample. We test its post-hoc >= 2-dip rule."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dip counter morph.py."
+  },
+  {
+   "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+   "reason": "K2 confirmation of the CPV age decline."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "reason": "Dip widths fixed in rotational phase (template injection at the star's own period)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.19917941",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TARS rotation catalogue (Boyle, Bouma & Mann 2026), CC BY 4.0."
+  }
+ ]
+}
