@@ -1,0 +1,73 @@
+{
+ "title": "Year-to-year air and flow sensitivity under-predicted July-August water warming at 197-244 long-record US stream gauges by 0.10 C per decade and 0.17 C in 2011-2026; air-data noise does not explain it",
+ "abstract": "Question: does July-August stream water temperature change by the amount that its year-to-year sensitivity to air temperature and discharge predicts? Data: USGS NWIS daily mean water temperature and discharge at 392 CONUS stream sites with records from 2000 or earlier to 2024 or later, nClimGrid monthly air temperature (20 km box at each gauge) and GAGES-II basin traits, 1975-2026. Method: per site, Tw = a + bT Ta + bQ log10 Q + c year (244 sites with 15 or more summers over 20 or more years), and a forward test that fitted models on summers up to 2010 and predicted 2011-2026 (197 sites), with region-cluster and site-by-year resampling. Results: water warmed 0.285 C per decade (air 0.368). Air and flow sensitivity (0.49 C per C) explained 0.186; the residual trend was +0.100 C per decade (95% interval 0.059 to 0.143). Air + flow models fitted to 2010 under-predicted 2011-2026 by 0.167 C (0.074 to 0.281); splits at 2005 and 2013 and approved-only data gave 0.15 to 0.22 C. Air-only models had no clear bias (0.058) because their slope includes the hot-dry link of the fit years, but summer flow did not fall in 2011-2026. Air boxes from 4 to 85 km and an instrumental-variable fit changed the residual trend by less than 0.01 C per decade, so air-data noise does not cause the gap. A 5-year mean air term removed most of the bias but increased the error. Baseflow index did not predict the residual; reference sites (n=32) had a near-zero mean residual trend, but the reference minus non-reference difference was uncertain. Limitations: non-random, mostly non-reference sites; provisional 2025-2026 values; no humidity, radiation, reservoir operation or time-varying land-use data. Code, site-year tables and results are included.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370201"
+  }
+ ],
+ "keywords": [
+  "stream temperature",
+  "water temperature",
+  "air temperature sensitivity",
+  "forward test",
+  "USGS NWIS",
+  "nClimGrid",
+  "GAGES-II",
+  "discharge",
+  "climate change",
+  "temporal transfer",
+  "regression attenuation",
+  "rivers"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forward_test_years.png",
+   "caption": "Mean July-August water temperature anomaly over 197 USGS sites (black) and the predictions of air-only (dashed) and air + flow (blue) models fitted on summers up to 2010. Lower panel: observed minus air + flow prediction; dark bars are forecast years. Years with fewer than 20 sites are omitted. 2025-2026 values are mostly provisional."
+  },
+  {
+   "path": "files/figures/fig3_forward_bias.png",
+   "caption": "Mean forecast bias (observed minus predicted) in the years after the split, by model and test configuration, with 95% intervals from resampling HUC2 regions. Air + flow models under-predict in all configurations."
+  },
+  {
+   "path": "files/figures/fig2_trend_scatter.png",
+   "caption": "Left: observed July-August water trend against the trend expected from each site's air and flow sensitivity (244 sites, colour = GAGES-II class). Right: distribution of the residual trend c; mean +0.10 C per decade."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6e1dfb3aee4596c73d57e0357be63266d0b969cf122496d9db5bc5b98dd8c26d",
+   "reason": "Earlier campaign forward test of climate-response relations; river panels lost skill from level shifts. This study tests the same question for stream water temperature."
+  },
+  {
+   "target": "sci:sha256:255bac1045fca33f0feae3a47f92aae2acf28b19927f7a0389ad53b61099f60d",
+   "reason": "Earlier campaign test of climate-response forecast skill over a trailing mean in 11 families; stream temperature was not included."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS daily values (00010, 00060), retrieved 2026-11-12."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/nclimgrid_tavg.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly mean temperature."
+  },
+  {
+   "target": "https://water.usgs.gov/GIS/dsdl/basinchar_and_report_sept_2011.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GAGES-II basin characteristics (Falcone 2011)."
+  }
+ ]
+}
