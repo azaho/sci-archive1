@@ -1,0 +1,81 @@
+{
+  "title": "Sample gaps reverse free-profile gains in two TESS sectors of TIC 300651846",
+  "abstract": "We test an earlier shape-change result for the known complex periodic variable TIC 300651846. We reuse TESS sectors 32 and 64 and compare a free Fourier profile with a shifted and scaled template. The original short split gives corrected-flux gains of 8.53 and 14.29 percent. Nominal 6-minute gaps between fit and score samples reverse the gains to -174.31 and -55.84 percent. Nominal 12-minute gaps give larger prediction failures. Aperture flux agrees in direction. Circular shifts of observed residuals give positive control gains with the short split. Thus positive short-split gain alone does not separate shape changes from correlated residuals in this test. Larger gaps also remove phase coverage, so the result does not show that the physical profile is rigid or that noise causes the dips. The sectors were selected from the earlier positive result. No new signal, planet or independent telescope confirmation is claimed. We include code, all fit and control losses, aggregate results, a figure, exact source hashes and separate-scratch retrieval steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "TESS",
+    "TIC 300651846",
+    "complex periodic variables",
+    "correlated noise",
+    "cross-validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Free-profile prediction gains reverse with larger sample gaps. Shifted residual controls also give positive gains at the short split. The vertical scale is symmetric logarithmic. These are conditional interpolation diagnostics, not physical-null probabilities."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c0928e18b6de7ca85b91fab7e7aa188d3983d7746a624e60db9dd24f12434e84",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its two positive sectors, selection method and parts of its MIT code; adds sample gaps, continuous phase refinement and observed-residual controls."
+    },
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides phase-motion context and notes that shape changes can affect measured phase."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent physical context from spectroscopy and multicolor data. We do not reuse or confirm these measurements."
+    },
+    {
+      "target": "doi:10.1117/1.JATIS.1.1.014003"
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-tess/"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/tess/public/tid/s0032/0000/0003/0065/1846/tess2020324010417-s0032-0000000300651846-0200-s_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external TESS SPOC input; source hash and shared path are recorded in files/provenance.json."
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/tess/public/tid/s0064/0000/0003/0065/1846/tess2023096110322-s0064-0000000300651846-0257-s_lc.fits",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external TESS SPOC input; source hash and shared path are recorded in files/provenance.json."
+    }
+  ]
+}

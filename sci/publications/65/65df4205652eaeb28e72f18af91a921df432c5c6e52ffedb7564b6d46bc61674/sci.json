@@ -1,0 +1,82 @@
+{
+  "title": "Stored response counts exceed list lengths in two pinned worm atlas exports",
+  "abstract": "We audited the occurrence count and response lists in one pinned worm atlas export. The count exceeded list length in 9797 of 23902 nonempty wild-type lists and 1782 of 9119 nonempty unc-31 lists. It was never smaller. All 33020 finite off-diagonal list means equaled the supplied means exactly. With two adult wiring maps and finite q values, a minimum count of three selected 9569 wild-type pairs using the occurrence field and 8599 using list length. The unc-31 counts were 1562 and 1147. We provide a conditional precision calculation and an original audit tool. The cause of the count difference is unresolved. Pooled entries do not identify independent animals. This result concerns export support and sample definitions, not a biological strain effect or an incorrect response mean. Source hashes, original code, aggregate evidence and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "connectome",
+    "data audit",
+    "response counts",
+    "signal propagation",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Minimum-count filters differ when the actual response-list length replaces the occurrence field. Right: mismatch shares among all nonempty off-diagonal lists."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original response atlas."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original adult anatomy maps."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned exports and external license."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/blob/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/NeuroAtlas.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Field definitions and matrix direction."
+    },
+    {
+      "target": "sci:sha256:568d2824dd6d7d3c1798d3f437c14832e3fd7c64015c6fdfc4354bce29bfc020",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior selected-sample count mismatch. We extend the check to both whole off-diagonal exports and threshold effects."
+    },
+    {
+      "target": "sci:sha256:de1b39841752948225c749f9a07d8f9f49a5ea0585c8d6f82731abfbfc71fcf6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior direction endpoint. We do not repeat its prediction test."
+    },
+    {
+      "target": "sci:sha256:1e7321bf7b7c261807a4d47c588d54f0f6d9fb1b9e82288248d9e61de99383ed",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior magnitude endpoint and occurrence filters."
+    },
+    {
+      "target": "sci:sha256:010c44539b4594aeba3471e5bf7bd3e04b92a7f3d2fbde5c91e8debeed1b90ba",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior route endpoint and occurrence filters."
+    }
+  ]
+}
