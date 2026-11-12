@@ -1,0 +1,81 @@
+{
+  "title": "Matching before the magnitude-gap filter allowed a reversed deep-earthquake pair majority at 300 km in ComCat, 2000-2025",
+  "abstract": "We tested whether the larger-first majority in deep earthquake pairs survives all largest disjoint pair sets when matching comes before the magnitude-gap filter. We reused 785 ComCat events with depth greater than 300 km and magnitude at least 5.5 in 2000-2025. The primary rule used positive lags through seven days and hypocenter distances through 200 km. Every largest matching had 81 edges before filtering; 42-57 pairs had magnitude gaps of at least 0.3. Exact bounds on the retained larger-first share were 60.4%-83.3%. At 300 km, the range was 46.4%-78.7%, whereas filtering before matching gave a lower bound of 56.1%. Thus filter order can reverse the majority claim at the wider radius. Component dynamic programming, integer-weight blossom optimization and independent exhaustive enumeration agreed. These are fixed-catalog selection bounds, not confidence limits, evidence against triggering or a forecast. The endpoint choices use order labels and need not represent a practical pairing rule. Catalog error and detection effects remain untested. The package includes code, aggregate evidence, a static figure and source provenance; external event records remain outside it.",
+  "keywords": [
+    "deep earthquakes",
+    "ComCat",
+    "magnitude order",
+    "matching",
+    "filter order",
+    "exact bounds"
+  ],
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Exact bounds across largest disjoint pair sets. Blue lines use magnitude-gap filtering after matching. Orange endpoints use filtering before matching. The ranges measure selection sensitivity in a fixed catalog, not sampling uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c37f3656324bf323a31f3cfcea5b8a10fe716c3df6e64d913c1cdc5960fe3749",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend or compare the published pair-selection method on the same source snapshot."
+    },
+    {
+      "target": "sci:sha256:0728f150557ab4a0f302e9e5db7be1b752ccf1dce827e95e10b71366581d19eb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend or compare the published pair-selection method on the same source snapshot."
+    },
+    {
+      "target": "sci:sha256:5622d8c23187f68dde5611ce17634df54b16f5ee99f04776d2b0c2227168c454",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend or compare the published pair-selection method on the same source snapshot."
+    },
+    {
+      "target": "sci:sha256:22f9e0bd6aba23c5c65fbf19f44042872c0f3285316a17dfa9227ed9d94e319d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We extend or compare the published pair-selection method on the same source snapshot."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1029/2022JB026269"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/contributor/"
+    },
+    {
+      "target": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.matching.max_weight_matching.html"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "title": "Response integration increased mean current-to-voltage gain spread in 44 selected Allen mouse input groups",
+  "abstract": "We tested whether response duration makes current-to-voltage gains more consistent among inputs to one neuron. A shared target filter requires equal ratios of total voltage area to total current area. We derived the exact independent multiplicative changes needed to meet that condition. We used paired accepted average fits in Allen Synaptic Physiology r2.1. The main mouse sample had 44 target-and-sign groups from 37 inferred animals. The donor mean area-minus-peak log spread was 0.634, with a nominal 95 percent interval of 0.353 to 0.920. Area ratios needed changes above factor 1.10 in 33 groups; peak ratios needed them in 14. Planned amplitude and group-size checks retained a positive mean. A follow-up resting-fit check retained a positive mean in 23 matched mouse groups. Thus integration did not restore a common gain in these selected fitted responses. Infinite fitted tails, separate clamp states, pulse history, missing fits and inferred donors limit interpretation. This does not reject passive neurons or establish a rule for intact brains. The package has original code, proof, aggregate findings, figures, source hashes and external regeneration steps. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "convergent inputs",
+    "synaptic integration",
+    "current-to-voltage gain",
+    "shared filter",
+    "response area",
+    "model audit"
+  ],
+  "display": [
+    {
+      "path": "files/gains.png",
+      "caption": "Primary paired comparison of peak and total-area gain spreads. The main mouse donor mean area-minus-peak log spread is positive. Factor F is the exact least independent correction per measured metric that permits a common ratio. It is a sensitivity allowance, not measured uncertainty. Peak-ratio equality is a scalar comparator; a temporal filter need not preserve peak gains."
+    },
+    {
+      "path": "files/resting.png",
+      "caption": "Post-result resting-fit check on identical connection sets. Area-minus-peak log spread remains positive in the main mouse matched sample. These are selected fits from the same release, not independent biological replication. Intervals are nominal donor bootstrap intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary description of the Allen slice data and measured local circuits."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external r2.1 small database. The source hash and shared path are recorded in provenance.json. The database and record-level derivatives are not bundled."
+    },
+    {
+      "target": "sci:sha256:0a312de1fa33b41dea2aa61ed1dd476e414d30722890921bb2a56e9a5ee7999e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior within-target current-versus-voltage peak order audit. This report tests total-area gains and compares their disagreement with peak gains."
+    },
+    {
+      "target": "sci:sha256:3eaa990a582ba924ac4ae7b36b48055dc3084ffa10a1be3956a1df8b75fffb2a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior current peak-versus-charge comparison. This report compares voltage-to-current area gains across inputs, with a matched resting-fit check."
+    },
+    {
+      "target": "sci:sha256:fd63134619afce7c6ca077a5f7002c361243b4a79d24c66e3112ca75211b9c90",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior normalized shared-filter moment test. The present zero-order gain test retains magnitudes removed by that normalization."
+    },
+    {
+      "target": "sci:sha256:48701ad76e7d1e34f589d0f4af58ab0db8cdedb48d3a498c517b820cf67b5f8f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior per-connection normalized waveform-error bounds. The present test requires one total-area gain across convergent inputs."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned squared-rise fit definition. No upstream code is bundled or imported."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned average-fit definition and pulse-position pooling warning."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/resting_state.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned resting-response definition. The follow-up check uses these separate released fits."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "External data terms. Restricted raw data and record-level derivative tables stay outside the baseline package."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source attribution requirements."
+    }
+  ]
+}
