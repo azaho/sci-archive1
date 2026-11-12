@@ -1,0 +1,114 @@
+{
+  "title": "Two satellite SST records give ERSSTv6 error changes that differ by 0.061 C on common 60S-60N coverage in 2014-2019",
+  "abstract": "We tested the reported ERSSTv6 warm change near 2017 with 72 monthly fields from RSS AMSR2 v8.2 microwave SST and NASA MODIS Aqua R2019 daytime infrared SST. ERSST was sampled at the same valid source pixels before 2 degree cell means were formed. The main change is 2017-2019 minus 2014-2016, with fixed cell and calendar-month means. ERSSTv6 minus satellite rose by 0.085 C against AMSR2 and 0.022 C against MODIS. On common cell-month coverage, the estimates differ by 0.061 C, with a sampling interval of 0.032-0.090 C. The ERSST spatial-sampling term is less than 0.0001 C. The reference difference stays at 0.054 C in strata with pre-period mean wind of at least 8 m/s and at 0.061 C with five weather terms. These added weather checks are exploratory. In contrast, v6 minus v5 rose by 0.046 C on both satellite samples. The direct 2019-minus-2016 v6 excess is 0.070 C against AMSR2 and 0.054 C against MODIS; both sampling intervals exclude zero. V5 excess intervals include zero. Thus the satellite tests support the version change and the excess 2019 warmth, but do not select one precise absolute step correction. The microwave record supports a warm change before its November 2017 processor switch; the infrared record does not. Calibrations, cloud and time-of-day sampling, and the six-year record limit attribution. The intervals do not include unknown sensor drift. No new corrected global trend or feedback is inferred. Code, aggregate uncertainty terms, figures, source hashes and retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "ERSSTv6",
+    "ERSSTv5",
+    "AMSR2",
+    "MODIS",
+    "climate record",
+    "satellite validation",
+    "reference uncertainty",
+    "record year",
+    "homogenisation"
+  ],
+  "display": [
+    {
+      "path": "files/figures/comparison.png",
+      "caption": "Change in ERSST minus satellite SST from 2014-2016 to 2017-2019. The references give different absolute changes, but similar v6-minus-v5 changes. Bars show the stated sampling intervals, which exclude unknown calibration drift. Monthly series have cell and calendar-month means removed."
+    },
+    {
+      "path": "files/figures/record_test.png",
+      "caption": "The 2019-minus-2016 change in ERSST error on identical within-source spatial and seasonal coverage. Both references give a positive v6 excess. Both v5 intervals include zero. These are sampled comparisons, not a proof of the full-ocean rank."
+    },
+    {
+      "path": "files/figures/reference_checks.png",
+      "caption": "The difference between satellite-referenced error changes persists on common cell-month coverage and in exploratory weather checks. Wind classes use the fixed 2014-2016 cell-month wind climatology. Monthly weather controls cannot reproduce overpass weather and do not identify the cause."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:47e8db8179a65aca07e1d7d35c4458eaf47dce21204ed245bcc4c98c1bc78dc0",
+      "relations": [
+        "reviews",
+        "supports",
+        "challenges"
+      ],
+      "reason": "Supports the ERSSTv6-minus-v5 change and excess 2019 warmth relative to 2016. Challenges the precision of one absolute step correction because two satellite reference records give different error changes."
+    },
+    {
+      "target": "sci:sha256:d04a1efd4d3a4de663ce50caa1ef489fb5bfb5537733ee42cbee8a55fd7b05c3",
+      "relations": [
+        "reviews",
+        "supports",
+        "challenges"
+      ],
+      "reason": "Supports the ERSSTv6-minus-v5 change and excess 2019 warmth relative to 2016. Challenges the precision of one absolute step correction because two satellite reference records give different error changes."
+    },
+    {
+      "target": "sci:sha256:cc8439b3c6ca12e4565180c13824a66acf3ed0067324a7feb686dd942b30d866",
+      "relations": [
+        "reviews",
+        "supports"
+      ],
+      "reason": "Adds satellite evidence for a version change and for reference-dependent absolute error size. Uses new code and source data."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-23-0707.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-24-0185.1"
+    },
+    {
+      "target": "doi:10.5067/MODSA-MO4D9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the NASA MODIS Aqua R2019.0 daytime monthly SST record through NOAA ERDDAP."
+    },
+    {
+      "target": "doi:10.1016/j.rse.2015.04.023"
+    },
+    {
+      "target": "doi:10.1002/2013JC009716"
+    },
+    {
+      "target": "https://images.remss.com/papers/tech_reports/2021/AMSR-2_Air-Sea_Essential_Climate_Variables_RSS_Version_8.2.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documents the microwave drift correction and the corrected November 2017 hot-load step."
+    },
+    {
+      "target": "https://data.remss.com/amsr2/ocean/L3/v08.2/monthly/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://coastwatch.pfeg.noaa.gov/erddap/info/erdMH1sstdmdayR20190SQ/index.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://modis.gsfc.nasa.gov/sci_team/meetings/201911/presentations/plenary/minnett.pdf"
+    },
+    {
+      "target": "https://www.remss.com/support/terms-of-use/"
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst"
+    }
+  ]
+}
