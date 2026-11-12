@@ -1,0 +1,101 @@
+{
+ "title": "A hot-dry summer increased the next-year growth of bark beetle tree-mortality area by about 23% per standard deviation in western US aerial surveys, 1999-2025",
+ "abstract": "Question: do hot and dry years increase the next-year growth of tree-mortality area from bark beetles in western US forests when survey effort, outbreak size and host depletion are controlled? Approach: we wrote the plan before we related the data to climate. We put USDA Forest Service aerial-survey (IDS) maps of 1997-2025 for all six western regions on 0.5-degree cells. A hot-drought index (HD) combines summer Tmax and water-year precipitation from NOAA CPC data. The model compares log growth of mapped mortality from survey year t to t+1 with HD in summer t, with cell and region-by-year effects, and uses only cells that the survey covered by at least 25% in both years. Intervals come from a bootstrap over survey years. Result: for drought-associated bark beetles (western pine beetle, fir engraver, Douglas-fir beetle, ips and others, pooled), 1 SD of HD increased log growth by +0.206 (95% interval +0.090 to +0.302), about 23% per SD, in 8,906 cell-year pairs. The estimate was positive in all six regions (intervals excluded zero in two) and in 1999-2011 and 2012-2024, and a placebo (HD two summers later) gave +0.005. All pre-declared criteria were met. Dryness carried the signal (+0.133) and heat added to it mainly in dry years (hot x dry +0.127); heat alone was uncertain. Mountain pine beetle (+0.077) and spruce beetle (+0.006) did not respond clearly, and defoliators tended to decrease (-0.204). Drought did not change survey coverage. In a forward test (fit 1999-2011, predict 2012-2024) the drought terms reduced error by 22% with region trends, but a negative control also gained 13%; without trends the gain was 8% (1% to 15%) and the control gained none. Limitations: mapped polygons are not tree counts; the design uses within-region contrasts and removes region-wide drought years; 0.5-degree climate is coarse; 1999-2011 alone is uncertain; the survey method changed in 2015-2017. We also report that the shared campaign IDS copies are truncated and that DMSM-era defoliation uses new damage codes.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "3007"
+  }
+ ],
+ "keywords": [
+  "bark beetles",
+  "drought",
+  "hot drought",
+  "compound extremes",
+  "tree mortality",
+  "aerial detection survey",
+  "USFS IDS",
+  "western pine beetle",
+  "fir engraver",
+  "Douglas-fir beetle",
+  "pinyon ips",
+  "mountain pine beetle",
+  "forest health",
+  "observation bias",
+  "placebo test",
+  "forward test",
+  "western United States",
+  "pre-registered analysis"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_estimates.png",
+   "caption": "Change in log growth of mapped bark beetle mortality area (survey year t to t+1) per 1 SD of the hot-drought index, with 95% survey-year bootstrap intervals. Black: pre-declared primary terms; dark grey: pre-declared regions, periods, robustness and other classes; light grey: exploratory."
+  },
+  {
+   "path": "files/figures/fig3_partial.png",
+   "caption": "Binned partial regression of growth on HD(t) for drought-associated bark beetles after cell and region-by-year effects and controls (means with 95% intervals; red line = pooled slope)."
+  },
+  {
+   "path": "files/figures/fig4_forward.png",
+   "caption": "Forward test (fit 1999-2011, predict 2012-2024): skill of adding HD terms, with and without region trends, for the test class and for control classes, and by region."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same IDS gridding and fixed-effects design (mountain pine beetle and winter cold, null); we extend it to summer drought, other bark beetle agents and Regions 3 and 5."
+  },
+  {
+   "target": "doi:10.1016/j.foreco.2016.04.051",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Review of drought impacts on US forest insects; our within-region test supports the drought-bark beetle link for drought-associated agents."
+  },
+  {
+   "target": "doi:10.1016/j.foreco.2016.05.020"
+  },
+  {
+   "target": "doi:10.1111/ele.12711"
+  },
+  {
+   "target": "doi:10.1016/j.foreco.2018.09.006"
+  },
+  {
+   "target": "doi:10.1890/13-0230.1",
+   "reason": "Reported drought-induced spruce beetle outbreaks; our spruce beetle estimate was near zero at 0.5-degree scale."
+  },
+  {
+   "target": "doi:10.1038/nclimate1693"
+  },
+  {
+   "target": "doi:10.1016/j.foreco.2013.09.051"
+  },
+  {
+   "target": "https://www.fs.usda.gov/science-technology/data-tools-products/fhp-mapping-reporting/detection-surveys",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.cpc.globaltemp.html",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.unified.daily.conus.html",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
