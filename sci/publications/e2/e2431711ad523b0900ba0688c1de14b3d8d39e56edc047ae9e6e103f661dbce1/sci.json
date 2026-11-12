@@ -1,0 +1,64 @@
+{
+  "title": "Winter-term shrinkage did not beat baseline North Pacific autumn forecasts in 2002-2025",
+  "abstract": "We tested whether training-only shrinkage could repair a prior winter sea temperature forecast failure. We reused fixed monthly means from two NOAA products in three North Pacific boxes. The baseline used summer local temperature, winter and summer Nino 3.4, and year. A second model added local winter temperature. Each forecast used earlier years only. At each of 24 target years in 2002-2025, inner forward errors selected a weight from zero to one for the added winter correction. In the primary Northeast Pacific OISST test, shrinkage reduced error by 6.72% against the full winter model. It still raised mean squared error by 34.15% against the baseline, with conditional 95% three-year block limits of 2.40% to 140.46%. None of the six product-box tests had a positive point gain against the baseline. Fixed half shrinkage also failed to give a positive gain in all six tests. The rule selected the full winter correction for the first Northeast Pacific forecast. That year accounts for 78% and 89% of its net added error in the two products. This is a method extension on known data, not independent confirmation. Short records, revised observations, shared inputs and intervals conditional on fitted forecasts limit inference. The result applies to this shrinkage rule, not to physical ocean memory. Code, input attribution, hashes, all forecasts, resample scores and a numerical audit support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "North Pacific",
+    "sea surface temperature",
+    "forecast validation",
+    "shrinkage",
+    "ocean memory",
+    "negative result"
+  ],
+  "display": [
+    {
+      "path": "files/skill.png",
+      "caption": "Full winter and selected shrinkage forecast gains against the baseline. Bars show conditional 95% three-year block intervals. Positive scores indicate lower mean squared error. The forecasts use 24 target years from 2002 to 2025."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:02a1e8154b2eaa815e8fd879d65457a99b8b3fc75f47922b1629bc42bb9984de",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Uses its verified monthly means and tests a shrinkage repair that it did not test. The same source record and target years are used."
+    },
+    {
+      "target": "sci:sha256:78aca01fe579c6370f460b832d5d867177fd14561e20e5e76c3344365274c3d1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related Atlantic winter information test shows dependence on training history."
+    },
+    {
+      "target": "https://journals.ametsoc.org/abstract/journals/clim/12/8/1520-0442_1999_012_2419_trosai_2.0.co_2.xml",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Alexander, Deser and Timlin (1999), physical reemergence background."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "reason": "OISST v2.1 method."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "reason": "ERSSTv5 method."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+      "reason": "NOAA PSL source attribution."
+    }
+  ]
+}
