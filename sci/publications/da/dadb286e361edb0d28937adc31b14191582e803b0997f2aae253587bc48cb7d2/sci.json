@@ -1,0 +1,93 @@
+{
+ "title": "DESI DR1 velocities agree with 81% of Gaia DR3 spectroscopic orbits and 63% of astrometric orbits; failures occur at low significance and at periods below 10 d or above 600 d",
+ "abstract": "Question: do independent DESI DR1 radial velocities (2021-2022) agree with Gaia DR3 two-body orbits (2014-2017 data) propagated with their published covariances? Approach: 3,371 stars of the DESI main-survey backup program have a Gaia orbit and usable per-exposure velocities (1,052 SB1, 275 AstroSpectroSB1, 2,044 astrometric). The DESI exposure zero points vary with an RMS of 4.0 km/s; we tied each of 581 exposures to Gaia with single reference stars (residual systematic 1.30 km/s on held-out controls). For each star we computed Monte Carlo likelihoods for three states: the Gaia orbit, the same velocity curve at a random phase, and a constant velocity. A mixture fit gave class fractions; simulations at the real DESI times and noise recover each state at 92-100%. Results: spectroscopic orbits are 0.81 (95% 0.77-0.85) orbit, 0.16 phase and 0.03 constant; astrometric orbits are 0.63 (0.56-0.70), 0.27 and 0.09. Spectroscopic agreement is 0.92 in the top significance tercile and 0.53 in the lowest, 0.89-0.92 at periods of 10-600 d, 0.56 below 10 d and 0.13 above 1000 d. For 334 well-measured spectroscopic orbits the DESI phase offsets match the Gaia-propagated uncertainty (scale 1.00, 95% 0.83-1.18; 1.6 at 300-1000 d). With a doubled Gaia covariance, 0.95 of the spectroscopic orbits agree and 0.02 show no motion. Per star, 296 spectroscopic and 46 astrometric orbits are confirmed and 8 low-significance SB1 orbits show no motion. Limitations: 1-4 DESI epochs per star within about one month, so 2,203 stars are uninformative; the absolute frame depends on Gaia reference stars; the phase state mixes wrong periods and underestimated errors; astrometric fractions depend on the covariance scaling (constant 0.09-0.21); bright northern stars only. Job sci-1107-hp-astronomy-1b0a24f7a404, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "Gaia DR3",
+  "DESI DR1",
+  "binary stars",
+  "spectroscopic binaries",
+  "astrometric orbits",
+  "radial velocities",
+  "orbit validation",
+  "non-single stars",
+  "zero point",
+  "mixture model"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_state_fractions.png",
+   "caption": "(a) Fitted fractions of the three states (Gaia orbit predicts DESI, right amplitude but wrong phase, constant velocity) per Gaia solution class. (b) Recovery of each state in simulations with the real DESI times and noise."
+  },
+  {
+   "path": "files/figures/fig3_trends.png",
+   "caption": "Fraction of orbits that predict the DESI velocities, by Gaia period and by Gaia significance tercile, for spectroscopic and astrometric solutions (95% bootstrap intervals)."
+  },
+  {
+   "path": "files/figures/fig5_phase_offsets.png",
+   "caption": "DESI phase offsets of 334 well-measured spectroscopic orbits against the Gaia-propagated phase uncertainty; the normalised offsets have unit width (scale 1.00)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:cf13397941396a462bec02126b0d220614fcaf2eadf4193bc505a4b6ea221548",
+   "relations": [
+    "supports"
+   ],
+   "reason": "TESS eclipse times confirmed Gaia DR3 SB1 stellar-companion ephemerides; we test the same catalogue with independent velocities."
+  },
+  {
+   "target": "sci:sha256:6350aef75d67a6f30a959d6a7e67a1d722a609a2423c9f5212547bb343a64f02",
+   "reason": "Earlier campaign test of Gaia DR3 astrometric orbits with TESS at predicted conjunctions."
+  },
+  {
+   "target": "sci:sha256:1fff85c849adf96462af50b771ad560ba8813930884a98af02b60a1912d52073",
+   "reason": "Earlier campaign comparison of Gaia DR3 orbits with TESS pulsation-timing orbits."
+  },
+  {
+   "target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a",
+   "reason": "Related campaign use of Gaia DR3 radial-velocity statistics for binary identification."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 data release."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243782",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 non-single star catalogue."
+  },
+  {
+   "target": "https://data.desi.lbl.gov/public/dr1/vac/dr1/mws/iron/v1.0/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DESI DR1 MWS per-exposure radial velocities (CC BY 4.0)."
+  },
+  {
+   "target": "https://data.desi.lbl.gov/doc/acknowledgments/",
+   "reason": "DESI data license and acknowledgement."
+  },
+  {
+   "target": "https://datalab.noirlab.edu/tap",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DESI DR1 tables and Gaia-DESI crossmatch."
+  }
+ ]
+}
