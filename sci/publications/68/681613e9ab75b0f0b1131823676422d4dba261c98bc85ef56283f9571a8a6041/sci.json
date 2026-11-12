@@ -1,0 +1,26 @@
+{
+  "title": "TESS light curves (2018-2026) of 630 hot Jupiters show no transiting co-orbital body at L4 or L5: fewer than 2% of hot Jupiters have a coplanar Trojan larger than 2 Earth radii",
+  "abstract": "Question: Do hot Jupiters have co-orbital (Trojan) companions at L4 or L5 that transit their star? No exotrojan is confirmed, and no published study has stacked TESS photometry at L4/L5 for a large hot-Jupiter sample. Method: We used the 648 hosts and light-curve manifest of a campaign companion search (sci:104e34b6) and analysed 3,780 TESS PDCSAP light curves (sectors 1-107, 2018-2026). For each host we measured a box dip at orbital phases 1/6 (L5) and 5/6 (L4) with the duration of a small body on the planet's chord. We removed the orbital phase curve before a short running-median filter, set the noise from 100 wrong-period folds per host, scanned +-15 degrees for librating bodies, and injected Trojan transits into every light curve (median depth recovery 94%). Results: No point in 630 usable hosts reaches z = 4. The 1,260 z values have a scatter of 0.98; two exceed 3 (1.7 expected). The highest (WASP-54 b, L4, z = 3.7) comes from one sector only. Six libration scans reach p = 0.0099 (6.3 expected). The stacked transiting cross-section per Lagrange point is 0.033 +- 0.027 Earth radii^2 (95% limit 0.078, one 1,800 km body). The median 3-sigma limit on one Trojan is 2.9 Earth radii (21% of the planet radius); 154 hosts are below 2 and 9 below 1 Earth radius. The 95% upper limit on the fraction of hot Jupiters with one coplanar transiting Trojan is 5.2% at 1.5, 2.0% at 2 and 0.9% at 3 Earth radii. Limitations: The test applies only to coplanar Trojans within 15 degrees of the Lagrange points; inclined bodies and broad dust clouds are not tested. Phase-coherent systematics affect a few hosts with large phase curves or long transits (KELT-9 b excluded; TOI-2337 b shows an unphysical brightening). Box shape and generic limb darkening are simplifications.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.IM"}
+  ],
+  "keywords": ["TESS", "hot Jupiters", "Trojan planets", "co-orbital", "exotrojans", "Lagrange points", "L4", "L5", "transit stacking", "occurrence limits", "injection recovery", "null result", "WASP-54", "KELT-9", "TOI-1408"],
+  "display": [
+    {"path": "files/figures/fig1_stacked_profile.png", "caption": "Weighted stack of the TESS box-dip area (Earth radii^2) against orbital phase for 630 hot Jupiters. The profile is flat at L5 (phase 1/6) and L4 (phase 5/6): 0.033 +- 0.027 Earth radii^2 per point."},
+    {"path": "files/figures/fig4_occurrence_limit.png", "caption": "95% upper limit on the fraction of hot Jupiters with one coplanar transiting Trojan at L4 or L5 against Trojan radius, from zero detections above z = 4 in 630 hosts."},
+    {"path": "files/figures/fig2_radius_limits.png", "caption": "Per-host 3-sigma limits on the radius of one Trojan (worse of L4 and L5) against TESS magnitude, and relative to the hot-Jupiter radius."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:104e34b65f8917cd2e03c66a335d2f3a901df032c91f3132f6d891541bcd79c1", "relations": ["uses"], "reason": "Hot-Jupiter sample, TESS ephemerides, other-planet table, light-curve manifest and loading/masking approach. That search looked for other periodic transits, not co-orbital bodies."},
+    {"target": "doi:10.48550/arXiv.1508.00427", "reason": "Hippke & Angerhausen 2015: Kepler exo-Trojan stacking limits."},
+    {"target": "doi:10.48550/arXiv.2603.27215", "reason": "Zhang et al. 2026 (A&A 709, A35): TESS transit-timing limits on Trojan masses for 260 hot Jupiters; complementary to these radius limits."},
+    {"target": "doi:10.1051/0004-6361/202557704", "reason": "Journal version of Zhang et al. 2026."},
+    {"target": "doi:10.1051/0004-6361/201730652", "reason": "Lillo-Box et al. 2018 (TROY): radial-velocity search for Trojans of hot Jupiters."},
+    {"target": "doi:10.1086/341173", "reason": "Laughlin & Chambers 2002: extrasolar Trojans, formation and stability."},
+    {"target": "doi:10.26133/NEA13", "relations": ["uses"], "reason": "NASA Exoplanet Archive Planetary Systems Composite Parameters table (via the cited sample)."},
+    {"target": "doi:10.17909/t9-wpz1-8s54", "relations": ["uses"], "reason": "TESS-SPOC full-frame-image light curves (HLSP)."},
+    {"target": "doi:10.1117/12.2233418", "relations": ["uses"], "reason": "Jenkins et al. 2016: TESS SPOC pipeline (2-minute PDCSAP light curves)."},
+    {"target": "https://archive.stsci.edu", "relations": ["uses"], "reason": "MAST archive for TESS light curves."}
+  ]
+}
