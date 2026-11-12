@@ -1,0 +1,126 @@
+{
+ "title": "Higher mouse visual areas are temporally smoother in natural movies, but this explains only about 30% of their faster spectral decay, which stays inside 0.5-2 Hz bands (32 Allen Neuropixels mice)",
+ "abstract": "Higher mouse visual areas (HVAs) have cvPCA response spectra that decay faster than VISp. For natural movies this compression was earlier found off VISp axes and outside an instantaneous linear VISp read-out. We tested a simple cause: HVAs integrate input over longer times, which gives more weight to the few slow movie features. We used 11,559 units in all 32 Allen Visual Coding Neuropixels mice, spikes per 33 ms movie frame, a pre-set plan, and intervals from 100 random 16/16 mouse splits. HVAs were smoother: the signal autocorrelation half-width rose from 0.31 s in VISp to 0.52-0.62 s in VISpm (cortical slope 0.20 and 0.36 for movies one and three). But when we whitened each area's temporal power to that of VISp, the hierarchy slope of the decay exponent kept 71% and 70% of its value (0.24, 0.09 to 0.38; 0.18, 0.05 to 0.31). VISp filtered to each area's power gave only 0.11 and 0.09. Inside the 0.5-1 and 1-2 Hz bands of movie three, where a temporal filter has no effect (control slopes below 0.01), the slope was 0.21 and 0.23 (weighted mean 0.19, 0.06 to 0.32); it was absent at 2-8 Hz, where HVA signal is small. A kernel ridge read-out of VISp history (lags up to 750 ms) did not raise the explained variance of any cortical area and left the residual compression unchanged. For natural scenes the compression appeared 80-130 ms after onset. Thus temporal integration adds about 30% of the movie compression; most of it is a property of which features HVAs represent at equal temporal frequency. Limits: one data set, 6 cortical areas, the movie-one band test is inconclusive for lack of degrees of freedom, and a weak lagged-linear contribution is not excluded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "natural movies",
+  "cross-validated PCA",
+  "power law",
+  "temporal integration",
+  "temporal frequency",
+  "spectral whitening",
+  "kernel ridge regression",
+  "encoding model",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "population geometry",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_temporal_equalization.png",
+   "caption": "Temporal equalization. Left: population-mean reliable temporal power of the six cortical areas (normalized; movie one top, movie three bottom). Middle: cvPCA alpha (ranks 2-30, 200-unit populations) of each structure after a common low-pass below 2 Hz (blue), after whitening its temporal power to VISp (orange), and of VISp filtered to the structure's power (green), against the hierarchy score; bars are SD over 100 mouse splits. Right: cortical hierarchy slopes of alpha with 95% split intervals for each analysis, including the within-band slopes and their pre-set weighted mean."
+  },
+  {
+   "path": "files/figures/fig2_within_band_alpha.png",
+   "caption": "Movie three, alpha inside octave temporal-frequency bands (purple) and the positive control: VISp filtered to each structure's temporal power, then band-passed (green). A pure temporal filter leaves alpha flat; the HVAs are steeper than VISp at 0.5-1 and 1-2 Hz, including VISrl and VISal, which are not smoother than VISp. Bars: SD over 100 splits."
+  },
+  {
+   "path": "files/figures/fig4_lagged_readout.png",
+   "caption": "Noise-corrected explained variance (FEV) of 150-unit targets in each cortical area from 400 VISp units of other mice, with an instantaneous kernel (blue) or with VISp history (orange: lags 0-2 bins of 250 ms or 0-9 frames of 33 ms; aqua: lags -2 to 2 bins). Lags never raise FEV; VISp loses most. Bars: SD over 30 splits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "It found that the movie compression is in the part an instantaneous VISp read-out cannot predict; we show that a lagged VISp read-out does not predict it either and that temporal smoothing explains only about 30%. We reuse its unit filter and FEV estimator."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Movie compression off VISp axes; we test whether a temporal filter explains it and reuse its extraction approach."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We reproduce its movie hierarchy slopes at 250 ms bins and add a temporal control that its RF and latency matching did not cover."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Steeper movie spectra in higher areas, reproduced here."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Source finding of faster spectral decay along the mouse visual hierarchy."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Related grating result in the same series."
+  },
+  {
+   "target": "sci:sha256:0aac19e1832eec63bde606e990a57e7424db873ac38dc09431991adb3c5744e5",
+   "reason": "Identifiability limit of axis powers that motivates trial-level tests."
+  },
+  {
+   "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+   "reason": "Macaque TVSD test in which IT did not show faster decay."
+  },
+  {
+   "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+   "reason": "Macaque data sets without the mouse compression."
+  },
+  {
+   "target": "sci:sha256:42f571df54d82adb5307c69d33d047697e7a66436390ab1ffadd9ddb057b155c",
+   "reason": "Movie and grating generality of the mouse result."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels data."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
