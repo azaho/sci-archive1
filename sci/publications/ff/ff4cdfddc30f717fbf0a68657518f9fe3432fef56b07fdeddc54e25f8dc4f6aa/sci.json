@@ -1,0 +1,128 @@
+{
+ "title": "WPC Excessive Rainfall Outlook categories matched their stated probabilities for MRMS rain above flash flood guidance after the 2022 relabel, but not for 5-year rain or flash flood reports (2020-2026)",
+ "abstract": "We verified the NOAA Weather Prediction Center Day 1 Excessive Rainfall Outlook (ERO), which states the probability that rain exceeds flash flood guidance (FFG) within 40 km. We used 1,945 valid days from 2020-10-15 to 2026-10-31 and a 20 km grid east of 105 W near radars. The outcomes were MRMS radar QPE at or above FFG (the definition), MRMS QPE at or above the 5-year recurrence interval (ARI), and NWS flash flood reports. The plan was written and hashed before matching. After WPC relabelled the categories on 2022-02-10, the FFG-event frequency was inside the stated range for all categories: Marginal 0.130, Slight 0.317, Moderate 0.656, High 0.930. Before the relabel, Marginal, Slight and Moderate were above the old ranges. At a fixed month mix, Slight frequency changed by a factor of only 0.87 (95% CI 0.81-0.95), so the relabel, not new forecasting practice, made the match. ARI events were below the ranges for Moderate and High. Flash flood reports occurred at only 0.019, 0.081 and 0.306 of Marginal, Slight and Moderate points. The report rate rose by 0.85 log-odds per tenfold population at fixed category, but the FFG-event slope was 0.02 times that. Contrary to our pre-registered expectation, FFG-event frequency inside Slight was more uniform across the 12 River Forecast Centers than ARI-event frequency. ARI frequency inside Slight changed from 0.10 to 0.40 between centers, and ERO issuance followed FFG climatology (rank correlation 0.92) more than ARI climatology (0.22). FFG-event frequency stepped more than ARI-event frequency across center borders (difference 0.054, CI 0.028-0.082). Thus the ERO is a calibrated forecast of its own FFG-based event, but its meaning in terms of rain rarity changes by center, and report-based verification depends on population. Limitations: MRMS radar-only QPE at 1 km; 3-6 h sampling gives lower-limit counts; climate also changes at some western borders.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "Weather Prediction Center",
+  "Excessive Rainfall Outlook",
+  "flash flood guidance",
+  "MRMS",
+  "average recurrence interval",
+  "flash flood reports",
+  "forecast verification",
+  "reliability",
+  "River Forecast Center",
+  "population bias",
+  "pre-registration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Observed frequency of FFG events (MRMS QPE at or above flash flood guidance), 5-year ARI events, flash flood reports and any of the three within 40 km, by Day 1 ERO category, primary domain, before (left, old ranges) and after (right, new ranges) the 2022-02-10 relabel. Shading: stated probability range. Bars: 95% day-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_rfc.png",
+   "caption": "Left: outcome frequency inside Slight areas by River Forecast Center, 2022-02-10 to 2026-10-31 (radar domain). FFG-event frequency is similar between centers; ARI-event frequency changes from 0.10 to 0.40. Right: step in event-day frequency across 17 RFC borders (points within 100 km), FFG versus ARI events; marker size shows the number of points."
+  },
+  {
+   "path": "files/figures/fig3_maps.png",
+   "caption": "Left: log10 of the ratio of FFG-event days to 5-year ARI-event days, all valid days 2020-2026. Right: Day 1 ERO Marginal-or-higher issuance frequency. Black dots mark RFC borders. The ERO pattern follows the FFG climatology more than the ARI climatology."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "We reuse its 20 km grid with population and radar distance, and we find the same report population effect for flash flood outlooks as it found for SPC hail outlooks.",
+   "relations": [
+    "uses",
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Sparse observations understated hits for PTWC tsunami categories; flash flood reports show the same effect.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Campaign attribution of a forecast error to the product's probability rules; here the stated-range rules (relabel) explain the calibration change."
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "sci:sha256:79d010f62ceec89138cced134214d3e4b06ac113305ae7babb08ea6da1521b70",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+   "reason": "Part of the campaign series on verification of operational hazard probabilities."
+  },
+  {
+   "target": "doi:10.1175/WAF-D-20-0020.1",
+   "reason": "Erickson, Albright and Nelson 2021: ERO verification 2015-2019 and the basis of the 2022 relabel; we test the period after the relabel.",
+   "relations": [
+    "reviews"
+   ]
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-12-00198.1",
+   "reason": "Gourley et al. 2013: limits of flash flood report databases."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf2/scn22-18_updating_ero_probability_definitions.pdf",
+   "reason": "NWS SCN 22-18: new ERO probability ranges from 2022-02-10.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf_2026/pns26-57_proposed_changes_to_ero.pdf",
+   "reason": "NWS PNS 26-57: proposed fifth ERO category (Enhanced, 25%)."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/outlooks.py",
+   "reason": "IEM archive of WPC ERO polygons.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py",
+   "reason": "IEM archive of NWS local storm reports.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://noaa-mrms-pds.s3.amazonaws.com/index.html",
+   "reason": "NOAA MRMS FLASH QPE-to-FFG ratio and ARI grids on AWS.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.weather.gov/source/gis/Shapefiles/Misc/rf05mr24.zip",
+   "reason": "NWS River Forecast Center boundaries.",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

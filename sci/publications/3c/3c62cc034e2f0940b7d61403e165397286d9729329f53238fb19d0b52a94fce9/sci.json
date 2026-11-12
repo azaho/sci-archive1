@@ -1,0 +1,123 @@
+{
+ "title": "In 13 CMIP6 models, North Pacific outcrop size does not predict projected sigma0 26.5 O2 loss; off California low model O2 makes the projected loss too small; no model gives the observed eastern loss",
+ "abstract": "Question: earlier work found an O2 loss on the sigma0 26.5 surface across the North Pacific that began where the winter outcrop of the 26.4-26.7 class shrank, and that most CMIP6 models have too small an outcrop. Does the outcrop bias change the projected loss? Approach: 13 CMIP6 Earth system models (historical, SSP2-4.5; 12 also SSP5-8.5), September interior and January-April surface fields read through ESGF OPeNDAP; outcrop area, O2 on sigma0 26.5 and 200-500 m O2; a plan with a primary test hashed before any model value. Results: the 1965-1984 outcrop area did not predict the SSP2-4.5 change of O2 on 26.5 in 25-45 N, 140 E-120 W (Spearman rho -0.15, p 0.31; families +0.02; ensemble -30.7 +/- 13.1 umol/kg). Models with little or no outcrop lost as much O2 as models with a large one; the basin-wide loss followed projected surface lightening (rho -0.56). At 200-500 m there was no relation. Off California the relation was strong: models with little outcrop have 6-11 umol/kg O2 on 26.5 there (GLODAP 94) and project almost no loss. Mean-state O2 predicted the CalCOFI-box change (rho -0.80, Holm p 0.033). An exploratory constraint at the observed O2 gives -19.9 umol/kg (90% interval -31.2 to -8.5) against the raw ensemble mean -11.6 (SSP5-8.5: -25.1 against -13.1). No model gave the observed 1984-1996 to 2009-2025 loss at 150-160 W (-26.0) or at CalCOFI (-24.6): models gave +1.9 to -13.8 and +0.5 to -12.2, and 12 of 13 do not reach the CalCOFI loss by 2081-2100. At the source region, model O2 change followed each model's own surface lightening (rho -0.77), and most models lightened less than observed. Limitations: 13 models, one member each, September samples, exploratory status of the California constraint, and approximate box and variable matches with the observations.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370802"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Pacific",
+  "sigma0 26.5",
+  "CMIP6",
+  "emergent constraint",
+  "mode water outcrop",
+  "ventilation",
+  "CalCOFI",
+  "oxygen projection",
+  "model bias",
+  "SSP2-4.5",
+  "SSP5-8.5"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_outcrop_vs_projection.png",
+   "caption": "Model outcrop area of sigma0 26.4-26.7 (1965-1984) against projected O2 change (2081-2100 minus 1995-2014) in 13 CMIP6 models: (a) primary test, SSP2-4.5, sigma0 26.5, 25-45 N 140 E-120 W, no relation; (b) SSP5-8.5; (c) CalCOFI box, strong relation; (d) 200-500 m, no relation. Orange: WOA23 outcrop."
+  },
+  {
+   "path": "files/figures/fig3_hist_window.png",
+   "caption": "(a) Model and observed O2 change on sigma0 26.5 in the observed windows: no model reaches the observed loss at 150-160 W or at CalCOFI. (b) At 36-46 N, 160 E-180, model O2 change follows each model's own surface lightening; orange: observation."
+  },
+  {
+   "path": "files/figures/fig4_other_controls.png",
+   "caption": "(a) CalCOFI box: model mean O2 on sigma0 26.5 (1985-2014) predicts the projected change; models near GLODAP lose about 15-25 umol/kg. (b) Basin-wide projected loss follows projected surface lightening."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f2580a7a9707b955afb41852fae4c8e54807eaf63b6f3f6e605071200ca9f13f",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Outcrop mask and metrics code, WOA23 outcrop areas and March box density used as observed values; we test whether its mean-state result extends to projections."
+  },
+  {
+   "target": "sci:sha256:99e858694d7e7dd4899324ed7e7cac9984b265bb312e21ac5598730293975333",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "ESGF index and OPeNDAP fetch code and isopycnal routine reused; our GFDL-ESM4 series reproduce its published series; our cross-model result agrees with its finding that the interior response to lightening occurs without an outcrop."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its proposal that missing model outcrops may explain why models miss the loss holds off California but not for the basin-wide projected loss in 13 models."
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Observed WOD ship O2 changes on sigma0 26.5 in the 150-160 W band and the CalCOFI band (1984-1996 to 2009-2025)."
+  },
+  {
+   "target": "sci:sha256:bfaf6c907a3921f24772235a5c558c20640093bacf1d6aab37774570994ba61e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Observed within-type O2 change at 36-46 N, 160 E-180 (1975-1989 to 2007-2025)."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [
+    "supports"
+   ],
+   "reason": "The eastern O2 loss being decades ahead of the models agrees with its 35-40 year lead of the observed outcrop loss."
+  },
+  {
+   "target": "sci:sha256:21ae52cf9d0e24f827f7e090eda5a0912177d80251d965f1562a6a1d6dac6f10",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Projected basin-wide O2 loss follows projected surface lightening across models, as its shift law implies."
+  },
+  {
+   "target": "sci:sha256:db350eb4c66afe46724f5fc4763b544ac87fd4d86a40e5290de682fa80030d95",
+   "relations": [],
+   "reason": "Earlier projection of CalCOFI O2 on sigma0 26.5 from the lightening law."
+  },
+  {
+   "target": "sci:sha256:66c86fe2188e2bc4904f1126c0befee9c0d2a50665e98b7c88ff6241f5911038",
+   "relations": [],
+   "reason": "Earlier CMIP6 comparison of O2 and age changes on sigma0 26.5."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0283442/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GLODAPv2.2023 Pacific Ocean product (CC BY 4.0), observed mean O2 on sigma0 26.5."
+  },
+  {
+   "target": "https://pcmdi.llnl.gov/CMIP6/TermsOfUse",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CMIP6 model output (13 models, CC BY 4.0) read through ESGF and the Pangeo CMIP6 Zarr store."
+  }
+ ]
+}
