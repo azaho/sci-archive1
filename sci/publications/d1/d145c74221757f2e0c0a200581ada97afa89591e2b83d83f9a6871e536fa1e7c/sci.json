@@ -1,0 +1,85 @@
+{
+ "title": "Solar radiation did not explain, and dew point explained 0.01-0.03 C per decade of, the extra July-August warming at US stream gauges in 2001-2025; the eastern residual of 0.12 C per decade stayed",
+ "abstract": "Question: an earlier campaign study (sci:f52b7023) found that July-August water temperature at long-record US stream gauges warmed about 0.10 C per decade more than its year-to-year sensitivity to air temperature and discharge predicts. Do solar radiation and humidity explain this residual? Data: the same USGS gauges and nClimGrid air from the prior bundle; CERES SYN1deg surface solar radiation and MERRA-2 dew point from NASA POWER; HadISDH homogenised station dew point; USCRN ground pyranometers. Method: per-gauge regressions with a year term, HUC2-cluster bootstrap, a pre-set plan, a forward test and a long-window check. Results: in 2001-2025 (189 gauges) the residual trend was +0.069 C per decade (0.021 to 0.147). CERES radiation had no trend at the gauges (-0.35 W m-2 per decade) and removed 0.006 C per decade (-0.017 to 0.019). In 1984-2025, radiation also removed nothing. Water warmed with dew point at fixed air and flow (0.06-0.10 C per C). MERRA-2 dew point removed 0.028 C per decade (0.014 to 0.043), but station dew point (HadISDH) removed only 0.006 (-0.004 to 0.018) in 2001-2024, because the MERRA-2 dew-point trend was twice the station trend, mostly because MERRA-2 was about 1 C lower than HadISDH in 2001-2002. From 2003 both sources agreed and removed 0.012-0.019 C per decade. The residual was all east of 100 W (about +0.12 C per decade) and stayed after both predictors; the West was near zero. 7-day maximum water temperature had no residual. USCRN pyranometers fell 10.5 W m-2 per decade against flat CERES, which is probably sensor drift, so ground data could not confirm the radiation trend. Limitations: non-random, mostly regulated gauges; 1 degree radiation and 5 degree station humidity; linear seasonal-mean models; some regional and start-year checks were exploratory. The cause of the eastern residual stays open.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "stream temperature",
+  "water temperature",
+  "solar radiation",
+  "dew point",
+  "humidity",
+  "CERES",
+  "MERRA-2",
+  "HadISDH",
+  "USCRN",
+  "NASA POWER",
+  "USGS NWIS",
+  "residual warming",
+  "reanalysis trend error",
+  "rivers",
+  "climate change",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_residual_trends.png",
+   "caption": "a: Mean per-gauge residual trend of July-August water temperature (trend not explained by the predictors) for each model, with 95% HUC2-cluster intervals. Blue: base and radiation models; orange: with MERRA-2 dew point; green: with HadISDH station dew point. b: Dew-point trend at the gauges, 2001-2024, by source, total and beyond nClimGrid air temperature."
+  },
+  {
+   "path": "files/figures/fig2_humidity_radiation_series.png",
+   "caption": "a: Mean July-August dew-point anomaly at 183 gauges from MERRA-2 (POWER) and HadISDH stations; MERRA-2 is about 1 C lower in 2001-2002. b: Mean July-August solar radiation anomaly at 114 USCRN stations from CERES SYN1deg (POWER) and USCRN pyranometers; the pyranometers drift down relative to CERES."
+  },
+  {
+   "path": "files/figures/fig3_map_regions.png",
+   "caption": "a: Per-gauge residual trend of the air + flow model, 2001-2025 (colour clipped at +-0.6 C per decade); dotted line at 100 W. b: Mean residual trend 2001-2024 east and west of 100 W for the base model and with HadISDH or MERRA-2 dew point (95% HUC2-cluster intervals)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f52b7023bf1bc23d783a9fd42880aca014d89fe4ea23858e219a7e1037f3de92",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the gauge site-year data and the residual-warming result; this work tests its open question 1 (humidity and radiation) and confirms a smaller residual in 2001-2025, located in the East."
+  },
+  {
+   "target": "sci:sha256:870510b8ae2c6db61c234f84fef54cc8309494b28e4c7d180e113f30af23530d",
+   "reason": "Related test of the transfer of air sensitivity at the same gauges."
+  },
+  {
+   "target": "sci:sha256:60a93cd46ef8603ce2109d3734836da2ba2ac2f358a9b4eeaaf4a1cef522ba03",
+   "reason": "Related cold-season memory result and south-eastern residual at independent gauges."
+  },
+  {
+   "target": "doi:10.5194/cp-10-1983-2014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISDH land humidity dataset (Willett et al. 2014)."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-12-00170.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USCRN network description (Diamond et al. 2013)."
+  },
+  {
+   "target": "https://power.larc.nasa.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA POWER API v2.10.0 monthly point data (CERES SYN1deg, GEWEX SRB, MERRA-2)."
+  }
+ ]
+}
