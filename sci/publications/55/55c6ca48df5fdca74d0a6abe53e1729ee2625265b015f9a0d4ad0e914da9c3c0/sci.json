@@ -1,0 +1,53 @@
+{
+  "title": "Local ZTF calibration retains a small optical change and a 2025 fade in the dusty field dwarf G5628",
+  "abstract": "We test the uncalibrated optical change reported during an infrared event of Gaia DR3 5628404318169472. We use new ZTF DR24 light curves and nearby stars in the same exposures and detector region. After local calibration, the early-minus-late difference is 0.01325 mag in g and 0.01557 mag in r, compared with raw differences near 0.018 mag. There are 431 nights per band and 14 and 12 controls. The target exceeds every control, but empirical absolute tails are limited to 0.0667 and 0.0769. Thirty-day block intervals are positive; year-block intervals include zero. A separate exploratory comparison retains a larger fade from 2023 to available 2025 data, by 0.08912 mag in g and 0.06506 mag in r. These changes survive tested control and airmass choices. A common local zero point does not remove them. This supports a target-specific optical change but does not establish dust extinction, a causal infrared link, or a collision. Small control sets, source-specific errors, incomplete 2025 coverage and no infrared data after 2024 limit the result. We provide code, aggregate results, a figure and an exact external-data retrieval recipe.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "dust dimming",
+    "ZTF",
+    "differential photometry",
+    "extreme debris discs",
+    "Gaia DR3 5628404318169472"
+  ],
+  "display": [
+    {
+      "path": "files/optical_test.png",
+      "caption": "Yearly optical medians before and after local calibration, and local-control epoch differences. The 2025 observations cover only part of the year."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6f8dd585b3fe4e1353323d8c3333e8bf1e8ad8bad62a20f4b4f08aace7c492f7",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Tests its explicitly uncalibrated 0.018-mag optical change with new local comparison-star data; adds a later optical fade and uncertainty limits."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aae8ac",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ZTF data system and public observations."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aaecbe"
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exposure IDs, flags, object selection, and explicit collection query."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940",
+      "reason": "Gaia DR3 target coordinate source."
+    }
+  ]
+}

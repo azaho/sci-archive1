@@ -1,0 +1,105 @@
+{
+ "title": "NOAA ERSSTv6 has an undocumented warm step of +0.05-0.07 C in 2016-2017 (60S-60N) that ERSSTv5 lacks; it makes 2019 falsely warmer than 2016 and inflates ERSSTv6 warming acceleration",
+ "abstract": "Question: ERSSTv6 (NOAA, 2025) replaces the EOT interpolation of ERSSTv5 with a neural network and adds new quality control, with the same in situ data. Does it have step artifacts, and what do they change? Approach: at 60S-60N, 1982-2025, on the 29,976-point mask of the campaign's blind joint homogenisation (sci:sha256:d9bdf1f8), we used four designs: the published joint search with ERSSTv6 added or in place of ERSSTv5; a single-series search of ERSSTv6 minus a consensus of homogenised products made without ERSSTv6; 36-month window tests against 13 product series; and in situ HadSST4.2 and Argo references. Results: the reproduced joint search gives the published 23 steps. All designs find a warm ERSSTv6 step in 2016-2017: +0.066 +/- 0.005 C in 2017-01 in the joint search, and +0.021 C (2016-01) plus +0.045 C (2017-07) against the consensus. Against HadSST4.2 the 2017 step is +0.057 +/- 0.006 C in ERSSTv6 and +0.014 C in ERSSTv5; the Argo contrast is +0.044 C. The step is equal in well-sampled and partly sampled boxes, so it is not an infilling artifact. A -0.03 C step in 2020-09 (common to both ERSST versions) and a 2023 fall partly reverse it. Published ERSSTv6 makes 2019 0.046 C warmer than 2016 (other products -0.019 to +0.003 C; corrected v6 -0.021 to +0.001 C), so its 2019 record is an artifact. Its warming acceleration c = 0.0385 K per decade^2 is the largest of eight products and falls to 0.023 after correction; its 2023/24 jump falls from 0.232 to 0.200 C. Limitations: the cause is not proven (the date is near a documented 2017 change of the ERSST data-ingest stream); shared errors are invisible; the consensus trend itself changes by 0.01 C per decade when ERSSTv6 replaces ERSSTv5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "ERSSTv6",
+  "ERSSTv5",
+  "homogenisation",
+  "change-point detection",
+  "climate data record",
+  "record year",
+  "warming acceleration",
+  "HadSST4",
+  "Argo",
+  "DOISST",
+  "structural uncertainty",
+  "Nino 3.4"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_v6_minus_consensus.png",
+   "caption": "ERSSTv6 (blue) and ERSSTv5 (orange) minus the mean of five homogenised products made without ERSSTv6 (12-month means; thin line monthly), in five latitude bands. Dashed: steps found blindly in ERSSTv6 minus the consensus. Dotted lines: documented ERSST changes."
+  },
+  {
+   "path": "files/figures/fig2_pairwise_2017_step.png",
+   "caption": "Step across 2017-01 (36-month means) of ERSSTv6 minus each reference (blue) and ERSSTv5 minus HadSST4.2 and Argo (orange), with 95% block-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig4_consequences.png",
+   "caption": "(a) Annual means at 60S-60N of published and corrected ERSSTv6, ERSSTv5 and the homogenised consensus. (b) 2019 minus 2016 annual mean in each series. (c) Quadratic acceleration coefficient c of the Merchant et al. (2025) model, 1985-2024.5 (+/-1 SE)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Its published regional series, masks, reference-sampled series and joint-search code are the base of all tests; we reproduce its 23 steps and test the product-set dependence of its consensus trend."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Earlier DOISST mean-step study; same point set and comparison approach, here applied to ERSSTv6."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Record-jump consequences of SST steps; the same metrics are used for ERSSTv6."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "DOISST July 2020 step of similar size; comparison of artifact magnitude."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "In situ input changes (TAC to BUFR) in NOAA SST products near 2018."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "reason": "HadISST1 artifacts; HadISST1 is one of the comparison products."
+  },
+  {
+   "target": "sci:sha256:9cbad554c571ef6334abd41fdce1224da1f2da3ff813519ef49f507183b72bcc",
+   "reason": "Undocumented steps in another NOAA SST product (CoralTemp)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-23-0707.1",
+   "reason": "ERSSTv6 Part I (ANN method, inputs)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-24-0185.1",
+   "reason": "ERSSTv6 Part II (quality control; reports the 2019 record in ERSSTv6)."
+  },
+  {
+   "target": "doi:10.25921/z7cw-es89",
+   "reason": "ERSSTv6 dataset."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5."
+  },
+  {
+   "target": "doi:10.1088/1748-9326/adaa8a",
+   "reason": "Quadratic acceleration model used for the consequences."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "reason": "Roemmich-Gilson Argo reference."
+  }
+ ]
+}
