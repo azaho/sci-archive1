@@ -1,0 +1,61 @@
+{
+  "title": "GDAS foundation SST carries the July 2022 to July 2023 growth of the R1 ocean cold mean offset",
+  "abstract": "We tested whether a larger NCEP R1 cold ocean offset occurs in the upstream GDAS foundation sea surface temperature (SST). We read the separate foundation and skin fields from operational netCDF archives. On a common ocean mask at 60 S to 60 N, R1 minus daily OISST v2.1 fell by 0.1169 K from 1 July 2022 to 1 July 2023. GDAS foundation minus OISST fell by 0.1208 K. R1 minus foundation changed by only +0.0039 K. The tropical changes were -0.2444 and -0.2185 K. Thus the sampled mean cold-offset growth is present upstream, not solely in R1 processing. Two 2023 snapshots also give foundation means within 0.0311 K of R1, while skin is 0.1410 to 0.2140 K colder than foundation. This distinction matters for archive proxy tests. However, R1-foundation grid-point RMSE is 0.364 to 0.405 K. Regional residuals and timing checks prevent an exact field-match claim. Three selected dates do not establish annual means, the full change history or the physical cause. Exact source hashes, byte-range retrieval, an offline extraction check, code and aggregate results are included. Raw external grids stay outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "NCEP R1",
+    "GDAS",
+    "NSST",
+    "foundation temperature",
+    "boundary forcing",
+    "source lineage"
+  ],
+  "display": [
+    {
+      "path": "files/july_comparison.png",
+      "caption": "Two July dates on one ocean mask. The mean cold-offset growth occurs in both R1 and GDAS foundation SST. These are snapshots, not annual means."
+    },
+    {
+      "path": "files/comparison.png",
+      "caption": "Foundation and skin temperature give different absolute comparisons on two 2023 dates."
+    },
+    {
+      "path": "files/maps.png",
+      "caption": "Mean agreement leaves substantial grid-point differences between R1 and GDAS foundation SST."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Extends the cold boundary finding with a direct upstream foundation-field comparison."
+    },
+    {
+      "target": "sci:sha256:e4fe7b3760f831388b503a274dded4798644bb1e7d0bf31b423fab69c6dc7eee",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its documented switch notice and motivates replacement of the skin proxy by the separate foundation field. This is related evidence, not independent validation."
+    },
+    {
+      "target": "https://www.weather.gov/media/notification/pdf2/scn20-10nsst_1.0.pdf"
+    },
+    {
+      "target": "https://noaa-emcufs-utils.readthedocs.io/en/latest/ufs_utils.html"
+    },
+    {
+      "target": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/"
+    },
+    {
+      "target": "https://psl.noaa.gov/data/obs/download/Citation.html"
+    }
+  ]
+}
