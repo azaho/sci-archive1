@@ -1,0 +1,133 @@
+{
+ "title": "Connectome distance to motor output predicts movement encoding in mouse and fly brain regions, but not beyond geometry in larval zebrafish; in mouse the link is not specific to movement",
+ "abstract": "Question: a campaign result in C. elegans found that neuron classes with a shorter connectome random walk to muscle encode locomotion more strongly. Does this motor-proximity rule apply to region-level connectomes of other animals? Method: one measure for all species, the log expected hitting time of a random walk on the directed region connectome to a motor-output set, related to public movement-encoding scores. Mouse: Knox 2019 connectome, brainstem motor and spinal-projecting nuclei, IBL Brain-Wide Map wheel-speed encoding (170 regions). Fly: FlyWire v783 synapse walk to descending and motor neurons, Aimon 2023 walk R2 (75 regions, 16 flies). Larval zebrafish: mapZebrain projectome, reticulospinal regions, cross-validated spontaneous swim R2 from Legare 2025 two-photon data (59 regions, 14 fish). Pre-registered nulls: geometry-preserving rewiring, and rewiring with output weights kept. Results: mouse rho = -0.52, outside all 1,000 nulls of both kinds, partial rho -0.45 after distance and strength. But the same hitting time predicted stimulus, choice and feedback encoding equally (speed minus stimulus contrast -0.01, CI -0.14 to 0.14), and random caudal target sets gave rho -0.40. Fly rho = -0.80, but rewiring among neuropils with descending-neuron input kept gave the same value (-0.83), and distance to descending-neuron input sites alone gave -0.84. Zebrafish rho = -0.32 (negative in 14 of 14 fish), but geometry-preserving rewiring gave the same value (p = 0.48) and the partial rho after distance to the reticulospinal regions was -0.07. Conclusion: the rank relation is present in four animals, but wiring beyond geometry explains it only in worm and mouse, and in mouse it is a general task-encoding gradient, not a movement-specific one. Limitations: cross-region correlations, different encoding scores per species, coarse fly imaging, few fish swim bouts, a judgement-based mouse motor set.",
+ "keywords": [
+  "connectome",
+  "structure-function",
+  "motor output",
+  "random walk hitting time",
+  "movement encoding",
+  "IBL Brain-Wide Map",
+  "FlyWire",
+  "larval zebrafish",
+  "mouse",
+  "Drosophila",
+  "cross-species",
+  "null models"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_encoding_vs_motor_hitting_time.png",
+   "caption": "Movement encoding against log10 hitting time to the motor-output set in mouse (170 regions), fly (75) and larval zebrafish (59)."
+  },
+  {
+   "path": "files/figures/fig2_nulls.png",
+   "caption": "Real rho against geometry-preserving rewiring (grey), rewiring with output weights kept (orange) and random caudal target sets (blue, exploratory)."
+  },
+  {
+   "path": "files/figures/fig4_cross_species.png",
+   "caption": "Observed rho, output-kept null mean and partial rho for worm (sci:b41d39ab916c), mouse, fly and zebrafish."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b41d39ab916c186df33bafc9bd8e170ed4cbbf8e704c3d6f86cef908c6e8df41",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Worm motor-proximity rule that this study tests in mouse, fly and zebrafish; worm values shown for comparison."
+  },
+  {
+   "target": "sci:sha256:85b15b2ed2f5190947be7f0ee7537dd744a9ad3d9e5d60b75f9fc2a7e1973bb7",
+   "relations": [],
+   "reason": "Related worm result on wiring flow to muscles and behaviour encoding."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Aimon region list, FlyWire neuropil mapping and fly mesh distances."
+  },
+  {
+   "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fly 75-region centroid distance matrix (files/derived/fly.npz)."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zebrafish dF/F and swim-detection conventions for the Legare data."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Use of the IBL BWM region table with the Knox connectome."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "relations": [],
+   "reason": "Sensory-side analogue in mouse: retina distance and response reliability."
+  },
+  {
+   "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+   "relations": [],
+   "reason": "Sensory-side analogue in zebrafish: retina path and dark-flash reliability."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 mouse connectome model."
+  },
+  {
+   "target": "doi:10.1101/2023.07.04.547681",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map encoding scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell annotations."
+  },
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Aimon et al. 2023 fly walk imaging."
+  },
+  {
+   "target": "doi:10.5683/SP3/IIVGOB",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Legare et al. 2025 zebrafish data."
+  }
+ ]
+}
