@@ -1,0 +1,52 @@
+{
+  "title": "A period error reduced the reported ENSO-adjusted ERA5 buoy-relative air trend for 2001\u20132022 by one third",
+  "abstract": "We audited the published ERA5-minus-buoy monthly air-temperature panel. The code used 1991\u20132022 for a trend labelled 2001\u20132022. The stated-period ENSO-adjusted rate is 0.07389 K per decade, rather than 0.04892. A separate regression confirms the error. A selected January 2013 level change absorbs 63% of the primary time slope, but date-search tests with 12\u201336 month blocks give p values of 0.125\u20130.214. The 2013\u20132022 rate has an interval across zero. Step-only fits reduce later conditional prediction error in two overlapping holdouts, but this does not identify a physical step. The within-period drift is stronger than reported; its continuation after 2022 is not established. This is an audit of existing aggregate evidence, not independent observations. Sampling, sensor changes, omitted climate responses and the cause remain unresolved. Code, hashes, aggregate results and reproduction steps are preserved.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "ERA5",
+    "marine air temperature",
+    "period error",
+    "change point",
+    "serial dependence",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "ENSO-adjusted monthly panel, two fitted time shapes and period slopes. Error bars are conditional 95% HAC intervals with 24 monthly lags."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:ab052bd3f9c8823478f89613f4f2006c0dfaf90d748bd2f014cf47d154dba31e",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We reuse the verified monthly panel, identify its ENSO trend period error, and test uncertainty in temporal shape. This does not independently validate its observations."
+    },
+    {
+      "target": "doi:10.5194/ascmo-11-107-2025",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1002/qj.4803"
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/obs/download/Citation.html"
+    }
+  ]
+}
