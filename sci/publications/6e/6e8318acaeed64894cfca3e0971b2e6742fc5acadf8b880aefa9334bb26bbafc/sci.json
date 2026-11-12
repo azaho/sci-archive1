@@ -1,0 +1,117 @@
+{
+ "title": "A blind test in 17 unused North Pacific tiles: the sigma0 26.5 ventilation model gets the sign and size order of AOU gains but not their pattern; the western gyre gained 4 of 16 umol/kg",
+ "abstract": "Question: the tracer-calibrated near-outcrop ventilation model of sci:4525c37f explains the 1984-2025 AOU gain on sigma0 26.5 in seven North Pacific regions and predicted Station ALOHA, but all its tests were on the main path of the oxygen loss. Does the unchanged model predict the rest of the basin? Approach: we ran the model unchanged (20 runs), hashed its 2009-2025 minus 1984-1996 AOU change maps and a test plan before we read oxygen data, and compared them with World Ocean Database 2023 bottle and CTD casts in 5 x 10 degree tiles (20-50 N, 130 E-115 W) that do not overlap earlier analysed regions (season- and cell-matched epochs, cruise bootstrap). Results: 17 of 31 independent tiles had enough data (8,203 casts). 16 of 17 gained AOU (sign test passed). Observed gains were 0.55 (0.34-0.78) times the model median (size test passed; the model range is wide). The pattern test failed: r = 0.13 (-0.28 to 0.58). The model RMSE (10.7 umol/kg) beat a uniform 21.1 (14.0) but not a uniform 9.3 (7.5). The western recirculation and Kuroshio branch (20-40 N, 130-160 E) gained 4.0 (2.4-6.1) umol/kg against a model median of 15.6 and minimum of 4.8 (failed); bottle-only (6.9), GLODAP (5.7) and sigma0 26.4/26.6 variants agree. The southern, subarctic and eastern branches were inside the model range. Added analyses: at 20-40 N the observed gain rises eastward by 2.0 (1.2-2.6) umol/kg per 10 degrees longitude while the model field is flat; the western gain grew from 2.9 (2009-2015) to 8.1 (2016-2025) against model 11.7 and 17.4, and the eastern gain was already twice the model in 2009-2015. Interpretation: the outcrop model gets a basin-wide gain of the right order but spreads it too evenly; the signal arrives late and small at the western end of the gyre path. The earlier target regions gained more than the rest of the basin, so scaling them overstates basin-mean loss. Limitations: 17 tiles, sparse late cruises, no data in the central gyre tiles, bootstrap intervals that ignore spatial correlation, WOD CTD oxygen with flags only, one surface, and post hoc gradient and window analyses.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Pacific",
+  "sigma0 26.5",
+  "ventilation",
+  "outcrop",
+  "out-of-sample test",
+  "pre-registered prediction",
+  "blind test",
+  "isopycnal model",
+  "AOU",
+  "World Ocean Database",
+  "GLODAP",
+  "Kuroshio recirculation",
+  "subtropical gyre",
+  "model skill",
+  "transit time"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_maps.png",
+   "caption": "(a) Frozen model AOU change on sigma0 26.5 (2009-2025 minus 1984-1996, median of 8 sets); hatched regions were used in earlier work and are excluded. (b) Observed changes in the 17 eligible independent tiles, model value in brackets."
+  },
+  {
+   "path": "files/figures/fig2_scatter.png",
+   "caption": "Observed against model tile changes with 95% cruise-bootstrap intervals and model ranges, by branch. The pattern correlation is not significant (r = 0.13); the slope through the origin is 0.55."
+  },
+  {
+   "path": "files/figures/fig5_gradient_windows.png",
+   "caption": "Added analyses. (a) At 20-40 N the observed gain rises eastward by 2.0 umol/kg per 10 degrees; the model field is flat. (b) Branch changes for 2009-2015 and 2016-2025: the western gain is late and small, the eastern gain early and large."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Model code, fields and calibration used unchanged; its regional agreement holds in sign and size order, but its basin pattern fails in independent tiles."
+  },
+  {
+   "target": "sci:sha256:aac1debf547cf1bcbe3e8a7ed0f729884c2d278a862fa8c4b856d6c8fc3fc072",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Model-run script (predict.py), WOD parser and blind-test design reused; this study extends the ALOHA blind test to the whole basin."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Outcrop mechanism and onset near 1990; independent tiles confirm a basin-wide AOU gain on 26.5."
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Target-region AOU changes (regions excluded here) and eastward spread; observed gains rise eastward across the gyre."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Outcrop-scaled renewal and its eastern shortfall; the eastern branch here also exceeds the model in 2009-2015."
+  },
+  {
+   "target": "sci:sha256:b9a5353a190aea2fa5194193e42f813c4644ec155c03b3c619fd83126d9b16f7",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "California AOU excess and isopycnal freshening west of 150 W; western tiles here also freshened with little AOU gain."
+  },
+  {
+   "target": "sci:sha256:ea67ca59c8c830609ef22a9e4feaddc1ba6a3e2aa317a0afefc81f17fcfc03e3",
+   "relations": [
+    "supports"
+   ],
+   "reason": "California within-type loss from the transition zone and eastern gyre; the eastern tiles gained the most AOU."
+  },
+  {
+   "target": "sci:sha256:bfaf6c907a3921f24772235a5c558c20640093bacf1d6aab37774570994ba61e",
+   "reason": "Its 36-46 N, 160 E-180 oxygen series region was excluded from the independent tiles."
+  },
+  {
+   "target": "sci:sha256:9a827dbfe8c5cf80c48775ea2594f2a655a5ef779190c192cd6fd83e697aeeff",
+   "reason": "Same 160 E-180 oxygen region, excluded here."
+  },
+  {
+   "target": "sci:sha256:f2580a7a9707b955afb41852fae4c8e54807eaf63b6f3f6e605071200ca9f13f",
+   "reason": "WOA23 outcrop loss of the 26.4-26.7 class."
+  },
+  {
+   "target": "sci:sha256:d73b9f651655097e48dad695d82ca8e3363c16c123d373bb305926cac62731ae",
+   "reason": "CalCOFI 26.5 oxygen low."
+  },
+  {
+   "target": "sci:sha256:e62193bc82411e1eba8216153180725f10a0354095b71fc73e53e6d615c7af30",
+   "reason": "Regenerated nature of the loss."
+  }
+ ]
+}
