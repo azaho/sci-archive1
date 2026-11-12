@@ -1,0 +1,104 @@
+{
+ "title": "Swiss phenology data replicate the German overprediction of frost by a 1 January heat-sum measure; the high-elevation frost increase of 1975-2016 did not continue in 2017-2025",
+ "abstract": "Question: in Switzerland, does a climate-only frost measure that assumes a fixed heat sum from 1 January (Zohner et al. 2020) follow frost after observed spring onset, as tested for Germany in sci:6d514d9c, and did frost exposure after onset increase more at high elevation, as Vitasse et al. (2018) reported from modelled phenology for 1975-2016? Data: 39,400 MeteoSwiss observed onset records (leaf-out or needle emergence of 8 trees, flowering of cherry, apple, pear; 50% stage) at 146 stations (200-1,933 m, 1951-2025), each with daily minimum and mean temperature from the nearest SwissMetNet station (median 7.3 km, 35 m height difference). Exposure is a minimum at or below -2 C (also below 0 C, -4 C) after onset to 30 June. Pair fixed effects, two-way clustered errors by year and pair. Tests were fixed before the outcomes. Results: (1) Per extra 50 degree-days in January-February, the observed-minus-proxy exposure difference (below 0 C) was -9.6 pp (95% CI -11.5 to -7.7) for leaf-out and -5.2 pp (-6.7 to -3.7) for flowering (Germany: -10.4 and -7.3). It was below zero in all 27 subsets (taxa, regions, elevation groups, periods). A heat sum above 5 C from 1 March removed the leaf-out bias. (2) In 1975-2016, the -2 C exposure trend was 3.7 pp per decade larger at stations at or above 800 m (CI 1.1 to 6.4), because onset advanced faster there while the last frost advanced equally. This did not continue: in 2017-2025, high stations had 19.8% exposure against 25.2% predicted by the 1975-2016 model (CI of difference -14.6 to +4.8; at 0 C -17.4 pp, CI -29.1 to -4.9), and low stations had more frost than predicted (2017, 2021). Over 1959-2025 the contrast was +0.8 pp per decade (CI -1.2 to 2.9). In an exploratory window scan, no window ending in 2020-2025 had a contrast with a CI above zero. Limitations: screen temperature at nearby stations, no damage data, 50% stage, few records before 1975, few high stations, dependence on a few frost years; the 5 cm ground minimum did not show the 1975-2016 contrast.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "late spring frost",
+  "false spring",
+  "phenology",
+  "leaf-out",
+  "flowering",
+  "elevation",
+  "Switzerland",
+  "MeteoSwiss",
+  "growing degree days",
+  "frost risk",
+  "climate change",
+  "replication",
+  "out-of-sample test",
+  "Vitasse",
+  "Zohner"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_year_effects.png",
+   "caption": "Year effects of frost exposure at or below -2 C after observed onset, onset day and last frost day, for Swiss stations below and at or above 800 m (1959-2025)."
+  },
+  {
+   "path": "files/figures/fig2_proxy_bias_subsets.png",
+   "caption": "Observed-minus-proxy frost exposure per +50 degree-days of January-February heat in 27 replication subsets."
+  },
+  {
+   "path": "files/figures/fig5_window_scan.png",
+   "caption": "Exploratory scan of the high-minus-low elevation trend contrast for all windows of 25 years or more."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6d514d9c61067aed395fa18a38122d4e5aa0fc0b3de16cec25b249f46293358d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We replicate its main test (fixed 1 January heat-sum proxy versus observed onset) with independent Swiss data and reuse its definitions."
+  },
+  {
+   "target": "sci:sha256:718ef4dfc9ecdf2c54b132e65129f3dc503ba894dc3f68a9e8a7270bd1646410",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its result that the Swiss leaf-out elevation gradient stopped decreasing after 2016 agrees with the end of the high-elevation frost increase."
+  },
+  {
+   "target": "sci:sha256:423c44cb2c725c9b8b27bc357201aab928313efb449fa8e132701bb85bd3292f",
+   "reason": "Related thermal-time analysis of leaf-out sensitivity with the same Swiss phenology data."
+  },
+  {
+   "target": "sci:sha256:19eeca0d858cefec579a3566da7605d74af09e83a15cf8e6f4015f609c0f59e8",
+   "reason": "Related test of freezing exposure after cherry bloom at Liestal."
+  },
+  {
+   "target": "doi:10.1016/j.agrformet.2017.09.005",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Vitasse et al. 2018: we test the high-elevation frost increase with observed dates and an out-of-sample period."
+  },
+  {
+   "target": "doi:10.1073/pnas.1920816117",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Zohner et al. 2020: we test the fixed heat-sum assumption of their climate-only frost measure."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/phaeno_previous.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss phenology observations (CC BY 4.0)."
+  },
+  {
+   "target": "https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-smn",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss SwissMetNet daily temperature (CC BY 4.0)."
+  },
+  {
+   "target": "https://opendatadocs.meteoswiss.ch/general/terms-of-use",
+   "reason": "Terms of use of MeteoSwiss Open Government Data."
+  }
+ ]
+}
