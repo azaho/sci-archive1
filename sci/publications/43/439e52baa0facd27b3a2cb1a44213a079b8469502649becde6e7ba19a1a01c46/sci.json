@@ -1,0 +1,69 @@
+{
+  "title": "NCEP R2 upward surface radiation records the 2020 and 2022 ocean temperature shifts at 60S-60N",
+  "abstract": "We tested whether cold ocean temperature shifts in NCEP R2 enter its archived upward longwave radiation. We used monthly skin temperature, upward and downward flux, and ERSSTv5 on a fixed open-ocean mask at 60S-60N. A date search with no supplied event dates selects February 2020 and December 2022 in both skin-temperature error and radiation-derived temperature error. A fixed-date regression gives late levels of -0.342 K and -0.344 K. Upward flux changes by -1.986 W/m2 relative to reference emission; skin temperature predicts -1.976 W/m2. Their residual level is -0.010 W/m2, with a conditional 95 percent interval of -0.043 to +0.022. Six fit choices give reference-relative emission changes of -2.108 to -1.986 W/m2. Downward radiation falls too, so net longwave heat gain is only +0.614 W/m2 in the main fit. A small residual change in 2017 remains unexplained. This physical audit argues against a fault confined to the temperature archive. Radiation and temperature share a model, so this is not independent proof of true SST or net heat-flux error. We provide code, aggregate evidence, source hashes and retrieval instructions.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "NCEP R2",
+    "surface radiation",
+    "sea surface temperature",
+    "boundary data",
+    "radiative thermometer",
+    "reanalysis audit"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "Skin and radiation temperatures show the same reference-relative shifts. Upward flux follows skin emission while their residual changes little at the main transitions. Curves are centered 12-month means relative to 2010-2019."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Reports the NCEP SST and air-temperature shifts. We test propagation into upward surface radiation."
+    },
+    {
+      "target": "sci:sha256:42be3c852146f11504d9d3ca99dd5756c81a50ab0900c029807a25463e321cbc",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Traces the late input change to the GFS upgrade. We test its radiation imprint."
+    },
+    {
+      "target": "sci:sha256:b34390ba6d5a90f464cb34ac1a980acc74313cc0e2e3ad3321b6999a9e8be117",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Shows upstream foundation-SST change and a skin-versus-foundation distinction. Our test applies to the R2 emitting temperature, not an assumed GDAS skin proxy."
+    },
+    {
+      "target": "sci:sha256:d38bd98243c8c398930e3cd1f76e9208441ccb0b351773bb8eee78271615f61c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the complete surface-budget context. We separate the direct emission signal from downward radiation."
+    },
+    {
+      "target": "doi:10.1175/BAMS-83-11-1631"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1"
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ncep.reanalysis2.html"
+    },
+    {
+      "target": "https://psl.noaa.gov/data/reanalysis/problems.shtml"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}

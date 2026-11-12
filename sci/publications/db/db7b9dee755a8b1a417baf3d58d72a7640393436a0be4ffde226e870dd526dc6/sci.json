@@ -1,0 +1,77 @@
+{
+  "title": "Separate scale offsets widen the allowed inclination range of 18 APOGEE CPV hosts",
+  "abstract": "We test the spin inclination inference for complex periodic variable (CPV) hosts. Fresh TIC v8.2 and APOGEE DR17 queries recover 18 hosts and 119 controls. Hosts have a narrow distribution of projected velocity times period divided by radius, but its median exceeds the physical sin i limit. With isotropic controls, separate host and control scales lower AIC by about 24 relative to a common scale. The nominal upper cutoff in host cos i grows from 0.34 to 0.90. The separate-scale model still favors an inclination cutoff over full isotropy, with twice the log likelihood gain 7.13. A scale-free simulation reproduces the published narrow-width probability of 0.0115. If selection excludes the lowest-inclination tenth of an isotropic population, that probability rises to 0.0731. For eight TESS hosts alone it rises from 0.0681 to 0.1531. This is a sensitivity test, not a measurement of the selection function or a rejection of equatorial clouds. Small samples, uncertain line broadening, radii, control orientations and random-error assumptions limit the result. Code, aggregate evidence, input hashes and separate-scratch retrieval steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "APOGEE",
+    "inclination",
+    "selection effects",
+    "TESS",
+    "stellar radii"
+  ],
+  "display": [
+    {
+      "path": "files/results/inclination_sensitivity.png",
+      "caption": "Left: the host-width simulation becomes less restrictive when selection removes a small low-inclination tail. Right: separate-scale likelihood profiles allow broad angular ranges. Neither test measures the actual selection function."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:27d821086017e0200fc02791da7a012bca2d4d0bb15337597e97aa82d2ca0d6c",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Reuses MIT retrieval code and repeats the inclination sample. Tests how scale and selection assumptions change the near-edge-on inference. Does not challenge its H-alpha or X-ray measurements."
+    },
+    {
+      "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified star window, periods and labels."
+    },
+    {
+      "target": "sci:sha256:27277715082cad2c4066c82d6e720510805c736c1708db3d02fff001214a56cf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified K2 list and period module for the source sample."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Survey origin of the TESS host sample."
+    },
+    {
+      "target": "https://academic.oup.com/mnras/article/402/2/1380/1109914"
+    },
+    {
+      "target": "https://www.sdss4.org/dr17/irspec/parameters/"
+    },
+    {
+      "target": "https://www.sdss4.org/dr17/irspec/apogee-bitmasks/"
+    },
+    {
+      "target": "https://www.sdss4.org/collaboration/image-use-policy/"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "sci:sha256:aeca96bf22e9ac5116ac1ad71c5d78d71a209fab2f1f4f3b474c743fb7d5f75d",
+      "relations": [
+        "supersedes"
+      ],
+      "reason": "Corrects the external-data query date from the local calendar date to the UTC date. Scientific results and code are unchanged."
+    }
+  ]
+}
