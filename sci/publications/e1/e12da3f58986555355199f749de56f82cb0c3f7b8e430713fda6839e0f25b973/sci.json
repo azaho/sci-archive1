@@ -1,0 +1,128 @@
+{
+  "title": "Sorted response distributions raised mean wiring prediction loss at penalty 10 in 13 scans from one MICrONS mouse",
+  "abstract": "We tested whether similarity in the distribution of mean movie responses helps predict anatomical connections beyond aligned response correlation. Public MICrONS v1 data linked activity and anatomy in one mouse. We used 295,371 candidate directions and tested 271,041 different-scan directions with 7,400 connections. For each target scan, its cells were excluded from training in both roles. A sorted-vector dot product compared response distributions after entry identity was removed. At ridge penalty 10, adding this measure after aligned correlation increased equal-scan mean log loss by 8.740e-6 nats per pair; 3 of 13 scans improved. Adding alignment after the distribution measure reduced mean loss by 1.985e-4; 11 scans improved. Penalty 1 gave the same pattern. Each sign remained after any one scan was removed. These are descriptive prediction results, not independent-scan significance tests. One mouse, selected axons, fixed trial-mean summaries, limited controls and the tested quadratic model limit inference. Original code, figures, aggregate results, hashes and external regeneration steps support reproduction. Source and record-level data are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "connectivity",
+    "response distributions",
+    "movie responses",
+    "prediction",
+    "scan exclusion",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Prediction gains across 13 excluded target scans at ridge penalty 10. Positive values mean lower binary log loss. Distribution shape is added after aligned responses on the left. Alignment is added after distribution shape on the right. Dashed lines are equal-scan means. Scans are not independent replicates."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0a568b275a263a2602990741cfda0e5f785dac6e5fa7af3b5c24032eac104efb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the target-scan exclusion design. Adds distribution-shape terms and marginal response controls with new code."
+    },
+    {
+      "target": "sci:sha256:748aa272d79394531e3e34931a140943b795b6f92d05e7aa412e7134fd27d14a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its numerical audit as a precedent and repeats the necessary input check."
+    },
+    {
+      "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides cell-effect association context. No code or data are reused."
+    },
+    {
+      "target": "sci:sha256:d879ea7746c6c75d7477721cf79cb00aa9aa20a1979b9abb2039d2f39f67d4cc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Distinguishes rank alignment from a comparison that removes entry identity."
+    },
+    {
+      "target": "sci:sha256:494a087f80b533e7454cdc2b9c751a443ca66f265ac3a99601e010d006420d02",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides high-response-overlap context and documents the equal-axis coordinate correction used here."
+    },
+    {
+      "target": "sci:sha256:5128c66923e7cf7f98d4a0d4e9f7f2834e3c1d0cf5223eb9aef9fec948c97166",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Provides context for response-mode specificity."
+    },
+    {
+      "target": "sci:sha256:1f7d0723e0e95de17f86490bc2f14b76ea3f5e5a7ff507ea1d81e9008eb87d98",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Read while choosing the question; tests a different response-spectrum question."
+    },
+    {
+      "target": "sci:sha256:c1d69b64ac609df4a341ee018b3d52ea21fe8710e9940c604724a65d806a3111",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Read while choosing the question; tests an Allen timing null rather than distribution-based wiring prediction."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 source file. Measured hash and path are in provenance.json. Source and record-level derivatives stay external."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 source file. Measured hash and path are in provenance.json. Source and record-level derivatives stay external."
+    }
+  ]
+}
