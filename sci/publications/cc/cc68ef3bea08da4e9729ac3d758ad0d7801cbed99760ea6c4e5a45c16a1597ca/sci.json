@@ -1,0 +1,128 @@
+{
+ "title": "The 2003 MODIS splice in PKU GIMMS NDVI made default green-up dates 11-17 days earlier than ground leaf-out in Germany and Switzerland (1982-2022); QC snow screening removed most of the step",
+ "abstract": "Question: do satellite start-of-season (SOS) dates from long NDVI and LAI records stay homogeneous across the change from AVHRR to MODIS data? We compared PKU GIMMS NDVI v1.2 consolidated (AVHRR to 2002, MODIS from 2003) and GIMMS LAI4g v1.2 consolidated (MODIS from 2004), and their AVHRR-only versions, with 209,410 leaf-unfolding records at 2,743 German DWD stations and 27,075 records at 161 Swiss MeteoSwiss stations, 1982-2022. Ground indices used station-species and year fixed effects; satellite anomalies used the pixels that contain the stations. The test model was satellite = a + b x ground + step, with HAC 95% intervals. With the usual 50% amplitude threshold and a yearly January-February base, consolidated-NDVI SOS became earlier relative to ground at 2003 by -11.4 days in Germany (-15.3 to -7.5) and -16.6 days in Switzerland (-19.7 to -13.6); West and East Germany agreed, and break scans peaked at 2003. The cause is snow in the MODIS winter base: the Germany base NDVI was 0.41-0.51 before 2003 and 0.13-0.59 after, when 29% of January-February composites had snow or cloud flags. A base without flagged composites removed the step in Germany (+0.6 days, -1.9 to 3.1) and left -2.7 days in Switzerland. The default step changed results: ground leaf-out advanced 2.9 (Germany) and 2.1 days per decade (Switzerland), default NDVI SOS 4.3 and 6.9; ground sensitivity to February-April temperature was -3.1 days per degree C in both periods, default NDVI SOS changed from -1.9 to +1.8. In 2003-2015, AVHRR-only NDVI SOS followed ground better (r 0.62 and 0.75) than consolidated NDVI (0.10 and 0.38). LAI4g consolidated had no step in Germany (-0.4 days) but a -6.9 day step in Switzerland at 2004, which the consolidated-minus-AVHRR-only LAI difference confirmed (-6.2 days). Fixed thresholds reduced the NDVI step but mixed greening with timing. Limits: satellite SOS and tree leaf-out are different events; half-month composites; 41 annual values; only Central Europe; the NDVI satellite-satellite test has two pre-splice years. Code, aggregate tables, figures and source hashes are included; raw data stay external.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370101"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "start of season",
+  "PKU GIMMS NDVI",
+  "GIMMS LAI4g",
+  "AVHRR",
+  "MODIS",
+  "sensor splice",
+  "snow contamination",
+  "observation bias",
+  "DWD phenology",
+  "MeteoSwiss",
+  "temperature sensitivity",
+  "remote sensing artefact",
+  "Central Europe",
+  "homogeneity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_series_and_winter_base.png",
+   "caption": "Annual anomalies of ground leaf-out (black) and consolidated-NDVI SOS with the yearly base (orange) and the QC-screened base (blue) for Germany and Switzerland, and the January-February NDVI base in German station pixels. The grey area is the MODIS-based part (2003-2022)."
+  },
+  {
+   "path": "files/figures/fig2_step_tests.png",
+   "caption": "Left: satellite-minus-ground step at each product's AVHRR-to-MODIS splice (NDVI 2003, LAI4g 2004) for six SOS methods and four ground regions (95% HAC intervals). Right: t statistic of the step at trial years 1987-2018 for consolidated NDVI."
+  },
+  {
+   "path": "files/figures/fig3_temperature_sensitivity.png",
+   "caption": "Sensitivity of spring dates to February-April temperature in 1982-2002 (squares) and 2003-2022 (circles) for ground leaf-out and three consolidated-NDVI SOS methods (95% HAC intervals)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c651f0467890b08a18b00d70192c1ccc1cf25e73a627b8946d75fba870b9e1f1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier campaign use of the same consolidated and AVHRR-only GIMMS products for annual vegetation levels; we test seasonal timing across their splices."
+  },
+  {
+   "target": "sci:sha256:d80e13b741bb22d9abe9cee6624716539bd5b0c4263e2e3b69370ddd92214c8f",
+   "reason": "Earlier campaign use of GIMMS LAI4g winter leaf area; our winter-base results are relevant to winter values across the splice."
+  },
+  {
+   "target": "sci:sha256:b0549936507be17c84cbf4179a219673cff3983bb39c8c869fb8e46f1dc44c24",
+   "reason": "Campaign test of an observation artefact (smoke) in camera phenology; we test a sensor artefact in satellite phenology."
+  },
+  {
+   "target": "sci:sha256:58d2b753191ad3c861e7fcd5595f831ff0b7df765754ac75bfb571016daacae2",
+   "reason": "Campaign test of reporting bounds for DWD and MeteoSwiss beech leaf dates; same ground networks."
+  },
+  {
+   "target": "doi:10.5194/essd-15-4181-2023",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "PKU GIMMS NDVI v1.2 description; the product is stated to be temporally consistent, but default SOS is not homogeneous at the 2003 MODIS splice in Central Europe."
+  },
+  {
+   "target": "doi:10.5281/zenodo.8253971",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PKU GIMMS NDVI v1.2 data, CC BY 4.0."
+  },
+  {
+   "target": "doi:10.5194/essd-15-4877-2023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GIMMS LAI4g v1.2 description."
+  },
+  {
+   "target": "doi:10.5281/zenodo.8281930",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GIMMS LAI4g v1.2 data, CC BY 4.0."
+  },
+  {
+   "target": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/phenology/annual_reporters/wild/historical/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DWD phenological observations (CC BY 4.0)."
+  },
+  {
+   "target": "https://data.geo.admin.ch/ch.meteoschweiz.klima/phaenologie/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MeteoSwiss phenological observations (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS land air temperature."
+  },
+  {
+   "target": "doi:10.1038/nature15402",
+   "reason": "Reported decline of spring leaf-out temperature sensitivity from ground data; our results show that a sensor splice can produce a false decline in satellite SOS."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2486.2009.01910.x",
+   "reason": "Intercomparison of satellite SOS methods against ground phenology."
+  }
+ ]
+}

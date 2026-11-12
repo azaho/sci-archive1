@@ -1,0 +1,76 @@
+{
+  "title": "Joint ridge fits reduced median drift error in two noise-perturbed conditions of one fly graph model",
+  "abstract": "We tested whether large drift errors from a two-condition covariance solver persist with joint ridge fitting. We used one published 75-region FlyWire graph to generate positive linear dynamics. Two designs changed decay or node noise. Ten paired draws per design added 0.1 percent symmetric covariance error. We compared a spectral solver and free or constrained joint fits at three fixed penalties. The joint fits reduced median error in both designs. The two stronger penalties met the stopping rule in all fits. The weakest penalty reached the iteration limit; longer runs changed some scores. The free and constrained procedures also differ in penalty center. The test uses simulated covariances, known noise, full observation and one graph. It does not establish biological recovery or an optimal estimator. Code, scalar scores, a figure, exact source hashes and external regeneration steps support reproduction. External graph records and fitted matrices are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "covariance",
+    "inverse problem",
+    "ridge regression",
+    "FlyWire",
+    "linear dynamics",
+    "numerical sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/results/comparison.png",
+      "caption": "All paired error draws and medians in one fly graph model. Weak-penalty fits at alpha 0.001 reached 5000 iterations. Free and fixed procedures have different penalty centers. Errors are model scores, not animal confidence intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0dcdbdbdcd61bd3567ad85480c815cb1bb02e2f7a121a6def4d899e74824969a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier spectral sensitivity test; we test joint ridge alternatives on its fly benchmark."
+    },
+    {
+      "target": "sci:sha256:b95314a3790d0ce3c78e6040438b3dc3faf84b2ddfd52ed8e3162c9630733a70",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified external graph source and earlier support ambiguity audit."
+    },
+    {
+      "target": "sci:sha256:e7136a698c0d7207f7693b92401c0b648b10f1d18a71be55b1c9a9f05c7df814",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream graph product; no activity arrays used."
+    },
+    {
+      "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original campaign 75-region graph product."
+    },
+    {
+      "target": "doi:10.1137/22M1520311"
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1006056"
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y"
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5"
+    },
+    {
+      "target": "doi:10.5281/zenodo.10676866"
+    },
+    {
+      "target": "doi:10.7554/eLife.85202"
+    },
+    {
+      "target": "https://flywire.ai/guidelines"
+    }
+  ]
+}
