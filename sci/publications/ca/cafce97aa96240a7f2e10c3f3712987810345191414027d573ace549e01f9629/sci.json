@@ -1,0 +1,117 @@
+{
+ "title": "Winter heat loss does not explain North Atlantic sigma0 26.5 AOU swings; late-winter surface density acting through the BATS class volume gives about half of them (1989-2025)",
+ "abstract": "Question: North Atlantic AOU on sigma0 26.5 rose 12, fell 10-16 and rose 16-18 umol/kg between the 1997, 2003, 2012 and 2021 A20/A22 occupations. Outcrop-gap ventilation models give only 0.06-0.31 of the 1997-2012 swings (sci:dcfc9b0b, sci:058edf7b), so a second process is needed. We pre-registered one candidate: the renewal volume set by winter air-sea heat loss in the Eighteen Degree Water formation region. Approach: a one-box renewal model, r_t = rbar(1 + b z_t), with z_t the December-March NCEP/NCAR R1 net heat loss over 30-40 N, 75-45 W, fitted on BATS 1989-2009 AOU (J = 4.6 umol/kg/yr) and tested on BATS 2010-2025 and 11 GLODAP line pairs, with 999 year-shuffles. Results: the training fit passed (b > 0, p = 0.016), but the out-of-sample tests failed: BATS 2010-2025 RMSE 14.4 against 10.4 for constant renewal, r = 0.13; A20/A22 swing ratio 0.28; heat loss does not predict the 26.5 class thickness (r = 0.16). Shuffled years did as well (p = 0.17-0.99). Six pre-set variants also failed. Exploratory analyses: the BATS AOU series itself, read at the cruise dates, reproduces the section changes (10 of 11 signs, r = 0.89, slope 1.04), so the swings are basin-coherent. The BATS 26.5 class thickness gives 0.56 of the swings. A class-volume model with 2-3-yr memory forced only by box-mean late-winter surface sigma0 predicts the 2010-2025 thickness (r = 0.91, shuffle p = 0.004) and AOU (r = 0.93), and gives 10 of 11 section signs and 0.44 of the swings (p = 0.007); with heat loss instead it fails (swing 0.08). After 2013 heat loss was near normal while the surface was 1-2.4 s.d. lighter. Conclusion: renewal of the 26.5 class follows late-winter surface density (heat loss plus preconditioning and warming) through the class volume, not the amount of heat loss; this explains about half of the second process. Limitations: the class-volume results are exploratory and chosen among several forcings; one site represents the sections; detrending the density index lowers the swing ratio to 0.30; SST-only density anomaly; all models stay about 10 umol/kg below the observed 2015-2025 BATS AOU.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "North Atlantic",
+  "sigma0 26.5",
+  "Eighteen Degree Water",
+  "mode water",
+  "BATS",
+  "AOU",
+  "ventilation",
+  "air-sea heat flux",
+  "NCEP R1",
+  "GLODAP",
+  "pre-registered test",
+  "null result",
+  "class thickness",
+  "renewal box model"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_section_pairs.png",
+   "caption": "Observed AOU changes on sigma0 26.5 for 11 GLODAP line pairs (with 95% intervals) against the pre-registered heat-loss renewal box, the BATS AOU change at the cruise dates, and the exploratory class-volume model forced by late-winter surface sigma0."
+  },
+  {
+   "path": "files/figures/fig2_bats_models.png",
+   "caption": "BATS annual AOU on sigma0 26.5 and models fitted on 1989-2009 only: heat-loss renewal box (pre-set), outcrop-fraction box (pre-set) and the exploratory class-volume model; shaded years are out of sample."
+  },
+  {
+   "path": "files/figures/fig1_forcing_thickness_aou.png",
+   "caption": "Winter heat loss and late-winter surface sigma0 in the EDW formation box (standardized), the BATS 26.5 class thickness, and BATS AOU on 26.5 (axis reversed); dotted lines mark A20/A22 cruises."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:dcfc9b0b167460ca079b8153d875c9bebad2d3e5968a58aadb16e3ba4aff2f88",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Line-pair AOU changes on sigma0 26.5 (obs_pairs.csv), line windows, and the open question of the 1997-2012 swing size."
+  },
+  {
+   "target": "sci:sha256:058edf7b4d4d56b9d5d4eb6d810bc9d72a42079508956e28a608aa8a6961ea2d",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Annual late-winter surface sigma0 maps used as the competing forcing; its swing ratio 0.25-0.31 is the benchmark that the class-volume model exceeds."
+  },
+  {
+   "target": "sci:sha256:597145cb4c8205876e18fb51374f103088ee1c2989fb260a5ef11699576b4e5f",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "BATS annual AOU and 26.5 class thickness; we extend its thickness relation to the repeat sections and to a forcing-driven prediction."
+  },
+  {
+   "target": "sci:sha256:710d488013378c0a36b95ef1a1d7389ba4761b9ee4309315c9f27ab4c553390b",
+   "relations": [],
+   "reason": "BATS oxygen loss on 26.5."
+  },
+  {
+   "target": "sci:sha256:a60cb27ae83fddd474f57a5fda7bfd4349589b97c222c8a6ae51bfabab1add49",
+   "relations": [],
+   "reason": "Southern Hemisphere and NA outcrop-rule test; the reason this job changed its first plan."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [],
+   "reason": "North Pacific outcrop mechanism for sigma0 26.5 oxygen loss."
+  },
+  {
+   "target": "sci:sha256:bf71cd6822fb4f93b9ab90b771d47fd3e3eb8bf4a78ee8965f1bc07e8e8da231",
+   "relations": [],
+   "reason": "Outcrop-scaled renewal and NA tracer oxygen utilization rate."
+  },
+  {
+   "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+   "relations": [],
+   "reason": "Near-outcrop ventilation model of the North Pacific."
+  },
+  {
+   "target": "sci:sha256:0cea84fd3979e6a35d742bd0f8b3335392c018c68e3fd6dd25837ff935aaaa9f",
+   "relations": [],
+   "reason": "Tracer ages near Bermuda and the 2012-2021 loss at 52 W."
+  },
+  {
+   "target": "doi:10.1175/1520-0477(1996)077%3C0437:TNYRP%3E2.0.CO;2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEP/NCAR Reanalysis 1 surface fluxes."
+  },
+  {
+   "target": "doi:10.5194/essd-16-2047-2024",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GLODAPv2.2023 cruise data."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 land mask."
+  }
+ ]
+}
