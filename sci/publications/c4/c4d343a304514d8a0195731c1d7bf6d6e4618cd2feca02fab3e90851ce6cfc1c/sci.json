@@ -1,0 +1,128 @@
+{
+ "title": "SST data of January 2021 to September 2026 did not support the AMOC slowing forecast of Ditlevsen and Ditlevsen (2023): the refitted tipping year moved later in six HadISST1 and ERSSTv5 versions",
+ "abstract": "We did an out-of-sample test of the AMOC collapse forecast of Ditlevsen and Ditlevsen (2023, DD23). DD23 fitted a ramped fold model to the monthly subpolar gyre SST minus two times the global mean SST in HadISST1 for 1870-2020. We fitted the same model to 1870-2020 only and scored the 69 new months from January 2021 to September 2026 against the model and against a no-slowing Ornstein-Uhlenbeck null with the same mean shape. We used six fingerprint versions from HadISST1 and ERSSTv5. Our primary HadISST1 fit replicates DD23 (ramp start 1922, tipping year 2055.7). In the new months, the log likelihood ratio of the DD23 model against the null was -1.19 (expected +0.33 if the model is true; 5.9% of model simulations were this low), and it was negative in 5 of 6 versions. After we added the new months, the tipping year moved later in all six versions: from 2055.7 to 2066.4 in the primary version, later than 97% of refits of data simulated from the DD23 model. The shifts were +4 to +16 years in HadISST1 and +31 and +51 years in ERSSTv5. The fingerprint stopped falling because the subpolar gyre warmed in 2021-2024. The low month-to-month persistence of HadISST1 after 2020 (lag-1 autocorrelation 0.54) is not in ERSSTv5 (0.77) or OISST (0.69), so part of the HadISST1 shift is a product effect. The new data do not reject the model at a strict level: if the DD23 model is true, 10:1 evidence is expected in half of the cases by about 2031, and if the null is true, by about 2038. The fitted model also puts 83% of noise-induced collapses before its deterministic tipping year (median 2045.6). Limitations: a short test period, an approximate replication without the DD23 penalty, one choice of null model, and no test of whether the fingerprint represents the AMOC.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "AMOC",
+  "tipping point",
+  "early warning",
+  "critical slowing down",
+  "subpolar gyre",
+  "sea surface temperature",
+  "HadISST",
+  "ERSSTv5",
+  "OISST",
+  "forward test",
+  "out-of-sample",
+  "fold bifurcation",
+  "Ornstein-Uhlenbeck",
+  "Ditlevsen"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_fingerprint_forecast.png",
+   "caption": "a: Annual SG - 2xGM fingerprint (HadISST1, ERSSTv5; area-weighted, ice-free) with the mean of the DD23 model fitted to 1870-2020. b: Monthly HadISST1 fingerprint 2011-2026 with 90% forecast ranges issued from December 2020 by the DD23 model (blue) and the no-slowing null (orange)."
+  },
+  {
+   "path": "files/figures/fig3_tipping_refit.png",
+   "caption": "Change of the DD23 tipping-year estimate when the January 2021 to September 2026 months are added (t0 fixed), with the changes expected if the DD23 model (blue) or the no-slowing null (orange) is true (50% and 95% ranges from 300 simulations each)."
+  },
+  {
+   "path": "files/figures/fig2_forward_scores.png",
+   "caption": "a: Log likelihood ratio of the DD23 model against the null for the new months, with sampling distributions under each model. b: Share of DD23 forecast paths below the observed 2021-2026 mean, variance and lag-1 autocorrelation."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41467-023-39810-w",
+   "relations": [
+    "reviews",
+    "challenges",
+    "uses"
+   ],
+   "reason": "DD23 model, fingerprint and forecast that we test out of sample."
+  },
+  {
+   "target": "doi:10.1038/s41467-025-63201-y",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Author correction of DD23 (revised interval)."
+  },
+  {
+   "target": "doi:10.1126/sciadv.adl4841",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Dataset and fingerprint sensitivity of DD23; our forward test adds post-2020 data."
+  },
+  {
+   "target": "https://arxiv.org/abs/2604.20341",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Critique of DD23 implementation (area weighting, ice cells); no forward SST test."
+  },
+  {
+   "target": "doi:10.1038/s41586-018-0006-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Subpolar gyre region grid and SG - GM fingerprint."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadISST1 data."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERSSTv5 data."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OISST v2.1 data for the product check."
+  },
+  {
+   "target": "https://pik-potsdam.de/~caesar/AMOC_slowdown/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of sg_grid.txt."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: SST products contain steps; we find a HadISST1-specific change in monthly persistence after 2020."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Campaign result on SST product artefacts that can look like climate signals."
+  }
+ ]
+}
