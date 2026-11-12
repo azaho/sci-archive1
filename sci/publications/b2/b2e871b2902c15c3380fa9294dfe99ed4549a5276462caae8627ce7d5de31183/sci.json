@@ -1,0 +1,129 @@
+{
+ "title": "In 53 epilepsy patients, group tractography did not improve held-out prediction of interictal iEEG coupling beyond distance and channel effects, but group fMRI FC added 0.012 R²",
+ "abstract": "Question: does group diffusion-MRI wiring predict resting human iEEG coupling between channel pairs after geometry and per-channel effects, and is any gain specific to the real wiring? This separates two explanations of earlier campaign results (no wiring signal in fMRI FC; a small specific signal in causal CCEP responses). Data: OpenNeuro ds004100 v1.1.3 (HUP, CC0), two separate 300-s interictal clips in each of 53 patients (35 SEEG, 18 ECoG); 3,095 grey-matter bipolar channels outside seizure-onset and resection zones; 98,543 pairs. Wiring: HCP group connectome (ENIGMA, Schaefer-400). Method: plan hashed before analysis; orthogonalised amplitude envelope correlation (AEC-orth, primary), wPLI and coherence in six bands; within-patient ridge models fitted on one clip and scored on held-out pairs of the other clip; 20 degree/length-preserving and 20 distance-bin surrogate connectomes. Results: the pre-registered test failed. Direct wiring changed held-out R² by -0.0021 (95% CI -0.0049 to +0.0002); no band, measure or robustness variant gave a positive gain. Post hoc, with rank-normalised coupling, geometry and channel effects gave R² 0.13 (cross-clip) and 0.32 (same clip), and wiring still added about zero (-0.0009; +0.0004). Real wiring beat all surrogates and row-permuted wiring by 0.002-0.003 R² (CI excludes 0), about the cost of fitting two columns and about 1% of the reliable pair-specific coupling. Group fMRI FC added +0.012 R², above all distance-matched shuffles. Limitations: group wiring, coarse parcels, 300-s clips, epilepsy patients; the informative rank-normalised tests are post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "intracranial EEG",
+  "SEEG",
+  "ECoG",
+  "functional connectivity",
+  "amplitude envelope correlation",
+  "structural connectome",
+  "tractography",
+  "structure-function coupling",
+  "surrogate connectome",
+  "human cortex",
+  "pre-registered",
+  "null result",
+  "OpenNeuro ds004100",
+  "HCP"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_primary_wiring_gain.png",
+   "caption": "Gain in held-out R² (x 1000) from direct wiring after geometry and channel effects, AEC-orth, per band and band mean, 53 patients. Blue: real wiring with 95% patient-bootstrap CI. Grey: 20 rewired connectomes. Yellow: 20 distance-bin shuffles. Red crosses: row-permuted real wiring. A: pre-registered raw cross-clip score. B: post hoc rank-normalised cross-clip score."
+  },
+  {
+   "path": "files/figures/fig1_data_reliability_ladder.png",
+   "caption": "A: raw AEC-orth against distance for pairs with and without a direct tract. B: clip-to-clip reliability of pair coupling, raw and after geometry and channel effects. C: held-out R² of the model ladder in three scoring schemes."
+  },
+  {
+   "path": "files/figures/fig3_robustness.png",
+   "caption": "Direct-wiring gains in all pre-registered and post hoc variants, real-minus-permuted gains and the group fMRI FC comparator (x 1000 held-out R², 95% CI); grey bar = largest surrogate or shuffle gain."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8811ade999bbc79753c0cf99f6706a50446d90e4c6b3554be6a6795dcd1e525c",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "CCEP test of group tractography with the same connectome, surrogate code (features.py, unchanged) and design; we compare its small specific gain with resting iEEG coupling."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found almost no pair-specific wiring signal in FC after node controls; our iEEG result agrees in electrophysiology."
+  },
+  {
+   "target": "sci:sha256:fe1e4c153ab8c71e54b32061255f4d7b64a20d4f9d440a8d1432fbf6e7ddbf95",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Calibrated surrogate tests; human wiring gains did not exceed geometry-only gains; our result is consistent."
+  },
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "reason": "Multi-step communication measures add little FC variance beyond direct wiring and geometry; we test the same measures on iEEG."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "reason": "Earlier strength- and distance-matched surrogate wiring test of FC."
+  },
+  {
+   "target": "sci:sha256:84905fb5f8fd0233fb8cb474287acd56fbb78c5c7b53150a724e4abe9469a4b8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP ds004100 run-01 metadata, EDF reader and bipolar-channel rule."
+  },
+  {
+   "target": "sci:sha256:5f516e128053ec245f8680f795530819eb82034cfb89401b29b2f2ebe0c0abf1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP ds004100 run-02 data in the shared store, run-02 metadata and the SOZ label-union rule."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004100.v1.1.3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP iEEG Epilepsy Dataset (CC0): interictal EDF files and BIDS metadata."
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01186-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ENIGMA toolbox: HCP group structural and functional connectivity matrices and fsaverage5 files."
+  },
+  {
+   "target": "doi:10.1093/cercor/bhx179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Schaefer 2018 parcellation."
+  },
+  {
+   "target": "doi:10.1038/nature18933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Glasser-360 parcellation (robustness run)."
+  },
+  {
+   "target": "doi:10.1038/nn.3233",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hipp et al. 2012: orthogonalised amplitude envelope correlation."
+  },
+  {
+   "target": "doi:10.1038/s41551-019-0404-5",
+   "reason": "Betzel et al. 2019: structural, geometric and genetic predictors of ECoG connectivity (no per-channel effects or geometry-matched surrogates)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2023.01.027",
+   "reason": "Seguin et al. 2023: connectome communication models of stimulation-evoked propagation."
+  }
+ ]
+}
