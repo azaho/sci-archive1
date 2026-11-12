@@ -1,0 +1,157 @@
+{
+ "title": "In 20 resting flies, the FlyWire sensory hierarchy of 67 brain regions did not predict their activity timescales; apparent effects depended on the estimator and on small, noisy central-complex regions",
+ "abstract": "Question: in primate cortex, areas higher in the anatomical hierarchy have longer intrinsic timescales. The campaign record tested this in mouse cortex (null), C. elegans (opposite sign when moving) and larval zebrafish (null), but not in the adult fly. Data: resting two-photon GCaMP6s imaging of 20 flies (Turner, Mann and Clandinin 2021, MIT license; 67 Ito atlas regions, 1.2 Hz) and the FlyWire v783 connectome. Primary hierarchy measure (pre-specified): synapse-weighted sensory distance of the neurons that receive input in each neuropil (backward input-weighted walk to sensory neurons). Primary timescale: exponential fit to the autocorrelation (lags 0.8-30 s) of the high-pass filtered region signal. Results: the primary test was null (Spearman rho 0.07, fly-bootstrap 95% CI -0.22 to 0.32, spatial-surrogate p 0.54; 11 of 20 flies with rho > 0). Other estimators gave different signs: linear detrend rho +0.37, global-signal regression -0.26, integral timescale -0.31. Spectra were consistent over flies: higher regions had less 25-100 s power (rho -0.46, 0 of 20 flies > 0) and more 1.7-7 s power (rho +0.45). But higher regions are smaller (rho -0.31 with voxel count) and small regions are noisier (rho -0.75); with size and brightness control and without the central complex, no relation remained (all |partial rho| <= 0.21). Hemibrain region trophic level gave rho 0.03 (p 0.89). In 368 hemibrain supervoxels a weak positive trend (rho 0.23, spatial p 0.064) was absent inside parent regions (rho 0.06). Conclusion: no evidence that higher fly regions have longer timescales. Limitations: region-mean pan-neuronal signals, no behaviour data, low reliability of the primary map (split-half 0.31), size confound, connectome and activity from different flies.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "intrinsic timescale",
+  "autocorrelation",
+  "hierarchy",
+  "trophic level",
+  "FlyWire",
+  "hemibrain",
+  "whole-brain calcium imaging",
+  "structure-function",
+  "spatial null model",
+  "brainsmash",
+  "signal-to-noise confound",
+  "null result",
+  "cross-species",
+  "central complex",
+  "power spectrum"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_primary_scatter.png",
+   "caption": "Region activity timescale (median over 20 flies, log scale) against FlyWire sensory distance of inputs (L_in) for 67 regions. A: pre-specified primary estimator (high-pass 0.01 Hz, exponential fit), no relation. B: after global-signal regression, a weak negative relation. C: single-fly rho for the primary test (11 of 20 above zero)."
+  },
+  {
+   "path": "files/figures/fig3_spectral_and_size.png",
+   "caption": "A: Spearman rho between L_in and relative band power, raw and with the white-noise floor removed; labels give the number of flies with rho > 0. B: regions high in the hierarchy (central complex) are small. C: small regions have a larger white-noise share of power, which can produce apparent fast dynamics."
+  },
+  {
+   "path": "files/figures/fig4_robustness.png",
+   "caption": "Raw (open) and partial (filled; control for log voxel count and log mean fluorescence) Spearman rho with L_in for timescale and spectral measures, for all 67 regions and for 59 regions without the central complex. No partial relation remains without the central complex."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.6084/m9.figshare.13349282.v3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the resting fly brain imaging region signals, atlas masks and hemibrain region/supervoxel connectivity (MIT license)."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2021.03.004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Paper describing the Turner, Mann and Clandinin data and preprocessing (trimming and filter parameters reused)."
+  },
+  {
+   "target": "https://github.com/mhturner/SC-FC",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Authors' code consulted for region index mapping, trimming and the direction of the connectivity matrices."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections used for the hierarchy measures (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell classification (super_class) used to define sensory neurons."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain connectome underlying the Turner et al. connectivity matrices."
+  },
+  {
+   "target": "doi:10.1038/nn.3862",
+   "reason": "Primate hierarchy of intrinsic timescales that motivates the test."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2015.09.008",
+   "reason": "Model linking timescales to the anatomical hierarchy."
+  },
+  {
+   "target": "doi:10.1098/rsos.201138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Improved trophic level definition."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117038",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Variogram-matched spatial surrogate maps (brainsmash)."
+  },
+  {
+   "target": "doi:10.7554/eLife.85202",
+   "reason": "Aimon et al. light-field fly data, checked but not accessible without a Dryad token."
+  },
+  {
+   "target": "doi:10.1038/s41467-023-41261-2",
+   "reason": "Schaffer et al. SCAPE fly data, checked but lack atlas registration."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mouse cortex: hierarchy did not reliably predict timescales; the fly result is also null."
+  },
+  {
+   "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Larval zebrafish: projectome hierarchy did not predict timescales; the fly result agrees."
+  },
+  {
+   "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+   "reason": "C. elegans: shorter timescales at higher trophic level off food; in the fly an apparent faster-higher pattern follows region size and the central complex."
+  },
+  {
+   "target": "sci:sha256:7a4063e456cac2ca403bb7c568f8835a3defad1335986b0de2b55fa474a1f8fc",
+   "reason": "Zebrafish input count vs timescale null, with a signal-fraction caveat similar to our size confound."
+  },
+  {
+   "target": "sci:sha256:18faea2c651436cf33c5c5d2fcdaeffea5c7768b1789a182b73bf164d3c5b232",
+   "reason": "MICrONS in-degree vs timescale link followed signal fraction, a related signal-quality confound."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "reason": "Earlier campaign use of the same Turner data, for functional connectivity."
+  },
+  {
+   "target": "sci:sha256:dcf79d60c2a2b5c231b8c34e4f8b29192c38e406e6c6946bf4a8e913edcf8811",
+   "reason": "Earlier campaign FlyWire-to-region mapping (IVLP_L to WED_L) and fly whole-brain FC work."
+  }
+ ]
+}
