@@ -1,0 +1,88 @@
+{
+ "title": "Water-level changes at 22 large California reservoirs did not change the local share of small earthquakes in 1990-2025; the pooled effect is less than about 10% per 10 m",
+ "abstract": "We tested if reservoir loads change local seismicity at 22 large California reservoirs (CDEC daily elevation, level ranges 15-73 m) in 1990-2025. We counted declustered USGS ComCat earthquakes of M 1.5 or more within 10 km of each reservoir and in a 20-40 km control ring. A conditional logistic model with reservoir effects related the near-zone share to the level anomaly, the monthly level change, lagged anomalies and the seasonal cycle. A permutation null shifted each level series by whole years. With 1,795 near-zone and 7,469 control events, the odds ratio was 0.991 per 10 m of level anomaly (bootstrap 95% interval 0.936-1.052, p = 0.85) and 0.872 per 10 m/month of level change (0.766-1.003, p = 0.17). Lags of 1-12 months and the seasonal cycle gave no effect. An any-sign test of per-reservoir slopes was null for all covariates. Injection tests give 80-86% power for an odds ratio of 1.10 or 1/1.10 per 10 m, so pooled effects of 10% or more per 10 m are unlikely; effects near 5% are not excluded. Eight sensitivity variants agreed. San Luis Reservoir showed a lower near-zone share in fast-filling months (p = 0.001), but this did not replicate in 1990-2007. A first run kept CDEC -9999 values and gave a false lag signal; corrected quality control removed it. Limitations: few events at most reservoirs, changing magnitude completeness, approximate shorelines, no Coulomb-stress or focal-mechanism model, and no first-filling cases. CDEC level series are not bundled; scripts regenerate them.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "reservoir-triggered seismicity",
+  "California",
+  "reservoir water level",
+  "drought",
+  "hydrological loading",
+  "ComCat",
+  "CDEC",
+  "permutation test",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_binned.png",
+   "caption": "Observed / expected near-zone earthquakes (declustered M 1.5 or more, 10 km or less) by reservoir level anomaly, all 22 reservoirs, 1990-2025. Expected values use the mean share of each reservoir."
+  },
+  {
+   "path": "files/figures/fig1_forest.png",
+   "caption": "Per-reservoir odds ratios of the near-zone share per 10 m of level anomaly (left) and per 10 m/month of level change (right), with 95% year-shift null bands; pooled estimate with reservoir bootstrap interval at the bottom."
+  },
+  {
+   "path": "files/figures/fig4_sensitivity.png",
+   "caption": "Pooled odds ratios in the primary analysis and the sensitivity variants for the level anomaly, the monthly level change and the 6-month lag."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1785/BSSA0780062025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Simpson et al. 1988: rapid and delayed types of reservoir-induced seismicity; basis of the level, rate and lag hypotheses."
+  },
+  {
+   "target": "doi:10.1126/science.aak9547",
+   "reason": "Johnson, Fu and Burgmann 2017: regional seasonal hydrological loading modulates California seismicity. Our test is local to reservoirs and controls the seasonal cycle."
+  },
+  {
+   "target": "doi:10.1785/BSSA0640051363",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gardner and Knopoff 1974 declustering windows."
+  },
+  {
+   "target": "sci:sha256:7184e3ca8e705c7f1821efa1d5a15e4c4783218097677a59a269fcc8859179c1",
+   "reason": "Campaign test of GRACE seasonal water load and earthquake timing (weak, not replicated). Our test uses local reservoir loads."
+  },
+  {
+   "target": "sci:sha256:3a9efb99ba32f6796260be8d434434bb7c2140aab8360b039f7ef010c8066a5b",
+   "reason": "Campaign test of monthly GRACE load and M 5+ land earthquake rates (null). Our test uses much smaller events and local loads."
+  },
+  {
+   "target": "sci:sha256:b02ed6c0066c649129c294b53d431ebdd06e36823d857fc4db843fea33cadf0c",
+   "reason": "Campaign test of seasonal earthquake peaks at western US volcanic areas; related hydrological-trigger question."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ANSS ComCat, retrieved 2026-11-12; queries in files/code/fetch_comcat.py, hashes in files/provenance/raw_input_sha256.txt."
+  },
+  {
+   "target": "https://cdec.water.ca.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "California DWR CDEC daily reservoir elevation (sensor 6), retrieved 2026-11-12; not redistributed."
+  },
+  {
+   "target": "https://watersgeo.epa.gov/arcgis/rest/services/NHDPlus/NHDPlus/MapServer",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NHDPlus V2 waterbody polygons for reservoir shorelines (public domain)."
+  }
+ ]
+}
