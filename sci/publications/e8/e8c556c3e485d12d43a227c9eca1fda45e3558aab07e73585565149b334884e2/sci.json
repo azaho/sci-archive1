@@ -1,0 +1,108 @@
+{
+ "title": "A fly whole-brain spiking model built from BANC or the male CNS keeps the validated sugar-to-MN9 and grooming predictions, not the bitter-versus-Ir94e difference; BANC loses screen accuracy",
+ "abstract": "Question: do the experimentally validated predictions of the Shiu et al. 2024 whole-brain leaky integrate-and-fire model of the fly (built from FlyWire) stay correct when the same model is built from two other adult fly connectomes? Approach: we used our validated re-implementation of the model, built it from FlyWire v783, BANC v888 and the male CNS v1.0 with raw synapse counts, a global gain matched to FlyWire input synapse counts (BANC x1.69, male CNS x0.57) or a per-cell-type gain, and scored it against the published experiments: an optogenetic screen of 106 feeding-region cell types, nine taste-interaction results, Johnston's-organ input to the aBN1 grooming neuron and ten named sugar-pathway neurons. Results: our FlyWire model reproduced the published MN9 rates (r = 0.997). Screen AUROC at 50 Hz was 0.84 in FlyWire, 0.79 in the male CNS (difference -0.05, p = 0.054) and 0.62-0.72 in BANC (p = 0.004-0.046); true positives 9, 8 and 3-6 of 13. Sugar input drove the contralateral MN9 more than the ipsilateral MN9, JO-CE but not JO-F input drove aBN1, and 8-9 of 10 named neurons responded as observed in all maps without runaway activity. The bitter-versus-Ir94e difference (bitter abolishes the response to strong sugar, Ir94e does not) did not transfer: bitter suppression was too weak in BANC (0.56-0.59 vs 0.07 in FlyWire, through the same inhibitory cell types) and both inputs abolished it in the brain-only male CNS. Side-specific incomplete sensory axons and runaway loops in the nerve cord and antennal lobe limited transfer. Limitations: model results only, three individuals of two sexes and three reconstruction methods, so biological and technical differences are not separated; sugar and water neurons outside FlyWire were assigned by connectivity.",
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "FlyWire",
+  "BANC",
+  "male CNS",
+  "leaky integrate-and-fire",
+  "whole-brain model",
+  "model validation",
+  "proboscis extension",
+  "taste",
+  "grooming",
+  "individual variability",
+  "reproducibility"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_sez_screen.png",
+   "caption": "SEZ activation screen. A: AUROC of predicted MN9 rate against observed rostrum extension (Shiu et al. 2024 Supplementary Table 3) per map and weight calibration, 95% bootstrap CI. B: predicted MN9 rate at 50 Hz for the types with observed extension (observed fraction in brackets) and for repeated false positives; * marks runaway activity."
+  },
+  {
+   "path": "files/figures/fig2_taste_checks.png",
+   "caption": "Validated taste predictions. A: contralateral MN9 rate against sugar-neuron input. B: MN9 response to strong sugar with bitter or Ir94e co-activation, relative to sugar alone. C: pass, fail, runaway or NA for nine taste checks per map and calibration."
+  },
+  {
+   "path": "files/figures/fig3_grooming.png",
+   "caption": "Grooming circuit. Ipsilateral aBN1 rate for JO-CE (A) and JO-F (B) activation in each map and calibration; open rings mark runaway activity. In experiments JO-CE activates aBN1 and JO-F does not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Our earlier FlyWire-vs-BANC test of the same model with weak stimuli; we reuse its validated numba model and graph builder and add experimental ground truth and the male CNS."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07763-9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the LIF model, FlyWire weights, stimulus neuron lists and the experimental results we test in other connectomes."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC v888 connectome metadata and edge list (version 3.0, CC BY 4.0)."
+  },
+  {
+   "target": "https://male-cns.janelia.org",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 connectome, annotations and transmitter predictions (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome (v783)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and Supplemental file 1 annotations."
+  },
+  {
+   "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+   "reason": "Homologous synapse counts vary more than Poisson between fly connectomes."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Synapse-count variability across worm and fly connectomes."
+  },
+  {
+   "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+   "reason": "Repeated count differences are specific to one fly map."
+  },
+  {
+   "target": "sci:sha256:be6312d7fa467eacf1df8db848a31f88255c6bcd24d08d34076291bdaedb8b65",
+   "reason": "Strong-connection count differences are specific to each fly map."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "Signed-wiring visual predictions transfer from FlyWire to the male CNS; a related cross-connectome validation."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "reason": "Head-direction ring model holds in the male CNS; related cross-connectome model test."
+  }
+ ]
+}

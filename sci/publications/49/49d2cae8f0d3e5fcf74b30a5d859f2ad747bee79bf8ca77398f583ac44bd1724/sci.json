@@ -1,0 +1,99 @@
+{
+ "title": "Human iEEG 30-50 Hz exponent followed a GABA-A PET map in two pre-registered clips (55-56 patients), but mesial temporal channels carried most of the link and a second GABA-A map did not repeat it",
+ "abstract": "Question: does the aperiodic exponent (chi) of human cortical field potentials, a proposed marker of excitation:inhibition (E:I) balance, follow regional GABA-A and glutamate receptor density? Data: OpenNeuro ds004100 (HUP iEEG, CC0), two 300-s interictal clips; 2,540 and 2,586 bipolar cortical channels outside seizure-onset and resected tissue in 55 and 56 patients; neuromaps PET maps (flumazenil GABA-A, Norgaard 2021, primary; NMDA; mGluR5; GABA-A alpha5; a second flumazenil map). Method: 30-50 Hz log-log slope; patient fixed effects; patient-cluster bootstrap; 1,000-rotation spin tests; plan hashed before analysis, clip 2 as replication. Results: chi rose with GABA-A density in both clips (+0.144 and +0.137 per SD; CIs +0.07 to +0.21; p_spin 0.002). An E:I index (GABA-A minus glutamate) and a T1w/T2w-adjusted model also passed. Other exponent fits agreed. NMDA and mGluR5 maps alone gave no relation. But the second flumazenil map gave no relation (+0.006, +0.018), and the alpha5 map gave the opposite sign. Post hoc, the link was only in inferior channels; superior channels gave -0.06 and -0.03. The 10% of channels with the lowest GABA-A density, mostly mesial inferior temporal, carried most of it: without them the slope was +0.04 (p_spin 0.12-0.16). Spatial-trend, seizure-onset-distance and T1w/T2w-thickness controls did not remove the full-sample slope. Conclusion: the pre-registered prediction passed, but the data do not show a cortex-wide receptor-graded E:I rule; a mesial temporal contrast explains most of the link. Limitations: epilepsy patients; same patients in both clips; template positions; map-dependent result; post hoc localisation.",
+ "keywords": [
+  "intracranial EEG",
+  "aperiodic exponent",
+  "excitation-inhibition balance",
+  "GABA-A receptor",
+  "NMDA receptor",
+  "mGluR5",
+  "PET receptor maps",
+  "neuromaps",
+  "spin test",
+  "pre-registered replication",
+  "structure-function",
+  "human cortex",
+  "OpenNeuro ds004100",
+  "mesial temporal cortex"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_primary.png",
+   "caption": "A: pre-registered slopes of the 30-50 Hz exponent per SD of GABA-A density, E:I index and GABA-A with a T1w/T2w covariate (blue run-01, orange run-02; grey = 95% spin-null range). B: per-patient Spearman correlations. C: patient-centred exponent in deciles of GABA-A density; the lowest decile carries most of the link."
+  },
+  {
+   "path": "files/figures/fig5_posthoc.png",
+   "caption": "Post hoc checks: spatial-trend, seizure-onset-distance, T1w/T2w-thickness and other-map controls keep the slope; removal of the lowest-density decile reduces it to about +0.04; the slope is in inferior (mostly medial) channels, not superior channels."
+  },
+  {
+   "path": "files/figures/fig2_maps_outcomes.png",
+   "caption": "A: slopes for each receptor and control map in both clips; only maps built from the Norgaard GABA-A map pass with the predicted sign; the Dukart flumazenil map gives no relation and GABA-A alpha5 the opposite sign. B: other spectral outcomes agree."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5f516e128053ec245f8680f795530819eb82034cfb89401b29b2f2ebe0c0abf1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP run-02 timescale replication; we reuse its spectral code, metadata, channel rules and knee-model exponent tables."
+  },
+  {
+   "target": "sci:sha256:84905fb5f8fd0233fb8cb474287acd56fbb78c5c7b53150a724e4abe9469a4b8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP run-01 timescale study; source of the spectral, mapping and spin-test code; its exponent did not follow T1w/T2w, as here."
+  },
+  {
+   "target": "sci:sha256:36eebd98288e6bfd1086b2b99ae3c4fc186bfa53fa74f7580eb57c4e2ab00b6a",
+   "reason": "Mouse brain-wide test where geometry and divisions explained a map-physiology link; similar localisation risk here."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004100.v1.1.3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP iEEG Epilepsy Dataset (CC0), interictal run-01 and run-02 recordings and metadata."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2017.06.078",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Gao, Peterson and Voytek 2017: the E:I reading of the 30-50 Hz exponent that we test."
+  },
+  {
+   "target": "doi:10.1038/s41593-022-01186-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hansen et al. 2022 receptor PET atlas (NMDA and mGluR5 maps as distributed by neuromaps)."
+  },
+  {
+   "target": "doi:10.1038/s41592-022-01625-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "neuromaps 0.0.7: map distribution, Norgaard 2021, Dukart 2018 and Lukow 2022 PET maps, fsLR/fsaverage templates."
+  },
+  {
+   "target": "doi:10.1038/nature18933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HCP S1200 T1w/T2w and thickness maps (control maps)."
+  }
+ ]
+}

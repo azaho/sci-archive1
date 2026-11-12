@@ -1,0 +1,122 @@
+{
+ "title": "Fly whole-brain spiking models from FlyWire and the male CNS agree on 8 of 12 SEZ groups that drive the proboscis motor neuron MN9, but sugar-to-MN9 drive changes between brain sides and flies",
+ "abstract": "Correction: supersedes sci:sha256:3820a2c8 to cite the overlapping sibling result sci:sha256:34240293; results unchanged. Question: do the published sensorimotor predictions of the Shiu et al. 2024 whole-brain fly LIF model stay the same when the other brain side is stimulated, and when the model is built from a second connectome (male CNS v1.0, FIB-SEM)? Approach: we re-implemented the model in numba (neuron-level r = 0.9996 against the official Brian2 code, equal to run-to-run noise), built it from FlyWire v783 and the male CNS brain (weight per synapse calibrated by the 1.80-fold higher input synapse count of matched types), and stimulated complete sensory type populations at 150 Hz and 99 named SEZ neuron groups at 100 Hz. Read-out: proboscis motor neuron MN9 and type-level response maps. Results: 8 of the 12 SEZ groups that drive MN9 in either map drive it in both (roundup, diatom, Fdg, G2N-1, bract, clavicle, sink_sync, kitty), with male CNS rates about 0.31 times FlyWire rates. Sugar GRN drive of MN9 changed between sides and flies: FlyWire left 72 Hz, right 1.1 Hz with olfactory ignition in 20 of 20 trials; male CNS 16 Hz on one side and 0.7 Hz on the other. FlyWire right sugar GRNs have 34% of the left output synapses; scaling their outputs to the left total raised MN9 from 1.5 to 45 Hz. Bitter input stopped sugar-driven MN9 in both maps. For 9 sensory inputs that stayed sparse, the overlap of active cell types was 0.97 between trial halves, 0.46 between sides and 0.30 between maps (Spearman 0.26 vs 0.44-0.55, p = 0.012; Jaccard p = 0.074), which repeats sci:sha256:7d2472fd with a third map and full populations. All ORN inputs ignited a global state in both maps; known transmitter signs stopped the FlyWire gustatory ignitions but not the ORN ignition. Without weight calibration the male CNS model ignited globally from 2 neurons. Conclusion: predictions one to two synapses upstream of MN9 mostly transfer between flies; sensory-to-motor predictions depend on input synapse totals, transmitter labels and weight scale, so both sides and a second map should be run. Limitations: model results only; two flies differ in sex and method; one global weight calibration; 12-20 trials; low power for the sparse-regime test.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "FlyWire",
+  "male CNS",
+  "leaky integrate-and-fire",
+  "whole-brain model",
+  "MN9",
+  "proboscis extension",
+  "gustatory receptor neurons",
+  "reproducibility",
+  "individual variability",
+  "model validation",
+  "Brian2"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_mn9_sugar_bitter.png",
+   "caption": "MN9 rate against sugar GRN input (A) and with added bitter input (B), for each brain side in the FlyWire and male CNS models."
+  },
+  {
+   "path": "files/figures/fig2_sez_groups_mn9.png",
+   "caption": "MN9 rate when each of 99 named SEZ groups of Shiu et al. is stimulated, FlyWire vs male CNS model; 8 of 12 MN9-driving groups are common."
+  },
+  {
+   "path": "files/figures/fig3_agreement_tiers.png",
+   "caption": "Jaccard overlap of active cell types per sensory input: trial halves, left vs right within each map, and FlyWire vs male CNS."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:3820a2c88d33b5bd58618e4dc1d2168bef13c4daec6927b9ba6bac2d3c1c992f",
+   "relations": [
+    "supersedes"
+   ],
+   "reason": "First version of this publication; it did not cite sci:sha256:34240293."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07763-9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Shiu et al. 2024 whole-brain LIF model, parameters, sugar/bitter/SEZ predictions and FlyWire inputs that we test."
+  },
+  {
+   "target": "sci:sha256:34240293be2875909e543b5c7111c440630cffa6ec0f2330244cddb27956b272",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent sibling test of sensory-to-MN9 predictions in FlyWire and the male CNS; our MN9 type, side and calibration results agree with it."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "FlyWire vs BANC test of the same model; we repeat its main agreement result with a third map and full sensory populations and use its Brian2-matching details."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 connectome (Janelia FlyEM)."
+  },
+  {
+   "target": "https://male-cns.janelia.org/download/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 flat-connectome downloads."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and annotations."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 connection table used to check the Shiu connectivity file."
+  },
+  {
+   "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+   "reason": "Synapse-count variability between fly connectomes."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Synapse-count variability in worm and fly connectomes."
+  },
+  {
+   "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+   "reason": "Map-specific synapse-count differences."
+  },
+  {
+   "target": "sci:sha256:be6312d7fa467eacf1df8db848a31f88255c6bcd24d08d34076291bdaedb8b65",
+   "reason": "Map-specific differences of strong connections."
+  }
+ ]
+}
