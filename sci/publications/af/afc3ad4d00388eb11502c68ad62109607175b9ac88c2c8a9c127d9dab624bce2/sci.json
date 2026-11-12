@@ -1,0 +1,91 @@
+{
+ "title": "TNOs found after May 2025 do not confirm or refute the 80-400 au Kuiper-belt warp; the result changes with the resonance screen, and exact tests give the original 46-object warp p = 0.035",
+ "abstract": "Question: Siraj, Chyba and Tremaine (2025) found that the mean plane of 46 non-resonant trans-Neptunian objects (TNOs) at 80-400 au is about 15 degrees from the invariable plane (2.74 sigma, JPL SBDB of 2025-05-14). Do TNOs found later agree? Method: We reproduced their conditional von Mises likelihood from the 2026-11-12 SBDB, computed exact p-values by simulation with fixed object positions, and screened 25 new 80-400 au TNOs (first seen June 2025 to April 2026) for Neptune resonances with SBDynT. We compared the claimed warp plane and the invariable plane on the new objects with a likelihood ratio, calibrated by 4,000 conditional simulations per plane. Results: The reproduction gives 2.71 sigma (i0 = 13.3 deg, node 118 deg). The exact p-value is 0.035, and 0.082 for the three bins tested. Two high-inclination objects carry most of the signal. A two-component inclination model gives the same result. The new objects do not settle the question. With a strict screen (no resonant clone; 14 objects), they favour the warp (p = 0.018 against the invariable plane; combined 3.4 sigma). With the same best-fit screen for all objects (19 objects) or no screen (25), they favour the invariable plane (p = 0.039 and 0.017 against the warp; combined 2.1 sigma). Five 2025 objects with JPL covariances cause the difference: the strict screen removes them because some clones are resonant, while 2026 MPC-only orbits get only a best-fit check. Simulations show that about 100 new non-resonant objects give a 3-sigma test in either direction. Limitations: most new orbits have 62-133 day arcs, so their bins and resonance classes are uncertain; we used 30 clones, not 90; we did not rescreen the older objects or the 50-80 au bin. Job sci-1107-dell-astronomy-aaca6ad74c21, machine dell, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "Kuiper belt",
+  "trans-Neptunian objects",
+  "mean plane",
+  "warp",
+  "invariable plane",
+  "Planet Y",
+  "unseen planet",
+  "resonance screen",
+  "SBDynT",
+  "JPL SBDB",
+  "forward test",
+  "replication",
+  "von Mises",
+  "conditional likelihood",
+  "Rubin LSST"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_meanplane_pq.png",
+   "caption": "Mean plane of non-resonant 80-400 au TNOs in (q0, p0) = sin(i0/2)(cos, sin) node0. Blue: the 46 objects of Siraj et al. (2025). Orange: TNOs found after May 2025 under three resonance screens (A strict, B best-fit, C none). Green: combined. Solid and dashed lines are the 68 % and 95 % likelihood regions; black X is the invariable plane. The new objects move the combined fit toward the warp under screen A and toward the invariable plane under screens B and C."
+  },
+  {
+   "path": "files/figures/fig2_forward_test.png",
+   "caption": "Forward test. Grey: simulated log-likelihood ratio Lambda (warp plane minus invariable plane) when the invariable plane is true; blue: when the Siraj et al. (2025) warp plane is true. Positions of the new objects are fixed. Orange line: observed value. Screen A favours the warp; screens B and C favour the invariable plane."
+  },
+  {
+   "path": "files/figures/fig3_per_object.png",
+   "caption": "Per-object log-likelihood ratio (gamma = 15) against ecliptic longitude. Positive values favour the warp plane. Open squares: five 2025 objects with JPL covariances that the strict screen removes because some clones are resonant; they favour the invariable plane. Filled circles: 2026 MPC-only orbits that pass the strict screen."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1093/mnrasl/slaf091",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the warp claim, the likelihood method, the sample cuts and Table 1. We reproduce and test it."
+  },
+  {
+   "target": "https://arxiv.org/abs/2508.14156",
+   "relations": [
+    "uses"
+   ],
+   "reason": "arXiv v3 of the same paper; Table 1 was extracted from this PDF."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/aa79ff",
+   "reason": "Volk & Malhotra 2017: earlier 50-80 au warp claim that later faded."
+  },
+  {
+   "target": "https://github.com/small-body-dynamics/SBDynT",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SBDynT resonance classifier (Spencer et al. 2026; Volk & Malhotra 2025), commit 49f917c."
+  },
+  {
+   "target": "https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JPL Small-Body Database orbits retrieved 2026-11-12."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201118085",
+   "relations": [
+    "uses"
+   ],
+   "reason": "REBOUND N-body code (Rein & Liu 2012)."
+  },
+  {
+   "target": "sci:sha256:14f23a3778d48fff9d57bad7e6f4acaf37082c4fb76f202e5bdd7036e84c2499",
+   "reason": "Related campaign test of distant-TNO perihelion clustering with post-2019 objects; a different signal from the mean-plane warp."
+  },
+  {
+   "target": "sci:sha256:a2a9faad275932467b3136fa0fe20e837bdc31b5240f3c0462fcf388fdfb8af0",
+   "reason": "Related campaign test of Planet Nine perihelion clustering with objects found after mid-2018."
+  }
+ ]
+}
