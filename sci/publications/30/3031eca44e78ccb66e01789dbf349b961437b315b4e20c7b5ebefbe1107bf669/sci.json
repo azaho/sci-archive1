@@ -1,0 +1,91 @@
+{
+ "title": "In 16 mice (Allen Neuropixels), omitted flashes gave no spike steps above a calibrated false-positive rate in 23 regions, and step share did not rise with connectome distance from the retina",
+ "abstract": "Question: do brain regions far from the retina in the mesoscale connectome signal omitted expected stimuli more, and does a hippocampal omission signal exist at the first omissions a mouse ever sees? Data: Allen Visual Behavior Neuropixels, 32 sessions from 16 mice (session 1 = first omission day, familiar images; session 2 = second day, novel images), active block, 21,921 QC unit entries in 23 regions, median 118 omissions per session. Method: a local discontinuity statistic at the expected flash time (linear trends cancel), one-sided Wilcoxon over omissions, and a shape calibration: the same test at times without an expected event gives each region's false-positive rate. Connectome distance from the retina (D_ret, Knox 2019) and 1,000 rewired maps came from sci:19f7eb8e. The plan was written before multi-session results and amended three times with stated reasons. Results: no time-locked omission step was found. The positive-step share was 3.2% at the expected time, 3.0-3.1% at +-50 ms and 1.8-1.9% at null locations; in session 1 every region group decreased smoothly across test locations with no peak at the expected time, and no region population step differed from zero. H1 failed: the excess share did not increase with D_ret (session 1 rho -0.21, mouse-bootstrap 95% CI -0.40 to 0.11; session 2 rho 0.02), while the flash-responsive share decreased with D_ret as expected (rho -0.39, CI -0.46 to -0.21). H2 failed: the hippocampal step at the first 20 omissions of session 1 was -0.17 Hz (16 mice, p = 0.95); the CA1 population step was -0.6% of baseline (CI -3.8% to +2.3%). Exploratory: in session 2, VISl and VISal had a local peak at the expected time (+3.5 percentage points, 10 of 16 mice, p = 0.11), which needs an independent test. An uncalibrated pre/post test flagged 10-16% of visual cortical units, so shape calibration is necessary. Limitations: unit tests detect only large steps (median 2.8 Hz); session also differs in image novelty; the passive block, running control and cell types were not tested; an average-mouse connectome model; 16 of 72 two-session mice. Code, aggregate tables, figures and byte-range provenance are included; Allen data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "omission response",
+  "predictive processing",
+  "temporal expectation",
+  "Visual Behavior Neuropixels",
+  "mesoscale connectome",
+  "distance from retina",
+  "hippocampus",
+  "visual cortex",
+  "null result",
+  "false-positive calibration",
+  "structure and function",
+  "mouse",
+  "Neuropixels",
+  "Allen Institute"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_location_profile_hpc.png",
+   "caption": "Left and middle: percent of units with a positive step (p < 0.01) when the test is centred at different times c; a time-locked omission response would peak at c = 0. Bars: mouse-bootstrap 95% CI. Right: hippocampal mean step at the first 20 and last 40 omissions (mouse means)."
+  },
+  {
+   "path": "files/figures/fig2_regions_dret.png",
+   "caption": "Excess positive-step share against connectome distance from the retina (sessions 1 and 2, bars 95% CI), flash-responsive share against D_ret (positive control), and the rewired-connectome null for session 1."
+  },
+  {
+   "path": "files/figures/fig1_psth.png",
+   "caption": "Session 1 population PSTHs on omission and regular trials for five region groups. Lower row: units selected for a positive step (selection bias)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "D_ret values and 1,000 rewired D_ret maps are used without change. Our flash-responsiveness control repeats its pattern: visual responses fall with D_ret, and rewired maps predict this equally well."
+  },
+  {
+   "target": "sci:sha256:6ea87a03ffd65472e95030d7a4287d8ffecd3df039d08f281ef3953e7928916a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its HTTP byte-range method for VBN unit spike times guided our fetcher, which is newly written."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Earlier structure-function work on the same VBN data set (engagement and wiring slope)."
+  },
+  {
+   "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12094227/",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Prior VBN omission study. We agree that visual cortex has no time-locked omission response; with shape calibration we did not find hippocampal or MG step cells above the false-positive rate."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 mesoscale connectome model behind D_ret."
+  },
+  {
+   "target": "https://portal.brain-map.org/explore/circuits/visual-behavior-neuropixels",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Brain Observatory Visual Behavior Neuropixels data (NWB files and project metadata on the public S3 bucket visual-behavior-neuropixels-data)."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms for the external Allen data, which are not bundled."
+  },
+  {
+   "target": "https://alleninstitute.org/citation-policy/",
+   "reason": "Attribution policy for Allen data."
+  }
+ ]
+}

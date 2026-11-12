@@ -1,0 +1,109 @@
+{
+ "title": "Kepler phase tracking of 154 hump-and-spike A and F stars gives spike coherence times near 1,000 days, not the 1.5-day or 30-day spot lifetimes from autocorrelation fits",
+ "abstract": "Question: the rotation 'spike' of Kepler hump-and-spike A/F stars has published lifetimes of 1.5 d and 3.6 d (Trust et al. 2020) and about 30 d (Henriksen et al. 2023), both from fits of autocorrelation-function (ACF) envelopes. Does the spike lose its phase on these time scales? Approach: for 174 published hump-and-spike stars we measured the phase of the spike in 30-day segments of the 2009-2013 Kepler light curves at one fixed frequency and calculated the correlation of the segment amplitudes against lag. In each star's own light curve we injected strictly periodic signals and signals with known lifetimes (1.5-3,000 d) as nulls and calibration. We also re-ran both ACF methods on the real data, on the data without the spike and on a synthetic strictly periodic spike. Results: of 154 stars with S/N >= 8, 133 (86%) keep more phase correlation at lags of 500-1,500 d than all 30-d-lifetime injections allow, and 146 (95%) reject 1.5 d. The fitted coherence time has a median of 959 d (quartiles 420 and 2,285 d); injections recover 300 and 1,000 d correctly. 22 spikes (14%) agree with a strictly periodic signal over 4 years. A linear frequency drift does not restore the phase of most stars, so the phase loss is mostly a slow random wander. Normal A and Am/Fm stars do not differ. The whole-light-curve ACF decay time does not change when we remove the spike (median 5.6 d with, 5.7 d without), and the band-passed ACF lifetime changes by a factor of 4.4 with the band width. No star shows a Kepler-season amplitude pattern, so the spikes are not contamination. Conclusion: the spike keeps its phase for about 1,000 d, 30 to 600 times longer than the ACF lifetimes; the ACF decay comes mostly from r modes, other variability and noise. Spike models need long-lived surface features or coherent modes. Limitations: r-mode leakage makes our coherence values lower limits; only Kepler data (4 years); we could not reproduce the published ACF numbers exactly; the test does not identify the mechanism. Job sci-1107-dell-astronomy-8fb8c67df5a9, machine dell, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "hump and spike stars",
+  "A stars",
+  "Am stars",
+  "starspots",
+  "Rossby modes",
+  "rotational modulation",
+  "phase coherence",
+  "Kepler",
+  "autocorrelation function",
+  "spot lifetime",
+  "overstable convective modes",
+  "stellar magnetism"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_examples.png",
+   "caption": "Three hump-and-spike stars: amplitude spectra near the spike (top) and spike phases in 30-day segments at one fixed frequency (bottom)."
+  },
+  {
+   "path": "files/figures/fig3_lag_correlation.png",
+   "caption": "Median correlation of spike segment amplitudes against lag (blue, quartile band) compared with injected signals of known lifetime in the same light curves (grey)."
+  },
+  {
+   "path": "files/figures/fig4_acf_replication.png",
+   "caption": "Replication of the two ACF lifetime methods: the whole-light-curve ACF decay does not need the spike (a); the band-passed ACF lifetime follows the band width (b)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1093/mnras/stz3623",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Sample source (tables A1, A2); we test its ACF spot decay times of 1.5 and 3.6 d."
+  },
+  {
+   "target": "doi:10.1093/mnras/stad153",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Sample rows and ACF spike lifetimes of about 30 d that we test."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.431.2240B",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Balona 2013 list of Kepler A stars with the hump-and-spike periodogram."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.474.2774S",
+   "reason": "Saio et al. 2018: r-mode interpretation of the hump and the spike."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2502.11879",
+   "reason": "Antoci et al. 2025: HR 7495, spots against OsC modes."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.472.1618G",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Giles et al. 2017 ACF model that we re-fit."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508..267S",
+   "reason": "Santos et al. 2021: factor of 2 on ACF decay times used by Henriksen et al."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2019ApJ...883..106C",
+   "reason": "Cantiello and Braithwaite 2019: subsurface convection dynamo in A stars."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4117L",
+   "reason": "Lee and Saio 2020: overstable convective modes."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/kepler",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kepler DR25 long-cadence light curves."
+  },
+  {
+   "target": "sci:sha256:825c1a9d85f1a6b3309d6467f7ed5d2e3cf6e4a023f81af7e652d7058ee5cbe9",
+   "reason": "Campaign result: Ap/Bp fossil-field spots keep phase for 30 years; comparison for the spike stability."
+  },
+  {
+   "target": "sci:sha256:719b8a6da106e390ef9d75d53b8cfc7bc4d8b24d4c5f0c2912c5753a9cb729d0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign phase-coherence method with light-curve-level injection nulls, applied here to a different signal."
+  }
+ ]
+}
