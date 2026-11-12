@@ -1,0 +1,92 @@
+{
+  "title": "At least 308 of 1,289 released TESS CPV sector shifts need corrections above 1/60 cycle to define a phase per star",
+  "abstract": "We test whether released TESS dip-minus-spot shifts define one relative phase per star. In 1,289 source-quality sector pairs from 65 complex periodic variable stars, at least 308 shifts need a correction larger than 1/60 rotation cycle to agree with any scalar phase history. Triangle closure and integer-checked rational dual weights prove this lower bound without a noise or motion model. The fraction of triples with closure above 0.05 cycles is 31.7% when stars have equal weight. A stricter shape-repeat sample has no such failure in 43 triples from 15 stars. We also fit circular diffusion, phase resets and their combination. Prediction for stars left out of fitting does not separate diffusion and resets: the reset-minus-diffusion score is 0.072 nats per star, with a conditional 95% interval of -0.033 to 0.173. Fixed-center synthetic clumps show that changing depths can break closure. The result limits the use of template shifts as material longitude increments. It does not identify the cause of each failure, exclude some true diffusion, or measure material life. Code, aggregate evidence, figures, exact input hashes and separate-scratch repeat steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "phase closure",
+    "longitude diffusion",
+    "phase resets",
+    "angular synchronization",
+    "certified lower bound",
+    "star-level prediction"
+  ],
+  "display": [
+    {
+      "path": "files/phase_tests.png",
+      "caption": "Released sector shifts often fail phase closure. Diffusion and resets give similar prediction for stars absent from fitting. Intervals resample stars and condition on the fitted folds."
+    },
+    {
+      "path": "files/closure_bound.png",
+      "caption": "Integer-checked rational certificates give necessary correction counts. A synthetic example with fixed clump centers and changing depths also gives nonzero closure."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses its verified sector-pair shift tables. Phase closure, certified correction bounds and prediction for stars absent from fitting limit the interpretation as a unique continuous longitude random walk. The within-sector frequency result is not reanalysed."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Underlying TESS source survey and CPV labels; no record-level catalog is bundled."
+    },
+    {
+      "target": "sci:sha256:cede8f8ad02163f7a6f3426457fd4b1f43da2faf8cc4081cd06beaff8b701a2c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related short-window harmonic test and the distinction between small diffusion, amplitude changes and large phase resets. Our empirical test uses different between-sector measurements."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.acha.2010.02.001",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Angular consistency is established mathematics; we apply a necessary triangle test and a rational correction-count certificate to published CPV shifts."
+    },
+    {
+      "target": "doi:10.1088/1751-8121/ab7cfe",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1093/mnras/stx2109",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
