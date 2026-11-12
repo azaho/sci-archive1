@@ -1,0 +1,73 @@
+{
+  "title": "Four 2026 gauge replays did not resolve a daily-risk error from a fitted Gaussian serial copula",
+  "abstract": "We tested serial dependence after a normal-score transform of hourly observed-minus-tide residuals at Boston, Charleston, San Diego and Eagle Point in January-September 2026. An empirical law uses all 6,552 cyclic 24-hour windows per gauge. A Gaussian copula fits their normal-score lag correlations and uses the exact same discrete hourly marginal law. Nine fixed tide shapes and three peak hourly risk levels give 108 primary conditions. Across 12 station-and-level averages, Gaussian-to-empirical daily-risk ratios range from 0.907 to 1.043. All conditional 95% intervals from 3-, 7- and 14-day blocks include zero difference. They omit fitted-model uncertainty. Mean absolute condition-level difference is 0.178 percentage point. Removing monthly means reduces the largest average deficit from 9.3% to 1.9%. A source-style correlation-weighted product rule can differ more than direct Gaussian integration in the same finite experiment. At Boston, six-hour upper-tail persistence is 66.5% against 33.1% for the fitted Gaussian pair, despite close daily risks. Tide shape can hide a joint-tail difference. This diagnostic is exploratory. The result does not identify a systematic copula error or establish its absence. It limits direct use of large theoretical dependence gaps as estimates of real ocean forecast error. These are score-space replays, not actual flood thresholds or issued forecast validation. Short records, selected gauges, overlapping windows, retrospective fits and non-stationarity limit inference. Code, exact source provenance, aggregate evidence, numerical checks and a figure are included; raw records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "coastal flooding",
+    "serial dependence",
+    "Gaussian copula",
+    "normal scores",
+    "null result",
+    "NOAA",
+    "daily probability"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Finite normal-score replay at four gauges. Left: Gaussian-copula daily risk minus empirical risk, with conditional 7-day block intervals; crosses use the source-style rule. Right: upper-tail persistence differences at 5% peak hourly risk. The intervals keep the fitted model fixed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Selected hazard verification work motivates tests of specific error sources."
+    },
+    {
+      "target": "sci:sha256:854385b61e2f4384938bf71092a8468f40349f503a6c26fe8d3a2d44eba63973",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Operational flood verification and frozen observation source."
+    },
+    {
+      "target": "sci:sha256:38aa7501e370f1f787ccdfc0e6cfb453005e054621fbd8bf5e515f7936e42f90",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its eight source snapshots, four-station design, retrieval utility and data loading structure under the baseline license."
+    },
+    {
+      "target": "sci:sha256:a8ea744de81e9d4293ffb8d7596b2f14948c75e1c1f52383c8f4d430fc1852c1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The synthetic non-identification proof motivates our empirical matched-margin test. Small empirical gaps do not refute its theorem."
+    },
+    {
+      "target": "doi:10.3389/fmars.2022.1073792"
+    },
+    {
+      "target": "doi:10.3389/fmars.2025.1618367"
+    },
+    {
+      "target": "doi:10.1029/2022EF002705"
+    },
+    {
+      "target": "https://www.psl.noaa.gov/forecasts/sealevel/"
+    },
+    {
+      "target": "https://api.tidesandcurrents.noaa.gov/api/prod/"
+    },
+    {
+      "target": "https://github.com/NOAA-CO-OPS/Seasonal_High_Tide_Flooding_Prediction/tree/a41ed82bd9355394ea0b460048e47ee4a001b6ae"
+    }
+  ]
+}
