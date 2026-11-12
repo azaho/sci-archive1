@@ -1,0 +1,124 @@
+{
+ "title": "In 6 awake task mice, widefield calcium FC follows Allen tracer wiring beyond distance, and the haemodynamic signal of the same frames follows it equally",
+ "abstract": "Question: mouse fMRI follows the Allen tracer connectome beyond distance under medetomidine with isoflurane but much less in awake mice (sci:40af6bdd). Is this a property of awake neural activity? Data: 12 International Brain Laboratory widefield sessions (6 mice, 2 sessions each, decision task), 20-24 dorsal-cortex areas per hemisphere, haemodynamic-corrected GCaMP (calcium) and violet 405 nm (haemodynamic) signals of the same frames. Method: plan written before the results; Knox partial r = correlation of FC (Fisher z) with log10 Knox wiring after a 5-df spline of 3-D distance; primary 0.01-0.25 Hz with global signal regression; mouse-level t tests. Results: calcium FC followed the wiring (partial r 0.32, 95% CI 0.23 to 0.41, 6/6 mice; all 12 sessions above a distance-binned pair null, 95th percentile about 0.09). It stayed with area effects (0.30), image-plane distance (0.28), pairs over 1.5 mm (0.35) and without GSR (0.54). The violet signal, a delayed inverted copy of calcium (peak at +1.0 to +1.5 s), followed the wiring equally (0.33; difference -0.008, CI -0.046 to 0.029), so the pre-set test of calcium specificity failed. Quiescent and trial epochs did not differ (+0.021, CI -0.038 to 0.080). The alignment was in slow activity (0.35 at 0.1-1 Hz, 0.06 at 1-5 Hz). Visual x non-visual pairs also aligned (0.34), unlike spike data (sci:cae100c0). Limitations: coarse areas, unlike the 152 fMRI parcels, so values do not compare directly with fMRI; no anaesthetised widefield data; violet is not BOLD; six mice from one lab. Conclusion: awake state and awake haemodynamics do not by themselves remove connectome alignment of cortical FC.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "widefield calcium imaging",
+  "functional connectivity",
+  "structure-function coupling",
+  "Allen mouse connectome",
+  "Knox 2019",
+  "awake state",
+  "haemodynamics",
+  "neurovascular coupling",
+  "International Brain Laboratory",
+  "mouse dorsal cortex",
+  "global signal regression",
+  "pre-registered"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_primary.png",
+   "caption": "Knox partial r per mouse for calcium, violet (haemodynamic) and uncorrected blue signals (0.01-0.25 Hz, GSR); mouse means with 95% CI, pair-null band, and published fMRI values for orientation."
+  },
+  {
+   "path": "files/figures/fig3_bands_states.png",
+   "caption": "Knox partial r by frequency band with and without global signal regression, and by behavioural epoch (0.1-2 Hz, GSR); mouse means and 95% CIs."
+  },
+  {
+   "path": "files/figures/fig4_controls_groups.png",
+   "caption": "Model controls (area effects, image-plane distance, distant pairs, ranks, post hoc axis distances and violet residual) and pair groups (visual and non-visual areas)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Awake fMRI lost Knox alignment; we test the same metric with awake calcium and haemodynamic widefield signals."
+  },
+  {
+   "target": "sci:sha256:1f4c142505a229607b4b5a9358e29be047722d7684e0d3df684835f158573281",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same 12 sessions, atlas warp code (atlas.py, wfcore.py) and fetch scripts; that work tested lags, this work tests zero-lag FC."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Spike correlations followed tracer strength except visual x non-visual pairs; widefield FC does not repeat the exception."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "reason": "Mouse wiring is mostly node-level; we add area effects but not the node-similarity model."
+  },
+  {
+   "target": "sci:sha256:fe1e4c153ab8c71e54b32061255f4d7b64a20d4f9d440a8d1432fbf6e7ddbf95",
+   "reason": "Geometry-only FC can look like wiring; motivates the geometry controls."
+  },
+  {
+   "target": "sci:sha256:820618fe36d87b39bc004b2c73c188e56ef9bb2551be0d51c08fd47bdcd145a0",
+   "reason": "Tracer-based FC coupling in marmoset and mouse fMRI beyond distance."
+  },
+  {
+   "target": "sci:sha256:193d9a5614ab21692cff4f6d3fd02bc50eb1d367d965da92d4a921ace25463da",
+   "reason": "Task did not change the wiring slope of IBL spike co-variation."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "International Brain Laboratory; widefield data from the IBL public bucket (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41596-021-00527-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "wfield landmark convention and dorsal-cortex reference (Couto et al. 2021)."
+  },
+  {
+   "target": "https://github.com/jcouto/wfield/tree/6bb958bf89a3610543fc71f9d0d573d04f335a58",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Reference atlas files fetched at run time."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 connectome model."
+  },
+  {
+   "target": "doi:10.1038/nature13186",
+   "reason": "Allen Mouse Brain Connectivity Atlas (Oh et al. 2014)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCF v3 annotation for 3-D distances."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2019.116278",
+   "reason": "Grandjean et al. 2020 mouse fMRI resource used by sci:40af6bdd."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0502-4",
+   "reason": "Movements dominate widefield cortical activity (Musall et al. 2019)."
+  }
+ ]
+}
