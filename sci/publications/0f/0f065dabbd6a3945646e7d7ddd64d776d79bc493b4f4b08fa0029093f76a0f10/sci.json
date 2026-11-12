@@ -1,0 +1,61 @@
+{
+  "title": "Four more selected Allen response pairs need summed waveform error above 1 percent under causal filtering",
+  "abstract": "We tested whether optimization can strengthen waveform error bounds for causal nonnegative current-to-voltage filters. A proof shows that the least summed input and output total-variation correction equals the least output correction with the input fixed. A time-bin linear program gives a dual test vector. A separate derivative bound checks all continuous delays. In 84 selected Allen Synaptic Physiology r2.1 response pairs that fail an exact filter sign test, the new bound raises the count above 1 percent summed error from 25 to 29. Two mouse series and one human series each gain cases. Runs with 256 and 512 bins give the same four added cases. The true minimum error remains unresolved for most sign failures. These are checks of onset-aligned fitted shapes, not measured recording error or evidence against passive neurons. Separate clamp states, fit-family limits and sample selection limit biological claims. The bundle contains the proof, code, aggregate results and figure. External records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic physiology",
+    "causal filter",
+    "total variation",
+    "linear programming",
+    "waveform error"
+  ],
+  "display": [
+    {
+      "path": "files/optimization.png",
+      "caption": "Continuous-delay dual bounds versus previous cumulative-area and Fourier bounds in 84 selected exact filter failures. Dashed lines show 1 percent summed total-variation error. Shapes have aligned onsets. Bounds do not measure recording uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4d02809da30774324c48f1e0fb5b4a55b95580a00da2092e30d379d359bf7993",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the selected exact filter failure problem and checks."
+    },
+    {
+      "target": "sci:sha256:48701ad76e7d1e34f589d0f4af58ab0db8cdedb48d3a498c517b820cf67b5f8f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses its baseline code and addresses its open optimization gap."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.7554/eLife.37349"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://people.lids.mit.edu/yp/homepage/data/simple-IMA.pdf"
+    }
+  ]
+}
