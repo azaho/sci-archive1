@@ -1,0 +1,95 @@
+{
+ "title": "flyvis connectome models gave the measured ON or OFF sign of 9 of 9 fly visual types with a literature sign, 4 of 6 without one, and less transient responses than flicker calcium data",
+ "abstract": "We tested the 50 pretrained flyvis models of the fly visual system (Lappalainen et al. 2024; FIB-25/FIB-19 medulla connectome, optic-flow training) against independent calcium responses of 42 matched cell types to full-field flicker at 0.1 to 2 Hz (Currier and Clandinin 2025, 60 flies). A written plan fixed the primary tests before the comparison. The ensemble predicted the correct ON or OFF sign for 9 of 9 clear types with a literature sign (permutation p = 0.007). For types without a literature sign, which are true predictions, it was correct for 4 of 6 clear types (p = 0.40) and 14 of 24 types (p = 0.33), the same as a FlyWire sign rule; the models disagreed with each other for 15 of 23 such types. Model and measured polarity scores agreed over 26 types (rho 0.63). Response shapes matched only after a 0.3 to 0.5 s time shift (mean r 0.32 to 0.44 against shuffle 0.06 to 0.16), and the mean of other measured types matched as well. Post hoc, measured responses were more transient than model voltages in 19 of 26 types. Task performance did not predict agreement. Limitations: few types, calcium against voltage, uncertain stimulus onset, an unreliable tuning target.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "optic lobe",
+  "connectome-constrained model",
+  "flyvis",
+  "ON/OFF polarity",
+  "calcium imaging",
+  "structure-function",
+  "model validation",
+  "temporal dynamics",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_polarity.png",
+   "caption": "A: measured 0.1 Hz polarity score against the median flyvis model score (bars: range of the middle 50% of 50 models); blue = types with a literature sign, red = types without one, filled = clear measured sign. B: fraction of correct signs for flyvis and the FlyWire sign rule in four type groups."
+  },
+  {
+   "path": "files/figures/fig2_tuning_shape.png",
+   "caption": "A: 2 Hz to 0.1 Hz amplitude index, measured against model. B: measured type-mean calcium (black) and filtered ensemble-mean model voltage (orange) at 0.1, 0.5, 1 and 2 Hz. C: mean own-type shape correlation for five readouts, with type-shuffle null and the mean of other measured types."
+  },
+  {
+   "path": "files/figures/fig3_transience_model_quality.png",
+   "caption": "A, B (post hoc): sine of the 0.1 Hz phase lead, measured against filtered model voltage, for stimulus onset 2.0 s and 1.5 s; points above the line are more transient in the data. C, D: per-model sign accuracy and shape correlation against task validation loss."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its unchanged CC0 extract of the Currier and Clandinin flicker responses and ROI metadata; it also gives an input-similarity baseline for response shapes."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its measured polarity table and its FlyWire sign-rule predictions as the comparison."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "The same sign rule in the male CNS; the same hard types (TmY14, Tm5b)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07939-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "flyvis models and pretrained ensemble that we test."
+  },
+  {
+   "target": "https://github.com/TuragaLab/flyvis",
+   "relations": [
+    "uses"
+   ],
+   "reason": "flyvis 1.2.0 code (MIT)."
+  },
+  {
+   "target": "doi:10.5061/dryad.pg4f4qs1j",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the flicker responses (version 7, CC0)."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2025.05.007",
+   "reason": "Original study of the activity data."
+  },
+  {
+   "target": "https://github.com/ClandininLab/visprotocol/tree/d6a0c9d8562fd9128919f5458e0ff9c1050f16ca",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stimulus definition (FlickeringPatch, preset medulla_big_slow)."
+  },
+  {
+   "target": "https://github.com/tacbox3/CurrierClandinin/tree/afa594507be380c09669c36282f3b224e9e58ae4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Flicker timing and resampling of the activity data."
+  }
+ ]
+}

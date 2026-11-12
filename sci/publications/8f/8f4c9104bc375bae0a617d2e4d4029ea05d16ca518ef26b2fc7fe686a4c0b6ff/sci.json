@@ -1,0 +1,118 @@
+{
+ "title": "In one MICrONS mouse, synapses of one connection share a size component only for layer 2/3 and layer 4 excitatory axons, and the component does not follow co-tuning",
+ "abstract": "We tested whether synapses of the same connection share a size component beyond cell and location effects, and whether this component follows functional similarity. We used cleft sizes of 13.7 million synapses between typed cells in the MICrONS minnie65 volume (release v1300), and the 2,042 cells with proofread axons. A double-difference estimator compared each within-connection synapse pair with distance-matched same-axon, same-target and unrelated controls. It removes axon, target and smooth spatial terms. On synthetic data it recovered a true value of 0.30 as 0.31. For excitatory-to-excitatory connections, the connection-specific component was 0.16 to 0.22 of size variance (35,424 multi-synapse connections). For excitatory-to-basket, excitatory-to-Martinotti, and basket or Martinotti outputs, it was near zero (-0.03 to 0.04). It depended on the presynaptic type: 0.32 (0.27 to 0.36) for layer 2/3 axons, 0.20 for layer 4 axons, and below 0.07 for layer 5 and layer 6 axons, onto all target types. It did not decrease from 20 to more than 80 um between synapses. Co-tuned pairs had larger mean synapses (slope 0.58 SD per unit signal correlation after cell fixed effects), but signal correlation explained about 2% of the component. The component did not change with signal correlation (slope 0.008, -0.035 to 0.051, per SD; 3,815 connections). A two-state mixture did not isolate the shared part. Limitations: one mouse, cleft size as a strength proxy, no spine or shaft labels, selected proofread axons, and noisy functional measures. Code, aggregate results, figures, source hashes and a retrieval script are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "synapse size",
+  "synaptic plasticity",
+  "multi-synapse connections",
+  "cell types",
+  "functional connectomics",
+  "double difference",
+  "mouse visual cortex",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_class_pairs.png",
+   "caption": "A: Connection-specific covariance of standardised log cleft size (double difference) for each class pair with at least 1,000 proofread multi-synapse connections; bars are 95% cluster-bootstrap intervals (wider of presynaptic and postsynaptic clustering); grey ticks show the raw within-connection product. B: The four distance-matched terms of the double difference for four class pairs."
+  },
+  {
+   "path": "files/figures/fig2_pretype_distance.png",
+   "caption": "A: Connection-specific component for proofread excitatory axons onto excitatory targets, by presynaptic type. B: Component by straight-line distance between the two synapses; bins with fewer than 100 connections are not shown."
+  },
+  {
+   "path": "files/figures/fig3_function.png",
+   "caption": "A: Mean connection size (z) against in-silico signal correlation, deciles, proofread axons; text gives the slope after fixed effects for both cells. B: Connection-specific component in thirds of signal correlation (in silico and in vivo) for proofread E-to-E connections between functionally measured cells."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:27b63e3cdb4c8212ea43a2858f9fe8a62dd36bf2d65b74782d16a5d2ebcd77f5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Campaign test of dual-connection size agreement in V1 Deep Dive; uncertain. This study tests the same question at larger scale in MICrONS."
+  },
+  {
+   "target": "sci:sha256:ba1aabb2de53a8bd53f6d56b2d65ace589c0b515a9c61c17cb24eb038500f963",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Campaign test of size balance versus response similarity; unresolved. This study gives a related functional test."
+  },
+  {
+   "target": "sci:sha256:002ee9e80347aa25617ae61940dca8f996330f58445ab6c2d2cb51b24097dbd9",
+   "reason": "Campaign result on contact size concentration within connections."
+  },
+  {
+   "target": "sci:sha256:3f421179a43c393dc713cd33133e8e34e31dbc6459112398b0c663ec77c2e8fb",
+   "reason": "Campaign result on cleft volume allocation and target responses in MICrONS Ding tables."
+  },
+  {
+   "target": "sci:sha256:42770a239151607ddf3d89f8523cd3563849387966555752da65decbefeb5d68",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier MICrONS v1300 work; route for the headerless connections table."
+  },
+  {
+   "target": "sci:sha256:0a74f47a31a8ad8d08e27f9575752e6982aa44234b977cc42404b3cfb8f1ee66",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Showed that unproofread MICrONS axons create false structure; this study finds the same dilution for size sharing."
+  },
+  {
+   "target": "doi:10.7554/eLife.76120",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Dorkenwald et al. 2022: binary and analog synapse size variation in L2/3 pyramidal connections."
+  },
+  {
+   "target": "doi:10.1126/science.aay3134",
+   "reason": "Motta et al. 2019: same-axon same-dendrite synapse size similarity in mouse S1."
+  },
+  {
+   "target": "doi:10.7554/eLife.10778",
+   "reason": "Bartol et al. 2015: synapse size similarity in hippocampal axon-dendrite pairs."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS Consortium 2025: source dataset."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Ding et al. 2025: functional node data; like-to-like synapse size replicated with fixed effects."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07765-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Elabbady et al. 2025: cell-type labels (AIBS metamodel)."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/synapses_pni_2_v1_filtered_view.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Synapse table, SHA-256 184700637de5c22ca6a3f8cd8fadd564a1574a1f07e4c3df077b9237a3b76658."
+  }
+ ]
+}
