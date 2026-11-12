@@ -1,0 +1,110 @@
+{
+ "title": "In seven CMIP6 atmosphere models, the 1979-2014 radiation response to AMIPII-minus-HadISST2 SST differences is 1.2-4 times the Green's-function prediction, so GF artifact biases are probably too small",
+ "abstract": "Question: earlier campaign studies calculated how SST forcing artifacts (the 1981 HadISST1-to-OI v2 splice in AMIPII, OI v2 and sea-ice steps) change radiative feedback with linear Green's functions (GFs), not with model runs. Do real atmosphere models respond to SST-dataset differences as the GFs predict? Approach: seven CMIP6 models ran both amip (PCMDI-AMIP 1.1.3 SST and sea ice) and HighResMIP highresSST-present (HadISST2.2) over 1979-2014. For each same-model pair (36 amip and 8 highresSST-present runs) we took dN = N(amip) - N(highresSST-present) and compared it with the GFMIP GF prediction (5-model mean of CAM5, CanESM5, ECHAM6, GFDL-AM4, HadAM3; also CAM4) from the SST difference the model saw, plus a CAM5 albedo-kernel sea-ice term. Results: the regression scaling of dN on the 5-GF prediction is 1.2 to 3.9 (median 1.9) for annual means with a cubic trend removed and 1.1 to 4.0 (median 2.4) without volcanic years; monthly 0.7 to 3.3 (median 1.5). It stays above 1 with the GF of the same model family (ECHAM6 for MPI-ESM1-2-HR 2.1-3.6; GFDL-AM4 1.4-1.8). A control regression of each run on its own full SST gives 0.0 to 1.2, so the excess is specific to the dataset-difference patterns. From 1985-1990 to 1994-2008 the 60S-60N mean SST difference does not change, but the pattern does (AMIP tropics 0.1 K colder, 40-60S 0.25 K warmer); dN rises by +0.17 to +0.92 W m-2 in all seven pairs (median +0.46) against +0.15 predicted (median ratio 3.3). Pooled regional sensitivities: warm pool -15.8 +/- 3.0 W m-2 per K (GF -9.3) and 40-60S +5.9 +/- 1.5 (GF -0.4). The 1981 splice step in dN is -0.23 +/- 0.12 W m-2 (-0.37 without El Chichon months) against -0.16 to -0.21 predicted, so 1.5-1.7 times but not decisive. The 2009 Antarctic sea-ice step matches the kernel term. In four pairs without clear-sky trend differences, the dataset choice changes the 1979-2014 trend of N by +0.03 to +0.11 W m-2 per decade, while the GFs predict about 0. Implication: GF-based artifact feedback biases are probably lower bounds in models like these. Limitations: the two experiment sets also differ in start year, daily versus monthly SST and, in three pairs, forcing (clear-sky differences); only two pairs have a same-family GF; single highresSST-present members dominate the noise; the study does not test which SST dataset is right.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "AMIP",
+  "AMIPII",
+  "HadISST2",
+  "HighResMIP",
+  "highresSST-present",
+  "CMIP6 amip",
+  "Green's function",
+  "GFMIP",
+  "radiative feedback",
+  "pattern effect",
+  "data artifacts",
+  "model evaluation",
+  "Southern Ocean",
+  "warm pool",
+  "sea ice"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_series.png",
+   "caption": "(top) Annual TOA net radiation difference N(amip) - N(highresSST-present): seven same-model pairs (grey), their mean (blue), and the prediction from the 5-GF mean plus the sea-ice kernel term (orange; band: CanESM5 to CAM4 GF). Dashed: the 1981-11 AMIP splice; dotted: the 2009 AMIP Antarctic sea-ice step; grey bands: volcanic periods. (bottom) 60S-60N mean SST difference AMIP minus HadISST2 as seen by the models."
+  },
+  {
+   "path": "files/figures/fig2_scaling.png",
+   "caption": "(a) Scaling factor a in dN = a x (5-GF prediction) + b x (ice term) for each pair: monthly, annual with cubic trend removed, and annual without volcanic years; grey squares: control regression of each amip run on the GF prediction from its own SST. (b) a for each single GF (grey) and for the GF of the same model family (blue, 95% interval). a = 1 means the GF is right."
+  },
+  {
+   "path": "files/figures/fig4_regions_steps.png",
+   "caption": "(a) Regional sensitivity of dN (global W m-2 per K of regional-mean SST difference): models pooled (blue, 95%), single pairs (grey) and the 5-GF mean and range (orange). (b) dN step at the 1981-11 AMIP splice: real (blue, 95%) and predicted (orange; bar: CanESM5 to CAM4). (c) Change of dN from 1985-1990 to 1994-2008, when the mean SST difference does not change: real versus predicted."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its GFMIP box Jacobians (gf_boxes.npz); tests its Green's-function method against real model runs."
+  },
+  {
+   "target": "sci:sha256:36b3c230b0ab02a3d4ac5373b60171f5d855dfb8ed5c1f7fdaa5ca172fea8faf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses its 1981 splice step map; tests its Green's-function splice estimate with model runs (its stated limitation)."
+  },
+  {
+   "target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690",
+   "reason": "AMIP sea-ice steps; this study reproduces the 2009 step response in same-model pairs."
+  },
+  {
+   "target": "sci:sha256:121acf9e61a901f817dceaa1864a369e0dcb941ed0849245cddd1a32f8521ce6",
+   "reason": "ECHAM6 GF result; here the ECHAM6 GF under-predicts MPI-ESM1-2-HR by 2-4 times."
+  },
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "reason": "CAM4 GF feedback study whose numbers are put in context."
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "reason": "CMIP7Plus forcing GF study; context."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "reason": "Ship-buoy bias of AMIP; context."
+  },
+  {
+   "target": "sci:sha256:dc0ebb92ae01dfa80a9ab6a00dee79747f200f3da207e98892ce1be67a040be4",
+   "reason": "CMIP6 pattern comparison and Pangeo access method; context."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "reason": "GFMIP protocol."
+  },
+  {
+   "target": "doi:10.5194/gmd-9-4185-2016",
+   "reason": "HighResMIP protocol (highresSST-present)."
+  },
+  {
+   "target": "doi:10.5194/gmd-9-1937-2016",
+   "reason": "CMIP6 design (amip)."
+  },
+  {
+   "target": "doi:10.5194/essd-10-317-2018",
+   "reason": "CAM5 radiative kernels."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675",
+   "reason": "Dataset dependence of AMIP feedback."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-19-0941.1",
+   "reason": "HadISST-based AMIP pattern effect."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-18-0843.1",
+   "reason": "CAM4 Green's function."
+  }
+ ]
+}
