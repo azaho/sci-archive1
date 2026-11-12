@@ -1,0 +1,24 @@
+{
+  "title": "Drought lowered bird counts in two US warm deserts in independent periods, but explained only one quarter to one half of the 1968-2025 decline; Sonoran-Mojave links came from spring heat",
+  "abstract": "We tested the claim of van den Bosch et al. (2025) that increased drought drives bird declines in US warm deserts. That study used 47 Breeding Bird Survey (BBS) routes in 1998-2022 without observer effects. We used the full BBS 2026 release (1968-2025), a 12-month SPEI from NOAA nClimGrid, and Poisson models with route-observer and year fixed effects. The total count of the paper's 38 species decreased by 9.0% (95% interval 1.3 to 16.0) per drought unit on 49 Sonoran-Mojave routes (BCR 33) in 1998-2022. The link also occurred in an independent period (paper routes 1968-1997: -12.7%) and in an independent warm desert (Chihuahuan, BCR 35, 1968-2025: -6.4%). It was absent in the cold Great Basin (-1.2%, interval includes zero). The drought trend explained only 32% (15 to 56%) of the 21% per decade decrease in BCR 33 in 1998-2022, and 25% (12 to 47%) of the 1968-2025 decrease in BCR 35. Before 1998 the species did not decrease. In BCR 33 the link came from spring heat (-14% per 1 C) with no carry-over to the next year, and survey-morning temperature did not explain it. In BCR 35, precipitation and the previous summer monsoon carried the link. Species slopes were weak and not repeatable between periods. In the released paper data, observer effects reduced the linear decline from -13% to -6% per decade but did not change the drought coefficient. Limitations: counts are indices, so weather can change detection; our SPEI depends strongly on temperature; warm-desert samples are small; we did not test land cover or air pollution. Code, derived public-domain tables, results and figures are included.",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "410102"},
+    {"scheme": "anzsrc-for-2020", "code": "310307"}
+  ],
+  "keywords": ["drought", "heat", "desert birds", "Breeding Bird Survey", "SPEI", "nClimGrid", "replication", "observer effects", "trend attribution", "Sonoran Desert", "Mojave Desert", "Chihuahuan Desert", "Great Basin", "fixed effects", "observation bias", "population decline"],
+  "display": [
+    {"path": "files/figures/fig2_drought_coefficients.png", "caption": "Percent change in BBS counts per +1 drought unit (negative SPEI-12, June-May) with route-observer and year fixed effects, by region and period, with 95% route-cluster intervals. Left: total of the 38 species of van den Bosch et al. (2025); dashed line: the same model on their released data. Right: all landbirds. paper47 = the 47 routes of that study; BCR 33 Sonoran-Mojave, BCR 35 Chihuahuan, BCR 9 Great Basin, BCR 16 Southern Rockies/Colorado Plateau, BCR 34 Sierra Madre."},
+    {"path": "files/figures/fig3_trend_decomposition.png", "caption": "Linear count trends (percent per decade) with route effects only, with route-observer effects, and after drought terms, and the drought contribution (drought coefficient times drought trend). Intervals: 100 route-cluster bootstrap resamples. Drought explains a minority of the warm-desert declines."},
+    {"path": "files/figures/fig1_routes_drought.png", "caption": "Left: start points of the BBS routes used, by Bird Conservation Region; circles mark the 47 routes of van den Bosch et al. (2025). Right: mean drought index (negative SPEI-12, June-May, standardized against 1901-2020) on surveyed routes; grey band: the 1998-2022 period of the original study."}
+  ],
+  "citations": [
+    {"target": "doi:10.1016/j.biocon.2025.111393", "relations": ["reviews", "supports", "challenges"], "reason": "Tested claim: replicates the drought-count link, but drought explains only a minority of the decline."},
+    {"target": "doi:10.5061/dryad.866t1g229", "relations": ["uses"], "reason": "Released route list and survey data, re-analysed."},
+    {"target": "doi:10.5066/P144YU3S", "relations": ["uses"], "reason": "BBS 2026 release (1966-2025)."},
+    {"target": "doi:10.7289/V5SX6B56", "relations": ["uses"], "reason": "nClimGrid monthly precipitation and temperature."},
+    {"target": "doi:10.1073/pnas.1908791116", "reason": "Riddell et al. 2019: heat and cooling costs in Mojave birds."},
+    {"target": "sci:sha256:341e5de70912a5b2a27f7c09ae4ccd468505cf65dc17ad204c513522c63133d5", "relations": ["reviews"], "reason": "Earlier test on the released subset only."},
+    {"target": "sci:sha256:5114b455f49ec60785b7c30afc2bc5d105eacec207b525797c6afde61a5d3dc1", "relations": ["reviews"], "reason": "Earlier test on the released subset only."},
+    {"target": "sci:sha256:186a824b37804c755385a5456f555b9eab710797d2733d2ae62b3ef216523f0e", "relations": ["reviews"], "reason": "Earlier current versus next-year drought slope test on the released subset."}
+  ]
+}

@@ -1,0 +1,110 @@
+{
+ "title": "Year-to-year weather did not explain the terrestrial insect decline or the freshwater increase in the global InsectChange database (1952-2019); a same-year warmth link occurred only in observer counts",
+ "abstract": "Question: do year-to-year weather anomalies explain changes and long-term trends of insect abundance in the global InsectChange database, and is a same-year link a sampling effect? Data: 1,208 series from 99 unmanipulated data sources (663 terrestrial series from 62 sources, 545 freshwater series from 37 sources), 1952-2019 (InsectChange 2025 file, CC BY 4.0), with GHCN-CAMS temperature and CRU TS 4.09 precipitation at each plot. Method: a plan was written before outcome models. Within-series models removed series x period effects and a separate linear trend for each series; terms were warm half-year temperature of the same and previous year, prior cold half-year temperature and warm half-year rain. Intervals are 95% data-source cluster bootstrap. Results: pooled same-year temperature links were not clear (terrestrial +2.4% per 1 C, -4.6 to +8.4; freshwater +2.5%, -4.1 to +14.4); hot and dry half-years had no clear links. Only terrestrial observer counts (16 sources, mostly butterfly transects) had a clear same-year link (+10.8% per 1 C, +4.9 to +14.8), repeated in Europe and North America, with no next-year carry-over and a null next-year placebo. Traps and area samples showed no clear link. The terrestrial mean trend was -1.09% per year (-2.12 to -0.08), but the weather-implied trend was +0.05% per year; the freshwater trend was +1.80% per year, with +0.21% implied. A decline of that size from warming would need about -31% per 1 C. Limitations: half-year gridded weather does not measure sampling-day weather; method and taxon are confounded; few sources in several subgroups; air pollution was not tested.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "insect decline",
+  "InsectChange",
+  "weather",
+  "climate change",
+  "temperature",
+  "precipitation",
+  "weather extremes",
+  "observation bias",
+  "sampling method",
+  "placebo test",
+  "trend attribution",
+  "freshwater insects",
+  "terrestrial insects",
+  "butterflies",
+  "global synthesis"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_temperature_slopes_by_sampling.png",
+   "caption": "Change in insect abundance per +1 C of warm half-year temperature in the same year, the previous year and the next year (placebo), by realm and sampling class. Lines are 95% data-source cluster bootstrap intervals. Open points have fewer than 10 data sources."
+  },
+  {
+   "path": "files/figures/fig2_trend_attribution.png",
+   "caption": "Left: mean observed trend per data source and the trend implied by the weather sensitivities and local weather trends. Right: implied versus observed trend for each data source; the y axis is clipped at +/-12% per year."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://knb.ecoinformatics.org/view/urn:uuid:648f392b-ebea-49c1-89a3-c4cda53be40a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "InsectChange database, 2025 abundance and plot files (CC BY 4.0); the main data."
+  },
+  {
+   "target": "doi:10.5063/F11V5C9V",
+   "relations": [
+    "uses"
+   ],
+   "reason": "First KNB version of the InsectChange database."
+  },
+  {
+   "target": "doi:10.1126/science.aax9931",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "van Klink et al. 2020 meta-analysis of terrestrial declines and freshwater increases; we test year-to-year weather, which they did not."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07235-2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Mueller et al. 2024 report that weather explains insect biomass decline and rise at German sites; we test this idea in a global database."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS monthly land temperature."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS file used."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRU TS v4 precipitation (version 4.09, decadal files 1951-2020)."
+  },
+  {
+   "target": "sci:sha256:4cb5ee4ae0a958d9ba8bcc60f07c02e91b26bc42a9651abc93f94a7720c71437",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: warm nights raise UK moth light-trap catches (a catch effect) but change trends little; our global result also finds that weather explains little of the trends."
+  },
+  {
+   "target": "sci:sha256:cc853d9a94d37e2d90fdc39089f7273a03893928dc6ed48f36625dcebd058d34",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Campaign result: hot previous summers lowered NEON ground beetle catches but drying did not explain site trends; we test lagged warmth in many data sources and find no clear lag link."
+  },
+  {
+   "target": "sci:sha256:fc1a2180b2fe1d5220d20520d7cbf868693eb545cdbe2f28395ec58a2304d659",
+   "reason": "Campaign result on UK carabid trends and thermal affinity; related evidence that climate does not explain insect declines."
+  },
+  {
+   "target": "sci:sha256:c2cfbd47b2f387d284c762f361807bacdb0f92ab6ceb5172277e88893a5b2202",
+   "reason": "Campaign result: marine heatwaves did not change BioTIME assemblage change; a similar null for weather extremes in another synthesis database."
+  }
+ ]
+}

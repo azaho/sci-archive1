@@ -1,0 +1,104 @@
+{
+ "title": "In two fly connectomes, neurons of one type keep their transmitter share of input more constant than matched mixes, but type means differ more than matched mixes between animals and hemispheres",
+ "abstract": "We tested if wiring holds the transmitter share of the input of a neuron near a cell-type value. We used the statistic and null of sci:94be6f08, which found this effect in one FlyWire brain. In the male CNS v1.0 connectome (a second fly, male, FIB-SEM, its own transmitter classifier, with nerve cord), the GABA-or-glutamate share of input varied less among neurons of one type than matched input mixes: mean null percentile 0.433 (95% cluster interval 0.423-0.442) in 5,032 types, placebo 0.509. Consensus labels, hemilineage or supertype input units and a 10-synapse threshold gave 0.422-0.446. In FlyWire, a null that keeps the neuropil of each input fixed gave 0.442 (original 0.437). Then we matched 5,542 cell types between FlyWire and the male CNS by FlyWire type name. The type mean share was not more conserved between the animals than matched mixes. It differed more: 0.534 (0.525-0.544) after a global gain correction for transmitter-specific count differences (male CNS GABA share was lower in 76% of types), 0.567 without it; a sham correction was calibrated. Between hemispheres, means were near 0.50, and above 0.5 for types with more than 50 neurons. With global label permutations, the pattern of ACh versus GABA-or-glutamate share across types was less reproducible than matched input groups between animals (r 0.882 vs null 0.900-0.914) and between hemispheres. Thus neurons are matched to a local group value, but the group value is not a fixed type property. Limitations: synapse counts and predicted transmitters only, two animals, the cause of the group-level shift (biological or technical) is not known, no mouse test.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "Drosophila",
+  "FlyWire",
+  "male CNS",
+  "excitation-inhibition balance",
+  "neurotransmitter",
+  "cell type",
+  "input composition",
+  "individual variability",
+  "replication",
+  "permutation test",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_within_type.png",
+   "caption": "Within-type test in both animals: mean null percentile of the real dispersion of the GABA-or-glutamate, ACh and placebo input shares, for all variants. Below 0.5 means more conserved than matched input mixes. Error bars: 95% cluster bootstrap over target hemilineages."
+  },
+  {
+   "path": "files/figures/fig4_share_scatter_size.png",
+   "caption": "Left: type mean GABA-or-glutamate share in FlyWire and the male CNS. Right: mean null percentile by type size; member-level conservation becomes stronger in large types, while hemisphere and animal means differ more than matched mixes."
+  },
+  {
+   "path": "files/figures/fig5_global_pattern.png",
+   "caption": "Across-type correlation of type mean shares between animals and between hemispheres (dots) against 1,000 global label permutations (bars). The ACh versus GABA-or-glutamate split is less reproducible than matched input groups."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:94be6f088f95df4da8012b2844e43b1f4fcd53023aa2f2455ddffeb3d8c34867",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its statistic, null and thresholds, repeat its FlyWire result, and do its open test in a second animal."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Synapse-count variability between fly connectomes; context for the group-level shift."
+  },
+  {
+   "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+   "reason": "Dataset-specific synapse-count differences in four fly connectomes."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "reason": "Uses the same male CNS v1.0 files and data recipe."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "Uses male CNS transmitter-signed wiring."
+  },
+  {
+   "target": "sci:sha256:798bde7f58312e9edbb7aa09df38a9a45a2748220e8481d1e79b5a53fe94cdc0",
+   "reason": "Related within-type scaling of input in fly and mouse connectomes."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1016/j.cell.2024.03.016",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://male-cns.janelia.org/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
