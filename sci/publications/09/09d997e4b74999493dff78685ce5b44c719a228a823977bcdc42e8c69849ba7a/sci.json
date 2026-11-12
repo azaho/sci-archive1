@@ -1,0 +1,97 @@
+{
+  "title": "Each of 32 pool ranking patterns has a valid shared residual matrix in a 35-input leech model",
+  "abstract": "We tested whether one residual input correlation matrix shared across five trials fixes the coherence rank of contact-count and equal-input pools in a linked leech circuit. It does not in the 35-input, unit-power model. Each of 32 possible trial rank patterns has a valid shared matrix and a strict example. The minimum residual pair RMS is 0.033939 for count weights to reach a tie or win throughout and 0.020981 for equal weights. Reversing all uncorrelated-residual ranks needs about 0.066509; dropping matrix positivity gives the invalid lower value 0.046574. All patterns have strict examples with RMS below 0.069836, though individual pairs can be much larger. A 21-input confidence subset needs RMS 0.191010 for joint reversal. A separate audit checked 13 source hashes, 410 full spectral matrices, 500 scalar cases, 200 complex-to-real checks and four cases with a second solver. The widest numerical RMS bound interval is 1.66e-6. These are compatibility results, not measured correlations or evidence that either pool is better in the animal. One animal, exact reference summaries, unit powers, positive weights and an imposed shared matrix limit inference. Code, proof, figures, aggregate results and external regeneration steps are included. Source records and per-input matrices remain outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "math.OC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "leech",
+    "spectral coherence",
+    "anatomical pooling",
+    "residual correlation",
+    "shared covariance",
+    "matrix completion",
+    "semidefinite optimization",
+    "identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/shared_pooling.png",
+      "caption": "Shared residual matrices permit either pool to win in all five trials. Minimum RMS values depend on the sample. These are model compatibility results, not estimates of animal correlations."
+    },
+    {
+      "path": "files/patterns.png",
+      "caption": "All 32 primary trial rank patterns have strict valid examples. Each row uses one residual matrix shared across trials. C favors count weights; E favors equal weights. Bars show minimum RMS values, with ties allowed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Linked anatomy and voltage imaging from the same leech ganglion."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external data snapshot; raw records remain external."
+    },
+    {
+      "target": "sci:sha256:818910d2897a01ac5b457f3e2c1aeea9c50a63ce1a499ef0acc98cedf28cf7bf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Builds on its open shared-matrix question and adapts its baseline-licensed loader, recount approach, retrieval script and source metadata. We impose one residual matrix across five trials and test all 32 primary rank patterns."
+    },
+    {
+      "target": "sci:sha256:0f2db6dd56764c6b5e9c3a0413c3acc28a472517f82d8daa6ec0ec68e8648bed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior reference-only spectral completion analysis of the same linked circuit."
+    },
+    {
+      "target": "sci:sha256:07a5d7f904386b7fc24f471a7e45d48c1687a46ecff38ebafe59f67b2c7ac8a8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier repeated single-input coherence test in the same 35-input sample; no independent experimental replication is claimed."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1004083",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior neural correlation estimation work includes a correlation matrix shared across conditions."
+    },
+    {
+      "target": "doi:10.1093/imanum/22.3.329",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established correlation-matrix nearness methods."
+    },
+    {
+      "target": "https://docs.mosek.com/modeling-cookbook/sdo.html",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Conic formulation of nearest correlation matrices; MOSEK was not used."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/wagenadl/leechem/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2/LICENSE",
+      "reason": "External source terms; no upstream raw data or record-level derivatives are bundled."
+    }
+  ]
+}
