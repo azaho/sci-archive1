@@ -1,0 +1,165 @@
+{
+ "title": "Since 2008 NOAA CoralTemp follows the Met Office OSTIA analysis to 0.01 C; its late-2020 step is the OSTIA v3.4 upgrade of 8 December 2020, which also steps ERA5 SST by +0.04 C against Argo",
+ "abstract": "Question: NOAA Coral Reef Watch CoralTemp v3.1 has mean steps in January 2008 and late 2020 (five campaign studies), but their causes and the late-2020 date were not known, and two studies disagreed about a 2020 step in ERA5. After 2002, CoralTemp is the NOAA Geo-Polar Blended Night analysis, which corrects satellite biases to the Met Office OSTIA analysis. Approach: we compared daily OSTIA near-real-time (NRT) and Geo-Polar files (NCEI GHRSST archive), CoralTemp, ERA5 and DOISST on one 0.25-degree grid, read the OSTIA product_version of each file, and tested steps against Argo near-surface data, which OSTIA does not use. Results: on 187 sampled days of 2008-2023, CoralTemp minus OSTIA NRT is -0.001 C (SD 0.010 C, 30S-30N); before 2008 the SD is 0.098 C. On 1 January 2008 CoralTemp rises by +0.046 C against Argo (95% interval 0.033 to 0.059) and joins OSTIA NRT, which does not change (-0.017 C). OSTIA NRT changes from version 3.3 to 3.4 on 8 December 2020, when the Met Office added SLSTR to its bias-correction reference. On that day OSTIA, Geo-Polar (= CoralTemp) and ERA5 step by +0.034, +0.038 and +0.042 C against Argo (intervals 0.027-0.049), and by +0.040 to +0.044 C against DOISST (30S-30N). A control date (8 December 2018) and the OSTIA v3.3 date (4 December 2019) give +0.001 to +0.005 C, and the earlier proposed date 4 November 2020 gives no step. The upgrade halves the cold offset of all three products relative to Argo (-0.07 to -0.04 C). The first day of OSTIA v3.0 (13 February 2018) is the date of an unexplained ERA5 variance step, but its mean step is small (+0.010 C). Thus the post-2002 CoralTemp homogenisation needs two dated causes, and ERA5 SST anomalies after 8 December 2020 contain about +0.04 C from the OSTIA upgrade. Limitations: Argo tests cover 30-60 days around each date; DOISST-based tests share DOISST noise; the pre-2008 bias reference (first OSTIA reanalysis) was not available; DHW was not recomputed.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "CoralTemp",
+  "OSTIA",
+  "ERA5",
+  "Geo-Polar Blended",
+  "Argo",
+  "homogeneity",
+  "coral bleaching",
+  "SLSTR",
+  "climate data record"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_daily_windows.png",
+   "caption": "Daily product minus DOISST, 30S-30N. (a) On 1 January 2008 CoralTemp rises to the OSTIA NRT level; OSTIA does not change. (b) On 8 December 2020 (OSTIA v3.4, SLSTR in the bias reference) CoralTemp, Geo-Polar Night, OSTIA NRT and ERA5 step up together; 4 November 2020 has no step."
+  },
+  {
+   "path": "files/figures/fig3_step_tests.png",
+   "caption": "(a) Steps against Argo (not used by OSTIA), 30 days each side, with 95% bootstrap intervals: 1 January 2008, OSTIA v3.0 (13 Feb 2018), a control date, OSTIA v3.3 (4 Dec 2019) and OSTIA v3.4 (8 Dec 2020). (b) Steps against DOISST at candidate dates (30S-30N)."
+  },
+  {
+   "path": "files/figures/fig1_reference_history.png",
+   "caption": "(a) CoralTemp minus in situ products and ESA CCI, 30S-30N, 12-month means, with the reference sensor that sets the CoralTemp mean in each period. (b) CoralTemp minus OSTIA NRT on single days every 30 days: scattered before 2008, within 0.01 C after 1 January 2008."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b36f588b797401e9be976e16eee0b8a7c017861fb0b8d39d3a0437634df7c429",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We use its daily CoralTemp-minus-DOISST series. We date its late-2020 step to 8 December 2020 (OSTIA v3.4), not 4 November 2020, and confirm its 2008 step and the bias-reference cause."
+  },
+  {
+   "target": "sci:sha256:d96591b829ab47ef10e454ce6b9ce2efb67095b3c65d04da7e45cf29aec85e5b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We give the cause of its January 2008 and about-October-2020 steps."
+  },
+  {
+   "target": "sci:sha256:9cbad554c571ef6334abd41fdce1224da1f2da3ff813519ef49f507183b72bcc",
+   "relations": [],
+   "reason": "CoralTemp 1995 and 2002 steps and DHW effects."
+  },
+  {
+   "target": "sci:sha256:d089c0513771ee76f3e22e00acc8c0acd67af87e6428ca943338379806b0dde8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its January 2008 step is the day CoralTemp joins OSTIA NRT."
+  },
+  {
+   "target": "sci:sha256:e46972c3c4abd86e015a70dbe9acf483b6e4be3f880b1986e527fdb0610b7f9e",
+   "relations": [],
+   "reason": "CoralTemp steps and CRW station DHW; we replicated its staircase independently."
+  },
+  {
+   "target": "sci:sha256:83e180ed2db9f89807dded4a7d49bdb1a6a8aa2d71f8afcada3b0606e2539d68",
+   "relations": [
+    "supports"
+   ],
+   "reason": "OSTIA reanalysis v2 shifts at its own reference changes (SLSTR-A in 2017); the NRT system shifts the same way when SLSTR enters its reference in December 2020."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Some of its variants give ERA5 a +0.03 C step in 2020-10; we find a +0.04 C ERA5 step on 8 December 2020 against Argo."
+  },
+  {
+   "target": "sci:sha256:25189608c165f6e3cea4e675bb43d5fb3900ced8f9917ea77b53dfd228a02339",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "It did not confirm an ERA5 October 2020 step with monthly Argo data; a daily test on 8 December 2020 finds +0.042 C (0.034-0.049)."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its unexplained ERA5 variance step of 13 February 2018 is the first day of OSTIA v3.0."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST-minus-CCI daily series used to form CoralTemp minus CCI for Figure 1a."
+  },
+  {
+   "target": "doi:10.3390/rs16183396",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OSTIA SLSTR reference upgrade, December 2020."
+  },
+  {
+   "target": "doi:10.3390/rs12040720",
+   "relations": [],
+   "reason": "OSTIA NRT configuration."
+  },
+  {
+   "target": "doi:10.1016/j.rse.2010.10.017",
+   "relations": [],
+   "reason": "OSTIA system."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-11-00648.1",
+   "relations": [],
+   "reason": "First OSTIA reanalysis (CoralTemp 1985-2002)."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-15-00002.1",
+   "relations": [],
+   "reason": "Geo-Polar Blended analysis."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "relations": [],
+   "reason": "CoralTemp v3.1."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [],
+   "reason": "ERA5."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "iQuam in situ SST."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [],
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.17882/42182",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Argo data."
+  }
+ ]
+}
