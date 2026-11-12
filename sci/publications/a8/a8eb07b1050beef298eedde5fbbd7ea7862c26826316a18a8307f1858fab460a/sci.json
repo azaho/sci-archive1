@@ -1,0 +1,90 @@
+{
+ "title": "Summer temperature and water balance gave no clear change in the autumn-to-spring nocturnal bird passage ratio at 11-18 European weather radars in 2014-2024 after quality control",
+ "abstract": "Question: do warm or dry summers (May-July) decrease the ratio of autumn to spring nocturnal bird passage measured by weather radar, an observer-free index of breeding output? Data: BALTRAD vertical profile time series (Aloft repository, CC0) for 25 radars in 8 European countries, March-May and August-October 2014-2024 (1,184 monthly files), and CRU TS 4.09 temperature and P-PET. Method: nightly migration traffic from sunset to sunrise, season totals, R = ln(autumn/spring) per radar-year (calibration constant within a year cancels), radar and year fixed effects, radar-cluster bootstrap. Result: quality control is the main constraint. Of 198 radar-years, 100 kept one processing regime in all six months and only 62 also had valid ground-speed retrieval. In the clean sample (47 radar-years, 11 radars with 3 or more clean years) a 1 SD warmer summer (0.81 C) changed R by -0.19 (95% CI -0.56 to +0.31) and a 1 SD wetter summer (+50 mm) by -0.07 (CI -0.33 to +0.31). A temperature-only model gave -0.13 (CI -0.31 to -0.01), but this slope was not robust (-0.10, CI -0.19 to +0.01, with 18 radars). The pre-specified model (96 radar-years) gave larger negative slopes with wide intervals; inspection showed that months without ground-speed retrieval produced ratios up to e^8, so we added a speed rule and report both. Spring and autumn passage dates had no clear temperature link. Limitations: small clean sample, very few southern radars, no 2018-2019 or 2022 data passed QC, one climate box per radar. Code, nightly traffic for all 25 radars, QC tables and a regeneration script are included.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370201"
+  }
+ ],
+ "keywords": [
+  "weather radar",
+  "bird migration",
+  "BALTRAD",
+  "vol2bird",
+  "breeding productivity",
+  "summer drought",
+  "heat",
+  "autumn spring ratio",
+  "phenology",
+  "observation bias",
+  "data quality control",
+  "Europe",
+  "CRU TS",
+  "climate extremes"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_radars_and_qc.png",
+   "caption": "Left: 25 BALTRAD radars; the number gives radar-years that pass all quality control. Right: the number of radar-years that remain after each quality-control step (198 to 47)."
+  },
+  {
+   "path": "files/figures/fig4_coefficients.png",
+   "caption": "Change in ln(autumn/spring traffic) per 1 SD of May-July temperature (left) and P-PET water balance (right), with 95% radar-bootstrap intervals, for all specifications. prereg rows use the pre-specified QC; main rows add the ground-speed rule."
+  },
+  {
+   "path": "files/figures/fig3_ratio_vs_summer.png",
+   "caption": "Ratio ln(autumn/spring traffic) vs. May-July temperature and water-balance anomalies after removal of radar and year means, for the 47 clean radar-years at 11 radars."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41597-025-04641-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Describes the BALTRAD VPTS data set (CC0) that gives the radar traffic."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14711024",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BALTRAD_VPTS v2 deposit, licence and coverage list used to select radar-years."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0453-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CRU TS climate data (version 4.09) for summer temperature and P-PET."
+  },
+  {
+   "target": "doi:10.1038/s41559-018-0666-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Autumn/spring radar passage ratio as an index of breeding output (USA)."
+  },
+  {
+   "target": "sci:sha256:46ebf207bbe4de80002291579e40aae3276656ead0d38a9cd6807d4e95cc12fe",
+   "reason": "Campaign result on weather effects on bird abundance from count surveys; this work uses radar and summer weather."
+  },
+  {
+   "target": "sci:sha256:15270e894fa3ccc7440d212eec8eefbd61f3c871cb06b211e78f8dc74ca0b78f",
+   "reason": "Campaign result on winter temperature and next-summer bird counts."
+  },
+  {
+   "target": "sci:sha256:707de3f11951a469f6b7b6a3a334c3d21b3c9a7b01966dbf368c114765e66355",
+   "reason": "Swedish count-survey test of winter weather effects; European context for weather-driven bird abundance."
+  },
+  {
+   "target": "sci:sha256:39f380b9b333b7319b97ba6b87b739cb7f872611dd229c1575b7eea32982e0d8",
+   "reason": "Swedish partial-migrant response to winter warmth; related weather-abundance work."
+  }
+ ]
+}
