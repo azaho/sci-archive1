@@ -1,0 +1,179 @@
+{
+ "title": "Climate-only daily LSTMs explained 40-45% of the post-1997 runoff deficit in 175 south-east Australian catchments; the rest was a gradual mainland decline but a 1997 step in Tasmania and SW WA",
+ "abstract": "Question: after 1997, south-east Australian (SE-AU) runoff fell 12-25% below its 1951-1996 relation to rain. Fixed-form climate models explained at most one third. What part can a flexible model that sees only climate produce? Approach: a regional LSTM on daily CAMELS-AUS v2.03 data of 561 catchments (rain, evaporative demand, temperature, vapour pressure, radiation, vapour-pressure deficit, 1- and 3-year rain). Four leave-window-out folds inside 1951-1996; models trained on 1951-1996 predict 1997-2021. Reference: a per-catchment linear annual model with the same folds. Target: 175 SE-AU catchments. Plan written before any prediction was inspected. Results: the LSTM removed 45% (95% CI 14-71%) of the 2010-2021 linear deficit (-10.7% against -19.6% of mean runoff) and 40% (24-56%) in 1997-2009: 'partial' by the planned rule. Both post-1997 departures were below all four cross-validated pre-1997 windows (+26%, +9%, +3.5%, -2%). The LSTM removed 84% of the 1983-1996 low, so the earlier lows were mostly climatic. It removed 32-38% in Victoria and 62-74% in NSW+ACT. It produced part of the loss of rain sensitivity: slope ratio 0.90 against 0.75 observed in 2010-2021. An LSTM trained on all years 1951-2021 still left a contrast between the eras. Post hoc: climate-adjusted mainland departures fitted a gradual decline of -3.5% per decade from 1959 (CI -5.6 to -1.9); a 1997 step added -2% (-8.5 to +4.1). Tasmania and south-west WA had 1997 steps of -19% and -25%, with best break year 1997 in a 1975-2012 scan. The northern summer-rain control had no deficit and no trend. Conclusion: climate dynamics explain more of the deficit than fixed models showed and explain the earlier lows, but 55-60% remains. It is a slow mainland decline since the 1950s plus a 1997 step in southern winter-rain regions, not one drought-induced state shift. Limitations: one LSTM architecture and few seeds; possible time-proxy use of temperature; 730-day memory; gridded rain inhomogeneity; regional tests are post hoc.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "runoff deficit",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "LSTM",
+  "deep learning",
+  "cross-validation",
+  "runoff efficiency",
+  "CAMELS-AUS",
+  "south-east Australia",
+  "Tasmania",
+  "south-west Western Australia",
+  "change point",
+  "attribution"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_window_departures.png",
+   "caption": "Out-of-sample window departures for 175 SE-AU catchments: linear annual model, climate-only LSTM, rain + PET LSTM and in-sample 1951-2021 fits. 95% cell-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig1_departure_series.png",
+   "caption": "Annual mean departure 1951-2021 (thin) and 5-year mean (thick). The LSTM removes the earlier lows but leaves a decline that continues after 1997."
+  },
+  {
+   "path": "files/figures/fig6_break_scan.png",
+   "caption": "Break-year scans (step + trend) of climate-adjusted departures: best break 1997 in Tasmania and south-west WA, 1979 in NSW+ACT, flat 1987-1997 in Victoria."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:463123a6329a6169583a00fc2b16f1322c6582db2abda06eb2201fce0160d78a",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We use its 175-catchment set and departure definition. Our flexible climate model shows that its earlier lows (1959-1971, 1983-1995) are mostly climatic, which supports its conclusion that the post-1997 deficit is not a repeat of them."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We reproduce its post-1997 deficit and loss of rain sensitivity out of sample; a climate-only LSTM reproduces only part of the sensitivity loss."
+  },
+  {
+   "target": "sci:sha256:509746945963c56d6df824bc5262ed70c0961f4446234eda1b56d48b1686bcc4",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "It found that daily climate explains at most about one third of multidecadal efficiency changes. A flexible LSTM explains 40-45% of the post-1997 deficit and most of the 1983-1996 low, so fixed-form models understate the climatic part."
+  },
+  {
+   "target": "sci:sha256:66562a586c15cdd29f7b84455e8e926841fd562cf92beda20b4543f3ac84f1db",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its GR4J storage test explained 16% of the post-2009 loss; we test a model class without a fixed store structure."
+  },
+  {
+   "target": "sci:sha256:e3ac7e4425f9706064e3301f8f1b64b43cd93db81d178a0896716c7ede512998",
+   "relations": [
+    "supports",
+    "reviews"
+   ],
+   "reason": "After climate adjustment, NSW+ACT efficiency declined gradually (best break 1979), as it found; for Victoria a 1990s step and a trend fit about equally well."
+  },
+  {
+   "target": "sci:sha256:448ef5cf94fd4dd8ed8caa78bd86c6fe2d0e8c0c9a8e3c2be15927a0d9897b45",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Our climate-adjusted mainland series also shows a gradual decline from before 1981 rather than a 1997 step."
+  },
+  {
+   "target": "sci:sha256:5d352607977de0617c6ac7270049527dfccc96db10c3a429d2da428e3cefb121",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It linked the 1997 step to winter-rain share; we find 1997 steps in winter-rain Tasmania and south-west WA but only a weak across-catchment relation in SE-AU."
+  },
+  {
+   "target": "sci:sha256:df94300296950b95abdef659bd8fde5f91b8ec2e06c9dcc25d5eab68087c3da5",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found that the persistent deficit belonged to southern Australia after 1997; our climate-only LSTM leaves 1997 steps in Tasmania and south-west WA and none in the north."
+  },
+  {
+   "target": "sci:sha256:491b96f6a741c6fd53935ddbf746b42d0f5b6bb1230b67f279056b73b4383049",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its contrast with the central-Chile megadrought motivates our regional controls."
+  },
+  {
+   "target": "sci:sha256:d64d5f130be2464678576143b876e5e7c6c1a806cf7393148fe52b5bf75f2c51",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its monthly model left the 1946-1956 surplus; our LSTM also leaves most of the 1951-1958 surplus."
+  },
+  {
+   "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Long-record context for the pre-1957 surplus and earlier deficits."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its state view of Victorian catchments is compared with our trend-versus-step result."
+  },
+  {
+   "target": "sci:sha256:05f7ac9cb828471b5195c8cf129970a7b55703fc920a392cff76bce2741f5a01",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its slow pre-1997 drift in gauge-relative rain is a possible source of a slow drift in our climate-adjusted series."
+  },
+  {
+   "target": "sci:sha256:5eddb9c5471d41c58e267937e928348b72d2c7853d9c778e5265a13ae9a1d2b0",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It treated four wet Tasmanian catchments separately; we find a 1997 step beyond climate in 26 Tasmanian catchments."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.5194/hess-30-757-2026",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "LSTM rainfall-runoff modelling on CAMELS-AUS; our model setup is similar in inputs and loss."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Community review of explanations for Millennium Drought rainfall-runoff changes."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Peterson et al. 2021: watersheds may not recover from drought; the state-shift hypothesis we test."
+  }
+ ]
+}
