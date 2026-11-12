@@ -1,0 +1,119 @@
+{
+  "title": "One coherent reference removed known input mixing from circuit-ratio tests in fully observed linear models",
+  "abstract": "We tested a repair for coherent input spread in a circuit-ratio method. In a fully observed stable linear model, n known independent mixed input directions and one known coherent reference recover the transfer matrix up to one scalar from rank-one spectral differences. Input powers and response phases can be unknown. This applies standard projective-frame reconstruction. It removes known input mixing before a four-edge ratio cancels scalar cell filters and separate source and target gains. In 90 exact model checks on two adult worm maps and one selected MICrONS mouse graph, the largest relative ratio error was 2.05e-15. A matched sample and mean-power benchmark had 960 paired trials in twelve fixed synthetic circuits. At 196608 independent spectral samples and dose 16, corrected median errors were 0.0150 and 0.0191 for 8 and 16 states, versus 0.0129 and 0.0176 for ideal single-node inputs. A weak reference term raised error. An unknown common input map passed all direction checks in a stable DC example while changing the ratio by 47.4 percent. We give proofs, conditional error bounds, original code, synthetic evidence, aggregate graph checks and exact external-input hashes. Known neural-current input directions, fixed dynamics and background, scalar filters and full observation are required. No measured neural activity was fitted. External database records and matrices are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "circuit identification",
+    "connectomics",
+    "coherent stimulation",
+    "input calibration",
+    "projective frame",
+    "spectral differences",
+    "MICrONS",
+    "Allen Institute",
+    "linear dynamics"
+  ],
+  "display": [
+    {
+      "path": "files/results/exact_graphs.png",
+      "caption": "One coherent reference corrected a known mixed input map in 90 exact model checks on two adult worm graphs and one selected mouse graph. No activity data were fitted."
+    },
+    {
+      "path": "files/results/sampling.png",
+      "caption": "Median ratio errors and 10th to 90th percentiles in the matched sample and mean-power benchmark. Each point has 120 draws over six fixed synthetic circuits, not animal replicates."
+    },
+    {
+      "path": "files/results/limits.png",
+      "caption": "A weak reference coordinate raised sample error, and a wrong common input map left a bias. Bands show simulation quantiles or model ranges as stated in the main text."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:969c576e0c654031e6594e4daa1a1ebb98323cdf5eda443bc426df0e40607877",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its four-edge circuit-ratio target and addresses its coherent input-spread failure. No code or numerical tables copied."
+    },
+    {
+      "target": "sci:sha256:3c47a8d201d0b0befe764e559c23bc8d092e92d64c9819224e0885579468f790",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its input-spread failure and selected external graph definitions as context. Tests coherent projective calibration instead of independent-noise code separation. No code or numerical tables copied."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1308.2248",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.cis.upenn.edu/~jean/gma-v2-chap5.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Standard projective-frame reconstruction supplies the calibration algebra; section 5.4. Our proof and implementation are written separately."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External graph input; exact hash and path in INPUTS.json. Source records remain outside the baseline package."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External graph input; exact hash and path in INPUTS.json. Source records remain outside the baseline package."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External graph input; exact hash and path in INPUTS.json. Source records remain outside the baseline package."
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy",
+      "reason": "External source terms and attribution context; no raw database records or derivative matrices bundled."
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions",
+      "reason": "External source terms and attribution context; no raw database records or derivative matrices bundled."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "reason": "External source terms and attribution context; no raw database records or derivative matrices bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External source terms and attribution context; no raw database records or derivative matrices bundled."
+    }
+  ]
+}
