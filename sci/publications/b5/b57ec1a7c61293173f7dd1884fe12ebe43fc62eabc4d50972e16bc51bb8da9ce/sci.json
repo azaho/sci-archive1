@@ -1,0 +1,142 @@
+{
+ "title": "Human single-pulse stimulation responses in 74 patients showed no preferred direction along six cortical hierarchy maps, while electrode send-receive balance predicted 76% of response asymmetries",
+ "abstract": "Question: do cortico-cortical evoked potentials (CCEPs) go preferentially up or down the cortical hierarchy? Data: OpenNeuro ds004080 v1.2.4 (CC0), 74 patients aged 4-51 with subdural ECoG and the authors' N1 detections; six HCP group maps in Schaefer-400 parcels: inverted T1w/T2w (primary), principal FC gradient, microstructure-profile gradient, Mesulam class, Yeo-7 order, and cortical thickness as a control. Method: matched reciprocal pairs. For two stimulated electrode pairs P and Q in one patient, we compared the N1 rate from P to Q with the rate from Q to P on the same four electrodes, so distance, patient and path are the same. We used 115,922 reciprocal pairs (21,278 asymmetric). We measured the share of asymmetric response mass that goes to the higher-hierarchy pair (0.5 = no direction), with patient-bootstrap CIs and 1,000-rotation spin nulls. As a positive control, we fitted a send-receive balance for each stimulated pair and predicted held-out asymmetries by cross-validation. Results: the upward share was 0.507 [95% CI 0.486, 0.527] for T1w/T2w (spin p 0.70) and 0.491 to 0.518 for the other maps (all CIs include 0.5, all spin p >= 0.34). It stayed near 0.5 at all distances and for large hierarchy contrasts. The electrode balance predicted the sign of held-out asymmetries in 76.3% [74.8, 77.8] of cases, above 0.5 in all 74 patients, so the asymmetries are structured. But the balance was not related to hierarchy: within-patient rho with T1w/T2w -0.003 [-0.044, 0.036]; parcel-level rho -0.016 (297 parcels, spin p 0.87). Seizure-onset sites sent slightly more than they received. N1 latency did not change with hierarchy difference (-0.58 ms per SD [-1.21, 0.08]). An exploratory age trend (children slightly upward, adults slightly downward) was equally strong for the thickness control and is not claimed. Limitations: group hierarchy maps, N1 presence only, one centre, sparse visual and limbic coverage, and electrode-level causes of the balance are unknown.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "cortico-cortical evoked potentials",
+  "CCEP",
+  "single pulse electrical stimulation",
+  "ECoG",
+  "cortical hierarchy",
+  "T1w/T2w myelin",
+  "functional gradient",
+  "directionality",
+  "effective connectivity",
+  "spin test",
+  "seizure-onset zone",
+  "human cortex",
+  "null result",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_direction_vs_hierarchy.png",
+   "caption": "a: mean asymmetry of reciprocal CCEP pairs (response rate towards the higher minus towards the lower T1w/T2w-hierarchy pair) against the hierarchy difference, with 95% patient-bootstrap CI and pairs per bin. b: share of asymmetric response mass that goes to the higher-hierarchy pair for six maps (95% CI; gray band = spin null mean +/- 1 SD), compared with the cross-validated sign agreement of electrode send-receive balance (positive control)."
+  },
+  {
+   "path": "files/figures/fig2_balance_patients_covariates.png",
+   "caption": "a: parcel-level mean send-receive balance (within-patient z) against inverted T1w/T2w (marker size = number of stimulated pairs). b: per-patient directional index for T1w/T2w. c: joint model of pair asymmetry; sender excess per SD of each attribute difference with 95% patient-bootstrap CI."
+  },
+  {
+   "path": "files/figures/fig3_exploratory_age.png",
+   "caption": "Exploratory, not pre-specified: per-patient directional index against age for the inverted T1w/T2w map and the thickness control map (patients with at least 10 asymmetric pairs). The similar trend for the control map argues against a hierarchy-specific developmental change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8811ade999bbc79753c0cf99f6706a50446d90e4c6b3554be6a6795dcd1e525c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same CCEP dataset; we adapted its edge-building code and electrode-to-parcel assignment, and we test its open item on directed CCEP asymmetry."
+  },
+  {
+   "target": "sci:sha256:734b7b0e7a2785fc574d7b9aa0d0b2fcb4483d669e3c8b683196284c5c4ec641",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mouse result: direction of inter-regional influence did not follow projection asymmetry; our human causal-perturbation result agrees in direction."
+  },
+  {
+   "target": "sci:sha256:bb0ad271927ed72566b2bc7374338aa47f42b832e6a2f81a65c726c145997f71",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mouse result: net projection direction did not predict response order; our human result is consistent."
+  },
+  {
+   "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+   "reason": "Mouse visual cortex LFP Granger influence went from lower to higher areas; CCEP N1 presence in humans shows no such hierarchy direction at the scale tested."
+  },
+  {
+   "target": "sci:sha256:84905fb5f8fd0233fb8cb474287acd56fbb78c5c7b53150a724e4abe9469a4b8",
+   "reason": "Earlier campaign use of the T1w/T2w hierarchy map with human intracranial recordings."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004080.v1.2.4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CCEP ECoG dataset (CC0): N1 detections, electrode tables and distances."
+  },
+  {
+   "target": "doi:10.1038/s41593-023-01272-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dataset paper and N1 detection method."
+  },
+  {
+   "target": "doi:10.1038/s42003-020-0794-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BrainSpace toolbox: group T1w/T2w, thickness, FC and microstructure gradient maps, Schaefer and Mesulam labels."
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01186-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ENIGMA toolbox: fsaverage5 surfaces, spheres and Schaefer-400 labels."
+  },
+  {
+   "target": "doi:10.1093/cercor/bhx179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Schaefer-400 parcellation."
+  },
+  {
+   "target": "doi:10.1073/pnas.1608282113",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Principal functional connectivity gradient."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.3000284",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Microstructure profile covariance gradient."
+  },
+  {
+   "target": "doi:10.1093/brain/121.6.1013",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mesulam hierarchy classes."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2018.05.070",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spin permutation test for spatial maps (Alexander-Bloch et al. 2018)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2023.01.027",
+   "reason": "Communication models explain CCEP propagation in F-TRACT data (Seguin et al. 2023)."
+  },
+  {
+   "target": "doi:10.1002/hbm.22581",
+   "reason": "Earlier report of widespread connectional asymmetry in human CCEPs (Entz et al. 2014)."
+  }
+ ]
+}
