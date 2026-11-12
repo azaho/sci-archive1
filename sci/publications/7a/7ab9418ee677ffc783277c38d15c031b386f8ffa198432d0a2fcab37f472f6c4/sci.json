@@ -1,0 +1,134 @@
+{
+ "title": "TESS pixels and Gaia DR3 epochs put all 7 non-TOI Gaia DR3 transit candidates on target; 4 stay planet candidates (1.2-1.7 RJ) and 3 are eclipsing binaries",
+ "abstract": "Question: Are the seven non-TOI planet-like TESS signals from the Gaia DR3 transit table (found by three earlier campaign studies) planets on the target stars, or eclipsing binaries or blends? Method: We made our own TESScut photometry of all 34 TESS sectors (2019-2025) with a Gaia scene model and fitted the transits with MCMC. We used the Gaia DR3 G epochs of 2014-2017 as an on-target depth and dilution calibrator. We did a difference-image source test in each sector against every Gaia star that can cause the dip. We compared the Gaia DR3 radial-velocity epoch scatter with reference stars, searched for secondary eclipses with red-noise errors and a split-sample replication test, used ZTF for the two northern stars, and ran TRICERATOPS. Results: In all 34 sectors the target is the best source of the dip; other Gaia stars fit worse by delta chi-square 139-2393. Three signals are eclipsing binaries: TIC 435052739 (Gaia RV K 17.8-29.3 km/s, companion 0.12-0.20 solar masses, ellipsoidal signal 3.6 sigma), TIC 4638108 (secondary eclipse at phase 0.46, about 1700 ppm, found in 2019-2021 sectors and replicated in 2023-2025 sectors; grazing primary), and TIC 169468881 (Gaia RV-variable, companion radius 2.36 RJ). Four stay on-target planet candidates: TIC 87433458 (1.6155 d, 1.75 RJ, Gaia RV mass < 18 MJ, TRICERATOPS FPP < 1e-6), TIC 93622019 (2.1239 d, 1.50 RJ, < 73 MJ, TRICERATOPS FPP 0.048), TIC 445886244 (1.4742 d, 1.21 RJ, transit density equals Gaia density, FPP 0.13) and TIC 44997521 (3.5494 d, 1.17 RJ, FPP 0.0011). In crowded fields a Gaussian-PSF scene model mis-estimated dilution by up to 1.6 times; Gaia epoch depths corrected this. Limitations: no spectroscopy or high-resolution imaging; no Gaia RV information for three stars; RV limits come from one summary value per star; unresolved companions within about 1 arcsec remain possible. The candidates need RV follow-up.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "Gaia DR3",
+  "planet candidates",
+  "vetting",
+  "difference imaging",
+  "eclipsing binaries",
+  "radial velocity",
+  "secondary eclipse",
+  "false positives",
+  "TRICERATOPS",
+  "ZTF",
+  "hot Jupiters",
+  "dilution",
+  "Gaia epoch photometry"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_transits_tess_gaia.png",
+   "caption": "TESS transits (blue, binned) and Gaia DR3 G epochs of 2014-2017 (orange) folded on the refined TESS ephemeris for the seven stars, with the verdict of each star."
+  },
+  {
+   "path": "files/figures/fig3_difference_images.png",
+   "caption": "Out-of-transit and difference images (sector with the highest dip S/N). The dip is at the target (blue cross) in every case; orange circles are Gaia stars bright enough to cause the dip."
+  },
+  {
+   "path": "files/figures/fig4_tic4638108_secondary.png",
+   "caption": "TIC 4638108: a secondary eclipse near phase 0.46 in five of six TESS sectors, which shows that this candidate is an eclipsing binary."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:218f44a0576460b0810a5a7fe3d12aa417beced6628b2da3cea81223f6679ef0",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the candidate list (TIC 445886244, 87433458, 435052739, 169468881); we vet its planet-compatible signals at pixel level."
+  },
+  {
+   "target": "sci:sha256:7c4c39b739b1ba7a27b24aa7aca20fe16355bc434e5fad4a2c84d738a72c2f32",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Source of candidates and prior ephemerides; we find a secondary eclipse at phase 0.46 for TIC 4638108, which it classed as planet-like."
+  },
+  {
+   "target": "sci:sha256:92aac63d485c4083dc8d3b71415254e5331d005cf27f4f8863af40158c68f0e4",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of candidates; same table."
+  },
+  {
+   "target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 RV scatter as an on-target binary flag."
+  },
+  {
+   "target": "sci:sha256:7b0727ff5be0cbc4f2356f61f70d1df9d2f51adc75fd5d4be9776ead5224cd47",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 RV exclusion of on-target eclipsing binaries."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244220",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 radial velocities (Katz et al. 2023)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abc6af",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TRICERATOPS."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF data system."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit model."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee."
+  },
+  {
+   "target": "https://mast.stsci.edu/tesscut/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS FFI cutouts."
+  }
+ ]
+}
