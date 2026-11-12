@@ -1,0 +1,108 @@
+{
+ "title": "Warm climate limited Lyme disease emergence in US counties near the spread front in 2004-2021: odds fell by 68% per 500 C-day above 4,000 after diffusion, forest and state-year controls",
+ "abstract": "Question: near the spread front of Lyme disease in the eastern United States, does county climate change the probability that a county becomes endemic, and is the limit on the cold side or the warm side? Approach: we used CDC county case counts (2001-2021), Census population, NOAA nClimGrid temperature and USFS forest cover. A county became endemic at the first persistent 3-year incidence of at least 10 per 100,000. A discrete-time logit hazard model compared 12,265 at-risk county-years within 250 km of endemic counties (393 emergences) in the Northeast, Upper Midwest and Mid-Atlantic/South. Controls were diffusion pressure, population, latitude, forest and region-year or state-year fixed effects. Climate was the 1981-2000 degree-day sum above 0 C (DD0, monthly). Results: emergence was flat across cool climates and fell steeply above about 4,500 C-day. Above 4,000 C-day the odds fell by a factor of 0.32 per +500 C-day (95% interval 0.25-0.41; state-cluster bootstrap 0.23-0.67). The result stayed with state-year effects (0.33), in 2004-2012 (0.34) and 2013-2021 (0.28), in the Northeast (0.13) and Mid-Atlantic/South (0.34), with thresholds of 5 and 20 per 100,000, and with data to 2023. Only 8 emergences occurred in 2,055 county-years above 5,000 C-day. Latitude had no effect after climate. Summer (June-August) temperature fitted best. In CDC ArboNET tick surveillance, which does not depend on physician diagnosis, Borrelia burgdorferi presence in ticks also decreased on the warm side (OR 0.36 per 500 C-day). There was no cold limit inside the US: the endemic area reached the Canadian border by about 2008. Limitations: human surveillance bias can remain within states; climate is correlated with host, tick lineage and land-use gradients; the Upper Midwest had too few warm frontier counties; tests of whether 2004-2021 warming moved the warm limit were not identifiable, and a tracking-ratio test failed.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410401"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "420202"
+  }
+ ],
+ "keywords": [
+  "Lyme disease",
+  "Ixodes scapularis",
+  "Borrelia burgdorferi",
+  "range expansion",
+  "warm range limit",
+  "climate",
+  "degree-days",
+  "hazard model",
+  "observation bias",
+  "disease surveillance",
+  "species distribution",
+  "eastern United States",
+  "nClimGrid",
+  "ArboNET",
+  "forest cover"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_map_emergence.png",
+   "caption": "County Lyme disease emergence (persistent 3-year incidence of at least 10 per 100,000) by period, 2003-2021, with the 1981-2000 DD0 contours of 4,500 and 5,000 C-day. The southern front stopped near these lines and moved along the cool Appalachian highlands."
+  },
+  {
+   "path": "files/figures/fig2_hazard_by_climate.png",
+   "caption": "Left: adjusted odds of emergence by 1981-2000 DD0 bin (reference 3,500-4,000 C-day), with diffusion, population, latitude, forest and region-year effects, 95% intervals. Right: raw annual emergence rate for counties within 60 km of an endemic county."
+  },
+  {
+   "path": "files/figures/fig3_warm_slope_robustness.png",
+   "caption": "Odds ratio of emergence per +500 C-day above 4,000 C-day across specifications, periods, regions, incidence thresholds and the extension to 2023. Blue: 95% model interval; yellow: 95% state-cluster bootstrap where computed."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "reason": "Only earlier campaign study with Ixodes scapularis data (New York nymph density forecast); it did not study county spread or climate limits."
+  },
+  {
+   "target": "doi:10.3201/eid2108.141878",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Describes the geographic expansion of US Lyme disease and the CDC high-incidence county definition used here."
+  },
+  {
+   "target": "doi:10.1016/j.ijpara.2005.08.016",
+   "reason": "Degree-day cold-limit model for Ixodes scapularis; we found no cold limit inside the US because the endemic area reached the border."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.3001066",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Explains rare southern Lyme disease by host choice and questing behaviour; our hazard and tick-pathogen results agree with a warm-side limit."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0127450",
+   "reason": "Northern and southern nymph questing behaviour differences, a candidate mechanism."
+  },
+  {
+   "target": "https://www.cdc.gov/lyme/media/files/2025/02/LD_Case_Counts_by_County_2023_updated.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CDC county Lyme disease case counts 2001-2023."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/nclimgrid_tavg.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid monthly mean temperature."
+  },
+  {
+   "target": "https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CDC ArboNET Tick Module county tables (not redistributed; data-use agreement)."
+  },
+  {
+   "target": "https://data.fs.usda.gov/geodata/rastergateway/forest_type/conus_forestgroup.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USFS forest type group raster for county forest fraction."
+  },
+  {
+   "target": "https://www2.census.gov/programs-surveys/popest/datasets/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Census county population estimates."
+  }
+ ]
+}

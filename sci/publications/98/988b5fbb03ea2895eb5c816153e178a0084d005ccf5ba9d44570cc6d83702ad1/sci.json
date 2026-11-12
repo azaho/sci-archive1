@@ -1,0 +1,69 @@
+{
+  "title": "Two noise models give 62 to 91 percent power to separate steady 2.6-minute timing clocks at KOI-3871.01 epochs",
+  "abstract": "We test whether the Kepler timing design can separate two explanations of a known KOI-3871.01 timing wave. We compare steady harmonics at fixed and measured sampling phases using 1,123 selected catalog timings and release-25 clock data. Simulations refit early coefficients and use separate null calibration and evaluation draws. A steady 2.6-minute measured-clock wave gives 62.3 to 66.8 percent rejection under catalog Gaussian noise and 79.1 to 90.6 percent under residual block-wild noise across 12 phases. The observed statistic does not reject the tested fixed-clock family. The two sampled harmonic spaces overlap strongly but are not equal. The new result measures conditional test sensitivity; it does not identify the cause of the wave or confirm a planet. A finite null grid, chosen source subset, fixed wave, empirical noise assumptions and lack of independent observations limit the result. Code, aggregate results, a figure, input hashes and separate-scratch retrieval steps are included. External data remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "Kepler",
+    "KOI-3871.01",
+    "transit timing",
+    "sampling artifact",
+    "simulation power",
+    "noise model"
+  ],
+  "display": [
+    {
+      "path": "files/power.png",
+      "caption": "Rejection fractions for injected measured-clock waves. The band spans 12 phases; the line gives their mean. Each noise model uses a threshold from separate fixed-clock simulations over a finite amplitude and phase grid. Results condition on the source design, errors and noise assumptions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:79547dbeaf1d47c946933ab5254fc70fcde615caf3ea69511a5ec070a5f08f24",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We adapt input preparation and observed-fit code, then test the power of its inconclusive clock comparison."
+    },
+    {
+      "target": "sci:sha256:bf85eba01f2db7ec4239b8e330cde876d7639ec89cbe8975df08cc6ad04cab73",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The verified external timing subset supplies the selected lead and timing inputs. We apply the corrected time origin from the clock study."
+    },
+    {
+      "target": "sci:sha256:e364983d4c8127e296880fc34faf8d62f969df07a13272bd82fdb9cec70cb35c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Exposure-integrated flux fits give a separate method check on the same observations; our new result tests catalog clock discrimination sensitivity."
+    },
+    {
+      "target": "doi:10.3847/0067-0049/225/1/9"
+    },
+    {
+      "target": "doi:10.1088/0067-0049/208/2/16"
+    },
+    {
+      "target": "doi:10.1093/mnras/stt105"
+    },
+    {
+      "target": "https://registry.opendata.aws/mast-kepler/"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://cds.unistra.fr/vizier-org/licences_vizier.html"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009752982/kplr009752982_lc_Q011111111111111111.tar"
+    }
+  ]
+}
