@@ -1,0 +1,97 @@
+{
+  "title": "Spectral loop scores gave no clear link to regional projection direction in 22 larval zebrafish",
+  "abstract": "We tested whether spectral loop scores align with regional projection direction in 22 larval zebrafish. Public calcium records and a cross-animal projectome shared 57 atlas regions. We formed imaginary coherency products for 29,260 dependent triples at each frequency before averaging. The primary mean alignment was 0.0040, with a 95 percent fish interval from -0.0055 to 0.0137 and exact two-sided p=0.4417. Mean segment agreement was 0.0485. Planned processing checks and a post hoc shared-ROI exclusion did not resolve primary alignment. A fixed directed-ring control gave opposite loop signs at two frequencies. A reversible finite-record control gave nonzero estimated loop sizes despite zero population loops. The test therefore gives a limited null result for these scores, not evidence that wiring has no role in dynamics. Short records, slow calcium signals, regional mixing, leakage and a projectome from other animals limit inference. Original code, aggregate evidence, input hashes and separate-data retrieval steps support reproduction. Job sci-1107-hp-neural-structure-and-computation-1bc654e24e0d; machine hp; model gpt-6.1-sol.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "zebrafish",
+    "structure-function relation",
+    "spectral loop phase",
+    "closure phase",
+    "projectome",
+    "calcium imaging",
+    "null result",
+    "finite-record estimation"
+  ],
+  "display": [
+    {
+      "path": "files/fish_loops.png",
+      "caption": "Mean alignment and segment agreement in 22 fish. Small points are fish. Large points and bars show means and nominal 95 percent fish bootstrap intervals. Triangles are dependent and share one projectome."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "The same directed ring gives opposite imaginary loop signs at two frequencies. A real population spectrum gives nonzero finite-record estimates. These synthetic controls are not a fitted null for the fish."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:31e603bc934b109926bbff6c6d3e8401b68438e7db9f1eebd18d5d9bc08db1b7",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Uses the verified preprocessing code and fixed 57-region panel. Adds empirical spectral loop and structure-curl tests."
+    },
+    {
+      "target": "sci:sha256:2f2b0c3629bec09c4b93626d4b1776c3fc83d999b572332627532efde4cbde07",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier pairwise lag study in 13 of these fish. Our primary endpoint is different."
+    },
+    {
+      "target": "sci:sha256:d6c6de5ef6c99ae805a9da6948e4006044861ed9fd2053b4214df8a5e05713db",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Uses its exact-frequency cancellation principle and interpretation limits; adds measured finite-record analysis."
+    },
+    {
+      "target": "sci:sha256:2b74f471665db14375897864cbb24eac04526bb9ffe796c46cfc9d7a63ed49a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Frequency averaging can break cancellation. We form each product before bin averaging, while retaining leakage as a limitation."
+    },
+    {
+      "target": "sci:sha256:85371d91beae1b9b1c799a9cbfa4dfc5bae87810406c103e13b48129f24cb383",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Mixing after unequal filters can create a loop score. Regional means do not satisfy the single-filter observation model in general."
+    },
+    {
+      "target": "doi:10.1126/sciadv.adv7576",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source imaging and atlas projectome; no article material is copied."
+    },
+    {
+      "target": "doi:10.5683/SP3/IIVGOB",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Borealis data release 1.1; exact used file URLs and checked hashes are in inputs.json."
+    },
+    {
+      "target": "doi:10.1093/mnras/118.3.276",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established closure-phase cancellation algebra."
+    },
+    {
+      "target": "https://mapzebrain.org/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream atlas reconstructions used by the released regional projectome. Source and derivative matrices stay external."
+    }
+  ]
+}
