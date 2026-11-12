@@ -1,0 +1,92 @@
+{
+ "title": "Tidal triggering of Axial Seamount earthquakes stayed at its 2015 pre-eruption strength from 2018 to 2026 without an eruption; before 2015 the rate peak came earlier, before low tide",
+ "abstract": "Question: is the strength of ocean-tide triggering of Axial Seamount earthquakes a sign of an imminent eruption, as a 2022 thesis proposed, now that caldera uplift passed the 2015 pre-eruption level (August 2024) without an eruption? Data: 343,591 events of the UW OOI catalog (22 January 2015 - 12 November 2026) and the in-situ tidal load from a harmonic fit to OOI bottom pressure at the caldera centre (correlation 0.9996-0.9998 with the OOI predicted tide, no time shift). Method: day-stratified Poisson model of 10-minute counts, rate proportional to exp(-gamma A cos(phi - phi0)), with day-bootstrap intervals and a synthetic recovery test. Results: (1) gamma was 0.095 per kPa of load (0.087-0.103) in the 3 months before the April 2015 eruption, 0.052 in 2015-2017, and 0.103-0.112 in 2018-2021, 2021-2024 and from August 2024 (0.109, 0.100-0.118), when uplift was above the 2015 level. Ratios to the pre-eruption value were 1.14, 1.03 and 1.00 for all, Mw>=0.5 and Mw>=1.0 events. (2) The thesis metric (share of events near low tide) rose 2.27 points per year in 2015-2021, as reported (1.88), but only 0.44 +- 0.39 per year in 2018-2026; the rise was a recovery after the eruption. (3) gamma did not rise in the 3 months before the eruption. (4) Only the timing differed: before the eruption the rate peak came 13.8 degrees of tidal phase (about 29 min) before low tide; in all later periods it came 8-16 degrees after low tide, in all magnitude subsets. A rate-and-state model with a nucleation time of about 4 h at 1,000 events per day explains the direction and size of this shift, but the fit depends mostly on three pre-eruption windows. (5) After 2018 gamma increased with the earthquake rate (0.023 per kPa per tenfold rate), not with uplift. Conclusion: pre-eruption-level tidal triggering persisted for 8.5 years without an eruption, so it is not an eruption countdown at Axial; a rate peak before low tide is the testable pre-eruption feature. Limitations: one eruption, a catalog that starts 3 months before it, ocean load used as the stress proxy, live automatic catalog.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Axial Seamount",
+  "tidal triggering",
+  "submarine volcano",
+  "eruption forecasting",
+  "caldera seismicity",
+  "ocean tidal load",
+  "bottom pressure",
+  "OOI Regional Cabled Array",
+  "rate-and-state friction",
+  "nucleation time",
+  "phase lag",
+  "forward test",
+  "Juan de Fuca Ridge",
+  "earthquake catalog"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeseries.png",
+   "caption": "Earthquake rate, caldera uplift, and the tidal sensitivity gamma and peak lag in 30-day windows (blue) and eras (orange, 95% intervals). gamma halved after the April 2015 eruption, returned to the pre-eruption value by 2018 and stayed there after uplift passed the 2015 level (dotted line). The lag was negative only before the eruption."
+  },
+  {
+   "path": "files/figures/fig3_pre_eruption.png",
+   "caption": "15-day windows before the 2015 eruption for three magnitude subsets, with August 2024 - November 2026 values as bands. gamma did not rise before the eruption; the rate peak came before low tide (negative lag), unlike 2024-2026."
+  },
+  {
+   "path": "files/figures/fig4_rate_dependence.png",
+   "caption": "gamma and lag against the daily earthquake rate (30-day windows). The black curve is a rate-and-state phase model with nucleation time inversely proportional to the rate; only the three pre-eruption windows reach the rates where the model predicts a large phase advance."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:efa0ed8b41234ce9584069ad29383a81b6828171ee249ce8635f14b643dd6368",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Axial forward test: daily uplift and operational-day table, catalog parser, and the open tidal-triggering question answered here."
+  },
+  {
+   "target": "https://digital.lib.washington.edu/researchworks/items/cdf781d2-c09c-40e0-bb34-84ceae101c4c",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Carlson (2022) thesis: rising low-tide share as an eruption sign. We reproduce the 2015-2021 rise but show it stopped in 2018 and no eruption followed."
+  },
+  {
+   "target": "doi:10.1126/science.aah5563",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Wilcock et al. (2016): catalog method and tidal triggering at Axial."
+  },
+  {
+   "target": "doi:10.1029/2021GC010153",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Chadwick et al. (2022): uplift definition (1.67 factor) used in the uplift table."
+  },
+  {
+   "target": "http://axial.ocean.washington.edu/hypo71.dat",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UW Axial Seamount earthquake catalog, downloaded 12 November 2026, SHA-256 676e2eec..."
+  },
+  {
+   "target": "https://erddap.dataexplorer.oceanobservatories.org/erddap/tabledap/ooi-rs03ccal-mj03f-05-botpta301.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OOI MJ03F bottom pressure and predicted tide, 10-minute means."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2016AGUFMOS44B..03W/abstract",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Wilcock et al. AGU 2016: strong pre-eruption and weak post-eruption tidal triggering; we confirm the post-eruption drop and show the recovery by 2018."
+  }
+ ]
+}
