@@ -1,0 +1,137 @@
+{
+ "title": "Aftershock zones of 60 shallow Japanese mainshocks (JMA, Mj 5.0-7.6, 1998-2024) grew by 0.15 rupture lengths per tenfold time; static-kernel ETAS cascades gave 37-69% of this",
+ "abstract": "We tested whether aftershock zones grow with time beyond catalog artifacts and cascades of aftershocks. We used the JMA hypocenter catalog for 1998-2024. We selected isolated shallow (20 km or less) Japanese mainshocks of Mj 5.0-7.6. We kept events of magnitude Mmain-3 or more from 0.03 days. This floor was complete in the stacked data. For 60 sequences, a median regression of epicentral distance over rupture length L on log10(time) gave a mean slope of 0.146 L per decade (95% bootstrap interval 0.088-0.217). The median slope was 0.073, and 47 of 60 slopes were positive. Six other floors, start times and background rules gave means of 0.120-0.175. Growth in km per decade scaled as L^1.01. ETAS cascades with static spatial kernels, measured with the same code, gave mean slopes of 0.054-0.101 for branching ratios 0.5-0.8. This is 37-69% of the observed mean. The observed mean was above all simulated means for branching ratios 0.5-0.6 (p < 0.01), but not clearly above them for 0.8 (p = 0.09). An extreme set with branching ratio 0.9 gave the full mean, but it matched the data poorly. After nearest-neighbour thinning to mainshock-linked events, the observed mean of 0.115 stayed above three of four null sets. The excess came from a minority of sequences: 7-12 of about 55 were above their own null 95th percentile, and the median sequence was not clearly above most nulls. In a post hoc test, sequences with raised activity in the 30 days before the mainshock had a larger excess (Mann-Whitney p = 0.002-0.011). The largest excesses were in known swarm areas (Hida-Kamikochi, Izu). Log-time and square-root-time growth fitted equally well. A heat-flow link was not robust to the averaging radius. Limitations: the ETAS parameters were not fitted to the sequences, distances are from the epicenter with a scaling-law rupture length, catalogs are not relocated, many sequences are small, and the exploratory tests have no multiple-test correction. Code, per-sequence and per-simulation tables, and figures are included. Raw catalogs remain external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "aftershocks",
+  "aftershock migration",
+  "aftershock zone expansion",
+  "JMA catalog",
+  "Japan",
+  "ETAS",
+  "cascade triggering",
+  "afterslip",
+  "earthquake swarms",
+  "catalog completeness",
+  "nearest-neighbour clustering",
+  "heat flow"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_growth_vs_null.png",
+   "caption": "(a) 90 complete mainshocks colored by growth slope. (b) Example sequences. (c) Per-sequence slopes, observed and two ETAS static-kernel nulls. (d) Observed mean slope against the 95% range of null means for five parameter sets, for all events and for mainshock-linked events."
+  },
+  {
+   "path": "files/figures/fig2_robustness_explanations.png",
+   "caption": "(a) Mean slope for each completeness and background rule. (b) Exploratory: excess over null D for sequences with and without raised activity in the prior 30 days. (c) Growth in km per decade against rupture length."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:254dfe25900ac059dc661f786d658736f5c24dbd39babf9e24474135b81aaac2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Single-sequence Ridgecrest spread test with a floor-dependent sign; we test the same question with 60 JMA sequences and a complete floor."
+  },
+  {
+   "target": "sci:sha256:a891a17ad2d62e9919bcfcbccdf45abb4c5346e9b497e29b892edf2664d08d28",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Left spatial change unresolved in three US sequences; our multi-sequence test resolves a mean growth."
+  },
+  {
+   "target": "sci:sha256:15b802229634c625004f1dd8f8beddb0f6c5c8ac4653a0082dc155efe48c83a1",
+   "reason": "Distant events controlled a Monte Cristo spread rise; we control background with a pre-event rate window."
+  },
+  {
+   "target": "sci:sha256:8553dabd6cbfed4566f3f247bf3d3db1be4c888a204e5df6307d34c8d1bec353",
+   "reason": "Haiti spread rise depended on radius; related single-sequence test."
+  },
+  {
+   "target": "sci:sha256:0a71c00223732ee37135afa976dfcaf167fd6f7038dcecd85f6f170070c9dd3b",
+   "reason": "GNSS postseismic displacement versus aftershock counts; afterslip context."
+  },
+  {
+   "target": "sci:sha256:031fd1c650720bda314e71bd14042d18b4daeea3feeb9649abcf17c235708c20",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA plus GHFDB heat-flow design (median within 30 km, 3 or more sites) reused for our covariate."
+  },
+  {
+   "target": "sci:sha256:1ca71b3eef25f9bcc982e857716437403da9e7c898e2308234b417690e424ec1",
+   "reason": "JMA aftershock decay and heat flow; related null result on thermal control."
+  },
+  {
+   "target": "doi:10.1186/s40645-024-00638-7",
+   "reason": "Expansion rates of Japanese M7-class aftershock zones."
+  },
+  {
+   "target": "doi:10.1038/ngeo697",
+   "reason": "Log-time migration of early Parkfield aftershocks."
+  },
+  {
+   "target": "doi:10.1103/PhysRevE.66.061104",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ETAS cascades give apparent aftershock diffusion; basis of our null."
+  },
+  {
+   "target": "doi:10.1002/jgrb.50179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Nearest-neighbour space-time-magnitude metric used for thinning."
+  },
+  {
+   "target": "doi:10.1785/0120050067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Short-term completeness after mainshocks."
+  },
+  {
+   "target": "doi:10.5880/fidgeo.2024.014",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHFDB heat-flow data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1016/j.pepi.2012.04.002",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Global CMT faulting classes."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo_e.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA hypocenter catalog, 1998-2024 annual files."
+  },
+  {
+   "target": "https://volcano.si.edu/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GVP Holocene volcano list for volcano distance."
+  },
+  {
+   "target": "https://www.naturalearthdata.com/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Natural Earth land polygons for the map."
+  }
+ ]
+}

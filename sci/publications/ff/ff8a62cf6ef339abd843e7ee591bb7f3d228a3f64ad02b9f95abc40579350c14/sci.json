@@ -1,0 +1,101 @@
+{
+  "title": "ZTF DR24 fits do not give a stable decay mechanism for the 2020 ZTF J0436+5728 event",
+  "abstract": "We test whether the known 5.910-hour modulation of ZTF J0436+5728 fades through common amplitude decay or Gaussian orbital spreading. We fit ZTF DR24 detections over 245 days from the published 2020 event start. The main r-band fit uses 205 measurements and three harmonics. Common decay has a weighted residual score 4.64 below spreading. A conditional test with random residual signs for each night gives a tail estimate of 0.0175 under the fitted spreading model. This preference is not stable. Two harmonics favor spreading by 8.76, and joint g/r fits favor it by 9.27. A local correction from 18 nearby stars reduces the main difference to 0.20. Removing the dense night and changing night weights retain the main r-band preference. The target varies much more than local controls, but these checks do not locate the signal in images. The data do not identify a decay mechanism. The models assume a fixed flux profile and simple damping laws. Detection loss, optical saturation, sparse later sampling, source-specific errors and changes in dust production remain open. No new event, planet, dust-loss rate or independent active-state confirmation is claimed. Original code, aggregate results, figures, exact input paths and hashes, and separate-scratch retrieval steps are included. Raw external data stay outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "ZTF J0436+5728",
+    "white dwarf",
+    "transiting debris",
+    "harmonic damping",
+    "orbital spreading",
+    "local calibration",
+    "model sensitivity",
+    "ZTF DR24"
+  ],
+  "display": [
+    {
+      "path": "files/model_sensitivity.png",
+      "caption": "The preferred decay model changes with harmonic order and passband. A local comparison-star correction nearly removes the main score difference. Harmonic-amplitude errors are formal errors under a fixed-frequency fit."
+    },
+    {
+      "path": "files/null_and_controls.png",
+      "caption": "Night-level residual-sign tests are conditional on the main three-harmonic r-band fit. The target varies more than 18 local comparison stars on the densely sampled half orbit."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:842147d01deb9a8eeb192929bda102a857d8df4c984c432d57c261a06d6eff17",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Campaign context and candidate search. We test a different physical question for its recovered ZTF J0436+5728 event. No numerical table or code is reused."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.08923",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Version 1 reports the known period, event start and common exponential fit. We test harmonic damping against restricted Gaussian spreading."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/acb292",
+      "relations": [
+        "uses"
+      ],
+      "reason": "SNAD data access, heliocentric time format and detection-only light curves."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aae8ac",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ZTF processing and archive attribution."
+    },
+    {
+      "target": "doi:10.1088/1538-3873/aaecbe",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ZTF instrument and survey attribution."
+    },
+    {
+      "target": "https://db.ztf.snad.space/api/v3/data/dr24/circle/full/json?ra=69.14775&dec=57.4778611&radius_arcsec=3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact target response; bytes and SHA-256 in provenance.json."
+    },
+    {
+      "target": "https://db.ztf.snad.space/api/v3/data/dr24/circle/full/json?ra=69.1480484&dec=57.4778481&radius_arcsec=59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact field-control response; bytes and SHA-256 in provenance.json."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/data/ZTF/docs/releases/dr24/ztf_release_notes_dr24.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Release documentation and attribution. Source photometric records remain external."
+    },
+    {
+      "target": "https://irsa.ipac.caltech.edu/privacy.html",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "External-data terms check. Public access is not assumed to grant baseline rights to the raw database."
+    }
+  ]
+}
