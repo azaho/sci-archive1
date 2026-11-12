@@ -1,0 +1,113 @@
+{
+ "title": "Projection-neuron wiring in three fly connectomes predicts measured odour tuning of 31 to 45 lateral horn neuron types only weakly (mean r 0.13 to 0.17), but above chance in all five hemispheres",
+ "abstract": "Question: does the wiring from uniglomerular projection neurons (uPNs) to lateral horn neuron (LHN) types predict their measured odour tuning, in different flies and sexes? Approach: we used whole-cell spike responses of 119 LHNs to 24 single odours (Frechter et al. 2019), each matched to a hemibrain body and type. We took signed uPN wiring per glomerulus from five hemispheres: hemibrain v1.2 (female), FlyWire v783 left and right (female) and male CNS v1.0 left and right (male). The glomerulus input was the DoOR 2.0 consensus response. A parameter-free linear model gave a mean Pearson r of 0.13 to 0.17 between predicted and measured tuning. The own-type prediction was better than other types' predictions (mean r 0.07 to 0.08; label permutation p = 0.002 to 0.034) and better than glomerulus-shuffled wiring (p = 0.001 to 0.014). A model that learns glomerulus inputs from held-out LHN types, without DoOR, gave held-out r 0.15 to 0.23 (p = 0.002 to 0.042) but near-zero explained variance. Type pairs with more similar wiring had slightly more similar tuning (Mantel r 0.09 to 0.16). Predicted tuning of one type repeated across the five hemispheres (mean r 0.75 to 0.93 versus 0.31 to 0.42 for different types), and measured tuning was reliable (median split-half 0.56). Thus feedforward uPN wiring explains a small but real part of LHN type tuning. Limitations: the input is a receptor consensus that agrees only moderately with measured PN responses; the model has no LH local neurons, other inputs or nonlinearity; all hemispheres share the same measured responses; a rank-based score was not significant at 0.05 in any hemisphere; male CNS results are weaker and not significant in two or three of six variant tests. Raw external data are not bundled; code, aggregate statistics and figures are.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "lateral horn",
+  "olfaction",
+  "connectome",
+  "structure-function",
+  "hemibrain",
+  "FlyWire",
+  "male CNS",
+  "projection neurons",
+  "DoOR",
+  "odour tuning",
+  "stereotypy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_prediction_scores.png",
+   "caption": "A: Mean Pearson r between predicted and measured odour tuning of LHN types in five hemispheres, for the own wiring (blue), other types' wiring (orange), glomerulus-shuffled wiring (grey diamond), and for the learned-input model with own (green) or permuted (grey square) wiring. p-values: label permutation. B: Hemibrain types: prediction r against split-half reliability of measured tuning (types with one recorded cell at left; marker size = recorded cells; dashed line = sqrt reliability ceiling)."
+  },
+  {
+   "path": "files/figures/fig2_stereotypy_vs_match.png",
+   "caption": "A: Predicted tuning of the same LHN type agrees across hemispheres and sexes (blue) much more than predictions of different types (orange). B: Predicted tuning repeats across hemispheres (median r 0.85) and measured tuning is reliable (median split-half 0.56), but predicted and measured tuning agree weakly (median r 0.11, all types in five hemispheres)."
+  },
+  {
+   "path": "files/figures/fig3_wiring_similarity.png",
+   "caption": "A: Hemibrain LHN type pairs: cosine similarity of signed glomerular uPN input against correlation of measured odour tuning; line = octile means. B: Mantel r with the 95th percentile of a label permutation null in five hemispheres."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.44590",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Measured LHN odour responses and light-to-EM matches; our wiring test gives weak support for its proposal that LHNs pool related PN inputs."
+  },
+  {
+   "target": "doi:10.7554/eLife.43079",
+   "relations": [
+    "uses"
+   ],
+   "reason": "LHN cell types and light-level matches."
+  },
+  {
+   "target": "doi:10.1038/srep21841",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DoOR 2.0 consensus receptor responses used as glomerulus input."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2016.05.022",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Badel et al. 2016 PN responses used to check the DoOR input."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and hemibrain type matches."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2010.04.009",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Form of the PN divisive normalisation variant."
+  },
+  {
+   "target": "sci:sha256:01b61c339f596884ea41ee348ec0a7304ff98e6bd1a77e23203b93ab3885ad4d",
+   "reason": "Earlier campaign test of antennal-lobe LN wiring with DoOR and Badel PN responses; our test is the next stage (PN to LH)."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "reason": "Wiring predicts ON/OFF sign of fly visual types; contrast with the weak graded prediction in the LH."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "Male CNS replication of the visual sign rule; same male connectome used here."
+  },
+  {
+   "target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835",
+   "reason": "uPN to Kenyon cell wiring analysis in the same connectomes; our work uses the uPN to LHN branch."
+  }
+ ]
+}
