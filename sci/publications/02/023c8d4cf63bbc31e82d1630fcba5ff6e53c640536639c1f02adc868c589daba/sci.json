@@ -1,0 +1,122 @@
+{
+ "title": "The post-1986 extra advance of bird arrival in ex-USSR nature reserves came mostly from the 60-day temperature window, not from migration strategy or wintering-area warmth, 1948-2018",
+ "abstract": "Question: a campaign publication (sci:beea9c54) found that bird first-arrival dates in ex-USSR nature reserves moved 0.72 days per decade earlier than local warming predicts in 1986-2018. Does migration strategy or wintering-area temperature explain this extra advance, and is it robust to the temperature window? Approach: Chronicles of Nature Calendar v1.0.5 (483 bird series at 58 sites in 1986-2018), GHCN-CAMS temperature, migration classes from GBIF winter records (CC0/CC BY counts), a species-specific wintering-area temperature index, a fixed European placebo index, a 48-window scan with a window choice from first differences, and site-cluster bootstraps. Results: long-distance (-0.68 days per decade) and short-distance migrants (-0.78) had the same residual trend (difference -0.10; 95% CI -0.81 to 0.73). The wintering-area index changed it by less than 0.06. Short-distance arrival followed European spring temperature beyond local temperature (-0.74 days per C), but the fixed European placebo explained this better than each species' wintering range; long-distance migrants showed no such link. The 60-day window warmed only +0.09 C per decade because it includes late-winter days, while the 20 days before arrival warmed +0.51 C per decade. With the best trend-free window (20 days), the bird residual was -0.18 (-0.47 to 0.25), 75% smaller. Plant onset advanced less than predicted (+0.49), so a bird-plant contrast remains (-0.67; -1.17 to -0.15). Conclusion: the extra bird advance mostly comes from the window choice, not from migration strategy. Limitations: the window is chosen from 40 candidates and short windows can include detection effects; GBIF winter records are a coarse guide to wintering areas; only 81 long-distance series.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "bird migration",
+  "arrival date",
+  "temperature window",
+  "climwin",
+  "Chronicles of Nature",
+  "Russia",
+  "wintering area",
+  "short-distance migrants",
+  "long-distance migrants",
+  "residual trend",
+  "GBIF",
+  "GHCN-CAMS",
+  "replication",
+  "null result",
+  "climate change"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_window_scan.png",
+   "caption": "Residual trend (a, b) and window warming (c, d) in 1986-2018 for 40 local temperature windows. Thick box: best trend-free window; dashed box: the 60-day window of sci:beea9c54. The 60-day bird window warmed only +0.09 C per decade; the 20 days before arrival warmed +0.51 C per decade."
+  },
+  {
+   "path": "files/figures/fig1_residual_by_class.png",
+   "caption": "(a) Residual trend after local temperature in 1986-2018 by migration class and model, with 95% site-cluster bootstrap intervals. (b) Arrival change per 1 C of wintering-area or fixed European temperature in 1948-2018."
+  },
+  {
+   "path": "files/figures/fig3_species_tropical_share.png",
+   "caption": "Species residual trend in 1986-2018 against the share of GBIF winter records in tropical Africa and South Asia (45 taxa). No clear relation."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:beea9c54a64c4a2a650819b55d01857f5d41c8eefe2dd6d20e834fe60a65d3f3",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Source of the post-1986 extra bird advance, the series definitions and feols.py. We repeat its 60-day value but show that the window, not migration routes, explains most of it."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "JMA residual-trend analysis with fixed temperature windows; the window check applies to it."
+  },
+  {
+   "target": "sci:sha256:71c9a88e131601688998df1d3411dc9b9686fda6cd835ba5a8dc1530c1f4c57e",
+   "reason": "JMA first-date detection bias study cited by beea9c54."
+  },
+  {
+   "target": "doi:10.5281/zenodo.3607556",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Chronicles of Nature Calendar v1.0.5 data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0376-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data paper of the Chronicles of Nature Calendar."
+  },
+  {
+   "target": "doi:10.1038/s41558-020-00967-7",
+   "reason": "Roslin et al. 2021: trophic-level differences in phenological shifts in the same data."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS temperature analysis."
+  },
+  {
+   "target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS monthly file used."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET migration scores (CC BY 4.0)."
+  },
+  {
+   "target": "https://api.gbif.org/v1/occurrence/search",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GBIF aggregate winter record counts (CC0 and CC BY 4.0 records), queried 2026-11-12."
+  },
+  {
+   "target": "https://www.naturalearthdata.com",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Natural Earth 10m admin-0 countries v5 (public domain)."
+  },
+  {
+   "target": "doi:10.1111/2041-210X.12590",
+   "reason": "Sliding-window selection of climate signals (climwin)."
+  },
+  {
+   "target": "doi:10.1111/1365-2656.12612",
+   "reason": "Meta-analysis of migration distance and spring arrival responses."
+  }
+ ]
+}
