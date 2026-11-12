@@ -1,0 +1,88 @@
+{
+ "title": "Frog calling seasons were about 2 days earlier per 1 C warmer March-May in all four eastern US regions in 1994-2015; weak Southeast and early-species shifts came from winter temperature windows",
+ "abstract": "Question: do frog and toad calling seasons in the eastern and central US move earlier after warm springs, is the response the same in all regions and for early and late breeders, and how much of a date-based estimate comes from the observers? Data: North American Amphibian Monitoring Program call surveys, 1994-2015 (176,964 stop visits, 20,873 runs, 1,181 routes, 25 states; USGS, public domain) and NOAA nClimGrid monthly temperature. Method: for 53 species x region cells (28 species, 4 regions), a logistic model moved a seasonal calling curve by beta days per 1 C of route-year temperature anomaly. It used the real survey dates and controlled for survey-night air temperature, wind, noise, year and calling level. Route-cluster bootstrap intervals. A null test with random anomalies showed no bias and correct interval width. Results: with a species-specific window (three months up to the median calling month), the mean shift was -2.10 days per 1 C (95% CI -2.63 to -1.57), near zero for early breeders (-0.02) and -2.74 for later breeders. This contrast repeated in both periods and within species. But the likelihood preferred March-May temperature for 10 of 13 early cells, because the surveys record mostly the end of the calling season of winter breeders. With one common March-May window, the mean shift was -2.02 (CI -2.26 to -1.78), with small heterogeneity (tau 0.47) and no dependence on calling date (+0.15 days per 1 C per 100 days, CI -0.70 to +1.00). Regional means were Mid-Atlantic -2.32, Midwest -1.90, Northeast -2.26 and Southeast -1.97; 33 of 52 intervals were below zero and none above. 2006-2015 means were negative in all regions; in 1994-2005 the Southeast was uncertain. Volunteers surveyed 0.6-2.4 days earlier per 1 C in 10 of 12 region x run windows, so naive first-detection slopes (-2.33) mix observer and frog responses. Survey-night air temperature changed estimates little. Relation to earlier work: this independent analysis confirms the Northeast and Midwest shifts and the volunteer date shift of a sibling NAAMP study (2001-2015), but not its weak Southeast response, which follows from a winter window. Limitations: correlational; fixed curve shape, so an earlier start and an earlier end are not separable; three to four runs per year; window comparison of two windows added after the main fit; data end in 2015.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "amphibians",
+  "anurans",
+  "calling survey",
+  "NAAMP",
+  "climate change",
+  "spring temperature",
+  "observation bias",
+  "volunteer surveys",
+  "temperature window",
+  "nClimGrid",
+  "eastern United States",
+  "detection model",
+  "null calibration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_window_comparison.png",
+   "caption": "Left: log-likelihood gain of a March-May temperature window over the species-specific window for each species x region cell (positive: March-May fits better); early breeders prefer March-May. Right: calling-season shift per 1 C warmer March-May against median calling day, with 95% intervals and the random-effects meta-regression line (slope +0.15 days per 1 C per 100 days, CI -0.70 to +1.00)."
+  },
+  {
+   "path": "files/figures/fig1_shift_by_species_region.png",
+   "caption": "Calling-season shift per 1 C (species-specific three-month window) for 53 species x region cells, NAAMP 1994-2015, ordered by median calling day. Dots: all years with 95% route bootstrap intervals; open triangles: 1994-2005 and 2006-2015. Early breeders show near-zero shifts with this window."
+  },
+  {
+   "path": "files/figures/fig3_observation_effects.png",
+   "caption": "Observation checks. Left: shift without survey-night air temperature and level terms against the full model. Centre: naive first-detection slope against the model shift (r = 0.33). Right: change of volunteer survey day per 1 C warmer season by region and survey run (earlier in 10 of 12)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5066/F7G44NG0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NAAMP anuran detection data 1994-2015, the survey data analysed."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/land-based-station/nclimgrid-monthly",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly mean temperature for route-year anomalies."
+  },
+  {
+   "target": "sci:sha256:00fa5e9404f5c28c027c79ca3bc0e3ede118a63b563838d41de45d8e4ad459b1",
+   "relations": [
+    "supports",
+    "challenges"
+   ],
+   "reason": "Independent replication with a different temperature product, longer period and route bootstrap. Supports the Northeast and Midwest calling-season shifts and the volunteer survey-date shift; challenges the weak Southeast response, which follows from a winter temperature window."
+  },
+  {
+   "target": "sci:sha256:6060e227103bb62576ce9ee28dfd044904822172609d2e6438c2b70be6691386",
+   "reason": "Other NAAMP analysis in this campaign (road salt and calling detection)."
+  },
+  {
+   "target": "sci:sha256:038fd80c4200e634276c00898cbd94431fd63fd2dfe8f5db47d86e3fa1fd9d70",
+   "reason": "Survey-date effects in volunteer bird records; related observation effect."
+  },
+  {
+   "target": "sci:sha256:71c9a88e131601688998df1d3411dc9b9686fda6cd835ba5a8dc1530c1f4c57e",
+   "reason": "Observation effects in animal first-appearance dates; related observation bias in phenology."
+  },
+  {
+   "target": "doi:10.1002/ece3.501",
+   "reason": "Earlier evidence of advancing frog calling with spring warming in Ontario."
+  }
+ ]
+}
