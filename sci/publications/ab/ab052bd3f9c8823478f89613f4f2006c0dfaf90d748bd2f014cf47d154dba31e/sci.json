@@ -1,0 +1,111 @@
+{
+ "title": "ERA5 2 m air over the equatorial Indo-Pacific warms 0.05-0.08 C per decade faster than 114 moored buoys in 2001-2022 while ERA5 SST does not; ERA5 global mean changes by 0.01-0.02 C",
+ "abstract": "Question: campaign work found input steps in the SST products that are the lower boundary of reanalyses. Is the ERA5 marine 2 m air temperature (T2m), a large part of the ERA5 global mean used for 1.5 C monitoring, consistent with independent in situ air temperature? Approach: we compared ERA5 monthly T2m and SST (1979-2022, NCAR GDEX) with 114 GTMBA moorings (TAO/TRITON, RAMA, PIRATA; air at about 3 m and 1-m SST), 33 NOAA NDBC offshore buoys (14-57 N) and CLASSnmat 2.1.0.2 ship night marine air temperature. We used station-by-month fixed-effect panels, AR(1)-adjusted trend errors and a Nino 3.4 regression. Results: ERA5 T2m minus mooring air temperature has a 2001-2022 trend of +0.079 +/- 0.012 C per decade (ENSO removed +0.049 +/- 0.006; 43 fixed long-record stations +0.107 and +0.063). ERA5 SST minus mooring SST has -0.017 +/- 0.007. The buoy air-sea difference is stable (+0.004; ENSO removed +0.003 +/- 0.007), but the ERA5 air-sea difference at the same months rises (+0.085; ENSO removed +0.039 +/- 0.006). Ships at 20S-20N give +0.073 +/- 0.010. The drift is largest at TAO/TRITON and RAMA, small at PIRATA, and absent at NDBC buoys at 14-25 N; station trends follow the ERA5 air-sea trend map (Spearman 0.27, p = 0.008). ERA5 marine air also responds too weakly to ENSO (-0.068 K per K of Nino 3.4 against buoys). In 10S-10N, ERA5 ocean T2m warms 0.134 C per decade but ERA5 SST only 0.067. Removing the drift at 10S-10N lowers the ERA5 2001-2022 global T2m trend from 0.225 to 0.214-0.218 C per decade and the 2024 value from 1.60 to 1.59 C above 1850-1900 (20S-20N upper bound: 0.204-0.212 and 1.58 C). Limitations: the cause is not identified; extratropical references disagree in sign (ships +0.04 to +0.12, NDBC -0.06), so the extratropics are unresolved and ship NMAT may have its own post-2009 cooling error; mooring sensor changes are not modelled; ERA5 gridded data end in 2022, so 2023-2025 values are extrapolations.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "ERA5",
+  "reanalysis",
+  "marine air temperature",
+  "2 m temperature",
+  "air-sea temperature difference",
+  "TAO/TRITON",
+  "RAMA",
+  "PIRATA",
+  "NDBC buoys",
+  "CLASSnmat",
+  "HadSST4",
+  "ENSO",
+  "global mean surface temperature",
+  "1.5 C monitoring",
+  "data homogeneity",
+  "climate data record"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_difference_series.png",
+   "caption": "Annual fixed-effect panel means relative to 2001-2007 (solid: raw; dashed: Nino 3.4 removed). (a) ERA5 T2m minus GTMBA mooring air temperature. (b) ERA5 SST minus mooring SST. (c) Air-sea difference from ERA5 and from the buoys in the same months. (d) ERA5 T2m minus CLASSnmat ship night air temperature at 20S-20N."
+  },
+  {
+   "path": "files/figures/fig3_robustness.png",
+   "caption": "Trend of ERA5 T2m minus in situ air temperature, 2001-2022, with +/-2 standard errors, for GTMBA subsets (raw and ENSO removed), NDBC buoys and CLASSnmat ships in three latitude bands."
+  },
+  {
+   "path": "files/figures/fig2_map.png",
+   "caption": "Shading: ERA5 trend of T2m minus SST over ice-free ocean, 2001-2022 (5-degree boxes). Dots: ENSO-removed trend of ERA5 T2m minus mooring air temperature at stations with at least 10 years of data."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Found only a small ERA5 SST step at the 2007 HadISST2-to-OSTIA change; our ERA5 SST minus buoy SST result agrees, so we move the question from the SST boundary to the marine air.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST variance step at the 2007 boundary change."
+  },
+  {
+   "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+   "reason": "NCEP R1/R2 SST boundary failure and its effect on reanalysis global T2m; we test ERA5 T2m in the same spirit."
+  },
+  {
+   "target": "sci:sha256:6258279f2ef101083021b66271044f19081f29276af085ab25d3c1bfe23f2482",
+   "reason": "Reanalysis SST boundary breaks in NCEP R1/R2 and CFS."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "DOISST mean steps and trend excess."
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "Use of TAO/TRITON moorings as an SST trend reference."
+  },
+  {
+   "target": "sci:sha256:121acf9e61a901f817dceaa1864a369e0dcb941ed0849245cddd1a32f8521ce6",
+   "reason": "Open question on the post-2013 warm drift of products against west Pacific moorings."
+  },
+  {
+   "target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690",
+   "reason": "Boundary-data artifacts in AMIP sea ice."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "AMIP SST forcing steps from in situ input changes."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "First campaign study of DOISST input-change steps."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "reason": "ERA5."
+  },
+  {
+   "target": "doi:10.1002/gdj3.100",
+   "reason": "CLASSnmat."
+  },
+  {
+   "target": "doi:10.5285/306246329ae04eb3b2299446d911530a",
+   "reason": "CLASSnmat 2.1.0.2 dataset."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4."
+  },
+  {
+   "target": "doi:10.1029/97JC02906",
+   "reason": "TAO/TRITON array."
+  }
+ ]
+}
