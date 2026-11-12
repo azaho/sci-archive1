@@ -1,0 +1,103 @@
+{
+  "title": "The expected NMDA-receptor decay time of local neurons did not predict spiking timescales across 179 mouse brain regions (IBL autocorrelograms, Allen MERFISH and 10x atlas)",
+  "abstract": "Question: network models give long intrinsic timescales from slow NMDA-receptor currents. GluN2 subunits set the decay time (2A about 50 ms, 2B and 2C about 300 ms, 2D about 2 s). Does the GluN2 mix of local neurons predict the spiking timescale of mouse brain regions? Data: 56,610 IBL Brain-Wide Map units in 179 regions; timescale tau from exponential fits to whole-recording autocorrelograms (0.02-1.94 s). Region expression is Allen MERFISH neuron-type composition multiplied by 10x type means; Zhuang-ABCA-1 is the replication. The plan was frozen before any structure-to-timescale statistic. Results: the kinetic score (expression-weighted GluN2 decay time) had Spearman rho -0.05 with log tau (planned positive; spatial-surrogate p = 0.58; random-gene p = 0.56). Inside divisions the partial rho was +0.09 (p = 0.097); with rate and coordinates +0.06 (p = 0.19). The replication brain gave -0.09 and a per-unit estimator 0.00. A larger GluN2B share went with shorter tau (-0.37), against the prediction, but no subunit link passed the spatial null. Grin1 expression, Pvalb neuron share and Knox self-connection density also did not predict tau. Exploratory: the tau map was reliable (split-half 0.58), and 20 transcriptome PCs predicted held-out spatial blocks (CV R2 0.32 vs 0.18 for geometry), but the NMDA features added nothing, and 163 receptor and channel genes did not beat random gene sets (p = 0.35). In 42 cortical areas the kinetic score had rho +0.45, but not beyond a cortical spatial null (p = 0.076) or after layer control. Limitations: the aggregate autocorrelogram includes the task; mRNA, not receptor protein; region averages; only effects above about rho 0.43 could pass the spatial null.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "intrinsic timescale",
+    "NMDA receptor",
+    "Grin2b",
+    "GluN2 subunit",
+    "autocorrelation",
+    "IBL Brain-Wide Map",
+    "MERFISH",
+    "Allen Brain Cell Atlas",
+    "Knox connectome",
+    "spatial null",
+    "brainsmash",
+    "structure-function",
+    "mouse",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig2_nmda_kinetics_vs_timescale.png",
+      "caption": "NMDA kinetic score against region log10 timescale in 179 regions, with spatial-surrogate, random-gene and within-division null distributions. No test passed."
+    },
+    {
+      "path": "files/figures/fig1_timescales_by_division.png",
+      "caption": "Region timescales by brain division from whole-recording IBL autocorrelograms, and agreement of the pooled and per-unit estimators (Spearman 0.82)."
+    },
+    {
+      "path": "files/figures/fig3_subunits_secondary.png",
+      "caption": "Region timescale against the share of each GluN2 subunit, and Grin1, Pvalb share and self-connection density with their 95% spatial-null bands."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8811fcd163037e8b4296f164982385a82b6a30fef0e5e1d81f6cab23925dbe48",
+      "reason": "We reuse its region-expression code (MERFISH x 10x), data recipe and null design, and apply them to a receptor-kinetics hypothesis for timescales.",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+      "reason": "Cortical hierarchy did not reliably predict timescales; layer sampling was a confound. Our brain-wide and isocortex tests of a molecular predictor also find no robust link, and we confirm longer deep-layer timescales.",
+      "relations": [
+        "supports"
+      ]
+    },
+    {
+      "target": "sci:sha256:48d934f410d7ff0acdf1ed82c41caa34b2b9e0d15d541b91c7f725149affd121",
+      "reason": "Region and unit rules for IBL units come from this work (via 8811fcd1).",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:4c43433e0b806123e6fe7881d5a77c275d28dc9f8916f5c07767bfaea7efca11",
+      "reason": "Region-level structure links to IBL spiking; related scope."
+    },
+    {
+      "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+      "reason": "Timescale map test in larval zebrafish; related question in another species."
+    },
+    {
+      "target": "sci:sha256:7a4063e456cac2ca403bb7c568f8835a3defad1335986b0de2b55fa474a1f8fc",
+      "reason": "Zebrafish projectome input and timescales; related question."
+    },
+    {
+      "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+      "reason": "Worm trophic level and timescales; related question."
+    },
+    {
+      "target": "sci:sha256:18faea2c651436cf33c5c5d2fcdaeffea5c7768b1789a182b73bf164d3c5b232",
+      "reason": "MICrONS in-degree and calcium timescale; related question."
+    },
+    {
+      "target": "doi:10.1101/2025.08.30.673281",
+      "reason": "Shi et al. 2025: brain-wide IBL timescales and ISH gene prediction; we test a specific receptor mechanism."
+    },
+    {
+      "target": "doi:10.7554/eLife.61277",
+      "reason": "Gao et al. 2020: human cortical timescales and transcriptomic gradients."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2015.09.008",
+      "reason": "Chaudhuri et al. 2015: large-scale model of timescale hierarchy from recurrent excitation."
+    },
+    {
+      "target": "doi:10.1038/nrn3504",
+      "reason": "Paoletti et al. 2013: NMDA receptor subunit kinetics used for the score."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-09235-0",
+      "reason": "IBL Brain-Wide Map data."
+    }
+  ]
+}
