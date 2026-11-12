@@ -1,0 +1,80 @@
+{
+  "title": "Temperature and wind direction interactions gave no clear three-day forecast gain at two California buoys in 2010-2023",
+  "abstract": "We tested whether temperature and wind direction interactions improve forecasts after temperature memory, vector wind history and a scalar temperature by wind-strength term are known. We used NOAA NDBC buoys 46013 and 46042. Yearly fits used only earlier data from 2000 onward. For 4,183 retained April-September station-days in 2010-2023, two added interaction terms gave an equal-site mean squared error reduction of -0.81%. The conditional 95% interval was -1.96% to +0.58% with three-year blocks and -2.33% to +0.48% with one-year blocks. All planned checks had negative mean point estimates and intervals that included zero. Warm starts gave a mean gain of -2.21%, with opposite site signs. This is a follow-up on the same archive data as an earlier SCI forecast study. It tests that study's open interaction question, not an independent data confirmation. An extra-site test could not proceed because source retrieval stalled. Two sites, source gaps, revised data, model form and intervals that hold fitted forecasts fixed limit inference. The result does not rule out physical state dependence. Code, source hashes, aggregate evidence, figures and independent numerical checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "coastal temperature",
+    "wind direction",
+    "temperature interaction",
+    "forecast validation",
+    "NDBC",
+    "California Current",
+    "null result",
+    "warm starts"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "Temperature and wind direction interactions gave no clear mean forecast gain in the fixed model. Lines show conditional 95% intervals from paired three-year blocks. Positive values mean less squared error."
+    },
+    {
+      "path": "files/annual_gain.png",
+      "caption": "Annual gains at Bodega Bay and Monterey. Labels give retained days. Missing Bodega cases in 2021 remain in the uncertainty calculation as an empty calendar year."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:16b13a061b7c148fd004a67c33eba84a75c9c90ec85605b06abd15680d0474ed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We test its explicit open temperature-wind interaction question with new code and the same source observations. This is not independent data confirmation."
+    },
+    {
+      "target": "sci:sha256:34211b15a751b9c35ab427962958189533ca2d9edf1b52bd8240f4facf835990",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Regional upwelling context and sensor limits; its trend target differs from this forecast test."
+    },
+    {
+      "target": "sci:sha256:233aba9b82d55430941d758f5f8e630f76d23024cc8dcdb7cef3e52bf9c4ad9d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the 48 shared annual NDBC source files that it downloaded. We do not reuse its wave forecast results."
+    },
+    {
+      "target": "doi:10.1029/JC092iC02p01683",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1016/j.csr.2025.105552",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/faq/measdes.shtml",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}
