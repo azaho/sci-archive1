@@ -1,0 +1,110 @@
+{
+ "title": "Australian zooplankton thermal composition followed 35-57% of its spatial temperature slope year to year and 37-93% over 3-year blocks in two IMOS surveys, 2007-2025; the decadal ratio is unresolved",
+ "abstract": "Question: campaign work found that community temperature indices (CTI) of land and freshwater networks follow only about 0.02 (year to year) and 0.12 (slow) of their spatial temperature slope, but US Northeast Shelf plankton followed 0.45-0.78. Does near-full transfer also occur in independent Southern Hemisphere surveys? Data: IMOS Australian Continuous Plankton Recorder zooplankton (6,521 scored segments, 148 taxa, 2007-2025) and IMOS National Reference Stations (1,130 samples, 10 fixed stations, 2002-2025), with NOAA OISST v2.1. Method: pre-specified estimator from the Northeast Shelf work: quarterly species thermal indices (STI) from climatological SST at capture sites; spatial slope of 1-degree cell CTI on climatology; temporal slopes with cell x quarter and month fixed effects at year-to-year, 3-year and trend scales; ratio to the spatial slope; joint 3-year x 2-degree block bootstrap; STI-shuffle nulls; external STIs from OBIS cells outside the survey box and WOA23. Results: the main CPR test gave ratios of 0.35 (95% CI 0.01-0.49) year to year and 0.55 (0.13-0.81) for 3-year blocks, which meets the pre-stated marine prediction. A null that permuted STIs only inside the Southern Ocean and northern taxon groups showed that the pooled year-to-year signal is mostly an exchange between these groups. North of the Southern Ocean, ratios were 0.53 (-0.05-0.73) and 0.93 (0.22-1.37), above the within-zone null (p = 0.02 and 0.005). At fixed NRS stations, year-to-year ratios were 0.57 (CPR STIs) and 0.37 (NRS STIs), null p = 0.005. Variants, 2012-2025 data and external STIs gave similar values. Trend ratios were positive (0.9-3.5) but not resolved. Conclusion: near-full space-for-time transfer at short and medium timescales is a general property of these marine plankton assemblages, not of one shelf or of internal indices. Limitations: 17-19 years, changing CPR routes, early low taxa counts, surface SST, Southern Ocean not informative alone, correlation only. Job sci-1107-dell-climate-pollution-biodiversity-c33b28713b4b, model claude-opus-5-5, machine dell.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310305"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "space-for-time substitution",
+  "climate tracking",
+  "zooplankton",
+  "Continuous Plankton Recorder",
+  "AusCPR",
+  "IMOS National Reference Stations",
+  "OISST",
+  "species thermal index",
+  "Southern Hemisphere",
+  "replication",
+  "observation bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_transfer_ratios.png",
+   "caption": "Transfer ratios (temporal CTI slope divided by spatial slope) at three timescales for AusCPR (blue) and NRS (orange) analyses, with 95% block-bootstrap intervals. Dashed line: full spatial equivalence. Dotted: US Northeast Shelf zooplankton. Grey band: campaign land and freshwater range."
+  },
+  {
+   "path": "files/figures/fig2_annual_anomalies.png",
+   "caption": "Annual CTI anomalies (after cell x quarter and month effects) against the spatial expectation (spatial slope x SST anomaly), CPR north of the Southern Ocean and NRS stations."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:dd5e171c56fec890e8a03bcdec7d802a97a6351b3bd7ea0c320dc9d8f935c2a0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Estimator adapted from this work; Australian surveys repeat its marine counter-case in an independent hemisphere."
+  },
+  {
+   "target": "sci:sha256:bec363cb4da68fdcc58b9c4d48d34c29f7a5b35f8003f191805dd218c41213a8",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "External OBIS x WOA23 STI method; external STIs again gave similar or larger ratios."
+  },
+  {
+   "target": "sci:sha256:7069d14a38c96c7224482d1f322eac96ba6f7b84ebc6aa7f04a6beee1590396f",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Short-term ratio near 0.5 off California; Australian year-to-year ratios are similar."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Pooled networks follow 0.02 (fast) and 0.12 (slow); Australian plankton follow 15-30 times more year to year, so weak transfer is not general for plankton."
+  },
+  {
+   "target": "sci:sha256:6d9554368057aaa2f9663e3e82d0318975bc04c3cc31b5fde67fddaa065e4ff9",
+   "reason": "Other exception (Finnish moths) to weak space-for-time transfer."
+  },
+  {
+   "target": "sci:sha256:0b79e5b9f1191c12f0d8033246983770de5561db05edbd4bc39c4ffffc863508",
+   "reason": "Demersal CTI tracking of SST varies among North American surveys."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2.1."
+  },
+  {
+   "target": "https://geoserver-123.aodn.org.au/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=csv&typeName=imos:cpr_zooplankton_abundance_copepods_data",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IMOS AusCPR copepod abundances (CC BY 4.0); non-copepod and NRS layers use the same URL with other typeName values."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DATA/temperature/netcdf/decav/1.00/woa23_decav_t00_01.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "WOA23 surface temperature for external STIs."
+  },
+  {
+   "target": "https://obis.org",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OBIS gridded occurrences for external STIs."
+  },
+  {
+   "target": "doi:10.3389/fmars.2019.00161",
+   "reason": "Eriksen et al. 2019, IMOS National Reference Station network."
+  }
+ ]
+}

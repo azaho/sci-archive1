@@ -1,0 +1,86 @@
+{
+ "title": "DOISST v2.1 kept its July 2020 warm step after the October 2021 change from Navy to ACSPO input; against a fixed ACSPO yardstick its level did not follow the Navy input level (60S-60N, 2019-2024)",
+ "abstract": "Question: NOAA Daily OISST v2.1 (DOISST) has a warm step of about +0.07 C on 6-7 July 2020 (60S-60N), caused by the change of the Navy (NAVO) MetOp-A AVHRR SST input from processing v1.0 to v2.0. On 1 October 2021 DOISST replaced the Navy input with NOAA ACSPO SST. Did that change remove the step, and does the DOISST level follow the level of its satellite input? Approach: we used one fixed satellite reference for both dates: ACSPO L3U MetOp-B AVHRR SST (algorithm V2.80; 10,962 granules, 153 days, NOAA NCEI archive). We compared DOISST and 1,238 NAVO L2P granules with it in the same 1-degree cells and days in 2019-2021, with control years for the same calendar days, and we used the DOISST minus ESA SST CCI v3 daily series. Results: across 1 October 2021, DOISST changes by +0.018 C against the yardstick (95% interval -0.034 to +0.051; 2020 control) and by +0.010 C against CCI (p = 0.64). DOISST minus CCI is +0.001 C with Navy v1.0 (2016 to July 2020), +0.065 C with Navy v2.0 and +0.064 C with ACSPO (October 2021 to March 2023). Against the yardstick, the July 2020 input rose by +0.044 C (day) and +0.013 C (night), DOISST by +0.046 C. From autumn 2020 to autumn 2021 NAVO v2.0 MetOp-A fell by 0.06-0.09 C and MetOp-B by 0.02-0.04 C against the yardstick, but DOISST did not fall (+0.05 C against the yardstick and CCI). In September 2021 ACSPO was 0.02-0.09 C warmer than the Navy inputs, but DOISST did not step up. The yardstick agrees with CCI on the 2020-2021 change within 0.007 C. After April 2023 (v2.1b) DOISST minus CCI falls gradually to +0.019 C, mainly in the tropics and north. Conclusion: the 2020 step continued through the change to ACSPO, and the input level against ACSPO does not predict the DOISST level. Against satellite references, homogenisation must keep the full 6 July 2020 correction after October 2021, without the 2021 reversal terms (-0.03 to -0.05 C) fitted against in situ products. Limitations: the yardstick is one satellite product with its own pixel selection; 2021 has only six NAVO days; the 2021 control is 2020; DOISST internal data are not public.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "ACSPO",
+  "NAVO AVHRR",
+  "GHRSST L2P",
+  "GHRSST L3U",
+  "MetOp-A",
+  "MetOp-B",
+  "data homogeneity",
+  "input change",
+  "ESA SST CCI",
+  "climate data record"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_switches.png",
+   "caption": "DOISST and NAVO against a fixed ACSPO MetOp-B yardstick at the two DOISST input changes (60S-60N). (a, b) Daily DOISST minus yardstick, day and night (3-day mean), with the control year on the same dates (dashed): a step in July 2020, none in October 2021. (c, d) NAVO L2P minus yardstick on each available day."
+  },
+  {
+   "path": "files/figures/fig2_levels.png",
+   "caption": "(a) Level of the NAVO MetOp-A and MetOp-B input against the ACSPO yardstick in each window (labels: NAVO version): the input moves by 0.04-0.09 C between July 2020 and autumn 2021. (b) Monthly DOISST minus ESA CCI v3: one step in July 2020, no step at the October 2021 change to ACSPO, a gradual decrease after April 2023."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Identified the Navy MetOp-A v1.0 to v2.0 change as the cause of the July 2020 step; we use its dates and measure the input and DOISST levels against a fixed ACSPO reference through the October 2021 change, which it left open."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its daily DOISST minus ESA CCI series. Its 12-month estimate of -0.02 to -0.045 C at the October 2021 ACSPO change is not confirmed by 28-day windows (+0.010 C) or by the ACSPO yardstick (+0.018 C)."
+  },
+  {
+   "target": "sci:sha256:656c3dbceac936baaa99dd73e44c22d123b9c9b6b6bf3a18e86a91b4d4226fd7",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that the 2020 offset is daytime pixel selection; our result that the DOISST level does not follow the input level against ACSPO agrees with a selection effect that ACSPO shares."
+  },
+  {
+   "target": "sci:sha256:5cba350c208ed7bd77e5299827bffe69cdfc2df12c654969a0da37d5f35d5ec1",
+   "reason": "Offset inside fixed geographic and day-night groups; context for the mechanism."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Buoy checks see one third of the 2020 step; context for the choice of a satellite yardstick."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its homogenisation keeps the 2020 correction but fits a 2021-10-01 term of -0.048 C (HadSST4.2) and -0.034 C (ERSSTv5); two satellite references show no step on that date."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its mean correction includes a 2021-10-01 term (-0.005 to -0.050 C); two satellite references show no step on that date."
+  }
+ ]
+}
