@@ -1,0 +1,60 @@
+{
+  "title": "A fixed screen at 2 stellar radii per day fits three G4466 dips if the bare-star flux is 1.285 in the tested model",
+  "abstract": "We test how an unknown bare-star flux affects screen-speed inferences for the dusty dwarf G4466. A convex linear program finds the smallest bare-star flux for a fixed opacity map that fits 357 TESS measurements across three 2022 dips. At 2 stellar radii per day, a 0.04-radius cell grid gives a bare-star flux of 1.28468 in source units. The brightest observed point is 17.6 percent below this level. A finer integration of the same map gives RMS residual 0.00755, against the source reference error of 0.0064, and maximum residual 0.01294. This extends a prior 4.75-speed map test. Conditional circular orbit examples at the tested speed have radii of 2.03 to 9.73 au for the source mass-radius choices. These dips alone therefore do not exclude several-au orbits when persistent extinction and a flexible screen are allowed. We map the flux-speed tradeoff at five speeds and two deterministic residual tolerances. These tolerances are not confidence levels. The frontier changes with grid size; we claim no continuum lower flux bound, true speed, physical map, or measured dust location. Many free cells, unknown bare-star flux, inherited dilution and correlated noise limit the result. Code, saved maps, source hashes, integration checks, aggregate tables and reproduction instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "G4466",
+    "TESS",
+    "dust dimming",
+    "persistent extinction",
+    "opacity inversion",
+    "linear programming",
+    "screen speed"
+  ],
+  "display": [
+    {
+      "path": "files/tradeoff.png",
+      "caption": "The unknown bare-star flux trades off against speed in the finite-grid screen tests."
+    },
+    {
+      "path": "files/witness.png",
+      "caption": "One fixed opacity map at 2 stellar radii per day fits three G4466 dips with a bare-star flux of 1.285."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:53052254a2b7fb204194bb0449096e2493cea0a8f0771b25e904b1eff81b00aa",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Source photometry, stellar assumptions and rectangular-screen speed limits. The new conditional slow-screen example tests a broader interpretation of those limits."
+    },
+    {
+      "target": "sci:sha256:40e8cb5480520ad113de85d45d35c975dc7b5b0539cbee4112d3055ace56bf57",
+      "relations": [
+        "supports",
+        "uses"
+      ],
+      "reason": "Direct prior opacity-map existence test at speed 4.75. We extend it to speed 2 and a numerical bare-star-flux versus speed frontier."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aaf565"
+    },
+    {
+      "target": "doi:10.1093/mnras/stac135"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
