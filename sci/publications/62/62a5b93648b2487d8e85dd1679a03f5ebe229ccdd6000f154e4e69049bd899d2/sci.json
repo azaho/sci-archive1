@@ -1,0 +1,72 @@
+{
+ "title": "Missed small responses do not explain the low slice rate of EM-predicted inhibition onto interneurons in mouse V1 (Allen Synaptic Physiology, 158 experiments)",
+ "abstract": "Question: an earlier comparison found that mouse V1 slice recordings detect only 9 to 74 percent of the inhibitory connections onto interneurons that MICrONS EM predicts at matched distance (sci:999aa3ea). Can connections with responses too small to detect explain this? Data: Allen Synaptic Physiology r2.1. We read per-pulse response strengths for 3,255 probed pairs in 158 experiments from the 11 GB medium SQLite by HTTP range requests, and used EM rates per class pair and distance bin from the earlier work. Tests: (1) the mean response at the presynaptic spike of pairs called unconnected, compared with the fraction of hidden connections that EM requires; (2) the signal-to-noise ratio (SNR) of 1,407 detected connections with truncated log-normal fits; (3) a -55 mV against -70 mV holding contrast. Results: in the four class pairs with ratio below 0.15 (Pvalb-Sst, Sst-Sst, Vip-Pvalb, Vip-Vip), 1,682 unconnected pairs had no mean hyperpolarizing response (z -0.02, 95% CI -0.12 to 0.06), although EM requires a connection in 24.5 percent of them. The mean amplitude of such missed connections must be below 26 µV, against detected medians of 98 to 237 µV. Detected inhibitory-to-interneuron responses had median SNR 13 to 17, the same as excitatory-to-interneuron pairs where EM and slices agree; R had no relation to SNR (rho 0.16). Fits predicted at most 5 percent missed connections at SNR 5, against 86 to 91 percent needed. A positive shift in deconvolved measures was equal at -55 and -70 mV, so it is an artifact, not GABAergic. Pvalb-Vip and Sst-Pvalb unconnected pairs gave small positive responses (exploratory, uncorrected). Limitations: one EM animal with target-based EM groups, noisy window-extreme measures with a linear amplitude calibration, 7 percent of experiments, few excitatory controls, log-normal assumption. Other causes (EM group to Cre class mismatch, silent contacts, age) remain open.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "Allen Synaptic Physiology",
+  "paired recordings",
+  "interneurons",
+  "inhibition",
+  "detection threshold",
+  "connection probability",
+  "structure-function",
+  "mouse visual cortex",
+  "HTTP range requests",
+  "SQLite"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_hidden_connection_tests.png",
+   "caption": "A: cumulative SNR of detected connections for class pairs with slice/EM ratio R near 1 (blue) and R below 0.15 (orange); the curves overlap. B: mean hyperpolarizing response (z) of unconnected pairs per inhibitory-to-interneuron class pair (blue, 95% cluster-bootstrap CI) and the value expected if the EM-missed connections had the median response of detected connections (orange). C: upper 95% bound of the mean amplitude of EM-missed connections (orange) against the detected amplitude range (gray, all experiments)."
+  },
+  {
+   "path": "files/figures/fig2_voltage_contrast.png",
+   "caption": "Inhibitory-source pairs tested near -55 mV and near -70 mV (chloride reversal). Connected pairs (orange, n = 13) lose most of their response at -70 mV. Unconnected pairs (blue, n = 321) show no response in the primary measure; their deconvolved shift does not change with holding potential, so it is not a GABAergic response."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:999aa3ea9cc47df6164773d528fc777358c9bb155162acf842a0c16c716b365e",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the EM connection rates and the EM-slice deficit that this work tests; tests its open cause of undetected small inhibitory responses."
+  },
+  {
+   "target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd",
+   "reason": "In vivo cross-correlogram test of class-pair inhibition; its Sst-to-FS excess agrees in direction with our exploratory Sst-Pvalb signal."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology data set (Campagnola et al. 2022)."
+  },
+  {
+   "target": "https://portal.brain-map.org/connectivity/synaptic-physiology",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "reason": "MICrONS functional connectomics (EM data behind the cited EM rates)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "reason": "Schneider-Mizell et al. 2025, target-based inhibitory cell groups used by the EM rates."
+  },
+  {
+   "target": "https://bossdb.org/project/microns-minnie"
+  }
+ ]
+}
