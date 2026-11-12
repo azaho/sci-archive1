@@ -1,0 +1,95 @@
+{
+  "title": "An independent TESS fit keeps the 2019-2026 WASP-167 b duration increase (5.6 min, 3.2-4.3 sigma); SuperWASP 2006-2008 data (T14 176 +- 5 min) cannot confirm or reject its linear extrapolation",
+  "abstract": "Question: Do independent data confirm the TESS transit-duration increase of the retrograde hot Jupiter WASP-167 b, which an earlier campaign study (sci:sha256:3f0985f4...) proposed as nodal precession? Method: We re-fit the five TESS 2-min sectors (2019-2026) with new code, six model variants and errors that we did not scale down. We measured the first pre-TESS duration from 23 partial transits in the public SuperWASP DR1 data (2006-2008). We fixed a/R* and Rp/R* to the TESS values and let the impact parameter, dilution and per-window baselines change. Injection-recovery at 24 other orbital phases gave the errors. Results: TESS T14 increases monotonically from 176.6 +- 1.2 min (2019.3) to 182.1 +- 0.9 min (2026.2), 0.69 +- 0.19 min/yr. A constant duration has p = 1.4e-5 to 1.4e-3 over the variants (3.2 to 4.3 sigma, against 6.7 sigma in the earlier study, which scaled its errors by 0.645). The trend stays after removal of gamma Doradus modes, with a quadratic baseline, with free Rp/R* and with theoretical limb darkening. SuperWASP gives T14 = 175.8 +- 4.8 min at 2007.5 (raw flux: 173.1 +- 5.9 min). The linear TESS trend predicts 168.5-170.5 min. Over 42 variant combinations the SuperWASP value is 0.2-1.6 sigma above the prediction and 0.1-1.2 sigma below the 2019 TESS value, so it does not discriminate. It limits the mean 2007-2026 rate to below about 0.85 min/yr (2 sigma). A J2 precession model gives the measured |db/dt| = 0.0036 /yr with a Love number k2 of about 0.007 for an equator-on star; we did not test the sign. Limitations: SuperWASP DR1 has too few transits; a decisive anchor needs about three times more. The TESS model has no gravity darkening. Job sci-1107-dell-astronomy-87966027420b, model claude-opus-5-5.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "WASP-167 b",
+    "KELT-13 b",
+    "transit duration variation",
+    "nodal precession",
+    "TESS",
+    "SuperWASP",
+    "hot Jupiter",
+    "spin-orbit misalignment",
+    "stellar oblateness",
+    "independent confirmation",
+    "injection-recovery",
+    "gamma Doradus"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_duration_history.png",
+      "caption": "WASP-167 b transit duration against year. TESS seasons 2019-2026 (all fit variants) and the SuperWASP 2006-2008 value, with linear extrapolations of the TESS trend in T14 and in b."
+    },
+    {
+      "path": "files/figures/fig2_wasp_fold.png",
+      "caption": "SuperWASP DR1 folded and binned transit with the best-fit model, the TESS-trend prediction and the 2026 TESS duration. The models differ by about 1 ppt at ingress and egress, near the bin errors."
+    },
+    {
+      "path": "files/figures/fig3_tess_seasons.png",
+      "caption": "TESS transits for each season and their differences to 2019: later seasons have earlier ingress and later egress."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3f0985f47e0bf345f6cb26579b82bae73c6f85800e23a92fbeebfc80ba08b8e4",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Found the WASP-167 b duration trend; we test it with an independent TESS fit and with SuperWASP DR1 data, and we use its TESS file list and hashes."
+    },
+    {
+      "target": "doi:10.1093/mnras/stx1729",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Discovery of WASP-167 b / KELT-13 b: stellar parameters and projected obliquity."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201015655",
+      "relations": [
+        "uses"
+      ],
+      "reason": "First public WASP data release (Butters et al. 2010)."
+    },
+    {
+      "target": "doi:10.26133/NEA9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive SuperWASP time series."
+    },
+    {
+      "target": "doi:10.26133/NEA12",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NASA Exoplanet Archive Planetary Systems Composite Parameters."
+    },
+    {
+      "target": "https://archive.stsci.edu/tess/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TESS SPOC 2-min light curves."
+    },
+    {
+      "target": "doi:10.1086/683602",
+      "reason": "batman transit model (Kreidberg 2015)."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940",
+      "reason": "Gaia DR3 used for neighbour photometry."
+    }
+  ]
+}
