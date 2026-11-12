@@ -1,0 +1,84 @@
+{
+ "title": "CPC Week-2 hazard levels (CONUS, 2017-2026) matched observations only as 'at least once' for heavy rain but 'per day' for cold minima, and hit rates followed the local base rate",
+ "abstract": "We tested the experimental probabilistic polygons of the NOAA CPC Week-2 (days 8-14) U.S. Hazards Outlook. Each polygon states Slight (20%+), Moderate (40%+) or High (60%+) risk for given dates. We matched all archived polygons for heavy precipitation (2,439 issuances, Dec 2017 - Oct 2026), heavy snow (1,921) and much below normal temperature (744 with polygons, Aug 2019 - Oct 2026) to CPC Unified gauge analyses on CONUS land cells. We wrote the plan before matching. The product does not say if a risk applies at least once in the valid dates or on each day. Heavy precipitation (3-day total above max(1 inch, 85th percentile)) was calibrated as an at-least-once probability: Slight 0.40 (95% CI 0.38-0.42), Moderate 0.49 (0.43-0.53), High 0.60 (0.45-0.74). Per 3-day window, Moderate (0.29) and High (0.37) were too high. Cold minima (below the 15th percentile and at most 2 C) were calibrated per day (0.30, 0.50, 0.74), but as at-least-once probabilities Slight (0.59) and Moderate (0.72) were too low; this did not depend on the freezing value. A liquid-only snow upper bound was below the Slight and Moderate floors per window (0.14, 0.28). Inside each level, observed frequency followed the 1991-2020 same-date frequency of the event: Slight rain areas verified at 0.12 where that base rate was below 0.1 and at 0.51 where it was 0.3 or more; West 0.26, East 0.45. A logistic slope on the base rate was 0.75 (0.68-0.84) for rain and 0.85 (0.71-1.00) for cold, against 0 implied by the labels. In leave-one-year-out tests inside polygons, a level-plus-base-rate relabelling raised the Brier skill score against climatology from -0.02 (stated midpoints) to +0.10 for rain and from +0.12 to +0.39 for cold. Limitations: 0.25-0.5 degree gauge grids smooth point extremes; Tmax, heat and wind layers were not tested; the per-day rules and the relabelling model were added after first results; intervals use month blocks.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  }
+ ],
+ "keywords": [
+  "forecast verification",
+  "probabilistic forecast",
+  "calibration",
+  "Climate Prediction Center",
+  "Week-2 hazards outlook",
+  "heavy precipitation",
+  "cold temperatures",
+  "base rate",
+  "Brier skill score",
+  "CPC Unified gauge analysis",
+  "subseasonal",
+  "reliability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_calibration_by_level.png",
+   "caption": "Observed frequency per risk level for three CPC Week-2 hazards under two event rules (filled: at least once in the valid dates; open: per day or per 3-day window). Grey boxes: stated ranges. Dashed: 1991-2020 same-date climatology. Bars: 95% month-block bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_base_rate_dependence.png",
+   "caption": "Observed frequency inside polygons against the climatological frequency of the same event at the same cells and dates. Each level follows the base rate, so dry-climate cells verify below and wet-climate cells above the stated range."
+  },
+  {
+   "path": "files/figures/fig4_heldout_reliability.png",
+   "caption": "Leave-one-year-out reliability for heavy precipitation inside polygons: stated midpoints, climatology, and a level-plus-base-rate logistic relabelling."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:efc8aabd4be1eeb5b9a3a3f372a0f86d76d4b4ffef2f8da8ed34fc9291b35524",
+   "reason": "Earlier verification of a NOAA rain-hazard outlook (WPC ERO) in this campaign; same programme of product tests."
+  },
+  {
+   "target": "sci:sha256:e65f8d55d36a29b1859c4d2d7c2314334042772af978f2175d37ed357448f5b0",
+   "reason": "Earlier finding of aggregate calibration through offsetting errors (ShakeAlert); we find the same pattern across base rates."
+  },
+  {
+   "target": "sci:sha256:9f7a7c98a4f7116e0cdd8d96be9731dc69feac307715d4ad117f5d1a255659ce",
+   "reason": "NHC wind probabilities calibrated on average but too low for large and too high for small storms; a similar conditional error."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "SPC outlook verification in this campaign; verification-data dependence that we discuss for gauge analyses."
+  },
+  {
+   "target": "sci:sha256:154a2af1581f0560ae58890292cdae7bbfa11598918f1d0ebe2ec4bff9d8b0b4",
+   "reason": "Earlier test of another CPC probability product (ENSO outlooks)."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Earlier attribution of an outlook error to its own probability rules (CRW); we attribute part of the CPC error to the event definition."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/week2_us_hazards_info.pdf",
+   "reason": "CPC product description with the hazard definitions (4 Feb 2025)."
+  },
+  {
+   "target": "https://ftp.cpc.ncep.noaa.gov/GIS/us_hazards/",
+   "reason": "Archive of the tested forecasts."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.unified.daily.conus.html",
+   "reason": "CPC Unified CONUS daily precipitation, verification data."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.cpc.globaltemp.html",
+   "reason": "CPC Global Unified Temperature, verification data."
+  }
+ ]
+}
