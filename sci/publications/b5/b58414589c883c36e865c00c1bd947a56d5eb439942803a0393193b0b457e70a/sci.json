@@ -1,0 +1,137 @@
+{
+ "title": "Random rectified pooling concentrates variance on new axes, but mouse higher visual areas (32 mice) concentrate natural-scene variance on trained mid-level network axes; macaque IT on deep axes",
+ "abstract": "Earlier work found that natural-scene response spectra decay faster in higher mouse visual areas and that this compression is not on VISp stimulus axes. We asked which computation can make it. We measured F10, the share of cross-validated reliable variance on the top 10 image axes of a basis. In random-weight AlexNet and ResNets, F10 rose with depth on each layer's own axes (for example 0.37 to 0.80 in ResNet-50) and stayed or fell on first-layer axes (0.37 to 0.18). In controlled 6-stage random cascades, this new-axis concentration needed asymmetric rectification with spatial down-sampling over 3 or more stages: the index was 0.33 for ReLU with max pooling, 0.24 with mean pooling, 0.07 to 0.09 without down-sampling, 0.04 with full-wave rectification and 0.02 for linear pooling. ImageNet training removed most concentration until the last stage. In 11,559 units of 32 Allen Neuropixels mice, the cortical hierarchy slope of F10 was 0.074 (95% mouse half-sample interval 0.031 to 0.118) on own axes and -0.054 on VISp axes. On trained ResNet-18 layer3 axes it was 0.079 (0.062 to 0.097), equal to the own-axis slope and 0.059 (0.032 to 0.086) larger than with random weights; ResNet-50 layer3 gave 0.055, and random-network axes gave 0.01 to 0.04 at all depths. The pre-set deepest-stage test passed for 1 of 3 networks; the middle-stage result is exploratory. In 2 macaques (TVSD, V1/V4/IT multi-unit activity, 100 THINGS images), IT took more variance than V1 on deep trained axes (ResNet-18 layer4 +0.10 in both) and less on random axes, while its own-axis decay exponent was not larger than V1 (-0.09 and -0.08), as parallel studies found. Thus random cascades give the geometry, but the new axes of higher areas are learned-feature axes. Limits: correlational tests over 6 or 3 areas, one image set per species, three architectures, exploratory middle-stage result. Code, aggregate results and provenance are included; external data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "macaque inferotemporal cortex",
+  "visual hierarchy",
+  "cross-validated PCA",
+  "response spectrum",
+  "population geometry",
+  "stimulus subspace",
+  "convolutional neural network",
+  "random networks",
+  "spatial pooling",
+  "rectification",
+  "ImageNet",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "TVSD",
+  "THINGS",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_cascade_ablation.png",
+   "caption": "Random 6-stage convolution cascades on the Allen scenes (a) and THINGS images (b): the new-axis index (share of variance on the top 10 own axes minus the share on the top 10 stage-1 axes) by stage and operation, mean and range over 5 seeds. (c) Stage-6 share on stage-1 axes and on own axes. Only asymmetric rectification with down-sampling moves the concentration onto new axes."
+  },
+  {
+   "path": "files/figures/fig3_mouse.png",
+   "caption": "Mouse (32 mice, 300-unit pseudo-populations). (a) F10 of the 6 cortical areas on own axes, VISp axes and ResNet-18 layer3 axes (trained, random) against the anatomical hierarchy score. (b-d) Cortical hierarchy slope of F10 on the axes of every layer of AlexNet, ResNet-18 and ResNet-50, trained (blue) or random (orange), with 95% mouse half-sample bands; the dotted line and grey band show the own-axis slope."
+  },
+  {
+   "path": "files/figures/fig1_network_layers.png",
+   "caption": "Share of layer variance on the top 10 image axes of the layer itself (solid) and of the first recorded layer (dashed), for ImageNet-trained (blue) and random-weight (orange) networks, on the Allen 118 scenes and the 100 THINGS test images."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source result; we reproduce its natural-scene alpha slope with its estimator, unit filters and hierarchy scores."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Cross-basis estimator and the finding that natural-scene compression is not on VISp axes; our cascades explain why one-stage VISp pooling fails."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stimulus generality and half-sample interval method."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "reason": "Within-mouse generality and RF controls of the compression."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Within-mouse phase-averaged concentration; one-stage phase pooling cannot change it."
+  },
+  {
+   "target": "sci:sha256:e4bf8cc2ef663e0bb1ea5cce8e2a43186f7f48aee390099d77f474d6c8755753",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel study of ResNet-18 spectra by stage and training and of macaque V4/IT; our layer spectra agree; we add the axis analysis, cascade ablation and brain-to-network axis tests."
+  },
+  {
+   "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Parallel TVSD study: IT spectra not steeper than V1; our re-analysis of the same data agrees."
+  },
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "reason": "Higher-area natural-scene signal is not a linear VISp read-out."
+  },
+  {
+   "target": "sci:sha256:a94a2db933318da32ed90190ea07800d9b228c022327ddbbbc613fbc0dd8d9c1",
+   "reason": "Higher-area signal that VISp misses is present from the first response."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator (Stringer et al. 2019)."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores (Harris et al. 2019)."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels data (Siegle et al. 2021)."
+  },
+  {
+   "target": "doi:10.12751/g-node.hc7zlv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TVSD data (Papale et al. 2025), CC BY 4.0."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0223792",
+   "relations": [
+    "uses"
+   ],
+   "reason": "THINGS images (Hebart et al. 2019); not redistributed."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms for Allen data."
+  }
+ ]
+}
