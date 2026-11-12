@@ -1,0 +1,136 @@
+{
+  "title": "Two QLP flux fits give different HD 303514 primary eclipse-loss forecasts under one Newtonian triple model",
+  "abstract": "We test the HD 303514 eclipse forecast with joint fits to individual flux measurements. We use 2,728 TESS bins from eight QLP sectors, 832 ASAS-3 measurements and 1,490 strict DASCH DR7 plates. The inner mass sum is fixed at four solar masses and its mass ratio at one. A detrended-flux state has its first primary conjunction without overlap at 2031.55. A SAP aperture-flux state from the same exposures keeps primary overlap through 2060, with minimum clearance 0.00182 of the radius sum and minimum depth 16.4 parts per million at fixed sector-100 light. Each product has its own empirical weights. This tests a reduction and weighting choice together. An equal-star control permits primary loss at 2032.75. A radius-ratio 0.5 state also permits loss. Four fixed states give positive gains in 1,502 broader-cut plates excluded from the orbit fit. However, those plates favor magnitude-template amplitudes of 0.53-0.76 of the predictions; most positive gain comes from one era. Numerical checks reproduce the losses and limit exposure-integration changes to 1.10 parts per million. Thus these fits do not support a robust geometric primary-loss date. They are local, conditional states, not measured masses, a calibrated orbit confidence region or independent observing confirmations. Fixed limb darkening, free band light terms, omitted stellar evolution constraints, survey weights and plate calibration limit the result. The package contains code, source hashes, fitted states, model forecasts and excluded-record tests; external observations stay separate.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "HD 303514",
+    "TIC 459876082",
+    "hierarchical triple",
+    "photodynamical model",
+    "eclipse loss",
+    "TESS",
+    "QLP",
+    "ASAS-3",
+    "DASCH DR7",
+    "forecast uncertainty",
+    "eclipse depth"
+  ],
+  "display": [
+    {
+      "path": "files/results/forecast_comparison.png",
+      "caption": "Four conditional orbit states give different primary eclipse forecasts. The two TESS products use the same exposures and their own empirical weights. Depths assume fixed sector-100 light. The excluded-plate gains use fixed orbit and blue light terms; crosses show the largest wrong-phase score. The amplitudes are point estimates without a calibrated confidence scale. The published recovery orbit is held fixed and its light terms are refitted. See README.md for the model limits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:d488bbac67b23bfb4bf27ed4c96968b240b370bd26e95add0d15e3ca9cba159a",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We adapt the raw-flux window preparation and extend the radius test to a joint dynamic fit."
+    },
+    {
+      "target": "sci:sha256:3288fe7d5bc8240ef4834be8e6d59089b4c114c3714a7c7f358763356b841d1c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the verified Newtonian integrator, with exact member hashes in prior_sources.json. No published shape summary is fitted as extra data."
+    },
+    {
+      "target": "sci:sha256:ccdc9586a30e391d72cdf5ac81bc026ac1ef400fe9cac414c17cf39c25855821",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse the ASAS parser and source retrieval recipe. We fit direct ASAS measurements and test a different dynamic state."
+    },
+    {
+      "target": "sci:sha256:42e6bad48fce54aca6b5d58da991578e0f8ccf81297304ba14bfa1ec62dded92",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We use its recovery start, strict plate cuts and excluded-record test design. We add direct flux fits and other eclipse-loss states. Its fixed states are not a complete orbit confidence region."
+    },
+    {
+      "target": "sci:sha256:7939b19ac7d8dadc2b1908d54832624d5db26f6938f73fd57230123a33c31397",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We reuse the broader plate reduction code and raw API source identity. The new excluded-record tests limit depth-history validation."
+    },
+    {
+      "target": "sci:sha256:bd1c8dcce7fa69786cf55908e739d098708151f380a091deb88421b2dad40734",
+      "relations": [
+        "reviews",
+        "supports"
+      ],
+      "reason": "Earlier amplitude checks found plate-cut sensitivity. Our excluded-record amplitude estimates support that concern."
+    },
+    {
+      "target": "sci:sha256:7167ceac926c0e5faf7fc20d055eed5a5be8d76fe737b0c40b2ceab8a1e9456c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier mass-ratio tests kept an equal-radius light model. We replace shape summaries with direct profiles and test different radii and flux reductions."
+    },
+    {
+      "target": "doi:10.17909/t9-r086-e880",
+      "reason": "TESS QLP light curves and source credits."
+    },
+    {
+      "target": "https://www.astrouw.edu.pl/asas/?page=credit",
+      "reason": "ASAS source credits and citation instructions."
+    },
+    {
+      "target": "https://arxiv.org/abs/astro-ph/0210283",
+      "reason": "ASAS survey and catalogue, Pojmanski 2002."
+    },
+    {
+      "target": "https://arxiv.org/abs/astro-ph/0401125",
+      "reason": "ASAS southern catalogue containing the target, Pojmanski 2003."
+    },
+    {
+      "target": "https://dasch.cfa.harvard.edu/dr7/",
+      "reason": "DASCH DR7 release and source documentation."
+    },
+    {
+      "target": "doi:10.1017/S1743921312000166",
+      "reason": "DASCH survey, Grindlay et al. 2012."
+    },
+    {
+      "target": "doi:10.1088/0004-6256/140/4/1062",
+      "reason": "DASCH photometry, Laycock et al. 2010."
+    },
+    {
+      "target": "doi:10.1086/671760",
+      "reason": "DASCH photometric calibration, Tang et al. 2013."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201118085",
+      "reason": "REBOUND integration code."
+    },
+    {
+      "target": "doi:10.1093/mnras/stu2164",
+      "reason": "IAS15 integrator."
+    },
+    {
+      "target": "doi:10.1086/683602",
+      "reason": "batman occultation model."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202450038",
+      "reason": "Established grazing-eclipse shape degeneracy; the general degeneracy is not a new claim here."
+    }
+  ]
+}
