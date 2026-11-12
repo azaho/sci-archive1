@@ -1,0 +1,106 @@
+{
+ "title": "Hippocampal output wiring did not specifically predict brain-wide spiking at LFP-confirmed CA1 ripples in 118 IBL sessions; septal, preoptic and brainstem inputs predicted it better (post hoc)",
+ "abstract": "Question: during hippocampal sharp-wave ripples, many mouse brain regions change their firing. Does the mesoscale axon output of CA1 and subiculum (Knox 2019 connectome model) tell which regions change? Data: IBL Brain-Wide Map 2026 Q2, 118 sessions (84 mice, 202 probes), passive spontaneous period; 149,654 clusters. Method: CA1 multi-unit population bursts (22,293 events in still periods). A cross-validated raw-LFP test in every session confirmed ripples in 100 of 118 sessions (held-out 120-250 Hz envelope 2.48 times random times, median). Unit modulation is the log rate ratio in -50..150 ms vs -1.5..-0.5 s. Pre-registered test: region modulation on CA1+SUB output density with distance, rate, probe and division controls; nulls were the same model with each of 289 other sources, and Gaussian-process spatial surrogate maps; both had to pass. Results: lateral septum, hippocampus, MD and retrosplenial cortex increased; VPM, PO and BST decreased, but the thalamic decrease was a slow dip before the burst, not a ripple-locked transient. The wiring link was positive in all variants (t 1.4 to 3.0) and passed the spatial null with all clusters (p 0.039) but not with good units (p 0.12). It was never source-specific: 7-27% of other sources predicted as well (73rd-92nd percentile). H1 was rejected. Post hoc, inputs from septal (MS, NDB), preoptic (VLPO, AVP, MPO) and brainstem (CS, NI, IPN, RPO) nuclei predicted the map best: the best source beat a max-t spatial null (p 0.006; p < 0.001 in LFP-valid sessions), sources selected on half of the sessions beat CA1+SUB in 10 of 14 held-out tests, and with septal input in the model the CA1+SUB term was zero (t 0.02). This independently confirms the non-specific result of sibling job sci:sha256:fce3eebb with a different pipeline. Limitations: post hoc source search; collinear sources share targets; 5-10 min awake spontaneous data; region means; good-unit maps less reliable (split-half 0.29).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "sharp-wave ripple",
+  "CA1 population burst",
+  "hippocampal output",
+  "brain-wide map",
+  "IBL Brain-Wide Map",
+  "Neuropixels",
+  "mesoscale connectome",
+  "Knox 2019",
+  "source specificity",
+  "spatial null",
+  "medial septum",
+  "preoptic area",
+  "nucleus incertus",
+  "lateral septum",
+  "thalamus",
+  "structure-function",
+  "brain state",
+  "LFP validation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ripple_validation.png",
+   "caption": "Ripple check and event-locked rates. A: median (IQR) ratio of CA1 LFP power at detected CA1 population bursts to random still times, 118 sessions; peak at 160-180 Hz. B: held-out 120-250 Hz envelope ratio per session (site selected on odd events, measured on even events); 108 sessions above 1.3x, 100 also pass the spectral test. C: pooled event-locked rate of good units by division (no CA1). Thalamus dips about 0.5 s before the burst."
+  },
+  {
+   "path": "files/figures/fig2_region_map.png",
+   "caption": "Ripple modulation (log2 rate ratio, -50..150 ms vs -1.5..-0.5 s) of 125 regions with at least 10 clusters in 2 sessions, ordered by division. Bars: all clusters, mean and SEM. Dots: good units only."
+  },
+  {
+   "path": "files/figures/fig3_wiring_tests.png",
+   "caption": "Wiring tests. A: partial residual plot of region modulation on CA1+SUB output density (all clusters, 108 regions). B: t of the same model for each of 289 other Knox sources; CA1+SUB (orange) is not specific; the dashed line is the 95th percentile of the maximum t on spatial surrogate maps; the labelled sources above it are septal, preoptic and brainstem nuclei (post hoc). C: held-out t of the 10 sources selected on the other half of the sessions (blue) and of CA1+SUB (orange), for 7 variants and 2 split directions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fce3eebb0344a95fd6249eba7fd517edcdaa92223e93c330be9fc88be5dc6435",
+   "relations": [
+    "reviews",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Same H1 with the same IBL and Knox data, different pipeline. We support its final conclusion (link not specific beyond division) and challenge the planned H1 support (95th percentile of sources): with our pipeline CA1+SUB was at the 73rd-92nd percentile and septal/preoptic/brainstem inputs predicted better."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map: clusters table, spikes, wheel, passive periods and raw LF band (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 mesoscale connectome model; predictor and source nulls."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCFv3 ontology for region mapping."
+  },
+  {
+   "target": "doi:10.1073/pnas.2200931119",
+   "reason": "Nitzan et al. 2022: brain-wide spiking at ripples in Allen data; no mesoscale wiring test."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaussian-process spatial surrogate null; distance-rewired nulls are liberal."
+  },
+  {
+   "target": "sci:sha256:e607d63e05656870370ff0c3afe08f4aa6f8bd835e73630d4dd60daa2e1d0271",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL S3 byte-range access approach; septal input did not predict the 5-11 Hz rhythm map, a different outcome."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "reason": "Axonal input predicted IBL task coding; related region-level wiring-to-function test."
+  },
+  {
+   "target": "sci:sha256:4c43433e0b806123e6fe7881d5a77c275d28dc9f8916f5c07767bfaea7efca11",
+   "reason": "Region-level wiring links weaken inside regions; scale limit of mesoscale tests."
+  }
+ ]
+}
