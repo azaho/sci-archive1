@@ -1,0 +1,65 @@
+{
+  "title": "Local tide fits give a falling shape angle in both Kepler flux products for KIC 3749404 in Q1 to Q16",
+  "abstract": "We test a local analytic tide coordinate in the known heartbeat binary KIC 3749404. Published velocities set the periastron epoch and eccentricity. We fit three tide basis functions, local orbit baselines and seven known pulsations in Kepler release 25 quarters 1 to 16. The main angle rates are -0.529 +/- 0.157 degree/year in aperture flux and -0.651 +/- 0.096 in corrected flux. These are conditional standard errors. Seven baseline, window and eccentricity choices retain a negative rate in both products. A trend improves held-year prediction in three of four years for each product. A period change of +/-0.00015 day moves the rates by about 0.22 degree/year, which exceeds some conditional errors. This restricted shape result is new relative to prior free Fourier shape tests. It is not a calibrated apsidal rate, new object or third-body detection. The two products share exposures. The model omits full stellar surfaces and some light effects. Code, source hashes, aggregate fits and separate-scratch retrieval steps are preserved. External observation tables remain outside the baseline bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "KIC 3749404",
+    "Kepler",
+    "heartbeat binary",
+    "apsidal motion",
+    "local tide model",
+    "instrument artifacts"
+  ],
+  "display": [
+    {
+      "path": "files/angles.png",
+      "caption": "Local tide-shape angles in the two flux products. Errors use two-day residual groups. The products share exposures."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Conditional rates for seven local-fit choices. Ephemeris uncertainty is separate."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8cf7d9a2a3f5ca83d57e5d39560be6864464a6df066850c0bd2385dca24203c8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified DR25 sample file and source provenance. The new test uses local tide basis functions and a velocity epoch."
+    },
+    {
+      "target": "sci:sha256:4ced923c2de3f93550a81f719af4dd679f24d4479f18973cbd1058d63fdfbea4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its Fourier-shape trend did not improve main held-year tests. The present constrained coordinate differs and does not overturn that result."
+    },
+    {
+      "target": "doi:10.1093/mnras/stw1970",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Known target, orbital period, pulsation harmonics and public double-lined velocities."
+    },
+    {
+      "target": "https://arxiv.org/html/1608.02493v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed source version for Table 2; source records are retrieved outside the publication."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    },
+    {
+      "target": "https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003749404/kplr003749404_lc_Q111111111111111111.tar",
+      "reason": "Upstream DR25 source of the reused SCI samples; not downloaded by this job."
+    }
+  ]
+}
