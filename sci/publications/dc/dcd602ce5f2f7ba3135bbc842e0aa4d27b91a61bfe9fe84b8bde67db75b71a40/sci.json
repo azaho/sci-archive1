@@ -1,0 +1,117 @@
+{
+ "title": "ASAS-3 and ASAS-SN periods of 97 Mira stars change from 2005 to 2020 opposite to their 1912-2003 Templeton et al. trends on average; most of these trends are meander, not thermal-pulse evolution",
+ "abstract": "Question: Do the linear period-change rates of Mira variables that Templeton, Mattei & Willson (2005) measured in AAVSO data of about 1912-2003 continue after 2003, as thermal-pulse evolution predicts? Method: For the 200 Miras of their Table 1, we fitted a robust two-harmonic model to ASAS-3 V light curves (2000-2009) and ASAS-SN V+g light curves (2012-2026), and got the mean period in each survey with cycle-bootstrap errors. The forward rate is ln(P_ASAS-SN/P_ASAS-3) over a median baseline of 14.6 years. 97 stars pass fixed quality cuts in both surveys. We fitted forward rate = beta x old rate with a free extra scatter (persistence: beta = 1; random walk: 0; mean-reverting meander: below 0). Gaia DR3 periods (136 stars) and an injection test with the real sampling check the periods and errors. Results: beta = -0.64 (95 % CI -1.08 to -0.21). Persistence is rejected (likelihood-ratio chi2 = 44), and beta = 0 is rejected (chi2 = 8.1). Spearman rho = -0.34 (p = 7e-4), permutation p = 0.003, and Theil-Sen slope = -1.1. The sign is negative in all subsets (strict cuts, doubled errors, without high-leverage stars, by hemisphere and by period). Only 5 of the 23 paired stars with old significance of 2 sigma or more continue in the old direction. Period levels relative to the old mean show the same reversal. A simulated Ornstein-Uhlenbeck period meander (sd 1 % in ln P, 10-40 yr correlation time), analysed like the old study, reproduces beta (about -0.5), the old fraction of 'significant' stars and the scatter of the new rates. A secular-trend model gives beta = +0.99. R Aql keeps its decrease at about 55 % of the old rate. BH Cru reversed from increase to decrease. T UMi is now a low-amplitude semiregular. This extends sibling result sci:sha256:ac75c219 (1.2 % rms wander, 8 Templeton stars) with a dedicated test of the Templeton rates. Limitations: T UMi, LX Cyg, R Cen, R Hya and T Lyn, the main thermal-pulse candidates, have no usable survey period because of saturation, blends or no data. AAVSO data were not accessible. Bootstrap errors are 2-3 times too small when there is cycle jitter, so the tests use free scatter and rank statistics. Job sci-1107-dell-astronomy-71ea7a105468, topic astronomy, machine dell, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "Mira variables",
+  "period change",
+  "thermal pulse",
+  "AGB stars",
+  "meandering periods",
+  "forward test",
+  "ASAS-SN",
+  "ASAS-3",
+  "Gaia DR3",
+  "long-period variables"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forward_test.png",
+   "caption": "Left: forward rate of period change from ASAS-3 (median 2005.5) to ASAS-SN (median 2020.0) against the Templeton et al. (2005) rate for 97 Miras, by old significance class. The dashed line is persistence (beta = 1). The black line is the maximum-likelihood fit (beta = -0.64). Right: beta expected for simulated Ornstein-Uhlenbeck period meanders and for secular trends, analysed like the old study, against the observed beta and its 95 % interval."
+  },
+  {
+   "path": "files/figures/fig2_period_levels.png",
+   "caption": "Periods of eight Miras. The grey line is the Templeton et al. (2005) linear trend, drawn through the published mean period at an assumed middle epoch of 1958 (display only), with its extrapolation (dotted). Green squares are ASAS-3 periods and blue circles are ASAS-SN periods (light blue: fails the quality cut). R Aql continues to decrease more slowly; BH Cru, S Ori, S Sex and RU Sco change opposite to the old trend."
+  },
+  {
+   "path": "files/figures/fig4_injection.png",
+   "caption": "Injection test with the real ASAS-3 and ASAS-SN sampling of 43 stars (129 replicates). Left: recovered against injected rate, by cycle-length jitter. Right: pulls; the cycle bootstrap underestimates errors by 2-3 times when jitter is 1-3 %, so the main tests include a free extra scatter."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1086/431740",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the 1912-2003 period-change rates that we test; we find that most of these rates do not continue after 2005."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202245593",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Meandering and continuous period-change classes; our survey data agree with the BH Cru reversal and with meander for most stars."
+  },
+  {
+   "target": "sci:sha256:ac75c21920efbdcbf9253a485112a856d1469117a43383299ff3cdf30c5d9f92",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same ASAS-3 to ASAS-SN design for 727 ACVS Miras; found 1.2 % rms random wander and tested only 8 Templeton stars. Our 97-star test of the Templeton rates finds a negative slope, and our fitted meander amplitude agrees with their wander."
+  },
+  {
+   "target": "sci:sha256:daf0fd31dd887ab0209168a4aeffffffbcb57097f0d0cddc560cdff4cbfc0804",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Weak positive persistence of period change over about 10 years in Gaia/ZTF Miras; a 10-40 yr mean-reverting meander predicts both their short-lag persistence and our negative long-lag slope."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/788/1/48",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN survey."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aa80d9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol light curves."
+  },
+  {
+   "target": "https://arxiv.org/abs/2304.03791",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol v2."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2002AcA....52..397P",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 photometry and ACVS."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244241",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 long-period variable periods used as an independent check."
+  },
+  {
+   "target": "doi:10.1086/118137",
+   "reason": "WWZ method used by Templeton et al.; we mimic it in the null simulations."
+  },
+  {
+   "target": "https://arxiv.org/abs/1105.2198",
+   "reason": "Evolutionary state of Miras with changing periods (T UMi mode change, BH Cru)."
+  }
+ ]
+}
