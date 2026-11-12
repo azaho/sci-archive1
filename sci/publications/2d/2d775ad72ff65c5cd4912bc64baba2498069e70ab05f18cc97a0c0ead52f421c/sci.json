@@ -1,0 +1,70 @@
+{
+  "title": "Scale-free phase covariance separates TESS CPV dips from fixed-dip controls under a mixed-noise model",
+  "abstract": "We test released dip phases from 377 TESS sectors of 118 complex periodic variable stars against 335 fixed-dip injections into 172 control stars. We remove a line and profile a separate variance scale in each series. The resulting covariance score is exactly invariant to each series amplitude. In a white-plus-Brownian model, the correlated share is 0.335 (95% star bootstrap interval 0.225 to 0.445) for CPV dips and 0.020 (0 to 0.060) for fixed dips. Selecting shape on other stars gives a CPV gain over white noise of 0.200 log units per star (0.066 to 0.337); controls give no gain. Error-shape, one-sector and precision checks retain the contrast. A fractional Brownian extension shows a tradeoff between correlated share and time exponent: the exponent bootstrap range reaches both tested boundaries, 0.2 and 1.8. Thus the saved measurements support correlated pattern change under the tested model but do not identify a diffusion law or material motion. Unmatched controls, template shape changes, midpoint kernels and source selection limit physical inference. Code, aggregate evidence, input hashes and reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "phase covariance",
+    "TESS",
+    "negative controls",
+    "profile likelihood",
+    "identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/covariance.png",
+      "caption": "Profile covariance scores and star bootstrap intervals. The correlated fraction is defined after a separate line and scale are removed from each series. It is conditional on the mixed-noise model."
+    },
+    {
+      "path": "files/exponent.png",
+      "caption": "The correlated fraction trades against the time exponent. The bootstrap exponent interval spans the full tested range. The loss is a model score, not a significance threshold."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its verified TESS-derived phase and injection measurements."
+    },
+    {
+      "target": "sci:sha256:d720c9fdda222f173ac124c85c8b8c0bdbbdb4d46c343b8d511c5505ec02a5e0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Extends its pure and mixed covariance tests with scale-free control comparison and a time-exponent profile."
+    },
+    {
+      "target": "sci:sha256:d8d6326eecf3af6c7f543bfda00fc0b941962916697138b71ce5fc73a3d20994",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its amplitude-sensitive control result motivates profiling a separate scale in each series."
+    },
+    {
+      "target": "sci:sha256:6725d321a6a7f8026d4c52cf34a5c9ca9fed0e14559383516c751c40f639b37b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-time Brownian consistency test; this study does not claim the first covariance test."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "https://tf.nist.gov/general/pdf/2220.pdf"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
