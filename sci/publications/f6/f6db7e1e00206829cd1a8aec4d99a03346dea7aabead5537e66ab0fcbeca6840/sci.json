@@ -1,0 +1,116 @@
+{
+ "title": "CA1 pyramidal-to-interneuron spike connections in 4 rats and 4 mice were nearly independent of place-map similarity, with at most a few percent per SD, less than in head-direction cortex",
+ "abstract": "Question: in mouse postsubiculum, head-direction cells connect about 10% more often per SD of tuning similarity to fast-spiking interneurons. Does a like-to-like rule apply to place cells and interneurons in the hippocampus, and is it present before or only after a new maze? Data: DANDI:000044 (rat CA1, 4 rats, 8 sessions, each on a new maze) and DANDI:001695 (mouse CA1 and CA3, 4 mice, 14 sessions), both with rest before (PRE) and after (POST) the maze. Method: we detected putative pyramidal-to-interneuron connections with a cross-correlogram rule, separately for all, PRE, POST and NREM spikes. We modelled the connection rate against maze place-map similarity with one stratum for each interneuron. Synthetic connections of known strength added to all real pairs gave the pattern that tuning-blind wiring produces after detection. Results: we found 402 connections in 4,266 rat CA1 pairs and 2,768 in 32,034 mouse CA1 pairs; control pairs had 4 detections in 37,726. The rate ratio per SD of similarity was 0.93 (CI 0.86-1.03) in rat and 1.02 (1.00-1.05) in mouse. Injection nulls were 0.94-1.00. With one estimate for each of 8 CA1 animals, observed/null was 0.97 (0.88-1.07). The small mouse excess became 1.00 after we removed the spikes that the connection itself transmits. PRE-only detection before a new maze gave 0.98 (0.89-1.09) in rat. Mouse PRE gave 1.05 (0.99-1.09), and 1.06 (0.99-1.14) at the animal level. Transmission change from PRE to POST sleep did not depend on similarity. A mouse CA3 PRE-sleep excess did not hold at the animal level. Conclusion: CA1 excitatory input to interneurons is close to tuning-blind for place fields. Any like-to-like bias is at most a few percent per SD, smaller than the postsubicular head-direction value. Limitations: putative connections from spike timing, only strong connections, four animals per data set, repeated mouse sessions, no interneuron subtypes, and many secondary cuts without correction. Code, per-pair derived tables, figures and DANDI hashes are included; raw recordings stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "hippocampus",
+  "CA1",
+  "CA3",
+  "place cells",
+  "interneurons",
+  "like-to-like connectivity",
+  "spike cross-correlogram",
+  "monosynaptic connection detection",
+  "detection bias",
+  "synthetic connection injection",
+  "sleep",
+  "preconfiguration",
+  "DANDI:000044",
+  "DANDI:001695",
+  "structure-function",
+  "null result",
+  "rat",
+  "mouse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_main.png",
+   "caption": "Left: median-strength example cross-correlograms (blue) with the hollow-Gaussian baseline (orange); grey band is the 0.8-2.8 ms detection window. The rat example is a same-shank pair, so the dip near zero lag is a spike-sorting collision effect. Middle and right: percentage of pyramidal-to-interneuron pairs with a detected connection by place-map similarity decile, for all spikes and for PRE rest only. Blue: observed. Orange: tuning-blind synthetic-connection null (gain model, q50), scaled to the observed mean. Text: rate ratio per SD of similarity and observed/null ratio with session bootstrap CIs."
+  },
+  {
+   "path": "files/figures/fig2_epochs.png",
+   "caption": "Rate ratio per SD of place-map similarity for connections detected with all spikes, PRE or POST rest spikes, and PRE or POST NREM spikes. Blue circles: observed. Orange squares: observed divided by the tuning-blind injection null (gain model). Bars: 95% session bootstrap CIs. Dotted line: the head-direction-to-FS value in mouse postsubiculum (1.10). n: number of detected connections."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8faf1a626f6fc70f2c716839282332cf363e08aa333e33f15d7f2b6754dfa468",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Head-direction like-to-like result and injection-null design. We apply the design to the hippocampal place system and find a smaller effect. No code was reused."
+  },
+  {
+   "target": "sci:sha256:3d0c689c45e21a3a1f0fc8e28e578d33da3ea64a772655b2acfa8dbc930cf8f1",
+   "reason": "Thalamic head-direction input to FS cells with no clear direction match; related spike-connection rule test."
+  },
+  {
+   "target": "sci:sha256:2c36aa37a35ba7d53ad28506144bf2fef348a048bded50cf57ee1c874d3fc8af",
+   "reason": "LGN-to-V1 spike connection rules; related test in another system."
+  },
+  {
+   "target": "sci:sha256:c3ed2df5afc9652d8607613f2ba76ee3518b3dc734e184ad20ec45a95a1e81f6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Pyramidal-pair PRE/POST co-firing study that uses DANDI:001695; we test pyramidal-to-interneuron connections in the same and another data set."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Like-to-like excitatory wiring in MICrONS mouse visual cortex, for comparison."
+  },
+  {
+   "target": "sci:sha256:6b411edc01aac6a505419424e27a32af7104f88fd17dd3987d6701c442c3f049",
+   "reason": "Response similarity did not raise shared inhibitory targets in MICrONS, consistent with tuning-blind input to interneurons."
+  },
+  {
+   "target": "doi:10.48324/dandi.000044/0.261106.0236",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rat CA1 spike, sleep and position data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1126/science.aad1935",
+   "reason": "Original article for DANDI:000044."
+  },
+  {
+   "target": "doi:10.48324/dandi.001695/0.260319.2023",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mouse CA1/CA3/RSC spike, sleep and position data (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41593-024-01588-5",
+   "reason": "Local origin of FS tuning in postsubiculum."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.22-02-j0001.2002",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Interneurons share place maps with presynaptic pyramidal cells; we find the share is explained by transmitted spikes, not by connection choice."
+  },
+  {
+   "target": "doi:10.1016/j.jneumeth.2008.12.029",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hollowed-Gaussian CCG baseline."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2017.09.033",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Detection rule for pyramidal-to-interneuron connections in hippocampus."
+  }
+ ]
+}
