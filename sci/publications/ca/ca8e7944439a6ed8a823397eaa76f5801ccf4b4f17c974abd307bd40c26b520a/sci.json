@@ -1,0 +1,78 @@
+{
+  "title": "The strongest 2018-2023 TESS transit peak of WASP-105 predicts a 274 ppm dip in 2025-2026",
+  "abstract": "We test the temporal coherence of the reported small WASP-105 transit signal. A blind search of TESS sectors 2, 3, 29 and 69 over 0.3-40 days ranks a 2.002797598-day box first. Applied without a phase or duration fit to sectors 96 and 103-106, it gives a 274 +/- 41 ppm dip and the strongest prediction among 224 retained early-data boxes. Its signed score is 6.72 on the white-noise scale. At this fixed prediction, none of one million independent sector-origin shifts reaches the observed score. If every trial can select any of the 224 boxes, 4,623 trials reach it. A finer-grid run gives 4,588 in one million. Most broad-reference crossings come from long-period templates. The signal remains the strongest prediction under two alternate median windows and SAP flux. The best retained brightening prediction has score 2.94. We provide code, input hashes, derived evidence and noise trials. This is a retrospective robustness test of existing TESS exposures. It does not supply a survey false-positive probability, independent instrumental confirmation, a mass or a host-star assignment. The time-shift reference assumes independent arbitrary sector origins and does not form an exact group on irregular observing windows.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "WASP-105",
+    "TESS",
+    "transit search",
+    "planet candidate",
+    "temporal coherence",
+    "false alarms",
+    "split data",
+    "correlated noise"
+  ],
+  "display": [
+    {
+      "path": "files/figures/prediction.png",
+      "caption": "The unchanged early-data box predicts the later dip. The dotted lines give its selected width. Error bars use the measured sector scatter and independent ten-minute samples."
+    },
+    {
+      "path": "files/figures/noise.png",
+      "caption": "The noise reference changes when trials can choose among all 224 early-data boxes. All nine sectors have a positive fixed-box depth. These are empirical reference fractions, not planet false-positive probabilities."
+    },
+    {
+      "path": "files/figures/search.png",
+      "caption": "Blind early-data period searches find dips and brightenings. The curves show maximum scores in narrow period bins before the event cuts. The candidate is the strongest dip peak."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:104e34b65f8917cd2e03c66a335d2f3a901df032c91f3132f6d891541bcd79c1",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We reuse the BLS code and data identities, then test a period and phase selected from early sectors without fitting later sectors."
+    },
+    {
+      "target": "sci:sha256:9374f6d46c557409ba0a758209c1fdda91f54b48954b110440c5cf4a07226c65",
+      "relations": [
+        "reviews",
+        "supports"
+      ],
+      "reason": "Prior independent reduction of the same exposures and conditional event-sign noise test; we add blind early-data selection and a later-sector noise reference."
+    },
+    {
+      "target": "sci:sha256:ab7bcd42716dc23e22f0d6ba8ec8b65d47ecb51b5bc4c689ddd46e8f7032ff02",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The host-star ambiguity remains open; temporal coherence does not resolve an unresolved companion."
+    },
+    {
+      "target": "doi:10.1051/0004-6361:20020802"
+    },
+    {
+      "target": "doi:10.3847/1538-4365/aab4f9"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2301.01900"
+    },
+    {
+      "target": "doi:10.17909/t9-nmc8-f686"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
