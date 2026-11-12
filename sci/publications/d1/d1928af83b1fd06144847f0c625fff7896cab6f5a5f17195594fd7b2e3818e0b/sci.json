@@ -1,0 +1,146 @@
+{
+ "title": "ASASSN-14ko UV peaks come later after the X-ray dip in broad flares, optical peaks keep a fixed 9.3-day lag, and shape-independent markers show that the period decrease stopped near 2021",
+ "abstract": "Question: campaign studies found that the soft X-ray dip of the repeating nuclear transient ASASSN-14ko repeats at a constant 108.45-d period in 2020-2024 and stays 5.5 d before the UVW2 peak, so the period decrease stopped and the late flares are not a UV emission delay. But all flares in that lag test had narrow UV rises, the flares became broader after 2021, and the UVW2 peaks alone still showed a period decrease. Does the dip-to-peak time depend on flare shape, and which marker is independent of shape? Approach: we fitted one profile model (half-Gaussian rise of width s, exponential decline; MCMC) to every Swift UVW2 flare (2020-2024) and every ASAS-SN g/V flare (2014-2025), and fitted the peaks jointly with the published X-ray dip times on one clock plus a delay L0 + b (s - 2 d). Results: the UVW2 peak delay grows with the UV rise width, b = 0.60 d per d (95 percent 0.23-0.90; delta chi2 = 7.7 against a fixed lag), robust to the dip marker, clock form, priors and leaving out any flare (permutation p = 0.011); an X-ray-free check (UV minus optical peak) has the same sign but is not significant. The 5.5-d lag holds only for narrow flares: flare 33 (2024 July, s = 5.4 d) has its dip on the clock but its UV peak 11.4 d later. The ASAS-SN g peak has no shape term (b = 0.00, 95 percent -0.22 to 0.25) and follows the X-ray clock with a fixed 9.3-d lag and 0.67 d scatter. With the shape term the UVW2 peaks no longer show a period decrease. Shape-independent markers (X-ray dips, ASAS-SN and TESS peaks) reject a constant Pdot (delta AIC 11-12) and give a decrease with Pdot -0.0026 to -0.0029 up to cycle 23-24 (2021), then a constant period near 108.3 d; a later shorter period is only weakly favoured (delta AIC 2). Limitations: ten UV peaks, with flares 28, 29 and 33 giving most of the lever arm; the single-rise profile fits the two-stage 2022-2023 flares poorly; no new X-ray dips; our markers cannot separate an orbital change from a change of the fallback time.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "flare timing",
+  "flare shape",
+  "UV emission delay",
+  "soft X-ray dip",
+  "period derivative",
+  "O-C diagram",
+  "Swift UVOT",
+  "ASAS-SN",
+  "ESO 253-G003"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_aligned_flares.png",
+   "caption": "ASASSN-14ko flares aligned on the soft X-ray clock (P = 108.45 d). Left: four flares with narrow UV rises; right: four with broad UV rises. Rows: Swift XRT 0.3-2 keV, UVW2 and ASAS-SN g. The X-ray drop stays at day 0; the UV peak comes later in broad flares, the g peak does not."
+  },
+  {
+   "path": "files/figures/fig2_peak_offset_vs_rise.png",
+   "caption": "Peak minus the X-ray clock against the rise width. UVW2 peaks have a delay of 0.60 d per day of rise width; ASAS-SN g peaks have none. Right: UVW2 peak minus the X-ray dip of the same flare; the 5.5-d lag holds only for narrow flares."
+  },
+  {
+   "path": "files/figures/fig3_period_history.png",
+   "caption": "O-C of shape-independent markers (X-ray dips, our ASAS-SN g/V peaks, TESS peaks, published peaks) against 108.45 d, with constant-Pdot, one-break and two-break clocks. The period decrease stops near cycle 23-24 (2021)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "We use its XRT counts and box-ingress samples. Its constant 5.5-d dip-to-UV lag holds only for narrow-rise flares (flare 33 has 11.4 d), but its constant-period X-ray clock agrees with our shape-independent optical peaks."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [
+    "uses",
+    "challenges",
+    "supports"
+   ],
+   "reason": "We use its 30 and 50 percent X-ray dip times as the X-ray clock. Its constant lead on the UV peak was tested only on narrow flares; the deep-suppression clock itself agrees with the optical peaks to 0.67 d."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Its finding that the UVW2 peaks show a period decrease in 2020-2023 (no stall) comes from the broad UV flares; with the shape term the UV peaks agree with the X-ray clock."
+  },
+  {
+   "target": "sci:sha256:e5616202938201e4f39a41db003fabba2e3d6c05a5a045279d0b00d6713e812d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its broader optical rises after 2021 motivated this test; our homogeneous fits agree that optical peak times do not depend on the rise width."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its Swift UVOT UVW2 per-visit photometry."
+  },
+  {
+   "target": "sci:sha256:9398601f0993aefa45f7277712b6f119a987a7466f8b565dbefbe74d5857b01e",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its archived ASAS-SN Sky Patrol light curve, TESS peak fits and published-peak table; our homogeneous peaks confirm a constant period near 108 d after 2021."
+  },
+  {
+   "target": "sci:sha256:9817499f83bd750e5d908eefaa455212feb0ee7b9b0e7a3c620784dd93ba55b5",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Random period kicks of about 0.6 d per orbit still describe the 2014-2025 record, but in 2020-2024 the optical peaks scatter by only 0.67 d about one linear clock."
+  },
+  {
+   "target": "sci:sha256:c9cc95cfc7e4414b44b9e4e5da40e2ca004363d820b39ab1a0b368e2bb48b358",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Part of the timing noise it found can come from mixing UV and optical markers whose lag depends on flare shape."
+  },
+  {
+   "target": "sci:sha256:b7ac6fd3b698ec13e5d165cb6f902f4e27b03d928e3b57e58b9481069a38cdc6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "A shape-dependent UV emission delay exists (up to about 6 d), but the optical peak and the X-ray dip do not show it, so it cannot replace the period change."
+  },
+  {
+   "target": "sci:sha256:8ce2fda4fc079f5aa47446bcb8686ee0a471b60fddfa62ca08edf5c636225559",
+   "reason": "Later SPHEREx timing (cycle 37) that our markers do not cover; input listed for completeness."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2206.11278",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Payne et al. (2022) ephemeris (Pdot = -0.0026) and published peak times; our early-era Pdot agrees, the later decrease stops."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2009.03321",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Payne et al. (2021): discovery of the periodic flares and published peak times."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2304.03791",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol v2 photometry."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler."
+  }
+ ]
+}
