@@ -1,0 +1,92 @@
+{
+ "title": "Near-field GNSS motion in days 30-365 kept the early postseismic pattern but was 2.5 times the aftershock late-to-early ratio after 22 large shallow earthquakes (2002-2025)",
+ "abstract": "Question: a prior campaign study found that GNSS postseismic displacement grows later in the first year than aftershock counts after 24 large shallow earthquakes. Does a separate broad process make the late GNSS motion, or does the same source continue with fewer aftershocks? Approach: for the same 24 events, we used 441 Nevada Geodetic Laboratory stations out to 6 rupture radii (R) and computed coseismic, early (day 1-30) and late (day 30-365) displacement vectors, with a placebo 420 days earlier for noise. We wrote the tests before we computed the vectors. Results: at the nearest stations (below 0.5 R where available), late motion along the early direction was a median 1.50 times the early motion (95% CI 1.33-1.69), but the aftershock late-to-early ratio was 0.59; the GNSS ratio was larger in 21 of 22 events (p = 1.5e-4), for onshore and offshore events. The late field was close to a scaled copy of the early field (median k 1.39; unexplained power share 0.06), while the same test separated the early field from the coseismic field (share 0.28, 12 of 12 events). The late-to-early ratio did not change clearly with distance (slope 0.31, CI -0.66 to 0.55, 13 events). A post hoc test with the coseismic field as reference found a gradual broadening of late motion (13 of 14 events), but aftershock ratios did not increase with distance. We also found that the prior step-removal rule used pre-event days for early M6+ steps; the corrected rule removed false late reversals at Iquique and Illapel but did not change the prior conclusion. Conclusion: a separate broad process does not by itself explain the mismatch; near the rupture, a source with nearly the early pattern continues with far fewer aftershocks per unit motion. Limitations: few far stations have a clear early signal; onshore-only stations for offshore ruptures; no physical model; coupling changes can add late motion.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "postseismic deformation",
+  "afterslip",
+  "aftershocks",
+  "GNSS",
+  "viscoelastic relaxation",
+  "Nevada Geodetic Laboratory",
+  "ComCat",
+  "earthquake recovery",
+  "spatial pattern test",
+  "pre-registered test"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_near_field_ratio.png",
+   "caption": "Late-to-early ratio per event. Blue: GNSS late (day 30-365) horizontal motion along the early direction divided by early (day 1-30) motion, median of the nearest included stations. Orange: aftershock excess count in days 30-365 divided by days 1-30 (prior study). GNSS was larger in 21 of 22 events."
+  },
+  {
+   "path": "files/figures/fig3_shape_benchmark.png",
+   "caption": "Unexplained share of horizontal displacement power for a scaled-copy fit. Blue: late field against the early field. Gray: early field against the coseismic field on the same stations (benchmark of a known source change). Black ticks: noise-only level for the late fit."
+  },
+  {
+   "path": "files/figures/fig2_distance.png",
+   "caption": "A: GNSS late-to-early ratio q per station (|early| >= 3 sigma) and by distance ring, with the pooled aftershock ratio by ring. B: median early and late motion divided by coseismic motion by distance bin (post hoc); late motion grows more with distance."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0a71c00223732ee37135afa976dfcaf167fd6f7038dcecd85f6f170070c9dd3b",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of the event list, R, Mc and aftershock ratios. We test its open question with spatial patterns; its main result survives a correction of its step rule."
+  },
+  {
+   "target": "doi:10.1029/2018EO104623",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Nevada Geodetic Laboratory GNSS products (Blewitt et al. 2018)."
+  },
+  {
+   "target": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NGL IGS20 daily position series; hashes in files/data/tenv3_used_sha256.csv."
+  },
+  {
+   "target": "doi:10.5066/F7MS3QZH",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS ANSS ComCat."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FDSN event queries; URLs in files/data/comcat3R_provenance.csv."
+  },
+  {
+   "target": "doi:10.1029/2003JB002488",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Perfettini and Avouac (2004) afterslip-driven aftershock model."
+  },
+  {
+   "target": "doi:10.1002/2017GL072865",
+   "reason": "Ingleby and Wright (2017) postseismic velocity decay."
+  },
+  {
+   "target": "doi:10.1785/BSSA0840040974",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rupture length scaling for R."
+  }
+ ]
+}
