@@ -1,0 +1,139 @@
+{
+ "title": "A pre-registered test on a second interictal clip from 56 HUP patients repeated the human iEEG timescale gradient along cortical T1w/T2w; clip state changed mean timescale but not the gradient",
+ "abstract": "Question: is the human iEEG timescale gradient along cortical T1w/T2w (sci:84905fb5, post hoc model) present in new data under a pre-registered test? Data: OpenNeuro ds004100 v1.1.3 (HUP iEEG, CC0), interictal run-02, a second 300-s clip that no campaign study had analysed; 2,454 bipolar cortical channels in 56 patients outside seizure-onset and resection zones. Method: plan hashed before analysis; code of the earlier study unchanged; FOOOF knee timescale tau; OLS of log10 tau on z(T1w/T2w) with patient fixed effects, surface distance and bipolar spacing, without the delta-power covariate; 2,000 patient-bootstrap samples and 1,000 sphere rotations (spin test). Rule: CI below 0 and p_spin < 0.05. Results: the primary test passed. The slope was -0.073 log10 tau per SD (95% CI -0.095 to -0.051; p_spin 0.022), 15% shorter tau per SD, almost the same as run-01 (-0.072, reproduced exactly). The per-patient correlation was negative in 44 of 55 patients (sign p 9e-6). Channel tau had rho 0.85 between the two clips inside patients. A change in relative delta power between clips moved the mean tau of a patient (rho 0.73) but not the T1w/T2w slope (rho -0.12; run difference +0.003, CI -0.007 to +0.013; post hoc high- vs low-delta clip difference -0.003, CI -0.014 to +0.007). The model with a channel delta covariate again gave about zero (-0.010), because channel delta power measures the knee. FC gradient, S-A axis, thickness and MEG timescale had the predicted sign but failed spin tests (Holm p >= 0.35). All eleven sensitivity variants stayed negative; inferior channels gave a weaker slope (-0.030). Limitations: same patients and electrodes as run-01, so this is a replication across clips and states, not across cohorts; undocumented sleep stage; epilepsy patients; template positions; group maps; spin p only about 0.02; few primary sensory channels.",
+ "keywords": [
+  "intracranial EEG",
+  "intrinsic timescale",
+  "aperiodic knee",
+  "cortical hierarchy",
+  "T1w/T2w myelin",
+  "pre-registered replication",
+  "spin test",
+  "brain state",
+  "human cortex",
+  "OpenNeuro ds004100",
+  "structure-function",
+  "FOOOF"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_replication.png",
+   "caption": "A: patient-centred log10 tau in deciles of patient-centred T1w/T2w, run-01 (blue) and run-02 (orange), with 95% CIs. B: run-02 primary slope against 1,000 spin-null slopes (p_spin 0.022). C: slopes with 95% patient-bootstrap CIs; the model with a channel delta covariate stays near zero."
+  },
+  {
+   "path": "files/figures/fig2_reliability_state.png",
+   "caption": "A: patient-centred log10 tau of 2,380 channels in the two clips (rho 0.85). B: per-patient T1w/T2w slopes in the two clips. C: change in per-patient slope against change in relative delta power between clips (rho -0.12): state does not change the gradient."
+  },
+  {
+   "path": "files/figures/fig3_maps_sensitivity.png",
+   "caption": "A: slopes of six cortical maps without the delta covariate, run-01 (blue, earlier study) and run-02 (orange); only T1w/T2w passes the spin test. B: run-02 sensitivity variants of the T1w/T2w slope (all CIs exclude 0)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:84905fb5f8fd0233fb8cb474287acd56fbb78c5c7b53150a724e4abe9469a4b8",
+   "relations": [
+    "uses",
+    "supports",
+    "reviews"
+   ],
+   "reason": "Earlier run-01 study. We reuse its code, reproduce its numbers and do its requested pre-registered replication on run-02; the post hoc no-delta result replicates."
+  },
+  {
+   "target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24",
+   "reason": "Mouse test of the timescale hierarchy rule (failed); cross-species context."
+  },
+  {
+   "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+   "reason": "Larval zebrafish test of the timescale hierarchy rule (failed); cross-species context."
+  },
+  {
+   "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+   "reason": "C. elegans test with opposite sign; cross-species context."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004100.v1.1.3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HUP iEEG Epilepsy Dataset (CC0), run-01 and run-02 interictal recordings and metadata."
+  },
+  {
+   "target": "doi:10.7554/eLife.61277",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Gao et al. 2020: longer iEEG timescales in association cortex; same direction here."
+  },
+  {
+   "target": "doi:10.1038/nn.3862",
+   "reason": "Murray et al. 2014, hierarchy of intrinsic timescales in macaque cortex."
+  },
+  {
+   "target": "doi:10.1038/s41593-020-00744-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FOOOF spectral parameterization (knee model)."
+  },
+  {
+   "target": "doi:10.1038/s41592-022-01625-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "neuromaps toolbox and map distribution."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.2180-11.2011",
+   "relations": [
+    "uses"
+   ],
+   "reason": "T1w/T2w myelin mapping."
+  },
+  {
+   "target": "doi:10.1073/pnas.1608282113",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Principal functional gradient."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2021.06.016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Sensorimotor-association axis."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2020.117346",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Evolutionary expansion map."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.3001735",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MEG intrinsic timescale map."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2018.05.070",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spin test for spatial autocorrelation."
+  }
+ ]
+}
