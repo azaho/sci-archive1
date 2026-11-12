@@ -1,0 +1,136 @@
+{
+ "title": "Unadjusted Acclima probe swaps cause the post-2020 deep-soil drying in USCRN soil moisture, and deep soil did not stay dry after droughts (CONUS, 2009-2026)",
+ "abstract": "Question: after a meteorological drought ends, does deep soil moisture stay below what station precipitation predicts? Data: NOAA USCRN daily soil moisture at 5-100 cm, station precipitation and temperature, up to 119 CONUS stations, 2009-2026; NCEI ISIS soil-probe histories (598 HydraProbe-to-Acclima swaps, 666 like-for-like replacements). Methods: leave-one-event-out precipitation-memory and threshold-bucket models, 251 common time-shift placebos, injection test; forward test fitted to 2010-2019; calendar-matched difference-in-differences at probe swaps. Results: after 554 droughts, the mean 1-12 month residual at 50-100 cm was -0.003 SD (placebo 95% range -0.067 to +0.072); the bucket model gave -0.017 SD and wet spells -0.024 SD. A deficit above about 0.13 SD (0.005 m3/m3) is unlikely. We did not reproduce a published 2013 deep deficit after the 2012 drought. After 2020, shallow layers were wetter (+0.07 to +0.48 SD) and 100 cm much drier (-0.4 to -0.8 SD) than the 2010-2019 model. The deep drying is in layers with Acclima probes, which NCEI averages without homogeneity adjustment: at 100 cm, Acclima layers were -1.39 SD and original-probe layers +0.21 SD (difference -0.037 m3/m3, 95% CI -0.070 to -0.007). At the first swap the step was -0.026 m3/m3 at 100 cm (95% CI -0.055 to -0.002) and -0.021 m3/m3 at 50 cm (-0.040 to -0.001); it grew with the number of probes swapped and with pre-swap wetness. Like-for-like replacements gave no step. The 2023-2025 network deep anomaly was -0.020 to -0.031 m3/m3 with all data but -0.009 to +0.007 m3/m3 in original-probe months. Conclusion: deep soil recovered with precipitation after droughts, and the post-2020 USCRN deep drying is mostly a sensor-transition artifact. Limitations: replaced probes were not random (failed probes in clay soils first); failure dates are unknown; simple monthly models; the cause of the post-2020 wet residual in original-probe layers is open.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410605"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "soil moisture",
+  "USCRN",
+  "drought recovery",
+  "sensor homogeneity",
+  "Acclima TDR-315",
+  "HydraProbe",
+  "difference-in-differences",
+  "placebo test",
+  "deep soil",
+  "data artifact",
+  "precipitation memory",
+  "climate reference network"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_forward_residual_by_probe_status.png",
+   "caption": "Residual of USCRN soil moisture against a precipitation-temperature model fitted to 2010-2019, by year and depth. Blue: layers with original HydraProbes. Orange: layers with at least one Acclima probe. Only the Acclima layers became much drier after 2020 at 50 and 100 cm."
+  },
+  {
+   "path": "files/figures/fig2_swap_step_did.png",
+   "caption": "Left and centre: mean residual around the first HydraProbe-to-Acclima swap of each layer (orange) and in never-changed layers over the same calendar months (grey dashed). Right: step after the swap minus control against pre-swap soil moisture at 50 and 100 cm; wetter layers dropped more."
+  },
+  {
+   "path": "files/figures/fig3_drought_recovery_test.png",
+   "caption": "Drought recovery test. Left: out-of-sample residual around drought end (mean and 2 SE). Centre and right: observed mean 1-12 month residual at 50-100 cm after droughts and wet spells against 251 time-shift placebos. No persistent deficit or surplus."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:97d8cdba8957865a28d1f044442ea3d4f53480e171296758ece398b7ac61dab0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "GRACE storage did not stay below a rainfall model after droughts; our point-scale deep soil test gives the same null."
+  },
+  {
+   "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "We use its common time-shift placebo design and find the same null for in situ deep soil moisture."
+  },
+  {
+   "target": "sci:sha256:2a272ce0fcfb5955020e580c5b6f683e12039d45b8bee777b6070e417e1bbbf3",
+   "reason": "GRACE deficit and surplus decay; context for sign-symmetric recovery."
+  },
+  {
+   "target": "sci:sha256:8f022b61bbf781fc16d9c501656660fa949a54ffe00680c46f19c85968649a6b",
+   "reason": "GRACE relaxation symmetry; context."
+  },
+  {
+   "target": "sci:sha256:bd955a4f7f0de09da98a219a29d8ed655f190d474261a09b77483111f9269bc9",
+   "reason": "GRACE storage asymmetry; context for recovery tests."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "reason": "Catchment non-recovery result that motivated the point-scale soil test; we do not test Victorian catchments."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Another case where unadjusted input changes create false trends in a reference climate product."
+  },
+  {
+   "target": "doi:10.2136/vzj2015.02.0023",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Reported 50-100 cm USCRN soil 18% below pre-drought in 2013; at 36 stations with current data we found summer 2013 10% above summer 2011 (baseline may differ)."
+  },
+  {
+   "target": "doi:10.1002/vzj2.20013",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Acclima versus HydraProbe evaluation at USCRN; explains wet-soil over-reading by HydraProbes."
+  },
+  {
+   "target": "doi:10.1175/JHM-D-12-0146.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USCRN soil moisture and temperature network description."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-12-00170.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USCRN network description."
+  },
+  {
+   "target": "doi:10.2136/vzj2004.0148",
+   "reason": "HydraProbe calibration used by USCRN."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/uscrn/publications/events/Update%20of%20Soil%20Moisture%20Products%20with%20Acclima%20Data.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI notice: Acclima probes are added to layer averages without homogeneity adjustment."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/research/NOAA-Tech-Memo-Soil-FINAL-AUGUST%202019.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USCRN-19-001: HydraProbe failures and clay-soil bias; first Acclima replacements."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/access/isis/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of per-probe installation and replacement history."
+  }
+ ]
+}
