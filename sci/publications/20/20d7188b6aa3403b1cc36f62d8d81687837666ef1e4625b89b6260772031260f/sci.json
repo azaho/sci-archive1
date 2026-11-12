@@ -1,0 +1,132 @@
+{
+ "title": "Water levels in 299 minimally pumped US wells rose faster than they fell at 1-24 month lags; monthly rain-driven and linear store models gave at most half of the 12-month asymmetry",
+ "abstract": "Question: sci:bd955a4f found that GRACE land water storage rises faster than it falls (skewness g(12) = 0.099 of 12-month changes), and named pumping, lakes and nonlinear recharge as untested causes. Does the same time asymmetry occur in natural water tables, and do rain-driven store models reproduce it? Data: USGS NWIS daily water levels of 299 wells of the USGS Groundwater Climate Response Network (CRN; wells selected for minimal pumping effect), 15 years or more each within 1980-2026; NOAA nClimDiv division precipitation and temperature. Method: per well, linear trend and seasonal harmonics removed; g(L) = skewness of x(t+L) - x(t), L = 1-24 months; network mean of 79 blocks of 2 degrees; block sign-flip test and 200 IAAFT surrogates per well. Linear ARX, sign-split and soil-bucket recharge stores were fitted per well, simulated with the observed forcing and processed like the data. Results: g was positive at all lags: 0.90 at L = 1, 0.29 at L = 12 (95% CI 0.19-0.40; IAAFT null -0.054 to 0.055; sign-flip p = 5e-5) and 0.18 at L = 24. It was robust to a quadratic trend (0.27) and to the 2002-2026 window (0.25). It was larger in dry divisions (arid g(12) = 0.88, 10 wells; humid 0.16, 142 wells; dry minus humid +0.67, CI 0.30-1.05) and increased with depth to water (Spearman 0.18, p = 0.002). GRACE TWS in the 61 cells that contain the wells gave g(12) = -0.003. Models with noise gave g(12) = 0.037-0.062 against an observed 0.30 (difference 0.23-0.25, CIs exclude 0). Noise-free runs gave at most 0.13 (soil bucket), which also matched g(1). Exploratory level-dependent drainage (0.060) and forcing-free AR(24) with resampled residuals (0.049) also failed; a synthetic control showed that the AR check recovers 66% of a known asymmetry. Conclusion: natural water tables rise fast and fall slowly over months to years without pumping. Monthly linear, sign-split, hinge and soil-bucket stores driven by regional rain give at most half of the 6-24 month asymmetry. The larger effect at deep water tables and in dry climates agrees with episodic recharge, which these monthly models do not represent. Point water-table asymmetry does not appear in GRACE at the same places. Limitations: division rain is smoother than rain at a well; no daily or focused-recharge models were tested; only 12 wells are in dry divisions; single-well tests have low power at long lags; the model variants, AR checks and GRACE comparison are partly exploratory.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.data-an"
+  }
+ ],
+ "keywords": [
+  "groundwater",
+  "water table",
+  "Climate Response Network",
+  "time irreversibility",
+  "skewness",
+  "recharge",
+  "drought recovery",
+  "USGS NWIS",
+  "GRACE",
+  "surrogate data",
+  "nClimDiv",
+  "hydrological extremes"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_irreversibility_models.png",
+   "caption": "(a) Block-mean skewness g(L) of L-month water-level changes at 299 CRN wells (blue, 95% block-bootstrap band), the 2002-2026 window (dashed), the reversible IAAFT null band (gray), and global GRACE values from sci:bd955a4f (diamonds). Positive values mean fast rises and slow falls. (b) Observed g(L) and the g(L) of store models driven by observed division precipitation, with replicate ranges; dashed gray is a linear AR(24) with resampled residuals and no rain."
+  },
+  {
+   "path": "files/figures/fig2_map_depth.png",
+   "caption": "(a) g(12) at 296 CRN wells in the contiguous US (red: rise faster than fall). (b) g(12) against median depth to water; black squares are medians per depth sextile; orange wells are west of 100 W."
+  },
+  {
+   "path": "files/figures/fig4_grace_cells.png",
+   "caption": "(a) Mean g(L) over 61 cells of 2.5 degrees in 2002-2026 for the cell-mean wells and for CSR GRACE TWS in the same cells. (b) Cell values of g(12); marker size shows the number of wells."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:bd955a4f7f0de09da98a219a29d8ed655f190d474261a09b77483111f9269bc9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the g(L) statistic, the ARX model and the open question on causes of the year-scale GRACE asymmetry; we test it with independent well data. Our GRACE values in the same US cells show no asymmetry."
+  },
+  {
+   "target": "sci:sha256:2a272ce0fcfb5955020e580c5b6f683e12039d45b8bee777b6070e417e1bbbf3",
+   "reason": "GRACE persistence after extremes beyond one-store models; related prior result."
+  },
+  {
+   "target": "sci:sha256:8f022b61bbf781fc16d9c501656660fa949a54ffe00680c46f19c85968649a6b",
+   "reason": "GRACE deficit-surplus relaxation asymmetry; related prior result."
+  },
+  {
+   "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+   "reason": "GRACE storage after droughts against a precipitation-memory model."
+  },
+  {
+   "target": "sci:sha256:97d8cdba8957865a28d1f044442ea3d4f53480e171296758ece398b7ac61dab0",
+   "reason": "GRACE storage after meteorological droughts."
+  },
+  {
+   "target": "sci:sha256:65679562d2a3b84f710cd1ae617b7b903b4dbc94ccac30ad462dc14a79b760d6",
+   "reason": "Other campaign use of USGS well records (tidal response after earthquakes)."
+  },
+  {
+   "target": "https://rconnect.usgs.gov/crnmap/CRNmap.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS Groundwater Climate Response Network Mapper; CRN site list retrieved 2026-11-12, page SHA-256 0c2474386bb4296bf804bc6711802db9b4c32381fae22070a5663c2af1e8d9a2."
+  },
+  {
+   "target": "https://pubs.usgs.gov/publication/fs20243057",
+   "reason": "USGS fact sheet on the National Groundwater Climate Response Network (selection for minimal human influence)."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS daily water levels, retrieved 2026-11-12; raw file hashes in files/provenance/raw_sha256.txt."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimDiv v1.0.0 (20261105) division precipitation and temperature."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-13-0248.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimDiv description (Vose et al. 2014)."
+  },
+  {
+   "target": "doi:10.15781/cgq9-nh24",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR GRACE/GRACE-FO RL06.3 mascons for the exploratory comparison; file SHA-256 d4bd8b7364fb34d871198001563c70d344792cb7b0a577c04f8b91c713741292."
+  },
+  {
+   "target": "doi:10.1002/2016JB013007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR mascon method."
+  },
+  {
+   "target": "doi:10.1103/PhysRevLett.77.635",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IAAFT surrogate method (Schreiber and Schmitz 1996)."
+  },
+  {
+   "target": "doi:10.2307/210739",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Thornthwaite (1948) potential evapotranspiration used in the soil bucket."
+  }
+ ]
+}
