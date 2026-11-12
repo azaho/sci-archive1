@@ -1,0 +1,149 @@
+{
+ "title": "In the JRA-3Q twin reanalysis (1985-1990), a 0.08 C warmer SST boundary raises net downward TOA radiation by 0.15 W m-2 through less low cloud; a free-model Green's function gives the opposite sign",
+ "abstract": "JMA changed the SST boundary of the JRA-3Q reanalysis in June 1985 from COBE-SST2 to MGDSST and made a twin run (JRA-3Q-COBE, June 1985-December 1990) with the same model and observations. We use the twin difference as a clean test of how a data-assimilating system responds to an SST boundary change. The ocean-mean SST boundary is 0.052 C warmer (ice-free ocean 60S-60N: +0.081 C). The global net downward TOA radiation increases by +0.155 +/- 0.026 W m-2 (absorbed solar +0.278, outgoing longwave +0.123), or +3.0 +/- 0.5 W m-2 per K. The ECHAM6 Green's function (Zenodo 18840026) predicts -0.115 W m-2 for the same SST change; it gets the longwave part right but not the shortwave part. The mechanism is the assimilation constraint: the analysed 700 hPa temperature rises only 13% as much as the SST (Jan-Aug 1990), stability falls by 0.10 K, low cloud decreases by 0.38 percentage points (-3.4 points per K on 10-degree blocks, r = -0.59), and absorbed solar follows low cloud (r = -0.85). The first-guess 2 m air temperature keeps 70% of the SST change, the analysis 27%. At 105 tropical moorings (1990-2026), buoy air-sea difference has no trend, but the JRA-3Q first guess warms 0.036 (0.014-0.062) C per decade faster than buoy air, so a first-guess correction of JRA-3Q marine air can overstate tropical warming. The June 1985 SST step is +0.071 to +0.099 C against all 200 HadSST4 members. Limitations: one reanalysis and a GF from a different model; low cloud uses 24 months and 700 hPa temperature 8 months; TOA fluxes are model forecasts. Implication: SST-boundary errors give reanalysis TOA and cloud artifacts with a sign that free-model Green's functions do not give. No third-party data are in the bundle (JRA-3Q is CC BY-NC-SA); scripts regenerate all numbers.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370201"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "JRA-3Q",
+  "JRA-3Q-COBE",
+  "reanalysis",
+  "sea surface temperature",
+  "MGDSST",
+  "COBE-SST2",
+  "boundary condition",
+  "top-of-atmosphere radiation",
+  "low cloud",
+  "Green's function",
+  "data assimilation",
+  "lower-tropospheric stability",
+  "marine air temperature",
+  "moored buoys",
+  "TAO/TRITON",
+  "HadSST4",
+  "cloud feedback",
+  "pattern effect"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig5_twin_toa_vs_gf.png",
+   "caption": "JRA-3Q minus JRA-3Q-COBE (only the SST/ice boundary differs): ocean-mean SST change, global TOA changes, and the ECHAM6 Green's-function prediction. The twin absorbs more solar radiation; the GF predicts net cooling."
+  },
+  {
+   "path": "files/figures/fig7_mechanism.png",
+   "caption": "Mechanism: low cloud decreases where the SST boundary is warmer, the analysed 700 hPa temperature hardly changes, and absorbed solar follows low cloud on 10-degree blocks."
+  },
+  {
+   "path": "files/figures/fig6_moorings.png",
+   "caption": "Trends of differences at 105 tropical moorings, 1990-2026: the JRA-3Q first guess warms faster than buoy air; ship and buoy air agree."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:3744c3bccca2f0bf89bc10dad528d23d8cab754a3e9f683779098d496e297aba",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Sibling JRA-3Q study: we confirm its SST step and analysis T2m transfer; our moorings question its first-guess-over-ocean correction in the tropics; our 67-month first-guess transfer is 70% rather than about half."
+  },
+  {
+   "target": "sci:sha256:990a6603b7b0e1bd6afda24f3856038b66c035eb1193d20f458101512665dd2e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "CAM4 Green's-function estimates of SST artifact effects; we show the GF sign fails in an assimilating system."
+  },
+  {
+   "target": "sci:sha256:121acf9e61a901f817dceaa1864a369e0dcb941ed0849245cddd1a32f8521ce6",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the open-licence ECHAM6 Green's function used here."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Five-GF artifact feedback estimates."
+  },
+  {
+   "target": "sci:sha256:96a66d04c75df7c97e71eb3d97a5d79e109a0c0d3eed2d9aa855cd062c8ca119",
+   "reason": "Same-model AGCM test of GF predictions (free models respond 1.2-4 times the GF)."
+  },
+  {
+   "target": "sci:sha256:ab052bd3f9c8823478f89613f4f2006c0dfaf90d748bd2f014cf47d154dba31e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "ERA5 marine air also warms faster than moored-buoy air; same mooring data source."
+  },
+  {
+   "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+   "reason": "NCEP R1/R2 SST boundary error after 2020; an application of our implication."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Multi-product SST step homogenisation in this campaign."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 2007 SST boundary change."
+  },
+  {
+   "target": "doi:10.2151/jmsj.2024-004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kosaka et al. 2024, The JRA-3Q Reanalysis (data reference; JMA global-mean method)."
+  },
+  {
+   "target": "doi:10.5065/PH0D-MH18",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JRA-3Q monthly statistics, NSF NCAR GDEX d640002."
+  },
+  {
+   "target": "doi:10.20783/DIAS.661",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JRA-3Q / JRA-3Q-COBE dataset DOI at DIAS."
+  },
+  {
+   "target": "https://zenodo.org/records/18840026",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ECHAM6 Green's function and AMIP ridge sensitivity (Fredericks et al., CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadSST4 (Kennedy et al. 2019)."
+  },
+  {
+   "target": "doi:10.1002/gdj3.100",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CLASSnmat (Cornes et al. 2020)."
+  }
+ ]
+}
