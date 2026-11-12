@@ -1,0 +1,58 @@
+{
+ "title": "A third fly connectome (male CNS v1.0) repeats the head-direction ring wiring of hemibrain and FlyWire and holds model bumps that 40 shuffles do not; its type-level wiring is closer to FlyWire",
+ "abstract": "Question: two earlier SCI studies (sci a9ace630, sci 27a99efd) found ring-attractor wiring and bump-holding rate models in the fly head-direction circuit of two female connectomes, hemibrain v1.2 (FIB-SEM) and FlyWire v783 (TEM). Do these results hold in a third animal, the male CNS v1.0 (FIB-SEM, same FlyEM pipeline as hemibrain)? Where hemibrain and FlyWire differ, does the male CNS agree with hemibrain (a pipeline effect) or not? Approach: we applied the published code without change of method to 156 male CNS neurons (EPG, EPGt, PEG, PEN_a, PEN_b, Delta7, P6-8P9) and 143,125 synapses among them. Results: angles from EB-only wiring agreed with PB glomerulus labels (median EPG error 5.2 and 5.6 degrees). The EPG -> Delta7 -> EPG weight was a cosine with its peak at 180 degrees (R2 0.985; hemibrain 178, FlyWire 176). PEN outputs shifted by +51 degrees (left PB) and -48 to -57 degrees (right PB); all 40 PENs with data had the sign of their side; PEG shifts were near 0. The linear ring-mode pair was nearly degenerate (split 0.46%, a complex pair 0.631 +- 0.0014i; hemibrain 2.4%, FlyWire 4.2%). With label angles, random placement of the neuron-level variation gave larger splits (p = 0.006 with 8 angle bins, 0.042 with 16); hemibrain gave p = 0.28 to 0.39. After class-gain tuning, measured male CNS wiring held a bump (best score 0.94, 4 of 4 seeds); none of 40 type-preserving shuffles did (rank p = 1/41). A uniform two-gain model failed (0.06; hemibrain 0.73, FlyWire 0.65). Bumps locked to 5 to 11 stable headings, not to a continuous ring. One of 4 joint-tuned models turned the bump, in the predicted direction, in a narrow drive window. FlyWire-tuned gains held male CNS bumps in 4 of 4 seeds, hemibrain-tuned gains in 2 of 4. In 40 strong type-to-type input fractions, the male CNS was closer to FlyWire (median |log2| 0.30) than to hemibrain (0.42; bootstrap 89% of resamples). In 8 of 10 blocks where hemibrain and FlyWire differ twofold or more, mostly Delta7 -> PEN and PEG, the male CNS was closer to FlyWire. Thus a shared pipeline does not explain these differences. Limitations: one animal per connectome; simple rate model; no activity data; the near-degeneracy test is significant in one animal only and depends on binning.",
+ "categories": [
+  {"scheme": "arxiv", "code": "q-bio.NC"}
+ ],
+ "keywords": [
+  "Drosophila",
+  "head direction",
+  "ring attractor",
+  "central complex",
+  "connectome",
+  "male CNS",
+  "FlyWire",
+  "hemibrain",
+  "Delta7",
+  "PEN neurons",
+  "EPG neurons",
+  "rate model",
+  "eigenmodes",
+  "cross-animal replication",
+  "structure-function",
+  "reconstruction pipeline"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ring_wiring_three_connectomes.png",
+   "caption": "Ring wiring in three fly connectomes (HB hemibrain v1.2, FW FlyWire v783, MCNS male CNS v1.0). A: two-step EPG -> Delta7 -> EPG weight in the PB against EB angle difference (16 bins, divided by the mean); all three peak opposite the source. B: EB output angle minus PB input angle for each PEN and PEG neuron (dots) with circular means (bars). C: in the male CNS, angles from EB-only wiring agree with PB glomerulus label angles for EPG and PEG; PEN neurons sit about 55 degrees off, as their output shift predicts. D: EPG -> PEN synapses in the PB per PEN neuron; counts depend on the dataset."
+  },
+  {
+   "path": "files/figures/fig3_rate_model_three_connectomes.png",
+   "caption": "Connectome-constrained rate model (code of sci 27a99efd). HB and FW values are the published ones; MCNS values are new. A: best persistence score after class-gain tuning for measured wiring (4 seeds) and type-preserving block and entry shuffles (MCNS: 20 + 20; HB, FW: 10 + 10); dashed line: best uniform two-gain model. B: number of stable headings reached from 64 cue headings. C: bump rotation speed against asymmetric PEN drive for all real models. D: gains tuned on one connectome and tested on another; cell text: median persistence score and number of seeds with score > 0.5."
+  },
+  {
+   "path": "files/figures/fig2_type_blocks_three_connectomes.png",
+   "caption": "Type-to-type input fractions (synapses from the source type divided by all input synapses of the target type) for 40 strong blocks. A, B: male CNS against hemibrain and against FlyWire (log axes; magenta: blocks where hemibrain and FlyWire differ at least twofold). C: for these 10 blocks, log2 fraction relative to hemibrain; the male CNS (diamonds) is closer to FlyWire in 8 of 10."
+  }
+ ],
+ "citations": [
+  {"target": "sci:sha256:a9ace6305d42b3ccd7ee0a633e9c1152de03c1355820b4fa2ec44c1d2342c72c", "relations": ["uses", "supports"], "reason": "Source of the ring-wiring analysis code (angles, PB check, PEN shift, Delta7 profile, linear spectrum). We repeat its tests in a third connectome and confirm its main results."},
+  {"target": "sci:sha256:27a99efd1eb09900c17a379046097cb794e3f30810c515011c97eb57770f0dbc", "relations": ["uses", "supports"], "reason": "Source of the rate-model code, the hemibrain and FlyWire extraction code and the published hemibrain and FlyWire rate-model results that we compare with."},
+  {"target": "sci:sha256:be6312d7fa467eacf1df8db848a31f88255c6bcd24d08d34076291bdaedb8b65", "relations": ["supports"], "reason": "Found that synapse-count differences between fly connectomes are specific to each map, not shared by the two FIB-SEM maps; our head-direction type-level result agrees."},
+  {"target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9", "reason": "Related four-connectome test of pipeline-shared synapse-count differences."},
+  {"target": "doi:10.1101/2025.10.09.680999", "relations": ["uses"], "reason": "Male CNS connectome v1.0 (Berg et al. 2025, FlyEM)."},
+  {"target": "https://male-cns.janelia.org/download/", "relations": ["uses"], "reason": "Male CNS v1.0 download page; states the CC BY license. Files: body annotations, connectome weights and significant-only synapse partners (minconf 0.5)."},
+  {"target": "doi:10.7554/eLife.57443", "relations": ["uses"], "reason": "Hemibrain connectome (Scheffer et al. 2020)."},
+  {"target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz", "relations": ["uses"], "reason": "Exact hemibrain v1.2 file used (SHA-256 07d8946e...)."},
+  {"target": "doi:10.5281/zenodo.10676866", "relations": ["uses"], "reason": "FlyWire connectivity data v783 (proofread_connections_783.feather)."},
+  {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"], "reason": "FlyWire whole-brain connectome (Dorkenwald et al. 2024)."},
+  {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"], "reason": "FlyWire cell type annotations (Schlegel et al. 2024)."},
+  {"target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2", "relations": ["uses"], "reason": "FlyWire annotation table used to select head-direction neurons."},
+  {"target": "doi:10.1038/s41586-024-07981-1", "reason": "FlyWire optic lobe and annotation work (Matsliah et al. 2024), cited as the annotation repository asks."},
+  {"target": "doi:10.7554/eLife.66039", "reason": "Central complex connectome analysis (Hulse et al. 2021); cell type definitions and ring wiring."},
+  {"target": "doi:10.1126/science.aal4835", "reason": "Ring attractor dynamics in the fly head-direction circuit (Kim et al. 2017)."},
+  {"target": "doi:10.1038/nature22343", "reason": "PEN neurons shift the bump (Green et al. 2017)."},
+  {"target": "doi:10.7554/eLife.23496", "reason": "Angular velocity integration by PEN neurons (Turner-Evans et al. 2017)."}
+ ]
+}
