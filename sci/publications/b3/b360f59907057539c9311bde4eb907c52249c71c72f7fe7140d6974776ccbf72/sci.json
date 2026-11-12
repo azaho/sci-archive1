@@ -1,0 +1,75 @@
+{
+  "title": "Ten-MHz peak changes can reverse a fixed-range order contrast in 33 selected CHIME events",
+  "abstract": "We test the effect of bounded peak-frequency errors on a published component-order result in CHIME/FRB Catalog 2 release 20251231. We keep time order, component count and original frequency-range weights fixed. For 33 events from 20 source labels, the contrast between the exact internal-shuffle mean path and the observed path is 0.29766 at the reported peaks. Mixed-integer linear programs give a minimum of 0.14001 when each peak can change independently by at most 5 MHz. At 10 MHz, a feasible set of changes gives -0.02566. The sign is thus protected at 5 MHz but can reverse at 10 MHz under these error boxes. At 5 MHz the 95 percent source-resample interval is -0.02349 to 0.31596. The interior-peak subset retains a positive sample bound at 10 MHz. These bounds do not estimate actual peak errors, recompute the earlier shuffle probability, or establish an instrument cause. Peak covariance, selection and time-order errors are not modeled. No independent telescope data confirm this test and no new source is found. Code, aggregate evidence, source hashes and separate-scratch reproduction steps are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "CHIME",
+    "fast radio bursts",
+    "frequency order",
+    "bounded errors",
+    "mixed-integer optimization"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Smallest allowed fixed-range contrast as the bound on each peak change grows. The band shows source-resample variation for the main sample. It is not a peak-error confidence interval."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:39d99998e4aeb08df36505761fd799e2fe01ce8e0f519f90ebe70337e84e7f5b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same public input and selection; new bounded-error test. No code or derived rows reused."
+    },
+    {
+      "target": "sci:sha256:6af8b02036b24bd2cd3148022c550b8b854fbe41515eb0b83813149a393e68a4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related peak and width limits."
+    },
+    {
+      "target": "sci:sha256:fc4c96260edf7158a70e05dc667974b0a384ac6f8e59d67f6c3651f1eedd4c54",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related chronological width test."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2601.09399",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Catalog model and instrument limitations."
+    },
+    {
+      "target": "doi:10.11570/25.0066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "External Catalog 2 release 20251231."
+    },
+    {
+      "target": "https://assets.chime-frb.ca/catalogs/catalog2/releases/20251231/data/chimefrbcat2.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input; hash in provenance."
+    },
+    {
+      "target": "doi:10.3847/2041-8213/ab13ae",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent source context, not validation of this test."
+    }
+  ]
+}

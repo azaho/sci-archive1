@@ -1,0 +1,28 @@
+{
+  "title": "Sensor steps explain the Hawaii (KIP) microseism rise; the 52-station GSN 14-20 s microseism rise continues to 2026, but its uncertainty is about 10 times the published value",
+  "abstract": "Aster et al. (2023) reported that primary-microseism (14-20 s) energy at 52 Global Seismographic Network stations increased by 0.27 +/- 0.03 % per year (3 sigma) in 1988-2022. Their straight-line fits have no step terms at instrument changes. We used EarthScope MUSTANG daily PSD modes for all vertical broadband sensors, FDSN metadata epochs and co-located second sensors to measure steps at 257 primary-sensor breaks. Raw trends reproduce the published ones (r = 0.75, mean 0.29 % per year). A joint 24-month block bootstrap gives a 95 % interval of 0.06 to 0.51 for the 52-station mean, about 10 times wider than published. Co-located sensors resolve 74 breaks; steps at sensor model changes are biased positive (mean +0.088 dB, 18 of 24 positive). Correction lowers the mean to 0.22 (-0.03 to 0.45). With expected artifacts from unresolved breaks, instrument changes explain about 0.06-0.15 % per year, one quarter to one half of the published rate. With data to October 2026 the corrected mean is 0.26 (0.08 to 0.44), and the 2022-2026 data agree with the extrapolated trend. At KIP (Oahu), two positive steps (2006 gain change +0.40 dB, 2018 STS-6A +0.36 dB) cause most of the published increase: the corrected 1999-2025 trend is -5.4 % per decade, which agrees in sign with three Hawaii NDBC buoys (Hs^2 -4 to -9 % per decade). Limitations: 71 % of breaks are unresolved; MUSTANG modes are integer dB; a break-robust free-level estimate (0.01, -0.48 to 0.53) cannot separate zero from the published rate.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370609"}
+  ],
+  "keywords": ["microseism", "ocean waves", "Global Seismographic Network", "instrument steps", "homogenisation", "MUSTANG", "NDBC", "Hawaii", "wave climate", "co-located sensors", "trend uncertainty"],
+  "display": [
+    {"path": "files/figures/fig1_network_trend.png", "caption": "52-station mean trend of 14-20 s microseism energy for three windows and three estimators, with 95 % joint 24-month block-bootstrap intervals. Grey: published value (Aster et al. 2023)."},
+    {"path": "files/figures/fig3_kip_hawaii.png", "caption": "KIP (Oahu). a: annual mean 14-20 s power, raw and after co-located step correction; dashed lines are metadata breaks. b: all-season trends of KIP and of Hs^2 at three Hawaii NDBC buoys, 95 % intervals."},
+    {"path": "files/figures/fig2_steps.png", "caption": "a: primary-sensor steps measured against co-located sensors at 74 resolved breaks, by break type. b: number of resolved and unresolved primary breaks."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41467-023-42673-w", "relations": ["reviews", "challenges", "uses"], "reason": "Source of the tested claim and of the station list and published trends; we find instrument steps explain part of the network trend, most of the KIP trend, and that the uncertainty is much larger; the network increase continues to 2026."},
+    {"target": "sci:sha256:1d873f118e7a37218ea68913c43d9e327becad7d641f2fcd97fe96ec038cb8c9", "relations": ["supports"], "reason": "The step-corrected KIP microseism record agrees in sign with the NDBC Hawaii wave decrease that this study reported and asked to confirm independently."},
+    {"target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f", "reason": "Earlier campaign work on input-change steps that a straight-line fit absorbs as trend."},
+    {"target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26", "reason": "Earlier campaign homogenisation method with fixed references."},
+    {"target": "doi:10.1785/0120110195", "reason": "Pole-zero errors in GSN calibration metadata (Ringler et al. 2012)."},
+    {"target": "doi:10.1785/gssrl.77.1.12", "reason": "Time-dependent long-period gain errors at GSN stations (Ekstrom et al. 2006)."},
+    {"target": "doi:10.7914/SN/IU", "relations": ["uses"], "reason": "IU network data and metadata."},
+    {"target": "doi:10.7914/SN/II", "relations": ["uses"], "reason": "II network data and metadata."},
+    {"target": "doi:10.7914/SN/IC", "relations": ["uses"], "reason": "IC network data and metadata (MDJ)."},
+    {"target": "https://service.iris.edu/mustang/noise-mode-timeseries/1/", "relations": ["uses"], "reason": "EarthScope MUSTANG daily PSD-mode service."},
+    {"target": "https://www.ndbc.noaa.gov/historical_data.shtml", "relations": ["uses"], "reason": "NOAA NDBC historical buoy data for 51001, 51101, 51002, 51004, 51201."}
+  ]
+}
