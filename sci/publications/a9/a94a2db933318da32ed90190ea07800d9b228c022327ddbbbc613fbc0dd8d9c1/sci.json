@@ -1,0 +1,104 @@
+{
+ "title": "In 32 Allen Neuropixels mice, higher-area natural-scene signal that VISp misses is present from the first response, is not a VISp timing effect, is shared with LP and is partly RF coverage",
+ "abstract": "Higher mouse visual areas (HVAs) hold natural-scene and movie signal that a linear read-out of VISp does not predict. We tested four explanations with 11,559 units in all 32 Allen Visual Coding Neuropixels mice, cross-validated kernel ridge regression, noise-corrected scores and random 16/16 mouse splits, under a plan written before the new statistics. (1) A VISp read-out that uses 50 ms time bins did not close the gap: mean HVA ratio rho 0.61 (0.49 to 0.72) for natural scenes, 0.89 for movie one and 0.78 for movie three; gratings 1.05. (2) With 10 ms bins, rho was already low at 50-90 ms (0.47 to 0.67) and did not fall later, so the signal does not need slow recurrent build-up. (3) 150 LP (pulvinar) units added 0.040 (0.010 to 0.070) more HVA explained variance than 150 more VISp units for natural scenes and 0.029 for movie three, about half of what other HVAs add, but not in the same-mouse variant. In an exploratory test, earlier LP spikes did not predict the HVA signal, while earlier HVA spikes predicted LP, so LP shares the signal but is not shown to drive it. (4) VISp units cover a small part of the visual field; HVA units with RFs inside that part were better predicted (rho +0.14 for scenes, +0.20 for movie three), but a scene gap remained in most areas. Limits: one data set, small gains, few in-box units, correlational design.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "visual hierarchy",
+  "pulvinar",
+  "lateral posterior nucleus",
+  "transthalamic pathway",
+  "linear span",
+  "encoding model",
+  "kernel ridge regression",
+  "response latency",
+  "retinotopy",
+  "receptive field coverage",
+  "cross-validated PCA",
+  "natural images",
+  "natural movies",
+  "Neuropixels",
+  "Allen Brain Observatory"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_added_structures.png",
+   "caption": "Test B. Gain in noise-corrected explained variance over 400 VISp units when 150 units of LP, LGd, more VISp, or the other HVAs (all from other mice) are added, per target area. Bars: split intervals."
+  },
+  {
+   "path": "files/figures/fig3_timing.png",
+   "caption": "Test C, natural scenes with 10 ms bins. (a) Image-specific signal variance per ms by window (max = 1). (b) Mean HVA rho of a causal VISp read-out per window; gratings as control. (c) Other-HVA advantage over VISp and LP gain over VISp per window. (d) Hierarchy slope of the spectral exponent alpha per window. 40 splits."
+  },
+  {
+   "path": "files/figures/fig4_rf_coverage.png",
+   "caption": "Test E. Top: rho for HVA units with RF centres inside (blue) or outside (orange) the VISp coverage box (azimuth 30-70, elevation -10 to 30 deg); 50-unit targets, 300 RF-significant VISp predictors. Bottom: LP and LGd gains for in-box targets."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "We reuse its encoding design and code. A time-resolved VISp read-out keeps its natural-scene gap (supports), but HVA units outside the VISp RF coverage are less predictable, so part of the gap is an RF-position mismatch (challenges)."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its NWB extraction code and finding of shared HVA axes outside VISp axes are the starting point."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the spectral hierarchy result and the cvPCA estimator."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hierarchy of spectra for scenes, gratings and movies in the same 32 mice."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "reason": "Grating results that our grating controls agree with."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RF-matching results; we add a coverage test of the read-out itself."
+  },
+  {
+   "target": "sci:sha256:0aac19e1832eec63bde606e990a57e7424db873ac38dc09431991adb3c5744e5",
+   "reason": "Shows that axis powers cannot identify span; we use direct read-out tests."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding Neuropixels NWB and metadata files (not redistributed)."
+  },
+  {
+   "target": "https://doi.org/10.1038/s41586-020-03171-x",
+   "reason": "Siegle et al. 2021, the data set."
+  },
+  {
+   "target": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8221812/",
+   "reason": "Blot et al. 2021, LP sends HVA-specific signals."
+  }
+ ]
+}
