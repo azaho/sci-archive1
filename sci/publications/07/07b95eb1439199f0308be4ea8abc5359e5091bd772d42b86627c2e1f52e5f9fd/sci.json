@@ -1,0 +1,109 @@
+{
+ "title": "ERA5 sea-ice input steps on 1 September 2007 and 1 June 2016 cause local polar winter 2 m temperature steps but change 1979-2024 Arctic-mean warming by less than 1% (NSIDC CDR reference)",
+ "abstract": "Question: ERA5 changed its sea-ice input on 1 September 2007, from reprocessed OSI SAF (OSI-409-a) to operational OSI SAF (OSI-401-a). How large is the resulting step, and does it bias ERA5 2 m temperature (T2m) and polar warming trends? Approach: we read ERA5 sea-ice concentration (SIC) daily and T2m every third day for 1979-2026 from ARCO-ERA5. We compared SIC with the NOAA/NSIDC CDR v6 on a common 25 km mask and dated steps with the daily NSIDC Sea Ice Index v4. We used the input steps as natural experiments: per 1-degree box, we regressed the T2m change on the artificial ice change, with sector fixed effects, block bootstrap and 37 placebo dates. Results: ERA5 Arctic extent fell 0.26 million km2 in one day on 2007-09-01 and rose 0.50 million km2 in one day on 2016-06-01 (an undocumented step); the Sea Ice Index has no such changes. A blind search puts the largest ERA5-minus-CDR Arctic extent break at 2007-09-01. The 2007 Arctic area step is -0.24 million km2 (95% CI -0.29 to -0.18), mostly in marginal seas in winter. Thus ERA5 shows 72% less Arctic ice-area loss than the CDR in 2007-2024 and 89% less in 2010-2025, but the same loss over 1979-2024. ERA5 T2m responds by -9.0 K per unit ice fraction in Arctic winter (95% CI -11.6 to -6.6; -9.3 and -8.8 for the two events separately; placebo SD 0.55), near 0 in summer, and -20.3 K in Antarctic winter. Because the ice errors are local, the 66.5-90N mean T2m bias is only +0.019 K in 2007-2016; the 1979-2024 Arctic trend (0.692 K per decade) and amplification ratio (3.36) change by less than 1%. Regional 2007-2024 winter trends are too low by 0.07-0.10 K per decade in several marginal seas, and the 60-90S 1979-2024 trend is 13-22% too low. Limitations: the CDR is an imperfect reference and only changes of ERA5-minus-CDR are used; the 1987 sensor-change step cannot be assigned; there is no comparison north of 84.5N; the response is a local estimate (coarser fixed effects give 0-30% larger values); no independent over-ice air temperatures exist for 2007.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ERA5",
+  "sea ice concentration",
+  "reanalysis",
+  "data inhomogeneity",
+  "OSI SAF",
+  "OSTIA",
+  "2 m temperature",
+  "Arctic amplification",
+  "Antarctic",
+  "NSIDC CDR",
+  "Sea Ice Index",
+  "change point",
+  "natural experiment",
+  "boundary conditions",
+  "climate trends"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ice_steps.png",
+   "caption": "ERA5-minus-CDR sea-ice anomalies 1979-2026 with steps at 2007-09-01 and 2016-06-01, and daily ERA5 and Sea Ice Index extent at the two step dates."
+  },
+  {
+   "path": "files/figures/fig3_t2m_response.png",
+   "caption": "ERA5 2 m temperature response to the artificial ice steps: binned Arctic DJF regression for both events, response by season, and placebo distributions."
+  },
+  {
+   "path": "files/figures/fig4_consequences.png",
+   "caption": "Consequences: zonal-mean T2m bias, ERA5 and CDR Arctic ice area trends, and winter T2m trend errors by region."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same 2007 ERA5 HadISST2-to-OSTIA boundary change, tested there for SST variance; we use its ARCO-ERA5 access method and test the sea-ice component."
+  },
+  {
+   "target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690",
+   "reason": "Sea-ice input steps in AMIP boundary forcing; our T2m response per unit SIC applies to such errors."
+  },
+  {
+   "target": "sci:sha256:6258279f2ef101083021b66271044f19081f29276af085ab25d3c1bfe23f2482",
+   "reason": "Boundary-input steps in another reanalysis (NCEP R1/R2)."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Joint SST homogenisation in which ERA5 was the anchor product."
+  },
+  {
+   "target": "sci:sha256:7102a214670cabb9c374c48432574b916cff1ace61acfd9471a92d6cadf92fcf",
+   "reason": "Polar ice-input splices in DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 reanalysis."
+  },
+  {
+   "target": "https://www.ecmwf.int/en/elibrary/16555-sea-surface-temperature-and-sea-ice-concentration-era5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Documents the ERA5 SIC inputs (OSI-409-a, OSI-401-a), the 1 September 2007 switch and an IFS T2m sensitivity to SIC."
+  },
+  {
+   "target": "doi:10.7265/b18j-z797",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA/NSIDC CDR v6 sea-ice concentration, the reference."
+  },
+  {
+   "target": "https://nsidc.org/data/g02135/versions/4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NSIDC Sea Ice Index v4 daily extent, used for daily dating."
+  },
+  {
+   "target": "https://forum.ecmwf.int/t/era5-era6-sea-ice-discontinuity-in-2007/3363",
+   "reason": "ECMWF staff statement on the 2007 sea-ice input change."
+  },
+  {
+   "target": "doi:10.1038/s43247-022-00498-3",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Arctic amplification estimate that uses ERA5; we test whether ERA5 ice steps change the amplification ratio."
+  }
+ ]
+}
