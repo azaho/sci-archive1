@@ -1,0 +1,110 @@
+{
+ "title": "Eastern US tree growth and survival did not change on average with the 2000-2025 sulfur deposition decrease in 15 FIA states, but red spruce sites grew faster where sulfur decreased most",
+ "abstract": "Question: when total sulfur (S) deposition decreased by about 85% in 2000-2025, did eastern US trees grow faster and die less by the amount that spatial deposition relations predict? Data: USDA FIA annual inventory remeasurements in 15 states (NH to TN; 12,739 plots, 327,707 trees >= 12.7 cm DBH, 617,033 growth and 718,389 mortality intervals), NADP/EPA TDep total S and N grids 2000-2024, nClimGrid weather. Method: spatial models of first intervals (Horn-type) and within-tree models with tree and state-by-year fixed effects, so that the S slope comes from plots with different S decreases in the same state and year; per-species models for 25 species; weather terms as positive controls. Results: the pooled within-tree S slope was -0.0003 of species-mean growth per kg S/ha/yr (95% CI -0.0072 to +0.0067). For the mean plot decrease of 6.2 kg this gives +0.2% growth (CI -4.2% to +4.5%; -9.6% to +9.9% with state clusters). Mortality also had no clear S slope. The pooled spatial S slopes were near zero or positive, so no growth gain was predicted. Precipitation (+2.9% growth per 100 mm) and temperature (+0.31%/yr mortality per 1 C) were detected. Red spruce was the one species where spatial (-0.139, SE 0.089) and within-tree (-0.156, SE 0.036) S slopes agreed: it grew faster where S decreased most. Other conifers had smaller negative slopes (all conifers -0.027, SE 0.011; hardwoods +0.001). Hardwoods on red spruce plots had the same negative slope (-0.060, SE 0.016), so the response belongs more to spruce-fir sites than to the species. Across 25 species the spatial slope did not predict the temporal slope without red spruce (Spearman 0.13). Limitations: no ozone term; deposition before 2000 not available; S and N correlate (0.78); the 2003 red spruce winter injury falls in early intervals; perturbed plot coordinates; heterogeneity tests are exploratory.",
+ "keywords": [
+  "sulfur deposition",
+  "nitrogen deposition",
+  "acid rain recovery",
+  "tree growth",
+  "tree mortality",
+  "Forest Inventory and Analysis",
+  "TDep",
+  "space-for-time",
+  "red spruce",
+  "fixed effects",
+  "air pollution",
+  "eastern United States"
+ ],
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "4105"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "3007"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_coefficients.png",
+   "caption": "S coefficients. Left: relative growth change for 10 kg S/ha/yr more S over spatial (blue) and within-tree (orange) models, 95% CI. Middle: same for mortality. Right: spatial vs within-tree S slopes for 25 species; red spruce is the one species where both are clearly negative."
+  },
+  {
+   "path": "files/figures/fig1_deposition.png",
+   "caption": "TDep total S deposition 2000-2002 and 2020-2022 with FIA plot locations (grey), and the interval-mean S and N deposition that remeasured trees received, by year of interval end."
+  },
+  {
+   "path": "files/figures/fig4_trajectory.png",
+   "caption": "Raw data. Interval S deposition and mean relative growth by tercile of 2000-2002 S load (all species), and red spruce relative growth for plots with lower and higher initial S."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8fb859255599b74e78e60cf3221eef1554a3124d7cf4056217e3f027cbbb8fb3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FIA DataMart access method and cut-tree coding (AGENTCD 80) follow this earlier eastern FIA study; we add a deposition test."
+  },
+  {
+   "target": "sci:sha256:adb306e044340c84a4bc25215ffc62ee8204c4934926b78cbb5f38dc19f96808",
+   "reason": "Earlier FIA remeasurement study of community change through mortality; related sample."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Space-for-time transfer framework for climate; here applied to a pollutant."
+  },
+  {
+   "target": "sci:sha256:9e80c094d6f63ce5a891706aff6c32b093b348e875f17fce40d232f64b745036",
+   "reason": "Related acid deposition decrease test on birds (null)."
+  },
+  {
+   "target": "sci:sha256:d25508042db9ee22ad99ffab8d7b036c80ccd0794572059c8a0a47aac7850201",
+   "reason": "Related SOx decrease result on lichens."
+  },
+  {
+   "target": "sci:sha256:b6f27029ec2282d46e3ced2d9e73a029b95ad0af196870078bd2f438bec5e9ca",
+   "reason": "Related SO2 decrease result on autumn leaf phenology."
+  },
+  {
+   "target": "doi:10.1371/journal.pone.0205296",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Horn et al. 2018 spatial growth and survival relations to N and S deposition for 71 species; we test whether spatial S slopes transfer in time."
+  },
+  {
+   "target": "doi:10.3389/ffgc.2024.1426644",
+   "reason": "Dalton et al. 2024 regional variation of growth and survival responses to N and S deposition."
+  },
+  {
+   "target": "doi:10.1016/j.atmosenv.2014.04.008",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TDep total deposition method (Schwede and Lear 2014)."
+  },
+  {
+   "target": "doi:10.7289/V5SX6B56",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid (Vose et al. 2014)."
+  },
+  {
+   "target": "https://apps.fs.usda.gov/fia/datamart/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FIA DataMart CSV tables PLOT, COND, TREE."
+  },
+  {
+   "target": "https://gaftp.epa.gov/Castnet/tdep/CURRENT_grids/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TDep s_tw and n_tw annual grids, server date 2026-10-23."
+  }
+ ]
+}
