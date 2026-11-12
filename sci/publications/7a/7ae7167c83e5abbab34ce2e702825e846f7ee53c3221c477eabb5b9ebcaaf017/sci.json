@@ -1,0 +1,101 @@
+{
+ "title": "BATS sigma0 26.5 O2 loss (2014-2025) is a 0.075 kg/m3 AOU-profile shift, 0.7 of winter band lightening as in the North Pacific; with CMIP6 lightening it implies 60-70 umol/kg off California by 2050",
+ "abstract": "Question: does the North Pacific density-shift relation for the sigma0 26.5 oxygen (O2) loss (AOU change = lighter shift of the AOU-density profile, 41-71% of winter outcrop lightening; sci:21ae52cf) also hold in the North Atlantic, and what does it imply for projections? Approach: we fitted the equivalent shift over sigma0 26.0-26.7 to BATS bottle data (431 cruises), WOD ship data and GLODAPv2.2023 in the western subtropical North Atlantic, with cruise bootstraps. We measured winter surface lightening with one metric in both basins: the January-April maximum surface sigma0 of WOA23 decades over the 26.2-26.8 outcrop band, plus an annual ship+Argo index. We tested six decades (1955-2022) and an annual out-of-sample test at BATS, and applied the relation to the band lightening of 30 CMIP6 models (SSP2-4.5, SSP5-8.5). Results: at BATS the shift was 0.075 kg/m3 (0.065-0.085, R2 0.94) for 2014-2025 vs 1984-1996 and none in 1997-2008; water on 26.5 became cooler and fresher. The NA band became lighter only in 2015-2022 (-0.105 kg/m3), matching the BATS timing. Transfer fraction f: 0.71 at BATS and 0.56-0.98 in the North Pacific with the same metric (annual indices: 0.92, 0.58-1.98, vs 0.41-0.71). Decadal shifts followed the surface in 4/4 decades for the NP 120-180 W band (f 0.73, r 0.98) and 3/4 at BATS (denser 1965-1984 gave negative shifts), but NP 1975-1984 densification gave no negative shift. The planned annual out-of-sample test at BATS failed (training years without signal; surrogate p 0.10). CMIP6 band lightening by 2041-2060 is 0.23-0.28 kg/m3 (NP) and 0.16-0.21 (NA); with f 0.84 the implied O2 on 26.5 off California is 72 (37-104) and 61 (20-96) umol/kg (1984-1996: 117.5), below 60 in 23-27 of 28 models near 2050; BATS stays above 175. Limitations: one NA site; projections extrapolate the relation 2-6 times beyond the observed range; asymmetric response to densification; one member per model; splice check set after seeing values.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "ocean deoxygenation",
+  "sigma0 26.5",
+  "BATS",
+  "North Atlantic",
+  "North Pacific",
+  "CalCOFI",
+  "isopycnal oxygen",
+  "AOU",
+  "density shift",
+  "outcrop",
+  "winter surface density",
+  "mode water",
+  "World Ocean Atlas 2023",
+  "World Ocean Database",
+  "GLODAP",
+  "CMIP6",
+  "SSP2-4.5",
+  "SSP5-8.5",
+  "hypoxia",
+  "ventilation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_shift_law_two_basins.png",
+   "caption": "a: decadal equivalent AOU shift against the WOA23 band lightening (decade minus 1985-1994) in both basins, with lines f = 0.5, 0.8, 1.0. b: transfer fractions for 2009/2014-2025 vs 1984-1996 by region; grey: North Pacific range with the ship index (sci:21ae52cf)."
+  },
+  {
+   "path": "files/figures/fig2_aou_profiles.png",
+   "caption": "Observed AOU change against sigma0 (solid) and the fitted shift of the reference profile (dashed) at BATS and in the North Pacific. Grey: fit range 26.0-26.7."
+  },
+  {
+   "path": "files/figures/fig5_cmip6_projection.png",
+   "caption": "a: CMIP6 band winter surface density change (dots: models; bars: medians; stars: WOA23 observed). b: O2 on sigma0 26.5 that the observed shift relation implies (median, 10-90% of models), with the 60 umol/kg level."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:21ae52cf9d0e24f827f7e090eda5a0912177d80251d965f1562a6a1d6dac6f10",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its method, code, North Pacific shift values and reference profiles, and show that its density-shift relation also holds at BATS with a similar transfer fraction."
+  },
+  {
+   "target": "sci:sha256:84f111c04cb701ca1a33b3ebf3490356bfecb5c83079f2b5f1615de273baf0b4",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We adapt its WOA23/WOD surface index rules; the North Atlantic outcrop band also lost area, which supports outcrop loss as the common cause."
+  },
+  {
+   "target": "sci:sha256:597145cb4c8205876e18fb51374f103088ee1c2989fb260a5ef11699576b4e5f",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We use its 250 m BATS bracket rule and class-thickness predictor; the regional surface lightening after 2014 agrees with its finding that the 26.5 class stopped renewing."
+  },
+  {
+   "target": "sci:sha256:710d488013378c0a36b95ef1a1d7389ba4761b9ee4309315c9f27ab4c553390b",
+   "relations": [
+    "supports"
+   ],
+   "reason": "We confirm the BATS oxygen loss on 26.5 (about 10-12 umol/kg) and express it as a density shift."
+  },
+  {
+   "target": "sci:sha256:f2580a7a9707b955afb41852fae4c8e54807eaf63b6f3f6e605071200ca9f13f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its WOA23 fetch script; because many CMIP6 models do not outcrop 26.5 in their own climate, we use only model density changes."
+  },
+  {
+   "target": "sci:sha256:b4d3d3f5534b4c2d6bd3845a14a77ced4774da841c0da86c5517bcfd04a8e3ce",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its WOD extraction code (through sci:21ae52cf) is adapted here."
+  },
+  {
+   "target": "sci:sha256:cc75ea4ee42bb0552f162242a833759f9e12e921051e27040dc1af4ff6b89015",
+   "reason": "Model O2 comparison on 26.5; our CMIP6 results use surface density only."
+  },
+  {
+   "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+   "reason": "Tracer-age evidence for ventilation change on 26.5 in both basins."
+  }
+ ]
+}
