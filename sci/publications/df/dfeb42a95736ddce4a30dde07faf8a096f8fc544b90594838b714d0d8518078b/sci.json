@@ -1,0 +1,112 @@
+{
+ "title": "In three fly connectomes, signed MBON-to-DAN wiring did not predict the learned valence of 16 activated MBON line groups beyond two gamma4/gamma5 types; transmitter class predicted immediate valence",
+ "abstract": "Question: does signed wiring from mushroom body output neurons (MBONs) to dopaminergic neurons (DANs) predict the valence of MBON activation in Drosophila? Data: learned valence (odour memory after MBON activation) for 26 split-GAL4 lines in 16 cell-type groups (Rubin and Aso 2023, source data), and immediate light valence for 25 lines in 22 groups (Aso et al. 2014b, digitised box-plot medians). Wiring: hemibrain v1.2, FlyWire 783 and male CNS v1.0. The primary predictor, written before the tests, was the transmitter-signed share of reward-DAN input minus punishment-DAN input. Result: the primary hypothesis was not supported. Spearman rho with learned valence was 0.24, 0.30 and 0.28 (n 16, p 0.25 to 0.37). The two gamma4/gamma5 types MBON21 and MBON29, which give the strongest aversive memory and drive punishment DANs, caused the positive sign. Without them rho was -0.05 to 0.20. Reward-DAN drive did not predict appetitive memory (rho -0.04 to -0.03). MBON12 has the strongest reward-DAN drive but gave a small aversive memory, and MBON35 drives PAM12 but gave no aversive memory. Signed two-step paths did not significantly improve the prediction. Exploratory: inside transmitter classes, punishment-DAN drive tracked learned valence (partial rho 0.61 to 0.79; 0.48 to 0.62 without MBON21 and MBON29). Immediate valence followed the MBON transmitter (glutamate avoidance, rho 0.75). Wiring added no clear prediction beyond transmitter class, and an exact label-shuffle null showed that this association did not depend on the reward or punishment identity of the DANs. Limitations: small n, digitised medians, assumed signs (glutamate inhibitory), type-level sums without compartment detail, and behaviour and connectomes from different flies.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "Drosophila",
+  "mushroom body",
+  "MBON",
+  "dopaminergic neurons",
+  "valence",
+  "associative learning",
+  "hemibrain",
+  "FlyWire",
+  "male CNS",
+  "structure-function",
+  "optogenetics",
+  "null result",
+  "cross-animal comparison"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_learned_valence_vs_wiring.png",
+   "caption": "Learned valence after MBON activation (Rubin and Aso 2023; Test 2 minus control) against signed net DAN input share (top) and against punishment-DAN drive only (bottom), in hemibrain, FlyWire and male CNS. Each point is one cell-type group of lines; numbers are MBON types. Only MBON21 and MBON29 give strong aversive memory."
+  },
+  {
+   "path": "files/figures/fig2_immediate_valence.png",
+   "caption": "Immediate light valence of MBON activation (Aso et al. 2014b, digitised medians minus control) by MBON transmitter class (left) and against signed net DAN input share in each connectome. Glutamatergic MBONs give avoidance; the wiring predictor is not consistent between connectomes and adds little inside transmitter classes."
+  },
+  {
+   "path": "files/figures/fig3_summary_rho.png",
+   "caption": "Spearman rho with 95% bootstrap intervals for all wiring predictors, both behaviours and three connectomes. Filled markers: two-sided permutation p < 0.05. Star: transmitter baseline (glutamate = -1)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.90523",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of learned valence per line, line cell types and MBON transmitter table; we test their printed MBON-to-DAN wiring quantitatively."
+  },
+  {
+   "target": "doi:10.7554/eLife.04580",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of immediate valence (Figure 2C, digitised). We repeat its transmitter-class result."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire 783 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and transmitter predictions."
+  },
+  {
+   "target": "https://male-cns.janelia.org",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Janelia FlyEM male CNS v1.0 connectome and transmitter predictions."
+  },
+  {
+   "target": "sci:sha256:7062426dfec45c46a34a4230202cbfe5ea1c3984c295de84e58242f0d34e1e86",
+   "reason": "Earlier test of wiring against activation behaviour in the fly nerve cord; a simple anatomical class matched the wiring predictor there too."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Supports the inhibitory glutamate sign assumption used here."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS replication of the signed-wiring rule with the same transmitter signs."
+  },
+  {
+   "target": "sci:sha256:10b3bf2ee10c18102a0cee66d472b5be5bec41f9d264f8c8b7cc584f42d3d835",
+   "reason": "Mushroom body input-side (calyx) connectome models; this work studies the output side."
+  },
+  {
+   "target": "sci:sha256:d47d61cecf35201e4dfa315a4550acd1f6f7038e2cc7d15a7828e387c956b142",
+   "reason": "Mushroom body calyx co-convergence in three connectomes."
+  }
+ ]
+}
