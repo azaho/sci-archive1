@@ -1,0 +1,129 @@
+{
+  "title": "NCEP R1 and R2 show 42% less temperature rise than 18 Pacific moorings between 2020-2022 and 2023-2025",
+  "abstract": "We tested the larger NCEP ocean cold offset after 2022 with direct equatorial Pacific mooring temperatures. We compared March 2020-August 2022 with February 2023-December 2025. Each station needed at least six common calendar months and each monthly buoy mean needed at least 20 observed days. At 18 stations, the matched mean temperature rise was 0.8316 C in the moorings, 0.4788 C in R1, 0.4784 C in R2 and 0.8314 C in ERSSTv5. R1 and R2 thus show about 42% less rise in this sample. Their product-minus-mooring errors changed by -0.3528 and -0.3532 C; all 18 station changes were negative. The ERSSTv5 error change was -0.0002 C. A 27-day coverage rule, equatorial sites and an earlier-only local SST-state control retain negative changes. A public NWS notice identifies a CDAS switch to GDAS NSST on the date of the earlier February 2020 step, but it does not explain the later offset. An archived GFS skin-temperature proxy test did not establish the later cause. The periods have different ENSO states; this is a matched period comparison, not a forced warming trend. Sparse sites, shared source observations, changing deployments, foundation-versus-bulk SST and incomplete space-time uncertainty limit inference. Code, source hashes, aggregate evidence, a figure and an independent numerical audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "NCEP R1",
+    "NCEP R2",
+    "TAO/TRITON",
+    "boundary conditions",
+    "NSST",
+    "source lineage",
+    "inhomogeneity",
+    "Pacific Ocean",
+    "mooring validation"
+  ],
+  "display": [
+    {
+      "path": "files/figures/main.png",
+      "caption": "At the same 18 Pacific stations and calendar months, the temperature rise between two periods is 0.832 C in moorings and 0.479 C in R1 and R2. The periods include different ENSO states. The annual panel has changing station counts; it is descriptive. The map shows each primary R1 error change."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "Motivates the post-2022 R1 and R2 cold-offset test. Our direct mooring comparison supports the later cold offset. The NWS source notice qualifies its statement that the new SST input was undocumented."
+    },
+    {
+      "target": "sci:sha256:6258279f2ef101083021b66271044f19081f29276af085ab25d3c1bfe23f2482",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related campaign result on the final-year reanalysis SST and surface-air offsets."
+    },
+    {
+      "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact verified daily GTMBA SST and station-position tables. These are shared observations, not a new independent data collection."
+    },
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "SST product errors and the Pacific trend-pattern question motivate a direct reanalysis check."
+    },
+    {
+      "target": "https://www.weather.gov/media/notification/pdf2/scn20-10nsst_1.0.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official NWS notice names the CDAS SST output switch to GDAS NSST on 11 February 2020. Exact document hash is preserved."
+    },
+    {
+      "target": "https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/sst.php",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Official NSST source and product history."
+    },
+    {
+      "target": "https://repository.library.noaa.gov/view/noaa/44307/noaa_44307_DS1.pdf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Wen et al., Communicating Uncertainty in SST Analysis, pp. 106-113, 46th NOAA workshop bulletin. Prior NSST cold-bias, TAO comparison and CFSR/CFSv2 source-change evidence; we do not claim these as new."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ncep.reanalysis.derived/surface_gauss/skt.sfc.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/ncep.reanalysis2.derived/gaussian_grid/skt.sfc.mon.mean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5 method and source description."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/reanalysis/problems.shtml",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.pmel.noaa.gov/tao/drupal/disdel/reg.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mooring source acknowledgement and access terms."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "United States Government data terms."
+    },
+    {
+      "target": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact 24 source URLs and byte ranges are in files/results/gfs_sources.json."
+    }
+  ]
+}
