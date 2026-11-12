@@ -1,0 +1,100 @@
+{
+  "title": "ESO pointing and Gaia data support a wrong-star explanation for one GJ 3341 HARPS outlier",
+  "abstract": "We test the cause of a known unflagged GJ 3341 velocity outlier from 15 October 2010. Four ESO headers show that the anomalous pointing is 26 to 29 arcseconds from three nearby controls, with identical target settings. Independent Gaia DR3 data place a nearly equally bright, bluer star about 31 arcseconds from the target at that date. Its velocity differs from the target by -22.14 km/s. The HARPS outlier differs from normal medians by -20.59 and -22.69 km/s in two reductions. The Sun and Moon remain below -27 and -22 degrees throughout the exposure. Wrong-star acquisition is a useful working explanation; ordinary moonlight and twilight are poor explanations. Header pointing is not a fibre position, and no acquisition image or spectral template match is tested. The source in the fibre remains unconfirmed. No new planet or stellar event is reported. The package preserves code, aggregate evidence, exact input hashes and external retrieval steps.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 3341",
+    "HARPS",
+    "Gaia DR3",
+    "wrong-star acquisition",
+    "data quality"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Pointing distances, sky source altitudes and velocity differences support a possible acquisition error. Header pointing does not prove which star entered the fibre."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:071303675e3ace36de1941a622b6240b6eec4a2788cc451cc632b205be6cec5a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Identifies the unflagged outlier and leaves its cause open. We add ESO pointing and independent Gaia data."
+    },
+    {
+      "target": "sci:sha256:4b7aca419facec2cf5deae66895a1e1064b134583504f102b848bf34ae053100",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior twilight screen of a different GJ 3341 event."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201424253"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201629272"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940"
+    },
+    {
+      "target": "https://arxiv.org/abs/1212.2848"
+    },
+    {
+      "target": "https://www.eso.org/cms/eso-data-access-policy.html"
+    },
+    {
+      "target": "https://gea.esac.esa.int/archive/documentation/GDR3/Miscellaneous/sec_credit_and_citation_instructions/"
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ3341_RVs/GJ3341_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2010-10-11T07:24:50.287",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2010-10-14T07:06:42.134",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2010-10-15T07:40:59.597",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://archive.eso.org/hdr?DpId=HARPS.2010-10-17T06:06:51.515",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+20+source_id%2Cra%2Cdec%2Cphot_g_mean_mag%2Cpmra%2Cpmdec%2Cref_epoch%2Cbp_rp%2Cradial_velocity%2Cradial_velocity_error%2Cteff_gspphot+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C78.954%2C-31.293%2C0.015%29%29+ORDER+BY+phot_g_mean_mag",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
