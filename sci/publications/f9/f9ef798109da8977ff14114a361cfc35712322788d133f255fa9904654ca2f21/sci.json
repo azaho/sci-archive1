@@ -1,0 +1,114 @@
+{
+ "title": "Receptive-field matching did not close the natural-scene gap between mouse VISp and higher visual areas in Allen two-photon data (VISp/same-area ratio 0.51 vs 0.86 for gratings)",
+ "abstract": "Earlier Allen Neuropixels work found that a linear read-out of VISp predicts higher visual areas (HVAs) for gratings but not for natural scenes, and that VISp units cover only a small part of the visual field. We tested whether this gap is a receptive-field (RF) coverage effect in an independent data set: Allen Visual Coding two-photon session B, 336 experiments of excitatory Cre lines, 193 mice, 38,466 cells, with RF centres from sparse-noise mapping of the same cells. We predicted trial-averaged responses to 118 natural scenes and 120 static gratings from cells of other mice with cross-validated kernel ridge regression and a noise-corrected explained-variance score (FEV). Intervals are mean +/- 1.96 SD over random mouse splits. With RFs matched cell by cell (mean nearest distance 2.4 deg), VISp predictors explained 0.51 (0.27 to 0.74) of the natural-scene variance that same-area predictors at the same positions explained, against 0.86 (0.76 to 0.96) for gratings (difference -0.35, -0.63 to -0.08). Other HVAs predicted HVA targets better than VISp (+0.066 FEV for scenes, +0.044 for gratings). The pre-set design with experiment-level centre matching was inconclusive for its ratio rules, because cross-area ratios had intervals of about 0.2 to 2; its other-HVA advantage was +0.081 (0.013 to 0.148) for scenes and +0.024 (-0.027 to 0.075) for gratings. Post hoc, the advantage was about half as large for targets inside the VISp-covered region (+0.038 vs +0.069; difference not resolved). Thus coverage explains part, not all, of the natural-scene gap. Limitations: calcium signals, a secondary cell-matched design added after the runs started (10 splits, 3 areas for the ratio), a post-hoc core test, and pre-set sensitivity runs not done. Code, aggregate scores, figures and provenance are included; Allen data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "mouse visual cortex",
+  "higher visual areas",
+  "linear span",
+  "receptive field coverage",
+  "kernel ridge regression",
+  "natural scenes",
+  "static gratings",
+  "two-photon imaging",
+  "Allen Brain Observatory",
+  "encoding model",
+  "structure-function",
+  "visual hierarchy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_cellmatch_span.png",
+   "caption": "(a) RF centre of each two-photon experiment by area. (b) VISp prediction of HVA targets relative to same-area prediction, with RFs matched cell by cell: natural scenes 0.51, gratings 0.86. (c) Advantage of other-HVA predictors over VISp at matched RFs. Bars: mean +/- 1.96 SD over 10 mouse splits."
+  },
+  {
+   "path": "files/figures/fig2_ratios_and_core.png",
+   "caption": "(a) Cross-area ratios rho in the pre-set and post-hoc designs: gratings stay near 1.1-1.3, natural-scene intervals are very wide. (b) Post hoc: other-HVA advantage for pooled targets inside vs outside the VISp-covered core, 60 splits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Its Neuropixels linear-span result (natural-scene gap) is tested here in two-photon data with cell-level RF matching; the FEV estimator follows its definition."
+  },
+  {
+   "target": "sci:sha256:a94a2db933318da32ed90190ea07800d9b228c022327ddbbbc613fbc0dd8d9c1",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "It found the VISp RF-coverage confound and left the coverage verdict inconclusive; this work tests coverage directly."
+  },
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier use of the same two-photon session-B natural-scene experiments (spectra); no code reused."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier RF-matching test of HVA spectral compression in Neuropixels data."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Origin of the HVA-axis compression question."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0550-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Coding two-photon data set."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "reason": "Allen Visual Coding Neuropixels data set used by the prior work."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-2p/ophys_experiments.json",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "http://api.brain-map.org/api/v2/data/query.json?criteria=model::ApiCamCellMetric",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Per-cell LSN RF metrics."
+  },
+  {
+   "target": "https://github.com/AllenInstitute/AllenSDK",
+   "reason": "Definition of mean_sweep_response."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/"
+  },
+  {
+   "target": "https://alleninstitute.org/citation-policy/"
+  }
+ ]
+}
