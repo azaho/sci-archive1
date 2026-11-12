@@ -1,0 +1,56 @@
+{
+  "title": "An integral tracer inverse reduced error with a strong source but gave biased water export with a weak source in one mixed-store model",
+  "abstract": "We test an integral inverse for one changing mixed water store. It uses three tracer records and a known mass source to estimate storage, recharge and evaporation without concentration derivatives. An exact affine-history test supports the six-column balance and numerical convergence. In 4,800 noisy method runs, the integral inverse improved the strong virtual design: base-speed cumulative export error had a 95% simulation range of -6.2% to +5.2%, compared with -7.4% to +8.3% for a smoothed derivative inverse. With a tenfold smaller source, its median export error was -67.1%, although storage, recharge and evaporation stayed positive. Noiseless window tests show that finer sampling does not remove local approximation bias. Removal of derivatives is therefore a conditional improvement, not a general cure for weak tracer information. These are synthetic tests, not field uncertainty or an explanation of the Australian runoff loss. Code, proofs, all run metrics, input arrays and provenance are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "tracer mass balance",
+    "runoff loss",
+    "weak estimation",
+    "storage",
+    "inverse stability",
+    "synthetic experiment"
+  ],
+  "display": [
+    {
+      "path": "files/results/comparison.png",
+      "caption": "Export error in synthetic mixed stores at concentration noise SD 0.001. Points are medians and bars are 95% simulation ranges over 150 paired records per case. Integral estimation helps with strong input but can give biased export with weak input. The scale is linear near zero and logarithmic outside that region."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0f501465f9b8460d741054cc3d77746b60bef4e264d267f9a4ddd4cba60f5dd8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We independently implement its virtual tracer design and derivative benchmark; we test an integral alternative."
+    },
+    {
+      "target": "sci:sha256:fee4e9eaa74c9798e38c942aa752d058e99dbd946d030cf2697665a24c5e8ef4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Natural tracer scale ambiguity motivates an independent mass source."
+    },
+    {
+      "target": "sci:sha256:95ea56ac79801a26d289e80a6f2d45231d2beb27680d193c0c1680ad5c6c45a0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Joint runoff and recession evidence does not identify a new leakage change."
+    },
+    {
+      "target": "doi:10.1007/s11538-023-01208-6"
+    },
+    {
+      "target": "doi:10.1029/2008WR006912"
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022"
+    }
+  ]
+}
