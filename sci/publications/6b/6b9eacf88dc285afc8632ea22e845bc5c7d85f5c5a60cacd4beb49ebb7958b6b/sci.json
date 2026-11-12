@@ -1,0 +1,121 @@
+{
+ "title": "In one MICrONS mouse, synapses less than 5 µm apart on a shared target show no extra response similarity at fine scale; coarse RF clustering follows source soma positions",
+ "abstract": "Question: in one MICrONS mouse, do synapses from two imaged source neurons that are close together on a shared target come from neurons with more similar visual responses? Data: public MICrONS v1300 synapses, v1507 cell types and the Ding et al. (2025) response table. We used 736 sources with responses and proofread axons, 289,289 synapses and 37,290 targets with input from at least two sources. Method: for 14,352 pairs of synapses from different sources less than 5 um apart on one target, we compared source similarity with shuffles of source labels on the target: whole target (N1), soma-distance shells (N2, planned primary) and 15 um cubes (N3, added later). We used 1,000 shuffles and a bootstrap over targets. Results: under N3, close pairs had no excess similarity for model signal correlation, response-feature similarity or receptive-field (RF) closeness; all 95% intervals were within 0.014 SD of zero. Under N2, close pairs had closer RFs (+0.058 SD, interval 0.046 to 0.071, p = 0.001). This excess fell with distance up to about 80 um. When we removed the part of RF distance that the soma positions of the sources predict, the excess became zero (+0.0005 SD, interval -0.013 to +0.015). Soma closeness kept a large excess after RF control. Feature similarity, which predicts connections in Ding et al., had at most +0.015 SD under N2 (interval includes zero). Close pairs on one target had more similar sources than close pairs on different targets. This agrees with target-level input preference, not with position on the dendrite. The results held for excitatory and inhibitory targets, core and extended sources, and without the 20 most active sources. Conclusion: these imaged cortical inputs show no functional clustering at a few micrometres. A geometric rule, set by source soma position, explains the coarse RF order. Limits: one mouse; Euclidean, not path, distance; 76% of close pairs on inhibitory targets; unproofread target dendrites; calcium and model-based similarity; N3 and soma-adjusted measures were added after a first look. No record-level data are bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "MICrONS",
+  "connectomics",
+  "dendritic clustering",
+  "synapse position",
+  "like-to-like",
+  "receptive field",
+  "retinotopy",
+  "functional connectomics",
+  "mouse visual cortex",
+  "null result",
+  "Allen Institute",
+  "structure and function"
+ ],
+ "display": [
+  {
+   "path": "files/figure_main.png",
+   "caption": "Source similarity of synapse pairs on shared MICrONS targets against synapse distance and three shuffles. RF clustering at coarse scale disappears after soma-geometry control; no measure clusters at fine scale (N3)."
+  },
+  {
+   "path": "files/figure_splits.png",
+   "caption": "Close-pair excess under the N2 and N3 shuffles for target classes, source sets and removal of the 20 most active sources."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS volume, synapse table, cell types and proofreading data."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Node table with responses; we test whether its like-to-like feature rule extends to synapse position on the target."
+  },
+  {
+   "target": "doi:10.1038/nature23019",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Spine imaging found RF clustering on mouse V1 dendrites; we test the question with EM-identified presynaptic cells."
+  },
+  {
+   "target": "doi:10.1038/nature08947",
+   "reason": "Spine imaging found no orientation clustering in mouse V1."
+  },
+  {
+   "target": "doi:10.1038/nn.4323",
+   "reason": "Orientation clustering of inputs in ferret V1."
+  },
+  {
+   "target": "sci:sha256:6b411edc01aac6a505419424e27a32af7104f88fd17dd3987d6701c442c3f049",
+   "reason": "Prior campaign test of shared targets of functional MICrONS axons; did not use synapse position."
+  },
+  {
+   "target": "sci:sha256:100b9f6bfd76176b28c79e9f524e1861b687d199ffcea463ce5119694551c1e2",
+   "reason": "Prior campaign test of response similarity in MICrONS input groups."
+  },
+  {
+   "target": "sci:sha256:39d8642414d03fdf8dc98c23a06ce196b522117141a4986741a9f309fcfa3510",
+   "reason": "Prior campaign test of shared inhibitory inputs and response similarity."
+  },
+  {
+   "target": "sci:sha256:0ebb1ccef4451692bc0af63585390af43a16b45aea2ca9e2d0792170d439605c",
+   "reason": "Prior campaign use of the same Ding et al. node table."
+  },
+  {
+   "target": "https://www.microns-explorer.org/terms-and-conditions",
+   "reason": "License terms (CC BY 4.0) of the external data."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input file, sha256 5a310585ccefcfb2f14d15b2cc2e607e730b0ec0a86587e606af362463abf6ef."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input file, sha256 0261637f3e787c84eec21a24977232be9427dae81c8a7f12a921619da3cee9bd."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/synapses_pni_2_v1_filtered_view.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input file, sha256 184700637de5c22ca6a3f8cd8fadd564a1574a1f07e4c3df077b9237a3b76658."
+  },
+  {
+   "target": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/aibs_metamodel_celltypes_v661_merged.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input file, sha256 00f7d5f38148338f32978bc20eb429db196c7e65edf81aceb5b9d1be2e02d01c."
+  },
+  {
+   "target": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/proofreading_status_and_strategy_merged.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Input file, sha256 d10300976fc3dd5fdb411dd0308dff75ee1385bc08b69639c9f8d7e970a1c4b1."
+  }
+ ]
+}
