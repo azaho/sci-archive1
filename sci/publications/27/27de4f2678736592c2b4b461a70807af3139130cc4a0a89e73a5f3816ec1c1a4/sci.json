@@ -1,0 +1,53 @@
+{
+  "title": "SST radiation-slope transfer remains uncertain when calibration is resampled in seven CMIP6 model pairs",
+  "abstract": "We tested whether fitted SST radiation factors transfer between 1979-1996 and 1997-2014 in seven published CMIP6 AMIP-minus-HighResMIP model pairs. We reproduced the full-record annual cubic slopes of 1.2 to 3.9 relative to a five-model Green's-function mean. Model-specific factors reduced held-out residual mean square error by 8.9% with constant time controls and 10.3% with linear controls. A separate cubic fit in each half gave a gain of -0.000750 W squared per m to the fourth power, with conditional 95% limits of -0.002608 to +0.001032. Calibration from the other six pairs also gave no clear cubic-control gain. When block resampling refitted the factors and controls, all tested gain intervals included zero, including the constant and linear tests. Thus the full-record excess response does not yet give a validated transferable scalar factor for SST artifact effects. The score fits nuisance terms in the test half and is not an operational forecast. Short records, shared forcing, experiment differences, unstable resampled slopes and removal of possible real slow responses limit inference. No new model runs or observations are used. Code, fit statistics, resampling draws, figures and exact source provenance are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "AMIP",
+    "Green function",
+    "radiation",
+    "calibration uncertainty",
+    "transfer validation",
+    "pattern effect",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/refit.png",
+      "caption": "All full-refit gain intervals include zero. Blocks resample years within each time half and select the same years for all seven pairs. Dots are bootstrap medians; crosses are original gains."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "Conditional transfer gains depend on time controls. These intervals hold calibration fixed; full refit intervals include zero for all controls."
+    },
+    {
+      "path": "files/transfer.png",
+      "caption": "Early and late cubic-control slopes and held-out errors in seven model pairs. Short half-records leave uncertain calibration."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:96a66d04c75df7c97e71eb3d97a5d79e109a0c0d3eed2d9aa855cd062c8ca119",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "We reproduce its full-record slopes and test whether the fitted scalar factors transfer across time. This limits the inference of a transferable lower-bound multiplier, not the reported full-record fits."
+    },
+    {
+      "target": "doi:10.1029/2023MS003700"
+    },
+    {
+      "target": "doi:10.5194/gmd-9-4185-2016"
+    },
+    {
+      "target": "doi:10.1029/2025GL115914"
+    }
+  ]
+}

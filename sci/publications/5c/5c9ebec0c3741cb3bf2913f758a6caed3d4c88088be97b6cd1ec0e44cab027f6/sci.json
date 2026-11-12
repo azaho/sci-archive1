@@ -1,0 +1,66 @@
+{
+  "title": "Two-band infrared dip data cannot identify a common CPV color break when each epoch has a free slope",
+  "abstract": "We audit 51 published dip depths of five complex periodic variable stars at 20 epochs. All 13 epochs with infrared data have exactly two bands. We prove that a common sharp break from 1.05 to 1.60 micrometers adds no independent information when every epoch has a free log-depth intercept and slope. Its effect is exactly absorbed by those terms. The result holds for arbitrary depths and positive definite error covariance. A numerical projection of a smooth break gives negligible information at 1.18 micrometers under nominal wavelengths and reported independent errors. This formalizes an ambiguity already noted in the source paper; it does not exclude a break or dust. A simultaneous three-band dip at 0.477, 0.913 and 2.09 micrometers would test curvature without a shared slope across epochs. For a fixed break at 1.18 micrometers and slope change 0.88, independent 3% relative depth errors give an expected separation of 6.00 standard deviations. Four bands with two on each side give local identification of both slopes and a free sharp break. These are conditional forecasts, not detections. We provide a proof, source-schedule audit, original code, aggregate results, synthetic checks and a separate-scratch reproduction recipe. Raw light curves, full bandpass responses and physical dust composition are not fitted.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "infrared",
+    "chromaticity",
+    "identifiability",
+    "observing schedule",
+    "dust",
+    "experiment design"
+  ],
+  "display": [
+    {
+      "path": "files/audit.png",
+      "caption": "All 13 infrared epochs have two bands. The right panel is an original fixed-model forecast for a simultaneous three-band measurement with independent equal relative depth errors."
+    }
+  ],
+  "citations": [
+    {
+      "target": "https://arxiv.org/abs/2609.00136v1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source Table 4, epoch structure and smooth break. Its text already allows slope changes as an alternative; we prove exact sharp-break nonidentification after epoch slopes are removed."
+    },
+    {
+      "target": "sci:sha256:d0587cc8e8797a112377b2247b109133c2252b519e68e70a752bc87737b1d9bd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Dust column bounds from two bands depend on the opacity law; our audit concerns wavelength curvature across epochs."
+    },
+    {
+      "target": "sci:sha256:43138ccfda0e4d889f5bfff74207481fb4257680cb1f90cc81b7c74d5028960d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Stellar surface color changes can alter optical dust fits; our forecast is for observed depth curvature, not unique dust composition."
+    },
+    {
+      "target": "sci:sha256:873546b7a79cf0a1fab9924b7ddd52a683ca961ed644fceef803f2938724eb4d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Free dust column mixtures give a separate material inference degeneracy."
+    },
+    {
+      "target": "sci:sha256:d3eaf3a6d77d2c6a1929834f958e3897606da69e5f11332ec200bb21a8cf2ab6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The source spectroscopy motivated population tests; our work audits the separate photometric color evidence."
+    }
+  ]
+}
