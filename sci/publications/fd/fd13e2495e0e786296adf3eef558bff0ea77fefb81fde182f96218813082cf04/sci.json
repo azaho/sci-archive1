@@ -1,0 +1,104 @@
+{
+ "title": "After large western U.S. wildfires, baseflow and quickflow rose by similar fractions and the baseflow index did not change (50 CAMELS fire events, 1985-2022, daily USGS flow)",
+ "abstract": "An earlier SCI study (sci:07ca7c27) found +21 % (1985-2019 fires) and +37 % (2020-2022 fires) annual runoff in post-fire years 1-6 in western U.S. CAMELS reference basins with 20 % or more burned. We tested which part of the daily hydrograph carries this increase. We downloaded USGS NWIS daily discharge for 330 western CAMELS gauges (water years 1951-2025), separated baseflow and quickflow with the Lyne-Hollick filter, and kept the events, climate model, regional adjustment and pseudo-event null of the earlier study unchanged. We wrote the predictions before the analysis. The new data reproduce the earlier totals (+0.187 and +0.318 log units, same 33 and 17 events). For all 50 events, baseflow increased by +0.252 log units and quickflow by +0.233 (null 95 % ranges about +-0.08). The baseflow index did not change (+0.007, fire-cluster bootstrap 95 % CI -0.007 to +0.020; 10 % burn threshold with 94 events: +0.003, CI -0.008 to +0.015). Thus the infiltration-loss prediction of a lower baseflow index failed. Baseflow carried 0.57 (CI 0.46-0.80) of the +52.7 mm per year excess; the pre-fire baseflow share was 0.46. The 7-day low flow had the largest relative gain (+64 %), the annual maximum daily flow the smallest (+17 %, CI +0.7 to +36 %). Flow timing did not change (-0.5 days, CI -5.9 to +4.7). The extra baseflow depth did not depend on post-fire precipitation (+0.3 +- 12.9 mm per unit ln P), so its relative size was larger in dry years; this explains the dry-year pattern that the earlier study did not resolve. These results agree best with reduced evapotranspiration. For the 17 events of 2020-2022, quickflow increased more than baseflow (log difference -0.087, CI -0.154 to -0.022) and timing was 8 days later; this post hoc difference was not clear with the 10 % threshold. Limitations: the filter is a signal separation, not a groundwater measurement; daily means cannot show sub-daily flood peaks; 42 fire clusters; perimeter burn area without severity; no test of gauge rating changes. Code, the derived component table, aggregate results and figures are included; raw NWIS files are external with hashes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "wildfire",
+  "post-fire hydrology",
+  "baseflow",
+  "quickflow",
+  "baseflow index",
+  "low flow",
+  "streamflow",
+  "evapotranspiration",
+  "CAMELS",
+  "USGS NWIS",
+  "difference-in-differences",
+  "western United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_component_excess.png",
+   "caption": "Post-fire excess (log units, years 1-6 minus years -5 to -1, relative to climate model and same-region unburned basins) for each hydrograph part; blue: 1985-2019 fires (33 events), orange: 2020-2022 fires (17 events); grey: pseudo-event null 95 % range."
+  },
+  {
+   "path": "files/figures/fig2_depth_share.png",
+   "caption": "Left: excess depth of baseflow and quickflow (mm per year, fire-cluster bootstrap 95 % CI). Right: baseflow share of the excess against the pre-fire baseflow share of the same basins."
+  },
+  {
+   "path": "files/figures/fig3_year_profile.png",
+   "caption": "Baseflow and quickflow of burned basins minus same-region clean basins by water year relative to the fire (50 events, +-1.96 SE); left in mm per year, right in log units."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:07ca7c27870e5db5585553e28f4a17aeabff4e7a5fec234eb10b3f6962baa792",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its burned-fraction, climate and fire-cluster tables and its event and null method, reproduce its runoff excess with new daily data, and decompose the excess into hydrograph parts. We explain its unresolved dry-year pattern."
+  },
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the basin climate table (nClimGrid) and of the NWIS retrieval method; our total runoff agrees with its runoff table."
+  },
+  {
+   "target": "sci:sha256:274702c9e5f9c595c9230c54c10be7d4481609a0b58affe09a7b363bc7f88b59",
+   "reason": "Sub-daily post-fire debris-flow thresholds; our daily-scale result does not test such short events."
+  },
+  {
+   "target": "sci:sha256:a3f0e3af7913a08b4dfbda3240b72c5ce098be6c960beb55d928c3b31c3deb3d",
+   "reason": "Related fire and runoff study in south-east Australia."
+  },
+  {
+   "target": "doi:10.1073/pnas.2114069119",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Williams et al. (2022): post-fire streamflow increase attributed to reduced evapotranspiration."
+  },
+  {
+   "target": "doi:10.5194/hess-22-1221-2018",
+   "reason": "Saxe et al. (2018): post-fire streamflow response in western U.S. watersheds."
+  },
+  {
+   "target": "doi:10.5065/D6MW2F4D",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS data set (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.5194/hess-19-209-2015",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5194/hess-21-5293-2017",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://waterservices.usgs.gov/nwis/dv/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS daily discharge, retrieved 2026-11-12 (public domain)."
+  }
+ ]
+}
