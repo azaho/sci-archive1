@@ -1,0 +1,84 @@
+{
+ "title": "Extra extinction of 77 main-sequence dust dimmers is not foreground dust resolved at 6-14 arcmin, not a Gaia XP artefact and not made by TZ25 selection cuts",
+ "abstract": "Question: main-sequence dust dimmers have more SHBoost extinction than matched field stars (median +0.07 mag, rank 0.68; sci:sha256:f7759a0e). Is this interstellar dust, a Gaia XP artefact, a product of the TZ25 sample selection, or extinction that belongs to the star? Method: for 77 dimmers (67 ZTF dippers of Tzanidakis et al. 2025 and 10 campaign dimmers) and their same matched same-field controls, we ranked five tracers: SHBoost A_V and GSP-Phot A_0 (Gaia XP), StarHorse 2022 A_V (broad-band, no XP), the Edenhofer et al. 2023 3D dust map at the star distance (14 arcmin) and the SFD 1998 map (6 arcmin). A calibrated null gives the ranks of ordinary controls that have the same SHBoost A_V ranks as the dimmers. Results: the dimmers have 3D-map rank 0.487 and SFD rank 0.471, below the null of 0.566 and 0.577 (p = 0.004 and 0.001); at most 28 percent of the excess acts like ordinary foreground extinction (SFD, 95 percent). Broad-band StarHorse sees the excess at the expected level (0.587 vs null 0.576), so it is not XP-only. The TZ25 StarHorse log g and Teff cuts do not prefer reddened stars (eligible controls rank 0.495; dimmer rank 0.680 with eligible controls). The 36 dimmers that varied during Gaia DR3 carry most of the evidence (map ranks 0.434 and 0.414). The 41 Gaia-quiet TZ25 dippers keep an excess in SHBoost (0.630) and StarHorse (0.604), but the maps cannot separate foreground and circumstellar dust for them (p = 0.07-0.10). Limitations: dust structure below 6 arcmin and an intrinsically bluer SED at the same colours are not excluded; the 2-kpc map mean has no posterior sampling here.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "dipper stars",
+  "dust dimming",
+  "main-sequence stars",
+  "circumstellar extinction",
+  "interstellar extinction",
+  "3D dust map",
+  "Edenhofer 2023",
+  "SFD",
+  "SHBoost",
+  "StarHorse",
+  "Gaia XP",
+  "GSP-Phot",
+  "matched controls",
+  "calibrated null",
+  "selection effects",
+  "ZTF",
+  "Gaia DR3"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_dust_tracers_vs_null.png",
+   "caption": "Mean rank of the dimmers among matched same-field controls (black, 95 percent bootstrap) against a calibrated null (grey: ordinary controls with the same SHBoost A_V ranks). For all 77 dimmers and for the 36 Gaia-variable dimmers, both dust maps fall below the null, while StarHorse A_V and the BP/RP flux excess match it. For the 41 Gaia-quiet dimmers the maps do not decide."
+  },
+  {
+   "path": "files/figures/fig1_extinction_ranks.png",
+   "caption": "Mean rank of each extinction tracer of the dimmers among their matched controls, by subset (95 percent bootstrap). XP-based SHBoost and GSP-Phot and broad-band StarHorse show the excess; the 3D dust map does not; removing the map-predicted part leaves the SHBoost excess unchanged."
+  },
+  {
+   "path": "files/figures/fig3_map_vs_shboost.png",
+   "caption": "(a) SHBoost A_V offset of each dimmer from its control median against the offset predicted by the 3D map (k = 2.75): most dimmers lie above the 1:1 line at near-zero map offset. (b) SHBoost A_V ranks pile up near 1, 3D-map ranks do not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f7759a0ee5980a0709e9b28b79445470502b133ec419317b68128a8213771824",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Found the SHBoost A_V excess of dimmers and proposed the 3D-map test; source of the 93-dimmer list, the faint hot-Jupiter host list and the matching code. This study tests the sources of the excess."
+  },
+  {
+   "target": "sci:sha256:6105a2d9668ebbddd4e158306a7c614ddefc44ba41fe2bf3ed5e1b5e13005552",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Defined the dimmer sample and the matched-control windows used here."
+  },
+  {
+   "target": "sci:sha256:008e5d1c9bd8383646d9509526d9ebf4ec23282e912b4da27d13ba262ef00dd9",
+   "relations": [],
+   "reason": "Gaia20cdd has a smooth steep-law extinction component on most nights, a possible counterpart of a time-averaged circumstellar A_V."
+  },
+  {
+   "target": "sci:sha256:e9c525bef4897d2caff5b40b64c8d6e5896ec4036fb61388f1a1efeb69446507",
+   "relations": [],
+   "reason": "NEOWISE shows small-grain extinction during ZTF dips of main-sequence dippers."
+  },
+  {
+   "target": "sci:sha256:222c40fb0bdc57f4026f956b42268b350652686520a77297d3cd603563c20dc4",
+   "relations": [],
+   "reason": "Links deep dimming of field dwarfs with extreme warm dust; source of campaign dimmers."
+  },
+  {
+   "target": "sci:sha256:e10c5778e2cdc5e8ba2b7d63d16467bd56481193238d828095553e8e7e21af5d",
+   "relations": [],
+   "reason": "Gaia scatter search that found campaign dimmers in this sample."
+  }
+ ]
+}
