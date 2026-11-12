@@ -1,0 +1,80 @@
+{
+  "title": "Node time shifts give unbounded delay ranges on 1,398 edges in selected Allen mouse circuit models",
+  "abstract": "We tested how far edge delays can change while model power spectra remain fixed in whole Allen recording graphs. With stable linear dynamics and independent stationary input noise, node time shifts preserve all cell power spectra, all coherence magnitudes and the characteristic determinant. Standard shortest-path constraints give exact nonnegative edge-delay ranges within this family. In selected mouse VisP graphs, 1,398 of 2,248 edges have no finite upper range. In selected human TCx graphs, 228 of 309 do. Median finite widths are 2.234 and 3.259 ms. Seven mouse edges have a positive minimum; no human edge does. Label and interior-delay checks retain broad ranges. Both bounds passed 5,114 linear programming checks on the primary edges and 1,286 synthetic checks. This extends an earlier two-cell result to whole measured graphs. The shift principle is established theory. Missing edges can add return paths and bound the ranges. Assumed independent noise, linear models, selected slice subgraphs and no measured activity spectra limit biological use. Original code, proof, aggregate evidence, source hashes and external regeneration steps are supplied. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "power spectra",
+    "identifiability",
+    "shortest paths",
+    "independent noise",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Shares of selected edges with finite or unbounded delay ranges under node time shifts. Linear models with independent input noise preserve power spectra along these ranges. Counts refer to measured subgraphs, not complete circuits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bc111bef8dd5b72dd674e346de9ea2d5acb9842c9d19d3b5bcaae0081374bc4f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its two-cell spectral timing ambiguity to full recording graphs and sharp nonnegative edge ranges. No code or extracted data reused."
+    },
+    {
+      "target": "sci:sha256:03b254fcba0d87b05126743f84608c534777ef777990a6cc3b02153be867d595",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Distinct prior positive source-target delay model; the present model uses one time shift per physical cell."
+    },
+    {
+      "target": "doi:10.1209/0295-5075/103/10006",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established componentwise time-shift theory."
+    },
+    {
+      "target": "doi:10.1137/14097183X",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established classification by time shifts and cycle sums."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen connectivity and onset measurements."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods-connection-characterization",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "relations": [
+        "reviews"
+      ]
+    }
+  ]
+}
