@@ -1,0 +1,24 @@
+{
+  "title": "SPC Day 3-8 severe-weather contours (US, 2015-2025) verified inside their bands but were about 80 km too tight at every lead day when all severe reports are the truth",
+  "abstract": "We tested all as-issued NOAA Storm Prediction Center Day 3 and Day 4-8 total-severe convective outlooks for 2008-2025 against the final SPC report database (event: report within 25 miles during the 12Z-12Z day, 20 km CONUS grid). The pre-registration was written before forecasts and reports were joined. For 2015-2025, the Day 4-8 15-30% band verified at 0.274 (95% week-block bootstrap 0.253-0.294) and the 30% area at 0.521, with no decrease from Day 4 to Day 7. But the frequency 0-40 km outside the 15% contour was 0.191 (0.179-0.206), above the stated value, in each of 11 years. Frequency fell to 15% only 79 km (64-97 km) outside the contour, and the result was similar at each lead day and for the Day 3 5%, 15% and 30% contours (76-122 km). A buffer fitted on 2015-2020 (79 km) gave correct contour values on 2021-2025: the added ring verified at 0.175 and the band just outside the new contour at 0.136. The area increased by a factor of 1.6, and the share of event points inside the 15% areas increased from 36% to 49%. The excess was largest on the east side (+0.041 east minus west). Before December 2014, the single Day 4-8 area was defined as 30% but verified at 0.253, which supports the change of its label to 15%. Day 4 areas contained only 9.8% of the observed area of 15% or more, but the frequency outside areas was equal to climatology. Main limitation: the result depends on wind reports. With tornado and hail reports only, the 15% contour was not too tight (0.104 just outside). We did not correct for population or use radar truth.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370108"}
+  ],
+  "keywords": ["forecast verification", "Storm Prediction Center", "convective outlook", "Day 4-8 outlook", "severe thunderstorms", "probabilistic forecast", "reliability", "contour placement", "hazard communication", "pre-registration"],
+  "display": [
+    {"path": "files/figures/fig1_contour_profiles.png", "caption": "Observed frequency of a severe report within 25 miles as a function of signed distance from the drawn SPC contour (negative inside), 2015-2025, by lead day. Left: 15% contour. Right: 30% contour. Shading: 95% week-block bootstrap. The dashed line is the stated contour value. At distance 0, all lead days are above the stated value. They reach it only 70-120 km outside."},
+    {"path": "files/figures/fig2_edge_by_year.png", "caption": "Frequency 0-40 km outside the contour by year. Blue: Day 4-8 15% contour (before 2015 the same single area was then defined as 30%). Orange: Day 4-8 30% contour. Green: Day 3 15% contour. Dashed lines: 0.15 and 0.30."},
+    {"path": "files/figures/fig3_bands_coverage.png", "caption": "Left: observed frequency in each probability band (points, 95% intervals) against the stated range (grey), 2015-2025. Right: fraction of the observed practically-perfect area of 15% or more that a 15% area contained, by lead day."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:483f4333c8db6b9b6ebcd0de2ce9962e9690960bb204314a6dbf72bde5e5f4c4", "relations": ["supports"], "reason": "Day 1 SPC contours with a dense-area report excess; we extend the contour-bound test to Day 3-8."},
+    {"target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d", "reason": "Population dependence of report-based SPC verification; main limitation of our truth."},
+    {"target": "sci:sha256:db2b2a038e6c44f89b650d2c52903a9d74b18df37ba5a132b62fc92093d6441f", "relations": ["supports"], "reason": "CPC Week-2 hazard polygons were drawn too small; we find the same pattern in SPC Day 3-8 contours."},
+    {"target": "sci:sha256:9b9f73223534c21bd5749047d4a90eb8721cd89547d9e9834a97d8a10a7c3538", "relations": ["uses"], "reason": "Same SPC SVRGIS report data handling."},
+    {"target": "sci:sha256:b49d0457977c8d39704e95053ad3e09405c44deea1cef3b4ca91bcaad778466e", "reason": "Related SPC product verification in this campaign."},
+    {"target": "https://www.weather.gov/media/notification/pdfs/scn14-54spc_day_4-8_severe.pdf", "reason": "Service Change Notice 14-54: Day 4-8 15% and 30% total-severe probabilities."},
+    {"target": "https://www.spc.noaa.gov/wcm/data/", "relations": ["uses"], "reason": "SPC final severe report database, 1950-2025 files."},
+    {"target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/outlooks.py", "relations": ["uses"], "reason": "IEM archive of SPC outlook polygons."}
+  ]
+}
