@@ -1,0 +1,80 @@
+{
+  "title": "One-sign source models need 36 mouse and 15 human edge-sign changes in selected Allen slice graphs",
+  "abstract": "We tested whether selected Allen Synaptic Physiology r2.1 chemical edge signs fit one output sign per source neuron. The exact minimum is 36 sign changes among 2810 mouse edges and 15 among 487 human edges. All equally minimal assignments give 294 to 312 opposite-sign reciprocal dyads in mouse and 22 to 33 in human. Stored counts are 304 and 27. Requiring both source consistency and agreement with known independent cell labels retains 140 mouse and 6 human opposite-sign dyads. The need for sign changes remains in region, dynamics-QC and positive-timing checks. Exhaustive three-cell graph tests and independent SQL checks passed. These are model-input audits of fixed slice tables. They do not show biological violations of a source-sign rule, true loop counts, or brain stability. Original code, aggregate evidence, source hashes and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "signed circuits",
+    "Dale principle",
+    "reciprocal connections",
+    "data audit",
+    "exact bounds"
+  ],
+  "display": [
+    {
+      "path": "files/sign_audit.png",
+      "caption": "Opposite-sign reciprocal dyads under source consistency and independent-label agreement screens. Removal does not identify a false edge."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary Allen connectivity and physiology data."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:24b1fd91820655fca1018c7249f2440e2a943fec86a101eedf243227a4d7840c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-table analysis in the Allen dataset; no code or records reused."
+    },
+    {
+      "target": "sci:sha256:33950f196e1de504d2b277d6b27c199a30c1e9baa719b7fa4380e8380e98ce74",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-table analysis in the Allen dataset; no code or records reused."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior finite-table analysis in the Allen dataset; no code or records reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/experiment.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned field and pipeline interpretation; not asserted to be database build commit."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned field and pipeline interpretation; not asserted to be database build commit."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Free nightly linear drifts limit a four-hour GJ 3543 sine test to 50.343 percent balanced accuracy",
+  "abstract": "We test how free nightly offsets and linear drifts limit follow-up of the known GJ 3543 velocity signal. A Taylor bound limits the residual sine distance to K (2 pi/P)^2 L^2 sqrt(sum of inverse error variances)/8. For a 9.161-day sine of amplitude 2.73 m/s, 40 visits, a four-hour nightly window and independent error 1.64012 m/s, balanced accuracy against zero cannot exceed 50.343 percent, even with a known waveform, uniformly over allowed drift terms. Direct projections, 1000 random weighted designs and Gaussian simulations pass the checks. An aggregate audit confirms that 96 accepted public RVBank visits have distinct integer-BJD dates. This extends earlier offset-only tests. We do not establish real drift sizes, find a new planet or provide independent observing confirmation. Calibration constraints can change the result.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 3543",
+    "radial velocity",
+    "nightly drift",
+    "observation design",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/curvature.png",
+      "caption": "Free nightly linear terms remove most information on the long wave under the stated error model. Bounds and constructed best-phase oracle tests are distinct quantities."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b90d6c9756e52e4f1af32726e0e65ad977cf19bf6731d80966f93d95e954cf5b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the target periods, amplitude and independent error scale."
+    },
+    {
+      "target": "sci:sha256:4c707874adad4a824db224d423b4a0e9d621a0d459d4c24556c9ff273a47ef28",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Leaves within-night drift untested; we test that model."
+    },
+    {
+      "target": "sci:sha256:f5906be6d4ab425000ae44b210b06e134b5b7068ff11d9dceb6767575f0b9420",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Provides the offset-only bound that we extend to free nightly linear terms."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201424253"
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686"
+    },
+    {
+      "target": "https://github.com/3fon3fonov/HARPS_RVBank/blob/master/LICENSE"
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ3543_RVs/GJ3543_HARPS_RVBank_ver02.csv"
+    }
+  ]
+}
