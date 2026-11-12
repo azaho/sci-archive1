@@ -1,0 +1,64 @@
+{
+  "title": "Distance gave no clear delay-spread prediction gain in four selected Allen cortical slice samples",
+  "abstract": "We tested whether cell-body distance improves prediction of the spread of measured synaptic delays across connections. We used 2,534 selected Allen Synaptic Physiology r2.1 connections from mouse visual cortex and human temporal cortex. Both models had the same class, layer and distance prediction for mean delay. Nested splits of inferred donors supplied residuals for variance models. The reference variance model used cell labels and target layer. The second model also used distance. At ridge penalty 10, mean score gains were 0.0422 for mouse excitatory, -0.0050 for mouse inhibitory, -0.0086 for human excitatory and -0.0616 for human inhibitory connections. All conditional 98.75 percent donor intervals included zero. Penalties 1 and 100 gave the same interval result. Thus, these tests did not establish added spread prediction value for distance. They do not prove a constant biological variance. The spread is across fitted connection summaries, not trial-to-trial jitter. Missing connections, model error, inferred donors and small human samples limit transfer. Original code, aggregate results, a figure, source hashes and external regeneration steps are supplied. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "distance",
+    "variance prediction",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/aggregate/score.png",
+      "caption": "Score gain for distance in the variance model. The mean model is common. All conditional 98.75 percent donor intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mean delay and local distance scope provide study context. We test added variance prediction with a common mean."
+    },
+    {
+      "target": "sci:sha256:52d9d25b3bd6f8766f728fb131fcf26743778a0587a9dfcddc1456af0491436d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Validation unit study supports keeping inferred donors in separate folds. New code and a separate prediction target are used."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4313861/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    }
+  ]
+}
