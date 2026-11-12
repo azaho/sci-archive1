@@ -1,0 +1,64 @@
+{
+  "title": "Twelve of 480 selected Allen mouse response pairs need summed waveform error above 1 percent under causal filtering",
+  "abstract": "We tested how much paired fitted current and voltage response shapes must change before a causal nonnegative filter can link them. Cumulative response area and Fourier modulus give direct lower bounds on summed total-variation error without inverse filtering. After decay-limit screening in Allen Synaptic Physiology r2.1, the bound exceeds 1 percent for 12 of 480 main mouse V1 pairs, 6 of 262 early mouse pairs and 7 of 160 human pairs. It exceeds 5 percent for 10, 4 and 6 pairs. The bound does not exceed 1 percent for most exact inverse-filter sign failures; their minimum correction remains unresolved. Shapes are onset-aligned and normalized. These are finite-sample checks on fitted shapes, not measured uncertainty or evidence against passive neurons. Separate clamp states, somatic current distortion, fit-family limits and selected slices limit interpretation. Original code, proof, aggregate results, a figure, hashes and external retrieval steps support reproduction. External records stay outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic response",
+    "causal filter",
+    "total variation",
+    "waveform error",
+    "model audit"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Lower bounds on summed total-variation waveform correction in the decay-screened samples. A small bound does not establish that a small correction is sufficient."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4d02809da30774324c48f1e0fb5b4a55b95580a00da2092e30d379d359bf7993",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior exact inverse-filter test. We use its selection definition and compare sign counts with direct waveform error bounds; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:fd63134619afce7c6ca077a5f7002c361243b4a79d24c66e3112ca75211b9c90",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior shared-filter moment-error bounds. This report tests separate per-connection filters and waveform total variation."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.7554/eLife.37349",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/neuroanalysis/c2fd909b73cc3167fb65d55edb3de0ab3e245ce9/neuroanalysis/fitting/psp.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
