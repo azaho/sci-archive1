@@ -1,0 +1,68 @@
+{
+  "title": "Spot phases supply 95% of within-sector relative phase variance in 118 TESS CPV stars",
+  "abstract": "We test whether measured phase changes of complex periodic variables (CPVs) show diffusion of the occulting material. We use released chunk phases for 377 TESS sectors of 118 CPV stars and 335 fixed-dip injections into 172 control stars. After each sector has a separate line removed, an exact variance identity assigns 94.6% (95% star bootstrap interval 88.1-99.7%) of the dip-minus-spot variance to the measured spot term. Spot variance exceeds dip variance in 110 of 118 stars. These terms include fit error and shape change. A covariance fit that removes sector drift gives dip diffusion D=3.9e-6 cycles squared per day, but fixed injected dips give 1.0e-5. The latter falls to 5.9e-9 after the highest-amplitude 5% of control stars are removed; CPV dips retain 1.3e-6 under the same check. Thus real dip-pattern change is allowed, but one physical diffusion coefficient is not calibrated. Constant slopes with zero true diffusion give D=1.1e-5 with the earlier slope method and 1.8e-8 with our curvature method. A single positive Brownian test estimates D 23% high and its bootstrap range misses the input. The result limits the attribution of within-sector random walks to material motion. It does not test separate between-sector phase memory or exclude magnetic confinement. All inputs come from one model-dependent extraction; no flux is refitted. Code, hashes, aggregate fits and fixed-seed checks are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "phase diffusion",
+    "starspots",
+    "corotation",
+    "identifiability",
+    "negative controls"
+  ],
+  "display": [
+    {
+      "path": "files/phase_test.png",
+      "caption": "Left: curvature-based diffusion fits with 95% star bootstrap intervals. Fixed injected dips can produce a nonzero fit. Right: the exact residual variance identity. The spot term supplies 95% of relative variance. These are measured-pattern quantities, not physical source fractions."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses released phase measurements and fixed-dip injections. Tests the within-sector attribution to dip diffusion and the identifiability of its slope-based estimator. Does not retest the separate between-sector memory claim."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Defines the source on-target CPV sample; no record table is copied."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/j.1365-2966.2011.19505.x",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior covariance treatment of correlated timing noise. Covariance inference is not new."
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
