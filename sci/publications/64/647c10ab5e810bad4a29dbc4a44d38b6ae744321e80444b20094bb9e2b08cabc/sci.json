@@ -1,0 +1,100 @@
+{
+  "title": "With unit input power, disjoint residual correlations at most 0.25 preserve pooling order in five selected leech models",
+  "abstract": "We tested whether sparse residual correlations can change the coherence order of contact-count and equal-input pools in one linked leech circuit. The model used 35 mapped inputs, 271 contacts, unit input spectral powers, and five released trials. Each input could have residual correlation with at most one other input. We reduced the exact tie threshold to a maximum weight matching. No disjoint-pair matrix with pair magnitudes at most 0.25 reversed any of the five primary orders, even when all pairs were allowed. At a 10 micrometre contact path limit and a magnitude cap of one, three trials could reverse; two could not. Unrestricted disjoint pairs could reverse four trials. A reproduced dense benchmark reversed four trials with maximum pair entries below 0.045. Thus dense ambiguity did not imply the same ambiguity for separate pairs. Selection mattered: adding ten one-contact inputs made one trial reversible at cap 0.25. An independent audit checked 425 primary matching objectives and 569 full spectral witnesses. These are conditional model bounds, not measured residual correlations or animal sampling intervals. One animal, uncertain matches, exact summaries, unit powers and the narrow residual pattern limit inference. Original code, proof, aggregate results, figures, source hashes and external regeneration steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "leech",
+    "structure-function",
+    "pooling",
+    "spectral coherence",
+    "sparse correlations",
+    "maximum weight matching",
+    "identification bounds"
+  ],
+  "display": [
+    {
+      "path": "files/sparse_frontiers.png",
+      "caption": "Exact tie magnitudes for at most k disjoint residual pairs in five models with 35 inputs. The left panel permits all input pairs. The right panel permits only pairs with contacts within 10 micrometres along the target skeleton. Values above one are infeasible. A strict reversal requires a magnitude above the tie threshold. The dotted line is 0.25. These are model bounds, not measured correlations or confidence intervals."
+    },
+    {
+      "path": "files/distance_limits.png",
+      "caption": "The best tie magnitude over any number of disjoint pairs depends on the allowed contact path distance. Trial 11 has no feasible tie even with all pairs. One animal and fixed unit spectral powers limit this model result."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomy and activity experiment; original authors credited."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external database, mapping, confidence and activity summaries. External records are not bundled."
+    },
+    {
+      "target": "doi:10.3389/fncom.2010.00009",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established effects of correlations on pooled neural activity."
+    },
+    {
+      "target": "sci:sha256:07a5d7f904386b7fc24f471a7e45d48c1687a46ecff38ebafe59f67b2c7ac8a8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior count and repeated-coherence endpoint in the same source."
+    },
+    {
+      "target": "sci:sha256:751b5a755fb130cc5a496852ac9c45470e996bff31180167d2c802d71f19065f",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior repeated-label issue motivates one pair entry per input pair."
+    },
+    {
+      "target": "sci:sha256:0f2db6dd56764c6b5e9c3a0413c3acc28a472517f82d8daa6ec0ec68e8648bed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same source version, physical path support and spectral matrix framework. Adds disjoint-pair pooling bounds, not the prior local synchrony score."
+    },
+    {
+      "target": "sci:sha256:818910d2897a01ac5b457f3e2c1aeea9c50a63ce1a499ef0acc98cedf28cf7bf",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Same cohorts and pool endpoint; reuses source retrieval metadata. Reproduces four dense examples and adds exact disjoint-pair limits and anatomy restrictions."
+    },
+    {
+      "target": "https://www.math.u-szeged.hu/~hajnal/courses/MSc_Optimalizalas/Edmonds.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established maximum weight matching method; no new matching theorem claimed."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/blob/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2/leechem/sbemdb.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Coordinate and node-type conventions inspected; source library not copied or imported."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/wagenadl/leechem/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2/LICENSE",
+      "reason": "External source license notice. Source and record-level derivatives remain outside the signed bundle."
+    }
+  ]
+}

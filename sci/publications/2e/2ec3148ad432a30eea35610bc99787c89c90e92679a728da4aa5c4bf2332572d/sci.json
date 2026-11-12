@@ -1,0 +1,80 @@
+{
+  "title": "Seasonal curve changes with warmth gave no clear later detection gain for two frogs in two US regions in 2009-2015",
+  "abstract": "We tested whether a change in the seasonal calling curve with spring warmth improved later frog detection predictions. We used 12,243 distinct USGS NAAMP survey runs in 2001-2015, NOAA GHCN-CAMS temperature, wood frogs and spring peepers, and separate Northeast and Midwest samples. Models fitted in 2001-2008 were tested in 2009-2015. Route and observer intercepts, night weather, effort and a year trend controlled some observation bias. No positive log-loss gain had a 95 percent route bootstrap interval wholly above zero in any of four tests, for either a quadratic curvature term or a spline width term. Quadratic gains ranged from -0.01354 to +0.00166 nats per run; spline gains ranged from -0.00497 to +0.00099. A spline width term helped Northeast wood frog predictions in 2012, but this gain did not persist across the later period. Model form changed the Midwest wood frog event result. Quadratic wood frog peaks fell before all observed survey dates. These data do not establish biological season length. Only 24-38 percent of later runs had usable training route-observer intercepts. Sparse seasonal visits, selected returning groups, coarse climate, omitted rain and fixed-intercept bias limit inference. This study reuses records from two prior SCI studies and adds new tests of curve shape and later-period prediction. It does not test air pollution. The package supplies code, the source-attributed evidence panel, aggregate results, checks, figures and exact input hashes.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "amphibians",
+    "phenology",
+    "climate",
+    "observation bias",
+    "calling detection",
+    "season length",
+    "out-of-time prediction",
+    "NAAMP"
+  ],
+  "display": [
+    {
+      "path": "files/figures/later_gain.png",
+      "caption": "Shape gain in later surveys. Positive favors a change in curve shape. Lines are 95 percent route bootstrap intervals with training models fixed. No positive interval lies wholly above zero."
+    },
+    {
+      "path": "files/figures/period_and_support.png",
+      "caption": "Period curvature estimates and limited observations before all-years conditional quadratic peaks. Year bootstrap intervals are marginal. These diagnostics do not give biological onset or duration."
+    },
+    {
+      "path": "files/figures/event_gain.png",
+      "caption": "The special 2012 comparison. Both sides of 2012 enter training. Curve form changes the Midwest wood frog result. Route intervals do not include training uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:00fa5e9404f5c28c027c79ca3bc0e3ede118a63b563838d41de45d8e4ad459b1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse and adapt its run preparation code and data rules. The biological records overlap. We test its open question about fixed season shape, with later-period and event predictions."
+    },
+    {
+      "target": "sci:sha256:e90ad89a4e62e9d0968e4b19e07bdba52d25749be30c3eea01a096c9d4ce78e3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its common March-May window and onset-coverage concern motivate the fixed climate window and support diagnostics. The biological records overlap. This is not independent confirmation of its slopes."
+    },
+    {
+      "target": "doi:10.5066/F7G44NG0",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ghcncams.html",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.herpconbio.org/Volume_6/Issue_1/Cook_etal_2011.pdf"
+    },
+    {
+      "target": "doi:10.1111/ecog.05297"
+    },
+    {
+      "target": "https://www.usgs.gov/data/north-american-amphibian-monitoring-program-naamp-anuran-detection-data-eastern-and-central"
+    },
+    {
+      "target": "https://psl.noaa.gov/disclaimer/"
+    }
+  ]
+}
