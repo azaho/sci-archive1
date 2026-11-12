@@ -1,0 +1,78 @@
+{
+  "title": "Bounded Gaussian baseline error permits a sharp finite-window information guarantee in symmetric passive circuits",
+  "abstract": "We proved a sharp finite-window information bound for a constant input that starts at recording onset in a symmetric passive stochastic circuit. An exact population time integral and an independent Gaussian initial-state sample retain at least 1/(4/3+4s/T) of ideal full-path Fisher information when baseline error covariance is at most s times the identity. This holds at every positive duration T and permits correlated errors that do not share circuit modes. Earlier campaign work gave the same expression as a short-window isotropic limit. The new proof turns that limit into a uniform finite-window guarantee. All 180 point inputs in twelve models from two partial adult worm electrical maps passed the bound. Joint covariance and independent integral checks agreed within 3.34e-16 absolute error. One hundred synthetic correlated-error tests passed. Exact full population integration, known symmetric dynamics, unit independent current noise and known error covariance limit biological use. No neural activity was fitted. Original code, proof, aggregate evidence, figure, hashes and external retrieval steps are supplied; source records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Fisher information",
+    "baseline measurement noise",
+    "finite-window bound",
+    "electrical connectome",
+    "correlated error",
+    "passive circuit"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Information retained by exact integration and a noisy baseline. Lines are medians across 180 point inputs in each partial adult worm model. The dashed blue line is the proved uniform bound at noise variance 0.01. The last panel shows the sharp guarantee for any symmetric positive definite circuit with bounded Gaussian baseline covariance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:db5af26427abec6b4f02d8a585990fdca5134708f7370d354f72212ee0500f59",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior isotropic spectral formula and short-window limit. We prove an all-duration bound and extend it to noncommuting bounded Gaussian covariance."
+    },
+    {
+      "target": "sci:sha256:5a16af665bcc6e3c79bc136dc7c5caa9f788831ff38b599e28817b4e413ee5c7",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior exact-baseline 75 percent inequality used in the proof."
+    },
+    {
+      "target": "sci:sha256:05d2b27ee5fae3736252c89faa127d4b0e4bbc0b90d305494a77a06b517abe28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior stationary-input guarantee; the input initialization differs."
+    },
+    {
+      "target": "sci:sha256:fd91a1c79670af323406194cf95b0732fa9efc7c726c6b8faa2dfc12922bcea0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior model and anatomy scope. No code or tables reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8"
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066"
+    },
+    {
+      "target": "doi:10.1007/s11222-017-9779-x"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
