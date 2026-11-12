@@ -1,0 +1,84 @@
+{
+  "title": "A rank transform kept positive mean GRACE storage-change skewness across 2,168 land cells in 2002-2026",
+  "abstract": "We tested whether the storage value distribution alone accounts for a reported time-direction signal in a fixed CSR GRACE and GRACE-FO panel. We used 2,168 land cells from April 2002 to June 2026. In each cell and mission, we replaced residual anomalies by normal scores of their ranks. The area-weighted mean skewness of 12-month changes was 0.099 before the transform and 0.073 after it. The rank value exceeded all 999 absolute common-phase Fourier reference values (two-sided Monte Carlo p = 0.001; four-lag adjusted p = 0.001). Both missions retained positive rank values. Quadratic-trend and observed-endpoint checks gave 0.065 and 0.072 (each p = 0.005 with 199 draws). A restored-value comparison also retained the signal, but changed spectra and autocorrelation. It is only an approximate check. The result shows that a static value transform does not remove the signal in this panel. It does not identify a recharge, pumping or storage mechanism. A linear store with non-Gaussian inputs can be asymmetric. The stationary periodic reference, coarse dependent cells, short record, source processing and use of one mascon product limit inference. Code, aggregate draws, source hashes, figures and an external-scratch reproduction script are included. Source series and cell tables remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "GRACE",
+    "GRACE-FO",
+    "water storage",
+    "time asymmetry",
+    "rank transform",
+    "surrogate data",
+    "skewness",
+    "reproducibility"
+  ],
+  "display": [
+    {
+      "path": "files/figures/rank_audit.png",
+      "caption": "Mean storage-change skewness remains positive after a normal-rank transform. Dots show observations. Thick lines show 95% surrogate ranges. These ranges are not effect confidence intervals. The restored-value comparison has spectral mismatch."
+    },
+    {
+      "path": "files/figures/sensitivity_checks.png",
+      "caption": "The rank signal remains positive with a quadratic trend and with observed increment endpoints. Restoring the raw value distribution changes autocorrelation. This limits the restored-value reference."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bd955a4f7f0de09da98a219a29d8ed655f190d474261a09b77483111f9269bc9",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We use its exact published panel and preprocessing rules. We test its stated marginal-distribution limit with new code. The observations overlap."
+    },
+    {
+      "target": "sci:sha256:8f022b61bbf781fc16d9c501656660fa949a54ffe00680c46f19c85968649a6b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its state-relaxation result concerns a different asymmetry measure and limits the physical interpretation of our increment statistic."
+    },
+    {
+      "target": "sci:sha256:82607c51839bb97935849acfcc82a5d13a52adab363dfa7ae8f4bf977e7d84d7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its failed wet-month transfer test leaves the cause of storage-change skewness open. We checked its source-path and rights records against current helper metadata."
+    },
+    {
+      "target": "doi:10.1103/PhysRevLett.77.635"
+    },
+    {
+      "target": "doi:10.1016/S0167-2789(00)00043-9"
+    },
+    {
+      "target": "doi:10.1103/PhysRevLett.73.951"
+    },
+    {
+      "target": "doi:10.1002/2016JB013007"
+    },
+    {
+      "target": "doi:10.15781/cgq9-nh24"
+    },
+    {
+      "target": "doi:10.3390/atmos9040138"
+    },
+    {
+      "target": "doi:10.1029/2007JD008470"
+    },
+    {
+      "target": "https://www2.csr.utexas.edu/grace/RL06_mascons.html"
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.gpcp.html"
+    },
+    {
+      "target": "https://cds.climate.copernicus.eu/licences/global-precipitation-climatology-project"
+    }
+  ]
+}
