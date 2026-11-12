@@ -1,0 +1,174 @@
+{
+ "title": "SST-product errors go into SOCAT fCO2 temperature recalculations: with DOISST v2.1 the 1995-2024 ocean CO2 sink trend is 0.15 PgC/yr per decade smaller than with CCI v3",
+ "abstract": "Recent ocean CO2 sink estimates recalculate each SOCAT fCO2 value from the ship intake temperature to a satellite SST (DOISST in Watson et al. 2020; ESA CCI SST v3 in Ford et al. 2026 and two GCB2025 products). fCO2 changes by 4.23% per kelvin, so time-dependent SST errors become sink errors. We reduced 44 million SOCATv2026 rows to 2.2 million daily super-observations and compared DOISST v2.1 and CCI v3 with the intake temperature of the same platform (288 open-ocean ships, moorings and autonomous platforms, 1995-2024, platform fixed effects, bootstrap, placebo dates). We added HadSST4.2 (50 ensemble members) as an independent reference and SeaFlux fields to convert temperature errors to PgC/yr.\n\nAt the SOCAT sites, DOISST minus CCI v3 increases by 0.042 C per decade (95% interval 0.024-0.060). Thus a DOISST-based recalculation gives a sink trend 0.15 PgC/yr per decade (0.08-0.21) smaller than a CCI-based one. DOISST has a step on 7 July 2020: +0.067 C (0.018-0.112) against SOCAT intake temperatures with daily DOISST, +0.057 C against HadSST4.2 and +0.05-0.07 C against CCI v3. This makes a DOISST-based sink 0.19-0.25 PgC/yr smaller from mid-2020. CCI v3 has no step then. The 2005 DOISST step is small at the SOCAT sites.\n\nThe references disagree on which product drifts. Against HadSST4.2, DOISST warms 0.057 C per decade and CCI v3 is stable (-0.007). Against SOCAT platforms, DOISST warms 0.019 and CCI v3 cools 0.024 C per decade, mostly by a -0.04 C change in 2015-2016 that HadSST4.2 does not show. Limitations: no fCO2 mapping was run (an ocean-wide sensitivity of 0.35 PgC/yr per 0.1 C was used), the in situ references are uncertain, and the ship-only 2020 step is not significant.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370801"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  }
+ ],
+ "keywords": [
+  "ocean carbon sink",
+  "SOCAT",
+  "fCO2 temperature correction",
+  "DOISST",
+  "OISST v2.1",
+  "ESA CCI SST",
+  "HadSST4",
+  "sea surface temperature",
+  "data homogeneity",
+  "step artifact",
+  "air-sea CO2 flux",
+  "Global Carbon Budget",
+  "SeaFlux"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_product_minus_insitu.png",
+   "caption": "(a) Within-platform DOISST v2.1 minus SOCAT intake temperature, CCI v3 minus intake temperature, and DOISST minus CCI v3 at the same samples (288 open-ocean platforms, 95% platform bootstrap). (b) DOISST and CCI v3 minus HadSST4.2 in 5-degree boxes with SOCAT data. Dashed lines: DOISST input changes of 1 January 2005 and 7 July 2020."
+  },
+  {
+   "path": "files/figures/fig3_sink_consequence.png",
+   "caption": "(a) Ocean CO2 sink difference between a DOISST-based and a CCI v3-based SOCAT fCO2 temperature recalculation, from the SOCAT-site series (green, 95% band) and from the ocean-wide map (grey). Positive means a smaller sink with DOISST. (b) 1995-2024 sink-trend error of each product against SOCAT platforms (platform bootstrap) and against HadSST4.2 (50 ensemble members)."
+  },
+  {
+   "path": "files/figures/fig2_breakpoint_scan.png",
+   "caption": "Within-platform breakpoint scan: mean difference in the 24 months after minus the 24 months before each month start, with 95% platform-bootstrap bands."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Found the 7 July 2020 DOISST step; we confirm it at SOCAT sites with in situ intake temperatures."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cause of the 2020 step (NAVO MetOp-A L2P v1.0 to v2.0)."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Distance structure of the 2005 and 2020 steps; the 2005 step is weak at SOCAT sites, as that work predicts."
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Blind multi-product homogenisation with DOISST and CCI v3 steps."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST homogenisation and correction of the 2020 step."
+  },
+  {
+   "target": "doi:10.1038/s41467-020-18203-3",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "DOISST-based temperature recalculation of SOCAT fCO2 (Watson et al. 2020)."
+  },
+  {
+   "target": "doi:10.1038/s41597-026-07532-5",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "CCI v3-based SOCAT recalculation (Ford et al. 2026); its per-observation CCI values are our control."
+  },
+  {
+   "target": "doi:10.5281/zenodo.19816066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Ford et al. recalculated SOCATv2025 data set, v1."
+  },
+  {
+   "target": "doi:10.25921/8dba-fr90",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SOCATv2026 synthesis data."
+  },
+  {
+   "target": "doi:10.5194/essd-8-383-2016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SOCAT reference (Bakker et al. 2016)."
+  },
+  {
+   "target": "doi:10.1029/2022GB007360",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Temperature corrections of air-sea CO2 flux and SST products used by fCO2 products (Dong et al. 2022)."
+  },
+  {
+   "target": "doi:10.5194/essd-18-3211-2026",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Global Carbon Budget 2025: temperature-corrected fCO2 products and sink uncertainty."
+  },
+  {
+   "target": "doi:10.5281/zenodo.8280457",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SeaFlux v2023 gas-transfer, solubility and ice fields."
+  },
+  {
+   "target": "doi:10.5194/essd-13-4693-2021",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SeaFlux method (Fay et al. 2021)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ESA CCI SST v3."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HadSST4 ensemble."
+  },
+  {
+   "target": "doi:10.1029/93GB02263",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Temperature sensitivity of fCO2 (0.0423 per kelvin)."
+  }
+ ]
+}
