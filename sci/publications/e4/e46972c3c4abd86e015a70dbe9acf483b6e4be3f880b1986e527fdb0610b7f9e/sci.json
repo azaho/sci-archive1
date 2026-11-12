@@ -1,0 +1,166 @@
+{
+ "title": "CoralTemp SST steps in 1995, 2002 and 2008, confirmed by ESA CCI and moorings, make the CRW bleaching baseline 0.06-0.14 C too cold; 2023-25 Alert Level 2 falls from 91% to 72-81% of 214 reef stations",
+ "abstract": "Question: NOAA Coral Reef Watch (CRW) calculates bleaching heat stress (HotSpot, Degree Heating Week DHW) from CoralTemp v3.1, with a baseline (MMM) fixed from 1985-2012. Two earlier campaign studies found CoralTemp steps but disagreed on their effect on recent bleaching events. Is CoralTemp homogeneous against a fully independent satellite record, and what do its steps do to the official CRW station heat stress? Approach: we compared CoralTemp monthly SST at about 30,000 one-degree sample pixels (60S-60N, 1985-2026) with ESA SST CCI v3.0.1 on the same pixels, HadSST4.2, ERSSTv5, COBE-SST2, DOISST and OI v2, with exact segmentation, control pairs, daily dating, 10-degree maps and 148 moored buoys. We recalculated DHW at all 214 CRW Regional Virtual Stations after a local step correction, for five step sets and several references. Results: CoralTemp has steps of -0.06 to -0.11 C in June 1995, +0.08 to +0.11 C in July 2002 (18-24 July in CCI daily data, four months before the documented November 2002 splice) and +0.05 to +0.08 C on 1 January 2008. CCI confirms them (z -5.2, +7.0, +12.9; 98% of 10-degree boxes positive in 2002 and 2008). Tropical moorings confirm them (98-100% of 59-88 GTMBA moorings). They cause all of the 0.022-0.036 C per decade faster warming of CoralTemp. Because they lie inside the baseline window, the CRW MMM is too cold by a median 0.08 C (0.06-0.14 C). The share of stations at Alert Level 2 (DHW >= 8) in 2023-2025 falls from 91% to 78% (72-81% over all variants; 30 of 214 stations lose it). The 2014-2017 share falls from 68% to 42-57%, the 1998 share rises from 21% to 26-35%, and the DHW trend falls by 23% (19-31%). Any warm step inside 1985-2012 gives the modern decrease; at DHW >= 4 the 2023-2025 change is small (2-8 points) because that level is saturated, which explains the earlier disagreement. Limitations: the references have own errors of about 0.03 C; the correction is regional, not reef-pixel based; coastal subtropical buoys do not show the 2008 step; the causes of the steps are not proven.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "CoralTemp",
+  "Coral Reef Watch",
+  "degree heating weeks",
+  "coral bleaching",
+  "homogenisation",
+  "ESA SST CCI",
+  "climate data records",
+  "data artifacts",
+  "marine heatwaves"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_reef_heat_stress.png",
+   "caption": "Reef heat stress at 214 CRW Regional Virtual Stations: (a) MMM bias of CoralTemp; (b) share of stations at DHW >= 8 per year, published and step-corrected, with the range of other references and settings; (c) station-mean annual maximum DHW; (d) change of the event shares at DHW >= 8 for five corrected step sets, in situ mean and ESA CCI references, 95% station-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig1_coraltemp_steps.png",
+   "caption": "CoralTemp steps: (a, b) CoralTemp minus six references and control pairs, 12-month means; (c) step-scan z; (d, e) daily dating of the July 2002 and 1 January 2008 steps against DOISST and ESA CCI; (f) moored-buoy steps, CoralTemp and DOISST control; (g) 60S-60N step table."
+  },
+  {
+   "path": "files/figures/fig2_step_maps.png",
+   "caption": "10-degree maps of the June 1995, July 2002 and January 2008 CoralTemp steps and of the 1985-2025 trend of CoralTemp minus the in situ mean; dots are the CRW Virtual Stations."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9cbad554c571ef6334abd41fdce1224da1f2da3ff813519ef49f507183b72bcc",
+   "reason": "Found the 1995 and 2002 CoralTemp steps; we confirm them with ESA CCI, but find large decreases of recent heat stress at DHW >= 8 that their DHW >= 4 extents did not show.",
+   "relations": [
+    "supports",
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:b36f588b797401e9be976e16eee0b8a7c017861fb0b8d39d3a0437634df7c429",
+   "reason": "Found the 1995, 2002, 2008 and 2020 CoralTemp steps; we confirm the three main steps and dates with an independent satellite record and the CRW Virtual Stations.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "We reuse its archived daily moored-buoy SST table and DOISST buoy-cell file.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "We reuse its ESA CCI pt-pixel OPeNDAP fetch code and IPv4 helper.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "DOISST-based reef DHW study that left the operational CoralTemp product untested; we test it.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "DOISST mean steps; they explain why DOISST is not a valid reference for the CoralTemp correction.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "DOISST mean steps; they explain why DOISST is not a valid reference for the CoralTemp correction.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Earlier campaign result on step artifacts in daily SST products that this study extends to CoralTemp.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "Earlier campaign result on step artifacts in daily SST products that this study extends to CoralTemp.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+   "reason": "Earlier campaign result on step artifacts in daily SST products that this study extends to CoralTemp.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Earlier campaign result on step artifacts in daily SST products that this study extends to CoralTemp.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "reason": "Earlier campaign test of CRW outlooks at reef cells; related CRW product evaluation."
+  },
+  {
+   "target": "doi:10.3390/rs12233856",
+   "reason": "CoralTemp v3.1 and CRW heat-stress product description; we find steps in CoralTemp.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "doi:10.3389/fmars.2022.883271",
+   "reason": "CRW global bleaching event detection from CoralTemp heat stress; our correction changes event extents.",
+   "relations": [
+    "challenges"
+   ]
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-11-00648.1",
+   "reason": "OSTIA reanalysis (CoralTemp 1985-2002 source)."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-15-00002.1",
+   "reason": "Geo-Polar Blended analysis (CoralTemp 2002-present source)."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 reference data."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1",
+   "reason": "COBE-SST2 reference."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.3390/rs61111579",
+   "reason": "CRW 5-km products and Virtual Stations."
+  }
+ ]
+}

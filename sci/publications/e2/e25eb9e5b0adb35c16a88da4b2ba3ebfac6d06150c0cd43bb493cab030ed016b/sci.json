@@ -1,0 +1,115 @@
+{
+ "title": "Flash-onset US county droughts ended 8 weeks sooner than gradual-onset droughts after first D2 (USDM, 2000-2026); precipitation did not explain it, and it gave no forecast gain after 2012",
+ "abstract": "Question: after a U.S. county first reaches severe drought (D2) in the U.S. Drought Monitor, does a fast onset predict a shorter remaining drought, and does precipitation explain it? Approach: we built 24,784 county drought events (CONUS, 2000-2026) from weekly USDM county statistics. Flash onset means D0 or better to D2 in 4 weeks or less (13,910 events). Gradual onset means 9 weeks or more (4,091 events). We measured weeks from the first D2 map to the end of drought. We added SPI-like indices from CPC daily gauge precipitation and used Kaplan-Meier medians, stratified Cox models and a calendar-year block bootstrap. Results: flash-onset droughts ended sooner (median 15 vs 23 weeks; difference 8, 95% interval 4-12; hazard ratio of drought end 1.22, 1.12-1.33). Peak severity was similar. Median duration increased steadily with onset weeks. Post-onset precipitation was the same in both classes. Adding it raised the hazard ratio to 1.34. Antecedent precipitation at onset did not change it (1.21). 91-day precipitation returned to normal after 14 weeks in both classes, but the USDM removed flash droughts sooner after that (7 vs 12 weeks). Gradual droughts had 365-day deficits that recovered 12 weeks later. The effect held within region x year x season strata (1.22) and under four definition changes (1.19-1.24). It was weaker in 2013-2026 (1.13, 0.99-1.27). It was regional: strongest in the South and Southeast, reversed in the Upper Midwest and Southwest. Onset speed gave no out-of-sample gain for forecasting drought longer than 26 weeks in 2013-2026 (Brier change +0.0001, -0.0014 to +0.0016). Limitations: the USDM is an expert blend whose practice changed. We used no soil moisture, streamflow or temperature data, so we cannot separate physical storage from depiction memory. Several checks were added after the first results.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "flash drought",
+  "U.S. Drought Monitor",
+  "drought duration",
+  "drought recovery",
+  "drought memory",
+  "precipitation",
+  "SPI",
+  "survival analysis",
+  "Cox model",
+  "CONUS",
+  "out-of-sample test"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_persistence.png",
+   "caption": "A: Kaplan-Meier fraction of county drought events still at D1 or worse, by weeks after the first D2 map, for flash (onset 4 weeks or less), middle (5-8) and gradual (9 or more) onset. Medians have 95% calendar-year block bootstrap intervals. B: Cox hazard ratio of drought end, flash vs gradual, stratified by NOAA region x season, with post-onset and antecedent precipitation controls."
+  },
+  {
+   "path": "files/fig2_precip_recovery.png",
+   "caption": "A: Mean SPI-like precipitation z by onset class for windows that end at the first D2 map (antecedent) or start at it (post-onset). B: Kaplan-Meier median weeks after first D2 until 91-, 182- and 365-day precipitation returns to normal, and weeks from 91-day recovery to USDM drought removal (95% intervals)."
+  },
+  {
+   "path": "files/fig3_dose_robustness.png",
+   "caption": "A: Median weeks from first D2 to drought end by onset weeks, for all years and for first-D2 dates in 2000-2012 and 2013-2026. B: Flash vs gradual hazard ratio of drought end under finer strata (year, state-quarter, month), by period, and with alternative area thresholds and end rules."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:664b208cefa5e9bb1114a6ccf84255fc886f296b6f72198e385cbc30055fa7af",
+   "reason": "Campaign result on runoff after multi-year droughts. We study drought persistence inside USDM events, which is a different outcome."
+  },
+  {
+   "target": "sci:sha256:d124c3f7b86233dad035f06abfad3634a6d52b5bdd842bd4eefc7f3e0f3ee4e1",
+   "reason": "Campaign result on groundwater after droughts. It is relevant to the physical storage explanation that we could not test."
+  },
+  {
+   "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+   "reason": "Campaign result on GRACE storage after droughts. It is a related drought-memory test."
+  },
+  {
+   "target": "sci:sha256:92d50c68d83a6c447afe82feeeb5fcf409a85e3d0cfcb4a8dfb5696265452ba7",
+   "reason": "Campaign result on USCRN deep soil after droughts. It points to a soil-moisture test of our open question."
+  },
+  {
+   "target": "sci:sha256:10e2d26b1dd31a8e40a1efa2e9878c080f04c14bd316e1c72829139af48bf1c0",
+   "reason": "Campaign study that used USDM as a verification target for CPC drought outlooks."
+  },
+  {
+   "target": "doi:10.3390/atmos10090498",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the USDM flash-drought definition (two categories in four weeks)."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-17-0149.1",
+   "reason": "Flash drought review."
+  },
+  {
+   "target": "doi:10.1002/joc.7653",
+   "reason": "Earlier USDM event climatology with the flash-drought share; it did not test onset speed as a duration predictor."
+  },
+  {
+   "target": "doi:10.1175/1520-0477-83.8.1181",
+   "reason": "USDM description."
+  },
+  {
+   "target": "doi:10.1038/s41558-020-0709-0",
+   "reason": "Flash drought definitions and prediction."
+  },
+  {
+   "target": "doi:10.1029/2007JD009132",
+   "reason": "CPC gauge-based daily precipitation analysis method."
+  },
+  {
+   "target": "https://droughtmonitor.unl.edu/DmData/DataDownload/WebServiceInfo.aspx",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USDM web service for county statistics. URLs and hashes are in files/provenance/usdm_fetch_log.json."
+  },
+  {
+   "target": "https://droughtmonitor.unl.edu/About/Permission.aspx",
+   "reason": "USDM terms of use and required credit."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.unified.daily.conus.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CPC Unified daily CONUS precipitation, campaign shared copies 1991-2026."
+  },
+  {
+   "target": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_counties_national.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "County internal points."
+  }
+ ]
+}
