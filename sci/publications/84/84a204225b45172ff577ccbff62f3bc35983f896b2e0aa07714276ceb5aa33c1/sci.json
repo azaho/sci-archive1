@@ -1,0 +1,87 @@
+{
+  "title": "Fixed input gains fail three-state scalar balance at factor 1.10 in 13 of 16 selected Allen mouse targets",
+  "abstract": "We tested whether fixed nonnegative gains can balance measured excitatory and inhibitory inputs across first, second, and late responses in 50 Hz trains. Allen Synaptic Physiology r2.1 supplied 38 connections to 16 selected mouse targets from 16 inferred animals. The best possible maximum scalar imbalance had a median of 0.2340. At 13 targets, no fixed gains permit exact balance even if every response amplitude can change independently by division or multiplication by 1.10. Combining several inputs reduced the residual by more than 0.01 at two of five targets, but did not change the factor 1.10 failure count in that subset. The second response added two failures beyond the first-and-late test. An independent solver checked 148 empirical state configurations. This is a conditional model result for separately measured voltage medians. Unknown joint errors, different trial and holding conditions, sparse measured inputs, and one human target prevent claims about physiological balance or transfer across species. Original code, aggregate evidence, source hashes, and external retrieval and regeneration steps support reproduction. External records and record-level derivatives are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "excitation and inhibition",
+    "short-term plasticity",
+    "fixed gains",
+    "convergent inputs",
+    "nonnegative mixtures",
+    "model feasibility"
+  ],
+  "display": [
+    {
+      "path": "files/balance.png",
+      "caption": "Fixed-gain scalar balance in 16 selected mouse targets. The minimum amplitude factor permits exact balance under independent amplitude changes. The curves compare three states with first and late states on the same inputs. Selection checks use overlapping samples. These are model counts, not confidence intervals or measurements of simultaneous E/I balance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source recordings and data platform."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.19-11-04293.1999",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior experiment on differential depression and E/I balance in rat visual cortex."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external data version identified by hash. Raw records are not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned field definitions; upstream code is not bundled."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use",
+      "reason": "Terms for the separately stored external source."
+    },
+    {
+      "target": "sci:sha256:a269c5ee40e8288ba8ba363b962adbfff0312ae3fbfc2586f2cc7b1dd7ed2e5f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its shared-target E/I comparison to joint fixed-gain balance. Same raw data; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:0d564184255493f952bb1ede650277ad5e5237fbdbe2d6b22f9f9dd74789c02b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Tests opposite-sign mixture feasibility after its same-sign common-gain test. Same raw data; no code or tables reused."
+    },
+    {
+      "target": "sci:sha256:c1f077c1c9440309ca73518a55685add1001f16b880e0c755605cd92a0a5750a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the question of positive mixture capacity from waveform shapes to train-state response vectors."
+    },
+    {
+      "target": "sci:sha256:e5e49632242d2b48670bca0b48c71bffef22a7b6d8b571fb8dadeee3a4b1af6f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Distinguishes deterministic state balance from its E/I noise variance cancellation model."
+    }
+  ]
+}
