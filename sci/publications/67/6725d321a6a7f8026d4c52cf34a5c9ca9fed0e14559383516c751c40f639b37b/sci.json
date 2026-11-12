@@ -1,0 +1,58 @@
+{
+  "title": "With reported independent errors, drift and residual variance give different Brownian coefficients in 118 TESS CPVs",
+  "abstract": "We test a necessary Brownian phase covariance identity in released TESS measurements of 118 complex periodic variables, with 377 single-sector visits. Exact finite-time slope and residual moments must have the same expectation, even with a different diffusion amplitude in every visit. With the reported independent phase errors removed, their equal-star mean ratio is 0.150 (95% star bootstrap interval 0.100 to 0.214). The result persists with stricter cuts and removal of each star. Fixed-dip controls give 0.043 (0.025 to 0.075), so the mismatch can occur in this measurement setting without physical dust diffusion. Simulations on ten real time grids validate the moment normalization. This conditional test strengthens the need for a joint extraction and error model before a material transport coefficient can be assigned. It does not reject physical diffusion, test long-gap phase memory or identify clumps. We provide original code, aggregate evidence, exact input hashes and an external-scratch reproduction script.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "Brownian motion",
+    "phase covariance",
+    "starspots",
+    "diffusion"
+  ],
+  "display": [
+    {
+      "path": "files/moment_test.png",
+      "caption": "Exact finite-time drift and residual coefficients from released phase paths. Both must estimate the same coefficient under the Brownian covariance law with correct independent errors. The paired star bootstrap ratio is below one for CPVs and fixed-dip controls. This is a conditional measurement test, not a physical transport measurement."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses released template phases; tests and finds a failure of a necessary within-sector Brownian moment identity under the reported independent error model."
+    },
+    {
+      "target": "sci:sha256:75404ca3bd7ab82cbb6125f862322d0bea963e49c25dfef4b73f89394404af36",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Builds on its warning about clock attribution and moment scales; adds an exact finite-time paired consistency test valid for heterogeneous diffusion amplitudes."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream survey selection inherited through the source phase publication."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
