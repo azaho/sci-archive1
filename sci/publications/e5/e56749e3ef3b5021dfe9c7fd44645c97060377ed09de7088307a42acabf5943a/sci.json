@@ -1,0 +1,116 @@
+{
+ "title": "Warm previous summers raised British butterfly counts more at the cool side of their ranges in 1977-2024; Swedish birds did not clearly repeat the North American range-position effect in 1996-2024",
+ "abstract": "Question: does the North American result that a warm breeding season is followed by more birds in the cool part and fewer birds in the warm part of a species range (sci:3250b81c) repeat in independent European networks, in a second taxon, and with a full-range niche measure? Data: Swedish Bird Survey fixed routes 1996-2024 (107 species, 642 routes, 391,503 route-species-years), UK Butterfly Monitoring Scheme site indices 1977-2024 (43 species, 1,016 sites, 366,873 site-species-years), E-OBS v32.0e temperature, CLIMBER European butterfly niches and AVONET range latitudes. Method: pre-registered two-way fixed-effects models (species x site (x observer) and species x year) of log counts on the detrended previous-season and same-season temperature anomalies and their interactions with thermal niche position (TNP); two-way clustered intervals; 499 year-relabel permutations; placebo with the next-season anomaly. Result: in British butterflies the previous-season anomaly x TNP interaction was -2.79 (95% interval -4.80 to -0.78; 3 of 4 subsets negative; permutation p = 0.004; placebo -0.14). With the site position in the European niche from CLIMBER it was -17.3 (annual temperature; 4 of 4 subsets) and -13.9 (growing degree days; 3 of 4), both with permutation p = 0.002. The coolest-position quintile gained about 9% per 1 C; near the range centre the gain was near zero. In Swedish birds the interaction was -0.11 (-0.40 to 0.17; permutation p = 0.62), which is uncertain; per 1 C of range climate its interval (-0.32 to 0.13) includes the North American value (-0.14). The North American pattern is therefore partly replicated. Limitations: British sites do not sample the warm edge of the European niches, the British effect was weaker after 2000, UKBMS has no observer field, the bird niche proxy is coarse, and the design is correlational.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "thermal niche position",
+  "range position",
+  "climate change",
+  "population dynamics",
+  "lagged weather response",
+  "butterflies",
+  "breeding birds",
+  "UK Butterfly Monitoring Scheme",
+  "Swedish Bird Survey",
+  "CLIMBER",
+  "E-OBS",
+  "replication",
+  "permutation test",
+  "fixed effects",
+  "Europe"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_quintile_slopes.png",
+   "caption": "Count change per +1 C seasonal anomaly by within-network thermal niche position quintile in North American birds (from sci:3250b81c), Swedish birds and British butterflies. Blue: previous season; orange: same season; 95% two-way clustered intervals."
+  },
+  {
+   "path": "files/figures/fig2_interaction_forest.png",
+   "caption": "Previous-season anomaly x TNP interaction in the main model, four pre-registered subsets, sensitivity models and a placebo, for Swedish birds and British butterflies."
+  },
+  {
+   "path": "files/figures/fig3_external_position.png",
+   "caption": "British butterflies: slopes by position in the European GDD5 niche of each species (CLIMBER), and the interaction with four position measures."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We replicate its design in Europe, adapt its estimator code, and reuse its result tables for the comparison."
+  },
+  {
+   "target": "sci:sha256:3adef8e9e0116b77d591d9a6af9616bc1d183d10e2c43063af9e1de4f0fca6b5",
+   "reason": "Prior use of the Swedish Bird Survey for climate tracking."
+  },
+  {
+   "target": "sci:sha256:40f3f9517b722988160163ef5d821c4d3931726b94b10444932be6d2454b3529",
+   "reason": "Range occupancy change of North American birds and British butterflies."
+  },
+  {
+   "target": "sci:sha256:124367e558e424dfb10426e017740ce5a8fd519edac6a86ba105193e3a47af42",
+   "reason": "Prior British butterfly weather test without range position."
+  },
+  {
+   "target": "sci:sha256:e2f2fce4a97d3f2fb9cb7b3a4d09597042952c93f8b42cd67bd145eeb704d3de",
+   "reason": "Prior British butterfly weather test without range position."
+  },
+  {
+   "target": "https://www.gbif.se/ipt/archive.do?r=lu_sft_std&v=1.16",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Swedish Bird Survey fixed routes v1.16 (CC0)."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024 (OGL)."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site locations 2024 (OGL)."
+  },
+  {
+   "target": "https://knmi-ecad-assets-prd.s3.amazonaws.com/ensembles/data/Grid_0.25deg_reg_ensemble/tg_ens_mean_0.25deg_reg_v32.0e.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS v32.0e daily mean temperature."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "reason": "E-OBS ensemble description (Cornes et al. 2018)."
+  },
+  {
+   "target": "doi:10.3897/zookeys.367.6185",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CLIMBER European butterfly climatic niches (ODbL; not redistributed)."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET range latitudes and migration class (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1198/jbes.2010.07136",
+   "reason": "Two-way cluster-robust inference."
+  }
+ ]
+}
