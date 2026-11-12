@@ -1,0 +1,69 @@
+{
+  "title": "Size-based release allocation reduced model variance by 34 to 41 percent in two selected mouse contact sets",
+  "abstract": "We tested a release allocation rule in two public mouse contact sets. The model uses independent Bernoulli events, exact local compensation of mean efficacy, and a fixed expected event count. With mean event probability 0.5, capped size-proportional allocation reduced mean variance by 33.99 percent in 1,519 Allen V1 Deep Dive connections and 41.39 percent in 1,472 MICrONS connections. We derived an exact bound for independent multiplicative errors between size and mean efficacy. At error factor 1.25, a strict gain remained guaranteed in 57.01 and 69.70 percent of connections. Synthetic solver and exhaustive corner tests passed. The rule is an established sampling optimum. The new results quantify its gain and error tolerance in these contact sets. They do not establish actual release allocation, lower metabolic cost or better neural representations. Exact mean compensation, independent release, uncertain size proxies and one animal per map limit the result. Code, aggregate evidence, source hashes and external retrieval steps support reproduction. No external contact records are bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "Allen Institute",
+    "MICrONS",
+    "release probability",
+    "variance",
+    "efficacy uncertainty",
+    "resource allocation"
+  ],
+  "display": [
+    {
+      "path": "files/results/allocation.png",
+      "caption": "Mean model variance reductions and exact efficacy-error guarantees in two selected mouse contact sets. Independent release and exact mean compensation are assumed. No physiological release measurements were used."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2fd74d3137fe637449210c92532d1a0a470a28bc94fb7e1bf10742eec038bc1b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Verified source of both external contact tables, original data receipts and upstream selection code."
+    },
+    {
+      "target": "sci:sha256:002ee9e80347aa25617ae61940dca8f996330f58445ab6c2d2cb51b24097dbd9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior size concentration and independent dropout benchmark; motivates allocation and supplies original V1DD table provenance."
+    },
+    {
+      "target": "sci:sha256:27b63e3cdb4c8212ea43a2858f9fe8a62dd36bf2d65b74782d16a5d2ebcd77f5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream V1DD contact selection, used indirectly through the two cited studies."
+    },
+    {
+      "target": "doi:10.1080/01621459.1952.10483446"
+    },
+    {
+      "target": "doi:10.7554/eLife.92595.3"
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03134-2"
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w"
+    },
+    {
+      "target": "https://www150.statcan.gc.ca/n1/pub/12-001-x/2013001/article/11831/section2-eng.htm"
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://aind-open-data.s3.amazonaws.com/v1dd-analysis-1196-1_2025-08-14_16-38-00/data_description.json"
+    }
+  ]
+}
