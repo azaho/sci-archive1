@@ -1,0 +1,77 @@
+{
+  "title": "A smooth location model gave no clear size prediction gain for 244 Groningen earthquakes in 2010-2025",
+  "abstract": "We tested whether a spatial pattern in earthquake sizes improves predictions for later events in the Groningen gas field. We used preserved KNMI event data and the NLOG field outline. For each year from 2010 to 2025, we fitted an exponential magnitude model with earlier events only. We compared a field-wide rate with a rate that varies smoothly with two coordinates. Predictions condition on each event having occurred above magnitude 1.45 and on its observed location. For 244 test events, the mean log score gain was 0.01115 nats per event. The conditional 95% interval from resampled years was -0.01119 to +0.03011. Two-year blocks gave -0.01503 to +0.03313. The mean Brier score reduction for magnitude at least 2.45 was 0.00251, with an interval from -0.00074 to +0.00531. A fixed pre-2022 fit gave no clear gain for 31 events in 2022-2025. Boundary, magnitude-cut, rounding and nearby-event removal checks did not establish a log score gain. A descriptive fit to all 368 events showed spatial variation, but that fit includes the test events. This result limits claims for this coordinate model. It does not reject a physical model based on reservoir thickness. Small samples, catalogue changes, retrospective design and uncertainty conditional on fitted predictions limit inference. The package preserves original code, aggregate results, figures, source hashes and an exact-repeat tool. Source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "Groningen",
+    "induced seismicity",
+    "magnitude distribution",
+    "Gutenberg-Richter",
+    "spatial variation",
+    "conditional prediction",
+    "forecast evaluation",
+    "KNMI",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/forecast_scores.png",
+      "caption": "Annual size predictions use only earlier events for each model fit. Positive log score gains favour the location model. The primary 95% interval includes zero. The fixed pre-2022 fit is tested on 2022-2025. Intervals resample calendar years and condition on fitted predictions."
+    },
+    {
+      "path": "files/figures/sensitivity.png",
+      "caption": "Left: larger-event counts at the observed event locations. Right: score checks with 95% year-resample intervals. All log score intervals include zero. The late MLn-only check was added after the magnitude-label audit. These are conditional size tests, not event-rate forecasts."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5826d0025c5a4094dc4800a36b7aac6db106ef17174f534d965dd09643f9eb4a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "This study found late event migration and identified the shared KNMI and NLOG sources. We use its source paths and study-area rule for a new conditional size test. No code, figures or numerical result tables were copied."
+    },
+    {
+      "target": "doi:10.1017/njg.2022.15",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior spatial magnitude analysis motivates a test on later events. We use its 1.45 cut for unrounded magnitudes. We test a coordinate model, not its reservoir-thickness model."
+    },
+    {
+      "target": "doi:10.1038/s41598-022-14451-z",
+      "reason": "Prior evidence for spatial differences in the Groningen size distribution."
+    },
+    {
+      "target": "doi:10.21944/ef5j-rz10",
+      "relations": [
+        "uses"
+      ],
+      "reason": "KNMI Event Catalog. We use the fixed shared 2026-11-09 snapshot. Source records remain external."
+    },
+    {
+      "target": "https://rdsa.knmi.nl/fdsnws/event/1/",
+      "reason": "KNMI service, citation instructions and external-data terms."
+    },
+    {
+      "target": "https://www.gdngeoservices.nl/geoserver/nlog/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=nlog:gdw_ng_field_utm&outputFormat=application/json&srsName=EPSG:4326",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NLOG field outline source. We use field GRO from the preserved 2026-11-09 snapshot. No source geometry is bundled."
+    },
+    {
+      "target": "https://www.nlog.nl/en/disclaimer",
+      "reason": "External NLOG source terms and attribution."
+    }
+  ]
+}
