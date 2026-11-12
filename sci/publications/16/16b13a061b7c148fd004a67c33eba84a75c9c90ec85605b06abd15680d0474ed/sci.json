@@ -1,0 +1,85 @@
+{
+  "title": "Added wind direction gave a small and uncertain three-day temperature forecast gain at two California buoys in 2010-2023",
+  "abstract": "We tested whether wind direction adds three-day sea-temperature forecast skill after local temperature history, wind strength and season are known. We used NDBC 46013 at Bodega Bay and 46042 at Monterey, with annual fits on earlier data from 2000 onward. April-September 2010-2023 tests retained 4,183 station-days. Adding six wind-vector terms reduced the equal-site mean squared error by 1.28%. The conditional 95% interval was 0.05% to 2.56% with three-year blocks and -0.22% to 3.01% with one-year blocks. With 15 temperature lags, the gain was 1.23% and its three-year interval reached below zero. Warm starts gave no clear added gain (-0.93%, interval -2.94% to 2.37%). The next-day target had a positive gain, while the seven-day target did not. Thus the three-day gain was small and uncertain across test settings. This is a revised-archive statistical benchmark at two sites. It does not establish physical cause, real-time skill or a heat-recovery benefit. Gaps, sensor changes, model form and only 14 test years limit inference. Code, source hashes, fitted parameters, aggregate errors, bootstrap draws, two figures and independent numerical checks are supplied. External raw and record-level derived data remain outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "wind direction",
+    "California Current",
+    "NDBC",
+    "past-only forecast",
+    "temperature memory",
+    "null result",
+    "warm starts"
+  ],
+  "display": [
+    {
+      "path": "files/forecast_gain.png",
+      "caption": "Annual three-day forecast gains at both sites and conditional 95% intervals for the equal-site mean gain. The three-day interval reaches below zero with one-year blocks or longer temperature history. Empty years give no annual point."
+    },
+    {
+      "path": "files/forecast_error.png",
+      "caption": "RMSE for persistence, the temperature-history and wind-strength baseline, and the added direction model. Warm starts use a past-only 90th-percentile departure threshold. Direction gave no clear warm-start gain."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:34211b15a751b9c35ab427962958189533ca2d9edf1b52bd8240f4facf835990",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior California upwelling-wind study using overlapping NDBC observations. We test short-range temperature forecast value, not the trend."
+    },
+    {
+      "target": "sci:sha256:233aba9b82d55430941d758f5f8e630f76d23024cc8dcdb7cef3e52bf9c4ad9d",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its shared annual raw NDBC files in place and follow annual time splits and delay/year-block checks. We wrote new code and test temperature rather than spatial wave prediction."
+    },
+    {
+      "target": "doi:10.1029/2009JC005623",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior nearshore Monterey Bay field evidence for wind-related temperature-front movement. Different setting and target."
+    },
+    {
+      "target": "doi:10.1007/s00382-017-3608-y",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its published abstract describes seasonal California Current SST forecast skill and wind/upwelling links. Our test uses a short horizon and local archive data."
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/faq/measdes.shtml",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ndbc.noaa.gov/faq/dataindex.shtml",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    }
+  ]
+}

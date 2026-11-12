@@ -1,0 +1,67 @@
+{
+  "title": "A factor 1.10 error bound preserves six fixed-readout failures in 164 selected Allen two-state input models",
+  "abstract": "We tested how error in response medians and standard deviations changes a fixed-readout result in Allen cortical slice data. A prior study found no common nonnegative readout that matched the best single input in both first and late 50 Hz states for 29 of 164 selected input pairs at an assumed noise correlation cap of 0.5. We reproduce that count. We derive an exact interval test when each median and standard deviation can change independently by a factor from 1/f through f. Six failures persist for every allowed parameter set at f=1.10. Seventeen persist at f=1.05 and one at f=1.25. Among baseline failures, the median smallest factor that permits a common readout is 1.05717. The bounds are assumptions, not measured error limits. Medians are assigned as means; late responses are train summaries. Unknown covariance, selected slices, shared cells and no held-out signal test limit biological inference. Original code, proof, aggregate results, a figure, hashes and external retrieval steps support reproduction. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic dynamics",
+    "fixed readout",
+    "sensitivity analysis",
+    "noise correlation",
+    "error bounds"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Exact sensitivity of the best-single-input guarantee in 164 selected two-state input pairs. Factors are assumed bounds on each median and standard deviation. Counts do not estimate biological prevalence."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:1035506d548293d06619731786383ffe765d0aa34167b4760ee816249fdbfe57",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reproduces its 164-pair selection and 29 exact-summary failures; adds exact independent-error-box sensitivity certificates with new code."
+    },
+    {
+      "target": "sci:sha256:d8e0f7352bbf273c4a7a371ff98b2b49bd0e760bb82691e01ce24bab221d89c5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior fixed-readout efficiency study also assumes exact marginal summaries; the present test uses a best-single-input guarantee and explicit error bounds."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
