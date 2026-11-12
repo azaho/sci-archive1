@@ -1,0 +1,100 @@
+{
+ "title": "In 135 IBL mouse sessions, regions with more CA1 and subiculum axon input had more spikes at CA1 population bursts; with strict immobility, this link was not clear beyond brain division",
+ "abstract": "Question: do the axon outputs of the hippocampal formation tell which mouse brain regions increase or decrease spiking at hippocampal ripple-like events? Data: IBL Brain-Wide Map 2026 Q2, 136 sessions with a CA1 probe; spike windows of all probes (last 600 s of the task and the passive spontaneous period); Knox 2019 connectome model (CA1 + subiculum output). Method: CA1 population bursts from multi-unit spikes in the most bursty 200-um CA1 depth window (z >= 3, immobile, away from task events); unit modulation index (MI) -50..+50 ms vs -2.0..-0.5 s; region means; partial Spearman with control for distance to CA1, brain division and rate; 1,000 spatial surrogate maps; plan hashed before data were read. Results: 19,588 good units in 83 regions (135 sessions). Lateral septum, septofimbrial nucleus, retrosplenial cortex, accumbens and hippocampus increased; sensory thalamus (VPM, PO, PF) and medulla decreased; maps agreed between task and spontaneous periods (rho 0.70). Planned H1 was supported: partial rho 0.30 (spatial p 0.013; 95th percentile of 291 sources). Thalamus decreased (median MI -0.035, p 0.026); isocortex did not clearly increase. LF-band check in 6 probes: 150-250 Hz power rose at events (AUC 0.54-0.94); in 3 probes 28-55% of events had z >= 2. Post hoc: random immobile times also gave MI values that followed wiring (rho 0.42) because the baseline could include wheel movement. With fully immobile windows and a random-time contrast (33,898 events) this artefact disappeared; wiring still correlated with modulation (rho 0.43) and predicted it beyond distance (partial 0.37, p 0.004), but not clearly beyond brain division (partial 0.15, p 0.13, 95% CI -0.15 to 0.35). Limitations: spike-based ripple proxy validated in 6 probes only; region-level confound of division and hippocampal output; smoothed model connectome; head-fixed task mice.",
+ "keywords": [
+  "sharp-wave ripple",
+  "CA1 population burst",
+  "hippocampal output",
+  "lateral septum",
+  "thalamus",
+  "IBL Brain-Wide Map",
+  "Neuropixels",
+  "mouse connectome",
+  "Knox 2019",
+  "spatial null",
+  "movement confound",
+  "structure-function",
+  "brain dynamics"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_map.png",
+   "caption": "A: mean modulation index (MI, -50..+50 ms vs -2.0..-0.5 s) at CA1 population bursts for 83 mouse brain regions (IBL Brain-Wide Map, 135 sessions), ordered by division. Bars: planned MI (blue > 0, orange < 0). Black dots: post hoc strict-immobility contrast MI(event) - MI(random immobile times). B-D: population rate around the event peak, normalised to -500..-300 ms, by division (n = units)."
+  },
+  {
+   "path": "files/figures/fig3_wiring.png",
+   "caption": "A: planned test H1, rank residuals of Knox 2019 CA1+SUB output and region MI after control for distance to CA1, division and rate (partial rho 0.30, spatial p 0.013). B: the same with the strict state-matched MI (0.15, p 0.13). C: H1 statistic in all analyses; tick = 95th percentile of 1,000 spatial surrogates; blue = p < 0.05. D: task vs spontaneous region maps. E: partial rho of each of 291 single Knox sources. F: session-bootstrap 95% intervals of raw and partial rho."
+  },
+  {
+   "path": "files/figures/fig1_events.png",
+   "caption": "A: CA1 150-250 Hz LFP envelope (z) around spike-detected events in 6 probes, on detection-layer channels (blue) and all CA1 channels (grey). B: events per session in the last 600 s of the task and in the passive spontaneous period (dashed line: 30-event minimum). C: event rates in the two conditions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-09235-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBL Brain-Wide Map data: clusters, trials, spikes, wheel, passive periods and LF band."
+  },
+  {
+   "target": "doi:10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox 2019 mesoscale connectome model for the wiring predictor."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2020.04.007",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen CCFv3 annotation and ontology for region mapping and centroids."
+  },
+  {
+   "target": "doi:10.1073/pnas.2200931119",
+   "reason": "Nitzan et al. 2022: brain-wide spiking at ripples (cortex up, thalamus down); H3 replication target."
+  },
+  {
+   "target": "sci:sha256:e607d63e05656870370ff0c3afe08f4aa6f8bd835e73630d4dd60daa2e1d0271",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier IBL region-map job; S3 byte-range access code, ontology helpers and spatial-null approach reused."
+  },
+  {
+   "target": "sci:sha256:f4e4c5218d4f5c56208528477777a9e1a371c0647034da4d42bec47b8536d76f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaussian-process spatial surrogate null for region maps; same approach."
+  },
+  {
+   "target": "sci:sha256:bb0ad271927ed72566b2bc7374338aa47f42b832e6a2f81a65c726c145997f71",
+   "reason": "Knox input sources predicted IBL response latencies; related wiring-to-function test."
+  },
+  {
+   "target": "sci:sha256:cc71e4a4660c389c8fd54ff6a6301a580135bbbc045dd6e4764c11ee2f053721",
+   "reason": "Axonal input predicted IBL task coding; related wiring-to-function test."
+  },
+  {
+   "target": "sci:sha256:494797229fed4cd459ad250e9282ab97ddc8999548bddc85ff0c26e855969cff",
+   "reason": "Input wiring vs cell-type mix for IBL regional physiology."
+  },
+  {
+   "target": "sci:sha256:193d9a5614ab21692cff4f6d3fd02bc50eb1d367d965da92d4a921ace25463da",
+   "reason": "Task state and wiring slope of inter-regional co-variation in IBL; related state effect."
+  },
+  {
+   "target": "sci:sha256:cae100c0e7058b67d408e1b73c62b103dda4019ce6bef4f5dacabd46dea12f9b",
+   "reason": "Tracer strength predicted spontaneous inter-areal spike correlations; related wiring test."
+  }
+ ]
+}
