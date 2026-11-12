@@ -1,0 +1,191 @@
+{
+ "title": "Main-sequence dust dimmers are not metal-rich: Gaia XP metallicities of 76 dimmers against matched field stars reject the beta = 2 giant-planet law that hot-Jupiter hosts follow in the same test",
+ "abstract": "Question: Many proposed sources of the dust that makes main-sequence stars dim deeply and aperiodically need giant planets. Giant-planet occurrence increases as 10^(beta [Fe/H]) with beta about 1.2-2.0, so such sources predict metal-rich dimmers. Nobody tested this. Approach: We compared the SHBoost 2024 Gaia XP metallicity of 76 dust dimmers (66 ZTF main-sequence dippers of Tzanidakis et al. 2025 and 10 campaign field-dwarf dimmers, including Gaia20cdd) with a median of 162 controls per dimmer in the same sky field and with the same G, BP-RP and parallax. A conditional likelihood over the matched sets gives beta. 3,013 LAMOST DR11 dwarfs in the same fields calibrate SHBoost (slope 1.12, 95 percent 1.08-1.16, near 1.1 down to G = 17-18.5). Planet hosts in the same test are positive and negative controls. Results: The mean dimmer offset from the controls is -0.031 dex (95 percent -0.062 to -0.002), or -0.005 dex (-0.037 to +0.025) after removal of the extinction-metallicity degeneracy; beta = 2 predicts +0.091 dex. Thus beta = -0.06 (-0.70 to +0.58) with this correction and -0.60 (-1.22 to +0.02) without it; beta = 2 has p < 1e-9 and beta = 1 has p = 0.001. All subsets of 33 or more dimmers reject beta = 2. The same test gives beta = 2.22 (1.60-2.86) for 65 hot-Jupiter hosts, 1.68 (0.92-2.44) for 43 hot-Jupiter hosts with G >= 14.5, and 0.40 (-0.16 to 0.98) for 64 Kepler small-planet hosts. Dimmers also have higher SHBoost extinction than their controls (median +0.07 mag, mean rank 0.68 against 0.45 for planet hosts, p = 6e-9), also when they were quiet during Gaia DR3; this agrees with time-averaged circumstellar extinction. Conclusion: In this sample, dust dimmers have field-star metallicity (beta <= 0.6), so models in which most dimming dust comes from systems with giant planets are unlikely. Limitations: SHBoost is a machine-learning estimate partly trained on LAMOST-based labels; a treatment of the quoted errors as pure noise widens the limit to beta < 3.0, but LAMOST and the hot-Jupiter control reject that error model; 17 of 93 dimmers lack values; the A_V excess may come from the TZ25 selection; only one dimmer has a LAMOST spectrum. Job sci-1107-dell-astronomy-330c7ea895e4, topic astronomy, machine dell, model Claude Opus 5.5 (claude-opus-5-5).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "dipper stars",
+  "dust dimming",
+  "main-sequence stars",
+  "stellar metallicity",
+  "planet-metallicity correlation",
+  "Gaia XP",
+  "SHBoost",
+  "LAMOST",
+  "hot Jupiters",
+  "matched controls",
+  "circumstellar extinction",
+  "Gaia20cdd",
+  "debris",
+  "exocomets",
+  "Gaia DR3",
+  "ZTF"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_metallicity_offsets.png",
+   "caption": "(a) Mean SHBoost [M/H] offset of dust dimmers and planet hosts from matched same-field controls, with 95 percent bootstrap intervals. Black marks: offsets expected for a selection 10^(beta [Fe/H]) with beta = 1 (bar) and beta = 2 (diamond). Dimmers show no positive offset; hot-Jupiter hosts show the expected one. (b) Offsets of individual stars against Gaia G."
+  },
+  {
+   "path": "files/figures/fig2_beta_likelihood.png",
+   "caption": "Profile likelihood of beta in P ~ 10^(beta [M/H]) for each sample against its matched controls. Dimmers (red; dash-dot: A_V-corrected) give beta near 0; hot-Jupiter hosts give beta near 2 also at G >= 14.5; small-planet hosts give a weak dependence. Dashed: error model that treats quoted SHBoost errors as pure noise, which the LAMOST calibration rejects. Shaded: published giant-planet values."
+  },
+  {
+   "path": "files/figures/fig3_parameter_ranks.png",
+   "caption": "(a) Calibration: LAMOST DR11 [Fe/H] against SHBoost [M/H] for 3,013 dwarfs in the dimmer fields, binned by G; the relation stays near slope 1.1 at faint G. (b) Mean rank among matched controls for nine parameters; dimmers have high SHBoost A_V ranks, planet hosts do not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6105a2d9668ebbddd4e158306a7c614ddefc44ba41fe2bf3ed5e1b5e13005552",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the 91-dimmer list and of the control matching windows; this study adds a metallicity test to its companion test."
+  },
+  {
+   "target": "sci:sha256:222c40fb0bdc57f4026f956b42268b350652686520a77297d3cd603563c20dc4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of dimmer Gaia DR3 2874265305022213760 and of G4466; links deep dimming to extreme warm dust."
+  },
+  {
+   "target": "sci:sha256:18a495b2ffb3635523a5449356dc9859ab414ce9f2a5d9ea43c48b6f45548d7f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the new dimmer Gaia DR3 346100804155947392."
+  },
+  {
+   "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dimmers G2698, G2796 and G6700; kinematic test of the dimmer class."
+  },
+  {
+   "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Blind search that found several campaign dimmers."
+  },
+  {
+   "target": "sci:sha256:e10c5778e2cdc5e8ba2b7d63d16467bd56481193238d828095553e8e7e21af5d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dimmer G2870 and the kinematic age of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia alert dimmers Gaia20cdd, Gaia20bkx, Gaia20emj and Gaia19dpn."
+  },
+  {
+   "target": "sci:sha256:8498c6b94945fa477bff51aa56078ce01ef0f364bc99ed52c892aba0389e5a90",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dimmer G4466; earlier metallicity-matched infrared excess test of K dwarfs."
+  },
+  {
+   "target": "sci:sha256:008e5d1c9bd8383646d9509526d9ebf4ec23282e912b4da27d13ba262ef00dd9",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Smooth steep-law extinction of Gaia20cdd; our A_V excess of dimmers agrees with a common time-averaged circumstellar extinction."
+  },
+  {
+   "target": "sci:sha256:db7ac2954aa0773fdab7abcb8f5fc49f51cef0ff7244156871338c4778a12865",
+   "reason": "Prevalence of deep dimming; context for a population test."
+  },
+  {
+   "target": "sci:sha256:f2fc68a12d3e79ed680a91926fde216aebec38718c293a0f0a429bb795b5f5ab",
+   "reason": "Dust models of Gaia20cdd that invoke planetesimal sources."
+  },
+  {
+   "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+   "reason": "Warm dust of Gaia20cdd from SPHEREx."
+  },
+  {
+   "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+   "reason": "Water-ice band of Gaia20cdd; open question of icy transient dust."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/adf5bb",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Tzanidakis et al. 2025: 81 ZTF main-sequence dipper candidates; no metallicities given."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202451427",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Khalatyan et al. 2024: SHBoost Gaia XP stellar parameters used for [M/H] and A_V."
+  },
+  {
+   "target": "doi:10.17876/data/2024_3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SHBoost 2024 data release at AIP."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "doi:10.1088/1674-4527/15/8/002",
+   "relations": [
+    "uses"
+   ],
+   "reason": "LAMOST data releases; DR11 stellar parameters used for calibration."
+  },
+  {
+   "target": "doi:10.26133/NEA13",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA Exoplanet Archive Planetary Systems Composite Parameters: planet-host control samples."
+  },
+  {
+   "target": "doi:10.1086/428383",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Fischer and Valenti 2005: giant-planet occurrence ~ 10^(2.0 [Fe/H]); our hot-Jupiter control recovers beta near 2."
+  },
+  {
+   "target": "doi:10.1086/655775",
+   "reason": "Johnson et al. 2010: beta = 1.2 at fixed stellar mass."
+  },
+  {
+   "target": "doi:10.1111/j.1365-2966.2005.09848.x",
+   "reason": "Greaves et al. 2006: debris discs show no metallicity trend."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/aaa54c",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Petigura et al. 2018: weak metallicity dependence of small planets; our small-planet control agrees."
+  }
+ ]
+}
