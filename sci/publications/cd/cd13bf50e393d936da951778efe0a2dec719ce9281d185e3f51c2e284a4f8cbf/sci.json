@@ -1,0 +1,121 @@
+{
+ "title": "One-way evoked responses in the C. elegans signal propagation atlas went up the connectome hierarchy more often than down (downstream share 0.42 in 740 pairs), opposite to the pre-set prediction",
+ "abstract": "We tested if one-way evoked responses in the C. elegans head go down the feedforward hierarchy of the anatomical connectome. We used the wild-type optogenetic atlas of Randi et al. (2023) and generalised trophic levels of the Cook et al. (2019) chemical connectome. In 740 reciprocally measured pairs, a response was detected in one direction only. Only 0.422 of these responses went from the lower-level cell to the higher-level cell (neuron bootstrap 95% CI 0.354 to 0.491). The pre-set one-sided test for a downstream bias failed (p = 0.998). In exploratory tests, the share was below a label-permutation null (two-sided p = 0.007) and below all 1,000 degree-preserving rewired connectomes (mean 0.481). The bias was strongest for large level differences (0.33). Two other adult maps gave 0.419 and 0.422, and the sensory-inter-motor class order gave 0.394. Many sensitivity intervals reach 0.5. The bias came mainly from the stimulated cell: stimulation of downstream cells evoked more responses (+0.19 log-odds per SD, CI +0.00 to +0.36). It did not depend on one neuron, on the command interneurons or on direct edges. unc-31 mutants gave 0.456 (CI 0.31 to 0.61), which is unresolved. A human CCEP study found no direction along cortical maps. Limitations: different animals for anatomy and responses, possible cell differences in opsin and indicator expression, and exploratory tests for the reversed sign. Code, plan, aggregate results, hashes and retrieval steps are included. External records are not bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "C. elegans",
+  "signal propagation atlas",
+  "connectome",
+  "trophic level",
+  "hierarchy",
+  "causal perturbation",
+  "structure-function",
+  "feedback",
+  "unc-31",
+  "null hypothesis rejected in opposite direction"
+ ],
+ "display": [
+  {
+   "path": "files/figure.png",
+   "caption": "A: share of one-way evoked responses that go downstream, with two-way neuron bootstrap 95% CIs, for the primary Cook trophic level, replications, sensitivity checks, unc-31 and the published human CCEP value. B: the real map against 1,000 degree-preserving rewired maps. C: detection rate by thirds of trophic level of the stimulated cell and of the responding cell. D: mean HodgeRank net source score by fifths of trophic level (bin means only)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-023-06683-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Randi et al. 2023 signal propagation atlas (wild type and unc-31); pinned WormNeuroAtlas export, not bundled."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1352-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cook et al. 2019 hermaphrodite chemical connectome; SI 5 corrected July 2020, not bundled."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-03778-8",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Witvliet et al. 2021 adult 7 and 8 maps for replication, not bundled."
+  },
+  {
+   "target": "doi:10.1098/rsos.201138",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Generalised trophic level and trophic incoherence method."
+  },
+  {
+   "target": "sci:sha256:b57ec1a7c61293173f7dd1884fe12ebe43fc62eabc4d50972e16bc51bb8da9ce",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Human CCEP direction test along cortical hierarchy maps; we report its published share for comparison and do the worm counterpart with the connectome's own hierarchy."
+  },
+  {
+   "target": "sci:sha256:c1cb60921d1bc74162f6854711e38d982f11b2eeb73599cef825042ea7a3c2c9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Human CCEP node source score; we use a similar HodgeRank score in the worm."
+  },
+  {
+   "target": "sci:sha256:de1b39841752948225c749f9a07d8f9f49a5ea0585c8d6f82731abfbfc71fcf6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Direct chemical count direction gave no clear gain; we test global hierarchy instead of direct edges."
+  },
+  {
+   "target": "sci:sha256:d1170c44ad641ef09fadc99ac6366e8acf46d1336d49a6eff7bf39f4fedd804c",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Spontaneous Granger lead and atlas direction; related direction question in spontaneous activity."
+  },
+  {
+   "target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier use of connectome trophic level for activity timescales."
+  },
+  {
+   "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Hop count predicted atlas response probability but not timing."
+  },
+  {
+   "target": "sci:sha256:65df4205652eaeb28e72f18af91a921df432c5c6e52ffedb7564b6d46bc61674",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Audit of atlas occurrence counts; motivates the occurrence sensitivity check."
+  },
+  {
+   "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned source of atlas and Witvliet exports (GPL-3.0 repository)."
+  },
+  {
+   "target": "https://github.com/openworm/ConnectomeToolbox/tree/ffe570268b7cffb9329cd009a1bb37d60db2d465",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned source of the Cook SI 5 workbook."
+  }
+ ]
+}

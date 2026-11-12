@@ -1,0 +1,141 @@
+{
+ "title": "In four fly connectomes, PFL3 goal-heading offsets near +-70 degrees and PFL2 offsets near 180 degrees repeat, and each PFL3 offset sign gives its descending output side (83/83)",
+ "abstract": "Question: fly PFL3 neurons compare heading (protocerebral bridge, PB) with a goal (FC2 input in the fan-shaped body, FB) and drive the steering neuron DNa02; PFL2 neurons drive DNa03. Physiology and one connectome (hemibrain) give offsets of about +-67.5 degrees for PFL3 and 180 degrees for PFL2. Do this geometry and the wiring that makes the goal attractive repeat in other animals? Data: hemibrain v1.2, FlyWire 783, male CNS v1.0 and BANC 888 (four animals, both sexes, FIB-SEM and TEM); 24-25 PFL3 and 12 PFL2 per map; no new downloads. Method: label-free PB phases from EPG and EPG-Delta7 input; FB phases from FC2 input, with FC2 phases from balanced left and right PFN input; frame turn direction from the PEN shift sign and published PEN turn asymmetry; offset = FB - PB; rate read-out of turn drive; Poisson synapse resampling (150 per map); FB-phase permutation null. Validation: PB phases match glomerulus labels (R 0.88-0.98); FB phases match column labels at -41.5 degrees per column (R 0.96-0.97). Results: PFL3 populations sit at -58 to -76 and +63 to +76 degrees (separation 126-151; model 135) and PFL2 is 174-178 degrees from the PFL3 midpoint in all maps. The offset sign of each PFL3 neuron agrees with the side of its DNa02/DNa03 output in 83 of 83 neurons (12/12, 24/24, 24/24, 23/23), including 9 irregular neurons whose PB side breaks the population rule. With unit DN weights, every map has one stable steering point within 2.5 degrees of the goal (95% intervals within -6 to +17 degrees) and an unstable point at 169-180 degrees; permuted FB phases give one-fifth of the turn signal (p = 0.001). PFL2 drive peaks at 173-178 degrees. Measured DNa02 synapse imbalances (-4% to +11%) bias the stable point by up to 13 degrees. Limitations: one animal per map; synapse counts as weights; no activity data; the FB frame assumes symmetric PFN shifts; between-map differences exceed synapse-count intervals and are not explained; hemibrain lacks the left LAL.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "central complex",
+  "connectome",
+  "PFL3",
+  "PFL2",
+  "steering",
+  "goal-directed navigation",
+  "head direction",
+  "fan-shaped body",
+  "DNa02",
+  "FlyWire",
+  "hemibrain",
+  "male CNS",
+  "BANC",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_offsets_by_dn_side.png",
+   "caption": "Offset (FB phase minus PB phase) of every PFL3 and PFL2 neuron in four connectomes. Blue up-triangles: PFL3 with output to the left DNa02/DNa03; orange down-triangles: right; black edges: neurons whose DN side breaks the PB-side rule; open circles: hemibrain neurons without visible DN output (left LAL outside the volume); aqua squares: PFL2. Dashed lines: +-67.5 and 180 degrees."
+  },
+  {
+   "path": "files/figures/fig3_steering_model.png",
+   "caption": "Rate read-out of each connectome. Top: PFL3 turn drive (left minus right DN; positive = left turn) against heading minus goal, unit weights by DN side (solid) and measured DNa02 synapses (dotted); dot and bar: stable point and its 95% synapse-resampling interval. Bottom: PFL2 drive to DNa03, which peaks when the heading is opposite to the goal."
+  },
+  {
+   "path": "files/figures/fig1_pb_fb_phases.png",
+   "caption": "PB phase (heading input) against FB phase (goal input via FC2) of each PFL neuron, label-free, in a common heading frame per connectome. Dashed lines: FB = PB +67.5, PB -67.5 and PB +180 degrees."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:af2f275ffdee9067520cca70cf466093a718f47c9aa5ba90dddd159c388bd4c1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Label-free PB phase method, PFN left-right shifts and frame-dependence result; code adapted."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS heading ring and PEN-shift orientation method."
+  },
+  {
+   "target": "sci:sha256:a9ace6305d42b3ccd7ee0a633e9c1152de03c1355820b4fa2ec44c1d2342c72c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spectral embedding of the EPG/PEN ring and Delta7 route."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07039-2",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Westeinde et al. 2024: PFL3 offsets of about +-67.5 degrees and PFL2 180 degrees; we find the same geometry in four connectomes."
+  },
+  {
+   "target": "doi:10.1038/s41586-023-07006-3",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Mussells Pires et al. 2024: PFL3 heading-goal comparison for steering."
+  },
+  {
+   "target": "doi:10.7554/eLife.66039",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Hulse et al. 2021: hemibrain central-complex anatomy and PFL phase shifts."
+  },
+  {
+   "target": "doi:10.1038/nature22343",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Green et al. 2017: right-bridge P-EN neurons are more active in rightward turns; fixes the frame turn direction."
+  },
+  {
+   "target": "doi:10.1101/2020.04.04.024703",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rayshubskiy et al.: DNa02 drives ipsilateral turning."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 data."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire 783 connections."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire 783 proofread connections file."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire neuron annotations (types, sides)."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "male CNS v1.0 data."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC 888 metadata and edge list, version 3."
+  }
+ ]
+}

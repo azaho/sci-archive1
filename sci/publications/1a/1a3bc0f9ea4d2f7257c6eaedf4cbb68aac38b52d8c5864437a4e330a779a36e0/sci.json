@@ -1,0 +1,125 @@
+{
+ "title": "Connectome output wiring did not predict the courtship effects of silencing 23 fly visual projection neuron lines in three connectomes",
+ "abstract": "We tested if connectome wiring predicts the behaviour change when one type of fly visual projection neuron (LC or LPLC) is silenced. Behaviour came from public per-fly source data of Cowley et al. 2024: eight courtship measures for 23 silenced lines (13 to 24 males each) and 69 control males. Wiring came from three connectomes: male CNS v1.0 (primary), FlyWire v783 and BANC v888. We wrote the tests before we computed them. Ten lines differed from the control at permutation p < 0.05. But the pattern of differences between lines had a split-half reliability of only 0.36, so the highest possible correlation is about 0.6. Output wiring distances agreed well between connectomes (Spearman rho 0.83 to 0.94). Output wiring similarity did not predict the similarity of silencing effects: Mantel r = 0.018 (p = 0.41) in the male CNS, -0.002 in FlyWire and 0.069 in BANC. The 95% fly-bootstrap intervals had upper limits from 0.12 to 0.17. Exploratory profiles of routes to descending neurons gave r of 0.075 to 0.085, which was not significant. The direct share of output synapses onto descending neurons did not significantly predict effect size: rho = 0.31 (p = 0.15), 0.25 and 0.20. Most lines moved the same way from the control, probably because of background or batch. Limits: 23 lines, unknown silencing efficacy and off-target expression, session-average measures, typed partners only. Code, aggregate results and figures are included. External data are not bundled; a fetch script with hashes is supplied.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "lobula columnar neurons",
+  "visual projection neurons",
+  "courtship",
+  "neuronal silencing",
+  "structure-function",
+  "descending neurons",
+  "male CNS",
+  "FlyWire",
+  "BANC",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_wiring_vs_silencing.png",
+   "caption": "Wiring versus silencing effects. A: behavioural effect distance against male CNS output wiring distance for 253 line pairs (Mantel r = 0.02, p = 0.41); the circled pair is LC10a vs LC10ad, which share LC10a cells. B: effect size against the direct share of output synapses onto descending neurons (male CNS); blue lines differ from control at p < 0.05. C: Mantel correlations with 95% fly-bootstrap intervals for three connectomes and two wiring measures; the dashed line is the approximate ceiling set by the behavioural reliability."
+  },
+  {
+   "path": "files/figures/fig1_behaviour_effects.png",
+   "caption": "Silencing effects from Cowley et al. 2024 source data. A: standardised effect of each of 23 silenced lines on eight courtship measures, relative to the empty split-GAL4 control. B: bias-corrected squared effect norm; blue lines have permutation p < 0.05. C: split-half reliability of the between-line distance matrix over 500 random fly splits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-024-07451-8",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the per-fly silencing behaviour data (Extended Data Fig. 1 Source Data, CC BY 4.0). We test a wiring prediction that the study did not test."
+  },
+  {
+   "target": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07451-8/MediaObjects/41586_2024_7451_MOESM10_ESM.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Exact source data file, SHA-256 fb11dbb6eaebb7a0f4aa514b4c57d1b71aa00d47f8136c5cd4a7c9059cfebb89."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 connectome (primary)."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 connections."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07981-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire optic lobe cell types."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC v888 connectome, Dataverse version 3."
+  },
+  {
+   "target": "https://dandiarchive.org/dandiset/000951/",
+   "reason": "Raw data of Cowley et al. 2024; proposed for follow-up stimulus-conditioned tests."
+  },
+  {
+   "target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b",
+   "reason": "Related fly visual input-profile and response test."
+  },
+  {
+   "target": "sci:sha256:0818f8c1d686c7453830e450de683236063a2bf43641f908614d61de1504b86e",
+   "reason": "Related held-out test of fly visual input profiles; also gave no clear gain."
+  },
+  {
+   "target": "sci:sha256:1c06b824f69f047305a9b3e86bdb18ef9f6f027b87bbdae90c76c0f7d333394d",
+   "reason": "Related fly visual wiring variability study."
+  },
+  {
+   "target": "sci:sha256:69cb8c57891407fab3f3862e21b6de51c4a7124a8ad2af9384e7d40b00aea673",
+   "reason": "Related result: fly wiring weakly predicts lateral horn odour tuning."
+  },
+  {
+   "target": "sci:sha256:b41d39ab916c186df33bafc9bd8e170ed4cbbf8e704c3d6f86cef908c6e8df41",
+   "reason": "Worm result that shorter routes to motor output predict locomotion coding; we test a similar route idea with fly silencing data and do not find a significant effect."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "reason": "Related cross-connectome comparison of FlyWire and BANC."
+  }
+ ]
+}
