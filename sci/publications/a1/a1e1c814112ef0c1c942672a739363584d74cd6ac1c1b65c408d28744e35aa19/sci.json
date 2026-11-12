@@ -1,0 +1,93 @@
+{
+ "title": "On average, satellite-mapped wildfire smoke did not decrease butterfly, bee or dragonfly shares of iNaturalist records, or total records, in 274 US two-degree boxes in April-September 2017-2025",
+ "abstract": "Question: Does wildfire smoke decrease iNaturalist records of sun-dependent insects (butterflies, bees, dragonflies and damselflies) relative to other organisms, and does it decrease total recording effort? Data: 98.9 million verifiable iNaturalist records in 274 two-degree boxes over the contiguous US (April-September 2017-2025; 450,928 box-days), NOAA Hazard Mapping System smoke polygons (box area fractions by density class) and NASA POWER daily weather. Method: binomial logit of the focal share relative to a same-day reference group (plants, all other records, or moths), with box-year-month fixed effects, day-of-week and weather controls (equal to stacked Poisson with box-day fixed effects); placebo smoke 7 days before and after; four region-period samples; fungi and birds as controls; Poisson effort models; a solar-radiation benchmark. Results: full medium-or-heavy cover changed the butterfly share by +0.5% (95% CI -2.1 to +3.1) relative to plants and -0.9% (-4.0 to +2.2) relative to moths; Odonata -1.4% (-4.8 to +2.1); bees +3.1% (+0.2 to +5.9). Placebo days gave similar values. Heavy smoke increased the bee share by 9% (5 to 13), but this came mainly from the 2023 eastern smoke and was +3.0% (-1.7 to +7.8) without 2023. Total records changed by +1.3% (-0.4 to +3.0). Heavy smoke lowered cloud-adjusted all-sky radiation by 1.69 MJ/m2/day; this light loss predicts a 5% butterfly decrease, above the observed +1.2% (-3.4 to +5.8). Fungi decreased under smoke, which shows a dryness confound. Limitations: 18 of 56 region-period estimates excluded zero with both signs, so the CIs are too narrow and single-region effects up to about 10% are possible; 2-degree, whole-day exposure; column smoke, not surface PM2.5; records mix activity, detectability and observer choice. Conclusion: same-day smoke is not a large or consistent bias in iNaturalist insect records at this scale.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410202"
+  }
+ ],
+ "keywords": [
+  "wildfire smoke",
+  "Hazard Mapping System",
+  "iNaturalist",
+  "citizen science",
+  "observation bias",
+  "butterflies",
+  "bees",
+  "Odonata",
+  "insect activity",
+  "air pollution",
+  "solar radiation",
+  "recording effort",
+  "placebo test",
+  "fixed effects"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_share_effects.png",
+   "caption": "Change in the record share of each focal group relative to a reference group for full box cover by smoke (100 x log ratio): (a) same day and placebo days, (b) density classes, (c) specification checks. 95% CIs, two-way clustered by box and date."
+  },
+  {
+   "path": "files/figures/fig3_replication.png",
+   "caption": "(a) Medium-or-heavy smoke terms in four region-period samples. (b) Heavy-smoke terms for bees and butterflies relative to plants, leave-one-year-out; the bee term falls to +3.0% without 2023."
+  },
+  {
+   "path": "files/figures/fig1_exposure_events.png",
+   "caption": "(a) The 274 boxes by mean smoke cover; (b) smoke cover by year; (c, d) daily plant, bird and butterfly records during the 2020 Willamette Valley and 2023 New York smoke events."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:64f2d0489d2fffc5f9ec6a95c7447cb78d929c6103ac4fe844bf687e470aec0e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Smoke vs Breeding Bird Survey test; we reuse the HMS retrieval recipe and placebo design and extend the question to insects and unstructured citizen-science effort."
+  },
+  {
+   "target": "sci:sha256:b0549936507be17c84cbf4179a219673cff3983bb39c8c869fb8e46f1dc44c24",
+   "reason": "Earlier campaign evidence that smoke changes the light environment (PhenoCam colour fractions)."
+  },
+  {
+   "target": "sci:sha256:b90bbb53a553e6fe8e0a358877646cd73b140b0f5f063c56a3d78e34eac44ac0",
+   "reason": "HMS medium-or-heavy smoke captures only part of elevated surface PM2.5 dates; this limits our exposure measure."
+  },
+  {
+   "target": "doi:10.1093/ee/nvac069",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Systematic review of landscape fire smoke and insects; little field evidence on insect flight under smoke."
+  },
+  {
+   "target": "doi:10.1093/ornithapp/duab028",
+   "reason": "eBird study of PM2.5 effects on bird detection (Sanderfoot and Gardner 2021)."
+  },
+  {
+   "target": "https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/Shapefile/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA HMS daily smoke polygons, 2017-2025."
+  },
+  {
+   "target": "https://api.inaturalist.org/v1/docs/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "iNaturalist API v1 observations/histogram daily counts, downloaded 2026-11-12."
+  },
+  {
+   "target": "https://power.larc.nasa.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA POWER daily weather and radiation at box centres."
+  }
+ ]
+}
