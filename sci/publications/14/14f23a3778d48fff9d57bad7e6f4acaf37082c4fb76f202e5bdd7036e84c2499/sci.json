@@ -1,0 +1,95 @@
+{
+  "title": "Twenty distant trans-Neptunian objects outside the Brown & Batygin (2019) sample do not show its perihelion clustering after a survey-bias correction (q > 30 au, a > 230 au)",
+  "abstract": "Question: The clustering of perihelion longitude (varpi) and orbital poles of the 14 Kuiper-belt objects with q > 30 au and a > 230 au in Brown & Batygin (2019, BB19) is the main evidence for Planet Nine. Do objects that are not in that sample show the same clustering after a correction for survey bias? Method: We used JPL Small-Body Database orbits and Minor Planet Center discovery dates (both 2026-11-12) and wrote an open version of the BB19 bias method: the discovery positions and magnitudes of 5,681 reported objects at r > 30 au trace the survey effort, and each distant orbit is rotated to get its detection probability for each orientation. We compared observed mean canonical vectors with 100,000 bias-weighted draws of uniform orbit angles, and fitted a von Mises varpi model to the BB19 objects to predict the new objects. Results: Our code reproduces the BB19 mean vectors and their varpi clustering (P = 0.022; 0.055 with the BB19 data choices; BB19: 0.04). The 20 other objects with q > 30 au, a > 230 au and a well-determined orbit (U <= 5) have a mean varpi direction of -9 deg, 82 deg from the BB19 direction, and are consistent with uniform orbits (P = 0.48; 0.19 to 0.50 over six effort-map variants; one-sided along the BB19 direction P = 0.27). The BB19-trained model predicts them 3.7 times worse than uniform orbits (log10 BF = -0.57). The test had 78 % power, and the trained model gives a result this unclustered with probability 0.09. A node-only pole test finds no clustering of the new objects toward the BB19 node direction. A BB19-type pole test depends strongly on the assumed inclination distribution and is not reliable. Exploratory: 25 objects at 150 < a <= 230 au cluster near 53 deg (P = 0.04), but many of them are not independent of earlier studies. Limitations: discoveries are only a proxy for survey effort; the pole result depends on latitude weighting; 21 Rubin-era short-arc objects are excluded; 20 objects give moderate power.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "trans-Neptunian objects",
+    "Planet Nine",
+    "orbital clustering",
+    "observational bias",
+    "longitude of perihelion",
+    "out-of-sample test",
+    "Minor Planet Center",
+    "Kuiper belt"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_varpi_polar.png",
+      "caption": "Longitude of perihelion and semimajor axis of the 14 BB19 objects (left) and the 20 out-of-sample objects (right). Dashed line: BB19 mean direction."
+    },
+    {
+      "path": "files/figures/fig2_null_clouds.png",
+      "caption": "Observed mean varpi and pole vectors (stars) against 100,000 bias-weighted draws of uniform orbit angles (grey), for the BB19 objects (top) and the new objects (bottom)."
+    },
+    {
+      "path": "files/figures/fig5_sensitivity.png",
+      "caption": "Bias-corrected P values of the BB19 objects (blue) and the new objects (red) in six effort-map variants."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/1538-3881/aaf051",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Brown & Batygin 2019: sample definition and bias method that we reproduce and test out of sample."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa79f4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Brown 2017: varpi bias method from reported discoveries."
+    },
+    {
+      "target": "doi:10.3847/0004-6256/151/2/22",
+      "reason": "Batygin & Brown 2016: Planet Nine hypothesis and clustering."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ac2056",
+      "reason": "Brown & Batygin 2021: updated clustering sample (a > 150 au, q > 42 au)."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/aa7aed",
+      "reason": "Shankman et al. 2017: OSSOS survey-simulator test of clustering."
+    },
+    {
+      "target": "doi:10.3847/PSJ/abe53e",
+      "reason": "Napier et al. 2021: survey-simulator test with OSSOS, DES and Sheppard-Trujillo discoveries."
+    },
+    {
+      "target": "https://arxiv.org/abs/2505.15806",
+      "reason": "Discovery of 2017 OF201, a new object outside the cluster."
+    },
+    {
+      "target": "doi:10.1038/s41550-025-02595-7",
+      "reason": "Discovery of 2023 KQ14, a new high-perihelion object."
+    },
+    {
+      "target": "https://minorplanetcenter.net/iau/lists/t_tnos.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MPC trans-Neptunian object list, 2026-11-12 snapshot (not redistributed)."
+    },
+    {
+      "target": "https://minorplanetcenter.net/iau/lists/t_centaurs.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MPC Centaur and scattered-disk list, 2026-11-12 snapshot (not redistributed)."
+    },
+    {
+      "target": "https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JPL SBDB query API: orbits of the 111 objects with q > 30 au and a > 150 au."
+    }
+  ]
+}

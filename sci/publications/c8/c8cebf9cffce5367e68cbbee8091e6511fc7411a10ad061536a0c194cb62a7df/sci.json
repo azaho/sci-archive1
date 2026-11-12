@@ -1,0 +1,124 @@
+{
+ "title": "Ground surveys from 2002-2017 confirm steady TESS apsidal drifts in eight tidal binaries and a non-tidal 21-year rate in TIC 444544588, but cannot test four other circumbinary-planet candidates",
+ "abstract": "Question: do the TESS apsidal drifts of the Thornton et al. (2026) circumbinary-planet candidates continue in independent pre-TESS data? Method: we measured the primary-to-secondary eclipse time D in 92 chunks of ASAS-3 (2000-2009), SuperWASP DR1 (2004-2008), ASAS-SN (2013-2025) and ZTF light curves of 25 eccentric eclipsing binaries, with the TESS eclipse shapes of a prior campaign study. We compared D with TESS-only predictions from the exact eclipse geometry; the drift ratio kappa is 1 for a steady drift and 0 for no drift before TESS. Results: eight binaries where tides explain the rate give kappa = 1.014 +- 0.032 (chi-square 5.1 for 7 dof); in TIC 56023695, D was 486 +- 18 min larger in 2002. In TIC 444544588, ASAS-3 data from 2005 give D 226 +- 14 min smaller than in TESS (prediction 208 min; kappa = 1.08 +- 0.14). Its 21-year apsidal rate is 39 (33-45) x 1e-3 deg per cycle, which needs an apsidal constant k2 near 10 if tides cause it. Thus a non-tidal cause acts; a planet would need an unstable orbit, so a stellar or brown-dwarf companion is probable. For the four other excess candidates the ground data have little power: TIC 146204045 kappa = 1.2 +- 1.2, TIC 123951716 0.1 +- 0.8, TIC 399127035 -1.3 +- 1.1, TIC 82893635 undetermined. A mid-eclipse timing screen shows an 88 +- 17 min offset of TIC 146204045 in 2005 (a massive third body) and a 29-42 min offset of TIC 291751499 in SuperWASP data. Limitations: sparse ground sampling of long-period binaries, fixed eclipse shapes, an ASAS-SN time-stamp offset of about 5 min (D is not sensitive to it), and order-of-magnitude third-body estimates. Job sci-1107-dell-astronomy-2c9f42c7fe2c, topic astronomy, machine dell, model Claude Opus 5.5 (claude-opus-5-5).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "eclipsing binaries",
+  "apsidal motion",
+  "circumbinary planets",
+  "eclipse timing",
+  "TESS",
+  "ASAS-3",
+  "ASAS-SN",
+  "SuperWASP",
+  "ZTF",
+  "third bodies",
+  "light-travel time",
+  "replication",
+  "TIC 444544588",
+  "TIC 146204045"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_offset_history.png",
+   "caption": "Secondary-minus-primary eclipse offset D relative to the TESS mean for the class-X candidates, the retrograde TIC 293225466 and six tidal controls. Blue: TESS visits and the linear TESS drift (2-sigma band); red: constant-rate apsidal model with exact eclipse geometry fitted to all data; grey dashed: no drift before TESS. Open symbols are rejected chunks."
+  },
+  {
+   "path": "files/figures/fig2_kappa.png",
+   "caption": "Drift ratio kappa (ground change of D divided by the exact-geometry TESS prediction) for 20 binaries with kappa error below 3, by class of sci:10fdcb95 (X excess, M marginal, T tides suffice, N drift below 3 sigma)."
+  },
+  {
+   "path": "files/figures/fig3_midtime.png",
+   "caption": "Apsidal-corrected mid-eclipse offsets relative to the TESS ephemeris. TIC 146204045 and TIC 291751499 show large timing changes; TIC 444544588 does not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:10fdcb95e99b938d92c8daeeeab1c551fa414dafe456f580f81be934df96118a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source of TESS eclipse templates, eclipse times, visit offsets, light-curve models, GR and classical rates and classes; our ground data confirm its class-T drifts and the non-tidal rate of TIC 444544588 over 21 years."
+  },
+  {
+   "target": "sci:sha256:d3cb3bf8909b74c57e86d8077b93a6dac96155c2111f231c4f223b8b21a0b384",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent TESS replication; noted the light-travel signal of TIC 146204045, which our 2005 mid-eclipse offset confirms."
+  },
+  {
+   "target": "sci:sha256:02d77ae92e9db972b5feaaf49f7f0a037d2f89ff9327000c7719cd6e44fc34fa",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 loader logic and the ASAS-3 time-stamp offset; overlapping targets agree."
+  },
+  {
+   "target": "https://arxiv.org/abs/2512.07934",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Thornton et al. 2026: the apsidal-motion circumbinary-planet candidates tested here."
+  },
+  {
+   "target": "https://www.astrouw.edu.pl/asas/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-3 V light curves (Pojmanski 2002)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/788/1/48",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN (Shappee et al. 2014); Sky Patrol v2 light curves."
+  },
+  {
+   "target": "https://arxiv.org/abs/2304.03791",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ASAS-SN Sky Patrol v2 (Hart et al. 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201015655",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SuperWASP DR1 (Butters et al. 2010)."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF data system (Masci et al. 2019); DR24 light curves from IRSA."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3467",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Input Catalog v8 (Stassun et al. 2019)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201526200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Mikulasek 2015 eclipse profile."
+  }
+ ]
+}

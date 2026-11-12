@@ -1,0 +1,90 @@
+{
+ "title": "Real-time Argo salinity was up to 0.004 too salty at 1000-2000 dbar in 2016-2022, but the RG grid did not keep this error and was fresher than adjusted floats after 2018 (2014-2026)",
+ "abstract": "We compared real-time salinity, current delayed-mode adjusted salinity and the Roemmich-Gilson (RG) Argo grid at the same Argo profiles. We used all ascending core profiles on the 15th day of each month from January 2014 to September 2026 (50,642 open-ocean delayed-mode profiles) and converted the differences to a 0-2000 dbar halosteric sea-level equivalent. Real-time salinity with good real-time flags was too salty at 1000-2000 dbar by 0.0009 in 2014 and by 0.0043 (95% interval 0.0037-0.0048) in 2020; this equals a false halosteric fall of 1.2 mm and 6.2 mm. The share of profiles with a deep salty error of 0.01 or more rose from 8% to 18%. The RG grid did not keep this error: its deep difference from the adjusted floats stayed within plus or minus 0.0008. But the RG halosteric anomaly minus the float value changed from -1.5 mm in 2014-2017 to +1.6 mm in 2019-2024 (+2.3 to +3.5 mm in sensitivity tests), at the change from the RG base file to its near-real-time monthly files. Floats that needed no salinity correction show the same change. The adjusted floats show a halosteric fall of about 3 mm, mostly in the Atlantic at 100-700 dbar, that the RG grid and its global mean do not show. We cannot say if this fall is a real ocean change or an undetected sensor error. Limits: one day per month, a large backlog of profiles without delayed-mode checks after 2022, sample means that are not area-weighted, and no ship reference data. Code, aggregate tables, input hashes and figures are included; Argo and RG data stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Argo",
+  "salinity",
+  "salty drift",
+  "SBE41",
+  "Roemmich-Gilson climatology",
+  "halosteric sea level",
+  "delayed-mode quality control",
+  "sea level budget",
+  "data quality",
+  "ocean observing"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_halosteric_rg_vs_floats.png",
+   "caption": "(a) Annual 0-2000 dbar halosteric anomaly at matched open-ocean delayed-mode Argo profiles: current adjusted float salinity (F, blue, 95% float bootstrap band), RG grid at the same profiles (G, green), real-time salinity (Q, orange), and the RG global mean (grey dashed). (b) The differences G - F and Q - F with 95% intervals. The dotted line marks the change to RG near-real-time monthly files."
+  },
+  {
+   "path": "files/figures/fig2_realtime_salty_drift.png",
+   "caption": "(a) Deep (1000-2000 dbar) real-time minus adjusted salinity (orange) and RG minus adjusted salinity (green) at matched delayed-mode profiles, 95% intervals. (b) Percent of delayed-mode profiles with deep real-time salinity 0.01 or more too salty (orange) or too fresh (blue), and the share of profiles in delayed mode (grey dashed)."
+  },
+  {
+   "path": "files/figures/fig3_gap_by_float_class.png",
+   "caption": "Halosteric RG minus adjusted float difference for floats that needed no salinity correction (blue) and floats that needed a salty-drift correction larger than 0.01 (orange), all delayed-mode profiles, 95% float bootstrap bands."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1029/2023JC020871",
+   "relations": [
+    "supports",
+    "uses"
+   ],
+   "reason": "Found a false global salinity rise in gridded products that kept salty-drift data in 2015-2019. We confirm the size of the real-time error with matched profiles to 2026 and show that the RG grid does not keep it."
+  },
+  {
+   "target": "doi:10.1029/2021GL092824",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Linked post-2016 sea-level budget non-closure to Argo salinity; our halosteric differences quantify one part of this question for RG."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RG Argo climatology used as the gridded product under test."
+  },
+  {
+   "target": "doi:10.17882/42182",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Argo GDAC profile data."
+  },
+  {
+   "target": "doi:10.3389/fmars.2020.00700",
+   "reason": "Argo data modes and delayed-mode quality control."
+  },
+  {
+   "target": "sci:sha256:1c3508ea4870f22f35f29b2a0f762127aeecff39a38bf7f95d0ee58bad1707cf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign test of the RG grid against raw Argo for temperature; same RG files and profile-matching idea."
+  },
+  {
+   "target": "sci:sha256:25189608c165f6e3cea4e675bb43d5fb3900ced8f9917ea77b53dfd228a02339",
+   "reason": "Raw Argo as a reference for gridded SST products; related use of raw versus adjusted Argo values."
+  },
+  {
+   "target": "sci:sha256:d3259daa02985b8d450cdbd100b5704bfc0503099868fb92d510b2a23c1b8e20",
+   "reason": "Used RG salinity for a regional salt budget; our results give the size of RG salinity differences from adjusted floats after 2018."
+  }
+ ]
+}
