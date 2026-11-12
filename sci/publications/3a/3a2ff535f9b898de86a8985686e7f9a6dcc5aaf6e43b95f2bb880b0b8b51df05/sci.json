@@ -1,0 +1,119 @@
+{
+ "title": "Reciprocal L2/3 excitatory connections were not stronger than one-way connections in Berlin human slices, unlike Allen slices; Berlin reciprocity stayed near chance at all strength cutoffs",
+ "abstract": "Question: in layer 2/3 (L2/3) excitatory multipatch data, are connections of reciprocal pairs stronger than one-way connections, and does a strength cutoff reveal a reciprocity excess that weak connections hide? Data: Berlin human L2/3 tables (Planert et al., figshare 28184126 v1; probably the recordings of Peng et al. 2024) and the independent Allen Synaptic Physiology r2.1 human L2/3 and mouse same-layer excitatory pairs. Methods: regression of log PSP amplitude on a reciprocal flag with geometry and donor terms; a dyad (p1-type) model with distance, signed depth, slice and cell send/receive effects; whole-donor bootstrap; degree-preserving swap nulls for cycles. Results: in Berlin, reciprocal connections were not stronger (geometry-adjusted ratio 0.83, 95% interval 0.64 to 1.08; 167 and 867 connections, 21 donors). In Allen slices they were stronger: human 2.34 (1.32 to 4.11), mouse 1.53 (1.05 to 2.27). The Allen human to Berlin ratio was 2.81 (1.47 to 5.12). With donor fixed effects the Allen ratios fell to 1.53 and 1.14 and were not resolved. When only connections of at least 0.1 to 0.5 mV were counted, the Berlin reciprocity odds ratio stayed at 0.92 to 0.97. As confirmation of two campaign publications, the dyad model gave reciprocity odds ratios of 1.20 (0.76 to 1.69) in Berlin, 2.04 (0.91 to 3.88) in Allen human and 5.31 (2.55 to 8.45) in mouse, and a target-deeper odds ratio of 1.59 per 100 um in Berlin. Berlin had 4 cyclic three-edge triads against 14.0 (8 to 21) under fixed cell degrees and reciprocal count. Fixed degrees already keep the summed signed depth of connections, so the linear depth rule cannot explain the cycle deficit. Limitations: Berlin is a reanalysis of one laboratory; Allen human counts are small; Allen amplitudes are missing for 10 to 30% of connections; between-donor effects are not excluded. External record-level data are not bundled; a retrieval script is included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "human cortex",
+  "layer 2/3",
+  "pyramidal neurons",
+  "multipatch",
+  "reciprocal connections",
+  "synaptic strength",
+  "reciprocity",
+  "connection direction",
+  "cortical depth",
+  "directed cycles",
+  "degree-preserving null",
+  "p1 model",
+  "Allen Synaptic Physiology",
+  "structure-function",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reciprocal_strength.png",
+   "caption": "Amplitude of reciprocal and one-way connections in pairs tested both ways (A) and the reciprocal/one-way amplitude ratio with 95% whole-donor bootstrap intervals (B), for Berlin human, Allen human and Allen mouse slices."
+  },
+  {
+   "path": "files/figures/fig2_reciprocity.png",
+   "caption": "Reciprocity odds ratio from the dyad model as controls are added (A) and after amplitude cutoffs (B). Berlin stays near 1 at all cutoffs."
+  },
+  {
+   "path": "files/figures/fig3_triad_cycles.png",
+   "caption": "Cyclic three-edge triads in the Berlin data (observed 4) against model and degree-preserving swap nulls; Allen samples have too few fully tested triples."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.adg8828",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Source claims of chance reciprocity and strength independence in human L2/3; our Berlin strength and cutoff results agree."
+  },
+  {
+   "target": "doi:10.1038/s41593-025-02134-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Paper of the Berlin processed tables."
+  },
+  {
+   "target": "doi:10.6084/m9.figshare.28184126.v1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Berlin processed multipatch tables (GPL-3.0+), not bundled."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology dataset paper."
+  },
+  {
+   "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology r2.1 small SQLite, not bundled."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.0030068",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Rodent reference for overrepresented and stronger reciprocal connections."
+  },
+  {
+   "target": "doi:10.1080/01621459.1981.10477598",
+   "relations": [
+    "uses"
+   ],
+   "reason": "p1 dyad model with a reciprocity parameter."
+  },
+  {
+   "target": "sci:sha256:0a74f47a31a8ad8d08e27f9575752e6982aa44234b977cc42404b3cfb8f1ee66",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same reciprocity and direction questions; our dyad-model estimates agree."
+  },
+  {
+   "target": "sci:sha256:98074075c806173cfcbc155d3562d98f84461d212a293255eafdbd6749581545",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same cycle-deficit question; our swap nulls agree and add the fixed-degree depth identity."
+  },
+  {
+   "target": "sci:sha256:3660af3e941c858b081907633ca3fa44640f6d2660d32d6710e1ee9cb288fca8",
+   "reason": "Related Allen reciprocal-strength prediction test."
+  },
+  {
+   "target": "sci:sha256:908ee0ddaa05762b06a83334e115e46e51955727d5b9458dca656221abd4792f",
+   "reason": "Related Berlin reciprocal-flag test."
+  },
+  {
+   "target": "sci:sha256:2a0427bbf298e2f9824dc0ad925a2edd94f532d518ce4b1bf868a0e160b16edb",
+   "reason": "Earlier Allen depth-direction test."
+  }
+ ]
+}

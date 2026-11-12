@@ -1,0 +1,106 @@
+{
+  "title": "Gaia DR3 RV errors of faint stars (G_RVS 12-14) flag 46% of transit-like eclipsing binaries and 6% of planet hosts, and make an eclipsing star less probable for TIC 445886244",
+  "abstract": "Question: Gaia DR3 gives epoch radial-velocity (RV) statistics only for G_RVS <= 12. For fainter stars (G_RVS 12-14) the RV comes from an averaged cross-correlation function, and only its error is published. Does this error flag close stellar companions, and what does it say about three Gaia DR3 transit candidates that had no Gaia RV test (TIC 445886244, 44997521 and 4638108; sci:02108f21)? Method: We fitted a noise model of log10(radial_velocity_error) to 161,648 random field stars (gradient-boosted median regression on G_RVS, template parameters, transit number and expected S/N) and measured the excess z for 68 TOI planet hosts, 91 TOI false positives in three classes, 792 open TOI candidates and 40,127 Gaia DR3 eclipsing binaries (EBs), with 250 transit-like EBs (1-5 d, 0.5-6 percent eclipses, weak secondary). Results: At a threshold that flags 5.9 percent of planet hosts (z > 1.90), the test flags 57 percent of 1-3 d EBs, 46 percent of transit-like EBs (AUC 0.83) and 5 of 7 on-target binary false positives (p = 1e-4), but only 1 of 21 false positives caused by nearby stars, as expected for a test that sees only the target star. It flags 141 of 792 open faint TOI candidates. TIC 445886244 has z = -0.81 (range -1.36 to -0.73 over eight model variants), below 96-99.6 percent of transit-like EBs; the likelihood ratio EB:planet host is 0.12-0.33. TIC 44997521 gives 0.31-0.64 (weak). TIC 4638108 (6750 K) depends on the model (0.30-0.91) and is not decided. Limitations: small TOI calibration groups (68 planets, 7 on-target binaries), no conversion to companion mass, rotation and orbital motion are not separated, the EB sample is the first 50,000 rows of the archive answer, and no planet is confirmed.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "Gaia DR3",
+    "radial velocity",
+    "faint stars",
+    "radial_velocity_error",
+    "eclipsing binaries",
+    "TESS",
+    "TOI",
+    "false positives",
+    "planet candidate vetting",
+    "TIC 445886244",
+    "TIC 44997521",
+    "TIC 4638108",
+    "vari_planetary_transit",
+    "vari_eclipsing_binary"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_z_ecdf.png",
+      "caption": "Cumulative distributions of the faint-star Gaia RV error excess z for field stars, TOI planet hosts, on-target binary false positives and transit-like Gaia EBs; dashed lines mark the three vetting targets."
+    },
+    {
+      "path": "files/figures/fig2_eb_period.png",
+      "caption": "Median z of Gaia DR3 eclipsing binaries against period, with the transit-like subset and the planet-host level."
+    },
+    {
+      "path": "files/figures/fig3_z_teff.png",
+      "caption": "z against RVS template temperature for planet hosts, on-target binary false positives and transit-like EBs, with the three targets."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:02108f21e347cf29f450d180c06602a534a530dca1e310920f0a7a1736b8e725",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "It vetted the seven candidates and left no Gaia RV test for three of them; we add that test, do not repeat its tests, and our TIC 445886244 and 44997521 results agree with its planet-candidate class."
+    },
+    {
+      "target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "We use its TOI-Gaia match and TFOP classes; our faint-star test extends its bright-star RV flag and agrees with it in direction."
+    },
+    {
+      "target": "sci:sha256:218f44a0576460b0810a5a7fe3d12aa417beced6628b2da3cea81223f6679ef0",
+      "reason": "Found the candidates in the Gaia DR3 transit table."
+    },
+    {
+      "target": "sci:sha256:7c4c39b739b1ba7a27b24aa7aca20fe16355bc434e5fad4a2c84d738a72c2f32",
+      "reason": "Found the candidates and gave the ephemerides."
+    },
+    {
+      "target": "sci:sha256:92aac63d485c4083dc8d3b71415254e5331d005cf27f4f8863af40158c68f0e4",
+      "reason": "Found candidates in the same table."
+    },
+    {
+      "target": "sci:sha256:b8007150ad6a23d5ebaa889558f39f977c95919025b54f546e3664640bd56cbc",
+      "reason": "Found candidates in the same table."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202244220",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 RV method and errors (Katz et al. 2023)."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202243940",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 summary."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202245330",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Gaia DR3 eclipsing binaries (Mowlavi et al. 2023)."
+    },
+    {
+      "target": "doi:10.26134/ExoFOP5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "TOI dispositions through sci:3a509874."
+    }
+  ]
+}
