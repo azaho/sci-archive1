@@ -1,0 +1,139 @@
+{
+ "title": "The sea-level budget closed in 2005-2015, but altimetry exceeded Argo steric plus GRACE-FO ocean mass by 6-9 mm in 2020.5-2024 in 12 product combinations; salinity and Sentinel-6MF do not explain it",
+ "abstract": "Question: is the slower GRACE-FO ocean-mass gain after 2018 also in altimetry minus Argo steric sea level? Approach: we made 12 budget combinations from two altimetry GMSL products (CU 2026_rel2, NOAA LSA), two steric products (our TEOS-10 0-2000 dbar computation from the Roemmich-Gilson Argo grid, NCEI 0-2000 m thermosteric) and two mascon solutions (GSFC RL06v2.0, CSR RL06.3), 2005.0-2026.5, with a 0.1 mm/yr deep term and block-bootstrap errors. Results: the budget closed in 2005.0-2016.0 (residual trend -0.13 to +0.15 mm/yr). In 2018.5-2025.1 the residual trend was +0.88 to +1.29 mm/yr. The residual level in 2020.5-2024.0 was 5.6-8.7 mm above its 2005-2015 mean in all 12 combinations; same-length 2005-2015 excursions stayed below 1.9 mm. The gap stayed with thermosteric sea level only (5.6-7.9 mm). Sentinel-6MF minus Jason-3 drifted 0.07 +/- 0.17 mm/yr over 2021-2025, so the reference change did not cause it. Growth started near 2016 and was largest in 2019.5-2021. GRACE mass rates fell (GSFC 2.24 to 1.54 mm/yr, mostly Antarctica and Greenland), but altimetry minus Argo rose (2.29-2.30 to 2.54-2.63 mm/yr) to early 2025. Thus the GRACE-FO mass slowdown is not confirmed. Limitations: we cannot tell if GRACE-FO mass, Argo-era steric (unsampled deep or marginal ocean) or a drift common to Jason-3 and Sentinel-6MF is wrong; a tide-gauge rate-change test (+0.41 +/- 1.06 mm/yr) was inconclusive; periods are short.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "sea-level budget",
+  "global mean sea level",
+  "GRACE-FO",
+  "ocean mass",
+  "Argo",
+  "steric sea level",
+  "satellite altimetry",
+  "Sentinel-6MF",
+  "Jason-3",
+  "Antarctic mass balance",
+  "budget closure",
+  "data quality"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_residual.png",
+   "caption": "Budget residual (altimetry minus Argo steric minus GRACE ocean mass), 12-month means relative to 2005, for four product combinations. The residual is near zero to 2016 and 6-9 mm higher in 2020.5-2024."
+  },
+  {
+   "path": "files/figures/fig1_components.png",
+   "caption": "GMSL (CU), Argo steric (RG, 0-2000 dbar plus 0.1 mm/yr deep), GRACE/GRACE-FO ocean mass (GSFC, CSR) and ocean mass implied by altimetry minus Argo, 12-month means relative to 2005."
+  },
+  {
+   "path": "files/figures/fig4_rolling_residual_trend.png",
+   "caption": "Rolling 7-year trends of the budget residual for six combinations of altimetry (CU, NOAA), steric (RG, RG thermosteric, NCEI) and mass (GSFC, CSR)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:289858c9ea72e9f816d9cd26c691b335dac793defb3f31f1a49ecabcb7e0f997",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Found the post-2018 GRACE-FO ocean-mass slowdown and the 2025-26 GMSL shortfall. We test the mass slowdown with a closed budget and do not confirm it to early 2025."
+  },
+  {
+   "target": "sci:sha256:997a1566bb3a35fa0504f3047b87974be25f010b1703beb00c43afc4854386d0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Showed a small (about 1.6 mm) post-2018 halosteric offset in the RG Argo grid. We remove salinity with a thermosteric-only budget."
+  },
+  {
+   "target": "sci:sha256:24038b1aeb8230689cfc3d843433ee6d42ae472daff272ec4d5b6abe95fc22fc",
+   "reason": "Related campaign work on GRACE and GRACE-FO trend continuity."
+  },
+  {
+   "target": "doi:10.1029/2021GL092824",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reported budget non-closure from 2016; we extend it to 2026 with Sentinel-6MF and two mascon solutions."
+  },
+  {
+   "target": "doi:10.5194/essd-10-1551-2018"
+  },
+  {
+   "target": "doi:10.1073/pnas.1717312115"
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Roemmich-Gilson Argo grid, base 2004-2018 and monthly files to 2026-09."
+  },
+  {
+   "target": "doi:10.15781/cgq9-nh24",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CSR GRACE/GRACE-FO RL06.3 mascons."
+  },
+  {
+   "target": "https://earth.gsfc.nasa.gov/geo/data/grace-mascons",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GSFC RL06v2.0 SLA mascons to 2026-06."
+  },
+  {
+   "target": "https://sealevel.colorado.edu/files/2026_rel2/gmsl_2026rel2_seasons_rmvd.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CU GMSL release 2026_rel2."
+  },
+  {
+   "target": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA LSA reference-mission GMSL series."
+  },
+  {
+   "target": "doi:10.1029/2012GL051106",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI 0-2000 m thermosteric sea level (3-month global series)."
+  },
+  {
+   "target": "doi:10.5194/essd-13-5001-2021",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PROMICE Greenland mass balance (doi:10.22008/FK2/OHI23Z v895), independent of GRACE."
+  },
+  {
+   "target": "doi:10.2112/JCOASTRES-D-12-00175.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PSMSL RLR monthly tide gauges."
+  },
+  {
+   "target": "doi:10.1007/s11430-024-1517-1",
+   "reason": "Reports the GRACE-FO Antarctic mass gain of 2021-2023 that is part of the mass slowdown."
+  },
+  {
+   "target": "doi:10.1175/2010JCLI3682.1",
+   "reason": "Basis of the 0.1 mm/yr deep-ocean steric term."
+  }
+ ]
+}
