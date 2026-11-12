@@ -1,0 +1,106 @@
+{
+  "title": "In twin ECHAM5 AMIP ensembles, the July 2018 OI SST v2 step fully enters Southern Ocean air temperature (-0.34 K, 40-60S 0-120E) and removes its 2001-2020 warming; no remote response is detected",
+  "abstract": "Question: earlier campaign work found a -0.28 to -0.34 K step in July 2018 at 40-60S, 0-120E in NOAA OI SST v2, the source of the CMIP6/CMIP7 AMIP boundary SST, and estimated its radiative effect with linear Green's functions. Does a full atmosphere model transfer the step into its simulated climate? Approach: NOAA PSL FACTS has two 25-member ECHAM5 AMIP ensembles (1900 to February 2021) that differ only in SST data (Hurrell merged HadISST1/OI v2 against ERSSTv5), and a 50-member ensemble with the Hurrell SST that we used as a same-forcing noise twin. We took the boundary SST from the model surface upward longwave flux and compared the July 2018 shift of the twin difference (32-month means) with shifts at 685 other split dates (1953-2015) and with the noise twin. Results: the model boundary SST shifts by -0.33 K (OI v2 minus ERSSTv5 in the data -0.34 K, AMIP 1.1.9 minus COBE-SST2 -0.27 K). Simulated near-surface air temperature follows one to one (-0.336 K, z = -4.6, larger than all other split dates; noise sd 0.008 K); the latent heat loss decreases by 1.7 W m-2 and the net surface flux increases by 1.8 W m-2 (not significant). The step removes almost all the simulated 2001-2020 air-temperature warming of the sector (+0.001 against +0.111 K per decade without the step) and 44% of that of the 40-60S band. The Southern Annular Mode index shifts by only -0.11 hPa (noise sd 0.37 hPa); no remote temperature, pressure or precipitation response is field-significant. The November 1981 HadISST1-to-OI v2 splice gives a transient -0.25 K cold period in the same sector (1982-1987). The ESRL-CAM5 FACTS ensemble also has the November 2021 OI v2 warm month (+0.14 K, 60S-60N ocean) in its forcing and air temperature. Limitations: one model for the twin test; the twin difference contains all ERSSTv5-OI v2 differences; runs end in February 2021; no top-of-atmosphere fluxes; remote effects smaller than about 0.7 hPa (SAM) cannot be excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "AMIP",
+    "boundary conditions",
+    "OI SST v2",
+    "Hurrell SST",
+    "ERSSTv5",
+    "ECHAM5",
+    "CAM5",
+    "NOAA FACTS",
+    "Southern Ocean",
+    "data homogeneity",
+    "step artifact",
+    "drifting buoys",
+    "Southern Annular Mode",
+    "surface heat flux",
+    "CMIP7"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_so_sector_timeseries.png",
+      "caption": "Hurrell (OI v2) run minus ERSSTv5 run at 40-60S, 0-120E: boundary SST, simulated air temperature, data-product difference and noise twin; monthly values and 32-month means around July 2018."
+    },
+    {
+      "path": "files/figures/fig2_shift_maps.png",
+      "caption": "July 2018 shift maps of boundary SST, air temperature, sea-level pressure and precipitation in the ECHAM5 twin difference, with |z| = 2.5 contours against 685 other split dates."
+    },
+    {
+      "path": "files/figures/fig4_cam5_nov2021.png",
+      "caption": "The one-month November 2021 warm event of OI v2 also appears in the ESRL-CAM5 FACTS forcing and simulated air temperature; ERSSTv5 does not have it."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Found and dated the July 2018 OI v2 Southern Ocean step, the November 2021 warm month and the cause; we test the effect in full model runs."
+    },
+    {
+      "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+      "reason": "Green's-function radiative effect of the OI v2 2018 step; we test the non-radiative and remote response with a full model."
+    },
+    {
+      "target": "sci:sha256:121acf9e61a901f817dceaa1864a369e0dcb941ed0849245cddd1a32f8521ce6",
+      "reason": "ECHAM6 Green's-function results for the same artifacts."
+    },
+    {
+      "target": "sci:sha256:36b3c230b0ab02a3d4ac5373b60171f5d855dfb8ed5c1f7fdaa5ca172fea8faf",
+      "reason": "November 1981 HadISST1-to-OI v2 splice in AMIP forcing."
+    },
+    {
+      "target": "sci:sha256:af4b53c150104c63e3cab9b0c2753140a3de8f99a7278431143530a556377690",
+      "reason": "Sea-ice steps of the same AMIP forcing, checked with CMIP6 amip runs for 1979-2014."
+    },
+    {
+      "target": "sci:sha256:9e1a3e72650f07a215accf776c2f88bdb5c9461d78249bc5a59f407e71dac573",
+      "reason": "OI v2 keeps the 1982-2022 Southern Ocean cooling but has a 2018 cold step."
+    },
+    {
+      "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+      "reason": "CMIP7Plus AMIP forcing steps and the AMIP feedback consequence."
+    },
+    {
+      "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+      "reason": "Related propagation of SST input steps into NCEP reanalyses."
+    },
+    {
+      "target": "doi:10.1175/2008JCLI2292.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Hurrell merged SST and sea-ice boundary data."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ERSSTv5."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Projects/iccdata1/FACTS/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA PSL FACTS model output (ECHAM5 and ESRL-CAM5 AMIP ensembles)."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "OI SST v2 monthly and land-sea mask."
+    }
+  ]
+}
