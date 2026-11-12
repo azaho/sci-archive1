@@ -1,0 +1,107 @@
+{
+ "title": "K2 Campaign 15 data show no common-mode or thruster-locked cause for the HD 139139 dips in 2,012 other stars; TESS sector 91 (2025) is too noisy to test whether the dips continue",
+ "abstract": "Question: Do instrument effects common to many stars cause the 28 aperiodic 200-ppm dips of HD 139139 (EPIC 249706694) in K2 Campaign 15, and did the dips continue in TESS data of 2025? Method: We applied one detrending and matched-filter pipeline to 2,013 bright K2 C15 stars. We measured the mean depth of the other stars at the 28 published dip times, the phase of the dips in the K2 thruster cycle, and a dip census with injection tests. For TESS sector 91, we injected K2-like dip trains into 66 control stars. Results: At the dip times, the other 2,012 stars give a mean depth of 0.9 ppm (random-time scatter 2.6 ppm), against 177 ppm for HD 139139. A common-mode dip is thus at most 3.4 percent of the dip depth (95 percent). False dips in other quiet stars are concentrated at thruster firings (KS p = 3e-33), but the HD 139139 dips are uniform in thruster phase (p = 0.99). Among 567 quiet stars, HD 139139 has the largest excess of SNR >= 5.5 dips over bumps (one tie), but an identical dip train would stand out in only 3.4 percent of the other stars. TESS sector 91 has power 0.03 for K2-like dips at a 5 percent false-alarm rate (0.36 at 5 times the depth); the target is not unusual (p = 0.12). Limitations: We did not test pixel-level defects specific to HD 139139. The census cannot limit the frequency of such stars. TESS neither confirms nor excludes continued dips.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "astronomy",
+  "HD 139139",
+  "EPIC 249706694",
+  "random transiter",
+  "K2",
+  "TESS",
+  "instrumental systematics",
+  "thruster firing",
+  "ensemble test",
+  "injection recovery",
+  "null result",
+  "job sci-1107-hp-astronomy-0c8da0e731b7",
+  "machine hp",
+  "model claude-opus-5-5"
+ ],
+ "display": [
+  {
+   "path": "files/figures/k2_stack.png",
+   "caption": "Left: filtered depth of HD 139139 (blue) and the weighted mean of 2,012 other K2 C15 stars (orange; bars show random-time scatter) at the 28 published dip times. Right: stacked depth over all dips for star groups; bars are 95 percent random-time ranges."
+  },
+  {
+   "path": "files/figures/k2_census.png",
+   "caption": "Left: phase of SNR >= 3.5 dips and bumps in the K2 thruster cycle for 566 other quiet stars, and of the 28 published HD 139139 dips. Middle: dip excess (SNR >= 5.5) against Kepler magnitude after chunked decorrelation. Right: observed excess of the other stars, and the same stars after injection of the HD 139139 dip train."
+  },
+  {
+   "path": "files/figures/tess_s91.png",
+   "caption": "TESS sector 91 (2025): HD 139139 light curve with one simulated K2-rate dip train, the target statistic against 66 control stars, and detection power against dip depth."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:db1d93e1540c1e236e653655f2852a242f1e2bdab2a295b8f63b22080900e277",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier campaign test of HD 139139 K2 moment centroids; we reuse its shared input paths and extend the instrument tests to an ensemble of other stars."
+  },
+  {
+   "target": "sci:sha256:d1d24c14ecefc258b5d79110e01dc8e0d1de7a1d31db87182f8f43e34e8c16d6",
+   "reason": "Earlier campaign shape test of the same K2 dips; context."
+  },
+  {
+   "target": "doi:10.1093/mnras/stz1772",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Discovery paper; its Table 1 dip times, durations and depths are the input of all tests (read from arXiv:1906.11268v1, not bundled)."
+  },
+  {
+   "target": "https://arxiv.org/html/1906.11268v1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202347779",
+   "reason": "CHEOPS null result of 2021-2022; context for the TESS test."
+  },
+  {
+   "target": "https://registry.opendata.aws/mast-k2/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "K2 C15 archive light curves."
+  },
+  {
+   "target": "doi:10.17909/t9-r086-e880",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS QLP sector 91 light curves."
+  },
+  {
+   "target": "https://mast.stsci.edu/tesscut/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESScut cutout of HD 139139, sector 91."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3467",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Input Catalog used to select samples."
+  }
+ ]
+}
