@@ -1,0 +1,32 @@
+{
+  "title": "Human iEEG timescales were longer where cortical T1w/T2w myelin was lower in 41 of 54 patients, but the pre-registered model with a delta-power covariate did not show this (HUP ds004100, 55 patients)",
+  "abstract": "Question: are intrinsic timescales longer in human association cortex than in sensory and motor cortex, as the anatomical hierarchy rule predicts? Campaign tests of this rule failed in mouse, zebrafish and C. elegans, and no human iEEG test was in the record. Data: OpenNeuro ds004100 (HUP iEEG, CC0), 300-s interictal clips of 56 patients; 2,433 bipolar cortical channels in 55 patients outside the seizure-onset and resection zones. Method: FOOOF aperiodic knee fits (1-80 Hz), tau = 1/(2 pi f_knee); six neuromaps cortical maps; patient fixed effects, patient-cluster bootstrap and 1,000-rotation spin tests; plan hashed before analysis. Results: the pre-registered primary test failed. With a channel delta-power covariate, the T1w/T2w slope was -0.009 log10 tau per SD (95% CI -0.022 to +0.005; p_spin 0.33). This covariate is almost a second measure of the outcome (within-patient rho with log tau 0.79). The pre-registered variant without it gave -0.072 (CI -0.097 to -0.048), that is 15% shorter tau per SD of myelin. A post hoc spin test passed (p_spin 0.017). The per-patient correlation was negative in 41 of 54 patients (sign p 0.0002). The slope stayed negative with referential signals, SOZ channels included, other fit ranges, ECoG or SEEG only, no covariates, and in frontal-parietal channels. Channel tau had half-clip test-retest rho 0.93 and the group map had split-half rho 0.59. FC gradient, S-A axis and MEG timescale slopes had the predicted sign but failed spin tests; thickness was borderline (p_spin 0.062). Limitations: the supported result is post hoc; epilepsy patients; undocumented sleep state; template electrode positions; few channels in primary sensory cortex. Human cortex thus shows a reliable within-patient timescale gradient along T1w/T2w that the other species did not show, but a new pre-registered replication is necessary.",
+  "keywords": ["intracranial EEG", "intrinsic timescale", "aperiodic knee", "cortical hierarchy", "T1w/T2w myelin", "spin test", "human cortex", "neuromaps", "OpenNeuro ds004100", "cross-species comparison", "FOOOF"],
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"},
+    {"scheme": "anzsrc-for-2020", "code": "320903"}
+  ],
+  "display": [
+    {"path": "files/figures/fig1_coverage.png", "caption": "Included bipolar channels (2,433 in 55 patients) on lateral views of the group cortex, coloured by log10 tau centred per patient (red = slower). Right: T1w/T2w values sampled by channels against all cortex vertices; highly myelinated primary sensory cortex has few channels."},
+    {"path": "files/figures/fig2_maps_spin.png", "caption": "Observed slope (red line, shaded 95% patient-bootstrap CI) against 1,000 sphere rotations for six cortical maps. Top: pre-registered model with the delta-power covariate (no map passes). Bottom: post hoc model without it (only T1w/T2w passes, p_spin 0.017; thickness 0.062)."},
+    {"path": "files/figures/fig3_robustness.png", "caption": "Left: pre-registered sensitivity variants of the T1w/T2w slope. Middle: all maps with (grey) and without (red, post hoc) the delta covariate. Right: per-patient Spearman rho of tau with T1w/T2w (negative in 41 of 54 patients)."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24", "reason": "Mouse test of the timescale hierarchy rule (failed, laminar sampling); we add the human iEEG comparison."},
+    {"target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193", "reason": "Larval zebrafish test of the timescale hierarchy rule (failed); cross-species comparison."},
+    {"target": "sci:sha256:a1ef761d2f609864074b344bcdfdd05f27b16d7bcef6854a614804bf388edf1a", "reason": "C. elegans test with opposite sign; cross-species comparison."},
+    {"target": "sci:sha256:3845db66698575dee45ecf5ecceead5d03a9c38c60ad6fb36295832816f435db", "reason": "Related mouse null for molecular predictors of region timescales."},
+    {"target": "sci:sha256:18faea2c651436cf33c5c5d2fcdaeffea5c7768b1789a182b73bf164d3c5b232", "reason": "Related MICrONS timescale-structure null; shows measurement confounds in timescale tests."},
+    {"target": "doi:10.18112/openneuro.ds004100.v1.1.3", "relations": ["uses"], "reason": "HUP iEEG Epilepsy Dataset (CC0), all recordings and metadata."},
+    {"target": "doi:10.7554/eLife.61277", "relations": ["supports"], "reason": "Gao et al. 2020 reported longer iEEG timescales in association cortex (MNI atlas); we find the same direction in an independent cohort, but only after a post hoc model change."},
+    {"target": "doi:10.1038/nn.3862", "reason": "Murray et al. 2014, hierarchy of intrinsic timescales in macaque cortex."},
+    {"target": "doi:10.1038/s41593-020-00744-x", "relations": ["uses"], "reason": "FOOOF spectral parameterization (knee model)."},
+    {"target": "doi:10.1038/s41592-022-01625-w", "relations": ["uses"], "reason": "neuromaps toolbox and map distribution."},
+    {"target": "doi:10.1523/JNEUROSCI.2180-11.2011", "relations": ["uses"], "reason": "T1w/T2w myelin mapping."},
+    {"target": "doi:10.1073/pnas.1608282113", "relations": ["uses"], "reason": "Principal functional gradient."},
+    {"target": "doi:10.1016/j.neuron.2021.06.016", "relations": ["uses"], "reason": "Sensorimotor-association axis."},
+    {"target": "doi:10.1016/j.neuroimage.2020.117346", "relations": ["uses"], "reason": "Evolutionary expansion map."},
+    {"target": "doi:10.1371/journal.pbio.3001735", "relations": ["uses"], "reason": "MEG intrinsic timescale map."},
+    {"target": "doi:10.1016/j.neuroimage.2018.05.070", "relations": ["uses"], "reason": "Spin test for spatial autocorrelation."}
+  ]
+}
