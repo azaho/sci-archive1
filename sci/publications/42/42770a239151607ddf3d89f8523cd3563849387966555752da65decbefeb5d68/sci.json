@@ -1,0 +1,90 @@
+{
+ "title": "In 12,552 MICrONS neurons, distance-matched non-inputs gave 87% of the response match to pooled excitatory inputs, and input orientation spread did not predict selectivity",
+ "abstract": "Question: does a mouse visual cortex neuron inherit its tuning from the pooled tuning of its local excitatory inputs? We tested two pooling predictions in the MICrONS mouse: (1) the mean response of a neuron's inputs matches its own response better than that of non-connected neighbours; (2) neurons whose inputs have a narrow spread of preferred orientations are more orientation selective.\nData: 12,894 coregistered excitatory neurons (Ding et al. 2025, v1 node table) and 322,653 EM connections between them from the v1300 synapse graph (all nucleus-attached sources, not only the 148 proofread axons). 12,552 targets had at least 5 inputs (median 22).\nMethod: for each target we compared the real input set with 100 null input sets. Each null input was a non-connected neuron of the same area group and layer, at the same soma distance (or receptive-field distance). Intervals come from a bootstrap over 100 um cubes. We repeated the tests with cross-scan inputs only and with proofread axons only.\nResults: the pooled digital-twin natural-image response of the inputs correlated with the target at 0.229; soma-matched non-inputs gave 0.200 (excess 0.028, 95% CI 0.026-0.032). So 87.6% of the match is spatial. In vivo movie responses (0.193 vs 0.167) and RF-free feature readouts (0.150 vs 0.121) agreed. The excess stayed for cross-scan inputs (in vivo 0.018) and proofread axons (0.034). It grew with in-degree and was largest for layer 5 targets. A linear equicorrelation extrapolation gives a limit near 0.33 (null 0.28) for infinitely many such inputs, about 11% of response variance. The pooled input orientation vector was weak (0.078 vs null 0.074). Input orientation concentration did not predict target OSI (0.007 SD per SD, CI -0.012 to 0.026) in any sample. Input alignment predicted OSI (0.05), but measurement noise of weakly tuned targets alone can make this. Links between input homogeneity and reliability or sparseness changed sign between nulls.\nConclusion: local excitatory inputs carry a small, wiring-specific copy of a neuron's tuning; most input-target similarity follows position, and input orientation spread does not explain selectivity.\nLimitations: one mouse; excitatory coregistered inputs only (about 22 of thousands); most source axons are not proofread; synapse count as weight; the extrapolation is a model, not a measurement.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "MICrONS",
+  "connectomics",
+  "functional connectomics",
+  "mouse visual cortex",
+  "input pooling",
+  "orientation selectivity",
+  "like-to-like wiring",
+  "spatial null",
+  "digital twin",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/fig_pooling.png",
+   "caption": "a: correlation between the target's natural-image response and the pooled response of its EM inputs (blue), soma-distance-matched non-inputs (orange) and RF-distance-matched non-inputs (green), by input count; bands 95% CI. b: observed minus null mean for six measures in four samples (95% bootstrap CI over 100 um cubes). c: equicorrelation extrapolation of the pooled match to K inputs; squares are measured values binned by in-degree. d: standardized slopes of target OSI, reliability and sparseness on null-standardized input measures, with controls."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the functional node and edge tables and of the like-to-like wiring rule that this study extends to the input-set level."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS cubic millimetre dataset and v1300 synapse graph."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Pairwise like-to-like rule after fixed effects; we find a consistent target-level excess."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Like-to-like rule not explained by cell-level coupling; orientation similarity gave no clear effect, as our weak orientation alignment."
+  },
+  {
+   "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+   "reason": "Higher-order target-set structure of single axons; we study the input set of single targets."
+  },
+  {
+   "target": "sci:sha256:667685ea757318d6497c8d31a8324fe56c5b095a31e0cc88deb0c86aaaa1ddb0",
+   "reason": "Earlier input-to-target response prediction with 169 proofread-axon targets; we use 12,552 targets and spatially matched nulls."
+  },
+  {
+   "target": "sci:sha256:22475b792a6006b6315345aca5f1c90d623997cbbbebb3d67044952026951c4f",
+   "reason": "Earlier fitted input weights in 169 targets."
+  },
+  {
+   "target": "sci:sha256:5d8021d8491fb57862ebfc4911bbb9611c8d34ebf8474b6cf4587fa6ccbf80da",
+   "reason": "Reverse direction: target averages reconstruct source responses."
+  },
+  {
+   "target": "sci:sha256:a4bfe03daf43583039d19846b6332edf597de0d7044d344297bd6afb4a2e1754",
+   "reason": "Input counts gave very small links to reliability; our input homogeneity links to reliability were also not robust."
+  },
+  {
+   "target": "sci:sha256:61493f70793fe84518cda2d915ee245a5faddd7cf0c09067f1af189de354aaac",
+   "reason": "Reliability and connection odds in MICrONS and V1DD."
+  },
+  {
+   "target": "sci:sha256:8bb073457bc086e9d83054432643758eba498d8d03760b66d3d369632aa4e2fa",
+   "reason": "V1 Deep Dive like-to-like test; candidate second mouse for this target-level test."
+  },
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "reason": "V1 Deep Dive population coupling and wiring."
+  }
+ ]
+}
