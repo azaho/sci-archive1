@@ -1,0 +1,161 @@
+{
+ "title": "In 2020-2025 south-east Australian stream drainage returned to its pre-1997 rate but the runoff deficit at equal rain did not shrink; a linear rain model hid it in wet years (112 gauges)",
+ "abstract": "Question: after 1997, south-east Australian (SE-AU) runoff fell below its 1951-1996 rain relation, and streams drained faster at equal flow. Is faster drainage the mechanism, and did the deficit end when drainage recovered? The years 2020-2025 (wet 2020-2022, dry 2023-2025) are out of sample for all CAMELS-AUS models. Approach: 112 CAMELS-AUS v2.03 catchments (57 Victoria, 39 NSW+ACT, 16 Queensland control) with BoM daily flow 1950-2025 and SILO rain. Annual relation Q = a + bP + cP(t-1), linear (planned primary) and with a P^2 term (planned sensitivity), fitted on 1951-1996; runoff departure D (% of mean flow); loss-form index f (0 = parallel shift); recession drainage index R; four continuations fitted with data to 2019 and scored in 2020-2025; 2x2-degree cell bootstrap; plan written before any post-2021 value. Results: before 1997, the linear relation under-predicted the 5 wettest years by 27% of mean flow (95% CI 18 to 38; NSW 43%); the convex relation had no clear bias (-2%), so we prefer it (post hoc). Drainage recovered completely: R +0.23 (+0.15 to +0.31) in 2010-2019, -0.00 (-0.08 to +0.10) in 2020-2025, and near zero in the dry 2023-2025. The deficit did not shrink: SE-AU D -10.9% in 2010-2019 and -13.5% (-25.6 to -4.3) in 2020-2025; Victoria -11.3% and -10.7% (-20.0 to -4.8); wet 2020-2022 -16.5%. With the linear model NSW looked recovered in 2020-2022 (+0.4%), but the convex model gave -21.8% (CI -40 to +13). Continuing the 1997-2019 mm offset beat a return to the old relation (RMSE 4.6% of mean flow lower, 2.4 to 8.1); the refitted low post-1997 rain slope was worst in wet years. f fell from 0.25 (1997-2019) to 0.13 (2020-2025), the value of the 1959-1971 and 1983-1995 lows, but was near 0 in wet and 0.27 in dry years. In Victoria, catchments whose drainage recovered more regained more runoff (Spearman -0.65; -0.71 with rain change removed), but a drainage-independent drift of -10 points cancelled this in the mean. Conclusion: the drainage change is not what keeps SE-AU runoff low; the deficit persisted after drainage recovered. Limitations: preference for the convex model is post hoc; six out-of-sample years; wide NSW intervals; SILO rain only after 2019; rain-only annual model.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "Millennium Drought",
+  "runoff deficit",
+  "rainfall-runoff relationship",
+  "hydrological non-stationarity",
+  "drought recovery",
+  "streamflow recession",
+  "drainage rate",
+  "out-of-sample test",
+  "model curvature",
+  "La Nina 2020-2022",
+  "south-east Australia",
+  "Victoria",
+  "CAMELS-AUS",
+  "BoM Water Data Online",
+  "SILO"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_annual_series.png",
+   "caption": "Annual means over catchments (dots) and 3-year means (lines), 1951-2025, for Victoria, NSW+ACT and the Queensland control. Top: runoff departure from the convex 1951-1996 rain relation. Middle: drainage index R (+ = faster recession at equal flow and month). Bottom: rain anomaly. After 2020 R returns to zero, but the south-east departure stays low."
+  },
+  {
+   "path": "files/figures/fig5_reference_form.png",
+   "caption": "Left: before 1997, observed minus predicted runoff in each catchment's 5 wettest years when the 1957-1996 fit leaves them out; the linear relation under-predicts by 17-45% of mean flow, the convex relation does not. Right: departures in 2010-2019, 2020-2022 and 2023-2025 with both references; the NSW wet-year 'recovery' appears only with the linear reference."
+  },
+  {
+   "path": "files/figures/fig4_drainage_vs_efficiency.png",
+   "caption": "Per catchment, change of drainage index R against change of runoff departure (convex) from 2010-2019 to 2020-2025. In Victoria, more drainage recovery went with more runoff recovery (Spearman -0.65), but the mean departure did not change. NSW shows no relation."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:fab37b7c16240835d740f4fa8f9a0a8d9b30268263cd4db3a1f35b4d52fcadbf",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "We use its drainage index code and test its proposal of one storage-drainage process: drainage returned by 2020-2025 but the runoff deficit did not."
+  },
+  {
+   "target": "sci:sha256:36d145c14c6ec974218c8e931718ed72d3cce8b76d5aec730e2ff5932212ff61",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We adapt its BoM download code; with another method and NSW added we also find that the Victorian deficit persisted to 2025."
+  },
+  {
+   "target": "sci:sha256:871b2192407fe0d36b8ede03f019a8ad796d64c61af7a2bec4f6a504a46301fb",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Its loss of rain sensitivity is smaller with a convex reference, and the low post-1997 rain slope did not continue out of sample."
+  },
+  {
+   "target": "sci:sha256:463123a6329a6169583a00fc2b16f1322c6582db2abda06eb2201fce0160d78a",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "With a convex reference, the Victorian post-1997 loss form is not clearly different from the 1959-1971 low, and the 2020-2025 form equals the earlier lows."
+  },
+  {
+   "target": "sci:sha256:fde6f0d61f6ba9c3f5b413a8128858ba1a2542232262f2e8568ed176fefbc394",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "It found that the lost share of flow grew in wet years after 1997; in the wet 2020-2022 years the deficit was a near-constant mm offset, and a linear reference inflates wet-year residuals."
+  },
+  {
+   "target": "sci:sha256:433be6d1935b61a368d63f5c1e39c829a7277cf5397ef93f26f39d7e87ccb468",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found weaker evidence for a rain-slope change; our convex reference also reduces the slope-loss estimate."
+  },
+  {
+   "target": "sci:sha256:6edc2b7d3e79a30f2d1fc2c61921e5d64c2e21f542334123062e1b2b4f7956b9",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It found the rain-slope loss less certain; we add a curvature reason and an out-of-sample test."
+  },
+  {
+   "target": "sci:sha256:4e9ae7e7e11e1c208b438418221f0c908cb6cdd1eea584438a965a8a01745cf9",
+   "reason": "Context: long-record efficiency eras and the earlier 13-year lows."
+  },
+  {
+   "target": "sci:sha256:e3ac7e4425f9706064e3301f8f1b64b43cd93db81d178a0896716c7ede512998",
+   "reason": "Context: the Victorian 1997-1998 step and the gradual NSW decline; we report the two states separately."
+  },
+  {
+   "target": "sci:sha256:7cecffa92eedcfd0120ad0a80f1367628835baff8dc7dfa8e637c1b20d472fe4",
+   "reason": "Context: first campaign report of faster recessions after 1997."
+  },
+  {
+   "target": "sci:sha256:58715cfee780ac03fa84bafae4203735b3e393de19445d0b6b54457539271260",
+   "reason": "Context: evaporative demand did not cause the post-1997 loss, which supports our rain-only annual model."
+  },
+  {
+   "target": "doi:10.1126/science.abd5085",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Peterson et al. (2021): watersheds may not recover from drought; we find persistence to 2025 although drainage recovered."
+  },
+  {
+   "target": "doi:10.5281/zenodo.14289037",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2.03 data."
+  },
+  {
+   "target": "doi:10.5194/essd-17-4079-2025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CAMELS-AUS v2 description."
+  },
+  {
+   "target": "https://www.bom.gov.au/waterdata/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BoM Water Data Online daily discharge to 2025."
+  },
+  {
+   "target": "https://www.longpaddock.qld.gov.au/silo/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SILO gridded monthly rainfall 2020-2025."
+  },
+  {
+   "target": "doi:10.1016/S1364-8152(01)00008-1",
+   "reason": "SILO method (Jeffrey et al., 2001)."
+  },
+  {
+   "target": "doi:10.5194/hess-26-6073-2022",
+   "reason": "Community review of Millennium Drought rainfall-runoff changes."
+  }
+ ]
+}
