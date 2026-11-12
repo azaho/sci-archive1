@@ -1,0 +1,118 @@
+{
+ "title": "Harvard plates and APASS confirm unexplained Hipparcos-to-Gaia brightness changes as a group, not Gaia close-pair changes; HIP 2110 faded about 0.1 mag in 1900-1920 and again in 2000-2010",
+ "abstract": "Question: are the 25-year brightness changes that SCI cc955b57 found between Hipparcos (1991) and Gaia DR3 (2016) real? That study used only Hipparcos, Tycho, Gaia and ASAS-3 data. Approach: for 216 candidates and 216 matched quiet control stars, we compared the median brightness on Harvard plates (DASCH DR7, 1890-1989) with the APASS B magnitude (2009-2015). Both are independent of Hipparcos and Gaia. We used only stars with an APASS reference, because a Tycho reference is from 1991. For HIP 2110, the largest unexplained fade (0.104 mag), we added six local plate comparison stars, WISE/NEOWISE (2010-2024), SkyMapper DR4 (2015-2018) and TESS (2020 and 2026). Results: for 64 candidates without Gaia close-pair flags, the plate-to-APASS change follows the satellite change (Spearman rho 0.43, p = 0.0004; slope k = 0.58, 95% interval 0.26-1.22, where 1 is a real grey change); for the 26 unexplained stars k = 0.96 (0.44-1.85, p = 0.045). For 68 close-pair candidates there is no relation (k = 0.00, rho -0.09), which confirms that these are Gaia artefacts; the group difference has permutation p = 0.002. HIP 2110 was 0.05-0.11 mag fainter in 1902-1917 than in 1921-1955 (two plate series), was steady to 1989, faded in 2000-2010, and stayed constant after 2010 (W1 slope -0.0010 +/- 0.0004 mag/yr; TESS -0.019 +/- 0.013 mag from 2020 to 2026, against +0.051 for a continued fade). APASS B is 0.067 +/- 0.019 mag fainter than the plate median. Gaia shows no binarity or extinction. The B fade is not larger than the G fade, which weakly disfavours small dust grains. The cause is unknown. Limits: plate errors of 0.04-0.14 mag allow only a group test; most tier A stars are too bright or lack APASS references; one TESS comparison star; HIP 2110 is bluer than its plate comparison stars; no spectra. Job sci-1107-dell-astronomy-0a0307c769b1; topic astronomy; machine dell; model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "Hipparcos",
+  "Gaia DR3",
+  "DASCH",
+  "Harvard plates",
+  "APASS",
+  "long-term variability",
+  "secular dimming",
+  "HIP 2110",
+  "CD-23 156",
+  "NEOWISE",
+  "SkyMapper DR4",
+  "TESS",
+  "photometric calibration",
+  "close binaries",
+  "plate archives",
+  "astronomy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_hip2110_history.png",
+   "caption": "HIP 2110 brightness history 1897-2026: Harvard plates with six comparison stars and APASS (a), Hipparcos, ASAS-3, APASS and Gaia levels (b), and WISE, SkyMapper and TESS after 2010 (c). The star faded about 0.1 mag in 1900-1920 and again in 2000-2010, and stayed at the low level after 2010."
+  },
+  {
+   "path": "files/figures/fig2_population_plates_vs_apass.png",
+   "caption": "Plate-to-APASS change against the Hipparcos-to-Gaia change for candidates without (left) and with (middle) Gaia close-pair flags, and for matched controls (right). Only the candidates without close-pair flags follow the satellite change."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:cc955b57aa2eb0ade455a1e7e01e9b93feaa0c223775d9f9bace7a7c6d5fcc28",
+   "relations": [
+    "uses",
+    "supports",
+    "reviews"
+   ],
+   "reason": "Source of the 216 candidates, dGc values, the ASAS-3 and Hipparcos epoch files of HIP 2110 and the analysis sample; we test its candidates with independent plate and APASS data and confirm its close-pair diagnosis."
+  },
+  {
+   "target": "sci:sha256:24007caee36bbc5ae97e75e7bfe033e42065d9e97b8174d9d4aa66a859818b38",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DASCH StarGlass access and plate quality code (dasch_fetch.py, dasch_load.py)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1088/0004-6256/140/6/1868",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1088/0004-637X/792/1/30",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://api.starglass.cfa.harvard.edu/public/dasch/dr7/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "DASCH DR7 Harvard plate photometry (Grindlay et al. 2009)."
+  },
+  {
+   "target": "https://www.aavso.org/apass",
+   "relations": [
+    "uses"
+   ],
+   "reason": "APASS reference magnitudes (Henden et al. 2016)."
+  },
+  {
+   "target": "https://skymapper.anu.edu.au/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SkyMapper DR4 (Onken et al. 2024)."
+  },
+  {
+   "target": "https://mast.stsci.edu/tesscut/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://irsa.ipac.caltech.edu/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AllWISE, NEOWISE-R and Gaia DR3 tables via TAP."
+  }
+ ]
+}
