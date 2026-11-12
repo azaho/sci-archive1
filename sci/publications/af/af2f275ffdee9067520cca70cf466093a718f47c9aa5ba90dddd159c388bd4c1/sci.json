@@ -1,0 +1,140 @@
+{
+ "title": "In three fly connectomes, PFN-to-hDeltaB wiring repeats the travel-vector geometry (opposite same-side PFNd/PFNv vectors, 61-62% axonal PFNd input); the left-right angle depends on the PB phase frame",
+ "abstract": "Question: Lyu et al. (2022) derived from one connectome (hemibrain v1.1) that four PFN populations give hDeltaB neurons four vectors at about +-45 and +-135 degrees, whose sum is the travel direction of the fly. Do other animals have the same wiring? Data: hemibrain v1.2, male CNS v1.0 (both FIB-SEM) and FlyWire v783 (TEM); 40 PFNd, 20-21 PFNv and 18-19 hDeltaB neurons per map; no new downloads. Method: PB phases of PFNs from EPG input (label-free) or from glomerulus labels (four frames); a complex rank-1 fit of the PFN-to-hDeltaB matrix gives the angle and gain of each population; hDeltaB compartments from synapse coordinates (male CNS) or a phase rule (validated 100% in the male CNS); hDeltaB and Poisson resampling; phase-permutation nulls; the Lyu phasor model. Results: if PFNd input on the dendritic arbor is ignored, one phase shift per population explains 91-99% of the matrix in all maps (null 59-62%, p = 0.001). Same-side PFNd and PFNv vectors are 162-179 degrees apart in all maps (one exception: FlyWire, net model, EPG-Delta7 route). PFNd input is 61.7% axonal in the male CNS (coordinates), 61.3% in hemibrain and 60.9% in FlyWire (phase rule), against 61.3% in hemibrain v1.1; PFNv input is 99.9% dendritic. The left-right separation is 71/75/64 degrees (hemibrain/male CNS/FlyWire) in the EPG frame, 88/92/78 with the EPG-Delta7 route and 101/103 with the Delta7 label index: the wiring alone fixes it only to about 30 degrees. A left-right asymmetry of -9 to -20 degrees and a 3-4 fold forward-backward gain imbalance repeat in all maps. PFNa, PFNm and PFNp have similar left-right offsets (79-96 degrees, EPG frame); PFNd is lowest, and FlyWire PFNd is 17-26 degrees lower than in the FIB-SEM maps. Thinning PB synapses to FlyWire density does not reproduce this. The phasor model with each map's vectors errs 1.4-10.8 degrees RMS with pure amplitude modulation but 13-47 degrees with non-negative amplitudes, so PFNv signals must be compensated. Limitations: one animal per map; no activity data analysed; synapse counts as weights; the PB phase frame and synapse efficacy are not known; exploratory method choices.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "central complex",
+  "connectome",
+  "path integration",
+  "travel direction",
+  "PFNd",
+  "PFNv",
+  "hDeltaB",
+  "vector computation",
+  "phasor",
+  "fan-shaped body",
+  "protocerebral bridge",
+  "hemibrain",
+  "FlyWire",
+  "male CNS",
+  "cross-animal replication",
+  "structure-function",
+  "dendrite and axon compartments"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_phase_geometry.png",
+   "caption": "Each hDeltaB neuron receives the four PFN populations (PFNd and PFNv, left and right PB) at four fixed angle offsets in all three connectomes (axon model, EPG-input PB phases). Points: one hDeltaB and one population; lines: fitted vector angles; dotted: +-45 and +-135 degrees."
+  },
+  {
+   "path": "files/figures/fig4_invariants.png",
+   "caption": "Rotation-free angle relations with 95% intervals for three maps, four PB phase frames and two efficacy models. Same-side PFNd and PFNv vectors are near 180 degrees apart in all maps; the left-right separation D depends on the PB phase frame (64-104 degrees)."
+  },
+  {
+   "path": "files/figures/fig3_compartments.png",
+   "caption": "Male CNS synapse coordinates repeat the hemibrain compartment rule: PFNd input to hDeltaB is about 62% axonal and PFNv input is dendritic. A phase rule, validated in the male CNS, gives 61% in hemibrain v1.2 and FlyWire."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-021-04067-0",
+   "relations": [
+    "reviews",
+    "supports",
+    "uses"
+   ],
+   "reason": "Four-vector model and hemibrain v1.1 anatomical angles and compartment counts that we replicate in two more connectomes."
+  },
+  {
+   "target": "doi:10.1038/s41586-021-04191-x",
+   "relations": [
+    "supports"
+   ],
+   "reason": "PFNd/PFNv preferred directions and convergence onto hDeltaB."
+  },
+  {
+   "target": "sci:sha256:a9ace6305d42b3ccd7ee0a633e9c1152de03c1355820b4fa2ec44c1d2342c72c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EB spectral-embedding method for EPG angles and PEN shift used to set orientation."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Three-connectome head-direction ring replication; dataset choice and PEN shift values."
+  },
+  {
+   "target": "sci:sha256:27a99efd1eb09900c17a379046097cb794e3f30810c515011c97eb57770f0dbc",
+   "reason": "Rate models of the head-direction ring in two connectomes."
+  },
+  {
+   "target": "doi:10.7554/eLife.66039",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Central complex connectome anatomy and PFN projection patterns."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 data."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "male CNS v1.0 data."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell-type annotations."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections file."
+  },
+  {
+   "target": "https://storage.googleapis.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://male-cns.janelia.org/download/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://github.com/flyconnectome/flywire_annotations/tree/a83b2776d60d5764cef36b927f5f9679c16c47a2",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}

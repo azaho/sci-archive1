@@ -1,0 +1,117 @@
+{
+ "title": "Kepler Sun-like stars with a co-moving Gaia companion inside the aperture show 3.5 times more superflares; Gaia DR2 lists most such companions, so only unresolved ones can bias localised rates",
+ "abstract": "Question: do faint companions cause part of the Kepler superflares of Sun-like stars, as a campaign TESS study found, and can they bias the once-per-century rate of Vasilyev et al. (2024)? Approach: the Vasilyev et al. star and flare lists were not accessible (HTTP 403), so we rebuilt their sample (45,741 Kepler stars, Teff 5000-6500 K, 4 < M_G < 6, RUWE < 1.4, no period below 20 d) and used the Yang & Liu (2019) and Davenport (2016) flare catalogues, Gaia DR3 neighbours within 15 arcsec with a shuffle test for chance pairs, Kepler pixel difference images with injection tests, and Gaia DR2 counterparts. Findings: stars with a co-moving companion within 6 arcsec have a flare of 1e34 erg or more 3.5 times more often (95% 2.4-5.0; odds ratio 3.4 with covariates); companions at 8-15 arcsec give no excess (1.01). Kepler pixels put 19 of 59 measured flares (11 of 27 stars) on the companion and 0 of 39 control flares on a fake position (p = 3e-5). Gaia DR2 lists 91-99 percent of these companions, and the 2022 catalogue of the Vasilyev et al. localisation code shows fewer companions among target-assigned flare stars (2.3 percent against 6.1 percent), so the localisation removes resolved-companion flares. RUWE 1.2-1.4 (ratio 3.2) and Gaia IPD multi-peak flags (3.4) show that unresolved pairs also flare more; if companions at 10 au to 1 arcsec flare like resolved ones, they explain about 45 percent (23-69) of the flaring stars of an unlocalised catalogue. Limitations: no direct test of the Vasilyev et al. lists; other flare thresholds (the Yang & Liu flaring stars mostly flare many times); 56 percent purity of the co-moving class; the unresolved budget is a scenario.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "superflares",
+  "Sun-like stars",
+  "Kepler",
+  "Gaia DR3",
+  "wide binaries",
+  "M dwarf companions",
+  "flare localisation",
+  "contamination",
+  "RUWE",
+  "target pixel files",
+  "space weather"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_incidence_ratios.png",
+   "caption": "Superflare incidence ratio of Kepler Sun-like stars by Gaia DR3 neighbour class (Yang & Liu 2019 flares; 95% intervals). Co-moving companions inside 6 arcsec raise the incidence; companions at 8-15 arcsec do not."
+  },
+  {
+   "path": "files/figures/fig2_incidence_vs_separation.png",
+   "caption": "Fraction of stars with a flare of at least 1e34 erg against the separation of the nearest co-moving Gaia DR3 companion. The excess stops near the size of the Kepler apertures."
+  },
+  {
+   "path": "files/figures/fig3_pixel_localisation.png",
+   "caption": "Kepler pixel test. Left: companion share of each flare difference image for stars with a co-moving companion at 1-6 arcsec and for control stars. Right: quiet and flare images of KIC 4756335; the flare light falls on the companion."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f79053fe304901327274c19f84e4cf95a5256f8a6f76c3ff308833e3e594bcc3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "TESS study that found companion-driven superflares; it left the Kepler sample untested. We test Kepler and reuse its idea of offset direction toward the companion."
+  },
+  {
+   "target": "doi:10.1126/science.adl5441",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Vasilyev et al. 2024, Kepler superflare rate of Sun-like stars; we rebuild its sample cuts and test its localisation against companions."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244422",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Vasilyev et al. 2022, LOSE localisation method and flare catalogue with attribution types."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2019ApJS..241...29Y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Yang & Liu 2019 Kepler DR25 flare catalogue (VizieR J/ApJS/241/29)."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2016ApJ...829...23D",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Davenport 2016 Kepler flare stars (VizieR J/ApJ/829/23)."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2020AJ....159..280B",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Berger et al. 2020 Gaia-Kepler stellar properties."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2023A&A...678A..24R",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Reinhold et al. 2023 Kepler rotation periods."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...68K",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kirk et al. 2016 Kepler eclipsing binary catalogue."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2010ApJS..190....1R",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Raghavan et al. 2010 companion separation distribution for the unresolved-companion scenario."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/kepler",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kepler DR25 target pixel files."
+  }
+ ]
+}
