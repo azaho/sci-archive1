@@ -1,0 +1,46 @@
+{
+ "title": "Seedling ozone sensitivity did not predict growth or mortality differences among 12 mature tree species in 16 eastern US states in 1999-2025, but the test cannot exclude a seedling-size growth loss",
+ "abstract": "Question: do the EPA seedling ozone exposure-response functions (Lee et al. 2022, W126) predict which mature forest trees grew less or died more where and when ozone exposure was high? Data: USDA FIA remeasurements in 16 eastern US states (14,646 plots; 742,662 growth and 868,290 mortality intervals, trees >= 12.7 cm DBH, 1999-2025); W126 from EPA AQS hourly ozone (our 2010-2024 monitor table plus the 1999-2009 table of sci:268004a0), interpolated to plots; nClimGrid weather and TDep deposition controls. The plan was frozen and timestamped before the outcome data were read. Method: predicted seedling biomass loss (PRBL) of each species at its interval W126 was compared between species in the same plot and visit (plot-visit fixed effects, species-specific size, climate and deposition terms); the translation ratio lambda is the share of seedling loss seen in adult diameter growth; inference by 2,000 species-label permutations. Results: lambda = -0.37 (95% CI -1.88 to 1.14), permutation p = 0.68; the same in eight robustness subsets. The test has low power: the permutation null of lambda spans -1.36 to 1.38, and the power for lambda = 1 is 0.41. Black cherry had the expected ozone slope, tulip poplar the opposite sign. Mortality did not increase with predicted loss (permutation p = 0.78). The predicted ozone x moisture interaction had the expected sign (-0.86, SE 0.39) but permutation p = 0.12, and a moisture-tercile split gave the opposite pattern. Models within the same tree over time were confounded by species time trends (permutation null median equal to the estimate). Limitations: species-level confounding sets the detection limit; ozone decreased mostly with time; diameter growth only; no western species.",
+ "keywords": [
+  "ozone",
+  "W126",
+  "air pollution",
+  "tree growth",
+  "tree mortality",
+  "Forest Inventory and Analysis",
+  "exposure-response",
+  "pre-registered test",
+  "permutation test",
+  "eastern United States",
+  "climate-pollution interaction",
+  "null result"
+ ],
+ "categories": [
+  {"scheme": "anzsrc-for-2020", "code": "4105"},
+  {"scheme": "anzsrc-for-2020", "code": "3007"}
+ ],
+ "display": [
+  {"path": "files/figures/fig3_translation_ratio.png",
+   "caption": "a: translation ratio lambda (share of seedling biomass loss seen in adult diameter growth) for the frozen primary test, robustness subsets and an exploratory within-tree model; 95% CI and species-permutation 95% range (grey). b: mortality change per +0.1 predicted seedling loss."},
+  {"path": "files/figures/fig2_species_slopes.png",
+   "caption": "Observed relative growth change per +10 ppm-h W126 for 12 species (same plot and visit, relative to insensitive species) against the change expected if seedling loss occurs in full (dashed line)."},
+  {"path": "files/figures/fig1_ozone_and_seedling_curves.png",
+   "caption": "a: W126 ozone exposure at FIA plots in 16 eastern states by year. b: seedling exposure-response curves (Lee et al. 2022) with the range of interval exposures in this sample."}
+ ],
+ "citations": [
+  {"target": "sci:sha256:268004a08eb37a3a36207332736b005b07fe9d13a4687a19b1e966f96044ecb6", "relations": ["uses"],
+   "reason": "Ozone x moisture injury result for FIA bioindicator plants; we reuse its 1999-2009 monitor W126 table and W126 code and test whether the interaction continues to mature-tree growth."},
+  {"target": "sci:sha256:c83ee032c19f88021a841c206c6bba4ec164a58d183c77f5223f9a2a387ab53d", "relations": ["uses"],
+   "reason": "Earlier FIA sulfur deposition study; we reuse its interval builder and fixed-effects code and answer its open ozone item."},
+  {"target": "sci:sha256:8fb859255599b74e78e60cf3221eef1554a3124d7cf4056217e3f027cbbb8fb3",
+   "reason": "Earlier eastern FIA remeasurement study and DataMart access method."},
+  {"target": "sci:sha256:2c15bea979291ab376d4a1f94f52b24e394207928c25e470339008603ae127d3",
+   "reason": "EPA AQS ozone trends and access route in the campaign."},
+  {"target": "doi:10.1016/j.atmosenv.2022.119191", "relations": ["uses"],
+   "reason": "Lee et al. 2022 seedling Weibull exposure-response parameters for 16 species (Table 6)."},
+  {"target": "doi:10.7289/V5SX6B56", "relations": ["uses"], "reason": "nClimGrid (Vose et al. 2014)."},
+  {"target": "doi:10.1016/j.atmosenv.2014.04.008", "relations": ["uses"], "reason": "TDep total deposition method (Schwede and Lear 2014)."},
+  {"target": "https://apps.fs.usda.gov/fia/datamart/", "relations": ["uses"], "reason": "FIA DataMart PLOT, COND, TREE tables, retrieved 2026-11-12."},
+  {"target": "https://aqs.epa.gov/aqsweb/airdata/", "relations": ["uses"], "reason": "EPA AQS hourly ozone 44201 files 2010-2024, retrieved 2026-11-12."}
+ ]
+}
