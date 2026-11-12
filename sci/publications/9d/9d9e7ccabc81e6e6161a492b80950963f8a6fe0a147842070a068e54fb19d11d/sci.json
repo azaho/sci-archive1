@@ -1,0 +1,99 @@
+{
+ "title": "In one Eyewire II mouse retina patch, dendrite depth predicted chirp responses of held-out cell types almost as well as same-type cells, but measured bipolar kinetics added nothing beyond ON/OFF",
+ "abstract": "Question: in the Eyewire II mouse retina patch, does the electron microscopy (EM) depth profile of a ganglion-cell-layer neuron predict its calcium chirp response for cell types that a model did not see, and do measured bipolar-cell (BC) kinetics explain this? Data: 197 RGCs and amacrine cells with EM inner plexiform layer profiles and OGB-1 chirp responses in the same tissue (164 cells in 31 types scored), 5.16 million EM BC ribbons with type and depth, and BC glutamate chirp responses of 14 types from Franke et al. (2017). Method: leave-one-type-out prediction; score r of the cell-specific trace after the population mean is removed; reference = mean of other same-type cells; cell, kernel and basis permutation nulls. Results: a ridge model on dendrite overlap with BC ribbon depth profiles gave r 0.32, near the same-type reference (0.34) and far above cell shuffles (p = 0.005); results held at quality thresholds 0.25 and 0.45 and for RGCs and non-starburst amacrine cells. Random smooth 14-dimensional depth bases did equally well (41% at least as good), so the BC-type basis itself is not special. A Peters-rule model with the measured BC kernels beat cell shuffles (r 0.06-0.10, p <= 0.01 at the main quality threshold) but reached only one third of the fitted models, and kernel shuffles among BC types of the same polarity did as well (p 0.31-0.76). Structure predicted response polarity (type-level rho 0.45-0.47), transience weakly, and temporal-frequency preference not at all (rho at most 0.18, versus 0.82 for same-type cells). Limitations: one patch, few cells per type, depth-only Peters rule without EM synapse counts, slow calcium readout, BC kernels from other mice.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320907"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "retina",
+  "connectomics",
+  "structure-function",
+  "bipolar cell",
+  "ganglion cell",
+  "amacrine cell",
+  "inner plexiform layer",
+  "Peters rule",
+  "Eyewire II",
+  "chirp",
+  "calcium imaging",
+  "held-out cell types",
+  "ribbon synapse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_model_comparison.png",
+   "caption": "Cell-specific prediction accuracy (r after removing the population mean) for held-out EM cell types, 164 cells in 31 types, chirp quality > 0.35. Fitted depth models reach the same-type reference; the Peters-rule model with measured BC glutamate kernels is low, and shuffling kernels among BC types of the same polarity does not reduce it. Dotted line: 95th percentile of the cell-shuffle null."
+  },
+  {
+   "path": "files/figures/fig1_structure_basis.png",
+   "caption": "Inputs. Left: IPL depth of 5.16 million EM ribbons per BC type (Eyewire II; 0 um = ON ChAT band, 12.5 um = OFF ChAT band). Middle: mean dendrite depth profiles of example GCL types. Right: BC-type mean glutamate chirp responses from Franke et al. (2017), orange = OFF types, blue = ON types."
+  },
+  {
+   "path": "files/figures/fig4_nulls.png",
+   "caption": "Left: Peters-rule model with shared filter, real BC-kernel assignment (green) against 200 permutations of kernels among BC types inside ON and OFF groups (p = 0.75). Right: BC-ribbon basis (blue) against 100 random 14-Gaussian depth bases in the same ridge model (41% at least as good)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://www.biorxiv.org/content/10.64898/2026.05.28.727403v1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Eyewire II resource paper: EM reconstructions, ribbons, cell types and calcium data of the retina patch used here (CC BY-NC 4.0)."
+  },
+  {
+   "target": "https://huggingface.co/datasets/eulerlab/eyewire2-data/tree/90a1f90084e597adae7b92865e584d68f1789d4b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data release, revision used."
+  },
+  {
+   "target": "https://github.com/eulerlab/eyewire2-functional-analysis/tree/0a1b780d212c1705f8f1ee19e1550f6c8c78d132",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Precomputed IPL depth profiles and data loading conventions."
+  },
+  {
+   "target": "doi:10.5061/dryad.rs2qp",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Franke et al. 2017 BC glutamate recordings (CC0), file FrankeEtAl_BCs_2017_v1.mat."
+  },
+  {
+   "target": "doi:10.1038/nature21394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Franke et al. 2017, source of the BC-type chirp kernels and cluster order."
+  },
+  {
+   "target": "doi:10.1038/nature16468",
+   "reason": "Baden et al. 2016: type-level functional diversity of mouse RGCs and the chirp stimulus."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2018.04.040",
+   "reason": "Bae et al. 2018: EM types and calcium responses in the e2198 patch."
+  },
+  {
+   "target": "sci:sha256:7977288c709068c2f0aaa4c468329ecde51407391b383d64a71554883073fc09",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Prior campaign result in e2198: polarity follows stratification, kinetics link weak. Our independent tissue agrees on weak kinetics and adds that measured BC kinetics do not explain the depth map."
+  },
+  {
+   "target": "sci:sha256:65ec64ca5809249c1c97298bb2464979d452202ecf4a53867544f58ea17d0804",
+   "reason": "Prior campaign retina structure-function result (starburst contact correction in e2198)."
+  }
+ ]
+}
