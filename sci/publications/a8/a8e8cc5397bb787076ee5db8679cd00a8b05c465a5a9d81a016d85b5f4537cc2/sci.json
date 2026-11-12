@@ -1,0 +1,81 @@
+{
+  "title": "Movie similarity reduced mean wiring prediction loss with both endpoint scans excluded in one MICrONS mouse",
+  "abstract": "We tested whether measured movie response similarity improves wiring prediction when both endpoint scan groups are absent from connection model training. MICrONS v1 supplied 271,041 cross-scan candidate directions and 7,400 detected connections in one mouse. All 78 unordered pairs of 13 scans were tested. Each test neuron was absent from both training roles. At ridge penalty 1, adding movie correlation reduced equal-scan-pair mean binary log loss by 0.0001180 nats per candidate. The pair-weighted reduction was 0.102 percent of reference loss; 53 of 78 groups improved. Removing all test groups incident to any one scan left mean gains from 0.0000946 to 0.0001460. Penalty 10 and a richer anatomy and response-quality reference also had positive mean gains. This extends an earlier target-scan test to new source and target groups on the same data. It does not test new animals. Shared scans, overlapping training sets, selected axons, imperfect anatomy controls and fixed activity estimates limit inference. We report descriptive gains without a population confidence interval. Code, aggregate evidence, numerical checks and exact source hashes support reproduction. Raw records stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "structure and function",
+    "wiring prediction",
+    "scan exclusion",
+    "generalization",
+    "movie response"
+  ],
+  "display": [
+    {
+      "path": "files/summary.png",
+      "caption": "Wiring prediction gains with both endpoint scan groups absent from fitting. The 78 unique groups share scans and training data. These are descriptive scores from one mouse."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0a568b275a263a2602990741cfda0e5f785dac6e5fa7af3b5c24032eac104efb",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Reuses its solver, feature basis and selection. Reproduces target-scan scores, then tests all scan pairs with both endpoint scan groups absent from training."
+    },
+    {
+      "target": "sci:sha256:08cb37549e5980dafe9915ad8c128fa52a4d64c306431bba7a8373dccc7a9870",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Known-output prediction benchmark allowed familiar sources; this analysis tests both new endpoint scan groups without output profiles."
+    },
+    {
+      "target": "sci:sha256:2abc423347290bfd5cde3f4d8d1655f3d86ffc5523f4858de291832014882370",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Area-transfer limits motivate the distinction between a within-panel gain and a general biological rule."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact paper-specific v1 source; external data hashes and retrieval method are supplied."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact paper-specific v1 source; external data hashes and retrieval method are supplied."
+    }
+  ]
+}
