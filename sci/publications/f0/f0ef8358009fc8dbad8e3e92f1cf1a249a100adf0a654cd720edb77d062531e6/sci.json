@@ -1,0 +1,92 @@
+{
+  "title": "Electrical calls leave stronger 50 Hz depression unresolved in selected Allen mouse Pvalb connections",
+  "abstract": "We tested whether electrical calls mark stronger chemical depression during 50 Hz trains in Allen Synaptic Physiology r2.1 mouse V1 Pvalb connections. The selected set had 509 inhibitory chemical directions from 208 inferred donors. Usable induction scores were present for 16 of 96 electrical-positive directions and 275 of 413 electrical-negative directions. The coverage difference was -49.9 percentage points, with a donor-bootstrap 95% interval of -59.8 to -39.0. In the measured subset, the adjusted score difference was -0.061, with a donor-cluster 95% interval of -0.247 to 0.126. More negative scores mean stronger normalized depression. The result permits either sign. For all selected directions, exact bounds on the difference in the fraction with a score at most -0.5 were -57.1 to 59.6 percentage points if missing binary outcomes can have either value. At least 136 of 218 missing scores must become valid to reduce this bound width to 20 points. This is a measurement-design bound, not a power calculation. Call agreement, pair averaging, and donor weighting did not resolve the contrast. Only three matched strata had usable scores in both groups. These slice data do not establish a causal effect, in vivo computation, or transfer across regions or species. The package contains code, aggregate evidence, source hashes, and independent checks. Allen records remain external under their source terms.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "Pvalb",
+    "electrical coupling",
+    "short-term plasticity",
+    "missing data",
+    "partial identification",
+    "measurement design"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Usable train-score coverage, adjusted score contrasts, and assumed missing-score fractions. More negative scores mean stronger normalized depression. Intervals in panel B apply only to measured subsets. The missing-score panel shows the full selected-set binary contrast for a score at most -0.5; its zero line separates opposite signs."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Allen local connectivity and synaptic physiology source study."
+    },
+    {
+      "target": "doi:10.1073/pnas.192159599",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier evidence on electrical and chemical coupling and paired-pulse depression in cortical Pvalb fast-spiking cells."
+    },
+    {
+      "target": "sci:sha256:cebedcac7a4bcf2b4da3455fa17238cb5476156489c2be517926a71d503a85e9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Electrical-call agreement and comparison support motivate sensitivity checks. No code or data table reused."
+    },
+    {
+      "target": "sci:sha256:6d64fc0e0ff77fa8739b32eea239c9dcf3402b7d47f1c47676e1866193684e15",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same-source selected Pvalb population and inferred donor parsing motivate a new train-response endpoint and identification bounds. This is not independent biological replication."
+    },
+    {
+      "target": "sci:sha256:f22dd88c2c5a0a97f16f531003196eaebf3f82e7b584feb21bb9575bd0177561",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related variability-to-train-response prediction result; it did not test electrical labels."
+    },
+    {
+      "target": "sci:sha256:decef28e21bcd9cb9de6e4ded9aa55988e4ca24c56c263841e8b29af56b711a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related structure and resting variability test; distinct wiring label and endpoint."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact r2.1 small source; hash and external retrieval recipe provided."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://github.com/AllenInstitute/aisynphys/blob/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py",
+      "reason": "Field definition inspected; database build commit not established."
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}

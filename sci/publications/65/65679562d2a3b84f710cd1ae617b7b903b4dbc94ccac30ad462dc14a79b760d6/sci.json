@@ -1,0 +1,83 @@
+{
+ "title": "After seismic energy densities of 1e-4 J/m3 or more, the M2 tidal amplitude of 487 USGS wells rose by about 0.7% for one month, and large phase changes did not clearly increase (2008-2024)",
+ "abstract": "We tested whether earthquakes change the M2 earth-tide response of US wells, a sign of an aquifer permeability change. We used USGS NWIS instantaneous groundwater levels for 543 wells with a clear M2 tide (SNR >= 10) in 2007-2025, sliding 30-day harmonic fits, and the seismic energy density e (Wang 2007) from a fixed ComCat snapshot. For each (well, event day) pair we compared the M2 change (after window vs reference window) with the exact mean of the same statistic over clean days of the same well 33-400 days away, with a 30-day block bootstrap. The planned shifted-date placebo failed its controls: it also gave false excesses for random dates. The final method passed controls with isolated low-e days and random days. For 10,129 pairs with e >= 1e-4 J/m3 (487 wells, 441 dates), large phase changes (|z| >= 3, about 12 degrees) did not clearly increase: +0.57 percentage points (95% -0.21 to 1.30) on a 5.1% base. The mean M2 amplitude rose by 0.12 robust SD (95% 0.04 to 0.20, p = 0.006), about +0.7% (0.03 to 1.28%) in the first 30 days and near zero after 60 days. There was no rise for e < 1e-4. The phase moved toward advance (+0.07 SD, p = 0.07). The rise was present in all 10 post hoc strata and largest in confined aquifers (+0.19 SD). Event dates differed in sign. More amplitude and less lag agree with a small, transient permeability increase, but the size is about ten times smaller than in single-well case studies. Limitations: method chosen after the planned test failed; e is approximate; no barometric correction; p-values not corrected over all 36 cells.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "groundwater",
+  "earth tide",
+  "permeability",
+  "dynamic strain",
+  "seismic energy density",
+  "USGS NWIS",
+  "placebo test",
+  "earthquake hydrology",
+  "M2 tide"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_excess_by_energy.png",
+   "caption": "Excess of tidal-response changes on earthquake days over the local expectation, by seismic energy density. Top: share of well-days with a large (|z| >= 3) phase or amplitude change. Bottom: mean signed change. Grey: control of isolated low-energy days. Bars: 95% bootstrap of 30-day blocks."
+  },
+  {
+   "path": "files/figures/fig2_lag_profile.png",
+   "caption": "M2 amplitude (%) and phase (degrees) change against the local expectation, for compared windows that start from 61 days before to 366 days after the date. Blue: e >= 1e-4 J/m3; orange: isolated pairs; grey: random dates (synthetic null)."
+  },
+  {
+   "path": "files/figures/fig5_method_checks.png",
+   "caption": "Control excess under five null designs. Shifted-date placebos (designs 1-4) gave false excesses for real low-energy days and for random days; the local expectation (design 5) is null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f4f72761edb168f383c089e3604455bfa918b93e2e9adbb28b19c96905429043",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its exact ComCat snapshot and energy-density method; it found no daily-mean level steps and left high-rate records untested, which we test here."
+  },
+  {
+   "target": "sci:sha256:960bb4a1dfbff9d17d6edc024941d90d49297037888d9b55a7c7fff7489689c8",
+   "reason": "Stream gauge responses after strong shaking; related hydrological response to earthquakes."
+  },
+  {
+   "target": "sci:sha256:7537d3ad5a643df67f7f8f114ce0cd0167fd9e78bcc95cf2a8f082ed6b1e62fa",
+   "reason": "Baseflow recession did not change after strong shaking; a related permeability test."
+  },
+  {
+   "target": "sci:sha256:11bb393c8865d0a13337a06dd8e0227508ae0a6fbf781f5bb9b7dbfdc3443751",
+   "reason": "Stream discharge after 1980-1990 earthquakes; related test."
+  },
+  {
+   "target": "doi:10.1038/nature04798",
+   "reason": "Elkhoury et al. 2006: tidal phase changes and permeability increases at Pinon Flat."
+  },
+  {
+   "target": "doi:10.1029/2011RG000382",
+   "reason": "Manga et al. 2012: review of permeability changes by earthquakes."
+  },
+  {
+   "target": "doi:10.1029/WR023i010p01824",
+   "reason": "Hsieh et al. 1987: response of well water level to Earth tides and aquifer transmissivity."
+  },
+  {
+   "target": "doi:10.1785/gssrl.78.5.512",
+   "reason": "Wang 2007 (Liquefaction beyond the near field): seismic energy density relation."
+  },
+  {
+   "target": "https://waterservices.usgs.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS NWIS instantaneous values and site services, retrieved 2026-11-11."
+  },
+  {
+   "target": "doi:10.1007/978-3-642-00810-8",
+   "reason": "Wang and Manga 2010, Earthquakes and Water: response thresholds in energy density."
+  }
+ ]
+}
