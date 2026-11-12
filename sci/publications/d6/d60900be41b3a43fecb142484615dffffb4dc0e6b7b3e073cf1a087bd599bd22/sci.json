@@ -1,0 +1,172 @@
+{
+ "title": "Vegetation greenness did not carry the weak climate tracking of US breeding birds: birds followed 8-15% of greenness gradients, and greenness held 9% of their temperature signal (BBS, NDVI, 1985-2021)",
+ "abstract": "Question: North American bird communities follow only 5-14% of their spatial temperature associations in time. Is this gap inherited from vegetation, which follows climate slowly? Data: 2,922 contiguous-US Breeding Bird Survey routes (68,130 standard runs, 1985-2021), PKU GIMMS NDVI v1.2 May-July greenness, nClimGrid climate, LCMAP land cover, AVONET habitat. Method: for 381 species, cross-fitted spatial Poisson models with climate, land cover and NDVI gave predicted log abundance per run; conditional Poisson panels with route x observer and year effects gave the transfer ratio theta (temporal response / spatial prediction; 1 = full transfer). The same design gave the transfer of route NDVI and land cover to climate. We corrected for errors in the spatial coefficients and used a 9-block year jackknife. Results: route greenness followed 0.35 (jackknife 0.26-0.44) of its spatial 5-year temperature prediction and 0.17 of its rain prediction; land-cover classes followed climate at about 0. Birds followed their 5-year greenness association at 0.081 (0.063-0.098; corrected 0.15) and same-year greenness at only 0.013 (corrected 0.024). NDVI carried 9% and land cover plus NDVI 19% of the within-route temperature signal. The chain predicted a corrected temperature transfer of 0.083 (observed 0.075); full vegetation and land-cover tracking of climate would raise it only to 0.11, and perfect habitat tracking by birds to 0.27. Transfer grew with the averaging window (temperature 0.010, 0.050, 0.082 for 1, 5, 10 years) but stayed small. Grassland and human-modified-habitat birds followed greenness at 0.33-0.34 (corrected), forest birds at 0.07. Conclusion: weak space-for-time transfer occurs at every link, also for vegetation itself and for a direct resource variable, but vegetation lag is not the main cause of the bird gap: most of the gap is in the direct temperature association. Limitations: 9 km NDVI is a coarse habitat proxy; mediation shares assume habitat is on the causal path; the chain, climate-only model and time-scale checks were added after the main fits; correlational design.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310302"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310308"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "space-for-time",
+  "NDVI",
+  "PKU GIMMS NDVI",
+  "vegetation lag",
+  "climate tracking",
+  "community temperature index",
+  "mediation",
+  "land cover",
+  "LCMAP",
+  "climatic debt",
+  "grassland birds",
+  "transfer ratio",
+  "positive control"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_transfer_ladder.png",
+   "caption": "Transfer ratios (temporal response / spatial prediction; 1 = full transfer) on 2,922 US BBS routes, 1985-2021: route NDVI and land cover to climate (green), and 381 bird species to temperature, NDVI, land cover and rain (blue raw, orange reliability-corrected). 95% intervals (the wider of year-block jackknife and model intervals)."
+  },
+  {
+   "path": "files/figures/fig2_chain_accounting.png",
+   "caption": "a: Reliability-corrected bird temperature transfer (climate-only model): observed, chain prediction from measured links, and counterfactuals with full habitat tracking of climate and full bird tracking of habitat. b: species distribution of the share of the within-route temperature signal that runs through NDVI and land cover."
+  },
+  {
+   "path": "files/figures/fig3_habitat_groups.png",
+   "caption": "Reliability-corrected bird transfer to temperature and 5-year NDVI by AVONET habitat group (exploratory; species bootstrap 95% intervals, clipped)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Pipeline, code and LCMAP route land-cover table reused; we repeat its bird temperature transfer (0.050) and add greenness and vegetation transfer."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Birds follow 10-40% of land-cover gradients; wetland and open-country birds follow habitat more."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Forest type explained part of the CTI gap on forested routes; with time-varying greenness and land cover, habitat carries about one fifth of the temperature signal."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Species follow 5-14% of spatial temperature gradients; grassland species follow more."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Weak tracking is a small temporal sensitivity, not a long lag; we find the same at the vegetation level."
+  },
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Bird CTI follows less than 10% of warming."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Climate suitability transfer of 0.05 within species."
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Range shifts at about 14% of isotherm shifts."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift in within-observer trends."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Warm-spring phenology-detection artefact."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic masking does not explain the gap."
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Local spatial thermal sorting with weak temporal tracking."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Route-path climate and local gradients."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Finnish range-margin slowdown."
+  },
+  {
+   "target": "doi:10.5281/zenodo.8253971",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PKU GIMMS NDVI v1.2 (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.5194/essd-15-4181-2023",
+   "reason": "PKU GIMMS NDVI method paper."
+  },
+  {
+   "target": "doi:10.1111/ele.13898",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AVONET habitat and migration traits."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/6a0b0b0ab66b0188da36aedd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "North American Breeding Bird Survey 2026 release."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA nClimGrid monthly temperature and precipitation."
+  },
+  {
+   "target": "https://purl.stanford.edu/vy474dv5024",
+   "relations": [
+    "uses"
+   ],
+   "reason": "National Atlas BBS route paths."
+  },
+  {
+   "target": "doi:10.2307/1941875",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Vegetation constraint: temporal sensitivity of production below the spatial one; we find this for greenness and temperature."
+  },
+  {
+   "target": "doi:10.1098/rstb.2011.0347",
+   "reason": "Precipitation legacies and spatial vs temporal productivity sensitivity."
+  }
+ ]
+}
