@@ -1,0 +1,29 @@
+{
+ "title": "Warm seasons were followed by higher next-year butterfly counts at cool British sites (1976-2024), not by species range position; Swedish birds (1996-2025) gave no clear effect",
+ "abstract": "Question: does a North American result (sci:3250b81c) repeat in independent European data? In BBS birds, a warm May-July season was followed by more birds in the cool part and fewer in the warm part of species ranges. Data: Swedish Bird Survey fixed routes 1996-2025 (107 species, 643 routes, CC0) and UK Butterfly Monitoring Scheme site indices in Great Britain 1976-2024 (48 species, 1,168 sites), with GHCN_CAMS temperature. Method: the BBS design, written in a plan before the fits. Outcome log(count+1) with species x route (x observer) and species x year fixed effects. Test: previous-season detrended anomaly x thermal niche position (TNP, route climate as a standard score in the range of the species inside the network). Two-way clustered intervals and a 999-permutation year-relabel test. Result: butterflies -3.38 (95% CI -5.11 to -1.65; permutation p = 0.011), negative in both periods, in England and in Scotland plus Wales; next-season placebo +1.08 (-1.12 to 3.27). Birds -0.22 (-0.64 to 0.19; permutation p = 0.41), negative in all subsets but not clear. The plan rule needed both networks, so the pattern did not generalise. Exploratory: with route x year or site x year effects the term was +0.47 (-3.65 to 4.58) for butterflies and +0.01 (-0.52 to 0.54) for birds. In butterflies, plain site climate explained the signal (-4.85, -7.48 to -2.21), and TNP added nothing in a joint model (+1.52, -1.93 to 4.97). Thus warm seasons were followed by gains of all species at cool sites, not by a species-specific range-position effect. Limitations: TNP uses only the range inside each network; most temperature variance is national, so about 30 and 48 independent seasons; no detection model; correlational design; the additions were chosen after the main results.",
+ "categories": [
+  {"scheme": "anzsrc-for-2020", "code": "410102 Ecological impacts of climate change and ecological adaptation"},
+  {"scheme": "anzsrc-for-2020", "code": "310307 Population ecology"}
+ ],
+ "keywords": ["thermal niche position", "range position", "lagged weather response", "climate change", "Swedish Bird Survey", "UK Butterfly Monitoring Scheme", "butterflies", "birds", "replication", "pre-registered", "permutation test", "fixed effects", "site climate gradient", "GHCN_CAMS", "Sweden", "Great Britain", "range shift mechanism"],
+ "display": [
+  {"path": "files/figures/fig1_interaction_forest.png", "caption": "Pre-registered lagged interaction (previous-season May-July anomaly x thermal niche position) in Swedish birds (left, with the BBS estimate in grey) and GB butterflies (right): main model, subsets, sensitivity models and next-season placebo. 95% two-way clustered intervals. Negative values mean that a warm season helps the cool part of the range."},
+  {"path": "files/figures/fig5_decomposition.png", "caption": "Exploratory decomposition. With route or site x year effects, or with site climate in the model, the range-position term is not clear in either network; in GB butterflies the lagged signal follows site climate shared by all species at a site."},
+  {"path": "files/figures/fig3_permutation_jackknife.png", "caption": "Top: lagged interaction under 999 year relabellings of the previous-season anomaly fields, with the observed value. Bottom: one-year leave-out estimates with 95% intervals."}
+ ],
+ "citations": [
+  {"target": "sci:sha256:3250b81c789d8cd041cf359eb978868b41ae06364686201fde41eeb105a326c8", "relations": ["uses", "reviews"], "reason": "Result and method tested here in independent European bird and butterfly data. The British test agrees in sign, but the signal follows site climate, not species range position; the Swedish test is not clear."},
+  {"target": "sci:sha256:bf7b88c8b20f9d36f3746f9c982195c15e054e71384df41c6314e1fb72448f1e", "relations": ["reviews"], "reason": "BBS route x year effects version; compared with our unit x year results."},
+  {"target": "sci:sha256:3adef8e9e0116b77d591d9a6af9616bc1d183d10e2c43063af9e1de4f0fca6b5", "reason": "Earlier analysis of the same Swedish Bird Survey data (community thermal tracking)."},
+  {"target": "sci:sha256:814f6d393d18214a8259af1e12c63fd1d1d81558bc5410f00c3a7eaf2a2a3d96", "reason": "Earlier analysis of UKBMS site indices (community thermal tracking)."},
+  {"target": "sci:sha256:29170ea478f753ebdd43576df09712e455ff0df2f2a1018ef4523f2baf3fae3d", "reason": "Previous-summer temperature links to British butterfly indices."},
+  {"target": "sci:sha256:124367e558e424dfb10426e017740ce5a8fd519edac6a86ba105193e3a47af42", "reason": "Prior summer heat peaks and next-year British butterfly indices."},
+  {"target": "https://www.gbif.se/ipt/resource?r=lu_sft_std", "relations": ["uses"], "reason": "Swedish Bird Survey fixed routes DwC-A v1.16 (CC0)."},
+  {"target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9", "relations": ["uses"], "reason": "UKBMS site indices 2024 (Open Government Licence)."},
+  {"target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768", "relations": ["uses"], "reason": "UKBMS site location data 2024 (Open Government Licence)."},
+  {"target": "https://downloads.psl.noaa.gov/Datasets/ghcncams/air.mon.mean.nc", "relations": ["uses"], "reason": "GHCN_CAMS monthly air temperature."},
+  {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS description."},
+  {"target": "doi:10.1198/jbes.2010.07136", "relations": ["uses"], "reason": "Two-way cluster-robust inference."},
+  {"target": "doi:10.1111/biom.12506", "reason": "UKBMS generalized abundance index method."}
+ ]
+}
