@@ -1,0 +1,130 @@
+{
+ "title": "WPC Excessive Rainfall Outlooks (2021-2026) matched their rain-above-flash-flood-guidance probabilities at 5 km scale; flood reports were 1.4-2.5 times fewer, and FFG made the definition regional",
+ "abstract": "We tested the NOAA WPC Excessive Rainfall Outlook (ERO), which gives the probability that rain exceeds flash flood guidance (FFG) within 40 km of a point (Marginal 5%, Slight 15%, Moderate 40%, High 70%). We used 2,093 Day 1 outlooks (0830 UTC, 2021-2026), a 20 km grid of 19,270 CONUS points and four truths: MRMS rain above FFG (T1, the definition), MRMS rain above the 5-year recurrence interval (T2), flash flood Local Storm Reports (T3), and their union (T4). The plan was hashed before matching. At a 5 km scale, T1 frequencies were in the stated range in all classes: no area 0.42%, Marginal 8.0%, Slight 22.3%, Moderate 50.1%, High 79.4% (34 days). Days 2-5 were also in range. The verdict depends on the scale: with any 1 km pixel above FFG, Marginal (20%) and Slight (40%) were above range. Against reports, Marginal (2.0%), Slight (8.4%) and Moderate (27.6%) were 2.5, 1.8 and 1.45 times below the lower bounds; report capture of T1 events rose from 4.5% to 30% from the least to the most populated quintile. T4 was in range in all classes. Inside ERO areas, the ratio of T1 to T2 events changed 7.6-fold between River Forecast Centers (0.28 in CNRFC, 2.09 in LMRFC), so the same category means different rainfall rarity by region. At RFC boundaries, the T1 jump exceeded the T2 jump by 0.107 (95% CI 0.070-0.132) in |ln ratio| (pre-registered, supported), while the ERO itself had almost no jump. An exploratory placebo that compares jumps at equal distance inside RFCs reduced the boundary excess of ln(T1/T2) to 0.047 (0.023-0.076); most regional difference is a broad west-east gradient, with large steps at CNRFC/NWRFC and MARFC/OHRFC. Slight points within 40 km of Moderate areas had 34% T1 frequency, against 22% elsewhere, so the proposed 25% Enhanced level exists inside Slight, but for only 4.5% of Slight point-days. Between-RFC calibration spread was not larger for T1 than for T2 (not supported). Limitations: MRMS FLASH ratios are not the Stage IV exceedances that WPC uses; 3-hourly sampling found 74% of hourly T1 events, so T1 frequencies are lower bounds; no USGS gauges; RFC boundaries often follow drainage divides.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "Excessive Rainfall Outlook",
+  "Weather Prediction Center",
+  "flash flood guidance",
+  "flash flood",
+  "forecast verification",
+  "calibration",
+  "MRMS FLASH",
+  "average recurrence interval",
+  "local storm reports",
+  "River Forecast Center",
+  "reliability",
+  "pre-registration",
+  "population bias",
+  "Enhanced risk category"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Observed event frequency within 40 km in each Day 1 ERO category (2021-2026) for four truths. Grey boxes are the stated probability ranges. MRMS rain above FFG (the product definition) falls in every range; flash flood reports fall below the Marginal to Moderate ranges."
+  },
+  {
+   "path": "files/figures/fig2_maps.png",
+   "caption": "Point climatologies 2021-2026: frequency of MRMS rain above FFG (a), above the 5-year ARI (b), their log2 ratio (c) and Day 1 ERO Marginal-or-higher frequency (d). Black lines are RFC boundaries. The FFG-to-ARI ratio changes strongly from west to east and steps at some RFC boundaries."
+  },
+  {
+   "path": "files/figures/fig3_boundary.png",
+   "caption": "(a) Jump in event frequency across each of 22 RFC boundaries for rain above FFG versus rain above the 5-year ARI. (b) Exploratory placebo: boundary jump minus the jump over the same distance inside one RFC, with 95% day-bootstrap intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1175/WAF-D-20-0020.1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "WPC verification and redefinition of the ERO ranges (2015-2019); we test the redefined product independently."
+  },
+  {
+   "target": "doi:10.1175/JAMC-D-19-0097.1",
+   "reason": "UFVS components and ERO calibration method in the 2017 FFaIR experiment."
+  },
+  {
+   "target": "doi:10.1175/WAF-D-12-00124.1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Clark et al. (2014) found FFG skill differs between RFCs; we show the effect on ERO verification."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same report-population effect in SPC hail outlook verification; we find it for flash flood reports."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Sparse observations understated hits in PTWC tsunami threat verification; related observation effect."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Campaign attribution of a product error to its rules; we attribute regional verification differences to FFG."
+  },
+  {
+   "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+   "reason": "Related campaign verification of a NOAA outlook with stated probability ranges."
+  },
+  {
+   "target": "sci:sha256:a1c89b0a2049e04686404a3e8c6328989d3ff2645bf7d429cc3d7158b28322a4",
+   "reason": "Related campaign verification of a NOAA probabilistic outlook (Coral Reef Watch)."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/outlooks.py",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM archive of WPC ERO polygons (type E)."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM archive of NWS Local Storm Reports."
+  },
+  {
+   "target": "https://noaa-mrms-pds.s3.amazonaws.com/index.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MRMS FLASH_QPE_FFGMAX and FLASH_QPE_ARIMAX, NOAA Open Data on AWS."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NCEI Storm Events Database details files (sensitivity truth)."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf_2026/pns26-57_proposed_changes_to_ero.pdf",
+   "reason": "NWS proposal of an Enhanced (25%) ERO category, August 2026."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/PDDs/PDD_ERO_Days_4_5_T2O.pdf",
+   "reason": "ERO Product Description Document (April 2023) with the 5/15/40/70% definitions."
+  },
+  {
+   "target": "https://www.weather.gov/source/gis/Shapefiles/Misc/rf05mr24.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NWS RFC boundaries."
+  }
+ ]
+}

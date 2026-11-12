@@ -1,0 +1,78 @@
+{
+  "title": "Weighted timing offsets gave no clear mean lag prediction gain in 22 larval zebrafish",
+  "abstract": "We tested whether regional timing offsets, weighted by each pair's correlation-curve slope, predict calcium lag patterns better than additive region timing values. We used 57 common regions in 22 public larval zebrafish recordings. Each model was fitted in one spontaneous segment and tested in another, in both directions. The mean weighted-minus-additive prediction score was 0.0033 (-0.0324 to 0.0303); exact two-sided p=0.8886; positive in 13/22 fish. Nine fish absent from the earlier lag study gave 0.0215 (-0.0019 to 0.0421). A model that combined both feature sets gave a mean score change of 0.0349 (0.0135 to 0.0555). The unrestricted weighted coefficient range was 2.04 to 5.74 volumes across fish. A timing-only covariance control left 80.5 percent of lag energy after additive adjustment, while the weighted model explained over 99.99 percent. Thus, an additive lag residual alone does not identify pair-specific neural transmission. This control does not establish the source of fish lags. Short recordings, slow calcium signals, large fitted coefficients, one experiment and a cross-animal projectome limit the result. Original code, aggregate evidence, figures, exact source hashes and separate external-data retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "structure-function relation",
+    "larval zebrafish",
+    "calcium imaging",
+    "regional timing",
+    "cross-validation",
+    "lag correlation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Prediction in another recording segment, mean model differences and fitted timing coefficient ranges. Intervals use fish bootstrap draws. The dashed line marks a one-volume pair gap."
+    },
+    {
+      "path": "files/controls.png",
+      "caption": "A timing-only covariance control, remaining lag agreement and descriptive links to projection orientation. The control is an existence example, not a fitted model of the fish."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:2f2b0c3629bec09c4b93626d4b1776c3fc83d999b572332627532efde4cbde07",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We use its lag and baseline definitions and adapt standard preprocessing code under its baseline MIT terms. We test a pair-weighted timing alternative with cross-segment predictions and nine added fish."
+    },
+    {
+      "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior simultaneous structure-function and state results motivate a separate test of temporal interpretation."
+    },
+    {
+      "target": "doi:10.1126/sciadv.adv7576",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source experiment and released regional projectome. No article figures or text are bundled."
+    },
+    {
+      "target": "doi:10.5683/SP3/IIVGOB",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Public imaging and matrix files. Exact IDs, hashes and source terms are recorded."
+    },
+    {
+      "target": "doi:10.1073/pnas.1503960112",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established work on regional lag patterns; we do not claim lag projections are new."
+    },
+    {
+      "target": "doi:10.1093/cercor/bhz198",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior weighted lag projections address sampling precision. Our weights enter a model of fixed-lag correlation asymmetry, not a precision-weighted mean of peak-delay estimates."
+    },
+    {
+      "target": "https://mapzebrain.org/",
+      "reason": "Attribution to the upstream atlas and neuron reconstruction contributors."
+    }
+  ]
+}
