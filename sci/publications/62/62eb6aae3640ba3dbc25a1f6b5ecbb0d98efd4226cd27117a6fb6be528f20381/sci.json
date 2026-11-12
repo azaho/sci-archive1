@@ -1,0 +1,84 @@
+{
+ "title": "SPHEREx 2025-2026 spectra of 598 main-belt asteroids agree with AKARI 2.7 um band depths and show that a Gaia DR3 0.7 um band raises the 3 um band rate from 37% to 62% at all sizes from 16 to 400 km",
+ "abstract": "Question: Can SPHEREx survey data measure the 2.7-3 um hydration band of main-belt asteroids, and how often does a Gaia DR3 0.7 um band come with a 3 um band? Vilchez et al. (2026) found in 20 asteroids that the 0.7 um band often occurs without the 3 um band, mainly below 100 km. Method: We matched 4,114 asteroids (H < 12.5) with Gaia DR3 reflectance spectra to 270,830 SPHEREx exposures (2025-04 to 2026-10), used JPL Horizons positions seen from SPHEREx, and did PSF photometry of 1,034 asteroids on 25,857 Level-2 files. The simultaneous D1 detector (0.75-1.1 um) normalises the D4 flux (2.4-3.8 um), which removes rotation and geometry. With a solar model, a NEATM thermal model and the Gaia reflectance at the D1 wavelength, we measured the band depth D2 at 2.70-2.88 um. Cuts and detection rules were set before the full photometry. Results: For 44 AKARI asteroids, D2 agrees with the AKARI 2.7 um depth (r = 0.93, slope 1.06, offset -0.026). Only 2 of 83 high-albedo controls pass the band rule. Among 501 low-albedo asteroids, 62% (164/266) with a Gaia 0.7 um band have a 3 um band, against 37% (87/235) without (Fisher p = 4e-8). The rate does not depend on size (61% below 100 km, 64% above; interaction p = 0.82). Only 6 of 102 objects with a 0.7 um band and no 3 um detection have a D2 limit below 5%, and 4 of them are at a > 3.2 au. Exploratory: the rate is 40% for 0.7 um depths of 1-2% (equal to no band) and 83% for depths of 3% or more; Ch types 95%; the rate falls outward in the belt. Limitations: the window favours sharp phyllosilicate bands and under-measures rounded 3.1 um bands; thermal-model choices change rates by up to 0.1; bootstrap errors are 2.2 times too small; SPHEREx quick-release calibration is preliminary. Job sci-1107-dell-astronomy-7f5aca2585fd, machine dell, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "SPHEREx",
+  "asteroids",
+  "hydration",
+  "3 micron band",
+  "0.7 micron band",
+  "Gaia DR3",
+  "AKARI",
+  "phyllosilicates",
+  "main belt",
+  "moving-object photometry",
+  "Horizons",
+  "C-complex",
+  "Ch type"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_example_spectra.png",
+   "caption": "Gaia DR3 (grey) and SPHEREx D4/D1 (blue) reflectance of six asteroids. Shaded: continuum windows (grey) and band window 2.70-2.88 um (orange). Open symbols: pairs removed by the quality cuts. Errors in titles are inflated by 2.2 (control scatter)."
+  },
+  {
+   "path": "files/figures/fig2_spherex_vs_akari.png",
+   "caption": "SPHEREx band depth D2 against the AKARI 2.7 um band depth of Usui et al. (2019) for 44 asteroids. Dashed: 1:1."
+  },
+  {
+   "path": "files/figures/fig3_h2_07_vs_3um.png",
+   "caption": "Left: fraction of low-albedo asteroids with a SPHEREx 3 um band, with and without a Gaia DR3 0.7 um band, by diameter (Wilson 95% intervals; counts below). Right: SPHEREx D2 against Gaia 0.7 um depth; dashed lines are the detection thresholds."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:1252e08c45d107a4fd2bd9a2c003550368d58c7131571e5af4bf364c2d03d591",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its SPHEREx byte-range reader, PSF photometry core and pixel-position/wavelength model."
+  },
+  {
+   "target": "doi:10.1093/pasj/psy125",
+   "reason": "Usui et al. 2019, AKARI 2.7 um band depths used for validation (arXiv:1810.03828)."
+  },
+  {
+   "target": "doi:10.1093/mnras/staf2171",
+   "reason": "Vilchez et al. 2026: claim of 0.7 um bands without 3 um bands below 100 km, tested here."
+  },
+  {
+   "target": "doi:10.1016/j.icarus.2012.08.042",
+   "reason": "Rivkin 2012: use of the 0.7 um band as a proxy for the 3 um band."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243791",
+   "reason": "Gaia DR3 asteroid reflectance spectra."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "reason": "Gaia DR3 summary (Vallenari et al. 2023)."
+  },
+  {
+   "target": "https://irsa.ipac.caltech.edu/Missions/spherex.html",
+   "reason": "SPHEREx Level-2 quick-release images (NASA/IPAC IRSA; AWS Open Data mirror s3://nasa-irsa-spherex)."
+  },
+  {
+   "target": "https://ssd.jpl.nasa.gov/horizons/",
+   "reason": "JPL Horizons ephemerides seen from SPHEREx (500@-163182) and SBDB orbital and physical data."
+  },
+  {
+   "target": "doi:10.1006/icar.1997.5865",
+   "reason": "Harris 1998, NEATM thermal model."
+  }
+ ]
+}
