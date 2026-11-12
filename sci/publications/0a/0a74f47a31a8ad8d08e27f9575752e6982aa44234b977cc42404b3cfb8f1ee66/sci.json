@@ -1,0 +1,163 @@
+{
+ "title": "Berlin human L2/3 slices show a 1.9-fold shallow-to-deep connection bias without reciprocity excess; proofread mouse EM axons show no depth bias, and unproofread EM axons give a false one",
+ "abstract": "We tested two reported properties of human layer 2/3 excitatory wiring: no reciprocity excess and a preference for deeper targets. We used the same estimators in Berlin human slice tables (4,299 pairs, 23 donors), Allen human slices (472 pairs, 45 donors), Allen mouse slices (2,377 pairs) and the MICrONS mouse V1 EM connectome (19,707 layer 2/3 pyramidal cells). With connection counts fixed per recording and distance bin, reciprocity ratios were 0.96 (95% donor interval 0.72 to 1.18) in Berlin, 1.24 (0.93 to 1.57) in Allen human and 1.68 (1.26 to 2.13) in mouse slices. Thus most of the pooled Allen human excess (2.27) came from density differences, and the two human datasets did not differ clearly. When each Berlin cell kept its in-degree and out-degree, reciprocity was in excess (1.28, 1.10 to 1.46), because shallower cells act as sources. In Berlin, the shallower-to-deeper connection rate was 1.90 times the reverse rate (1.62 to 2.31). The ratio increased with depth gap, held inside single cells and held for sources with usable, uncut axons. Allen human slices had the same sign but an unresolved size (1.48, 0.86 to 2.52). In MICrONS, sources with unproofread axons gave a similar false bias (1.90, 1.75 to 2.06), but 520 sources with proofread axons gave none (0.94, 0.90 to 1.05). Limits: the Berlin tables probably include the original study's recordings; slices also truncate axons; we did not test a human EM volume.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "human cortex",
+  "layer 2/3",
+  "reciprocity",
+  "connection direction",
+  "cortical depth",
+  "multipatch",
+  "Allen Synaptic Physiology",
+  "MICrONS",
+  "proofreading",
+  "null models",
+  "connectomics",
+  "reconstruction bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_reciprocity_direction.png",
+   "caption": "A: reciprocity ratio under four null models. B: rate ratio of shallower-to-deeper over deeper-to-shallower connections (depth gap at least 20 µm). C: the same ratio by depth gap. Slice intervals resample donors; EM intervals resample 200 µm blocks."
+  },
+  {
+   "path": "files/figures/fig2_within_cell_roles.png",
+   "caption": "A: within-cell direction differences in slices (as source and as target). B: Berlin cell role against relative soma depth."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1126/science.adg8828",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Peng et al. 2024: no reciprocity excess and deeper-target preference in human L2/3; reanalysed with stricter nulls."
+  },
+  {
+   "target": "doi:10.6084/m9.figshare.28184126.v1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Berlin human L2/3 processed connection tables (GPL 3.0+); not bundled."
+  },
+  {
+   "target": "doi:10.1038/s41593-025-02134-7",
+   "reason": "Paper that describes the Berlin tables."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology data description."
+  },
+  {
+   "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology r2.1 small sqlite."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS functional connectomics resource."
+  },
+  {
+   "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/synapse_graph/cave_exports/v1300/connections_with_nuclei.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS v1300 nucleus-linked edges."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07765-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "AIBS metamodel cell types used for 23P cells."
+  },
+  {
+   "target": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/proofreading_status_and_strategy_merged.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS proofreading status table."
+  },
+  {
+   "target": "doi:10.1371/journal.pbio.0030068",
+   "reason": "Reciprocity excess in rat cortex."
+  },
+  {
+   "target": "doi:10.1162/NETN_a_00004",
+   "reason": "Heterogeneous pair probabilities can produce false reciprocity excess."
+  },
+  {
+   "target": "sci:sha256:eeecd73fe7bc03229d7032ac8a05c575de66133a08f55bbd97d02b6b19a27844",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Pooled Allen reciprocity excess; we show most of the human part is density heterogeneity."
+  },
+  {
+   "target": "sci:sha256:85b03c97a3b842bcd668478f40efba76b66d5d26a2b59d885dc38d42cbf71c9a",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Correction budgets for pooled Allen reciprocity excess."
+  },
+  {
+   "target": "sci:sha256:33950f196e1de504d2b277d6b27c199a30c1e9baa719b7fa4380e8380e98ce74",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Group and distance null: mouse excess, human not; our Allen results agree."
+  },
+  {
+   "target": "sci:sha256:74cf992c49865d93c0564c9bec8c4cbc68880062aab1e05760a8467e5992dc98",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fixed-degree nulls degenerate in small Allen recordings."
+  },
+  {
+   "target": "sci:sha256:8ae2d1d75c4c4e5f13a6753501a8f62cd6c7455dafac99aa22f99e6bbe2db7a5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Fixed-degree reciprocity test power limits."
+  },
+  {
+   "target": "sci:sha256:2a0427bbf298e2f9824dc0ad925a2edd94f532d518ce4b1bf868a0e160b16edb",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Unresolved Allen depth-direction bias; same sign and similar size here."
+  },
+  {
+   "target": "sci:sha256:414a5fdf7b2bfa816a2edb8d758ac60cdfcffabdec9431c5009649522149c036",
+   "reason": "Reverse call predicts connections in Allen samples."
+  },
+  {
+   "target": "sci:sha256:908ee0ddaa05762b06a83334e115e46e51955727d5b9458dca656221abd4792f",
+   "reason": "Earlier use of the Berlin tables."
+  },
+  {
+   "target": "sci:sha256:28c4d1b908d356a99f7260d1eca80c42fa202155cd3cc3d83297686a06c5bf6c",
+   "reason": "Dendrite-opportunity direction rule in a small MICrONS sample."
+  }
+ ]
+}

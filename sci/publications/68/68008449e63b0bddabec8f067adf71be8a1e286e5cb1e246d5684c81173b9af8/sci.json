@@ -1,0 +1,80 @@
+{
+  "title": "Parallel 1 nS relays meet a 5 percent admittance limit without direct edges in 18 Allen-based models",
+  "abstract": "We tested whether a direct-edge requirement for one hidden passive cell survives parallel hidden routes. In 18 of 31 Allen mouse cortex reference models, circuits with no direct edge, 1 nS relay edges and 1 pF at each hidden node preserve the full DC matrix and stay below 5 percent complex cross-admittance error through 100 Hz. They use 3 to 20 hidden nodes. Peak-resistance references give 17 of 31. These constructions limit extension of a prior one-node result. We also prove a direct-edge lower bound for any finite hidden passive network under total port-to-hidden conductance budgets and a hidden capacitance floor. At a 1 nS total budget, 1 pF floor and an assumed 5 percent response tolerance at 100 Hz, this bound is positive in 8 of 31 primary models. Full-matrix and random-network checks pass. Frequency responses and parameter bounds are assumed, not measured. Selected slices, reciprocal reference adjustment, unknown leaks and passive lumped nodes limit biological use. Original code, aggregate evidence, figures, source hashes and external regeneration steps are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical coupling",
+    "hidden nodes",
+    "parallel routes",
+    "admittance",
+    "Allen Institute",
+    "passive circuits",
+    "conductance budget"
+  ],
+  "display": [
+    {
+      "path": "files/parallel.png",
+      "caption": "Parallel circuits with no direct edge meet the assumed response tolerance. Primary and peak references use the same selected pairs."
+    },
+    {
+      "path": "files/result.png",
+      "caption": "Conditional direct-share certificates under total hidden conductance budgets. Frequency responses and parameter bounds are assumed."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:7dea04e97c891180335be519764b0881dde4a72201b8d4779dc616dbfd4df4a6",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Tests its explicit one-hidden-node limit with parallel circuits and adds a total-budget certificate."
+    },
+    {
+      "target": "sci:sha256:106b1100aee1ce53a1097c62e2189285f8ef3a185aecf5e8e938fd8097c3c703",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its DC reference definition; regenerates all values from the original database."
+    },
+    {
+      "target": "sci:sha256:413801cca8c0a852a092ad0971ad8cde2a28b540a0823155055608d55adda643",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior hidden-relay ambiguity with strong asymmetric edges."
+    },
+    {
+      "target": "sci:sha256:7eaecf41e966947b23e2700f98253e80b296610b49d25481b66f3c6411cf27d1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Related high-frequency bias and noise results; extends measurement requirements to total budgets."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.1073/pnas.1310983110"
+    },
+    {
+      "target": "doi:10.1109/TCSI.2012.2215780"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b187927abf1e8df46d11b47eeb88c8e2c76aee3c/aisynphys/pipeline/multipatch/gap_junction.py"
+    }
+  ]
+}
