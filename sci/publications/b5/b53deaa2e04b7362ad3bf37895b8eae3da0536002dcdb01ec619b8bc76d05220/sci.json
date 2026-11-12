@@ -1,0 +1,21 @@
+{
+  "title": "Delaware Estuary salinity at equal river flow did not rise more than its 1965-2009 sea-level relation predicted after the 2010-2017 channel deepening (USGS conductance, 1965-2026)",
+  "abstract": "We tested if the 2010-2017 deepening of the Delaware River shipping channel made salt intrusion stronger at equal river flow. We used USGS daily specific conductance at Reedy Island (river mile 54) and Chester (river mile 83), Trenton and Schuylkill discharge, and Lewes sea level. We fitted the log of conductance above the river value on lagged flow, sea level at three time scales, tidal range and season for 1965-2009. Then we predicted 2018-2026. At Reedy Island the 2018-2026 mean residual was -0.066 log units (95% year-bootstrap interval -0.28 to 0.13), or about -0.5 mile of salinity-profile shift. At Chester it was +0.084 (-0.12 to 0.28); this came from the wet year 2018, and 2019-2026 gave +0.02. On low-flow days (30-day flow below 6,000 cfs) the residuals were -0.08 at Reedy Island and -0.12 at Chester. These values are inside the range of 13 placebo windows within 1965-2009. The 2024 and 2025 drought autumns were inside the range of earlier droughts when we used a low-flow model. Flow-adjusted salinity at Reedy Island rose by a factor of 1.47 (about 3 miles) from 1965-1979 to 2018-2026, while Lewes sea level rose 0.25 m. This rise continued at its pre-2010 rate. The data cannot separate sea level from other slow trends. Limits: point sensors with undocumented changes, urban conductance at Chester, 9 test years with two strong droughts, and no hydrodynamic model. A deepening effect smaller than about 1-2 miles of profile shift cannot be excluded.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["estuary", "salinity intrusion", "salt front", "Delaware River", "channel deepening", "sea-level rise", "specific conductance", "drought", "out-of-sample test", "USGS NWIS", "NOAA CO-OPS", "null result"],
+  "display": [
+    {"path": "files/figures/fig1_flow_adjusted_salinity.png", "caption": "Annual mean of flow-adjusted log excess specific conductance (model with flow and season only, fit 1965-2009) at Reedy Island and Chester. Blue: training years. Orange: 2010-2026, not used in the fit. Gray line: part expected from Lewes annual sea level with the 1965-2009 coefficient. Shading: channel deepening 2010-2017."},
+    {"path": "files/figures/fig2_out_of_sample_test.png", "caption": "Mean 2018-2026 residual (observed minus predicted log excess SC) with 95% year-bootstrap intervals, for each station, day set (all days or 30-day flow below 6,000 cfs) and long-term term. Gray ticks: the same test in 13 placebo 9-year windows inside 1989-2009. Top axis: approximate along-river shift for an e-folding length of 7.7 miles."},
+    {"path": "files/figures/fig3_chester_lowflow_by_year.png", "caption": "Mean residual at Chester on low-flow days, by year, from a model fit to 1965-2009 low-flow days with sea level. Dot area shows the number of low-flow days. 2024 and 2025 are inside the range of earlier drought years."}
+  ],
+  "citations": [
+    {"target": "doi:10.1016/j.ecss.2015.01.022", "relations": ["supports"], "reason": "Ross et al. 2015 found a sea-level signal in Delaware Estuary salinity with data before the deepening was complete; we find the same slow rise continued in 2010-2026."},
+    {"target": "doi:10.1007/s12237-025-01532-1", "reason": "Duzinski et al. 2025 describe salt transport mechanisms in the oligohaline reach near Chester and Marcus Hook."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily values for specific conductance and discharge (public domain)."},
+    {"target": "https://api.tidesandcurrents.noaa.gov/api/prod/", "relations": ["uses"], "reason": "NOAA CO-OPS hourly water levels at Lewes, DE 8557380 (public domain)."},
+    {"target": "https://www.nj.gov/drbc/programs/flow/salt-front.html", "reason": "DRBC salt-front program, record position river mile 102 in the 1960s and river mile 89 in 2002 and 2024."}
+  ]
+}
