@@ -1,0 +1,87 @@
+{
+ "title": "SPC watch probabilities for 13,003 US watches in 2006-2025 did not increase enough with watch area and duration; hail-count and 65-kt wind errors followed rule and practice changes",
+ "abstract": "We verified the seven probabilities that the NOAA Storm Prediction Center (SPC) issues with each tornado and severe thunderstorm watch. The sample was 13,003 watches from 2006 to 2025. The outcomes were reports in the SPC final storm databases. The analysis plan was written before reports were matched to watches.\n\nFive of seven probabilities were miscalibrated by the pre-set rule (95% CI of observed/forecast O/F excludes 1 and error above 10%): at least 10 severe hail reports (O/F 0.65), at least one EF2+ tornado (0.78), at least 2 tornadoes (0.85), at least 10 wind reports (0.86) and at least one wind of 65 kt or more (1.36, too low). Hail of 2 in or more (0.98) and 6 combined reports (0.94) were within the margin.\n\nThe largest systematic error is watch size. At a fixed issued probability, the event chance increased with watch area x duration for all seven events. The forecasts carry only 26-53% of this dependence: O/F is 0.26-0.93 in the smallest fifth of watches and 0.94-1.71 in the largest fifth. A recalibration with log(area x hours), fitted on 2006-2015, reduced the 2016-2025 Brier score by 1.4-5.1% against a plain recalibration for all seven events. County-based watch areas with actual clearing times gave the same results (O/F within 0.04).\n\nExploratory checks: the 10-hail-report over-forecast increased when the severe hail size changed from 0.75 to 1.00 in (2010) and the forecasts did not follow; counted at 0.75 in, the 2010-2025 O/F returns to the pre-2010 value. The 65-kt wind error comes from low forecasts in 2013-2017 (O/F 2.16) and from more measured gusts after 2018. In tornado watches, the 2-tornado probability was calibrated; in severe thunderstorm watches it was too high (O/F 0.66).\n\nLimitations: storm reports are incomplete and depend on population and practice; the verification area of the probabilities is not stated by SPC; the source checks after the plan are exploratory.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "forecast verification",
+  "Storm Prediction Center",
+  "severe weather watch",
+  "tornado",
+  "hail",
+  "wind",
+  "reliability",
+  "calibration",
+  "storm reports",
+  "pre-registration",
+  "hazard products"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_size.png",
+   "caption": "Observed/forecast ratio by fifth of watch area x duration for the seven SPC watch probabilities (2006-2025). Blue: watch polygon with 95% day-bootstrap CI; violet: county-based area with actual times; orange/green: polygon +-25 km. Forecasts carry only 26-53% of the size dependence."
+  },
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Reliability diagrams for the seven WWP probabilities, 13,003 watches, 2006-2025, SPC final reports inside the watch polygon."
+  },
+  {
+   "path": "files/figures/fig4_hail_wind_sources.png",
+   "caption": "Left: O/F for >=10 severe hail reports by period and counting size; the 2010 change to 1.00 in explains the post-2010 drop. Right: O/F for >=1 wind >=65 kt by forecast period, with all and estimated-only reports."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "Related SPC product verification (Day 1 hail outlooks); report-population dependence is a shared limitation."
+  },
+  {
+   "target": "sci:sha256:000ccb7611295e2a1f7a197a021bf9483bf4b05af2fb05274a865973eb7441ca",
+   "reason": "Same programme of pre-registered verification of public hazard products (PAGER)."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Same programme; observation-network density also limits hits there (PTWC threat categories)."
+  },
+  {
+   "target": "sci:sha256:353dbafb96629137537d6d8bc472eaed5180829d16445a34af8eddd0c66a6e81",
+   "reason": "Same programme; another NOAA probabilistic product with a source attribution (NHC RI)."
+  },
+  {
+   "target": "https://www.spc.noaa.gov/publications/vescio/wwprobs.pdf",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier verification of experimental SPC watch probabilities for 166 watches in 1997-1998."
+  },
+  {
+   "target": "https://www.spc.noaa.gov/wcm/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SPC final severe report databases (tornado, hail, wind)."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/request/gis/spc_watch.phtml",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM archive of SPC watch polygons and WWP probabilities."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/request/gis/watchwarn.phtml",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM county-based VTEC watch archive."
+  }
+ ]
+}
