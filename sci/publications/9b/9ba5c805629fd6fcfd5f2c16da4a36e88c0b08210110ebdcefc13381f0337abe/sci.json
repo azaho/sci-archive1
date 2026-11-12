@@ -1,0 +1,73 @@
+{
+  "title": "Environmental terms gave no clear time-transfer gain over survey terms for US bird richness change in 1995-2024",
+  "abstract": "We tested whether seasonal ozone, temperature and rain improved prediction of annual recorded bird richness change beyond survey conditions. We used 23,357 consecutive-year, same-observer survey pairs from a signed US Breeding Bird Survey panel. We tested two US regions and both directions between 1995-2009 and 2010-2024. Environmental terms changed mean squared error by -0.50 to +1.35 percent. All state-resampling intervals included zero. They also included zero for changes in the ability to rank losses of at least five recorded species. Each resampling draw refit the training models. Thus, this fixed environmental model gave no clear common gain. This is not evidence that climate and pollution have no biological effect. Shared routes, changing detection, coarse exposure fields, sparse western coverage and unmodeled year dependence limit use. The package gives code, aggregate evidence, source hashes and a retrieval script. Source records remain outside the bundle.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "bird richness",
+    "ozone",
+    "seasonal weather",
+    "temporal transfer",
+    "observation bias",
+    "large losses",
+    "training uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/comparison.png",
+      "caption": "Environmental minus survey-only score changes. Negative MSE change and positive AUC change favor environment. State resampling refits both models and uses the same state weights in both periods. Intervals are 98.75 percent within each metric. All intervals include zero."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:05e1c90b8ab4b3dcd645dc9508b72044e08a0d62be1c9247b944a94d98bec947",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuse verified survey-pair table and feature definitions with credit. New tests compare the full environmental set to survey conditions, rank large recorded losses, and refit training models during state resampling. Biological records fully overlap."
+    },
+    {
+      "target": "doi:10.1073/pnas.2013568117",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.2307/4088504",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1111/ecog.02881",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.5066/P14SNUV4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original BBS source inherited through the signed pair table; not downloaded again."
+    },
+    {
+      "target": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original ozone source inherited through signed pairs."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original county weather source inherited through signed pairs."
+    }
+  ]
+}
