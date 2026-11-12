@@ -1,0 +1,108 @@
+{
+ "title": "A day-number error caused the 9% temperature skill for British butterfly flight dates; corrected, temperature explained 67% of the 1976-2024 advance in one-brood species and 30% in adult hibernators",
+ "abstract": "Question: three campaign studies found that temperature forecast 9%, 16% or about half of the advance of British butterfly mean flight dates. We asked why they differ and what part of the advance temperature does not explain. Approach: UK Butterfly Monitoring Scheme 2024 phenology for Great Britain, 1976-2024, E-OBS v32.0e site-cell temperature, and species groups from a traits table. A plan was timestamped before the main analysis. Results: the code of the two low-skill studies used UKBMS day numbers (days after 1 April) as days after 1 January, so its window search ended about three months before the flight. A rerun of the published code reproduced its 9% result (8.6%); with 90 days added to the day numbers, the same code forecast 53% of the 2005-2024 advance. With a fixed window (flight month and two months before), temperature explained 67% (95% interval 42-90%) of the -2.5 day per decade within-site trend of 13 single-brood species, but 30% (10-47%) of the -4.6 day per decade trend of 5 species that hibernate as adults (residual difference with immigrants: p = 0.015). The direction repeated in southern and northern England, Scotland and both periods, but was clear only in the two English regions. In hibernating species, the last record and the peak advanced but the first record did not, and the early-peak share increased; so mean flight date there mixes season parts. Reconstructed transect coverage changed residual trends by at most 0.6 day per decade. Limitations: the rerun and composition tests were added after the plan; linear monthly windows; small groups; visits are reconstructed from other species' records.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "butterflies",
+  "UKBMS",
+  "climate change",
+  "temperature sensitivity",
+  "replication",
+  "code error",
+  "observation bias",
+  "mean flight date",
+  "voltinism",
+  "hibernation",
+  "E-OBS",
+  "forecast evaluation",
+  "brood composition",
+  "Great Britain"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_day_number_error.png",
+   "caption": "(a) Last month that the earlier window search could use against the true median flight month: about three months early. (b) Median part of the 2005-2024 advance forecast by frozen temperature slopes: published 9%, rerun 9%, with the day-number fix 53%, fixed-window design 58%."
+  },
+  {
+   "path": "files/figures/fig2_observed_vs_predicted_trend.png",
+   "caption": "Observed within-site trend of mean flight date (1976-2024) against the trend predicted by the interannual temperature slope, 37 species by group."
+  },
+  {
+   "path": "files/figures/fig3_group_residual_trends.png",
+   "caption": "Median within-site trend by species group: observed, after temperature, and after temperature and transect-coverage terms, with 95% block-bootstrap intervals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5b887557499944eb240647150fcf4f6c46d5fd059fa0a2e9ffc09e0e689f37e4",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We rerun its UK timing code and show that its 9% result and the 'ten times the sensitivity' conclusion come from a day-number error."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Its butterfly window search uses the same day-number code; its 16% result is affected."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "It converted UKBMS day numbers correctly and found that temperature explains about half of the advance; our corrected results agree."
+  },
+  {
+   "target": "sci:sha256:46f475bd5740e6f668e6632121eb68b7eefe9ea404fc32b9e2910da30efc69da",
+   "reason": "Related UKBMS timing forecast study; notes that whole-season dates mix broods."
+  },
+  {
+   "target": "doi:10.5285/b9d237fc-5a79-4449-bcee-34c52d87608f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS phenology 2024."
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site locations 2024."
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "UKBMS site indices 2024 (rerun of earlier code)."
+  },
+  {
+   "target": "doi:10.5285/dbc7cc17-cbbd-49dd-bab4-8e8855768d66",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Traits of butterflies and macro-moths 2024 (species groups)."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS gridded temperature and precipitation."
+  },
+  {
+   "target": "doi:10.1111/j.2041-210X.2010.00020.x",
+   "reason": "Moussus et al. 2010, phenological estimators used by UKBMS for mean flight date."
+  }
+ ]
+}
