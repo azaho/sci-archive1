@@ -1,0 +1,109 @@
+{
+ "title": "Three public POSS-I transient catalogues show no GEO Earth-shadow deficit inside partly shadowed plates (density ratio > 0.70); the plate-level deficit rests on 8-10 plates (placebo p ~ 0.09)",
+ "abstract": "Question: Villarroel et al. (2025) reported fewer POSS-I red-plate transients (1949-1956) inside the Earth's shadow at geosynchronous (GEO) altitude than plate coverage predicts, as evidence for sunlit orbiting reflectors. Does this deficit occur in large public catalogues, and does it follow the physical shadow? Data: three CC BY 4.0 reproduction catalogues of the VASCO pipeline (jannefi/poss1-plate-slice: 95,770, 134,899 and 122,758 candidates on 641 plates), a plate log from the STScI plate list and VizieR VI/25 with corrected times. Method: we calculated a geocentric shadow cap (as in earlier work) and the true topocentric umbra seen from Palomar through each exposure, for nine altitudes. We applied the naive area test, a within-plate test against the 8 square-symmetry images of each plate, a negative-binomial plate-count model with Galactic latitude and other covariates, injection tests, and 56 placebo shadows moved by 2-56 days. Results (S1, GEO): only 10 (cap) or 8 (topocentric) plates touch the shadow. The naive test repeats a deficit (0.391% against 0.479%, z = -3.9; topocentric z = -5.5), but placebo shadows give naive z with a standard deviation of 5-7, so this test is not calibrated. Inside partly shadowed plates there is no deficit: observed/expected = 1.013 (z = 0.18) and 1.017 (z = 0.35). Injections exclude an in-shadow density ratio rho < 0.72 (cap) and < 0.70 (topocentric) at 95%; the other catalogues agree. The between-plate model gives rho = 0.56 (0.24-1.48) and 0.68 (0.28-1.66). The fully shadowed plate XE422 lies at Galactic latitude 14 deg, where crowding lowers counts. The true shadow has fewer candidates than all 40 non-overlapping placebo positions, but these hold only about 11 independent positions (p ~ 0.09). Conclusion: the shadow edge has no effect inside plates, which real sunlit reflectors require. The small plate-level deficit is not significant and can have a plate-level cause such as gegenschein sky brightness or crowding. Limitations: the private 107,875-row VASCO catalogue was not available; only about ten plates touch the GEO shadow. Job sci-1107-dell-astronomy-7213d1755543, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "POSS-I",
+  "VASCO",
+  "photographic plates",
+  "transients",
+  "Earth shadow",
+  "geosynchronous orbit",
+  "technosignatures",
+  "placebo test",
+  "plate systematics",
+  "gegenschein",
+  "Digitized Sky Survey"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig4_injection.png",
+   "caption": "Within-plate test (S1, GEO). Lines: expected z for an injected in-shadow density ratio rho. Dashed lines and bands: observed z with +-1.96. rho < 0.70 is excluded at 95% for both the geocentric cap and the topocentric shadow."
+  },
+  {
+   "path": "files/figures/fig3_placebo_shifts.png",
+   "caption": "Placebo shadows moved by -56 to +56 days (S1). a: the naive Poisson z of the area test has a spread of 5-7 for placebo shadows, so the true-time z (large markers) is not exceptional. b: plate-count model rho with 95% CI; the true position is low but neighbouring shifts are correlated over 8-12 days."
+  },
+  {
+   "path": "files/figures/fig2_altitude_scan.png",
+   "caption": "Naive area test (filled) and within-plate test (open) against the assumed reflector altitude for three catalogues. The naive z changes irregularly from -9.7 to +12.1; the within-plate z stays within -2.1 to +2.6. Grey band: |z| < 2."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1088/1538-3873/ae0afe",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Villarroel et al. 2025 PASP: reported the POSS-I Earth-shadow deficit that this work re-tests."
+  },
+  {
+   "target": "https://arxiv.org/abs/2604.00056",
+   "relations": [
+    "challenges",
+    "reviews"
+   ],
+   "reason": "Doherty 2026: replication of the shadow deficit on the 107,875-row catalogue; we compare the 0.78% plate-coverage expectation with our 0.45-0.48%."
+  },
+  {
+   "target": "https://arxiv.org/abs/2601.21946",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Watters et al. 2026: found no significant shadow deficit in public samples; our larger catalogues and within-plate test agree."
+  },
+  {
+   "target": "https://arxiv.org/abs/2602.15171",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Villarroel et al. 2026 response: argued the public 5,399-row sample is underpowered; we use catalogues of 95,770-134,899 rows."
+  },
+  {
+   "target": "doi:10.1038/s41598-025-21620-3",
+   "reason": "Bruehl & Villarroel 2025: companion nuclear-test association claim on the same transients (not tested here)."
+  },
+  {
+   "target": "https://arxiv.org/abs/2206.00907",
+   "reason": "Solano, Villarroel & Rodrigo 2022: the VASCO vanishing-source search pipeline."
+  },
+  {
+   "target": "https://github.com/jannefi/poss1-plate-slice/tree/1511373d8ee89baea5a2782268b9e55e9e5061ad",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the three CC BY 4.0 candidate catalogues (S1, S0-paper-parity, S0)."
+  },
+  {
+   "target": "https://github.com/damianfye/palomar-transients",
+   "relations": [
+    "uses"
+   ],
+   "reason": "POSS-I plate time conventions (decimal hours, local-evening dates), re-implemented here."
+  },
+  {
+   "target": "https://gsss.stsci.edu/skysurveys/SurveyPlateList.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "STScI GSSS plate list: plate centres, UT start times, hour angles."
+  },
+  {
+   "target": "doi:10.26093/cds/vizier",
+   "relations": [
+    "uses"
+   ],
+   "reason": "VizieR catalogue VI/25 (POSS-I observation log): exposure times."
+  }
+ ]
+}
