@@ -1,0 +1,81 @@
+{
+ "title": "GNSS slip confirmed the northern Cascadia tremor recurrence asymmetry, but a GNSS-only catalog of 163 slow slip events (2003-2026) showed no clear time-predictable or slip-predictable pattern",
+ "abstract": "We tested time-predictable and slip-predictable recurrence of Cascadia slow slip events with daily GNSS positions from 52 Nevada Geodetic Laboratory stations. A campaign tremor study (sci:38bdf3cb) found that larger tremor episodes are followed by longer quiet times, but it measured size as a tremor count. We detected 163 events in 10 bins of 100 km from GNSS only. Of the events from 2009, 87% had high tremor, against 20% for random dates. In this catalog, the time-controlled correlation of slip size with the quiet time after was 0.17 (95% block interval -0.19 to 0.47) and with the quiet time before was 0.16 (-0.13 to 0.47). The difference was 0.006 (-0.56 to 0.47), and its median over 81 detection settings was -0.02. Synthetic sequences in real GNSS noise showed that this result rejects strong time-predictable and strong slip-predictable laws, but it cannot separate a weak effect from no effect. Tremor count followed GNSS slip weakly (within-bin rank correlation 0.29). In the northern segment, GNSS slip of the tremor study's own 43 events confirmed its result: correlation 0.62 after and -0.17 before (permutation p = 0.007). The result stayed when we merged events closer than 14 to 60 days. There, small events with little slip occurred late in the cycle (79% after mid-cycle, p = 0.007). Among large events alone, size did not clearly set the next quiet time, but these samples were small. Limitations: relative offsets, not moment; the catalog finds mostly large events; bins share events; live data can change. Job sci-1107-hp-earth-and-ocean-sciences-c7f348bbd0fa, topic earth-and-ocean-sciences, machine hp, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "slow slip events",
+  "episodic tremor and slip",
+  "Cascadia",
+  "GNSS",
+  "time-predictable model",
+  "slip-predictable model",
+  "recurrence",
+  "tectonic tremor",
+  "Nevada Geodetic Laboratory",
+  "PNSN",
+  "replication",
+  "power analysis"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_catalogue.png",
+   "caption": "GNSS stations over the tremor band (a) and the GNSS-only slow slip catalog on weekly PNSN tremor counts (b). Circle area follows the relative slip size."
+  },
+  {
+   "path": "files/fig3_gnss_recurrence.png",
+   "caption": "GNSS catalog: per-bin and pooled correlations of slip size with the quiet time after and before, with 95% block bootstrap intervals, and the recovered difference for synthetic sequences in real GNSS noise."
+  },
+  {
+   "path": "files/fig4_north_segment.png",
+   "caption": "Northern segment events of the tremor study: GNSS slip against tremor count (a), GNSS slip against the quiet time after (b) and before (c), and the cycle phase of smaller events between large events (d)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:38bdf3cb911b69267bbdbc6408d3ce149f193ae56a61eda4ca2e96ffd282a08a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We test its tremor-based recurrence result with GNSS slip. We reuse its trace, episode and regional catalogs and its statistics code. GNSS slip supports its northern result, but our GNSS-only catalog shows no clear time direction."
+  },
+  {
+   "target": "doi:10.1029/2018EO104623",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NGL GNSS daily position series."
+  },
+  {
+   "target": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the 52 tenv3 files (snapshot 2026-11-12)."
+  },
+  {
+   "target": "https://tremorapi.pnsn.org/api/v3.0/events?starttime=2009-08-01T00:00:00&endtime=2026-11-08T00:00:00&format=csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PNSN tremor catalog for validation and comparison."
+  },
+  {
+   "target": "doi:10.1029/2008GL035458",
+   "reason": "Tremor detection method of the PNSN catalog."
+  },
+  {
+   "target": "doi:10.1785/0120110096",
+   "reason": "Earlier geodetic test of time-predictable recurrence in northern Cascadia."
+  },
+  {
+   "target": "doi:10.1029/GL007i004p00279",
+   "reason": "Definition of the time-predictable and slip-predictable models."
+  }
+ ]
+}
