@@ -1,0 +1,107 @@
+{
+ "title": "The 2020 warm offset of Navy MetOp-A v2.0 SST that steps DOISST v2.1 comes from daytime pixel selection, not retrieval coefficients; DOISST satellite-count changes (2007-2021) do not step its mean",
+ "abstract": "Question: the 7 July 2020 warm step in NOAA Daily OISST v2.1 (DOISST) starts when the Navy (NAVO) MetOp-A AVHRR L2P input changed from processing v1.0 to v2.0 (sci:sha256:9fca62cd). Which part of the new processing makes the input warmer: new retrieval coefficients or a new selection of pixels? And do other input changes step DOISST? Approach: (A) we streamed 418 NAVO MetOp-A granules with brightness temperatures (21 June-5 July and 7-21 July, 2020 and 2019 as a control), fitted a split-window retrieval to v1.0 pixels and applied it to v2.0 pixels, and used 3,232 and 2,831 match-ups with drifting and moored buoys (iQuam). (B) We found input-density events as steps in the DOISST analysis-error field (2006-2021, NOAA ERDDAP) and tested them against steps of DOISST minus ESA SST CCI. Results: against buoys the v2.0 offset is +0.080 C (95% interval 0.039 to 0.117; 2020 minus 2019): +0.154 C by day and -0.009 C at night. For the same radiances the retrieval gives only +0.016 C (-0.007 to +0.041) more; the selected pixels are +0.102 C warmer (by day +0.179 C, at night +0.001 C). By day all percentiles move up (median +0.17 C); at night v2.0 keeps more cold outliers. At 22 error events the DOISST minus CCI step has a mean percentile of 49 (null 50, p = 0.56); the 2007 Pathfinder-to-Navy change (error z = -7.7) gives -0.005 C, and the 2020 step does not show in the error field. A 3-week episode in November 2013 is real (DOISST minus drifters +0.056 C), with no matching NAVO stream change. Conclusion: the 2020 step comes from daytime pixel screening in NAVO v2.0; gains or losses of satellites do not step the DOISST mean, but bias changes do, and data-count diagnostics cannot find them. Limitations: the retrieval emulator reproduces v1.0 only to 0.21-0.34 C per pixel; we cannot tell diurnal warm layers from contamination; DOISST input files are not public; the 2013 input is unidentified.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "401304"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "DOISST",
+  "OISST v2.1",
+  "NAVO AVHRR",
+  "GHRSST L2P",
+  "MetOp-A",
+  "cloud screening",
+  "split-window retrieval",
+  "brightness temperature",
+  "diurnal warming",
+  "data homogeneity",
+  "input audit",
+  "analysis error",
+  "iQuam",
+  "drifting buoys",
+  "ESA SST CCI"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_offset_decomposition.png",
+   "caption": "NAVO MetOp-A L2P v1.0 to v2.0 change (7 July 2020), change in 2020 minus change in 2019. (a) Total offset against buoys, retrieval part (same brightness temperatures, v1.0-type retrieval) and selection part, by day and night, with 95% bootstrap intervals. (b) Shift of each percentile of L2P minus buoy. (c) Offset by latitude band."
+  },
+  {
+   "path": "files/figures/fig2_input_events_audit.png",
+   "caption": "(a) Steps of the DOISST analysis error, 60S-60N, 2007-2021; dots are the 22 input-density events. (b) Steps of DOISST minus ESA CCI (30-day windows); vertical lines are the error events; orange dots are documented processing changes. (c) Error-event size against the percentile of the DOISST minus CCI step at that date."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "relations": [
+    "uses",
+    "supports",
+    "challenges"
+   ],
+   "reason": "Identified the NAVO v1.0-to-v2.0 change as the cause of the 2020 step; we use its windows and stream dates, confirm the offset against buoys and find its mechanism (daytime selection). At buoy match-ups we find no night offset, unlike its +0.08 C night offset against CCI bins."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its daily DOISST minus ESA CCI regional series 1982-2024 for the input-event audit."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Showed that DOISST shows only one third of the 2020 step near drifting buoys."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Corrected the 2020 step as an input artifact; we show the input mechanism."
+  },
+  {
+   "target": "sci:sha256:dbf0934148316f153a19c429cf19908a4e4e213a22aa2decfe119df5dbcacb4b",
+   "reason": "Homogenised DOISST with a 2020 step term."
+  },
+  {
+   "target": "sci:sha256:0d84af9c516026aa546d1aac2a1977dd4654030c71a6ed01eebcd85e78a51e3d",
+   "reason": "DOISST input-change effects on 2023 marine heatwave statistics."
+  },
+  {
+   "target": "sci:sha256:819eea658e10093a84d7368f0a467dd064742da3f93ab3919aacef8345b153a4",
+   "reason": "DOISST noise steps and marine heatwave trends."
+  },
+  {
+   "target": "sci:sha256:f50dc28f2fb7a9fc7ae32b687b845a53ebf24145c750d16d7526fb3b01221f28",
+   "reason": "Campaign series on DOISST input-change artifacts."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "Input-change steps in ERA5 SST."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1 description."
+  },
+  {
+   "target": "doi:10.1175/JTECH-D-13-00121.1",
+   "reason": "iQuam in situ SST quality monitor."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA SST CCI v3 climate data record."
+  },
+  {
+   "target": "doi:10.1029/98JC02370",
+   "reason": "Nonlinear split-window SST retrieval (NLSST)."
+  }
+ ]
+}
