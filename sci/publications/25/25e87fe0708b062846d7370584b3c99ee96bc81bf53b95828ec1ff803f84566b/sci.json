@@ -1,0 +1,112 @@
+{
+  "title": "Transferred two-cell readouts retained 55 to 59 percent median sensitivity in two passive adult worm circuit models",
+  "abstract": "We tested whether a remote two-cell readout selected from one adult worm electrical map transfers to the other map. The passive model used contact counts as symmetric conductances, mean weighted degree one, leak 0.1 and equal independent Gaussian current noise. We tested 133 common sources in each direction. Full transfer of cell choice and weights retained median sensitivities of 0.5866 and 0.5465 relative to the best test pair. Refitting weights on the selected cells raised the medians to 0.7721 and 0.7316. Full retention was below half for 60 and 59 sources. An exact per-source split separated placement and weight losses. Independent calculations agreed within 3.68e-13; removing one tied optimum left the main result unchanged. A post-plan audit found lower retention when selected direct training links were absent from the test table. Partial electrical annotation prevents separating real animal variation from missing reconstruction. All 24 model settings are reported. Two maps, assumed conductances, exact noise knowledge and no measured activity limit biological claims. Original code, aggregate evidence, figures, hashes and external retrieval steps support reproduction. External record-level data are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical connectome",
+    "sensor selection",
+    "decoder transfer",
+    "C. elegans",
+    "passive circuit",
+    "correlated noise",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Placement and weight transfer in two passive adult worm maps. Each direction tests 133 known source identities. Full retention divides the fixed training readout sensitivity by the best test-pair sensitivity."
+    },
+    {
+      "path": "files/link_audit.png",
+      "caption": "Post-plan descriptive audit. Missing selected direct training links marked groups with larger transfer losses. Partial electrical annotation prevents interpreting missing table entries as verified biological absence."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary adult worm anatomy. Electrical annotations are partial."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established passive electrical connectome models."
+    },
+    {
+      "target": "doi:10.1109/TSP.2016.2550005",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established sensor information criterion with the full selected noise covariance."
+    },
+    {
+      "target": "sci:sha256:443f103ea830bb72d28898f754974502e23bf597d1cfa03cd41874357f444d28",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Within-map sensor-selection benchmark; this work tests cross-map placement and weight transfer."
+    },
+    {
+      "target": "sci:sha256:e424c67fe97ab8b7f332df0820c22ed404a91ca1b3a114b7cb926699969b6160",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior sensor-count bound; this work uses known source amplitude tasks and fixed two-cell designs."
+    },
+    {
+      "target": "sci:sha256:5664d34867b7abfd1085d90b7b672b2ec6635a4b1ab955b4a613926bb3a2db78",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior chemical-site decoder-transfer test; this work uses passive electrical models and separates sensor placement loss."
+    },
+    {
+      "target": "sci:sha256:b67bdeb8ca7d93b2b8069b8338c615be12fbe79f9c69885ad0d388c232db3feb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior other-map observation design for link inference; a different task from source sensitivity."
+    },
+    {
+      "target": "sci:sha256:7f9fa236b7d0d07d9f9db97adca73cae12a507e8ee9f23fe7b264dd8beb2b2e2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior bilateral source-distance result under electrical mixing."
+    },
+    {
+      "target": "sci:sha256:e06cdbeb40f2c89b49d10460e5acde885d3bb250ec2d962265b6743d43d333ad",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distinction between steady and dynamic source ambiguity."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source file, used in place and not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source file, used in place and not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository GPL version 3 notice; source records and derivative databases remain outside this baseline package."
+    }
+  ]
+}
