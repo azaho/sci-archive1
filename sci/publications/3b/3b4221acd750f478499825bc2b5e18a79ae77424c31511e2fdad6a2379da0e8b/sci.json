@@ -1,0 +1,28 @@
+{
+  "title": "Four stations near Anchorage shaken at 17-26 cm/s in the 2018 Mw 7.1 earthquake had 0.5% lower 1-4 Hz noise velocity in December 2018 than in three other winters; four winters cannot exclude weather",
+  "abstract": "We tested if the 30 November 2018 Mw 7.1 Anchorage intraslab earthquake decreased near-surface seismic velocity. We used single-station ambient-noise autocorrelation (ZZ, 6 h per night, EarthScope BHZ data) at four AK/AT stations with ShakeMap PGV of 17-26 cm/s and at three control stations with PGV of 2.7-5 cm/s. Alaska winters change dv/v by 0.3-1.7% at 1-4 Hz because of frost and snow, and the earthquake occurred at the start of this change. Thus we compared the 2018-19 winter with three placebo winters (2016-17, 2017-18, 2019-20) on the same calendar days, with a common October-November reference. At 1-4 Hz, all four shaken stations had their lowest 6-31 December dv/v step in 2018-19. The group anomaly was -0.53% (no weather term), -0.52% (freezing degree-day term) and -0.58% (soil-temperature term). The control stations had no clear 2018 deficit (+0.05%). The shaken-minus-control difference was negative only in 2018-19 (-0.07% against +0.42 to +0.61%; one-sided t prediction p = 0.001-0.023 over three weather models). The 0.5-1 Hz and 4-16 Hz bands showed no consistent 2018 deficit. Synthetic -0.25% and -0.5% steps were recovered with medians of -0.23% and -0.50%. Main limitations: with four winters the rank p-value cannot go below 0.25, and the parametric p-values rest on three placebo values. The deficit was not largest at once: it was -0.09% (bin mean) in days 1-9, -0.4 to -0.6% in days 10-39, and near zero after 9 January. This timing and the deepest December snow of the four winters agree also with a late frost rise. Thus the data allow a coseismic decrease of about 0.5% but do not confirm it. The data are not consistent with a 6-31 December mean decrease larger than about 0.6-0.9%. More winters and full-day three-component data are the next tests.",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "370609"},
+    {"scheme": "anzsrc-for-2020", "code": "3706"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["ambient noise", "seismic velocity change", "dv/v", "autocorrelation", "2018 Anchorage earthquake", "Alaska", "coseismic damage", "healing", "frozen ground", "seasonal velocity change", "placebo winter", "difference-in-differences", "EarthScope", "ShakeMap PGV"],
+  "display": [
+    {"path": "files/fig1_station_steps.png", "caption": "December (6-31 Dec) dv/v step at 1-4 Hz against the 1 Oct - 25 Nov level, for each station and winter, against 2018 ShakeMap PGV. Red squares: the event winter 2018-19. Circles: three placebo winters. Left: no weather term. Right: with a sqrt(freezing degree-days) term. All four stations with PGV 17-26 cm/s have their lowest value in 2018-19 (no weather term); the three control stations with PGV 3-5 cm/s do not show a clear 2018 deficit."},
+    {"path": "files/fig2_timecourse.png", "caption": "Time course of the dv/v anomaly (winter minus the mean of the other three winters, 1-2 and 2-4 Hz, 10-day bins). Left: shaken stations. Right: control stations. The 2018-19 deficit at the shaken stations starts about 10 days after the earthquake (dotted line), lasts about 30 days and is near zero after 9 January. Single placebo-winter bins reach -0.43 to +0.66%."},
+    {"path": "files/fig3_series.png", "caption": "5-day dv/v series at 1-2 and 2-4 Hz for the four shaken stations (rows 1-4) and three control stations (rows 5-7), four winters, 1 October to 31 January (controls to 31 December). Dotted line: 30 November 2018. Positive spikes just after the event are aftershock contamination."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:65679562d2a3b84f710cd1ae617b7b903b4dbc94ccac30ad462dc14a79b760d6", "reason": "Transient change of shallow-crust hydraulic properties after shaking (well tidal response); this work looks for the seismic-velocity analogue."},
+    {"target": "sci:sha256:f4f72761edb168f383c089e3604455bfa918b93e2e9adbb28b19c96905429043", "relations": ["uses"], "reason": "Placebo-date logic for shaking effects; adapted here as placebo winters."},
+    {"target": "sci:sha256:960bb4a1dfbff9d17d6edc024941d90d49297037888d9b55a7c7fff7489689c8", "reason": "Streamflow response to shaking at PGV 10 cm/s or more; related subsurface response to strong shaking."},
+    {"target": "sci:sha256:7537d3ad5a643df67f7f8f114ce0cd0167fd9e78bcc95cf2a8f082ed6b1e62fa", "reason": "Baseflow recession after strong shaking; related subsurface response."},
+    {"target": "doi:10.7914/SN/AK", "relations": ["uses"], "reason": "Alaska Regional Network waveform data."},
+    {"target": "doi:10.7914/SN/AT", "relations": ["uses"], "reason": "National Tsunami Warning Center Alaska Seismic Network waveform data (PMR)."},
+    {"target": "doi:10.7289/V5D21VHZ", "relations": ["uses"], "reason": "GHCN-Daily weather covariates."},
+    {"target": "doi:10.1175/BAMS-D-12-00170.1", "relations": ["uses"], "reason": "USCRN soil temperature (Kenai 29 ENE)."},
+    {"target": "https://earthquake.usgs.gov/earthquakes/eventpage/us1000hyfh", "relations": ["uses"], "reason": "2018 Anchorage earthquake parameters and ShakeMap PGV."},
+    {"target": "https://earthquake.usgs.gov/earthquakes/eventpage/us10004gqp", "relations": ["uses"], "reason": "2016 Iniskin earthquake ShakeMap PGV."},
+    {"target": "doi:10.1093/gji/ggw377", "relations": ["uses"], "reason": "Snieder et al. 2017 relaxation model, used in the code module relax.py (not used in the final fits)."}
+  ]
+}
