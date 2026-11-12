@@ -1,0 +1,106 @@
+{
+ "title": "High-rate USGS well records show coseismic water-level steps above a seismic energy density of about 1e-4 J/m3, but the steps are small (median 1.6 cm) and repeat in the same wells (2008-2025)",
+ "abstract": "An earlier campaign study found no step excess in daily-mean US well levels after earthquakes; its detection threshold was 0.28 m. We repeated the test with USGS instantaneous (5-60 min) groundwater levels for 666 earthquakes in 2008-2025 (40 large or teleseismic events and 626 regional events). For each well we fitted a trend, tides and a step at the end of the shaking in a 48-h window, scaled the step by fake origins in the same window, and compared the response rate with the same wells in a placebo window 7 days earlier. We removed windows that contain a larger nearby shock. In 225,747 well-windows (5,010 wells, 610 events), the rate of |z| >= 4 steps was equal in earthquake and placebo windows in all six half-decade bins below 1e-4 J/m3 (seismic energy density from the Wang 2007 relation). From 1e-4 J/m3 up, every bin had an excess: 1.97% of 43,368 well-events against 0.81% placebo, growing to 23% against 0% at 0.1 J/m3 or more. The excess occurred only at the wave arrival, not 9-12 h before or after. The median step was 1.6 cm and only 3.6% were 0.28 m or more, which explains the daily-mean null. A well that stepped once stepped again 3.1 times more often than a within-event shuffle predicts (placebo 1.3), and signs repeated in the same well. Rises and falls were equally frequent; static volumetric strain from point moment tensors predicted 73% of signs (95% interval 50-84%) at 1e-9 to 1e-8 strain and 52% at lower strain. The steps are mostly a well-specific dynamic response. Limitations: e is empirical, not measured shaking; 40 of 134 eligible large events were used because of an API rate limit; no barometric correction; the placebo reference and the aftershock rule were added after a first look, and both made the test more conservative.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370703"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370609"
+  }
+ ],
+ "keywords": [
+  "groundwater",
+  "earthquake hydrology",
+  "coseismic step",
+  "seismic energy density",
+  "dynamic triggering",
+  "USGS NWIS",
+  "instantaneous values",
+  "placebo test",
+  "well water level",
+  "static strain",
+  "poroelasticity",
+  "threshold",
+  "Ridgecrest",
+  "El Mayor-Cucapah",
+  "Tehuantepec"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dose_response.png",
+   "caption": "Rate of water-level steps (|z| >= 4) at the seismic-wave arrival against seismic energy density, in earthquake windows (blue) and in placebo windows of the same wells 7 days earlier (orange). Right: excess with 95% event-bootstrap interval. No excess below 1e-4 J/m3; an excess in every half-decade bin above it."
+  },
+  {
+   "path": "files/figures/fig2_examples.png",
+   "caption": "Four example responses (level minus window median). Shaded: masked shaking interval. Ridgecrest 2019, El Mayor-Cucapah 2010, Mineral Virginia 2011, Tehuantepec 2017."
+  },
+  {
+   "path": "files/figures/fig3_size_sign_repeat.png",
+   "caption": "a: sizes of responses at e >= 1e-4 J/m3 (dashed: median 4-sigma detection threshold of this method; orange: median threshold of the daily-mean study). b: agreement of the step sign with the static volumetric strain of a point moment tensor. c: same-well repeat responses relative to a within-event shuffle."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f4f72761edb168f383c089e3604455bfa918b93e2e9adbb28b19c96905429043",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Daily-mean well step test; we repeat it with sub-daily data as it proposed and explain its null by step size."
+  },
+  {
+   "target": "sci:sha256:65679562d2a3b84f710cd1ae617b7b903b4dbc94ccac30ad462dc14a79b760d6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Sibling high-rate well study of tidal response; same 1e-4 J/m3 threshold."
+  },
+  {
+   "target": "sci:sha256:960bb4a1dfbff9d17d6edc024941d90d49297037888d9b55a7c7fff7489689c8",
+   "reason": "Stream gauge responses to earthquakes."
+  },
+  {
+   "target": "sci:sha256:11bb393c8865d0a13337a06dd8e0227508ae0a6fbf781f5bb9b7dbfdc3443751",
+   "reason": "Stream gauge discharge after earthquakes."
+  },
+  {
+   "target": "sci:sha256:7537d3ad5a643df67f7f8f114ce0cd0167fd9e78bcc95cf2a8f082ed6b1e62fa",
+   "reason": "Baseflow recession after strong shaking."
+  },
+  {
+   "target": "doi:10.1785/gssrl.78.5.512",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Seismic energy density relation."
+  },
+  {
+   "target": "doi:10.1007/978-3-642-00810-8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Compilation of hydrologic responses and thresholds."
+  },
+  {
+   "target": "https://nwis.waterservices.usgs.gov/nwis/iv/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://api.waterdata.usgs.gov/ogcapi/v0/collections/continuous",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
