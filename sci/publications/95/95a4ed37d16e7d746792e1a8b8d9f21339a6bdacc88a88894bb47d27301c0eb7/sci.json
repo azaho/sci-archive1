@@ -1,0 +1,68 @@
+{
+  "title": "Input onset removes a positive time-average information bound in symmetric passive circuit models",
+  "abstract": "We tested how a new constant input changes the information retained by a population time average in a symmetric passive stochastic circuit. We assumed a known zero-input stationary initial state distribution, independent unit white current noise, known circuit parameters and exact full observation. The retained fraction is a weighted mean of f(x)=1-(1-exp(-x))/x. It tends to zero for short windows, so no positive lower bound holds for all durations. Uniformly increased electrical coupling on a fixed graph raises this fraction while full-path information stays fixed. A time average plus the endpoint difference recovers full-path information. We tested twelve models from two partial adult worm electrical maps, with 180 point inputs per model. At the primary count scale and one assumed leak time, median fractions were 0.516993 and 0.520205. Independent matrix and exact-transition calculations checked the formulas. These are conditional model results, not measured neural responses. No activity dataset was linked. External anatomical records remain outside the bundle. Code, aggregate evidence, source hashes and retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical coupling",
+    "input onset",
+    "Fisher information",
+    "time average",
+    "passive circuits",
+    "C. elegans"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/figure.png",
+      "caption": "Information retained after input onset in two partial adult worm electrical models. Curves show cell medians; the band shows all inputs at k=1. The prior bound uses an ongoing input and does not apply to onset."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:05d2b27ee5fae3736252c89faa127d4b0e4bbc0b90d305494a77a06b517abe28",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its time-average experiment to input onset. Uses its model scope and scaling convention, with new code and derivations."
+    },
+    {
+      "target": "sci:sha256:fd91a1c79670af323406194cf95b0732fa9efc7c726c6b8faa2dfc12922bcea0",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior distinction between snapshot information and trajectory information under electrical coupling."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/blob/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External data distributor terms. Raw and record-level derived data are excluded."
+    }
+  ]
+}
