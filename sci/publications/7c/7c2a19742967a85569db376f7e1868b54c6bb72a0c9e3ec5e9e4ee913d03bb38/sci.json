@@ -1,0 +1,89 @@
+{
+ "title": "In mouse V1, EM synapse number per connection predicted slice PSP amplitude across inhibitory cell-class pairs, but release probability, not synapse number, set trial-to-trial reliability",
+ "abstract": "Question: does the number of synapses per connection predict the strength and the trial-to-trial reliability of cortical connections? We linked two Allen Institute datasets from mouse V1 at the level of cell-class pairs. MICrONS EM (v1507; 1,619 proofread axons, 242,139 connections) gave distance-matched synapses per connection. Allen Synaptic Physiology r2.1 (1,564 slice connections, 750 experiments) gave PSP amplitude, noise-corrected 1/CV^2 of first pulses, and release-model probability p. We used 28 class pairs with Pvalb, Sst and Vip interneurons and five excitatory classes. The pre-registered primary test passed: EM synapse number correlated with reliability (Spearman rho 0.62, 95% bootstrap interval 0.38 to 0.76, n = 24). But the correlation came from the difference between excitatory and inhibitory sources. Within source sign it was absent (stratified rho 0.03, p = 0.44). Release probability explained most of the reliability (R^2 0.63); synapse number added an uncertain term (0.71 +/- 0.65). Within inhibitory sources, synapse number predicted amplitude (rho 0.74, n = 19; log-log slope 1.40 +/- 0.36), and conductance and input-resistance controls agreed. Within excitatory sources, the link was not clear (rho 0.07, n = 9), and the range was narrow. With log p and source sign in the model, log amplitude scaled with log synapse number with slope 1.03 +/- 0.39 (post hoc). Thus synapse counts predict mean strength, mainly for inhibition, but target-specific release probability sets most class differences in reliability. Limitations: one EM mouse against many slice mice, class-level comparison only, slice truncation, low single-trial SNR, dependent class pairs, and post-hoc controls.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "Allen Synaptic Physiology",
+  "synapse number",
+  "release probability",
+  "synaptic reliability",
+  "coefficient of variation",
+  "binomial release",
+  "interneurons",
+  "Pvalb",
+  "Sst",
+  "Vip",
+  "mouse visual cortex",
+  "structure-function",
+  "Allen Institute"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_multiplicity_strength_reliability.png",
+   "caption": "EM synapses per connection (MICrONS) against slice reliability (A) and amplitude (C) per class pair; release probability against reliability (B); partial plot of amplitude against synapse number after release probability and source sign (D)."
+  },
+  {
+   "path": "files/figures/fig2_classpair_summary.png",
+   "caption": "Per class pair: EM synapses per connection, release probability, 1/CV^2 of the first PSP, and PSP amplitude. Open symbols: CV not resolved."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:999aa3ea9cc47df6164773d528fc777358c9bb155162acf842a0c16c716b365e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM-slice comparison of connection rates; we use the same class correspondence idea and extend it to strength and reliability."
+  },
+  {
+   "target": "sci:sha256:62a5b93648b2487d8e85dd1679a03f5ebe229ccdd6000f154e4e69049bd899d2",
+   "reason": "Related EM-slice comparison for inhibition onto interneurons."
+  },
+  {
+   "target": "sci:sha256:002ee9e80347aa25617ae61940dca8f996330f58445ab6c2d2cb51b24097dbd9",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Derived a dropout CV formula for EM contacts without matched physiology; we test multiplicity against measured reliability and find that release probability dominates."
+  },
+  {
+   "target": "doi:10.1126/science.abj5861",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology dataset (Campagnola et al. 2022)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS functional connectomics dataset (MICrONS Consortium 2025)."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03134-2",
+   "reason": "Holler et al. 2021: synapse number and size against PSP strength in the same L2/3 cells."
+  },
+  {
+   "target": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/synapses_with_axon_proofreading.csv.gz",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS v1507 proofread-axon synapse table."
+  },
+  {
+   "target": "https://portal.brain-map.org/connectivity/synaptic-physiology",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Synaptic Physiology portal."
+  }
+ ]
+}
