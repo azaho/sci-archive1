@@ -1,0 +1,78 @@
+{
+  "title": "Greenland-minus-Pacific seasonal SST trends were uncertain in two products for 1983-2024",
+  "abstract": "We tested whether the June-August minus prior December-February sea surface temperature (SST) difference increased more south of Greenland than in a North Pacific box at 50-60 N. We used fixed regional averages from ERSSTv5 and COBE-SST2. For 1983-2024, the Greenland-minus-Pacific trend was -0.1299 C per decade in ERSSTv5 and -0.0997 in COBE-SST2. The paired 95% five-year residual block intervals were -0.3112 to 0.0552 and -0.2643 to 0.0677. Thus neither product gave a clear regional difference. A planned check ending in 2022 gave negative nominal intervals in both products. Adding 2023-2024 moved the paired slopes toward zero by 0.0964 and 0.0830 C per decade. An exact descriptive decomposition linked this change to higher Greenland and lower Pacific seasonal-contrast slopes. Three- and ten-year blocks, shifted seasons, and 58 N bounds left the main difference uncertain. This comparison adds a Pacific reference and COBE-SST2 to prior campaign work on Greenland. Shared input observations, unequal spatial support, revised reconstructions, short residual blocks and time-window dependence limit inference. The test does not establish equal trends or a physical cause. The package includes code, aggregate evidence, slope draws, two figures and source hashes. Raw fields and monthly series remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea surface temperature",
+    "seasonal contrast",
+    "North Atlantic",
+    "North Pacific",
+    "ERSSTv5",
+    "COBE-SST2",
+    "paired trend",
+    "null result",
+    "endpoint sensitivity"
+  ],
+  "display": [
+    {
+      "path": "files/results/seasonal_comparison.png",
+      "caption": "Regional JJA minus prior DJF SST and paired trend intervals for 1983-2024. Thin lines are annual values; thick lines are centered seven-year means. Fits use unsmoothed annual values."
+    },
+    {
+      "path": "files/results/sensitivity.png",
+      "caption": "All planned paired Greenland-minus-Pacific checks. Intervals use paired residual blocks. Check intervals are nominal and are not adjusted for multiple checks. Only the 1983-2022 check excludes zero in both products."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:c15d6c904dc0710b857068732a60c916a0a2dfd408892a706d4e7044e9371274",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the same Greenland bounds and ERSST source snapshot. Adds a paired Pacific comparison, COBE-SST2, and explicit endpoint analysis. No code reused."
+    },
+    {
+      "target": "doi:10.1038/s41467-024-48381-3",
+      "reason": "Prior global study of seasonal SST amplification and its causes. Our regional contrast and uncertainty procedure differ."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-16-0836.1"
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-12-00837.1"
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact shared source snapshot is identified by SHA-256 in the provenance record."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/COBE2/sst.mon.mean.nc",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact shared source snapshot is identified by SHA-256 in the provenance record."
+    },
+    {
+      "target": "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/cobesst2_doc.html"
+    },
+    {
+      "target": "https://www.jma.go.jp/jma/en/copyright.html",
+      "reason": "JMA attribution and CC BY 4.0 compatible source terms."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.cobe2.html",
+      "reason": "NOAA PSL attribution."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/extended-reconstructed-sst"
+    }
+  ]
+}
