@@ -1,0 +1,173 @@
+{
+ "title": "NOAA ERSSTv6 has a +0.064 C warm step in January 2017, partly reversed in September 2020 (60S-60N); six reference SST records and moored buoys show it, and it makes 2019 its false record year",
+ "abstract": "Question: ERSSTv6 (August 2025) is now NOAA's official SST record and the base of NOAAGlobalTemp v6.1 and RONI. Does it have product-specific steps in 1982-2025? Approach: we added ERSSTv6 to a blind joint homogenisation of seven products (DOISST v2.1, ESA CCI v3, ERA5, COBE-SST2, ERSSTv5, HadISST1, OI SST v2) on one 60S-60N mask, with the unchanged method of sci:sha256:d9bdf1f8. We tested the steps against HadSST4.2, Argo and 131 moored buoys, which the search did not use, and computed the consequences. Results: ERSSTv6 has a warm step of +0.064 +/- 0.005 C (60S-60N; +0.081 C at 20S-20N) in January 2017 and a step of -0.029 +/- 0.005 C in September 2020. ERSSTv5 has neither. Against six references, ERSSTv6 minus reference rose by +0.042 to +0.074 C from 2013-2016 to 2017-2020 (ERSSTv5: -0.002 to +0.030). At 53 TAO/TRITON moorings, ERSSTv6 minus buoy rose by +0.116 C (95% interval 0.077-0.154; ERSSTv5 +0.004). Argo does not show the step clearly because of its own 2016 step. The step makes 2019 the ERSSTv6 record year (2019 minus 2016 = +0.046 C); after homogenisation 2016 is warmer by 0.018 C, as in the other products. It raises the ERSSTv6 2001-2022 trend from 0.143 to 0.178 C per decade, the acceleration coefficient from 0.023 to 0.0385 K per decade^2 (the largest of eight products), and the 2019-23 rate from 0.218 to 0.272 C per decade. NOAAGlobalTemp v6.1 minus v6.0 is +0.022 C higher in 2017-2020 than in 2013-2016. A relative Nino 3.4 index (RONI type) changes by only -0.011 C, but an absolute index is +0.067 C too warm in 2017-2020. With ERSSTv6 the 1982-2022 east-Pacific and west-east gradient trends stay outside all 112 CMIP6 members. Limitations: the cause is not found; ICOADS R3.0.2 platform counts show no jump at the step dates, and no documented ERSSTv6 change is in January 2017. Steps that ERSSTv5 and ERSSTv6 share cannot be assigned uniquely. Buoys are ERSST inputs.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "sea surface temperature",
+  "ERSSTv6",
+  "ERSSTv5",
+  "NOAAGlobalTemp",
+  "homogenisation",
+  "change-point detection",
+  "moored buoys",
+  "TAO/TRITON",
+  "HadSST4",
+  "ESA CCI SST",
+  "ERA5",
+  "RONI",
+  "ENSO index",
+  "warming acceleration",
+  "record year",
+  "climate data record",
+  "CMIP6 pattern effect",
+  "ICOADS"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_ersst6_minus_references.png",
+   "caption": "(a) ERSSTv6 and (b) ERSSTv5 minus six references at 60S-60N (12-month means, 2013-2016 = 0). (c) Median ERSST minus moored-buoy anomaly over 131 GTMBA and NDBC buoys. Dashed lines: the blind-fit ERSSTv6 steps (2017-01, 2020-09)."
+  },
+  {
+   "path": "files/figures/fig3_consequences.png",
+   "caption": "(a) Annual 60S-60N SST anomalies: published ERSSTv6 makes 2019 warmer than 2016; homogenised ERSSTv6, ERSSTv5 and ERA5 do not. (b) Merchant-type quadratic acceleration coefficient, published and homogenised, for seven products."
+  },
+  {
+   "path": "files/figures/fig2_step_regions.png",
+   "caption": "(a) Blind-fit ERSSTv6 step sizes by region (bars; 2 SE at 60S-60N). (b) ERSSTv6 minus ERSSTv5, mean 2017-01..2020-08 minus mean 2013-2016, 10-degree means."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its regional series, mask, code and blind joint search, and add ERSSTv6 as an eighth product."
+  },
+  {
+   "target": "sci:sha256:dc0ebb92ae01dfa80a9ab6a00dee79747f200f3da207e98892ce1be67a040be4",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reuse its CMIP6 box framework and 112-member metrics; ERSSTv6 confirms that no product artifact closes the east-Pacific gap."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its daily GTMBA and NDBC moored-buoy SST table and station coordinates."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its Green's-function box Jacobians for the pattern term."
+  },
+  {
+   "target": "sci:sha256:1c3508ea4870f22f35f29b2a0f762127aeecff39a38bf7f95d0ee58bad1707cf",
+   "reason": "Its RG Argo 2016 warm step explains why Argo does not show the ERSSTv6 2017 step."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Source of the CCI regional differences inside the d9bdf1f8 series."
+  },
+  {
+   "target": "sci:sha256:645d0681260eda6f870bbbc6f00aea971c8e9bc5a85580f3bfdb63dae9189580",
+   "reason": "DOISST mean-step homogenisation in the same campaign line."
+  },
+  {
+   "target": "sci:sha256:e2e438dd3d5117f2238bb0b082b06daea99406355e30019bf8c3e33714fac3b3",
+   "reason": "DOISST correction ensemble; buoy-based checks of mean corrections."
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Buoy checks underestimate satellite-input steps; context for our buoy test."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "reason": "OI SST v2 / AMIP 2018 drifting-buoy step; ICOADS stream context."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "reason": "HadISST1 and AMIP warming-rate artifacts in the same campaign line."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 SST variance step; ERA5 is one of our references."
+  },
+  {
+   "target": "sci:sha256:9cbad554c571ef6334abd41fdce1224da1f2da3ff813519ef49f507183b72bcc",
+   "reason": "CoralTemp steps; another official product with undocumented steps."
+  },
+  {
+   "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+   "reason": "NCEP reanalysis SST input steps in 2020; same campaign line."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-23-0707.1",
+   "reason": "ERSSTv6 Part I (ANN method)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-24-0185.1",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "ERSSTv6 Part II; it reports a 2019 record in ERSSTv6 that our homogenisation attributes to a step."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-16-0836.1",
+   "reason": "ERSSTv5."
+  },
+  {
+   "target": "doi:10.1088/1748-9326/adaa8a",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Merchant et al. 2025 acceleration model; ERSSTv6 overstates the acceleration."
+  },
+  {
+   "target": "doi:10.1029/2018JD029867",
+   "reason": "HadSST4 reference."
+  },
+  {
+   "target": "doi:10.1038/s41597-024-03147-w",
+   "reason": "ESA CCI SST v3."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "reason": "ERA5."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-12-00837.1",
+   "reason": "COBE-SST2."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "DOISST v2.1."
+  },
+  {
+   "target": "doi:10.1029/2002JD002670",
+   "reason": "HadISST1."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "reason": "RG Argo climatology."
+  },
+  {
+   "target": "doi:10.1002/joc.4775",
+   "reason": "ICOADS R3.0."
+  }
+ ]
+}
