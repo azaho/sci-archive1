@@ -1,0 +1,86 @@
+{
+ "title": "EM-measured membrane on mouse visual cortex dendrites removes about 45% of the apparent capacitance excess in Allen cable models, but corrected values stay near 2 µF/cm²",
+ "abstract": "A prior campaign study (sci:c66c36d2) found an apparent specific membrane capacitance (Cm) of 1.6 to 3.6 µF/cm² in passive cable models of Allen Cell Types neurons, falling with cell size, and named missing membrane in light-microscope (LM) trees as one possible cause. We tested this cause with electron microscopy (EM). In 203 dendrite-proofread MICrONS mouse visual cortex neurons of 11 types, calibrated EM membrane (L2-cache area scaled to smoothed lod-0 meshes in 11 cells) was 2.3 to 3.8 µm² per µm of dendrite, spines included. Matched Allen mouse LM classes had 1.3 to 1.8 µm² per µm (EM-to-LM ratio 1.7 to 2.5 for spiny and 1.35 to 1.75 for aspiny classes): EM dendrites are thicker and spines add 23 to 70% to a smooth cylinder. With EM class membrane in the cable models of 510 Allen mouse cells (axial resistivity 150 Ohm cm, axon excluded), geometric mean Cm fell from 3.66 to 2.00 µF/cm² for spiny cells (95% bootstrap interval 1.88-2.13) and from 3.03 to 1.85 for aspiny cells (1.74-1.99). This removes 46% and 44% of the log excess over 1 µF/cm²; only 10 of 470 cells reached 1 or less. Uncorrected mesh area (largest EM area) gave 1.73 and 1.71. In spiny cells the correction removed the size dependence (log-log slope -0.57 to -0.09, interval -0.28 to 0.09), and baseline Cm tracked thin LM radii (Spearman -0.71). In aspiny cells a slope of -0.40 remained. LM trees did not lack dendrite length near the soma. Thus unresolved membrane explains part, not all, of the apparent Cm excess; a factor near 2 needs another cause. Limitations: class matching (not the same cells), one EM mouse, soma-region calibration uncertainty, no shrinkage correction, passive uniform model with fixed axial resistivity, no human data. Source data are not included; scripts and hashes allow retrieval.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "specific membrane capacitance",
+  "cable theory",
+  "dendritic spines",
+  "membrane surface area",
+  "electron microscopy",
+  "MICrONS",
+  "Allen Cell Types Database",
+  "light-microscope reconstruction",
+  "mouse visual cortex",
+  "passive neuron model",
+  "size bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_em_vs_lm_membrane.png",
+   "caption": "(A) Dendrite membrane per µm beyond 15 µm from the soma: Allen LM trees (blue) and calibrated MICrONS EM (orange), by matched class; bars are means. (B) Membrane within 15 µm of the soma. (C) Calibration: lod-0 mesh area over L2-cache area in 11 cells, and the effect of 1 and 2 Taubin smoothing steps."
+  },
+  {
+   "path": "files/figures/fig2_corrected_cm.png",
+   "caption": "(A) Apparent Cm by Allen class before (blue) and after (orange) EM membrane correction A; geometric means with 95% bootstrap intervals; dashed line 1 µF/cm². (B, C) Apparent Cm against model membrane area for spiny and aspiny cells with log-log fits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c66c36d2ff27dfa20c7dcdd6903423d35b1319c5ca7dfeb807f311de2100115b",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the apparent-Cm result, cable model code and Allen retrieval script; we test its proposed missing-membrane cause with EM (it explains part of the excess) and reproduce its axon-excluded baseline."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS mouse visual cortex EM volume (minnie65): meshworks, static meshes and cell types."
+  },
+  {
+   "target": "https://www.microns-explorer.org/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS data portal and access documentation (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41593-019-0417-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Cell Types electrophysiology and morphology data and methods."
+  },
+  {
+   "target": "https://celltypes.brain-map.org/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Cell Types Database (Allen Institute for Brain Science 2015), table and SWC files retrieved 2026-11-12; not redistributed."
+  },
+  {
+   "target": "https://alleninstitute.org/terms-of-use/",
+   "reason": "Terms of use for external Allen data."
+  },
+  {
+   "target": "doi:10.7554/eLife.16553",
+   "reason": "Cable-model estimate of low human Cm (about 0.5 µF/cm²) that relies on spine and radius corrections of LM trees; our results show that such corrections strongly change apparent Cm."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2018.08.045",
+   "reason": "Direct Cm measurement near 0.9 µF/cm² in human and rat nucleated patches; reference for the expected value."
+  },
+  {
+   "target": "doi:10.1016/S0006-3495(00)76293-X",
+   "reason": "Direct measurement of neuronal specific membrane capacitance near 0.9 µF/cm²."
+  }
+ ]
+}
