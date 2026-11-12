@@ -1,0 +1,120 @@
+{
+ "title": "Strong connections share more partners in four fly and mouse connectomes after neuron and region controls; cell-type pairs give most fly clustering, and mouse shared partners do not track tuning",
+ "abstract": "Question: Lynn et al. (Nature Physics 2024) state that Hebbian growth explains why strong connections are clustered in connectomes. We tested this claim in four connectomes they did not fully use: FlyWire FAFB 783 (138,639 neurons), hemibrain v1.2, MANC v1.0 nerve cord and MICrONS minnie65 v1300 mouse visual cortex (edges from 2,064 proofread axons). Method: for each neuron pair we counted shared partners (triangles) and compared strong and weak pairs with nested controls: two-way neuron fixed effects, region overlap or soma distance, and cell-type-pair fixed effects; we also made Lynn-style threshold curves with free, neuron-strength-stratified and cell-type-pair weight permutations, and a calibrated mixing null. In MICrONS we linked shared partners to response similarity from Ding et al. 2025. Results: in all four connectomes, global clustering among strong pairs stays far above free permutations while density falls by 2.4 to 2.8 orders of magnitude, so the descriptive claim replicates. Neuron-strength nulls reproduce only 0% to 20% of the excess at the strongest thresholds. In fly, cell-type-pair permutations reproduce a median 56% to 83% of the excess beyond retained pairs; in mouse, with coarse types, 3%. Per doubling of synapse count, log(1 + shared partners) rises by 0.19 to 0.54 without controls and by 0.041 to 0.131 after all controls (node-jackknife SE 0.0005 to 0.003); 20% to 45% of the raw slope stays in fly and about 10% in mouse. In MICrONS, shared partners did not predict response similarity after neuron, distance and area-layer controls in 8 of 9 tests (connected, proximity-only and same-region pairs), and response similarity did not change the synapse-count slope of shared partners (0.058 to 0.057). Conclusion: strong connections are clustered, but in fly this is mostly a cell-type property, in mouse mostly neuron identity and distance, and we found no link to co-tuning. A small within-type link stays. Limitations: region and distance bins are proxies for arbor contact; type labels partly use connectivity; one mouse and few multi-synapse pairs limit the function test.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "clustering",
+  "triangles",
+  "synapse strength",
+  "Hebbian plasticity",
+  "FlyWire",
+  "hemibrain",
+  "MANC",
+  "MICrONS",
+  "cell type",
+  "null model",
+  "functional connectomics",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_threshold_curves.png",
+   "caption": "Global clustering (transitivity) of pairs above a synapse threshold versus density, in four connectomes. Blue: measured. Grey: weights permuted freely on the base graph. Orange: weights permuted inside strata of the neuron-only prediction. Green: weights permuted inside cell-type-pair blocks. Dotted: clustering equal to density."
+  },
+  {
+   "path": "files/figures/fig2_edge_slopes.png",
+   "caption": "Edge-level slope of log(1 + shared partners) (left) and edge clustering (right) per doubling of synapse count, with nested controls. Error bars: 95% node-group jackknife."
+  },
+  {
+   "path": "files/figures/fig3_microns_function.png",
+   "caption": "MICrONS: raw response similarity and soma distance by shared-partner bin for connected and unconnected pairs (left, middle), and standardized effects of shared partners on three similarity measures after neuron, distance and area-layer controls (right, 95% jackknife intervals)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41567-023-02332-9",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Tests the strength-clustering claim and its Hebbian reading with controls and function data."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire 783 connectivity (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome (Dorkenwald et al. 2024)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types (Schlegel et al. 2024)."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hemibrain v1.2 connectome (Scheffer et al. 2020)."
+  },
+  {
+   "target": "doi:10.7554/eLife.97769",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 nerve cord connectome (Takemura et al. 2024)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS cubic millimetre connectome (MICrONS Consortium 2025)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS functional connectomics edge table (Ding et al. 2025)."
+  },
+  {
+   "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Same MICrONS tables: graph neighbourhood carries information beyond response similarity; our shared-partner null agrees."
+  },
+  {
+   "target": "sci:sha256:8a590e728fd86661a1ec13978f22ab06ca9465111c259538d17a946b40263cae",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Contact count links to response similarity; our synapse-count coefficients agree."
+  },
+  {
+   "target": "sci:sha256:719853bc11d5780abf11622d387cd86a6ec41b6f743463d05b29fc6acd60028e",
+   "reason": "Contact explains reciprocal synapse excess in worm with a fly residual; motivates contact-level controls as next step."
+  }
+ ]
+}
