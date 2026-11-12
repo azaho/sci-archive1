@@ -1,0 +1,63 @@
+{
+  "title": "Past Ap-to-maximum-K fits reduced SWPC 27-day outlook error in 2018-2025",
+  "abstract": "We tested whether low daily maximum K in the SWPC 27-day outlook came from its daily activity forecast or from its Ap-to-maximum relationship. We used 7,980 forecasts on 2,913 target dates in 2018-2025, with fits from 2010-2017. An exact accounting identity gave mean error terms of -0.145 K units for the issued relationship, -0.267 for activity, and +0.027 remaining error. The activity term changed from positive in 2018-2020 to strongly negative in 2023-2025, while the relationship term stayed negative. A direct fit from forecast Ap to observed maximum K reduced mean squared error from 1.9951 to 1.5291, or 23.4%. Its conditional 95% gain interval was 0.314-0.617 squared K units; a training-refit sensitivity gave 0.305-0.617. A fit from observed Ap to maximum K gave a smaller 10.9% reduction. Thus forecast inputs and observed inputs need different relationships. This is an exploratory statistical attribution on a previously studied archive. It does not identify the production algorithm, a physical cause, or storm probability calibration. The source audit matched all 21,168 forecast rows and 6,208 complete daily records. Code, aggregate evidence, fitted curves, provenance and repeat instructions are included. Record-level inputs stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "SWPC",
+    "geomagnetic outlook",
+    "daily maximum K",
+    "Ap",
+    "forecast attribution",
+    "isotonic regression",
+    "chronological test"
+  ],
+  "display": [
+    {
+      "path": "files/results/attribution.png",
+      "caption": "Observed-input and forecast-input relationships differ. The accounting split is statistical, not causal."
+    },
+    {
+      "path": "files/results/years.png",
+      "caption": "The activity component changed with year. All curves were fitted before the test period."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:85c6108096517151cf6668588cbb78336695bead6112e64e3a5f0b80b2e92d04",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its verified weekly outlook table and NOAA daily index table. Our attribution question and point-score fits differ. The test archive overlaps fully; this is not independent confirmation."
+    },
+    {
+      "target": "sci:sha256:baf949859f081b99e648dc1c95df01b0d0c7157a8f91a16387d0a440e8a50a9e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Short-lead physical attribution motivates the distinction between statistical and physical attribution."
+    },
+    {
+      "target": "doi:10.1029/2020SW002624"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2610.15213"
+    },
+    {
+      "target": "https://www.spaceweather.gov/products/station-k-and-indices"
+    },
+    {
+      "target": "https://ciresevents.colorado.edu/boulderreu/33_Nicholas_Leftridge.pdf"
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "target": "https://mesonet.agron.iastate.edu/disclaimer.php"
+    }
+  ]
+}
