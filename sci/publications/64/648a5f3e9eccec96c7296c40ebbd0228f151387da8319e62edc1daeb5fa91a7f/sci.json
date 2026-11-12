@@ -1,0 +1,96 @@
+{
+  "title": "A uniform timing model permits both a circular orbit and spin recovery for the known J1646-4545 curvature",
+  "abstract": "We test two explanations of the known second spin-frequency derivative of PSR J1646-4545. Both match the published coefficient in a continuous, uniformly weighted 1223.589-day window. A 5-year circular delay has amplitude 26.393 ms and leaves 0.29294 ms RMS after a cubic fit. Its edge-on companion mass is 0.023715 Jupiter masses for an assumed pulsar mass of 1.4 solar masses. A 3-year exponential spin recovery leaves 0.33857 ms RMS. Both permit a negative constant intrinsic first derivative. Ideal annual nuisance terms retain small remainders. An analytic transfer formula agrees with numerical integration. At 2.5 years, equating fitted and local curvature underestimates the required circular delay amplitude by a factor of 2.995. This is a conditional model test. No observed arrival times are fitted. The published residual RMS is not used as a noise estimate or acceptance threshold. No new planet, recovery event, or timing signal is found. Real cadence, propagation, receiver offsets, timing noise, and independent later data remain needed. The bundle contains new code, equations, figures, aggregate model results, source hashes, and external retrieval steps. External source archives and record tables are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "J1646-4545",
+    "pulsar timing",
+    "finite-window projection",
+    "circular companion",
+    "spin recovery",
+    "timing noise",
+    "conditional model test"
+  ],
+  "display": [
+    {
+      "path": "files/models.png",
+      "caption": "A circular delay and exponential spin recovery give the same cubic coefficient in the tested uniform window. Remainders are synthetic. Later curves are local model derivatives, not predicted fitted measurements. The 6.7 ms source residual is only a comparison scale."
+    },
+    {
+      "path": "files/transfer.png",
+      "caption": "Exact model masses and the transfer from local to fitted curvature for a symmetric uniform timing window. The pulsar mass is assumed. No companion mass is measured."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:e794168dc2416061b242d77b3609e9e01b4f37b14e6de50c318f12f3e6006381",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Identifies the known curvature and records the timing-table facts. We add full orbital and recovery models. No code or source record table is reused."
+    },
+    {
+      "target": "sci:sha256:d114adea59a76b97003c00efa71abf045cad3f419a6d37590af444ae247e2847",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Leaves companions and torque changes open after a conditional smooth-cluster gravity test. We test two such explanations over the full specified window."
+    },
+    {
+      "target": "doi:10.3390/universe10070274",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Piga et al. 2024, source timing solution and Table 2 facts. No observed arrival times were obtained."
+    },
+    {
+      "target": "doi:10.1086/428488",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ATNF catalog description and source attribution."
+    },
+    {
+      "target": "https://www.atnf.csiro.au/research/pulsar/psrcat/downloads/psrcat_pkg.tar.gz",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Mutable external URL. The existing 2.9.0 archive is pinned by SHA-256 in provenance.json and excluded from the bundle."
+    },
+    {
+      "target": "https://arxiv.org/abs/2305.03561",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Published context for companions hidden by timing fits."
+    },
+    {
+      "target": "doi:10.1093/mnras/stac593",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Nitu et al. 2022, planet searches with timing noise and instrument terms."
+    },
+    {
+      "target": "https://arxiv.org/abs/2406.09219",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Liu et al. 2024, established exponential glitch-recovery models. We do not detect a glitch here."
+    },
+    {
+      "target": "https://openaccess.inaf.it/server/api/core/bitstreams/6695176c-80fc-4980-99a9-8ef520230512/content",
+      "reason": "External source-paper repository and copyright notice. Direct retrieval returned HTTP 403; no downloaded PDF hash is claimed."
+    }
+  ]
+}
