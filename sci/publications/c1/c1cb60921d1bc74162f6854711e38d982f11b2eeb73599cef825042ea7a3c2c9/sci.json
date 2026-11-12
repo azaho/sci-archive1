@@ -1,0 +1,137 @@
+{
+ "title": "In 74 epilepsy patients, a per-electrode source score predicted the direction of stimulation responses, but this score did not follow the cortical hierarchy maps",
+ "abstract": "Question: in human cortico-cortical evoked potentials (CCEPs), is the non-reciprocity of N1 responses (A evokes an N1 at B, but B does not evoke one at A) a node property, and does such a node score follow the cortical hierarchy? Data: OpenNeuro ds004080 v1.2.4 (CC0), 74 patients aged 4-51 with subdural ECoG, 303,345 directed stimulation edges (36,594 with N1); group T1w/T2w, FC gradients, thickness and MPC gradient (BrainSpace) and HCP group structural connectome (ENIGMA), Schaefer-400. Method: for each electrode pair that was stimulated and recorded both ways, y = N1 rate e->j minus j->e (39,183 responsive comparisons). In each patient, a HodgeRank fit y = phi_e - phi_j + distance and current terms gives a net-source score phi. Test 1: purged 5-fold held-out prediction of the sign of y. Test 2 (pre-set; primary maps T1w/T2w and FC gradient 1): within-patient Spearman rho of phi with parcel maps, 1000 vertex and parcel spins, and a group parcel map. Test 3: latency asymmetry. Results: the node score predicted the held-out direction at 0.691 against 0.533 for distance and current only (71 of 74 patients; 0.692 at 20 mm or more). Phi did not follow T1w/T2w (mean rho 0.003, CI -0.052 to 0.057, spin p 0.97) or FC gradient 1 (0.025, CI -0.020 to 0.071, p 0.62); the group parcel map was also null and the result held after seizure-onset-zone, resection and grid controls. SC strength had a weak, non-robust positive link (rho 0.063, spin p 0.024-0.14), opposite in sign to the diffusion-model prediction that hubs are receivers. Phi tracked the stimulation side (rho 0.60 with own out-rate, -0.39 with in-rate), was smooth over 15-30 mm, but the same parcel was not consistently a source across patients (split-half rho 0.10). Latency asymmetry did not follow phi or the hierarchy maps. Conclusion: CCEP direction is largely an electrode-level source/sink order, but this order is local and is not the sensory-to-transmodal hierarchy. Limitations: clinical coverage with few visual and medial electrodes, group maps, bipolar stimulation, automatic N1 detection, one centre.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "cortico-cortical evoked potentials",
+  "CCEP",
+  "directionality",
+  "effective connectivity",
+  "HodgeRank",
+  "cortical hierarchy",
+  "T1w/T2w myelin",
+  "functional gradient",
+  "spin test",
+  "structural connectome",
+  "network communication",
+  "ECoG",
+  "single pulse electrical stimulation",
+  "structure-function",
+  "human cortex",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_node_potential_predicts_direction.png",
+   "caption": "a: held-out sign accuracy of the N1 asymmetry in each of 74 patients, with distance and current terms only (gray) and with the electrode net-source scores added (blue); purged 5-fold cross-validation. b: N1 rates in the two directions against the held-out predicted asymmetry (deciles, 39,183 responsive comparisons). c: pooled accuracy in the main run, at native distance of 20 mm or more, and with comparisons without any N1."
+  },
+  {
+   "path": "files/figures/fig2_hierarchy_tests.png",
+   "caption": "a: mean within-patient Spearman rho between the electrode net-source score phi and parcel maps, with patient bootstrap 95% CI, for the main run, with seizure-onset-zone, resection and grid effects removed, and at 20 mm or more. b: Spearman rho between the group parcel map of phi (258 parcels) and each map. The primary maps (T1w/T2w, FC gradient 1) give values near zero; spin p > 0.4."
+  },
+  {
+   "path": "files/figures/fig3_potential_nature_and_latency.png",
+   "caption": "a (exploratory): median within-patient rho of phi with the raw N1 rate an electrode evokes (out-rate) and receives (in-rate), with the mean phi of electrodes 15-30 mm away, and the split-half reliability of the group parcel map across patients (95% range). b: mean within-patient rho of the N1 latency asymmetry with the phi difference (patient bootstrap CI) and with map differences (parcel-spin p)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8811ade999bbc79753c0cf99f6706a50446d90e4c6b3554be6a6795dcd1e525c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same CCEP data, edge construction and parcel assignment (code adapted); it named CCEP directed asymmetry as open, which this work tests."
+  },
+  {
+   "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+   "reason": "Directed influence along the mouse visual hierarchy from LFP Granger analysis; our causal human test finds no hierarchy order in CCEP direction."
+  },
+  {
+   "target": "sci:sha256:734b7b0e7a2785fc574d7b9aa0d0b2fcb4483d669e3c8b683196284c5c4ec641",
+   "reason": "Granger direction between mouse regions did not follow axonal projection asymmetry; a related directionality test in another species and method."
+  },
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "reason": "Campaign test of multi-step communication measures; we test the directed send-receive asymmetry that a diffusion model predicts."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004080.v1.2.4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CCEP ECoG dataset (CC0): N1 detections and latencies, electrode positions and distances."
+  },
+  {
+   "target": "doi:10.1038/s41593-023-01272-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dataset paper; N1 detection method."
+  },
+  {
+   "target": "doi:10.1038/s42003-020-0794-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BrainSpace toolbox: conte69 group maps, Schaefer-400 labels and spheres."
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01186-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ENIGMA toolbox: fsaverage5 surfaces, Schaefer-400 labels and HCP group structural connectome."
+  },
+  {
+   "target": "doi:10.1093/cercor/bhx179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Schaefer-400 parcellation."
+  },
+  {
+   "target": "doi:10.1038/s41467-019-12201-w",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Proposed send-receive asymmetry from undirected connectomes with diffusion models; its predicted sign (hubs receive) was not seen in CCEP direction."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2023.01.027",
+   "reason": "Communication models explain CCEP propagation across F-TRACT patients; we test directionality inside patients."
+  },
+  {
+   "target": "doi:10.1073/pnas.1608282113",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Principal functional connectivity gradient as a hierarchy axis."
+  },
+  {
+   "target": "doi:10.1523/JNEUROSCI.2180-11.2011",
+   "relations": [
+    "uses"
+   ],
+   "reason": "T1w/T2w ratio as a myelin and hierarchy map."
+  },
+  {
+   "target": "doi:10.1016/j.neuroimage.2018.05.070",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spin-test null for spatial autocorrelation."
+  },
+  {
+   "target": "doi:10.1007/s10107-010-0419-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "HodgeRank: least-squares potential from pairwise comparisons."
+  }
+ ]
+}

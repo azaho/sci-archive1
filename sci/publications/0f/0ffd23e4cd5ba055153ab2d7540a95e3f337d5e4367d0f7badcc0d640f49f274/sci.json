@@ -1,0 +1,107 @@
+{
+  "title": "A 5 percent variance budget allowed response errors above 170 percent in two passive adult worm models",
+  "abstract": "We tested simultaneous electrical link loss in passive models of two adult C. elegans maps. An adaptive method removed 33 of 258 links and 42 of 294 links while keeping variance growth after removal of the spatial mean below 5 percent. The largest relative response errors were 257.15 and 171.66 percent in the intact conductance energy norm. A positive matrix argument gives the exact largest error over all input directions and frequencies. Zero frequency attains it. The least harmful single loss gave 18.10 and 17.45 percent error. Thus no nonempty deletion set can meet a 5 percent all-input limit in these primary models. The obstruction also held in ten weight and leak sensitivity conditions. Later positive single-cell input checks gave median errors near 14 percent. We compare five deletion rules, test exact inverse and covariance calculations, and supply original code, a proof, figures and aggregate evidence. Partial electrical annotation, count-based conductance, assumed passive parameters and no measured activity limit the result to these models. External source records remain outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "electrical synapses",
+    "C. elegans",
+    "passive circuit",
+    "simultaneous link loss",
+    "noise variance",
+    "response error",
+    "spectral approximation",
+    "model reduction"
+  ],
+  "display": [
+    {
+      "path": "files/main.png",
+      "caption": "Deletion counts within a 5 percent mean-free variance budget and the largest response errors after those deletions. The models use contact-count conductance and leak equal to 0.01 times mean weighted degree. Response error uses the intact conductance energy norm. The result applies to these passive circuit models."
+    },
+    {
+      "path": "files/sensitivity.png",
+      "caption": "The adaptive trace method under three leak values and two conductance rules. Every selected batch has variance growth below 5 percent. Response errors remain above 70 percent. These are model sensitivity tests, not animal uncertainty intervals."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4b74b71a0d491d7240b4356f084e138a608b7f26478ef590b7dcdd82a6b615cd",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its graph selection, passive variance model and single-edge scores. Tests simultaneous deletion. No code or numerical table copied."
+    },
+    {
+      "target": "sci:sha256:8f4b7d181847ef8f3041d8da43d958d686f76b5b6744ad472e2152ec8232d5fb",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior electrical mixing benchmark; different outcome."
+    },
+    {
+      "target": "sci:sha256:5e4e2cc623d73d1a9131a0bb07a26d8d0bcdbc9e4390ed8453ca28813f1320df",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior hidden-state reduction and average-matrix error benchmark. Not a matched comparator."
+    },
+    {
+      "target": "sci:sha256:18764826c1b78b43f9602eadd1df32a797ab372e583e12f3ee5f69cc5e778313",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior all-input relative response bound for hidden-state reduction. This work tests edge loss."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source adult worm reconstructions. Electrical annotation is partial."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1001066",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior passive circuit analysis of worm electrical wiring."
+    },
+    {
+      "target": "doi:10.1137/080734029",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established spectral sparsification and effective resistance theory."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1411.4884",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior graph design and rank-one updates; no deletion approximation ratio used."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table. Exact source bytes, hash and retrieval steps are documented. No source rows or transformed graph is bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external table. Exact source bytes, hash and retrieval steps are documented. No source rows or transformed graph is bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "reason": "External repository license. External data remain outside the signed publication."
+    }
+  ]
+}
