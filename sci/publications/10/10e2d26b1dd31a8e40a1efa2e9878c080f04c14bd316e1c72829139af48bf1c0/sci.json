@@ -1,0 +1,38 @@
+{
+  "title": "CPC 'drought development likely' areas got drought in only 40-43% of their area (CONUS, 2013-2026), and CPC's own precipitation outlooks supported about 35%",
+  "abstract": "We tested the four classes of the NOAA CPC Seasonal (154 outlooks) and Monthly (159 outlooks) Drought Outlooks against the raw weekly U.S. Drought Monitor at 13,119 CONUS cells for 2013-2026. We wrote the plan before we compared outlooks with outcomes. Development likely areas got D1+ drought in 0.40 (95% year-block interval 0.34-0.46, seasonal) and 0.43 (0.39-0.47, monthly) of their area. Thus the class is not more likely than not. But it has real skill: unflagged no-drought areas developed drought in 0.14 and 0.06. Removal likely verified at 0.71 (0.64-0.77) and 0.56 (0.50-0.61). Remains but improves verified at only 0.36 and 0.41, partly because 36% of seasonal improve area had full removal. CPC's half-category scoring rule cannot see this difference. Development depended on the precipitation outcome: 0.67 and 0.63 with lower-tercile window precipitation, 0.07-0.13 with upper-tercile precipitation. A 0.5 rate needs a lower-tercile chance of about 0.65. In an exploratory check, the CPC precipitation outlooks issued with the drought outlooks gave a mean below-normal probability of only 0.37 and 0.36 in development areas, and equal chances in 57-66% of that area. With these probabilities, the implied development chance is 0.35-0.36, near the observed rates. Thus the 'likely' label claims more than the precipitation information available at issue time. Limitations: CPC gives no number for 'likely'; the USDM is an expert map; area fractions are spatially dependent; the precipitation-outlook part uses a simple tercile conversion and was not pre-registered. Raw source data stay external; the bundle has code, provenance hashes, aggregate tables and three figures.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "stat.AP"}
+  ],
+  "keywords": [
+    "drought outlook",
+    "Climate Prediction Center",
+    "U.S. Drought Monitor",
+    "forecast verification",
+    "calibration",
+    "categorical forecast",
+    "precipitation outlook",
+    "pre-registered",
+    "hazard products"
+  ],
+  "display": [
+    {"path": "files/figures/fig1_class_rates.png", "caption": "Area fraction with the stated outcome for each CPC drought outlook class, Seasonal (left) and Monthly (right) Drought Outlooks, CONUS 2013-2026. Bars are 95% year-block bootstrap intervals. Diamonds are reference rates: removal in Persists areas and development in unflagged areas that started in D0. The dashed line is 0.5 ('more likely than not')."},
+    {"path": "files/figures/fig2_precip_dependence.png", "caption": "Development (left) and removal (right) rates against the observed precipitation percentile over the outlook window (1991-2020 base, CPC Unified). Dotted lines: development in unflagged no-drought cells. Vertical lines mark tercile limits."},
+    {"path": "files/figures/fig3_precip_outlook_need.png", "caption": "Left: in development likely areas, CPC's mean below-normal precipitation probability, the observed below-normal share, and the share needed for a 0.5 development rate. Right: observed class rates, rates implied by CPC's precipitation outlooks (with 95% year-block intervals), and rates when the needed tercile occurred. Exploratory analysis."}
+  ],
+  "citations": [
+    {"target": "https://ftp.cpc.ncep.noaa.gov/GIS/droughtlook/", "relations": ["uses", "reviews"], "reason": "Archive of the CPC Seasonal and Monthly Drought Outlook polygons that we verify. Exact files and SHA-256 are in files/provenance.json."},
+    {"target": "https://cpc.ncep.noaa.gov/products/expert_assessment/sdo_verification/DO-verif-explanation.shtml", "relations": ["reviews"], "reason": "CPC's official drought outlook verification rule (smoothed USDM, half-category improvement). We reproduce it as a check and compare it with raw class outcomes."},
+    {"target": "https://droughtmonitor.unl.edu/data/shapefiles_m/", "relations": ["uses"], "reason": "U.S. Drought Monitor weekly shapefiles used as truth. Produced by NDMC, USDA and NOAA. Map courtesy of NDMC."},
+    {"target": "https://ftp.cpc.ncep.noaa.gov/GIS/us_tempprcpfcst/", "relations": ["uses"], "reason": "CPC seasonal and updated monthly precipitation outlook polygons used in the exploratory attribution."},
+    {"target": "https://psl.noaa.gov/data/gridded/data.unified.daily.conus.html", "relations": ["uses"], "reason": "CPC Unified gauge-based daily precipitation, 0.25 degree, provided by NOAA PSL; used for window precipitation percentiles."},
+    {"target": "doi:10.1175/1520-0477-83.8.1181", "reason": "Svoboda et al. (2002), The Drought Monitor: definition of the USDM categories used as truth."},
+    {"target": "sci:sha256:db2b2a038e6c44f89b650d2c52903a9d74b18df37ba5a132b62fc92093d6441f", "reason": "Earlier campaign verification of another CPC categorical hazard product (Week-2 hazards); this work tests a different CPC product."},
+    {"target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db", "reason": "Earlier campaign finding that a NOAA stated likelihood (70% ranges) was over-confident; similar question for a categorical 'likely' label."},
+    {"target": "sci:sha256:156946e5385f0a25a45be2eb1d8d541e7298c796c636d418b02d0d9d9047d7aa", "reason": "Part of the campaign series of pre-registered hazard product verifications (USGS PAGER)."},
+    {"target": "sci:sha256:bd4358dd0a7434bcdd269b67ba7d39532d5932d70325657f32b0c12618f091b0", "reason": "Campaign verification of another seasonal water-supply product (NRCS runoff ranges)."},
+    {"target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e", "reason": "Campaign verification of NHC formation probabilities; same pre-registered calibration approach."},
+    {"target": "sci:sha256:efc8aabd4be1eeb5b9a3a3f372a0f86d76d4b4ffef2f8da8ed34fc9291b35524", "reason": "Campaign verification of WPC Excessive Rainfall Outlook categories against stated probability floors; similar category-to-probability test."}
+  ]
+}
