@@ -1,0 +1,29 @@
+{
+  "title": "Synaptic depth from the photoreceptors did not predict slower or more low-pass flicker responses in 39 fly visual cell types (FlyWire and male CNS connectomes)",
+  "abstract": "Question: does a fly visual cell type that is more synaptic steps from the photoreceptors have a slower, more low-pass response? Campaign tests of this temporal-hierarchy idea were null at region level in mouse cortex and larval zebrafish. The fly optic lobe gives wiring and activity at cell-type resolution. Data: full-field flicker calcium responses (0.1 to 2 Hz, trial means; Currier and Clandinin 2025, CC0) of 39 types, 299 cells and 58 flies; depth from a probabilistic traversal from all photoreceptors in FlyWire v783 and male CNS v1.0. We froze the plan before we computed any depth. Result: depth did not predict the low-pass index log2(A0.5Hz/A2Hz): FlyWire rho -0.05, one-sided permutation p 0.62, fly-bootstrap 95% interval -0.20 to 0.24; male CNS rho -0.23. Depth also did not predict group delay, sustainedness or across-fly consistency (Holm p 0.40 to 0.89). Hop count, right-side depth, other indices and type subsets gave no positive result. Power for a true rank correlation of 0.4 was 0.80. Limitations: anatomy and activity come from different flies; most types lie at 2.5 to 3.1 steps; trial means at 5 Hz sampling; one stimulus.",
+  "categories": [{"scheme": "arxiv", "code": "q-bio.NC"}],
+  "keywords": ["temporal hierarchy", "synaptic depth", "connectome", "Drosophila", "optic lobe", "FlyWire", "male CNS", "flicker", "temporal filtering", "low-pass", "structure-function", "null result", "pre-registered"],
+  "display": [
+    {"path": "files/figures/fig1_depth_vs_lowpass.png", "caption": "Low-pass index of 39 fly visual cell types against synaptic depth from the photoreceptors in FlyWire (left) and male CNS (middle); right: low-pass index against response quality."},
+    {"path": "files/figures/fig2_secondary_features.png", "caption": "Group delay, sustainedness and across-fly consistency against FlyWire depth."},
+    {"path": "files/figures/fig3_traces_by_depth.png", "caption": "Type-mean flicker responses at four frequencies, sorted by FlyWire depth."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b", "relations": ["uses"], "reason": "We reuse its unchanged CC0 copy of the Currier and Clandinin flicker extract and ROI metadata."},
+    {"target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24", "relations": ["supports"], "reason": "Mouse cortex: anatomical hierarchy did not reliably predict timescales; we add a cell-type-level null in the fly."},
+    {"target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193", "relations": ["supports"], "reason": "Larval zebrafish: projectome hierarchy did not predict timescales; same direction of evidence."},
+    {"target": "sci:sha256:1c06b824f69f047305a9b3e86bdb18ef9f6f027b87bbdae90c76c0f7d333394d", "reason": "Earlier test of wiring against the same flicker data (response variability)."},
+    {"target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48", "reason": "Earlier test of signed FlyWire wiring against the same data (ON/OFF sign)."},
+    {"target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0", "reason": "Male CNS replication of the sign test."},
+    {"target": "sci:sha256:0818f8c1d686c7453830e450de683236063a2bf43641f908614d61de1504b86e", "reason": "Input-profile prediction of flicker responses with held-out name groups."},
+    {"target": "doi:10.1016/j.cell.2025.05.007", "relations": ["uses"]},
+    {"target": "doi:10.5061/dryad.pg4f4qs1j", "relations": ["uses"]},
+    {"target": "doi:10.5281/zenodo.10676866", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07558-y", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07686-5", "relations": ["uses"]},
+    {"target": "doi:10.1038/s41586-024-07981-1"},
+    {"target": "https://male-cns.janelia.org", "relations": ["uses"]},
+    {"target": "doi:10.7554/eLife.66018", "relations": ["uses"], "reason": "Traversal (information-flow) depth algorithm."},
+    {"target": "doi:10.1038/nn.3862"}
+  ]
+}
