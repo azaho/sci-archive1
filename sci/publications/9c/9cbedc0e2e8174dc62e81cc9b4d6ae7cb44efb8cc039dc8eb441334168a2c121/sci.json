@@ -1,0 +1,103 @@
+{
+ "title": "In TESS data of 100 complex periodic variables, flares do not collapse or renew the dips: a flare with ED >= 100 s removes at most 3% of the dip pattern, and later changes also occur in non-CPVs",
+ "abstract": "Complex periodic variables (CPVs) are young M dwarfs with sharp dips from corotating material. Earlier work reported that flares seem to induce sudden dip collapses, but only from single examples. We tested this in 1,079 TESS 2-minute light curves (sectors 1-107): 597 sectors of 154 CPV stars and 482 sectors of 308 non-CPV rapid rotators matched in period and age class. We detected flares and impulsive dimmings, measured the detection efficiency by injection, and compared the sharp dip pattern (harmonics 3-12) in 1, 2 or 4 cycles before and after each flare. A simple masked comparison gives a false flare effect, because the masked gap makes the after-window noisier: moved masks give the same excess. Our primary test compares each flare with random times that have the same gap. For 763 flares on 100 stars in sectors with dips, the mean rank of the pattern change is 0.526 (95% interval 0.500-0.549). It is 0.560 (0.518-0.597) for flares with ED >= 100 s and 0.600 (0.541-0.659) for ED >= 300 s. Controls without dips show a similar change after large flares; the CPV-minus-control difference is +0.025 (-0.027 to +0.079) and no gap or window variant excludes zero. The dip amplitude does not fall after flares (mean rank of the log amplitude ratio 0.48-0.50). Injections show that the removal of 10% of the dips is easy to detect. Thus flares with ED >= 100 s remove on average at most 3.3% of the pattern, at most 18% of them can be followed by a collapse of half the pattern, and at most 5% by a new half-depth dip. Only 3 of 142 large collapses follow the largest flares (0.28 expected). CPV hosts flare 1.6-1.7 times more often than controls with and without dips, the within-star ratio is 0.91 (0.55-1.47), and the speed of pattern change does not follow the flare rate across 96 stars (rho = 0.00). Thus flares do not control the supply or the lifetime of CPV material. Limitations: only large flares are detected, changes inside the 1-2 h masked gap are not seen, flare tails can remain, and controls are not matched in brightness.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "complex periodic variables",
+  "M dwarfs",
+  "stellar flares",
+  "TESS",
+  "corotating material",
+  "dip collapse",
+  "circumstellar dust",
+  "magnetospheres",
+  "centrifugal breakout",
+  "flare masking bias",
+  "matched null",
+  "injection-recovery",
+  "flare rates",
+  "young stars"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_flare_size.png",
+   "caption": "Matched-gap test (8-tau gap, 2-cycle windows unless stated). (a) Mean rank of the sharp-pattern change R against random times with the same gap, in bins of flare equivalent duration (ED), for CPV sectors with dips (red), CPV-host sectors without a dip flag (orange) and matched non-CPV rotators (grey). 0.5 means no effect. (b) Same for the log ratio L of the sharp-pattern amplitude after and before the flare; values below 0.5 would mean weaker dips after flares. (c) Mean rank of R for flares with ED >= 100 s for three gap lengths (4, 8, 12 decay times) and two window lengths (2P circles, 4P squares). Bars are 95% star-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig3_positive_control.png",
+   "caption": "Positive control. After the largest flare of each of 193 CPV sectors with dips, we removed a fraction kappa of the sharp dip pattern (black) or added one new dip of depth delta times the pattern amplitude (purple), and ran the same matched-gap test. Points are means with 95% intervals. Shaded bands are the observed 95% intervals for flares with ED >= 100 s and ED >= 300 s. (a) Rank of the pattern change R. (b) Rank of the amplitude ratio L. The observed L excludes an average removal of more than 3.3% of the pattern per flare with ED >= 100 s."
+  },
+  {
+   "path": "files/figures/fig1_example.png",
+   "caption": "Example of the method: TIC 273460357, TESS sector 100 (P = 9.4 h), with a large flare (ED = 1,683 s). Top: light curve with the before window (2 cycles), the masked gap (flare plus 8 decay times) and the after window. Bottom: the two windows folded on the rotation period. This flare is one of the few large flares that are followed by a large change (rank 0.97); most large flares are not."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.3847/1538-3881/ad0c4c",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Bouma et al. (2024) reported that stellar flares seem to induce sudden dip collapses in CPVs. Our population test finds no systematic collapse after flares; flare-associated collapses explain about 2% of large collapses."
+  },
+  {
+   "target": "https://arxiv.org/abs/2609.00136",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Bouma et al. (2026) cite the response of CPV material to flares as evidence for magnetic binding and discuss dust sources. We find no CPV-specific flare response at the population level; the dip lifetime is not set by flares."
+  },
+  {
+   "target": "sci:sha256:92bc3f8b6169f1f904c2c292ac9bca6f42965a38263a018ae7d1065d4969e8af",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its per-sector CPV flags, star periods, SPOC file names and window-star table (age classes, cleaning) to select CPV sectors and controls. Its long host lifetime with short shape memory motivates our test."
+  },
+  {
+   "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We use its 126 on-target CPV labels from the sector 56-107 survey."
+  },
+  {
+   "target": "sci:sha256:82e139eed109fa6f6bfbff2e90503862a06d83e37ef5852e6e3c9946ef3c6394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the BANYAN Sigma age classes used to match control stars."
+  },
+  {
+   "target": "sci:sha256:a1cd485d4c814f66adb1e838a1924fb3e0acff153a785095864dcde3881ae71c",
+   "relations": [],
+   "reason": "It measured the loss of CPV shape memory between sectors. We show that flares do not cause this loss."
+  },
+  {
+   "target": "sci:sha256:c9d1739af1ba4f237aaf6f3b443b81f3166cae5dd807539d292338aa0a919d19",
+   "relations": [],
+   "reason": "Clump model of CPV dip counts; our limits constrain flare-driven clump creation and removal."
+  },
+  {
+   "target": "sci:sha256:7d3a6ecb279126631e312742af2c71f5441e4dd3691d0b97753e45d3ff9176e6",
+   "relations": [],
+   "reason": "Dip widths in phase; we use the same harmonic description of sharp features (harmonics 3-12)."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/797/2/122",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Davenport et al. (2014) flare template, used for injection-recovery and to set the flare-tail mask."
+  }
+ ]
+}
