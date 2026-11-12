@@ -1,0 +1,87 @@
+{
+ "title": "A melt-energy threshold on days above 0 C gave most of the missing melt-start and peak-SWE effects on SNOTEL melt rates in 1988-2025; cloud, humidity and wind anomalies added little",
+ "abstract": "An earlier campaign result (sci:24cc0799) showed that earlier and smaller snowpacks melt more slowly at SNOTEL stations, but a temperature-radiation index model gave only 70% of the melt-start slope and 49% of the peak-SWE elasticity. We tested causes with daily NASA POWER shortwave, longwave, humidity and wind at each station. We used 22,098 melt seasons at 721 stations in water years 1988-2025 and constant station parameters fitted to daily SWE loss. We reproduced the earlier seasons and shares exactly. Measured shortwave, snow-age albedo, humidity, wind and sensible heat raised the shares only to 73% and 59%. One constant energy loss on days above 0 C (a melt threshold) raised them to 108% (95% station-bootstrap CI 106-110%) and 86% (84-89%) with TOA radiation, and to 103% and 84% with the shortwave climatology. Parameters from the other half of the years gave the same shares. A degree-day model with a fitted base temperature gave only 58% and 42%. The threshold result held in all 12 states with 10 or more stations, in Alaska, with year fixed effects and in low-precipitation seasons. After the threshold, daily weather anomalies did not change the shares (100% and 86%). The median threshold is approximately 90-120 W m-2, near the net longwave loss of melting snow. Thus the slower melt of early and small snowpacks is mainly a seasonal energy effect with a loss term, which linear index models underestimate. About 14% of the peak-SWE elasticity remains, partly related to snowfall during melt. Limitations: the threshold models were added after the first run, POWER grids are 0.5-1 degree, and the threshold is an effective parameter.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "snowmelt rate",
+  "SNOTEL",
+  "snow water equivalent",
+  "temperature-index model",
+  "melt threshold",
+  "net longwave",
+  "NASA POWER",
+  "humidity",
+  "albedo",
+  "western United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_slopes_observed_vs_models.png",
+   "caption": "Within-station slopes of log melt rate on melt start (left) and log peak SWE (right) for observed data and 11 index models in the same 22,098 seasons (95% CI, two-way clustered). Grey: models without a threshold; blue: models with a constant energy term on days above 0 C. Orange squares: parameters fitted on the other half of the years. Percentages are shares of the observed slope."
+  },
+  {
+   "path": "files/figures/fig2_binned_and_states.png",
+   "caption": "Left and centre: binned within-station relations of log melt rate to log peak SWE (melt start held fixed) and to melt start (peak SWE held fixed), observed and for the temperature + TOA radiation model with and without a threshold. Right: observed and model slopes in 12 states with 10 or more stations."
+  },
+  {
+   "path": "files/figures/fig3_seasonal_melt_curves.png",
+   "caption": "Seasonal shape of daily melt for median fitted parameters at 42 N and a fixed 3 C mean temperature, relative to 1 May. With the threshold, the melt energy increases much faster through spring. Illustration only."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:24cc07996fc1ef5080dedffb8625860d6faef0b85e471d2e5f4759dcdb5d9fa2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier SNOTEL melt-rate result that this work extends; season rules, scripts 01-02 and station list are reused."
+  },
+  {
+   "target": "doi:10.1038/nclimate3225",
+   "reason": "Slower-snowmelt hypothesis (seasonal energy explanation)."
+  },
+  {
+   "target": "doi:10.1073/pnas.1716789115",
+   "reason": "Humidity hypothesis for snowpack ablation that we test."
+  },
+  {
+   "target": "doi:10.3189/S0022143000003087",
+   "reason": "Temperature-radiation index model form."
+  },
+  {
+   "target": "doi:10.1016/S0022-1694(03)00257-9",
+   "reason": "Review of temperature-index melt models and thresholds."
+  },
+  {
+   "target": "doi:10.3189/172756505781829124",
+   "reason": "Enhanced temperature-index model with shortwave balance."
+  },
+  {
+   "target": "doi:10.3189/172756500781832675",
+   "reason": "Snow-age albedo parameterisation."
+  },
+  {
+   "target": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data",
+   "relations": [
+    "uses"
+   ],
+   "reason": "SNOTEL daily SWE, temperature and precipitation."
+  },
+  {
+   "target": "https://power.larc.nasa.gov/api/temporal/daily/point",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NASA POWER daily radiation, humidity and wind."
+  }
+ ]
+}
