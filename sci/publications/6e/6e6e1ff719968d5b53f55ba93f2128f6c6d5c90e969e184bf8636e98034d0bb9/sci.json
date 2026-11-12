@@ -1,0 +1,66 @@
+{
+  "title": "Eight integer weight units kept 80 percent efficiency in both states of 104 selected Allen models",
+  "abstract": "We tested finite fixed weights across first and late 50 Hz response states in Allen cortical slice data. We assigned stored medians as model means and assumed independent noise. Exhaustive search over nonnegative integer weights with total budget eight retained at least 80 percent of each state-specific ideal squared signal-to-noise ratio in 104 of 108 selected target groups. It retained at least 95 percent in 70 groups. A budget of 32 raised these counts to 107 and 85. Requiring every measured input to keep a positive weight left the budget-eight 80 percent count unchanged and lowered the 95 percent count to 68. Independent recursive enumeration checked 648 primary group-budget cases, with maximum absolute error below 6e-16. The budget is an abstract constraint, not measured synaptic precision. Unknown covariance, median-to-mean error, selected small slice groups, and absent trial holdout limit biological use. One 80 percent pass is close to the threshold. Original code, aggregate results, a figure, exact source hashes and external regeneration steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "finite weights",
+    "synaptic convergence",
+    "fixed readout",
+    "independent noise",
+    "integer allocation",
+    "short-term plasticity"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Share of selected models with at least 95 percent efficiency in both states by integer weight budget. Independent noise and median-to-mean assignment are assumptions. External source: Allen Institute for Brain Science; Campagnola, Seeman and colleagues, Science 2022."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:5481b72a25bf75b555ac1f849e9e4ec9eb7542aca65d12207b3c66184b210003",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Continuous fixed-weight benchmark on the same selection; this study adds an exact finite allocation budget."
+    },
+    {
+      "target": "sci:sha256:2592773cb55908dee7cf99bc6159a27f90347ad466e7086dc6f5176240212a14",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior conditional reliability model for convergent inputs."
+    },
+    {
+      "target": "sci:sha256:1035506d548293d06619731786383ffe765d0aa34167b4760ee816249fdbfe57",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior two-state model with assumed correlation caps; it did not test integer budgets."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2602.21758"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
