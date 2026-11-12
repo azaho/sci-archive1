@@ -1,0 +1,26 @@
+{
+  "title": "In the stratified ocean, the interannual chlorophyll decrease with warming held in 2007-2026 in three satellite records, but the multi-year chlorophyll level changed with the product",
+  "abstract": "Question: does the inverse relation between stratified-ocean chlorophyll and SST or ENSO (Behrenfeld et al. 2006) forecast later years? Approach: we wrote and timestamped a plan before we downloaded test-period data. We fitted the relation on ESA OC-CCI v6.0 monthly chlorophyll for 1997-09 to 2006-12 (5,327 boxes of 2x2 deg, annual mean SST above 15 C) and forecast 2007-01 to 2026-08. Then we did exploratory checks with single-sensor SeaWiFS and MODIS-Aqua (NASA R2018.0) records. Pre-registered results: the frozen models had small positive skill (monthly MSE skill score 0.05 for MEI, 0.26 for SST, 90% intervals above zero). A trailing 36-month mean had 0.48. The trailing mean plus the frozen slope was 13-14% better than the trailing mean alone. The 1997-2006 slopes were weak (R2 0.05 and 0.02), and the 2007-2026 slopes were steeper. Box by box, the median slope did not change (-0.050 and -0.047 log10 per C), but local skill was near zero, and training cross-validation did not predict forward skill. Exploratory results: after we removed multi-year variation, the SST slope was -0.043 to -0.084 log10 per C in both periods and all three records. The multi-year level was not consistent: after MERIS stopped in 2012, OC-CCI was 0.014-0.022 log10 lower than MODIS-Aqua. With MODIS as the observation, the SST model lost its skill. The interannual slope times the observed warming predicts about -3% chlorophyll per decade. The observed trends were -1% to -4% per decade, with intervals that include zero, and the difference between products is as large as the predicted effect. Limitations: chlorophyll is not carbon or productivity; MODIS R2018 is not reliable after 2019; the checks after the pre-registered test are exploratory.",
+  "categories": [
+    {"scheme": "anzsrc-for-2020", "code": "370801"},
+    {"scheme": "anzsrc-for-2020", "code": "410102"}
+  ],
+  "keywords": ["forward test", "ocean colour", "chlorophyll", "phytoplankton", "sea surface temperature", "ENSO", "OC-CCI", "MODIS-Aqua", "SeaWiFS", "stratified ocean", "pre-registration", "level shift", "sensor merging", "climate response", "forecast skill"],
+  "display": [
+    {"path": "files/figures/fig1_domain_series.png", "caption": "Stratified-ocean OC-CCI v6.0 chlorophyll anomaly (log10, black) with forecasts from the frozen 1997-2006 MEI and SST models and the trailing 36-month mean. Lower panel: MEI.v2 and domain SST anomaly. Dotted lines: sensor changes in OC-CCI."},
+    {"path": "files/figures/fig4_product_comparison.png", "caption": "Exploratory: 12-month means of the domain anomaly in OC-CCI v6.0, SeaWiFS R2018 and MODIS-Aqua R2018 on the same boxes and months (top), and the product differences (bottom). The products agree until 2012 and differ after the MERIS end. The MODIS rise in 2020-2022 is probably a late-mission problem."},
+    {"path": "files/figures/fig5_slope_summary.png", "caption": "Slopes of log10 chlorophyll anomaly on domain SST anomaly with 95% HAC intervals. Raw slopes (black) change with period and product. High-pass slopes (blue, centred 37-month mean removed) agree at about -0.04 to -0.08 per C."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/nature05317", "relations": ["reviews", "supports"], "reason": "Claim under test: inverse chlorophyll-SST/MEI relation in the permanently stratified ocean. The interannual part is supported out of sample; the decadal extrapolation is not resolved."},
+    {"target": "doi:10.1038/nclimate2838", "reason": "Chlorophyll includes photoacclimation; limitation of a chlorophyll-only test."},
+    {"target": "doi:10.3390/s19194285", "relations": ["uses"], "reason": "ESA OC-CCI merged ocean-colour product (v6.0 used)."},
+    {"target": "doi:10.1175/JCLI-D-20-0166.1", "relations": ["uses"], "reason": "NOAA OISST v2.1 SST."},
+    {"target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5", "relations": ["uses", "reviews"], "reason": "Response-class rule and trailing-mean level-shift result; tested in a new marine family. Here part of the level shift is product-dependent."},
+    {"target": "sci:sha256:7b03c5d9e77032c225341aec76502e02b7cc65b1eb1d75cfd591d0c1a4e4cf8f", "relations": ["challenges"], "reason": "Cross-validated training signal did not predict forward skill in 5,314 ocean-colour boxes."},
+    {"target": "sci:sha256:8804b69f25ac0e1b787854ca1294df6d9fe874839d368768e9953d468aee3016", "reason": "Earlier training-signal rule tests in other data families."},
+    {"target": "sci:sha256:4c6adabea050fca56acf463e00dee2e728c2d9062c20e623a029fb6bf3e2fca4", "reason": "Earlier test of cross-validated skill as a predictor of forward skill."},
+    {"target": "sci:sha256:a102dc43dfd203dfce32e548b979276d502c238ede43e585f61e4f827f2fc2de", "reason": "Similar pattern: slope transfers, level offset dominates forward error (western US fire area)."},
+    {"target": "sci:sha256:4e3a13faac06406733daf87a26de48b9d1e9c472e0331aec952a1a3b6949259f", "reason": "Campaign evidence of sensor-change steps in CCI satellite records."}
+  ]
+}
