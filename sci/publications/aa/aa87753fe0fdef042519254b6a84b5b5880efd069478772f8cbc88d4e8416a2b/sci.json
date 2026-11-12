@@ -1,0 +1,143 @@
+{
+ "title": "In one MICrONS mouse, RF location matching removed the LM and RL movie-spectrum excess over V1 but not the AL excess; in its digital twin, weights, location and pairing each gave a third",
+ "abstract": "Question: in higher mouse visual areas (HVAs), cvPCA response spectra decay faster than in V1. What makes this happen? We used one MICrONS mouse (13 two-photon scans, 6 natural-movie clips with repeats, V1, LM, RL, AL) and the released digital twin, which has one shared core and a per-neuron readout (location and feature weights). In vivo, the hierarchy slope of alpha was 0.208 (95% interval over scans 0.123 to 0.292; 13 of 13 scans), as in a parallel study. V1 units covered a wider part of the visual field. When V1 samples were matched to the RF locations of each HVA sample, the LM and RL excess over V1 disappeared (-0.008, 0.014), but AL stayed steeper (0.074; 0.071 with reliability also matched). The twin gave 81% of the in vivo slope on the same clips and the same location-matched pattern. An exact readout-exchange decomposition of the twin split the AL excess (0.090) into readout weights 0.029, readout location 0.027 and area-specific weight-location pairing 0.033, each positive in 6 of 6 scans; by the pre-set rule no single part dominates. AL weights gave 80% of the AL increase in top-5 variance share. Exploratory checks show that the exp output nonlinearity and the luminance-locked first core direction do not make the weight part, and that narrower coverage gives about two thirds of the location part. Limitations: one mouse, four areas, a model-based decomposition, 6 twin scans.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "visual hierarchy",
+  "response spectrum",
+  "cvPCA",
+  "MICrONS",
+  "digital twin",
+  "readout",
+  "receptive field coverage",
+  "mouse visual cortex",
+  "population code",
+  "natural movies"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_invivo_location.png",
+   "caption": "In vivo alpha per area in 13 MICrONS scans, and the HVA - V1 difference with random, RF-location-matched and location+reliability-matched V1 samples."
+  },
+  {
+   "path": "files/figures/fig2_twin_exchange.png",
+   "caption": "Digital twin against in vivo alpha, and the exact readout-exchange decomposition of the HVA - V1 difference into weight, location and pairing parts (6 scans)."
+  },
+  {
+   "path": "files/figures/fig3_weight_effect_checks.png",
+   "caption": "Exploratory: weight and location parts with exp output and on the log-rate; weight part after removal of the first k core-feature directions."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source finding: faster spectral decay along the mouse visual hierarchy; we use its cvPCA estimator, rank range and hierarchy scores."
+  },
+  {
+   "target": "sci:sha256:62a723e53ba6232d2885da1ab1758e24642f7b716b47dbd39e6817285d4b0776",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Stimulus generality and RF matching in Allen data; we test RF-location matching in an independent mouse."
+  },
+  {
+   "target": "sci:sha256:27b767c0f33dba4f164aa11f6d4486c1f34816e7506d58fc1031de22cc34f349",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Within-mouse effect and RF matching controls in Allen data."
+  },
+  {
+   "target": "sci:sha256:2817482cca4da18cf0592fbbf8baaaeb70834cf07a3ef3a53494d5771dc4127d",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Compression of natural movies lies outside VISp axes; the question of which computation makes it motivates our test."
+  },
+  {
+   "target": "sci:sha256:7e07cef073efcd9bec6989768b67a94241dc669bcebecb9a06123cd0c049bec3",
+   "relations": [],
+   "reason": "Within-mouse phase-averaged grating concentration; part of the source work."
+  },
+  {
+   "target": "sci:sha256:831e577053b183e3eb589498dff71630547c926cc539da7f97267dcfb71a4dc6",
+   "relations": [],
+   "reason": "HVA movie compression lies outside the VISp-predictable part; candidate features did not explain it."
+  },
+  {
+   "target": "sci:sha256:1f7d0723e0e95de17f86490bc2f14b76ea3f5e5a7ff507ea1d81e9008eb87d98",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Same MICrONS data; we repeat its within-scan result with a stricter pairwise RF-location match and extend it with a twin readout-exchange test."
+  },
+  {
+   "target": "sci:sha256:5f29c35b65443859ee3d4cecaf95b856b7324829e7b6c25cd29706b1e042421e",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that V1 alpha depends on array coverage in macaque; we find that RF coverage explains the LM and RL excess in mouse."
+  },
+  {
+   "target": "sci:sha256:e4bf8cc2ef663e0bb1ea5cce8e2a43186f7f48aee390099d77f474d6c8755753",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Found that spatial coverage of units sets spectral steepness in ResNet-18; our coverage result agrees."
+  },
+  {
+   "target": "sci:sha256:6571e24a3cce04ab25a86eb4ed1a2638ddc700b7647a14adbed9e9bb92da6a47",
+   "relations": [],
+   "reason": "Macaque V2/IT did not show faster decay; species comparison context."
+  },
+  {
+   "target": "sci:sha256:c1d69b64ac609df4a341ee018b3d52ea21fe8710e9940c604724a65d806a3111",
+   "relations": [],
+   "reason": "Timing null for concentration in Allen data; related test of the mechanism."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS functional data and area labels (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08829-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS digital twin (foundation model) weights and fnn code."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Digital-twin properties (readout locations) of the MICrONS neurons."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores of mouse visual areas."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1346-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "cvPCA estimator of response spectra."
+  }
+ ]
+}
