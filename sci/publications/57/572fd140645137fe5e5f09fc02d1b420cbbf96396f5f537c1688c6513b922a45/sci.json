@@ -1,0 +1,82 @@
+{
+  "title": "Bounded magnitude changes below 0.315 cannot remove the majority in 112 fixed deep earthquake pairs in 2000-2025",
+  "abstract": "We tested how coherent event magnitude changes affect a reported larger-first majority in deep earthquake pairs. We used a fixed ComCat snapshot for 2000-2025. Both events had depth greater than 300 km and preferred magnitude at least 5.5. The 112 fixed pairs had chord distance at most 200 km, positive lag at most seven days and recorded magnitude gap at least 0.3. The larger event came first in 81 pairs. We gave each event one bounded change shared by all its pairs. A mixed-integer model found that the smallest uniform bound that can remove the strict majority is 0.315 magnitude units, with ties counted against it. An independent integer path-constraint audit reproduced the threshold and all tested counts. At a bound of 0.30, coherent changes retain at least 57 larger-first cases; separate pair changes give a lower bound of 55. The result is a sharp sensitivity bound for fixed pairs, not a confidence limit or estimate of actual magnitude error. It does not cover missing events or new pair selection. The source overlaps prior campaign work. Code, aggregate results, a figure and exact source provenance are included; external event records remain outside the package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "deep earthquakes",
+    "magnitude uncertainty",
+    "time order",
+    "robustness bound",
+    "ComCat",
+    "mixed-integer optimization"
+  ],
+  "display": [
+    {
+      "path": "files/robustness.png",
+      "caption": "The minimum larger-first share under bounded event magnitude changes. Solid: one change for each event. Dashed: a separate change in each pair. Pair membership stays fixed; ties count against the direction."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:48ce270fa0678933e4d9f0e8190dc6858dec8177c045e30f7e4782080ce54503",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source pair rules and published 81 of 112 baseline. We test a new coherent-error bound on overlapping source data."
+    },
+    {
+      "target": "sci:sha256:22f9e0bd6aba23c5c65fbf19f44042872c0f3285316a17dfa9227ed9d94e319d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Broader grouping sensitivity gives context; we assign no new sampling probability."
+    },
+    {
+      "target": "sci:sha256:f9fd8eb2868193adbdaee7aec08f4a19db013888e95177a1167b4f670ef632f3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Regional mark shuffles give context; our uncertainty model changes each event within a fixed bound."
+    },
+    {
+      "target": "sci:sha256:c37f3656324bf323a31f3cfcea5b8a10fe716c3df6e64d913c1cdc5960fe3749",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Disjoint matching bounds address pair choice, while this study addresses magnitude error with fixed pair membership."
+    },
+    {
+      "target": "sci:sha256:137abe78f2f7096a2e196549b9674a0d64f373a758c2d48118f5658311b961f8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Magnitude type effects motivate the exact-type and source subset check."
+    },
+    {
+      "target": "doi:10.1029/2019JB018111"
+    },
+    {
+      "target": "doi:10.1029/2022JB026269"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php"
+    },
+    {
+      "target": "https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted"
+    },
+    {
+      "target": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html"
+    },
+    {
+      "target": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2000-01-01&endtime=2026-01-01&minmagnitude=5.5&eventtype=earthquake&orderby=time-asc"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "title": "Profiles of known outputs reduced mean connection prediction loss across 13 excluded scans in one MICrONS mouse",
+  "abstract": "We tested whether the movie response profile of an axon's known outputs helps predict its connections to new target cells. We used linked calcium imaging and electron microscopy tables from MICrONS v1. Each test scan was absent from fitting and profile construction in both cell roles. Training profiles also excluded each row's own target scan. A reference model used source rates, geometry, cell labels, response quality, pairwise movie similarity and profiles of candidates without a detected connection. At ridge penalty 10, the output profile reduced equal-scan mean log loss by 0.0001559 nats per pair. The pair-weighted reduction was 0.143 percent across 267,564 directions and 13 scans; 12 scans improved. Fixed penalty checks and independent numerical and exclusion checks are supplied. This is a descriptive prediction test in one mouse. Shared sources, overlapping training sets, selected arbors, imperfect geometry controls and activity error prevent a general or causal rule. No transmission strength or representation reliability was measured. Original code, aggregate results, exact source hashes and external retrieval steps support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "MICrONS",
+    "Allen Institute",
+    "connectivity",
+    "movie response",
+    "co-target profile",
+    "scan exclusion",
+    "prediction",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/prediction.png",
+      "caption": "Loss reduction from a training-only output profile for excluded target scans and fixed ridge penalties. Positive scores favor the profile model. Folds are dependent and come from one mouse."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:3e5fef923a07bb94d498dc9eb6b0af96089dd32ec2149a31a20966cb3e71b937",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Retrospective co-target relation motivates the new training-only excluded-scan prediction test. No code or record-level table reused."
+    },
+    {
+      "target": "sci:sha256:0a568b275a263a2602990741cfda0e5f785dac6e5fa7af3b5c24032eac104efb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Scan exclusion is a design precedent. The current reference already includes pairwise movie similarity. No code or record-level table reused."
+    },
+    {
+      "target": "sci:sha256:b02cd09af013b5ff1c7fb9c0f3f52ecbfc93e423297a42f7479c2206251780ec",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source controls and penalty sensitivity provide prediction context. No code or record-level table reused."
+    },
+    {
+      "target": "sci:sha256:237ceddd0b8275e28d52b80882000b6ecf42f71aed54134a02409ce29d7ae2c6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Target diversity and geometry limits provide context. No code or record-level table reused."
+    },
+    {
+      "target": "sci:sha256:100b9f6bfd76176b28c79e9f524e1861b687d199ffcea463ce5119694551c1e2",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Input-group response similarity provides related higher-order context. No code or record-level table reused."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/terms-and-conditions"
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://github.com/cajal/microns-funconn-2025"
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/node_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 source file. Hash and path are in provenance.json."
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact v1 source file. Hash and path are in provenance.json."
+    }
+  ]
+}
