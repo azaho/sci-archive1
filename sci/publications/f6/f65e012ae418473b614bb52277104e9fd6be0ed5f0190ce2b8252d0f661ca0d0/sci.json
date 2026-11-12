@@ -1,0 +1,83 @@
+{
+ "title": "Dry May-June weather was followed by more spongy moth defoliation in the next year in eastern US aerial surveys, 1999-2025; forest tent caterpillar did not show this",
+ "abstract": "Question: do dry early summers come before growth of spongy moth (Lymantria dispar dispar) defoliation? The fungus Entomophaga maimaiga needs rain in May-June to kill the larvae, and agencies said that dry springs caused the 2015-2018 and 2020-2022 outbreaks. Approach: we rasterized USFS Insect and Disease Survey defoliation and surveyed-area polygons (Regions 8 and 9, 1997-2025) into 0.25-degree cells and used NOAA nClimGrid rain. A pre-registered fixed-effects model related log growth of defoliated area from year t to t+1 to May-June rain in year t, with density, rain in t+1 and survey-coverage rules. Results: in 1,066 cells and 15,042 transitions, May-June rain 1 SD above normal (about 28% more rain) gave -0.173 (95% CI -0.235 to -0.112) lower growth. No permutation of whole-year rain maps among years gave a coefficient this far from zero (p = 0.0005). The coefficient was negative in New England (-0.18), the Mid-Atlantic (-0.30) and the Great Lakes (-0.06, not clear), in 1999-2011 and 2012-2024, in both survey eras and with year fixed effects. Forest tent caterpillar, which the fungus does not infect, gave -0.002. Rain in March-April, July, August-September and two years later gave near-zero values. Where defoliation was present, 1 SD drier weather gave about 1.6 times more next-year area. Limitations: aerial sketch maps are approximate and survey coverage changed (very low in 2020); we did not measure infection, so the mechanism is not proven; rain improved forward forecasts of 2015-2024 cell growth by only 1.9%; the 2020-2021 increase did not follow a dry May-June in covered cells. Code, plan, derived cell-year panel and figures are included; raw files stay at the public sources.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "spongy moth",
+  "Lymantria dispar",
+  "Entomophaga maimaiga",
+  "forest defoliation",
+  "drought",
+  "insect outbreak",
+  "aerial survey",
+  "USFS Insect and Disease Survey",
+  "nClimGrid",
+  "observation bias",
+  "pre-registered",
+  "placebo test",
+  "forest tent caterpillar",
+  "weather extremes",
+  "invasive species",
+  "eastern United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_binned_response.png",
+   "caption": "Residual growth of next-year defoliated area (cell fixed effects, density and next-year rain removed) by decile of May-June rain in year t. Blue: spongy moth (host of the fungus E. maimaiga). Orange: forest tent caterpillar (not a host). Bars: 95% year-cluster bootstrap intervals. USFS IDS aerial survey, eastern US, transitions 1999-2024."
+  },
+  {
+   "path": "files/figures/fig3_coefficients.png",
+   "caption": "Coefficient of May-June rain (per +1 SD) for next-year log growth of spongy moth defoliation in the primary model, three regions, two periods and three bias checks (blue), and for the control defoliator and placebo rain windows (orange). 95% CI clustered by year."
+  },
+  {
+   "path": "files/figures/fig1_regional_series.png",
+   "caption": "Annual spongy moth defoliated area in range cells (top, log scale) and mean May-June rain z-score (bottom; orange dry, aqua wet) for New England, the Mid-Atlantic and the Great Lakes, 1997-2025. Low values in 2020 come partly from very low survey coverage."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:19527cb5db920298fea2043f7edacbb595c2ec9af16ffb18e0f07bc7368262ad",
+   "reason": "Earlier campaign IDS study of western bark beetles with the same rasterization approach; it pooled defoliators and did not test a defoliator-specific weather link, which this work does."
+  },
+  {
+   "target": "doi:10.1128/MMBR.63.4.814-835.1999",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Review of E. maimaiga epizootiology; moisture dependence of infection is the tested mechanism."
+  },
+  {
+   "target": "doi:10.1603/EN13194",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Plot-scale link between weather and fungal mortality in outbreak populations; our regional result agrees."
+  },
+  {
+   "target": "doi:10.1007/s10530-018-1778-0",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Landsat mapping of the 2015-2017 southern New England defoliation linked to drought."
+  },
+  {
+   "target": "https://www.fs.usda.gov/foresthealth/applied-sciences/mapping-reporting/detection-surveys.shtml",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USFS Insect and Disease Survey data, Regions 8 and 9, release 2026-04-22."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/products/land-based-station/noaa-monthly-us-climate-gridded-dataset",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly precipitation and temperature, version modified 2026-10-06."
+  }
+ ]
+}
