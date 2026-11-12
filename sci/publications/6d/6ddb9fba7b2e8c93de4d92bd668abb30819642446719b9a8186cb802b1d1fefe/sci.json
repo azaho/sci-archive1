@@ -1,0 +1,65 @@
+{
+  "title": "A four-second recovery-time cap excludes 30 more of 607 selected Allen curves at a 0.10 change limit",
+  "abstract": "We tested whether unrestricted recovery-mixture fits depend on slow modes in Allen Synaptic Physiology r2.1. The primary sample had 607 selected cortical connections and four pause summaries after 50 Hz trains. At an assumed uniform change limit of 0.10 normalized units, an unrestricted same-sign positive exponential mixture had 483 failures. A four-second maximum time constant added 30 failures from 30 recordings. These were 24.19 percent of the 124 unrestricted-compatible curves. One- and 16-second caps added 69 and 10 failures. All 30 primary added failures also failed a simpler rate-bound screen. At ten trials per pause, the four-second cap added five failures among only 37 curves. Adaptive linear programs and global polynomial bounds resolved all threshold cases. The error limit is assumed, not measured. Separate protocol trials, baseline changes, opposing modes, slice selection and sparse human data prevent a biological time-constant claim. Code, proof, aggregate evidence, figure and source hashes support reproduction. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic recovery",
+    "time constants",
+    "positive mixtures",
+    "bounded error",
+    "circuit models"
+  ],
+  "display": [
+    {
+      "path": "files/evidence/mixture.png",
+      "caption": "Failure counts under maximum recovery time constants of 1, 4 and 16 seconds, compared with unrestricted mixtures. Counts use an assumed change limit of 0.10 normalized units."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:cd0c9c0fdea945af57e18977168f1045758c041fc1ce759d4fe43d88048bfabb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the unrestricted full-mixture audit with finite maximum time constants; same data and selection."
+    },
+    {
+      "target": "sci:sha256:172b3c5e17ae05db782b8454cee70b821023b6c239fd5ed1bbe46644e05d4d49",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Adapts baseline-licensed shape-fit code and follows its data selection."
+    },
+    {
+      "target": "sci:sha256:755e40c75be5c5b701553038873e6624e41eaf4fdbeb173b440cc704f7d8a074",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior log-convex screen; reviewed to define the new scope."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861"
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/dynamics.py"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    },
+    {
+      "target": "https://homepages.cwi.nl/~monique/files/moment-ima-update-new.pdf"
+    }
+  ]
+}
