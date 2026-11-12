@@ -1,0 +1,62 @@
+{
+  "title": "An anomaly size term raised one-month sea-level error at 217 gauges in 2010-2024",
+  "abstract": "We tested whether anomaly size adds one-month sea-level prediction value beyond two linear residual lags. We used a fixed PSMSL monthly archive and 217 gauges. Each test year in 2010-2024 used only earlier years for fitting. The added term was the previous anomaly times its absolute value, scaled by training residual spread. Across 38,618 monthly targets, this term raised mean squared error by 0.586%. The conditional 95% three-year block interval for error reduction was -0.992% to -0.145%. RMSE rose from 83.628 to 83.873 mm. Equal geographic-cell weighting also gave increased error. The large-anomaly gauge-weighted interval included zero. Ten- and thirty-year training checks had negative point gains; the thirty-year interval included zero. This simple term did not improve prediction in this sample. It does not show that coastal recovery is linear. Revised data, uneven coverage, fifteen test years and conditional intervals limit inference. Original code, aggregate evidence, source hashes, audits and a figure are included. Source records and record-level transformations remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "sea level",
+    "coastal recovery",
+    "nonlinear response",
+    "PSMSL",
+    "chronological prediction",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "The anomaly size term did not lower main test error. Negative MSE reduction means increased error. Limits use shared three-year blocks of target years."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:a60f6e277cdcf5776abb1b80169b04a16e2546c88171db6d73526050de692058",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior decay benchmark gives the source and sample rules. We test size dependence at all monthly origins; source records overlap."
+    },
+    {
+      "target": "sci:sha256:5e38e5669f172a0a90abe25ea895629dbde1a212bca1fa7fe75b6af629db13d1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Second-lag result motivates the stronger linear reference. Same source data, new code."
+    },
+    {
+      "target": "sci:sha256:297f795f30d598a03f8c1ab32990de9fbe9380da2790a036cc6ccbe80d5a544b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier sign-response prediction test differs from our signed size term and larger gauge sample."
+    },
+    {
+      "target": "doi:10.1029/2021JC018137"
+    },
+    {
+      "target": "doi:10.2112/JCOASTRES-D-12-00175.1"
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip"
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/complete.php"
+    },
+    {
+      "target": "https://psmsl.org/data/obtaining/notes.php"
+    }
+  ]
+}
