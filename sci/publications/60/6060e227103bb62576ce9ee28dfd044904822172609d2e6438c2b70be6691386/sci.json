@@ -1,0 +1,108 @@
+{
+ "title": "Modelled road-salt loads did not predict lower calling detection of salt-sensitive frogs than of salt-tolerant frogs at NAAMP stops in the eastern and central US in 2001-2015",
+ "abstract": "Question: do salt-sensitive anurans have lower calling detection where and when more road de-icing salt is applied, relative to salt-tolerant anurans at the same roadside stops? Data: North American Amphibian Monitoring Program (NAAMP) stop records 2001-2015 (189,679 stop-runs, 11,963 stops, 1,176 routes; USGS, public domain), USGS annual 1-km road-salt estimates (Bock et al., ver. 2.0), and GHCN-CAMS winter temperature. Design (plan written before the fits): a-priori classes from field and toxicity studies (sensitive: wood frog, pickerel frog; tolerant: green frog, American toad, bullfrog, northern leopard frog); stop-run linear probability models per species x region with day, air temperature, wind, traffic noise, car count and winter anomaly terms; route-clustered errors; class contrasts from route influence functions. Primary test (time): stop and state x year fixed effects, salt of the three preceding years. In NE, MW and mid-Atlantic salt states (801 routes) the sensitive-minus-tolerant contrast was -0.18 percentage points per 10 t/km2 (95% CI -2.20 to +1.85); within-state exposure permutation p = 0.92; next-year placebo null. The planned decision rule was not met. In space (route x year effects), detection of both classes was lower at stops with more salt and roads (-0.87 and -0.85 points per log unit); the contrast was -1.1% of mean detection (CI -7.7% to +5.6%). Traffic noise lowered detection of both classes by 12-13%; noise and car terms removed about 30% of the naive spatial slope. A trend term was opposite to a salt-damage expectation (sensitive species gained at high-salt stops, +1.37 points per 10 t/km2 per decade, CI +0.30 to +2.45; descriptive). Limitations: the salt data are a deterministic allocation of state totals by road density and snowfall normal, so salt and roads cannot be separated in space and the year-to-year variation is small (SD 0.35-0.88 t/km2); detection at a stop is not pond occupancy; no measured chloride; data end in 2015.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410501"
+  }
+ ],
+ "keywords": [
+  "road salt",
+  "de-icing salt",
+  "chloride",
+  "freshwater salinization",
+  "pollution",
+  "amphibians",
+  "anurans",
+  "NAAMP",
+  "calling surveys",
+  "wood frog",
+  "pickerel frog",
+  "traffic noise",
+  "detection bias",
+  "observation bias",
+  "difference in differences",
+  "permutation test",
+  "null result",
+  "eastern United States"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_unit_coefficients.png",
+   "caption": "Unit slopes of stop calling detection (95% route-clustered CI) for salt in the three preceding years (Test B, stop and state x year fixed effects), for next-year salt (placebo), and for log(1 + mean stop salt) within route x year (Test A). Orange: a-priori salt-sensitive species; blue: salt-tolerant; grey: intermediate (not in contrasts). Black diamonds: pooled sensitive-minus-tolerant contrast in NE+MW+MA."
+  },
+  {
+   "path": "files/figures/fig1_exposure_map.png",
+   "caption": "NAAMP stops used (2001-2015), coloured by mean USGS road-salt load in a 3 x 3 km window (t per km2 per year, log scale), with the four analysis regions."
+  },
+  {
+   "path": "files/figures/fig3_detection_and_trend.png",
+   "caption": "Class means (NE+MW+MA, inverse-variance weights, 95% route-clustered CI): naive and detection-adjusted spatial salt slopes, detection effects of the stop noise flag and log(1 + cars), and the salt x decade trend term (Test C). Units differ by column and are given under each column."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5066/F7G44NG0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NAAMP anuran stop data 1994-2015, the main biological data."
+  },
+  {
+   "target": "doi:10.5066/P96IX385",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS road salt application estimates, the exposure data."
+  },
+  {
+   "target": "doi:10.1029/2007JD008470",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-CAMS monthly temperature for winter anomalies."
+  },
+  {
+   "target": "sci:sha256:00fa5e9404f5c28c027c79ca3bc0e3ede118a63b563838d41de45d8e4ad459b1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier NAAMP study in this campaign; we reuse its run screening and region scheme and add stop-level salt and traffic terms."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Traffic hides birds at survey stops; we find the same detection path for frog calling at NAAMP stops."
+  },
+  {
+   "target": "doi:10.1016/j.envpol.2008.06.032",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Source of the a-priori sensitive and tolerant classes; their pond-scale class difference did not appear in NAAMP calling detection with modelled salt."
+  },
+  {
+   "target": "doi:10.1890/07-1644.1",
+   "reason": "Road salt effects on vernal-pool amphibians in the Adirondacks; background."
+  },
+  {
+   "target": "doi:10.1016/j.envpol.2005.07.013",
+   "reason": "Road salt toxicity to larval wood frogs; background for the class assignment."
+  },
+  {
+   "target": "doi:10.1038/srep00235",
+   "reason": "Local adaptation of an amphibian to road adjacency; a limitation for fixed sensitivity classes."
+  },
+  {
+   "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12548906/",
+   "reason": "2025 Massachusetts vernal-pool study of road salt and amphibian occupancy; background."
+  }
+ ]
+}
