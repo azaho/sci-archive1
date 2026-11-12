@@ -1,0 +1,106 @@
+{
+ "title": "In 74 epilepsy patients, same-session spontaneous ECoG coupling predicted stimulation-evoked N1 responses beyond distance and electrode effects, but its direction did not predict response direction",
+ "abstract": "Question: inside one patient and session, does spontaneous coupling between ECoG electrodes predict causal single-pulse stimulation responses (CCEP N1) after distance and electrode identity are removed, and does the direction of spontaneous coupling predict the response direction? Data: OpenNeuro ds004080 v1.2.4 (CC0), 74 patients aged 4-51; the authors' N1 detections; 60 s (two patients 120 s) of clean spontaneous ECoG per patient from the same run, read with HTTP range requests (pre-stimulation rest, inter-train gaps, then 3.0-4.8 s inter-pulse windows with the stimulus-locked mean removed). Measures: broadband correlation, band amplitude-envelope correlation (AEC), orthogonalised AEC, coherence and imaginary coherence; phase-slope index and lagged high-gamma envelope asymmetry for direction. Method: as in sci:sha256:8811ade9, within-patient 5-fold cross-validated logistic models of N1 presence with a distance spline and one fixed effect per stimulated pair and recording electrode (241,384 edges, 31,869 N1); 20 surrogates per patient that permute coupling inside 5 mm distance bins; a 20 mm or more robustness run; for direction, a Bradley-Terry model with electrode send/receive parameters (23,991 asymmetric pairs, 72 patients). Results: coupling reduced held-out log-loss by 18.4 millibits per edge (95% CI 14.2-23.0; 86% of patients positive), against -7.0 for shuffles and 0.93 for group tractography in the earlier study; leakage-robust measures alone gave 10.3 (7.6-13.1); at 20 mm or more the gain was 21.4 (16.7-26.4). Broadband and 4-30 Hz envelope coupling carried more than high-gamma. The gain was about 38% of that from electrode identity. Direction failed: sign agreement 0.50-0.51 for all directed measures, no gain over the electrode model, electrode-level rho 0.00-0.03. Limitations: one centre, automatic N1 detection, short spontaneous segments (gains are probably lower bounds), common-average reference, tractography compared on a different edge set.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "cortico-cortical evoked potentials",
+  "CCEP",
+  "single pulse electrical stimulation",
+  "ECoG",
+  "functional connectivity",
+  "effective connectivity",
+  "amplitude envelope correlation",
+  "imaginary coherence",
+  "phase slope index",
+  "directed connectivity",
+  "structure-function",
+  "human cortex",
+  "epilepsy"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_per_patient_gain.png",
+   "caption": "Held-out log-loss gain (millibits per edge) from adding all spontaneous coupling measures to the model with distance and electrode fixed effects, per patient (blue, sorted), and the mean gain of 20 distance-bin shuffles of the same coupling (grey). The dashed line is the mean gain of group tractography in the same design (sci:sha256:8811ade9)."
+  },
+  {
+   "path": "files/figures/fig3_gain_by_measure.png",
+   "caption": "Gain over distance and electrode effects for groups of coupling measures, all edges (74 patients) and edges 20 mm or more from the nearer stimulated electrode (69 patients); mean of patients with 95% patient-bootstrap CI."
+  },
+  {
+   "path": "files/figures/fig4_direction.png",
+   "caption": "Direction test. Left: fraction of asymmetric electrode pairs where the sign of a spontaneous directed measure matches the stronger CCEP direction. Middle: held-out gain of each measure over the electrode send/receive (Bradley-Terry) model. Right: correlation of electrode net spontaneous lead with CCEP send-minus-receive rate. Means of 72 patients, 95% CI."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8811ade999bbc79753c0cf99f6706a50446d90e4c6b3554be6a6795dcd1e525c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same within-patient CCEP model design; its group-tractography gain (0.93 mbit) is the comparison point."
+  },
+  {
+   "target": "sci:sha256:b57ec1a7c61293173f7dd1884fe12ebe43fc62eabc4d50972e16bc51bb8da9ce",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Electrode send/receive balance sets most CCEP asymmetry; our direction test confirms that pair-level spontaneous direction adds nothing."
+  },
+  {
+   "target": "sci:sha256:c1cb60921d1bc74162f6854711e38d982f11b2eeb73599cef825042ea7a3c2c9",
+   "reason": "Per-electrode source score of CCEP direction in the same dataset."
+  },
+  {
+   "target": "sci:sha256:b2e871b2902c15c3380fa9294dfe99ed4549a5276462caae8627ce7d5de31183",
+   "reason": "Interictal iEEG coupling against tractography in another cohort; here coupling is compared with causal responses."
+  },
+  {
+   "target": "sci:sha256:734b7b0e7a2785fc574d7b9aa0d0b2fcb4483d669e3c8b683196284c5c4ec641",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Spontaneous lag direction did not follow axon direction in mouse; here it does not follow causal stimulation direction in human ECoG."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "reason": "Pair-specific anatomical wiring added almost nothing to FC; contrast with the large functional-to-causal match here."
+  },
+  {
+   "target": "sci:sha256:3bd4459fa104b5cc588cee3dc3a490a7901c37c0ad3eb36a539345a237bc2280",
+   "reason": "Individual connectomes predict individual FC better than group ones; consistent with the individual advantage here."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004080.v1.2.4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source ECoG, events and N1 detections (CC0)."
+  },
+  {
+   "target": "doi:10.1038/s41593-023-01272-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dataset paper and N1 detection method (van Blooijs et al. 2023)."
+  },
+  {
+   "target": "doi:10.1038/nn.3101",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Orthogonalised amplitude envelope correlation (Hipp et al. 2012)."
+  },
+  {
+   "target": "doi:10.1103/PhysRevLett.100.234101",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Phase-slope index (Nolte et al. 2008)."
+  }
+ ]
+}
