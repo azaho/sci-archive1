@@ -1,0 +1,106 @@
+{
+  "title": "A common step near 2009 makes NDBC buoy winter wave heights fall 2-3% per decade faster than altimetry and a wave hindcast; the corrected Hawaii decrease is about 1.5% per decade",
+  "abstract": "We tested a campaign result that winter (November to March) significant wave height (Hs) at Hawaii NDBC buoys decreased 3.1% per decade in 1985-2025 and that no US region increased. We used two sources that do not use buoy wave data: ESA Sea State CCI v4.0 L4 altimetry (3 x 3 degree boxes at 47 buoys, winters 1993-2023) and the Ifremer WAVEWATCH III hindcast GLOB-30M_LOPS_2025 with ERA5 winds (3-hourly at 13 buoys, 1992-2025). We compared the published buoy winter values with each source by fixed-effects composites, ONI-adjusted trends, difference series and a common step scan. At Hawaii in 1993-2023 the buoys gave -3.95% per decade (95% CI -5.26 to -2.62), altimetry -1.06% (-2.04 to -0.08) and the hindcast -1.95% (-3.59 to -0.29); altimetry minus hindcast was +0.91% (-0.32 to +2.16). Buoy minus altimetry at all 47 buoys fits one common step better than a linear drift (BIC lower by 29.5): first winter 2010 (bootstrap 2007-2013), step -4.4% (-5.6 to -3.4); 42 of 47 buoys drift negative. Buoy minus hindcast gives the same step (winter 2009, -4.2%) at all 13 buoys, also in the 95th percentile. Altimetry minus hindcast has no clear common drift or step. Removal of the network step changes the published 1985-2025 Hawaii trend from -3.0% to -1.5% per decade (-2.2 to -0.8) and moves the other regions to near zero or small increases. In the hindcast, the Hawaii decrease is North Pacific swell (-2.4% per decade), not local wind sea. Thus the Hawaii decrease is real in sign but about half as large, and a network-wide NDBC change near 2009 biases buoy trends negative. Limitations: the cause of the step is not identified; the references disagree by up to 2% per decade in the Gulf of Mexico and Southeast Atlantic and by about 1% per decade in the Pacific; the hindcast covers only 13 buoys; altimetry uses monthly 1-degree means.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "significant wave height",
+    "NDBC buoys",
+    "satellite altimetry",
+    "ESA Sea State CCI",
+    "WAVEWATCH III hindcast",
+    "ERA5",
+    "wave climate trends",
+    "homogenization",
+    "instrument step",
+    "Hawaii",
+    "North Pacific swell",
+    "three-cornered hat",
+    "independent replication"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_hawaii_three_sources.png",
+      "caption": "Hawaii (4 NDBC buoys), winters 1993-2023. Top: regional composite of winter mean Hs anomaly from buoys, CCI v4 altimetry (3 x 3 degree boxes) and the WW3 hindcast at the buoy positions, with linear trends (dashed). Bottom: differences between sources. Buoy minus altimetry and buoy minus hindcast fall near 2009-2010; altimetry minus hindcast does not."
+    },
+    {
+      "path": "files/figures/fig4_step_and_station_drift.png",
+      "caption": "Left: BIC of a common step at each first winter minus BIC of a common linear drift, for buoy minus altimetry (47 buoys, 26 Pacific buoys) and buoy minus hindcast (13 buoys); values below zero favour a step, with minima at winters 2009-2010. Right: trend of buoy minus altimetry at each buoy, 1993-2023, with HAC 95% CI; 42 of 47 are negative."
+    },
+    {
+      "path": "files/figures/fig2_regional_trends.png",
+      "caption": "Regional trends of winter mean Hs, 1993-2023, with ONI as covariate (HAC 95% CI). Left: buoys and altimetry at all 47 buoys. Right: buoys, altimetry and hindcast at the 13 buoys with hindcast output, matched winters. Buoy trends are more negative than both references in every region."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:1d873f118e7a37218ea68913c43d9e327becad7d641f2fcd97fe96ec038cb8c9",
+      "relations": [
+        "uses",
+        "reviews",
+        "challenges",
+        "supports"
+      ],
+      "reason": "We use its published per-station winter buoy values and regional composites and test its main result. Independent altimetry and a hindcast confirm the sign of the Hawaii winter Hs decrease but give about half the size; a common network step near 2009, which its neighbour test could not see, causes the rest and the absence of regional increases."
+    },
+    {
+      "target": "sci:sha256:bcc06e58b99a0ec826e3df405e7fe583531e418bbc88978cdf65f04298187efc",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its corrected KIP microseism trend is negative at Hawaii; our altimetry and hindcast also give a negative Hawaii winter trend."
+    },
+    {
+      "target": "doi:10.5285/315d8e013696420192f1ea1d9191ca9c",
+      "relations": [
+        "uses"
+      ],
+      "reason": "ESA Sea State CCI L4 v4.0 monthly gridded altimeter Hs, used as an independent reference."
+    },
+    {
+      "target": "https://data-dataref.ifremer.fr/ww3/GLOB-30M_LOPS_2025/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Ifremer/LOPS WAVEWATCH III GLOB-30M hindcast with ERA5 winds; point spectra at NDBC buoys used as an independent reference."
+    },
+    {
+      "target": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+      "relations": [
+        "uses"
+      ],
+      "reason": "DJF Oceanic Nino Index as a trend covariate."
+    },
+    {
+      "target": "doi:10.1029/2011GL049518",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Documents steps from hardware and processing changes in NDBC wave records; we find a further network-wide step near 2009."
+    },
+    {
+      "target": "https://strathprints.strath.ac.uk/84172",
+      "reason": "Parallel NOMAD and 3-m buoy measurements separate hull and wave-processing steps; a candidate type of cause for the step we find."
+    },
+    {
+      "target": "doi:10.1126/science.aav9527",
+      "reason": "Multi-mission altimeter wave trends and their calibration against buoys."
+    },
+    {
+      "target": "https://data-ww3.ifremer.fr/BIB/Collins_Jensen_JTECH2022.pdf",
+      "reason": "Reports an Hs overestimate above 4 m for an NDBC system processed with DDWM v2.0; that bias has the opposite sign to the step found here."
+    }
+  ]
+}

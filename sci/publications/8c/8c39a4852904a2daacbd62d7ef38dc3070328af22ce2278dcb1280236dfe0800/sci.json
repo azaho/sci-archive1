@@ -1,0 +1,84 @@
+{
+ "title": "In 590 imaged zebrafish integrator cells, higher eye-position sensitivity came with less persistence; the hindbrain connectome model and 400 rewired models gave the opposite sign",
+ "abstract": "Question: does the published linear model of the larval zebrafish hindbrain eye-position integrator, built from EM synapse counts (Vishwanathan et al. 2024), give the measured relation between the eye-position sensitivity K of a cell and the persistence of its post-saccadic activity, and the measured spatial maps of both? Approach: we used the published model data and imaging table, put EM somata and imaged cells in the shared frame, and compared the real wiring with 200 degree-preserving shuffles, 200 distance-preserving rewirings and position permutations. Results: in 590 imaged integrator cells pooled from about 20 larvae, cells with higher K were less persistent (Spearman -0.27, cell bootstrap 95% CI -0.35 to -0.19; same sign for four persistence measures, high-SNR cells, after position control and on each side). The connectome model gave +0.80, all model variants +0.79 to +0.94, and all 400 null wirings gave positive values (+0.32 to +0.80). Thus the conflict comes from the model class, in which one slow mode sets both K and persistence. The real wiring gave a wider persistence spread across cells (IQR/median 0.56) than all 400 null wirings (0.11 to 0.41), because a second mode stays near the leading one (|lambda2|/lambda1 0.77). Model maps mapped onto 265 nearby imaged cells did not predict measured persistence beyond a position-permutation null (r +0.20, p 0.125) and gave the wrong sign for K (r -0.20). Limitations: larva identity is not in the table, so CIs are too narrow; EM and imaging come from different larvae; we did not test mechanisms such as burst input or intrinsic leak that could reverse the sign. External data are not bundled; a fetch script and hashes are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "neural integrator",
+  "persistent activity",
+  "larval zebrafish",
+  "oculomotor",
+  "eye position",
+  "structure-function",
+  "linear rate model",
+  "null wiring",
+  "calcium imaging",
+  "hindbrain",
+  "multi-dimensional dynamics"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_sensitivity_persistence_coupling.png",
+   "caption": "Sensitivity-persistence coupling. (a) 590 imaged VPNI cells and ABD motoneurons: higher K, less persistence (Spearman -0.27). (b) Connectome model, EM integrator cells: +0.80. (c) Coupling for data (with 95% cell bootstrap CI), model variants and 400 null wirings; all models are positive."
+  },
+  {
+   "path": "files/figures/fig3_persistence_heterogeneity.png",
+   "caption": "Real wiring gives a wider spread of model persistence across cells (a) and a second mode nearer the leading one (b) than 200 degree-preserving shuffles and 200 distance-preserving rewirings. Orange lines: potential-synapse connectomes from the source study."
+  },
+  {
+   "path": "files/figures/fig2_spatial_transfer.png",
+   "caption": "Spatial maps. (a) Measured persistence of imaged cells (mirrored to one side). (b) Model persistence of EM integrator cells. (c) Spearman r between model maps (kNN mapped) and 265 nearby imaged cells for real wiring (green), against position permutation and wiring nulls (boxes, 2.5-97.5% whiskers) and the data self-prediction ceiling (dashed)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41593-024-01784-3",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the EM wiring diagram, the linear model and the null-wiring method; we show that the model gives the opposite sign of the sensitivity-persistence relation in the imaging data."
+  },
+  {
+   "target": "doi:10.1038/s41467-021-24336-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the calcium imaging data in the published imaging table."
+  },
+  {
+   "target": "doi:10.1038/nn.2888",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reported multi-dimensional persistence in this circuit; the real wiring gives wider persistence spread than null wirings."
+  },
+  {
+   "target": "https://github.com/goldman-lab/Connectome-Model",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data and notebook, commit cb7eb5c9c70d18de295e07ce9b5984e53b150114."
+  },
+  {
+   "target": "https://github.com/ashwinvish/Zfish_recon",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EM soma positions in the shared frame, commit 97d9cbeb65ab21205e5500970d0ea74fbc74c00f."
+  },
+  {
+   "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+   "reason": "Related campaign work on wiring and activity timescales in larval zebrafish at the region level."
+  },
+  {
+   "target": "sci:sha256:7a4063e456cac2ca403bb7c568f8835a3defad1335986b0de2b55fa474a1f8fc",
+   "reason": "Related campaign work: projectome input did not predict longer timescales across zebrafish regions."
+  }
+ ]
+}
