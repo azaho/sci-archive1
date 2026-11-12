@@ -1,0 +1,102 @@
+{
+ "title": "Connectome spiking-model responses to up to 10 fly head sensory neurons agree less between FlyWire and BANC than between brain sides; gain, sign and nerve-cord changes do not close the gap",
+ "abstract": "Question: does a whole-brain connectome spiking model give the same prediction when it is built from a second fly? Approach: we re-implemented the Shiu et al. 2024 leaky integrate-and-fire model (validated against the original Brian2 code, neuron-level log-rate r = 0.993) and built it from FlyWire v783 and BANC v888. We activated up to 10 neurons of each of 89 shared head sensory cell types on each side and compared the responses of 7,930 matched cell types. Results: 105 of 114 antennal-lobe stimulus sides ignite one global state (about 8,500 neurons) that is almost the same for every stimulus (Jaccard 0.98 between stimuli). For sparse responses (mechanosensory, gustatory and other inputs), the share of active cell types common to two runs was 0.92 for trial halves, 0.54 after a synapse-count noise model, 0.67 for other seed neurons, 0.27 for left vs right side of one map, and 0.11 between FlyWire and BANC (hemisphere vs between maps p = 3.6e-5, 30 stimuli). A size-matched metric and descending-neuron outputs gave the same order. A BANC gain of 1.34 or 1.79, FlyWire transmitter signs, or removal of the nerve cord did not increase agreement. A threshold-free linear model gave the same order (0.72, 0.41, 0.25), and agreement between maps fell from 0.27 at the first synapse to 0.03 at two synapses. Conclusion: with published parameters, model predictions beyond the first-order targets are specific to the map. Limitations: model results only, no comparison with measured activity; two female flies with different reconstruction pipelines, so biological and technical differences are not separated; 10-neuron seed sets give weak drive.",
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "FlyWire",
+  "BANC",
+  "leaky integrate-and-fire",
+  "whole-brain model",
+  "individual variability",
+  "reproducibility",
+  "sensorimotor",
+  "model validation"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_agreement_tiers.png",
+   "caption": "Agreement per stimulus in the sparse regime: trial halves, synapse-count noise model, other seed neurons, left vs right side, FlyWire vs BANC, and BANC with one difference removed (A: Jaccard of active cell types; B: size-matched overlap; C: linear model)."
+  },
+  {
+   "path": "files/figures/fig2_hop_depth.png",
+   "caption": "Share of active units active in both runs by synaptic distance from the seeds. Between maps, agreement is lost after the first synapse."
+  },
+  {
+   "path": "files/figures/fig3_regimes_ignition.png",
+   "caption": "A: active units per stimulus side in FlyWire and BANC models (sparse vs global ignition). B: ignition sets are the same for different stimuli."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-024-07763-9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the LIF model, parameters and FlyWire weights that we re-implemented and tested across connectomes."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC v888 connectome metadata and edge list (version 3.0, CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome (v783)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types (Codex 783 consolidated types and classification)."
+  },
+  {
+   "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Synapse-count variability model (2-3x Poisson plus 0.2-0.3 log-SD edge term) used for the noise-model tier."
+  },
+  {
+   "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+   "reason": "Map-specific synapse-count differences between fly connectomes; we test their functional effect."
+  },
+  {
+   "target": "sci:sha256:be6312d7fa467eacf1df8db848a31f88255c6bcd24d08d34076291bdaedb8b65",
+   "reason": "Strong-connection count differences are specific to each fly map."
+  },
+  {
+   "target": "sci:sha256:a757764521bf4e30122565fffbd2edcabbdc56b0d99aa9cbda0ccce9e50ba573",
+   "reason": "BANC-specific bilateral count changes."
+  },
+  {
+   "target": "sci:sha256:82b126177507bcfa072eb00b4631a840efb68e2b6d88261b82f0055fe2af39bb",
+   "reason": "Between-animal count excess = left-right variation plus a bilateral part."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "reason": "Homologous synapse counts vary more than Poisson in fly connectomes."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "reason": "Related FlyWire sign-propagation prediction of visual cell types."
+  },
+  {
+   "target": "sci:sha256:27a99efd1eb09900c17a379046097cb794e3f30810c515011c97eb57770f0dbc",
+   "reason": "Related rate models built from two fly connectomes (head-direction circuit)."
+  }
+ ]
+}
