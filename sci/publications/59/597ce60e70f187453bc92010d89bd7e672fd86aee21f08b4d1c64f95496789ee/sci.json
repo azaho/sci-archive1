@@ -1,0 +1,83 @@
+{
+  "title": "Argo summer mixed-layer deepening in 2006-2026 (+1.2% per decade) changes to -1.5 to -0.3% per decade when all floats get the same vertical sampling (0.03 kg m-3 threshold)",
+  "abstract": "Published studies report that the summer ocean mixed layer became deeper, by 2.9% per decade in 1970-2018 and by about 4 m in Argo data in 2006-2021. In the same years, Argo floats changed from 5-10 dbar to 2-dbar vertical sampling: the share of high-resolution summer profiles rose from 1% in 2006 to 87% in 2025. We computed the threshold mixed-layer depth (MLD; sigma0 +0.03 kg m-3 from the level nearest 10 dbar, linear interpolation) for 22,303 summer Argo profiles (10,439 floats; 15th day of each month, 2006-2026) on native levels and after two homogenizations: a common 10-dbar grid, and sampling of each high-resolution profile at real 2006-2008 float levels. Coarse sampling made the MLD of high-resolution profiles 1.3-1.4 m (5-6%) shallower, up to 7.7% for 10-20 m layers. With box-month fixed effects and float bootstrap, the global summer MLD trend was +1.20% per decade (95% 0.02 to 2.49) on native levels, -0.26% (-1.39 to 0.93) on the 10-dbar grid and -1.53% (-2.73 to -0.35) on 2006-2008 levels. The sampling part of the native trend was +1.7 to +2.8% per decade (paired intervals exclude zero in all tests), about the size of the published deepening. South of 30S the homogenized trend stayed positive but uncertain (+0.9 to +1.5%). Summer stratification (sigma0 200 minus 10 dbar) rose by 0.081 kg m-3 per decade. Limits: one day per month, one MLD method, no test of pre-2006 data or of the Roch et al. method. Code, aggregate tables, input hashes and a figure are included; Argo data stay external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "mixed layer depth",
+    "Argo",
+    "vertical resolution",
+    "stratification",
+    "summer mixed layer",
+    "data homogenization",
+    "Southern Ocean",
+    "ocean observing",
+    "trend artifact",
+    "density threshold"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_mld_sampling.png",
+      "caption": "(a) Share of summer Argo profiles by median level spacing at 10-200 dbar. (b) Mean summer ln-MLD anomaly (box-month means removed) of the same profiles on native levels (blue), a common 10-dbar grid (orange) and 2006-2008 float levels (violet), with standard-error bands and weighted linear fits. (c) Change of MLD when high-resolution summer profiles are reduced to 5- or 10-dbar point sampling, by native MLD. (d) Summer MLD trends 2006-2026 in % per decade with 95% float-bootstrap intervals; the dotted line is the 2.9% per decade of Sallee et al. (2021)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-021-03303-x",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Reported summer MLD deepening of 2.9% per decade (1970-2018) with the same threshold method; we test the Argo-era part and find that a sampling artifact of similar size exists in 2006-2026 Argo data."
+    },
+    {
+      "target": "doi:10.3389/fmars.2023.1277316",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Reported about 4 m Argo MLD deepening in 2006-2021; our native trend in their window is +2.1 to +2.5% per decade and becomes -1.0 to +0.3% with common sampling."
+    },
+    {
+      "target": "doi:10.1002/2017GL073426",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Argo MLD threshold method (Holte et al. 2017) that we follow."
+    },
+    {
+      "target": "doi:10.1029/2004JC002378",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Density threshold of 0.03 kg m-3 from 10 m."
+    },
+    {
+      "target": "doi:10.17882/42182",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Argo GDAC profile data."
+    },
+    {
+      "target": "sci:sha256:997a1566bb3a35fa0504f3047b87974be25f010b1703beb00c43afc4854386d0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Earlier campaign job that put the 2014-2026 15th-day GDAC geo files into the shared store; we reuse those files and add 2006-2013."
+    },
+    {
+      "target": "sci:sha256:25189608c165f6e3cea4e675bb43d5fb3900ced8f9917ea77b53dfd228a02339",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Found that the Argo first-level depth moved shallower over time; we show a related change of vertical sampling that biases MLD trends."
+    }
+  ]
+}
