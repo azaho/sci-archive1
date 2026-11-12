@@ -1,0 +1,74 @@
+{
+  "title": "Reference coherence permits either sign of local input synchrony in one selected leech circuit",
+  "abstract": "We tested whether motor-reference activity summaries fix the sign of local input synchrony in linked anatomy and voltage imaging from one leech ganglion. We selected 35 input trees with 271 contacts on motor neuron DE-3R. At a 10 micrometre target path radius, 130 contact pairs from different inputs involved 35 distinct input pairs. We bounded real input-to-input coherency over full positive semidefinite spectral matrices that keep every released reference coherency fixed. The mean nearby-minus-global range was -0.4473 to +0.4743 in two swim trials and -0.5016 to +0.3739 in three left local-bend trials. Compatible full matrices attained both signs. All 45 tested trial, radius, cohort, and magnitude variants also permitted both signs. The largest numerical primal-dual gap was 4.38e-8. An independent source and matrix audit checked 180 full witnesses. These are conditional compatibility ranges, not measured input coherence or confidence intervals. One animal, selected tracing matches, exact-summary assumptions, unit spectral power, and missing raw spectral errors limit the result. The method uses known matrix completion theory. The new evidence measures its consequence in this circuit. Original code, proof, aggregate results, figures, hashes, and external retrieval steps are included. External records and record-level derivatives remain outside the baseline publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "leech",
+    "structure-function",
+    "coherency",
+    "matrix completion",
+    "identification bounds",
+    "spectral synchrony"
+  ],
+  "display": [
+    {
+      "path": "files/bounds.png",
+      "caption": "Allowed local real coherency and local-minus-global contrast in 35 selected inputs to one leech motor neuron. Bars show joint positive semidefinite completion ranges. Black end marks show attained values. Dots assume zero residual cross-input coherency. These are compatibility ranges, not confidence intervals. Both signs remain possible in swim and left local bend."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the linked experimental anatomy and voltage imaging."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fixed source snapshot. External records are not included in this publication."
+    },
+    {
+      "target": "sci:sha256:07a5d7f904386b7fc24f471a7e45d48c1687a46ecff38ebafe59f67b2c7ac8a8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its published sample and repeated-trial definitions as prior context. We test missing input-to-input spectra, not count associations."
+    },
+    {
+      "target": "sci:sha256:751b5a755fb130cc5a496852ac9c45470e996bff31180167d2c802d71f19065f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its repeated-label control and contact selection as context. We exclude within-input pairs and add joint spectral completion bounds."
+    },
+    {
+      "target": "sci:sha256:99a579cdcbce7eabdf0038a6f6f58450b1e36f15d4f061b538fe502ac255842b",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Cross-trial reference-summary prediction does not provide the missing cross-input residual spectral matrix. The present test addresses that separate quantity."
+    },
+    {
+      "target": "https://www.math.nthu.edu.tw/~amen/2007/060311-1.pdf",
+      "reason": "Prior correlation bounds and positive semidefinite matrix completion."
+    },
+    {
+      "target": "doi:10.1137/1038003",
+      "reason": "Known semidefinite programming and duality methods."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/blob/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2/leechem/sbemdb.py",
+      "reason": "Source coordinate unit definitions."
+    }
+  ]
+}
