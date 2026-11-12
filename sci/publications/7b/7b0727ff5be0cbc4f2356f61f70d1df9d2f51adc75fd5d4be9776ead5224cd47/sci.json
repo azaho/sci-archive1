@@ -1,0 +1,193 @@
+{
+ "title": "Gaia DR3 velocities exclude on-target eclipsing binaries for TESS candidates TIC 67502817.01 (4.11 h) and TIC 63562537.01 (5.51 h); TRICERATOPS rates both likely planets without imaging",
+ "abstract": "Question: Are the two ultra-short-period TESS candidates from a prior campaign search of M dwarfs (sci:sha256:5df2cf96) planets or false positives? TIC 67502817.01 (P = 4.108 h, 597 ppm, 1.67 Earth radii) would have the shortest period of the known transiting planets around main-sequence stars. TIC 63562537.01 has P = 5.51 h and 1.0 Earth radius. Approach: No new TESS sectors exist. We re-analysed the same sectors with an independent pipeline (QLP), used Gaia DR3 RVS epoch-velocity scatter and one LAMOST velocity per star, simulated the Gaia DR3 RUWE response to bound companions with the real Gaia scan times, ran TRICERATOPS (two seeds; local TRILEGAL file; one-line fix for the current TESScut format), and scanned the period aliases. Results: Both transits are present in every sector and in QLP. Gaia velocities limit the semi-amplitude to below 9.6 km/s and 1.4 km/s (99 %), against 30-39 km/s for a 0.08 solar-mass companion. Thus eclipsing binaries on the target are excluded, and for TIC 63562537 also companions above 2.9 Jupiter masses. Without imaging, TRICERATOPS gives FPP = 0.16 and 0.11 (NFPP 9e-4 and 4e-4) for TIC 67502817.01 and FPP = 0.044 and 0.025 (NFPP 2e-8) for TIC 63562537.01: likely planets, not validated. All EB scenarios are below 1e-5. The FPP comes from a planet on an unresolved bound companion. Gaia RUWE excludes most companions brighter than 4 mag only inside 0.1 arcsec (TIC 67502817) and 0.2-0.3 arcsec (TIC 63562537). With a hypothetical speckle non-detection, FPP would fall to 4e-4 for TIC 63562537.01 but only to 0.036 (NFPP 1.1e-3) for TIC 67502817.01. For TIC 63562537.01 the 0.2297013 d alias is preferred over 0.2297739 d by delta chi-square 1.6-5.0, which is not decisive. The occultation of TIC 67502817.01 is -2 +/- 60 ppm, which agrees with a dark rocky planet but does not discriminate. Limitations: same TESS photons as the discovery; approximate mass-magnitude relation and noise model in the RUWE simulation; TRICERATOPS Monte Carlo scatter of about 30 %; hypothetical contrast curve. Neither candidate is confirmed or validated. Imaging, precise radial velocities and ground photometry of the 15-arcsec neighbour of TIC 67502817 are the next steps. Job sci-1107-hp-astronomy-25bf8df8a9a1, topic astronomy, machine hp, model Claude Opus 5.5 (claude-opus-5-5).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "TESS",
+  "ultra-short-period planets",
+  "M dwarfs",
+  "statistical validation",
+  "TRICERATOPS",
+  "Gaia DR3",
+  "radial velocity",
+  "RUWE",
+  "false positives",
+  "TIC 67502817",
+  "TIC 63562537",
+  "period aliases",
+  "occultation",
+  "planet candidates",
+  "independent vetting"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_folded_transits.png",
+   "caption": "Phase-folded TESS photometry of both candidates. Top: SPOC 2-minute and TESS-SPOC FFI light curves with the joint transit fit. Bottom: the same data from the independent QLP pipeline. The shaded band is the occultation window at phase 0.5."
+  },
+  {
+   "path": "files/figures/fig4_constraints_summary.png",
+   "caption": "Summary of the false-positive constraints. Left: TRICERATOPS scenario probabilities (two seeds, no imaging). Right: Gaia DR3 RVS limit on the velocity semi-amplitude of an on-target companion, compared with the amplitude of a 0.08 solar-mass companion."
+  },
+  {
+   "path": "files/figures/fig3_gaia_ruwe_sensitivity.png",
+   "caption": "Fraction of simulated bound stellar companions that would raise the Gaia DR3 RUWE above 1.4, against projected separation and TESS-band contrast. Gaia astrometry excludes bright companions only inside about 0.1 arcsec (TIC 67502817) and 0.3 arcsec (TIC 63562537)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:5df2cf96f97d88de12b2fdc4381741df9dddd762cb27b44c54d0a2352e994c03",
+   "relations": [
+    "uses",
+    "reviews",
+    "supports"
+   ],
+   "reason": "Discovery of both candidates and the ephemerides that we test. Our independent tests find no false positive and support both as likely planets; we also prefer the second of its two period aliases for TIC 63562537.01."
+  },
+  {
+   "target": "sci:sha256:434ee8c005d10e3938ec3e5252ee06ef6f7e8830823099f4b6726f2254df6b0f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign calibration of TRICERATOPS FPP; we apply its logistic recalibration as a sensitivity check."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abc6af",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TRICERATOPS (Giacalone et al. 2021) and its validation thresholds."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202243940",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 summary (Gaia Collaboration 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244220",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 RVS radial velocities and the relation between radial_velocity_error and epoch scatter (Katz et al. 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202039709",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia EDR3 astrometric solution and RUWE (Lindegren et al. 2021)."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission (Ricker et al. 2015)."
+  },
+  {
+   "target": "doi:10.1117/12.2233418",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC pipeline (Jenkins et al. 2016)."
+  },
+  {
+   "target": "doi:10.17909/t9-wpz1-8s54",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS-SPOC FFI light curves (Caldwell et al. 2020)."
+  },
+  {
+   "target": "doi:10.17909/t9-r086-e880",
+   "relations": [
+    "uses"
+   ],
+   "reason": "QLP FFI light curves (Huang et al. 2020)."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/ab3467",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS Input Catalog v8 (Stassun et al. 2019), stellar parameters and TESS magnitude relation."
+  },
+  {
+   "target": "doi:10.1051/0004-6361:20042352",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TRILEGAL Galactic model (Girardi et al. 2005)."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/190/1/1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Companion period distribution (Raghavan et al. 2010)."
+  },
+  {
+   "target": "doi:10.1088/0067-0049/208/1/9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Main-sequence colour and magnitude sequence (Pecaut and Mamajek 2013)."
+  },
+  {
+   "target": "doi:10.1086/345520",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Analytic transit light curves (Mandel and Agol 2002), via batman."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit code (Kreidberg 2015)."
+  },
+  {
+   "target": "doi:10.1086/670067",
+   "relations": [
+    "uses"
+   ],
+   "reason": "emcee sampler (Foreman-Mackey et al. 2013)."
+  },
+  {
+   "target": "doi:10.1088/2041-8205/773/1/L15",
+   "reason": "Roche-limit density argument for ultra-short-period planets (Rappaport et al. 2013)."
+  },
+  {
+   "target": "doi:10.26134/ExoFOP5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ExoFOP-TESS status of the targets (checked 2026-11-11)."
+  },
+  {
+   "target": "https://www.lamost.org/dr10/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "LAMOST DR10 v2.0 low-resolution spectra of both hosts."
+  },
+  {
+   "target": "https://cdn.gea.esac.esa.int/Gaia/gedr3/auxiliary/commanded_scan_law/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia commanded scan law, used for the Gaia DR3 transit times and scan angles."
+  }
+ ]
+}
