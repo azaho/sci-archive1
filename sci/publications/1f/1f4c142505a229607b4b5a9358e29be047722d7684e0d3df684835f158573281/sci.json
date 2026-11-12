@@ -1,0 +1,33 @@
+{
+  "title": "In 12 IBL widefield sessions from 6 mice, cortical activity lags were reliable but did not follow the anatomical hierarchy or pair-specific axonal projection asymmetry",
+  "abstract": "Question: does the direction of mesoscale activity flow across mouse dorsal cortex follow axonal projections? H1: areas low in the Harris et al. 2019 hierarchy lead. H2: in a pair of areas, the area with the stronger Knox et al. 2019 projection leads, after the mean lag of each area is removed. Data: International Brain Laboratory widefield GCaMP sessions (haemodynamic-corrected, 15 Hz, decision task); 12 confirmatory sessions, 2 per mouse for 6 mice, selected by a fixed rule; 42-48 Allen areas per session. Method: pre-registered plan; lags from the cross-covariance peak with parabolic interpolation at 0.1-2 Hz; mouse-level t-tests, area-label permutations; rule = p < 0.05, same sign in 5 of 6 mice, permutation p < 0.05. Results: lags were reliable (split-half r 0.99 for area lags, 0.97 for pair lags after area lags were removed; mean |lag| 41 ms); dorsal retrosplenial cortex led in all mice. H1 failed: +5.1 ms per SD of hierarchy after position covariates (95% CI -1.7 to 12.0, p = 0.11, 6/6 mice positive, permutation p = 0.62). H2 failed: -4.5 ms per log10 asymmetry (CI -16.8 to 7.7, p = 0.39, 3/6 mice). Without area-lag control, the stronger-projecting area led in 58.7% of pairs (permutation p = 0.006), but this is an area-level effect (net outflow) that spatially smooth surrogate maps reproduce (p = 0.21-0.27). Pair-specific lags repeated within a mouse (median r 0.53) but weakly between mice (0.18). No secondary band, quiescent epoch or global-signal condition met the rule. Limitations: 6 mice from one lab; a planned stimulus-evoked positive control failed because the mice moved fast; midline vessel signals and camera timing can affect lags; Knox and Harris maps come from other mice. Conclusion: widefield lag structure is stable within animals but is not explained by tracer hierarchy or projection direction.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"}
+  ],
+  "keywords": ["widefield calcium imaging", "mouse dorsal cortex", "lag structure", "activity propagation", "connectome", "Knox 2019", "Harris 2019 hierarchy", "projection asymmetry", "International Brain Laboratory", "structure-function", "spatial autocorrelation null", "pre-registered", "null result"],
+  "display": [
+    {"path": "files/figures/fig2_lag_maps.png", "caption": "Mean area lag at 0.1-2 Hz over 12 sessions (blue leads), the Harris et al. 2019 hierarchy of the same areas, and the agreement of lag maps between 6 mice."},
+    {"path": "files/figures/fig3_tests.png", "caption": "Pre-registered tests in the primary condition: hierarchy slope (H1), pair-specific projection-asymmetry slope (H2), and sign agreement without area-lag control. Dots are sessions; bars are mouse means."},
+    {"path": "files/figures/fig4_conditions.png", "caption": "Mouse mean and 95% CI of both slopes for all bands, epochs and global-signal conditions; the primary condition is blue."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:734b7b0e7a2785fc574d7b9aa0d0b2fcb4483d669e3c8b683196284c5c4ec641", "relations": ["supports"], "reason": "Same negative answer (direction does not follow projection asymmetry) in IBL spikes; we test it with cortex-wide widefield imaging."},
+    {"target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3", "reason": "LFP Granger direction followed the visual hierarchy in six visual areas; our cortex-wide lags did not follow the hierarchy."},
+    {"target": "sci:sha256:2f2b0c3629bec09c4b93626d4b1776c3fc83d999b572332627532efde4cbde07", "reason": "Zebrafish projection-lag alignment changed with global signal removal; we report GSR conditions."},
+    {"target": "sci:sha256:31e603bc934b109926bbff6c6d3e8401b68438e7db9f1eebd18d5d9bc08db1b7", "reason": "Zebrafish lag offsets gave no prediction gain."},
+    {"target": "sci:sha256:545f2eaa27985509a20bb96fb749f5692ca4b58afc207a3305da1157687d4a24", "relations": ["uses"], "reason": "Source of the Harris 2019 hierarchy route; hierarchy did not predict timescales."},
+    {"target": "sci:sha256:40af6bddb7e877dd1e9ff3a72a6212bb9a647a0fc2be2d5a100269f60199f01f", "reason": "Tracer connectome and resting fMRI in mouse cortex."},
+    {"target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b", "reason": "Wiring adds little beyond node similarity to coupling across species."},
+    {"target": "doi:10.1038/s41586-025-09235-0", "relations": ["uses"], "reason": "International Brain Laboratory; widefield data from the IBL public bucket."},
+    {"target": "https://ibl-brain-wide-map-public.s3.amazonaws.com/caches/openalyx/cache.zip", "relations": ["uses"], "reason": "IBL ONE cache used to find the 51 widefield sessions."},
+    {"target": "doi:10.1038/s41596-021-00527-z", "relations": ["uses"], "reason": "wfield landmark convention and dorsal-cortex reference."},
+    {"target": "https://github.com/jcouto/wfield/tree/6bb958bf89a3610543fc71f9d0d573d04f335a58", "relations": ["uses"], "reason": "Reference atlas files (fetched at run time)."},
+    {"target": "doi:10.1016/j.cell.2020.04.007", "relations": ["uses"], "reason": "Allen CCF v3."},
+    {"target": "doi:10.1038/s41586-019-1716-z", "relations": ["uses", "reviews"], "reason": "Hierarchy scores tested as predictor of lag."},
+    {"target": "https://github.com/AllenInstitute/MouseBrainHierarchy/tree/8e4e0dd271fab84a745d8101aef2f995eb07a2bc", "relations": ["uses"]},
+    {"target": "doi:10.1162/netn_a_00066", "relations": ["uses"], "reason": "Knox 2019 voxel connectome; projection asymmetry."},
+    {"target": "doi:10.1152/jn.00585.2013", "relations": ["uses"], "reason": "Lag estimation by parabolic interpolation of the cross-covariance peak (Mitra et al. 2014)."},
+    {"target": "doi:10.1111/2041-210X.12407", "relations": ["uses"], "reason": "Moran spectral randomisation null (Wagner and Dray 2015)."},
+    {"target": "doi:10.1038/s41593-019-0502-4", "reason": "Widefield cortex activity is dominated by movements (Musall et al. 2019)."}
+  ]
+}
