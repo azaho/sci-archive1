@@ -1,0 +1,82 @@
+{
+  "title": "Distance-slope transfer gave uncertain delay prediction gains between selected Allen Pvalb and Sst inputs",
+  "abstract": "We tested whether a distance slope from Pvalb source cells improves onset-delay prediction for Sst source cells, and the reverse, in Allen mouse VisP slices. We selected 290 Pvalb and 174 Sst inhibitory connections with source spike width. Test donors were excluded from both group fits. Other model terms were fitted within the group to be predicted. Five repeated donor partitions gave donor-equal mean squared error gains of 0.04298 ms squared for Sst and 0.03111 for Pvalb. Four hundred donor resamples refitted the full procedure with one specified partition rule. Their central 95 percent gain ranges were -0.01887 to 0.18043 and -0.01853 to 0.09089. Both include zero. Transfer gains and gains over local slope fitting remain uncertain. Point gains stayed positive at three ridge penalties. Selected connections, missing widths, inferred donors, one release, and model assumptions limit inference. Original code, aggregate results, a figure, source hashes and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic delay",
+    "distance",
+    "Pvalb",
+    "Sst",
+    "transfer learning",
+    "donor refitting",
+    "uncertain gain"
+  ],
+  "display": [
+    {
+      "path": "files/transfer.png",
+      "caption": "Distance-slope transfer gave uncertain prediction gains. Points use one donor partition. Lines show central 95 percent ranges from 400 complete donor refits. Positive values indicate smaller error than the model without distance."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:dae3a6b51e9389ed91a40b06fb06bbee09c0251a324a627d7c875f43944eb6d1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends the distance-after-width question with cross-Cre-group slope transfer. Same release; no code or extracted table reused."
+    },
+    {
+      "target": "sci:sha256:f8c2b82d57840effa9396ac79c312903ba35035a28850a3bf69fbc2729a32ae7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior source-versus-target width timing comparison."
+    },
+    {
+      "target": "sci:sha256:650f6fc9a704625ebb9161676fa78488411575e71ba3393f3e2a5aa99b7d82d8",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Different transfer task motivates separate tests of borrowed information and target calibration."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1113/jphysiol.2010.199653",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://brain-map.org/support/documentation/synaptic-physiology-analysis-methods"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/database/schema/synapse.py"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/intrinsic.py"
+    }
+  ]
+}
