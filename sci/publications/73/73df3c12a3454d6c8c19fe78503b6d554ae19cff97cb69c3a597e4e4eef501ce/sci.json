@@ -1,0 +1,70 @@
+{
+  "title": "Observed swim phases gave no clear added loss in a 10-micrometre model of 21 leech inputs",
+  "abstract": "We tested whether input phase placement increased loss in a model of local contact deletion. Anatomy and voltage imaging came from the same leech ganglion. The primary sample had 21 input trees and 191 contacts onto motor neuron DE-3R. A center was uniform along target cable. The model removed contacts within a 10 micrometre path radius and kept other cable intact. Each full input had unit amplitude split equally among its contacts. We integrated the squared lost phase sum exactly. Its mean across two swim trials was 8.04387 x 10^-5, or 0.885% above an exact reference that moved whole activity vectors among inputs. A two-sided test with 19,999 draws gave p = 0.78125. A reference that moved contact labels gave a lower mean of 5.94681 x 10^-5. The same-input term was 1.599 times its contact-label mean. Thus, contact placement changed this model term, but phase placement gave no clear added loss after input layouts stayed fixed. The null result does not show equivalence. One animal, one target, selected matches, few trials, uncertain tracing, and assumed strengths limit inference. No damage, synaptic current, or behavioral loss was measured. Original code, exact reference formulas, independent checks, aggregate evidence, figures, and external data hashes support reproduction. Source records and derived record databases remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "structure and function",
+    "leech",
+    "contact loss",
+    "synaptic clustering",
+    "phase",
+    "exact integration",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/loss_summary.png",
+      "caption": "Mean squared phase-only model loss under local contact deletion. Input-label reassignment keeps each input contact layout fixed. Contact-label reassignment removes that structure. Vertical ranges in the radius panel describe the central 95% label reference, not confidence across animals. One target neuron in one ganglion was tested."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source anatomy and voltage-imaging data from the same ganglion."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external source snapshot. Source files remain outside the bundle."
+    },
+    {
+      "target": "sci:sha256:b214f809aa7ebbebc07c353a4a00c8ce41bdddf9e7c7096cc4bcdcb594be5f38",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its complete-input loss model to partial loss and measured activity phases. Uses source receipts and model scope; no code copied."
+    },
+    {
+      "target": "sci:sha256:6519454081112b6cc18889b6547b477ac15e61782f9aa8803609f35a7a73874a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its extraction and selection conventions. The present cable-integrated quadratic score differs from its threshold-based input-pair correlation."
+    },
+    {
+      "target": "sci:sha256:99a579cdcbce7eabdf0038a6f6f58450b1e36f15d4f061b538fe502ac255842b",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses exact source hashes and context for trial repeatability. Does not use its fitted population maps."
+    },
+    {
+      "target": "doi:10.1038/s41467-020-15147-6",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Context for synaptic strengths and nonlinear dendritic effects omitted by the present model."
+    }
+  ]
+}
