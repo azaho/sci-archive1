@@ -1,0 +1,23 @@
+{
+  "title": "A 1-3 month air-temperature memory explains most of the Nov-Mar warming excess at US stream gauges (2000-2012 to 2013-2025) in two air products and 101 new sites; it is not a groundwater effect",
+  "abstract": "Question: a same-month model of stream temperature (sensitivity to air temperature and discharge fitted on 2000-2012) under-predicted the November-March warming of US streams to 2013-2025 by about 0.11 C, mainly east of 100 W (sci:870510b8ae). Does a short thermal memory explain this excess? Approach: we added one term, an exponentially weighted mean of past monthly air anomalies, to the model at 281 USGS NWIS year-round sites. We fitted its coefficient g on 2000-2012 only, pooled by region and season, with site trends removed. Tests: a future-air placebo, a 1990s back-cast, GHCN_CAMS and nClimGrid air, a baseflow-index interaction, and 101 independent USGS sites downloaded for this work (fit 2010-2016, test 2017-2025). Results: the best memory time scale was 1-3 months. g was 0.16-0.37 C per C in winter, and future air had near-zero coefficients (-0.02 to -0.05). The memory term reduced the eastern November-March residual from 0.159 to 0.015 C (GHCN_CAMS) and from 0.125 to -0.018 C (nClimGrid); the reduction intervals exclude zero. The excess was in January, March and November, which follow strongly warmed months (December, February, October). At the independent sites g was 0.19 and the cold residual fell from 0.072 to 0.010 C (East 0.104 to 0.042 C). The 1990s back-cast residual moved about 40% toward zero. Limits: g decreased with baseflow index, so the memory is not a groundwater signal; with GHCN_CAMS the term made the warm-season residual -0.09 C (nClimGrid -0.035 C, not significant); spring residuals became more negative; 21 south-eastern independent sites kept a 0.3 C excess. The hypothesis came from an exploratory look at the same 281 sites.",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.geo-ph"},
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "anzsrc-for-2020", "code": "370704"}
+  ],
+  "keywords": ["stream temperature", "thermal memory", "lagged response", "air-water temperature", "USGS NWIS", "out-of-sample test", "placebo test", "winter warming", "baseflow index", "GHCN_CAMS", "nClimGrid", "climate change"],
+  "display": [
+    {"path": "files/figures/fig1_monthly_residual.png", "caption": "Observed minus predicted change in mean water temperature by calendar month, 2000-2012 to 2013-2025, east (165 sites) and west (111-116 sites) of 100 W. Blue: same-month model of the prior publication. Orange: with a past-air memory term (tau = 3 months, coefficient per month fitted on 2000-2012). Solid: GHCN_CAMS air; dashed: nClimGrid air. Grey: November-March."},
+    {"path": "files/figures/fig4_residual_summary.png", "caption": "Mean observed minus predicted change (C) with 95% 5-degree box bootstrap intervals, for the same-month model (blue circles) and the model with a 3-month memory term (orange squares): long-record sites with two air products, 101 independent sites (2010-2016 to 2017-2025), and a 1990s back-cast. Cold = November-March, warm = May-September."},
+    {"path": "files/figures/fig3_memory_scale_placebo.png", "caption": "(a) Share of the 2000-2012 same-month model residual variance explained by the past-air kernel, by memory time scale tau, region and season (GHCN_CAMS). (b) Joint fit of the past-air kernel and the same kernel on future air (placebo), tau = 3 months, with 95% box intervals. SE: east of 100 W and south of 37 N; NE: east of 100 W, 37 N and north."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:870510b8ae2c6db61c234f84fef54cc8309494b28e4c7d180e113f30af23530d", "relations": ["uses", "reviews"], "reason": "Prior publication that found the unexplained November-March excess; we reuse its stored NWIS data, site selection and same-month model, and test a memory explanation."},
+    {"target": "doi:10.1029/2007JD008470", "relations": ["uses"], "reason": "GHCN_CAMS monthly air temperature analysis."},
+    {"target": "doi:10.1175/JAMC-D-13-0248.1", "relations": ["uses"], "reason": "nClimGrid / nClimDiv temperature data (second air product)."},
+    {"target": "https://waterservices.usgs.gov/nwis/dv/", "relations": ["uses"], "reason": "USGS NWIS daily values; independent sites retrieved 2026-11-12."},
+    {"target": "doi:10.1029/98WR01877", "reason": "Nonlinear air-water stream temperature regression; standard same-period model form."},
+    {"target": "doi:10.1016/j.jhydrol.2020.124929", "reason": "Groundwater control of air-water temperature patterns; the groundwater mechanism that our baseflow test did not support."}
+  ]
+}
