@@ -1,0 +1,107 @@
+{
+ "title": "MICrONS neurons kept their movie responses across scans up to four sessions apart; coupling, input counts and connections did not predict the small changes in 1,015 manually matched neurons",
+ "abstract": "We asked if the wiring of a cortical neuron predicts how stable its visual responses are across imaging scans. We used one MICrONS mouse (17797): oracle movie responses (6 clips, 6 to 10 repeats) in 8 scans from 5 sessions, same-neuron matches from the manual (primary) and automatic coregistration tables, and EM input counts and connections. For each neuron in two scans we calculated a noise-corrected signal correlation (rho). Responses were stable: the median rho was 0.94 for the same neuron and 0.18 for the nearest other neuron, 0.95 for scans in one session and 0.94 for scans 1 to 4 sessions apart; scan-pair differences were larger than gap effects. In 1,015 manually matched neurons, population coupling (slope +0.023 SD per SD, 95% CI -0.041 to 0.090), log input synapses, inhibitory input fraction and soma, spine and shaft input counts did not clearly predict stability. The coupling result does not support the prediction of Sweeney and Clopath (2020) that coupled neurons drift more; in 4,841 automatically matched neurons the slope was +0.043 (0.015 to 0.071). Automatic matches also gave positive input-count and inhibitory-fraction slopes, but a post hoc check put them in the low-rho tail that includes coregistration errors. EM-connected pairs did not change their responses together more than matched unconnected pairs (automatic, 15,240 connected pairs: -0.003, CI -0.0046 to -0.0015). Limitations: one mouse, ordinal session gaps, imaging-plane differences between scans, unproofread EM connections.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "MICrONS",
+  "representational drift",
+  "response stability",
+  "connectomics",
+  "population coupling",
+  "coregistration",
+  "mouse visual cortex",
+  "calcium imaging",
+  "co-drift",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_stability.png",
+   "caption": "Same-neuron cross-scan stability (noise-corrected signal correlation rho) vs nearest neighbour, by scan pair and session gap, and by population coupling decile."
+  },
+  {
+   "path": "files/figures/fig2_predictors.png",
+   "caption": "Standardized slopes of coupling and EM input measures on cross-scan stability, manual (1,015 neurons) and automatic (4,841 neurons) coregistration, 95% neuron-bootstrap CIs."
+  },
+  {
+   "path": "files/figures/fig3_codrift.png",
+   "caption": "Co-drift of EM-connected vs matched unconnected neuron pairs, against signal correlation and against a within-stratum permutation null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:4c4b055411d0a22f5abbd228b24dbba2a36fd63bb6384749db1947532f7729e7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Spine input count predicted population coupling in MICrONS; we test whether coupling and SSA input counts predict cross-scan stability, and use the same SSA count table."
+  },
+  {
+   "target": "sci:sha256:a4bfe03daf43583039d19846b6332edf597de0d7044d344297bd6afb4a2e1754",
+   "reason": "Input synapse count and inhibitory fraction versus within-scan reliability in MICrONS; we extend the same predictors to cross-scan stability."
+  },
+  {
+   "target": "sci:sha256:1f7d0723e0e95de17f86490bc2f14b76ea3f5e5a7ff507ea1d81e9008eb87d98",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the BossDB digital-twin oracle-clip data route that we use."
+  },
+  {
+   "target": "sci:sha256:18faea2c651436cf33c5c5d2fcdaeffea5c7768b1789a182b73bf164d3c5b232",
+   "reason": "Earlier static in-degree to activity link in MICrONS."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "Like-to-like wiring in MICrONS; our co-drift test controls response similarity."
+  },
+  {
+   "target": "sci:sha256:5d0863e3731c5c638d5ae70674c837eb0bcf7912ccd55d0bb41d2fca9143e3ff",
+   "reason": "Earlier drift measurement by cell class in Allen two-photon data."
+  },
+  {
+   "target": "sci:sha256:7340d496cb96ba9fec12fb5e4cd89f5dd88ac8209407a890cf614a18248488b3",
+   "reason": "Earlier drift measurement of grating tuning by interneuron class."
+  },
+  {
+   "target": "doi:10.7554/eLife.56053",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Tested prediction: strongly population-coupled neurons have less stable stimulus responses."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS dataset (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Ding et al. 2025 functional connectomics node table used for validation."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08829-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Digital-twin evaluation data (oracle repeats)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07765-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cell-type model used for E/I and cell-type labels."
+  }
+ ]
+}
