@@ -1,0 +1,91 @@
+{
+ "title": "In 22 western US burned areas, postfire debris flows needed about 2.2 times higher 15-minute rain intensity after the first postfire year, and USGS M1 over-predicted more in years 2-3",
+ "abstract": "Question: in the same burned areas, does the rainfall intensity that is necessary for a runoff-generated debris flow increase with time since fire, and does the USGS M1 likelihood model stay calibrated after the first year? Data: the USGS runoff-generated postfire debris-flow inventory v1 (Graber et al. 2026, CC0; 8,981 records, 80 fires, 2000-2025). Method: a plan written before model fits; a logistic model with one intercept for each fire, ln(peak 15-minute intensity I15) and a term for postfire years 2-4, on the 22 fires with records in year 1 and later (4,858 records, 746 storms, 339 debris flows). Findings: debris flows needed 2.21 times higher I15 after the first year (fire bootstrap 95% interval 1.67 to 3.06; within-fire storm-label permutation p = 0.0002; leave-one-fire-out 2.07 to 2.34). The threshold did not change measurably inside year 1 (factor 1.04 per doubling of days, 0.91 to 1.19) and was 2.7 to 2.8 times higher at 366-1,095 days. Storm-level, same-segment, systematic-segment, season, rainfall-ratio and M1-watershed-term checks gave factors of 2.0 to 3.5. M1 over-predicted debris flows in all years: observed/expected was 0.42 in year 1, 0.25 in year 2 and 0.075 in year 3 (all fires); at the 22 panel fires it fell from 0.37 to 0.10. Year 4 is not resolved (few records, probable reporting of debris flows only). Limitations: a compiled, not complete, sample with possible changes in observation effort; 22 fires; gauge-to-watershed distance; infiltration recovery and sediment exhaustion cannot be separated.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370901"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "postfire debris flow",
+  "wildfire",
+  "rainfall threshold",
+  "recovery",
+  "time since fire",
+  "USGS M1 model",
+  "logistic regression",
+  "hazard assessment",
+  "natural hazards",
+  "geomorphology",
+  "western United States",
+  "model calibration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_flow_fraction_by_intensity.png",
+   "caption": "Fraction of records with a debris flow by peak 15-minute rainfall intensity in the 22 panel fires: postfire year 1 (blue) against years 2-4 (orange)."
+  },
+  {
+   "path": "files/figures/fig2_recovery_curve.png",
+   "caption": "Threshold factor by time from fire ignition to storm, relative to days 0-90 (fire fixed-effect logit, fire-bootstrap 95% intervals). Flat in year 1, about 2.7 times higher at 366-1,095 days."
+  },
+  {
+   "path": "files/figures/fig3_m1_calibration.png",
+   "caption": "USGS M1 observed/expected debris flows by postfire year, and M1 reliability in year 1 and years 2-4."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5066/P1R9VXC4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS runoff-generated postfire debris-flow inventory v1 (CC0), the data of this study."
+  },
+  {
+   "target": "doi:10.1002/esp.70393",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Regional recalibration of M1 with the same inventory; our year-1 over-prediction of M1 agrees."
+  },
+  {
+   "target": "doi:10.1016/j.geomorph.2016.10.019",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Staley et al. 2017 M1 model; we test its calibration by postfire year."
+  },
+  {
+   "target": "doi:10.3133/ofr20161106",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Staley et al. 2016 inventory, part of the compiled data; used for the out-of-sample M1 subset."
+  },
+  {
+   "target": "doi:10.1029/2024JF007781",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Rainfall-ratio normalization of thresholds (variant S3)."
+  },
+  {
+   "target": "sci:sha256:07ca7c27870e5db5585553e28f4a17aeabff4e7a5fec234eb10b3f6962baa792",
+   "reason": "Campaign result on longer-lasting postfire runoff increase; contrasts with the faster change of debris-flow thresholds."
+  },
+  {
+   "target": "https://www.sciencebase.gov/catalog/item/69612c8ed4be02298529c522",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ScienceBase item of the data release (download location)."
+  }
+ ]
+}
