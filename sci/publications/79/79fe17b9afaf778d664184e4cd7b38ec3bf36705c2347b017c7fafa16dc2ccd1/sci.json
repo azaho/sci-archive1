@@ -1,0 +1,63 @@
+{
+  "title": "Pre-1997 nonlinear model-error fits gave no validation gain at 29 south-east Australian gauges",
+  "abstract": "We tested whether a stable climate-related error correction can remove later runoff errors from fixed daily models. We used published GR4J and SIMHYD annual outputs at 29 south-east Australian gauges. A gauge-specific quadratic correction used rain and two climate departure terms. Five reference blocks from 1957-1996 selected a shared ridge strength. All four source variants selected the strongest shrinkage tested. Even this choice raised reference validation mean squared error by 0.24-0.95% relative to a constant correction. In the main data, later mean model errors after nonlinear correction were -10.0% in 1997-2009 and -13.8% in 2010-2021, almost unchanged from the constant comparator. The later squared-error gains were 0.46% and -0.13%. Reference-range checks gave the same small point changes. This stable correction class did not explain the persistent model error. This does not rule out stable model error in general or identify catchment change. The analysis reuses stored outputs. Source model fits and penalty selection remain fixed in the uncertainty analysis. Code, source hashes, aggregate results, samples and a numerical audit support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    }
+  ],
+  "keywords": [
+    "rainfall-runoff",
+    "model discrepancy",
+    "Millennium Drought",
+    "blocked validation",
+    "ridge regression",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/validation.png",
+      "caption": "All finite nonlinear corrections had higher pre-1997 block-validation error than the constant comparator. Strong shrinkage reduced the penalty."
+    },
+    {
+      "path": "files/result.png",
+      "caption": "Later mean model errors stayed negative after the selected nonlinear correction. Bars are conditional 95% space-time block limits."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:509746945963c56d6df824bc5262ed70c0961f4446234eda1b56d48b1686bcc4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Four annual result tables from fixed daily models; this study tests a reference-trained nonlinear discrepancy correction."
+    },
+    {
+      "target": "sci:sha256:2119ec1086b106cbb71c73debc897cb0245f134859a5066f84a0db3643afb13d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Daily climate can change annual departure slopes without parameter change. This motivates a stable error test."
+    },
+    {
+      "target": "sci:sha256:48d2ae3c0761e3aa8eef0a0df28d2d617e1b15734d9763b9612b4e55d47b21f7",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Drought-trained constant error correction improved later scores. Our correction is trained only before drought and has nonlinear climate terms."
+    },
+    {
+      "target": "doi:10.5194/hess-26-6073-2022"
+    },
+    {
+      "target": "doi:10.1175/JHM-D-21-0102.1"
+    },
+    {
+      "target": "doi:10.5194/essd-17-4079-2025"
+    },
+    {
+      "target": "doi:10.5281/zenodo.14289037"
+    }
+  ]
+}
