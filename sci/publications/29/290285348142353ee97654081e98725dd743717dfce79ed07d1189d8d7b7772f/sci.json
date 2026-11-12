@@ -1,0 +1,130 @@
+{
+  "title": "LC4 and LPLC2 retinotopic synaptic gradients onto escape neurons repeat in four hemispheres of two fly connectomes, and gradient directions of 418 VPN-target units agree between animals",
+  "abstract": "Question: Dombrovski et al. (2023) found that LC4 neurons that look to the front put more synapses onto the escape descending neuron DNp02, and neurons that look to the back put more onto DNp11, from 55 hand-traced neurons in one FAFB hemisphere. Do such retinotopic output gradients repeat in other animals, and are the gradients of all visual projection neuron (VPN) types a fixed wiring rule? Approach: we used four complete hemispheres of FlyWire FAFB v783 (female) and the male CNS v1.0 (male). Each VPN neuron received an eye position from the column positions of its columnar inputs; the A-P and D-V axes came from anatomy only. For each VPN type, target type and side, a Poisson model with an output offset gave the gradient, tested with 2,000 permutations; tests were set before fitting. Results: LC4 to DNp02 increased to the front (1.18 to 1.47 times per SD), LC4 to DNp11 decreased (0.55 to 0.61), and LPLC2 to the giant fiber increased to the top (1.32 to 1.48), with p at most 0.001 in all four hemispheres. In 32 to 33 VPN types, 76% to 81% of 604 to 861 target units per hemisphere had a position effect (FDR 5%). For 418 units in all hemispheres, gradients agreed between animals with r 0.96 to 0.97 (A-P) and 0.94 to 0.95 (D-V), nearly as well as between the two hemispheres of one animal (0.98, 0.96); a within-type target shuffle gave r 0.02 to 0.08. Native axes and removal of eye-edge neurons did not change the results. Limitations: two animals of different sex and method; FlyWire is the same animal as the original study; structural replication only, with no activity or behaviour data. Code, unit-level results, figures and data hashes are included; per-neuron extracts are regenerated from CC BY 4.0 sources.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectome",
+    "Drosophila",
+    "visual projection neurons",
+    "lobula columnar",
+    "LC4",
+    "LPLC2",
+    "giant fiber",
+    "descending neurons",
+    "synaptic gradient",
+    "retinotopy",
+    "looming escape",
+    "FlyWire",
+    "male CNS",
+    "replication",
+    "wiring rule",
+    "structure-function"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_eye_maps.png",
+      "caption": "Each LC4 or LPLC2 neuron at its retinotopic position (synapse-weighted mean input column). Colour and size give the share of its central output onto DNp02, DNp11 or the giant fiber (DNp01). The same front, back and top gradients occur in FlyWire left and right and in the male CNS left and right."
+    },
+    {
+      "path": "files/figures/fig3_conservation.png",
+      "caption": "Gradient coefficients (log fold per SD) of 418 VPN-type x target-type units present in all four hemispheres: FlyWire left vs right (left column) and FlyWire right vs male CNS right (right column), for A-P (top) and D-V (bottom). Coloured points: q < 0.05 in both hemispheres."
+    },
+    {
+      "path": "files/figures/fig4_generality.png",
+      "caption": "Left: share of target units with a position effect (BH q < 0.05) per VPN type and hemisphere; the null is 5%. Right: gradient size for descending-neuron targets and other targets (exploratory)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-022-05562-8",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Original LC4 and LPLC2 synaptic gradient findings that we test in new hemispheres and a second animal."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07558-y",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire whole-brain connectome."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07686-5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire cell type annotations."
+    },
+    {
+      "target": "doi:10.1038/s41586-024-07981-1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire optic lobe cell types and column assignment."
+    },
+    {
+      "target": "doi:10.1101/2025.10.09.680999",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male CNS connectome v1.0."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08746-0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Optic lobe connectome and hexagonal column assignment used in the male CNS."
+    },
+    {
+      "target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "FlyWire Codex 783 data files (CC BY 4.0)."
+    },
+    {
+      "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Male CNS v1.0 flat connectome files (CC BY 4.0)."
+    },
+    {
+      "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Found that a spatial trend over the eye explains much extra-Poisson variance of columnar synapse counts; we show a conserved retinotopic component in VPN outputs to the central brain."
+    },
+    {
+      "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extra-Poisson variation of homologous fly synapse counts; part of within-type VPN output variation is a conserved function of eye position."
+    },
+    {
+      "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+      "reason": "Synapse-count variability across connectomes."
+    },
+    {
+      "target": "sci:sha256:d115ed1dfe7d0feb4f39ecfb6c82d4579aec7b3a5e3681420c057373e8e2307c",
+      "reason": "Input synapse positions identify T4/T5 subtypes; related positional wiring on the input side."
+    },
+    {
+      "target": "sci:sha256:f4c238908934ff3899080cc0afa5eb0ca1157ccbbf8294a7d4b3236c7eba73f7",
+      "reason": "Eye-column coordinate analysis of T4/T5 input directions in two connectomes."
+    },
+    {
+      "target": "sci:sha256:1a3bc0f9ea4d2f7257c6eaedf4cbb68aac38b52d8c5864437a4e330a779a36e0",
+      "reason": "VPN output wiring versus silencing behaviour; our result shows VPN output is not homogeneous along the eye."
+    }
+  ]
+}
