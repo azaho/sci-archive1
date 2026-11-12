@@ -1,0 +1,27 @@
+{
+  "title": "In 16 larval zebrafish, regions with shorter projectome walks to swim motor regions encode swimming more (rho -0.56), but rostro-caudal position explains this; it is not specific to motor targets",
+  "abstract": "Question: in C. elegans, neurons with a shorter connectome random walk to muscle encode locomotion more strongly. Does this rule apply to a vertebrate brain at region scale? Data: whole-brain two-photon calcium imaging of larval zebrafish with tail tracking (Legare et al. 2025, CC BY 4.0; 16 fish with 10 or more swim bouts) and the 70-region directed mapZebrain projectome. Method: we hashed the plan before we computed a structure-encoding statistic. Swim encoding per neuron was the cross-validated ridge R2 of lagged swim vigour beyond dark-flash terms; region encoding was the mean over neurons, then the median over fish. H_out was the random-walk hitting time from a region to the swim motor set (nMLF and ventral medulla). Results: rho(H_out, encoding) was -0.56 (60 regions, p = 3e-6), negative in 15 of 16 fish, stronger than 1,000 strength-preserving rewired graphs (p = 0.001) and stable after control for Euclidean distance and signal covariates (partial rho -0.64). By the pre-set rule, H1 was supported. But rewired graphs that keep edge lengths gave the same relation (null mean -0.50, p = 0.14), the eye-motor control set gave -0.50, and the retina gave +0.46. Post hoc, the rostro-caudal coordinate alone gave -0.67; after control for it, H_out gave -0.14 (p = 0.28). Random 4-region hindbrain target sets gave the same rho as the motor set (mean -0.54). Inside the hindbrain the relation was absent. In 31 midbrain and forebrain regions, H_out predicted encoding beyond the rostro-caudal coordinate (-0.57), but random hindbrain sets and jittered motor sets did equally well. Only the input route from the motor set (H_in) was specific outside the hindbrain (partial rho -0.40, p = 0.024; post hoc). Conclusion: the raw worm relation repeats, but geometry and the hindbrain concentration of swim encoding explain it at this scale. Limitations: region-scale dense projectome from other animals; 1 Hz imaging; post-hoc controls; the planned fly test failed because the Dryad download was refused.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"},
+    {"scheme": "anzsrc-for-2020", "code": "320903"}
+  ],
+  "keywords": ["larval zebrafish", "connectome", "projectome", "mapZebrain", "motor output", "swimming", "behaviour encoding", "random walk", "hitting time", "whole-brain imaging", "reticulospinal", "spatial null model", "rostro-caudal gradient", "structure-function", "cross-species", "null result", "C. elegans comparison", "rewired graphs"],
+  "display": [
+    {"path": "files/figures/fig1_motor_distance_encoding.png", "caption": "(A) Region swim encoding against projectome random-walk steps to the swim motor set (orange: hindbrain). (B) Nulls: strength-preserving rewiring, edge-length-preserving rewiring and random hindbrain target sets. (C) Rho for target sets and measures with 95% fish-bootstrap intervals. (D) Post-hoc spatial controls: the relation disappears after control for rostro-caudal position and inside the hindbrain."},
+    {"path": "files/figures/fig2_atlas_maps.png", "caption": "Dorsal view of region centroids: (A) swim encoding is concentrated in the caudal hindbrain; (B) projectome distance to the motor set (orange squares) is short in most of the hindbrain."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:b41d39ab916c186df33bafc9bd8e170ed4cbbf8e704c3d6f86cef908c6e8df41", "relations": ["reviews"], "reason": "Worm rule tested here in a vertebrate brain: muscle random-walk distance predicts locomotion encoding."},
+    {"target": "sci:sha256:85b15b2ed2f5190947be7f0ee7537dd744a9ad3d9e5d60b75f9fc2a7e1973bb7", "reason": "Related worm result on wiring flow to muscles and behaviour encoding."},
+    {"target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc", "relations": ["uses"], "reason": "dF/F and swim-to-volume recipe reused."},
+    {"target": "sci:sha256:8c65c10b37dabd498acbaf41f5c4be7b8185c82f38d92f1f341a865a6e48723d", "reason": "Earlier wiring-coupling analysis of the same zebrafish data."},
+    {"target": "sci:sha256:2d23aeb7232e2ede1774e1447962825fd9c5ef7947ff056d02c44d268c80f9a0", "reason": "Earlier cross-species wiring and swimming analysis of the same data."},
+    {"target": "sci:sha256:a59c0db9f14f70f160a76fb6c7311e414bc9798e831882d7f86ef775729d0ae8", "reason": "Behaviour-locked covariance in the same zebrafish data."},
+    {"target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840", "reason": "Sensory-side path length analysis in the same data; our retina control is its motor-side counterpart."},
+    {"target": "sci:sha256:7a4063e456cac2ca403bb7c568f8835a3defad1335986b0de2b55fa474a1f8fc", "reason": "Projectome input count versus timescales in the same data."},
+    {"target": "doi:10.5683/SP3/IIVGOB", "relations": ["uses"], "reason": "Legare et al. 2025 processed zebrafish data set, CC BY 4.0."},
+    {"target": "doi:10.1126/sciadv.adv7576", "relations": ["uses"], "reason": "Legare et al. 2025 paper describing the data."},
+    {"target": "doi:10.1016/j.neuron.2019.04.034", "relations": ["uses"], "reason": "mapZebrain atlas and projectome (Kunst et al. 2019)."},
+    {"target": "doi:10.5061/dryad.3bk3j9kpb", "reason": "Planned fly data set (Aimon et al. 2023); download refused, not used."}
+  ]
+}
