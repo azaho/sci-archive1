@@ -1,0 +1,98 @@
+{
+ "title": "Built-up growth near Japanese weather stations in 1975-2020 did not explain the later animal first dates; the animal delay was larger at stations that were already built-up, mainly after 1997",
+ "abstract": "Question: JMA stopped its animal phenology records in 2020 because urbanization made animals hard to find near stations. Earlier campaign work found that animal first dates became about 1.1 days per decade later than plant dates after local temperature control. Does measured built-up growth near the stations explain this delay? Data: the JMA panel of sci:71c9a88e (101 stations, 53 items, 1953-2020, GHCN-M temperature) and GHSL built-up surface (100 m; 1975, 1990, 2020) within 0.5-5 km of each station. Method: per-series temperature-adjusted trends; a pre-specified test of the animal-minus-plant interaction with 1975-2020 built-up change within 2 km (item effects, station-clustered errors); a two-way fixed-effects panel; habitat groups; regions and sub-periods. Results: built-up change did not predict the animal delay (+0.23 days/decade per +10 points, 95% CI -1.08 to 1.54; panel -0.00, CI -1.01 to 1.00), and wetland animals did not respond more than plants. Exploratory: the 1975 built-up level predicted a larger animal-minus-plant trend in 1976-2020 (+0.55, CI 0.26 to 0.85; held at all radii and within regions), but this contrast was near zero to 1996 and appeared in 1997-2008 (+0.83 days, CI 0.40 to 1.27); 58% of it came from plants that advanced more at built-up stations. At zero built-up, the 1953-2020 animal gap was still +0.91 days/decade (CI 0.35 to 1.47). Limitation: built-up surface does not measure paddy or wetland loss, search effort or station moves; the level result is exploratory.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  }
+ ],
+ "keywords": [
+  "phenology",
+  "first appearance date",
+  "observation bias",
+  "detection bias",
+  "urbanization",
+  "GHSL",
+  "built-up surface",
+  "Japan Meteorological Agency",
+  "animals",
+  "plants",
+  "climate change",
+  "night lights",
+  "pre-specified test",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_map_station_contrast.png",
+   "caption": "JMA stations by 1975 built-up share within 2 km, and the station animal-minus-plant adjusted trend against built-up change (pre-specified, null) and against the 1975 built-up level (exploratory, positive)."
+  },
+  {
+   "path": "files/figures/fig2_coefficients.png",
+   "caption": "Animal-minus-plant interaction with 1975-2020 built-up change in all robustness variants, and slopes by habitat group (95% station-clustered CIs)."
+  },
+  {
+   "path": "files/figures/fig3_period_level_contrast.png",
+   "caption": "Animal-minus-plant residual date per +10 points of 1975 built-up level, by period: near zero to 1996, positive from 1997 (station bootstrap 95% CIs)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:71c9a88e131601688998df1d3411dc9b9686fda6cd835ba5a8dc1530c1f4c57e",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the JMA station-item-year panel with GHCN-M temperature and station coordinates; we test the causes that it left open."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "We reproduce its animal-minus-plant adjusted-trend gap and use its temperature-responsive item set; we add a satellite urbanization test."
+  },
+  {
+   "target": "doi:10.3354/cr01099",
+   "reason": "Gordo and Doi (2012): JMA bird first records and human population growth near stations."
+  },
+  {
+   "target": "doi:10.1038/s41559-021-01459-3",
+   "reason": "End of the JMA animal and plant phenology observations in 2020."
+  },
+  {
+   "target": "doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHS-BUILT-S R2023A built-up surface (European Commission JRC), CC BY 4.0."
+  },
+  {
+   "target": "doi:10.1038/s41597-020-0510-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Harmonized global nighttime light (Li et al. 2020), CC BY 4.0; secondary exposure."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/sakura/data/ruinenchi/ruinenchi_all.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Original JMA phenology tables behind the panel (via sci:71c9a88e)."
+  },
+  {
+   "target": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Download location of the 100 m tiles; exact files and hashes in files/provenance.json."
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Four-edge changes connect reference sets that smaller changes cannot connect in three selected Allen mouse circuits",
+  "abstract": "We tested whether constrained rewiring can reach all allowed graphs in 247 mouse VisP and 17 human TCx slice circuits from Allen Synaptic Physiology r2.1. Exact enumeration showed that two-edge switches connect every degree-only reference set. Fixing class totals leaves one mouse set disconnected. Also fixing reciprocal counts leaves three mouse sets disconnected, including one with an isolated observed graph and six alternatives. Directed-triangle reversals remove the class-only failure but none of the three full-control failures. Two full-control sets have changed transitive-count distributions in the observed component; the largest total variation is 0.204545. Each of the three sets needs changes of up to four edges for connectivity; changes of at most three edges do not suffice. Independent exhaustive four-cell checks passed. This is a finite method audit of the same sample as a prior exact motif study, whose enumeration is not affected. Small selected slice graphs, inferred donors and absent activity outcomes limit biological conclusions. Code, aggregate evidence, provenance and external regeneration steps are supplied; external database records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "circuit motifs",
+    "graph randomization",
+    "exact enumeration",
+    "rewiring",
+    "conditional reference set"
+  ],
+  "display": [
+    {
+      "path": "files/result.png",
+      "caption": "Exact finite reachability audit in 247 selected mouse circuits. Triangle reversals remove the class-only failure but do not connect the three sets with fixed reciprocal counts. Changed motif laws compare ideal uniform sampling in the observed component with the full set."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:83649ada8903f2b1240c58889e37817022d512554e24c848412d290438545ce4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reuses graph selection and adapts selection code; tests transition reachability instead of motif excess. Prior exact enumeration remains valid."
+    },
+    {
+      "target": "doi:10.48550/arXiv.0912.0685",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established directed-switch disconnectedness and induced triangle reversal remedy for the degree-only setting."
+    },
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    }
+  ]
+}
