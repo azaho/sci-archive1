@@ -1,0 +1,100 @@
+{
+  "title": "A 0.113 ms onset half-window permits zero distance slope in 328 selected Allen mouse inhibitory outputs",
+  "abstract": "We tested how onset constraints affect a positive distance-delay slope within outputs from the same source in Allen mouse visual-cortex slices. We reproduced the released slope of 0.3371 ms per 100 micrometres in 328 inhibitory outputs from 113 inferred donors. Response-count weights exactly reconstruct the summary delays. Under the documented 0.100 ms half-width around stored starts and the 0.2 ms agreement rule, sharp slope bounds are 0.0326 to 0.5666. The nominal 95% donor interval for the lower bound is -0.1236 to 0.1934. The closed-rule zero threshold is a half-width of 0.112187 ms. At 0.113 ms, a joint zero-slope assignment meets the strict agreement rule for all fits. Removing unknown target classes also permits zero at 0.100 ms. Independent full linear programs, regression checks and repeat runs passed. These are conditional timing-rule bounds with fixed sample, fit flags and response weights. They do not test waveform fit quality or true onset error. They do not refute the measured association or identify conduction speed. The package contains original code, aggregate results, a figure, source hashes and a recipe that rebuilds external records outside the publication.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "synaptic latency",
+    "distance",
+    "inhibitory circuits",
+    "onset fit constraints",
+    "sensitivity analysis",
+    "linear programming",
+    "structure and function"
+  ],
+  "display": [
+    {
+      "path": "files/window_slope.png",
+      "caption": "Allowed within-source distance-delay slopes in 328 selected Allen mouse inhibitory outputs. The shaded range obeys onset windows and within-edge timing agreement; it does not impose waveform fit quality. The first closed-rule zero threshold is 0.112187 ms. At 0.113 ms, a checked joint assignment gives zero slope with strict agreement. Right bars give separate nominal 95% donor bootstrap intervals at the documented 0.100 ms half-width. Data source: Allen Institute Synaptic Physiology r2.1 small, https://registry.opendata.aws/allen-synphys/; Campagnola et al., Science (2022), doi:10.1126/science.abj5861."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary study for linked slice connectivity and synaptic physiology."
+    },
+    {
+      "target": "sci:sha256:e711991fef480daf5d149dab04749ec1b1425e3d7c14f53663f7e25e3327401f",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Reproduces its 328-output within-source slope and extends it with onset-window sensitivity; same data, not independent replication."
+    },
+    {
+      "target": "sci:sha256:3f31285fa17588bd9c22ed14f9c0d2da15640e20bd89a5cb2298918c94dbf48a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established the importance of recorded onset windows for input-order comparisons. We test a distance slope and a joint timing-agreement constraint."
+    },
+    {
+      "target": "sci:sha256:0789954e34f8997f5e8a8a3b7551b29202735901a8da230169f83b44ec121122",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related missing-delay bounds hold measured values fixed; our test varies measured fits and adds no missing edge."
+    },
+    {
+      "target": "sci:sha256:2405b942827aa469febd8caff7e828eeb4896a36c1f112aa2356a799dfebcf99",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Prior distance-delay prediction result motivates the robustness question and inferred-donor grouping."
+    },
+    {
+      "target": "sci:sha256:d273d0734b7c3235867e51fafe39bf8c726b33aee890c2c5859ad34c9be9b686",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Checks that none of the primary edges has its extreme cortical-axis flag. Soma distance is a separate field."
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external database; immutable hash and retrieval steps are recorded. The raw data and record extracts are excluded from the baseline bundle."
+    },
+    {
+      "target": "https://registry.opendata.aws/allen-synphys/"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/avg_response_fit.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Documented 100 microsecond onset half-window; the database build commit is unverified."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/AllenInstitute/aisynphys/b264d8b61abf11d015222865ca081f80655d33d4/aisynphys/pipeline/multipatch/synapse.py",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Response-count mean and timing-agreement rule, directly checked against the released values."
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
