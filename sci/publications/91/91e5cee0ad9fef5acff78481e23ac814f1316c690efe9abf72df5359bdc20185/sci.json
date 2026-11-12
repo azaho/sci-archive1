@@ -1,0 +1,63 @@
+{
+  "title": "Source spike broadening gave no clear 50 Hz prediction gain in three selected Allen slice groups",
+  "abstract": "We tested whether a source cell spike-width ratio adds prediction value for 50 Hz synaptic response change in Allen Synaptic Physiology r2.1. Donor-held-out ridge models controlled source firing adaptation, stored spike width, cell labels, distance, response amplitude and trial count. Primary mean absolute error gains were 0.00104 for 151 mouse excitatory connections, -0.00095 for 334 mouse inhibitory connections and -0.00398 for 70 human excitatory connections. All conditional 98.75% donor bootstrap intervals included zero. Eight human inhibitory connections were too few to test. An alternate split gave a clear prediction loss in human excitation. Strong synthetic signals were recovered, and independent fit and score checks passed. Somatic width change and synaptic trains used different stimulation. Missing measurements, selected slices, inferred donors and model form limit interpretation. The result does not refute terminal waveform effects on release. Code, aggregate scores, a figure, source hashes and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "Allen Institute",
+    "spike broadening",
+    "short-term plasticity",
+    "donor validation",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/gain.png",
+      "caption": "Added prediction gain from source spike-width ratio. Bars show conditional 98.75% donor bootstrap intervals. Panel scales differ. Allen Synaptic Physiology r2.1 small; Campagnola, Seeman, et al., doi:10.1126/science.abj5861."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1126/science.abj5861",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://allen-synphys.s3-us-west-2.amazonaws.com/synphys_r2.1_small.sqlite",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:81f473b2540da88921e2dae2f738df702d3fc76c3730e377b34610ff63c13e08",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior firing-adaptation predictor. We test spike-width change beyond firing adaptation in the same release."
+    },
+    {
+      "target": "sci:sha256:f22dd88c2c5a0a97f16f531003196eaebf3f82e7b584feb21bb9575bd0177561",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior variability predictor; motivates future combined models. No code or record tables reused."
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6031373/"
+    },
+    {
+      "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3225031/"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/citation-policy"
+    }
+  ]
+}
