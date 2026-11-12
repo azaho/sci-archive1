@@ -1,0 +1,92 @@
+{
+ "title": "Heavy rain before autumn sampling lowered English river invertebrate scores more where storm overflows discharge into the same water body (1991-2024), but not in spring and not before 2008",
+ "abstract": "Question: does heavy rain lower English river invertebrate quality more where storm overflows discharge into the same Water Framework Directive water body? Data: Environment Agency kick samples 1991-2024 (59,745 autumn and 58,943 spring samples, about 5,500 sites, 2,800 water bodies), storm overflow outlets from EDM annual returns 2021-2025 (14,808 outlets), E-OBS daily rain, GHSL built-up fraction. Method: within-site models with EA-area x year effects; exposure = days with at least 10 mm rain in the 28 days before the sample (H28) x log2(1 + overflow outlets in the water body); plan written before the fits. Results: in autumn, the interaction was -0.0025 WHPT ASPT per rain day per doubling of outlets (95% CI -0.0042 to -0.0007; permutation p = 0.007). Per heavy-rain day, ASPT changed by -0.0023 (CI -0.0065 to 0.0020) with no outlet and by -0.0121 (CI -0.0174 to -0.0069) with 15 outlets. The autumn result stayed with urban, river-size, altitude and site-quality rain interactions and with investigative or log-abundance samples, and a placebo with rain after the sample was null. It was clear in 2008-2024 (-0.0052) but zero in 1991-2007, and negative but uncertain in each of four regions. In spring the interaction was null (-0.0004, CI -0.0030 to 0.0022). Annual spill hours rose 2.8% per heavy-rain day. Limitations: association only; outlet locations from 2021-2025 applied to all years; downstream outlets in the same water body count; a direct 2021-2024 spill-hours test was too short to resolve.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310304"
+  }
+ ],
+ "keywords": [
+  "storm overflows",
+  "combined sewer overflow",
+  "sewage",
+  "heavy rainfall",
+  "weather extremes",
+  "river invertebrates",
+  "WHPT ASPT",
+  "Environment Agency",
+  "Event Duration Monitoring",
+  "E-OBS",
+  "multiple stressors",
+  "England",
+  "freshwater biodiversity"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_binned_response.png",
+   "caption": "WHPT ASPT change (within site, EA-area x year removed) against the number of days with at least 10 mm rain in the 28 days before sampling, by the number of storm overflow outlets in the site's water body. Bars: 95% intervals of bin means. Autumn samples fall more after rain where overflows exist; spring samples do not."
+  },
+  {
+   "path": "files/figures/fig2_interaction_forest.png",
+   "caption": "Rain x overflow interaction (H28 x log2(1 + outlets)) with 95% CIs for all planned tests and two post-hoc periods. Orange: CI below zero. Grey: placebo with rain after the sample."
+  },
+  {
+   "path": "files/figures/fig3_null_and_rain_trend.png",
+   "caption": "Left: observed interactions (lines) against 300 within-area shuffles of overflow counts. Right: mean number of heavy-rain days in fixed 28-day spring and autumn windows at sampled site cells, 1991-2024, with linear trends (autumn trend uncertain)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:dd845a59df9c6bc0f5c4a306ae7b530c3857e68adeda01c40d836f73c48954fc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same EA invertebrate source, sample filters and WHPT ASPT trend used to scale the effect size."
+  },
+  {
+   "target": "sci:sha256:f25760cd730cef83fb8c57919cadc682c94f68f367bad864195074fc7e13dbc2",
+   "reason": "Earlier climate x pollution test in English rivers (warmth, flow, ammonia); this study adds rain x storm overflows."
+  },
+  {
+   "target": "sci:sha256:32a1ea318038028db0e7acded690443a742c0e310031e7714c7c025903562ba1",
+   "reason": "Earlier flow test in English river invertebrates."
+  },
+  {
+   "target": "sci:sha256:53d04d00db72e3b3f830874330b427a4e496c6e65efc97624831dfd36bd21d54",
+   "reason": "Earlier ammonia x warm-season test in English rivers."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS daily precipitation."
+  },
+  {
+   "target": "doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHSL built-up surface 2020."
+  },
+  {
+   "target": "doi:10.1002/rra.2686",
+   "reason": "WHPT index definition."
+  },
+  {
+   "target": "https://environment.data.gov.uk/ecology/explorer/downloads/INV_OPEN_DATA.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA invertebrate open data, OGL v3."
+  },
+  {
+   "target": "https://environment.data.gov.uk/api/file/download?fileDataSetId=c55e170e-3c75-49a5-8026-a961ff94c8e0&fileName=EDM_2025_Storm_Overflow_Annual_Return.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA Event Duration Monitoring storm overflow annual returns 2021-2025 (same fileDataSetId, one file per year), OGL v3."
+  }
+ ]
+}
