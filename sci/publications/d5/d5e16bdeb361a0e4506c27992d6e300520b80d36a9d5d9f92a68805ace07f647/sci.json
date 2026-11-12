@@ -1,0 +1,111 @@
+{
+ "title": "High winter river flows decreased young-of-year brown trout catches at 579 English sites in 1991-2025; Atlantic salmon had the same sign, but the interval included zero",
+ "abstract": "Question: do high winter river flows decrease young-of-year (0+) salmonid numbers in English rivers? Data: Environment Agency electric-fishing surveys (NFPD counts and individual lengths, 1991-2025) and EA daily mean river flow from 776 matched gauges. Method: 0+ fish were separated by region-month length cut-offs calibrated on staff age labels. The outcome was log(1 + 0+ first-run catch per 100 m2). The exposure was the Dec-Mar peak daily flow relative to the gauge median. Models had site and year fixed effects, survey-day flow, summer low flow, spring peak, survey date, area and method controls, and two-way clustered errors. The plan was written before the outcome models. Results: for brown trout (6,154 site-years, 579 sites) the slope was -0.139 (95% CI -0.223 to -0.054): a peak two times the usual peak came before about 13% fewer 0+ trout at the median catch. All four region-period sub-samples were negative. The next-winter placebo (+0.007) and older trout (+0.004) gave no effect. The slope held with region-year effects, river-matched gauges, spawner and winter temperature controls. For Atlantic salmon (3,317 site-years) the slope was -0.114 (CI -0.264 to +0.035), uncertain. An exploratory window model put the largest effect in February-March (salmon -0.181, CI -0.263 to -0.100). Winter peaks rose 0.07 log units per decade (CI included zero), which implies only about 3% fewer 0+ trout over 1991-2025, while observed 0+ year effects increased. Limitations: observational design, nearest-gauge matching without a river network, first-run catch is not abundance, depletion-only fits were weaker, and the sites are a non-random subset. No air pollutant was tested.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310304"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  }
+ ],
+ "keywords": [
+  "brown trout",
+  "Atlantic salmon",
+  "young-of-year",
+  "recruitment",
+  "winter floods",
+  "river flow",
+  "extreme weather",
+  "electric fishing",
+  "NFPD",
+  "EA Hydrology",
+  "England",
+  "fixed effects",
+  "placebo test",
+  "observation bias",
+  "climate change"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_coefficients.png",
+   "caption": "Slope of 0+ catch, log(1 + catch per 100 m2), on the December-March peak-flow index, with 95% intervals, for brown trout (blue) and Atlantic salmon (orange): main model, four planned region-period sub-samples, next-winter placebo, older-fish outcome and robustness checks."
+  },
+  {
+   "path": "files/figures/fig4_windows_exploratory.png",
+   "caption": "Exploratory model (not in the plan): peak-flow indices of four two-month windows in one model. The February-March window gave the most negative slope for both species."
+  },
+  {
+   "path": "files/figures/fig3_year_series.png",
+   "caption": "Top: mean winter peak-flow index at the sample gauges by year. Bottom: 0+ year effects from a site fixed-effects model without flow terms (centred). The 0+ year effects did not follow the small rise in winter peaks."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d9f348606629e46cb57cf964e5333ee68a0009c68e613b84a7fc1a6748d42740",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier use of the same EA NFPD export (all-age fish community temperature index); used to locate the source and survey design."
+  },
+  {
+   "target": "sci:sha256:cb613f6a3f424a2d71a02c2ca5295a9a758f71cd3ec874c532746ae3ce9f9f8e",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Earlier all-age trout weather test with the same export; informed survey filters and observation-bias controls. This study adds 0+ classification and measured river flow."
+  },
+  {
+   "target": "sci:sha256:20db21aacbf6d41b59356ba72a26fa7ca4dbf1014d0f86d1492df65c6ae40fb2",
+   "reason": "Related result on English river fish communities and water-quality recovery."
+  },
+  {
+   "target": "sci:sha256:39dc74ed016f29d3108e6cea504c7348e263d746023325afcbc69a0f873244cb",
+   "reason": "Related result on a different extreme (drought) and river invertebrates in England."
+  },
+  {
+   "target": "doi:10.1139/f01-186",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Cattaneo et al. 2002: high flows during emergence decreased 0+ brown trout density in French streams; this national test agrees in sign."
+  },
+  {
+   "target": "doi:10.1139/f04-118",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Lobon-Cervia 2004: discharge-dependent brown trout recruitment in a Spanish drainage."
+  },
+  {
+   "target": "https://www.data.gov.uk/dataset/823e7de7-33a2-4fc6-9a79-4c7672130094/freshwater-fish-surveys-nfpd",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA NFPD fish survey data, OGL v3.0."
+  },
+  {
+   "target": "https://environment.data.gov.uk/ecology/explorer/downloads/FW_Fish_Individual_Lengths.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NFPD individual fish lengths and staff age bands."
+  },
+  {
+   "target": "https://environment.data.gov.uk/hydrology/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA Hydrology API daily mean river flows, OGL v3.0."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS ensemble dataset (v32.0e tg), used only as a winter temperature control."
+  }
+ ]
+}
