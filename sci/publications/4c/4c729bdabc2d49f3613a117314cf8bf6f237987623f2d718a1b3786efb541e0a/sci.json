@@ -1,0 +1,130 @@
+{
+ "title": "Tide gauges show altimetry about 10 mm above gauges after 2015, but the excess came before the 2019-2021 sea-level budget gap and changes by region, so it does not confirm an altimeter drift",
+ "abstract": "Question: a prior result (sci:sha256:85ce0e95) found that altimetry was 6-9 mm above Argo steric plus GRACE-FO ocean mass in 2020.5-2024.0. Is this gap a drift of the reference altimeters (Jason-3, Sentinel-6MF)? Approach: we compared CMEMS DUACS gridded monthly sea level (0.125 degree, 1993-2026) with 514 PSMSL tide gauges (66S-66N, inverse-barometer corrected), fitted altimetry minus gauge on 2005-2015 per gauge to remove linear land motion, and averaged the anomalies over 113 ten-degree cells. Results: altimetry minus gauge in 2020.5-2024.0 was +10.4 mm (95% CI 1.2-20.0; time-noise null p 0.02), the size of the budget gap; 11 method variants gave +1.8 to +13.0 mm. But the timing does not agree: the excess was already +7.1 mm in 2016-2017.5 and +14.1 mm in 2018.5-2020, when the budget residual was 1-3 mm. From 2018.5-2020 to 2020.5-2024 the gap grew 4.0-5.8 mm, but altimetry minus gauge changed -3.7 mm (CI -9.1 to 1.6; p 0.02 under a gap-matching drift; the C3S two-satellite product gave -0.3 mm, not decisive). The excess is not a common offset: regional medians range from -38 mm (other extratropical gauges, n 23) and -14 mm (North America east and Gulf) to +16 mm (tropics), and the 197 GNSS-paired gauges gave +1.8 mm (+5.4 mm after GNSS correction). At the gauge cells altimetry stayed near its own trend; the gauges fell below theirs. A placebo moved 9 years earlier gave -11.6 mm, so excursions of this size also occur without a drift. Conclusion: tide gauges do not confirm an altimeter drift as the cause of the budget gap. Limitations: network noise is about 5 mm for a 3.5-year window, so a drift of about 1 mm/yr is not excluded; gridded, not along-track, altimetry; most gauges are in Europe, North America, Japan and Australia; timing tests and the regional split were chosen after the first result.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "sea-level budget",
+  "satellite altimetry",
+  "tide gauges",
+  "altimeter drift",
+  "PSMSL",
+  "CMEMS DUACS",
+  "Jason-3",
+  "Sentinel-6MF",
+  "vertical land motion",
+  "GNSS",
+  "global mean sea level",
+  "budget closure",
+  "data quality"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_network_vs_budget.png",
+   "caption": "12-month means of altimetry minus tide gauge (CMEMS all-satellite and C3S two-satellite, 514 gauges, relative to a 2005-2015 fit) and of two sea-level budget residuals rebuilt with the method of 85ce0e95. The altimetry-minus-gauge excess appears in 2015-2018, before the budget residual grows in 2019.5-2021."
+  },
+  {
+   "path": "files/figures/fig2_window_estimates.png",
+   "caption": "Altimetry minus gauge in W3 (2020.5-2024.0) and its change from W2 and W1, for 11 method variants, with 95% cell-bootstrap CIs. Shaded: range of the budget residual. The level agrees with the gap; the W2-to-W3 change does not."
+  },
+  {
+   "path": "files/figures/fig3_gauge_map.png",
+   "caption": "Per-gauge altimetry-minus-gauge anomaly in 2020.5-2024.0 and regional medians. The sign changes between regions, which a common altimeter drift cannot explain."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:85ce0e95a2bf0123457b34f6f435791262ff0b08c42cab797621b8f469d2ed66",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the budget gap tested here; its steric and mass series are used to rebuild the residual, and its open item (tide-gauge test of a Jason-3/Sentinel-6MF drift) is addressed."
+  },
+  {
+   "target": "sci:sha256:289858c9ea72e9f816d9cd26c691b335dac793defb3f31f1a49ecabcb7e0f997",
+   "reason": "Prior campaign result on the GRACE-FO ocean-mass slowdown and altimeter GMSL path."
+  },
+  {
+   "target": "doi:10.48670/moi-00148",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.48670/moi-00145",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.2112/JCOASTRES-D-12-00175.1",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1029/2018EO104623",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1175/1520-0477(1996)077%3C0437:TNYRP%3E2.0.CO;2",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "doi:10.1080/01490410050128591",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Tide-gauge calibration of altimetry with land-motion adjustment."
+  },
+  {
+   "target": "doi:10.1038/nclimate2635"
+  },
+  {
+   "target": "doi:10.1029/2021GL092824"
+  },
+  {
+   "target": "https://psmsl.org/data/obtaining/rlr.monthly.data/rlr_monthly.zip",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://geodesy.unr.edu/NGLStationPages/steps.txt",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://earthquake.usgs.gov/fdsnws/event/1/",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://sealevel.colorado.edu/files/2026_rel2/gmsl_2026rel2_seasons_rmvd.txt",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/",
+   "relations": [
+    "uses"
+   ]
+  }
+ ]
+}
