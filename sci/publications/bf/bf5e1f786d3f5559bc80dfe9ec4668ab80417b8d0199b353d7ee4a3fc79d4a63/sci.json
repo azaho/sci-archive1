@@ -1,0 +1,176 @@
+{
+ "title": "MUSE stellar kinematics give the ASASSN-14ko black hole about 10^7.6 solar masses, below the 10^8.2 that a light-travel-time clock needs; with this mass the flare timing no longer prefers that clock",
+ "abstract": "Question: a light-travel-time (Roemer) clock can stop the period decrease of the repeating nuclear transient ASASSN-14ko without an orbital change, and SCI 8e6f3b54 found a Bayes factor of about e^2 for it, but only if the central black hole has log10 M >= 8.2. Is the mass this high, and do archival flare spectra show the predicted line velocities? Data: the public MUSE cube of 2015 (ESO), nine PESSTO spectra of 2014-2015 and 28 HST/STIS UV spectra of 2020-2021, not used before in the campaign. Results: (1) pPXF fits of the Ca II triplet and Mg b outside the AGN light give a stellar velocity dispersion of 123 +/- 10 km/s (72 variants: 107-133 km/s). M-sigma relations give log10 M = 7.56 +/- 0.33 (Kormendy & Ho 2013) or 7.12 +/- 0.43 (McConnell & Ma 2013). log10 M = 8.19 needs 171-190 km/s. (2) The timing alone needs log10 M = 8.31-9.92 (95%). (3) We repeated the nested sampling of 8e6f3b54 with the new mass priors: the ln Bayes factor of the Roemer clock against a constant period derivative falls from +2.25 (host prior) to +0.46 (KH13) and -1.39 (MM13); a reweighting check gives +1.43, -0.63 and -2.06. (4) The 2014 broad H-beta excess (+300 to +400 km/s) persists after the continuum returned to baseline, so it is an echo of the AGN broad-line region and cannot test the clock. (5) The transient UV troughs at the 2020 flare rise (-2200 to -2800 km/s) sit at the velocities of narrow absorbers present in the quiescent 2021 spectra (N V -2000 km/s), so they are most simply a persistent AGN absorber seen against the flare light. (6) The 1-arcsec PESSTO slit includes the companion nucleus by an amount that depends on slit angle; the earlier 10^8.18 broad-line mass used a flare-echo spectrum. Conclusion: the first dynamical mass is about 10^7.6 solar masses; with it, the flare timing no longer prefers a light-travel-time clock, so an orbital or emission-geometry cause of the stall is more probable. Limitations: M-sigma scatter of 0.3-0.4 dex in a disturbed two-nucleus host; aperture dispersions, not sigma_e; no virial mass; no flare-intrinsic emission line, so no direct kinematic test; absolute ln Z differs by about 1 between methods.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.GA"
+  }
+ ],
+ "keywords": [
+  "ASASSN-14ko",
+  "ESO 253-G003",
+  "repeating partial tidal disruption",
+  "periodic nuclear transient",
+  "supermassive black hole mass",
+  "stellar velocity dispersion",
+  "M-sigma relation",
+  "MUSE",
+  "pPXF",
+  "light-travel-time effect",
+  "Roemer delay",
+  "period stall",
+  "Bayesian evidence",
+  "nested sampling",
+  "PESSTO",
+  "HST STIS",
+  "broad-line region echo",
+  "intrinsic UV absorber",
+  "dual AGN"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_mass_and_evidence.png",
+   "caption": "Left: the black-hole mass that the light-travel-time (Roemer) clock needs from the 2014-2026 flare timing alone (grey, log10 M = 8.31-9.92) against the host prior of Payne et al. (2021) and the two dynamical priors from the MUSE stellar dispersion (log10 M = 7.56 and 7.12). Right: the ln Bayes factor of the Roemer clock against a constant period derivative falls from +2.3 to +0.5 (KH13) and -1.4 (MM13)."
+  },
+  {
+   "path": "files/figures/fig1_muse_stellar_dispersion.png",
+   "caption": "MUSE stellar kinematics of the ASASSN-14ko host: apertures with the companion nucleus masked, pPXF fits of the Ca II triplet and Mg b in the 1.5-5 arcsec annulus, and the dispersion against aperture. All apertures outside the AGN give 112-130 km/s, far below the 171 km/s that log10 M = 8.19 needs."
+  },
+  {
+   "path": "files/figures/fig4_uv_absorber.png",
+   "caption": "HST/STIS N V, C IV and Si IV: the broad troughs at the 2020 December flare rise (blue) lie at the velocities of narrow absorbers that are present in the 2021 quiescent spectra (black, grey), so they are most simply a persistent AGN absorber seen against the flare light."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8e6f3b54fdd9a28c7f8d6a92112b7598519030faeee2e5368f2641c71227121d",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We use its 61 flare markers, its Roemer timing library and its sampler set-up. Our dynamical mass removes its e^2 Bayes factor for the light-travel-time clock; we answer its request for a mass or line-velocity test."
+  },
+  {
+   "target": "sci:sha256:b29ea789210b3c457b83c55dc19513d3ed3c78238d6e02edf5f0b42649061fe3",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the ASAS-SN Sky Patrol light curve that we use for the continuum state at the 2014 spectral epochs."
+  },
+  {
+   "target": "sci:sha256:049d6e3e1252cb5acc47a335d4100c5b437a406b5011b072f88e9cccc8b1a867",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Its constant 2020-2024 X-ray clock is the stall; our result argues that the stall is orbital or emission-related, not a light-travel effect."
+  },
+  {
+   "target": "sci:sha256:2b5fd32c0ae27b7dc26a270a61c0e3c8a02e6f4bcd4913994aef2638b00d1b10",
+   "relations": [],
+   "reason": "Source (through 8e6f3b54) of the X-ray deep-suppression markers."
+  },
+  {
+   "target": "sci:sha256:967e37733e87f814b54045fb4cd2e51e272ea683b587b17b8f8b3c1ad3b07e48",
+   "relations": [],
+   "reason": "Einstein Probe extension of the constant X-ray clock to 2024 October."
+  },
+  {
+   "target": "sci:sha256:067e95650e921d3679b3fe15af53ce9e346723a655ed41bdda6a661b8f802083",
+   "relations": [],
+   "reason": "Long-term period history (2007-2026) that any clock must explain."
+  },
+  {
+   "target": "sci:sha256:cd4bd32858cf82b1a8669b2fb0b615984026f9a4d3aaed7d80e38b28cf932051",
+   "relations": [],
+   "reason": "Star-disc drag clock with precession, one of the orbital alternatives that remain."
+  },
+  {
+   "target": "sci:sha256:77860d3a022b32a9b2ce15b6b2a11183636edb43a731eaa7164977e4afe0c8ef",
+   "relations": [],
+   "reason": "On-off decay and period-kick clocks, alternatives that remain."
+  },
+  {
+   "target": "sci:sha256:dc60fe15b6fd9e504eaddf8b4c42bbe252e2ce4da0318f4427b006a62eda1cf6",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Chandra found two X-ray nuclei; MUSE shows the companion Seyfert-2 nucleus 1.6 arcsec away, which also enters the 2014 slit spectra."
+  },
+  {
+   "target": "sci:sha256:e8bccc56a1221c858027afc50963e572696734218bd56aeb904e876efc33e2a5",
+   "relations": [],
+   "reason": "UV/X-ray timing of the flare trigger; context for the UV spectra at the flare rise."
+  },
+  {
+   "target": "sci:sha256:9c84683e6d15fa5bfbc84bc1295a57bfe066ad5f70394fe11952d494b02c90d9",
+   "relations": [],
+   "reason": "Grey X-ray dip without cold absorption; context for the UV absorber result."
+  },
+  {
+   "target": "sci:sha256:e6845f1621bbd9268d3dddef62c52cb53863d1f5fb7085ff7da87120db353b7e",
+   "relations": [],
+   "reason": "Off-state flares with second peaks; context for broad-line echoes after flares."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/abe38d",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Payne et al. 2021: host mass estimates; we show that their broad-line mass used a flare-echo spectrum with a second nucleus in the slit."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/ac480c",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Payne et al. 2022: the constant period-derivative ephemeris that the timing clocks test."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/acd455",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Payne et al. 2023: HST/STIS spectra of the 2020-2021 flares and the flare-rise UV absorption that we reinterpret as a persistent AGN absorber."
+  },
+  {
+   "target": "doi:10.1093/mnras/stae641",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Wu et al. 2024: light-travel-time model of ASASSN-14ko."
+  },
+  {
+   "target": "doi:10.1146/annurev-astro-082708-101811",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kormendy & Ho 2013 M-sigma relation."
+  },
+  {
+   "target": "doi:10.1088/0004-637X/764/2/184",
+   "relations": [
+    "uses"
+   ],
+   "reason": "McConnell & Ma 2013 M-sigma relation."
+  },
+  {
+   "target": "doi:10.1093/mnras/stad2597",
+   "relations": [
+    "uses"
+   ],
+   "reason": "pPXF (Cappellari 2023)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/201425237",
+   "relations": [
+    "uses"
+   ],
+   "reason": "PESSTO survey and data release (Smartt et al. 2015)."
+  }
+ ]
+}
