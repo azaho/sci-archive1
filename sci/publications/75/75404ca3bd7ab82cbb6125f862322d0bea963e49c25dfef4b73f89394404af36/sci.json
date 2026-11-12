@@ -1,0 +1,57 @@
+{
+  "title": "Spot phase changes dominate the within-sector relative phase residuals in 118 TESS complex periodic variables",
+  "abstract": "We test which measured phase clock contributes to dip-minus-spot changes in released TESS measurements of 118 complex periodic variables, with 377 single-sector visits. We reproduce the reported relative slope coefficient of 1.060 x 10^-5 cycles squared per day. Setting dip phase to a constant while keeping the measured spot phase gives 7.43 x 10^-6, a coefficient ratio of 0.70 (95% star bootstrap interval 0.54 to 0.99). After a separate affine trend is removed from each clock, the typical spot-to-dip residual variance ratio is 19.0 (13.6 to 23.9). The typical correlation of spot residual with relative residual is -0.976. The result holds with stricter quality cuts and with each star removed in turn. Small dip-pattern changes remain. The relative coefficient cannot by itself identify a material diffusion rate. The audit uses released template shifts and does not refit raw photometry, identify the stellar rotation phase, or test long-gap phase memory. Original code, aggregate evidence, input hashes and an external-scratch reproduction script are supplied.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "phase clocks",
+    "starspots",
+    "corotation",
+    "diffusion",
+    "covariance audit"
+  ],
+  "display": [
+    {
+      "path": "files/phase_audit.png",
+      "caption": "Left: star-level spot-to-dip residual variance ratio after affine trends are removed. Centre: correlation of spot and relative residuals. Right: the same slope-based coefficient fitted to each phase clock. CPVs are blue; zero-offset fixed-dip injections are orange. A large relative coefficient does not isolate dip motion."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses verified released chunk shifts; reproduces the relative slope coefficient but challenges its attribution to material motion through a fixed-dip counterfactual and a separate covariance audit."
+    },
+    {
+      "target": "sci:sha256:22057485a2da3a065a5f74f1a999add62ae8add4988f98bbb1998078166493e0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Upstream CPV selection inherited through the phase measurement publication."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2609.00136",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Independent abundance interpolation left 44-56% of a dark-to-light composition gap in mixed microbial cultures",
+  "abstract": "We tested endpoint interpolation in a public seven-taxon light-switch experiment. The source paper had already reported history effects and a role for species interactions. We added a linear program that allows every taxon abundance to take any value between its unchanged light and dark control means, then normalizes the vector. At week 4, mixed-culture dark-to-light residuals were 0.270 and 0.368 in total variation distance without and with dispersal. These were 44% and 56% of the endpoint gaps. Descriptive 95% bootstrap intervals for residuals were 0.084-0.474 and 0.243-0.452. Reverse light-to-dark residuals were only 0.010 and 0.0003. Separate-culture residual estimates were small. A common-share interpolation gave larger reverse-switch residuals, which shows why the allowance matters. Code checks exact share-box bounds with independent linear programs. One laboratory experiment, few replicates, processed counts and finite-time controls limit inference. Positive distance intervals are not calibrated tests of exact membership. This analysis does not rule out all lag models or estimate an interaction share of the field warming gap. Code, aggregate estimates, figures and exact external-data retrieval instructions are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "space-for-time",
+    "species interactions",
+    "history dependence",
+    "microbial communities",
+    "light change",
+    "linear programming",
+    "partial identification"
+  ],
+  "display": [
+    {
+      "path": "files/results/abundance_evidence.png",
+      "caption": "Minimum composition error after independent abundance interpolation. All switches and culture treatments are shown. Intervals describe bootstrap sampling variation; they do not test exact membership."
+    },
+    {
+      "path": "files/results/evidence.png",
+      "caption": "Endpoint gaps, common-share interpolation residuals and independent-share residuals. Separate-culture vectors are synthetic."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Weak thermal transfer motivates an independent experimental test of response after arrival."
+    },
+    {
+      "target": "sci:sha256:79a502af8731510fa67d29a94448cae7d6c8f50780dc1ad8efeeccde8c5f8601",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Source-distance limits motivate a test in which all focal taxa are supplied at the start."
+    },
+    {
+      "target": "sci:sha256:0bef37cd00ccdb72671d2a5a105de7563a4b1fa0209b8a875289219659ce3b78",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior campaign experiment tested resources after seed arrival; this study uses independent microbial records and an endpoint allowance."
+    },
+    {
+      "target": "doi:10.1086/716724",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source experiment already reported interaction and history effects. We add quantitative interpolation bounds and do not claim discovery of those effects."
+    },
+    {
+      "target": "doi:10.5061/dryad.1g1jwstth",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Version 123824 supplies the public processed population table. All biological observations come from this experiment."
+    },
+    {
+      "target": "https://datadryad.org/terms"
+    }
+  ]
+}
