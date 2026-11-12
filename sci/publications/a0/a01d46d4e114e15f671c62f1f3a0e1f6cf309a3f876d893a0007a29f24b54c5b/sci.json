@@ -1,0 +1,180 @@
+{
+ "title": "A frozen 1951-2004 degree-day model kept 0.26-0.28 skill for 2005-2024 US county corn and soybean yields; a generic climate screen called them unforecastable because of the yield trend",
+ "abstract": "Question: does a pre-registered training-only forecastability screen (the shifted-climate false-signal rate, FSR, of sci:sha256:8804b69f) classify US county crop yields correctly, and does a published process-form relation keep forecast skill? Approach: we timestamped a plan before any yield statistic. Part A ran the dropped crop family of 8804b69f (4,263 county series of corn, soybeans and winter wheat, USDA NASS; train to 2004, test 2005-2024) through its unchanged engine. Part B froze a Schlenker-Roberts degree-day model (county effects, state trends, degree days above 29/30 C, precipitation; nClimGrid-daily) on 1951-2004 for 1,566 corn and 1,387 soybean counties, and forecast 2005-2024 with frozen weather slopes and a trend level refitted on the 15 previous years. Results: crop FSR was 0.49; the 13-unit line of 8804b69f predicted the forward skill of signalled series (-0.157 predicted, -0.152 observed), and the gate correctly chose the trailing mean for that engine. But the degree-day model beat the updated trend by 0.280 (95% block interval 0.097-0.428) for corn and 0.258 (0.208-0.332) for soybeans, 88-89% of the training weather signal, and beat the engine by 0.43-0.66. Across 51 state-crop units, forward skill rose with the training signal (Spearman 0.43, p = 0.0004). The corn heat coefficient fell from -0.68 to -0.47 per 100 degree days above 29 C; soybeans did not change. Frozen terms missed the 0.17 log-unit corn level rise. Exploratory: removing the training trend lowered crop FSR to 0.22, and the gate then chose the climate model correctly. Limitations: observed weather, county-average temperatures, pooled irrigated and rain-fed fields, one extreme year (2012), and a weather-join bug that we found and fixed after a debug run.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "forecastability",
+  "out-of-sample test",
+  "pre-registration",
+  "crop yield",
+  "maize",
+  "soybean",
+  "extreme heat",
+  "degree days",
+  "Schlenker-Roberts",
+  "false-signal rate",
+  "trailing mean",
+  "level shift",
+  "climate-response relations",
+  "USDA NASS",
+  "nClimGrid-Daily"
+ ],
+ "display": [
+  {
+   "path": "files/fig2_degree_day_forward.png",
+   "caption": "Frozen degree-day model with updated trend level against observed county-mean yield departures, 2005-2024, and pooled forecast skills with 95% moving-block intervals."
+  },
+  {
+   "path": "files/fig1_fsr_crop_family.png",
+   "caption": "Family false-signal rate against forward skill for 13 earlier units and US crop yields: the screen predicted the generic engine's crop-yield skill."
+  },
+  {
+   "path": "files/fig3_heat_sensitivity_states.png",
+   "caption": "Corn and soybean extreme-heat coefficients in 1951-2004 and 2005-2024, threshold profile, and state-level training signal against forward skill."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:8804b69f25ac0e1b787854ca1294df6d9fe874839d368768e9953d468aee3016",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We complete its pre-registered but dropped crop-yield family with its unchanged engine, null and test formulas, and we reuse its 13-unit FSR results."
+  },
+  {
+   "target": "sci:sha256:17f2e3230efd24a42593a2979804573e0525ba79b04e05d59faa21816ec9a2d5",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Level-shift and signal-fraction findings that we test in a growth and production system."
+  },
+  {
+   "target": "sci:sha256:7b03c5d9e77032c225341aec76502e02b7cc65b1eb1d75cfd591d0c1a4e4cf8f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Origin of the shifted-climate false-signal rate, Rule_q and the forecast engine."
+  },
+  {
+   "target": "sci:sha256:4c6adabea050fca56acf463e00dee2e728c2d9062c20e623a029fb6bf3e2fca4",
+   "reason": "Earlier training-only forecastability diagnostics in this campaign."
+  },
+  {
+   "target": "sci:sha256:e7c60a839120650b8be41e093ed73983b8d53e7650b4bcc6810885d858ec17ae",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:ae48aeca8848dbde7ff4129afa01d4f30a8963934d8becb663797096f3abe3f6",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:8bfba1a6af9ab554cb0bebbad7428868ff19ad2b39adb6bbc6a5a3ac8cab157d",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:ef47f93b1045294999071d43110e73228b3f01ab539ad20901e00c9182367367",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:4f9b8b4ee6000f963d257fe213f99a2ab544edd58ebea26399db65aedf208da2",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:08251db7a4cca59caf9f437720f82ed7a5712df0d4848c6859399f384a050175",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:578f803b30da569d376c040a7513f5173a4af54a96467cab1b97f113fefd632e",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:10c822d24e2a5e24f228a2e2b35d7c32bba2e6913dc993c132fd547174c7cc69",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:0079729bef62be0b83ba0dc93dfb14df649bad13c37cdc7c8f6f463dce2913e1",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:7a7ec3a0e9d6963d5f46b204df94df00108b989c0e576188674f2aa763339c0d",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:434d1de70f0383d39d24e379f64454ddb981bbe821f6c4bc0ebcc858cee230b7",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:60c8b384b5f5fbe842a8bf14cf63b893b16d0a2ee7e2d6a5cfc1c7e8968c888a",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:eb7cf679e57a44bedefa6191b6200acc9408ed642edf576b3b1eb6cc24c3bf6a",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:6a99138664fc0c17339ac22bb8645f033cbb705450bdbceb662d552c737ff158",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:73ad6e6659b0910a78c0674696396e1c09141a5c7c4015c11ca87db5572f3408",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:0dd123d426114b1277aeeacdea8f4408cf47e213c9797495c783c66365a44c72",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:63b4bcb70ab4f2fa5893e67aec84fff2e07d931390226776508c3cf46c5be136",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:0de60f71ee6d2a6c84010bbe213b17eb06ac82ecade8ac71b5a75607e0da29a0",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:9e12efbbd2cc2d9dde77c085b619cbd0867e5f124b9928ed823894c3a4f3568f",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "sci:sha256:f6529817c732bcd1ea8872809b6b70a9f19848c48170f2bc2e8db0c608522da6",
+   "reason": "Earlier campaign forward test of a climate-response relation (objective reference)."
+  },
+  {
+   "target": "doi:10.1073/pnas.0906865106",
+   "reason": "Schlenker and Roberts (2009): nonlinear temperature effects on US crop yields; model form tested here."
+  },
+  {
+   "target": "doi:10.1126/science.1251423",
+   "reason": "Lobell et al. (2014): rising drought sensitivity of US maize."
+  },
+  {
+   "target": "https://www.nass.usda.gov/datasets",
+   "reason": "USDA NASS Quick Stats bulk crops file qs.crops_20261110.txt.gz (county yields)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/",
+   "reason": "NOAA nClimGrid-Daily county averages (tmax, tmin, prcp)."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/",
+   "reason": "NOAA nClimGrid monthly temperature and precipitation."
+  },
+  {
+   "target": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/",
+   "reason": "Census 2024 county gazetteer internal points."
+  }
+ ]
+}
