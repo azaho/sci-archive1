@@ -1,0 +1,114 @@
+{
+ "title": "The current Copernicus OSTIA SST reanalysis does not have the 1995 and 2002 CoralTemp steps, but it shifts at four of its own bias-reference changes (1988, 1992, 2012, 2017; 60S-60N, 1982-2026)",
+ "abstract": "Question: NOAA CoralTemp v3.1, the SST behind Coral Reef Watch bleaching alerts, has mean steps on about 3 June 1995 and 17 July 2002 in its 1985-2002 part, which is the first Met Office OSTIA reanalysis (v1). Does the current Copernicus Marine OSTIA reanalysis (v2, SST_GLO_SST_L4_REP_OBSERVATIONS_010_011, 1981-2026) have these steps, and does it shift at its own documented bias-reference changes? Approach: we read all 16,344 daily OSTIA v2 fields (public 0.4-degree zarr view) at 43,200 points (60S-60N) and compared them with HadSST4.2, ERSSTv5, COBE-SST2, DOISST v2.1, CoralTemp and 210 moored buoys. We wrote the test plan first, fitted steps at the ten bias-reference dates of the product quality document with placebo dates, ran a blind break search and dated breaks with daily data. Results: OSTIA v2 does not have the 1995 and 2002 steps (-0.023 and -0.027 C at 30S-30N, placebo z -1.0 and -1.1; CoralTemp -0.084 and +0.063 on the same mask). But OSTIA v2 is 0.25-0.30 C too cold from 5 September to 13 October 1988, when it had no bias reference (z -11 to -17), 0.20-0.27 C too cold in July-December 1991 after Pinatubo, and it rises on 1 January 1992 when ATSR-1 becomes the reference. It falls by 0.055 C (60S-60N; 30S-30N 0.084) on 1 April 2012, when AATSR was lost, and rises by 0.061 C (30S-30N 0.120) on 1 January 2017 with SLSTR-A (z 3.6-5.1; same result against each in situ product, smaller at the assimilated buoys). The 1985-2024 trend excess over in situ data is small (+0.002 to +0.007 C per decade), but without the 2012 and 2017 steps 2016 becomes the third warmest year (not fifth), the 2016-2017 drop grows from -0.035 to -0.096 C and the 2005-2024 tropical trend falls by 12%. CoralTemp has no 1988 or 1991 artifact. Limitations: the in situ references share data; the daily dating of the 2012 and 2017 steps is clear only in the tropics; causes are inferred from documented dates; a 1983-1985 cold period is not explained; marine heatwave statistics were not recalculated.",
+ "keywords": [
+  "OSTIA",
+  "Copernicus Marine",
+  "SST reanalysis",
+  "CoralTemp",
+  "Coral Reef Watch",
+  "homogeneity",
+  "change points",
+  "bias correction",
+  "ATSR",
+  "AATSR",
+  "SLSTR",
+  "Pinatubo",
+  "sea surface temperature",
+  "climate data records",
+  "HadSST4",
+  "ERSSTv5",
+  "moored buoys"
+ ],
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_monthly_differences.png",
+   "caption": "Monthly OSTIA reanalysis v2 and CoralTemp v3.1 minus the in situ composite (HadSST4.2, ERSSTv5, COBE-SST2), 30S-30N and 60S-60N, and CoralTemp minus OSTIA v2. Dotted lines: OSTIA v2 bias-reference changes (CMEMS QUID Table 4). CoralTemp steps in 1995 and 2002; OSTIA v2 does not, but it dips in 1988 and 1991 and is cold from April 2012 to December 2016."
+  },
+  {
+   "path": "files/figures/fig2_daily_windows.png",
+   "caption": "Daily OSTIA v2 minus DOISST v2.1 (thin: daily; thick: 7-day mean) around the 1988 period without a bias reference, the 1991 Pinatubo period and the January 1992 ATSR-1 start, the April 2012 change to MetOp-A and the January 2017 change to SLSTR-A. Dashed lines: documented dates."
+  },
+  {
+   "path": "files/figures/fig3_step_estimates.png",
+   "caption": "Step at each documented OSTIA v2 bias-reference date (blue, joint fit against the in situ composite) and the CoralTemp 1995 and 2002 steps on the same mask (orange). Gray band: placebo +-2 SD."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:9cbad554c571ef6334abd41fdce1224da1f2da3ff813519ef49f507183b72bcc",
+   "reason": "CoralTemp steps of June 1995 and July 2002; this work confirms them and shows that the current OSTIA reanalysis v2 does not have them.",
+   "relations": [
+    "supports",
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:b36f588b797401e9be976e16eee0b8a7c017861fb0b8d39d3a0437634df7c429",
+   "reason": "CoralTemp steps of 1995, 2002 and 2008; our daily data do not resolve the date of the late-2020 step.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:d089c0513771ee76f3e22e00acc8c0acd67af87e6428ca943338379806b0dde8",
+   "reason": "CoralTemp steps of 1995, 2002 and 2008 against in situ products and buoys.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:d96591b829ab47ef10e454ce6b9ce2efb67095b3c65d04da7e45cf29aec85e5b",
+   "reason": "CoralTemp steps at the ATSR-2 and AATSR starts; this work tests the same dates in OSTIA reanalysis v2.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "reason": "Archived daily moored-buoy SST and buoy locations.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:e75ccf52e92363fec7fb7cc59864cacc7dc5c18e3a08be6970bc69f9660df60a",
+   "reason": "Analyses are anchored near assimilated in situ data; the OSTIA v2 steps are smaller at buoys.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "July 2020 DOISST step; CoralTemp minus DOISST shows it in two parts (6-8 and 16-18 July 2020).",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:d9bdf1f8fd55b950ba2f985c2d9e934d034ca6eee444716ace775b1e3b229d26",
+   "reason": "Blind joint homogenisation of seven SST products; OSTIA reanalysis v2 was not in its product set."
+  },
+  {
+   "target": "sci:sha256:b93b5f641725a35b93aae545fe514632c50f87c96781a135740caa4284434ab2",
+   "reason": "Product-minus-reference step tests at documented input dates.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:ef9c2a57a59e66e0e1ad07242f306973d558cd3485f8afb8ff466fb1fd47c074",
+   "reason": "DOISST reef heat-stress study; CoralTemp is the operational product."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "reason": "ERA5 uses operational OSTIA after September 2007; the OSTIA bias-reference dates are candidate ERA5 break dates."
+  }
+ ]
+}
