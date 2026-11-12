@@ -1,0 +1,137 @@
+{
+ "title": "English river trout density was lower below storm overflows with more spill hours, but heavy rain, spring rain and warm spells before surveys added no overflow-specific loss (1995-2024)",
+ "abstract": "Question: do storm overflows lower salmonid fish density in English rivers, and do heavy rain, a wet spring or a warm spell add a loss below overflows? Data: Environment Agency electric-fishing surveys (first-run density, 1995-2024), 15,273 overflow outlet points from EDM returns 2021-2025 routed on OS Open Rivers, E-OBS daily rain and temperature. Outlets 0-5 km upstream are the exposure; outlets 0-5 km downstream are a placebo. A plan was written before the fish models. Results: (1) No planned weather test met the support rule. In 24,118 July-October surveys at 4,716 sites, heavy-rain days in the 28 days before the survey x upstream outlets gave +0.0020 log density per day per doubling of outlets (95% CI -0.0041 to +0.0081); spring rain gave -0.0001 (SE 0.0015); a warm 28 days gave -0.0081 per C (SE 0.0037, Holm p 0.085) but -0.0048 near downstream outlets, so the overflow-specific contrast was -0.0034 (SE 0.0057). Rain lowered catches at all sites (-0.026 per day). The CI excludes losses above 0.1 within-site SD. (2) Within-site spill-year changes (2021-2025) gave no loss (+0.002, SE 0.019). (3) Between sites, salmonid density fell by 0.056 per log(1 + upstream spill hours) against 0.011 for downstream hours (difference -0.045, SE 0.010), the same in 1995-2009; the deficit came from trout, not salmon, and tolerant cyprinids were denser below outlets. (4) Post hoc, at 1,701 outlets with sites above and below, the below-minus-above difference decreased by 0.033 (SE 0.012) per log spill hour, with or without river-size and town-size controls and at network overflows without treatment works. The average level contrast changed sign with river-size controls, so we do not claim it. Conclusion: a chronic deficit that grows with overflow use, not a pulse after storms. Limitations: associations only; outlet map 2021-2025 applied to earlier years; no flow or water-quality data; air temperature, not water temperature; England only.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410203"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310304"
+  }
+ ],
+ "keywords": [
+  "storm overflows",
+  "combined sewer overflow",
+  "sewage",
+  "river fish",
+  "brown trout",
+  "Atlantic salmon",
+  "electric fishing",
+  "heavy rainfall",
+  "weather extremes",
+  "EDM",
+  "OS Open Rivers",
+  "negative control",
+  "placebo",
+  "dose-response",
+  "England",
+  "freshwater biodiversity",
+  "pollution-climate interaction",
+  "observation bias",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_map_bracketed.png",
+   "caption": "(a) EA fish sites on OS Open Rivers; red = storm-overflow outlet 0-5 km upstream. (b) Below-minus-above salmonid log density at the same outlet by the outlet's spill hours, without (red) and with (purple) river-size adjustment; 95% CIs."
+  },
+  {
+   "path": "files/figures/fig2_weather_interactions.png",
+   "caption": "Planned weather x outlet interactions (heavy rain before, spring rain, temperature anomaly, rain after as placebo) for four fish groups; red = upstream outlets, grey = downstream placebo. No overflow-specific term."
+  },
+  {
+   "path": "files/figures/fig3_between_site.png",
+   "caption": "Between-site slopes of trout and tolerant-fish density on upstream (red) and downstream placebo (grey) spill hours, two periods, three model variants; 95% CIs."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:20c1f591412acba491b4a67856cb53ba64704aa53f764cb581df45e2d7568fe3",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Source of the routing and EDM parsing code (adapted under MIT) and of the 28-day heavy-rain x upstream/downstream design for invertebrates; we apply it to fish and find no rain interaction."
+  },
+  {
+   "target": "sci:sha256:da41f9170c4ecd9671b8a1acb1bf884d2ab304e79fd0b3a981214e4bf4278310",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Invertebrate heavy-rain x overflow interaction; the same exposure gives no fish interaction."
+  },
+  {
+   "target": "sci:sha256:c1ad1c2a9ae291898008c3bc05582785147fd5919c80deeebbd6995d794c5d6d",
+   "relations": [
+    "reviews",
+    "supports"
+   ],
+   "reason": "Invertebrate between-site deficit below overflows and null spill-year effect; our fish results agree on both."
+  },
+  {
+   "target": "sci:sha256:cb613f6a3f424a2d71a02c2ca5295a9a758f71cd3ec874c532746ae3ce9f9f8e",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Earlier trout-catch weather interaction test with the same NFPD source; also null."
+  },
+  {
+   "target": "sci:sha256:d9f348606629e46cb57cf964e5333ee68a0009c68e613b84a7fc1a6748d42740",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Fish community temperature index in the same NFPD source."
+  },
+  {
+   "target": "sci:sha256:20db21aacbf6d41b59356ba72a26fa7ca4dbf1014d0f86d1492df65c6ae40fb2",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Water-quality recovery and the fish temperature index; related water-quality gradient."
+  },
+  {
+   "target": "https://environment.data.gov.uk/ecology/explorer/downloads/FW_Fish_Counts.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA NFPD fish counts, OGL v3.0."
+  },
+  {
+   "target": "https://environment.data.gov.uk/ecology/explorer/downloads/FW_Fish_Sites.zip",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EA NFPD fish sites, OGL v3.0."
+  },
+  {
+   "target": "https://www.data.gov.uk/dataset/19f6064d-7356-466f-844e-d20ea10ae9fd/event-duration-monitoring-storm-overflows-annual-returns",
+   "relations": [
+    "uses"
+   ],
+   "reason": "EDM storm overflow annual returns 2021-2025, OGL v3.0."
+  },
+  {
+   "target": "https://www.ordnancesurvey.co.uk/products/os-open-rivers",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OS Open Rivers, OGL v3.0."
+  },
+  {
+   "target": "doi:10.1029/2017JD028200",
+   "relations": [
+    "uses"
+   ],
+   "reason": "E-OBS (Cornes et al. 2018)."
+  },
+  {
+   "target": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Met Office HadUK-Grid regional monthly mean temperature (secondary exposure), OGL v3.0."
+  }
+ ]
+}
