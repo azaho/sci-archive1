@@ -1,0 +1,85 @@
+{
+  "title": "Residual correlations with RMS below 0.035 reverse pooling order in five selected leech trial models",
+  "abstract": "We tested whether single-reference spectra fix the coherence order of contact-count and equal-input pools in one linked leech circuit. The model used 35 mapped inputs, 271 contacts, unit spectral powers, and five released trials. With uncorrelated residual inputs, equal weights gave greater squared coherence in four trials and count weights in one. We expressed the comparison as a linear score of a valid residual spectral matrix. The exact RMS distances from uncorrelated residuals to a tie were 0.01138, 0.02286, 0.02143, 0.02098, and 0.03394. Every equality matrix was positive definite. A 2 percent larger perturbation reversed every order while keeping all input-to-reference values fixed. These are compatibility results, not measured residual correlations. A separate uniform pair limit was sharp in four trials; the fifth had wider bounds. Nineteen of twenty primary and sensitivity cases had sharp RMS thresholds. An independent audit checked source hashes, contact counts, 96 full spectral matrices, and synthetic cases. One animal, selected input fragments, exact summaries, unit powers, positive weights, and absent raw spectral errors limit biological inference. Original code, proof, aggregate evidence, figures, hashes, and external regeneration steps support reproduction. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "connectomics",
+    "leech",
+    "spectral coherence",
+    "anatomical pooling",
+    "residual correlation",
+    "matrix completion",
+    "robustness",
+    "structure-function"
+  ],
+  "display": [
+    {
+      "path": "files/pooling.png",
+      "caption": "Conditional coherence order of contact-count and equal-input pools in five trials of one leech circuit. Left: uncorrelated residuals. Middle: valid spectral matrices reverse every order. Right: exact RMS distance to a tie. All reference coherencies remain fixed. These are model compatibility results, not measured residual correlations or confidence intervals."
+    },
+    {
+      "path": "files/ranges.png",
+      "caption": "Separate sharp ranges of squared reference coherence for each pool. Dots assume uncorrelated residual inputs. Separate endpoints need not share one matrix. The main result instead uses one common matrix for each two-pool comparison."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.7554/eLife.61881",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of linked anatomy and voltage imaging in one leech ganglion."
+    },
+    {
+      "target": "https://github.com/wagenadl/leechem/tree/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external data source. Records and record-level derivatives remain outside this baseline publication."
+    },
+    {
+      "target": "sci:sha256:07a5d7f904386b7fc24f471a7e45d48c1687a46ecff38ebafe59f67b2c7ac8a8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses the published cohort and repeated-trial definitions as context; tests pooled spectral order rather than a count correlation."
+    },
+    {
+      "target": "sci:sha256:ce87f5ffb0d48764ec5569137996e13275aef46960b6f9ca4f7415dd6f809fca",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Its weighted-summary test and explicit spectral caveat motivate the present test of coherence of pooled standardized signals."
+    },
+    {
+      "target": "sci:sha256:0f2db6dd56764c6b5e9c3a0413c3acc28a472517f82d8daa6ec0ec68e8648bed",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses sample definitions, source retrieval metadata and the established spectral completion setup. Adds a two-pool comparison and sharp distance to a tie. No prior code or per-input tables are bundled."
+    },
+    {
+      "target": "doi:10.1038/nn.3807",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Background on covariance patterns and neural readout limits. We test coherence, not Fisher information."
+    },
+    {
+      "target": "doi:10.1093/imanum/22.3.329",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Background on valid correlation matrices and matrix nearness. No solver code reused."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/wagenadl/leechem/bee0897e8f4ef2b0a9e4cdb1a9f8ab4e3a9b2ac2/LICENSE",
+      "reason": "External repository license. Raw files and record-level derivatives are not relicensed in the bundle."
+    }
+  ]
+}
