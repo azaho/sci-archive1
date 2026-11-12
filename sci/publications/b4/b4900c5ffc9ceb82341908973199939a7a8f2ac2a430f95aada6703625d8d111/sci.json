@@ -1,0 +1,121 @@
+{
+ "title": "Kepler 2009-2013 drift forecasts of 21 binaries with changing eclipse depths fit only 33-64% of TESS 2019-2024 visits, and 10 of 24 forecast eclipse losses did not occur",
+ "abstract": "We tested if a few years of eclipse-depth change can forecast eclipses ten years later. The sample is the 22 detached Kepler eclipsing binaries with an eclipse depth variation flag (Kirk et al. 2016) and 40 matched controls. We fitted 4,532 Kepler eclipses (2009-2013) with one eclipse shape per eclipse channel and a free impact parameter |b| per eclipse. Then we made four forecasts from Kepler data only: linear and quadratic |b| drift, persistence, and a linear depth trend. We measured |b| in each TESS visit (2019-2024) with our own forced PSF photometry at Gaia DR3 positions and the Kepler shape. A |b| tolerance of 0.10, calibrated on stable controls, accepts 91% (95% range 78-97%) of control visits. For 121 informative visits of 20 binaries, the forecasts pass in only 33-64% of visits: linear drift 45% (27-63%), quadratic 33%, persistence 55%, depth trend 64% (44-82%). The linear forecast falls from 66% at 5-8 years to 36% at 10-12 years after Kepler, and it predicts eclipse loss too early: 10 of 24 eclipse channels forecast to have stopped still eclipse (for example KIC 8023317, 9715925, 5653126 and the grazing return of KIC 7289157), while 10 of 11 forecast to continue do. Two causes explain this. Partial Kepler eclipses do not fix the b zero point (13 channels are deeper in TESS than the Kepler central-eclipse model), and precession is not linear over a decade. A joint Kepler+TESS uniform-precession fit constrains the node period of 5 systems; for KIC 7955301 it gives 19.0 yr (16.5-21.8) and eclipse return in 2027.8, as in the published 19.2 yr and 2028. Limitations: TESS cutouts are complete for only 16 of 40 controls, the eclipse model is simple, and some rules were added after a first look. Eclipse-loss dates from depth or inclination drift alone, such as for HD 303514, need a dynamical model and wide uncertainty.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "eclipsing binaries",
+  "eclipse depth variation",
+  "orbital precession",
+  "hierarchical triples",
+  "Kepler",
+  "TESS",
+  "forecast verification",
+  "hindcast",
+  "nodal precession",
+  "KIC 7955301",
+  "KIC 8023317",
+  "KIC 7289157",
+  "HD 303514"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_forecast_skill.png",
+   "caption": "(a) Fraction of informative TESS visits in which each Kepler-only forecast passes, against years after Kepler, for DV binaries with significant Kepler drift (binomial 68% ranges). Grey dashed line: stable controls with persistence. (b) TESS |b| minus the linear-drift forecast per visit; nearly all detected eclipses lie below zero, so linear drift forecasts eclipse loss too early."
+  },
+  {
+   "path": "files/figures/fig1_dv_primary_gallery.png",
+   "caption": "Impact parameter |b| of the primary eclipse of each DV binary: Kepler eclipses (black, 68% ranges), Kepler-only linear forecast (blue, 16-84%), TESS visits (red = detected, orange open = not detected, bars = 68% range). Dashed line: no eclipse above b = 1 + k."
+  },
+  {
+   "path": "files/figures/fig3_precession.png",
+   "caption": "Joint Kepler+TESS uniform-precession fits. (a) Rescaled profile likelihood of the node period; dotted lines are published photodynamical values (KIC 7955301: 19.2 yr; 5653126: 225 yr; 8023317: 650 yr). (b) Best-model eclipse windows 2009-2040 for the five constrained systems with TESS visits."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0f548fc8800eab324602f4403fad8467e3c1b0d59274c06f6bc21314154e6c15",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign TESS survey that found orbital-plane changes and the HD 93683 eclipse loss; this work tests the drift-forecast idea on Kepler binaries."
+  },
+  {
+   "target": "sci:sha256:96d47af409125b7234db1e914f0900061522fc8e0d1fc46ef811acbcb5fd961b",
+   "reason": "Campaign survey of eclipse-depth changes in Gaia DR3 binaries; most short trends did not continue, in line with our forecast scores."
+  },
+  {
+   "target": "sci:sha256:d86cdb9d63aa4b20908f744a4745bc1e9fbe1a27f93ac748be2e54f6a738da5b",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "HD 93683 linear inclination drift; we test the reliability of linear drift extrapolation on Kepler binaries."
+  },
+  {
+   "target": "sci:sha256:575e53bd97d3bf41769932250f0702d481c2a7b004d3e78e63fdf9c0118d4586",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Forecast that HD 303514 eclipses can stop near 2030 from depth drift; our hindcast shows such drift forecasts predict eclipse loss too early in 10 of 24 cases."
+  },
+  {
+   "target": "sci:sha256:2f7e9f37cf9b0c374980f84c993d79da289d91bdb335277d932a356202a2dede",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Bounded precession forecast for HD 303514; our results set the expected reliability of such forecasts."
+  },
+  {
+   "target": "sci:sha256:17a4acfcd0e9e0e0247ca417d694d6a19ef64831c501ec053ecb4b070cdb6e67",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Photodynamical HD 93683 model; our results support using dynamical models rather than drift extrapolation."
+  },
+  {
+   "target": "sci:sha256:90287c1180724b1507b2f1fb15c9140e195a55877b2f7b3bd7eed8869e45b3cf",
+   "reason": "Sibling TESS timing result for the HD 303514 tertiary."
+  },
+  {
+   "target": "sci:sha256:d18fffbf28b565aadb86a340119ed23e9e3476de9475b84f6122354a81843846",
+   "reason": "Campaign forward test of Kepler third-body timing orbits in TESS; a timing analogue of this depth test."
+  },
+  {
+   "target": "doi:10.3847/0004-6256/151/3/68",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kepler EB catalogue with the eclipse depth variation (DV) flag; source of the sample."
+  },
+  {
+   "target": "doi:10.1093/mnras/stac1983",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Photodynamical models of KIC 5653126 and 8023317 (node periods 225 and 650 yr, central eclipse of 8023317 near 2023.7) used for comparison."
+  },
+  {
+   "target": "https://arxiv.org/abs/2502.09480",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Lists Kepler EBs whose eclipses vanished by TESS; our measurements agree for the overlapping systems and add a quantitative forecast test."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202244373",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "KIC 7955301 node period 19.2 yr and eclipse return 2028; our joint fit gives 19.0 yr and 2027.8."
+  }
+ ]
+}
