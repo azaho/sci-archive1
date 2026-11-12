@@ -1,0 +1,80 @@
+{
+  "title": "Bottom temperature reduced held-out community error by about 0.65 percent in two Northeast Shelf plankton assemblages",
+  "abstract": "We tested whether bottom temperature adds whole-community information beyond surface temperature, both salinities and sampling controls in NOAA EcoMon tows. The outcome was Hellinger-transformed relative density, with no thermal niche index. Three-year test blocks had a one-year training buffer. Bottom temperature reduced summed squared error by 0.647% for 40 zooplankton groups in 14,304 tows from 1992-2023 and by 0.651% for 38 larval fish taxa in 9,083 tows from 1999-2023. Conditional 95% paired block intervals were 0.516 to 0.755% and 0.485 to 0.824%. All 11 zooplankton and nine fish blocks had a gain. Gains stayed positive with finer cells, monthly intercepts, shallow tows, presence weights, flexible surface controls and earlier training years only. Two taxa carried 79% of the zooplankton gain. Removing the two copepods used in a prior contrast still gave a 0.317% gain. All four environmental measures together cut baseline error by only 2.05% and 1.53%. Thus depth conditions added small repeated information, but high thermal-index transfer did not imply that temperature predicts much of total composition. Water transport, mixing and observation effects remain possible explanations. The intervals resample scored losses without refitting and can omit model uncertainty. This is a conditional hindcast from one shelf, not a causal climate forecast. The package includes original code, aggregate losses, source hashes, checks and retrieval instructions. Source records remain external.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.PE"
+    }
+  ],
+  "keywords": [
+    "EcoMon",
+    "community composition",
+    "bottom temperature",
+    "climate tracking",
+    "blocked cross-validation",
+    "zooplankton",
+    "fish larvae",
+    "Hellinger transform"
+  ],
+  "display": [
+    {
+      "path": "files/bottom_gain.png",
+      "caption": "Bottom-temperature gains beyond surface temperature, both salinities and sampling controls. Bars show conditional 95% paired three-year block intervals from scored losses. These intervals do not include full refitting uncertainty."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:dd5e171c56fec890e8a03bcdec7d802a97a6351b3bd7ea0c320dc9d8f935c2a0",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Same NOAA source and marine high-transfer case. We add a whole-community held-out test without thermal indices. These are overlapping data."
+    },
+    {
+      "target": "sci:sha256:c0599eecadb96a287faea77a364f3122107a82663766cfc242100e1de41979d3",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Extends its two-copepod bottom-temperature association to blocked community prediction. The prediction gains are small."
+    },
+    {
+      "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Weak thermal tracking motivates the contrast with plankton; we do not reuse its network summary data."
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/archive/accession/0187513",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA NEFSC EcoMon plankton CSV v3.10, archive 4.4. Exact URL and hash are preserved."
+    },
+    {
+      "target": "https://www.fisheries.noaa.gov/resource/data/ecosystem-monitoring-northeast-us-continental-shelf-plankton-dataset",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers",
+      "reason": "External government source rights and attribution."
+    },
+    {
+      "target": "doi:10.1371/journal.pone.0087720",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior copepod distribution and environmental study; reviewed through prior campaign discussion and public source."
+    },
+    {
+      "target": "doi:10.1029/2024JC022029",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior Northeast Shelf phytoplankton study describes several linked environmental drivers. It is context, not a direct replication target."
+    }
+  ]
+}
