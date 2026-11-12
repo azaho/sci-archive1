@@ -1,0 +1,106 @@
+{
+  "title": "Two-frequency correction raised the lowest median spectral weight error in two passive worm models",
+  "abstract": "We tested a spectral direct-weight score in passive models of two partial adult worm electrical maps. Each model had 180 cells and 90 observed cells. Known unequal independent white source noise allows the imaginary spectral tail to identify reciprocal weights despite hidden cells. We derived exact error for finite proper complex Gaussian spectral samples. Across eight fixed mask and noise settings, the lowest median relative root mean squared error over 33 frequencies was 0.281 and 0.316 at one million samples. A two-frequency correction with the same total samples raised these values to 0.349 and 0.390. It raised the minimum median error at all four tested sample counts. The correction reduced bias faster but increased high-frequency variance by a factor 130/9 at equal total sample count. Generic high-frequency root-error balances are m^(-1/3) for one frequency and m^(-2/5) for the correction; these are not lower bounds on all inference methods. Independent simulations checked the variance formula. Correlated drive gave a positive false weight in a three-cell control. This is a method benchmark, not measured neural activity. Partial anatomy, assumed conductances, known source noise and ideal spectral sampling limit biological use. The bundle contains original code, proofs, aggregate evidence, figures and exact external-input hashes. External records are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "electrical synapses",
+    "spectral inference",
+    "hidden neurons",
+    "sampling error",
+    "Richardson extrapolation",
+    "C. elegans",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact-spectrum bias falls with frequency while finite spectral-sampling error rises in two partial worm map models. Lines are medians over eight assumed settings; shading is the middle half."
+    },
+    {
+      "path": "files/comparison.png",
+      "caption": "At equal total ideal sample count, two-frequency correction gives a larger grid-minimum median weight error at all four tested sample counts in both maps."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:f50d61373173d9c483f637b695ad39cc42b2a8ae9934889f9ebc89579957a940",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact noise-corrected covariance-curvature result motivates this finite spectral-sampling extension. No code or numerical tables reused."
+    },
+    {
+      "target": "sci:sha256:7eaecf41e966947b23e2700f98253e80b296610b49d25481b66f3c6411cf27d1",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Driven-port high-frequency bias and imposed error benchmark; compare different sampling assumptions."
+    },
+    {
+      "target": "sci:sha256:832aad3df798a5cc88b1fb7041dd1c556b5a7cb175806817458cd85b2aab7b7d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Driven-transfer benchmark and shared passive model convention."
+    },
+    {
+      "target": "sci:sha256:729c11b8c6980b51e5c8ee88a83af14c919b3ac9cf112dfcc904677ece3fbb76",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Exact equal-noise short-lag reference."
+    },
+    {
+      "target": "sci:sha256:2fdc1822eef36ec9966ab6ea7940d16ecb09bec59170182c6db6209c6bcfebec",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Noise-driven lag asymmetry reference."
+    },
+    {
+      "target": "sci:sha256:f8090506bc266c736e7d6aa90b55814294323745b12a69455ccc1af7b3b1b4f9",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Full-observation covariance and known-noise reference."
+    },
+    {
+      "target": "sci:sha256:969c576e0c654031e6594e4daa1a1ebb98323cdf5eda443bc426df0e40607877",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Intervention spectral method with different protections and assumptions."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8"
+    },
+    {
+      "target": "doi:10.48550/arXiv.1308.2248"
+    },
+    {
+      "target": "doi:10.48550/arXiv.2012.04175"
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external electrical-annotation input; raw and record-level data remain outside the bundle."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Pinned external electrical-annotation input; raw and record-level data remain outside the bundle."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
