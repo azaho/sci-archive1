@@ -1,0 +1,137 @@
+{
+  "title": "GDAS foundation SST fell 0.077 C at the November 2022 GFS upgrade, and its later cold shift reached NCEP R1 at 60 S to 60 N",
+  "abstract": "We trace the larger recent NCEP R1 cold offset to upstream GDAS foundation sea surface temperature (SST). At 12 UTC on 29 November 2022, GDAS foundation SST falls 0.0768 C in six hours over 7,393 fixed open-ocean cells at 60 S to 60 N. This is the documented GFS v16.3 implementation cycle. The change is -0.1365 C at 20 S to 20 N, -0.1288 C at 40 to 60 N and +0.0347 C at 40 to 60 S. In 24 mid-month samples in 2022 and 2023, R1 matches the foundation field best three calendar days later. Eight seven-day change tests give the same alignment. With this alignment, the 2023-minus-2022 mean error change relative to OISST is -0.1644 C in GDAS and -0.1602 C in R1. The residual is +0.0041 C, with a conditional paired-month block range of -0.0010 to +0.0095 C. The spatial error-change patterns have correlation 0.951 and slope 0.988. Thus most of the later cold change is upstream of R1. The source step identifies one transition inside the broader drift. Several system changes occurred together, so one cause cannot be isolated. The delay can include time averaging and does not prove use of one unchanged old field. Selected dates, two years, shared observations, approximate remapping and the lack of a controlled rerun limit inference. Code, exact source-range hashes, aggregate results, figures and an independent numerical audit are included.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "SST",
+    "NCEP R1",
+    "GDAS",
+    "NSST",
+    "GFS v16.3",
+    "boundary conditions",
+    "data homogeneity",
+    "time alignment",
+    "source provenance"
+  ],
+  "display": [
+    {
+      "path": "files/results/main.png",
+      "caption": "A fixed open-ocean test finds a source step at the 29 November 2022 upgrade cycle, a three-day product alignment and transfer of the later cold offset."
+    },
+    {
+      "path": "files/results/maps.png",
+      "caption": "The 2023-minus-2022 SST error-change patterns in GDAS foundation SST and R1 agree across 12 paired mid-month samples. The last map shows the residual."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "Prior R1 and R2 SST boundary errors and the unresolved larger error after 2022 motivate the source test."
+    },
+    {
+      "target": "sci:sha256:e4fe7b3760f831388b503a274dded4798644bb1e7d0bf31b423fab69c6dc7eee",
+      "relations": [
+        "supports",
+        "reviews"
+      ],
+      "reason": "Prior direct mooring check and inconclusive operational GFS skin proxy motivate use of the actual GDAS foundation field."
+    },
+    {
+      "target": "sci:sha256:887d667a145a65409172a167074e576c13b161e2287dcf1bbf50ced28ea11955",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence shows the boundary error in an ocean analysis. We do not recalculate those impacts."
+    },
+    {
+      "target": "sci:sha256:dc0ebb92ae01dfa80a9ab6a00dee79747f200f3da207e98892ce1be67a040be4",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This larger-scale model trend-pattern comparison remains outside the present two-year source test."
+    },
+    {
+      "target": "doi:10.1007/s00382-026-08375-x",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior evidence of NSST cold bias and propagation into CFSR and seasonal ENSO forecasts. That general bias is not a new finding here."
+    },
+    {
+      "target": "doi:10.25923/rj6c-rk11",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The NOAA workshop digest contains the earlier NSST SST comparison and CFSR source-switch evidence."
+    },
+    {
+      "target": "https://www.weather.gov/media/notification/pdf2/scn20-10nsst_1.0.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The 2020 notice states that CDAS SST output changes to GDAS foundation SST."
+    },
+    {
+      "target": "https://www.weather.gov/media/notification/pdf2/scn22-104_gfs.v16.3.0_aaa.pdf",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The notice gives 29 November 2022 at 12 UTC as the GFS v16.3 implementation cycle and lists NSST changes."
+    },
+    {
+      "target": "https://www.nco.ncep.noaa.gov/pmb/changes/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The implementation list also records an observation-processing update on the same date."
+    },
+    {
+      "target": "https://noaa-emcufs-utils.readthedocs.io/en/latest/ufs_utils.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "The documentation separates foundation and skin temperature and explains the limitations of GRIB2 surface-temperature proxies."
+    },
+    {
+      "target": "https://registry.opendata.aws/noaa-gfs-bdp-pds/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GDAS surface analysis source archive and open-data terms. Exact object URLs and used-range hashes are recorded."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "R1 source data, specifications and use terms."
+    },
+    {
+      "target": "https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/",
+      "relations": [
+        "uses"
+      ],
+      "reason": "OISST daily reference source. Exact source snapshots are recorded in source_files.json."
+    },
+    {
+      "target": "doi:10.1175/JCLI-D-20-0166.1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "OISST v2.1 product method."
+    },
+    {
+      "target": "https://www.weather.gov/disclaimer",
+      "reason": "NOAA/NWS public-domain and attribution terms."
+    }
+  ]
+}

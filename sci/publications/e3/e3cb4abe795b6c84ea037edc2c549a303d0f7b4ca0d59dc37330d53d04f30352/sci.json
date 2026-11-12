@@ -1,0 +1,136 @@
+{
+ "title": "A one-time cloud-driven TOA step at the 1981 HadISST1-to-OI v2 splice explains the large AMIPII historical pattern effect in ECHAM6.3 runs; linear Green's functions miss the step",
+ "abstract": "Question: the AMIPII SST dataset (HadISST1 to October 1981, NOAA OI SST v2 after) gives a much larger historical pattern effect than other SST datasets in atmosphere-model runs with pre-industrial forcing. This value enters climate-sensitivity estimates. What causes the AMIPII excess? Approach: we used the published ECHAM6.3 runs of Modak and Mauritsen (2023): seven SST datasets, five members each, 1871-2017, same sea ice. The AMIPII and HadISST1 runs have the same SST anomalies before November 1981. We fitted the step in top-of-atmosphere (TOA) net flux at the splice, removed it, and used member and block bootstraps. We applied six GFMIP Green's functions to the same SST, and examined the PCMDI-AMIP forcing files for CMIP6/CMIP7 (1.1.9/1.1.10) and CMIP7Plus (Had1p1, ERSST5, OI2p1). Results: the 1871-2017 feedback is -1.91 W m-2 K-1 with AMIPII and -1.46 to -1.73 with the other datasets (pattern effect 0.43 against 0.23 for HadISST1). The AMIPII-minus-HadISST1 TOA flux falls by 0.26 W m-2 (95% -0.33 to -0.19) at the splice and then stays constant, with +0.03 K global temperature change. Shortwave cloud effect gives the drop (-0.32 W m-2). Removal of this one step explains 124% (79-161%) of the feedback difference to HadISST1 and 112% (86-134%) of that to the mean of five other datasets. In the 1871-2010 window of Andrews et al. (2018), the pattern effect goes from 0.44 to 0.18 (HadISST1 0.16). After 1981 the two runs have the same feedback (-2.67, -2.63). The step makes the 1979-2014 (CMIP6 amip) feedback 0.12 more negative. Green's functions do not show the step: on the same SST they give -0.01 to -0.13 W m-2 (ECHAM6 -0.04), and their dataset feedbacks do not correlate with the model (r = -0.34 to 0.21). The CMIP7Plus OI2p1 prototype has a separate -0.125 K (60S-60N) SST step in September 1981. Limitations: one model; the SST feature that causes the step is not resolved; we do not know which dataset is correct in 1982; sea ice is AMIPII in all runs; pattern effects use one abrupt-4xCO2 value.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "pattern effect",
+  "radiative feedback",
+  "AMIPII",
+  "PCMDI-AMIP",
+  "CMIP7 AMIP forcing",
+  "HadISST1",
+  "OI SST v2",
+  "dataset splice",
+  "ECHAM6.3",
+  "observedSST-piForcing",
+  "Green's function",
+  "GFMIP",
+  "climate sensitivity",
+  "shortwave cloud",
+  "OI2p1",
+  "sea surface temperature"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_agcm_splice_step.png",
+   "caption": "ECHAM6.3 TOA net flux difference, AMIPII minus HadISST1 (same SST anomalies before November 1981) and minus the mean of five other datasets: a step of about -0.21 to -0.26 W m-2 at the splice, with almost no change in global temperature."
+  },
+  {
+   "path": "files/figures/fig2_gf_vs_agcm.png",
+   "caption": "Left: 1871-2017 feedback of seven SST datasets in ECHAM6.3 and in Green's functions applied to the same SST; the open circle is AMIPII with the splice step removed. Right: the splice step in six Green's functions and in the full model."
+  },
+  {
+   "path": "files/figures/fig4_maps_oi2p1.png",
+   "caption": "(a) SST step that ECHAM6.3 saw at the splice (AMIPII minus HadISST1). (b) Global-mean splice steps in the AMIP 1.1.9/1.1.10 and CMIP7Plus OI2p1 forcing files."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5281/zenodo.7106446",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Published ECHAM6.3 observedSST-piForcing runs for seven SST datasets (CC BY 4.0); all full-model results come from these data."
+  },
+  {
+   "target": "doi:10.5194/acp-23-7535-2023",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Source study of the runs; we reproduce its AMIPII outlier and show its cause in the same data."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-19-0941.1",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Attributed the AMIPII excess to post-1980 OI v2 warming patterns; we find a one-time step at the splice instead."
+  },
+  {
+   "target": "doi:10.1029/2018GL078887",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "AMIPII-based historical pattern effect; we test the effect of the splice in its 1871-2010 window for one model."
+  },
+  {
+   "target": "doi:10.1029/2022JD036675",
+   "relations": [],
+   "reason": "Multi-model historical feedback with observed SST."
+  },
+  {
+   "target": "doi:10.1029/2023MS003700",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GFMIP Green's functions."
+  },
+  {
+   "target": "doi:10.1175/2008JCLI2292.1",
+   "relations": [],
+   "reason": "AMIPII merged SST and sea-ice dataset."
+  },
+  {
+   "target": "sci:sha256:78d7f2e0e904a30d9d8856aef2e045507dd6f1c6621614f0637521274e3b8db2",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Green's-function Jacobians (gf_boxes.npz, gfmip_jacobians_native.npz)."
+  },
+  {
+   "target": "sci:sha256:36b3c230b0ab02a3d4ac5373b60171f5d855dfb8ed5c1f7fdaa5ca172fea8faf",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Found the splice pattern step with Green's functions (+0.09 W m-2 K-1 for 1870-2014); the full model gives about three times more (+0.26), so its estimate is too small."
+  },
+  {
+   "target": "sci:sha256:121acf9e61a901f817dceaa1864a369e0dcb941ed0849245cddd1a32f8521ce6",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "ECHAM6 Green's function results; here the ECHAM6 Green's function does not reproduce ECHAM6.3 dataset differences."
+  },
+  {
+   "target": "sci:sha256:a44b36702111284ba4f183efcafc73befc2a416e084ac53aaf82aa64c65dc069",
+   "relations": [],
+   "reason": "HadISST1 and AMIP drift; context for which dataset is correct."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "relations": [],
+   "reason": "Later OI v2 steps in the same AMIP forcing."
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "relations": [],
+   "reason": "CMIP7Plus OI2p1 prototype; we add its September 1981 global-mean splice step."
+  },
+  {
+   "target": "sci:sha256:c70ae3893b932058abf9594187542a45ee3a9d602699ada03df1584c2f1019d5",
+   "relations": [],
+   "reason": "OI2p1 prototype pattern term."
+  },
+  {
+   "target": "sci:sha256:dc0ebb92ae01dfa80a9ab6a00dee79747f200f3da207e98892ce1be67a040be4",
+   "relations": [],
+   "reason": "Observed-versus-model pattern-effect gap."
+  }
+ ]
+}

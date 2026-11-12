@@ -1,0 +1,111 @@
+{
+ "title": "The February 2020 cold step in NCEP R1, R2 and GODAS sea temperature agrees with the documented NCEP change to the NSST analysis; GODAS keeps one third, and Argo puts back 96% of the heat loss",
+ "abstract": "Question: earlier campaign studies found that the SST input of the NCEP R1 and R2 reanalyses and of the NCEP GODAS ocean analysis became too cold on 11 February 2020, and said that the cause was not documented. Which input change causes the step, does its pattern agree with that cause, and what does GODAS keep? Approach: we compared GODAS monthly temperature (to 459 m) and surface heat flux (2008-2023, CPC GRIB) with RG Argo, five SST products, R2 skin temperature and R1/R2 fluxes, read the NCEP service notice, and used published R1 6-hourly and CFSv2 series. Results: NWS Service Change Notice 20-10 replaced the SSTOI and RTG-SST analyses with interpolated GDAS NSST foundation temperature in the CDAS SST file from the 12 UTC cycle on or about 11 February 2020. The R1 global SST changes at 06 UTC that day (-0.21 C, 93% of points; next largest 2020 change 0.05 C). After the change, R2 and GODAS lose the November 2021 OI SST v2 warm month (+0.22 C in OI v2, -0.02 C in both). The R2 step against in situ data is -0.02 to -0.06 C in the tropics and -0.22 to -0.27 C at 20-60N and 40-60S, largest in winter (-0.41 C at 40-60S in June). This is the cold mid- and high-latitude NSST bias that NOAA CPC reported for CFSR. It is not the diurnal bulk-minus-foundation difference, which is largest in the tropics and in summer. GODAS 5 m keeps 27-43% of the step at 60S-60N (-0.03 to -0.07 C), mostly above 60 m. THFLX minus R2 flux follows GODAS-minus-R2 SST at -62 to -96 W m-2 K-1 (expected -95 for 5-day relaxation of 10 m), which confirms sci:sha256:887d667a. The relaxation removes 7.1 W m-2 at 60S-60N (15 W m-2 at 40-60S) after February 2020, but 96% of this heat does not leave the GODAS ocean: Argo assimilation puts it back. The July 2018 OI v2 Southern Ocean step also entered R2 and GODAS; at 40-60S, 0-120E GODAS keeps -0.11 C against Argo and loses 1.9 ZJ in 0-303 m. Limitations: we did not compare with NSST fields directly; Argo is assimilated by GODAS; the CFSv2 series come from another study; the 2023 window has 5 months.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370803"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "GODAS",
+  "NSST",
+  "NCEP Reanalysis 1",
+  "NCEP Reanalysis 2",
+  "CFSv2",
+  "SST boundary data",
+  "data artifact",
+  "SST relaxation",
+  "surface heat flux",
+  "Argo",
+  "OI SST v2",
+  "service change notice",
+  "ocean reanalysis",
+  "heat budget"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig5_nsst_attribution.png",
+   "caption": "Attribution of the February 2020 step. (a) R1 6-hourly 60S-60N ocean SST and the effective time of NWS SCN 20-10 (SSTOI/RTG-SST to NSST). (b) Step by latitude band in R2 skin, GODAS 5 m, R1 and CFSv2. (c) R2 skin step by calendar month: small in the tropics, large at middle and high latitudes in winter."
+  },
+  {
+   "path": "files/figures/fig1_timeseries.png",
+   "caption": "(a) 40-60S, 0-120E: OI SST v2, R2 skin and GODAS 5 m minus RG Argo. (b) 60S-60N: the same minus the ERSSTv5/COBE-SST2 mean. (c) GODAS THFLX minus R2 net flux (relaxation term) and R2 net flux. Dotted lines: July 2018, 11 February 2020, December 2022, July 2023."
+  },
+  {
+   "path": "files/figures/fig2_relaxation_identity.png",
+   "caption": "GODAS THFLX minus R2 net flux against GODAS 5 m minus R2 skin temperature (monthly regional anomalies, 2008-2023) and fitted coefficients before and after February 2020; the line is a 10 m layer relaxed in 5 days (-95 W m-2 K-1)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:6258279f2ef101083021b66271044f19081f29276af085ab25d3c1bfe23f2482",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Found the February 2020 R1/R2 SST step; we use its published R1 and CFSv2 band series and identify the documented cause."
+  },
+  {
+   "target": "sci:sha256:b44c67de760c9fbff5746c78daa25e8779d62b66996c5df038e37710f4592842",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Dated the R1 SST change to 06 UTC 11 February 2020; we use its 6-hourly series and match it to NWS SCN 20-10."
+  },
+  {
+   "target": "sci:sha256:887d667a145a65409172a167074e576c13b161e2287dcf1bbf50ced28ea11955",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Independent replication of the GODAS relaxation identity (-91 W m-2 K-1) and the one-third surface transfer; we add the cause, the heat-budget residual and the sector detail of the 2018 step."
+  },
+  {
+   "target": "sci:sha256:0ce555cd8795b1293149ce39fa7662af47ac82925c41e8327f26f02507cb0de0",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Found the July 2018 OI SST v2 Southern Ocean step; we show that it also entered R2 and GODAS."
+  },
+  {
+   "target": "sci:sha256:642d8851529d55fbc041c99de38ed94bdd6fbfbca206d6a0ddf304b242da48cc",
+   "reason": "Context: SST input steps in AMIP boundary forcing."
+  },
+  {
+   "target": "sci:sha256:9fca62cd8472d63d48b27ab8390b65ee3e06360adfbc14fea607fedf11a3e03a",
+   "reason": "DOISST v2.1 July 2020 warm step; the reason DOISST is not an F2020 reference."
+  },
+  {
+   "target": "sci:sha256:1c3508ea4870f22f35f29b2a0f762127aeecff39a38bf7f95d0ee58bad1707cf",
+   "reason": "Found the 2016 warm step in the RG Argo grid; we avoid comparisons that cross 2016."
+  },
+  {
+   "target": "https://www.weather.gov/media/notification/pdf2/scn20-10nsst_1.0.pdf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NWS Service Change Notice 20-10: NSST replaces SSTOI and RTG-SST, including the CDAS SST output, on or about 11 February 2020."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/outreach/CDPW/46/sessions/presentations/session6_oral4.pdf",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "NOAA CPC: NSST is the CFSR SST analysis since 11 February 2020 and is much colder than other SST products at high latitudes."
+  },
+  {
+   "target": "doi:10.1016/j.pocean.2009.03.004",
+   "relations": [
+    "uses"
+   ],
+   "reason": "RG Argo climatology."
+  }
+ ]
+}
