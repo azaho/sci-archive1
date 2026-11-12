@@ -1,0 +1,143 @@
+{
+ "title": "Fly connections with 1 to 4 synapses repeat on the other brain side and in a second fly far above matched-overlap baselines, and a whole-brain spiking model needs their specific targets",
+ "abstract": "Question: are fly connections below the common 5-synapse threshold reproducible wiring, and does a whole-brain model need them? In the FlyWire v783 release table, 1-4 synapse neuron pairs are 82% of connected pairs and 37% of synapses. Approach: we used cell types with one neuron per brain side (4,441 in FlyWire, 4,230 in the male CNS v1.0). For each connection we asked if the mirror connection is present on the other side, and in the other fly, and compared this with unconnected pairs that have the same expected contact opportunity (neuropil overlap in FlyWire, neuron totals in the male CNS). Results: a FlyWire 1-synapse connection was present on the other side in 31.2% of pairs against a 5.0% matched baseline; 2, 3 and 4 synapses gave 51%, 64% and 73%. The male CNS (FIB-SEM, other detector) gave 31.6% against 1.3%. Between flies, 37.7% of FlyWire 1-synapse connections were present in the male CNS (baseline 1.7%). An identical-wiring Poisson model limits reproduction of a 1-synapse connection to about 0.39-0.45; the observed values are 70-79% of this ceiling. 1-synapse connections found by only one of two FlyWire detectors still repeated in 18.5% of pairs (baseline 4.7%). In the Shiu et al. 2024 leaky integrate-and-fire model (10 sensory inputs per side, 19 sparse responses), removal of 1-4 synapse connections gave a median Jaccard overlap of active neurons of 0.72 with the full model against 0.94 between trial halves (p = 8e-6) and kept 76% of active neurons. A shuffle of weak-connection targets that keeps each neuron's weak input and output totals gave the same loss (0.71-0.73), so the model uses the specific weak routes. Random loss of the same synapse total gave 0.35. Results repeated at 150 Hz input. The sugar-to-MN9 prediction survived removal (62 vs 60 spikes/s). Limitations: neurons of singleton types are 6% of FlyWire neurons; baselines use neuropil-level or neuron-total overlap, not fine arbor contact; repeated systematic detection errors are not fully excluded; model results are for one LIF model with 10 trials and 10 sensory types. Conclusion: most 1-4 synapse connections are stereotyped wiring whose non-reproduction is mostly sampling, and a 5-synapse threshold removes specific routes that change whole-brain model responses.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "connectome",
+  "FlyWire",
+  "male CNS",
+  "weak connections",
+  "synapse threshold",
+  "reproducibility",
+  "stereotypy",
+  "synapse detection",
+  "leaky integrate-and-fire",
+  "whole-brain model",
+  "structure and function",
+  "null model",
+  "Poisson sampling"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_weak_edge_reproduction.png",
+   "caption": "Reproduction of fly connections by synapse count on the other brain side (FlyWire, male CNS) and between flies, against matched-overlap baselines and an identical-wiring Poisson ceiling; lift with 95% intervals; detector split."
+  },
+  {
+   "path": "files/figures/fig2_model_weak_edges.png",
+   "caption": "Shiu et al. FlyWire LIF model: agreement of active neurons with the full model after removal of 1-4 synapse connections, target shuffle, random synapse loss and input restoration, at matched trial noise; response size; weak-input share of neurons lost after removal."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-024-07763-9",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Shiu et al. 2024 whole-brain LIF model, parameters and FlyWire 783 model input; we test its dependence on 1-4 synapse connections."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire connectome (Dorkenwald et al. 2024), release synapse table."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell types and hemisphere matching (Schlegel et al. 2024); reported that stronger connections repeat more often."
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01183-7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Buhmann et al. synapse detector used for the FlyWire release table."
+  },
+  {
+   "target": "doi:10.1101/2025.10.09.680999",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 connectome (Janelia FlyEM), second fly."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 release connection table, used to check totals."
+  },
+  {
+   "target": "https://storage.googleapis.com/flywire-data/codex/data/fafb/783/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire Codex v783 no-threshold synapse tables of two detectors, cell types and sides."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Male CNS v1.0 flat connectome weights and body annotations."
+  },
+  {
+   "target": "sci:sha256:3820a2c88d33b5bd58618e4dc1d2168bef13c4daec6927b9ba6bac2d3c1c992f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Validated numba re-implementation of the Shiu model (lifnb.py) and stimulus definitions (stimuli.py), reused unchanged."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "reason": "FlyWire vs BANC test of the same model; context for model robustness."
+  },
+  {
+   "target": "sci:sha256:34240293be2875909e543b5c7111c440630cffa6ec0f2330244cddb27956b272",
+   "reason": "Shiu model taste-to-MN9 tests across maps and sides; context."
+  },
+  {
+   "target": "sci:sha256:d703603c5094df419c48226c54fd12000965efdbbbfdf8e0acab2ab99cdae46d",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Left-right count excess shared by two FlyWire detectors, including weak connections; we add a presence test with matched overlap, a second fly and a model test."
+  },
+  {
+   "target": "sci:sha256:1d90e6cc44dfa10a3d57a80748a0218d6e45d79ea8d0e2be280d0ec595134a88",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Between-animal count differences in three fly connectomes; related count-variation analysis."
+  },
+  {
+   "target": "sci:sha256:fc45a3bbacfe312efc4feb894ffe1069894afd046e9d4dab9f1dba9dcc0e9f69",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Fly homologous counts vary more than Poisson; our reproduction is below the identical-wiring Poisson ceiling, in agreement."
+  },
+  {
+   "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+   "reason": "Columnar synapse-count variability in two fly eyes; related."
+  },
+  {
+   "target": "sci:sha256:4a91bd9716cd2fd6a09e0d3c12d4a46a29969a8aab44398cdde69d399b2cce96",
+   "reason": "Comparison of the two FlyWire synapse detectors for visual input profiles; proposed follow-up data."
+  },
+  {
+   "target": "sci:sha256:6aa586be678042493c483e5611bb22e040349f193d620474ae7a75fa4f00de3b",
+   "reason": "Fly visual flicker activity data set for a proposed follow-up test of weak connections with recordings."
+  }
+ ]
+}
