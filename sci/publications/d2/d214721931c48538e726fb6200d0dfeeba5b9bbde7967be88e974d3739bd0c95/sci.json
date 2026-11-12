@@ -1,0 +1,58 @@
+{
+  "title": "Fixed cell counts permit 66 to 99 reciprocal response pairs in 3462 selected worm pairs",
+  "abstract": "We tested whether ambiguous response labels can change reciprocity while each neuron keeps its detected input and output counts. We linked the Randi wild-type response atlas to cell coverage in two adult worm wiring maps. In 3462 pairs with at least three observations in each direction, the detection rule gave 84 reciprocal pairs. Detection-only labels were fixed at one and equivalence-only labels at zero. Both-test and neither-test labels were free. Exact binary optimization gave 66 to 99 reciprocal pairs with all cell counts unchanged. All eight solves across four observation thresholds had closed bounds. Ten observations gave 44 to 44 reciprocal pairs in 586 pairs. Exhaustive small-graph tests and independent witness checks passed. These are bounds on an operational label, not confidence intervals for true connectivity. Pooled animals, a chosen equivalence margin, selected coverage and exact counts limit biological use. Original code, aggregate evidence, source hashes and external retrieval steps support reproduction. External records are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "reciprocity",
+    "equivalence testing",
+    "fixed cell counts",
+    "integer optimization",
+    "response labels"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Exact reciprocal count bounds with fixed cell input and output counts. Points show the atlas detection rule. Observation thresholds select different overlapping samples."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/tree/b2e13d88b670efcb3438aeacba2ad4bd6c383933",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "sci:sha256:24d8cb6740a9859d5283a93da0026ff8e0946c04d2e594740329f91b9a749cbd",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior reverse-response prediction test. We test exact reciprocal-count bounds under label ambiguity."
+    },
+    {
+      "target": "sci:sha256:b7cc356be5a59bdde854a0fe622c09bfdc84854fbe8e7774ab660fb9f5636c20",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its operational dual-test label convention. Adds coupled cell-count constraints and a reciprocal-pair objective. No code or tables copied."
+    }
+  ]
+}
