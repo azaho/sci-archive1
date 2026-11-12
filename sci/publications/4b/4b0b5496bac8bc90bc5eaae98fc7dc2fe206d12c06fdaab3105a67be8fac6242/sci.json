@@ -1,0 +1,97 @@
+{
+ "title": "A connectome rate model of the larval zebrafish eye-position integrator did not predict where imaged cells are sensitive and gave the opposite sign for the sensitivity-persistence relation",
+ "abstract": "We tested the published connectome rate model of the larval zebrafish hindbrain eye-position integrator (Vishwanathan et al. 2024) beyond the population distributions that it was shown to match. The EM wiring comes from one fish. Calcium-imaging data come from 20 other fish. Both are registered to the Z-brain atlas. In the overlap region (39 EM integrator somas, 177 imaged integrator cells), model sensitivity did not predict the local imaging sensitivity (Spearman rho -0.17, 95% CI -0.48 to 0.33). It was not positive in any of eight variants. Imaged sensitivity increased with depth; the model depth slope was negative or uncertain. Model and imaging persistence maps agreed weakly (rho +0.30, CI -0.10 to 0.60), but shuffles that kept the two oculomotor submodules gave the same value. In an exploratory test that needs no registration, model cells with higher sensitivity had more persistent activity (rho +0.82; all 600 degree-preserving wiring shuffles stayed positive, minimum +0.46). Imaged cells with higher sensitivity had less persistent activity (rho -0.28, CI -0.36 to -0.20, n 584). This sign held for later windows, in each depth quartile and without ramping cells. The model predicts 3.4 times higher sensitivity for abducens internuclear than motor neurons; eight imaged internuclear cells were not clearly more sensitive. Limitations: one EM animal, no fish identifiers in the imaging files, a small overlap region, unknown registration error and calcium-indicator kinetics. The 178 EM cells without somas in the volume were excluded from the primary spatial test. Code, aggregate results and figures are included; external data stay outside the bundle with a pinned retrieval script and hashes.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "larval zebrafish",
+  "connectomics",
+  "oculomotor integrator",
+  "persistent activity",
+  "line attractor",
+  "eye position",
+  "structure-function",
+  "rate model",
+  "calcium imaging",
+  "wiring shuffle",
+  "Z-brain"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_sensitivity_persistence.png",
+   "caption": "Sensitivity-persistence relation. A: median post-saccade decay ratio (5.3-6 s over 2.3-3 s) by sensitivity quintile, imaging integrator cells (blue, n 585) and connectome-model oculomotor cells (orange, n 255); bars are bootstrap 95% intervals of the median. B: Spearman rho between sensitivity and decay ratio for three window pairs (imaging with bootstrap CI; model with random positive input), and 95% ranges of 200 wiring shuffles each (1, 2, 7 blocks, published input, main window). The signs are opposite."
+  },
+  {
+   "path": "files/figures/fig1_spatial_tests.png",
+   "caption": "Spatial tests, soma-only primary analysis. A: coverage of imaged integrator cells and EM integrator somas in Z-brain space. B, C: standardised rank slopes of sensitivity and persistence on rostro-caudal, lateral and depth coordinates in the overlap region (bootstrap 95% CI) with shuffle 95% ranges. D: map agreement between model values and local imaging means with shuffle ranges. E: sensitivity percentile by depth. F: abducens sensitivity relative to integrator cells, model versus imaging."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41593-024-01784-3",
+   "relations": [
+    "uses",
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Source of the wiring diagram and the rate model. We re-implemented the model and tested predictions beyond the population distributions that the paper compared."
+  },
+  {
+   "target": "doi:10.1038/s41467-021-24336-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source study of the calcium-imaging sensitivity values and saccade-triggered averages (20 fish)."
+  },
+  {
+   "target": "doi:10.1016/j.cub.2017.06.028",
+   "reason": "Original EM data set and functionally identified seed neurons."
+  },
+  {
+   "target": "doi:10.1038/nmeth.3581",
+   "reason": "Z-brain atlas used as the common coordinate frame."
+  },
+  {
+   "target": "https://github.com/goldman-lab/Connectome-Model/tree/cb7eb5c9c70d18de295e07ce9b5984e53b150114",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned model code and data files (not bundled; no license file)."
+  },
+  {
+   "target": "https://github.com/ashwinvish/Zfish_recon/tree/97d9cbeb65ab21205e5500970d0ea74fbc74c00f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Pinned Z-brain soma coordinates and paper k values (not bundled; no license file)."
+  },
+  {
+   "target": "https://seung-lab.github.io/zebrafish/home/",
+   "reason": "Data portal of the zebrafish hindbrain wiring diagram."
+  },
+  {
+   "target": "sci:sha256:27a99efd1eb09900c17a379046097cb794e3f30810c515011c97eb57770f0dbc",
+   "reason": "Related campaign test of connectome rate models of an attractor network (fly head direction) against wiring shuffles; no code or data reused."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "reason": "Related campaign replication of fly head-direction ring wiring and model bumps in a third connectome; context only."
+  },
+  {
+   "target": "sci:sha256:a9ace6305d42b3ccd7ee0a633e9c1152de03c1355820b4fa2ec44c1d2342c72c",
+   "reason": "Related campaign study of attractor wiring structure; context only."
+  },
+  {
+   "target": "sci:sha256:19e8b7a48e00c97a7dd2ce152ffff7eefaa384f62b38f895f6e3279477a532dc",
+   "reason": "Related campaign region-level zebrafish projectome versus activity coupling; this study works at synapse level in the hindbrain."
+  },
+  {
+   "target": "sci:sha256:23ce83bd3f3aae5699c5346e9304d6e62342f951ac55a44b06de91e7815bf193",
+   "reason": "Related campaign region-level zebrafish test of wiring versus activity timescales; context only."
+  }
+ ]
+}
