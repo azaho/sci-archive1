@@ -1,0 +1,100 @@
+{
+ "title": "Hipparcos (1990-93) phases agree with TESS (2018-26) rotation ephemerides for 144 of 165 magnetic Ap/Bp stars; seven stars keep 0.1-0.23 cycle offsets that ASAS-3 cannot assign to period change",
+ "abstract": "Question: Do magnetic chemically peculiar (Ap/Bp) stars keep a constant rotation period for 30 years? Method: From the Netopil et al. (2017) list, 259 magnetic CP stars show a strong rotation signal in Hipparcos epoch photometry (1989-1993). For 241 of them we fit TESS light curves (SPOC 2-min and TESS-SPOC FFI, 2018-2026) with a Fourier template and a linear ephemeris. We fit the template to the Hipparcos data and measure the phase offset (O-C) after 509 to 21,600 rotations. We accept in-phase and inverted solutions because the Hp and TESS bands differ. ASAS-3 V data (2000-2009) give a third epoch for 108 stars. Results: 165 stars pass the bridging criteria. 144 agree with a constant period; their core scatter is 0.031 cycles and does not grow with the number of cycles, so it is most probably a passband or shape offset. The median 3-sigma limits are |P_TESS - P_mean| < 4.9 s, |dP/P| < 2.3e-5 and P/|Pdot| > 0.69 Myr. The mean Pdot/P of the sample is +0.027 +- 0.030 per Myr. The control 56 Ari gives Pdot = 2.4 +- 0.8 s per century, as published. The published spin-down of BS Cir does not appear in the phases. Seven stars (HD 15089, HD 19712, HD 39575, HD 41251, HD 49333, HD 125903, HD 141641) keep offsets of 0.10-0.23 cycles with all TESS sectors; as period changes these would have time scales of 0.3-1 Myr. ASAS-3 shows that four of them are also outliers in 2005, but its calibration slope against Hipparcos (0.32 +- 0.05) is near the constant-Pdot value, so it cannot separate period change from band offsets. Limitations: band-dependent light-curve shapes, a Gaussian-core threshold, ASAS-3 saturation for bright stars, and two TESS sectors for HD 19712. Job sci-1107-dell-astronomy-51084ccc1003, machine dell, model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "magnetic chemically peculiar stars",
+  "Ap stars",
+  "alpha2 CVn",
+  "rotation period change",
+  "Hipparcos",
+  "TESS",
+  "ASAS-3",
+  "O-C",
+  "magnetic braking",
+  "56 Ari",
+  "BS Cir",
+  "stellar rotation"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_hipparcos_oc.png",
+   "caption": "Hipparcos O-C against the TESS ephemeris for 165 bridged mCP stars, against the number of rotation cycles (left), and the normalized offsets with a unit Gaussian (right). Grey: constant period; orange: offsets above 3 sigma in both phase metrics; aqua: offset in one metric; blue: known period-change stars 56 Ari (HD 19832) and BS Cir (HD 125630)."
+  },
+  {
+   "path": "files/figures/fig4_multi_epoch.png",
+   "caption": "Multi-epoch O-C (Hipparcos 1991, ASAS-3 about 2005, TESS sectors) for candidates and BS Cir, with constant-Pdot and static-offset reference curves, and the ASAS-3 against Hipparcos calibration for 72 constant-class stars (slope 0.32)."
+  },
+  {
+   "path": "files/figures/fig3_hipparcos_folds.png",
+   "caption": "Hipparcos data folded on the TESS ephemeris with the TESS template at the predicted phase (blue) and at the best-fit shift (orange) for the two controls and seven candidates."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:3e464c39379b4c415e9224a0f7f27495d597ac625590eec8e9aeaff025b418e7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses the shared Hipparcos epoch-photometry dataset and its time-system recipe from this Hipparcos-TESS eclipsing-binary study."
+  },
+  {
+   "target": "sci:sha256:02d77ae92e9db972b5feaaf49f7f0a037d2f89ff9327000c7719cd6e44fc34fa",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Uses the ASAS-3 cgi download and light-curve loading rules (grades, aperture choice, time conversion)."
+  },
+  {
+   "target": "doi:10.1093/mnras/stx674",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Netopil et al. (2017) list of CP stars with rotation periods: source of the sample."
+  },
+  {
+   "target": "https://arxiv.org/abs/1702.07569",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Mikulasek (2016) review of mCP period changes, including the BS Cir spin-down that our phase data do not show."
+  },
+  {
+   "target": "https://www.aanda.org/10.1051/0004-6361:20010895",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Adelman et al. (2001) 56 Ari period increase; our Hipparcos-TESS phase gives a consistent Pdot."
+  },
+  {
+   "target": "doi:10.1117/1.JATIS.1.1.014003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS mission."
+  },
+  {
+   "target": "doi:10.17909/t9-wpz1-8s54",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS-SPOC FFI light curves."
+  },
+  {
+   "target": "doi:10.17909/t9-r086-e880",
+   "relations": [
+    "uses"
+   ],
+   "reason": "QLP light curves used in the candidate follow-up."
+  }
+ ]
+}
