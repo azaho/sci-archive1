@@ -1,0 +1,97 @@
+{
+ "title": "NHC wind speed probabilities in 2010-2025 were about 1.3 times too low for best-track and buoy 34-kt winds; the model's own wind geometry hides offsetting Pacific, hurricane and post-tropical errors",
+ "abstract": "We tested the NHC/CPHC tropical cyclone wind speed probabilities (WSP, 120-h cumulative, 34/50/64 kt) with a pre-registered, timestamped plan. We used all 8,683 archived 0.5-degree grids for 2010-2025, the HURDAT2 best tracks of 603 Atlantic and eastern/central Pacific storms (18.8 million point-cycles) and, as independent truth, winds at 83 NDBC buoys. The frequency bias B is observed events divided by the sum of probabilities; intervals are 95 % storm bootstrap. With the pre-registered truth (full best-track quadrant sectors) the probabilities were too low: B = 1.31 [1.22, 1.40], 1.44 and 1.28 for 34, 50 and 64 kt. This did not hold with radii x 0.8 (B 1.02 at 34 kt). The WSP model uses 0.85 x interpolated radii. With that geometry (post hoc) the totals were calibrated (B 1.02, 1.13, 1.00), but through offsetting errors: eastern Pacific 0.75 vs Atlantic 1.15; storms below 64 kt 0.89 vs hurricanes 1.15 (the pre-registered weak-over-hurricane prediction failed in the reverse direction); Atlantic cycles with post-tropical stages 1.23 vs 0.95 for purely tropical ones. Because the sum of probabilities is the expected swath size of one Monte Carlo realization, B measures size errors. Per-cycle swath ratios followed official intensity errors (Spearman -0.21 to -0.40), not track errors. The eastern Pacific excess stayed at good intensity forecasts, so it is a wind-radius size excess. At buoys (98,901 buoy-cycles, 538 storms), measured 34-kt winds gave B = 1.33 [1.17, 1.49] (1.11-1.55 with the wind conversion); the full-sector truth matched buoy event counts (ratio 1.04) and the model geometry under-counted them (0.76). Limitations: best-track radii are analyses; the geometry choice is as large as the error; the model-geometry truths and the buoy test are post hoc; buoys do not decide at 50/64 kt.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone",
+  "wind speed probabilities",
+  "forecast verification",
+  "National Hurricane Center",
+  "HURDAT2",
+  "wind radii",
+  "reliability",
+  "frequency bias",
+  "NDBC buoys",
+  "pre-registration",
+  "Monte Carlo",
+  "post-tropical cyclone",
+  "eastern Pacific"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_bias_strata.png",
+   "caption": "Frequency bias B (observed / sum of probabilities) of NHC wind speed probabilities, 2010-2025, by stratum, threshold and truth geometry. Blue: pre-registered full-sector best-track truth; orange: WSP model geometry (0.85 x interpolated radii); green: same, tropical stages only. Bars: 95 % storm bootstrap; grey band 0.9-1.1."
+  },
+  {
+   "path": "files/figures/fig4_mechanism_buoys.png",
+   "caption": "Exploratory sources. A: 34-kt bias by basin, tropical lifetime in the 120-h window and official intensity error (model-consistent truth). B: per-cycle observed/expected 34-kt swath area against mean official intensity error. C: 34-kt bias at 83 NDBC buoys with measured winds (three conversion factors) and with best-track truths at the same buoys."
+  },
+  {
+   "path": "files/figures/fig1_reliability.png",
+   "caption": "Reliability of the 120-h cumulative WSP for 34, 50 and 64 kt under three truth geometries (95 % storm-bootstrap intervals)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:d0ccb2101584659f74f0e3f8f0d1b2cadf30cfd26e863e6196b75bd823c7c3c3",
+   "reason": "NHC error-circle coverage by intensity; motivated pre-registered H2, which failed in the reverse direction for WSP."
+  },
+  {
+   "target": "sci:sha256:6f21c3dcabb3fbed3337b50cbdf17804a2ef5fef3517a8674d93d2c5319e8bde",
+   "reason": "Rebuilt NHC timed circles; a related NHC track-uncertainty product."
+  },
+  {
+   "target": "sci:sha256:dfcaee13573a2a1761068c668acd60702339bff10b9132ac4d40f4adb3c8e40e",
+   "reason": "NHC genesis-probability verification; same campaign series of pre-registered public hazard product tests."
+  },
+  {
+   "target": "sci:sha256:4251e6dcdeaca196d64bf2f00bb3dbdba1ab73f0320a92a37a426b4e34abce52",
+   "reason": "Earlier product test in this series (ShakeMap uncertainty)."
+  },
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Earlier product test in this series (PTWC threat categories) with a sparse-observation truth problem."
+  },
+  {
+   "target": "doi:10.1175/2009WAF2222286.1",
+   "reason": "WSP model and its 0.85 interpolated-radii geometry."
+  },
+  {
+   "target": "doi:10.1175/WAF-D-12-00116.1",
+   "reason": "WSP model improvements (GPCE track spread)."
+  },
+  {
+   "target": "doi:10.1175/WAF1026.1",
+   "reason": "Radii-CLIPER wind-radius model used by WSP."
+  },
+  {
+   "target": "doi:10.1175/MWR-D-12-00254.1",
+   "reason": "HURDAT2 format and uncertainty."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/gis/archive_wsp.php",
+   "reason": "WSP GIS archive (forecasts)."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/data/hurdat/",
+   "reason": "HURDAT2 best tracks (truth)."
+  },
+  {
+   "target": "https://www.ndbc.noaa.gov/data/historical/stdmet/",
+   "reason": "NDBC buoy winds (independent truth)."
+  },
+  {
+   "target": "https://www.nhc.noaa.gov/verification/errors/",
+   "reason": "Official forecast track and intensity errors."
+  }
+ ]
+}

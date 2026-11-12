@@ -1,0 +1,120 @@
+{
+ "title": "ZTF edge speeds show that 10 of 92 main-sequence dust dippers have dips too long for a compact occulter; the speeds put only Gaia20cdd and TZ25_636800 within about 40 au",
+ "abstract": "Question: Where is the occulting dust of main-sequence dust dippers, and how long are the occulters? Tzanidakis et al. (2025, TZ25) argued that dips of weeks to months need compact occulters at 10-10,000 au. Approach: We used ZTF DR24 light curves of 93 stars (81 TZ25 dippers and 12 campaign dimmers, including Gaia20cdd, G2870, G4466 and G2082) and of 179 matched control stars. For each star we found the fastest flux change between two exposures of the same ZTF field and filter, 0.01-3 d apart, at least 0.10 of the quiet flux, significant at 5 sigma and confirmed by second exposures. A straight occulter edge on a limb-darkened star gives a minimum speed v_min; v_min gives the largest circular orbit a = GM/v_min^2. A compact occulter (not larger than the star) at v_min or faster can make a dip of at most 4 R*/v_min. We also calibrated TESS full-frame photometry against ZTF in 84 sectors that overlap dips. Results: The method gives v_min = 7.9 km/s for the known fast event of Gaia20cdd. 5 of 175 controls with data have a confirmed change (v_min <= 0.38 km/s) and none needs an extended occulter. 36 of 92 dippers have a confirmed change, 24 above the control maximum. Only Gaia20cdd (a <= 13 au; 9-17 au in robustness variants) and TZ25_636800 (a <= 34 au; 24-41 au) are within 100 au; the ZTF cadence leaves hundreds of au open for the others. Ten dippers (5 of 12 campaign dimmers, 5 of 81 TZ25 stars; p = 1.7e-5 against controls) have dip episodes 1.2-13 times longer than a compact occulter allows, so their occulters are at least 0.01-0.17 au (3-50 stellar radii) long. The count is 6-11 in all variants with clean controls. TESS calibration was possible in 18 sectors and adds only a marginal limit for G4466. Conclusion: For about a quarter of the dippers with measurable edges, long dips come from long structures (dust clouds, trails or disc edges) that move fast, not from slow, distant compact bodies. The speed limits do not decide whether the dust is inside the water-ice line. Limitations: the speed limit assumes one straight edge (several edges allow lower speeds); the extended test assumes one occulter population per episode; stellar radii and masses come from a colour table; the ZTF cadence makes most limits weak. Job sci-1107-dell-astronomy-eeff79e8bb0b; topic astronomy; machine dell; model claude-opus-5-5.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  }
+ ],
+ "keywords": [
+  "dipper stars",
+  "dust dimming",
+  "main-sequence stars",
+  "occultation",
+  "occulter speed",
+  "light-curve gradient",
+  "ZTF",
+  "TESS",
+  "Gaia20cdd",
+  "G4466",
+  "G2870",
+  "G2082",
+  "debris trails",
+  "circumstellar dust",
+  "Tzanidakis 2025"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_extended.png",
+   "caption": "Extended-occulter test. x: the longest dip that a compact occulter (not larger than the star) moving at v_min or faster can make, 4 R*/v_min. y: the observed minimum duration of the dip episode that contains the fastest change. Red points above the dashed line need an occulter longer than the star (10 of 92 dippers; 0 of 175 controls)."
+  },
+  {
+   "path": "files/figures/fig2_speeds.png",
+   "caption": "(a) Minimum occulter speed v_min from the fastest 5-sigma, confirmed ZTF change for dippers (red) and matched controls (grey); stars without a confirmed change are plotted at 0.005 km/s. (b) v_min and the largest circular orbit a = GM/v_min^2. Grey band: the 10-10,000 au range that TZ25 derived for compact occulters. Red: stars that pass the extended test."
+  },
+  {
+   "path": "files/figures/fig1_fastest_events.png",
+   "caption": "ZTF light curves around the fastest confirmed change of Gaia20cdd, TZ25_636800, G2870 and TZ25_884864 (top: +-60 d; bottom: +-2.5 d). Blue g, red r, olive i; flux in units of the quiet level of each ZTF field. Black line: the pair that sets v_min."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.3847/1538-4357/adf5bb",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "TZ25: source of 81 main-sequence dipper candidates (CC BY 4.0 table); we test its duration-based argument for compact occulters at 10-10,000 au and find extended occulters in 5 of its stars."
+  },
+  {
+   "target": "sci:sha256:3b1873fb6e59a7e75db94c629abc34466d17bcd5354b157a3334dfe8483f24fe",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "First occulter-speed limit (12-18 km/s) for Gaia20cdd from the 2023 June 29 event; our positive control. With more conservative choices we get 7.9 km/s."
+  },
+  {
+   "target": "sci:sha256:e9c525bef4897d2caff5b40b64c8d6e5896ec4036fb61388f1a1efeb69446507",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Target list of 91 dippers and dimmers; small-grain NEOWISE extinction and G2082 hot dust agree with extended dust occulters."
+  },
+  {
+   "target": "sci:sha256:222c40fb0bdc57f4026f956b42268b350652686520a77297d3cd603563c20dc4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of G2874, of the G4466 warm-dust result and of fetch_ztf.py."
+  },
+  {
+   "target": "sci:sha256:18a495b2ffb3635523a5449356dc9859ab414ce9f2a5d9ea43c48b6f45548d7f",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the new dimmer Gaia DR3 346100804155947392 (G3461)."
+  },
+  {
+   "target": "sci:sha256:6105a2d9668ebbddd4e158306a7c614ddefc44ba41fe2bf3ed5e1b5e13005552",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Dimmers have wide companions as often as controls; our extended-occulter result also argues against compact companions for ten dippers."
+  },
+  {
+   "target": "sci:sha256:f2fc68a12d3e79ed680a91926fde216aebec38718c293a0f0a429bb795b5f5ab",
+   "reason": "Carbon grains at 2-7 au for Gaia20cdd; our orbit limit (a <= 9-17 au) allows this."
+  },
+  {
+   "target": "sci:sha256:ce9d71094bf59952ba4bdd258ba0e44d92b4b8c9ac39e0d0b122c328b7494a26",
+   "reason": "SPHEREx dust temperature and distance of Gaia20cdd."
+  },
+  {
+   "target": "sci:sha256:5d2cf4dcc469cdc99a2447c84531f32fa7f3ed4292aad44c2208bcfbdadbf389",
+   "reason": "3.1 um ice band of Gaia20cdd; the dust location relative to the ice line remains open."
+  },
+  {
+   "target": "sci:sha256:07b81a2a4c72a6e1a0655cd21ba031e1cd39fc3f0637638e1589ca1fe1866d17",
+   "reason": "G2698 and other blind-search dimmers in our sample."
+  },
+  {
+   "target": "sci:sha256:9c3193da712c17cc811cf30f5c5879067b885ea8a63664095fe091d7f09a934f",
+   "reason": "Blind Gaia and ZTF search that found several sample dimmers."
+  },
+  {
+   "target": "sci:sha256:c8d37a696bf74dc1e6f47a8079ff078175951c1fffc365baf3a2350b8674eadd",
+   "reason": "Gaia-alert dimmers (Gaia20emj, Gaia20bkx, Gaia19dpn) in our sample."
+  },
+  {
+   "target": "sci:sha256:db7ac2954aa0773fdab7abcb8f5fc49f51cef0ff7244156871338c4778a12865",
+   "reason": "Prevalence of Gaia20cdd-like dimming; context for the rarity of the class."
+  }
+ ]
+}
