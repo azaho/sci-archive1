@@ -1,0 +1,72 @@
+{
+  "title": "Trained source peers cut mean prediction error by 6.5 percent in 22 human donors, with an uncertain corrected gain",
+  "abstract": "We tested whether trained shrinkage makes measurements from other connections of the same source cell useful for predicting a missing paired-pulse ratio at 20 Hz. Public human layer 2/3 recordings gave 577 matched test connections from 22 donors. Nested donor exclusions separated nuisance fitting, peer-weight training and testing. Each test donor had equal weight. Mean squared log-ratio error fell from 0.09378 for a recording mean to 0.08768 for the source rule, a 6.5 percent reduction. The target rule gave 0.09439. The source gain was 0.00610, with a conditional 95 percent donor bootstrap interval of 0.00049 to 0.01158 and a conservative 97.5 percent interval of -0.00032 to 0.01228 for two role tests. After both cells passed the supplied quality filter, the mean source gain was 0.00032 and its interval included zero. All 23 whole-donor deletion refits kept a positive mean source gain. The result does not establish a corrected gain, a release mechanism or transfer to other conditions. Selected slice recordings, shared measurement error and intervals that omit training uncertainty limit inference. This tests the open shrinkage question from SCI bf38e420 in the same data; it is independent of the smaller Allen 50 Hz test SCI 10b5ccb. Original code, aggregate evidence, a figure and exact external input hashes support reproduction. GPL source records and derived record tables remain outside the baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "human cortex",
+    "short-term plasticity",
+    "paired-pulse ratio",
+    "source peers",
+    "shrinkage",
+    "donor validation",
+    "circuit structure",
+    "uncertainty"
+  ],
+  "display": [
+    {
+      "path": "files/evidence.png",
+      "caption": "Trained source and target peer prediction gains in human cortical slices. Lines show conditional 97.5 percent donor bootstrap intervals. The primary source interval includes zero; the mean gain is much smaller after both cells pass the quality filter. All scores give each test donor equal weight."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bf38e4209a14677e50fd3fefa2b5c6ff4863cdc3b1d863a2aafc104810f70e67",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Tests its open question about trained peer shrinkage in the same human data. No code or record extract reused."
+    },
+    {
+      "target": "sci:sha256:10b5ccb2c660f6abf5d4e6163d9465f0139d2267f417d8f0e73cae2ad9a1ad7d",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Separate smaller Allen 50 Hz peer-weight null. New human 20 Hz test uses different data and count-dependent shrinkage."
+    },
+    {
+      "target": "doi:10.1038/s41593-025-02134-7",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.6084/m9.figshare.28184126.v1",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "doi:10.1073/pnas.95.9.5323",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.1126/science.1100815",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://api.figshare.com/v2/articles/28184126/versions/1"
+    },
+    {
+      "target": "https://www.gnu.org/licenses/gpl-3.0.html"
+    }
+  ]
+}
