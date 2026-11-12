@@ -1,0 +1,101 @@
+{
+ "title": "California grassland plots kept a shift to warm-niche species after the 2012-2015 drought; weather did not explain it, but it was not clearly above random-niche drift (13 series, 1983-2021)",
+ "abstract": "Question: was the reported shift of California grassland plots to species from warmer and drier places (higher community temperature index, CTI; lower precipitation index, CPI) a short response to weather and the 2012-2015 drought, or a persistent change? Data: the public release of Zhu, Song et al. 2024 (12 observational sites plus Jasper Ridge experiment ambient plots; 192 site-years, 1983-2021), Daymet weather and nClimGrid temperature. A test plan was written before outcome models were fitted. Results: rain and temperature explained 3.6% of within-site CTI variation. At the four series with 2016-2019 surveys, CTI was +0.19 C above the pre-drought mean during the drought and +0.22 C after it (pooled return fraction -0.17), although a weather model expected a return. The CTI trend was +0.160 C per decade (location-bootstrap interval 0.088 to 0.372), +0.164 with weather terms and +0.126 before 2012. Pre-2012 site trends forecast 2012-2019 CTI better (RMSE 0.165 C) than the pre-2012 mean (0.290), recent persistence (0.246) or a weather model (0.316). However, random niche labels on the same abundance changes gave trends with SD 0.105 C per decade: one-sided p = 0.069 (0.128 inside guilds). The CPI decrease (-29.5 mm per decade) was more clearly niche-related (p = 0.029). A few grasses carried the CTI change (exotic Brachypodium distachyon and Bromus diandrus up, native Danthonia californica and Poa secunda down); without the top three contributors the trend was +0.046 (interval -0.148 to 0.174). Site CTI trends correlated weakly with local warming (r = 0.26). Conclusion: the shift was persistent and directional and did not reverse after the drought, which rejects the transient-weather explanation, but its CTI part is not clearly larger than random-niche drift and could also come from grass invasion and perennial loss. Limitations: only three locations with post-drought surveys, occurrence-based niches, no grazing or fire data.",
+ "keywords": [
+  "community temperature index",
+  "community precipitation index",
+  "thermophilization",
+  "California grassland",
+  "drought",
+  "2012-2015 California drought",
+  "reversal",
+  "weather tracking",
+  "out-of-sample forecast",
+  "niche permutation null",
+  "exotic annual grasses",
+  "observation bias",
+  "Daymet",
+  "nClimGrid",
+  "null result"
+ ],
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310307"
+  }
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeseries.png",
+   "caption": "Site-year CTI (a) and CPI (b) anomalies (plot-centred). Coloured: the four series with post-drought surveys; gray: other series; dashed: mean of available series. Shading: 2012-2015 drought."
+  },
+  {
+   "path": "files/figures/fig2_reversal_forward.png",
+   "caption": "(a) CTI change from the pre-drought mean during and after the drought at four series (bars: year-resampling 95% intervals) and the weather-model expectation (dotted). (b) RMSE of 2012-2019 site-year CTI forecasts made from pre-2012 data."
+  },
+  {
+   "path": "files/figures/fig3_null_species.png",
+   "caption": "(a, b) Pooled CTI and CPI trends under 2,000 random permutations of species niche values, with the observed trend. (c) Species with the largest summed contributions to the early-to-late CTI change (guild code, niche temperature)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41559-024-02552-z",
+   "relations": [
+    "reviews",
+    "uses"
+   ],
+   "reason": "Source study of the CTI/CPI shift; we test its drought, weather and niche-null explanations."
+  },
+  {
+   "target": "doi:10.5281/zenodo.13750955",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data and code release v1.0.1 (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.3334/ORNLDAAC/2129",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Daymet V4 R1 daily weather."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/nclimgrid_tavg.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly mean temperature."
+  },
+  {
+   "target": "doi:10.1111/gcb.14018",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Harrison et al. 2018: McLaughlin diversity did not recover after the drought; our CTI reversal test agrees."
+  },
+  {
+   "target": "sci:sha256:777ad0ac1b8c0e52a97994bed13023fbf6242971502116b12c4fcf89616f7e10",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Nitrogen raised CTI in the Jasper Ridge experiment; non-climate drivers can give warming-like CTI change."
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "Cross-network thermal tracking context."
+  },
+  {
+   "target": "sci:sha256:782802ff50e5c8d9552705284f391d357e84075a9d9d62f1ba5895998a9975d5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Species-limit placebo logic applied here to plant niche indices."
+  }
+ ]
+}
