@@ -1,0 +1,127 @@
+{
+  "title": "Source transmitter labels gave no clear response sign prediction gain across 51 excluded worm neuron classes",
+  "abstract": "We tested whether source transmitter labels improve prediction of mean calcium response signs beyond anatomy and target class in C. elegans. We linked the Randi wild-type stimulation atlas, two adult Witvliet wiring maps and Wang 2024 transmitter annotations by cell name. The selected sample had 643 detected responses, including 52 negative means, from 105 source cells in 51 classes. Each test source class was absent from both roles in training. Nested logistic models gave mean log loss 0.264022 nats with anatomy and target class, and 0.264243 after source transmitter flags and direct-edge interactions were added. The gain was -0.000222 nats; positive gain favors added features. A conditional 95 percent crossed-class bootstrap interval was -0.001610 to 0.001214. Whole-class label randomization gave one-sided p = 0.445 in 199 repetitions. All 12 sensitivity intervals included zero. The training-prevalence reference performed slightly better than both primary models. Thus these data gave no clear added prediction value under this model. Sparse negative responses, rare transmitter classes, different animals across resources, summary-array selection and fixed-prediction uncertainty limit the result. It does not test individual synapse signs or biological equivalence. New code, figures, aggregate results, exact source hashes and external regeneration steps support reproduction. External raw data and record tables are not bundled.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "C. elegans",
+    "neurotransmitter",
+    "signal propagation",
+    "connectome",
+    "response sign",
+    "class exclusion",
+    "negative result",
+    "molecular annotation"
+  ],
+  "display": [
+    {
+      "path": "files/figure.png",
+      "caption": "Source transmitter coverage and all planned prediction gains. Bars show conditional 95 percent crossed-class bootstrap intervals on fixed held-out predictions. All intervals include zero. Anatomy and function came from different animals."
+    },
+    {
+      "path": "files/permutation.png",
+      "caption": "199 whole-class transmitter-label permutations repeat inner tuning and outer class exclusion. The observed mean log loss gain gives one-sided p = 0.445. This is an association reference under label exchangeability, not a causal test."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.1038/s41586-023-06683-4",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Randi and colleagues provide the cell-identified stimulation response atlas. Reuse of an existing cohort, not an independent activity replication."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Witvliet and colleagues provide two adult anatomical maps, linked by neuron names rather than animal."
+    },
+    {
+      "target": "doi:10.7554/eLife.95402.3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Wang and colleagues provide the updated hermaphrodite transmitter and explicit neuron class annotations in Supplementary File 2."
+    },
+    {
+      "target": "doi:10.1371/journal.pcbi.1007974",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior receptor-and-transmitter synaptic polarity prediction. The present source-label benchmark does not implement or validate that model."
+    },
+    {
+      "target": "doi:10.1523/JNEUROSCI.1516-22.2022",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Experimental receptor work supports caution about assigning synaptic signs from broad transmitter labels."
+    },
+    {
+      "target": "sci:sha256:03adae01b2937552130f579e45b8e8b5e15ad4fcc8ef416730a2660ef48b1458",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier exact cell-sign factor audit used the same activity atlas but did not use transmitter identity. This work tests prediction in excluded source classes with molecular labels."
+    },
+    {
+      "target": "sci:sha256:4ec02acdf0367766c96d95527a137bf10317e75b7f3e1cd4d2f99ad5b0b0e20c",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier anatomy and pooled sign-agreement study. The current endpoint is mean response sign and the new predictors are transmitter flags."
+    },
+    {
+      "target": "sci:sha256:94be6f088f95df4da8012b2844e43b1f4fcd53023aa2f2455ddffeb3d8c34867",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier structural transmitter-composition study motivated reuse of the Wang annotation source. No prior code or record table was reused."
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/blob/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pinned repository source terms. Raw and linked record databases remain outside the baseline bundle."
+    },
+    {
+      "target": "https://elifesciences.org/articles/95402/figures",
+      "reason": "Original article supplementary material and attribution."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/funatlas.h5",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input. Version, byte count, source hash and path are recorded in provenance.json; content is not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input. Version, byte count, source hash and path are recorded in provenance.json; content is not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input. Version, byte count, source hash and path are recorded in provenance.json; content is not bundled."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/elife-95402-supp2-v1.xlsx",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external input. Version, byte count, source hash and path are recorded in provenance.json; content is not bundled."
+    }
+  ]
+}
