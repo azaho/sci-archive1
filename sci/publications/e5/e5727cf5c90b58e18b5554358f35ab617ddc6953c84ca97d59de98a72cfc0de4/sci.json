@@ -1,0 +1,107 @@
+{
+ "title": "NWS spring river outlooks put 90-day crests outside their 5-95% stage range 1.6 times as often as stated at 655 US gauges in 2008-2026; wetter weather explains about one third of high misses",
+ "abstract": "We tested the probabilistic river outlooks (product ESF) that 34 NWS offices issued in January-May 2008-2026 against observed 90-day crests. We parsed 3,619 outlooks, matched forecast points to 655 USGS gauges, checked the NWS stage datum against USGS gauge height for each gauge and year, and scored 42,787 stage-quantile forecasts and 37,015 flood-category forecasts. The test plan was written before outcomes were joined. Crests were above the highest listed stage 1.74 times (95% CI 1.31-2.29, year bootstrap) and below the lowest listed stage 1.53 times (1.27-1.82) as often as stated; the 5-95% range held 83.4% of crests, not 90%. The outlooks use Ensemble Streamflow Prediction (ESP), which samples past weather but treats model states as known. Basin precipitation during the outlooks was skewed toward the wet end of the 1949-2018 trace climate; reweighting forecasts to uniform weather lowered the upper ratio to 1.46 (1.19-1.77), so at least about 38% of the upper excess comes from wetter weather, and raised the lower ratio to 1.76. The remaining misses depend on a gap visible at issue time: when the river was already more than 2 ft above the outlook floor, upper misses were 3.7 times the stated rate; when the outlook expected a rise of more than 2 ft with 95% certainty, lower misses were 2.8 times the stated rate and held all net lower excess. Flood-category chances were near calibrated in total (O/E minor 1.15, moderate 1.07, major 0.78) but over-confident at the ends: minor flooding followed 5.8% of '<5%' forecasts and major flooding 55% of forecasts with 65% or more. Current-condition chances beat normal-condition chances (Brier skill 0.05-0.08). Limitations: forecasts are strongly dependent within years (about 19 effective years), 29% of table rows had no matched USGS gauge, the weather proxy is monthly basin precipitation, and two tests were added as dated amendments.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "river flood outlook",
+  "ensemble streamflow prediction",
+  "forecast calibration",
+  "probabilistic hydrologic outlook",
+  "National Weather Service",
+  "USGS gauge height",
+  "forecast verification",
+  "hazard product"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pit.png",
+   "caption": "Observed 90-day crests against the listed stage quantiles: observed share divided by stated share for each bin, for the current 7-value table (2008-2026) and the older decile table (2008-2012). Both end bins are too full."
+  },
+  {
+   "path": "files/figures/fig3_weather_attribution.png",
+   "caption": "Weather attribution: distribution of the valid-period basin precipitation percentile u (left), tail misses by u (middle), and tail ratios before and after reweighting to uniform weather with 95% year-bootstrap intervals (right)."
+  },
+  {
+   "path": "files/figures/fig4_state_gap_and_years.png",
+   "caption": "Tail ratios by the gap between the observed stage before issue and the outlook floor (left), and by year (right)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:844f22ed15599794f34c4293a7ae32660ca609167d74f77570e9acb0f5831e73",
+   "reason": "Earlier verification of a public hazard product in this campaign series (PTWC tsunami threat categories)."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Attribution of a hazard outlook error to its algorithm (CRW outlook rules); we use a similar attribution design for weather."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "SPC hail outlook verification in the same series."
+  },
+  {
+   "target": "sci:sha256:9f7a7c98a4f7116e0cdd8d96be9731dc69feac307715d4ad117f5d1a255659ce",
+   "reason": "NHC wind speed probability verification in the same series."
+  },
+  {
+   "target": "sci:sha256:ace801fc074e1d103efec31ec5e0144b89e8d1d4de7194aa9722a94e98c430a5",
+   "reason": "Same finding type: issued hazard uncertainty too narrow (first ShakeMap uncertainties)."
+  },
+  {
+   "target": "doi:10.1061/(ASCE)0733-9496(1985)111:2(157)",
+   "reason": "Day (1985), ESP method."
+  },
+  {
+   "target": "doi:10.1175/BAMS-D-12-00081.1",
+   "reason": "Demargne et al. (2014), NWS HEFS; ESP lacks hydrologic uncertainty."
+  },
+  {
+   "target": "https://mesonet.agron.iastate.edu/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IEM AFOS archive of ESF text products and HADS stage archive."
+  },
+  {
+   "target": "https://waterdata.usgs.gov/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS instantaneous gauge height (00065)."
+  },
+  {
+   "target": "https://hads.ncep.noaa.gov/USGS/ALL_USGS-HADS_SITES.txt",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NWS location to USGS site list."
+  },
+  {
+   "target": "https://api.water.usgs.gov/nldi/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Upstream basin polygons."
+  },
+  {
+   "target": "https://www.ncei.noaa.gov/data/nclimgrid-monthly/access/nclimgrid_prcp.nc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "nClimGrid monthly precipitation (campaign shared copy, sha256 1d9f6cb2...)."
+  }
+ ]
+}
