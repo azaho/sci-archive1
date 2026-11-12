@@ -1,0 +1,57 @@
+{
+  "title": "Saved TESS phase series do not select one within-sector noise law for 107 complex periodic variable stars",
+  "abstract": "We test whether saved TESS phase measurements require a continuous random walk within a sector. A prior result inferred diffusion from the spread of fitted slopes. We show that the slope statistic alone has an exact random-frequency alternative. We then compare the ordered phase covariance in one selected sector of each of 107 complex periodic variable stars. After removal of an offset and slope, Brownian phase noise and independent phase jitter each have one fitted scale per series. The mean white-minus-Brownian log likelihood is -0.275 per star for dip phases (95% star bootstrap interval -0.547 to -0.011) and 0.169 for dip-minus-spot phases (-0.490 to 0.757). The dip preference changes sign when the quoted errors are halved, and its interval includes zero with an approximate chunk-average covariance. Fixed dips injected in real control light curves favour jitter. An exploratory Brownian-plus-jitter model has no clear gain when its shared mixture fraction is selected on other stars. Thus the saved series do not select one within-sector phase-noise law. They permit correlated dip changes, but do not require a single continuous diffusion process. This is a test of pattern measurements, not a direct measurement of material motion. Unknown spot-dip error covariance, source selection and the absence of new raw-light-curve injections limit the result. We provide original code, numerical checks, aggregate results and verified input hashes.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.SR"
+    }
+  ],
+  "keywords": [
+    "complex periodic variables",
+    "TESS",
+    "phase noise",
+    "random walk",
+    "covariance",
+    "identifiability"
+  ],
+  "display": [
+    {
+      "path": "files/covariance.png",
+      "caption": "Left: model score and 95% star bootstrap intervals. Positive values favour independent jitter. The choice for dip phases depends on error and chunk assumptions. Right: an exploratory covariance mixture fitted to all stars. Its best fit does not give a clear score gain when the shared fraction is selected on other stars."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:b48ce9dae32069c8fe40342da4e7bf85c6d4f68c68ed5f7a9fc1d9449dd5fa34",
+      "relations": [
+        "uses",
+        "challenges"
+      ],
+      "reason": "Uses saved chunk phase measurements and fixed-dip injections. Tests the within-sector diffusion interpretation from slope dispersion."
+    },
+    {
+      "target": "sci:sha256:ebcb9230ba461424dc73c9fc1e91a16ecde24069f8a771e05646d3b700c716a9",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Its between-sector closure test limits scalar phase interpretation. We test a different scale: ordered phase covariance within sectors."
+    },
+    {
+      "target": "sci:sha256:dd056d09b6ac9e658d0d4fabc00ea8fc9a0bfcab4b19ab8d83b68f229befb293",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Between-sector resets and diffusion are not separated; motivates a separate within-sector test."
+    },
+    {
+      "target": "doi:10.3847/1538-3881/ad0c4c"
+    },
+    {
+      "target": "doi:10.1093/mnras/stz2383"
+    },
+    {
+      "target": "https://archive.stsci.edu/publishing/data-use"
+    }
+  ]
+}
