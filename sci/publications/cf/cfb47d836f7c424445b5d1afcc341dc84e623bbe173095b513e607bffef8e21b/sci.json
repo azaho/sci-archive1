@@ -1,0 +1,113 @@
+{
+ "title": "A Moon-phase bias near the ZTF detection limit explains the 30-day signal of SN 2020sgf, and SN Ia controls pass a periodicity test as often as stripped-envelope supernovae",
+ "abstract": "Question: Are the 30-day periodic modulations reported in ZTF light curves of stripped-envelope supernovae (SESN; Horowicz, Ofek and Gal-Yam 2026) caused by the Moon or by the test? Method: We used ZTF public alert photometry (ALeRCE) of 2,921 Bright Transient Survey supernovae, 2018-2026. We regressed decline residuals on Moon illumination and compared them with a simulation of the 5-sigma detection cut. We repeated the cubic-plus-sinusoid periodicity rule of Horowicz et al. on 1,426 light curves, with a Moon term, a degree-5 baseline and a white-noise bootstrap, and compared SESN with normal SN Ia and SN II controls. Results: Near the detection limit, SNe look brighter at full Moon only when the Moon is up (-0.19 +- 0.02 mag per unit illumination, simulation -0.23 +- 0.02). This is selection by the shallower limit. More than 1.5 mag above the limit, the Moon effect is within +-0.02 mag. Best fits at 25-38 d lock to the Moon phase (181 of 294 brighter at full Moon, p = 9e-5), but not with bright points only or with a Moon term. For SN 2020sgf, a degree-5 baseline gives 29.4-30.0 d in phase with the Moon (r = -0.97, -0.99), and one Moon term removes the signal. Two-band 'periodic' detections occur in SNe Ia (0-9 percent for different baselines) at about the published SESN rate (8.8 percent). With a degree-5 baseline and a Moon term, SESN give 1/53 (SN 2022jli) and SNe Ia 1/90. SN 2022jli (12.5 d) is robust. SN 2022esa (33-36 d, bright points) is not explained by the Moon and stays open. Limitations: alert photometry, not forced photometry; no independent survey (ATLAS) test; low sensitivity to 0.07 mag signals, so a periodic SESN sub-population is not excluded.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.HE"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "supernova",
+  "stripped-envelope supernova",
+  "periodic modulation",
+  "ZTF",
+  "Moon systematic",
+  "detection limit bias",
+  "SN 2020sgf",
+  "SN 2022esa",
+  "SN 2022jli",
+  "Bright Transient Survey",
+  "false positives",
+  "ALeRCE"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_moon_residuals.png",
+   "caption": "a. Median ZTF 5-sigma limit versus Moon illuminated fraction (Moon up and down). b, c. Mean decline residual versus illumination with the Moon up, for SNe within 1 mag of (b) and more than 1.5 mag above (c) the dark-time limit; blue = data, grey = detection-cut simulation. Negative = brighter."
+  },
+  {
+   "path": "files/figures/fig4_named_sne.png",
+   "caption": "Residuals of SN 2020sgf, SN 2022esa, SN 2022jli and SN 2019tsf from a degree-5 baseline (filled: >1 mag above the limit; open: <1 mag), with Moon illuminated fraction in grey. SN 2020sgf brightens at full Moon in near-limit points."
+  },
+  {
+   "path": "files/figures/fig3_class_rates_moon_phase.png",
+   "caption": "a. Fraction of objects with a two-band periodic detection for SESN, SN Ia (control) and SN II under four baselines; dashed = 3/34 of Horowicz et al. 2026. b. Correlation of best 25-38 d sinusoids with Moon illumination."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://arxiv.org/abs/2608.18207",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Source of the SESN periodicity claims (SN 2020sgf, SN 2022esa, 2019tsf) and of the cubic-plus-sinusoid rule that we repeat; we show a Moon artefact in SN 2020sgf and equal false-detection rates in SN Ia controls."
+  },
+  {
+   "target": "https://arxiv.org/abs/2608.01994",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Independent ZTF periodic-SN search with spline detrending; context for false positives and baseline choice."
+  },
+  {
+   "target": "https://arxiv.org/abs/2309.12750",
+   "relations": [
+    "supports"
+   ],
+   "reason": "SN 2022jli 12.5 d modulation; recovered in all our variants."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/ab8943",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF Bright Transient Survey sample and classifications."
+  },
+  {
+   "target": "doi:10.3847/1538-4357/abbd98",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF Bright Transient Survey."
+  },
+  {
+   "target": "doi:10.3847/1538-3881/abe9bc",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ALeRCE broker API for ZTF alert light curves."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aaecbe",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Zwicky Transient Facility."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ZTF data system and difference-image photometry."
+  },
+  {
+   "target": "sci:sha256:1370d3912bd4d2bdf79365974bcc74ab344974c87e0c5761ea4750f332d99c15",
+   "reason": "Related campaign result: apparent ZTF periodicities (quasars) not confirmed by later data; red-noise false positives."
+  },
+  {
+   "target": "sci:sha256:882e2015543a9c5bcdfac13a6aec20ab56edf70508debf087b8f6c90983a735f",
+   "reason": "Related campaign result on published ZTF/Gaia periodicities that later data do not follow."
+  }
+ ]
+}
