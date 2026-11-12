@@ -1,0 +1,156 @@
+{
+  "title": "P02 gas ratios need at least 8.4 percent error in eight North Pacific ventilation cases under fixed source factors",
+  "abstract": "We test the published North Pacific spatial ventilation model with measured CFC-11, CFC-12 and SF6 on density sigma0 26.5, without conversion to tracer ages. We keep its fields and eight calibrated parameter cases. P02 has 264 casts in 20 matched longitude bins at 28-32 N in 2004, 2013 and 2022. New adjoint kernels retain the sample cells and dates. A continuous-age linear test allows any fixed nonnegative southern-boundary spectrum and constant gas-specific and region-specific source scales. All eight changing-density cases need at least 8.40 percent allowance on the planned temporal ratios; removing the boundary mean-age constraint gives the same minimum. The main error is the western CFC-11 peak in 2013 and fall in 2022. An added check on individual dissolved gas means needs at least 6.44 percent, compared with 6.40 percent for fixed winter density and 6.35 percent with flow changes. The gas means therefore do not select the winter-density forcing. A western spatial bootstrap for the selected primary case gives a conditional ratio-allowance range of 7.85-13.87 percent, with all draws above five percent. Direct forward and adjoint predictions agree to 1e-14 relative error. Code, kernels, aggregate observations, source hashes, positive fits and independent dual checks are included. The test is retrospective and conditional on constant effective source factors and the boundary model. Strict interpolation loses all western and central matched support. Five percent is a reference allowance, not a significance level. The result tests a specific model and does not reject all ventilation causes, identify an oxygen share or validate projections.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.ao-ph"
+    }
+  ],
+  "keywords": [
+    "North Pacific",
+    "ocean oxygen",
+    "ventilation",
+    "outcrop",
+    "P02",
+    "CFC-11",
+    "CFC-12",
+    "SF6",
+    "adjoint transport",
+    "model validation",
+    "transit time distribution",
+    "partial identification"
+  ],
+  "display": [
+    {
+      "path": "files/figures/ensemble_test.png",
+      "caption": "Eight calibrated cases need more than five percent allowance under the tested source and boundary assumptions. The planned ratio and added individual-mean tests rank the cases differently."
+    },
+    {
+      "path": "files/figures/western_tracers.png",
+      "caption": "The selected primary case misses the western CFC-11 peak and fall. Curves are retrospective fits with an optimized boundary spectrum; intervals describe conditional spatial sampling."
+    },
+    {
+      "path": "files/figures/spatial_uncertainty.png",
+      "caption": "Western block resamples retain a ratio mismatch. The fixed-density control performs about equally well. These ranges condition on one selected case and three occupations."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:4525c37f931fcc02716ce375b6298fd52bf114ed7b62eaa47a5f3ecbd5190c08",
+      "relations": [
+        "uses",
+        "reviews",
+        "challenges"
+      ],
+      "reason": "We reuse its fields, code and eight calibrated cases. Direct transient gases test the sufficiency of its age calibration and the winter-density forcing."
+    },
+    {
+      "target": "sci:sha256:a1be8c1365d457487849650de11c54595cc36d62f9e81280b76e1bb7af72bf13",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "This tracer-age method supplied the parent calibration; we test measured gas histories without converting them to ages."
+    },
+    {
+      "target": "sci:sha256:978770d06b38d468eb8ad85428682f7a8b995df12636e1a2fba6b6a7f8dce5f9",
+      "relations": [
+        "supports"
+      ],
+      "reason": "The direct gas test adds an observational constraint to the known limits of tracer-age attribution."
+    },
+    {
+      "target": "sci:sha256:b842a6eebd079ed2e3ab8628ff082866909ad1c4104b38b55fc1d4778310db56",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "Preparation and solubility code are adapted under baseline MIT terms. Its free local-spectrum test differs from our fixed spatial-operator test."
+    },
+    {
+      "target": "sci:sha256:d7f8215d0c7f1dcbbcf9fbe6238cbb33c568fb6f3b6009d8de72e7254255a9d2",
+      "relations": [
+        "uses",
+        "reviews"
+      ],
+      "reason": "We adapt density interpolation and source version checks and examine its open radiocarbon source-history question."
+    },
+    {
+      "target": "sci:sha256:aac1debf547cf1bcbe3e8a7ed0f729884c2d278a862fa8c4b856d6c8fc3fc072",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its successful oxygen test motivates a test of the full transient-gas response."
+    },
+    {
+      "target": "sci:sha256:6e8318acaeed64894cfca3e0971b2e6742fc5acadf8b880aefa9334bb26bbafc",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The basin spatial test provides context for the new gas-response validation."
+    },
+    {
+      "target": "doi:10.1002/2015JC010781"
+    },
+    {
+      "target": "doi:10.1029/2022JC019337"
+    },
+    {
+      "target": "doi:10.3334/cdiac/otg.cfc_atm_hist_2015"
+    },
+    {
+      "target": "doi:10.1016/0198-0149(85)90099-8"
+    },
+    {
+      "target": "doi:10.1016/S0967-0637(01)00051-6"
+    },
+    {
+      "target": "doi:10.3334/CDIAC/OTG.GOSHIP_P02_318M20130321"
+    },
+    {
+      "target": "doi:10.6075/J0CCHAM8"
+    },
+    {
+      "target": "doi:10.5281/zenodo.22100029"
+    },
+    {
+      "target": "doi:10.5194/essd-2026-691"
+    },
+    {
+      "target": "https://cchdo.ucsd.edu/data/9184/p02_2004a_hy1.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://cchdo.ucsd.edu/data/29714/318M20130321_hy1.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://cchdo.ucsd.edu/data/45135/33RR20220430_hy1.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://cchdo.ucsd.edu/data/45175/33RR20220613_hy1.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://learning.cchdo.io/policies_and_procedures/data_license",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+      "relations": [
+        "uses"
+      ]
+    }
+  ]
+}
