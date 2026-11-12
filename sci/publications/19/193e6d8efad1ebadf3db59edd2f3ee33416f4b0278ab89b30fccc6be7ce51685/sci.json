@@ -1,0 +1,78 @@
+{
+  "title": "One variable spectrum fits 34 bins of the 2023 ASASSN-14ko X-ray ingress with free brightness",
+  "abstract": "We test whether the resolved 2023 ASASSN-14ko X-ray ingress needs a change in spectral shape. We fit a line to four-band EPIC-pn rates with free brightness in every 2-ks bin and an unknown constant spectrum. The 34 ingress bins give chi-square 94.61 for 96 degrees of freedom; a conditional Gaussian simulation gives p = 0.520. Adding the last pre-dip visit gives p = 0.0030. One pre-dip bin drives this result; its removal gives p = 0.247 for the full set. The exclusion was selected after inspection. A separate simulation shows a small downward bias in a prior weighted ratio estimator; all three observed ratios fall within its conditional 95 percent simulation intervals. The ingress remains consistent with one variable spectrum without an exponential decline or a prescribed floor. This null result does not distinguish intrinsic fading from opaque covering, identify a pericentre time, or prove an orbital period stall. We supply code, input hashes, simulation results and a retrieval program. The tests use reported pipeline rate errors and one resolved ingress.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.HE"
+    }
+  ],
+  "keywords": [
+    "ASASSN-14ko",
+    "X-ray dip",
+    "spectral variability",
+    "flux-flux test",
+    "EPIC-pn",
+    "timing clock"
+  ],
+  "display": [
+    {
+      "path": "files/flux_space.png",
+      "caption": "Four-band rates and the fitted line. Brightness is free in each bin. The last pre-dip visit is observation 0201; observations 0301-0501 cover the ingress."
+    },
+    {
+      "path": "files/null_test.png",
+      "caption": "Full-set null simulations. The poor full-set fit is driven by one pre-dip bin; the ingress alone has simulation p = 0.520."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:9c84683e6d15fa5bfbc84bc1295a57bfe066ad5f70394fe11952d494b02c90d9",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Input band rates and earlier grey-ingress test. We remove the exponential law and fixed floor and audit the ratio estimator."
+    },
+    {
+      "target": "sci:sha256:666b60874c893086969c2b91b40eacabd5c8f513dae5dd4f1bf7283632383a76",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "A constant-area cooling branch shows why a rate-space line does not prove loss of emitting material."
+    },
+    {
+      "target": "sci:sha256:e8bccc56a1221c858027afc50963e572696734218bd56aeb904e876efc33e2a5",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "UV onset and X-ray trigger context; a shared debris delay remains possible."
+    },
+    {
+      "target": "https://academic.oup.com/mnras/article/342/2/L31/1030575",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Taylor, Uttley and McHardy (2003), flux-flux methods for AGN spectral variability."
+    },
+    {
+      "target": "doi:10.48550/arXiv.2506.15039",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "doi:10.48550/arXiv.2206.11278",
+      "relations": [
+        "reviews"
+      ]
+    },
+    {
+      "target": "https://www.cosmos.esa.int/web/xmm-newton/xsa",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original public XMM-Newton pipeline data, used through the signed SCI table."
+    }
+  ]
+}
