@@ -1,0 +1,137 @@
+{
+ "title": "CPC Week-2 hazard outlooks (CONUS, 2017-2026): cold risk levels agree per day, but heavy-precipitation Moderate and High verified at 0.29 and 0.37, as the 1-inch criterion fails in dry areas",
+ "abstract": "Question: are the risk levels of the NOAA CPC Week-2 (days 8-14) probabilistic hazards outlook calibrated, and which part of the forecast or of the hazard definition causes any error? CPC states slight 20-40%, moderate 40-60% and high more than 60%. Approach: pre-registered test of all archived probabilistic polygons for much-below-normal temperature (2019-2026) and heavy precipitation (2017-2026) over CONUS (1,343 and 3,312 polygons), with the CPC nominal criteria (cold: Tmin below the 1991-2020 15th percentile and at or below 35 F; heavy precipitation: 3-day total above the 85th percentile and above 1 inch) on CPC gridded analyses, frequency per valid day, month-block bootstrap. Post hoc: criterion-part decomposition, lead time inside polygons, 543 GHCN-Daily first-order stations. Results: cold risks were calibrated per day (0.30, 0.51, 0.74), but their any-day frequencies were 0.59-0.87, and unflagged land within 200 km of cold polygons had 0.21-0.62, so the cold areas are drawn too small. Heavy-precipitation moderate (0.29 [0.25, 0.32]) and high (0.37 [0.27, 0.51]) failed; slight was at its floor (0.19 [0.18, 0.21]). Stations agreed (0.31, 0.45). The percentile part alone verified at the stated levels (grid 0.39 and 0.55; stations 0.40 and 0.61). The 1-inch part removed the events: in the 24-33% of moderate and high area where the local 85th percentile is well below 1 inch (61% west of 100 W), the hazard occurred in 13-14% of 3-day windows. A second part: frequency fell from the first to the last window of a polygon (high 0.46 to 0.25; paired -0.32 [-0.46, -0.16]), while cold showed no fall. Exceedance of the 1991-2020 temperature percentiles drifted (Tmax above P85 on 18-27% of days in 2020-2026). Limitations: CPC criteria are guidelines that forecasters may change; 35 F and day conventions are our choices; the warm hazard sample (105 polygons) is too small; heat, snow and wind were not tested; Alaska excluded; few months for high levels.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370108"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370903"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  }
+ ],
+ "keywords": [
+  "Climate Prediction Center",
+  "Week-2 hazards outlook",
+  "forecast verification",
+  "calibration",
+  "heavy precipitation",
+  "cold wave",
+  "extended range",
+  "probabilistic forecast",
+  "GHCN-Daily",
+  "CPC unified gauge analysis",
+  "pre-registration",
+  "threshold",
+  "lead time",
+  "reliability"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_calibration.png",
+   "caption": "Observed frequency per valid day (per 3-day window for precipitation) inside CPC Week-2 risk polygons, by hazard and level. Blue: CPC grid, full CPC criterion; green: 543 GHCN-Daily stations; orange: percentile part only. Grey boxes: stated ranges. Bars: 95% month-block bootstrap."
+  },
+  {
+   "path": "files/figures/fig2_precip_attribution.png",
+   "caption": "a: Heavy-precipitation frequency by r, the 1991-2020 share of local P85 exceedances that also exceed 1 inch. Where r <= 0.5 the 1-inch part removes most events. b: First and last valid day or window in polygons with 3 or more: precipitation frequency falls, cold does not."
+  },
+  {
+   "path": "files/figures/fig3_map_and_drift.png",
+   "caption": "a: Mean difference between P85-only and full-criterion frequency in heavy-precipitation risk cells (large in the West). b: CONUS-mean annual exceedance of the 1991-2020 daily percentiles in CPC gridded data."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/threats.php",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "The CPC 8-14 Day Hazards Outlook that we verify."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/week2_hazards_info_Sep2022.pdf",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "States reliable probabilities of 20-40%, 40-60% and more than 60% for slight, moderate and high risk, and the hazard criteria. Heavy-precipitation moderate and high verified below these ranges."
+  },
+  {
+   "target": "https://cpc.ncep.noaa.gov/products/predictions/threats/week2_us_hazards_info.pdf",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "February 2025 product description with risk levels more than 20%, 40% and 60% and the nominal hazard thresholds."
+  },
+  {
+   "target": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/extremesToolAbout.php",
+   "reason": "Description of the GEFS Week-2 probabilistic extremes tool: daily temperature and 3-day precipitation probabilities for percentiles and fixed amounts."
+  },
+  {
+   "target": "https://ftp.cpc.ncep.noaa.gov/GIS/us_hazards/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Archive of probabilistic hazard shapefiles."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.unified.daily.conus.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CPC Unified Gauge-Based Analysis of Daily Precipitation over CONUS."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.cpc.globaltemp.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CPC Global Unified Temperature (Tmax, Tmin)."
+  },
+  {
+   "target": "doi:10.7289/V5D21VHZ",
+   "relations": [
+    "uses"
+   ],
+   "reason": "GHCN-Daily station data for the station check."
+  },
+  {
+   "target": "doi:10.1175/2008MWR2605.1",
+   "reason": "Ensemble regression (Unger et al. 2009), the calibration method of the GEFS extremes tool."
+  },
+  {
+   "target": "sci:sha256:efc8aabd4be1eeb5b9a3a3f372a0f86d76d4b4ffef2f8da8ed34fc9291b35524",
+   "relations": [
+    "supports"
+   ],
+   "reason": "WPC Excessive Rainfall Outlook Marginal areas verified below their floor; this work finds a similar floor failure for another NOAA precipitation hazard product."
+  },
+  {
+   "target": "sci:sha256:3383f5fff868fab6b8e1b6a84b50536b61e8a564f584ca5d55d6c1ba46da6e80",
+   "relations": [
+    "supports"
+   ],
+   "reason": "SWPC proton probabilities stayed flat over three days while skill fell; CPC heavy-precipitation levels show the same flat-over-range error."
+  },
+  {
+   "target": "sci:sha256:1ab16218a4595d34aefa15f8c0db13a576c371f6161ad5f42b19444915c47ddf",
+   "reason": "Earlier attribution of an over-forecast to the product's own definition rules (CRW outlook)."
+  },
+  {
+   "target": "sci:sha256:04cd0a5fbb07c95dbf3061f86168d57de298854bcbdaa90cdf3a47081719f7db",
+   "reason": "Earlier verification of a CPC/NOAA seasonal outlook in this campaign."
+  },
+  {
+   "target": "sci:sha256:154a2af1581f0560ae58890292cdae7bbfa11598918f1d0ebe2ec4bff9d8b0b4",
+   "reason": "Earlier verification of CPC ENSO probabilities in this campaign."
+  },
+  {
+   "target": "sci:sha256:afeada0c22c6a333d1e706bf55bb3375a80d377de5f95672f963e77d61230d8d",
+   "reason": "Report-based verification bias; this work uses gridded and station observations, which do not depend on reports."
+  }
+ ]
+}
