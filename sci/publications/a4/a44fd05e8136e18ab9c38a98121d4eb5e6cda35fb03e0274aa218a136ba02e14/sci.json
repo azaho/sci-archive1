@@ -1,0 +1,158 @@
+{
+ "title": "With range-wide GBIF niche indices, North American bird communities followed 4-7% of their spatial temperature gradient in 1970-2025 but 25-30% in 1997-2025; Swedish birds followed 28-53% in 1996-2019",
+ "abstract": "Question: campaign work found that bird community temperature indices (CTI) follow less than 10-14% of their spatial temperature gradient in time. A butterfly study showed that species temperature indices (STI) from the network's own sites can make non-climatic change look like tracking. Is the bird result an STI artefact? Data: North American Breeding Bird Survey 1970-2025 (126,811 standard runs, 5,308 routes, 413 species), Swedish Bird Survey fixed routes 1996-2019 from BioTIME study 634 (707 routes, 161 species), GHCN_CAMS May-July temperature, and GBIF June occurrence maps (1990-2025) for external breeding-range STIs. Method: CTI with internal (cross-fitted survey-route) STIs or external STIs (four variants), with route x observer effects. Tracking fraction = (CTI trend per C of warming) / spatial CTI slope. 2-degree block bootstrap. Exact split of the internal STI into a range-wide-niche part and a residual. Results: BBS internal and external STIs correlated at 0.95. For 1970-2025 the fraction was 0.14 (0.09-0.19) internal and 0.04-0.08 external (main 0.04, -0.01 to 0.09). The residual carried 75% of the internal CTI trend but only 9% of the spatial slope. It did not predict species trends. A few large-residual species (Canada Goose, Turkey Vulture, Pileated Woodpecker increases) drove it. Late-period internal STIs gave the same 0.15, so range shifts do not explain the gap. With every STI, BBS CTI fell in 1970-1996 while temperature rose, and followed 0.25-0.33 of the gradient in 1997-2025. Responses identified only from temperature variation agreed between STIs: year-to-year anomalies 0.02, between-route warming differences with year effects 0.07-0.09 (intervals include 0). In Sweden the direction reversed: internal 0.30 (0.19-0.49), external 0.53 (0.39-0.75; variants 0.28-0.52). There the residual carried 48% of the spatial slope and 8% of the trend. Conclusion: the STI source changes bird tracking estimates in either direction, so internal-STI fractions need an external check. The long-term 'less than 10%' value mixes a counter-climatic 1970-1996 fall with about 0.3 tracking after 1996 on two continents, near the 0.28 equilibrium fraction of a 75-network lag fit. Limitations: GBIF effort bias and broad species concepts; part of the recent common rise is not shown to follow local warming; period split and year-effect estimators were added after a partial-data look; Sweden has only 24 years.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310302"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "410102"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "310308"
+  }
+ ],
+ "keywords": [
+  "Breeding Bird Survey",
+  "Swedish Bird Survey",
+  "BioTIME",
+  "community temperature index",
+  "species temperature index",
+  "GBIF",
+  "space-for-time",
+  "climate tracking",
+  "climatic debt",
+  "birds",
+  "GHCN_CAMS",
+  "measurement artefact"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig3_tracking_fractions.png",
+   "caption": "Tracking fraction ((CTI trend per C of warming) / spatial CTI slope) for nine STI versions (blue: internal survey-route STIs; orange: external GBIF June range STIs). Panels: BBS 1970-2025, 1970-1996, 1997-2025, and Swedish fixed routes 1996-2019. 95% intervals from 2-degree block bootstrap. Dashed line: full space-for-time response."
+  },
+  {
+   "path": "files/figures/fig2_annual_cti.png",
+   "caption": "Annual CTI change within route x observer (BBS) or route (Sweden) for the internal STI, the external STI scaled by the fit slope, and the residual part. Internal = intercept + slope x external + residual exactly. In BBS the residual rose steadily while the range-wide-niche part fell to 1997 and then rose."
+  },
+  {
+   "path": "files/figures/fig1_sti_internal_vs_external.png",
+   "caption": "Internal (survey-route) STI against external (GBIF June breeding range) STI. BBS: 413 species, r = 0.95. Sweden: 161 species, r = 0.72, slope 0.62 (internal STIs compressed). Labelled species have large residuals."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c0a3a9aa7b4c6115119528bcd43c4f51b7bc2de204c571e3c468161b72cf1b91",
+   "reason": "Bird CTI followed less than 10% of warming with internal STIs; we repeat its CTI definition and test its STI source.",
+   "relations": [
+    "uses",
+    "challenges"
+   ]
+  },
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "reason": "75-network tracking fractions with internal STIs and the theta = 0.28 lag fit; we use its slow/fast estimator.",
+   "relations": [
+    "uses"
+   ]
+  },
+  {
+   "target": "sci:sha256:814f6d393d18214a8259af1e12c63fd1d1d81558bc5410f00c3a7eaf2a2a3d96",
+   "reason": "Butterfly external-STI test; we apply the same test to birds and find that its mechanism is not general.",
+   "relations": [
+    "uses",
+    "reviews"
+   ]
+  },
+  {
+   "target": "sci:sha256:7714830c552415458e0fbece8fb93ae05d88d18000b801144071d2993a034a3e",
+   "reason": "Bird centroids moved at about 14% of the isotherm shift."
+  },
+  {
+   "target": "sci:sha256:c86bb599c73034a2f763295b42d02ab39da3a2d4d881aa06cf21f1189dea979e",
+   "reason": "Climate suitability change predicted little of US bird abundance change."
+  },
+  {
+   "target": "sci:sha256:017e2384195d767c07150c911b24f10d111d428a0f4ffd5a05eb93f7cab0aec0",
+   "reason": "Finnish atlas range margins moved more slowly than isotherms."
+  },
+  {
+   "target": "sci:sha256:58093808ecb2a86ee2ee789bec9ac0ee81c53408d54e43471041d519715ee6f4",
+   "reason": "Demersal fish redistribution offset 24% of bottom temperature change."
+  },
+  {
+   "target": "sci:sha256:25581ede440edd79d3b5549f9356af2671302c458326692ce9859e87cbe76d7a",
+   "reason": "Animal first-detection dates in Japan became later than warming predicts."
+  },
+  {
+   "target": "sci:sha256:658d76112d85ac68b7f871807c40a0b5f267d2bc8bb90ccc554d0d489e934dcb",
+   "reason": "Reef fish thermal index followed SST at 0.35 C per C only through region-wide year changes; a parallel to our common-trend caveat."
+  },
+  {
+   "target": "sci:sha256:b113aa1b2ccded7ec3d78d5934524e4d47ca1bfbd5a405865a61fbc66acc1262",
+   "reason": "Observer hearing drift and CTI; we use route x observer effects."
+  },
+  {
+   "target": "sci:sha256:91f371b5f37df535e9aea05121925a21206a63ec0ff36828d7c23b0ada2b6d77",
+   "reason": "Species-level bird responses followed 5-14% of own spatial gradients."
+  },
+  {
+   "target": "sci:sha256:a1ea58ba124e45baf6273d251781f152f203f6673d637e323b571ab31d52b006",
+   "reason": "Local bird gradients kept 69% of the regional temperature gradient; year-to-year tracking about 3%, close to our fast fraction.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:b41e48480d37e8e79a66001afcbc4a9d2e04c68656ad37146a984c637384a43c",
+   "reason": "Bird communities sort by temperature locally but follow 3-24% in time."
+  },
+  {
+   "target": "sci:sha256:1f25ce5bbaf39a7739983747b5b8b3866f3c542742d7362944937b26f113c2cd",
+   "reason": "Forest type explained half of the gap on forested routes."
+  },
+  {
+   "target": "sci:sha256:b9959b67dade8520b0c7026aab396dbb7f11ed9b25930e0ca2157db8058f42fd",
+   "reason": "Observer high-frequency hearing loss in BBS."
+  },
+  {
+   "target": "sci:sha256:f7eaf981617eeebb720e1d70d0119e6c63b603697af2059afa04baf45ddac00e",
+   "reason": "Linear hearing drift not identified by observer turnover."
+  },
+  {
+   "target": "sci:sha256:314c7ca6aaab0ba7148ed41deca868dc85070cb3d0ec320fc79b7b15c5b40938",
+   "reason": "Warm springs act like a later survey; a phenology artefact too small to explain weak tracking."
+  },
+  {
+   "target": "sci:sha256:256c764220ae37749fbdcb52753184af52f98ec2a44c83a20eb33f673891b0c3",
+   "reason": "Lag-model ranges fitted to 54 network summaries."
+  },
+  {
+   "target": "sci:sha256:7569534265ab613c33e24deb8f543e56365ca06f926a3bd66a851b3fc47aa4b1",
+   "reason": "Spring shift of about 1.25 days per C in BBS species."
+  },
+  {
+   "target": "sci:sha256:9dcba730c1ec58595327efcb8ee74e49aaead2f97cb6ea4faf0e22d3cea245c7",
+   "reason": "Song frequency and tenure curvature."
+  },
+  {
+   "target": "sci:sha256:250795264a5ad4d6b0a9c049ebc3fb32af175882c3642c70be70eb09bac8d09d",
+   "reason": "Traffic noise hid warm-adapted birds but did not change the CTI trend."
+  },
+  {
+   "target": "sci:sha256:096d8e504145cebd5fdd9cb3813dc80408582122a2d29574c3f70651f22188df",
+   "reason": "Birds followed 10-40% of spatial land-cover gradients."
+  },
+  {
+   "target": "sci:sha256:b624d6a06fc0ebc7513dfda31fe81436ae7b597c549770a41c9a84a6b44ac9b3",
+   "reason": "Species followed land-cover change at 11-25% of spatial predictions."
+  },
+  {
+   "target": "sci:sha256:2a5fc1a77d6ce47a8a601d10ca7d03a3d60cde90713a2030e4eeb897e1185ee9",
+   "reason": "Insecticide change explained less than 3% of the bird gap."
+  }
+ ]
+}
