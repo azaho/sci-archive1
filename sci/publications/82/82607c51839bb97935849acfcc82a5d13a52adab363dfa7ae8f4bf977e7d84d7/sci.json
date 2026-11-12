@@ -1,0 +1,127 @@
+{
+  "title": "Wet-month response terms raised water-storage error by 1.39% in a 2015-2026 test of 2,168 GRACE land cells",
+  "abstract": "We tested whether an added response to unusually wet months improves total land water-storage estimates. We reused a fixed published panel of CSR GRACE and GRACE-FO storage and GPCP monthly rain in 2,168 land cells. Each cell model was fit on 2002-2014 and tested on observed months in 2015-June 2026. The baseline used two storage lags and six rain lags. The second model added six rain terms above one fit anomaly standard deviation. These terms reduced fit squared error by 5.85% but raised pooled test error by 1.39%. The conditional 95% crossed space-and-time block interval for the increase was 0.49% to 2.62%. A 12-month run with known rain raised error by 0.84% (0.19% to 1.95%). All planned variants had point error increases; a lower rain threshold gave an interval across zero. Checks added after the main result retained the loss in physical water-depth units and after fit-only penalty selection. The result limits this feature set and does not exclude nonlinear recharge. These are reconstructions with known rain, not lead forecasts. Coarse total storage, one rain product, revised data, sparse early test months, inherited timing, and uncertainty conditional on fitted models limit the result. New code, aggregate evidence, figures, audits, and an exact external-input retrieval recipe are included. Source series remain outside this baseline package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "physics.geo-ph"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.AP"
+    }
+  ],
+  "keywords": [
+    "GRACE",
+    "water storage",
+    "nonlinear recharge",
+    "rain extremes",
+    "chronological test",
+    "negative result",
+    "GPCP",
+    "block bootstrap"
+  ],
+  "display": [
+    {
+      "path": "files/figures/model_checks.png",
+      "caption": "Wet-month terms raised the main later-year error. No planned setting gave a clear gain. Bars show conditional 95% space-and-time block intervals. The climate groups are secondary."
+    },
+    {
+      "path": "files/figures/heldout_checks.png",
+      "caption": "The loss remained in a 12-month run with known rain, in physical water-depth units, and with fit-only penalty selection. The right panel shows annual error changes and the number of scored months."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bd955a4f7f0de09da98a219a29d8ed655f190d474261a09b77483111f9269bc9",
+      "relations": [
+        "uses"
+      ],
+      "reason": "We reuse its exact published input panel. Its unexplained year-scale storage-change asymmetry motivates a new held-out rain-amplitude threshold test. We do not reuse its analysis code or claim independent data confirmation."
+    },
+    {
+      "target": "sci:sha256:2a272ce0fcfb5955020e580c5b6f683e12039d45b8bee777b6070e417e1bbbf3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its comparison of one and two storage time scales motivates a baseline with two storage lags. Its tested threshold is on storage sign, not rain amplitude."
+    },
+    {
+      "target": "sci:sha256:363ebf385701685fa5382e81bf36dccb0271e5bab3f2d5bea44af45c003cd59e",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Its short storage response after precipitation extremes provides related open evidence. We test a different model and score."
+    },
+    {
+      "target": "doi:10.1038/nclimate1731",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "The public abstract describes episodic recharge after intense seasonal rain in central Tanzania. It motivates but does not establish the response at the scale tested here."
+    },
+    {
+      "target": "doi:10.5194/esd-11-755-2020",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior GRACE aquifer work links some nonlinear storage changes to extreme annual rain and describes uncertainty in groundwater separation."
+    },
+    {
+      "target": "doi:10.1002/2016JB013007",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR mascon method reference requested by the provider."
+    },
+    {
+      "target": "doi:10.15781/cgq9-nh24",
+      "relations": [
+        "uses"
+      ],
+      "reason": "CSR data citation requested by the provider. Exact RL06.3 snapshot and hashes are recorded separately."
+    },
+    {
+      "target": "doi:10.3390/atmos9040138",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GPCP v2.3 precipitation product reference."
+    },
+    {
+      "target": "doi:10.1029/2007JD008470",
+      "relations": [
+        "uses"
+      ],
+      "reason": "GHCN-CAMS climate class source reference."
+    },
+    {
+      "target": "https://www2.csr.utexas.edu/grace/RL0603_mascons.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source documentation, resolution limits, and acknowledgement instructions."
+    },
+    {
+      "target": "https://psl.noaa.gov/data/gridded/data.gpcp.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "NOAA PSL GPCP product description and usage statement."
+    },
+    {
+      "target": "https://cds.climate.copernicus.eu/licences/global-precipitation-climatology-project",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "External GPCP rights and attribution. No source series or derivative source database is bundled."
+    },
+    {
+      "target": "https://psl.noaa.gov/disclaimer/",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "NOAA PSL attribution and public-domain notice, with third-party exceptions."
+    }
+  ]
+}

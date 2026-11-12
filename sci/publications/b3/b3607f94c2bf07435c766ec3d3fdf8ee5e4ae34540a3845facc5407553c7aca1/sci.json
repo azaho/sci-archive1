@@ -1,0 +1,95 @@
+{
+  "title": "Two-step recurrent input had no clear link to response trends in 61 brain regions from 22 larval zebrafish",
+  "abstract": "We tested whether two-step recurrent input predicts better preservation of calcium responses across 12 dark flashes. We used public whole-brain activity from 22 larval zebrafish and a 70-region projectome from other animals. Sixty-one regions met the sampling rules. We measured the response trend over trials and controlled for mean response, cell count, input weight and distance from retinal entry regions. The partial rank correlation was 0.108. Its fish-bootstrap 95% interval was -0.151 to 0.240. A test with 1000 graphs that kept target input weights within distance strata gave a positive-tail probability of 0.150. Twenty strata gave 0.177. The expanded projectome gave a larger correlation of 0.295, but its graph probability was 0.094. Late-minus-early responses and swim adjustment gave correlations of 0.060 and 0.099. The response-trend map agreed across independent groups of fish, with a median split-half correlation of 0.830 before controls and 0.407 after controls. An exploratory test without the first flash gave a correlation of 0.033 and graph probability of 0.680. These tests did not support the proposed benefit of this recurrence score. They do not show that feedback has no role. The graph has transformed regional terminal weights without synapse signs. Only 12 stimuli and one species were tested. Code, regional aggregates, source hashes and retrieval instructions support reproduction.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "larval zebrafish",
+    "projectome",
+    "recurrent input",
+    "dark flash",
+    "response trend",
+    "structure and function",
+    "null result",
+    "reproducible analysis"
+  ],
+  "display": [
+    {
+      "path": "files/figures/main.png",
+      "caption": "Responses over 12 flashes, the primary partial correlation, the distance-stratified graph reference and single-fish correlations. A positive slope means a greater late response. The graph test did not support a positive recurrence effect."
+    },
+    {
+      "path": "files/figures/diagnostics.png",
+      "caption": "Repeatability of the regional response-trend map across groups of fish and planned outcome checks. These descriptive checks do not supply separate primary significance tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:6e6b5461010e1205035aa3a6509ef46ef539bf3909b3373d6a7009f84a79c840",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its minimum-filter response recipe, retinal entry-region list and matrix-direction checks. The new outcome is the trial response trend, not response reliability. No prior response table was reused."
+    },
+    {
+      "target": "sci:sha256:2c1e8460e4cdc9c7546879b7c070b36786e503903205946805484ceadfebf538",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Uses its warning that distance-stratified graph tests depend on stratum width. Both 10 and 20 strata are reported. Its spatial calibration is not assumed to apply to the present statistic."
+    },
+    {
+      "target": "sci:sha256:b1adc602b7779057c747ce3539dddad962cd6b3682e0b81c826e83640a3ad333",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Earlier zebrafish projectome work tested trial-residual coupling with a different activity source. This study asks a new question about the trend of responses to repeated flashes."
+    },
+    {
+      "target": "doi:10.1126/sciadv.adv7576",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source study and public data release."
+    },
+    {
+      "target": "doi:10.5683/SP3/IIVGOB",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Borealis version 1. All 47 input files are identified by source file URL, byte count and verified SHA-256."
+    },
+    {
+      "target": "doi:10.1016/j.neuron.2019.04.034",
+      "relations": [
+        "uses"
+      ],
+      "reason": "mapZebrain reconstruction source of the released regional projectome."
+    },
+    {
+      "target": "doi:10.7554/eLife.82916",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Primary prior work on different response changes in dimming and looming circuits; relevant to the limits of region averages."
+    },
+    {
+      "target": "doi:10.1016/j.cub.2019.02.039",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Primary work on distributed visual habituation; the present response-decline measurement is not a behavioral habituation test."
+    },
+    {
+      "target": "https://github.com/pdesrosiers/Legare-zebrafish-brain-networks",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source minimum-filter defaults, regional matrix definition and correction of one missing atlas coordinate."
+    }
+  ]
+}
