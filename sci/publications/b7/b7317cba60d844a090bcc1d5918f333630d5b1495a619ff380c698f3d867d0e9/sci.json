@@ -1,0 +1,122 @@
+{
+ "title": "Signed wiring in four fly connectomes predicted the size of measured central-complex optogenetic responses better than target-shuffled wiring, but all four gave the wrong sign for Δ7 excitation",
+ "abstract": "We tested if EM connectome wiring predicts measured functional connectivity in the Drosophila central complex. Franconville et al. (2018) activated one cell type with CsChrimson and recorded calcium in another. We matched 18 of their types to connectome types and kept 51 pairs (27 with a significant response). For hemibrain v1.2, FlyWire 783, male CNS v1.0 and BANC 888, we computed a signed input-fraction response, direct (K=1) and over three steps (K=3), with GABA and glutamate inhibitory. At K=3, predicted response and measured signed amplitude had Spearman rho 0.55, 0.58, 0.45 and 0.57. A null that shuffles targets within each source gave mean rho 0.18 to 0.32 (p 0.002 or less). |R| separated responsive pairs with AUC 0.70 to 0.72, against 0.63 for light-level overlap, and it added information beyond overlap in three of four connectomes (likelihood-ratio p about 0.03). Wiring gave the correct sign for 20 to 22 of 27 pairs, but the transmitter of the source alone gave 18 to 20 (McNemar p 0.25 or more). Three Δ7 pairs (to P-EN1, P-EN2, PFNm) had measured excitation but predicted inhibition in all four connectomes. In the same study, picrotoxin removed the Δ7 to P-EN2 excitation and mecamylamine removed the Δ7 to PFNm excitation, so a polysynaptic or non-linear route is necessary. A male CNS acetylcholine label for GLNO gave two more sign errors. Results held with a 1-synapse threshold and alternative type matches. Limitations: 51 pairs from 16 sources, manual type matching, different animals for anatomy and activity, slow calcium signals that show inhibition weakly, and a linear model without receptor or region detail.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "Drosophila",
+  "central complex",
+  "functional connectivity",
+  "optogenetics",
+  "structure-function",
+  "hemibrain",
+  "FlyWire",
+  "male CNS",
+  "BANC",
+  "Delta7",
+  "neurotransmitter sign",
+  "linear propagation model",
+  "cross-animal replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_predicted_vs_measured.png",
+   "caption": "Measured optogenetic response (Franconville et al. 2018, scaled calcium integral, symlog) against the signed three-step connectome prediction for 51 central-complex pairs in four connectomes. Filled blue: significant excitation; filled orange: significant inhibition; open gray: no significant response. Labelled points: Δ7 sources with measured excitation and predicted inhibition."
+  },
+  {
+   "path": "files/figures/fig2_sign_matrix.png",
+   "caption": "The 27 significant pairs: measured signed response (first column) and the predictions of four connectomes (symlog color). × marks a wrong predicted sign. Right: drug effects from the same study (percent of pre-drug response that remained; MEC mecamylamine, PTX picrotoxin)."
+  },
+  {
+   "path": "files/figures/fig3_metrics.png",
+   "caption": "Presence AUC, sign accuracy and Spearman correlation for direct (K=1) and three-step (K=3) predictions in each connectome. Orange marks: baselines (light-level overlap; source transmitter sign; overlap times source sign). Gray marks: mean of the within-source target-shuffle null."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.37017",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Source of the functional connectivity and drug measurements (OSF vsa3z, CC BY 4.0)."
+  },
+  {
+   "target": "https://osf.io/vsa3z/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Data files stats_per_pair.csv and stats_per_run.csv."
+  },
+  {
+   "target": "doi:10.7554/eLife.66039",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Cell-type names and statements used for the type match."
+  },
+  {
+   "target": "doi:10.7554/eLife.57443",
+   "relations": [
+    "uses"
+   ],
+   "reason": "hemibrain v1.2 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire 783 connectome."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07763-9",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Signed FlyWire connectivity file and sign convention."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC 888 edge list and metadata, version 3."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+   "relations": [
+    "uses"
+   ],
+   "reason": "male CNS v1.0 connectome weights; body-neurotransmitters file from the same folder."
+  },
+  {
+   "target": "sci:sha256:80c308d5d7e373bd1978c16bfd9d9578c37b8250cd55756cc7e2e3f39c91978e",
+   "reason": "Earlier campaign result on head-direction wiring in the male CNS; a candidate non-linear model for the Δ7 errors."
+  },
+  {
+   "target": "sci:sha256:27a99efd1eb09900c17a379046097cb794e3f30810c515011c97eb57770f0dbc",
+   "reason": "Earlier campaign rate models of head-direction wiring in two connectomes."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "reason": "Similar signed-wiring sign rule in the optic lobe. Here the sign errors are not in weakly driven pairs: the Δ7 errors have strong direct wiring."
+  },
+  {
+   "target": "sci:sha256:34240293be2875909e543b5c7111c440630cffa6ec0f2330244cddb27956b272",
+   "reason": "Earlier campaign comparison of whole-brain models across FlyWire and male CNS."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "reason": "Earlier campaign comparison of connectome model responses between FlyWire and BANC."
+  }
+ ]
+}
