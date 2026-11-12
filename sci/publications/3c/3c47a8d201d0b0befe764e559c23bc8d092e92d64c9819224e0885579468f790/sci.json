@@ -1,0 +1,126 @@
+{
+  "title": "Two dense noise patterns recovered circuit ratios exactly but had higher sample error in selected linear models",
+  "abstract": "We tested a compressed input design for a circuit-ratio test in fully observed stable linear systems. A baseline spectrum and two dense independent noise additions recover labelled response columns when each node has a known distinct power ratio between additions. Unknown absolute node powers and scalar cell filters cancel from a four-edge weight ratio. This uses standard generalized eigenvalue source separation. Exact tests on models from two adult worm connectomes and one MICrONS mouse subgraph had maximum relative ratio error 9.34e-14. A synthetic comparison used 18 selected circuits, matched total samples, baseline samples and mean added power, two doses and three budgets. Across all 18 size-dose-budget settings, separate-node perturbations had 7.31 to 61.14 times lower median ratio error. All 4320 primary estimates completed. At 786432 samples and dose 16, dense-design median errors were 0.209, 0.337 and 0.725 for 8, 16 and 32 states. A 360-estimate lower-peak-power check still favored separate-node perturbations. Repeated input codes allowed identical spectra with different circuit ratios. Coherent input spread biased the ratio while preserving exact code eigenvalues. We give proofs, a conditional eigenvalue margin, original code, synthetic evidence, aggregate graph checks and exact external-input hashes. No measured neural activity was fitted. Full observation, calibrated relative powers, selective inputs and fixed dynamics within comparisons are required. External records and graph matrices are excluded.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "stat.ME"
+    }
+  ],
+  "keywords": [
+    "neural circuit identification",
+    "noise perturbation",
+    "joint diagonalization",
+    "scalar filters",
+    "experimental design",
+    "connectomics",
+    "MICrONS",
+    "finite samples"
+  ],
+  "display": [
+    {
+      "path": "files/results/sampling.png",
+      "caption": "Matched sample and mean-power comparison at dose 16. Lines show medians and shading shows the 10th to 90th percentiles across six fixed graphs and 20 draws per graph. Samples are ideal independent complex spectral vectors."
+    },
+    {
+      "path": "files/results/design_limits.png",
+      "caption": "The fixed-range code gap bound, the lower-peak-power follow-up, an exact repeated-code ambiguity, and coherent input spread that preserves code eigenvalues but biases the circuit ratio. These are method and model results."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:969c576e0c654031e6594e4daa1a1ebb98323cdf5eda443bc426df0e40607877",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Extends its local-noise spectral four-edge ratio target to two dense independent input patterns. No code or graph products reused."
+    },
+    {
+      "target": "sci:sha256:4ef9d52256eccfbddf8a6d2b5119a3d7204c998bcdbd81815541dd806fb787bf",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior calibrated covariance pattern design; the present study uses unknown absolute input powers and scalar-filter-invariant fixed-frequency ratios."
+    },
+    {
+      "target": "sci:sha256:cbf28f397206aeaf31ffe936e1f565977286ccf999c9a4b5ce93725368cf3a8a",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Prior sample confidence bound with calibrated diffusion. Our margin is conditional and is not a sample confidence interval."
+    },
+    {
+      "target": "sci:sha256:6f6284ad27512483285981c356ecb46792d103fc01e7feeb0093a46e56abdd86",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related hidden-state limits; full recurrent-state observation remains required here."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1111.7088",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Established joint diagonalization and complex source separation; the generalized eigenvalue mechanism is not claimed as new."
+    },
+    {
+      "target": "doi:10.48550/arXiv.1506.02494",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Established three-setting identification from covariance differences in cyclic causal models."
+    },
+    {
+      "target": "doi:10.1038/s41586-021-03778-8",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Original adult worm connectome source; used only for positive reference-model graph checks."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08840-3",
+      "relations": [
+        "uses"
+      ],
+      "reason": "MICrONS v1 public edge properties; only positive anatomical count fields used."
+    },
+    {
+      "target": "doi:10.1038/s41586-025-08790-w",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Primary MICrONS reconstruction and functional-connectomics resource; no activity fitted."
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_7.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://raw.githubusercontent.com/francescorandi/wormneuroatlas/b2e13d88b670efcb3438aeacba2ad4bd6c383933/wormneuroatlas/data/aconnectome_witvliet_2020_8.csv",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/functional_data/functional_connectomics/node_and_edge_properties/v1/edge_data_v1.pkl",
+      "relations": [
+        "uses"
+      ]
+    },
+    {
+      "target": "https://www.microns-explorer.org/citation-policy"
+    },
+    {
+      "target": "https://alleninstitute.org/legal/terms-of-use"
+    },
+    {
+      "target": "https://github.com/francescorandi/wormneuroatlas/blob/b2e13d88b670efcb3438aeacba2ad4bd6c383933/LICENSE"
+    }
+  ]
+}
