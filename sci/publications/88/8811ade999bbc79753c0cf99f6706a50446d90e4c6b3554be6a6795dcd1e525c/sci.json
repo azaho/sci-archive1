@@ -1,0 +1,118 @@
+{
+ "title": "In 74 epilepsy patients, group tractography gave a small specific gain in held-out prediction of stimulation-evoked N1 responses after distance and electrode effects, and no gain for N1 latency",
+ "abstract": "Question: does human diffusion-MRI wiring predict causal responses to single-pulse cortical stimulation (CCEP N1) after distance and electrode identity are removed, and is the gain specific to the real wiring? Data: OpenNeuro ds004080 v1.2.4 (CC0), 74 patients aged 4-51 with ECoG, the authors' N1 detections and native electrode distances; HCP group-consensus structural connectome (ENIGMA toolbox) in Schaefer-400 parcels. Method: 291,547 stimulated-pair x recording-electrode edges (30,676 with N1). In each patient, 5-fold cross-validated logistic models with a distance spline, parcel adjacency and centroid distance, then one fixed effect per stimulated pair and per recording electrode, then direct wiring, then four multi-step measures. Nulls: 20 surrogates that keep parcel degree and edge length (within 5 mm) and 20 distance-bin weight shuffles. We also tested N1 latency, a cross-patient model, distance of 20 mm or more, and Glasser-360 parcels. Results: geometry reduced held-out log-loss by 147 millibits per edge and electrode effects by 56 more. Direct wiring then added 0.93 mbit (95% CI 0.36-1.63; 0.26% of the loss); surrogates added about 0 (largest 0.24), and real minus surrogate was 0.98 (0.42-1.65). Multi-step measures added 1.30 (0.73-1.89) beyond direct wiring, also above surrogates. The gain transferred to held-out patients (1.01 mbit, surrogates at most 0.12), held at 20 mm or more (1.31) and with Glasser-360 (1.11). It is concentrated: 5 patients carry 68% of it and the median patient gain is 0.11 mbit. Wiring did not improve held-out N1 latency prediction (change in R2 -0.002). Conclusion: unlike earlier campaign tests with resting FC, causal stimulation responses carry a pair-specific wiring signal that geometry-matched wiring does not reproduce, but it is about 2% of what electrode identity explains. Limitations: group (not individual) tractography, coarse parcels, one centre, automatic N1 detection, 20 surrogates per null.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "cortico-cortical evoked potentials",
+  "CCEP",
+  "single pulse electrical stimulation",
+  "ECoG",
+  "diffusion MRI",
+  "tractography",
+  "structure-function",
+  "network communication",
+  "surrogate connectome",
+  "human cortex",
+  "HCP"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_within_patient_gain_vs_surrogates.png",
+   "caption": "Left: held-out log-loss gain (millibits per edge, mean of 74 patients, normal 95% CI) from adding group tractography to three base models, compared with the pooled gain of 20 degree- and length-preserving surrogates (dark grey) and 20 distance-bin shuffles (light grey). Right: per-patient gain of real minus mean surrogate wiring in the model with electrode fixed effects."
+  },
+  {
+   "path": "files/figures/fig3_gain_scale.png",
+   "caption": "Size of successive held-out gains: geometry over a constant rate, electrode fixed effects over geometry, direct tractography over both, and multi-step measures over direct wiring (mean of 74 patients, 95% CI; symmetric-log axis)."
+  },
+  {
+   "path": "files/figures/fig1_n1_by_distance_and_sc.png",
+   "caption": "Raw association: N1 probability (mean of patient rates, 95% CI) against native distance, split by whether both, one or neither of the two stimulated parcels has a direct group-tractography connection to the recording parcel."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:29db0c64a2f69e86b51f20c0fe84ad9ea755316c5301ed23d308b847421db6d1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Same design idea (node effects, distance spline, communication measures) applied here to causal stimulation data instead of FC."
+  },
+  {
+   "target": "sci:sha256:08231ec245bf55b6ba4c21fdec891253e330f3019389c6c7d47ebaf8ac1162bf",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Strength- and distance-matched surrogate wiring test; we use a degree- and length-preserving version."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "reason": "Found at most 0.004 held-out R2 of pair-specific wiring in FC; our causal-response result contrasts with this."
+  },
+  {
+   "target": "sci:sha256:fe1e4c153ab8c71e54b32061255f4d7b64a20d4f9d440a8d1432fbf6e7ddbf95",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Showed surrogate tests need node terms to be diagnostic; our models include per-electrode fixed effects."
+  },
+  {
+   "target": "sci:sha256:3bd4459fa104b5cc588cee3dc3a490a7901c37c0ad3eb36a539345a237bc2280",
+   "reason": "Human diffusion SC-FC specificity in the campaign record."
+  },
+  {
+   "target": "doi:10.18112/openneuro.ds004080.v1.2.4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "CCEP ECoG dataset (CC0): N1 detections, electrode positions and distances."
+  },
+  {
+   "target": "doi:10.1038/s41593-023-01272-0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Dataset paper; N1 detection method."
+  },
+  {
+   "target": "doi:10.1038/s41592-021-01186-4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ENIGMA toolbox: HCP group structural connectivity and fsaverage5 parcellations."
+  },
+  {
+   "target": "doi:10.1093/cercor/bhx179",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Schaefer-400 parcellation."
+  },
+  {
+   "target": "doi:10.1038/nature18933",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Glasser-360 parcellation (robustness run)."
+  },
+  {
+   "target": "doi:10.1016/j.neuron.2023.01.027",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Reported that connectome communication models explain CCEP propagation; we find a specific but small multi-step gain under stricter controls."
+  },
+  {
+   "target": "doi:10.1073/pnas.1720186115",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Geometry-preserving rewiring null (degree and length kept)."
+  }
+ ]
+}
