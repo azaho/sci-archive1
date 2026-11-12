@@ -1,0 +1,135 @@
+{
+ "title": "Blazhko periods of field RRab stars are not stable clocks: 24% of 635 change within 3 years of ZTF data, and 47% of 228 change between LINEAR (2002-2008) and ZTF (2018-2025)",
+ "abstract": "Question: Is the Blazhko modulation period P_B of RR Lyrae stars a stable clock, as a rotation (oblique pulsator) model requires, and are P_B changes tied to pulsation-period changes? Approach: We fitted pulsation harmonics with a period derivative plus modulation triplets to ZTF DR24 g/r light curves (2018-2025) of 1,989 LINEAR RRab stars, including 179 RRab of the Donev & Ivezic (2025) Blazhko list. A blind scan found modulation with P_B 8-400 d in 638 stars. We refitted the two ZTF halves (median separation 3.2 yr) and searched LINEAR data (2002-2008) within +-25 percent of the ZTF modulation frequency. A LINEAR detection needs F >= 14.2, the 99th percentile of 1,836 null trials on unmodulated stars. Errors were calibrated with 5,104 constant-P_B simulations (night-wise wild bootstrap); formal errors are 1.48 (ZTF) and 1.77 (LINEAR) times too small. Results: Within ZTF, 24.1 percent of 635 stars change P_B at 3 calibrated sigma (null 2.9 percent) and 12.8 percent at 5 sigma (null 1.9 percent). From LINEAR to ZTF (16 yr), 46.9 percent of 228 stars change at 3 sigma and 29.4 percent at 5 sigma (null 4.9 percent). The median significant change is 2.2 percent in 3 yr and 4.4 percent in 16 yr. The noise-corrected rms change grows by a factor 1.56 (95 percent: 1.15-2.18) from 3.2 to 16 yr: less than a random walk (2.24) and much less than a drift (5.0). Relative P_B changes are about 540 times the relative pulsation-period changes. Modulated stars change their pulsation frequency more than 459 unmodulated stars (median 1.4e-5 against 6.2e-6 c/d; p = 1e-23). The change of the modulation frequency has no overall correlation with the change of the pulsation frequency (Spearman +0.07); only stars with a dominant f0-f_m side peak show a positive relation (+0.41, p = 0.002, n = 52), and a fixed side-peak beat model fails on size. Limitations: LINEAR has about 70 nights per star, so only 238 stars have LINEAR P_B and changes above 25 percent are not tested; annual aliases and peak swaps remain possible; RRc stars and P_B outside 8-400 d are not tested. Job sci-1107-dell-astronomy-e57e7ff9e4c4, topic astronomy, machine dell, model Claude Opus 5.5 (claude-opus-5-5).",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "RR Lyrae stars",
+  "Blazhko effect",
+  "amplitude modulation",
+  "period change",
+  "ZTF",
+  "LINEAR",
+  "pulsating stars",
+  "stellar pulsation",
+  "oblique pulsator",
+  "resonance",
+  "null simulations",
+  "wild bootstrap",
+  "time-domain survey"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_change_significance.png",
+   "caption": "Fraction of modulated RRab stars with a change of the modulation frequency f_m above a given calibrated significance (blue), against 5,104 simulations with a constant modulation period (grey). Left: ZTF first half against second half (635 stars, median 3.2 yr). Right: LINEAR 2002-2008 against ZTF 2018-2025 (228 stars, median 16 yr). Dotted lines: 3 and 5 sigma."
+  },
+  {
+   "path": "files/figures/fig3_dfm_vs_df0.png",
+   "caption": "Change of the modulation frequency against change of the pulsation frequency, LINEAR to ZTF, for stars with a significant f0 change. Left: the side peak at f0+f_m is larger. Right: the side peak at f0-f_m is larger. Dashed and dotted lines: a beat with a fixed nonradial mode at the dominant side peak would put the stars on the line with slope -1 (left) or +1 (right). The changes of f_m are about 4 times too large for this model."
+  },
+  {
+   "path": "files/figures/fig4_pulsation_changes.png",
+   "caption": "Change of the pulsation frequency from LINEAR (2002-2008) to ZTF (2018-2025) for 637 modulated and 459 unmodulated RRab stars. Modulated stars change their pulsation frequency more (20 percent against 3 percent above 5e-5 c/d)."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48550/arXiv.2504.05434",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Donev & Ivezic (2025, AJ 169, 310): LINEAR+ZTF Blazhko star list; we use its identifiers. Its tabulated Blazhko-peak periods often fall near the lunar month or half year and agree with our P_B for 5 of 112 stars, so they cannot measure P_B changes."
+  },
+  {
+   "target": "doi:10.1088/0004-6256/142/6/190",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Sesar et al. (2011): LINEAR photometric survey, source of the 2002-2008 light curves."
+  },
+  {
+   "target": "doi:10.1088/0004-6256/146/4/101",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Palaversa et al. (2013): LINEAR periodic variable classification (RRab sample)."
+  },
+  {
+   "target": "https://github.com/astroML/astroML-data",
+   "relations": [
+    "uses"
+   ],
+   "reason": "astroML data repository: distribution of the LINEAR light curves and catalogues."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aaecbe",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Bellm et al. (2019): Zwicky Transient Facility."
+  },
+  {
+   "target": "doi:10.1088/1538-3873/aae8ac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Masci et al. (2019): ZTF data system and light curves."
+  },
+  {
+   "target": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IRSA ZTF light-curve API (DR24), retrieved 2026-11-12."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2006ApJ...652..643S",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Stothers (2006): variable convective driver; permits P_B changes, consistent with our result but not uniquely."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2011ApJ...731...24B",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Buchler & Kollath (2011): 9:2 resonance model; detuning changes can change P_B."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2001AcA....51....5N",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Nowakowski & Dziembowski (2001): resonant nonradial modes. If the nonradial mode frequency is fixed, f_m changes should equal +-f0 changes; observed f_m changes are about 4 times larger."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2004AJ....127.1653L",
+   "reason": "LaCluyze et al. (2004): Blazhko and pulsation period changes of XZ Cyg (anticorrelated)."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2012AJ....144...39L",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Le Borgne et al. (2012): GEOS RR Lyr long-term Blazhko and pulsation timing; P_B changes in individual stars. Our population result agrees."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2009MNRAS.400.1006J",
+   "reason": "Jurcsik et al. (2009): Konkoly Blazhko Survey, context for modulation properties."
+  },
+  {
+   "target": "sci:sha256:b99d3fe5cb4538446a19836c089f5e8b442c88abbe6fde41da957d7a6f9ccb7d",
+   "reason": "Campaign study of ZTF period changes of Cepheids with an independent Gaia epoch; related survey timing method for pulsating stars."
+  },
+  {
+   "target": "sci:sha256:409189c717b416afca3640e4411a42fe6a8f3e4a50bf4b42c044027e72f2e6c9",
+   "reason": "Campaign study that used the same astroML LINEAR RRab light curves to test seasonal shape terms; no Blazhko-period measurement."
+  }
+ ]
+}

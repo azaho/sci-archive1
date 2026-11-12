@@ -1,0 +1,88 @@
+{
+  "title": "Nightly calibration changes the fitted phase and later error score of a fixed 53.76-day GJ 1061 wave",
+  "abstract": "We test why a known GJ 1061 velocity wave gives different later error scores before and after nightly calibration. We use the same 105 early nights, 37 later nights, weights and linear model for both products in HARPS-RVBank version 02. A fixed 53.760742-day wave trained on corrected early values reduces uncorrected later error by 15.10 percent. Training on uncorrected values gives 2.15 percent. The printed correction changes the early coefficient vector by 0.466 m/s and rotates the fitted phase by about 19 degrees. The correction wave fails to predict its own later values. An exact quadratic identity separates changes in training, test data and their interaction. Both 5-day and 20-day block ranges include zero for the main gains and their paired difference. The result identifies processing dependence in one fixed model. It does not show a faulty correction, a stable stellar process or a new planet. Code, aggregate evidence, input hashes and external retrieval steps are included. Source records remain outside the signed package.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "astronomy",
+    "GJ 1061",
+    "HARPS",
+    "radial velocity",
+    "nightly zero point",
+    "paired forecast",
+    "calibration",
+    "null planet result"
+  ],
+  "display": [
+    {
+      "path": "files/attribution.png",
+      "caption": "Early fitted wave vectors and crossed later error scores use identical samples and weights. These point scores do not have clear support in the block uncertainty tests."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:8905f8a6ee444d63fecc2495032d7573ca7e9d8fd2fd0b00bad98d58155b2f74",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Supplies the fixed GJ 1061 question, period, time split, sample rule and baseline. We add paired transfer and exact score attribution."
+    },
+    {
+      "target": "sci:sha256:148fe9ebc04044eb99106a87a33a84aafeba4053f56e27b8ea1a2619a5dac4ff",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Motivates exact decomposition of printed calibration terms with common weights."
+    },
+    {
+      "target": "sci:sha256:c1925aa33e3e1b773b46b9183a9ac7753212e2153db5f4a9b896bbb3238b83e3",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Related correction addback test for GJ 191."
+    },
+    {
+      "target": "doi:10.1093/mnras/staa248",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Original GJ 1061 system and longer velocity signal."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202452490",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Independent ESPRESSO context and activity interpretation; not reanalysed here."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/201936686",
+      "relations": [
+        "uses"
+      ],
+      "reason": "RVBank and nightly calibration method."
+    },
+    {
+      "target": "doi:10.1051/0004-6361/202348263",
+      "relations": [
+        "uses"
+      ],
+      "reason": "RVBank update."
+    },
+    {
+      "target": "https://exo-restart.com/wp-content/uploads/Stellar_parameters/Ver_02/GJ1061_RVs/GJ1061_HARPS_RVBank_ver02.csv",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Exact external data source, excluded from this publication."
+    }
+  ]
+}

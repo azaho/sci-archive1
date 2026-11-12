@@ -1,0 +1,36 @@
+{
+  "title": "Gaia DR3 velocities and TESS phase curves limit the companions of TIC 87433458 and TIC 93622019 to below 32 and 43 Jupiter masses; TIC 435052739 and TIC 169468881 have stellar companions",
+  "abstract": "Question: Which of the seven planet-like, non-TOI TESS signals from the Gaia DR3 transit table (four earlier campaign studies) have stellar companions, and are the signals on the target stars? Method: For each candidate we used the Gaia DR3 radial-velocity (RV) scatter (Katz et al. 2023 criterion; Monte Carlo CLs upper limits), batman/emcee transit fits to TESS QLP SAP flux with our own transit-masked detrending, empirical ellipsoidal, secondary-eclipse and odd/even tests, Gaia DR3 G/BP/RP epochs (2014-2017) and ASAS-SN g/V photometry (2013-2025) folded on the TESS ephemeris, and TESS difference images. Results: TIC 435052739 has a Gaia RV scatter of 16.4 km/s (about 158 Jupiter masses) and a 6.0-sigma ellipsoidal signal (102 Jupiter masses): it is an eclipsing low-mass star. TIC 169468881 (17.69 d, 2.16 Jupiter radii) is RV variable (about 160 Jupiter masses). Gaia RVs limit the companions of TIC 87433458 and TIC 93622019 to below 32 and 66 Jupiter masses (95 %), and the TESS ellipsoidal limit of TIC 93622019 is 43 Jupiter masses; TIC 93622019 has no M-dwarf eclipse (70 +- 169 ppm against about 650 ppm). TIC 4638108 is grazing, 2.3 Jupiter radii, with a 3.7-sigma ellipsoidal signal (about 100 Jupiter masses): probably stellar. Gaia G epochs show the full TESS depth for all seven (scale 0.92-1.14), and ASAS-SN detects six of seven transits (3.5-9.4 sigma). Four candidates remain: TIC 93622019, 87433458, 445886244 and 44997521 (1.0-1.7 Jupiter radii). QLP detrended fluxes make these transits 10-60 % shallower than SAP flux. Limitations: no spectroscopy or high-resolution imaging; two candidates have no Gaia epoch RVs; Gaia RV flags can be false for broad-lined stars; single-sector Gaussian-PSF difference images leave unexplained offsets for TIC 4638108 and TIC 44997521.",
+  "categories": [
+    {"scheme": "arxiv", "code": "astro-ph.EP"},
+    {"scheme": "arxiv", "code": "astro-ph.SR"},
+    {"scheme": "arxiv", "code": "astro-ph.IM"}
+  ],
+  "keywords": ["Gaia DR3", "TESS", "ASAS-SN", "planet candidate vetting", "vari_planetary_transit", "radial-velocity scatter", "ellipsoidal variation", "secondary eclipse", "difference imaging", "eclipsing low-mass stars", "hot Jupiters", "brown dwarfs", "QLP detrending", "transit fitting"],
+  "display": [
+    {"path": "files/figures/fig2_companion_mass.png", "caption": "Companion mass at the transit period from Gaia DR3 RV scatter (limits and estimates) and TESS ellipsoidal variation for the seven candidates."},
+    {"path": "files/figures/fig1_transits_tess_asassn.png", "caption": "Folded TESS SAP transits with the fitted model (top) and ASAS-SN g light curves 2018-2025 on the same ephemeris (bottom)."},
+    {"path": "files/figures/fig4_gaia_bands_density.png", "caption": "Gaia DR3 G/BP/RP depth scale on the TESS ephemeris (left) and transit-fit against Gaia stellar density (right)."}
+  ],
+  "citations": [
+    {"target": "sci:sha256:218f44a0576460b0810a5a7fe3d12aa417beced6628b2da3cea81223f6679ef0", "relations": ["uses", "reviews", "challenges"], "reason": "Source of the candidate list and starting ephemerides. We test its four new candidates; two (TIC 435052739, TIC 169468881) have stellar-mass companions, and its box-depth radius of TIC 169468881 is too small."},
+    {"target": "sci:sha256:7c4c39b739b1ba7a27b24aa7aca20fe16355bc434e5fad4a2c84d738a72c2f32", "relations": ["uses", "supports", "reviews"], "reason": "Fourth study of the same table. Our 6-sigma ellipsoidal signal confirms its weak ellipsoidal sign for TIC 435052739; we add mass limits for its five planet-like candidates."},
+    {"target": "sci:sha256:92aac63d485c4083dc8d3b71415254e5331d005cf27f4f8863af40158c68f0e4", "relations": ["reviews", "challenges"], "reason": "Lists the 17.69-d signal of TIC 169468881 as a new planet candidate; the Gaia RV scatter and the 2.16 Jupiter-radius size show a stellar companion."},
+    {"target": "sci:sha256:b8007150ad6a23d5ebaa889558f39f977c95919025b54f546e3664640bd56cbc", "relations": ["reviews", "supports"], "reason": "First campaign study of the table; its EB-like class for TIC 169468881 agrees with our RV result."},
+    {"target": "sci:sha256:3a509874fb17e4d774aaccd3e62a55a23aa6358e21f13a812d8b2a36000cf40a", "relations": ["uses"], "reason": "Calibration of the Gaia DR3 RV-variability flag on TOIs and the G_RVS noise model used here."},
+    {"target": "doi:10.1051/0004-6361/202244220", "relations": ["uses"], "reason": "Katz et al. 2023, Gaia DR3 radial velocities and the RV-variability criterion."},
+    {"target": "doi:10.1051/0004-6361/202243940", "relations": ["uses"], "reason": "Gaia DR3 data release."},
+    {"target": "doi:10.1051/0004-6361/202243497", "relations": ["uses"], "reason": "Panahi et al. 2022, Gaia DR3 transit candidates."},
+    {"target": "doi:10.17909/t9-r086-e880", "relations": ["uses"], "reason": "TESS QLP high-level science products."},
+    {"target": "doi:10.3847/1538-4365/ab4a7e", "relations": ["uses"], "reason": "CDIPS light curves (Bouma et al. 2019) for TIC 445886244."},
+    {"target": "doi:10.1088/0004-637X/788/1/48", "relations": ["uses"], "reason": "ASAS-SN (Shappee et al. 2014)."},
+    {"target": "doi:10.1088/1538-3873/aa80d9", "relations": ["uses"], "reason": "ASAS-SN light curve service (Kochanek et al. 2017)."},
+    {"target": "https://arxiv.org/abs/2304.03791", "relations": ["uses"], "reason": "ASAS-SN Sky Patrol v2 (Hart et al. 2023)."},
+    {"target": "doi:10.1086/683602", "relations": ["uses"], "reason": "batman transit model (Kreidberg 2015)."},
+    {"target": "doi:10.1086/670067", "relations": ["uses"], "reason": "emcee sampler (Foreman-Mackey et al. 2013)."},
+    {"target": "doi:10.1093/mnras/stt1435", "relations": ["uses"], "reason": "Limb-darkening parameterisation (Kipping 2013)."},
+    {"target": "doi:10.3847/2041-8213/ab322d", "relations": ["uses"], "reason": "Blend magnitude limit from transit shape (Vanderburg et al. 2019)."},
+    {"target": "doi:10.26134/ExoFOP5", "relations": ["uses"], "reason": "ExoFOP-TESS TOI and CTOI status."},
+    {"target": "https://mast.stsci.edu/tesscut/", "relations": ["uses"], "reason": "TESScut FFI cutouts."}
+  ]
+}
