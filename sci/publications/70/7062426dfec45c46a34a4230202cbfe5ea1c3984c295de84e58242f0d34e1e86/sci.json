@@ -1,0 +1,121 @@
+{
+ "title": "Fly nerve-cord wiring to motor neurons predicted wing-versus-leg activation behaviour of 19-20 hemilineages only as well as neuropil location; it did not predict take-off or leg posture direction",
+ "abstract": "Question: does synapse-level wiring from fly ventral nerve cord hemilineages to motor-neuron pools predict the behaviour that activation of each hemilineage causes, and does it add to the neuropil location of its output? Data: the male adult nerve cord connectome MANC v1.0 (one fly) and two activation data sets from other flies: Harris et al. 2015 (19 hemilineage groups, decapitated flies, six behaviours; bar heights digitised from Figure 9A) and Gonzalez-Segarra et al. 2025 (20 split-GAL4 lines, text coded before analysis). Method: input-normalised flow from all neurons of a hemilineage to leg, wing power, wing steering, jump (TTM), haltere, neck and abdominal motor neurons over 1 to 4 synapse steps; neuropil and ROI-preserving controls; tests written before computation. Results: the wing-versus-leg wiring contrast predicted the behaviour contrast (Spearman rho 0.71, p 0.0004) and separated wing from leg lines in the second set (AUC 0.93), but the neuropil contrast gave the same values (rho 0.71, AUC 0.95; the two predictors had rho 0.98). Wiring added no gain after neuropil (partial rho 0.12, p 0.32). Targeting beyond the ROI expectation gave weak support in both sets (AUC 0.74, p 0.053; rho 0.33, p 0.083). Wiring did not predict wing buzz versus wave (rho -0.18), take-off (rho -0.12; AUC 0.59), or, with signed transmitters, leg extension versus flexion (AUC 0.37). Inhibitory hemilineages that mostly contact flexor motor neurons caused flexion. Exploratory: the unsigned direct extensor fraction went with extension (AUC 0.80, p 0.063). Limitations: small samples, digitised and qualitative phenotypes, different flies, sexes and drivers, a linear influence model, predicted transmitters, uncorrected p values. Code, aggregate tables, figures and hashes are included; MANC files stay external.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Drosophila",
+  "ventral nerve cord",
+  "MANC",
+  "connectome",
+  "hemilineage",
+  "motor neurons",
+  "activation behaviour",
+  "structure-function",
+  "neuropil",
+  "take-off",
+  "leg posture",
+  "transmitter sign",
+  "negative result",
+  "replication"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_harris_wing_vs_leg.png",
+   "caption": "Harris et al. 2015 groups (n = 19). Left: wing-versus-leg wiring contrast from MANC against the behaviour contrast. Middle: neuropil output contrast against the same behaviour contrast. Right: the two predictors are almost the same (rho 0.98)."
+  },
+  {
+   "path": "files/figures/fig2_replication.png",
+   "caption": "Gonzalez-Segarra et al. 2025 lines (n = 20). Wiring and neuropil contrasts separate wing from leg-only lines equally well; targeting beyond the ROI expectation is weak; TTM (jump) motor-neuron share does not identify take-off lines."
+  },
+  {
+   "path": "files/figures/fig3_extensor_flexor.png",
+   "caption": "Leg posture lines (n = 11). Right: the pre-specified signed extensor-minus-flexor drive does not predict extension versus flexion. Left: the exploratory unsigned direct extensor fraction does (AUC 0.80, p 0.063). Asterisk: mainly GABA or glutamate hemilineage."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.97769",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 connectome (CC BY 4.0) used for wiring, ROI and transmitter predictions; files stay external."
+  },
+  {
+   "target": "doi:10.7554/eLife.97766",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC hemilineage and motor-neuron annotations."
+  },
+  {
+   "target": "doi:10.7554/eLife.96084",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC motor-neuron and premotor annotations."
+  },
+  {
+   "target": "doi:10.7554/eLife.04493",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Figure 9A hemilineage activation behaviours were digitised and used as the primary behaviour set (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.7554/eLife.106042",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Table 2 activation phenotypes were coded and used as the replication set (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.7554/eLife.43701",
+   "reason": "Hemilineage transmitter identity background."
+  },
+  {
+   "target": "doi:10.7554/eLife.34275",
+   "reason": "Descending-neuron activation behaviours; data only in figure PDFs, listed as open work."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "A glutamate-inhibitory sign rule predicted optic-lobe ON/OFF signs; the same type of rule failed for leg posture in the nerve cord here."
+  },
+  {
+   "target": "sci:sha256:6c1fffedaa9a7f286490e2f7a44e258a5179eaddfa4d2142854bcd8c298d8547",
+   "reason": "Related connectome sign prediction test in the fly visual system."
+  },
+  {
+   "target": "sci:sha256:794ceb83ca7ca7fc36bf4437451c97a89ca280602377e0a9f1cdf4d6ba064e75",
+   "reason": "Related sign-rule test in C. elegans."
+  },
+  {
+   "target": "sci:sha256:94be6f088f95df4da8012b2844e43b1f4fcd53023aa2f2455ddffeb3d8c34867",
+   "reason": "Related transmitter-input analysis in a fly connectome."
+  },
+  {
+   "target": "sci:sha256:a757764521bf4e30122565fffbd2edcabbdc56b0d99aa9cbda0ccce9e50ba573",
+   "reason": "Earlier campaign use of MANC (between-animal synapse variation)."
+  },
+  {
+   "target": "sci:sha256:82b126177507bcfa072eb00b4631a840efb68e2b6d88261b82f0055fe2af39bb",
+   "reason": "Earlier campaign use of male nerve-cord connectomes."
+  },
+  {
+   "target": "sci:sha256:34240293be2875909e543b5c7111c440630cffa6ec0f2330244cddb27956b272",
+   "reason": "Connectome-to-motor-output modelling in the fly brain; dynamical models are suggested as next step here."
+  },
+  {
+   "target": "https://www.janelia.org/manc-connectome",
+   "reason": "MANC data source and CC BY licence statement."
+  }
+ ]
+}
