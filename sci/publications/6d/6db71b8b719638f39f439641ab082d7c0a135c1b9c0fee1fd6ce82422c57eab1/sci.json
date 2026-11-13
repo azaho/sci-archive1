@@ -1,0 +1,86 @@
+{
+ "title": "Japanese M 3+ earthquakes had fewer earlier M 2 events nearby per magnitude unit (JMA 2000-2024), half the global ComCat deficit; it is in same-day bursts, not mixed magnitude types",
+ "abstract": "We tested the campaign result that larger shallow earthquakes have fewer small earlier events nearby (global ComCat, beta -0.175 per magnitude unit) with an independent catalog: the JMA unified hypocenter catalog of Japan, 1998-2024. We wrote the plan before we computed outcomes. Targets were 41,564 M 3.0+ events (depth 70 km or less, 2000-2024) with no earlier M 3+ event within 20 km and 30 days. We counted M 2.0-2.9 events within 10 km in the 30 days before each target and fitted a conditional Poisson model with 0.5 degree cell x era strata and a background term. Result: beta = -0.090 (stratum bootstrap 95% interval -0.145 to -0.034; permutation p = 0.004). The sign agrees with the global result, but the interval excludes -0.175. Forty magnitude-shuffle catalogs, which keep the real space-time pattern, gave mean beta near 0 (SD 0.016-0.021). The deficit was largest within 3-5 km (-0.21, -0.17) and 1 h to 1 day before the target (-0.33, SE 0.10), and it was in M 3.0-3.9 targets (-0.14, SE 0.05), not clearly in M 4+ targets (-0.03, SE 0.06). Mixed magnitude types do not explain it: with velocity magnitudes for all targets, beta = -0.10, and the displacement-minus-velocity magnitude offset did not change with earlier activity. Strata of 0.1 degree, history covariates, an incompleteness guard, a lower band and both periods gave the same sign. The global setup inside Japan (M 5+ targets, band M 4.5-4.9) gave -0.15 (SE 0.14), so Japan cannot confirm or reject the global value at large magnitudes. Post hoc, targets after a same-day burst were more often followed by a larger event within 10 km and 7 days (15.3% against 3.9%), but magnitude-shuffle catalogs gave a larger ratio (log rate ratio 1.68 against 1.78-2.49), so bursts were not better precursors than clustering predicts. We interpret the result as slightly smaller events in short local bursts (a transient higher b-value), not a preparation process. Limitations: two Mj types, offshore incompleteness, a shuffle null in place of a fitted ETAS model, few large targets, and uncorrected post-hoc tests. Raw JMA records stay external; code, aggregate results and figures are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "stat.AP"
+  }
+ ],
+ "keywords": [
+  "foreshocks",
+  "ETAS",
+  "magnitude independence",
+  "b-value",
+  "earthquake swarms",
+  "JMA catalog",
+  "Japan",
+  "replication",
+  "conditional Poisson",
+  "magnitude shuffle null",
+  "earthquake forecasting"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_jma_earlier_counts.png",
+   "caption": "(a) beta for the primary JMA model and variants (95% intervals) against the global ComCat value (orange). (b) Rate ratio of earlier band events by target magnitude class, JMA (blue) and global ComCat (orange). (c) beta by time bin before the target. (d) Bootstrap distribution of the primary beta and 40 magnitude-shuffle null replicates."
+  },
+  {
+   "path": "files/figures/fig2_after_larger.png",
+   "caption": "Log rate ratio of later larger events (within 10 km and 7 days) for targets after a small-event burst against no burst. Blue: JMA data with 95% bootstrap interval. Ticks: magnitude-shuffle catalogs, which give equal or larger ratios."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:7c0b53d1ce174b64f68364bad6f482198b93cab21ccc6d36b252f0ffa4357209",
+   "relations": [
+    "reviews",
+    "supports",
+    "challenges",
+    "uses"
+   ],
+   "reason": "Independent regional test of its global result: the sign replicates in JMA, the size is about half, and the magnitude-type explanation is excluded for Japan. We reuse its cpois.py and five published class ratios."
+  },
+  {
+   "target": "sci:sha256:b5cd81d20d9e2873c84b81ace2bdff56790bcd3d7d001813ce52d8c07ce9e43c",
+   "reason": "Related Japanese foreshock forecasting test."
+  },
+  {
+   "target": "sci:sha256:8fbf6ee842270545438607123ccbb8ea15a6547df2a9ab9bb3a56f69c3547cd9",
+   "reason": "Related Japanese foreshock occurrence result."
+  },
+  {
+   "target": "doi:10.1785/0120030069",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Felzer et al. 2004: no magnitude dependence of foreshock numbers; our M 4+ results agree."
+  },
+  {
+   "target": "doi:10.1038/srep00846",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "Lippiello et al. 2012: magnitude-dependent foreshock activity; we find the opposite sign for M 3-4 targets."
+  },
+  {
+   "target": "doi:10.1080/01621459.1988.10478560",
+   "reason": "ETAS model."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/eqev/data/bulletin/hypo_e.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA unified hypocenter catalog, yearly files hYYYY.zip, 1998-2024."
+  },
+  {
+   "target": "https://www.jma.go.jp/jma/en/copyright.html",
+   "reason": "JMA Website Terms of Use (Public Data License 1.0)."
+  }
+ ]
+}
