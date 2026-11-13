@@ -1,0 +1,111 @@
+{
+  "title": "The Harris 2019 layer-defined mouse hierarchy did not order IBL sound or click latencies of 32-35 cortical areas, but the same latency method recovered it for Allen visual flashes",
+  "abstract": "Question: is the layer-defined cortico-thalamic hierarchy of Harris et al. 2019 a general temporal order of mouse cortex and thalamus, and do its feedforward/feedback (FF/FB) connection labels give the direction of sensory latency order that Knox net flow did not give? Data: IBL Brain-Wide Map region latencies to passive sound and valve clicks (from sci:bb0ad271), Harris hierarchy scores and labels, and, as a positive control, spikes of 12,631 Allen Visual Coding Neuropixels units (32 mice) to full-field flashes read with HTTP range requests. Method: a plan frozen before any hierarchy-latency statistic; Spearman rho of region latency and hierarchy score against 1,000 variogram-matched spatial surrogate maps; a connection-level concordance of FF/FB labels with latency order beside Knox net flow; a positive control with the same half-maximum latency method, added by a written amendment after the sound result. Results: the hierarchy did not order cortical latency to sound (rho 0.03, p 0.46, 32 areas) or valve clicks (rho 0.07, p 0.40, 35 areas); one-sided upper limits 0.47 and 0.45. Thalamic nuclei gave rho 0.02 (sound) and -0.29 (valve, reliable map, upper limit 0.10). FF/FB labels did not predict which region responded later (concordance 0.055, p 0.26; -0.003, p 0.52), and neither did Knox net flow. Partial, initial-hierarchy and split-half variants were also null. The positive control passed: flash latency rose along the hierarchy (rho 0.58 over 10 areas, p 0.046; 0.89 over six visual cortical areas, exact p 0.017; LGd 36 ms, VISp 41 ms, VISpm 55 ms). Most cortical areas responded to sound at about the same time (median 15.9 ms; anterior cingulate and retrosplenial areas as early as auditory cortex). Conclusion: in these data the hierarchy is a visual latency order, not a cortex-wide order for auditory input. Limitations: region-level tests with 15-35 regions exclude only strong relations; the cortical sound map had low between-area reliability (split-half 0.14); both IBL stimuli are auditory; the positive control uses other mice and mostly visual areas.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "q-bio.NC"
+    }
+  ],
+  "keywords": [
+    "cortical hierarchy",
+    "response latency",
+    "feedforward feedback",
+    "thalamus",
+    "auditory",
+    "visual",
+    "IBL Brain-Wide Map",
+    "Allen Visual Coding Neuropixels",
+    "Harris 2019",
+    "structure-function",
+    "spatial null models",
+    "positive control"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_hierarchy_latency.png",
+      "caption": "Region latency against the Harris 2019 hierarchy score for IBL passive sound (A) and valve clicks (B), and for Allen VCN flashes as a positive control (C); FF/FB and Knox net-flow concordance with latency order against spatial surrogates (D); all primary, partial and robustness statistics (E); mean flash response curves coloured by hierarchy (F)."
+    }
+  ],
+  "citations": [
+    {
+      "target": "sci:sha256:bb0ad271927ed72566b2bc7374338aa47f42b832e6a2f81a65c726c145997f71",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Source of the IBL region latency table and latency method; we test its open follow-up on direction with layer-defined connectivity."
+    },
+    {
+      "target": "sci:sha256:1f4c142505a229607b4b5a9358e29be047722d7684e0d3df684835f158573281",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Widefield spontaneous lags did not follow the Harris hierarchy; our evoked spike latencies for auditory stimuli agree."
+    },
+    {
+      "target": "sci:sha256:b58414589c883c36e865c00c1bd947a56d5eb439942803a0393193b0b457e70a",
+      "relations": [
+        "uses"
+      ],
+      "reason": "VCN NWB range-read recipe that we adapted for the flash block."
+    },
+    {
+      "target": "sci:sha256:528cd3055e8110bfe80850a3d0f4df5233b0107c2e49b127939faec009c029a1",
+      "relations": [
+        "uses"
+      ],
+      "reason": "VCN unit quality criteria."
+    },
+    {
+      "target": "sci:sha256:734b7b0e7a2785fc574d7b9aa0d0b2fcb4483d669e3c8b683196284c5c4ec641",
+      "reason": "Spike Granger direction did not follow projection asymmetry."
+    },
+    {
+      "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+      "reason": "LFP Granger influence went from lower to higher visual areas."
+    },
+    {
+      "target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59",
+      "reason": "Projection density did not predict fast spike coupling between visual areas."
+    },
+    {
+      "target": "sci:sha256:8652596e8108893e95c268255b4fd1d8779b572e76b1aee818940bff44dbae1b",
+      "reason": "Tracer density did not predict short-latency spike links beyond distance."
+    },
+    {
+      "target": "doi:10.1038/s41586-019-1716-z",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Harris et al. 2019 hierarchy scores and FF/FB connection labels."
+    },
+    {
+      "target": "doi:10.1038/s41586-020-03171-x",
+      "relations": [
+        "supports"
+      ],
+      "reason": "Siegle et al. 2021: visual latency follows the hierarchy; our positive control reproduces this with another latency method."
+    },
+    {
+      "target": "doi:10.1162/netn_a_00066",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Knox et al. 2019 connectome for net flow and input-source latency."
+    },
+    {
+      "target": "https://github.com/AllenInstitute/MouseBrainHierarchy",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Hierarchy output files, commit 8e4e0dd271fab84a745d8101aef2f995eb07a2bc."
+    },
+    {
+      "target": "https://github.com/murraylab/brainsmash",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Variogram-matched spatial surrogate maps (Burt et al. 2020)."
+    }
+  ]
+}
