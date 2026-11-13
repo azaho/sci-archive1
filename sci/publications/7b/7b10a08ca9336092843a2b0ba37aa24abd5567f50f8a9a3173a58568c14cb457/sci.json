@@ -1,0 +1,108 @@
+{
+ "title": "The 2017-2025 Kuroshio large meander raised Kii-Tokai-Izu coastal sea level by about 9 cm, as five earlier meanders predict, and the rise reversed after April 2025 (JMA tide gauges, 1966-2026)",
+ "abstract": "Question: did the longest Kuroshio large meander (LM) since 1965 (August 2017 to April 2025) change coastal sea level, high-water days and coastal SST south of Japan by the amounts that the five earlier LMs (1975-2005) predict, and did the changes reverse after the LM ended? Approach: hourly JMA tide-gauge data (26 gauges, to September 2026) and NOAA OISST v2.1. For each gauge and event, a regression with a local linear trend and season gave the LM effect on monthly level relative to two upstream gauges (Aburatsu, Tosa-Shimizu). The mean of the earlier events is the out-of-sample prediction for 2017-2025. Results: at eight gauges from Uragami to Izu-Oshima the 2017-2025 effect was 7.1-10.9 cm (regional index 9.3 cm, SE 1.2; prediction 8.4 cm). Across 13 Pacific gauges, observed and predicted effects agreed (r = 0.98, slope 1.11, RMSE 1.0 cm). West of Cape Shionomisaki the effect was near zero. After the end, the regional level fell by 9.9 cm in 12 months (placebo p = 0.002); earlier end steps were -5.4 to -14.4 cm. The post-end level was 2.6 cm below 2014-2017, but this is within normal variation after a path-index fit. Days above the local 1%-of-days high-water level were 2.7-5.1 times more frequent during the LM at the eight gauges, as the mean shift alone predicts, and fell to 0.2-0.8% after the end. Coastal SST off Tokai rose 0.9-1.7 C in 2017-2025, more than in earlier events, but the first 13-20 months gave 0.36-0.60 C, the same as earlier events; the SST effect grew for three years while sea level responded in the first year. Limitations: six events only; the reference gauges and large-scale signals can contribute 1-2 cm (raw-level effect 6.7 cm); vertical land motion is only removed as a linear trend; 17 months of post-end data; OISST coastal resolution changed with time. Code, derived monthly and daily levels, aggregate results, figures and raw-file hashes are included; raw JMA and OISST files are retrieved by script.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "Kuroshio large meander",
+  "coastal sea level",
+  "tide gauges",
+  "JMA",
+  "high-water days",
+  "coastal flooding",
+  "sea surface temperature",
+  "OISST",
+  "Tokai",
+  "out-of-sample test",
+  "ocean circulation",
+  "Japan"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_timeseries.png",
+   "caption": "Kushimoto-Uragami path index, regional sea-level index and regional coastal SST index, 1965-2026, with the six JMA large-meander periods shaded."
+  },
+  {
+   "path": "files/figures/fig2_station_effects.png",
+   "caption": "LM effects by gauge from west to east: sea level, high-water-day ratio and coastal SST; earlier events (gray), their mean (black) and 2017-2025 (blue, 95% intervals)."
+  },
+  {
+   "path": "files/figures/fig3_sst_maps.png",
+   "caption": "OISST SST change during LMs: mean of four earlier events (1981-2005) and the 2017-2025 event."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://www.jma.go.jp/jma/press/2508/29a/20250829_end_of_kuroshioLM.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA/JCG press release (29 August 2025) that gives the six LM periods since 1965 and the end of the 2017 LM in April 2025."
+  },
+  {
+   "target": "https://ds.data.jma.go.jp/gmd/kaiyou/db/tide/sea_lev_var/index_download.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA hourly tide-gauge data (reanalysed and recent), one ZIP per station, to December 2025. Hashes in files/provenance."
+  },
+  {
+   "target": "https://www.data.jma.go.jp/kaiyou/db/tide/genbo/index.php",
+   "relations": [
+    "uses"
+   ],
+   "reason": "JMA final hourly tide data for January-September 2026."
+  },
+  {
+   "target": "https://ds.data.jma.go.jp/kaiyou/data/db/kaikyo/kuroshio/chouisa.html",
+   "reason": "JMA Kushimoto-Uragami daily level difference, the tide-gauge criterion for separation of the Kuroshio at Cape Shionomisaki."
+  },
+  {
+   "target": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2.1 monthly SST, read from the PSL OPeNDAP server (same file as the campaign copy)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "reason": "OISST v2.1 reference (Huang et al., 2021)."
+  },
+  {
+   "target": "doi:10.1007/s10872-019-00531-8",
+   "reason": "Earlier report of marked coastal warming off Tokai during LM periods; we quantify it for 2017-2025 and show that it grows over three years."
+  },
+  {
+   "target": "doi:10.1007/s11001-018-9372-5",
+   "reason": "Earlier comparison of the 2017 LM path with earlier LMs from tide gauges, altimetry and bottom pressure."
+  },
+  {
+   "target": "https://os.copernicus.org/articles/17/1449/2021/",
+   "reason": "Earlier work on the coastal sea-level response inshore of the Kuroshio path."
+  },
+  {
+   "target": "doi:10.3389/feart.2020.583481",
+   "reason": "Seafloor pressure change at the 2017 LM formation."
+  },
+  {
+   "target": "sci:sha256:5d8902f2bb5096d3d0976c073e12b92712c6a459e808fb6e480e39b845ecf302",
+   "reason": "Campaign result that OISST spatial detail changes with satellite inputs; this limits the comparison of SST amplitudes between decades."
+  },
+  {
+   "target": "sci:sha256:c6e26724a8a2730719332aadb5f60cd57b6c3c60a48f9fa27e95bcfbb9df071b",
+   "reason": "Campaign screen of tide-gauge earthquake offsets; context for the vertical-land-motion limitation."
+  },
+  {
+   "target": "https://www.jma.go.jp/jma/kishou/info/coment.html",
+   "reason": "JMA website terms of use (Government Standard Terms of Use 2.0, compatible with CC BY 4.0)."
+  }
+ ]
+}
