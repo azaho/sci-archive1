@@ -1,0 +1,96 @@
+{
+  "title": "Rubin alert morphology finds the known active asteroid 433P and no new active asteroid in 18,029 sampled main-belt objects (April to October 2026); a catalogue-H brightness search cannot find 433P",
+  "abstract": "Question: can the first public Rubin/LSST alert data on known asteroids (Fink broker, version 2026.11, 549,823 detections of 145,100 asteroids, 2026-04-05 to 2026-10-31) find comet-like activity, and with which test? Method: (1) phase-corrected Rubin magnitudes against JPL catalogue H; (2) a morphology search with the aperture-to-PSF flux ratio and the detection footprint size, each normalised by the other asteroids in the same visit and by signal-to-noise ratio, for 18,029 main-belt and more distant objects (69 of 475 download batches); (3) an anti-solar tail test on Rubin difference cutouts; (4) an injection test in score space. The main-belt comet 433P, which was active during its Rubin detections, is the positive control. Results: residuals against catalogue H have a robust scatter of 0.178 mag, and only 3 objects are 0.75 mag brighter on 2 or more nights. But 433P looks 0.18 to 0.40 mag fainter than its catalogue H, because the catalogue value is about 0.75 mag brighter than its nucleus; against the nucleus it is 0.29 to 0.52 mag bright (coma/nucleus flux 0.47 PSF, 0.79 aperture). Thus catalogue-H searches miss recurrent main-belt comets. The morphology search finds 433P as the only object with both scores above 3 (zA 5.5, zB 14.2) and the only object above zA 5. Its tail statistic is 0.056 to 0.070 in all 7 detections; 80 random controls give at most 0.029, and the 8 other aperture-rule candidates (3.3 expected by chance) give at most 0.022 and normal footprints. We found no new active asteroid. Completeness is 63 percent for a round coma with coma/nucleus flux 0.2 and 49 percent for 433P-like activity at the 433P level. The 95 percent upper limits on the active fraction are 4.0e-4 (coma, f >= 0.2) and 5.1e-4 (433P-like), 7 to 30 times above the Pan-STARRS1 estimate. Limitations: non-random sample favouring old, large objects; rule set after seeing 433P; injection in score space only; 433P-like model calibrated on one object.",
+  "categories": [
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.EP"
+    },
+    {
+      "scheme": "arxiv",
+      "code": "astro-ph.IM"
+    }
+  ],
+  "keywords": [
+    "Rubin Observatory",
+    "LSST",
+    "Fink broker",
+    "main-belt comets",
+    "active asteroids",
+    "433P",
+    "2005 QN173",
+    "asteroid morphology",
+    "absolute magnitude",
+    "alert data",
+    "injection test",
+    "occurrence rate",
+    "null result"
+  ],
+  "display": [
+    {
+      "path": "files/figures/fig1_cutouts.png",
+      "caption": "Rubin difference cutouts (6.2 arcsec). Top: 433P from 2026-06-27 to 2026-07-14; the tail lies along the computed anti-solar direction (orange arrow). Bottom: the three other candidates with the highest aperture/PSF score and a random control; they show no tail."
+    },
+    {
+      "path": "files/figures/fig2_scores.png",
+      "caption": "Left: object median aperture/PSF score zA and footprint score zB for 12,043 objects with 2 or more nights; only 433P is above both thresholds. Right: anti-solar tail statistic S for 80 controls, the other candidates and 433P."
+    },
+    {
+      "path": "files/figures/fig3_completeness_limits.png",
+      "caption": "Left: completeness of the zA rule against coma/nucleus flux ratio for a simulated round coma and a 433P-like signal. Right: 95 percent upper limits on the active fraction with no new detection, against the Pan-STARRS1 estimate of 59 per million outer-belt asteroids."
+    }
+  ],
+  "citations": [
+    {
+      "target": "doi:10.3847/2515-5172/ae954a",
+      "relations": [
+        "uses",
+        "supports"
+      ],
+      "reason": "Reports the 2026 activity of 433P from 2026 June 10, also with Rubin data from Fink; we use 433P as the positive control and confirm a tail in Rubin difference images."
+    },
+    {
+      "target": "doi:10.3847/2041-8213/ac2c62",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Nucleus magnitudes of 433P (H_r 16.12, H_i 16.05, H_z 15.93, H_V 16.32) used to measure its 2026 coma flux."
+    },
+    {
+      "target": "https://arxiv.org/abs/1410.5084",
+      "relations": [
+        "reviews"
+      ],
+      "reason": "Pan-STARRS1 estimate of about 59 active main-belt comets per million outer-belt asteroids; our sampled limits are above it."
+    },
+    {
+      "target": "doi:10.1093/mnras/staa3602",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fink broker; source of the Rubin alert asteroid data, shape columns and cutouts."
+    },
+    {
+      "target": "https://api.lsst.fink-portal.org",
+      "relations": [
+        "uses"
+      ],
+      "reason": "Fink/LSST API endpoints ssobulk, ssoft, sso and cutouts (accessed 2026-11-12/13)."
+    },
+    {
+      "target": "https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html",
+      "relations": [
+        "uses"
+      ],
+      "reason": "JPL SBDB query API for H, G and orbits."
+    },
+    {
+      "target": "sci:sha256:2bceedceef3a44cfe0e6defe1b9415379ad678ebeabcb1d189d6f93060deffa0",
+      "reason": "Campaign study of comet 29P outburst timing; the only prior campaign work on small-body activity found by our search."
+    },
+    {
+      "target": "sci:sha256:62eb6aae3640ba3dbc25a1f6b5ecbb0d98efd4226cd27117a6fb6be528f20381",
+      "reason": "Campaign SPHEREx study of main-belt asteroid spectra; related asteroid work, different question."
+    }
+  ]
+}
