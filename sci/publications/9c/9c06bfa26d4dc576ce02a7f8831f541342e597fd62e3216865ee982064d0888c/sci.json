@@ -1,0 +1,138 @@
+{
+ "title": "Faster recovery of Atlantic main-development-region storm cold wakes after 2000 appears only in ERA5 peak-normalised metrics, not in OISST or drifters; 2021-2025 wakes lasted longer (1982-2025)",
+ "abstract": "Question: does the reported faster recovery of tropical-cyclone cold wakes in the Atlantic main development region (MDR, 10-20 N, 80-20 W, June-October) after 2000 (John et al. 2025, ERA5 SST) survive an independent product, drifters, the 2007-09-01 ERA5 input switch (HadISST2 to OSTIA) and 2021-2025? Approach: we built cold-wake series at 2,959 IBTrACS MDR fixes (236 storms, 1982-2025) in ERA5 and NOAA OISST v2.1 on identical fixes, compared both with 113,363 NOAA Global Drifter Program values in North Atlantic wakes, and used storm bootstrap intervals. Results: ERA5 gave the reported direction: per-fix normalised recovery at days 18-22 rose by +0.37 (95% interval +0.01 to +0.74) and the rise from peak to days 20-40 by +0.155 C (+0.050 to +0.251) from 1982-2000 to 2001-2020; the composite-normalised day-20 change was +0.19 (-0.18 to +0.53). OISST on the same fixes showed +0.11 (-0.16 to +0.37) and -0.05 C (-0.18 to +0.08). ERA5 minus OISST in the rise metric was -0.37 and -0.38 C in 1982-2000 and 2001-2006 (HadISST2 era) but -0.07 C in 2008-2020: before the switch ERA5 had a 0.14 C weaker wake peak. At days 18-22 the products agreed within 0.05 C in all epochs. Drifters showed that ERA5 under-cooled the wake at days 3-15 more before 2007 (0.13 and 0.07 C) than after (0.05 and 0.04 C), that both products match drifters within 0.05 C at days 15-40, and that the drifter fraction of the wake left at days 15-25 did not change (+0.02, -0.34 to +0.41). In 2021-2025 the wake at days 20-40 was 0.27 C (ERA5) and 0.23 C (OISST) colder than in 2008-2020, so recovery did not continue to become faster. Limitations: the pre-registered within-ERA5 step test failed (the ERA5 change appears already in 2001-2006 and a step fits no better than a trend), so the input switch alone does not explain it; drifters are sparse in the MDR and before 1992; our wake definition differs from the unpublished original code; OSTIA reprocessed was not tested. Conclusion: we find no robust evidence for a trend in MDR cold-wake recovery in 1982-2025; the reported change depends on ERA5 and on normalisation by a peak that ERA5 measured differently before 2007.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "physics.ao-ph"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "physics.geo-ph"
+  }
+ ],
+ "keywords": [
+  "tropical cyclone",
+  "cold wake",
+  "sea surface temperature",
+  "recovery",
+  "ERA5",
+  "OISST",
+  "OSTIA",
+  "HadISST2",
+  "data inhomogeneity",
+  "drifters",
+  "Global Drifter Program",
+  "main development region",
+  "replication",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_mdr_composites.png",
+   "caption": "Cold-wake composites (SST change from days -10 to -4) at MDR storm fixes by epoch in ERA5 (a) and OISST (b), and ERA5 minus OISST on the same fixes (c). 95% storm-bootstrap bands."
+  },
+  {
+   "path": "files/figures/fig2_product_difference.png",
+   "caption": "ERA5 minus OISST by epoch for the recovery rise, the composite peak and the day 18-22 change (a: MDR, b: outside MDR), and per storm in the MDR (c). The dashed line is the ERA5 input switch on 2007-09-01."
+  },
+  {
+   "path": "files/figures/fig3_drifter_check.png",
+   "caption": "Drifter check: product minus drifter wake by lag before and after 2007-09-01 (a), drifter-measured wakes by epoch (b) and the normalised wake left at days 15-25 (c), all North Atlantic fixes."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41612-025-01029-5",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Tested claim: faster recovery of MDR cold wakes in 2001-2020 than 1981-2000 in ERA5 SST."
+  },
+  {
+   "target": "sci:sha256:5d9b238deb67e9e7169c8b8e27a135d6a5ace377ec75b2e12b3474cec1528da8",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "ERA5 SST variance step at the 2007-09-01 HadISST2 to OSTIA switch; ARCO-ERA5 access recipe. We show the switch also changes ERA5 cold-wake peaks."
+  },
+  {
+   "target": "sci:sha256:5003de8e91b1ddb22e49ebcf3e6cbbe8e53ad9cf2f79ddee6c060d78eb3a13b7",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OISST v2.1 input steps in small-scale variance; reason to treat OISST as a second product, not truth."
+  },
+  {
+   "target": "sci:sha256:87b87a67b3fbeabf1a42555bcb64b3859b769e49b54f28c09da0ee2ca781bc71",
+   "relations": [
+    "uses"
+   ],
+   "reason": "OISST v2.1 noise steps change anomaly persistence."
+  },
+  {
+   "target": "sci:sha256:aeb65c193b73dabff9a49e243b9f3a538306fc932b5048be5f73473c4df7f9c3",
+   "reason": "Buoy cold-wake recovery study; no change 1982-2000 vs 2001-2024 at buoys outside the MDR."
+  },
+  {
+   "target": "sci:sha256:43a82d718e31d9701614c6d3a6ad290afca38c0456bbb3cc7a711d48f29ed62a",
+   "reason": "Fixed-sample buoy cold-wake study."
+  },
+  {
+   "target": "sci:sha256:0e4cebba0ba69134af7712a2e581df162313114c4c7b92b2c11c8787253bcd3a",
+   "reason": "Storm-linked air masses explain slow shelf wake recovery at buoys."
+  },
+  {
+   "target": "sci:sha256:df6fa3a0f927ab712a3b65ebe1203a5bc41e60f533e0215983c7727cc5f148f8",
+   "reason": "Intensification of storms over earlier wakes (TC-TC interaction) in the campaign."
+  },
+  {
+   "target": "doi:10.1038/s41612-025-01300-9",
+   "reason": "Related claim (OISST cold-wake size decline) not tested here; listed as follow-up."
+  },
+  {
+   "target": "doi:10.1002/qj.3803",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 reanalysis (SST)."
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA OISST v2.1."
+  },
+  {
+   "target": "doi:10.25921/7ntx-z961",
+   "relations": [
+    "uses"
+   ],
+   "reason": "NOAA Global Drifter Program 6-hour interpolated data."
+  },
+  {
+   "target": "doi:10.1175/2009BAMS2755.1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "IBTrACS best tracks."
+  },
+  {
+   "target": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3/sea_surface_temperature/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ARCO-ERA5 SST chunks read at 12 UTC."
+  },
+  {
+   "target": "https://erddap.aoml.noaa.gov/gdp/erddap/tabledap/drifter_6hour_qc.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Drifter download service."
+  }
+ ]
+}
