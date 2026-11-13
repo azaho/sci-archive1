@@ -1,0 +1,95 @@
+{
+ "title": "Spontaneous co-activity did not predict single-neuron photostimulation influence in mouse motor cortex layer 2/3 (5 mice, 26 sessions); similar causal input gave a small co-activity link",
+ "abstract": "Question: does the spontaneous correlation of two neurons predict the causal effect of photostimulating one on the other? Data: Allen Institute for Neural Dynamics BCI dataset (CC BY 4.0): layer 2/3 of mouse primary motor cortex, 27 sessions of 5 mice, single-neuron 2-photon photostimulation of 50-100 targets before and after a brain-computer-interface task, and spontaneous epochs. 1,558 valid stimulated targets and 1.98 million target-responder pairs at 30 um or more from the laser spot. Method: pre-registered per-session regression of influence W on spontaneous correlation C with a distance spline and fixed effects for target and responder; mean of mouse means with a hierarchical bootstrap; correction for the split-half unreliability of W and C. Results: before the task the partial correlation was -0.0044 (95% CI -0.0096 to 0.0003) against a reliability ceiling of 0.16; the corrected value was -0.024 (-0.052 to 0.001), so C explains at most about 0.3% of the reliable pair-specific influence. After the task it was 0.009 (-0.010 to 0.031). The pre-post change, the co-change of W and C, and the direction test (22,398 of 44,855 pairs agree, 0.499) were not supported after Holm correction. Influence maps were stable across the task (0.85 of the reliability limit). Mean influence was negative from 50 to about 300 um, also in raw somatic fluorescence. Post hoc: two neurons that received similar influence from the same targets had higher spontaneous correlation (partial r 0.0076, 0.0018 to 0.0186; 24 of 26 sessions); a 3-trial label-shift timing control removed it. Limitations: 5 mice, about 20 trials per target and about 220 s of spontaneous data, calcium imaging at one plane, unknown cell types, neuropil effects within 50 um, and a post hoc shared-input test with an uncertain size.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "photostimulation",
+  "effective connectivity",
+  "functional connectivity",
+  "motor cortex",
+  "two-photon imaging",
+  "brain-computer interface",
+  "noise correlation",
+  "shared input",
+  "Allen Institute",
+  "pre-registration"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_influence_vs_coactivity.png",
+   "caption": "Influence W versus spontaneous correlation C. (A) Per-session partial r (dot, plus or minus 1.96/sqrt(n)) and the reliability ceiling sqrt(rel_W rel_C) (band), before (blue) and after (orange) the BCI task. (B) Pooled partial r corrected for unreliability, mean of mouse means, 95% hierarchical bootstrap CI."
+  },
+  {
+   "path": "files/figures/fig1_distance_profile.png",
+   "caption": "Distance dependence of influence. (A) Specific influence (W minus the responder mean from targets at 300 um or more), mean of mouse means and bootstrap band. (B) Percent of single pairs with trial t above 3 or below -3 before the task. (C) One session: responses of raw ROI fluorescence, neuropil fluorescence and neuropil-corrected dF/F versus distance."
+  },
+  {
+   "path": "files/figures/fig3_reliability_cell_direction.png",
+   "caption": "(A) Pair-level reliability of W and C after controls (dots: mouse means; squares: pooled with 95% CI). (B) Post hoc shared-input test: partial r of input-profile similarity with C for real target labels and for labels shifted by 3 trials (lines join sessions). (C) Direction test: share of target pairs where influence asymmetry and lagged-correlation asymmetry have the same sign."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "reason": "MICrONS like-to-like wiring with fixed effects; anatomical counterpart of our causal test."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "reason": "MICrONS response similarity and connection odds."
+  },
+  {
+   "target": "sci:sha256:8bb073457bc086e9d83054432643758eba498d8d03760b66d3d369632aa4e2fa",
+   "reason": "V1 Deep Dive: frame-level co-activity predicted connections; our spontaneous co-activity did not predict causal influence in MOp."
+  },
+  {
+   "target": "sci:sha256:a932e167db12bf26d795ad8563c1a4e69a73735703fecc15fa9b916dcaa6cf42",
+   "relations": [
+    "supports"
+   ],
+   "reason": "V1DD: no pair-specific similarity gain after cell-level control; our causal test agrees for spontaneous correlation."
+  },
+  {
+   "target": "sci:sha256:e9455e37a00547b613cd8ac12ee466cdd4b5cbc7b7684413cb08d05a9e0ab1dd",
+   "relations": [
+    "supports"
+   ],
+   "reason": "MICrONS: shared trial-to-trial variability did not predict synapses; our causal result is consistent."
+  },
+  {
+   "target": "sci:sha256:68f4f3d6d1e6b7d273909d7e434fe224f63dce4ad18b78cd94caaf5bd758c46b",
+   "reason": "Cross-species wiring vs functional coupling."
+  },
+  {
+   "target": "sci:sha256:8c65c10b37dabd498acbaf41f5c4be7b8185c82f38d92f1f341a865a6e48723d",
+   "reason": "Cross-species wiring explains little reliable pair-specific coupling."
+  },
+  {
+   "target": "sci:sha256:fbb2992177f3a36ef3a7d7199b1f39b030e515e27731b7f2da0c400d3037159e",
+   "reason": "Earlier campaign perturbation work (C. elegans signal propagation atlas)."
+  },
+  {
+   "target": "sci:sha256:cd13bf50e393d936da951778efe0a2dec719ce9281d185e3f51c2e284a4f8cbf",
+   "reason": "Earlier campaign perturbation work (C. elegans)."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-09758-6",
+   "reason": "Finkelstein et al. 2025: photostimulation connectivity in ALM; DANDI 001612 lacks stimulation metadata."
+  },
+  {
+   "target": "doi:10.64898/2026.03.03.709199",
+   "reason": "Dataset authors' preprint on learning-related connectivity changes in the BCI data."
+  },
+  {
+   "target": "https://allenswdb.github.io/physiology/ophys/BCI/BCI-overview.html",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Description of the Allen Institute for Neural Dynamics BCI dataset used here (CC BY 4.0)."
+  }
+ ]
+}
