@@ -1,0 +1,95 @@
+{
+ "title": "In 64 Allen Visual Behavior Neuropixels mice, the change response predicted hits equally weakly from LGd to higher visual cortex after state control; only midbrain units added information beyond V1",
+ "abstract": "We tested where along the anatomical pathway the image-change response predicts whether a mouse detects the change (hit) or misses it. We used 78 Familiar sessions of Allen Visual Behavior Neuropixels; 64 mice had enough engaged trials (6,654 hits, 2,248 misses; 21,858 units). Unit detect probability (DP, hit versus miss AUROC, 20-150 ms after change, before licks) was very small. The raw DP increased with the Harris 2019 hierarchy score (slope +0.011 per score unit [+0.005, +0.019]), but the pre-change flash, which has no change information, had almost the same slope (+0.009). After regression of running, pupil, trial time and reward rate, change DP was +0.011 to +0.015 in every thalamocortical area, including LGd (+0.014 [+0.006, +0.024]); the slope was +0.002 [-0.003, +0.008] and pre-change DP was near zero. The change signal itself was 2 to 8 times larger and about 13-22% weaker on misses in thalamocortical areas, but 37-61% weaker in superior colliculus and MRN. Behaviour alone decoded hits with AUROC 0.62; 15 units of any thalamocortical area added at most 0.011 beyond V1 and behaviour, while SCm, MRN and APN units added 0.03-0.05. Thus the hierarchy did not amplify the change-specific hit/miss signal; an uncontrolled state confound produces a false gradient. Limitations: correlational, measured covariates only, small effects, 15-unit decoders, Familiar sessions only.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Visual Behavior Neuropixels",
+  "Allen Institute",
+  "change detection",
+  "detect probability",
+  "choice probability",
+  "hit versus miss",
+  "anatomical hierarchy",
+  "structure-function",
+  "thalamocortical",
+  "superior colliculus",
+  "behavioural state",
+  "pupil",
+  "running",
+  "mouse visual system",
+  "null result"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig5_raw_vs_residual.png",
+   "caption": "Hit/miss detect probability by area before (A) and after (B) regression of running, pupil, trial time and reward rate. Blue: change flash; orange: pre-change flash; green: change minus pre-change. Bars: 95% mouse bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig1_area_dp.png",
+   "caption": "(A) Raw hit/miss detect probability by area. (B) The change signal (change versus pre-change flash) and the hit/miss signal on the same AUROC scale."
+  },
+  {
+   "path": "files/figures/fig4_decoding.png",
+   "caption": "(A) Cross-validated hit/miss decoding from 15 units per area, behaviour alone (grey band) and behaviour plus units. (B) Gain of a second area over 15 V1 units plus behaviour."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:f17da30f42de8c7f44d409e842aed5d43b992c36969cf331a348e1d4d81c25e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "We reuse its HTTP range-read code for VBN NWB files and compare with its novelty results."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Related VBN study of engagement and inter-regional coupling."
+  },
+  {
+   "target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd",
+   "reason": "Related VBN optotagging study."
+  },
+  {
+   "target": "sci:sha256:6ea87a03ffd65472e95030d7a4287d8ffecd3df039d08f281ef3953e7928916a",
+   "reason": "Related VBN and VCN study of response variability along areas."
+  },
+  {
+   "target": "sci:sha256:19f7eb8e97c3c505c7176cf992bc2c93b3ce4d8f97552f8f4484e6f79a14ea73",
+   "reason": "Earlier campaign result on response reliability along the visual pathway."
+  },
+  {
+   "target": "https://visual-behavior-neuropixels-data.s3.us-west-2.amazonaws.com/visual-behavior-neuropixels/project_metadata/ecephys_sessions.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "VBN session metadata; NWB files from the same bucket."
+  },
+  {
+   "target": "doi:10.1101/2025.10.17.683190",
+   "reason": "Allen VBN data paper (preprint): engagement modulation and decision window."
+  },
+  {
+   "target": "doi:10.1038/s41586-019-1716-z",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Anatomical hierarchy scores."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Hierarchy score values and functional hierarchy."
+  },
+  {
+   "target": "doi:10.1017/S095252380000715X",
+   "reason": "Grand choice/detect probability method."
+  }
+ ]
+}

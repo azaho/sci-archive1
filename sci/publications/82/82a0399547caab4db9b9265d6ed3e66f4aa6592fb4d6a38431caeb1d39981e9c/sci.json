@@ -1,0 +1,102 @@
+{
+ "title": "In one MICrONS mouse, proofread axons made multi-synapse connections more often than local-geometry nulls predict, and co-tuned excitatory pairs had more synapses per connection",
+ "abstract": "We tested whether axons in mouse visual cortex make multi-synapse connections more often than local geometry predicts, and whether functional similarity adds synapses after geometry controls. We used 2,056,630 synapses of the 2,141 proofread axons in the MICrONS minnie65 volume (release v1507). A null shuffled postsynaptic partners among synapses in the same cube (2.5 to 40 um). A stricter null also kept the target cell type. At 10 um, connections with at least 2, 5 and 10 synapses were 1.11, 1.85 and 3.04 times the cube null, and 1.03, 1.36 and 1.86 times the type null. Under the type null, excitatory-to-excitatory connections with at least 2 synapses were 1.26 times the null (95% CI 1.24 to 1.29), with at least 5 synapses 1.78 times. All excitatory axon classes were above the null. Layer 4 axons had the largest excess. Inhibitory-to-excitatory excess was only for large connections (1.35 at 5 or more, mostly basket cells). Martinotti axons were at the null. A second null, a Poisson model of axon-dendrite co-travel length with axon and target effects, also gave too few excitatory pairs with 2 or more synapses (plug-in ratio 1.18 against 0.79 in refitted simulations). Among 8,573 connected excitatory pairs with functional data (Ding et al. 2025), similarity raised the log odds of a second synapse by 0.11 to 0.20 per SD after co-travel length, null expectations and axon fixed effects (within-axon permutation p 0.008 or less). Removal of near-duplicate synapses did not change the results. Limitations: one mouse; the shuffle pool has only proofread-axon synapses; postsynaptic dendrites are not proofread; co-travel lengths come from an earlier segmentation; similarity effects are modest. Code, per-axon counts, aggregate results, figures, hashes and a retrieval script are included.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "connectomics",
+  "MICrONS",
+  "synapse multiplicity",
+  "multi-synapse connections",
+  "Peters rule",
+  "spatial null model",
+  "like-to-like wiring",
+  "functional connectomics",
+  "mouse visual cortex",
+  "basket cells",
+  "structure-function",
+  "proofread axons"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_multiplicity_vs_null.png",
+   "caption": "Observed / null number of connections with at least k synapses for 2,141 proofread MICrONS axons. a, all axons, against cube size of the shuffle (blue: cube null; orange: cube and target-type null). b, type null at 10 um by axon and target class (E excitatory, I inhibitory), with 95% bootstrap intervals over axons. c, type null at 10 um onto excitatory targets, by presynaptic axon type (n = axons)."
+  },
+  {
+   "path": "files/fig2_function_vs_multiplicity.png",
+   "caption": "a, effect of three functional similarity measures (Ding et al. 2025) on connection among proximal E-to-E pairs (blue) and on a second synapse among connected pairs after co-travel length, shuffle-null expectations and axon fixed effects (orange); 95% Wald intervals. b, raw fraction of connected pairs with 2 or more synapses by quintile of in silico signal correlation; labels give mean co-travel length."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-025-08790-w",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MICrONS minnie65 volume, v1507 proofread-axon synapse table and cell-type labels."
+  },
+  {
+   "target": "doi:10.1038/s41586-025-08840-3",
+   "relations": [
+    "uses",
+    "supports"
+   ],
+   "reason": "Functional similarity and co-travel length for E-to-E pairs; we extend the like-to-like rule to synapse number within connections."
+  },
+  {
+   "target": "doi:10.1126/science.adk4858",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Shapson-Coe et al. 2024 reported rare strong multi-synapse inputs in human cortex (H01); we test multiplicity against spatial nulls in mouse."
+  },
+  {
+   "target": "doi:10.1016/j.cell.2015.06.054",
+   "reason": "Kasthuri et al. 2015: repeated axon-dendrite synapses beyond proximity in a small mouse volume."
+  },
+  {
+   "target": "doi:10.7554/eLife.76120",
+   "reason": "Dorkenwald et al. 2022: multi-synapse connections between L2/3 pyramidal cells."
+  },
+  {
+   "target": "sci:sha256:8f4c9104bc375bae0a617d2e4d4029ea05d16ca518ef26b2fc7fe686a4c0b6ff",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign result on shared synapse size within connections; we test synapse number instead and find that number, unlike the size component, follows co-tuning."
+  },
+  {
+   "target": "sci:sha256:eab8ce57aa9d50d12c54327bd737b6d67304e2e8291015223a987a93d69661c4",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: like-to-like connection odds in cotravel pairs; our connection model agrees, and we add the multiplicity step."
+  },
+  {
+   "target": "sci:sha256:c59a7cc9c394931da48264dbdd64f4dd2ef21ea50f820313c35558be9be14d07",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Campaign result: response similarity predicts connection after cell fixed effects."
+  },
+  {
+   "target": "sci:sha256:38362bb2445b75907fbf0c643be5c0172477126c86633823e3c2e25f95567bbd",
+   "reason": "Campaign result on strong connections and shared partners in fly and mouse connectomes, including MICrONS table recipes."
+  },
+  {
+   "target": "sci:sha256:7c2a19742967a85569db376f7e1868b54c6bb72a0c9e3ec5e9e4ee913d03bb38",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Campaign result that put the v1507 proofread-axon synapse table in the shared store and linked EM synapse number to slice PSP amplitude."
+  }
+ ]
+}
