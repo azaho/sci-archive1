@@ -1,0 +1,98 @@
+{
+ "title": "In 58 awake mice, visual areas share trial-to-trial activity through low-dimensional subspaces, and cortical pairs with denser axons use more dimensions at matched strength",
+ "abstract": "Question: do mouse visual areas communicate through a low-dimensional, misaligned 'communication subspace' (Semedo et al. 2019), and does axonal wiring set its strength or its dimension? Data: Allen Visual Coding Neuropixels, 58 mice in two cohorts (32 primary, 26 replication), 21,658 units in LGd, VISp, VISl, VISrl, LP, VISal, VISpm and VISam, in grey-screen activity, natural scenes, drifting gratings and a natural movie. Method: cross-validated reduced-rank regression from 30 source units to 15 target units on stimulus-free fluctuations, under a plan written before the results. Results: (1) Between areas, the optimal dimension was 2.2 to 3.2, against 4.6 to 6.5 within an area; at matched performance, between-area pairs used 1.6 to 2.3 fewer dimensions in all 7 cohort-condition sets (mouse-bootstrap intervals below 0). With within-area sets at least 40 um apart, the difference was smaller (-0.35 to -1.53; 5 of 7 intervals below 0). (2) The top source PCs gave 74% to 81% of the RRR performance between areas and 78% to 84% within; the between-area loss was larger in all sets. (3) Knox axon density did not clearly predict strength over all 56 directed pairs (r 0.09 to 0.30), but it predicted the dimension at matched strength (5 of 7 sets; pooled r 0.34, permutation p 0.003). In an added cortex-only test, the dimension link was r 0.52 to 0.76 (exact p <= 0.018 in all sets) and stayed after control for area distance (pooled partial r 0.57, p 0.0014). (4) Feedforward and feedback directions did not differ consistently. (5) A subspace fitted in one condition gave 66% to 79% of within-condition performance in another (random subspaces 16% to 27%). Limitations: tracer wiring from other mice; only 8 structures; the cortex-only and distance tests were added after the planned results; receptive-field overlap was not controlled. Allen data are not included; code, aggregate tables and retrieval instructions are.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "communication subspace",
+  "reduced-rank regression",
+  "inter-areal communication",
+  "mouse visual cortex",
+  "thalamus",
+  "lateral geniculate",
+  "pulvinar",
+  "mesoscale connectome",
+  "axonal projection density",
+  "population dynamics",
+  "dimensionality",
+  "spontaneous activity",
+  "Neuropixels",
+  "Allen Brain Observatory",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_dimension_alignment.png",
+   "caption": "H1/H2. (A) RRR and top-source-PC performance against rank, as a fraction of the full model, between and within areas (BO, natural scenes). (B) Optimal dimension against full-model performance per session and pair. (C) Between-minus-within dimension at matched performance, the 40 um check, and the alignment difference, with mouse-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_wiring.png",
+   "caption": "H3. Pair-level log performance (top) and dimension residual (bottom) against log10 Knox axon density for four cohort-condition sets. Blue: cortex to cortex; orange: pairs with LGd or LP. Text gives planned all-8 tests and added cortex-only and distance-controlled tests."
+  },
+  {
+   "path": "files/figures/fig3_transfer_direction.png",
+   "caption": "(A) H5: performance of a subspace fitted in another condition, of the other condition's top source PCs, and of random subspaces, relative to within-condition RRR. (B) H4: feedforward minus feedback differences of log performance and dimension."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://doi.org/10.1016/j.neuron.2019.01.026",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Semedo et al. 2019 communication subspace; we find both properties between awake mouse visual areas."
+  },
+  {
+   "target": "https://doi.org/10.1038/s41586-020-03171-x",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Siegle et al. 2021, the Allen Visual Coding Neuropixels data set and hierarchy order."
+  },
+  {
+   "target": "https://doi.org/10.1162/netn_a_00066",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Knox et al. 2019 normalized connection density (not redistributed)."
+  },
+  {
+   "target": "https://doi.org/10.1038/s41586-019-1716-z",
+   "reason": "Harris et al. 2019 anatomical hierarchy of mouse cortex and thalamus."
+  },
+  {
+   "target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen NWB and metadata files (not redistributed)."
+  },
+  {
+   "target": "sci:sha256:a94a2db933318da32ed90190ea07800d9b228c022327ddbbbc613fbc0dd8d9c1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Its NWB range-read extraction code is the base of our extractor."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Summed region co-variation follows Knox wiring across 30 regions; over our 8 strongly connected structures, strength did not, but subspace dimension did."
+  },
+  {
+   "target": "sci:sha256:193d9a5614ab21692cff4f6d3fd02bc50eb1d367d965da92d4a921ace25463da",
+   "reason": "Same wiring-coupling relation in IBL; context for our strength result."
+  },
+  {
+   "target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59",
+   "reason": "Fast spike-pair links between six visual areas did not follow axon density; our population-subspace dimension does in cortex."
+  },
+  {
+   "target": "sci:sha256:0dd17ccb39a3dffe22edfbc00638e49440eea1617a590a30a0344911ff7702e3",
+   "reason": "LFP Granger direction in the same data; we find no consistent feedforward/feedback difference in subspace strength or dimension."
+  }
+ ]
+}
