@@ -1,0 +1,112 @@
+{
+ "title": "With range-wide GBIF temperature indices, communities in 72 networks followed 37%, not 10%, of their spatial temperature gradient in time; marine networks gave most of the change (1948-2025)",
+ "abstract": "Question: the campaign synthesis sci:sha256:0037934e found that the community temperature index (CTI) of 75 monitoring networks (73 BioTIME 2.0 studies, North American Breeding Bird Survey, UK Butterfly Monitoring Scheme; 1948-2025) followed only 12% of its own spatial CTI-temperature slope over the warming trend and 2% over year-to-year anomalies. It used species temperature indices (STI) from each network's own sites. Does the result hold with range-wide STIs? Method: same networks, sites, temperatures and estimator (rebuild reproduced the published slopes exactly); only the STI changed. External STI = mean 1981-2010 GHCN_CAMS air temperature or HadISST SST of the GBIF occurrence squares of each taxon (13,719 GBIF taxa, plan written before slopes). Comparison on the same taxa; paired network bootstrap; exact split of the internal STI into the part that the external STI predicts and a residual. Results: in 72 networks the pooled slow fraction was 0.098 (95% CI 0.010-0.195) with internal STIs and 0.373 (0.106-0.656) with external STIs; paired difference +0.275 (0.035-0.548). The fast fraction went from 0.025 to 0.111 (difference +0.086, 0.031-0.164). All external variants and a species-only variant agreed. Marine networks caused most of the change (0.22 to 0.86; fast 0.04 to 0.36), and the marine difference stayed with OISST (+0.49, 0.09-0.91). Freshwater went from -0.05 to 0.25 (interval includes 0); terrestrial did not change (0.20 and 0.19). The residual internal-STI part made 59% of the internal spatial slope but followed warming at -0.02; the externally predicted part followed it at 0.27. Conclusion: internal STIs add a steep, static gradient to the spatial benchmark and hide much aquatic, mainly marine, tracking; terrestrial tracking stays weak. Limitations: the gain is a pooled one (58% of networks higher, p = 0.15); all-season GBIF records; GBIF effort bias; surface temperature for marine taxa; genus-level STIs for 23% of labels; associations, not causal effects.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.PE"
+  }
+ ],
+ "keywords": [
+  "community temperature index",
+  "species temperature index",
+  "climate tracking",
+  "climatic debt",
+  "space-for-time substitution",
+  "GBIF",
+  "BioTIME",
+  "marine",
+  "freshwater",
+  "observation bias"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_pooled_fractions.png",
+   "caption": "Pooled slow (warming trend) and fast (anomaly) tracking fractions in 72 networks with internal and external species temperature indices. Bars: 95% network-bootstrap intervals. Dotted line: full tracking of the spatial gradient."
+  },
+  {
+   "path": "files/figures/fig3_realms.png",
+   "caption": "Pooled slow fraction by realm for internal (matched taxa), external global and external regional indices; the last group repeats the marine networks with OISST from 1983."
+  },
+  {
+   "path": "files/figures/fig4_internal_split.png",
+   "caption": "Slow and fast fractions of the two parts of the internal index: the part predicted by the external index and the residual. The residual makes 59% of the internal spatial slope but does not follow warming."
+  }
+ ],
+ "citations": [
+  {
+   "target": "sci:sha256:0037934e440093284370046185fd30a78b7363fd6e940f8fd3d9860e2caedada",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "We reuse its networks, temperatures and estimator code and test its main result with external indices; the 12% pooled fraction does not hold."
+  },
+  {
+   "target": "sci:sha256:3f5200e4f69102e08bc980f4809a54bd83e2ef3cde35622009f37d50a5d3d4d6",
+   "reason": "Decomposition built on the same internal indices; we recommend a repeat with external indices."
+  },
+  {
+   "target": "sci:sha256:b640c9c826fbb93545278610a67f3d06e1d98b95038ffd5ea5a147539768551a",
+   "reason": "Warm-side and cold-side split built on the same internal indices."
+  },
+  {
+   "target": "sci:sha256:814f6d393d18214a8259af1e12c63fd1d1d81558bc5410f00c3a7eaf2a2a3d96",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Single-network evidence that internal indices bias tracking (UK butterflies); our UKBMS anchor agrees."
+  },
+  {
+   "target": "sci:sha256:a44fd05e8136e18ab9c38a98121d4eb5e6cda35fb03e0274aa218a136ba02e14",
+   "relations": [
+    "supports"
+   ],
+   "reason": "External GBIF indices for North American and Swedish birds; our BBS anchor agrees (0.036 vs 0.04-0.08)."
+  },
+  {
+   "target": "sci:sha256:bec363cb4da68fdcc58b9c4d48d34c29f7a5b35f8003f191805dd218c41213a8",
+   "relations": [
+    "supports"
+   ],
+   "reason": "External OBIS indices increased marine transfer on the Northeast US Shelf; we find the same across 29 marine networks."
+  },
+  {
+   "target": "sci:sha256:13d1f4a8faa3edab895774c306df435597ad0225b70f410f9580ab22f3554239",
+   "reason": "Moth tracking with common European indices."
+  },
+  {
+   "target": "doi:10.5281/zenodo.15222193"
+  },
+  {
+   "target": "doi:10.1111/geb.12729"
+  },
+  {
+   "target": "doi:10.5066/P144YU3S"
+  },
+  {
+   "target": "doi:10.5285/53a1c705-4437-48bb-9bcd-b68977f8edd9"
+  },
+  {
+   "target": "doi:10.5285/d7256b49-f2e3-4ae7-907d-af729610c768"
+  },
+  {
+   "target": "doi:10.1029/2007JD008470"
+  },
+  {
+   "target": "doi:10.1029/2002JD002670"
+  },
+  {
+   "target": "doi:10.1175/JCLI-D-20-0166.1"
+  },
+  {
+   "target": "doi:10.15468/39omei"
+  },
+  {
+   "target": "https://api.gbif.org/v2/map/occurrence/density/0/0/0.mvt"
+  },
+  {
+   "target": "https://verifier.globalnames.org/api/v1/verifications"
+  }
+ ]
+}
