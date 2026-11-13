@@ -1,0 +1,151 @@
+{
+ "title": "Trained fly visual-system connectome models keep their motion tuning with the column-offset synapse profiles of two other flies, but lose it when type-pair synapse totals change (10 flyvis models)",
+ "abstract": "Question: the 50 pretrained flyvis models of the fly visual system (Lappalainen et al. 2024) take fixed synapse counts per cell-type pair and column offset from one 7-column FIB-25/FIB-19 reconstruction. Do their predictions stay the same with the counts of other optic lobes? Approach: we computed the same per-offset count table for FlyWire v783 (both eyes, 31 column-assigned types) and male CNS v1.0 (both eyes, 28 types; columns of 16 types from a partner rule calibrated on FlyWire), aligned the hex lattices, and replaced the 710 model keys between these types (46% of model synapse mass) in the 10 best models. We split each change into the offset profile inside a type pair (shape) and the type-pair totals (gain), and used a within-pair offset permutation as a positive control and random nulls. Read-outs were flash polarity and moving-edge direction tuning, compared with the flyvis ground-truth lists from experiments (270 simulations). Results: the four large optic lobes agreed with each other (log-SD per key 0.22-0.34, similar to left vs right) and all differed from FIB25 (0.53-0.56), within the noise of a 7-column sample (0.75). All real tables and their consensus lowered the agreement of DSI with known motion tuning (r 0.68 to 0.19-0.50; p 0.004-0.049) and the T4/T5 subtypes with the correct preferred direction (median 5.5 to 2.5-4.5 of 8), and silenced some T4/T5 cells, but did not change flash polarity agreement. Gain-only tables reproduced all of this damage. Shape-only tables changed nothing (response change 0.001), although random offset permutation lowered DSI agreement in 10 of 10 models. The pre-specified test that real differences are less disruptive than random ones failed (1 of 4 tests). Limitation: no retraining (2 CPUs); because trained type-pair strengths multiply the totals, retrained models may absorb the gain differences. One speed, dt 0.01 s, 10 of 50 models.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "320903"
+  }
+ ],
+ "keywords": [
+  "connectome",
+  "Drosophila",
+  "optic lobe",
+  "flyvis",
+  "motion detection",
+  "T4",
+  "T5",
+  "FlyWire",
+  "male CNS",
+  "synapse count variability",
+  "model robustness",
+  "structure-function"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig2_predictions.png",
+   "caption": "Ten flyvis models with synapse counts from FlyWire and male CNS optic lobes. A-C: agreement with known flash polarity and T4/T5 direction tuning, and silent T4/T5 subtypes, for the original FIB25 counts and six real tables. D-E: shape-only tables (new offset profile, FIB25 type-pair totals) change nothing; gain-only tables reproduce the full damage; within-pair offset permutation is a positive control. F: real vs random-null response change. G-H: post hoc restoration of FIB25 inputs to T4/T5. Grey dots are models; red bars are medians."
+  },
+  {
+   "path": "files/figures/fig1_tables.png",
+   "caption": "A: SD of log count difference per key between the FIB25 table of the models and four large optic lobes (FlyWire R* uses partner-assigned columns). B: a 7-column FlyWire sample differs from its full optic lobe more than FIB25 does. C: type-pair input totals onto T4 and T5 relative to FIB25."
+  },
+  {
+   "path": "files/figures/fig3_t4t5_tuning.png",
+   "caption": "Model 000: peak responses of T4a-d (ON edges) and T5a-d (OFF edges) to edges moving in 12 directions with FIB25, FlyWire R, male CNS R and consensus counts, and with the FlyWire R shape-only and gain-only tables."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1038/s41586-024-07939-3",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "flyvis models, code, stimuli and ground-truth lists (Lappalainen et al. 2024); we test robustness of its predictions to other connectomes."
+  },
+  {
+   "target": "https://github.com/TuragaLab/flyvis",
+   "relations": [
+    "uses"
+   ],
+   "reason": "flyvis 1.2.0 package and pretrained ensemble flow/0000 (MIT)."
+  },
+  {
+   "target": "doi:10.7554/eLife.24394",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FIB-19 medulla connectome behind the flyvis count table."
+  },
+  {
+   "target": "doi:10.7554/eLife.40025",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Shinomiya et al. 2019 medulla and lobula connectome used in the flyvis table."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07558-y",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire whole-brain connectome v783."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07686-5",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire cell typing (Schlegel et al. 2024)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07981-1",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire optic-lobe column assignment (Matsliah et al. 2024)."
+  },
+  {
+   "target": "doi:10.5281/zenodo.10676866",
+   "relations": [
+    "uses"
+   ],
+   "reason": "FlyWire v783 proofread connections table."
+  },
+  {
+   "target": "https://male-cns.janelia.org/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Janelia FlyEM male CNS v1.0 annotations (hex columns) and connectome weights."
+  },
+  {
+   "target": "sci:sha256:6c1fffedaa9a7f286490e2f7a44e258a5179eaddfa4d2142854bcd8c298d8547",
+   "reason": "Tests the original flyvis models against calcium data; we test the same models with other connectomes."
+  },
+  {
+   "target": "sci:sha256:04069535fb6a14ddd86ee3f27057228fe375cc7feff8dbb4edc41ffed76fccc9",
+   "reason": "Columnar synapse-count variability in FlyWire and male CNS eyes; we test its functional effect in trained models."
+  },
+  {
+   "target": "sci:sha256:f072f2432d85d67865fec00cbd6bf070ea2b51d400a8bbb3a77520aede786bdb",
+   "reason": "Between-animal synapse-count variation and neuron gains in fly connectomes; our gain/shape split is the model-level counterpart."
+  },
+  {
+   "target": "sci:sha256:82b126177507bcfa072eb00b4631a840efb68e2b6d88261b82f0055fe2af39bb",
+   "reason": "Left-right vs between-animal synapse-count differences; we find left-right model predictions much closer than between-fly ones."
+  },
+  {
+   "target": "sci:sha256:7d2472fdd11f9b252ab9b0a47a81da8c9e6088570ce6c90fc8f28bcb026f0aad",
+   "reason": "Whole-brain spiking-model predictions differ between FlyWire and BANC; we do the cross-connectome test for trained visual models."
+  },
+  {
+   "target": "sci:sha256:34240293be2875909e543b5c7111c440630cffa6ec0f2330244cddb27956b272",
+   "reason": "Spiking-model comparison of FlyWire and male CNS; related cross-connectome model test."
+  },
+  {
+   "target": "sci:sha256:f4c238908934ff3899080cc0afa5eb0ca1157ccbbf8294a7d4b3236c7eba73f7",
+   "reason": "T4/T5 input directions agree between FlyWire and male CNS; consistent with our finding that their offset profiles keep model DS.",
+   "relations": [
+    "supports"
+   ]
+  },
+  {
+   "target": "sci:sha256:d115ed1dfe7d0feb4f39ecfb6c82d4579aec7b3a5e3681420c057373e8e2307c",
+   "reason": "Synapse positions give T4/T5 subtype directions in FlyWire; background for offset-based DS."
+  },
+  {
+   "target": "sci:sha256:29c399daf22be3d9ce4d4c50c83a2cbe81aec56106129e1698be52a8dd1fd9e0",
+   "reason": "Male CNS signed wiring and ON/OFF signs of visual types; related use of the male CNS optic lobe."
+  },
+  {
+   "target": "sci:sha256:5916130f235f7a5167ffcb6e8f782ac869da21f1c4931d0f83adeef2ca37aa48",
+   "reason": "FlyWire signed wiring and ON/OFF signs; related structure-function test in the optic lobe."
+  }
+ ]
+}
