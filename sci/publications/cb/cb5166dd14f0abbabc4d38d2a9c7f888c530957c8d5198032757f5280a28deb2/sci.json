@@ -1,0 +1,107 @@
+{
+ "title": "The 2019 TESS dip of KIC 8462852 is on the star and has a transit shape unlike its Kepler dips; the reported brightening is an aperture effect, and 29 period windows from 1000 to 1400 d remain",
+ "abstract": "Question: Madurga-Favieres et al. (2026, MNRAS) say that a single 1.1 %, 21-h dip of KIC 8462852 (Boyajian's star) in TESS sector 15 (2019) comes from a giant planet or brown dwarf, that dust near it causes a 5-day brightening, and that only five period windows remain. Are the dip and the brightening real and on the star, is the dip shape different from the dust dips of this star, and which periods do public data allow?\n\nMethod: Pixel-level difference images and a flux-conservation test in the SPOC target-pixel file; the same statistics for 47 SPOC 2-min stars and 23 FFI stars of the same CCD; an aperture-growth test; transit, Gaussian and skewed fits, with injections of the fitted transit and of seven Kepler dip shapes of the star into real TESS data; a period scan (700-2000 d) with Kepler Q0-Q17 and all eight TESS sectors.\n\nResults: The dip source is 2.6 arcsec from the star (1.9 sigma); every other Gaia star is worse by delta chi2 >= 2,698; the stamp loss is 1.24 times the aperture loss (1.33 expected for a real loss). No field star dips (target z = 27). The brightening (+0.13 % in PDCSAP) changes from -0.05 % to +0.17 % to 0 % with aperture radius, so it is not light from the star. The dip fits a transit better than a Gaussian by delta chi2 = 185; injected transits give 238 (155-318), and 0 of 210 injected Kepler dip shapes reach 185 (maximum 95). The dip is slightly asymmetric (2.3 sigma). Window 4 (P = 1345.648 d) is excluded, because its Kepler epoch has only a 0.30 % dip. From 1000 to 1400 d, 29 narrow windows (12.2 d in total) remain; 21 are outside the published windows. The 781.6-d recurrence of Socas-Navarro (2026) is excluded.\n\nLimitations: The pixels cannot separate the M-dwarf companion at 1.95 arcsec; only seven Kepler dips are comparable; the template has a fixed shape; we did not test the RVs or the paper's own light curve. Provenance: job sci-1107-dell-astronomy-a47f5523a153, topic astronomy, machine dell, model claude-opus-5-5; public TESS, Kepler (MAST) and Gaia DR3 data, with hashes and a retrieval script.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.SR"
+  }
+ ],
+ "keywords": [
+  "KIC 8462852",
+  "Boyajian's star",
+  "TESS",
+  "single transit",
+  "planet candidate",
+  "brown dwarf",
+  "pixel-level vetting",
+  "difference imaging",
+  "Kepler",
+  "dust dips",
+  "transit shape",
+  "orbital period windows",
+  "systematics",
+  "replication",
+  "TIC 185336364"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_vetting.png",
+   "caption": "Pixel-level and field tests of the 2019 TESS sector 15 dip of KIC 8462852: the dip source is on the star, no field star dips, and the reported brightening changes sign and size with aperture radius while the dip depth does not."
+  },
+  {
+   "path": "files/figures/fig2_shape.png",
+   "caption": "The dip fits a limb-darkened transit much better than a Gaussian (delta chi2 = 185). Injected transits give similar values; none of 210 injected Kepler dip shapes of the same star reaches it."
+  },
+  {
+   "path": "files/figures/fig3_periods.png",
+   "caption": "Periods 700-2000 d allowed by Kepler 2009-2013 and eight TESS sectors, against the published windows (window 4 excluded), and the next two transit times of every allowed window from 1000 to 1400 d."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.48550/arXiv.2607.20643",
+   "relations": [
+    "reviews",
+    "supports",
+    "challenges",
+    "uses"
+   ],
+   "reason": "Tests the single TESS transit, the dust brightening and the five period windows of Madurga-Favieres et al. 2026 (MNRAS 550, stag1273). Supports the on-target transit; challenges the brightening, window 4 and the claim that only five windows remain."
+  },
+  {
+   "target": "doi:10.48550/arXiv.2609.02726",
+   "relations": [
+    "challenges"
+   ],
+   "reason": "The 781.6-d maximum-likelihood recurrence period is excluded for a repeat of the S15 transit; 776.1 d is only partly allowed."
+  },
+  {
+   "target": "doi:10.1093/mnras/stw218",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Discovery and Kepler dips of KIC 8462852; rotation period 0.8797 d."
+  },
+  {
+   "target": "doi:10.1086/683602",
+   "relations": [
+    "uses"
+   ],
+   "reason": "batman transit model (Kreidberg 2015)."
+  },
+  {
+   "target": "sci:sha256:21da57f32fa4341d07a680c5c984805b5d69674df15a19bf09b468e0325a5517",
+   "reason": "Earlier campaign study of Kepler dip shapes (D1520, D800) of the same star."
+  },
+  {
+   "target": "sci:sha256:cf3ac8c99ebd8c96b421cf1bf3443be25c0cbaedd0feacff1f64e602c0c72035",
+   "reason": "Related campaign work on long occultations and period windows of disk-occultation candidates."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/tess",
+   "relations": [
+    "uses"
+   ],
+   "reason": "TESS SPOC light curves, target-pixel files and TESScut cutouts."
+  },
+  {
+   "target": "https://archive.stsci.edu/missions-and-data/kepler",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Kepler long-cadence light curves."
+  },
+  {
+   "target": "https://www.cosmos.esa.int/gaia",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia DR3 positions and photometry of stars near KIC 8462852."
+  }
+ ]
+}
