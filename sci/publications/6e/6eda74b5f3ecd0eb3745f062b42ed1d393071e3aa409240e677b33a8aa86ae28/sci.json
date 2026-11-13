@@ -1,0 +1,152 @@
+{
+ "title": "Issued USGS M1 postfire debris-flow likelihoods were about 3 times too high outside their southern California training records; ERA5-Land antecedent wetness did not explain it (western US)",
+ "abstract": "Question: after western US wildfires, the USGS issues M1 debris-flow likelihoods for each stream segment. Does antecedent soil water change debris-flow odds when the M1 likelihood and the time since fire are fixed, and are the issued likelihoods reliable? Approach: we joined 3,616 field observations (Graber 2023/2024 USGS inventories, 23 fires, 510 storms) to the issued M1 terms of 23 assessments and computed M1 at the gage-measured peak 15-minute rainfall. We added the USGS v1 inventory (7,639 records, 77 fires, 2000-2025) and ERA5-Land soil water at the rain gage. The pre-registered test was a fire fixed-effect logistic model with storm permutations within fires. Results: 0-7 cm soil water gave an odds ratio per within-fire SD of 1.13 (95% CI 0.84-1.53, p = 0.47; 499 storms) and 0.84 (0.57-1.25, p = 0.49; 882 storms, 52 fires) in the v1 inventory. No wetness test of 17 reached p < 0.05. In year 1 after fire, the issued likelihoods predicted 945 debris flows where 305 were recorded (observed/expected 0.32, CI 0.25-0.39); segments rated 0.9-1.0 had debris flows in 46% of cases. Ratios fell to 0.09 in year 2 and 0.055 later. The M1 form refitted to its 817 southern California training records reproduces the published coefficients (observed/expected 1.00), but later records outside southern California gave 0.33 (0.26-0.40) in year 1. The observed log-odds rose about 0.3 times as steeply as M1 implies, also inside single storms and at rain gages within 0.5 km, so gage distance does not explain it. Discrimination was good (AUC 0.87). Limitations: inventories do not sample every segment; ERA5-Land is a 9 km model value; later southern California results depend mostly on two fires; the training split and slope checks are post hoc.",
+ "categories": [
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370901"
+  },
+  {
+   "scheme": "anzsrc-for-2020",
+   "code": "370704"
+  }
+ ],
+ "keywords": [
+  "postfire debris flow",
+  "wildfire",
+  "USGS hazard assessment",
+  "M1 model",
+  "forecast verification",
+  "reliability",
+  "antecedent soil moisture",
+  "ERA5-Land",
+  "rainfall threshold",
+  "western United States",
+  "pre-registered test",
+  "natural hazards"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_m1_reliability.png",
+   "caption": "A: Year-1 reliability of issued and inventory M1 likelihoods. B: observed/expected debris flows by year after fire, with 95% storm-bootstrap intervals."
+  },
+  {
+   "path": "files/figures/fig2_slope_gage_distance.png",
+   "caption": "Logistic slope on M1 log-odds by rain-gage distance and inside single storms. M1 implies 1."
+  },
+  {
+   "path": "files/figures/fig3_antecedent_tests.png",
+   "caption": "Seventeen antecedent-wetness tests: odds ratio per within-fire SD (95% CI) and storm-permutation p values. None reached p < 0.05."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.5066/P98Q4CDH",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Graber 2023 debris-flow inventory, 17 fires (CC0)."
+  },
+  {
+   "target": "doi:10.5066/P13ZFKJS",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Graber 2024 debris-flow inventory, 18 fires (CC0)."
+  },
+  {
+   "target": "doi:10.5066/P1R9VXC4",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS runoff-generated postfire debris-flow inventory v1 (Graber et al. 2026, CC0), extension test and calibration."
+  },
+  {
+   "target": "doi:10.5066/P142R8E2",
+   "relations": [
+    "uses",
+    "reviews"
+   ],
+   "reason": "Issued 2013-2023 USGS postfire debris-flow hazard assessments; M1 segment terms verified here."
+  },
+  {
+   "target": "doi:10.5066/P14EWYME",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS PWFDF hazard assessment collection."
+  },
+  {
+   "target": "doi:10.1016/j.geomorph.2016.10.019",
+   "relations": [
+    "reviews",
+    "challenges"
+   ],
+   "reason": "Staley et al. 2017 M1 model; its likelihoods are about 3 times too high outside the training records."
+  },
+  {
+   "target": "doi:10.3133/ofr20161106",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Staley et al. 2016 updated logistic regression equations and training inventory."
+  },
+  {
+   "target": "doi:10.1002/esp.70393",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Graber et al. 2026 regional models; reports M1 over-prediction outside southern California. We add a probability-scale check of issued products."
+  },
+  {
+   "target": "doi:10.1130/GES02936.1",
+   "relations": [
+    "supports"
+   ],
+   "reason": "Graber et al. 2026 recovery-aware thresholds; our year-2 and year-3 ratios agree with fewer debris flows after year 1."
+  },
+  {
+   "target": "doi:10.5194/nhess-26-4723-2026",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Chong et al. 2026 proposed seasonal hydraulic-conductivity control after the Lake Fire; we tested storm-to-storm wetness."
+  },
+  {
+   "target": "doi:10.1029/2024JF007781",
+   "reason": "Cavagnaro et al. 2025: thresholds vary with short-duration rainfall climatology."
+  },
+  {
+   "target": "doi:10.24381/cds.e2161bac",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5-Land hourly soil water (Copernicus C3S)."
+  },
+  {
+   "target": "doi:10.24381/cds.adbb2d47",
+   "relations": [
+    "uses"
+   ],
+   "reason": "ERA5 hourly precipitation (Copernicus C3S)."
+  },
+  {
+   "target": "https://open-meteo.com/en/docs/historical-weather-api",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Open-Meteo historical API used to read ERA5-Land and ERA5 point series."
+  },
+  {
+   "target": "https://earthquake.usgs.gov/arcgis/rest/services/ls/pwfdf/MapServer/0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "USGS map service layer with assessment download links."
+  },
+  {
+   "target": "sci:sha256:fd13e2495e0e786296adf3eef558bff0ea77fefb81fde182f96218813082cf04",
+   "reason": "Related campaign work on postfire streamflow response in the western US."
+  }
+ ]
+}
