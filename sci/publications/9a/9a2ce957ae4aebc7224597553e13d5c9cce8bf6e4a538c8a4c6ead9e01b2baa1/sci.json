@@ -1,0 +1,110 @@
+{
+ "title": "In 91 leg muscle pools of two fly connectomes, input synapses increase at least as fast as motor neuron size, so synapse counts alone do not give small-first recruitment",
+ "abstract": "We tested a wiring condition of the size principle in adult fly leg motor neurons (MNs). We used two connectomes: MANC v1.0 (male nerve cord, 40 pools, 190 MNs, size = voxel volume) and BANC v888 (female brain and nerve cord, 51 pools, 265 MNs, size = cable length). A pool is all MNs of one muscle in one leg on one side. Larger MNs received more input synapses in 87 of 91 pools. The within-pool slope of log input on log size was 1.29 (95% CI 1.16 to 1.45) in MANC and 1.83 (1.74 to 1.92) in BANC; with the noisy BANC volume it was 1.06 (0.74 to 1.35). Single premotor neurons gave more synapses to larger MNs in 36 of 40 and 50 of 51 pools. Partner sets were not more nested than degrees predict. The inhibitory input share did not increase with size; it decreased in BANC. Within-pool size ranks of matched MNs agreed between sides (r 0.70 to 0.75) and between the two flies (r 0.54). Thus input counts increase at least as fast as size. Under equal current per synapse, counts alone do not make small MNs fire first, as recordings show. Synapse strength, location or intrinsic excitability must give the order. Limits: no membrane area, synapse weights or MN-by-MN recruitment data; two animals only. Code, aggregate results, derived tables, figures and data retrieval steps are included; raw connectome files are not bundled.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "size principle",
+  "motor neuron recruitment",
+  "Drosophila",
+  "connectome",
+  "MANC",
+  "BANC",
+  "premotor wiring",
+  "structure-function",
+  "allometry"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_within_pool_scaling.png",
+   "caption": "Within each leg muscle pool, log input synapses increase faster than log MN size in MANC (voxel volume) and BANC (cable length). Dashed line: slope 1."
+  },
+  {
+   "path": "files/figures/fig2_pools_and_premotor_grading.png",
+   "caption": "Left: Spearman rho between MN size and input synapses, one dot per pool. Right: z-score of the mean per-premotor rank correlation against a size-label permutation, one dot per pool."
+  },
+  {
+   "path": "files/figures/fig4_input_split.png",
+   "caption": "Within-pool scaling slopes by input transmitter and source class with 95% pool-bootstrap intervals. Inhibitory input does not scale more steeply than excitatory input; descending input scales most steeply."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.7554/eLife.56754",
+   "reason": "Recorded small-first recruitment of fly leg MNs (size principle)."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07600-z",
+   "relations": [
+    "supports"
+   ],
+   "reason": "FANC premotor weights track MN size; we test this in two more animals."
+  },
+  {
+   "target": "doi:10.1038/s41586-024-07389-x",
+   "reason": "FANC connectome and leg MN muscle mapping."
+  },
+  {
+   "target": "doi:10.7554/eLife.97769",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC v1.0 connectome."
+  },
+  {
+   "target": "doi:10.7554/eLife.96084",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC motor and premotor annotations."
+  },
+  {
+   "target": "doi:10.1101/2025.07.31.667571",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC connectome."
+  },
+  {
+   "target": "doi:10.7910/DVN/7WTH1N",
+   "relations": [
+    "uses"
+   ],
+   "reason": "BANC v888 metadata and edge list, Dataverse version 3.0, CC BY 4.0."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-manc-exports/v1.0/manc-v1.0-neuron-properties.feather",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC neuron properties (size, muscle target)."
+  },
+  {
+   "target": "https://storage.googleapis.com/flyem-manc-exports/v1.0/manc-traced-adjacencies-v1.0/traced-connections.csv",
+   "relations": [
+    "uses"
+   ],
+   "reason": "MANC traced connections."
+  },
+  {
+   "target": "sci:sha256:7062426dfec45c46a34a4230202cbfe5ea1c3984c295de84e58242f0d34e1e86",
+   "reason": "Earlier campaign test of nerve-cord MN wiring against behaviour."
+  },
+  {
+   "target": "sci:sha256:798bde7f58312e9edbb7aa09df38a9a45a2748220e8481d1e79b5a53fe94cdc0",
+   "reason": "Earlier campaign test of synapses per connection against partner number."
+  },
+  {
+   "target": "sci:sha256:a757764521bf4e30122565fffbd2edcabbdc56b0d99aa9cbda0ccce9e50ba573",
+   "reason": "BANC-specific synapse-count differences; reason to compare slopes only inside each dataset."
+  },
+  {
+   "target": "sci:sha256:9ee9dd28a2fb07cf0bfc1353a27d4f19ff7cc14e5822149299db81a4fc2ce0f9",
+   "reason": "Dataset-specific synapse-count differences across four fly connectomes."
+  }
+ ]
+}
