@@ -1,0 +1,76 @@
+{
+ "title": "Brain-wide omission responses did not habituate when 58 mice met image omissions for the first time; their power rose with firing rate in each session and reset on day 2 (Allen VBN)",
+ "abstract": "Mice in the Allen Visual Behavior Neuropixels (VBN) data set see image omissions for the first time on recording day 1 and again on day 2. We asked if the brain-wide spiking at an omitted image is a surprise response that becomes smaller with exposure. We used 60 mice with both days (117 usable active-block sessions, 85,359 good units) and only omissions with no lick from -0.25 to +0.50 s. The response was the rate change from 250 ms before the expected onset to 50-300 ms after it; its unbiased power was averaged over units of five region classes. We compared the first and the last 30 omissions of each day, with matched image flashes as control and a bootstrap over mice. The plan was written before the analysis. Results: no class showed a decrease within day 1. Omission power increased by 72% in visual cortex (log ratio +0.54, 95% CI +0.35 to +0.73) and by 81% in LGd + LP, together with a 7-64% rise of firing rate; after rate normalisation the rise was +36% in visual cortex and absent in thalamus and midbrain. At the start of day 2, omission power was equal to that at the start of day 1 (all units log ratio -0.07, -0.29 to +0.17) and lower than at the end of day 1 (-0.60), and it rose again within day 2. Rate-normalised image-flash power fell within each day (all units -0.45 on day 1), so the omission/flash ratio rose 1.9-fold. Omission activity grew smoothly towards the next image, without a step at the expected onset. Hippocampal omission power was near zero (0.4% of 11,101 units significant), so the pre-registered hippocampal habituation test was not informative. Exploratory: omissions did not cause licks, but omissions inside lick bouts gave 5-6 times larger hippocampal and midbrain responses. Conclusion: VBN omission responses follow session state, not the novelty of omissions. Limitations: exposure and session time are separated only by the day-2 reset; day 2 used novel images; only the active block was read; optotagged classes were not separated.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "q-bio.NC"
+  }
+ ],
+ "keywords": [
+  "Visual Behavior Neuropixels",
+  "Allen Institute",
+  "omission response",
+  "expectation",
+  "habituation",
+  "novelty",
+  "surprise",
+  "brain state",
+  "firing rate",
+  "hippocampus",
+  "visual cortex",
+  "thalamus",
+  "licking confound",
+  "mouse"
+ ],
+ "display": [
+  {
+   "path": "files/figures/fig1_trajectory.png",
+   "caption": "Responses in bins of 15 lick-free omissions over the active block (blue: day 1, first omissions ever; green: day 2). Omission response power rises within each session with the pre-onset firing rate and starts again from the same level on day 2; the image-flash response does not rise. Bands: 95% mouse bootstrap."
+  },
+  {
+   "path": "files/figures/fig2_timecourse.png",
+   "caption": "Time course of the trial-reliable rate change from the pre-onset window (root of unbiased power, 50 ms bins). Omission activity grows smoothly towards the next image (+0.75 s) without a step at the expected onset; the hippocampal formation shows almost no omission response."
+  },
+  {
+   "path": "files/figures/fig3_forest.png",
+   "caption": "Log ratios of mean response power by region class with 95% mouse-bootstrap intervals: within-day change of omission and matched-flash power, day-2 versus day-1 start, and rate-normalised omission power."
+  }
+ ],
+ "citations": [
+  {
+   "target": "https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Allen Visual Behavior Neuropixels NWB files and project metadata (public S3 bucket visual-behavior-neuropixels-data) are the data of this study."
+  },
+  {
+   "target": "doi:10.1126/sciadv.adv5651",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Nitzan et al. 2025 described omission responses in the same data. We confirm ramp-like cortical activity but did not detect hippocampal step responses in lick-free omissions, and show that lick-bout omissions inflate non-visual responses."
+  },
+  {
+   "target": "doi:10.7554/eLife.50340",
+   "reason": "Two-photon Vip omission responses depend on experience in the Allen Visual Behavior project."
+  },
+  {
+   "target": "doi:10.1038/s41586-020-03171-x",
+   "reason": "Allen Neuropixels survey methods and visual hierarchy."
+  },
+  {
+   "target": "sci:sha256:f17da30f42de8c7f44d409e842aed5d43b992c36969cf331a348e1d4d81c25e0",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Prior campaign VBN study (novelty by optotagged class); we reuse its HTTP range-read file object and its finding that day-2 novel images raise image responses."
+  },
+  {
+   "target": "sci:sha256:63daa56425a27eea758808a18f0552cc53e773421e3686dbcee77b3dcd1346cd",
+   "reason": "Prior campaign VBN study of task engagement and inter-regional coupling."
+  }
+ ]
+}
