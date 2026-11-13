@@ -1,0 +1,22 @@
+{
+  "title": "Great Lakes meteotsunami-band water-level responses rose 4.5% per 10 km of near-resonant upstream lake path for 637 pressure jumps at 21 NOAA gauges, April-November 2010-2025",
+  "abstract": "We tested the Proudman resonance hypothesis with a pre-registered event test. We used 6-minute barometric pressure and water level from 33 NOAA CO-OPS Great Lakes stations, April-November 2010-2025. We found 13,060 pressure jumps of 1.5 hPa or more in 30 minutes and fitted local plane waves to the jump times at 3 or more barometers (1,992 fits, median speed 20 m/s). For 637 jumps at 21 lake gauges with an upstream lake path, we measured the high-pass (2 h) water-level amplitude per hPa of jump (R). From ETOPO1 depth we found the length of the 100 km upstream line where the jump speed was 0.8 to 1.2 times the long-wave speed sqrt(g h). With station fixed effects, R increased by 4.5% per 10 km of resonant path (95% day-bootstrap interval 2.2% to 6.9%). The pre-registered downstream placebo gave 0.1% (-2.6% to 2.4%). A post hoc null that shuffles speeds within stations and keeps the path geometry gave 1.7% (p = 0.004), and controls for water length, depth, storm speed and background did not remove the effect. The effect was clear in Lakes Erie and Huron and not resolved in Lakes Michigan and Superior. A second pre-registered test partly failed: in path-mean Froude bins the largest response was at 1.2-1.6, not 0.8-1.2. Limitations: 6-minute sampling, straight-front fits, one set of band and path choices, and a missed multi-wave event (Ludington, 13 April 2018).",
+  "categories": [
+    {"scheme": "arxiv", "code": "physics.ao-ph"},
+    {"scheme": "arxiv", "code": "physics.geo-ph"}
+  ],
+  "keywords": ["meteotsunami", "Proudman resonance", "Great Lakes", "pressure jump", "squall line", "water level", "NOAA CO-OPS", "seiche", "Froude number", "pre-registered test"],
+  "display": [
+    {"path": "files/figs/fig2_response_vs_resonance.png", "caption": "Left: station-normalized response ratio R (geometric mean, 95% day-bootstrap interval) by resonant path length on the upstream line (blue, test) and the downstream line (orange, placebo). Right: pre-registered path-mean Froude bins; the peak is at 1.2-1.6, not at 0.8-1.2."},
+    {"path": "files/figs/fig3_robustness.png", "caption": "Change in R per 10 km of resonant upstream path for the primary test and post hoc checks (95% day-bootstrap intervals). The dashed line is the mean of the within-station speed-shuffle null (observed p = 0.004)."},
+    {"path": "files/figs/fig1_map_speeds.png", "caption": "Left: NOAA CO-OPS stations used and ETOPO1 lake depth. Right: fitted pressure-jump speeds and the long-wave speed sqrt(g h) at each lake's mean depth."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/srep37832", "reason": "Great Lakes meteotsunami climatology from 6-minute water levels; context for event frequency and the lakes with most events."},
+    {"target": "doi:10.1007/s11069-020-04195-2", "relations": ["supports"], "reason": "Idealized Proudman resonance with bathymetry; our event test gives observational support to resonance growth along near-resonant paths."},
+    {"target": "doi:10.5194/nhess-6-1035-2006", "reason": "Review of meteotsunami mechanisms, including Proudman resonance."},
+    {"target": "doi:10.7289/V5C8276M", "relations": ["uses"], "reason": "ETOPO1 relief model used for lake depth."},
+    {"target": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter", "relations": ["uses"], "reason": "NOAA CO-OPS 6-minute air_pressure and water_level data (public domain)."},
+    {"target": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/", "relations": ["uses"], "reason": "Natural Earth 10m lakes polygons for the water mask (public domain)."}
+  ]
+}
