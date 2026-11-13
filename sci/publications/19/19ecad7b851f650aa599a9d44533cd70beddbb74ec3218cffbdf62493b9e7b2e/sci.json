@@ -1,0 +1,87 @@
+{
+ "title": "The wobble period of 110 of 261 tested Gaia FPR binary-asteroid candidate windows is the rotation period or half of it, so these wobbles are mainly rotation photocentre signals",
+ "abstract": "Question: Liberato et al. (2026) list 343 binary-asteroid candidates (410 windows) from periodic along-scan residuals in the Gaia Focused Product Release (FPR). Is the wobble period the rotation period of the asteroid, which a single turning body gives through its light centre? Method: We compared each wobble period with the Asteroid Lightcurve Database (LCDB, U >= 2-) rotation period P_rot. We counted matches at P_rot/2, P_rot and 2 P_rot (5 % tolerance) against two permutation nulls. We repeated the test in all 11,943 windows of the published FPR period search that have an LCDB period. We modelled the light centre of a rotating ellipsoid with Horizons phase angles and the Gaia scan angle. Results: Of 261 candidate windows (207 objects), 73 match P_rot (11.7 expected) and 37 match P_rot/2 (7.5 expected); 2 P_rot has no excess (9 vs 13.5). Of the 183 windows with P_rot inside the 7-h search limit, 60 % match (21 expected). Five objects change between P_rot and P_rot/2 from one window to the next, which an orbit cannot do. The two DR3 candidates with repeated periods and two occultation-flagged objects also match rotation. In the parent search, 34 % of the strongest signals (p < 0.1 %) match, against 5 % expected. The rotation share rises with apparent size: 17 % below 12 mas and 44-48 % above. Matched amplitudes scale with apparent size and agree with a limb-darkened (Lambert) ellipsoid within a factor of about 2; a Lommel-Seeliger ellipsoid is about 25 times too small. Conclusion: At least 110 tested windows are rotation photocentre signals, not satellites, unless the orbit is synchronous; about 28 % of all 410 windows by extrapolation. Limitations: Only 64 % of windows have LCDB periods; a direct match misses P_rot < 7 h, higher harmonics and true-sampling aliases, so this is a lower limit; the model is a smooth ellipsoid; the 151 unmatched windows stay undecided.",
+ "categories": [
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.EP"
+  },
+  {
+   "scheme": "arxiv",
+   "code": "astro-ph.IM"
+  }
+ ],
+ "keywords": [
+  "binary asteroids",
+  "Gaia FPR",
+  "astrometry",
+  "photocentre",
+  "asteroid rotation",
+  "LCDB",
+  "false positives",
+  "solar system"
+ ],
+ "display": [
+  {
+   "path": "files/fig1_period_match.png",
+   "caption": "a. Ratio of wobble period to LCDB rotation period for 261 Gaia FPR candidate windows (blue) and for shuffled rotation periods (grey line, mean; band, 95 %). Peaks occur at P_rot and P_rot/2, not at 2 P_rot. b. In all 11,943 FPR period-search windows with an LCDB period, the share of windows with wobble = P_rot or P_rot/2 (bars) against the shuffled null (points, 95 %), by period-search p-value."
+  },
+  {
+   "path": "files/fig2_amplitude_model.png",
+   "caption": "a. Wobble semi-amplitude against Gaia apparent diameter for candidate windows that match P_rot (blue), P_rot/2 (orange) or neither (grey). b. Observed semi-amplitude of the 37 P_rot/2 windows against the along-scan P_rot/2 semi-amplitude of a rotating ellipsoid (median over 40 random spin axes) for a Lambert surface (marker) and a Lommel-Seeliger surface (bar end). Dashed: 1:1; dotted: 2:1."
+  }
+ ],
+ "citations": [
+  {
+   "target": "doi:10.1051/0004-6361/202659515",
+   "relations": [
+    "uses",
+    "challenges"
+   ],
+   "reason": "Source of the FPR binary-asteroid candidates; we show that many wobble periods equal the rotation period or half of it."
+  },
+  {
+   "target": "doi:10.5281/zenodo.18675577",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Candidate list and full period-search output (CC BY 4.0)."
+  },
+  {
+   "target": "doi:10.1051/0004-6361/202349122",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "DR3 candidate list and method; two of its repeated-period candidates match rotation."
+  },
+  {
+   "target": "doi:10.1016/j.icarus.2009.02.003",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Asteroid Lightcurve Database rotation periods and amplitudes."
+  },
+  {
+   "target": "https://arxiv.org/abs/2606.13353",
+   "relations": [
+    "reviews"
+   ],
+   "reason": "Occultation follow-up of candidates; (206) and (1127) have a wobble at P_rot."
+  },
+  {
+   "target": "https://arxiv.org/abs/2605.22702",
+   "reason": "Preprint of the FPR candidate paper."
+  },
+  {
+   "target": "https://ui.adsabs.harvard.edu/abs/2004A%26A...416..367K",
+   "reason": "Kaasalainen and Tanga 2004, photocentre offsets of asteroids in astrometry."
+  },
+  {
+   "target": "https://ssd.jpl.nasa.gov/horizons/",
+   "relations": [
+    "uses"
+   ],
+   "reason": "Gaia-centred phase angles and Sun position angles."
+  }
+ ]
+}

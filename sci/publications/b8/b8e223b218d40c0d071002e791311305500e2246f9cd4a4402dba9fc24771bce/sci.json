@@ -1,0 +1,29 @@
+{
+  "title": "Firing changes in mouse thalamus, midbrain and hippocampus followed optogenetic changes of visual cortex output, but Allen axon density did not reliably rank the regions (54 sessions)",
+  "abstract": "Question: do tracer maps of visual cortex output tell which regions depend on visual cortex for their firing? Approach: we used the optotagging light epochs of 54 Allen Visual Coding Neuropixels sessions. Light on visual cortex activated Pvalb (8 mice), Sst (12) or Vip (8) interneurons that express channelrhodopsin-2; 26 wild-type mice received the same light. We measured pooled log rate changes of cortex and of all recorded downstream regions, corrected them with the wild-type sessions, and compared them with ipsilateral VISp axon density from Allen Mouse Brain Connectivity Atlas injections (33 wild-type, 20 Rbp4-Cre layer 5, 16 Ntsr1-Cre layer 6). Results: light alone raised cortical regular-spiking firing by a log ratio of 0.22. After correction, cortical regular-spiking firing changed by -1.06 (Pvalb), -0.90 (Sst) and +0.24 (Vip). Light also reached the hippocampus: 3 to 4 percent of CA1 and CA3 units fired within 11 ms of light pulses in Pvalb and Sst mice. Downstream regions changed in the direction of the cortical change. Post hoc transfer slopes (region change per unit cortical change) were about 0.25 to 0.31 in LP, LGd and APN and about 0.1 in CA1. The pre-specified rank correlations with axon density had the predicted sign in all three lines but none was significant (Pvalb rho -0.66, 6 regions; Sst -0.32, 12; Vip +0.44, 10). Transfer slopes did not follow wild-type or layer-5 density; layer-6 corticothalamic density correlated in 8 thalamic and midbrain regions (rho +0.74, post hoc, 1 of 10 predictors). Superior colliculus and NOT had dense layer-5 input but small slopes. Limitations: 6 to 13 regions per test, unknown light field, direct light effects in hippocampus, no running data in the light epochs, and post hoc transfer analysis. Code, aggregate results, figures, hashes and retrieval steps are included; Allen data are not bundled.",
+  "categories": [
+    {"scheme": "arxiv", "code": "q-bio.NC"}
+  ],
+  "keywords": ["Allen Institute", "Neuropixels", "optogenetics", "optotagging", "corticothalamic", "LP", "LGd", "superior colliculus", "tracer connectivity", "structure-function", "causal perturbation", "Pvalb", "Sst", "Vip", "Ntsr1", "Rbp4"],
+  "display": [
+    {"path": "files/figures/fig1_manipulation_controls.png", "caption": "Optogenetic change of visual cortex and its controls: cortical change per line (A), light-only response in wild-type mice (B), and short-latency light responses that show light reaching hippocampus (C)."},
+    {"path": "files/figures/fig2_transfer_slopes.png", "caption": "Downstream regions change in proportion to the cortical change across 28 opto sessions (A); transfer slopes with 95% session-bootstrap intervals (B)."},
+    {"path": "files/figures/fig3_projection_predictors.png", "caption": "Transfer slopes against VISp axon density from wild-type, layer-5 and layer-6 tracer injections (A-C) and pre-specified correlations per line (D)."}
+  ],
+  "citations": [
+    {"target": "doi:10.1038/s41586-020-03171-x", "relations": ["uses"], "reason": "Allen Visual Coding Neuropixels data set (Siegle et al. 2021), including optotagging epochs."},
+    {"target": "doi:10.1038/nature13186", "relations": ["uses"], "reason": "Allen Mouse Brain Connectivity Atlas, wild-type injections (Oh et al. 2014)."},
+    {"target": "doi:10.1038/s41586-019-1716-z", "relations": ["uses"], "reason": "Cre-line layer-specific tracer injections (Harris et al. 2019)."},
+    {"target": "https://allen-brain-observatory.s3.us-west-2.amazonaws.com/visual-coding-neuropixels/ecephys-cache/sessions.csv", "relations": ["uses"]},
+    {"target": "http://api.brain-map.org/api/v2/data/query.json", "relations": ["uses"], "reason": "Allen MCA API queries listed in files/provenance/INPUTS.md."},
+    {"target": "sci:sha256:b4bfe30603c600a1e1eba65f8b51a0828e32d5bf403a20b347e895dc84e077f7", "relations": ["supports"], "reason": "Correlational result that thalamus-cortex spike links follow tracer density only weakly; our causal manipulation also finds no strong density rule for cortex-to-subcortex influence."},
+    {"target": "sci:sha256:8652596e8108893e95c268255b4fd1d8779b572e76b1aee818940bff44dbae1b", "relations": ["reviews"], "reason": "Prior tracer-density versus spike-link test between visual areas."},
+    {"target": "sci:sha256:1b49edfb4811d021f34cc9d60e81ad50df927eaeeb7426d2cb78d8a4676ada59", "relations": ["reviews"], "reason": "Prior axon density versus fast spike coupling test between visual areas."},
+    {"target": "sci:sha256:cc2969a4538f2f63ba276e738d0e249095d66c05c612cfaf5c9cf3ba15f542dd", "relations": ["reviews"], "reason": "Earlier use of the same optotagging epochs for spike-train interactions; this study measures region-wide network effects of the light."},
+    {"target": "sci:sha256:0b0f9e1ca3c6ac1d06e6ea96caf2ecc415efdf080af6bfd606e1ba6445d6e9da", "relations": ["reviews"], "reason": "Cortical input share and thalamic burst firing; we test first- versus higher-order causal dependence (LP vs LGd)."},
+    {"target": "doi:10.1016/j.neuron.2019.02.010", "reason": "V1 silencing effects on LP (Bennett et al. 2019)."},
+    {"target": "doi:10.1038/nature10835", "reason": "Layer 6 control of LGd gain (Olsen et al. 2012)."},
+    {"target": "https://alleninstitute.org/legal/terms-of-use"},
+    {"target": "https://alleninstitute.org/legal/citation-policy"}
+  ]
+}
